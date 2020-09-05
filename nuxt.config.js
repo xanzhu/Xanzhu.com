@@ -1,7 +1,7 @@
 
 export default {
   /*
-  ** Nuxt rendering mode e
+  ** Nuxt rendering mode
   ** See https://nuxtjs.org/api/configuration-mode
   */
   mode: 'universal',
