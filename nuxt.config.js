@@ -1,20 +1,22 @@
 
 export default {
-  /*
-  ** Nuxt rendering mode
-  ** See https://nuxtjs.org/api/configuration-mode
-  */
   mode: 'universal',
-  /*
-  ** Nuxt target
-  ** See https://nuxtjs.org/api/configuration-target
-  */
   target: 'static',
+  client: 'modern',
   /*
   ** Headers of the page
   ** See https://nuxtjs.org/api/configuration-head
   */
   head: {
+    htmlAttrs: {
+      lang: 'en'
+    },
+    bodyAttrs: {
+      class: 'bg-black'
+    },
+    scriptAttrs: {
+      nonce: '<?= html_escape($cspNonce); ?>'
+    },
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
