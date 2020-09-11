@@ -15,10 +15,10 @@ export default {
       class: 'bg-black'
     },
     scriptAttrs: {
-      nonce: ''
+      nonce: '""'
     },
     styleAttrs: {
-      nonce: ''
+      nonce: '""'
     },
     title: process.env.npm_package_name || '',
     meta: [
