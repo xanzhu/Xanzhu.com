@@ -15,7 +15,7 @@ export default {
       class: 'bg-black'
     },
     scriptAttrs: {
-      nonce: '<?= html_escape($cspNonce); ?>'
+      nonce: '""'
     },
     title: process.env.npm_package_name || '',
     meta: [
