@@ -1,8 +1,10 @@
 
 export default {
-  mode: 'universal',
   target: 'static',
   client: 'modern',
+  render: {
+    csp: true
+  },
   /*
   ** Headers of the page
   ** See https://nuxtjs.org/api/configuration-head
