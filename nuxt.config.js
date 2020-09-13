@@ -2,9 +2,6 @@
 export default {
   target: 'static',
   client: 'modern',
-  render: {
-    csp: true
-  },
   /*
   ** Headers of the page
   ** See https://nuxtjs.org/api/configuration-head
@@ -16,12 +13,6 @@ export default {
     bodyAttrs: {
       class: 'bg-black'
     },
-    scriptAttrs: {
-      nonce: '""'
-    },
-    styleAttrs: {
-      nonce: '""'
-    },
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
@@ -29,7 +20,8 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
+      { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' }
     ]
   },
   /*

@@ -5,7 +5,11 @@
 ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
 */
 module.exports = {
-  theme: {},
+  theme: {
+    fontFamily: {
+      landing: ['Long Cang', 'cursive']
+    }
+  },
   variants: {},
   future: {
     removeDeprecatedGapUtilities: true,
