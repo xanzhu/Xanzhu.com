@@ -6,9 +6,9 @@
 */
 module.exports = {
   theme: {
-    fontFamily: {
-      landing: ['Long Cang', 'cursive']
-    }
+    // fontFamily: {
+    //   landing: ['Long Cang', 'cursive']
+    // }
   },
   variants: {},
   future: {

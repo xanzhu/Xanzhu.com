@@ -2,7 +2,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-@layer base {
+/* @layer base {
     @font-face {
       font-family: 'Long Cang';
       font-weight: 400;
@@ -12,4 +12,4 @@
       src: url(~assets/fonts/LongCang-Regular.woff2) format("woff2");
       src: url(~assets/fonts/LongCang-Regular.ttf) format("truetype");
     }
-}
+} */
