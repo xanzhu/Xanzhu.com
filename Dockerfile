@@ -1,7 +1,5 @@
 FROM node:14.11.0-slim
 
-WORKDIR /app
+WORKDIR /a1
 
-COPY package*.json ./
-
-RUN yarn install
+ONBUILD RUN yarn
