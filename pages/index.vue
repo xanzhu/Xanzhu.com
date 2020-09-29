@@ -12,6 +12,7 @@
             ETH 0xF74c5B6956F0B7674659323665Db90313f73557E
           </p>
         </div>
+        <a href=https://commerce.coinbase.com/checkout/fd080deb-7ead-4bba-a979-0292e7109e70>DONATE</a>
       </div>
     </div>
   </section>
