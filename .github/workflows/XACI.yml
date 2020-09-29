@@ -1,4 +1,4 @@
-# XA CI - Alpha Build
+# XA CI - Alpha Build - 02
 
 name: XACI
 
@@ -14,27 +14,27 @@ jobs:
         # A strategy that defines different variations of an environment to run each job in.
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
-        node: [14.x]
+        os: [ubuntu-latest] # Supports Mac/Windows/Linux
+        node: [14]
     # The runners that the job will run on
     runs-on: ${{ matrix.os }}
       # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Setup Node.js environment
-        uses: actions/setup-node@v1.4.3
+        uses: actions/setup-node@v2-beta
         with:
           node-version: ${{ matrix.node }}
 
       - name: Checkout master branch
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.3
 
       - name: Cache node_modules
-        uses: actions/cache@v2.1.0
+        uses: actions/cache@v2.1.1
         with:
           # A list of files, directories, and wildcard patterns to cache and restore
           path: node_modules
           # An explicit key for restoring and saving the cache
-          key: ${{ matrix.os }}-node-v${{ matrix.node }}-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/package-lock.json')) }}
+          key: ${{ matrix.os }}-node-v${{ matrix.node }}-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
 
       - name: Install dependencies
         if: steps.cache.outputs.cache-hit != 'true'

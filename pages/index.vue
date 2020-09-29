@@ -8,7 +8,9 @@
         <div class="mb-8 mt-2 mx-5 break-word text-sm leading-5 text-gray-300 sm:text-base">
           <p>This page will constantly update as we improve our design</p>
           <p>We expect to release our website by the end of the year</p>
-          <p class="mt-4 text-xs">ETH 0xF74c5B6956F0B7674659323665Db90313f73557E</p>
+          <p class="mt-4 text-xs">
+            ETH 0xF74c5B6956F0B7674659323665Db90313f73557E
+          </p>
         </div>
       </div>
     </div>
