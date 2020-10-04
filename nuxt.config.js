@@ -4,7 +4,7 @@ export default {
   client: 'modern',
 
   server: {
-    port: 3001, // default: 3000
+    port: 3001 // default: 3000
   },
   /*
   ** Headers of the page
