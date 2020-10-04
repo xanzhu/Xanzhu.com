@@ -3,11 +3,6 @@ export default {
   target: 'server',
   client: 'modern',
 
-  server: {
-    port: 3264, // default: 3000
-    host: '0.0.0.0' // default: localhost
-  },
-
   /*
   ** Headers of the page
   ** See https://nuxtjs.org/api/configuration-head
