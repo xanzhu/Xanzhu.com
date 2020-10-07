@@ -57,11 +57,22 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    'nuxt-svg-loader'
   ],
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
+    extend (config, ctx) {
+      if (ctx.isDev && ctx.isClient) {
+        config.module.rules.push({
+          enforce: 'pre',
+          test: /\.(js|vue)$/,
+          loader: 'eslint-loader',
+          exclude: /(node_modules)|(\.svg$)/
+        })
+      }
+    }
   }
 }
