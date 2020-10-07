@@ -4,7 +4,7 @@ export default {
   client: 'modern',
 
   server: {
-    port: 3001 // default: 3000
+    port: 3001
   },
   /*
   ** Headers of the page
@@ -17,7 +17,7 @@ export default {
     bodyAttrs: {
       class: 'bg-black'
     },
-    title: process.env.npm_package_name || '',
+    title: 'DUUNE BY XANZHU',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
