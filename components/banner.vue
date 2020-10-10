@@ -8,7 +8,7 @@
       </div>
     </div>
     <div class="bg-transparent">
-      <!-- <img class="h-56 w-full object-cover object-right" src="~/assets/banner-21.png"> Option with cut-->
+      <!-- <img class="h-56 w-full object-scale-down object-right" src="~/assets/banner-21.png"> Option with cut-->
       <img class="h-56 w-full object-cover" src="~/assets/banner-image.webp">
     </div>
   </div>
