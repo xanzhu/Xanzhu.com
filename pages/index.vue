@@ -9,9 +9,9 @@
           <p>This page will constantly update as we improve our design</p>
           <p>We expect to release our website by the end of the year</p>
         </div>
-        <button class="bg-yellow-600 hover:bg-white text-black font-bold py-2 px-4 rounded" @click="isHidden = !isHidden">
+        <div class="bg-yellow-600 hover:bg-white text-black font-bold py-2 px-4 rounded" @click="isHidden = !isHidden">
           Donate
-        </button>
+        </div>
         <div v-if="isHidden">
           <p class="mt-4 text-white">
             Direct Address: ETH 0xF74c5B6956F0B7674659323665Db90313f73557E
