@@ -3,7 +3,7 @@
     <div class="w-full md:w-2/3 flex flex-col items-center">
       <div class="title-font sm:text-4xl text-3xl font-bold">
         <n-link :to="{name: 'index'}">
-          <XUlogo class="h-6" />
+          <XUlogo class="h-6 fill-current text-black" />
         </n-link>
       </div>
     </div>
