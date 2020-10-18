@@ -13,7 +13,7 @@
     "buildProd": "yarn build && yarn start"
   },
   "dependencies": {
-    "nuxt": "^2.14.6",
+    "nuxt": "^2.14.7",
     "nuxt-svg-loader": "^1.2.0"
   },
   "devDependencies": {
@@ -26,7 +26,7 @@
     "babel-jest": "^26.5.2",
     "eslint": "^7.11.0",
     "eslint-plugin-nuxt": "^1.0.0",
-    "jest": "^26.5.2",
+    "jest": "^26.5.3",
     "vue-jest": "^3.0.7"
   }
 }
