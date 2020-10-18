@@ -15,7 +15,7 @@ export default {
       lang: 'en'
     },
     bodyAttrs: {
-      class: 'bg-black'
+      class: 'bg-white'
     },
     title: 'DUUNE BY XANZHU',
     meta: [
