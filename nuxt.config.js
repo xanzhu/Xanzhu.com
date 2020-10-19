@@ -14,9 +14,6 @@ export default {
     htmlAttrs: {
       lang: 'en'
     },
-    bodyAttrs: {
-      class: 'bg-white'
-    },
     title: 'DUUNE BY XANZHU',
     meta: [
       { charset: 'utf-8' },
