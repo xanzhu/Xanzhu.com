@@ -1,7 +1,7 @@
 <template>
-  <div class="h-56 bg-gray-900">
+  <div class="h-32 bg-gray-900">
     <div class="text-white absolute">
-      <div class="mx-10 sm:mx-20 lg:mx-30 xl:mx-60 my-16 leading-9 text-4xl antialiased font-medium">
+      <div class="mx-10 sm:mx-18 lg:mx-30 xl:mx-60 my-8 leading-9 text-4xl antialiased font-medium">
         Understand Security, Technology
         <br>
         and everything in-between.
@@ -12,7 +12,7 @@
     </div> -->
     <div class="bg-transparent">
       <!-- <img class="h-56 w-full object-scale-down object-right" src="~/assets/banner-21.png"> Option with cut-->
-      <img class="h-56 md:h-46 lg:60 w-full object-cover" src="~/assets/banner-image.webp">
+      <img class="h-32 md:h-46 lg:60 w-full object-cover" src="~/assets/banner-image.webp">
     </div>
   </div>
 </template>

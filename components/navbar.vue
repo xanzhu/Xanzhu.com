@@ -1,5 +1,5 @@
 <template>
-  <div class="text-yellow-500 font-bold tracking-wide right-0 my-20">
+  <div class="text-green-500 font-bold tracking-wide text-right text-6xl mr-12">
     LATEST NEWS
   </div>
 </template>
