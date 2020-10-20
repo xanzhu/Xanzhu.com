@@ -1,6 +1,6 @@
 
 export default {
-  target: 'server',
+  target: 'static',
   client: 'modern',
 
   server: {
@@ -49,7 +49,7 @@ export default {
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
-    'nuxt-purgecss',
+    'nuxt-purgecss'
   ],
   /*
   ** Nuxt.js modules
@@ -62,8 +62,8 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
-    extend(config, {isDev, isClient}) {
-      config.module.rules.forEach(rule => {
+    extend (config, { isDev, isClient }) {
+      config.module.rules.forEach((rule) => {
         if (String(rule.test) === String(/\.(png|jpe?g|gif|svg|webp)$/)) {
           // add a second loader when loading images
           rule.use.push({
