@@ -1,7 +1,7 @@
 <template>
   <div class="h-32 bg-gray-900">
     <div class="text-white absolute">
-      <div class="mx-10 sm:mx-18 lg:mx-30 xl:mx-60 my-8 leading-9 text-4xl antialiased font-medium">
+      <div class="mx-8 sm:mx-12 lg:mx-16 xl:mx-32 my-5 leading-9 text-4xl antialiased font-medium">
         Understand Security, Technology
         <br>
         and everything in-between.
