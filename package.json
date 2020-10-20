@@ -26,7 +26,9 @@
     "babel-jest": "^26.5.2",
     "eslint": "^7.11.0",
     "eslint-plugin-nuxt": "^1.0.0",
+    "image-webpack-loader": "^7.0.1",
     "jest": "^26.5.3",
+    "nuxt-purgecss": "^1.0.0",
     "vue-jest": "^3.0.7"
   }
 }
