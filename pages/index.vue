@@ -2,7 +2,7 @@
   <div>
     <xubanner />
     <xunav />
-    <div class="text-center text-gray-300 py-12 font-thin text-lg">
+    <div class="text-left text-gray-300 py-4 font-thin text-lg mx-10 sm:mx-0 sm:text-center sm:py-12">
       <p>This page will constantly update as we improve our design</p>
       <p>We expect to release our website by the end of the year</p>
     </div>

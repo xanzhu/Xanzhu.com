@@ -1,5 +1,5 @@
 <template>
-  <div class="text-green-500 font-bold tracking-wide text-right text-5xl mr-12">
+  <div class="text-green-500 font-bold tracking-wide text-center text-4xl sm:mr-12 sm:text-right sm:text-5xl">
     {{ $t('LatestNews') }}
   </div>
 </template>
