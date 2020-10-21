@@ -1,5 +1,5 @@
 <template>
-  <div class="nuxt-error">
+  <div>
     <component :is="errorPage" :error="error" />
   </div>
 </template>

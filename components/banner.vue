@@ -1,7 +1,7 @@
 <template>
   <div class="sm:h-32 bg-black">
     <div class="text-white">
-      <div class=" hidden sm:mx-8  sm:antialiased sm:font-medium sm:my-5 sm:text-4xl sm:leading-9 sm:flex">
+      <div class="hidden sm:mx-8 sm:absolute sm:antialiased sm:font-medium sm:my-5 sm:text-4xl sm:leading-9 sm:flex">
         <span>Understand Security, Technology <br> and everything in-between.</span>
       </div>
     </div>
