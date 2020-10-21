@@ -56,11 +56,34 @@ export default {
   */
   modules: [
     'nuxt-svg-loader',
-    'nuxt-i18n',
+    ['nuxt-i18n', {
+      locales: [
+        {
+          code: 'en',
+          iso: 'en',
+          name: 'EN'
+        },
+        {
+          code: 'ko',
+          iso: 'ko',
+          name: 'KO'
+        },
+        {
+          code: 'zh',
+          iso: 'zh',
+          name: 'ZH'
+        },
+        {
+          code: 'ja',
+          iso: 'ja',
+          name: 'JA'
+        }
+      ]
+    }]
   ],
   i18n: {
-    locales: ['en', 'zh', 'ko', 'ja'],
     defaultLocale: 'en',
+    seo: false,
     vueI18n: {
       fallbackLocale: 'en',
       messages: {

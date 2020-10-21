@@ -1,7 +1,10 @@
 <template>
   <div class="container mx-auto flex px-5 justify-center items-center py-3">
+    <div class="text-white">
+      <LangSwitcher />
+    </div>
     <div class="w-full md:w-2/3 flex flex-col items-center">
-      <n-link :to="{name: 'index'}">
+      <n-link to="/">
         <XUlogo class="h-4 md:h-6 lg:h-7 xl:h-8 fill-current text-white" />
       </n-link>
     </div>
@@ -14,11 +17,13 @@
 </template>
 <script>
 import XUlogo from '@/assets/svg/xu-head.svg'
+import LangSwitcher from '@/components/LanguageSwitcher'
 
 export default {
   name: 'Xuheader',
   components: {
-    XUlogo
+    XUlogo,
+    LangSwitcher
   },
   methods: {
     ReleaseDate () {

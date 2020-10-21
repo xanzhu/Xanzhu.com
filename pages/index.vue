@@ -30,10 +30,5 @@ export default {
     xunav,
     xubanner
   }
-  // data () {
-  //   return {
-  //     isHidden: false
-  //   }
-  // }
 }
 </script>
