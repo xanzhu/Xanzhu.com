@@ -55,8 +55,30 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    'nuxt-svg-loader'
+    'nuxt-svg-loader',
+    'nuxt-i18n',
   ],
+  i18n: {
+    locales: ['en', 'zh', 'ko', 'ja'],
+    defaultLocale: 'en',
+    vueI18n: {
+      fallbackLocale: 'en',
+      messages: {
+        en: {
+          LatestNews: 'Latest News'
+        },
+        ko: {
+          LatestNews: '최근 뉴스'
+        },
+        zh: { // Simplified Version
+          LatestNews: '最新消息'
+        },
+        ja: {
+          LatestNews: '最新ニュース'
+        }
+      }
+    }
+  },
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/
