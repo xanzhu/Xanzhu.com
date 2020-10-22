@@ -83,21 +83,59 @@ export default {
   ],
   i18n: {
     defaultLocale: 'en',
+    strategy: 'prefix_except_default',
+    detectBrowserLanguage: {
+      onlyOnRoot: true
+    },
     seo: false,
     vueI18n: {
       fallbackLocale: 'en',
       messages: {
         en: {
-          LatestNews: 'Latest News'
+          LatestNews: 'Latest News',
+          UnderstandTech1: 'Understand Security, Technology',
+          UnderstandTech2: 'and everything in-between.',
+          TranslationWarn: 'Translation may be incorrect'
         },
         ko: {
-          LatestNews: '최근 뉴스'
+          LatestNews: '최근 뉴스',
+          UnderstandTech1: '기술, 보안',
+          UnderstandTech2: '및 그 사이의 모든 것.',
+          TranslationWarn: '번역이 잘못되었을 수 있습니다.'
         },
         zh: { // Simplified Version
-          LatestNews: '最新消息'
+          LatestNews: '最新消息',
+          UnderstandTech1: '了解安全技术',
+          UnderstandTech2: '还有其他一切',
+          TranslationWarn: '翻译可能不正确'
         },
         ja: {
-          LatestNews: '最新ニュース'
+          LatestNews: '最新ニュース',
+          UnderstandTech1: 'セキュリティ、テクノロジーを理解し、',
+          UnderstandTech2: 'そして残りすべて',
+          TranslationWarn: '翻訳が正しくない可能性があります。'
+        }
+      },
+      dateTimeFormats: {
+        ko: {
+          short: {
+            day: 'numeric', month: 'long', year: 'numeric'
+          }
+        },
+        zh: {
+          short: {
+            day: 'numeric', month: 'long', year: 'numeric'
+          }
+        },
+        ja: {
+          short: {
+            day: 'numeric', month: 'long', year: 'numeric'
+          }
+        },
+        en: {
+          short: {
+            day: 'numeric', month: 'long', year: 'numeric'
+          }
         }
       }
     }

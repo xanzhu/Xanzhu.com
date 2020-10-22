@@ -1,8 +1,9 @@
 <template>
   <div class="sm:h-32 bg-black">
     <div class="text-white">
-      <div class="hidden sm:mx-8 sm:absolute sm:antialiased sm:font-medium sm:my-5 sm:text-4xl sm:leading-9 sm:flex">
-        <span>Understand Security, Technology <br> and everything in-between.</span>
+      <div class="hidden whitespace-pre-line sm:mx-6 sm:-mt-3 sm:absolute sm:antialiased sm:font-medium sm:text-4xl sm:leading-9 sm:flex">
+        {{ $t('UnderstandTech1') }}
+        {{ $t('UnderstandTech2') }}
       </div>
     </div>
     <div class="bg-transparent">

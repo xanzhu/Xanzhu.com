@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto flex px-5 justify-center items-center py-3">
     <div class="text-white">
-      <LangSwitcher />
+      <!-- <LangSwitcher /> -->
     </div>
     <div class="w-full md:w-2/3 flex flex-col items-center">
       <n-link to="/">
@@ -17,13 +17,13 @@
 </template>
 <script>
 import XUlogo from '@/assets/svg/xu-head.svg'
-import LangSwitcher from '@/components/LanguageSwitcher'
+// import LangSwitcher from '@/components/LanguageSwitcher'
 
 export default {
   name: 'Xuheader',
   components: {
-    XUlogo,
-    LangSwitcher
+    XUlogo
+    // LangSwitcher
   },
   methods: {
     ReleaseDate () {

@@ -1,11 +1,27 @@
 <template>
   <header class="sm:flex sm:justify-between sm:mx-6 sm:py-2 sm:items-center sm:flex-row">
-    <LangSwitcher class="hidden sm:block" />
+    <div class="relative">
+      <button class="mt-2 text-gray-400 block h-8 w-8 focus:outline-none hover:text-white" @click="isOpen2 = !isOpen2">
+        <svg class="stroke-current object-cover" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <div v-if="isOpen2" class="absolute z-10 bg-gray-300 rounded-lg -mt-1">
+        <nuxt-link
+          v-for="locale in availableLocales"
+          :key="locale.code"
+          :to="switchLocalePath(locale.code)"
+          class="text-black font-medium block px-4 hover:bg-gray-500 rounded-lg"
+        >
+          <span @click="isOpen2 = false">{{ locale.name }}</span>
+        </nuxt-link>
+      </div>
+    </div>
     <div class="flex items-center justify-between px-6 py-4 mx-auto sm:p-0">
       <div class="text-white">
-        <n-link to="/">
+        <nuxt-link :to="localePath('/')">
           <Xulogo class="fill-current h-8" alt="XANZHU" />
-        </n-link>
+        </nuxt-link>
       </div>
       <div class="sm:hidden">
         <button type="button" class="block text-gray-500 focus:outline-none hover:text-white" @click="isOpen = !isOpen">
@@ -26,33 +42,29 @@
       <!-- <a href="#" class="block px-2 py-1 font-semibold text-white rounded hover:bg-gray-800">Blog</a>
       <a href="#" class="mt-1 block px-2 py-1 font-semibold text-white rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">Green</a>
       <a href="#" class="mt-1 block px-2 py-1 font-semibold text-white rounded hover:bg-gray-800 sm:ml-2 sm:mt-0">Help</a> -->
-      <span v-if="!isOpen" class="text-white mt-1 font-semibold ">{{ ReleaseDate() }}</span>
+      <span v-if="!isOpen" class="text-white mt-1 font-semibold ">{{ $d(new Date(), 'short') }}</span>
       <span v-else class="text-red-600 font-semibold tracking-widest">UNDER DEVELOPMENT</span>
     </div>
   </header>
 </template>
 <script>
 import Xulogo from '@/assets/svg/xu-head.svg'
-import LangSwitcher from '@/components/LanguageSwitcher'
 
 export default {
   name: 'Xuheader2',
   components: {
-    Xulogo,
-    LangSwitcher
+    Xulogo
   },
   data () {
     return {
-      isOpen: false
+      isOpen: false,
+      isOpen2: false
     }
   },
-  methods: {
-    ReleaseDate () {
-      const event = new Date()
-      const options = { year: 'numeric', month: 'long' }
-      return (event.toLocaleDateString('EN', options))
+  computed: {
+    availableLocales () {
+      return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
     }
   }
-
 }
 </script>
