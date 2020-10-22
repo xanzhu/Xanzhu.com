@@ -6,14 +6,14 @@
           <path d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
       </button>
-      <div v-if="isOpen2" class="absolute z-10 bg-gray-300 rounded-lg -mt-1">
+      <div v-if="isOpen2" class="absolute z-10 bg-gray-300 rounded-lg -mt-1"  @click="isOpen2 = false">
         <nuxt-link
           v-for="locale in availableLocales"
           :key="locale.code"
           :to="switchLocalePath(locale.code)"
           class="text-black font-medium block px-4 hover:bg-gray-500 rounded-lg"
         >
-          <span @click="isOpen2 = false">{{ locale.name }}</span>
+          {{ locale.name }}
         </nuxt-link>
       </div>
     </div>
