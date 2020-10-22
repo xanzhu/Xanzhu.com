@@ -20,7 +20,7 @@
     <div class="flex items-center justify-between px-6 py-4 mx-auto sm:p-0">
       <div class="text-white">
         <nuxt-link :to="localePath('/')">
-          <Xulogo class="fill-current h-8" alt="XANZHU" />
+          <Xulogo class="fill-current h-8" />
         </nuxt-link>
       </div>
       <div class="sm:hidden">
