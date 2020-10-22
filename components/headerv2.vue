@@ -1,6 +1,6 @@
 <template>
   <header class="sm:flex sm:justify-between sm:mx-6 sm:py-2 sm:items-center sm:flex-row">
-    <div class="relative">
+    <div class="relative sm:block hidden">
       <button class="mt-2 text-gray-400 block h-8 w-8 focus:outline-none hover:text-white" @click="isOpen2 = !isOpen2">
         <svg class="stroke-current object-cover" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
