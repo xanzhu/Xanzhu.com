@@ -15,7 +15,7 @@
         </nuxt-link>
       </div>
     </div>
-    <div class="flex items-center justify-between px-6 py-4 sm:p-0">
+    <div class="flex items-center justify-between px-6 py-4 sm:p-0 sm:w-40">
       <div class="text-white">
         <nuxt-link :to="localePath('/')">
           <Xulogo class="h-8" />
@@ -28,7 +28,7 @@
         </button>
       </div>
     </div>
-    <div :class="isOpen ? 'block': 'hidden'" class="sm:px-2 sm:pt-2 pb-4 text-center sm:flex">
+    <div :class="isOpen ? 'block': 'hidden'" class="sm:px-2 sm:pt-2 pb-4 text-center sm:flex sm:justify-between sm:items-center">
       <!-- <a href="#" class="block px-2 py-1 font-semibold text-white rounded hover:bg-gray-800">Blog</a>
       <a href="#" class="mt-1 block px-2 py-1 font-semibold text-white rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">Green</a>
       <a href="#" class="mt-1 block px-2 py-1 font-semibold text-white rounded hover:bg-gray-800 sm:ml-2 sm:mt-0">Help</a> -->

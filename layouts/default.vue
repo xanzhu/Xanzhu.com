@@ -1,15 +1,15 @@
 <template>
-  <div class="bg-black min-h-full fixed min-w-full overflow-auto">
-    <xuheader2 />
+  <div class="bg-black min-h-screen fixed min-w-full overflow-auto">
+    <XUheader2 />
     <Nuxt />
   </div>
 </template>
 <script>
-import xuheader2 from '@/components/headerv2.vue'
+import XUheader2 from '@/components/headerv2.vue'
 
 export default {
   components: {
-    xuheader2
+    XUheader2
   }
 }
 </script>
