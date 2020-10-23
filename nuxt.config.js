@@ -93,35 +93,55 @@ export default {
       messages: {
         en: {
           LatestNews: 'Latest News',
-          UnderstandTech1: 'Understand Security, Technology',
-          UnderstandTech2: 'and everything in-between.',
-          TranslationWarn: 'Translation may be incorrect',
-          Comingsoon1: 'This page will constantly update as we improve our design',
-          Comingsoon2: 'We expect to release our website by the end of the year'
+          Under: 'Understand Security, Technology',
+          Stand: 'and everything in-between.',
+          warning: 'Translation may be incorrect',
+          Coming: 'This page will constantly update as we improve our design',
+          Soon: 'We expect to release our website by the end of the year',
+          error500h1: 'System Error',
+          error500p: 'This request could not be processed',
+          error404h1: 'PAGE NOT FOUND',
+          error404p: 'The link you clicked on may be broken or no longer exists.',
+          MobileUD: 'UNDER DEVELOPMENT'
         },
         ko: {
           LatestNews: '최근 뉴스',
-          UnderstandTech1: '기술, 보안',
-          UnderstandTech2: '및 그 사이의 모든 것.',
-          TranslationWarn: '번역이 잘못되었을 수 있습니다.',
-          Comingsoon1: '이 페이지는 디자인이 개선됨에 따라 변경됩니다.',
-          Comingsoon2: '연말까지 웹 사이트를 공개 할 계획입니다.'
+          Under: '기술, 보안',
+          Stand: '및 그 사이의 모든 것.',
+          warning: '번역이 잘못되었을 수 있습니다.',
+          Coming: '이 페이지는 디자인이 개선됨에 따라 변경됩니다.',
+          Soon: '연말까지 웹 사이트를 공개 할 계획입니다.',
+          error500h1: '시스템 오류',
+          error500p: '이 요청을 처리 할 수 없습니다.',
+          error404h1: '페이지를 찾을 수 없습니다',
+          error404p: '클릭 한 링크가 끊어 졌거나 더 이상 존재하지 않을 수 있습니다.',
+          MobileUD: '개발중인'
         },
         zh: { // Simplified Version
           LatestNews: '最新消息',
-          UnderstandTech1: '了解安全技术',
-          UnderstandTech2: '还有其他一切',
-          TranslationWarn: '翻译可能不正确',
-          Comingsoon1: '随着我们改进设计，此页面将继续更新',
-          Comingsoon2: '我们希望在今年年底之前发布此网站'
+          Under: '了解安全技术',
+          Stand: '还有其他一切',
+          warning: '翻译可能不正确',
+          Coming: '随着我们改进设计，此页面将继续更新',
+          Soon: '我们希望在今年年底之前发布此网站',
+          error500h1: '系统错误',
+          error500p: '该请求无法处理',
+          error404h1: '找不到网页',
+          error404p: '您点击的链接可能已损坏或不再存在',
+          MobileUD: '开发中'
         },
         ja: {
           LatestNews: '最新ニュース',
-          UnderstandTech1: 'セキュリティ、テクノロジーを理解し、',
-          UnderstandTech2: 'そして残りすべて',
-          TranslationWarn: '翻訳が正しくない可能性があります。',
-          Comingsoon1: 'このページは常にデザインの改善により更新されています',
-          Comingsoon2: '年末までにウェブサイトを公開する予定です。'
+          Under: 'セキュリティ、テクノロジーを理解し、',
+          Stand: 'そして残りすべて',
+          warning: '翻訳が正しくない可能性があります。',
+          Coming: 'このページは常にデザインの改善により更新されています',
+          Soon: '年末までにウェブサイトを公開する予定です。',
+          error500h1: 'システムエラー',
+          error500p: 'このリクエストは処理できませんでした',
+          error404h1: 'ページが見つかりません',
+          error404p: 'このページが見つかりません。構文を確認してください',
+          MobileUD: '開発中'
         }
       },
       dateTimeFormats: {

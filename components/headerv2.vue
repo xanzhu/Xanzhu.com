@@ -33,7 +33,7 @@
       <a href="#" class="mt-1 block px-2 py-1 font-semibold text-white rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">Green</a>
       <a href="#" class="mt-1 block px-2 py-1 font-semibold text-white rounded hover:bg-gray-800 sm:ml-2 sm:mt-0">Help</a> -->
       <span v-if="!isOpen" class="text-white mt-1 font-semibold ">{{ $d(new Date(), 'short') }}</span>
-      <span v-else class="text-red-600 font-semibold tracking-widest">UNDER DEVELOPMENT</span>
+      <span v-else class="text-red-600 font-semibold tracking-widest">{{ $t('MobileUD') }}</span>
     </div>
   </header>
 </template>

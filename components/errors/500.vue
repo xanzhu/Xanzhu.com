@@ -1,12 +1,11 @@
 <template>
-  <div class="text-white text-center font-thin">
-    <h1 class="font-semibold text-2xl pt-32">
-      SYSTEM ERROR
+  <div class="text-white text-center">
+    <h1 class="semibold text2xl pt-32">
+      {{ $t('error500h1') }}
     </h1>
     <p class="mx-12 sm:0">
-      This request could not be processed :/
+      {{ $t('error500p') }}
     </p>
-    <!-- Add emote / Image here -->
   </div>
 </template>
 <script>
