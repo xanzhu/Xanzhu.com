@@ -64,9 +64,3 @@ export default {
   }
 }
 </script>
-
-<!--
-TO:DO
-improve flexbox on header
-
- -->
