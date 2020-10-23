@@ -6,8 +6,8 @@
     </div>
     <xunav />
     <div class="text-left text-gray-300 py-4 font-thin text-lg mx-10 sm:mx-0 sm:text-center sm:py-12">
-      <p>This page will constantly update as we improve our design</p>
-      <p>We expect to release our website by the end of the year</p>
+      <p>{{ $t('Comingsoon1') }}</p>
+      <p>{{ $t('Comingsoon2') }}</p>
     </div>
   </div>
 </template>

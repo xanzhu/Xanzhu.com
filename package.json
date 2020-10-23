@@ -11,7 +11,7 @@
     "lint": "yarn lint:js",
     "test": "jest",
     "buildProd": "yarn build && yarn start",
-    "prod": "nuxt generate"
+    "prod:surge": "nuxt generate && yarn surge dist xanzhu.surge.sh"
   },
   "dependencies": {
     "nuxt": "^2.14.7",

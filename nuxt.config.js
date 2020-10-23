@@ -95,25 +95,33 @@ export default {
           LatestNews: 'Latest News',
           UnderstandTech1: 'Understand Security, Technology',
           UnderstandTech2: 'and everything in-between.',
-          TranslationWarn: 'Translation may be incorrect'
+          TranslationWarn: 'Translation may be incorrect',
+          Comingsoon1: 'This page will constantly update as we improve our design',
+          Comingsoon2: 'We expect to release our website by the end of the year'
         },
         ko: {
           LatestNews: '최근 뉴스',
           UnderstandTech1: '기술, 보안',
           UnderstandTech2: '및 그 사이의 모든 것.',
-          TranslationWarn: '번역이 잘못되었을 수 있습니다.'
+          TranslationWarn: '번역이 잘못되었을 수 있습니다.',
+          Comingsoon1: '이 페이지는 디자인이 개선됨에 따라 변경됩니다.',
+          Comingsoon2: '연말까지 웹 사이트를 공개 할 계획입니다.'
         },
         zh: { // Simplified Version
           LatestNews: '最新消息',
           UnderstandTech1: '了解安全技术',
           UnderstandTech2: '还有其他一切',
-          TranslationWarn: '翻译可能不正确'
+          TranslationWarn: '翻译可能不正确',
+          Comingsoon1: '随着我们改进设计，此页面将继续更新',
+          Comingsoon2: '我们希望在今年年底之前发布此网站'
         },
         ja: {
           LatestNews: '最新ニュース',
           UnderstandTech1: 'セキュリティ、テクノロジーを理解し、',
           UnderstandTech2: 'そして残りすべて',
-          TranslationWarn: '翻訳が正しくない可能性があります。'
+          TranslationWarn: '翻訳が正しくない可能性があります。',
+          Comingsoon1: 'このページは常にデザインの改善により更新されています',
+          Comingsoon2: '年末までにウェブサイトを公開する予定です。'
         }
       },
       dateTimeFormats: {
