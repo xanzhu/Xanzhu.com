@@ -8,7 +8,8 @@
     </div>
     <div class="bg-transparent">
       <!-- <img class="h-56 w-full object-scale-down object-right" src="~/assets/banner-21.png"> Option with cut-->
-      <img class="h-16 sm:h-32 w-full object-cover" src="~/assets/OptimizedBackground.webp" alt="Cosmetic background image">
+      <!-- <img class="h-16 sm:h-32 w-full object-cover" src="~/assets/OptimizedBackground.webp" alt="Cosmetic background image"> -->
+      <Cloud />
     </div>
   </div>
 </template>

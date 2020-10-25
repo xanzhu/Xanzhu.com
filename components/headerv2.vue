@@ -15,25 +15,25 @@
         </nuxt-link>
       </div>
     </div>
-    <div class="flex items-center justify-between px-6 py-4 sm:p-0 sm:w-40">
+    <div class="flex items-center justify-between px-4 py-2 sm:p-0 sm:w-40">
       <div class="text-white">
         <nuxt-link :to="localePath('/')">
-          <Xulogo class="h-8" />
+          <Xulogo class="h-6 sm:h-8" />
         </nuxt-link>
       </div>
       <div class="sm:hidden block">
-        <button type="button" class="block text-gray-500 focus:outline-none hover:text-white">
+        <button type="button" class="block text-gray-500 focus:outline-none hover:text-white pt-1">
           <Menu v-if="!headerShow" class="h-8" @click="ClickOpen" />
           <Cross v-if="headerShow" class="h-8" @click="ClickClose" />
         </button>
       </div>
     </div>
-    <div class="sm:px-2 sm:pt-2 pb-4 text-center sm:flex sm:justify-between sm:items-center">
+    <div class="sm:px-2 sm:pt-2 sm:pb-4 text-center sm:flex sm:justify-between sm:items-center">
       <!-- <a href="#" class="block px-2 py-1 font-semibold text-white rounded hover:bg-gray-800">Blog</a>
       <a href="#" class="mt-1 block px-2 py-1 font-semibold text-white rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">Green</a>
       <a href="#" class="mt-1 block px-2 py-1 font-semibold text-white rounded hover:bg-gray-800 sm:ml-2 sm:mt-0">Help</a> -->
-      <span class="text-white mt-1 font-semibold hidden sm:block ">{{ $d(new Date(), 'short') }}</span>
-      <span v-if="headerShow" class="text-red-600 font-semibold tracking-widest sm:hidden block">{{ $t('MobileUD') }}</span>
+      <span class="text-white mt-1 font-semibold hidden sm:flex ">{{ $d(new Date(), 'short') }}</span>
+      <span v-if="headerShow" class="text-red-600 font-semibold tracking-widest sm:hidden block pb-4">{{ $t('MobileUD') }}</span>
     </div>
   </header>
 </template>

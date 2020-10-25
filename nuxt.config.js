@@ -52,6 +52,7 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/cloudinary',
     'nuxt-svg-loader',
     ['nuxt-i18n', {
       locales: [
@@ -164,6 +165,11 @@ export default {
         }
       }
     }
+  },
+  cloudinary: {
+    cloudName: process.env.CLOUDNAME,
+    apiKey: process.env.API_KEY, // only needed if you are using server-side upload
+    apiSecret: process.env.API_SECRET // only needed if you are using server-side upload
   },
   /*
   ** Build configuration

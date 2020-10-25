@@ -10,9 +10,10 @@
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
     "lint": "yarn lint:js",
     "buildProd": "yarn build && yarn start",
-    "prod:surge": "nuxt generate && yarn surge dist xanzhu.surge.sh"
+    "prod:surge": "nuxt generate && yarn surge dist xanzhu-v2.surge.sh"
   },
   "dependencies": {
+    "@nuxtjs/cloudinary": "^1.0.0",
     "nuxt": "^2.14.7",
     "nuxt-i18n": "^6.15.4",
     "nuxt-svg-loader": "^1.2.0"
