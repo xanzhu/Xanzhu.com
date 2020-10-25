@@ -38,10 +38,10 @@
   </header>
 </template>
 <script>
-import Xulogo from '@/assets/svg/xu-head.svg'
-import TranslateIcon from '@/assets/svg/translation.svg'
-import Cross from '@/assets/svg/cross.svg'
-import Menu from '@/assets/svg/menu.svg'
+import Xulogo from '~/assets/svg/xu-head.svg'
+import TranslateIcon from '~/assets/svg/translation.svg'
+import Cross from '~/assets/svg/cross.svg'
+import Menu from '~/assets/svg/menu.svg'
 
 export default {
   name: 'Xuheader2',

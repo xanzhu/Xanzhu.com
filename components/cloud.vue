@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img :src="src" class="w-full h-20 sm:h-32 object-cover" alt="Black and white visual background">
+    <img :src="src" class="w-full h-20 sm:h-32 object-cover" alt="Black and white visual background" loading="lazy">
   </div>
 </template>
 <script>
