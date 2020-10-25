@@ -11,9 +11,6 @@ export default {
   ** See https://nuxtjs.org/api/configuration-head
   */
   head: {
-    htmlAttrs: {
-      lang: 'en'
-    },
     title: 'XANZHU | Developer preview',
     meta: [
       { charset: 'utf-8' },
@@ -95,7 +92,7 @@ export default {
           LatestNews: 'Latest News',
           Under: 'Understand Security, Technology',
           Stand: 'and everything in-between.',
-          warning: 'Translation may be incorrect',
+          warning: 'Translations may be incorrect',
           Coming: 'This page will constantly update as we improve our design',
           Soon: 'We expect to release our website by the end of the year',
           error500h1: 'System Error',

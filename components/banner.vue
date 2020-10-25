@@ -12,8 +12,3 @@
     </div>
   </div>
 </template>
-<script>
-export default {
-  name: 'Xubanner'
-}
-</script>
