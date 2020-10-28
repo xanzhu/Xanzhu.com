@@ -1,27 +1,20 @@
 <template>
-  <div>
-    <component :is="errorPage" :error="error" />
+  <div v-if="error.statusCode === 404" class="text-white text-center font-thin">
+    <h1 class="font-semibold text-2xl pt-32">
+      {{ $t('error404h1') }}
+    </h1>
+    <p class="mx-12 sm:0">
+      {{ $t('error404p') }}
+    </p>
   </div>
 </template>
 <script>
-import error404 from '~/components/errors/404.vue'
-import error500 from '~/components/errors/500.vue'
 export default {
-  name: 'NuxtError',
-  layout: 'default', // optional
+  name: 'Error404',
   props: {
     error: {
       type: Object,
       default: () => {}
-    }
-  },
-  computed: {
-    errorPage () {
-      if (this.error.statusCode === 404) {
-        return error404
-      }
-      // catch everything else
-      return error500
     }
   }
 }
