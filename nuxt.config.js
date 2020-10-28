@@ -174,6 +174,10 @@ export default {
     apiKey: process.env.API_KEY, // only needed if you are using server-side upload
     apiSecret: process.env.API_SECRET // only needed if you are using server-side upload
   },
+  /* Testing Netlify 404 fall back */
+  generate: {
+    fallback: true
+  },
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/
