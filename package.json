@@ -9,8 +9,7 @@
     "production": "nuxt generate --modern",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
     "lint": "yarn lint:js",
-    "buildProd": "yarn build && yarn start",
-    "prod:surge": "nuxt generate && yarn surge dist xanzhu-v2.surge.sh"
+    "buildProd": "yarn build && yarn start"
   },
   "dependencies": {
     "@nuxtjs/cloudinary": "^1.0.0",

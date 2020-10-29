@@ -3,7 +3,7 @@
     <Banner />
     <div class="sm:flex sm:justify-left sm:items-center hidden text-green-500">
       <!-- Link to github repo -->
-      <a href="#" rel="noreferrer nofollow">
+      <a href="#" rel="noreferrer nofollow" aria-label="Help us translate!">
         <span
           class="
         absolute
