@@ -1,4 +1,3 @@
-
 export default {
   target: 'static',
   client: 'modern',
@@ -7,43 +6,50 @@ export default {
     port: 3001
   },
   /*
-  ** Headers of the page
-  ** See https://nuxtjs.org/api/configuration-head
-  */
+   ** Headers of the page
+   ** See https://nuxtjs.org/api/configuration-head
+   */
   head: {
-    title: 'XANZHU | Developer preview',
+    title: 'Home - xanzhu.com | Understand the technology you use',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Find information on using the latest technologies. Staying up to day with trends and understand what security means to you.'
+      }
     ],
     bodyAttrs: {
       class: 'bg-black'
-    }
-    // link: [
-    //   { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
-    //   { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' }
-    // ]
+    },
+    link: [
+      {
+        rel: 'icon',
+        type: 'image/png',
+        href:
+          'https://res.cloudinary.com/xanzhu/image/upload/v1603961317/xanzhu.com/x16_gqxqxw.png'
+      }
+    ]
   },
   /*
-  ** Global CSS
-  */
-  css: [
-  ],
+   ** Global CSS
+   */
+  css: [],
   /*
-  ** Plugins to load before mounting the App
-  ** https://nuxtjs.org/guide/plugins
-  */
-  plugins: [
-  ],
+   ** Plugins to load before mounting the App
+   ** https://nuxtjs.org/guide/plugins
+   */
+  plugins: [],
   /*
-  ** Auto import components
-  ** See https://nuxtjs.org/api/configuration-components
-  */
+   ** Auto import components
+   ** See https://nuxtjs.org/api/configuration-components
+   */
   components: true,
   /*
-  ** Nuxt.js dev-modules
-  */
+   ** Nuxt.js dev-modules
+   */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
@@ -52,35 +58,38 @@ export default {
     'nuxt-purgecss'
   ],
   /*
-  ** Nuxt.js modules
-  */
+   ** Nuxt.js modules
+   */
   modules: [
     '@nuxtjs/cloudinary',
     'nuxt-svg-loader',
-    ['nuxt-i18n', {
-      locales: [
-        {
-          code: 'en',
-          iso: 'en',
-          name: 'EN'
-        },
-        {
-          code: 'ko',
-          iso: 'ko',
-          name: 'KO'
-        },
-        {
-          code: 'zh',
-          iso: 'zh',
-          name: 'ZH'
-        },
-        {
-          code: 'ja',
-          iso: 'ja',
-          name: 'JA'
-        }
-      ]
-    }]
+    [
+      'nuxt-i18n',
+      {
+        locales: [
+          {
+            code: 'en',
+            iso: 'en',
+            name: 'EN'
+          },
+          {
+            code: 'ko',
+            iso: 'ko',
+            name: 'KO'
+          },
+          {
+            code: 'zh',
+            iso: 'zh',
+            name: 'ZH'
+          },
+          {
+            code: 'ja',
+            iso: 'ja',
+            name: 'JA'
+          }
+        ]
+      }
+    ]
   ],
   i18n: {
     defaultLocale: 'en',
@@ -102,7 +111,8 @@ export default {
           error500h1: 'System Error',
           error500p: 'This request could not be processed',
           error404h1: 'PAGE NOT FOUND',
-          error404p: 'The link you clicked on may be broken or no longer exists.',
+          error404p:
+            'The link you clicked on may be broken or no longer exists.',
           MobileUD: 'UNDER DEVELOPMENT'
         },
         ko: {
@@ -115,10 +125,12 @@ export default {
           error500h1: '시스템 오류',
           error500p: '이 요청을 처리 할 수 없습니다.',
           error404h1: '페이지를 찾을 수 없습니다',
-          error404p: '클릭 한 링크가 끊어 졌거나 더 이상 존재하지 않을 수 있습니다.',
+          error404p:
+            '클릭 한 링크가 끊어 졌거나 더 이상 존재하지 않을 수 있습니다.',
           MobileUD: '개발중인'
         },
-        zh: { // Simplified Version
+        zh: {
+          // Simplified Version
           LatestNews: '最新消息',
           Under: '了解安全技术',
           Stand: '还有其他一切',
@@ -148,22 +160,30 @@ export default {
       dateTimeFormats: {
         ko: {
           short: {
-            day: 'numeric', month: 'long', year: 'numeric'
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
           }
         },
         zh: {
           short: {
-            day: 'numeric', month: 'long', year: 'numeric'
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
           }
         },
         ja: {
           short: {
-            day: 'numeric', month: 'long', year: 'numeric'
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
           }
         },
         en: {
           short: {
-            day: 'numeric', month: 'long', year: 'numeric'
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
           }
         }
       }
@@ -179,9 +199,9 @@ export default {
     fallback: true
   },
   /*
-  ** Build configuration
-  ** See https://nuxtjs.org/api/configuration-build/
-  */
+   ** Build configuration
+   ** See https://nuxtjs.org/api/configuration-build/
+   */
   build: {
     extend (config, { isDev, isClient }) {
       config.module.rules.forEach((rule) => {
