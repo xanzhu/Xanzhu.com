@@ -27,7 +27,11 @@
     </div>
     <div class="flex items-center justify-between px-4 py-2 sm:p-0 sm:w-40">
       <div class="text-white">
-        <nuxt-link :to="localePath('/')" aria-current="home" aria-label="XANZHU">
+        <nuxt-link
+          :to="localePath('/')"
+          aria-current="home"
+          aria-label="XANZHU"
+        >
           <Xulogo class="h-6 sm:h-8" />
         </nuxt-link>
       </div>
@@ -35,9 +39,20 @@
         <button
           type="button"
           class="block text-gray-500 focus:outline-none hover:text-white pt-1"
+          aria-label="Menu"
         >
-          <Menu v-if="!headerShow" class="h-8" aria-label="Menu" @click="ClickOpen" />
-          <Cross v-if="headerShow" class="h-8" aria-label="Close" @click="ClickClose" />
+          <Menu
+            v-if="!headerShow"
+            class="h-8"
+            aria-label="Menu"
+            @click="ClickOpen"
+          />
+          <Cross
+            v-if="headerShow"
+            class="h-8"
+            aria-label="Close"
+            @click="ClickClose"
+          />
         </button>
       </div>
     </div>
