@@ -1,7 +1,7 @@
 <template>
   <div>
     <Banner />
-    <div class="sm:flex sm:justify-left sm:items-center hidden text-red-500">
+    <div class="sm:flex sm:justify-left sm:items-center hidden text-green-500">
       <!-- Link to github repo -->
       <a href="#" rel="noreferrer nofollow">
         <span
