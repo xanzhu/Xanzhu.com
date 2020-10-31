@@ -29,7 +29,7 @@
       <div class="text-white">
         <nuxt-link
           :to="localePath('/')"
-          aria-current="home"
+          aria-current="page"
           aria-label="XANZHU"
         >
           <Xulogo class="h-6 sm:h-8" />
@@ -62,7 +62,7 @@
       <!-- <a href="#" class="block px-2 py-1 font-semibold text-white rounded hover:bg-gray-800">Blog</a>
       <a href="#" class="mt-1 block px-2 py-1 font-semibold text-white rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">Green</a>
       <a href="#" class="mt-1 block px-2 py-1 font-semibold text-white rounded hover:bg-gray-800 sm:ml-2 sm:mt-0">Help</a> -->
-      <span class="text-white mt-1 font-semibold hidden sm:flex ">{{
+      <span class="text-white mt-1 font-semibold hidden sm:flex" aria-current="date">{{
         $d(new Date(), "short")
       }}</span>
       <span
