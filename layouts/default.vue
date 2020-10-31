@@ -7,7 +7,20 @@
 <script>
 export default {
   head () {
-    return this.$nuxtI18nSeo()
+    const i18nSeo = this.$nuxtI18nSeo()
+    return {
+      htmlAttrs: {
+        ...i18nSeo.htmlAttrs
+      },
+      title: this.$t('title'),
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.$t('description')
+        }
+      ]
+    }
   }
 }
 </script>

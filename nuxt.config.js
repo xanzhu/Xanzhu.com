@@ -70,22 +70,26 @@ export default {
           {
             code: 'en',
             iso: 'en',
-            name: 'EN'
+            name: 'EN',
+            file: 'en.js'
           },
           {
             code: 'ko',
             iso: 'ko',
-            name: 'KO'
+            name: 'KO',
+            file: 'ko.js'
           },
           {
             code: 'zh',
             iso: 'zh',
-            name: 'ZH'
+            name: 'ZH',
+            file: 'zh.js'
           },
           {
             code: 'ja',
             iso: 'ja',
-            name: 'JA'
+            name: 'JA',
+            file: 'ja.js'
           }
         ]
       }
@@ -94,69 +98,14 @@ export default {
   i18n: {
     defaultLocale: 'en',
     strategy: 'prefix_except_default',
+    langDir: 'i18n/',
+    lazy: true,
     detectBrowserLanguage: {
       onlyOnRoot: true
     },
     seo: false,
     vueI18n: {
       fallbackLocale: 'en',
-      messages: {
-        en: {
-          LatestNews: 'Latest News',
-          Under: 'Understand Security, Technology',
-          Stand: 'and everything in-between.',
-          warning: 'Translations may be incorrect',
-          Coming: 'This page will constantly update as we improve our design',
-          Soon: 'We expect to release our website by the end of the year',
-          error500h1: 'System Error',
-          error500p: 'This request could not be processed',
-          error404h1: 'PAGE NOT FOUND',
-          error404p:
-            'The link you clicked on may be broken or no longer exists.',
-          MobileUD: 'UNDER DEVELOPMENT'
-        },
-        ko: {
-          LatestNews: '최근 뉴스',
-          Under: '기술, 보안',
-          Stand: '및 그 사이의 모든 것.',
-          warning: '번역이 잘못되었을 수 있습니다.',
-          Coming: '이 페이지는 디자인이 개선됨에 따라 변경됩니다.',
-          Soon: '연말까지 웹 사이트를 공개 할 계획입니다.',
-          error500h1: '시스템 오류',
-          error500p: '이 요청을 처리 할 수 없습니다.',
-          error404h1: '페이지를 찾을 수 없습니다',
-          error404p:
-            '클릭 한 링크가 끊어 졌거나 더 이상 존재하지 않을 수 있습니다.',
-          MobileUD: '개발중인'
-        },
-        zh: {
-          // Simplified Version
-          LatestNews: '最新消息',
-          Under: '了解安全技术',
-          Stand: '还有其他一切',
-          warning: '翻译可能不正确',
-          Coming: '随着我们改进设计，此页面将继续更新',
-          Soon: '我们希望在今年年底之前发布此网站',
-          error500h1: '系统错误',
-          error500p: '该请求无法处理',
-          error404h1: '找不到网页',
-          error404p: '您点击的链接可能已损坏或不再存在',
-          MobileUD: '开发中'
-        },
-        ja: {
-          LatestNews: '最新ニュース',
-          Under: 'セキュリティ、テクノロジーを理解し、',
-          Stand: 'そして残りすべて',
-          warning: '翻訳が正しくない可能性があります。',
-          Coming: 'このページは常にデザインの改善により更新されています',
-          Soon: '年末までにウェブサイトを公開する予定です。',
-          error500h1: 'システムエラー',
-          error500p: 'このリクエストは処理できませんでした',
-          error404h1: 'ページが見つかりません',
-          error404p: 'このページが見つかりません。構文を確認してください',
-          MobileUD: '開発中'
-        }
-      },
       dateTimeFormats: {
         ko: {
           short: {
@@ -189,10 +138,11 @@ export default {
       }
     }
   },
+
   cloudinary: {
     cloudName: process.env.CLOUDNAME,
-    apiKey: process.env.API_KEY, // only needed if you are using server-side upload
-    apiSecret: process.env.API_SECRET // only needed if you are using server-side upload
+    apiKey: process.env.API_KEY,
+    apiSecret: process.env.API_SECRET
   },
   /* Testing Netlify 404 fall back */
   generate: {
