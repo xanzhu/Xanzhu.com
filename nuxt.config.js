@@ -5,10 +5,6 @@ export default {
   server: {
     port: 3001
   },
-  /*
-   ** Headers of the page
-   ** See https://nuxtjs.org/api/configuration-head
-   */
   head: {
     title: 'Home - xanzhu.com | Understand the technology you use',
     meta: [
@@ -18,7 +14,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Find information on using the latest technologies. Staying up to day with trends and understand what security means to you.'
+          'Find information on using the latest technologies. Staying up to date with trends and understand what security means to you.'
       }
     ],
     bodyAttrs: {
@@ -33,27 +29,14 @@ export default {
       }
     ]
   },
-  /*
-   ** Global CSS
-   */
   css: [],
-  /*
-   ** Plugins to load before mounting the App
-   ** https://nuxtjs.org/guide/plugins
-   */
   plugins: [],
-  /*
-   ** Auto import components
-   ** See https://nuxtjs.org/api/configuration-components
-   */
   components: true,
   /*
    ** Nuxt.js dev-modules
    */
   buildModules: [
-    // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
-    // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
     'nuxt-purgecss'
   ],
@@ -140,9 +123,9 @@ export default {
   },
 
   cloudinary: {
-    cloudName: process.env.CLOUDNAME,
-    apiKey: process.env.API_KEY,
-    apiSecret: process.env.API_SECRET
+    cloudName: process.env.CLOUDNAME
+    // apiKey: process.env.API_KEY,
+    // apiSecret: process.env.API_SECRET
   },
   /* Testing Netlify 404 fall back */
   generate: {
