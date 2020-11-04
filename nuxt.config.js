@@ -17,9 +17,9 @@ export default {
           'Find information on using the latest technologies. Staying up to date with trends and understand what security means to you.'
       }
     ],
-    bodyAttrs: {
-      class: 'bg-black'
-    },
+    // bodyAttrs: {
+    //   class: 'bg-black'
+    // },
     link: [
       {
         rel: 'icon',

@@ -12,6 +12,9 @@ export default {
       htmlAttrs: {
         ...i18nSeo.htmlAttrs
       },
+      bodyAttrs: {
+        class: 'bg-black'
+      },
       title: this.$t('title'),
       meta: [
         {
