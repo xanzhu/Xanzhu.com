@@ -136,6 +136,12 @@ export default {
     }
   },
 
+  sitemap: {
+    hostname: 'https://xanzhu.com',
+    gzip: true,
+    i18n: true
+  },
+
   cloudinary: {
     cloudName: process.env.CLOUDNAME
     // apiKey: process.env.API_KEY,
