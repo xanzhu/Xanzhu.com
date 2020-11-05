@@ -24,26 +24,26 @@ export default {
         }
       ],
       link: [
-        {
-          rel: 'alternate',
-          hreflang: 'zh',
-          href: 'https://xanzhu.com/zh'
-        },
-        {
-          rel: 'alternate',
-          hreflang: 'ru',
-          href: 'https://xanzhu.com/ru'
-        },
-        {
-          rel: 'alternate',
-          hreflang: 'ja',
-          href: 'https://xanzhu.com/ja'
-        },
-        {
-          rel: 'alternate',
-          hreflang: 'ko',
-          href: 'https://xanzhu.com/ko'
-        },
+        // {
+        //   rel: 'alternate',
+        //   hreflang: 'zh',
+        //   href: 'https://xanzhu.com/zh'
+        // },
+        // {
+        //   rel: 'alternate',
+        //   hreflang: 'ru',
+        //   href: 'https://xanzhu.com/ru'
+        // },
+        // {
+        //   rel: 'alternate',
+        //   hreflang: 'ja',
+        //   href: 'https://xanzhu.com/ja'
+        // },
+        // {
+        //   rel: 'alternate',
+        //   hreflang: 'ko',
+        //   href: 'https://xanzhu.com/ko'
+        // },
         ...i18nSeo.link
       ]
     }
