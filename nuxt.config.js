@@ -73,6 +73,12 @@ export default {
             iso: 'ja',
             name: 'JA',
             file: 'ja.js'
+          },
+          {
+            code: 'ru',
+            iso: 'ru',
+            name: 'RU',
+            file: 'ru.js'
           }
         ]
       }
@@ -112,6 +118,13 @@ export default {
           }
         },
         en: {
+          short: {
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
+          }
+        },
+        ru: {
           short: {
             day: 'numeric',
             month: 'long',

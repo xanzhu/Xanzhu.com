@@ -8,8 +8,7 @@ export default {
   error500h1: 'System Error',
   error500p: 'This request could not be processed',
   error404h1: 'PAGE NOT FOUND',
-  error404p:
-            'The link you clicked on may be broken or no longer exists.',
+  error404p: 'The link you clicked on may be broken or no longer exists.',
   MobileUD: 'UNDER DEVELOPMENT',
   // Site Meta
   title: 'Home - xanzhu.com | Know the technology you use',

@@ -1234,7 +1234,7 @@
     webpack-node-externals "^2.5.2"
     webpackbar "^4.0.0"
 
-"@nuxtjs/cloudinary@^1.0.0":
+"@nuxtjs/cloudinary@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@nuxtjs/cloudinary/-/cloudinary-1.0.1.tgz#fc74effbf5035159562913e623739b14eb0ee025"
   integrity sha512-3h1+ziw4kYtB9KsP0G/aiGfHI3iFnYMEUysfMl1QzOCqe6mwtWavLhq8F9c52m/qSO4Ye4aQCk+nDA5aLMTZig==

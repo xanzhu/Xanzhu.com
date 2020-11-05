@@ -1,6 +1,6 @@
 {
   "name": "ailo",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -12,7 +12,7 @@
     "buildProd": "yarn build && yarn start"
   },
   "dependencies": {
-    "@nuxtjs/cloudinary": "^1.0.0",
+    "@nuxtjs/cloudinary": "^1.0.1",
     "nuxt": "^2.14.7",
     "nuxt-i18n": "^6.15.4",
     "nuxt-svg-loader": "^1.2.0"
