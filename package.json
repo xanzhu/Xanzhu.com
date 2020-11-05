@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@nuxtjs/cloudinary": "^1.0.1",
+    "@nuxtjs/sitemap": "^2.4.0",
     "nuxt": "^2.14.7",
     "nuxt-i18n": "^6.15.4",
     "nuxt-svg-loader": "^1.2.0"

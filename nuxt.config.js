@@ -82,7 +82,8 @@ export default {
           }
         ]
       }
-    ]
+    ],
+    '@nuxtjs/sitemap'
   ],
   i18n: {
     defaultLocale: 'en',
