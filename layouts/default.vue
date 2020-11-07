@@ -21,6 +21,11 @@ export default {
           hid: 'description',
           name: 'description',
           content: this.$t('description')
+        },
+        {
+          hid: 'Naver',
+          name: 'naver-site-verification',
+          content: 'efe8928c52c47ffddfbd678ff1ac6fe5ca08b009'
         }
       ],
       link: [
