@@ -32,22 +32,27 @@ export default {
         // {
         //   rel: 'alternate',
         //   hreflang: 'zh',
-        //   href: 'https://xanzhu.com/zh'
+        //   href: 'https://xanzhu.com/zh/'
         // },
         // {
         //   rel: 'alternate',
         //   hreflang: 'ru',
-        //   href: 'https://xanzhu.com/ru'
+        //   href: 'https://xanzhu.com/ru/'
         // },
         // {
         //   rel: 'alternate',
         //   hreflang: 'ja',
-        //   href: 'https://xanzhu.com/ja'
+        //   href: 'https://xanzhu.com/ja/'
         // },
         // {
         //   rel: 'alternate',
         //   hreflang: 'ko',
-        //   href: 'https://xanzhu.com/ko'
+        //   href: 'https://xanzhu.com/ko/'
+        // },
+        // {
+        //   rel: 'alternate',
+        //   hreflang: 'x-default',
+        //   href: 'https://xanzhu.com/'
         // },
         ...i18nSeo.link
       ]
