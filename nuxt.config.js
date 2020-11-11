@@ -149,6 +149,9 @@ export default {
     hostname: 'https://xanzhu.com',
     gzip: true
   },
+  eslint: {
+    files: ['.', '!node_modules']
+  },
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
