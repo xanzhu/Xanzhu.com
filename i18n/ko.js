@@ -14,6 +14,6 @@ export default {
   stitle: 'KOREAN TITLE',
 
   // Site Meta
-  title: '홈페이지 - xanzhu.com | 사용하는 기술 파악',
+  title: '사용하는 기술 파악 | xanzhu.com',
   description: '최신 기술 사용에 대한 정보를 찾으십시오. 최신 트렌드를 파악하고 보안의 의미를 이해하십시오.'
 }

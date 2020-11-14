@@ -6,26 +6,16 @@ export default {
     port: 3001
   },
   head: {
-    title: 'Home - xanzhu.com | Understand the technology you use',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'description',
-        name: 'description',
-        content:
-          'Find information on using the latest technologies. Staying up to date with trends and understand what security means to you.'
-      }
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
     ],
-    // bodyAttrs: {
-    //   class: 'bg-black'
-    // },
     link: [
       {
         rel: 'icon',
         type: 'image/png',
         href:
-          'https://res.cloudinary.com/xanzhu/image/upload/v1605328288/xanzhu.com/xanzhu_icon_v1_hnyxmm.png'
+          'https://res.cloudinary.com/xanzhu/image/upload/v1605344905/xanzhu.com/xanzhu-icon-plain_bec5ov.png'
       }
     ]
   },

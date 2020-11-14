@@ -30,9 +30,8 @@
         <nuxt-link
           :to="localePath('/')"
           aria-current="page"
-          aria-label="XANZHU"
         >
-          <Xulogo class="h-6 sm:h-8" />
+          <Xanzhu class="h-6 sm:h-8" aria-label="XANZHU" />
         </nuxt-link>
       </div>
       <div class="sm:hidden block">
@@ -50,7 +49,7 @@
           <Cross
             v-if="headerShow"
             class="h-8"
-            aria-label="Close"
+            aria-label="Close Menu"
             @click="ClickClose"
           />
         </button>
@@ -73,7 +72,7 @@
   </header>
 </template>
 <script>
-import Xulogo from '~/assets/svg/xu-head.svg'
+import Xanzhu from '~/assets/svg/xanzhu.svg'
 import TranslateIcon from '~/assets/svg/translation.svg'
 import Cross from '~/assets/svg/cross.svg'
 import Menu from '~/assets/svg/menu.svg'
@@ -81,7 +80,7 @@ import Menu from '~/assets/svg/menu.svg'
 export default {
   name: 'Xuheader2',
   components: {
-    Xulogo,
+    Xanzhu,
     TranslateIcon,
     Cross,
     Menu

@@ -12,6 +12,6 @@ export default {
   MobileUD: '開発中',
 
   // Site Meta
-  title: 'ホーム - xanzhu.com | あなたが使用する技術を知っている',
+  title: 'あなたが使用する技術を知っている | xanzhu.com',
   description: '最新のテクノロジーの使用に関する情報を検索します。 トレンドを常に把握し、セキュリティがあなたにとって何を意味するのかを理解してください。'
 }

@@ -11,6 +11,6 @@ export default {
   error404p: 'The link you clicked on may be broken or no longer exists.',
   MobileUD: 'IN DEVELOPMENT',
   // Site Meta
-  title: 'Home - xanzhu.com | Know the technology you use',
+  title: 'Know the technology you use | xanzhu.com',
   description: 'Find information on using the latest technologies. Staying up to date with trends and understand what security means to you.'
 }

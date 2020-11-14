@@ -13,6 +13,6 @@ export default {
   MobileUD: '开发中',
 
   // Site Meta
-  title: '主页 - xanzhu.com | 了解您使用的技术',
+  title: '了解您使用的技术 | xanzhu.com',
   description: '查找有关使用最新技术的信息。跟随趋势并了解安全对你意味着什么。'
 }

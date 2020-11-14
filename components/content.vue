@@ -4,6 +4,7 @@
     <!-- <p v-if="$nuxt.isOffline">
       Connection Lost
     </p>
+    Main Content Container for Home Page
    -->
   </div>
 </template>

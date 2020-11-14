@@ -1,6 +1,6 @@
 <template>
   <div class="bg-black min-h-screen fixed min-w-full overflow-auto">
-    <Headerv2 />
+    <Header />
     <Nuxt />
   </div>
 </template>
@@ -21,12 +21,12 @@ export default {
           hid: 'description',
           name: 'description',
           content: this.$t('description')
-        },
-        {
-          hid: 'Naver',
-          name: 'naver-site-verification',
-          content: 'efe8928c52c47ffddfbd678ff1ac6fe5ca08b009'
         }
+        // {
+        //   hid: 'Naver',
+        //   name: 'naver-site-verification',
+        //   content: 'efe8928c52c47ffddfbd678ff1ac6fe5ca08b009'
+        // }
       ],
       link: [
         // {

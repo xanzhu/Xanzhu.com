@@ -2,10 +2,8 @@
   <div>
     <Banner />
     <div class="sm:flex sm:justify-left sm:items-center hidden text-green-500">
-      <!-- Link to github repo -->
-      <a href="#" rel="noreferrer nofollow" aria-label="Help us translate!">
-        <span
-          class="
+      <span
+        class="
         absolute
         text-lg
         font-medium
@@ -17,13 +15,12 @@
         rounded-full
         sm:px-2
         py-0"
-        >
-          <Warn class="h-4 w-4 sm:inline-block -mt-1 mr-1" />{{
-            $t("warning")
-          }}</span>
-      </a>
+      >
+        <Warn class="h-4 w-4 sm:inline-block -mt-1 mr-1" />{{
+          $t("warning")
+        }}</span>
     </div>
-    <Navbar />
+    <Content />
     <div
       class="text-left text-gray-300 py-4 font-thin text-lg mx-10 sm:mx-0 sm:text-center sm:py-12"
     >
