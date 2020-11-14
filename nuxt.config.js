@@ -69,16 +69,28 @@ export default {
             file: 'zh.js'
           },
           {
-            code: 'ja',
-            iso: 'ja',
-            name: 'JA',
-            file: 'ja.js'
+            code: 'de',
+            iso: 'de',
+            name: 'DE',
+            file: 'de.js'
           },
           {
             code: 'ru',
             iso: 'ru',
             name: 'RU',
             file: 'ru.js'
+          },
+          {
+            code: 'fr',
+            iso: 'fr',
+            name: 'FR',
+            file: 'fr.js'
+          },
+          {
+            code: 'ja',
+            iso: 'ja',
+            name: 'JA',
+            file: 'ja.js'
           }
         ]
       }
@@ -111,13 +123,6 @@ export default {
             year: 'numeric'
           }
         },
-        ja: {
-          short: {
-            day: 'numeric',
-            month: 'long',
-            year: 'numeric'
-          }
-        },
         en: {
           short: {
             day: 'numeric',
@@ -126,6 +131,27 @@ export default {
           }
         },
         ru: {
+          short: {
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
+          }
+        },
+        de: {
+          short: {
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
+          }
+        },
+        fr: {
+          short: {
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
+          }
+        },
+        ja: {
           short: {
             day: 'numeric',
             month: 'long',
@@ -148,9 +174,6 @@ export default {
   sitemap: {
     hostname: 'https://xanzhu.com',
     gzip: true
-  },
-  eslint: {
-    files: ['.', '!node_modules']
   },
   /*
    ** Build configuration
