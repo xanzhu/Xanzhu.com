@@ -1,16 +1,17 @@
 <template>
   <div>
     <Banner />
-    <div class="sm:flex sm:justify-left sm:items-center hidden text-green-500">
+    <div v-if="$root.$i18n.locale !== 'en'" class="sm:flex sm:justify-left sm:items-center hidden text-green-500">
       <span
         class="
         absolute
         text-lg
         font-medium
-        -mt-8
+        -mt-12
         tracking-wide
         text-center
-        lg:mx-32 md:mx-20
+        lg:mx-32
+        md:mx-20
         bg-black
         rounded-full
         sm:px-2
