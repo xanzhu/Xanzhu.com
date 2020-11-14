@@ -25,7 +25,7 @@ export default {
         rel: 'icon',
         type: 'image/png',
         href:
-          'https://res.cloudinary.com/xanzhu/image/upload/v1605328288/xanzhu.com/xanzhu_icon_v1_hnyxmm.png'
+          'https://res.cloudinary.com/xanzhu/image/upload/v1605344905/xanzhu.com/xanzhu-icon-plain_bec5ov.png'
       }
     ]
   },
