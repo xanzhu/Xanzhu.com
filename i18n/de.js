@@ -11,6 +11,6 @@ export default {
   error404p: 'Der Link, auf den Sie geklickt haben, ist möglicherweise defekt oder nicht mehr vorhanden.',
   MobileUD: 'In Entwicklung',
   // Site Meta
-  title: 'Home - xanzhu.com | Kennen Sie die Technologie, die Sie verwenden',
+  title: 'Startseite - xanzhu.com | Kennen Sie die Technologie, die Sie verwenden',
   description: 'Hier finden Sie Informationen zum Einsatz der neuesten Technologien. Bleiben Sie über Trends auf dem Laufenden und verstehen Sie, was Sicherheit für Sie bedeutet.'
 }
