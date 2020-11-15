@@ -154,10 +154,8 @@ export default {
 
   cloudinary: {
     cloudName: process.env.CLOUDNAME
-    // apiKey: process.env.API_KEY,
-    // apiSecret: process.env.API_SECRET
+    // apiKey / apiSecret - Server Side uploads (Not Needed)
   },
-  /* Testing Netlify 404 fall back */
   generate: {
     fallback: true
   },

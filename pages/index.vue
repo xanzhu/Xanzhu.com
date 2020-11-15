@@ -1,7 +1,7 @@
 <template>
   <div>
     <Banner />
-    <div v-if="$root.$i18n.locale !== 'en'" class="sm:flex sm:justify-left sm:items-center hidden text-green-500">
+    <div v-if="this.$i18n.locale !== 'en'" class="sm:flex sm:justify-left sm:items-center hidden text-green-500">
       <span
         class="
         absolute
