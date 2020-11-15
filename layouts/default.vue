@@ -15,12 +15,12 @@ export default {
       bodyAttrs: {
         class: 'bg-black'
       },
-      title: this.$t('title'),
+      title: this.$t('page.title'),
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: this.$t('description')
+          content: this.$t('page.description')
         }
         // {
         //   hid: 'Naver',

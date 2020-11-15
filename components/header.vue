@@ -67,7 +67,7 @@
       <span
         v-if="headerShow"
         class="text-red-600 font-semibold tracking-widest sm:hidden block pb-4"
-      >{{ $t("MobileUD") }}</span>
+      >{{ $t('page.mobile.menu') }}</span>
     </div>
   </header>
 </template>

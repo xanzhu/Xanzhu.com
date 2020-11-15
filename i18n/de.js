@@ -1,16 +1,30 @@
-export default {
-  LatestNews: 'Neuesten Nachrichten',
-  Under: 'Verstehen Sie Technologie, Sicherheit',
-  Stand: 'und alles dazwischen',
-  warning: 'Übersetzungen könnten ungenau sein',
-  Coming: 'Diese Seite wird ständig aktualisiert, wenn wir unser Design verbessern',
-  Soon: 'Wir erwarten, unsere Website bis Ende des Jahres zu veröffentlichen',
-  error500h1: 'Systemfehler',
-  error500p: 'Diese Anfrage konnte nicht bearbeitet werden',
-  error404h1: 'SEITE NICHT GEFUNDEN',
-  error404p: 'Der Link, auf den Sie geklickt haben, ist möglicherweise defekt oder nicht mehr vorhanden.',
-  MobileUD: 'In Entwicklung',
-  // Site Meta
-  title: 'Kennen Sie die Technologie, die Sie verwenden | xanzhu.com',
-  description: 'Hier finden Sie Informationen zum Einsatz der neuesten Technologien. Bleiben Sie über Trends auf dem Laufenden und verstehen Sie, was Sicherheit für Sie bedeutet.'
+module.exports = {
+  page: {
+    title: 'Kennen Sie die Technologie, die Sie verwenden | xanzhu.com',
+    description: 'Hier finden Sie Informationen zum Einsatz der neuesten Technologien. Bleiben Sie über Trends auf dem Laufenden und verstehen Sie, was Sicherheit für Sie bedeutet.',
+
+    banner: {
+      top_title: 'Verstehen Sie Technologie, Sicherheit',
+      bottom_title: 'und alles dazwischen',
+      warning: 'Übersetzungen könnten ungenau sein'
+    },
+    content: {
+      heading: 'Neuesten Nachrichten',
+      cs: {
+        top: 'Diese Seite wird ständig aktualisiert, wenn wir unser Design verbessern',
+        bottom: 'Wir erwarten, unsere Website bis Ende des Jahres zu veröffentlichen'
+      }
+    },
+    error404: {
+      heading: 'SEITE NICHT GEFUNDEN',
+      desc: 'Der Link, auf den Sie geklickt haben, ist möglicherweise defekt oder nicht mehr vorhanden.'
+    },
+    error500: {
+      heading: 'Systemfehler',
+      desc: 'Diese Anfrage konnte nicht bearbeitet werden'
+    },
+    mobile: {
+      menu: 'In Entwicklung'
+    }
+  }
 }
