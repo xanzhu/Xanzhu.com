@@ -1,8 +1,8 @@
 <template>
   <header
-    class="sm:flex sm:justify-between sm:mx-4 sm:py-2 sm:items-center lg:mx-28 md:mx-16"
+    class="sm:flex sm:justify-between sm:mx-4 sm:py-2 sm:items-center lg:mx-28 md:mx-16 relative text-white"
   >
-    <div class="relative sm:block hidden">
+    <div class="sm:block hidden">
       <button
         class="mt-2 text-gray-400 block h-8 w-8 focus:outline-none hover:text-white"
         aria-label="Language Selector"
@@ -19,55 +19,57 @@
           v-for="locale in availableLocales"
           :key="locale.code"
           :to="switchLocalePath(locale.code)"
-          class="text-black font-medium block px-4 hover:bg-gray-500 rounded-lg"
+          class="text-black font-medium flex px-4 hover:bg-gray-500 rounded-lg"
         >
           {{ locale.name }}
         </nuxt-link>
       </div>
     </div>
-    <div class="flex items-center justify-between px-4 py-2 sm:p-0 sm:w-40">
-      <div class="text-white">
-        <nuxt-link
-          :to="localePath('/')"
-          aria-current="page"
-        >
-          <Xanzhu class="h-6 sm:h-8" aria-label="XANZHU" />
-        </nuxt-link>
-      </div>
-      <div class="sm:hidden block">
+    <div class="flex justify-between px-6 py-3 sm:p-0 sm:w-40 items-center">
+      <nuxt-link
+        :to="localePath('/')"
+        aria-current="page"
+      >
+        <Xanzhu class="h-6 sm:h-8 sm:pl-6" aria-label="XANZHU" />
+      </nuxt-link>
+      <div class="sm:hidden flex">
         <button
           type="button"
-          class="block text-gray-500 focus:outline-none hover:text-white pt-1"
+          class="flex text-gray-100 focus:outline-none hover:text-gray-300 pt-1"
           aria-label="Menu"
         >
           <Menu
             v-if="!headerShow"
             class="h-8"
-            aria-label="Menu"
             @click="ClickOpen"
           />
           <Cross
             v-if="headerShow"
             class="h-8"
-            aria-label="Close Menu"
             @click="ClickClose"
           />
         </button>
       </div>
     </div>
     <div
-      class="sm:px-2 sm:pt-2 sm:pb-4 text-center sm:flex sm:justify-between sm:items-center"
+      class="sm:px-2 sm:pt-2 sm:pb-4 text-center sm:items-center"
     >
-      <!-- <a href="#" class="block px-2 py-1 font-semibold text-white rounded hover:bg-gray-800">Blog</a>
-      <a href="#" class="mt-1 block px-2 py-1 font-semibold text-white rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">Green</a>
-      <a href="#" class="mt-1 block px-2 py-1 font-semibold text-white rounded hover:bg-gray-800 sm:ml-2 sm:mt-0">Help</a> -->
-      <span class="text-white mt-1 font-semibold hidden sm:flex" aria-current="date">{{
+      <span class="mt-1 font-semibold hidden sm:flex" aria-current="date">{{
         $d(new Date(), "short")
       }}</span>
-      <span
-        v-if="headerShow"
-        class="text-red-600 font-semibold tracking-widest sm:hidden block pb-4"
-      >{{ $t('page.mobile.menu') }}</span>
+      <div v-if="headerShow" class="sm:hidden">
+        <nuxt-link
+          v-for="locale in availableLocales"
+          :key="locale.code"
+          :to="switchLocalePath(locale.code)"
+          class="text-green-600 hover:text-green-800 px-1"
+        >
+          {{ locale.name }}
+        </nuxt-link>
+        <span
+          class="text-gray-200 font-semibold tracking-widest sm:hidden block pb-4"
+        >{{ $t('page.mobile.menu') }}</span>
+      </div>
     </div>
   </header>
 </template>
