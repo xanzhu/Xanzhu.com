@@ -1,6 +1,6 @@
 module.exports = {
   page: {
-    title: 'Kennen Sie die Technologie, die Sie verwenden | xanzhu',
+    title: 'Kennen Sie die Technologie, die Sie verwenden | Xanzhu',
     description: 'Hier finden Sie Informationen zum Einsatz der neuesten Technologien. Bleiben Sie über Trends auf dem Laufenden und verstehen Sie, was Sicherheit für Sie bedeutet.',
 
     banner: {
