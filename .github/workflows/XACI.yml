@@ -4,9 +4,9 @@ name: XACI
 
 on:
   push:
-    branches: [ dev ]
+    branches: [ build-2 ]
   pull_request:
-    branches: [ dev ]
+    branches: [ build-2 ]
 
 jobs:
   # This workflow contains a job called "integration"
