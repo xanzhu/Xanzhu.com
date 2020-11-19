@@ -4,7 +4,6 @@
     <div v-if="this.$i18n.locale !== 'en'" class="sm:flex sm:justify-left sm:items-center hidden text-green-500">
       <span
         class="
-        absolute
         text-lg
         font-medium
         -mt-12
@@ -15,6 +14,7 @@
         bg-black
         rounded-full
         sm:px-2
+        sm:mx-6
         py-0"
       >
         <Warn class="h-4 w-4 sm:inline-block -mt-1 mr-1" />{{ $t('page.banner.warning') }}</span>
