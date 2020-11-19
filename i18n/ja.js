@@ -1,6 +1,6 @@
 module.exports = {
   page: {
-    title: 'あなたが使用する技術を知っている | xanzhu.com',
+    title: 'あなたが使用する技術を知っている | xanzhu',
     description: '最新のテクノロジーの使用に関する情報を検索します。 トレンドを常に把握し、セキュリティがあなたにとって何を意味するのかを理解してください。',
 
     banner: {

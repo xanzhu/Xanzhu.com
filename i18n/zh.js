@@ -1,6 +1,6 @@
 module.exports = {
   page: {
-    title: '了解您使用的技术 | xanzhu.com',
+    title: '了解您使用的技术 | xanzhu',
     description: '查找有关使用最新技术的信息。跟随趋势并了解安全对你意味着什么。',
 
     banner: {
@@ -9,7 +9,7 @@ module.exports = {
       warning: '翻译可能不正确'
     },
     content: {
-      heading: 'Latest News',
+      heading: '最新消息',
       cs: {
         top: '随着我们改进设计，此页面将继续更新',
         bottom: '我们希望在今年年底之前发布此网站'
