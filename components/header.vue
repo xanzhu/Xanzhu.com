@@ -4,7 +4,7 @@
   >
     <div class="sm:block hidden">
       <button
-        class="mt-2 text-gray-400 block h-8 w-8 focus:outline-none hover:text-white"
+        class="mt-2 text-gray-200 block h-8 w-8 focus:outline-none hover:text-white"
         aria-label="Language Selector"
         @click="headerShow = !headerShow"
       >
