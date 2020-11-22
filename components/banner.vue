@@ -8,8 +8,9 @@
     </div>
     <div class="bg-transparent">
       <img
+        :src="require(`~/assets/img/xubanner_v1.webp`)"
+        :srcset="`${require(`~/assets/img/xubanner_v1_x2.webp`)} 2x`"
         class="w-full h-20 sm:h-32 object-cover"
-        src="~/assets/img/xubanner_v1.webp"
         aria-label="hidden"
       >
     </div>
