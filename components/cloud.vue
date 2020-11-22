@@ -1,6 +1,11 @@
 <template>
   <div>
-    <img :src="src" class="w-full h-20 sm:h-32 object-cover" aria-label="hidden" loading="lazy">
+    <img
+      :src="src"
+      aria-label="hidden"
+      reponsive
+      loading="lazy"
+    >
   </div>
 </template>
 <script>
