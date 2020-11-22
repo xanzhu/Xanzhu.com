@@ -1,10 +1,10 @@
 <template>
   <header
-    class="sm:flex sm:justify-between sm:mx-4 sm:py-2 sm:items-center lg:mx-28 md:mx-16 relative text-white"
+    class="sm:flex sm:justify-between sm:mx-4 sm:py-2 sm:items-center lg:mx-28 md:mx-16 relative dark:text-white text-gray-900"
   >
     <div class="sm:block hidden">
       <button
-        class="mt-2 text-gray-200 block h-8 w-8 focus:outline-none hover:text-white"
+        class="mt-2 text-gray-900 dark:text-gray-200 block h-8 w-8 focus:outline-none dark:hover:text-white hover:text-gray-800"
         aria-label="Language Selector"
         @click="headerShow = !headerShow"
       >
@@ -12,14 +12,14 @@
       </button>
       <div
         v-if="headerShow"
-        class="absolute z-10 bg-gray-300 rounded-lg -mt-1"
+        class="absolute z-10 dark:bg-gray-900 bg-gray-300 rounded-lg -mt-1"
         @click="ClickClose"
       >
         <nuxt-link
           v-for="locale in availableLocales"
           :key="locale.code"
           :to="switchLocalePath(locale.code)"
-          class="text-black font-medium flex px-4 hover:bg-gray-500 rounded-lg"
+          class="dark:text-gray-200 font-medium flex px-4 hover:bg-gray-400 bg-gray-300 dark:bg-gray-900 text-gray-900 dark:hover:bg-gray-700 rounded-lg"
         >
           {{ locale.name }}
         </nuxt-link>
@@ -35,7 +35,7 @@
       <div class="sm:hidden flex">
         <button
           type="button"
-          class="flex text-gray-100 focus:outline-none hover:text-gray-300 pt-1"
+          class="flex dark:text-gray-100 text-gray-900 focus:outline-none dark:hover:text-gray-300 pt-1"
           aria-label="Menu"
         >
           <Menu
@@ -62,12 +62,12 @@
           v-for="locale in availableLocales"
           :key="locale.code"
           :to="switchLocalePath(locale.code)"
-          class="text-green-600 hover:text-green-800 px-1"
+          class="dark:text-green-600 text-green-400 dark:hover:text-green-800 hover:text-green-600 px-1"
         >
           {{ locale.name }}
         </nuxt-link>
         <span
-          class="text-gray-200 font-semibold tracking-widest sm:hidden block pb-4"
+          class="dark:text-gray-200 text-gray-900 font-semibold tracking-widest sm:hidden block pb-4"
         >{{ $t('page.mobile.menu') }}</span>
       </div>
     </div>

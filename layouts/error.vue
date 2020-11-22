@@ -1,5 +1,5 @@
 <template>
-  <div v-if="error.statusCode === 404" class="text-white text-center font-thin">
+  <div v-if="error.statusCode === 404" class="dark:text-white text-gray-900 text-center dark:font-thin font-normal">
     <h1 class="font-semibold text-2xl pt-32">
       {{ $t('page.error404.heading') }}
     </h1>

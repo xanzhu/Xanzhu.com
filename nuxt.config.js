@@ -24,7 +24,8 @@ export default {
   buildModules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
-    'nuxt-purgecss'
+    'nuxt-purgecss',
+    '@nuxtjs/color-mode'
   ],
   /*
    ** Nuxt.js modules
@@ -146,7 +147,10 @@ export default {
       }
     }
   },
-
+  colorMode: {
+    classSuffix: '',
+    fallback: 'dark'
+  },
   // cloudinary: { - Dropped support for now.
   //   cloudName: process.env.CLOUDNAME,
   //   useComponent: true,

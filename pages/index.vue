@@ -1,7 +1,7 @@
 <template>
   <div>
     <Banner />
-    <div v-if="this.$i18n.locale !== 'en'" class="sm:flex sm:justify-left sm:items-center hidden text-green-500">
+    <div v-if="this.$i18n.locale !== 'en'" class="sm:flex sm:justify-left sm:items-center hidden dark:text-green-500 text-green-600">
       <span
         class="
         text-lg
@@ -11,7 +11,8 @@
         text-center
         lg:mx-32
         md:mx-20
-        bg-black
+      dark:bg-black
+        bg-gray-200
         rounded-full
         sm:px-2
         sm:mx-6
@@ -21,7 +22,7 @@
     </div>
     <Content />
     <div
-      class="text-left text-gray-300 py-4 font-thin text-lg mx-10 sm:mx-0 sm:text-center sm:py-12"
+      class="text-left text-gray-900 dark:text-gray-300 py-4 dark:font-thin text-lg mx-10 sm:mx-0 sm:text-center sm:py-12 font-normal"
     >
       <p>{{ $t('page.content.cs.top') }}</p>
       <p>{{ $t('page.content.cs.bottom') }}</p>

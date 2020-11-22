@@ -7,6 +7,8 @@
 module.exports = {
   theme: {
   },
+  dark: 'class',
+  darkMode: 'media',
   variants: {},
   future: {
     removeDeprecatedGapUtilities: true,
