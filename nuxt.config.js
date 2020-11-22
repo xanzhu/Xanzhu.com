@@ -11,12 +11,8 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' }
     ],
     link: [
-      {
-        rel: 'icon',
-        type: 'image/png',
-        href:
-          'https://res.cloudinary.com/xanzhu/image/upload/v1605344905/xanzhu.com/xanzhu-icon-plain_bec5ov.png'
-      }
+      { rel: 'icon', type: 'image/png', href: '16.png', sizes: '16x16' },
+      { rel: 'icon', type: 'image/png', href: '32.png', sizes: '32x32' }
     ]
   },
   css: [],
@@ -34,7 +30,6 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    '@nuxtjs/cloudinary',
     'nuxt-svg-loader',
     [
       'nuxt-i18n',
@@ -152,10 +147,12 @@ export default {
     }
   },
 
-  cloudinary: {
-    cloudName: process.env.CLOUDNAME
-    // apiKey / apiSecret - Server Side uploads (Not Needed)
-  },
+  // cloudinary: { - Dropped support for now.
+  //   cloudName: process.env.CLOUDNAME,
+  //   useComponent: true,
+  //   secure: true
+  //   // apiKey / apiSecret - Server Side uploads (Not Needed)
+  // },
   generate: {
     fallback: true
   },

@@ -7,7 +7,11 @@
       </div>
     </div>
     <div class="bg-transparent">
-      <Cloud />
+      <img
+        class="w-full h-20 sm:h-32 object-cover"
+        src="~/assets/img/xubanner_v1.webp"
+        aria-label="hidden"
+      >
     </div>
   </div>
 </template>

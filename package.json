@@ -12,7 +12,6 @@
     "production:v1": "nuxt generate"
   },
   "dependencies": {
-    "@nuxtjs/cloudinary": "^1.0.1",
     "@nuxtjs/sitemap": "^2.4.0",
     "nuxt": "^2.14.7",
     "nuxt-i18n": "^6.15.4",
@@ -21,15 +20,15 @@
   "devDependencies": {
     "@nuxtjs/eslint-config": "^5.0.0",
     "@nuxtjs/eslint-module": "^3.0.1",
-    "@nuxtjs/tailwindcss": "^3.1.0",
+    "@nuxtjs/tailwindcss": "^3.2.0",
     "autoprefixer": "^10.0.2",
     "babel-core": "^6.26.3",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.10.0",
+    "eslint": "^7.14.0",
     "eslint-plugin-nuxt": "^2.0.0",
     "image-webpack-loader": "^7.0.1",
     "nuxt-purgecss": "^1.0.0",
-    "postcss": "^8.1.7",
+    "postcss": "^8.1.9",
     "tailwindcss": "^2.0.1"
   }
 }
