@@ -4,8 +4,16 @@
 ** Docs: https://tailwindcss.com/docs/configuration
 ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
 */
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   theme: {
+    colors: {
+      green: colors.emerald,
+      gray: colors.trueGray,
+      black: colors.black,
+      white: colors.white
+    }
   },
   dark: 'class',
   darkMode: 'media',

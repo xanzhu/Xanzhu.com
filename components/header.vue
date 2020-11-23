@@ -1,6 +1,6 @@
 <template>
   <header
-    class="sm:flex sm:justify-between sm:mx-4 sm:py-2 sm:items-center lg:mx-28 md:mx-16 relative dark:text-white text-gray-900"
+    class="sm:flex sm:justify-between sm:mx-4 sm:py-2 sm:items-center lg:mx-28 md:mx-16 relative dark:text-gray-200 text-gray-900"
   >
     <div class="sm:block hidden">
       <button

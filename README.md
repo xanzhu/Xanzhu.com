@@ -2,7 +2,7 @@
 
 Developing every so often. 
 
-Alpha 2.4 (v.0.2.4) - Upcoming Release focusing on improving existing code.
+Alpha 2.4 (v.0.2.4) 
 
 Our plan is to bring the concepts of design, security and accessiblity to everyone.
 A leading place for information in our developing technological era. 
