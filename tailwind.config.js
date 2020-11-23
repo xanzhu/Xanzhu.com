@@ -9,10 +9,12 @@ const colors = require('tailwindcss/colors')
 module.exports = {
   theme: {
     colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      black: '#000',
+      white: '#fff',
       green: colors.emerald,
-      gray: colors.trueGray,
-      black: colors.black,
-      white: colors.white
+      gray: colors.trueGray
     }
   },
   dark: 'class',
