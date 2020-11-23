@@ -15,13 +15,6 @@ export default {
       type: Object,
       required: true
     }
-  },
-  head () {
-    return {
-      bodyAttrs: {
-        class: 'dark:bg-black bg-gray-200'
-      }
-    }
   }
 }
 </script>
