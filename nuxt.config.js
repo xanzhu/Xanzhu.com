@@ -1,7 +1,6 @@
 export default {
   target: 'static',
   client: 'modern',
-  ssr: false,
 
   server: {
     port: 3001
@@ -150,6 +149,7 @@ export default {
   },
   colorMode: {
     classSuffix: '',
+    preference: 'system',
     fallback: 'dark'
   },
   // cloudinary: { - Dropped support for now.
