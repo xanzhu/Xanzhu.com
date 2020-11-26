@@ -1,7 +1,7 @@
 <template>
   <div class="dark:bg-black bg-gray-200 min-h-screen fixed min-w-full overflow-auto">
     <Header />
-    <Nuxt />
+    <Nuxt class="bg-black dark:bg-black" />
   </div>
 </template>
 <script>
