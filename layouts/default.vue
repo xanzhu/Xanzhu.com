@@ -10,6 +10,7 @@ export default {
     const i18nSeo = this.$nuxtI18nSeo()
     return {
       htmlAttrs: {
+        class: 'bg-red',
         ...i18nSeo.htmlAttrs
       },
       // bodyAttrs: {
