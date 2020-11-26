@@ -18,7 +18,7 @@ export default {
   },
   head () {
     return {
-      bodyAttrs: {
+      htmlAttrs: {
         class: 'dark:bg-black bg-gray-200'
       }
     }
