@@ -3,7 +3,7 @@
 @import 'tailwindcss/utilities';
 
 @layer base {
-    html {
+    body {
       @apply dark:bg-black bg-gray-200;
     }
 }
