@@ -18,11 +18,3 @@ export default {
   }
 }
 </script>
-<style>
-body {
-  background-color: red;
-}
-.html {
-  background-color: purple;
-}
-</style>

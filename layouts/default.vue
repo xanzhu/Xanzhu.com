@@ -10,8 +10,7 @@ export default {
     const i18nSeo = this.$nuxtI18nSeo()
     return {
       htmlAttrs: {
-        ...i18nSeo.htmlAttrs,
-        class: 'dark:bg-black bg-gray-200'
+        ...i18nSeo.htmlAttrs
       },
       // bodyAttrs: {
       //   class: 'dark:bg-black bg-gray-200'
@@ -62,11 +61,7 @@ export default {
 }
 </script>
 <style>
-body {
-  background-color: greenyellow;
-}
-
-html {
-  background-color: orange;
-}
+/* // html { WORKIJNG!
+//   background-color: orange;
+// } */
 </style>
