@@ -17,7 +17,7 @@ module.exports = {
       gray: colors.trueGray
     }
   },
-  dark: 'class',
+  // dark: 'class',
   darkMode: 'media',
   variants: {},
   future: {

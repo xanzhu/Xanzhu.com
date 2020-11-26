@@ -7,7 +7,7 @@ export default {
   },
   head: {
     htmlAttrs: {
-      class: 'bg-gray-900'
+      class: 'bg-green-900'
     },
     meta: [
       { charset: 'utf-8' },
