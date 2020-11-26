@@ -14,12 +14,10 @@ module.exports = {
       black: '#000',
       white: '#fff',
       green: colors.emerald,
-      gray: colors.trueGray,
-      red: colors.rose
+      gray: colors.trueGray
     }
   },
-  // dark: 'class',
-  darkMode: 'class',
+  darkMode: 'media',
   variants: {},
   future: {
     removeDeprecatedGapUtilities: true,
