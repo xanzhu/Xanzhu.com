@@ -6,9 +6,9 @@ export default {
     port: 3001
   },
   head: {
-    htmlAttrs: {
-      class: 'bg-gray-200 dark:bg-black'
-    },
+    // htmlAttrs: {
+    //   class: 'bg-gray-200 dark:bg-black'
+    // },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' }
