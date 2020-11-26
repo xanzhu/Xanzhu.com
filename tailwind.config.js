@@ -19,7 +19,7 @@ module.exports = {
     }
   },
   // dark: 'class',
-  // darkMode: 'media',
+  darkMode: 'media',
   variants: {},
   future: {
     removeDeprecatedGapUtilities: true,
