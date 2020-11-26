@@ -13,9 +13,9 @@ export default {
         ...i18nSeo.htmlAttrs,
         class: 'dark:bg-black bg-gray-200'
       },
-      bodyAttrs: {
-        class: 'dark:bg-black bg-gray-200'
-      },
+      // bodyAttrs: {
+      //   class: 'dark:bg-black bg-gray-200'
+      // },
       title: this.$t('page.title'),
       meta: [
         {
@@ -61,3 +61,12 @@ export default {
   }
 }
 </script>
+<style>
+body {
+  background-color: greenyellow;
+}
+
+html {
+  background-color: orange;
+}
+</style>

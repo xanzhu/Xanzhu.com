@@ -15,13 +15,14 @@ export default {
       type: Object,
       required: true
     }
-  },
-  head () {
-    return {
-      htmlAttrs: {
-        class: 'dark:bg-black bg-gray-200'
-      }
-    }
   }
 }
 </script>
+<style>
+body {
+  background-color: red;
+}
+.html {
+  background-color: purple;
+}
+</style>
