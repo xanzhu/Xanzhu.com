@@ -30,9 +30,9 @@ export default {
   buildModules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
-    'nuxt-purgecss',
+    'nuxt-purgecss'
     // '@nuxtjs/color-mode',
-    '@nuxtjs/pwa'
+    // '@nuxtjs/pwa'
   ],
   /*
    ** Nuxt.js modules
@@ -154,16 +154,16 @@ export default {
       }
     }
   },
-  // colorMode: {
+  // colorMode: { - Dropped No longer needed as Tailwind comes native
   //   preference: 'dark',
   //   fallback: 'dark'
   // },
-  pwa: {
-    manifest: {
-      name: 'Xanzhu'
-    },
-    icon: false
-  },
+  // pwa: {     - Set this up later
+  //   manifest: {
+  //     name: 'Xanzhu'
+  //   },
+  //   icon: false
+  // },
   // cloudinary: { - Dropped support for now.
   //   cloudName: process.env.CLOUDNAME,
   //   useComponent: true,
