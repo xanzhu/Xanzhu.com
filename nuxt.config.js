@@ -7,7 +7,7 @@ export default {
   },
   head: {
     htmlAttrs: {
-      class: 'bg-green-900'
+      class: 'bg-green-600'
     },
     meta: [
       { charset: 'utf-8' },
@@ -151,7 +151,7 @@ export default {
     }
   },
   colorMode: {
-    classSuffix: '',
+    // classSuffix: '',
     preference: 'system',
     fallback: 'dark'
   },
