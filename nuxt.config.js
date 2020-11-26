@@ -31,7 +31,8 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
     'nuxt-purgecss',
-    '@nuxtjs/color-mode'
+    // '@nuxtjs/color-mode',
+    '@nuxtjs/pwa'
   ],
   /*
    ** Nuxt.js modules
@@ -153,9 +154,15 @@ export default {
       }
     }
   },
-  colorMode: {
-    preference: 'system',
-    fallback: 'dark'
+  // colorMode: {
+  //   preference: 'dark',
+  //   fallback: 'dark'
+  // },
+  pwa: {
+    manifest: {
+      name: 'Xanzhu'
+    },
+    icon: false
   },
   // cloudinary: { - Dropped support for now.
   //   cloudName: process.env.CLOUDNAME,
