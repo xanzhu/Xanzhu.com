@@ -61,8 +61,3 @@ export default {
   }
 }
 </script>
-<style>
-/* // html { WORKIJNG!
-//   background-color: orange;
-// } */
-</style>
