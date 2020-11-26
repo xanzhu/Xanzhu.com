@@ -33,9 +33,6 @@ module.exports = {
       'pages/**/*.vue',
       'plugins/**/*.js',
       'nuxt.config.js'
-    ],
-    options: {
-      safelist: ['dark:bg-black']
-    }
+    ]
   }
 }

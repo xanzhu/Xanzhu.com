@@ -6,12 +6,12 @@ export default {
     port: 3001
   },
   head: {
-    htmlAttrs: {
-      class: 'dark'
-    },
-    bodyAttrs: {
-      class: 'dark:bg-black bg-gray-200'
-    },
+    // htmlAttrs: {
+    //   class: 'dark'
+    // },
+    // bodyAttrs: {
+    //   class: 'dark:bg-black bg-gray-200'
+    // },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' }
