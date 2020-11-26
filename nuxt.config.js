@@ -6,9 +6,12 @@ export default {
     port: 3001
   },
   head: {
-    // htmlAttrs: {
-    //   class: 'bg-gray-200 dark:bg-black'
-    // },
+    htmlAttrs: {
+      class: 'dark'
+    },
+    bodyAttrs: {
+      class: 'dark:bg-black bg-gray-200'
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' }
@@ -151,7 +154,6 @@ export default {
     }
   },
   colorMode: {
-    // classSuffix: '',
     preference: 'system',
     fallback: 'dark'
   },

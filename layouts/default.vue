@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen fixed min-w-full overflow-auto">
+  <div class="dark:bg-black bg-gray-200 min-h-screen fixed min-w-full overflow-auto">
     <Header />
     <Nuxt />
   </div>
@@ -10,12 +10,12 @@ export default {
     const i18nSeo = this.$nuxtI18nSeo()
     return {
       htmlAttrs: {
-        // class: 'bg-gray-200 dark:bg-black',
+        class: 'dark',
         ...i18nSeo.htmlAttrs
       },
-      // bodyAttrs: {
-      //   class: 'dark:bg-black bg-gray-200'
-      // },
+      bodyAttrs: {
+        class: 'dark:bg-black bg-gray-200'
+      },
       title: this.$t('page.title'),
       meta: [
         {
@@ -61,8 +61,3 @@ export default {
   }
 }
 </script>
-<style>
-html {
-  background-color: black;
-}
-</style>
