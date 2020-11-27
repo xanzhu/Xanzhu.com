@@ -1,5 +1,5 @@
 <template>
-  <div class="dark:bg-black min-h-screen fixed min-w-full overflow-auto">
+  <div class="dark:bg-black bg-gray-200 min-h-screen fixed min-w-full overflow-auto">
     <Header />
     <Nuxt />
   </div>
@@ -13,7 +13,7 @@ export default {
         ...i18nSeo.htmlAttrs
       },
       bodyAttrs: {
-        class: 'dark:bg-black '
+        class: 'bg-gray-200 dark:bg-black '
       },
       title: this.$t('page.title'),
       meta: [
