@@ -11,7 +11,6 @@
         text-center
         lg:mx-32
         dark:bg-black
-        bg-gray-200
         md:mx-20
         rounded-full
         sm:px-2
