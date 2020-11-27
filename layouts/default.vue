@@ -13,7 +13,7 @@ export default {
         ...i18nSeo.htmlAttrs
       },
       bodyAttrs: {
-        class: 'dark:bg-black '
+        class: 'bg-gray-200 dark:bg-black'
       },
       title: this.$t('page.title'),
       meta: [
