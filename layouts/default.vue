@@ -1,5 +1,5 @@
 <template>
-  <div class="dark:bg-black bg-gray-200 min-h-screen fixed min-w-full overflow-auto">
+  <div class="min-h-screen fixed min-w-full overflow-auto">
     <Header />
     <Nuxt />
   </div>
