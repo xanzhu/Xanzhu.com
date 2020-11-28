@@ -6,7 +6,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "production": "nuxt generate --modern",
+    "production": "nuxt generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
     "lint": "yarn lint:js",
     "production:v1": "nuxt generate"
