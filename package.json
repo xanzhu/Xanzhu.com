@@ -6,29 +6,26 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
+    "generate": "nuxt generate",
     "production": "nuxt generate --modern",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
-    "lint": "yarn lint:js",
-    "production:v1": "nuxt generate"
+    "lint": "yarn lint:js"
   },
   "dependencies": {
     "@nuxtjs/sitemap": "^2.4.0",
-    "nuxt": "^2.14.7",
+    "core-js": "^3.6.5",
+    "nuxt": "^2.14.6",
     "nuxt-i18n": "^6.15.4",
     "nuxt-svg-loader": "^1.2.0"
   },
   "devDependencies": {
-    "@nuxtjs/eslint-config": "^5.0.0",
     "@nuxtjs/eslint-module": "^3.0.1",
     "@nuxtjs/tailwindcss": "^3.2.0",
-    "autoprefixer": "^10.0.2",
-    "babel-core": "^6.26.3",
-    "babel-eslint": "^10.1.0",
+    "autoprefixer": "^9",
     "eslint": "^7.14.0",
-    "eslint-plugin-nuxt": "^2.0.0",
     "image-webpack-loader": "^7.0.1",
     "nuxt-purgecss": "^1.0.0",
-    "postcss": "^8.1.9",
-    "tailwindcss": "^2.0.1"
+    "postcss": "^7",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   }
 }
