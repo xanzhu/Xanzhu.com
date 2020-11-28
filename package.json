@@ -9,7 +9,6 @@
     "production": "nuxt generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
     "lint": "yarn lint:js",
-    "production:v1": "nuxt generate"
   },
   "dependencies": {
     "@nuxtjs/sitemap": "^2.4.0",
