@@ -5,9 +5,6 @@ export default {
     port: 3001
   },
   head: {
-    // htmlAttrs: {
-    //   class: 'bg-gray-200'
-    // },
     bodyAttrs: {
       class: 'dark:bg-black bg-gray-200'
     },
@@ -30,8 +27,6 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
     'nuxt-purgecss'
-    // '@nuxtjs/color-mode',
-    // '@nuxtjs/pwa'
   ],
   /*
    ** Nuxt.js modules
@@ -153,16 +148,6 @@ export default {
       }
     }
   },
-  // colorMode: { - Dropped No longer needed as Tailwind comes native
-  //   preference: 'dark',
-  //   fallback: 'dark'
-  // },
-  // pwa: {     - Set this up later
-  //   manifest: {
-  //     name: 'Xanzhu'
-  //   },
-  //   icon: false
-  // },
   // cloudinary: { - Dropped support for now.
   //   cloudName: process.env.CLOUDNAME,
   //   useComponent: true,
