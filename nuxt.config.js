@@ -1,6 +1,5 @@
 export default {
   target: 'static',
-  client: 'modern',
 
   server: {
     port: 3001
