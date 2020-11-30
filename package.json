@@ -7,7 +7,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "production": "nuxt generate",
-    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint": "yarn lint:js"
   },
   "dependencies": {
@@ -18,16 +18,16 @@
     "nuxt-svg-loader": "^1.2.0"
   },
   "devDependencies": {
-    "@nuxtjs/eslint-config": "^3.1.0",
+    "@nuxtjs/eslint-config": "^5.0.0",
     "@nuxtjs/eslint-module": "^3.0.1",
     "@nuxtjs/tailwindcss": "^3.2.0",
-    "autoprefixer": "^9",
+    "autoprefixer": "^10.0.4",
+    "babel-eslint": "^10.1.0",
     "eslint": "^7.14.0",
+    "eslint-plugin-nuxt": "^2.0.0",
     "image-webpack-loader": "^7.0.1",
     "nuxt-purgecss": "^1.0.0",
-    "postcss": "^7",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
-    "babel-eslint": "^10.1.0",
-    "eslint-plugin-nuxt": "^1.0.0"
+    "postcss": "^8.1.10",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   }
 }
