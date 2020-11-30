@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="dark:bg-black bg-gray-200">
     <Banner />
     <div v-if="this.$i18n.locale !== 'en'" class="sm:flex sm:justify-left sm:items-center hidden dark:text-green-500 text-green-600">
       <span
@@ -10,9 +10,9 @@
         tracking-wide
         text-center
         lg:mx-32
-        md:mx-20
-      dark:bg-black
+        dark:bg-black
         bg-gray-200
+        md:mx-20
         rounded-full
         sm:px-2
         sm:mx-6

@@ -1,11 +1,13 @@
 export default {
   target: 'static',
-  client: 'modern',
 
   server: {
     port: 3001
   },
   head: {
+    bodyAttrs: {
+      class: 'dark:bg-black bg-gray-200'
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' }
@@ -24,8 +26,7 @@ export default {
   buildModules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
-    'nuxt-purgecss',
-    '@nuxtjs/color-mode'
+    'nuxt-purgecss'
   ],
   /*
    ** Nuxt.js modules
@@ -146,11 +147,6 @@ export default {
         }
       }
     }
-  },
-  colorMode: {
-    classSuffix: '',
-    preference: 'system',
-    fallback: 'dark'
   },
   // cloudinary: { - Dropped support for now.
   //   cloudName: process.env.CLOUDNAME,
