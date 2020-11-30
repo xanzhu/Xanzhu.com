@@ -12,45 +12,16 @@ export default {
       htmlAttrs: {
         ...i18nSeo.htmlAttrs
       },
-      title: this.$t('page.title'),
+      title: this.$i18n.t('page.title'),
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: this.$t('page.description')
+          content: this.$i18n.t('page.description')
         }
-        // {
-        //   hid: 'Naver',
-        //   name: 'naver-site-verification',
-        //   content: 'efe8928c52c47ffddfbd678ff1ac6fe5ca08b009'
-        // }
       ],
+      ...i18nSeo,
       link: [
-        // {
-        //   rel: 'alternate',
-        //   hreflang: 'zh',
-        //   href: 'https://xanzhu.com/zh/'
-        // },
-        // {
-        //   rel: 'alternate',
-        //   hreflang: 'ru',
-        //   href: 'https://xanzhu.com/ru/'
-        // },
-        // {
-        //   rel: 'alternate',
-        //   hreflang: 'ja',
-        //   href: 'https://xanzhu.com/ja/'
-        // },
-        // {
-        //   rel: 'alternate',
-        //   hreflang: 'ko',
-        //   href: 'https://xanzhu.com/ko/'
-        // },
-        // {
-        //   rel: 'alternate',
-        //   hreflang: 'x-default',
-        //   href: 'https://xanzhu.com/'
-        // },
         ...i18nSeo.link
       ]
     }
