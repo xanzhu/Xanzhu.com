@@ -4,7 +4,7 @@ export default {
   server: {
     port: 3001
   },
-  
+
   head: {
     bodyAttrs: {
       class: 'dark:bg-black bg-gray-200'
