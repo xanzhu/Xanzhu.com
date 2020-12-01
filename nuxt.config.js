@@ -165,8 +165,6 @@ export default {
       includeSubDomains: true,
       preload: true
     },
-    expectCt: true,
-    noSniff: true,
     referrerPolicy: {
       policy: 'strict-origin-when-cross-origin'
     }
