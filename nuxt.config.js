@@ -154,7 +154,7 @@ export default {
   //   cloudName: process.env.CLOUDNAME,
   //   useComponent: true,
   //   secure: true
-  //   // apiKey / apiSecret - Server Side uploads (Not Needed)
+  //   // apiKey / apiSecret - Server Side uploads (Not Needed) U
   // },
   helmet: {
     frameguard: {
