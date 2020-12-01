@@ -1,5 +1,5 @@
 export default {
-  target: 'static',
+  target: 'server',
 
   server: {
     port: 3001
@@ -165,6 +165,8 @@ export default {
       includeSubDomains: true,
       preload: true
     },
+    expectCt: true,
+    noSniff: true,
     referrerPolicy: {
       policy: 'strict-origin-when-cross-origin'
     }
