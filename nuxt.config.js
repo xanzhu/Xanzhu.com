@@ -1,5 +1,5 @@
 export default {
-  target: 'server',
+  target: 'static',
 
   server: {
     port: 3001
@@ -33,7 +33,6 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    'nuxt-helmet',
     'nuxt-svg-loader',
     [
       'nuxt-i18n',
@@ -156,19 +155,6 @@ export default {
   //   secure: true
   //   // apiKey / apiSecret - Server Side uploads (Not Needed) U
   // },
-  helmet: {
-    frameguard: {
-      action: 'deny'
-    },
-    hsts: {
-      maxAge: 63072000,
-      includeSubDomains: true,
-      preload: true
-    },
-    referrerPolicy: {
-      policy: 'strict-origin-when-cross-origin'
-    }
-  },
   generate: {
     fallback: true
   },
