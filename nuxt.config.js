@@ -153,7 +153,7 @@ export default {
   //   cloudName: process.env.CLOUDNAME,
   //   useComponent: true,
   //   secure: true
-  //   // apiKey / apiSecret - Server Side uploads (Not Needed) U
+  //   // apiKey / apiSecret - Server Side uploads (Not Needed)
   // },
   generate: {
     fallback: true
