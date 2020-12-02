@@ -21,13 +21,13 @@
     "@nuxtjs/eslint-config": "^5.0.0",
     "@nuxtjs/eslint-module": "^3.0.1",
     "@nuxtjs/tailwindcss": "^3.2.0",
-    "autoprefixer": "^9",
+    "autoprefixer": "^10.0.4",
+    "babel-eslint": "^10.1.0",
     "eslint": "^7.14.0",
+    "eslint-plugin-nuxt": "^2.0.0",
     "image-webpack-loader": "^7.0.1",
     "nuxt-purgecss": "^1.0.0",
-    "postcss": "^8",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
-    "babel-eslint": "^10.1.0",
-    "eslint-plugin-nuxt": "^2.0.0"
+    "postcss": "^8.1.10",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   }
 }
