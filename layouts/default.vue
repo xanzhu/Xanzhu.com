@@ -1,6 +1,10 @@
 <template>
   <div class="min-h-screen fixed min-w-full overflow-auto">
     <Header />
+    <Social
+      :title="this.$i18n.t('page.title')"
+      :description="this.$i18n.t('page.description')"
+    />
     <Nuxt />
   </div>
 </template>
