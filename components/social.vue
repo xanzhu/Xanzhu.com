@@ -27,7 +27,7 @@ export default {
         {
           hid: 'twitter:card',
           name: 'twitter:card',
-          content: this.summary
+          content: 'summary_large_image'
         },
         {
           hid: 'twitter:card',
@@ -77,7 +77,7 @@ export default {
         {
           hid: 'og:image:alt',
           property: 'og:image:alt',
-          content: this.title
+          content: this.imagealt
         }
       ]
     }
