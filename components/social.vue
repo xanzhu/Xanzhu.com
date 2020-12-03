@@ -6,21 +6,20 @@
 // Test on: https://cards-dev.twitter.com/validator
 // Test on: https://developers.facebook.com/tools/debug/
 export default {
-  props: {
-    title: {
-      type: String,
-      required: true
-    },
-    description: {
-      type: String,
-      required: true
-    },
-    image: {
-      type: String,
-      default: '~/assets/img/xubanner_v1.webp'
-    }
-  },
-
+//   props: {
+//     title: {
+//       type: String,
+//       required: true
+//     },
+//     description: {
+//       type: String,
+//       required: true
+//     },
+//     image: {
+//       type: String,
+//       default: '{{ ~/assets/img/xubanner_v1.webp}}'
+//     }
+//   },
   head () {
     return {
       meta: [
@@ -30,54 +29,49 @@ export default {
           content: 'summary_large_image'
         },
         {
-          hid: 'twitter:card',
-          name: 'twitter:card',
-          content: this.site
-        },
-        {
           hid: 'twitter:title',
           name: 'twitter:title',
-          content: this.title
+          content: this.$i18n.t('page.title')
         },
         {
           hid: 'twitter:description',
           name: 'twitter:description',
-          content: this.description
+          content: this.$i18n.t('page.description')
         },
         {
           hid: 'twitter:image',
           name: 'twitter:image',
-          content: this.image
+          content: 'https://res.cloudinary.com/xanzhu/image/upload/v1603594106/xanzhu.com/banner-image_itbtx2.webp'
         },
         {
           hid: 'twitter:image:alt',
           name: 'twitter:image:alt',
-          content: this.title
+          content: this.$i18n.t('page.banner.alt')
         },
         {
           hid: 'og:title',
           property: 'og:title',
-          content: this.title
+          content: this.$i18n.t('page.title')
         },
         {
           hid: 'og:description',
           property: 'og:description',
-          content: this.description
+          content: this.$i18n.t('page.description')
         },
         {
           hid: 'og:image',
           property: 'og:image',
-          content: this.image
+          content: '~/assets/img/xubanner_v1.webp'
         },
-        {
-          hid: 'og:image:secure_url',
-          property: 'og:image:secure_url',
-          content: this.image
-        },
+        // {
+        //   hid: 'og:image:secure_url',
+        //   property: 'og:image:secure_url',
+        //   content: this.image
+        // },
         {
           hid: 'og:image:alt',
           property: 'og:image:alt',
-          content: this.imagealt
+          content: this.$i18n.t('page.banner.alt')
         }
       ]
     }
