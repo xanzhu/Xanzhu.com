@@ -25,6 +25,16 @@ export default {
     return {
       meta: [
         {
+          hid: 'twitter:card',
+          name: 'twitter:card',
+          content: this.summary
+        },
+        {
+          hid: 'twitter:card',
+          name: 'twitter:card',
+          content: this.site
+        },
+        {
           hid: 'twitter:title',
           name: 'twitter:title',
           content: this.title

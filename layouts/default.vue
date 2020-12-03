@@ -4,6 +4,8 @@
     <Social
       :title="this.$i18n.t('page.title')"
       :description="this.$i18n.t('page.description')"
+      :site="('https://xanzhu.com/')"
+      :summary="('Close up women in glasses splattered across face monochromatic')"
     />
     <Nuxt />
   </div>
