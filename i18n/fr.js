@@ -6,7 +6,8 @@ module.exports = {
     banner: {
       top_title: 'Comprenez la sécurité, la technologie ',
       bottom_title: 'et tout ce qui se trouve entre les deux.',
-      warning: 'Les traductions peuvent être incorrectes'
+      warning: 'Les traductions peuvent être incorrectes',
+      alt: 'Green accent. Black and white. Close-up of woman with glasses'
     },
     content: {
       heading: 'Nouvelles récentes',

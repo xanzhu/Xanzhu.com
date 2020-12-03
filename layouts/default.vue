@@ -1,6 +1,7 @@
 <template>
   <div class="min-h-screen fixed min-w-full overflow-auto">
     <Header />
+    <Social />
     <Nuxt />
   </div>
 </template>

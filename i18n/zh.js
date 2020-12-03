@@ -6,7 +6,8 @@ module.exports = {
     banner: {
       top_title: '了解安全技术',
       bottom_title: '还有其他一切',
-      warning: '翻译可能不正确'
+      warning: '翻译可能不正确',
+      alt: '绿色的口音。 黑和白。 戴眼镜的特写女人'
     },
     content: {
       heading: '最新消息',

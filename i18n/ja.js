@@ -6,7 +6,8 @@ module.exports = {
     banner: {
       top_title: 'セキュリティ、テクノロジーを理解し、',
       bottom_title: 'そして残りすべて',
-      warning: '翻訳が正しくない可能性があります。'
+      warning: '翻訳が正しくない可能性があります。',
+      alt: '緑のアクセント。 黒と白。 眼鏡をかけたクローズアップの女性'
     },
     content: {
       heading: '最新ニュース',
