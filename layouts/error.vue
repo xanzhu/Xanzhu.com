@@ -23,27 +23,6 @@ export default {
       type: Object,
       required: true
     }
-  },
-  head () {
-    return {
-      meta: [
-        {
-          hid: 'twitter:card',
-          name: 'twitter:card',
-          content: 'summary'
-        },
-        {
-          hid: 'twitter:title',
-          name: 'twitter:title',
-          content: 'No longer avalible.'
-        },
-        {
-          hid: 'twitter:description',
-          name: 'twitter:description',
-          content: 'Incorrect url of no longer accessible!'
-        }
-      ]
-    }
   }
 }
 </script>
