@@ -6,7 +6,8 @@ module.exports = {
     banner: {
       top_title: 'Verstehen Sie Technologie, Sicherheit',
       bottom_title: 'und alles dazwischen',
-      warning: 'Übersetzungen könnten ungenau sein'
+      warning: 'Übersetzungen könnten ungenau sein',
+      alt: 'Grüner Akzent. Schwarz und weiß. Nahaufnahme Frau mit Brille'
     },
     content: {
       heading: 'Neuesten Nachrichten',

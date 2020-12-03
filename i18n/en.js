@@ -7,7 +7,7 @@ module.exports = {
       top_title: 'Understand Security, Technology',
       bottom_title: 'and everything in-between.',
       warning: 'Translations may be incorrect',
-      alt: 'Close up women in glasses  monochromatic with green accents across face'
+      alt: 'Green accent. Black and white. Close-up of woman with glasses'
     },
     content: {
       heading: 'Latest News',

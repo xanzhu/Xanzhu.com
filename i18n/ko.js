@@ -6,7 +6,8 @@ module.exports = {
     banner: {
       top_title: '기술, 보안',
       bottom_title: '및 그 사이의 모든 것.',
-      warning: '번역이 잘못되었을 수 있습니다.'
+      warning: '번역이 잘못되었을 수 있습니다.',
+      alt: '녹색 악센트. 검정색과 흰색. 안경을 쓰고 클로즈업 여자'
     },
     content: {
       heading: '최근 뉴스',
