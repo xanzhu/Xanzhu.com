@@ -71,6 +71,8 @@ export default {
         }
       ],
       link: [
+        { rel: 'icon', type: 'image/png', href: '/16.png', sizes: '16x16' },
+        { rel: 'icon', type: 'image/png', href: '/32.png', sizes: '32x32' },
         ...i18nSeo.link
       ]
     }
