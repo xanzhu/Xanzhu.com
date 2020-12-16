@@ -3,7 +3,6 @@ name: ci
 on:
   push:
     branches:
-      - build-2
       - v2.4-production
   pull_request:
     branches:

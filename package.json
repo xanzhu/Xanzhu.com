@@ -13,13 +13,13 @@
   "dependencies": {
     "@nuxtjs/sitemap": "^2.4.0",
     "core-js": "^3.8.1",
-    "nuxt": "^2.14.11",
+    "nuxt": "^2.14.12",
     "nuxt-i18n": "^6.16.0",
     "nuxt-svg-loader": "^1.2.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^5.0.0",
-    "@nuxtjs/eslint-module": "^3.0.1",
+    "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/tailwindcss": "^3.3.4",
     "autoprefixer": "^10.1.0",
     "babel-eslint": "^10.1.0",
