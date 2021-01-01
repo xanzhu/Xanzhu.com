@@ -20,14 +20,14 @@
   "devDependencies": {
     "@nuxtjs/eslint-config": "^5.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
-    "@nuxtjs/tailwindcss": "^3.3.4",
+    "@nuxtjs/tailwindcss": "^3.4.2",
     "autoprefixer": "^10.1.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.15.0",
+    "eslint": "^7.16.0",
     "eslint-plugin-nuxt": "^2.0.0",
     "image-webpack-loader": "^7.0.1",
     "nuxt-purgecss": "^1.0.0",
-    "postcss": "^8.2.1",
+    "postcss": "^8.2.2",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   }
 }
