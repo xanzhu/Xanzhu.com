@@ -62,7 +62,7 @@
           v-for="locale in availableLocales"
           :key="locale.code"
           :to="switchLocalePath(locale.code)"
-          class="dark:text-green-600 text-green-400 dark:hover:text-green-800 hover:text-green-600 px-1"
+          class="dark:text-green-600 text-green-400 dark:hover:text-green-700 hover:text-green-600 px-1"
         >
           {{ locale.name }}
         </nuxt-link>

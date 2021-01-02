@@ -13,7 +13,7 @@ module.exports = {
       heading: 'Neuesten Nachrichten',
       cs: {
         top: 'Diese Seite wird ständig aktualisiert, wenn wir unser Design verbessern',
-        bottom: 'Wir erwarten, unsere Website bis Ende des Jahres zu veröffentlichen'
+        bottom: 'Wir erwarten, unsere Website bis Ende des Jahres zu veröffentlichen 🕵'
       }
     },
     error404: {
