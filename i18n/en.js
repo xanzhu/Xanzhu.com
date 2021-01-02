@@ -20,10 +20,10 @@ module.exports = {
       heading: 'PAGE NOT FOUND',
       desc: 'The link you clicked on may be broken or no longer exists.'
     },
-    error500: {
-      heading: 'System Error',
-      desc: 'This request could not be processed'
-    },
+    // error500: {
+    //   heading: 'System Error',
+    //   desc: 'This request could not be processed'
+    // },
     mobile: {
       menu: 'IN DEVELOPMENT'
     }

@@ -20,10 +20,10 @@ module.exports = {
       heading: 'SEITE NICHT GEFUNDEN',
       desc: 'Der Link, auf den Sie geklickt haben, ist möglicherweise defekt oder nicht mehr vorhanden.'
     },
-    error500: {
-      heading: 'Systemfehler',
-      desc: 'Diese Anfrage konnte nicht bearbeitet werden'
-    },
+    // error500: {
+    //   heading: 'Systemfehler',
+    //   desc: 'Diese Anfrage konnte nicht bearbeitet werden'
+    // },
     mobile: {
       menu: 'In Entwicklung'
     }

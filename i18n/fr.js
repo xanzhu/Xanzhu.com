@@ -20,10 +20,10 @@ module.exports = {
       heading: 'PAGE NON TROUVÉE',
       desc: "Le lien sur lequel vous avez cliqué est peut-être rompu ou n'existe plus."
     },
-    error500: {
-      heading: 'Erreur système',
-      desc: "Cette demande n'a pas pu être traitée"
-    },
+    // error500: {
+    //   heading: 'Erreur système',
+    //   desc: "Cette demande n'a pas pu être traitée"
+    // },
     mobile: {
       menu: 'EN DEVELOPPEMENT'
     }

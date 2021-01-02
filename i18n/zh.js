@@ -20,10 +20,10 @@ module.exports = {
       heading: '找不到网页',
       desc: '您点击的链接可能已损坏或不再存在'
     },
-    error500: {
-      heading: '系统错误',
-      desc: '该请求无法处理'
-    },
+    // error500: {
+    //   heading: '系统错误',
+    //   desc: '该请求无法处理'
+    // },
     mobile: {
       menu: '开发中'
     }
