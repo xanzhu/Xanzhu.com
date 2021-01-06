@@ -13,7 +13,7 @@ module.exports = {
       current: 'currentColor',
       black: '#000',
       white: '#fff',
-      green: colors.rose,
+      rose: colors.rose,
       gray: colors.trueGray
     }
   },

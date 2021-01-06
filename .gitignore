@@ -90,5 +90,3 @@ sw.*
 *.swp
 
 # Disabled Developer files
-cloud.vue
-cloudv2.vue

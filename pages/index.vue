@@ -1,7 +1,7 @@
 <template>
   <div class="dark:bg-black bg-gray-200">
     <Banner />
-    <div v-if="this.$i18n.locale !== 'en'" class="sm:flex sm:justify-left sm:items-center hidden dark:text-green-500 text-green-600">
+    <div v-if="this.$i18n.locale !== 'en'" class="sm:flex sm:justify-left sm:items-center hidden dark:text-rose-500 text-rose-600">
       <span
         class="
         text-lg
