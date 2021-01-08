@@ -27,7 +27,7 @@
     "eslint-plugin-nuxt": "^2.0.0",
     "image-webpack-loader": "^7.0.1",
     "nuxt-purgecss": "^1.0.0",
-    "postcss": "^8.2.2",
+    "postcss": "^8.2.3",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   }
 }
