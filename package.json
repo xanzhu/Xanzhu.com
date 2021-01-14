@@ -14,7 +14,7 @@
     "@nuxtjs/sitemap": "^2.4.0",
     "core-js": "^3.8.2",
     "nuxt": "^2.14.12",
-    "nuxt-i18n": "^6.17.0",
+    "nuxt-i18n": "^6.18.0",
     "nuxt-svg-loader": "^1.2.0"
   },
   "devDependencies": {
