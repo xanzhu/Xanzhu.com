@@ -13,7 +13,7 @@
   "dependencies": {
     "@nuxtjs/sitemap": "^2.4.0",
     "core-js": "^3.8.3",
-    "nuxt": "^2.14.12",
+    "nuxt": "^2.15.2",
     "nuxt-i18n": "^6.20.0",
     "nuxt-svg-loader": "^1.2.0"
   },
