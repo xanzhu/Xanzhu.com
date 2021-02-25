@@ -1053,7 +1053,7 @@
     std-env "^2.3.0"
     ufo "^0.6.7"
 
-"@nuxt/content@^1.11.1":
+"@nuxt/content@^1.13.1":
   version "1.13.1"
   resolved "https://registry.yarnpkg.com/@nuxt/content/-/content-1.13.1.tgz#a65a919feb08bcd9503faa2ffeb526c89c8abcdb"
   integrity sha512-nBq9ezdPIpFsOh8rNfMsLsVV8eDw4Ha77JWj//xCEL8ZmUc2wBPge+Vt2jp0dSYArHgBg2lWBTUUnn6n6q7noQ==
@@ -4113,7 +4113,7 @@ eslint-plugin-unicorn@^23.0.0:
     safe-regex "^2.1.1"
     semver "^7.3.2"
 
-eslint-plugin-vue@^7.1.0, eslint-plugin-vue@^7.5.0:
+eslint-plugin-vue@^7.1.0, eslint-plugin-vue@^7.6.0:
   version "7.6.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-vue/-/eslint-plugin-vue-7.6.0.tgz#ea616e6dfd45d545adb16cba628c5a992cc31f0b"
   integrity sha512-qYpKwAvpcQXyUXVcG8Zd+fxHDx9iSgTQuO7dql7Ug/2BCvNNDr6s3I9p8MoUo23JJdO7ZAjW3vSwY/EBf4uBcw==
@@ -4186,7 +4186,7 @@ eslint-webpack-plugin@^2.4.1:
     micromatch "^4.0.2"
     schema-utils "^3.0.0"
 
-eslint@^7.18.0:
+eslint@^7.20.0:
   version "7.20.0"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.20.0.tgz#db07c4ca4eda2e2316e7aa57ac7fc91ec550bdc7"
   integrity sha512-qGi0CTcOGP2OtCQBgWZlQjcTuP0XkIpYFj25XtRTQSHC+umNnp7UMshr2G8SLsRFYDdAPFeHOsiteadmMH02Yw==
@@ -6781,7 +6781,7 @@ num2fraction@^1.2.2:
   resolved "https://registry.yarnpkg.com/num2fraction/-/num2fraction-1.2.2.tgz#6f682b6a027a4e9ddfa4564cd2589d1d4e669ede"
   integrity sha1-b2gragJ6Tp3fpFZM0lidHU5mnt4=
 
-nuxt@^2.14.12:
+nuxt@^2.15.2:
   version "2.15.2"
   resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-2.15.2.tgz#88513c7694b851fef3fa629eaddfc8714f83cdba"
   integrity sha512-TS3eM5JHv6RyFV79kREFFuqlYv531259Rxc3K474qtjrL/fiGWia88T9Gi7U5udYhKkC2SJYt+OZTNZz48dWRQ==
