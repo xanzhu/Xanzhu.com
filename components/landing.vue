@@ -6,5 +6,6 @@
     <p class="text-white text-sm">
       Xanzhu is a platform used to share information on privacy and security.
     </p>
+    <img class="relative h-3/4 w-auto" src="~/assets/bg-1.jpg">
   </div>
 </template>
