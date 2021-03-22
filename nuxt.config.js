@@ -9,7 +9,8 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: '' },
+      { name: 'http-equiv', content: 'Content-Security-Policy' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -42,6 +43,23 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content'
   ],
+
+  // Testing CSP
+  csp: {
+    hashAlgorithm: 'sha256',
+    policies: {
+      'script-src': [
+        "'self'"
+      ],
+      'style-src': [
+        "'self'"
+      ],
+      'default-src': [
+        "'self'"
+      ]
+    },
+    addMeta: true
+  },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
