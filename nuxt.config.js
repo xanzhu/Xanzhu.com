@@ -13,7 +13,7 @@ export default {
       { name: 'http-equiv', content: 'Content-Security-Policy' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }
     ]
   },
 
