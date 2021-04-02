@@ -49,7 +49,7 @@ export default {
       ],
       'manifest-src': [
         "'self'"
-      ],
+      ]
     },
     addMeta: true
   },
