@@ -2,7 +2,7 @@ export default {
   target: 'static',
 
   head: {
-    title: 'ailo',
+    title: 'Xanzhu Security',
     bodyAttrs: {
       class: 'dark:bg-black bg-gray-200'
     },
@@ -13,35 +13,25 @@ export default {
       { name: 'http-equiv', content: 'Content-Security-Policy' }
     ],
     link: [
-      { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }
+      { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+      { rel: 'mask-icon', href: '/favicon.svg', color: '#FFFFFF' }
     ]
   },
-
-  // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-  ],
-
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
-
-  // Auto import components: https://go.nuxtjs.dev/config-components
+  css: [],
+  plugins: [],
   components: true,
-
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss'
   ],
-
-  // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
-    '@nuxt/content'
+    '@nuxt/content',
+    'nuxt-i18n'
   ],
 
   // Testing CSP
@@ -61,11 +51,37 @@ export default {
     addMeta: true
   },
 
+  i18n: {
+    defaultLocale: 'en',
+    strategy: 'prefix_except_default',
+    langDir: 'i18n/',
+    lazy: true,
+    detectBrowserLanguage: {
+      onlyOnRoot: true
+    },
+    seo: false,
+    locales: [
+      {
+        code: 'en',
+        iso: 'en',
+        name: 'English',
+        file: 'en.js'
+      },
+      {
+        code: 'ko',
+        iso: 'ko',
+        name: '한국어',
+        file: 'ko.js'
+      }
+    ]
+  },
+
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
       lang: 'en'
-    }
+    },
+    icon: true
   },
 
   tailwindcss: {
@@ -76,6 +92,5 @@ export default {
   content: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  }
+  build: {}
 }
