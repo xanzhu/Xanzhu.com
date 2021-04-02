@@ -34,25 +34,25 @@ export default {
     'nuxt-i18n'
   ],
 
-  // Testing CSP
-  // csp: {
-  //   hashAlgorithm: 'sha256',
-  //   policies: {
-  //     'script-src': [
-  //       "'self'"
-  //     ],
-  //     'style-src': [
-  //       "'self'"
-  //     ],
-  //     'default-src': [
-  //       "'self'"
-  //     ],
-  //     'manifest-src': [
-  //       "'self'"
-  //     ]
-  //   },
-  //   addMeta: true
-  // },
+  //  Testing CSP
+  csp: {
+    hashAlgorithm: 'sha256',
+    policies: {
+      'script-src': [
+        "'self' https://cdn.jsdeliver.net"
+      ],
+      'style-src': [
+        "'self'"
+      ],
+      'default-src': [
+        "'self'"
+      ],
+      'manifest-src': [
+        "'self'"
+      ]
+    },
+    addMeta: true
+  },
 
   i18n: {
     defaultLocale: 'en',
