@@ -46,7 +46,10 @@ export default {
       ],
       'default-src': [
         "'self'"
-      ]
+      ],
+      'manifest-src': [
+        "'self'"
+      ],
     },
     addMeta: true
   },
