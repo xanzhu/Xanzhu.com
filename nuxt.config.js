@@ -35,24 +35,24 @@ export default {
   ],
 
   // Testing CSP
-  csp: {
-    hashAlgorithm: 'sha256',
-    policies: {
-      'script-src': [
-        "'self'"
-      ],
-      'style-src': [
-        "'self'"
-      ],
-      'default-src': [
-        "'self'"
-      ],
-      'manifest-src': [
-        "'self'"
-      ]
-    },
-    addMeta: true
-  },
+  // csp: {
+  //   hashAlgorithm: 'sha256',
+  //   policies: {
+  //     'script-src': [
+  //       "'self'"
+  //     ],
+  //     'style-src': [
+  //       "'self'"
+  //     ],
+  //     'default-src': [
+  //       "'self'"
+  //     ],
+  //     'manifest-src': [
+  //       "'self'"
+  //     ]
+  //   },
+  //   addMeta: true
+  // },
 
   i18n: {
     defaultLocale: 'en',
