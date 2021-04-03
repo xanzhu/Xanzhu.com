@@ -21,38 +21,35 @@ export default {
   plugins: [],
   components: true,
   buildModules: [
-    // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
-    // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss'
   ],
   modules: [
-    // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
-    // https://go.nuxtjs.dev/content
     '@nuxt/content',
     'nuxt-i18n'
   ],
 
-  //  Testing CSP
-  csp: {
-    hashAlgorithm: 'sha256',
-    policies: {
-      'script-src': [
-        "'self' https://cdn.jsdeliver.net"
-      ],
-      'style-src': [
-        "'self'"
-      ],
-      'default-src': [
-        "'self'"
-      ],
-      'manifest-src': [
-        "'self'"
-      ]
-    },
-    addMeta: true
-  },
+  // Testing CSP (Disabled 3/5/21)
+  // Using Vercel.json
+  // csp: {
+  //   hashAlgorithm: 'sha256',
+  //   policies: {
+  //     'script-src': [
+  //       "'self' https://cdn.jsdeliver.net"
+  //     ],
+  //     'style-src': [
+  //       "'self'"
+  //     ],
+  //     'default-src': [
+  //       "'self'"
+  //     ],
+  //     'manifest-src': [
+  //       "'self'"
+  //     ]
+  //   },
+  //   addMeta: true
+  // },
 
   i18n: {
     defaultLocale: 'en',
@@ -79,7 +76,6 @@ export default {
     ]
   },
 
-  // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
       lang: 'en',
@@ -95,10 +91,6 @@ export default {
   tailwindcss: {
     jit: true
   },
-
-  // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
-
-  // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {}
 }
