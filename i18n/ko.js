@@ -22,7 +22,7 @@ module.exports = {
     },
     // error500: {
     //   heading: '시스템 오류',
-    //   desc: '이 요청을 처리 할 수 없습니다.'
+    //   desc: '이 요청을 처리 할 수 없습니다.
     // },
     mobile: {
       menu: '개발중인'
