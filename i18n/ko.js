@@ -1,4 +1,6 @@
 module.exports = {
+  // Help us translate, these are unverified translations. 
+  // Pull request or Contact feedback@xanzhu.com
   maintenance: {
     title: '유지',
     description_1: 'T이 페이지는 디자인이 개선됨에 따라 변경됩니다',
