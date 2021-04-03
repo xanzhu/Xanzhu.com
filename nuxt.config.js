@@ -87,7 +87,7 @@ export default {
       short_name: 'Xanzhu',
       description: 'Helping improve privacy, accessibility and security of the technology you use.',
       background_color: '#000',
-      theme: '#fff'
+      theme_color: '#fff'
     },
     icon: true
   },
