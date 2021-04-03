@@ -1,5 +1,5 @@
 module.exports = {
-  // Help us translate, these are unverified translations. 
+  // Help us translate, these are unverified translations.
   // Pull request or Contact feedback@xanzhu.com
   maintenance: {
     title: '유지',
