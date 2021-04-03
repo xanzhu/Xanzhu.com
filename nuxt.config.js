@@ -30,27 +30,6 @@ export default {
     'nuxt-i18n'
   ],
 
-  // Testing CSP (Disabled 3/5/21)
-  // Using Vercel.json
-  // csp: {
-  //   hashAlgorithm: 'sha256',
-  //   policies: {
-  //     'script-src': [
-  //       "'self' https://cdn.jsdeliver.net"
-  //     ],
-  //     'style-src': [
-  //       "'self'"
-  //     ],
-  //     'default-src': [
-  //       "'self'"
-  //     ],
-  //     'manifest-src': [
-  //       "'self'"
-  //     ]
-  //   },
-  //   addMeta: true
-  // },
-
   i18n: {
     defaultLocale: 'en',
     strategy: 'prefix_except_default',
