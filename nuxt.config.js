@@ -83,8 +83,11 @@ export default {
   pwa: {
     manifest: {
       lang: 'en',
-      name: 'Xanzhu',
-      shortname: 'Xanzhu'
+      name: 'Xanzhu Security',
+      short_name: 'Xanzhu',
+      description: 'Helping improve privacy, accessibility and security of the technology you use.',
+      background_color: '#000',
+      theme: '#fff'
     },
     icon: true
   },
