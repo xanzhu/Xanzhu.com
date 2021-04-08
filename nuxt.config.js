@@ -38,7 +38,8 @@ export default {
     langDir: 'i18n/',
     detectBrowserLanguage: {
       onlyOnRoot: true,
-      useCookie: true
+      useCookie: true,
+      alwaysRedirect: true
     },
     seo: false,
     locales: [
