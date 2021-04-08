@@ -30,12 +30,16 @@ export default {
   ],
 
   i18n: {
+    vueI18n: {
+      fallbackLocale: ['en', 'ko']
+    },
     defaultLocale: 'en',
     strategy: 'prefix_except_default',
     langDir: 'i18n/',
-    lazy: true,
     detectBrowserLanguage: {
-      onlyOnRoot: true
+      onlyOnRoot: true,
+      useCookie: true,
+      alwaysRedirect: true
     },
     seo: false,
     locales: [

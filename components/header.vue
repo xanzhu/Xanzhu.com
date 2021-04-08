@@ -1,13 +1,13 @@
 <template>
   <div class="text-black bg-gray-200 flex justify-between px-6 py-4 dark:bg-black dark:text-white">
-    <div v-if="locale == en" class="hidden sm:block" aria-label="Switch Language">
+    <div class="hidden sm:block" aria-label="Switch Language">
       <nuxt-link
         v-for="locale in availableLocales"
         :key="locale.code"
         :to="switchLocalePath(locale.code)"
         aria-hidden="true"
       >
-        <!-- Improve: set label based on Locale name -->
+        <!-- Improve: set aria label based on Locale name -->
         {{ locale.name }}
       </nuxt-link>
     </div>
