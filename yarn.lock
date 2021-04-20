@@ -1356,6 +1356,14 @@
     tailwindcss "^2.0.4"
     ufo "^0.6.10"
 
+"@nuxtjs/web-vitals@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/web-vitals/-/web-vitals-0.1.4.tgz#f7ecd908c7c6e42d3b9f2270267992ce6d7caeab"
+  integrity sha512-//63OcBoOzXyv2G5EA32Z/gL3naQf6SIarin0coz+/wBimO2U38jRmAdHaao8bCMVasojoyg95sSdzu7Per4DQ==
+  dependencies:
+    defu "^3.2.2"
+    web-vitals "^1.1.0"
+
 "@nuxtjs/youch@^4.2.3":
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/@nuxtjs/youch/-/youch-4.2.3.tgz#36f8b22df5a0efaa81373109851e1d857aca6bed"
@@ -9317,6 +9325,11 @@ watchpack@^1.7.4:
   optionalDependencies:
     chokidar "^3.4.1"
     watchpack-chokidar2 "^2.0.1"
+
+web-vitals@^1.1.0:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/web-vitals/-/web-vitals-1.1.1.tgz#2df535e3355fb7fbe34787b44b736e270e539377"
+  integrity sha512-jYOaqu01Ny1NvMwJ3dBJDUOJ2PGWknZWH4AUnvFOscvbdHMERIKT2TlgiAey5rVyfOePG7so2JcXXZdSnBvioQ==
 
 webpack-bundle-analyzer@^4.4.0:
   version "4.4.1"
