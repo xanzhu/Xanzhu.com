@@ -22,8 +22,7 @@ export default {
   components: true,
   buildModules: [
     '@nuxtjs/eslint-module',
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/web-vitals'
+    '@nuxtjs/tailwindcss'
   ],
   modules: [
     '@nuxtjs/pwa',
