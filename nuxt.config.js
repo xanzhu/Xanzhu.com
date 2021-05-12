@@ -69,10 +69,6 @@ export default {
     },
     icon: true
   },
-
-  tailwindcss: {
-    jit: true
-  },
   content: {},
   build: {}
 }
