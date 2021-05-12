@@ -1,8 +1,6 @@
 module.exports = {
-  future: {
-    // removeDeprecatedGapUtilities: true,
-    // purgeLayersByDefault: true,
-  },
+  future: {},
+  mode: 'jit',
   purge: [],
   theme: {
     extend: {}
