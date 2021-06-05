@@ -5,9 +5,8 @@
         v-for="locale in availableLocales"
         :key="locale.code"
         :to="switchLocalePath(locale.code)"
-        aria-hidden="true"
+        :aria-label="`${locale.name}`"
       >
-        <!-- Improve: set aria label based on Locale name -->
         {{ locale.name }}
       </nuxt-link>
     </div>
