@@ -1,9 +1,9 @@
 module.exports = {
   // Help us translate, these are unverified translations.
-  // Pull request or Contact feedback@xanzhu.com
+  // Open an issue via https://github.com/xanzhu/Ailo/issues or Contact feedback@xanzhu.com
   maintenance: {
-    title: '유지',
-    description_1: 'T이 페이지는 디자인이 개선됨에 따라 변경됩니다',
+    title: '정비',
+    description_1: '이 페이지는 디자인이 개선됨에 따라 계속 업데이트됩니다',
     description_2: '연말까지 웹 사이트를 공개 할 계획입니다'
   },
   error: {
@@ -13,6 +13,6 @@ module.exports = {
   },
   meta: {
     title: 'Xanzhu 보안',
-    description: '개인 정보 보호, 보안 및 기술 접근성 향상.'
+    description: '기술의 개인 정보 보호, 접근성 및 보안을 개선할 수 있습니다'
   }
 }

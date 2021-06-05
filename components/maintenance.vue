@@ -1,8 +1,6 @@
 <template>
-  <div class="text-black items-center flex bg-gray-200 dark:bg-black dark:text-white mt-24 p-8">
-    <div class="dark:bg-black bg-gray-200">
-      <img class="hidden sm:block object-cover h-40 w-24 mr-12 rounded-full " src="~assets/louie.webp" alt="Woman looking into camera wearing orange/red makeup">
-    </div>
+  <div class="dark:text-white text-black flex items-center mt-24 p-8">
+    <img class="hidden sm:block object-cover h-40 w-24 mr-12 rounded-full " src="~assets/louie-d1.webp" alt="Woman looking into camera wearing orange/red makeup">
     <div class="text-4xl font-medium">
       {{ $t('maintenance.title') }}
       <p class="text-base font-thin">
