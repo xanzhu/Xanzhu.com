@@ -22,10 +22,10 @@ export default {
   components: true,
   buildModules: [
     '@nuxtjs/eslint-module',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/svg'
   ],
   modules: [
-    '@nuxtjs/pwa',
     'nuxt-i18n'
   ],
 
@@ -56,18 +56,6 @@ export default {
         file: 'ko.js'
       }
     ]
-  },
-
-  pwa: {
-    manifest: {
-      lang: 'en',
-      name: 'Xanzhu',
-      short_name: 'Xanzhu',
-      description: 'Helping improve privacy, accessibility and security of the technology you use.',
-      background_color: '#000',
-      theme_color: '#fff'
-    },
-    icon: true
   },
   content: {},
   build: {}
