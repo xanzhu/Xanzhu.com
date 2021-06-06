@@ -14,7 +14,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
-      { rel: 'mask-icon', href: '/favicon.svg', color: '#000' }
+      { rel: 'mask-icon', href: '/favicon.svg', color: '#FFFFFF' }
     ]
   },
   css: [],
