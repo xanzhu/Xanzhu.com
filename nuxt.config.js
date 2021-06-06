@@ -14,7 +14,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
-      { rel: 'mask-icon', href: '/favicon.svg', color: '#FFFFFF' }
+      { rel: 'mask-icon', href: '/favicon.svg', color: '#000' }
     ]
   },
   css: [],
@@ -26,7 +26,6 @@ export default {
     '@nuxtjs/svg'
   ],
   modules: [
-    '@nuxtjs/pwa',
     'nuxt-i18n'
   ],
 
@@ -57,18 +56,6 @@ export default {
         file: 'ko.js'
       }
     ]
-  },
-
-  pwa: {
-    manifest: {
-      lang: 'en',
-      name: 'Xanzhu',
-      short_name: 'Xanzhu',
-      description: 'Helping improve privacy, accessibility and security of the technology you use.',
-      background_color: '#FFF',
-      theme_color: '#000'
-    },
-    icon: true
   },
   content: {},
   build: {}
