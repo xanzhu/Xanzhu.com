@@ -23,7 +23,8 @@ export default {
   buildModules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/svg'
+    '@nuxtjs/svg',
+    '@nuxt/image'
   ],
   modules: [
     'nuxt-i18n'

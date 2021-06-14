@@ -1,6 +1,6 @@
 module.exports = {
   // Help us translate, these are unverified translations.
-  // Open an issue via https://github.com/xanzhu/Ailo/issues or Contact feedback@xanzhu.com
+  // Open an issue via https://github.com/xanzhu/Ailo/issues or email feedback@xanzhu.com
   maintenance: {
     title: '정비',
     description_1: '이 페이지는 디자인이 개선됨에 따라 계속 업데이트됩니다',
