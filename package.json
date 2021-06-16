@@ -13,7 +13,7 @@
   "dependencies": {
     "core-js": "^3.14.0",
     "nuxt": "^2.15.7",
-    "nuxt-i18n": "^6.27.0"
+    "nuxt-i18n": "^6.27.1"
   },
   "devDependencies": {
     "@nuxt/image": "^0.4.14",
