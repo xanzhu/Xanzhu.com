@@ -1155,11 +1155,12 @@
     node-html-parser "^3.2.0"
     ufo "^0.7.4"
 
-"@nuxt/image@^0.4.14":
-  version "0.4.14"
-  resolved "https://registry.yarnpkg.com/@nuxt/image/-/image-0.4.14.tgz#48debb80c02d8aa98d1ef5bf2714b1845ca21fd2"
-  integrity sha512-TXZY5A458AcAj/dWcOWyUyByPNdK3phjQ5mneL3N/wLLsqYsAqb7FmZM9IhCi46Uc1LuHi1roqh9SQkZCGsBUw==
+"@nuxt/image@^0.4.17":
+  version "0.4.17"
+  resolved "https://registry.yarnpkg.com/@nuxt/image/-/image-0.4.17.tgz#35eaf2de4c475839e9c7f12029510c2252998839"
+  integrity sha512-5eOGIpNHqugq0nKZzSM5BsYew9Akbx9RjIZdajxRU9J2CU//E43QY+fZh2BUCPQZkUYJWcDWo8qYexJyQzdMWg==
   dependencies:
+    consola "^2.15.3"
     defu "^5.0.0"
     fs-extra "^10.0.0"
     hasha "^5.2.2"
@@ -1171,6 +1172,7 @@
     p-limit "^3.1.0"
     rc9 "^1.2.0"
     requrl "^3.0.2"
+    semver "^7.3.5"
     ufo "^0.7.5"
     upath "^2.0.1"
 
