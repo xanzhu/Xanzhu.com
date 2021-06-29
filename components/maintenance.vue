@@ -1,5 +1,5 @@
 <template>
-  <div class="dark:text-white text-black flex items-center mt-24 p-8">
+  <div class="dark:text-white text-black flex justify-center items-center mt-24 p-8">
     <nuxt-img class="hidden sm:block object-cover h-40 w-24 mr-12 rounded-full" src="/images/louie-d3.webp" alt="Woman looking into camera wearing orange/red makeup" />
     <div class="text-4xl font-medium">
       {{ $t('maintenance.title') }}

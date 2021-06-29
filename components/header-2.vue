@@ -2,19 +2,29 @@
   <header class="flex items-center py-3 px-6 dark:bg-black bg-gray-200 dark:text-white text-black">
     <nav class="flex flex-1 justify-start ml-auto">
       <button
-        class="sm:flex hidden mr-6 hover:bg-gray-300 dark:hover:bg-gray-800 rounded-md"
+        class="sm:flex hidden mr-6 hover:bg-gray-300 dark:hover:bg-gray-800 rounded-md text-indigo-600 dark:text-red-600"
         aria-label="Open Language Selection"
         @click="toggle"
+        @keydown.esc="toggle"
       >
         <Translate />
       </button>
-      <div v-if="isOpen" class="absolute z-10 dark:bg-gray-900 bg-gray-300 rounded-md mt-7 ml-1 dark:text-gray-200 font-medium flex hover:bg-gray-400 text-gray-900 dark:hover:bg-gray-700" @keydown.enter="toggle" @keydown.tab="toggle">
+      <div
+        v-if="isOpen"
+        class="absolute z-10 dark:bg-gray-900 bg-gray-300 rounded-md mt-7 ml-1 dark:text-gray-200 font-medium flex hover:bg-gray-400 text-gray-900 dark:hover:bg-gray-700"
+        @keydown.tab="toggle"
+        @keydown.esc="toggle"
+      >
         <nuxt-link
           v-for="locale in availableLocales"
           :key="locale.code"
           :to="switchLocalePath(locale.code)"
         >
-          <div class="px-6 rounded-md" :aria-label="`${locale.name}`" @click="isOpen = false">
+          <div
+            class="px-6 rounded-md"
+            :aria-label="`${locale.name}`"
+            @click="isOpen = false"
+          >
             {{ locale.name }}
           </div>
         </nuxt-link>
