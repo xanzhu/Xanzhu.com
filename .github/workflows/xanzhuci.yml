@@ -24,6 +24,3 @@ jobs:
 
       - run: yarn
       - run: yarn lint
-
-
-
