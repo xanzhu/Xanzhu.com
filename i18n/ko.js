@@ -14,5 +14,12 @@ module.exports = {
   meta: {
     title: 'Xanzhu 보안',
     description: '기술의 개인 정보 보호, 접근성 및 보안을 개선할 수 있습니다'
+  },
+  links: {
+    home: '집',
+    downloads: '다운로드',
+    support: '지원',
+    privacy_policy: '개인 정보 정책',
+    sitemap: '사이트맵'
   }
 }

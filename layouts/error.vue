@@ -1,6 +1,6 @@
 <template>
-  <div class="dark:text-gray-200 text-gray-900 text-center dark:font-thin font-normal">
-    <h1 v-if="error.statusCode === 404" class="font-semibold text-2xl pt-32 pb-4">
+  <div class="dark:text-gray-200 text-gray-900 text-center dark:font-thin font-normal flex-grow">
+    <h1 v-if="error.statusCode === 404" class="font-semibold md:text-2xl pt-32 pb-4 text-xl">
       {{ $t('error.404') }}
     </h1>
     <h1 v-else class="pb-4">

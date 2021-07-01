@@ -1,7 +1,8 @@
 <template>
-  <div>
-    <Header />
+  <div class="flex flex-col min-h-screen">
+    <Header-2 />
     <Nuxt />
+    <Footer />
   </div>
 </template>
 <script>

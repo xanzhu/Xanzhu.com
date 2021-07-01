@@ -12,5 +12,12 @@ module.exports = {
   meta: {
     title: 'Xanzhu Security',
     description: 'Helping improve privacy, accessibility and security of technology.'
+  },
+  links: {
+    home: 'Home',
+    downloads: 'Downloads',
+    support: 'Support',
+    privacy_policy: 'Privacy Policy',
+    sitemap: 'Sitemap'
   }
 }

@@ -32,7 +32,23 @@ export default {
 
   i18n: {
     vueI18n: {
-      fallbackLocale: ['en', 'ko']
+      fallbackLocale: ['en', 'ko'],
+      dateTimeFormats: {
+        en: {
+          short: {
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
+          }
+        },
+        ko: {
+          short: {
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
+          }
+        }
+      }
     },
     defaultLocale: 'en',
     strategy: 'prefix_except_default',

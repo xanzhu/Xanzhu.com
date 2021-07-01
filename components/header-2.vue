@@ -2,7 +2,7 @@
   <header class="flex items-center py-3 px-6 dark:bg-black bg-gray-200 dark:text-white text-black">
     <nav class="flex flex-1 justify-start ml-auto">
       <button
-        class="sm:flex hidden mr-6 hover:bg-gray-300 dark:hover:bg-gray-800 rounded-md text-indigo-600 dark:text-red-600"
+        class="md:flex hidden mr-6 hover:bg-gray-300 dark:hover:bg-gray-800 rounded-md text-indigo-600 dark:text-red-600"
         aria-label="Open Language Selection"
         @click="toggle"
         @keydown.esc="toggle"
@@ -11,7 +11,7 @@
       </button>
       <div
         v-if="isOpen"
-        class="absolute z-10 dark:bg-gray-900 bg-gray-300 rounded-md mt-7 ml-1 dark:text-gray-200 font-medium flex hover:bg-gray-400 text-gray-900 dark:hover:bg-gray-700"
+        class="hidden md:flex absolute z-10 dark:bg-gray-900 bg-gray-300 rounded-md mt-7 ml-1 top-4 dark:text-gray-200 font-medium hover:bg-gray-400 text-gray-900 dark:hover:bg-gray-700"
         @keydown.tab="toggle"
         @keydown.esc="toggle"
       >
@@ -29,15 +29,46 @@
           </div>
         </nuxt-link>
       </div>
-      <div class="space-x-6">
+      <div class="md:hidden flex">
+        <button>
+          <Menu v-if="!MobileMenu" aria-label="Open Menu" @click="mobile_toggle" />
+          <Cross v-if="MobileMenu" aria-label="Close Menu" @click="mobile_toggle" />
+        </button>
+      </div>
+      <div v-show="MobileMenu" class="absolute top-8 left-0 mx-4 z-20 flex flex-col p-2 my-4 md:p-0 dark:bg-gray-900 bg-gray-300 rounded-lg md:hidden font-semibold" @click="MobileMenu = false">
+        <nuxt-link class="px-4 rounded-md dark:hover:bg-gray-700 hover:bg-gray-400" :to="localePath('/')">
+          {{ $t('links.home') }}
+        </nuxt-link>
+        <nuxt-link class="px-4 rounded-md dark:hover:bg-gray-700 hover:bg-gray-400" :to="localePath('/')">
+          {{ $t('links.downloads') }}
+        </nuxt-link>
+        <nuxt-link class="px-4 mb-4 rounded-md dark:hover:bg-gray-700 hover:bg-gray-400" :to="localePath('/')">
+          {{ $t('links.support') }}
+        </nuxt-link>
+        <span class="mx-auto my-2"><Translate /></span>
+        <nuxt-link
+          v-for="locale in availableLocales"
+          :key="locale.code"
+          :to="switchLocalePath(locale.code)"
+        >
+          <div
+            class="px-4 rounded-md dark:hover:bg-gray-700 hover:bg-gray-400 text-center font-medium"
+            :aria-label="`${locale.name}`"
+            @click="MobileMenu = false"
+          >
+            {{ locale.name }}
+          </div>
+        </nuxt-link>
+      </div>
+      <div class="hidden md:space-x-6 md:flex md:flex-row font-semibold">
         <nuxt-link :to="localePath('/')">
-          Home
+          {{ $t('links.home') }}
         </nuxt-link>
         <nuxt-link :to="localePath('/')">
-          Downloads
+          {{ $t('links.downloads') }}
         </nuxt-link>
         <nuxt-link :to="localePath('/')">
-          Support
+          {{ $t('links.support') }}
         </nuxt-link>
       </div>
     </nav>
@@ -45,21 +76,27 @@
       <span class="sr-only">Xanzhu</span>
       <XanzhuV2 />
     </nuxt-link>
-    <span class="hidden flex-1 justify-end mr-auto md:flex">27th JUNE 2021</span>
+    <span class="hidden flex-1 justify-end mr-auto md:flex">{{
+      $d(new Date(), "short") }}</span>
   </header>
 </template>
 <script>
 import XanzhuV2 from '~/assets/Xanzhu.svg?inline'
 import Translate from '~/assets/translate.svg?inline'
+import Menu from '~/assets/menu.svg?inline'
+import Cross from '~/assets/cross.svg?inline'
 
 export default {
   components: {
     XanzhuV2,
+    Menu,
+    Cross,
     Translate
   },
   data () {
     return {
-      isOpen: false
+      isOpen: false,
+      MobileMenu: false
     }
   },
   computed: {
@@ -70,6 +107,9 @@ export default {
   methods: {
     toggle () {
       this.isOpen = !this.isOpen
+    },
+    mobile_toggle () {
+      this.MobileMenu = !this.MobileMenu
     }
   }
 }
