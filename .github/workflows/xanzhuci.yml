@@ -1,0 +1,29 @@
+name: Xanzhu Node.js
+
+on:
+  push:
+    branches:
+      - developer
+  pull_request:
+    branches:
+      - developer
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: 16
+    steps:
+      - uses: actions/checkout@v2.3.4
+      - name: Checkout
+        uses: actions/setup-node@2.2.0
+        with:
+          node-version: ${{ matrix.node }}
+          cache: 'yarn'
+
+      - run: yarn
+      - run: yarn lint
+
+
+
