@@ -1,8 +1,8 @@
 <template>
-  <header class="flex items-center py-3 px-6 dark:bg-black bg-gray-200 dark:text-white text-black">
+  <header class="flex items-center py-3 px-6 dark:bg-black bg-gray-200 dark:text-gray-200 text-black">
     <nav class="flex flex-1 justify-start ml-auto">
       <button
-        class="md:flex hidden mr-6 hover:bg-gray-300 dark:hover:bg-gray-800 rounded-md text-indigo-600 dark:text-red-600"
+        class="md:flex hidden mr-6 hover:bg-gray-300 dark:hover:bg-gray-800 rounded-md text-red-600 dark:text-red-600"
         aria-label="Open Language Selection"
         @click="toggle"
         @keydown.esc="toggle"
@@ -60,14 +60,14 @@
           </div>
         </nuxt-link>
       </div>
-      <div class="hidden md:space-x-6 md:flex md:flex-row font-semibold">
-        <nuxt-link :to="localePath('/')">
+      <div class="hidden md:space-x-6 md:flex md:flex-row font-semibold md:text-sm lg:text-base">
+        <nuxt-link :to="localePath('/')" class="border-b-2 hover:border-red-600 border-transparent">
           {{ $t('links.home') }}
         </nuxt-link>
-        <nuxt-link :to="localePath('/')">
+        <nuxt-link :to="localePath('/')" class="border-b-2 hover:border-red-600 border-transparent">
           {{ $t('links.downloads') }}
         </nuxt-link>
-        <nuxt-link :to="localePath('/')">
+        <nuxt-link :to="localePath('/')" class="border-b-2 hover:border-red-600 border-transparent">
           {{ $t('links.support') }}
         </nuxt-link>
       </div>
