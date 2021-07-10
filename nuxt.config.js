@@ -88,6 +88,10 @@ export default {
       }
     ]
   },
+  sitemap: {
+    hostname: 'https://dev.xanzhu.com',
+    gzip: true
+  },
   content: {},
   build: {}
 }
