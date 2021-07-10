@@ -27,12 +27,13 @@ export default {
     '@nuxt/image'
   ],
   modules: [
-    'nuxt-i18n'
+    'nuxt-i18n',
+    '@nuxtjs/sitemap'
   ],
 
   i18n: {
     vueI18n: {
-      fallbackLocale: ['en', 'ko'],
+      fallbackLocale: ['en', 'ko', 'zh'],
       dateTimeFormats: {
         en: {
           short: {
@@ -42,6 +43,13 @@ export default {
           }
         },
         ko: {
+          short: {
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
+          }
+        },
+        zh: {
           short: {
             day: 'numeric',
             month: 'long',
@@ -71,8 +79,17 @@ export default {
         iso: 'ko',
         name: '한국어',
         file: 'ko.js'
+      },
+      {
+        code: 'zh',
+        iso: 'zh',
+        name: '中文',
+        file: 'zh.js'
       }
     ]
+  },
+  sitemap: {
+    gzip: true
   },
   content: {},
   build: {}

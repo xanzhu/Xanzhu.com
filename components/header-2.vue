@@ -21,7 +21,7 @@
           :to="switchLocalePath(locale.code)"
         >
           <div
-            class="px-6 rounded-md"
+            class="px-6 rounded-md hover:bg-purple-600"
             :aria-label="`${locale.name}`"
             @click="isOpen = false"
           >
