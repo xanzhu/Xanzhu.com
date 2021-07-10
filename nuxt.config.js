@@ -88,9 +88,6 @@ export default {
       }
     ]
   },
-  sitemap: {
-    gzip: true
-  },
   content: {},
   build: {}
 }
