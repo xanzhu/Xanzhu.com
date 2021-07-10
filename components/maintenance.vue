@@ -1,10 +1,19 @@
 <template>
-  <div class="dark:text-gray-200 text-black flex justify-center items-center mt-24 p-8">
-    <nuxt-img
+  <div class="dark:text-gray-200 text-black flex justify-center items-center p-8 overflow-hidden">
+    <!-- <nuxt-img
       class="hidden sm:flex mr-12 rounded-md"
-      width="auto"
       src="/images/Hussain.webp"
-      sizes="md:50vw lg:200px"
+      width="384px"
+      height="575px"
+      sizes="md:200px lg:400px xl:800px"
+      alt="Auckland Skytower"
+    /> -->
+    <nuxt-picture
+      src="/images/Hussain.webp"
+      width="384px"
+      height="575px"
+      sizes="md:500px lg:400px"
+      class="hidden sm:flex mr-12 rounded-md"
       alt="Auckland Skytower"
     />
     <div class="text-4xl font-medium">
