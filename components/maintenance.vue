@@ -2,8 +2,7 @@
   <div class="dark:text-gray-200 text-black flex justify-center items-center p-8 overflow-hidden">
     <nuxt-img
       src="/images/mountain.png"
-      sizes="md:186px lg:286px"
-      :width="286"
+      sizes="md:186px, lg:286px"
       class="hidden sm:flex mr-12 rounded-md mt-12"
       alt="Large mountain"
       format="webp"
