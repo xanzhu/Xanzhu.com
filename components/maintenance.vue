@@ -9,20 +9,20 @@
       fit="cover"
       quality="100"
     />
-    <div class="text-4xl font-medium">
+    <div class="text-4xl font-medium animate-pulse">
       {{ $t('maintenance.title') }}
       <p class="text-base font-thin">
         {{ $t('maintenance.description_1') }} <br>
         {{ $t('maintenance.description_2') }}
       </p>
-      <div class="flex justify-center text-red-700">
+      <div class="flex justify-center text-red-700 animate-spin">
         <Loading />
       </div>
     </div>
   </div>
 </template>
 <script>
-import Loading from '~/assets/loading.svg'
+import Loading from '~/assets/loading.svg?inline'
 
 export default {
   components: {
