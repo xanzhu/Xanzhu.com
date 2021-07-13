@@ -3,6 +3,7 @@
     <nuxt-img
       src="/images/mountain.png"
       height="300px"
+      width="160px"
       sizes="md:186px lg:286px"
       class="hidden sm:flex mr-12 mt-12 rounded-md"
       alt="Large mountain"
