@@ -52,7 +52,6 @@ export default {
         }
       ],
       link: [
-        // { rel: 'shortcut icon', sizes: '16x16 24x24 32x32 48x48 64x64', href: '/favicon.ico' },
         ...i18nSeo.link
       ]
     }

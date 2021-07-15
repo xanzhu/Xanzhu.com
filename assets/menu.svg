@@ -1,6 +1,3 @@
-<!-- <svg width="19" height="8" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-<path d="M18.0036 8H0.552734V6H18.0036V8ZM18.0036 2H0.552734V0H18.0036V2Z"/>
-</svg> -->
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="24" height="24" stroke="currentColor">
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
 </svg>

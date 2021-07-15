@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-grow overflow-scroll">
+  <div class="flex-1">
     <Maintenance />
   </div>
 </template>
