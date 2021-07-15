@@ -31,7 +31,6 @@ export default {
           content: this.$i18n.t('meta.description')
         },
         {
-          // Update banner
           hid: 'twitter:image',
           name: 'twitter:image',
           content: 'https://res.cloudinary.com/xanzhu/image/upload/v1617503527/Xanzhu4521a_mk9agy.png'
@@ -47,7 +46,6 @@ export default {
           content: this.$i18n.t('meta.description')
         },
         {
-          // Update banner
           hid: 'og:image',
           property: 'og:image',
           content: 'https://res.cloudinary.com/xanzhu/image/upload/v1617503527/Xanzhu4521a_mk9agy.png'
