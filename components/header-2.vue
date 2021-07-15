@@ -60,7 +60,7 @@
           </div>
         </nuxt-link>
       </div>
-      <div class="hidden md:space-x-6 md:flex md:flex-row font-semibold md:text-sm lg:text-base">
+      <div class="hidden md:space-x-4 md:flex md:flex-row font-semibold md:text-sm lg:text-base">
         <nuxt-link :to="localePath('/')" class="border-b-2 hover:border-red-600 border-transparent">
           {{ $t('links.home') }}
         </nuxt-link>
