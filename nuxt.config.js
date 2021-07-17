@@ -72,19 +72,19 @@ export default {
         code: 'en',
         iso: 'en',
         name: 'English',
-        file: 'en.js'
+        file: 'en.json'
       },
       {
         code: 'ko',
         iso: 'ko',
         name: '한국어',
-        file: 'ko.js'
+        file: 'ko.json'
       },
       {
         code: 'zh',
         iso: 'zh',
         name: '中文',
-        file: 'zh.js'
+        file: 'zh.json'
       }
     ]
   },
