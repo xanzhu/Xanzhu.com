@@ -4,6 +4,9 @@
       <nuxt-link :to="localePath('/privacy-policy')" class="border-b-2 hover:border-red-600 border-transparent">
         {{ $t('links.privacy_policy') }}
       </nuxt-link>
+      <a href="https://status.xanzhu.com" rel="nofollow noopener" target="_blank" class="text-red-600 border-b-2 border-red-600">
+        {{ $t('links.status') }}
+      </a>
     </div>
     <div class="w-5 hidden sm:flex">
       <Xanzhuico />
