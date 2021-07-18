@@ -9,7 +9,7 @@
       alt="Large mountain"
       format="webp"
     />
-    <div class="text-4xl font-medium">
+    <div class="text-4xl font-medium antialiased dark:subpixel-antialiased">
       {{ $t('maintenance.title') }}
       <p class="text-base font-thin">
         {{ $t('maintenance.description_1') }} <br>
