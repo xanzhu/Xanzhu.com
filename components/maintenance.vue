@@ -11,7 +11,7 @@
     />
     <div class="text-4xl font-medium">
       {{ $t('maintenance.title') }}
-      <p class="text-base font-thin antialiased dark:subpixel-antialiased">
+      <p class="text-base font-extralight">
         {{ $t('maintenance.description_1') }} <br>
         {{ $t('maintenance.description_2') }}
       </p>
