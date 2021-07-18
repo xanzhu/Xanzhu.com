@@ -13,8 +13,10 @@ export default {
       { name: 'http-equiv', content: 'Content-Security-Policy' }
     ],
     link: [
-      { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
-      { rel: 'mask-icon', href: '/favicon.svg', color: '#FFFFFF' }
+      { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg', sizes: 'any' },
+      { rel: 'icon', type: 'image/png', href: '/favicon.png', sizes: '32x32', media: '(prefers-color-scheme:light)' },
+      { rel: 'icon', type: 'image/png', href: '/favicon-dark.png', sizes: '32x32', media: '(prefers-color-scheme:dark)' },
+      { rel: 'mask-icon', href: '/favicon.svg', color: '#FDFDFD' }
     ]
   },
   css: [],
