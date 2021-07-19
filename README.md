@@ -1,7 +1,7 @@
 # Xanzhu.com
-[![Developer 0.3.1](https://github.com/xanzhu/Ailo/actions/workflows/xanzhuci.yml/badge.svg)](https://github.com/xanzhu/Ailo/actions/workflows/xanzhuci.yml)
+[![Developer 0.3.2](https://github.com/xanzhu/Ailo/actions/workflows/xanzhuci.yml/badge.svg)](https://github.com/xanzhu/Ailo/actions/workflows/xanzhuci.yml)
 
-Xanzhu Security, Helping to improve privacy, accessibility and security of technology we use. 
-Building a safer and more user friendly standard. Supporting Ethics and Sustainability. 
+Xanzhu Security, helping improve privacy, accessiblity and security of 
+technology we use. Redefining what is the standard and going beyond. 
 
-#### Developed by Xander Dagani
+Version: 0.3.2

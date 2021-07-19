@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col min-h-screen subpixel-antialiased">
-    <Header-2 />
+    <Header />
     <Nuxt />
     <Footer />
   </div>
