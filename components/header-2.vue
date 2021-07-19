@@ -76,7 +76,7 @@
       <span class="sr-only">Xanzhu</span>
       <XanzhuV2 />
     </nuxt-link>
-    <span class="hidden flex-1 font-semibold justify-end mr-auto md:flex">{{
+    <span class="hidden flex-1 font-medium justify-end mr-auto md:flex">{{
       $d(new Date(), "short") }}</span>
   </header>
 </template>
