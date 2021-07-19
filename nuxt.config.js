@@ -16,6 +16,8 @@ export default {
       { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg', sizes: 'any' },
       { rel: 'icon', type: 'image/png', href: '/favicon.png', sizes: '32x32', media: '(prefers-color-scheme:light)' },
       { rel: 'icon', type: 'image/png', href: '/favicon-dark.png', sizes: '32x32', media: '(prefers-color-scheme:dark)' },
+      { rel: 'apple-touch-icon', size: '180x180', href: '/favicon/apple-180.png', media: '(prefers-color-scheme:light)' },
+      { rel: 'apple-touch-icon', size: '180x180', href: '/favicon/apple-180-dark.png', media: '(prefers-color-scheme:dark)' },
       { rel: 'mask-icon', href: '/favicon.svg', color: '#FDFDFD' }
     ]
   },
