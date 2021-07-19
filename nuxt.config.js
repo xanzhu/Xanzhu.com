@@ -10,7 +10,7 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
-      { name: 'http-equiv', content: 'Content-Security-Policy' }
+      { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
       { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg', sizes: 'any' },
@@ -24,7 +24,7 @@ export default {
   components: true,
   buildModules: [
     '@nuxtjs/eslint-module',
-    '@nuxtjs/tailwindcss',
+    'nuxt-windicss',
     '@nuxtjs/svg',
     '@nuxt/image'
   ],
@@ -32,7 +32,6 @@ export default {
     'nuxt-i18n',
     '@nuxtjs/sitemap'
   ],
-
   i18n: {
     vueI18n: {
       fallbackLocale: ['en', 'ko', 'zh'],
