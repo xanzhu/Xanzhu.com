@@ -1,6 +1,7 @@
-import { defineConfig } from 'windicss/helpers'
-
-export default defineConfig({
+export default ({
   darkMode: 'media',
-  theme: {}
+  theme: {},
+  plugins: [
+    require('windicss/plugin/typography')
+  ]
 })

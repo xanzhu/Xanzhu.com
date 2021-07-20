@@ -18,7 +18,8 @@
     "downloads": "Downloads",
     "support": "Support",
     "privacy_policy": "Privacy Policy",
-    "status": "Status"
+    "status": "Status",
+    "blog": "blog"
   },
   "page": {
     "pp_title": "Privacy Policy",
@@ -27,5 +28,8 @@
     "pp_p2": "Because our site contains links to third-party websites, we cannot prevent tracking outside of our domain.",
     "pp_p3": "Apart from usage data which your browser provides (User-Agent) nothing is collected",
     "pp_link": "Offical Website is accessible from"
+  },
+  "content": {
+    "updated": "Updated"
   }
 }
