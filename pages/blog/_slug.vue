@@ -21,7 +21,8 @@
           <nuxt-img
             class="flex-strink-0"
             height="200"
-            sizes="sm:640 md:768 lg:1024"
+            width="100%"
+            sizes="sm:640w md:768w lg:1024w"
             :src="post.media"
             format="webp"
             fit="cover"
