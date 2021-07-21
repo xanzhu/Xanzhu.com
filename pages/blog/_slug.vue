@@ -21,7 +21,6 @@
           <nuxt-img
             height="200px"
             width="100%"
-            sizes="sm:100vw md:50vw"
             :src="post.media"
             format="webp"
             fit="cover"
