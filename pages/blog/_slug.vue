@@ -17,9 +17,10 @@
           </div>
           <!-- Add article read time -->
         </div>
-        <div class="flex sm:(flex-1 rounded-md justify-end) justify-center items-center h-36 sm:ml-auto overflow-hidden object-fit">
+        <div class="flex sm:(flex-1 rounded-md justify-end) justify-center items-center h-36 sm:ml-auto overflow-hidden">
           <nuxt-img
-            height="200"
+            class="w-full"
+            height="250"
             sizes="sm:100vw md:50vw lg:50vw"
             :src="post.media"
             format="webp"
