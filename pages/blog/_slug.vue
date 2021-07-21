@@ -19,7 +19,7 @@
         </div>
         <div class="flex sm:(flex-1 rounded-md justify-end) justify-center items-center lg:h-36 ml-auto overflow-hidden">
           <nuxt-img
-            class="object-contain sm:object-cover flex-strink-0 min-h-full"
+            class="object-contain sm:object-cover flex-strink-0"
             height="200px"
             width="100%"
             sizes="sm:100vw md:50vw"
