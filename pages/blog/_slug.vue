@@ -19,7 +19,6 @@
         </div>
         <div class="flex sm:(flex-1 rounded-md justify-end) justify-center items-center h-36 sm:ml-auto overflow-hidden object-fit">
           <nuxt-img
-            class="flex-strink-0"
             sizes="sm:100vw md:50vw"
             :src="post.media"
             format="webp"
