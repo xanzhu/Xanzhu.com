@@ -17,12 +17,12 @@
           </div>
           <!-- Add article read time -->
         </div>
-        <div class="flex sm:(flex-1 rounded-md justify-end) justify-center items-center h-20 sm:ml-auto overflow-hidden object-fit">
+        <div class="flex sm:(flex-1 rounded-md justify-end) justify-center items-center h-36 sm:ml-auto overflow-hidden object-fit">
           <nuxt-img
             class="flex-strink-0"
             height="200px"
             width="100%"
-            sizes="sm:100vw md:50vw"
+            sizes="sm:100vh md:50vw"
             :src="post.media"
             format="webp"
             fit="cover"
