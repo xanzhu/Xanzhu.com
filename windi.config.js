@@ -1,7 +1,13 @@
-export default ({
-  darkMode: 'media',
+import { defineConfig } from 'windicss/helpers'
+import typography from 'windicss/plugin/typography'
+// import windiColors from 'windicss/colors';
+
+export default defineConfig({
   theme: {},
+  darkMode: 'media',
   plugins: [
-    require('windicss/plugin/typography')
+    typography({
+      dark: true
+    })
   ]
 })

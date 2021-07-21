@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto rounded-md dark:(bg-dark-800 text-light-200) text-dark-900 bg-light-600 mt-2 flex-grow">
     <article v-if="post">
-      <header class="dark:bg-dark-800 bg-light-700 mb-auto rounded-md flex flex-row">
+      <header class="dark:bg-dark-700 bg-light-700 mb-auto rounded-md flex flex-row">
         <div class="flex flex-col flex-1 p-4">
           <div class="text-xs space-x-5 inline-flex font-medium">
             <p class="text-red-500">
