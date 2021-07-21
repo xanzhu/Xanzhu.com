@@ -22,7 +22,7 @@
             class="flex-strink-0"
             height="200px"
             width="100%"
-            sizes="sm:640 md:768"
+            sizes="sm:100vw md:50vw"
             :src="post.media"
             format="webp"
             fit="cover"
