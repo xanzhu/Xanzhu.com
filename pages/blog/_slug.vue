@@ -9,7 +9,7 @@
             </p>
             <p>{{ $d(new Date(post.createdAt), 'short', localePath ) }}</p>
           </div>
-          <div class="text-lg leading-tight xs:text-md sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-sans font-semibold mr-6 mb-auto">
+          <div class="text-lg leading-tight xs:text-md sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-sans font-medium mr-6 mb-auto break-words">
             {{ post.title }}
           </div>
           <div class="text-xs space-x-5 inline-flex dark:bg-dark-400 bg-light-900 p-1 rounded-full w-auto mr-auto font-medium">
@@ -42,6 +42,16 @@ const head = function () {
     },
     meta: [
       {
+        hid: 'title',
+        property: 'title',
+        content: this.post.title
+      },
+      {
+        hid: 'description',
+        property: 'description',
+        content: this.post.description
+      },
+      {
         hid: 'og:description',
         property: 'og:description',
         content: this.post.description
@@ -54,6 +64,21 @@ const head = function () {
       {
         hid: 'og:image',
         property: 'og:image',
+        content: this.post.media
+      },
+      {
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: this.post.title
+      },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content: this.post.description
+      },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
         content: this.post.media
       }
     ]

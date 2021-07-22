@@ -1,8 +1,8 @@
 ---
-title: Chinese How much text can you fit in this box before it looks bad?
-description: Description
+title: 在它看起来不好之前， 你能在这个盒子里装多少文本？
+description: 用中文简体字写的示例说明
 media: /images/mountain_4.jpeg
-tag: TEST
+tag: 测试
 ---
 
 # Nec patriae
