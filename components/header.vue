@@ -1,6 +1,6 @@
 <template>
-  <header class="flex items-center py-3 px-6 dark:(bg-black text-gray-200) bg-gray-200 text-dark-900">
-    <nav class="flex flex-1 justify-start ml-auto">
+  <header class="flex items-center py-3 px-4 sm:px-6 dark:(bg-black text-gray-200) bg-gray-200 text-dark-900">
+    <nav class="flex flex-1 justify-start items-center ml-auto">
       <button
         class="md:flex relative hidden mr-6 hover:bg-gray-300 dark:(hover:bg-dark-800 text-red-600) rounded-md text-red-600"
         aria-label="Open Language Selection"
@@ -42,8 +42,8 @@
         <nuxt-link class="px-4 rounded-md dark:hover:bg-dark-700 hover:bg-gray-400" :to="localePath('/')">
           {{ $t('links.downloads') }}
         </nuxt-link>
-        <nuxt-link class="px-4 mb-4 rounded-md dark:hover:bg-dark-700 hover:bg-gray-400" :to="localePath('/')">
-          {{ $t('links.support') }}
+        <nuxt-link class="px-4 mb-4 rounded-md dark:hover:bg-dark-700 hover:bg-gray-400" :to="localePath('/blog')">
+          {{ $t('links.blog') }}
         </nuxt-link>
         <span class="mx-auto my-2"><Translate /></span>
         <nuxt-link
@@ -66,9 +66,6 @@
         </nuxt-link>
         <nuxt-link :to="localePath('/')" class="border-b-2 hover:border-red-600 border-transparent">
           {{ $t('links.downloads') }}
-        </nuxt-link>
-        <nuxt-link :to="localePath('/')" class="border-b-2 hover:border-red-600 border-transparent">
-          {{ $t('links.support') }}
         </nuxt-link>
         <nuxt-link :to="localePath('/blog')" class="border-b-2 hover:border-red-600 border-transparent">
           {{ $t('links.blog') }}

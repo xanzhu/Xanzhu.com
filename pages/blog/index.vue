@@ -1,10 +1,10 @@
 <template>
-  <div class="blog container sm:mx-6 dark:text-light-200 text-dark-900 flex-grow">
-    <section class="grid grid-cols-1 md:grid-cols-3 gap-2 pt-12 justify-center">
+  <div class="blog container mx-auto dark:text-light-200 text-dark-900 flex-grow">
+    <section class="grid grid-cols-1 sm:grid-cols-2 mx-2 md:grid-cols-3 gap-6 pt-6 justify-center">
       <article
         v-for="(post, $index) in posts"
         :key="`post-${$index}`"
-        class="post max-w-sm rounded overflow-hidden shadow-lg flex flex-col mx-auto dark:bg-dark-900 bg-light-600"
+        class="post max-w-sm rounded overflow-hidden shadow-lg flex flex-col mx-auto dark:bg-dark-700 bg-light-600"
       >
         <nuxt-link :to="localePath(post.path)" class="font-bold text-xl mb-2">
           <nuxt-img class="relative w-full h-32 object-cover object-center" :src="post.media" :alt="post.title" format="webp" sizes="sm:100vw md:50vw" />

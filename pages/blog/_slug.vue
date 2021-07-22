@@ -17,7 +17,7 @@
           </div>
           <!-- Add article read time -->
         </div>
-        <div class="flex sm:(flex-1 rounded-md justify-end) justify-center items-center lg:h-36 ml-auto overflow-hidden">
+        <div class="flex sm:(flex-1 rounded-md justify-end) justify-center items-center h-56 sm:h-36 sm:ml-auto overflow-hidden">
           <nuxt-img
             class="flex-strink-0"
             height="200px"
