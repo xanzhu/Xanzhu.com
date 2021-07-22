@@ -9,7 +9,7 @@
             </p>
             <p>{{ $d(new Date(post.createdAt), 'short', localePath ) }}</p>
           </div>
-          <div class="text-lg leading-tight sm:(text-xl) md:(text-2xl leading-normal)font-sans font-semibold mr-6 mb-auto">
+          <div class="text-lg leading-tight xs:text-md sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-sans font-semibold mr-6 mb-auto">
             {{ post.title }}
           </div>
           <div class="text-xs space-x-5 inline-flex dark:bg-dark-400 bg-light-900 p-1 rounded-full w-auto mr-auto font-medium">
@@ -17,12 +17,10 @@
           </div>
           <!-- Add article read time -->
         </div>
-        <div class="flex sm:(flex-1 rounded-md justify-end) justify-center items-center h-56 sm:h-36 sm:ml-auto overflow-hidden">
+        <div class="flex sm:(flex-1 rounded-md justify-end) justify-center items-center h-36 sm:ml-auto overflow-hidden">
           <nuxt-img
-            class="flex-strink-0"
-            height="200px"
-            width="100%"
-            sizes="sm:100vw md:50vw"
+            class="object-cover flex-1 h-full w-full"
+            sizes="sm:100vw md:50vw lg:50vw"
             :src="post.media"
             format="webp"
             fit="cover"
