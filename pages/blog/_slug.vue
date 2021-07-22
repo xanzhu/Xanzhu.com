@@ -34,63 +34,6 @@
 </template>
 
 <script>
-const head = function () {
-  return {
-    title: this.post.title,
-    htmlAttrs: {
-      lang: this.$i18n.locale
-    },
-    meta: [
-      {
-        hid: 'title',
-        property: 'title',
-        content: this.post.title
-      },
-      {
-        hid: 'description',
-        property: 'description',
-        content: this.post.description
-      },
-      {
-        hid: 'og:description',
-        property: 'og:description',
-        content: this.post.description
-      },
-      {
-        property: 'og:title',
-        hid: 'og:title',
-        content: this.post.title
-      },
-      {
-        hid: 'og:image',
-        property: 'og:image',
-        content: this.post.media
-      },
-      {
-        hid: 'twitter:title',
-        name: 'twitter:title',
-        content: this.post.title
-      },
-      {
-        hid: 'twitter:description',
-        name: 'twitter:description',
-        content: this.post.description
-      },
-      {
-        hid: 'twitter:image',
-        name: 'twitter:image',
-        content: this.post.media
-      },
-      { name: 'twitter:site', content: '@xanzhu1' },
-      { name: 'twitter:card', content: 'summary_large_image' }
-      // {
-      //   hid: 'twitter:creator',
-      //   name: 'twitter:creator',
-      //   content: this.post.author
-      // }
-    ]
-  }
-}
 export default {
   name: 'Post',
   async asyncData (context) {
@@ -101,6 +44,57 @@ export default {
       post
     }
   },
-  head
+  head () {
+    return {
+      title: this.post.title,
+      htmlAttrs: {
+        lang: this.$i18n.locale
+      },
+      meta: [
+        {
+          hid: 'title',
+          property: 'title',
+          content: this.post.title
+        },
+        {
+          hid: 'description',
+          property: 'description',
+          content: this.post.description
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.post.description
+        },
+        {
+          property: 'og:title',
+          hid: 'og:title',
+          content: this.post.title
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: this.post.media
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: this.post.title
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: this.post.description
+        },
+        {
+          hid: 'twitter:image',
+          name: 'twitter:image',
+          content: this.post.media
+        },
+        { name: 'twitter:site', content: '@xanzhu1' },
+        { name: 'twitter:card', content: 'summary_large_image' }
+      ]
+    }
+  }
 }
 </script>
