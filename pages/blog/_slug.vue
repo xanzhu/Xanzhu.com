@@ -76,7 +76,7 @@ export default {
         {
           hid: 'twitter:image',
           name: 'twitter:image',
-          content: this.post.media
+          content: '_vercel/image?url=' + this.post.media
         }
       ]
     }

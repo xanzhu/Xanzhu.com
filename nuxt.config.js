@@ -1,8 +1,5 @@
 export default {
   target: 'static',
-  static: {
-    prefix: false
-  },
   head: {
     title: 'Xanzhu Security',
     bodyAttrs: {
