@@ -72,12 +72,12 @@ export default {
           hid: 'twitter:description',
           name: 'twitter:description',
           content: this.post.description
+        },
+        {
+          hid: 'twitter:image',
+          name: 'twitter:image',
+          src: this.post.media
         }
-        // {
-        //   hid: 'twitter:image',
-        //   name: 'twitter:image',
-        //   content: this.post.media
-        // }
       ]
     }
   }
