@@ -47,35 +47,22 @@ export default {
   head () {
     return {
       title: this.post.title,
-      htmlAttrs: {
-        lang: this.$i18n.locale
-      },
+      titleTemplate: '%s - Xanzhu',
       meta: [
         {
-          hid: 'title',
-          property: 'title',
-          content: this.post.title
-        },
-        {
           hid: 'description',
-          property: 'description',
+          name: 'description',
           content: this.post.description
         },
+        // Open Graph
+        { hid: 'og:title', property: 'og:title', content: this.post.title },
         {
           hid: 'og:description',
           property: 'og:description',
           content: this.post.description
         },
-        {
-          property: 'og:title',
-          hid: 'og:title',
-          content: this.post.title
-        },
-        {
-          hid: 'og:image',
-          property: 'og:image',
-          content: this.post.media
-        },
+        { hid: 'og:image', property: 'og:image', content: this.post.media },
+        // Twitter Card
         {
           hid: 'twitter:title',
           name: 'twitter:title',
@@ -90,9 +77,7 @@ export default {
           hid: 'twitter:image',
           name: 'twitter:image',
           content: this.post.media
-        },
-        { name: 'twitter:site', content: '@xanzhu1' },
-        { name: 'twitter:card', content: 'summary_large_image' }
+        }
       ]
     }
   }

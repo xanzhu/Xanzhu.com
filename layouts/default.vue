@@ -15,8 +15,6 @@ export default {
       },
       title: this.$i18n.t('meta.title'),
       meta: [
-        { name: 'twitter:site', content: '@xanzhu1' },
-        { name: 'twitter:card', content: 'summary_large_image' },
         {
           hid: 'description',
           name: 'description',
