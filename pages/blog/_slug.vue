@@ -81,16 +81,8 @@ const head = function () {
         name: 'twitter:image',
         content: this.post.media
       },
-      {
-        hid: 'twitter:card',
-        name: 'twitter:card',
-        content: 'summary_large_image'
-      },
-      {
-        hid: 'twitter:site',
-        name: 'twitter:site',
-        content: '@Xanzhu1'
-      }
+      { name: 'twitter:site', content: '@xanzhu1' },
+      { name: 'twitter:card', content: 'summary' }
       // {
       //   hid: 'twitter:creator',
       //   name: 'twitter:creator',
