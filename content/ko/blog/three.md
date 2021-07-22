@@ -1,8 +1,8 @@
 ---
-title: 在它看起来不好之前， 你能在这个盒子里装多少文本？
-description: 用中文简体字写的示例说明
-media: /images/mountain_3.jpeg
-tag: 测试
+title: 나쁜 것처럼 보이기 전에이 상자에 얼마나 많은 텍스트를 넣을 수 있습니까?
+description: 예제 설명
+media: /images/mountain.jpeg
+tag: 테스트
 ---
 
 # Nec patriae
