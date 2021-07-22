@@ -82,7 +82,7 @@ const head = function () {
         content: this.post.media
       },
       { name: 'twitter:site', content: '@xanzhu1' },
-      { name: 'twitter:card', content: 'summary' }
+      { name: 'twitter:card', content: 'summary_large_image' }
       // {
       //   hid: 'twitter:creator',
       //   name: 'twitter:creator',
