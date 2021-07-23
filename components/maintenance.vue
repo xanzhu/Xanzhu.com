@@ -16,18 +16,6 @@
         {{ $t('maintenance.description_1') }} <br>
         {{ $t('maintenance.description_2') }}
       </p>
-      <div class="flex justify-center">
-        <Loading class="-ml-1 mr-3 h-5 w-5 my-4 animate-spin text-red-700" />
-      </div>
     </div>
   </div>
 </template>
-<script>
-import Loading from '~/assets/loading.svg?inline'
-
-export default {
-  components: {
-    Loading
-  }
-}
-</script>
