@@ -19,11 +19,13 @@
         </div>
         <div class="flex sm:(flex-1 rounded-md justify-end) justify-center items-center h-36 sm:ml-auto overflow-hidden">
           <nuxt-img
-            class="object-cover flex-1 h-full w-full"
+            class="object-cover flex-1 h-full w-full object-center"
             sizes="sm:100vw md:50vw lg:50vw"
             :src="post.media"
+            :alt="post.alt"
             format="webp"
             fit="cover"
+            loading="lazy"
           />
           <!-- Add Photo credit -->
         </div>

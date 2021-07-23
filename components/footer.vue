@@ -8,7 +8,7 @@
         {{ $t('links.status') }}
       </a>
     </div>
-    <div class="w-5 hidden sm:flex">
+    <div class="hidden sm:flex w-5 h-5">
       <Xanzhuico />
     </div>
     <div class="flex flex-1 justify-end text-xs">

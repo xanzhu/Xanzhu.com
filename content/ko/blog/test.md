@@ -3,6 +3,7 @@ title: 나쁜 것처럼 보이기 전에이 상자에 얼마나 많은 텍스트
 description: 예제 설명
 media: /images/mountain_2.jpeg
 tag: 테스트
+alt: 산
 ---
 
 # Si dari hunc fuerat aspexisse labores

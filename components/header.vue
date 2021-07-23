@@ -73,8 +73,10 @@
       </div>
     </nav>
     <nuxt-link :to="localePath('/')">
-      <span class="sr-only">Xanzhu</span>
-      <XanzhuV2 />
+      <div class="h-4 w-36 sm:(h-6 w-41) fill-current">
+        <span class="sr-only">Xanzhu</span>
+        <XanzhuV2 />
+      </div>
     </nuxt-link>
     <span class="hidden flex-1 font-medium justify-end mr-auto md:flex">{{
       $d(new Date(), "short") }}</span>

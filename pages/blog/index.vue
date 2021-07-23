@@ -7,7 +7,15 @@
         class="post max-w-sm lg:max-w-md rounded overflow-hidden shadow-lg flex flex-col mx-auto dark:bg-dark-700 bg-light-600"
       >
         <nuxt-link :to="localePath(post.path)" class="font-bold text-xl mb-2">
-          <nuxt-img class="relative w-full h-32 object-cover object-center" :src="post.media" :alt="post.title" format="webp" sizes="sm:100vw md:50vw" />
+          <nuxt-img
+            class="relative w-full h-32 object-cover object-top"
+            :src="post.media"
+            :alt="post.alt"
+            format="webp"
+            sizes="sm:100vw md:50vw"
+            loading="lazy"
+            fit="cover"
+          />
           <div class="py-2 px-2 flex-2">
             <div class="flex flex-row">
               <p class="text-red-500 font-medium text-sm flex-1">

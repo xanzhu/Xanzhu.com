@@ -3,6 +3,7 @@ title: 在它看起来不好之前， 你能在这个盒子里装多少文本？
 description: 用中文简体字写的示例说明
 media: /images/mountain_3.jpeg
 tag: 测试
+alt: 山
 ---
 
 # Nec patriae
