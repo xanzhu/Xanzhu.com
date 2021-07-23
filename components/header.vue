@@ -1,17 +1,17 @@
 <template>
-  <header class="flex items-center py-3 px-4 sm:px-6 dark:(bg-black text-gray-200) bg-gray-200 text-dark-900">
+  <header class="flex items-center py-3 px-4 sm:px-6 dark:(bg-black text-light-200) bg-gray-200 text-dark-900">
     <nav class="flex flex-1 justify-start items-center ml-auto">
       <button
-        class="md:flex relative hidden mr-6 hover:bg-gray-300 dark:(hover:bg-dark-800 text-red-600) rounded-md text-red-600"
+        class="md:flex relative hidden mr-6 hover:bg-gray-300 dark:(hover:bg-dark-600 text-red-600) rounded-md text-red-600 focus:(border-1 border-current outline-none) border-1 border-transparent"
         aria-label="Open Language Selection"
         @click="toggle"
         @keydown.esc="toggle"
       >
-        <Translate />
+        <Translate class="h-7 w-7" />
       </button>
       <div
         v-if="isOpen"
-        class="hidden md:block absolute z-10 dark:(bg-dark-900 text-gray-200) bg-gray-300 rounded-md mt-7 ml-1 top-4 font-medium text-dark-900"
+        class="hidden md:block absolute z-10 dark:(bg-dark-500 text-light-200 shadow-transparent) bg-light-700 rounded-md mt-7 ml-1 top-4 font-medium text-dark-900 shadow-dark-100 shadow-md"
         @keydown.tab="toggle"
         @keydown.esc="toggle"
       >
@@ -21,7 +21,7 @@
           :to="switchLocalePath(locale.code)"
         >
           <div
-            class="px-6 rounded-md dark:hover:bg-dark-800 hover:bg-gray-400"
+            class="px-6 rounded-md dark:hover:bg-dark-300 hover:bg-light-200"
             :aria-label="`${locale.name}`"
             @click="isOpen = false"
           >
@@ -29,10 +29,10 @@
           </div>
         </nuxt-link>
       </div>
-      <div class="md:hidden flex">
+      <div class="md:hidden flex items-center">
         <button>
-          <Menu v-if="!MobileMenu" aria-label="Open Menu" @click="mobile_toggle" />
-          <Cross v-if="MobileMenu" aria-label="Close Menu" @click="mobile_toggle" />
+          <Menu v-if="!MobileMenu" class="h-6 w-6" aria-label="Open Menu" @click="mobile_toggle" />
+          <Cross v-if="MobileMenu" class="h-6 w-6" aria-label="Close Menu" @click="mobile_toggle" />
         </button>
       </div>
       <div v-show="MobileMenu" class="absolute top-8 left-0 mx-4 z-20 flex flex-col p-2 my-4 md:(p-0 hidden) dark:bg-dark-900 bg-gray-300 rounded-lg font-medium" @click="MobileMenu = false">

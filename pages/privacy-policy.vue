@@ -1,5 +1,5 @@
 <template>
-  <div class="dark:text-gray-200 text-black mx-6 my-3 flex-grow py-3">
+  <div class="dark:text-light-200 text-dark-900 mx-6 my-3 flex-grow py-3">
     <h1 class="text-3xl">
       {{ $t('page.pp_title') }}
     </h1>
