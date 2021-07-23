@@ -21,7 +21,7 @@
           :to="switchLocalePath(locale.code)"
         >
           <div
-            class="px-6 rounded-md dark:hover:bg-dark-300 hover:bg-light-200"
+            class="px-6 rounded-md dark:hover:bg-dark-300 hover:bg-light-500"
             :aria-label="`${locale.name}`"
             @click="isOpen = false"
           >
@@ -33,14 +33,14 @@
         <Menu v-if="!MobileMenu" class="h-6 w-6 stroke-current" aria-label="Open Menu" @click="mobile_toggle" />
         <Cross v-if="MobileMenu" class="h-6 w-6 stroke-current" aria-label="Close Menu" @click="mobile_toggle" />
       </button>
-      <div v-show="MobileMenu" class="absolute top-8 left-0 mx-4 z-20 flex flex-col p-2 my-4 md:(p-0 hidden) dark:bg-dark-900 bg-gray-300 rounded-lg font-medium" @click="MobileMenu = false">
-        <nuxt-link class="px-4 rounded-md dark:hover:bg-dark-700 hover:bg-gray-400" :to="localePath('/')">
+      <div v-show="MobileMenu" class="absolute top-8 left-0 mx-4 z-20 flex flex-col p-2 my-4 md:(p-0 hidden) dark:bg-dark-900 bg-light-800 rounded-lg font-medium text-dark-900 shadow-dark-100 shadow-md" @click="MobileMenu = false">
+        <nuxt-link class="px-4 rounded-md dark:hover:bg-dark-700 hover:bg-light-500" :to="localePath('/')">
           {{ $t('links.home') }}
         </nuxt-link>
-        <nuxt-link class="px-4 rounded-md dark:hover:bg-dark-700 hover:bg-gray-400" :to="localePath('/')">
+        <nuxt-link class="px-4 rounded-md dark:hover:bg-dark-700 hover:bg-light-500" :to="localePath('/')">
           {{ $t('links.downloads') }}
         </nuxt-link>
-        <nuxt-link class="px-4 mb-4 rounded-md dark:hover:bg-dark-700 hover:bg-gray-400" :to="localePath('/blog')">
+        <nuxt-link class="px-4 mb-4 rounded-md dark:hover:bg-dark-700 hover:bg-light-500" :to="localePath('/blog')">
           {{ $t('links.blog') }}
         </nuxt-link>
         <span class="mx-auto my-2"><Translate class="h-7 w-7" /></span>
@@ -50,7 +50,7 @@
           :to="switchLocalePath(locale.code)"
         >
           <div
-            class="px-4 rounded-md dark:hover:bg-dark-700 hover:bg-gray-400 text-center font-medium"
+            class="px-4 rounded-md dark:hover:bg-dark-700 hover:bg-light-500 text-center font-medium"
             :aria-label="`${locale.name}`"
             @click="MobileMenu = false"
           >
