@@ -29,12 +29,10 @@
           </div>
         </nuxt-link>
       </div>
-      <div class="md:hidden flex items-center">
-        <button class="dark:text-light-200 text-dark-900">
-          <Menu v-if="!MobileMenu" class="h-6 w-6" aria-label="Open Menu" @click="mobile_toggle" />
-          <Cross v-if="MobileMenu" class="h-6 w-6" aria-label="Close Menu" @click="mobile_toggle" />
-        </button>
-      </div>
+      <button class="md:hidden flex items-center">
+        <Menu v-if="!MobileMenu" class="h-6 w-6 stroke-current" aria-label="Open Menu" @click="mobile_toggle" />
+        <Cross v-if="MobileMenu" class="h-6 w-6 stroke-current" aria-label="Close Menu" @click="mobile_toggle" />
+      </button>
       <div v-show="MobileMenu" class="absolute top-8 left-0 mx-4 z-20 flex flex-col p-2 my-4 md:(p-0 hidden) dark:bg-dark-900 bg-gray-300 rounded-lg font-medium" @click="MobileMenu = false">
         <nuxt-link class="px-4 rounded-md dark:hover:bg-dark-700 hover:bg-gray-400" :to="localePath('/')">
           {{ $t('links.home') }}
