@@ -2,7 +2,7 @@
   <header class="flex items-center py-3 px-4 sm:px-6 dark:(bg-black text-light-200) bg-gray-200 text-dark-900">
     <nav class="flex flex-1 justify-start items-center ml-auto">
       <button
-        class="md:flex relative hidden mr-6 hover:bg-gray-300 dark:(hover:bg-dark-600 text-red-600) rounded-md text-red-600 focus:(border-1 border-current outline-none) border-1 border-transparent"
+        class="md:flex relative hidden mr-6 hover:bg-gray-300 dark:(hover:bg-dark-600 text-red-600) rounded-md focus:(border-1 border-red-600 outline-none) border-1 border-transparent"
         aria-label="Open Language Selection"
         @click="toggle"
         @keydown.esc="toggle"
@@ -45,7 +45,7 @@
         <nuxt-link class="px-4 mb-4 rounded-md dark:hover:bg-dark-700 hover:bg-gray-400" :to="localePath('/blog')">
           {{ $t('links.blog') }}
         </nuxt-link>
-        <span class="mx-auto my-2"><Translate /></span>
+        <span class="mx-auto my-2"><Translate class="h-7 w-7" /></span>
         <nuxt-link
           v-for="locale in availableLocales"
           :key="locale.code"
