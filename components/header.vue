@@ -30,7 +30,7 @@
         </nuxt-link>
       </div>
       <div class="md:hidden flex items-center">
-        <button>
+        <button class="dark:text-light-200 text-dark-900">
           <Menu v-if="!MobileMenu" class="h-6 w-6" aria-label="Open Menu" @click="mobile_toggle" />
           <Cross v-if="MobileMenu" class="h-6 w-6" aria-label="Close Menu" @click="mobile_toggle" />
         </button>
