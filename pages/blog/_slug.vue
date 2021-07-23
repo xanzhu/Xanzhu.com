@@ -72,12 +72,12 @@ export default {
           hid: 'twitter:description',
           name: 'twitter:description',
           content: this.post.description
+        },
+        {
+          hid: 'twitter:image',
+          name: 'twitter:image',
+          content: 'https://res.cloudinary.com/xanzhu/image/upload/v1627084292/Twitter-image-v1.2_b0ebgw.png'
         }
-        // {
-        //   hid: 'twitter:image',
-        //   name: 'twitter:image',
-        //   src: this.post.media
-        // }
       ]
     }
   }

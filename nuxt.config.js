@@ -99,6 +99,11 @@ export default {
     hostname: 'https://dev.xanzhu.com',
     gzip: true
   },
+  image: {
+    domains: [
+      'https://res.cloudinary.com'
+    ]
+  },
   content: {},
   build: {}
 }
