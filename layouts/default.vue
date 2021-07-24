@@ -33,7 +33,7 @@ export default {
         {
           hid: 'twitter:image',
           name: 'twitter:image',
-          content: 'https://res.cloudinary.com/xanzhu/image/upload/v1626593072/Xanzhu-share-v2_l1lvnk.png'
+          content: 'https://res.cloudinary.com/xanzhu/image/upload/v1627084292/Twitter-image-v1.2_b0ebgw.png'
         },
         {
           hid: 'og:title',
@@ -48,7 +48,7 @@ export default {
         {
           hid: 'og:image',
           property: 'og:image',
-          content: 'https://res.cloudinary.com/xanzhu/image/upload/v1626593072/Xanzhu-share-v2_l1lvnk.png'
+          content: 'https://res.cloudinary.com/xanzhu/image/upload/v1627084292/Twitter-image-v1.2_b0ebgw.png'
         }
       ],
       link: [
