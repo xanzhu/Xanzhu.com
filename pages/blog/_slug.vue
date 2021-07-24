@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto rounded-md dark:(bg-dark-700 text-light-200) text-dark-900 bg-light-600 mt-2 flex-grow">
+  <div class="container mx-auto rounded-md dark:(bg-dark-700 text-light-200) text-dark-900 bg-light-600 mt-2 flex-grow shadow-dark-100 shadow-md">
     <article v-if="post">
       <header class="dark:bg-dark-800 bg-light-700 mb-auto rounded-md flex sm:flex-row flex-col">
         <div class="flex flex-col flex-1 px-4 py-4">
