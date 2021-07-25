@@ -29,10 +29,9 @@
     "pp_p3": "Apart from usage data which your browser provides (User-Agent) nothing is collected",
     "pp_link": "Offical Website is accessible from"
   },
-  "content": {
-    "updated": "Updated"
-  },
   "article": {
-    "readtime": "min read"
+    "readtime": "min read",
+    "creditsource": "Source",
+    "updated": "Updated"
   }
 }

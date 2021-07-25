@@ -29,10 +29,9 @@
     "pp_p3": "除了您的浏览器提供的使用数据（用户代理）之外，不会收集任何数据",
     "pp_link": "官方网站可从"
   },
-  "content": {
-    "updated": "更新"
-  },
   "article": {
-    "readtime": "分钟阅读"
+    "readtime": "分钟阅读",
+    "creditsource": "来源",
+    "updated": "更新"
   }
 }

@@ -1,9 +1,9 @@
 <template>
-  <div class="container mx-auto rounded-md dark:(bg-dark-700 text-light-200) text-dark-900 bg-light-600 mt-2 flex-grow shadow-dark-100 shadow-md">
-    <article v-if="post">
-      <header class="dark:bg-dark-800 bg-light-700 mb-auto rounded-md flex sm:flex-row flex-col">
-        <div class="flex flex-col flex-1 px-4 py-4">
-          <div class="text-xs space-x-5 inline-flex font-medium">
+  <div class="container mx-auto lg:px-18 lg:px-28 mt-2">
+    <article v-if="post" class="dark:(bg-dark-700 text-light-200) text-dark-900 flex-grow shadow-dark-100 shadow-md pb-2 rounded-md">
+      <header class="dark:bg-dark-800 bg-light-700 mb-auto flex flex-col rounded-md">
+        <div class="flex flex-col flex-1 mx-4 mt-4 sm:space-y-1">
+          <div class="text-xs space-x-5 inline-flex -mt-2 font-medium">
             <p class="text-red-500">
               {{ post.tag }}
             </p>
@@ -12,14 +12,15 @@
           <div class="text-lg leading-tight xs:text-md sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-sans font-medium mr-6 mb-auto break-words">
             {{ post.title }}
           </div>
-          <div class="text-xs space-x-5 inline-flex dark:bg-dark-400 bg-light-900 p-1 rounded-full w-auto mr-auto font-medium">
+          <div class="text-xs space-x-5 inline-flex dark:bg-dark-400 bg-light-900 py-1 px-2 rounded-md w-auto mr-auto font-medium">
             <!--Switch to time ago method, instead of date -->
-            <p>{{ $t('content.updated') }} : {{ $d(new Date(post.updatedAt), 'short', localePath ) }}</p>
+            <p>{{ $t('article.updated') }} : {{ $d(new Date(post.updatedAt), 'short', localePath ) }}</p>
             <p><ReadTime :content="post.body" /></p>
           </div>
         </div>
-        <div class="flex sm:(flex-1 rounded-md justify-end) justify-center items-center h-36 sm:ml-auto overflow-hidden">
+        <div class="flex justify-center items-center h-36 sm:(min-h-xs mx-4 rounded-md my-2) overflow-hidden">
           <nuxt-img
+            v-if="post.media"
             class="object-cover flex-1 h-full w-full object-center"
             sizes="sm:100vw md:50vw lg:50vw"
             :src="post.media"
@@ -28,7 +29,9 @@
             fit="cover"
             loading="lazy"
           />
-          <!-- Add Photo credit -->
+        </div>
+        <div v-if="post.source" class="text-gray-300 text-sm opacity-45 italic mx-4 -mt-2 text-right">
+          {{ $t('article.creditsource') }} : {{ post.source }}
         </div>
       </header>
       <nuxt-content class="mx-6 my-4 dark:text-light-200 text-dark-900" :document="post" />

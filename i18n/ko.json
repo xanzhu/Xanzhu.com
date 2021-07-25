@@ -29,10 +29,9 @@
     "pp_p3": "브라우저가 제공하는 사용 데이터(User-Agent) 외에는 아무것도 수집되지 않습니다.",
     "pp_link": "공식 웹사이트는 다음에서 액세스할 수 있습니다."
   },
-  "content": {
-    "updated": "업데이트됨"
-  },
   "article": {
-    "readtime": "최소 읽기"
+    "readtime": "최소 읽기",
+    "creditsource": "원천",
+    "updated": "업데이트됨"
   }
 }
