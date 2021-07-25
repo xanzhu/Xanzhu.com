@@ -31,5 +31,8 @@
   },
   "content": {
     "updated": "업데이트됨"
+  },
+  "article": {
+    "readtime": "최소 읽기"
   }
 }

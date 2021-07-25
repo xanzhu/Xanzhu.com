@@ -31,5 +31,8 @@
   },
   "content": {
     "updated": "更新"
+  },
+  "article": {
+    "readtime": "分钟阅读"
   }
 }

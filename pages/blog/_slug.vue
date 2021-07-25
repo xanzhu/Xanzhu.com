@@ -13,9 +13,10 @@
             {{ post.title }}
           </div>
           <div class="text-xs space-x-5 inline-flex dark:bg-dark-400 bg-light-900 p-1 rounded-full w-auto mr-auto font-medium">
+            <!--Switch to time ago method, instead of date -->
             <p>{{ $t('content.updated') }} : {{ $d(new Date(post.updatedAt), 'short', localePath ) }}</p>
+            <p><ReadTime :content="post.body" /></p>
           </div>
-          <!-- Add article read time -->
         </div>
         <div class="flex sm:(flex-1 rounded-md justify-end) justify-center items-center h-36 sm:ml-auto overflow-hidden">
           <nuxt-img
