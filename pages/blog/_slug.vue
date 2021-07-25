@@ -1,15 +1,15 @@
 <template>
   <div class="container mx-auto lg:px-18 lg:px-28 mt-2">
-    <article v-if="post" class="dark:(bg-dark-700 text-light-200) text-dark-900 flex-grow shadow-dark-100 shadow-md pb-2 rounded-md">
-      <header class="dark:bg-dark-800 bg-light-700 mb-auto flex flex-col rounded-md">
-        <div class="flex flex-col flex-1 mx-4 mt-4 sm:space-y-1">
+    <article v-if="post" class="dark:(bg-dark-700 text-light-200) bg-light-400 text-dark-900 flex-grow shadow-dark-100 shadow-md pb-2 sm:rounded-md">
+      <header class="mb-auto flex flex-col rounded-md">
+        <div class="flex flex-col flex-1 mx-4 mt-4 sm:space-y-1 space-y-2">
           <div class="text-xs space-x-5 inline-flex -mt-2 font-medium">
             <p class="text-red-500">
               {{ post.tag }}
             </p>
             <p>{{ $d(new Date(post.createdAt), 'short', localePath ) }}</p>
           </div>
-          <div class="text-lg leading-tight xs:text-md sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-sans font-medium mr-6 mb-auto break-words">
+          <div class="text-md leading-tight sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-sans font-medium mr-6 mb-auto break-words">
             {{ post.title }}
           </div>
           <div class="text-xs space-x-5 inline-flex dark:bg-dark-400 bg-light-900 py-1 px-2 rounded-md w-auto mr-auto font-medium">
@@ -18,7 +18,7 @@
             <p><ReadTime :content="post.body" /></p>
           </div>
         </div>
-        <div class="flex justify-center items-center h-36 sm:(min-h-xs mx-4 rounded-md my-2) overflow-hidden">
+        <div class="flex justify-center items-center h-36 sm:(min-h-xs mx-4 rounded-md) my-2 overflow-hidden">
           <nuxt-img
             v-if="post.media"
             class="object-cover flex-1 h-full w-full object-center"
@@ -30,11 +30,11 @@
             loading="lazy"
           />
         </div>
-        <div v-if="post.source" class="text-gray-300 text-sm opacity-45 italic mx-4 -mt-2 text-right">
-          {{ $t('article.creditsource') }} : {{ post.source }}
+        <div v-if="post.source" class="dark:text-light-200 text-dark-900 bg-red-bg-red-700 text-sm opacity-45 italic mx-4 -mt-2 text-right">
+          {{ $t('article.creditsource') }}: {{ post.source }}
         </div>
       </header>
-      <nuxt-content class="mx-6 my-4 dark:text-light-200 text-dark-900" :document="post" />
+      <nuxt-content class="mx-2 my-4 dark:text-light-200 text-dark-900" :document="post" />
     </article>
   </div>
 </template>
