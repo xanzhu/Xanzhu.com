@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto lg:px-18 lg:px-28 mt-2">
+  <div class="container mx-auto lg:px-22 lg:px-36 mt-2">
     <article v-if="post" class="dark:(bg-dark-700 text-light-200) bg-light-400 text-dark-900 flex-grow shadow-dark-100 shadow-md pb-2 sm:rounded-md">
       <header class="mb-auto flex flex-col rounded-md">
         <div class="flex flex-col flex-1 mx-4 mt-4 sm:space-y-1 space-y-2">
@@ -18,11 +18,12 @@
             <p><ReadTime :content="post.body" /></p>
           </div>
         </div>
-        <div class="flex justify-center items-center h-36 sm:(min-h-xs mx-4 rounded-md) my-2 overflow-hidden">
+        <!-- Add TOC based on post -->
+        <div class="flex justify-center items-center h-36 sm:(min-h-xs mx-2 rounded-md) my-2 overflow-hidden">
           <nuxt-img
             v-if="post.media"
             class="object-cover flex-1 h-full w-full object-center"
-            sizes="sm:100vw md:50vw lg:50vw"
+            sizes="sm:100vw md:100vw lg:100vw"
             :src="post.media"
             :alt="post.alt"
             format="webp"
