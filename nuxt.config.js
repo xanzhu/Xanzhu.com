@@ -105,5 +105,12 @@ export default {
     ]
   },
   content: {},
-  build: {}
+  build: {},
+  generate: {
+    cache: {
+      ignore: [
+        'content'
+      ]
+    }
+  }
 }
