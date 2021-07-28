@@ -83,9 +83,16 @@ export default {
         {
           hid: 'twitter:image',
           name: 'twitter:image',
-          content: 'https://res.cloudinary.com/xanzhu/image/upload/v1627084292/Twitter-image-v1.2_b0ebgw.png'
+          content: this.getPostMedia
         }
       ]
+    }
+  },
+  computed: {
+    getPostMedia () {
+      return this.post?.media
+        ? `https://a2.xanzhu.com/images/${this.post?.media}`
+        : 'https://res.cloudinary.com/xanzhu/image/upload/v1627084292/Twitter-image-v1.2_b0ebgw.png'
     }
   }
 }
