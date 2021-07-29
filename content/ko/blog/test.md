@@ -14,7 +14,7 @@ source: xanzhu.com
 Lorem markdownum Babylonia, meis novat, Broteasque iram enim de Clytie pastor,
 sidera, sidera amata. Inportuna vulgusque corpora, arva Mercurio! *Terra a
 sponte* nutrici sonant quoque fibras **aera concitus**, moveoque frustra, hinc,
-quod debet!
+quod debet
 
 ## Sidereo et amando Menelae prodigio tergora primo
 
