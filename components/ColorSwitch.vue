@@ -1,14 +1,14 @@
 <template>
   <div
-    class="cursor-pointer p-2 text-dark-900 select-none focus:outline-none dark:text-light-200"
+    class="cursor-pointer text-dark-900 dark:text-light-200 mx-2"
     @click="switchTheme"
   >
     <Sun
       v-if="ColourScheme === 'light'"
-      class="h-5 w-5"
+      class="h-6 w-6 pt-1"
     />
 
-    <Moon v-else class="h-5 w-5" />
+    <Moon v-else class="h-6 w-6 pt-1" />
   </div>
 </template>
 
