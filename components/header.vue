@@ -1,7 +1,7 @@
 <template>
   <header class="flex text-dark-900 bg-transparent dark:(bg-black text-light-200) flex-wrap flex-row justify-between items-center md:space-x-4 mx-4 lg:mx-36 py-4 mb-6">
     <nuxt-link class="block" :to="localePath('/')">
-      <div class="logo w-36 sm:w-48 md:w-56">
+      <div class="logo w-36 sm:w-48 md:w-56 fill-current">
         <span class="sr-only">Xanzhu</span>
         <Xanzhu />
         <!-- Test using nuxt-image to serve svg -->
