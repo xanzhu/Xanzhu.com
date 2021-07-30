@@ -1,17 +1,17 @@
 <template>
   <header class="flex text-dark-900 bg-transparent dark:(bg-black text-light-200) flex-wrap flex-row justify-between items-center md:space-x-4 mx-4 lg:mx-36 py-4 mb-6">
     <nuxt-link class="block" :to="localePath('/')">
-      <div class="logo w-36 sm:w-48 md:w-56 fill-current">
+      <div class="logo w-36 sm:w-48 md:w-56">
         <span class="sr-only">Xanzhu</span>
-        <Xanzhu />
+        <Xanzhu class="fill-current" />
         <!-- Test using nuxt-image to serve svg -->
       </div>
     </nuxt-link>
     <button v-show="!MobileMenu" class="z-2 inline-block md:hidden w-8 h-8 text-black dark:text-light-200 p-1" @click="Mobile_Menu">
-      <Menu />
+      <Menu class="stroke-current" />
     </button>
     <button v-show="MobileMenu" class="z-2 inline-block md:hidden w-8 h-8 text-black dark:text-light-200 p-1" @click="Mobile_Menu">
-      <Cross />
+      <Cross class="stroke-current" />
     </button>
     <nav
       class="absolute rounded-md md:(relative top-0 flex flex-row space-x-6) top-12 right-4 z-1 flex-col-reverse items-center p-2 md:p-4 font-semibold dark:(bg-dark-900 md:bg-transparent) bg-gray-300 md:bg-transparent"
