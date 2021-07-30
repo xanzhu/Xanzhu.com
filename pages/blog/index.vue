@@ -4,7 +4,7 @@
       <article
         v-for="(post, $index) in posts"
         :key="`post-${$index}`"
-        class="post max-w-sm lg:max-w-md rounded overflow-hidden shadow-lg flex flex-col mx-auto dark:bg-dark-700 bg-light-600"
+        class="post max-w-sm lg:max-w-md rounded overflow-hidden shadow-lg flex flex-col mx-auto dark:bg-dark-900 bg-light-600"
       >
         <nuxt-link :to="localePath(post.path)" class="font-bold text-xl mb-2">
           <nuxt-img

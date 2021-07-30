@@ -1,101 +1,79 @@
 <template>
-  <header class="flex items-center py-3 px-4 sm:px-6 dark:(bg-black text-light-200) bg-gray-200 text-dark-900">
-    <nav class="flex flex-1 justify-start items-center ml-auto">
-      <button
-        class="md:flex relative hidden mr-6 hover:bg-gray-300 dark:(hover:bg-dark-600 text-red-600) rounded-md focus:(border-1 border-red-600 outline-none) border-1 border-transparent"
-        aria-label="Open Language Selection"
-        @click="toggle"
-        @keydown.esc="toggle"
-      >
-        <Translate class="h-7 w-7" />
-      </button>
-      <div
-        v-if="isOpen"
-        class="hidden md:block absolute z-10 dark:(bg-dark-500 text-light-200 shadow-transparent) bg-light-700 rounded-md mt-7 ml-1 top-4 font-medium text-dark-900 shadow-dark-100 shadow-md"
-        @keydown.tab="toggle"
-        @keydown.esc="toggle"
-      >
-        <nuxt-link
-          v-for="locale in availableLocales"
-          :key="locale.code"
-          :to="switchLocalePath(locale.code)"
-        >
-          <div
-            class="px-6 rounded-md dark:hover:bg-dark-300 hover:bg-light-500"
-            :aria-label="`${locale.name}`"
-            @click="isOpen = false"
-          >
-            {{ locale.name }}
-          </div>
-        </nuxt-link>
-      </div>
-      <button class="md:hidden flex items-center">
-        <Menu v-if="!MobileMenu" class="h-6 w-6 stroke-current stroke-2" aria-label="Open Menu" @click="mobile_toggle" />
-        <Cross v-if="MobileMenu" class="h-6 w-6 stroke-current stroke-2" aria-label="Close Menu" @click="mobile_toggle" />
-      </button>
-      <div v-show="MobileMenu" class="absolute top-8 left-0 mx-4 z-20 flex flex-col p-2 my-4 md:(p-0 hidden) dark:(bg-dark-900 text-light-200) bg-light-800 rounded-lg font-medium text-dark-900 shadow-dark-100 shadow-md" @click="MobileMenu = false">
-        <nuxt-link class="px-4 rounded-md dark:hover:bg-dark-700 hover:bg-light-500" :to="localePath('/')">
-          {{ $t('links.home') }}
-        </nuxt-link>
-        <nuxt-link class="px-4 rounded-md dark:hover:bg-dark-700 hover:bg-light-500" :to="localePath('/')">
-          {{ $t('links.downloads') }}
-        </nuxt-link>
-        <nuxt-link class="px-4 mb-4 rounded-md dark:hover:bg-dark-700 hover:bg-light-500" :to="localePath('/blog')">
-          {{ $t('links.blog') }}
-        </nuxt-link>
-        <span class="mx-auto my-2"><Translate class="h-7 w-7" /></span>
-        <nuxt-link
-          v-for="locale in availableLocales"
-          :key="locale.code"
-          :to="switchLocalePath(locale.code)"
-        >
-          <div
-            class="px-4 rounded-md dark:hover:bg-dark-700 hover:bg-light-500 text-center font-medium"
-            :aria-label="`${locale.name}`"
-            @click="MobileMenu = false"
-          >
-            {{ locale.name }}
-          </div>
-        </nuxt-link>
-      </div>
-      <div class="hidden md:(space-x-4 flex flex-row text-sm) font-medium lg:text-base">
-        <nuxt-link :to="localePath('/')" class="border-b-2 hover:border-red-600 border-transparent">
-          {{ $t('links.home') }}
-        </nuxt-link>
-        <nuxt-link :to="localePath('/')" class="border-b-2 hover:border-red-600 border-transparent">
-          {{ $t('links.downloads') }}
-        </nuxt-link>
-        <nuxt-link :to="localePath('/blog')" class="border-b-2 hover:border-red-600 border-transparent">
-          {{ $t('links.blog') }}
-        </nuxt-link>
-      </div>
-    </nav>
-    <nuxt-link :to="localePath('/')">
-      <div class="h-4 w-36 sm:(h-6 w-41) fill-current">
+  <header class="flex text-dark-900 bg-transparent dark:(bg-black text-light-200) flex-wrap flex-row justify-between items-center md:space-x-4 mx-4 lg:mx-36 py-4 mb-6">
+    <nuxt-link class="block" :to="localePath('/')">
+      <div class="logo w-36 sm:w-48 md:w-56">
         <span class="sr-only">Xanzhu</span>
-        <XanzhuV2 />
+        <Xanzhu />
+        <!-- Test using nuxt-image to serve svg -->
       </div>
     </nuxt-link>
-    <span class="hidden flex-1 font-medium justify-end mr-auto md:flex">{{
-      $d(new Date(), "short") }}</span>
+    <button v-show="!MobileMenu" class="z-2 inline-block md:hidden w-8 h-8 text-black dark:text-light-200 p-1" @click="Mobile_Menu">
+      <Menu />
+    </button>
+    <button v-show="MobileMenu" class="z-2 inline-block md:hidden w-8 h-8 text-black dark:text-light-200 p-1" @click="Mobile_Menu">
+      <Cross />
+    </button>
+    <nav
+      class="absolute rounded-md md:(relative top-0 flex flex-row space-x-6) top-12 right-4 z-1 flex-col-reverse items-center p-2 md:p-4 font-semibold dark:(bg-dark-900 md:bg-transparent) bg-gray-300 md:bg-transparent"
+      :class="{'flex' : MobileMenu, 'hidden': !MobileMenu}"
+    >
+      <div class="space-y-1 md:(space-x-4 space-y-0 flex-row) text-center font-bold text-sm flex-col flex" @click="MobileMenu = false">
+        <nuxt-link :to="localePath('/')" class="px-6 rounded-md dark:hover:bg-dark-600 hover:bg-light-500 md:(hover:border-red-600 border-b-2 border-transparent rounded-none hover:bg-transparent dark:hover:bg-transparent px-2)">
+          {{ $t('links.home') }}
+        </nuxt-link>
+        <nuxt-link :to="localePath('/')" class="px-6 rounded-md dark:hover:bg-dark-600 hover:bg-light-500 md:(hover:border-red-600 border-b-2 border-transparent rounded-none hover:bg-transparent dark:hover:bg-transparent px-2)">
+          {{ $t('links.downloads') }}
+        </nuxt-link>
+        <nuxt-link :to="localePath('/blog')" class="px-6 rounded-md dark:hover:bg-dark-600 hover:bg-light-500 md:(hover:border-red-600 border-b-2 border-transparent rounded-none hover:bg-transparent dark:hover:bg-transparent px-2)">
+          {{ $t('links.blog') }}
+        </nuxt-link>
+      </div>
+      <div>
+        <button class="text-red-600 hover:text-current" @click="Lang_Menu">
+          <div class="p-2">
+            <Translate class="h-5 w-5" />
+          </div>
+        </button>
+        <div v-show="TranslateMenu" class="z-4 absolute flex-row justify-end rounded-md dark:(bg-dark-600 text-light-200) bg-light-700 text-dark-900 p-1 shadow-md">
+          <button class="text-center" @click="TranslateMenu = false">
+            <nuxt-link
+              v-for="locale in availableLocales"
+              :key="locale.code"
+              :to="switchLocalePath(locale.code)"
+            >
+              <div
+                class="px-4 rounded-md dark:hover:bg-dark-300 hover:bg-light-400"
+                :aria-label="`${locale.name}`"
+                @click="isOpen = false"
+              >
+                {{ locale.name }}
+              </div>
+            </nuxt-link>
+          </button>
+        </div>
+        <button>
+          <ColorSwitch />
+        </button>
+      </div>
+    </nav>
   </header>
 </template>
 <script>
-import XanzhuV2 from '~/assets/Xanzhu.svg?inline'
-import Translate from '~/assets/translate.svg?inline'
+import Xanzhu from '~/assets/Xanzhu.svg?inline'
 import Menu from '~/assets/menu.svg?inline'
 import Cross from '~/assets/cross.svg?inline'
+import Translate from '~/assets/translate-v2.svg?inline'
 
 export default {
   components: {
-    XanzhuV2,
+    Xanzhu,
     Menu,
     Cross,
     Translate
   },
   data () {
     return {
-      isOpen: false,
+      TranslateMenu: false,
       MobileMenu: false
     }
   },
@@ -105,11 +83,11 @@ export default {
     }
   },
   methods: {
-    toggle () {
-      this.isOpen = !this.isOpen
-    },
-    mobile_toggle () {
+    Mobile_Menu () {
       this.MobileMenu = !this.MobileMenu
+    },
+    Lang_Menu () {
+      this.TranslateMenu = !this.TranslateMenu
     }
   }
 }
