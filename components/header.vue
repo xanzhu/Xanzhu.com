@@ -4,7 +4,6 @@
       <div class="logo w-36 sm:w-48 md:w-56">
         <span class="sr-only">Xanzhu</span>
         <Xanzhu class="fill-current" />
-        <!-- Test using nuxt-image to serve svg -->
       </div>
     </nuxt-link>
     <button v-show="!MobileMenu" class="z-2 inline-block md:hidden w-8 h-8 text-black dark:text-light-200 p-1" @click="Mobile_Menu">
@@ -17,25 +16,25 @@
       class="absolute rounded-md md:(relative top-0 flex flex-row space-x-6) top-12 right-4 z-1 flex-col-reverse items-center p-2 md:p-4 font-semibold dark:(bg-dark-900 md:bg-transparent) bg-gray-300 md:bg-transparent"
       :class="{'flex' : MobileMenu, 'hidden': !MobileMenu}"
     >
-      <div class="space-y-1 md:(space-x-4 space-y-0 flex-row) text-center font-bold text-sm flex-col flex" @click="MobileMenu = false">
-        <nuxt-link :to="localePath('/')" class="px-6 rounded-md dark:hover:bg-dark-600 hover:bg-light-500 md:(hover:border-red-600 border-b-2 border-transparent rounded-none hover:bg-transparent dark:hover:bg-transparent px-2)">
+      <div class="space-y-1 md:(space-x-4 space-y-0 flex-row) font-semibold text-center text-sm flex-col flex w-full" @click="MobileMenu = false">
+        <nuxt-link :to="localePath('/')" class="p-2 rounded-md dark:hover:bg-dark-600 hover:bg-light-700 md:(hover:border-red-600 border-b-2 border-transparent rounded-none hover:bg-transparent dark:hover:bg-transparent px-2)">
           {{ $t('links.home') }}
         </nuxt-link>
-        <nuxt-link :to="localePath('/')" class="px-6 rounded-md dark:hover:bg-dark-600 hover:bg-light-500 md:(hover:border-red-600 border-b-2 border-transparent rounded-none hover:bg-transparent dark:hover:bg-transparent px-2)">
+        <nuxt-link :to="localePath('/')" class="p-2 rounded-md dark:hover:bg-dark-600 hover:bg-light-700 md:(hover:border-red-600 border-b-2 border-transparent rounded-none hover:bg-transparent dark:hover:bg-transparent px-2)">
           {{ $t('links.downloads') }}
         </nuxt-link>
-        <nuxt-link :to="localePath('/blog')" class="px-6 rounded-md dark:hover:bg-dark-600 hover:bg-light-500 md:(hover:border-red-600 border-b-2 border-transparent rounded-none hover:bg-transparent dark:hover:bg-transparent px-2)">
+        <nuxt-link :to="localePath('/blog')" class="p-2 rounded-md dark:hover:bg-dark-600 hover:bg-light-700 md:(hover:border-red-600 border-b-2 border-transparent rounded-none hover:bg-transparent dark:hover:bg-transparent px-2)">
           {{ $t('links.blog') }}
         </nuxt-link>
       </div>
-      <div>
+      <div class="flex flex-row p-2 md:space-x-2 items-center">
         <button class="text-red-600 hover:text-current" @click="Lang_Menu">
           <div class="p-2">
             <Translate class="h-5 w-5" />
           </div>
         </button>
-        <div v-show="TranslateMenu" class="z-4 absolute flex-row justify-end rounded-md dark:(bg-dark-600 text-light-200) bg-light-700 text-dark-900 p-1 shadow-md">
-          <button class="text-center" @click="TranslateMenu = false">
+        <div v-show="TranslateMenu" class="z-4 absolute top-12 md:top-15 flex-row rounded-md dark:(bg-dark-600 text-light-200) bg-light-700 text-dark-900 p-1 shadow-md">
+          <button @click="TranslateMenu = false">
             <nuxt-link
               v-for="locale in availableLocales"
               :key="locale.code"
