@@ -14,12 +14,12 @@
     "description": "Helping improve privacy, accessibility and security of technology."
   },
   "links": {
-    "home": "Home",
-    "downloads": "Downloads",
+    "home": "HOME",
+    "downloads": "DOWNLOADS",
     "support": "Support",
     "privacy_policy": "Privacy Policy",
     "status": "Status",
-    "blog": "Blog"
+    "blog": "BLOG"
   },
   "page": {
     "pp_title": "Privacy Policy",

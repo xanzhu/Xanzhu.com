@@ -4,7 +4,7 @@ import typography from 'windicss/plugin/typography'
 
 export default defineConfig({
   theme: {},
-  darkMode: 'media',
+  darkMode: 'class',
   plugins: [
     typography({
       dark: true

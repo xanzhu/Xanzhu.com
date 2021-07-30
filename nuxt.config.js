@@ -31,7 +31,8 @@ export default {
     '@nuxtjs/eslint-module',
     'nuxt-windicss',
     '@nuxtjs/svg',
-    '@nuxt/image'
+    '@nuxt/image',
+    '@nuxtjs/color-mode'
   ],
   modules: [
     'nuxt-i18n',
@@ -104,13 +105,11 @@ export default {
       'https://res.cloudinary.com'
     ]
   },
+  colorMode: {
+    preference: 'system',
+    fallback: 'dark',
+    classSuffix: ''
+  },
   content: {},
-  build: {},
-  generate: {
-    cache: {
-      ignore: [
-        'content'
-      ]
-    }
-  }
+  build: {}
 }
