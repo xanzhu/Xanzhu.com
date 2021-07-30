@@ -33,5 +33,13 @@
     "readtime": "min read",
     "creditsource": "Source",
     "updated": "Updated"
+  },
+  "aria": {
+    "button": {
+      "Omenu": "Open Menu",
+      "Cmenu": "Close Menu",
+      "translate": "Select Language",
+      "theme": "Dark / Light Mode"
+    }
   }
 }
