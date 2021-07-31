@@ -1,3 +1,5 @@
+import getRoutes from './utils/getRoutes'
+
 export default {
   target: 'static',
   head: {
@@ -97,8 +99,11 @@ export default {
     ]
   },
   sitemap: {
-    hostname: 'https://dev.xanzhu.com',
-    gzip: true
+    hostname: process.env.BASE_URL,
+    gzip: true,
+    routes () {
+      return getRoutes()
+    }
   },
   image: {
     domains: [
@@ -111,5 +116,8 @@ export default {
     classSuffix: ''
   },
   content: {},
+  generate: {
+    fallback: true
+  },
   build: {}
 }
