@@ -99,7 +99,7 @@ export default {
     ]
   },
   sitemap: {
-    hostname: process.env.BASE_URL,
+    hostname: 'https://a2.xanzhu.com',
     gzip: true,
     routes () {
       return getRoutes()
