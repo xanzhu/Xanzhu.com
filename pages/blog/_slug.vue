@@ -84,6 +84,11 @@ export default {
           hid: 'twitter:image',
           name: 'twitter:image',
           content: this.getPostMedia
+        },
+        {
+          hid: 'og:type',
+          name: 'og:type',
+          content: 'article'
         }
       ]
     }

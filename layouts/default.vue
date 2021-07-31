@@ -8,7 +8,7 @@
 <script>
 export default {
   head () {
-    const i18nSeo = this.$nuxtI18nSeo()
+    const i18nSeo = this.$nuxtI18nHead({ addDirAttribute: true, addSeoAttributes: true })
     return {
       htmlAttrs: {
         ...i18nSeo.htmlAttrs
@@ -49,6 +49,16 @@ export default {
           hid: 'og:image',
           property: 'og:image',
           content: 'https://res.cloudinary.com/xanzhu/image/upload/v1627084292/Twitter-image-v1.2_b0ebgw.png'
+        },
+        // {
+        //   hid: 'og:url',
+        //   property: 'og:url',
+        //   content: 'https://a2.xanzhu.com'
+        // },
+        {
+          hid: 'og:type',
+          property: 'og:type',
+          content: 'Website'
         }
       ],
       link: [
