@@ -6,10 +6,10 @@
         <Xanzhu class="fill-current" />
       </div>
     </nuxt-link>
-    <button v-show="!MobileMenu" class="z-2 inline-block md:hidden w-8 h-8 text-black dark:text-light-200 p-1" @click="Mobile_Menu">
+    <button v-show="!MobileMenu" aria-label="{{ $t('aria.button.Omenu') }}" class="z-2 inline-block md:hidden w-8 h-8 text-black dark:text-light-200 p-1" @click="Mobile_Menu">
       <Menu class="stroke-current" />
     </button>
-    <button v-show="MobileMenu" class="z-2 inline-block md:hidden w-8 h-8 text-black dark:text-light-200 p-1" @click="Mobile_Menu">
+    <button v-show="MobileMenu" aria-label="{{ $t('aria.button.Cmenu') }}" class="z-2 inline-block md:hidden w-8 h-8 text-black dark:text-light-200 p-1" @click="Mobile_Menu">
       <Cross class="stroke-current" />
     </button>
     <nav
@@ -28,7 +28,7 @@
         </nuxt-link>
       </div>
       <div class="flex flex-row space-x-2 pl-2">
-        <button class="btn-focus">
+        <button class="btn-focus" aria-label="{{ $t('aria.button.translate') }}">
           <div class="text-red-600 hover:text-current mx-2" @click="Lang_Menu">
             <Translate class="h-6 w-6 pt-1" />
           </div>
@@ -50,7 +50,7 @@
             </nuxt-link>
           </button>
         </div>
-        <button class="btn-focus">
+        <button class="btn-focus" aria-label="{{ $t('aria.button.theme') }}">
           <ColorSwitch />
         </button>
       </div>
