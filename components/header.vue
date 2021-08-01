@@ -28,10 +28,8 @@
         </nuxt-link>
       </div>
       <div class="flex flex-row space-x-2 pl-2">
-        <button class="btn-focus" :aria-label="$t('aria.button.translate')">
-          <div class="text-red-600 hover:text-current mx-2" @click="Lang_Menu">
-            <Translate class="h-6 w-6 pt-1" />
-          </div>
+        <button class="btn-focus text-red-600 hover:text-current px-2" :aria-label="$t('aria.button.translate')" @click="Lang_Menu">
+          <Translate class="h-6 w-6 pt-1" />
         </button>
         <div v-show="TranslateMenu" class="z-4 absolute top-11 md:top-13 flex-row rounded-md dark:(bg-dark-600 text-light-200) bg-light-700 text-dark-900 p-1 shadow-md">
           <button @click="TranslateMenu = false">
@@ -50,9 +48,7 @@
             </nuxt-link>
           </button>
         </div>
-        <button class="btn-focus" :aria-label="$t('aria.button.theme')">
-          <ColorSwitch />
-        </button>
+        <ColorSwitch />
       </div>
     </nav>
   </header>

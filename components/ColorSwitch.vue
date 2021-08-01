@@ -1,6 +1,7 @@
 <template>
-  <div
-    class="cursor-pointer text-dark-900 dark:text-light-200 mx-2"
+  <button
+    class="cursor-pointer text-dark-900 dark:text-light-200 px-2 btn-focus"
+    :aria-label="$t('aria.button.theme')"
     @click="switchTheme"
   >
     <Sun
@@ -9,7 +10,7 @@
     />
 
     <Moon v-else class="h-6 w-6 pt-1" />
-  </div>
+  </button>
 </template>
 
 <script>
