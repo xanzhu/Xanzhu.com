@@ -12,7 +12,7 @@
       <Xanzhuico />
     </div>
     <div class="flex flex-1 justify-end">
-      © XANZHU 2021 v0.3.2 [ Developer Preview ]
+      © XANZHU 2021 (Developer v0.3.2)
     </div>
   </footer>
 </template>

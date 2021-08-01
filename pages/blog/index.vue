@@ -1,6 +1,6 @@
 <template>
-  <div class="blog container mx-auto dark:text-light-200 text-dark-900 flex-grow">
-    <section class="grid grid-cols-1 sm:grid-cols-2 mx-2 sm:mx-0 md:grid-cols-3 gap-6 pt-6 justify-center">
+  <div class="container mx-auto dark:text-light-200 text-dark-900 flex-grow">
+    <section class="grid grid-cols-1 sm:grid-cols-2 mx-2 sm:mx-0 md:(grid-cols-3 pt-6) gap-6 justify-center">
       <article
         v-for="(post, $index) in posts"
         :key="`post-${$index}`"

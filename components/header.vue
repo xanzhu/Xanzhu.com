@@ -1,5 +1,5 @@
 <template>
-  <header class="flex text-dark-900 bg-transparent dark:(bg-black text-light-200) flex-row justify-between items-center md:space-x-4 mx-4 md:mx-6 lg:mx-12 xl:mx-32 py-4 mb-6">
+  <header class="flex text-dark-900 bg-transparent dark:(bg-black text-light-200) flex-row justify-between items-center  md:(space-x-4 mx-6) mx-4 lg:mx-12 xl:mx-32 py-4">
     <nuxt-link class="block" :to="localePath('/')">
       <div class="logo w-36 sm:w-48 md:w-56">
         <span class="sr-only">Xanzhu</span>
@@ -13,17 +13,17 @@
       <Cross class="stroke-current" />
     </button>
     <nav
-      class="absolute rounded-md md:(relative top-0 flex flex-row space-x-6) top-12 right-4 z-1 flex-col-reverse items-center p-2 md:p-4 font-semibold dark:(bg-dark-900 md:bg-transparent) bg-gray-300 md:bg-transparent"
+      class="absolute rounded-md md:(relative top-0 flex flex-row space-x-6 p-4 bg-transparent) top-12 right-4 z-1 flex-col-reverse items-center p-2 font-semibold dark:(bg-dark-900 md:bg-transparent) bg-gray-300"
       :class="{'flex' : MobileMenu, 'hidden': !MobileMenu}"
     >
       <div class="md:(space-x-6 flex-row) font-semibold text-center text-sm flex-col flex w-full" @click="MobileMenu = false">
-        <nuxt-link :to="localePath('/')" class="p-2 rounded-md dark:hover:bg-dark-600 hover:bg-light-700 md:(hover:border-red-600 border-b-2 border-transparent rounded-none hover:bg-transparent dark:hover:bg-transparent p-0)">
+        <nuxt-link :to="localePath('/')" class="nav-internal">
           {{ $t('links.home') }}
         </nuxt-link>
-        <nuxt-link :to="localePath('/')" class="p-2 rounded-md dark:hover:bg-dark-600 hover:bg-light-700 md:(hover:border-red-600 border-b-2 border-transparent rounded-none hover:bg-transparent dark:hover:bg-transparent p-0)">
+        <nuxt-link :to="localePath('/')" class="nav-internal">
           {{ $t('links.downloads') }}
         </nuxt-link>
-        <nuxt-link :to="localePath('/blog')" class="p-2 rounded-md dark:hover:bg-dark-600 hover:bg-light-700 md:(hover:border-red-600 border-b-2 border-transparent rounded-none hover:bg-transparent dark:hover:bg-transparent p-0)">
+        <nuxt-link :to="localePath('/blog')" class="nav-internal">
           {{ $t('links.blog') }}
         </nuxt-link>
       </div>
@@ -31,7 +31,7 @@
         <button class="btn-focus text-red-600 hover:text-current px-2" :aria-label="$t('aria.button.translate')" @click="Lang_Menu">
           <Translate class="h-6 w-6 pt-1" />
         </button>
-        <div v-show="TranslateMenu" class="z-4 absolute top-11 md:top-13 flex-row rounded-md dark:(bg-dark-600 text-light-200) bg-light-700 text-dark-900 p-1 shadow-md">
+        <div v-show="TranslateMenu" class="z-4 absolute top-11 md:top-13 flex-row rounded-md dark:(bg-dark-500 text-light-200) bg-light-700 text-dark-900 p-1 shadow-md">
           <button @click="TranslateMenu = false">
             <nuxt-link
               v-for="locale in availableLocales"
