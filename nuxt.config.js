@@ -37,7 +37,7 @@ export default {
     '@nuxtjs/color-mode'
   ],
   modules: [
-    'nuxt-i18n',
+    '@nuxtjs/i18n',
     '@nuxt/content',
     '@nuxtjs/sitemap'
   ],
@@ -68,11 +68,12 @@ export default {
         }
       }
     },
+    baseUrl: process.env.BASE_URL,
     defaultLocale: 'en',
     strategy: 'prefix_except_default',
     langDir: 'i18n/',
     detectBrowserLanguage: {
-      onlyOnRoot: true,
+      redirectOn: 'root',
       useCookie: true,
       alwaysRedirect: true
     },
@@ -99,7 +100,7 @@ export default {
     ]
   },
   sitemap: {
-    hostname: 'https://a2.xanzhu.com',
+    hostname: process.env.BASE_URL,
     gzip: true,
     routes () {
       return getRoutes()

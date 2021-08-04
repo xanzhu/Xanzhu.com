@@ -274,7 +274,7 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@babel/parser@^7.1.0", "@babel/parser@^7.14.5", "@babel/parser@^7.14.7", "@babel/parser@^7.14.8", "@babel/parser@^7.14.9", "@babel/parser@^7.9.6":
+"@babel/parser@^7.1.0", "@babel/parser@^7.14.5", "@babel/parser@^7.14.8", "@babel/parser@^7.14.9", "@babel/parser@^7.9.6":
   version "7.14.9"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.14.9.tgz#596c1ad67608070058ebf8df50c1eaf65db895a4"
   integrity sha512-RdUTOseXJ8POjjOeEBEvNMIZU/nm4yu2rufRkcibzkkg7DmQvXU8v3M4Xk9G7uuI86CDGkKcuDWgioqZm+mScQ==
@@ -903,7 +903,7 @@
     "@babel/parser" "^7.14.5"
     "@babel/types" "^7.14.5"
 
-"@babel/traverse@^7.13.0", "@babel/traverse@^7.14.5", "@babel/traverse@^7.14.7", "@babel/traverse@^7.14.8":
+"@babel/traverse@^7.13.0", "@babel/traverse@^7.14.5", "@babel/traverse@^7.14.8", "@babel/traverse@^7.14.9":
   version "7.14.9"
   resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.14.9.tgz#016126b331210bf06fff29d52971eef8383e556f"
   integrity sha512-bldh6dtB49L8q9bUyB7bC20UKgU+EFDwKJylwl234Kv+ySZeMD31Xeht6URyueQ6LrRRpF2tmkfcZooZR9/e8g==
@@ -1460,6 +1460,24 @@
   dependencies:
     consola "^2.15.0"
     eslint-webpack-plugin "^2.4.1"
+
+"@nuxtjs/i18n@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/i18n/-/i18n-7.0.0.tgz#a49596223bd36884ce643b4d3e36979d715d5455"
+  integrity sha512-1HZoUH+gjHwyfNYPVYmjGYbTJ3B354Y3geEvRI1KxzQSdnfq7L+V2mP/CxY6J9lxojGx8Pn8OtiBsDqVl8IPjg==
+  dependencies:
+    "@babel/parser" "^7.14.9"
+    "@babel/traverse" "^7.14.9"
+    "@intlify/vue-i18n-extensions" "^1.0.2"
+    "@intlify/vue-i18n-loader" "^1.1.0"
+    cookie "^0.4.1"
+    devalue "^2.0.1"
+    is-https "^4.0.0"
+    js-cookie "^3.0.0"
+    klona "^2.0.4"
+    lodash.merge "^4.6.2"
+    ufo "^0.7.7"
+    vue-i18n "^8.25.0"
 
 "@nuxtjs/sitemap@^2.4.0":
   version "2.4.0"
@@ -5908,10 +5926,10 @@ jiti@^1.10.1, jiti@^1.9.2:
   resolved "https://registry.yarnpkg.com/jiti/-/jiti-1.11.0.tgz#64120a30d97b9bf37b8b032cf4564dfadc28984c"
   integrity sha512-/2c7e61hxxTIN34UeHBB0LCJ5Tq64kgJDV7GR+++e8XRxCKRIKmB8tH6ww1W+Z6Kgd6By+C3RSCu1lXjbPT68A==
 
-js-cookie@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/js-cookie/-/js-cookie-2.2.1.tgz#69e106dc5d5806894562902aa5baec3744e9b2b8"
-  integrity sha512-HvdH2LzI/EAZcUwA8+0nKNtWHqS+ZmijLA30RwZA0bo7ToCckjK5MkGhjED9KoRcXO6BaGI3I9UIzSA1FKFPOQ==
+js-cookie@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/js-cookie/-/js-cookie-3.0.0.tgz#db1661d5459920ec95aaf186ccf74ceb4a495164"
+  integrity sha512-oUbbplKuH07/XX2YD2+Q+GMiPpnVXaRz8npE7suhBH9QEkJe2W7mQ6rwuMXHue3fpfcftQwzgyvGzIHyfCSngQ==
 
 js-tokens@^4.0.0:
   version "4.0.0"
@@ -7023,24 +7041,6 @@ number-is-nan@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
-
-nuxt-i18n@^6.28.0:
-  version "6.28.0"
-  resolved "https://registry.yarnpkg.com/nuxt-i18n/-/nuxt-i18n-6.28.0.tgz#05924b8cf4b12633041a547b39e43db2f1f852a8"
-  integrity sha512-8XT9UflwAlEDROMTZOwQKFrnM2+eqbHC8UJNlLCjODOCrmhMHGSfojxbFxs4W4+hKdDw4Gz30PHK6v6GIqIzMQ==
-  dependencies:
-    "@babel/parser" "^7.14.7"
-    "@babel/traverse" "^7.14.7"
-    "@intlify/vue-i18n-extensions" "^1.0.2"
-    "@intlify/vue-i18n-loader" "^1.1.0"
-    cookie "^0.4.1"
-    devalue "^2.0.1"
-    is-https "^4.0.0"
-    js-cookie "^2.2.1"
-    klona "^2.0.4"
-    lodash.merge "^4.6.2"
-    ufo "^0.7.7"
-    vue-i18n "^8.25.0"
 
 nuxt-windicss@^1.2.1:
   version "1.2.1"
