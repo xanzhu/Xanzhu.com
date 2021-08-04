@@ -8,10 +8,10 @@
 <script>
 export default {
   head () {
-    const i18nSeo = this.$nuxtI18nHead({ addDirAttribute: true, addSeoAttributes: true })
+    const i18nHead = this.$nuxtI18nHead({ addDirAttribute: true, addSeoAttributes: true })
     return {
       htmlAttrs: {
-        ...i18nSeo.htmlAttrs
+        ...i18nHead.htmlAttrs
       },
       title: this.$i18n.t('meta.title'),
       meta: [
@@ -62,7 +62,7 @@ export default {
         }
       ],
       link: [
-        ...i18nSeo.link
+        ...i18nHead.link
       ]
     }
   }
