@@ -71,7 +71,7 @@ export default {
     baseUrl: process.env.BASE_URL,
     defaultLocale: 'en',
     strategy: 'prefix_except_default',
-    langDir: 'i18n/',
+    langDir: 'assets/i18n/',
     detectBrowserLanguage: {
       redirectOn: 'root',
       useCookie: true,
