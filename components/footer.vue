@@ -12,7 +12,7 @@
     <div class="hidden sm:flex w-5 h-5">
       <Xanzhuico />
     </div>
-    <div class="flex flex-1 justify-end items-center">
+    <div class="flex flex-1 justify-end">
       © XANZHU 2021 (Developer v0.3.2)
     </div>
   </footer>
