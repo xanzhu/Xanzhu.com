@@ -1,5 +1,5 @@
 <template>
-  <div class="dark:text-light-200 text-dark-900 flex justify-center items-center p-8 overflow-hidden">
+  <div class="dark:text-light-200 text-dark-900 flex justify-center items-center p-8 overflow-hidden" role="main">
     <nuxt-img
       src="/images/mountain.png"
       sizes="md:50vw lg:100vw"
