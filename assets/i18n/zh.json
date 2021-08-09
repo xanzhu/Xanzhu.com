@@ -16,7 +16,6 @@
   "links": {
     "home": "首页",
     "downloads": "下载",
-    "support": "支持",
     "privacy_policy": "隐私政策",
     "status": "地位",
     "blog": "博客"
@@ -37,9 +36,10 @@
   "aria": {
     "button": {
       "translate": "选择语言",
-      "theme": "暗/亮模式",
       "Cmenu": "关闭菜单",
-      "Omenu": "打开菜单"
+      "Omenu": "打开菜单",
+      "light": "灯光模式",
+      "dark": "黑暗模式"
     }
   }
 }

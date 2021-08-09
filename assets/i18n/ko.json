@@ -16,7 +16,6 @@
   "links": {
     "home": "집",
     "downloads": "다운로드",
-    "support": "지원하다",
     "privacy_policy": "개인 정보 정책",
     "status": "상태",
     "blog": "블로그"
@@ -37,9 +36,10 @@
   "aria": {
     "button": {
       "translate": "언어 선택",
-      "theme": "다크 / 라이트 모드",
       "Cmenu": "메뉴 닫기",
-      "Omenu": "메뉴 열기"
+      "Omenu": "메뉴 열기",
+      "light": "라이트 모드",
+      "dark": "다크 모드"
     }
   }
 }

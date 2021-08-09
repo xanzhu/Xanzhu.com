@@ -16,7 +16,6 @@
   "links": {
     "home": "HOME",
     "downloads": "DOWNLOADS",
-    "support": "Support",
     "privacy_policy": "Privacy Policy",
     "status": "Status",
     "blog": "BLOG"
@@ -39,7 +38,8 @@
       "Omenu": "Open Menu",
       "Cmenu": "Close Menu",
       "translate": "Select Language",
-      "theme": "Dark / Light Mode"
+      "light": "Light mode",
+      "dark": "Dark Mode"
     }
   }
 }
