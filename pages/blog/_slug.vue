@@ -1,17 +1,17 @@
 <template>
-  <div class="container mx-auto lg:px-22 lg:px-36 mt-2">
+  <div class="container mx-auto lg:px-22 lg:px-36 mt-2" role="main">
     <article v-if="post" class="dark:(bg-dark-700 text-light-200) bg-light-400 text-dark-900 flex-grow shadow-dark-100 shadow-md pb-2 sm:rounded-md">
       <header class="mb-auto flex flex-col">
         <div class="flex flex-col flex-1 mx-4 mt-4 sm:space-y-1 space-y-2">
           <div class="text-xs space-x-5 inline-flex -mt-2 font-medium">
-            <p class="text-red-500">
+            <p class="text-red-700 dark:text-red-600">
               {{ post.tag }}
             </p>
             <p>{{ $d(new Date(post.createdAt), 'short', localePath ) }}</p>
           </div>
-          <div class="text-md leading-tight sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-sans font-medium mr-6 mb-auto break-words">
+          <h1 class="text-md leading-tight sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-sans font-medium mr-6 mb-auto break-words">
             {{ post.title }}
-          </div>
+          </h1>
           <div class="text-xs space-x-5 inline-flex dark:bg-dark-400 bg-light-900 py-1 px-2 rounded-md w-auto mr-auto font-medium">
             <!--Switch to time ago method, instead of date -->
             <p>{{ $t('article.updated') }} : {{ $d(new Date(post.updatedAt), 'short', localePath ) }}</p>

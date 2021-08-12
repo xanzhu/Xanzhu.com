@@ -41,5 +41,10 @@
       "light": "Light mode",
       "dark": "Dark Mode"
     }
+  },
+  "blog": {
+    "landing": {
+      "title": "LATEST POSTS"
+    }
   }
 }
