@@ -12,7 +12,19 @@
     <p> {{ $t('page.pp_p2') }}</p>
     <p> {{ $t('page.pp_p3') }}</p>
     <p class="py-5">
-      {{ $t('page.pp_link') }} <a class="border-b-2 border-red-600 hover:(border-transparent bg-red-600)" href="https://xanzhu.com" rel="nofollow noopener" target="_blank">https://xanzhu.com</a>
+      {{ $t('page.pp_link') }}
+      <a class="nav-link" href="https://xanzhu.com" rel="nofollow noopener" target="_blank">
+        https://xanzhu.com
+        <External class="h-3 w-3 pt-0.4" /></a>
     </p>
   </div>
 </template>
+<script>
+import External from '~/assets/external.svg?inline'
+
+export default {
+  components: {
+    External
+  }
+}
+</script>
