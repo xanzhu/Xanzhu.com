@@ -34,7 +34,8 @@ export default {
     'nuxt-windicss',
     '@nuxtjs/svg',
     '@nuxt/image',
-    '@nuxtjs/color-mode'
+    '@nuxtjs/color-mode',
+    '@nuxtjs/pwa'
   ],
   modules: [
     '@nuxtjs/i18n',
@@ -119,6 +120,17 @@ export default {
   content: {},
   generate: {
     fallback: true
+  },
+  pwa: {
+    manifest: {
+      lang: 'en',
+      name: 'Xanzhu',
+      short_name: 'Xanzhu',
+      description: 'Helping improve privacy, accessibility and security of technology',
+      background_color: '#FFF',
+      theme_color: '#000'
+    },
+    icon: true
   },
   build: {}
 }
