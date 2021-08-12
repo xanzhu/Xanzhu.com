@@ -15,10 +15,10 @@
   },
   "links": {
     "home": "HOME",
-    "downloads": "DOWNLOADS",
     "privacy_policy": "Privacy Policy",
     "status": "Status",
-    "blog": "BLOG"
+    "blog": "BLOG",
+    "docs": "DOCS"
   },
   "page": {
     "pp_title": "Privacy Policy",

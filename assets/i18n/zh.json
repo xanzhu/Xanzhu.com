@@ -15,10 +15,10 @@
   },
   "links": {
     "home": "首页",
-    "downloads": "下载",
     "privacy_policy": "隐私政策",
     "status": "地位",
-    "blog": "博客"
+    "blog": "博客",
+    "docs": "文档"
   },
   "page": {
     "pp_title": "隐私政策",

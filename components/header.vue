@@ -21,7 +21,7 @@
           {{ $t('links.home') }}
         </nuxt-link>
         <nuxt-link :to="localePath('/')" class="nav-internal">
-          {{ $t('links.downloads') }}
+          {{ $t('links.docs') }}
         </nuxt-link>
         <nuxt-link :to="localePath('/blog')" class="nav-internal">
           {{ $t('links.blog') }}

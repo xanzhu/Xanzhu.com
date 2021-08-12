@@ -15,10 +15,10 @@
   },
   "links": {
     "home": "집",
-    "downloads": "다운로드",
     "privacy_policy": "개인 정보 정책",
     "status": "상태",
-    "blog": "블로그"
+    "blog": "블로그",
+    "docs": "문서"
   },
   "page": {
     "pp_title": "개인 정보 정책",
