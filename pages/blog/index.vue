@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto dark:text-light-200 text-dark-900 flex-grow" role="main">
-    <h1 class="text-center text-red-600 font-semibold text-5xl my-4">
+    <h1 class="text-center text-red-600 font-semibold text-4xl md:text-5xl my-4">
       {{ $t('blog.landing.title') }}
     </h1>
     <section class="grid grid-cols-1 sm:grid-cols-2 mx-2 sm:mx-0 md:(grid-cols-3 pt-6) gap-6 justify-center">

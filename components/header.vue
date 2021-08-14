@@ -1,5 +1,5 @@
 <template>
-  <header class="flex text-dark-900 bg-transparent dark:(bg-black text-light-200) flex-row justify-between items-center  md:(space-x-4 mx-6) mx-4 lg:mx-12 xl:mx-32 py-4" role="banner">
+  <header class="flex text-dark-900 bg-transparent dark:(bg-black text-light-200) flex-row justify-between items-center  md:(space-x-4 mx-6 py-4) mx-4 lg:mx-12 xl:mx-32 py-2" role="banner">
     <nuxt-link class="block" :to="localePath('/')">
       <div class="logo w-36 sm:w-48 md:w-56">
         <Xanzhu class="fill-current" />
