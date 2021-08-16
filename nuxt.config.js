@@ -44,8 +44,9 @@ export default {
   ],
   i18n: {
     vueI18n: {
-      fallbackLocale: ['en', 'ko', 'zh'],
+      fallbackLocale: ['en', 'mi', 'ko', 'zh'],
       dateTimeFormats: {
+        // Maori date not translating
         en: {
           short: {
             day: 'numeric',
@@ -85,6 +86,12 @@ export default {
         iso: 'en',
         name: 'English',
         file: 'en.json'
+      },
+      {
+        code: 'mi',
+        iso: 'mi',
+        name: 'Māori',
+        file: 'mi.json'
       },
       {
         code: 'ko',

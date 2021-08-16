@@ -1,0 +1,50 @@
+{
+  "article": {
+    "updated": "Whakahoutia",
+    "creditsource": "Mātāpuna",
+    "readtime": "min te panuihia"
+  },
+  "maintenance": {
+    "title": "Kei te hangaia",
+    "description_1": "Ka whakahou tonu tenei whaarangi ka pai ake te hoahoa.",
+    "description_2": "Ko te tumanako ka tukuna ta maatau paetukutuku i te mutunga o te tau."
+  },
+  "links": {
+    "privacy_policy": "Kaupapahere Tūmataiti",
+    "status": "Tūnga",
+    "home": "KĀINGA",
+    "docs": "ARATOHU",
+    "blog": "TUHINGA"
+  },
+  "aria": {
+    "button": {
+      "Omenu": "Whakatuwhera Tahua",
+      "Cmenu": "Katia Tahua",
+      "translate": "Whiriwhiria te Reo",
+      "light": "Aratau Maama",
+      "dark": "Aratau Pouri"
+    }
+  },
+  "meta": {
+    "description": "Te awhina ki te whakapai, urutanga me te ahuru o te hangarau.",
+    "title": "Xanzhu Haumarutanga"
+  },
+  "error": {
+    "404": "Kare i kitea te whaarangi.",
+    "else": "Kua puta he he.",
+    "return": "Hoki atu"
+  },
+  "blog": {
+    "landing": {
+      "title": "Nga Korero Hou"
+    }
+  },
+  "page": {
+    "pp_title": "Kaupapahere Tūmataiti",
+    "pp_date": "Whakahoutanga whakamutunga: Hurae 10, 2021",
+    "pp_p1": "He mea nui ki a maatau muna me te whakaute ki te hunga e toro mai ana ki ta maatau paetukutuku. Kaore he korero tautuhi e penapena, e uru atu ana ranei ki te kore a koe e whakaaetia kia mohio kei poka ke to noho muna.",
+    "pp_p3": "I tua atu i nga raraunga whakamahinga e tukuna ana e to tirotiro (User-Agent) kaore he mea e kohia",
+    "pp_link": "Ka taea te toro atu ki te Paetukutuku Tukutuku",
+    "pp_p2": "Na te mea kei roto i te papa anga nga hona nga ki nga paetukutuku a-tuatoru, kaore e taea e maatau te tiaki i a koe i waho atu o ta maatau rohe."
+  }
+}
