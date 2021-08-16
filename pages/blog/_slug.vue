@@ -4,7 +4,7 @@
       <header class="mb-auto flex flex-col">
         <div class="flex flex-col flex-1 mx-4 mt-4 sm:space-y-1 space-y-2">
           <div class="text-xs space-x-5 inline-flex -mt-2 font-medium">
-            <p class="text-red-700 dark:text-red-600">
+            <p class="dark:text-red-600 text-red-800">
               {{ post.tag }}
             </p>
             <p>{{ $d(new Date(post.createdAt), 'short', localePath ) }}</p>
@@ -31,7 +31,7 @@
             loading="lazy"
           />
         </div>
-        <div v-if="post.source" class="dark:text-light-200 text-dark-900 text-sm opacity-45 italic mx-4 -mt-2 text-right">
+        <div v-if="post.source" class="dark:(text-light-200 opacity-45) text-dark-900 text-sm opacity-80 italic mx-4 -mt-2 text-right">
           {{ $t('article.creditsource') }}: {{ post.source }}
         </div>
       </header>
