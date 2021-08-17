@@ -19,12 +19,3 @@
     </p>
   </div>
 </template>
-<script>
-import External from '~/assets/external.svg?inline'
-
-export default {
-  components: {
-    External
-  }
-}
-</script>

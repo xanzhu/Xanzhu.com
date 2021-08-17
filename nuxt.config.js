@@ -32,10 +32,10 @@ export default {
   buildModules: [
     '@nuxtjs/eslint-module',
     'nuxt-windicss',
-    '@nuxtjs/svg',
     '@nuxt/image',
     '@nuxtjs/color-mode',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    'nuxt-vite'
   ],
   modules: [
     '@nuxtjs/i18n',
@@ -72,7 +72,7 @@ export default {
     baseUrl: process.env.BASE_URL,
     defaultLocale: 'en',
     strategy: 'prefix_except_default',
-    langDir: 'assets/i18n/',
+    langDir: './assets/i18n/',
     detectBrowserLanguage: {
       redirectOn: 'root',
       useCookie: true,
