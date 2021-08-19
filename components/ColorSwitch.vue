@@ -3,25 +3,18 @@
     class="cursor-pointer text-dark-900 dark:text-light-200 px-2 btn-focus"
     @click="switchTheme"
   >
-    <Sun
+    <IconSun
       v-if="ColourScheme === 'light'"
       :aria-label="$t('aria.button.light')"
       class="h-6 w-6 pt-1"
     />
 
-    <Moon v-else :aria-label="$t('aria.button.dark')" class="h-6 w-6 pt-1" />
+    <IconMoon v-else :aria-label="$t('aria.button.dark')" class="h-6 w-6 pt-1" />
   </button>
 </template>
 
 <script>
-import Moon from '~/assets/moon.svg?inline'
-import Sun from '~/assets/sun.svg?inline'
-
 export default {
-  components: {
-    Moon,
-    Sun
-  },
   computed: {
     ColourScheme () {
       return this.$colorMode.value

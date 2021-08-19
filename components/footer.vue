@@ -6,25 +6,15 @@
       </nuxt-link>
       <a href="https://status.xanzhu.com" rel="nofollow noopener" target="_blank" class="nav-link">
         {{ $t('links.status') }}
-        <External class="h-3 w-3 pt-0.4" />
+        <IconExternal class="h-3 w-3 pt-0.4" />
       </a>
       <Socials />
     </div>
     <div class="hidden sm:flex w-5 h-5">
-      <Xanzhuico />
+      <IconXanzhuico />
     </div>
     <div class="flex flex-1 justify-end">
       © XANZHU 2021 (Developer v0.3.2)
     </div>
   </footer>
 </template>
-<script>
-import Xanzhuico from '~/assets/Xanzhuico.svg?inline'
-import External from '~/assets/external.svg?inline'
-export default {
-  components: {
-    Xanzhuico,
-    External
-  }
-}
-</script>

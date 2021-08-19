@@ -50,11 +50,11 @@ export default {
           property: 'og:image',
           content: 'https://res.cloudinary.com/xanzhu/image/upload/v1627084292/Twitter-image-v1.2_b0ebgw.png'
         },
-        // {
-        //   hid: 'og:url',
-        //   property: 'og:url',
-        //   content: 'https://a2.xanzhu.com'
-        // },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: process.env.BASE_URL
+        },
         {
           hid: 'og:type',
           property: 'og:type',
@@ -68,3 +68,9 @@ export default {
   }
 }
 </script>
+<style>
+svg {
+  display: inline-block;
+  vertical-align: inherit;
+}
+</style>

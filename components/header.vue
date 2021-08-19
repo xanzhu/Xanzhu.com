@@ -1,15 +1,15 @@
 <template>
   <header class="flex text-dark-900 bg-transparent dark:(bg-black text-light-200) flex-row justify-between items-center  md:(space-x-4 mx-6 py-4) mx-4 lg:mx-12 xl:mx-32 py-2" role="banner">
     <nuxt-link class="block" :to="localePath('/')">
-      <div class="logo w-36 sm:w-48 md:w-56">
-        <Xanzhu class="fill-current" />
+      <div class="logo w-36 sm:w-48 md:w-56" aria-label="Xanzhu">
+        <IconXanzhu class="fill-current flex-shrink" />
       </div>
     </nuxt-link>
     <button v-show="!MobileMenu" :aria-label="$t('aria.button.Omenu')" class="z-2 inline-block md:hidden w-8 h-8 text-black dark:text-light-200 p-1" @click="Mobile_Menu">
-      <Menu class="stroke-current" aria-label="Menu" />
+      <IconMenu class="stroke-current" aria-label="Menu" />
     </button>
     <button v-show="MobileMenu" :aria-label="$t('aria.button.Cmenu')" class="z-2 inline-block md:hidden w-8 h-8 text-black dark:text-light-200 p-1" @click="Mobile_Menu">
-      <Cross class="stroke-current" />
+      <IconCross class="stroke-current" />
     </button>
     <nav
       class="absolute rounded-md md:(relative top-0 flex flex-row space-x-6 p-4 bg-transparent) top-12 right-4 z-1 flex-col-reverse items-center p-2 font-semibold dark:(bg-dark-900 md:bg-transparent) bg-gray-300"
@@ -29,7 +29,7 @@
       </div>
       <div class="flex flex-row space-x-2 pl-2">
         <button class="btn-focus text-red-600 hover:text-current px-2" @click="Lang_Menu">
-          <Translate class="h-6 w-6 pt-1" :aria-label="$t('aria.button.translate')" />
+          <IconTranslate class="h-6 w-6 pt-1" :aria-label="$t('aria.button.translate')" />
         </button>
         <div v-show="TranslateMenu" class="z-4 absolute top-11 md:top-13 flex-row rounded-md dark:(bg-dark-500 text-light-200) bg-light-700 text-dark-900 p-1 shadow-md">
           <div @click="TranslateMenu = false">
@@ -53,18 +53,7 @@
   </header>
 </template>
 <script>
-import Xanzhu from '~/assets/Xanzhu.svg?inline'
-import Menu from '~/assets/menu.svg?inline'
-import Cross from '~/assets/cross.svg?inline'
-import Translate from '~/assets/translate-v2.svg?inline'
-
 export default {
-  components: {
-    Xanzhu,
-    Menu,
-    Cross,
-    Translate
-  },
   data () {
     return {
       TranslateMenu: false,
