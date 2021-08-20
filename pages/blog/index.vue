@@ -23,7 +23,7 @@
           />
           <div class="py-2 px-2 flex-2">
             <div class="flex flex-row">
-              <p class="text-red-600 font-medium text-sm flex-1">
+              <p class="dark:(text-red-500 border-1 border-red-600 bg-transparent) rounded-md px-2 bg-red-600 text-xs text-light-200">
                 {{ post.tag }}
               </p>
               <p class="px-2 text-sm font-medium text-right">
