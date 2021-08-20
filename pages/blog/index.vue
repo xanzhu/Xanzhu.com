@@ -3,11 +3,11 @@
     <h1 class="text-center text-red-600 font-semibold text-4xl md:text-5xl my-4">
       {{ $t('blog.landing.title') }}
     </h1>
-    <section class="grid grid-cols-1 sm:grid-cols-2 mx-2 sm:mx-0 md:(grid-cols-3 pt-6) gap-6 justify-center">
+    <section class="grid grid-cols-1 mx-2 gap-6 justify-center sm:(grid-cols-2 mx-0) md:(grid-cols-3 pt-6 mx-4)">
       <article
         v-for="(post, $index) in posts"
         :key="`post-${$index}`"
-        class="post max-w-sm lg:max-w-md rounded overflow-hidden shadow-lg flex flex-col mx-auto dark:bg-dark-900 bg-light-600"
+        class="post max-w-sm md:max-w-md rounded overflow-hidden shadow-lg flex flex-col mx-auto dark:bg-dark-900 bg-light-600"
         role="article"
       >
         <nuxt-link :to="localePath(post.path)" class="font-bold text-xl mb-2">

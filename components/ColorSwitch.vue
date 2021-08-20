@@ -6,10 +6,10 @@
     <IconSun
       v-if="ColourScheme === 'light'"
       :aria-label="$t('aria.button.light')"
-      class="h-6 w-6 pt-1"
+      class="h-5 w-5 pt-1 mt-1"
     />
 
-    <IconMoon v-else :aria-label="$t('aria.button.dark')" class="h-6 w-6 pt-1" />
+    <IconMoon v-else :aria-label="$t('aria.button.dark')" class="h-5 w-5 pt-1 mt-1" />
   </button>
 </template>
 

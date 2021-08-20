@@ -3,13 +3,13 @@
     <article v-if="post" class="dark:(bg-dark-700 text-light-200) bg-light-400 text-dark-900 flex-grow shadow-dark-100 shadow-md pb-2 sm:rounded-md">
       <header class="mb-auto flex flex-col">
         <div class="flex flex-col flex-1 mx-4 mt-4 sm:space-y-1 space-y-2">
-          <div class="text-xs space-x-5 inline-flex -mt-2 font-medium">
-            <p class="dark:text-red-600 text-red-800">
+          <div class="text-xs space-x-4 inline-flex -mt-2 font-medium p-0.5">
+            <p class="dark:(text-red-600 border-1 border-red-600 bg-transparent) rounded-md px-2 bg-red-600 text-light-200">
               {{ post.tag }}
             </p>
             <p>{{ $d(new Date(post.createdAt), 'short', localePath ) }}</p>
           </div>
-          <h1 class="text-md leading-tight sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-sans font-medium mr-6 mb-auto break-words">
+          <h1 class="text-md leading-tight sm:text-lg md:text-2xl lg:text-3xl xl:text-xl font-sans font-medium mr-6 mb-auto break-words">
             {{ post.title }}
           </h1>
           <div class="text-xs space-x-5 inline-flex dark:bg-dark-400 bg-light-900 py-1 px-2 rounded-md w-auto mr-auto font-medium">
@@ -19,7 +19,7 @@
           </div>
         </div>
         <!-- Add TOC based on post -->
-        <div class="flex justify-center items-center h-36 sm:(min-h-xs mx-2 rounded-md) my-2 overflow-hidden">
+        <div class="flex justify-center items-center h-36 sm:(min-h-xs mx-25 rounded-md) my-4 overflow-hidden">
           <nuxt-img
             v-if="post.media"
             class="object-cover flex-1 h-full w-full object-center"
@@ -31,7 +31,7 @@
             loading="lazy"
           />
         </div>
-        <div v-if="post.source" class="dark:(text-light-200 opacity-45) text-dark-900 text-sm opacity-80 italic mx-4 -mt-2 text-right">
+        <div v-if="post.source" class="dark:(text-light-200 opacity-45) text-dark-900 text-sm opacity-80 italic mx-6 -mt-2 text-right">
           {{ $t('article.creditsource') }}: {{ post.source }}
         </div>
       </header>
