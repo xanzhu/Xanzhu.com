@@ -22,7 +22,7 @@
             fit="cover"
           />
           <div class="py-2 px-2 flex-2">
-            <div class="flex flex-row">
+            <div class="flex flex-row items-center">
               <p class="dark:(text-red-500 border-1 border-red-600 bg-transparent) rounded-md px-2 bg-red-600 text-xs text-light-200">
                 {{ post.tag }}
               </p>
