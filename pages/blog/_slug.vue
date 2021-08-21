@@ -1,28 +1,29 @@
 <template>
-  <div class="container mx-auto lg:px-22 lg:px-36" role="main">
-    <article v-if="post" class="dark:(bg-dark-700 text-light-200) bg-light-400 text-dark-900 flex-grow shadow-dark-100 shadow-md pb-2 sm:rounded-md">
-      <header class="mb-auto flex flex-col">
-        <div class="flex flex-col flex-1 mx-4 mt-4 sm:space-y-1 space-y-2">
-          <div class="text-xs space-x-4 inline-flex -mt-2 font-medium p-0.5">
+  <div class="container mx-auto flex md:justify-center" role="main">
+    <article v-if="post" class="dark:(bg-dark-900 text-light-200 shadow-transparent) bg-light-400 text-dark-900 flex-grow shadow-dark-100 shadow-md pb-2 sm:rounded-md">
+      <header class="flex flex-col lg:(flex-row items-center top-0)">
+        <div class="flex flex-col mx-4 mt-4 sm:space-y-1 space-y-2">
+          <div class="text-xs space-x-4 inline-flex font-medium p-0.5">
             <p class="dark:(text-red-500 border-1 border-red-600 bg-transparent) rounded-md px-2 bg-red-600 text-light-200">
               {{ post.tag }}
             </p>
             <p>{{ $d(new Date(post.createdAt), 'short', localePath ) }}</p>
           </div>
-          <h1 class="text-md leading-tight sm:text-lg md:text-2xl lg:text-3xl xl:text-xl font-sans font-medium mr-6 break-words">
+          <h1 class="text-lg leading-tight sm:text-xl md:text-2xl lg:text-3xl xl:text-6xl font-sans font-medium mr-6 break-words lg:(flex-1)">
             {{ post.title }}
           </h1>
-          <div class="text-xs space-x-5 inline-flex dark:bg-dark-400 bg-light-900 py-1 px-2 rounded-md w-auto mr-auto font-medium">
+          <div class="text-xs space-x-2 inline-flex dark:bg-dark-400 bg-light-900 py-1 lg:my-4 px-2 rounded-md w-auto mr-auto font-medium">
             <!--Switch to time ago method, instead of date -->
-            <p>{{ $t('article.updated') }} : {{ $d(new Date(post.updatedAt), 'short', localePath ) }}</p>
+            <!-- <p>{{ $t('article.updated') }} : {{ $d(new Date(post.updatedAt), 'short', localePath ) }}</p> -->
+            <IconClock class="h-4 w-4" />
             <p><ReadTime :content="post.body" /></p>
           </div>
         </div>
         <!-- Add TOC based on post -->
-        <div class="flex justify-center items-center h-36 sm:(min-h-sm mx-4 rounded-md) md:(mx-8) lg:(justify-left) my-4 overflow-hidden">
+        <div class="flex justify-center h-56 sm:(min-h-sm mx-4) md:(mx-4) my-4 overflow-hidden lg:(w-4/6)">
           <nuxt-img
             v-if="post.media"
-            class="object-cover h-full w-full"
+            class="object-cover w-full h-auto sm:rounded-md lg:()"
             sizes="sm:100vw md:100vw lg:100vw"
             :src="post.media"
             :alt="post.alt"
@@ -31,11 +32,11 @@
             loading="lazy"
           />
         </div>
-        <div v-if="post.source" class="dark:(text-light-200 opacity-45) text-dark-900 text-sm opacity-80 italic mx-6 -mt-2 text-right">
-          {{ $t('article.creditsource') }}: {{ post.source }}
-        </div>
       </header>
-      <nuxt-content class="mx-2 my-4 dark:text-light-200 text-dark-900" :document="post" />
+      <div v-if="post.source" class="dark:(text-light-200 opacity-45) text-dark-900 text-sm opacity-80 italic mx-6 -mt-2 text-right">
+        {{ $t('article.creditsource') }}: {{ post.source }}
+      </div>
+      <nuxt-content class="mx-2 my-4 dark:text-light-200 text-dark-900 leading-normal lg:(px-32)" :document="post" />
     </article>
   </div>
 </template>
@@ -102,3 +103,21 @@ export default {
   }
 }
 </script>
+<style>
+  .nuxt-content h1 {
+    font-weight: bold;
+    font-size: 46px;
+  }
+
+  .nuxt-content h2 {
+    font-weight: 600;
+    font-size: 28px;
+  }
+  .nuxt-content h3 {
+    font-weight: 500;
+    font-size: 22px;
+  }
+  .nuxt-content p {
+    margin-bottom: 20px;
+  }
+</style>

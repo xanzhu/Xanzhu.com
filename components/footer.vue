@@ -6,7 +6,7 @@
       </nuxt-link>
       <a href="https://status.xanzhu.com" rel="nofollow noopener" target="_blank" class="nav-link">
         {{ $t('links.status') }}
-        <IconExternal class="h-3 w-3 pt-0.4" />
+        <IconExternal class="h-3 w-3 -mt-0.4 inline-flex" />
       </a>
       <Socials />
     </div>

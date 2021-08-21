@@ -12,7 +12,7 @@
       <IconCross class="stroke-current" />
     </button>
     <nav
-      class="absolute rounded-md md:(relative top-0 flex flex-row space-x-6 p-4 bg-transparent) top-12 right-4 z-1 flex-col-reverse items-center p-2 font-semibold dark:(bg-dark-900 md:bg-transparent) bg-gray-300"
+      class="absolute rounded-md md:(relative top-0 flex flex-row space-x-6 p-4 bg-transparent) top-12 right-4 z-1 flex-col-reverse items-center p-2 font-semibold dark:(bg-dark-800 md:bg-transparent) bg-gray-300"
       :class="{'flex' : MobileMenu, 'hidden': !MobileMenu}"
       role="navigation"
     >
@@ -29,7 +29,7 @@
       </div>
       <div class="flex flex-row space-x-2 pl-2">
         <button class="btn-focus text-red-600 hover:text-current px-2" @click="Lang_Menu">
-          <IconTranslate class="h-6 w-6 pt-1" :aria-label="$t('aria.button.translate')" />
+          <IconTranslate class="h-5 w-5 mt-1" :aria-label="$t('aria.button.translate')" />
         </button>
         <div v-show="TranslateMenu" class="z-4 absolute top-11 md:top-13 flex-row rounded-md dark:(bg-dark-500 text-light-200) bg-light-700 text-dark-900 p-1 shadow-md">
           <div @click="TranslateMenu = false">

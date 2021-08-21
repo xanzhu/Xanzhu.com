@@ -1727,9 +1727,9 @@
     "@types/webpack" "^4"
 
 "@types/hast@^2.0.0":
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/@types/hast/-/hast-2.3.2.tgz#236201acca9e2695e42f713d7dd4f151dc2982e4"
-  integrity sha512-Op5W7jYgZI7AWKY5wQ0/QNMzQM7dGQPyW1rXKNiymVCy5iTfdPuGu4HhYNOM2sIv8gUfIuIdcYlXmAepwaowow==
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/@types/hast/-/hast-2.3.3.tgz#8edd6bd2c95a2d0750e01651dc82b9fc6ff648e4"
+  integrity sha512-QmFclP7FX/XZ7k81+fS6K5pQ3qxRu9bVqEoUeJrPtcmX9st3pyeluIWy6olFCr2/kUqnb4LwxtMCxZsXWkObbA==
   dependencies:
     "@types/unist" "*"
 
@@ -1770,9 +1770,9 @@
   integrity sha512-62vfe65cMSzYaWmpmhqCMMNl0khen89w57mByPi1OseGfcV/LV03fO8YVrNj7rFQsRWNJo650WWyh6m7p8vZmA==
 
 "@types/mdast@^3.0.0":
-  version "3.0.8"
-  resolved "https://registry.yarnpkg.com/@types/mdast/-/mdast-3.0.8.tgz#73f050ebebf70a8a6586fe98b0008a7286aa6c4b"
-  integrity sha512-HdUXWDNtDenuVJFrV2xBCLEMiw1Vn7FMuJxqJC5oBvC2adA3pgtp6CPCIMQdz3pmWxGuJjT+hOp6FnOXy6dXoQ==
+  version "3.0.9"
+  resolved "https://registry.yarnpkg.com/@types/mdast/-/mdast-3.0.9.tgz#3f7fa18faf9e567da9aa49e44ecc76ad33c359ce"
+  integrity sha512-IUlIhG2KNPjOEuXIblTjovD1XW8HPGeulA12nEyc6xhO4Yrrcs+xczAl4ucR3cpwVlE+vb2x9Z7pRmVP4bUHng==
   dependencies:
     "@types/unist" "*"
 
