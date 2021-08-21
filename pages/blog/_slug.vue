@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto flex md:justify-center" role="main">
-    <article v-if="post" class="dark:(bg-dark-900 text-light-200 shadow-transparent) bg-light-400 text-dark-900 flex-grow shadow-dark-100 shadow-md pb-2 sm:rounded-md">
+    <article v-if="post" class="dark:(bg-dark-900 text-light-200 shadow-transparent) bg-light-400 text-dark-900 flex-grow shadow-dark-100 shadow-md pb-2 sm:rounded-md md:mb-12">
       <header class="flex flex-col lg:(flex-row items-center top-0)">
         <div class="flex flex-col mx-4 mt-4 sm:space-y-1 space-y-2">
           <div class="text-xs space-x-4 inline-flex font-medium p-0.5">
