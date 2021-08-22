@@ -36,7 +36,7 @@
       <div v-if="post.source" class="dark:(text-light-200 opacity-45) text-dark-900 text-sm opacity-80 italic mx-6 -mt-2 text-right">
         {{ $t('article.creditsource') }}: {{ post.source }}
       </div>
-      <nuxt-content class="mx-2 my-4 dark:text-light-200 text-dark-900 leading-normal lg:(px-32)" :document="post" />
+      <nuxt-content class="mx-2 my-4 dark:text-light-200 text-dark-900 leading-normal lg:(px-32 mx-4)" :document="post" />
     </article>
   </div>
 </template>
