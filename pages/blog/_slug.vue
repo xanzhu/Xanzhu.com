@@ -23,7 +23,7 @@
         <div class="flex justify-center h-56 sm:(min-h-sm mx-4) md:(mx-4) my-4 overflow-hidden lg:(w-4/6)">
           <nuxt-img
             v-if="post.media"
-            class="object-cover w-full h-auto sm:rounded-md lg:()"
+            class="object-cover w-full h-auto sm:rounded-md"
             sizes="sm:100vw md:100vw lg:100vw"
             :src="post.media"
             :alt="post.alt"
