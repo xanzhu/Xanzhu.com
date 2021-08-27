@@ -26,7 +26,7 @@
     "@nuxtjs/pwa": "^3.3.5",
     "eslint": "^7.32.0",
     "eslint-plugin-nuxt": "^2.0.0",
-    "eslint-plugin-vue": "^7.16.0",
+    "eslint-plugin-vue": "^7.17.0",
     "nuxt-vite": "^0.2.1",
     "nuxt-windicss": "^1.2.3"
   }

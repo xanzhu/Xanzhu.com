@@ -9,7 +9,7 @@
             </p>
             <p>{{ $d(new Date(post.createdAt), 'short', localePath ) }}</p>
           </div>
-          <h1 class="text-lg leading-tight sm:text-xl md:text-2xl lg:text-3xl xl:text-6xl font-sans font-medium mr-6 break-words lg:(flex-1)">
+          <h1 class="text-lg leading-tight sm:text-xl md:text-2xl lg:text-3xl xl:text-6xl font-sans font-medium mr-6 break-words lg:(flex-1 pb-2)">
             {{ post.title }}
           </h1>
           <div class="text-xs space-x-2 inline-flex dark:bg-dark-400 bg-light-900 py-1 lg:my-4 px-2 rounded-md w-auto mr-auto font-medium">
@@ -19,7 +19,6 @@
             <p><ReadTime :content="post.body" /></p>
           </div>
         </div>
-        <!-- Add TOC based on post -->
         <div class="flex justify-center items-center h-56 sm:(min-h-sm mx-4) md:(mx-4) my-4 overflow-hidden lg:(w-4/6)">
           <nuxt-img
             v-if="post.media"
@@ -36,7 +35,7 @@
       <div v-if="post.source" class="dark:(text-light-200 opacity-45) text-dark-900 text-sm opacity-80 italic mx-6 -mt-2 text-right">
         {{ $t('article.creditsource') }}: {{ post.source }}
       </div>
-      <nuxt-content class="mx-2 my-4 dark:text-light-200 text-dark-900 leading-normal lg:(px-32 mx-4)" :document="post" />
+      <nuxt-content class="mx-2 my-4 dark:text-light-200 text-dark-900 leading-normal lg:(px-32 mx-6)" :document="post" />
     </article>
   </div>
 </template>
