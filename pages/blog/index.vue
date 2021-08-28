@@ -1,13 +1,16 @@
 <template>
   <div class="container mx-auto dark:text-light-200 text-dark-900 flex-grow" role="main">
-    <h1 class="text-center text-red-600 font-semibold text-4xl md:text-5xl my-4">
+    <h1 class="text-center text-red-600 font-semibold text-3xl md:text-5xl my-4">
       {{ $t('blog.landing.title') }}
     </h1>
-    <section class="grid grid-cols-1 mx-2 gap-6 justify-center sm:(grid-cols-2 mx-0) md:(grid-cols-3 pt-6 mx-4)">
+    <h2 class="text-2xl sm:text-4xl my-6 md:my-12 font-thin text-center">
+      {{ $t('blog.landing.desc') }}
+    </h2>
+    <section class="grid grid-cols-1 gap-4 mx-2 justify-center sm:(grid-cols-2 mx-4) md:(grid-cols-3 pt-6 gap-6) lg:(gap-8 mx-12)">
       <article
         v-for="(post, $index) in posts"
         :key="`post-${$index}`"
-        class="post max-w-sm md:max-w-md rounded overflow-hidden shadow-lg flex flex-col mx-auto dark:bg-dark-900 bg-light-600"
+        class="post max-w-sm sm:max-w-md rounded overflow-hidden shadow-lg flex flex-col dark:bg-dark-900 bg-light-600 mx-auto"
         role="article"
       >
         <nuxt-link :to="localePath(post.path)" class="font-bold text-xl mb-2">
@@ -30,9 +33,9 @@
                 {{ $d(new Date(post.createdAt), 'short', localePath ) }}
               </p>
             </div>
-            <h2 class="rounded-md font-medium text-xl">
+            <h3 class="rounded-md font-medium text-xl">
               {{ post.title }}
-            </h2>
+            </h3>
           </div>
         </nuxt-link>
       </article>

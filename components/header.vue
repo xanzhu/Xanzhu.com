@@ -39,7 +39,7 @@
               :to="switchLocalePath(locale.code)"
             >
               <div
-                class="px-4 rounded-md dark:hover:bg-dark-300 hover:bg-light-400"
+                class="px-3 rounded-md dark:hover:bg-dark-300 hover:bg-light-400"
                 :aria-label="`${locale.name}`"
               >
                 {{ locale.name }}

@@ -46,7 +46,8 @@
   },
   "blog": {
     "landing": {
-      "title": "LATEST POSTS"
+      "title": "LATEST POSTS",
+      "desc": "Privacy, Security and everything in between."
     }
   }
 }

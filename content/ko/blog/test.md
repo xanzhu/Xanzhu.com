@@ -5,6 +5,7 @@ media: /images/mountain_2.jpeg
 tag: 테스트
 alt: 산
 source: xanzhu.com
+author: STAFF
 ---
 
 # Si dari hunc fuerat aspexisse labores
