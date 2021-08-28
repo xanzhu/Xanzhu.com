@@ -35,7 +35,7 @@
       <div v-if="post.source" class="dark:(text-light-200 opacity-45) text-dark-900 text-sm opacity-80 italic mx-6 -mt-2 text-right">
         {{ $t('article.creditsource') }}: {{ post.source }}
       </div>
-      <nuxt-content class="mx-2 my-4 dark:text-light-200 text-dark-900 leading-normal lg:(px-32 mx-6)" :document="post" />
+      <nuxt-content class="mx-4 my-4 dark:text-light-200 text-dark-900 leading-normal lg:px-32" :document="post" />
       <PrevNext :prev="prev" :next="next" class="my-5 mx-12" />
     </article>
   </div>
@@ -69,7 +69,6 @@ export default {
           name: 'description',
           content: this.post.description
         },
-        // Open Graph
         { hid: 'og:title', property: 'og:title', content: this.post.title },
         {
           hid: 'og:description',
@@ -77,7 +76,6 @@ export default {
           content: this.post.description
         },
         { hid: 'og:image', property: 'og:image', content: this.post.media },
-        // Twitter Card
         {
           hid: 'twitter:title',
           name: 'twitter:title',
