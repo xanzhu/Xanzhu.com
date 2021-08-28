@@ -31,7 +31,9 @@
   "article": {
     "readtime": "分钟阅读",
     "creditsource": "来源",
-    "updated": "更新"
+    "updated": "更新",
+    "Next": "下一个",
+    "Previous": "以前的"
   },
   "aria": {
     "button": {

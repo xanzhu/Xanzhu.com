@@ -1,8 +1,10 @@
 {
   "article": {
-    "updated": "Whakahoutia",
+    "updated": "Kua Whakahoutia",
     "creditsource": "Mātāpuna",
-    "readtime": "min te panuihia"
+    "readtime": "min te panuihia",
+    "Next": "Panuku",
+    "Previous": "Tōmua"
   },
   "maintenance": {
     "title": "Kei te hangaia",
@@ -14,7 +16,7 @@
     "status": "Tūnga",
     "home": "KĀINGA",
     "docs": "ARATOHU",
-    "blog": "TUHINGA"
+    "blog": "RANGITAKI"
   },
   "aria": {
     "button": {

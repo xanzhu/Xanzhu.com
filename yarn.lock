@@ -2284,11 +2284,6 @@
     jiti "^1.11.0"
     windicss "^3.1.6"
 
-"@windicss/plugin-scrollbar@^1.2.3":
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/@windicss/plugin-scrollbar/-/plugin-scrollbar-1.2.3.tgz#4796e999e98a4bca6c269fa1faffd2e9b5452cac"
-  integrity sha512-+cqv1pEmaNPITeBJ/lO6tc8IjBzRhQ+V9G8r249MMXivYoxUO4DtModBrRGHVvBgsYZgPXDsIv2jqtxc4NqYEg==
-
 "@windicss/plugin-utils@1.2.7":
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/@windicss/plugin-utils/-/plugin-utils-1.2.7.tgz#aa2c571f66600ce2c916c9c47efe8eafb229908c"
@@ -8936,6 +8931,11 @@ pretty-time@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/pretty-time/-/pretty-time-1.1.0.tgz#ffb7429afabb8535c346a34e41873adf3d74dd0e"
   integrity sha512-28iF6xPQrP8Oa6uxE6a1biz+lWeTOAPKggvjB8HAs6nVMKZwf5bG++632Dx614hIWgUPkgivRfG+a8uAXGTIbA==
+
+prism-themes@^1.8.0:
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/prism-themes/-/prism-themes-1.8.0.tgz#4f7b108552f75d39bf5c9556e5b5e17e912dd0d0"
+  integrity sha512-pj7A7C9C8juQRFkZHYeApQHdUiak5nkKYlHyWwh7n/b6WjI9KzGtqaGhxUZAIaV1PZ9Z1epJwe41Px3TUGsNJw==
 
 prismjs@^1.23.0:
   version "1.24.1"

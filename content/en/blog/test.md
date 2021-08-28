@@ -47,3 +47,23 @@ omnis, Euryte nymphas nitidam nunc procul?
 
 Semina nec, **in** pars illa? Ille est finita, tollite volat adde Phrygios
 attulit puer.
+
+```css
+.nuxt-content p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  word-spacing: 2px;
+  line-height: 32px;
+}
+
+.nuxt-content p code,
+.nuxt-content h3 code {
+  color: #476582;
+  padding: 0.25rem 0.5rem;
+  margin: 0;
+  font-size: 0.85em;
+  background-color: rgba(27, 31, 35, 0.05);
+  border-radius: 3px;
+  font-family: Consolas, Roboto Mono, monospace;
+}
+```

@@ -124,7 +124,13 @@ export default {
     fallback: 'dark',
     classSuffix: ''
   },
-  content: {},
+  content: {
+    markdown: {
+      prism: {
+        theme: 'prism-themes/themes/prism-holi-theme.css'
+      }
+    }
+  },
   generate: {
     fallback: true
   },

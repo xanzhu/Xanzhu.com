@@ -31,7 +31,9 @@
   "article": {
     "readtime": "최소 읽기",
     "creditsource": "원천",
-    "updated": "업데이트됨"
+    "updated": "업데이트됨",
+    "Next": "다음",
+    "Previous": "이전의"
   },
   "aria": {
     "button": {

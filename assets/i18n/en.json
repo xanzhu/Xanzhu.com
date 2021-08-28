@@ -31,7 +31,9 @@
   "article": {
     "readtime": "min read",
     "creditsource": "Source",
-    "updated": "Updated"
+    "updated": "Updated",
+    "Next": "Next",
+    "Previous": "Previous"
   },
   "aria": {
     "button": {
