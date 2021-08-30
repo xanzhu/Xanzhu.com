@@ -1,0 +1,11 @@
+{
+    "baseBranches": [
+      "developer"
+    ],
+    "ignoreDeps": [
+      "core-js"
+    ],
+    "lockFileMaintenance": {
+      "enabled": true
+    }
+  }
