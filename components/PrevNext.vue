@@ -4,7 +4,7 @@
     <NuxtLink
       v-if="next"
       :to="next.slug"
-      class="font-semibold dark:(hover:bg-dark-700 bg-dark-500) px-4 py-2 sm:px-6 hover:(bg-gray-300) bg-light-900 rounded-md"
+      class="font-medium dark:(hover:bg-dark-700 bg-dark-500) px-4 py-2 sm:px-6 hover:(bg-gray-300) bg-light-900 rounded-md"
     >
       <!-- Convert to UI component card -->
       {{ $t('article.Next') }}
@@ -13,7 +13,7 @@
     <NuxtLink
       v-if="prev"
       :to="prev.slug"
-      class="font-semibold dark:(hover:bg-dark-700 bg-dark-500) px-4 py-2 sm:px-6 hover:(bg-gray-300) bg-light-900 rounded-md"
+      class="font-medium dark:(hover:bg-dark-700 bg-dark-500) px-4 py-2 sm:px-6 hover:(bg-gray-300) bg-light-900 rounded-md"
     >
       {{ $t('article.Previous') }}
     </NuxtLink>

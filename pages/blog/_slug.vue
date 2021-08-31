@@ -3,23 +3,23 @@
     <article v-if="post" class="dark:(bg-dark-900 text-light-200 shadow-transparent) bg-light-400 text-dark-900 flex-grow shadow-dark-100 shadow-md pb-2 sm:rounded-md md:mb-12">
       <header class="flex flex-col lg:(flex-row items-center top-0)">
         <div class="flex flex-col mx-4 md:mx-6 mt-4 sm:(space-y-1) space-y-2">
-          <div class="text-xs space-x-4 inline-flex font-medium p-0.5">
+          <div class="text-xs space-x-4 inline-flex p-0.5">
             <p class="dark:(text-red-500 border-1 border-red-600 bg-transparent) rounded-md px-2 bg-red-600 text-light-200">
               {{ post.tag }}
             </p>
             <p>{{ $d(new Date(post.createdAt), 'short', localePath ) }}</p>
           </div>
-          <h1 class="text-lg leading-tight sm:text-xl md:text-2xl lg:text-3xl xl:text-6xl font-sans font-medium mr-6 break-words lg:(flex-1 pb-2)">
+          <h1 class="text-lg leading-tight sm:text-xl md:text-2xl lg:text-3xl xl:text-6xl font-sans font-semibold mr-6 break-words lg:(flex-1 pb-2)">
             {{ post.title }}
           </h1>
           <div class="flex inline-flex space-x-2 text-xs items-center">
-            <div class="inline-flex dark:bg-dark-400 bg-light-900 py-1.5 lg:my-4 px-2 rounded-md w-auto font-medium">
+            <div class="inline-flex dark:bg-dark-400 bg-light-900 py-1.5 lg:my-4 px-2 rounded-md w-auto">
               <!--Switch to time ago method, instead of date -->
               <!-- <p>{{ $t('article.updated') }} : {{ $d(new Date(post.updatedAt), 'short', localePath ) }}</p> -->
               <IconClock class="h-4 w-4 mx-1" />
               <p><ReadTime :content="post.body" /></p>
             </div>
-            <div v-if="post.author" class="text-xs dark:bg-dark-400 bg-light-900 py-1.5 lg:my-4 px-2 rounded-md w-auto font-semibold">
+            <div v-if="post.author" class="text-xs dark:bg-dark-400 bg-light-900 py-1.5 lg:my-4 px-2 rounded-md w-auto font-medium">
               {{ post.author }}
             </div>
           </div>
