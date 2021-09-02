@@ -1,5 +1,5 @@
 <template>
-  <div class="dark:text-light-200 text-dark-900 my-3 flex-grow py-3 mx-4 lg:mx-12 xl:mx-32" role="main">
+  <div class="dark:text-light-200 text-dark-900 flex-grow px-4 lg:max-w-4xl container mx-auto" role="main">
     <h1 class="text-3xl">
       {{ $t('page.pp_title') }}
     </h1>
@@ -13,7 +13,7 @@
     <p> {{ $t('page.pp_p3') }}</p>
     <p class="py-5">
       {{ $t('page.pp_link') }}
-      <a class="nav-link" href="https://xanzhu.com" rel="nofollow noopener" target="_blank">
+      <a class="nav-link text-red-600" href="https://xanzhu.com" rel="nofollow noopener" target="_blank">
         https://xanzhu.com
         <External class="h-3 w-3 pt-0.4" /></a>
     </p>
