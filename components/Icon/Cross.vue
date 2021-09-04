@@ -1,5 +1,5 @@
 <template>
-  <svg class="stroke-current stroke-cap-round stroke-join-round stroke-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M6 18L18 6M6 6l12 12" />
+  <svg viewBox="0 0 24 24" class="fill-current" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.59 5L12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41 17.59 5z" />
   </svg>
 </template>

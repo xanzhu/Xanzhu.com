@@ -1,19 +1,16 @@
 <template>
-  <footer class="flex items-center sm:(h-6 flex-row space-y-0 py-8) dark:(bg-black text-light-200) bg-gray-200 w-full text-dark-900 flex-col space-y-2 py-4 px-4 md:px-6 lg:px-12 text-xs" role="contentinfo">
-    <div class="flex flex-1 justify-start space-x-6 py-1 items-center">
+  <footer class="flex flex-col items-center text-xs pb-4 sm:(h-4 flex-row py-4 px-4 w-full) md:px-6 lg:px-12 dark:(bg-dark-900 text-light-200) bg-gray-300 text-dark-900" role="contentinfo">
+    <div class="flex space-x-3 my-4 sm:(space-x-6 flex-1 justify-start my-0)">
       <nuxt-link :to="localePath('/privacy-policy')" class="nav-link">
         {{ $t('links.privacy_policy') }}
       </nuxt-link>
-      <a href="https://status.xanzhu.com" rel="nofollow noopener" target="_blank" class="nav-link">
+      <a href="https://status.xanzhu.com" rel="nofollow noopener noreferrer" target="_blank" class="nav-link">
         {{ $t('links.status') }}
-        <IconExternal class="h-3 w-3 -mt-0.4 inline-flex" />
+        <Icon-External class="h-3 flex-col -mb-0.4" />
       </a>
-      <Socials />
     </div>
-    <div class="hidden md:flex w-5 h-5">
-      <IconXanzhuico />
-    </div>
-    <div class="flex flex-1 justify-end">
+    <Socials />
+    <div class="sm:(flex flex-1 justify-end font-normal) font-medium">
       © XANZHU 2021 (Developer v0.3.3)
     </div>
   </footer>
