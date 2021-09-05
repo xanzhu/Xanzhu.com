@@ -1,18 +1,20 @@
 <template>
-  <header class="flex text-dark-900 bg-transparent dark:(bg-black text-light-200) flex-row justify-between items-center  md:(space-x-4 mx-6 py-4) mx-4 lg:mx-12 py-2" role="banner">
-    <nuxt-link class="block" :to="localePath('/')">
-      <div class="logo w-36 sm:w-48 md:w-56">
-        <IconXanzhu class="fill-current flex-shrink" />
+  <header class="flex flex-row justify-between items-center px-4 py-2 bg-transparent text-dark-900 dark:(bg-black text-light-200) md:(space-x-4 mx-6 py-4) lg:mx-12" role="banner">
+    <nuxt-link :to="localePath('/')">
+      <div class="flex w-40 sm:w-46 md:w-56">
+        <Icon-Xanzhu />
       </div>
     </nuxt-link>
-    <button v-show="!MobileMenu" :aria-label="$t('aria.button.Omenu')" class="z-2 inline-block md:hidden w-8 h-8 text-black dark:text-light-200 p-1" @click="Mobile_Menu">
-      <IconMenu class="stroke-current" aria-label="Menu" />
-    </button>
-    <button v-show="MobileMenu" :aria-label="$t('aria.button.Cmenu')" class="z-2 inline-block md:hidden w-8 h-8 text-black dark:text-light-200 p-1" @click="Mobile_Menu">
-      <IconCross class="stroke-current" />
-    </button>
+    <div class="flex text-dark-900 dark:text-light-200 md:hidden">
+      <button v-show="!MobileMenu" :aria-label="$t('aria.button.Omenu')" class="w-7 h-7" @click="Mobile_Menu">
+        <Icon-Menu aria-label="Menu" />
+      </button>
+      <button v-show="MobileMenu" :aria-label="$t('aria.button.Cmenu')" class="w-7 h-7" @click="Mobile_Menu">
+        <Icon-Cross />
+      </button>
+    </div>
     <nav
-      class="absolute rounded-md md:(relative top-0 flex flex-row space-x-6 p-4 bg-transparent) top-12 right-4 z-1 flex-col-reverse items-center p-2 font-semibold dark:(bg-dark-800 md:bg-transparent) bg-gray-300"
+      class="absolute rounded-md top-9.5 right-4.5 z-1 flex-col-reverse items-center p-4 font-semibold bg-gray-300 dark:(bg-dark-800 md:bg-transparent) md:(relative top-0 flex flex-row space-x-6 p-4 bg-transparent)"
       :class="{'flex' : MobileMenu, 'hidden': !MobileMenu}"
       role="navigation"
     >
@@ -27,12 +29,12 @@
           {{ $t('links.blog') }}
         </nuxt-link>
       </div>
-      <div class="flex flex-row space-x-2 pl-2">
-        <button class="btn-focus text-red-600 hover:text-current px-2" @click="Lang_Menu">
-          <IconTranslate class="h-5 w-5 mt-1" :aria-label="$t('aria.button.translate')" />
+      <div class="flex flex-row space-x-2">
+        <button class="btn-focus text-red-600 hover:text-current px-1" @click="Lang_Menu">
+          <IconTranslate class="h-6 w-6 pt-1" :aria-label="$t('aria.button.translate')" />
         </button>
-        <div v-show="TranslateMenu" class="z-4 absolute top-11 md:top-13 flex-row rounded-md dark:(bg-dark-500 text-light-200) bg-light-700 text-dark-900 p-1 shadow-md">
-          <div @click="TranslateMenu = false">
+        <div v-show="TranslateMenu" class="z-4 p-1 absolute top-13 rounded-md shadow-md dark:(bg-dark-500 text-light-200) bg-light-700 text-dark-900">
+          <div class="py-0.5" @click="TranslateMenu = false">
             <nuxt-link
               v-for="locale in availableLocales"
               :key="locale.code"

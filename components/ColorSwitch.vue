@@ -1,15 +1,15 @@
 <template>
   <button
-    class="text-dark-900 dark:text-light-200 my-0.5 px-2 btn-focus"
+    class="text-dark-900 dark:text-light-200 px-1 pt-0.5 btn-focus"
     @click="switchTheme"
   >
     <IconSun
       v-if="ColourScheme === 'light'"
       :aria-label="$t('aria.button.light')"
-      class="h-4 w-4"
+      class="h-6 w-6 p-1"
     />
 
-    <IconMoon v-else :aria-label="$t('aria.button.dark')" class="h-4 w-4" />
+    <IconMoon v-else :aria-label="$t('aria.button.dark')" class="h-6 w-6 p-1" />
   </button>
 </template>
 
