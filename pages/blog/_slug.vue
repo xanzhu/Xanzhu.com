@@ -41,7 +41,7 @@
         {{ $t('article.creditsource') }}: {{ post.source }}
       </div>
       <nuxt-content class="mx-4 my-4 dark:text-light-200 text-dark-900 leading-normal lg:px-32" :document="post" />
-      <PrevNext :prev="prev" :next="next" class="my-4 mx-6 sm:mx-12" />
+      <PrevNext loading="lazy" :prev="prev" :next="next" class="my-4 mx-6 sm:mx-12" />
     </article>
   </div>
 </template>
