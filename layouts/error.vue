@@ -20,6 +20,36 @@ export default {
       type: Object,
       default: () => {}
     }
+  },
+  head () {
+    const i18nHead = this.$nuxtI18nHead({ addDirAttribute: true, addSeoAttributes: true })
+    return {
+      htmlAttrs: {
+        ...i18nHead.htmlAttrs
+      },
+      titleTemplate: '%s - Xanzhu',
+      title: this.$i18n.t('error.title'),
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.$i18n.t('error.desc')
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          title: this.$i18n.t('error.title')
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.$i18n.t('error.desc')
+        }
+      ],
+      link: [
+        ...i18nHead.link
+      ]
+    }
   }
 }
 </script>

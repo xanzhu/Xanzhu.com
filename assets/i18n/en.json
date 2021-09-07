@@ -7,7 +7,9 @@
   "error": {
     "404": "Page not found.",
     "else": "An error has occurred.",
-    "return": "Return"
+    "return": "Return",
+    "title": "There's a problem",
+    "desc": "Something has gone wrong with your request"
   },
   "meta": {
     "title": "Xanzhu Security",
@@ -26,7 +28,10 @@
     "pp_p1": "We value privacy and respect those who visit our website. No identifiable information is stored or accessed without your permission to ensure that we do not infringe upon your privacy.",
     "pp_p2": "Because our site contains links to third-party websites, we cannot prevent tracking outside of our domain.",
     "pp_p3": "Apart from usage data which your browser provides (User-Agent) nothing is collected",
-    "pp_link": "Offical Website is accessible from"
+    "pp_link": "Offical Website is accessible from",
+    "privacy-policy": {
+      "description": "See our Privacy Policy and how it could relate to you"
+    }
   },
   "article": {
     "readtime": "min read",

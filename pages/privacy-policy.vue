@@ -20,3 +20,37 @@
     </p>
   </div>
 </template>
+<script>
+export default {
+  head () {
+    const i18nHead = this.$nuxtI18nHead({ addDirAttribute: true, addSeoAttributes: true })
+    return {
+      htmlAttrs: {
+        ...i18nHead.htmlAttrs
+      },
+      titleTemplate: '%s - Xanzhu',
+      title: this.$i18n.t('page.pp_title'),
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.$i18n.t('page.privacy-policy.description')
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: this.$i18n.t('page.pp_title')
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.$i18n.t('page.privacy-policy.description')
+        }
+      ],
+      link: [
+        ...i18nHead.link
+      ]
+    }
+  }
+}
+</script>
