@@ -1,5 +1,5 @@
 <template>
-  <footer class="flex flex-col items-center text-xs pb-4 sm:(h-4 flex-row py-4 px-4 w-full) md:px-6 lg:px-12 dark:(bg-dark-900 text-light-200) bg-gray-300 text-dark-900" role="contentinfo">
+  <footer class="flex flex-col items-center text-xs mt-10 pb-4 sm:(h-4 flex-row py-4 px-4 w-full mt-0) md:px-6 lg:px-12 dark:(bg-dark-900 text-light-200) bg-gray-300 text-dark-900" role="contentinfo">
     <div class="flex space-x-3 py-4 sm:(space-x-6 flex-1 justify-start py-0)">
       <nuxt-link :to="localePath('/privacy-policy')" class="nav-link">
         {{ $t('links.privacy_policy') }}

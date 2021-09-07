@@ -1,9 +1,7 @@
 <template>
   <header class="flex flex-row justify-between items-center px-4 py-2 bg-transparent text-dark-900 dark:(bg-black text-light-200) md:(space-x-4 mx-6 py-4) lg:mx-12" role="banner">
     <nuxt-link :to="localePath('/')">
-      <div class="flex w-40 sm:w-46 md:w-56">
-        <Icon-Xanzhu />
-      </div>
+      <Icon-Xanzhu class="flex w-40 sm:w-46 md:w-56" />
     </nuxt-link>
     <div class="flex text-dark-900 dark:text-light-200 md:hidden">
       <button v-show="!MobileMenu" :aria-label="$t('aria.button.Omenu')" class="w-7 h-7" @click="Mobile_Menu">
