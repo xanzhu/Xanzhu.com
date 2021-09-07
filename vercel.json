@@ -42,6 +42,10 @@
         {
           "key" : "Cross-Origin-Resource-Policy",
           "value" : "(same-site)"
+        },
+        {
+          "key" : "Vary",
+          "value" : "Accept-Encoding"
         }
       ]
     }
