@@ -6,11 +6,11 @@
     <h2 class="text-2xl sm:text-4xl my-6 md:my-12 font-thin text-center">
       {{ $t('blog.landing.desc') }}
     </h2>
-    <section class="grid grid-cols-1 gap-4 mx-2 justify-center sm:(grid-cols-2 mx-4) md:(grid-cols-3 pt-6 gap-6) lg:(gap-8 mx-12)">
+    <section class="grid grid-cols-1 gap-4 sm:(grid-cols-2 mx-4 justify-center) md:(grid-cols-3 pt-6 gap-6) lg:(gap-8 mx-12)">
       <article
         v-for="(post, $index) in posts"
         :key="`post-${$index}`"
-        class="post max-w-sm sm:max-w-md rounded overflow-hidden shadow-lg flex flex-col dark:bg-dark-900 bg-light-600 mx-auto"
+        class="max-w-sm sm:max-w-md rounded overflow-hidden shadow-lg flex flex-col dark:bg-dark-900 bg-light-600 mx-auto"
         role="article"
       >
         <nuxt-link :to="localePath(post.path)" class="font-bold text-xl mb-2">
@@ -24,7 +24,7 @@
             loading="lazy"
             fit="cover"
           />
-          <div class="py-2 px-2 flex-2">
+          <div class="p-2 flex-2">
             <div class="flex flex-row items-center">
               <p class="dark:(text-red-500 border-1 border-red-600 bg-transparent) rounded-md px-2 bg-red-600 text-xs text-light-200">
                 {{ post.tag }}
@@ -33,7 +33,7 @@
                 {{ $d(new Date(post.createdAt), 'short', localePath ) }}
               </p>
             </div>
-            <h3 class="rounded-md font-medium text-xl">
+            <h3 class="rounded-md font-medium text-xl p-2">
               {{ post.title }}
             </h3>
           </div>
