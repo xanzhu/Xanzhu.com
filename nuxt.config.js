@@ -119,9 +119,9 @@ export default {
       'https://res.cloudinary.com'
     ]
   },
-  vite: {
-    build: true
-  },
+  // vite: {
+  //   build: true
+  // },
   colorMode: {
     preference: 'system',
     fallback: 'dark',
