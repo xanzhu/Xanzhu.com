@@ -1,11 +1,5 @@
 {
-  "article": {
-    "updated": "Kua Whakahoutia",
-    "creditsource": "Mātāpuna",
-    "readtime": "min te panuihia",
-    "Next": "Panuku",
-    "Previous": "Tōmua"
-  },
+  "article": {},
   "maintenance": {
     "title": "Kei te hangaia",
     "description_1": "Ka whakahou tonu tenei whaarangi ka pai ake te hoahoa.",
@@ -40,8 +34,8 @@
   },
   "blog": {
     "landing": {
-      "title": "Nga Korero Hou",
-      "desc": "Tūmataitinga, Haumarutanga me nga mea katoa i waenga."
+      "desc": "Tūmataitinga, Haumarutanga me nga mea katoa i waenga.",
+      "soon": "E haere ake nei"
     }
   },
   "page": {

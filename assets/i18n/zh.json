@@ -33,13 +33,7 @@
       "description": "查看我们的隐私政策以及它与您的关系"
     }
   },
-  "article": {
-    "readtime": "分钟阅读",
-    "creditsource": "来源",
-    "updated": "更新",
-    "Next": "下一个",
-    "Previous": "以前的"
-  },
+  "article": {},
   "aria": {
     "button": {
       "translate": "选择语言",
@@ -51,8 +45,8 @@
   },
   "blog": {
     "landing": {
-      "title": "最新文章",
-      "desc": "隐私、安全和两者之间的一切"
+      "desc": "隐私、安全和两者之间的一切",
+      "soon": "即将推出"
     }
   }
 }

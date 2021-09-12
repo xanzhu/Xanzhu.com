@@ -1,5 +1,3 @@
-import getRoutes from './utils/getRoutes'
-
 export default {
   target: 'static',
   head: {
@@ -39,7 +37,6 @@ export default {
   ],
   modules: [
     '@nuxtjs/i18n',
-    '@nuxt/content',
     '@nuxtjs/sitemap'
   ],
   i18n: {
@@ -107,11 +104,8 @@ export default {
     ]
   },
   sitemap: {
-    hostname: process.env.BASE_URL,
-    gzip: true,
-    routes () {
-      return getRoutes()
-    }
+    hostname: 'https://xanzhu.com',
+    gzip: true
   },
   image: {
     domains: [
@@ -122,13 +116,6 @@ export default {
     preference: 'system',
     fallback: 'dark',
     classSuffix: ''
-  },
-  content: {
-    markdown: {
-      prism: {
-        theme: 'prism-themes/themes/prism-holi-theme.css'
-      }
-    }
   },
   generate: {
     fallback: true

@@ -33,13 +33,7 @@
       "description": "See our Privacy Policy and how it could relate to you"
     }
   },
-  "article": {
-    "readtime": "min read",
-    "creditsource": "Source",
-    "updated": "Updated",
-    "Next": "Next",
-    "Previous": "Previous"
-  },
+  "article": {},
   "aria": {
     "button": {
       "Omenu": "Open Menu",
@@ -51,8 +45,8 @@
   },
   "blog": {
     "landing": {
-      "title": "LATEST POSTS",
-      "desc": "Privacy, Security and everything in between."
+      "desc": "Privacy, Security and everything in between.",
+      "soon": "COMING SOON"
     }
   }
 }
