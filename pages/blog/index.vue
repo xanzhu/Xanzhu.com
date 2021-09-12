@@ -10,7 +10,7 @@
       <article
         v-for="(post, $index) in posts"
         :key="`post-${$index}`"
-        class="max-w-sm sm:max-w-md rounded overflow-hidden shadow-lg flex flex-col dark:bg-dark-900 bg-light-600 mx-auto"
+        class="max-w-sm sm:max-w-md rounded overflow-hidden shadow-lg flex flex-col dark:(bg-dark-900 shadow-none) bg-light-600 mx-auto"
         role="article"
       >
         <nuxt-link :to="localePath(post.path)" class="font-bold text-xl mb-2">

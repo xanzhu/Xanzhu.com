@@ -14,8 +14,6 @@
           </h1>
           <div class="flex inline-flex space-x-2 text-xs items-center">
             <div class="inline-flex dark:bg-dark-400 bg-light-900 py-1.5 lg:my-4 px-2 rounded-md w-auto">
-              <!--Switch to time ago method, instead of date -->
-              <!-- <p>{{ $t('article.updated') }} : {{ $d(new Date(post.updatedAt), 'short', localePath ) }}</p> -->
               <IconClock class="h-4 w-4 mx-1" />
               <p><ReadTime :content="post.body" /></p>
             </div>
@@ -40,7 +38,7 @@
       <div v-if="post.source" class="dark:(text-light-200 opacity-45) text-dark-900 text-sm opacity-80 italic mx-6 -mt-2 text-right">
         {{ $t('article.creditsource') }}: {{ post.source }}
       </div>
-      <nuxt-content class="mx-4 my-4 dark:text-light-200 text-dark-900 leading-normal lg:px-32" :document="post" />
+      <nuxt-content class="px-4 mx-auto my-4 dark:text-light-200 text-dark-900 leading-normal lg:(w-4xl)" :document="post" />
       <PrevNext loading="lazy" :prev="prev" :next="next" class="my-4 mx-6 sm:mx-12" />
     </article>
   </div>

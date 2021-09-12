@@ -6,7 +6,7 @@
     format="webp"
     height="424"
     width="800"
-    class="mx-auto px-8 my-4"
+    class="mx-auto my-4 sm:px-8"
     loading="lazy"
   />
 </template>
