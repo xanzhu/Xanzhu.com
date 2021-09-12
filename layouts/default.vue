@@ -53,7 +53,7 @@ export default {
         {
           hid: 'og:url',
           property: 'og:url',
-          content: process.env.BASE_URL
+          content: 'https://xanzhu.com'
         },
         {
           hid: 'og:type',

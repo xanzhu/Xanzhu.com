@@ -66,7 +66,7 @@ export default {
         }
       }
     },
-    baseUrl: process.env.BASE_URL,
+    baseUrl: 'https://xanzhu.com',
     defaultLocale: 'en',
     strategy: 'prefix_except_default',
     langDir: './assets/i18n/',
