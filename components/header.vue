@@ -1,30 +1,76 @@
 <template>
-  <div class="dark:bg-black dark:text-white text-black bg-gray-200 flex justify-between px-6 py-4 ">
-    <div class="hidden sm:block" :aria-label="`Switch Language`">
-      <nuxt-link
-        v-for="locale in availableLocales"
-        :key="locale.code"
-        :to="switchLocalePath(locale.code)"
-        :aria-label="`${locale.name}`"
-      >
-        {{ locale.name }}
-      </nuxt-link>
-    </div>
+  <header class="flex flex-row justify-between items-center px-4 py-2 bg-transparent text-dark-900 dark:(bg-black text-light-200) md:(space-x-4 mx-6 py-4) lg:mx-12" role="banner">
     <nuxt-link :to="localePath('/')">
-      <XanzhuV1 />
+      <Icon-Xanzhu class="flex w-40 sm:w-46 md:w-56" />
     </nuxt-link>
-  </div>
+    <div class="flex text-dark-900 dark:text-light-200 md:hidden">
+      <button v-show="!MobileMenu" :aria-label="$t('aria.button.Omenu')" class="w-7 h-7" @click="Mobile_Menu">
+        <Icon-Menu aria-label="Menu" />
+      </button>
+      <button v-show="MobileMenu" :aria-label="$t('aria.button.Cmenu')" class="w-7 h-7" @click="Mobile_Menu">
+        <Icon-Cross />
+      </button>
+    </div>
+    <nav
+      class="absolute rounded-md top-9.5 right-4.5 z-1 flex-col-reverse items-center p-4 font-semibold bg-gray-300 dark:(bg-dark-800 md:bg-transparent) md:(relative top-0 flex flex-row space-x-6 p-4 bg-transparent)"
+      :class="{'flex' : MobileMenu, 'hidden': !MobileMenu}"
+      role="navigation"
+    >
+      <div class="md:(space-x-6 flex-row) font-semibold text-center text-sm flex-col flex w-full" @click="MobileMenu = false">
+        <nuxt-link :to="localePath('/')" class="nav-internal">
+          {{ $t('links.home') }}
+        </nuxt-link>
+        <nuxt-link :to="localePath('/')" class="nav-internal">
+          {{ $t('links.docs') }}
+        </nuxt-link>
+        <nuxt-link :to="localePath('/blog')" class="nav-internal">
+          {{ $t('links.blog') }}
+        </nuxt-link>
+      </div>
+      <div class="flex flex-row space-x-2">
+        <button class="btn-focus text-red-600 hover:text-current px-1" @click="Lang_Menu">
+          <IconTranslate class="h-6 w-6 pt-1" :aria-label="$t('aria.button.translate')" />
+        </button>
+        <div v-show="TranslateMenu" class="z-4 p-1 absolute top-13 rounded-md shadow-md dark:(bg-dark-500 text-light-200) bg-light-700 text-dark-900">
+          <div class="py-0.5" @click="TranslateMenu = false">
+            <nuxt-link
+              v-for="locale in availableLocales"
+              :key="locale.code"
+              :to="switchLocalePath(locale.code)"
+            >
+              <div
+                class="px-3 rounded-md dark:hover:bg-dark-300 hover:bg-light-400"
+                :aria-label="`${locale.name}`"
+              >
+                {{ locale.name }}
+              </div>
+            </nuxt-link>
+          </div>
+        </div>
+        <ColorSwitch />
+      </div>
+    </nav>
+  </header>
 </template>
 <script>
-import XanzhuV1 from '~/assets/Xanzhu.svg?inline'
-
 export default {
-  components: {
-    XanzhuV1
+  data () {
+    return {
+      TranslateMenu: false,
+      MobileMenu: false
+    }
   },
   computed: {
     availableLocales () {
       return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
+    }
+  },
+  methods: {
+    Mobile_Menu () {
+      this.MobileMenu = !this.MobileMenu
+    },
+    Lang_Menu () {
+      this.TranslateMenu = !this.TranslateMenu
     }
   }
 }

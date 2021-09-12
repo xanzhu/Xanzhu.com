@@ -1,16 +1,17 @@
 <template>
-  <div>
+  <div class="flex flex-col min-h-screen subpixel-antialiased">
     <Header />
     <Nuxt />
+    <Footer />
   </div>
 </template>
 <script>
 export default {
   head () {
-    const i18nSeo = this.$nuxtI18nSeo()
+    const i18nHead = this.$nuxtI18nHead({ addDirAttribute: true, addSeoAttributes: true })
     return {
       htmlAttrs: {
-        ...i18nSeo.htmlAttrs
+        ...i18nHead.htmlAttrs
       },
       title: this.$i18n.t('meta.title'),
       meta: [
@@ -30,10 +31,9 @@ export default {
           content: this.$i18n.t('meta.description')
         },
         {
-          // Update banner
           hid: 'twitter:image',
           name: 'twitter:image',
-          content: 'https://res.cloudinary.com/xanzhu/image/upload/v1617503527/Xanzhu4521a_mk9agy.png'
+          content: 'https://res.cloudinary.com/xanzhu/image/upload/v1627084292/Twitter-image-v1.2_b0ebgw.png'
         },
         {
           hid: 'og:title',
@@ -46,17 +46,31 @@ export default {
           content: this.$i18n.t('meta.description')
         },
         {
-          // Update banner
           hid: 'og:image',
           property: 'og:image',
-          content: 'https://res.cloudinary.com/xanzhu/image/upload/v1617503527/Xanzhu4521a_mk9agy.png'
+          content: 'https://res.cloudinary.com/xanzhu/image/upload/v1627084292/Twitter-image-v1.2_b0ebgw.png'
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: process.env.BASE_URL
+        },
+        {
+          hid: 'og:type',
+          property: 'og:type',
+          content: 'Website'
         }
       ],
       link: [
-        // { rel: 'shortcut icon', sizes: '16x16 24x24 32x32 48x48 64x64', href: '/favicon.ico' },
-        ...i18nSeo.link
+        ...i18nHead.link
       ]
     }
   }
 }
 </script>
+<style>
+svg {
+  display: inline-block;
+  vertical-align: inherit;
+}
+</style>

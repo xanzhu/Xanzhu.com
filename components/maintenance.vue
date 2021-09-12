@@ -1,9 +1,16 @@
 <template>
-  <div class="dark:text-white text-black flex items-center mt-24 p-8">
-    <nuxt-img class="hidden sm:block object-cover h-40 w-24 mr-12 rounded-full" src="/images/louie-d3.webp" alt="Woman looking into camera wearing orange/red makeup" />
-    <div class="text-4xl font-medium">
-      {{ $t('maintenance.title') }}
-      <p class="text-base font-thin">
+  <div class="p-4 mt-5 dark:text-light-200 text-dark-900 sm:(justify-center items-center overflow-hidden flex p-8 mt-0)" role="main">
+    <nuxt-img
+      src="/images/mountain.png"
+      width="256px"
+      height="400px"
+      class="hidden sm:(flex mr-12 mt-12 rounded-md)"
+      alt="Large mountain"
+      format="webp"
+    />
+    <div class="text-4xl font-medium space-y-4">
+      <h1>{{ $t('maintenance.title') }}</h1>
+      <p class="text-base font-extralight">
         {{ $t('maintenance.description_1') }} <br>
         {{ $t('maintenance.description_2') }}
       </p>

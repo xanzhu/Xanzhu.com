@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center">
+  <div class="flex-1">
     <Maintenance />
   </div>
 </template>

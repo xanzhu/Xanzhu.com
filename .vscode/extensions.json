@@ -1,6 +1,6 @@
 {
     "recommendations": [
-        "bradlc.vscode-tailwindcss",
+        "voorjaar.windicss-intellisense",
         "octref.vetur"
     ]
 }

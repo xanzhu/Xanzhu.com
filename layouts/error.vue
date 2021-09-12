@@ -1,12 +1,14 @@
 <template>
-  <div class="dark:text-gray-200 text-gray-900 text-center dark:font-thin font-normal">
-    <h1 v-if="error.statusCode === 404" class="font-semibold text-2xl pt-32 pb-4">
-      {{ $t('error.404') }}
-    </h1>
-    <h1 v-else class="pb-4">
-      {{ $t('error.else') }}
-    </h1>
-    <nuxt-link :to="localePath('/')" class="focus:outline-none text-white text-sm py-1.5 px-4 rounded-md bg-gray-900 hover:shadow-lg dark:bg-red-700">
+  <div class="dark:text-light-200 text-dark-900 text-center font-normal flex-grow" role="main">
+    <div class="font-medium md:text-2xl pt-32 pb-4 text-xl">
+      <h1 v-if="error.statusCode === 404">
+        {{ $t('error.404') }}
+      </h1>
+      <h1 v-else>
+        {{ $t('error.else') }}
+      </h1>
+    </div>
+    <nuxt-link :to="localePath('/blog')" class="focus:outline-none text-sm py-1.5 text-light-200 font-semibold px-4 rounded-md bg-dark-900 hover:shadow-lg dark:bg-red-700">
       {{ $t('error.return') }}
     </nuxt-link>
   </div>
@@ -17,6 +19,36 @@ export default {
     error: {
       type: Object,
       default: () => {}
+    }
+  },
+  head () {
+    const i18nHead = this.$nuxtI18nHead({ addDirAttribute: true, addSeoAttributes: true })
+    return {
+      htmlAttrs: {
+        ...i18nHead.htmlAttrs
+      },
+      titleTemplate: '%s - Xanzhu',
+      title: this.$i18n.t('error.title'),
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.$i18n.t('error.desc')
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          title: this.$i18n.t('error.title')
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.$i18n.t('error.desc')
+        }
+      ],
+      link: [
+        ...i18nHead.link
+      ]
     }
   }
 }
