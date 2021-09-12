@@ -4,5 +4,9 @@
     ],
     "i18n-ally.keystyle": "nested",
     "i18n-ally.sourceLanguage": "en",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "eslint.validate": ["javascript"],
     "css.lint.unknownAtRules": "ignore"
 }
