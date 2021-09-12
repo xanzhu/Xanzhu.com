@@ -46,7 +46,6 @@ export default {
     vueI18n: {
       fallbackLocale: ['en', 'mi', 'ko', 'zh'],
       dateTimeFormats: {
-        // Maori date not translating
         en: {
           short: {
             day: 'numeric',
@@ -119,9 +118,6 @@ export default {
       'https://res.cloudinary.com'
     ]
   },
-  // vite: {
-  //   build: true
-  // },
   colorMode: {
     preference: 'system',
     fallback: 'dark',
