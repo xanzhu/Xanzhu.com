@@ -1,6 +1,6 @@
 {
   "maintenance": {
-    "title": "정비",
+    "title": "웹사이트 유지보수",
     "description_1": "이 페이지는 디자인이 개선됨에 따라 계속 업데이트됩니다",
     "description_2": "연말까지 웹 사이트를 공개 할 계획입니다"
   },
@@ -36,7 +36,6 @@
   "article": {
     "readtime": "최소 읽기",
     "creditsource": "원천",
-    "updated": "업데이트됨",
     "Next": "다음",
     "Previous": "이전의"
   },
@@ -51,8 +50,12 @@
   },
   "blog": {
     "landing": {
-      "title": "최근 게시물",
+      "title": "최신 블로그 게시물",
       "desc": "개인 정보 보호, 보안 및 그 사이의 모든 것."
+    },
+    "meta": {
+      "title": "최신 블로그 게시물",
+      "description": "Xanzhu는 기술에 대한 기사를 제공합니다. 우리는 개인 정보 보호, 보안 등에 중점을 둡니다."
     }
   }
 }

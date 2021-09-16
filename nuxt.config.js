@@ -110,6 +110,7 @@ export default {
   sitemap: {
     hostname: process.env.BASE_URL,
     gzip: true,
+    trailingSlash: true,
     routes () {
       return getRoutes()
     }

@@ -1,13 +1,12 @@
 {
   "article": {
-    "updated": "Kua Whakahoutia",
     "creditsource": "Mātāpuna",
     "readtime": "min te panuihia",
     "Next": "Panuku",
     "Previous": "Tōmua"
   },
   "maintenance": {
-    "title": "Kei te hangaia",
+    "title": "Tiakitanga Paetukutuku",
     "description_1": "Ka whakahou tonu tenei whaarangi ka pai ake te hoahoa.",
     "description_2": "Ko te tumanako ka tukuna ta maatau paetukutuku i te mutunga o te tau."
   },
@@ -40,8 +39,12 @@
   },
   "blog": {
     "landing": {
-      "title": "Nga Korero Hou",
+      "title": "Ko a maatau pou korero hou",
       "desc": "Tūmataitinga, Haumarutanga me nga mea katoa i waenga."
+    },
+    "meta": {
+      "title": "Nga Panui Blog Hou",
+      "description": "Kei a Xanzhu nga korero mo nga hangarau hou. Te arotahi ki te ahuru me te ahuru o nga kaiwhakamahi"
     }
   },
   "page": {

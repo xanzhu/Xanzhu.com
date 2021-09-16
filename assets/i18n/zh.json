@@ -1,6 +1,6 @@
 {
   "maintenance": {
-    "title": "维护",
+    "title": "网站维护",
     "description_1": "随着设计的改进，此页面将继续更新",
     "description_2": "我们预计在今年年底发布您的网站"
   },
@@ -36,7 +36,6 @@
   "article": {
     "readtime": "分钟阅读",
     "creditsource": "来源",
-    "updated": "更新",
     "Next": "下一个",
     "Previous": "以前的"
   },
@@ -51,8 +50,12 @@
   },
   "blog": {
     "landing": {
-      "title": "最新文章",
+      "title": "我们最新的博文",
       "desc": "隐私、安全和两者之间的一切"
+    },
+    "meta": {
+      "title": "最新博客文章",
+      "description": "Xanzhu 提供有关所有事物技术的有用文章、指南和技巧。\n专注于隐私、安全等。"
     }
   }
 }

@@ -5,8 +5,10 @@
       width="256px"
       height="400px"
       class="hidden sm:(flex mr-12 mt-12 rounded-md)"
-      alt="Large mountain"
+      alt="Close up Snowy mountain"
       format="webp"
+      loading="eager"
+      title="Mountain"
     />
     <div class="text-4xl font-medium space-y-4">
       <h1>{{ $t('maintenance.title') }}</h1>

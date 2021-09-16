@@ -1,11 +1,11 @@
 <template>
   <div class="container mx-auto dark:text-light-200 text-dark-900 flex-grow" role="main">
-    <h1 class="text-center text-red-600 font-semibold text-3xl md:text-5xl my-4">
+    <h1 class="text-center text-red-600 font-semibold text-3xl md:text-5xl mt-4">
       {{ $t('blog.landing.title') }}
     </h1>
-    <h2 class="text-2xl sm:text-4xl my-6 md:my-12 font-thin text-center">
+    <p class="text-xl mb-10 md:mb-10 font-thin text-center">
       {{ $t('blog.landing.desc') }}
-    </h2>
+    </p>
     <section class="grid grid-cols-1 gap-4 sm:(grid-cols-2 mx-4 justify-center) md:(grid-cols-3 pt-6 gap-6) lg:(gap-8 mx-12)">
       <article
         v-for="(post, $index) in posts"
@@ -20,9 +20,12 @@
             :src="post.media"
             :alt="post.alt"
             format="webp"
+            height="290"
+            width="130"
             sizes="sm:100vw md:50vw"
-            loading="lazy"
+            loading="eager"
             fit="cover"
+            :title="post.alt"
           />
           <div class="p-2 flex-2">
             <div class="flex flex-row items-center">
@@ -33,9 +36,9 @@
                 {{ $d(new Date(post.createdAt), 'short', localePath ) }}
               </p>
             </div>
-            <h3 class="rounded-md font-medium text-xl p-2">
+            <h2 class="rounded-md font-medium text-xl p-2">
               {{ post.title }}
-            </h3>
+            </h2>
           </div>
         </nuxt-link>
       </article>
@@ -55,6 +58,36 @@ export default {
         ...post,
         path: post.path.replace(`/${defaultLocale}`, '')
       }))
+    }
+  },
+  head () {
+    const i18nHead = this.$nuxtI18nHead({ addDirAttribute: true, addSeoAttributes: true })
+    return {
+      htmlAttrs: {
+        ...i18nHead.htmlAttrs
+      },
+      titleTemplate: '%s - Xanzhu',
+      title: this.$i18n.t('blog.meta.title'),
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.$i18n.t('blog.meta.description')
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: this.$i18n.t('blog.meta.title')
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.$i18n.t('blog.meta.description')
+        }
+      ],
+      link: [
+        ...i18nHead.link
+      ]
     }
   }
 }

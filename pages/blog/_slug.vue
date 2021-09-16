@@ -29,9 +29,10 @@
             sizes="sm:100vw md:100vw lg:100vw"
             :src="post.media"
             :alt="post.alt"
+            :title="post.alt"
             format="webp"
             fit="cover"
-            loading="lazy"
+            loading="eager"
           />
         </div>
       </header>
@@ -98,6 +99,11 @@ export default {
           hid: 'og:type',
           name: 'og:type',
           content: 'article'
+        },
+        {
+          hid: 'og:url',
+          name: 'og:url',
+          content: this.post.slug
         }
       ]
     }
