@@ -103,7 +103,7 @@ export default {
         {
           hid: 'og:url',
           name: 'og:url',
-          content: this.post.slug
+          content: process.env.BASE_URL + this.$nuxt.$route.fullPath
         }
       ]
     }

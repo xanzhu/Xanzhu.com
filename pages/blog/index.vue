@@ -16,13 +16,13 @@
         <nuxt-link :to="localePath(post.path)" class="font-bold text-xl mb-2">
           <nuxt-img
             v-if="post.media"
-            class="relative w-full h-32 object-cover sm:object-center md:object-top lg:object-center"
+            class="relative w-full h-32 sm:h-40 object-cover sm:object-center md:object-top lg:object-center"
             :src="post.media"
             :alt="post.alt"
             format="webp"
             height="290"
             width="130"
-            sizes="sm:100vw md:50vw"
+            sizes="sm:100vw md:50vw lg:25vw"
             loading="eager"
             fit="cover"
             :title="post.alt"
