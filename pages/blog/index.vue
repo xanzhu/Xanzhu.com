@@ -1,16 +1,16 @@
 <template>
-  <div class="container mx-auto dark:text-light-200 text-dark-900 flex-grow" role="main">
+  <div class="mx-2 sm:(container mx-auto mb-10) dark:text-light-200 text-dark-900 flex-grow" role="main">
     <h1 class="text-center text-red-600 font-semibold text-3xl md:text-5xl mt-4">
       {{ $t('blog.landing.title') }}
     </h1>
-    <p class="text-xl mb-10 md:mb-10 font-thin text-center">
+    <p class="text-lg sm:text-xl mb-10 md:mb-10 font-thin text-center mx-2 break-words dark:text-gray-300">
       {{ $t('blog.landing.desc') }}
     </p>
-    <section class="grid grid-cols-1 gap-4 sm:(grid-cols-2 mx-4 justify-center) md:(grid-cols-3 pt-6 gap-6) lg:(gap-8 mx-12)">
+    <section class="grid grid-cols-1 gap-4 sm:(grid-cols-2 mx-4 justify-center) md:(grid-cols-3 pt-6 gap-6) lg:(gap-8 mx-12 mx-auto)">
       <article
         v-for="(post, $index) in posts"
         :key="`post-${$index}`"
-        class="max-w-sm sm:max-w-md rounded overflow-hidden shadow-lg flex flex-col dark:(bg-dark-900 shadow-none) bg-light-600 mx-auto"
+        class="max-w-sm w-full sm:max-w-md rounded overflow-hidden shadow-lg flex flex-col dark:(bg-dark-900 shadow-none) bg-light-600 mx-auto"
         role="article"
       >
         <nuxt-link :to="localePath(post.path)" class="font-bold text-xl mb-2">
@@ -83,6 +83,11 @@ export default {
           hid: 'og:description',
           property: 'og:description',
           content: this.$i18n.t('blog.meta.description')
+        },
+        {
+          hid: 'og:url',
+          name: 'og:url',
+          content: process.env.BASE_URL + this.$nuxt.$route.fullPath
         }
       ],
       link: [

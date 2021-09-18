@@ -38,12 +38,16 @@ export default {
         {
           hid: 'og:title',
           property: 'og:title',
-          title: this.$i18n.t('error.title')
+          content: this.$i18n.t('error.title')
         },
         {
           hid: 'og:description',
           property: 'og:description',
           content: this.$i18n.t('error.desc')
+        },
+        {
+          hid: 'og:url',
+          content: process.env.BASE_URL + this.$nuxt.$route.fullpath
         }
       ],
       link: [

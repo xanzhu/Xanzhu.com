@@ -3,13 +3,14 @@ import getRoutes from './utils/getRoutes'
 export default {
   target: 'static',
   head: {
-    title: 'Xanzhu Security',
+    title: 'Xanzhu',
     bodyAttrs: {
-      class: 'dark:bg-black bg-gray-200'
+      class: 'dark:bg-black bg-gray-200 min-w-xs'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'og:type', property: 'og:type', content: 'website' },
       { name: 'twitter:site', content: '@xanzhu1' },
       {
         hid: 'twitter:card',
@@ -46,7 +47,6 @@ export default {
     vueI18n: {
       fallbackLocale: ['en', 'mi', 'ko', 'zh'],
       dateTimeFormats: {
-        // Maori date not translating
         en: {
           short: {
             day: 'numeric',

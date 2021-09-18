@@ -53,12 +53,7 @@ export default {
         {
           hid: 'og:url',
           property: 'og:url',
-          content: process.env.BASE_URL
-        },
-        {
-          hid: 'og:type',
-          property: 'og:type',
-          content: 'Website'
+          content: 'process.env.BASE_URL' + this.$nuxt.$route.path
         }
       ],
       link: [
