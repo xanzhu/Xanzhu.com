@@ -3,7 +3,7 @@
     <nuxt-img
       src="/images/mountain.png"
       width="256px"
-      height="400px"
+      height="402px"
       class="hidden sm:(flex mr-12 mt-12 rounded-md)"
       alt="Close up Snowy mountain"
       format="webp"

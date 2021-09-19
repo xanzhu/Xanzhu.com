@@ -6,7 +6,7 @@
     <p class="text-lg sm:text-xl mb-10 md:mb-10 font-thin text-center mx-2 break-words dark:text-gray-300">
       {{ $t('blog.landing.desc') }}
     </p>
-    <section class="grid grid-cols-1 gap-4 sm:(grid-cols-2 mx-4 justify-center) md:(grid-cols-3 pt-6 gap-6) lg:(gap-8 mx-12 mx-auto)">
+    <section class="grid grid-cols-1 gap-4 sm:(grid-cols-2 mx-4 justify-center) md:(grid-cols-3 pt-6 gap-6) lg:(gap-8 mx-12 px-4 mx-auto)">
       <article
         v-for="(post, $index) in posts"
         :key="`post-${$index}`"
@@ -27,19 +27,17 @@
             fit="cover"
             :title="post.alt"
           />
-          <div class="p-2 flex-2">
-            <div class="flex flex-row items-center">
-              <p class="dark:(text-red-500 border-1 border-red-600 bg-transparent) rounded-md px-2 bg-red-600 text-xs text-light-200">
-                {{ post.tag }}
-              </p>
-              <p class="px-2 text-sm font-medium text-right">
-                {{ $d(new Date(post.createdAt), 'short', localePath ) }}
-              </p>
-            </div>
-            <h2 class="rounded-md font-medium text-xl p-2">
-              {{ post.title }}
-            </h2>
+          <div class="flex flex-row items-center px-4 py-2 space-x-2">
+            <p class="dark:(text-red-500 border-1 border-red-600 bg-transparent) rounded-md px-2 bg-red-600 text-xs text-light-200">
+              {{ post.tag }}
+            </p>
+            <p class="text-sm font-medium text-right">
+              {{ $d(new Date(post.createdAt), 'short', localePath ) }}
+            </p>
           </div>
+          <h2 class="rounded-md font-medium text-xl px-4">
+            {{ post.title }}
+          </h2>
         </nuxt-link>
       </article>
     </section>
