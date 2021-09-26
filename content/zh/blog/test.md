@@ -1,7 +1,7 @@
 ---
 title: 在它看起来不好之前， 你能在这个盒子里装多少文本？
 description: 用中文简体字写的示例说明
-media: /images/mountain_4.jpeg
+media: v1632626904/sand_ukcj9h.jpg
 tag: 测试
 alt: 山
 ---
