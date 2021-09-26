@@ -14,13 +14,13 @@
     "@nuxt/content": "^1.14.0",
     "@nuxtjs/i18n": "^7.0.2",
     "@nuxtjs/sitemap": "^2.4.0",
-    "core-js": "^3.16.3",
+    "core-js": "^3.18.0",
     "nuxt": "^2.15.8",
-    "prism-themes": "^1.8.0",
-    "sass": "^1.39.2"
+    "prism-themes": "^1.9.0",
+    "sass": "^1.42.1"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.14.9",
+    "@babel/eslint-parser": "^7.15.7",
     "@nuxt/image": "^0.6.0",
     "@nuxtjs/color-mode": "^2.1.1",
     "@nuxtjs/eslint-config": "^6.0.1",
@@ -28,8 +28,8 @@
     "@nuxtjs/pwa": "^3.3.5",
     "eslint": "^7.32.0",
     "eslint-plugin-nuxt": "^2.0.0",
-    "eslint-plugin-vue": "^7.17.0",
+    "eslint-plugin-vue": "^7.18.0",
     "nuxt-vite": "^0.2.4",
-    "nuxt-windicss": "^1.2.3"
+    "nuxt-windicss": "^1.2.4"
   }
 }
