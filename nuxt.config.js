@@ -116,6 +116,9 @@ export default {
     }
   },
   image: {
+    cloudinary: {
+      baseURL: 'https://res.cloudinary.com/xanzhu/image/upload/'
+    },
     domains: [
       'https://res.cloudinary.com'
     ]

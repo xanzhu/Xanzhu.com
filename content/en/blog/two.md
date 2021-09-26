@@ -1,7 +1,7 @@
 ---
 title: How much text can you fit in this box before it looks bad?
 description: Example description
-media: /images/mountain_4.jpeg
+media: v1632626904/sand_ukcj9h.jpg
 tag: TEST
 alt: Mountain
 ---

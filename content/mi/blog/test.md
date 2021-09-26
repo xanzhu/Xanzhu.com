@@ -1,7 +1,7 @@
 ---
 title: E hia nga kupu ka taea e koe te whakauru ki tenei pouaka i mua i te ahua kino?
 description: Whakaahuatanga
-media: /images/mountain_3.jpeg
+media: v1632626904/sand_ukcj9h.jpg
 tag: TEST
 alt: Maunga
 source: xanzhu.com

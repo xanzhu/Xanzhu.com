@@ -1,7 +1,7 @@
 ---
 title: 나쁜 것처럼 보이기 전에이 상자에 얼마나 많은 텍스트를 넣을 수 있습니까?
 description: 예제 설명
-media: /images/mountain_2.jpeg
+media: v1632626904/sand_ukcj9h.jpg
 tag: 테스트
 alt: 산
 source: xanzhu.com

@@ -3,10 +3,10 @@
     <h1 class="text-center text-red-600 font-semibold text-3xl md:text-5xl mt-4">
       {{ $t('blog.landing.title') }}
     </h1>
-    <p class="text-lg sm:text-xl mb-10 md:mb-10 font-thin text-center mx-2 break-words dark:text-gray-300">
+    <p class="text-lg p-2 mb-5 text-center break-words sm:(text-xl) md:(mb-10) dark:text-gray-300">
       {{ $t('blog.landing.desc') }}
     </p>
-    <section class="grid grid-cols-1 gap-4 sm:(grid-cols-2 mx-4 justify-center) md:(grid-cols-3 pt-6 gap-6) lg:(gap-8 mx-12 px-4 mx-auto)">
+    <section class="grid grid-cols-1 gap-4 sm:(grid-cols-2 mx-4 justify-center) md:(grid-cols-2 pt-6 gap-6) lg:(grid-cols-3 gap-8 x-12 px-4 mx-auto)">
       <article
         v-for="(post, $index) in posts"
         :key="`post-${$index}`"
@@ -26,6 +26,7 @@
             loading="eager"
             fit="cover"
             :title="post.alt"
+            provider="cloudinary"
           />
           <div class="flex flex-row items-center px-4 py-2 space-x-2">
             <p class="dark:(text-red-500 border-1 border-red-600 bg-transparent) rounded-md px-2 bg-red-600 text-xs text-light-200">

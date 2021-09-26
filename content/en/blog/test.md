@@ -1,10 +1,11 @@
 ---
 title: How much text can you fit in this box?
 description: How much text can you fit inside a blog post before it looks bad?
-media: /images/mountain_3.jpeg
+media: v1632626905/green-trees_hbugig.jpg
 tag: TEST
 alt: Mountain
 source: xanzhu.com
+author: Xanzhu
 ---
 
 ## Lacertis spissi
@@ -26,7 +27,7 @@ crimen mecum, placent agmina.
 
 ### Eras per nec posset
 
-<Blog-Image src="/images/mountain_2.jpeg" alt="example - 1 alt">
+<Blog-Image src="/images/mountain_2.jpeg" alt="example - 1 alt" title="Test">
 </Blog-Image>
 
 <Blog-Image src="/images/mountain_4.jpeg" fit="contain" alt="example-2 alt">

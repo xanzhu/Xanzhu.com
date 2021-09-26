@@ -9,6 +9,7 @@
     class="mx-auto my-4 sm:px-8"
     loading="lazy"
     :title="title"
+    provider="cloudinary"
   />
 </template>
 <script>
@@ -16,7 +17,7 @@ export default {
   props: {
     source: {
       type: String,
-      default: '/images/mountain.png',
+      default: 'v1632626904/sand_ukcj9h.jpg',
       required: false
     },
     fit: {
@@ -26,12 +27,12 @@ export default {
     },
     alt: {
       type: String,
-      default: 'Default Example',
+      default: 'Sand Dunes',
       required: false
     },
     title: {
       type: String,
-      default: 'Blog Picture',
+      default: 'Sand Dunes',
       required: null
     }
   }
