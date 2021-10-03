@@ -4,6 +4,7 @@
       src="v1632626904/night_dlu0rp.jpg"
       width="250"
       height="400"
+      sizes="md:50vw lg:100vw"
       class="hidden sm:flex"
       alt="Highway at night"
       format="webp"

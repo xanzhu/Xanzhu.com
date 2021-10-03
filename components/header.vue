@@ -1,5 +1,5 @@
 <template>
-  <header class="flex flex-row justify-between items-center px-4 py-2 bg-transparent text-dark-900 dark:(bg-black text-light-200) md:(space-x-4 mx-6 py-4) lg:mx-12" role="banner">
+  <header class="flex flex-row justify-between items-center px-4 py-2 bg-transparent text-dark-900 dark:(bg-black text-light-200) md:(space-x-4 py-4) lg:mx-12 2xl:(mx-48)" role="banner">
     <NuxtLink :to="localePath('/')">
       <Icon-Xanzhu class="flex w-40 sm:w-46 md:w-56" />
     </NuxtLink>
@@ -12,8 +12,8 @@
       </button>
     </div>
     <nav
-      class="absolute rounded-md top-9.5 right-4.5 z-1 flex-col-reverse items-center p-4 font-semibold bg-gray-300 dark:(bg-dark-800 md:bg-transparent) md:(relative top-0 flex flex-row space-x-6 p-4 bg-transparent)"
-      :class="{'flex' : MobileMenu, 'hidden': !MobileMenu}"
+      class="items-center font-semibold bg-gray-300 dark:(bg-dark-800 md:bg-transparent) md:(relative top-0 flex flex-row space-x-6 p-4 bg-transparent)"
+      :class="{'flex p-4 rounded-md absolute top-9.5 right-4.5 z-1 flex-col-reverse' : MobileMenu, 'hidden': !MobileMenu}"
       role="navigation"
     >
       <div class="md:(space-x-6 flex-row) font-semibold text-center text-sm flex-col flex w-full" @click="MobileMenu = false">

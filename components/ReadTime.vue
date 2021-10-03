@@ -1,6 +1,6 @@
 <template>
-  <div class="inline-flex dark:bg-dark-500 bg-light-900 py-1 lg:my-4 px-2 rounded-md space-x-2">
-    <IconClock class="h-4 w-4 mr-2" />{{ readTime }}
+  <div class="inline-flex dark:bg-dark-500 bg-light-900 py-1 lg:my-4 px-2 rounded-md space-x-1">
+    <IconClock class="h-4 w-4 mr-1" />{{ readTime }}
     <p v-t="'article.readtime'" />
   </div>
 </template>

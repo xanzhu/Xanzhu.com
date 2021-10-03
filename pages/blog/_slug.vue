@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto md:px-2 xl:px-12 md:justify-center" role="main">
+  <div class="container mb-4 mx-auto md:(px-2 mb-0) xl:px-12 md:justify-center" role="main">
     <article v-if="post" class="dark:(bg-dark-900 text-light-200 shadow-transparent) bg-light-400 text-dark-900 shadow-dark-100 shadow-md pb-2 sm:rounded-md md:mb-12">
       <header class="flex flex-col lg:(flex-row items-center top-0)">
         <div class="flex flex-col mx-4 mt-4 space-y-2 sm:space-y-1 md:mx-6">
@@ -24,7 +24,7 @@
           <NuxtImg
             v-if="post.media"
             class="object-cover w-full h-full sm:rounded-md"
-            sizes="sm:100vw md:100vw lg:100vw"
+            sizes="sm:100vw md:50vw lg:25vw"
             :src="post.media"
             :alt="post.alt"
             :title="post.alt"
