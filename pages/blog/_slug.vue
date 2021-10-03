@@ -13,10 +13,7 @@
             {{ post.title }}
           </h1>
           <div class="flex text-xs">
-            <div class="inline-flex dark:bg-dark-500 bg-light-900 py-1 lg:my-4 px-2 rounded-md space-x-2">
-              <IconClock class="h-4 w-4" />
-              <p><ReadTime :content="post.body" /></p>
-            </div>
+            <ReadTime :content="post.body" />
             <div v-if="post.author" class="inline-flex ml-2 py-1 lg:my-4 px-2 rounded-md border-1 border-red-700">
               {{ post.author }}
             </div>
@@ -24,7 +21,7 @@
           </div>
         </div>
         <div class="flex justify-center items-center h-56 sm:(min-h-sm mx-4) md:(mx-4) my-4 overflow-hidden lg:(w-4/6)">
-          <nuxt-img
+          <NuxtImg
             v-if="post.media"
             class="object-cover w-full h-full sm:rounded-md"
             sizes="sm:100vw md:100vw lg:100vw"
@@ -39,10 +36,10 @@
         </div>
       </header>
       <div v-if="post.source" class="dark:(text-light-200 opacity-45) text-dark-900 text-sm opacity-80 italic pr-2 sm:pr-6 -mt-2 text-right">
-        {{ $t('article.creditsource') }}: {{ post.source }}
+        <p v-t="'article.creditsource'" class="inline-block" />: {{ post.source }}
       </div>
       <nuxt-content class="px-4 mx-auto my-4 dark:text-light-200 text-dark-900 leading-normal lg:(w-4xl)" :document="post" />
-      <PrevNext loading="lazy" :prev="prev" :next="next" class="my-4 mx-6 sm:mx-12" />
+      <PrevNext loading="lazy" :prev="prev" :next="next" class="my-4 px-6 sm:px-12 mx-auto" />
     </article>
   </div>
 </template>

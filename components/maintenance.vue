@@ -1,21 +1,24 @@
 <template>
-  <div class="p-4 mt-5 dark:text-light-200 text-dark-900 sm:(justify-center items-center overflow-hidden flex p-8 mt-0)" role="main">
-    <nuxt-img
-      src="/images/mountain.png"
-      width="256px"
-      height="402px"
-      class="hidden sm:(flex mr-12 mt-12 rounded-md)"
-      alt="Close up Snowy mountain"
+  <div class="p-4 dark:text-light-200 text-dark-900 sm:(justify-center items-center flex p-0 mt-10 space-x-8 mx-4)" role="main">
+    <NuxtImg
+      src="v1632626904/night_dlu0rp.jpg"
+      width="250"
+      height="400"
+      class="hidden sm:flex"
+      alt="Highway at night"
       format="webp"
       loading="eager"
-      title="Mountain"
+      title="Highway"
+      provider="cloudinary"
+      fit="fill"
+      :modifiers="{ roundCorner: '5' }"
     />
     <div class="text-4xl font-medium space-y-4">
-      <h1>{{ $t('maintenance.title') }}</h1>
-      <p class="text-base font-extralight">
-        {{ $t('maintenance.description_1') }} <br>
-        {{ $t('maintenance.description_2') }}
-      </p>
+      <h1 v-t="'maintenance.title'" />
+      <div class="text-base font-extralight">
+        <p v-t="'maintenance.description_1'" />
+        <p v-t="'maintenance.description_2'" />
+      </div>
     </div>
   </div>
 </template>

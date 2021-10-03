@@ -1,8 +1,8 @@
 <template>
   <header class="flex flex-row justify-between items-center px-4 py-2 bg-transparent text-dark-900 dark:(bg-black text-light-200) md:(space-x-4 mx-6 py-4) lg:mx-12" role="banner">
-    <nuxt-link :to="localePath('/')">
+    <NuxtLink :to="localePath('/')">
       <Icon-Xanzhu class="flex w-40 sm:w-46 md:w-56" />
-    </nuxt-link>
+    </NuxtLink>
     <div class="flex text-dark-900 dark:text-light-200 md:hidden">
       <button v-show="!MobileMenu" :aria-label="$t('aria.button.Omenu')" class="w-7 h-7" @click="Mobile_Menu">
         <Icon-Menu aria-label="Menu" />
@@ -17,15 +17,9 @@
       role="navigation"
     >
       <div class="md:(space-x-6 flex-row) font-semibold text-center text-sm flex-col flex w-full" @click="MobileMenu = false">
-        <nuxt-link :to="localePath('/')" class="nav-internal">
-          {{ $t('links.home') }}
-        </nuxt-link>
-        <nuxt-link :to="localePath('/')" class="nav-internal">
-          {{ $t('links.docs') }}
-        </nuxt-link>
-        <nuxt-link :to="localePath('/blog')" class="nav-internal">
-          {{ $t('links.blog') }}
-        </nuxt-link>
+        <NuxtLink v-t="'links.home'" :to="localePath('/')" class="nav-internal" />
+        <NuxtLink v-t="'links.docs'" :to="localePath('/')" class="nav-internal" />
+        <NuxtLink v-t="'links.blog'" :to="localePath('/blog')" class="nav-internal" />
       </div>
       <div class="flex flex-row space-x-2">
         <button class="btn-focus text-red-600 hover:text-current px-1" @click="Lang_Menu">
@@ -33,7 +27,7 @@
         </button>
         <div v-show="TranslateMenu" class="z-4 p-1 absolute top-13 rounded-md shadow-md dark:(bg-dark-500 text-light-200) bg-light-700 text-dark-900">
           <div class="py-0.5" @click="TranslateMenu = false">
-            <nuxt-link
+            <NuxtLink
               v-for="locale in availableLocales"
               :key="locale.code"
               :to="switchLocalePath(locale.code)"
@@ -44,7 +38,7 @@
               >
                 {{ locale.name }}
               </div>
-            </nuxt-link>
+            </NuxtLink>
           </div>
         </div>
         <ColorSwitch />
