@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-2 sm:(container mx-auto mb-10) dark:text-light-200 text-dark-900 flex-grow" role="main">
+  <div class="mx-2 sm:(container mx-auto mb-10) md:px-18 dark:text-light-200 text-dark-900 flex-grow" role="main">
     <h1 v-t="'blog.landing.title'" class="text-center text-red-600 font-semibold text-3xl md:text-5xl mt-4" />
     <p v-t="'blog.landing.desc'" class="text-lg p-2 mb-5 text-center break-words sm:(text-xl) md:(mb-10) dark:text-gray-300" />
     <section class="grid grid-cols-1 gap-4 mx-2 sm:(grid-cols-2 mx-8 justify-center) md:(grid-cols-2 pt-6 gap-6) lg:(grid-cols-3 gap-8 mx-12 px-4 mx-auto)">

@@ -1,5 +1,5 @@
 <template>
-  <div class="container mb-4 mx-auto md:(px-2 mb-0) xl:px-12 md:justify-center" role="main">
+  <div class="container mb-4 mx-auto md:(px-6 mb-0 justify-center) lg:px-12" role="main">
     <article v-if="post" class="dark:(bg-dark-900 text-light-200 shadow-transparent) bg-light-400 text-dark-900 shadow-dark-100 shadow-md pb-2 sm:rounded-md md:mb-12">
       <header class="flex flex-col lg:(flex-row items-center top-0)">
         <div class="flex flex-col mx-4 mt-4 space-y-2 sm:space-y-1 md:mx-6">

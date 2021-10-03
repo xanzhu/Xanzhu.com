@@ -1,5 +1,5 @@
 <template>
-  <header class="flex flex-row justify-between items-center px-4 py-2 bg-transparent text-dark-900 dark:(bg-black text-light-200) md:(space-x-4 py-4) lg:mx-12 2xl:(mx-48)" role="banner">
+  <header class="flex flex-row justify-between items-center px-4 py-2 bg-transparent text-dark-900 dark:(bg-black text-light-200) md:(space-x-4 mx-2 py-4) lg:mx-12" role="banner">
     <NuxtLink :to="localePath('/')">
       <Icon-Xanzhu class="flex w-40 sm:w-46 md:w-56" />
     </NuxtLink>
