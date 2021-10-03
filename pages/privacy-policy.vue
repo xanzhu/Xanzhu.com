@@ -1,18 +1,11 @@
 <template>
   <div class="dark:text-light-200 mt-5 text-dark-900 flex-grow px-4 lg:max-w-4xl container mx-auto" role="main">
-    <h1 class="text-3xl">
-      {{ $t('page.pp_title') }}
-    </h1>
-    <p class="pb-4">
-      {{ $t('page.pp_date') }}
-    </p>
-    <p class="py-2">
-      {{ $t('page.pp_p1') }}
-    </p>
-    <p> {{ $t('page.pp_p2') }}</p>
-    <p> {{ $t('page.pp_p3') }}</p>
-    <p class="py-5">
-      {{ $t('page.pp_link') }}
+    <h1 v-t="'page.pp_title'" class="text-3xl" />
+    <p v-t="'page.pp_date'" class="pb-4" />
+    <p v-t="'page.pp_p1'" class="py-2" />
+    <p v-t="'page.pp_p2'" />
+    <p v-t="'page.pp_p3'" />
+    <p v-t="'page.pp_link'" class="py-5">
       <a class="nav-link text-red-600" href="https://xanzhu.com" rel="nofollow noopener noreferrer" target="_blank">
         https://xanzhu.com
         <Icon-External class="h-3 inline-flex" />
