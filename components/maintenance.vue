@@ -8,7 +8,6 @@
       class="hidden sm:flex"
       alt="Highway at night"
       format="webp"
-      loading="eager"
       title="Highway"
       provider="cloudinary"
       fit="fill"
