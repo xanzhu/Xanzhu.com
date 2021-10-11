@@ -8,16 +8,17 @@
       class="hidden sm:flex"
       alt="Highway at night"
       format="webp"
+      loading="eager"
       title="Highway"
       provider="cloudinary"
       fit="fill"
       :modifiers="{ roundCorner: '5' }"
     />
     <div class="text-4xl font-medium space-y-4">
-      <h1 v-t="'maintenance.title'" />
+      <h1>{{ $t('maintenance.title') }}</h1>
       <div class="text-base font-extralight">
-        <p v-t="'maintenance.description_1'" />
-        <p v-t="'maintenance.description_2'" />
+        <p>{{ $t('maintenance.description_1') }}</p>
+        <p>{{ $t('maintenance.description_2') }}</p>
       </div>
     </div>
   </div>
