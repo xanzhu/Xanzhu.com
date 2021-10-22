@@ -30,6 +30,6 @@
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-vue": "^7.20.0",
     "nuxt-vite": "^0.2.4",
-    "nuxt-windicss": "^1.2.4"
+    "nuxt-windicss": "^2.0.0"
   }
 }
