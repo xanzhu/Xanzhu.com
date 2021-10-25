@@ -7,23 +7,23 @@
     <p v-t="'page.pp_p3'" />
     <p v-t="'page.pp_link'" class="py-5" />
     <div class="flex-col flex">
-      <a class="nav-link text-red-600" href="https://xanzhu.com" rel="noopener" target="_blank">
+      <a class="nav-link mr-auto text-red-600" href="https://xanzhu.com" rel="noopener" target="_blank">
         https://xanzhu.com
         <Icon-External class="h-3 inline-flex" />
       </a>
-      <a class="nav-link text-red-600" href="https://a1.xanzhu.com" rel="noopener" target="_blank">
+      <a class="nav-link mr-auto text-red-600" href="https://a1.xanzhu.com" rel="noopener" target="_blank">
         https://a1.xanzhu.com
         <Icon-External class="h-3 inline-flex" />
       </a>
-      <a class="nav-link text-red-600" href="https://a2.xanzhu.com" rel="noopener" target="_blank">
+      <a class="nav-link mr-auto text-red-600" href="https://a2.xanzhu.com" rel="noopener" target="_blank">
         https://a2.xanzhu.com
         <Icon-External class="h-3 inline-flex" />
       </a>
-      <a class="nav-link text-red-600" href="https://dev.xanzhu.com" rel="noopener" target="_blank">
+      <a class="nav-link mr-auto text-red-600" href="https://dev.xanzhu.com" rel="noopener" target="_blank">
         https://dev.xanzhu.com
         <Icon-External class="h-3 inline-flex" />
       </a>
-      <a class="nav-link text-red-600" href="https://xanzhu.pages.dev" rel="noopener" target="_blank">
+      <a class="nav-link mr-auto text-red-600" href="https://xanzhu.pages.dev" rel="noopener" target="_blank">
         https://xanzhu.pages.dev
         <Icon-External class="h-3 inline-flex" />
       </a>
