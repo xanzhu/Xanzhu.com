@@ -5,12 +5,29 @@
     <p v-t="'page.pp_p1'" class="py-2" />
     <p v-t="'page.pp_p2'" />
     <p v-t="'page.pp_p3'" />
-    <p v-t="'page.pp_link'" class="py-5">
-      <a class="nav-link text-red-600" href="https://xanzhu.com" rel="nofollow noopener noreferrer" target="_blank">
+    <p v-t="'page.pp_link'" class="py-5" />
+    <div class="flex-col flex">
+      <a class="nav-link text-red-600" href="https://xanzhu.com" rel="noopener" target="_blank">
         https://xanzhu.com
         <Icon-External class="h-3 inline-flex" />
       </a>
-    </p>
+      <a class="nav-link text-red-600" href="https://a1.xanzhu.com" rel="noopener" target="_blank">
+        https://a1.xanzhu.com
+        <Icon-External class="h-3 inline-flex" />
+      </a>
+      <a class="nav-link text-red-600" href="https://a2.xanzhu.com" rel="noopener" target="_blank">
+        https://a2.xanzhu.com
+        <Icon-External class="h-3 inline-flex" />
+      </a>
+      <a class="nav-link text-red-600" href="https://dev.xanzhu.com" rel="noopener" target="_blank">
+        https://dev.xanzhu.com
+        <Icon-External class="h-3 inline-flex" />
+      </a>
+      <a class="nav-link text-red-600" href="https://xanzhu.pages.dev" rel="noopener" target="_blank">
+        https://xanzhu.pages.dev
+        <Icon-External class="h-3 inline-flex" />
+      </a>
+    </div>
   </div>
 </template>
 <script>
