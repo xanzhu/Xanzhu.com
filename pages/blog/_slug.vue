@@ -46,7 +46,7 @@
 
 <script>
 export default {
-  name: 'Post',
+  name: 'PostView',
   async asyncData (context) {
     const { $content, params, app } = context
     const slug = params.slug
@@ -102,7 +102,7 @@ export default {
         {
           hid: 'og:url',
           name: 'og:url',
-          content: process.env.BASE_URL + this.$nuxt.$route.fullPath
+          content: 'https://a2.xanzhu.com' + this.$nuxt.$route.fullPath
         }
       ]
     }

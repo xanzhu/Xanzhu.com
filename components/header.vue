@@ -1,6 +1,6 @@
 <template>
   <header class="flex flex-row justify-between items-center px-4 py-2 bg-transparent text-dark-900 dark:(bg-black text-light-200) md:(space-x-4 mx-2 py-4) lg:mx-12" role="banner">
-    <NuxtLink :to="localePath('/')">
+    <NuxtLink :to="localePath('/')" aria-label="Xanzhu">
       <Icon-Xanzhu class="flex w-40 sm:w-46 md:w-56" />
     </NuxtLink>
     <div class="flex text-dark-900 dark:text-light-200 md:hidden">
@@ -17,9 +17,10 @@
       role="navigation"
     >
       <div class="md:(space-x-6 flex-row) font-semibold text-center text-sm flex-col flex w-full" @click="MobileMenu = false">
-        <NuxtLink v-t="'links.home'" :to="localePath('/')" class="nav-internal" />
-        <NuxtLink v-t="'links.docs'" :to="localePath('/')" class="nav-internal" />
-        <NuxtLink v-t="'links.blog'" :to="localePath('/blog')" class="nav-internal" />
+        <!-- Issue with Keyboard element -->
+        <NuxtLink v-t="'links.home'" :to="localePath('/')" class="nav-internal" :aria-label="$t('links.home')" />
+        <NuxtLink v-t="'links.docs'" :to="localePath('/')" class="nav-internal" :aria-label="$t('links.docs')" />
+        <NuxtLink v-t="'links.blog'" :to="localePath('/blog')" class="nav-internal" :aria-label="$t('links.docs')" />
       </div>
       <div class="flex flex-row space-x-2">
         <button class="btn-focus text-red-600 hover:text-current px-1" @click="Lang_Menu">
