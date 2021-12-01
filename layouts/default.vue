@@ -1,12 +1,13 @@
 <template>
   <div class="flex flex-col min-h-screen subpixel-antialiased">
-    <Header />
+    <AppHeader />
     <Nuxt />
-    <Footer />
+    <AppFooter />
   </div>
 </template>
 <script>
 export default {
+  layout: 'AppDefault',
   head () {
     const i18nHead = this.$nuxtI18nHead({ addDirAttribute: true, addSeoAttributes: true })
     return {
@@ -53,7 +54,7 @@ export default {
         {
           hid: 'og:url',
           property: 'og:url',
-          content: process.env.BASE_URL + this.$nuxt.$route.path
+          content: 'https://a2.xanzhu.com' + this.$nuxt.$route.path
         }
       ],
       link: [

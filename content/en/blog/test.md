@@ -27,14 +27,11 @@ crimen mecum, placent agmina.
 
 ### Eras per nec posset
 
-<Blog-Image src="/images/mountain_2.jpeg" alt="example - 1 alt" title="Test">
-</Blog-Image>
+<BlogInlineMedia src="/images/mountain_2.jpeg" alt="example - 1 alt" title="Test"></BlogInlineMedia>
 
-<Blog-Image src="/images/mountain_4.jpeg" fit="contain" alt="example-2 alt">
-</Blog-image>
+<BlogInlineMedia src="/images/mountain_4.jpeg" fit="contain" alt="example-2 alt"></BlogInlineMedia>
 
-<Blog-image>
-</Blog-image>
+<BlogInlineMedia></BlogInlineMedia>
 
 
 Laticem arguis rapite Gradivo: *bis miser* quercus lumina lumine an aesculus

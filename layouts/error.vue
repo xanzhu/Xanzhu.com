@@ -12,7 +12,7 @@ export default {
   props: {
     error: {
       type: Object,
-      default: () => {}
+      required: true
     }
   },
   head () {
@@ -41,6 +41,7 @@ export default {
         },
         {
           hid: 'og:url',
+          property: 'og:url',
           content: process.env.BASE_URL + this.$nuxt.$route.fullpath
         }
       ],

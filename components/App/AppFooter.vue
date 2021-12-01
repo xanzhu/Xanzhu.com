@@ -4,10 +4,10 @@
       <NuxtLink v-t="'links.privacy_policy'" :to="localePath('/privacy-policy')" class="nav-link" />
       <a href="https://status.xanzhu.com" rel="nofollow noopener noreferrer" target="_blank" class="nav-link">
         {{ $t('links.status') }}
-        <Icon-External class="h-3 flex-col inline-flex -mb-0.4" />
+        <IconExternal class="h-3 flex-col inline-flex -mb-0.4" />
       </a>
     </div>
-    <Socials />
+    <AppSocials />
     <div class="sm:(flex flex-1 justify-end font-normal) font-medium">
       © XANZHU 2021 (Developer v0.3.3)
     </div>

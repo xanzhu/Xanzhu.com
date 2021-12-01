@@ -47,7 +47,7 @@
 
 <script>
 export default {
-  name: 'Blog',
+  name: 'BlogView',
   async asyncData (context) {
     const { $content, app } = context
     const defaultLocale = app.i18n.locale
@@ -86,7 +86,7 @@ export default {
         {
           hid: 'og:url',
           name: 'og:url',
-          content: process.env.BASE_URL + this.$nuxt.$route.fullPath
+          content: 'https://a2.xanzhu.com' + this.$nuxt.$route.fullPath
         }
       ],
       link: [

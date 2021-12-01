@@ -1,5 +1,5 @@
 <template>
   <div class="flex-1">
-    <Maintenance />
+    <PageMaintenance />
   </div>
 </template>
