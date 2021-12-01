@@ -13,7 +13,7 @@
             {{ post.title }}
           </h1>
           <div class="flex text-xs">
-            <ReadTime :content="post.body" />
+            <BlogReadTime :content="post.body" />
             <div v-if="post.author" class="inline-flex ml-2 py-1 lg:my-4 px-2 rounded-md border-1 border-red-700">
               {{ post.author }}
             </div>
@@ -39,7 +39,7 @@
         <p v-t="'article.creditsource'" class="inline-block" />: {{ post.source }}
       </div>
       <nuxt-content class="px-4 mx-auto my-4 dark:text-light-200 text-dark-900 leading-normal lg:(w-4xl)" :document="post" />
-      <PrevNext loading="lazy" :prev="prev" :next="next" class="my-4 px-6 sm:px-12 mx-auto" />
+      <BlogPrevNext loading="lazy" :prev="prev" :next="next" class="my-4 px-6 sm:px-12 mx-auto" />
     </article>
   </div>
 </template>

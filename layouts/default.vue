@@ -1,12 +1,13 @@
 <template>
   <div class="flex flex-col min-h-screen subpixel-antialiased">
-    <Header />
+    <AppHeader />
     <Nuxt />
-    <Footer />
+    <AppFooter />
   </div>
 </template>
 <script>
 export default {
+  layout: 'AppDefault',
   head () {
     const i18nHead = this.$nuxtI18nHead({ addDirAttribute: true, addSeoAttributes: true })
     return {

@@ -12,7 +12,7 @@ export default {
   props: {
     error: {
       type: Object,
-      default: () => {}
+      required: true
     }
   },
   head () {
