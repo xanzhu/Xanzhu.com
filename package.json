@@ -29,7 +29,7 @@
     "eslint": "^8.3.0",
     "eslint-plugin-nuxt": "^3.1.0",
     "eslint-plugin-vue": "^8.1.1",
-    "nuxt-vite": "^0.2.4",
+    "nuxt-vite": "^0.3.5",
     "nuxt-windicss": "^2.0.12"
   }
 }
