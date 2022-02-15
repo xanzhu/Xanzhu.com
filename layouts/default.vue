@@ -1,8 +1,8 @@
 <template>
   <div class="flex flex-col min-h-screen subpixel-antialiased">
-    <AppHeader />
+    <!-- <AppHeader /> -->
     <Nuxt />
-    <AppFooter />
+    <!-- <AppFooter /> -->
   </div>
 </template>
 <script>
