@@ -11,10 +11,6 @@
         https://xanzhu.com
         <Icon-External class="h-3 inline-flex" />
       </a>
-      <a class="nav-link mr-auto text-red-600" href="https://a1.xanzhu.com" rel="noopener" target="_blank">
-        https://a1.xanzhu.com
-        <Icon-External class="h-3 inline-flex" />
-      </a>
       <a class="nav-link mr-auto text-red-600" href="https://a2.xanzhu.com" rel="noopener" target="_blank">
         https://a2.xanzhu.com
         <Icon-External class="h-3 inline-flex" />
