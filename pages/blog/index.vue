@@ -86,7 +86,7 @@ export default {
         {
           hid: 'og:url',
           name: 'og:url',
-          content: 'https://a2.xanzhu.com' + this.$nuxt.$route.fullPath
+          content: 'https://xanzhu.com' + this.$nuxt.$route.fullPath
         }
       ],
       link: [

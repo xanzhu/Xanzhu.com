@@ -102,7 +102,7 @@ export default {
         {
           hid: 'og:url',
           name: 'og:url',
-          content: 'https://a2.xanzhu.com' + this.$nuxt.$route.fullPath
+          content: 'https://xanzhu.com' + this.$nuxt.$route.fullPath
         }
       ]
     }
@@ -110,7 +110,7 @@ export default {
   computed: {
     getPostMedia () {
       return this.post?.media
-        ? `https://a2.xanzhu.com${this.post?.media}`
+        ? `https://xanzhu.com${this.post?.media}`
         : 'https://res.cloudinary.com/xanzhu/image/upload/v1627084292/Twitter-image-v1.2_b0ebgw.png'
     }
   }
