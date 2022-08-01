@@ -1,6 +1,6 @@
 <template>
   <button
-    class="text-dark-900 dark:text-light-200 px-1 pt-0.5 btn-focus"
+    class="text-dark-900 dark:text-light-200 px-1 pt-0.5"
     @click="switchTheme"
   >
     <IconSun
