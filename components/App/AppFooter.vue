@@ -13,7 +13,7 @@
     </div>
     <AppSocials />
     <div class="sm:(flex flex-1 justify-end font-normal) font-medium">
-      © Xanzhu 2022 - Developer Preview
+      © Xanzhu 2022 - v0.3.4
     </div>
   </footer>
 </template>
