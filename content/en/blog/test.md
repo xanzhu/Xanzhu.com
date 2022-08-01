@@ -3,7 +3,7 @@ title: How much text can you fit in this box?
 description: How much text can you fit inside a blog post before it looks bad?
 media: v1632626905/green-trees_hbugig.jpg
 tag: TEST
-alt: Mountain
+alt: "Green Forest"
 source: xanzhu.com
 author: Xanzhu
 ---

@@ -3,7 +3,7 @@ title: How much text can you fit in this box before it looks bad?
 description: Example description
 media: v1632626904/night_dlu0rp.jpg
 tag: TEST
-alt: Mountain
+alt: "Highway Nightime"
 ---
 
 # Lacertis spissi

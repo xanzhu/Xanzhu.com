@@ -25,7 +25,6 @@
             sizes="sm:100vw md:50vw lg:25vw"
             loading="eager"
             fit="cover"
-            :title="post.alt"
             provider="cloudinary"
           />
           <div class="flex flex-row items-center px-4 py-2 space-x-2">

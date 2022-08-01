@@ -6,12 +6,14 @@
     <p v-t="'page.pp_p2'" />
     <p v-t="'page.pp_p3'" />
     <p v-t="'page.pp_link'" class="py-5" />
-    <div class="flex-col flex">
-      <a class="nav-link mr-auto text-red-600" href="https://xanzhu.com" rel="noopener" target="_blank">
+    <div class="flex-col flex text-red-900">
+      <a class="nav-link mr-auto" href="https://xanzhu.com" rel="noopener" target="_blank"
+        :aria-label="$t('aria.button.NewWindow')">
         https://xanzhu.com
         <Icon-External class="h-3 inline-flex" />
       </a>
-      <a class="nav-link mr-auto text-red-600" href="https://a2.xanzhu.com" rel="noopener" target="_blank">
+      <a class="nav-link mr-auto" href="https://a2.xanzhu.com" rel="noopener" target="_blank"
+        :aria-label="$t('aria.button.NewWindow')">
         https://a2.xanzhu.com
         <Icon-External class="h-3 inline-flex" />
       </a>

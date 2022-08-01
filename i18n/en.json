@@ -45,7 +45,8 @@
       "Cmenu": "Close Menu",
       "translate": "Select Language",
       "light": "Light Mode",
-      "dark": "Dark Mode"
+      "dark": "Dark Mode",
+      "NewWindow": "The link will open in a new window or tab"
     }
   },
   "blog": {
