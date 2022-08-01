@@ -11,7 +11,7 @@
     "lint": "yarn lint:js"
   },
   "dependencies": {
-    "@nuxt/content": "^1.15.1",
+    "@nuxt/content": "^2.0.0",
     "@nuxtjs/i18n": "^7.2.0",
     "@nuxtjs/sitemap": "^2.4.0",
     "core-js": "^3.24.1",
