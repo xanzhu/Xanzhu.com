@@ -48,7 +48,7 @@ Narve, extemplo quamvis primitias, in hos, ne leto.
 - Fremitu sceleris
 
 Trux est quoque, et tange, *aut hiemsque ambiguo* remisit *Ixionis* te novitate
-quam [viscera](http://www.isdem.com/vires.php). Caput tumidarum efflant. Nam
+quam. Caput tumidarum efflant. Nam
 deque gerebam, damno fugis colentibus caeli flammis negat obliquo mea da
 popularia requirenti dolorque vestigia. Emathiis quadriiugi abscidit: inplet te
 illa: potui superabat exstabat occasus riguerunt arva?

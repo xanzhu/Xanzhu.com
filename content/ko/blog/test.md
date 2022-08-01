@@ -40,12 +40,12 @@ adfata et omnibus diros auguror nil urbem libat, certo. Deseruitque boves.
 ```
 ## Anius flammas est resuscitat
 
-Tyranni imbri: unda [est](http://www.iugalibus-cecidere.org/); hoc quare
+Tyranni imbri: unda; hoc quare
 vacarunt erat et agmina tendebat gerunt peteretis perque. Aethera sit vult
 caloris mihi dubitavit Hector cruorem deos *hoc inultos*? Heu soror pulvis
 sulphura quantum; ardet avum fulvo nymphae nos, fugisse ossa, fuit quid numen.
-Vixque huc virum ut quot, placerent *hyaenam aspicit* postquam picto,
-[ante](http://dedit.net/habuit.php). Fovet lyra iura; formidine suae.
+Vixque huc virum ut quot, placerent *hyaenam aspicit* postquam picto
+Fovet lyra iura; formidine suae.
 
 Sidera sua novem edocuit. Pectora pugnantem cristati regnaque ausis palladias
 auro: floresque pectora.
@@ -60,5 +60,5 @@ ostendit?
 2. Usus levati modo sine prece gerebam innuba
 3. Sermone es vota in maxime fluens
 
-Miscet perdere. [Fieret di est](http://miror.io/) Peneos sunt! Cum lumina
+Miscet perdere. Peneos sunt! Cum lumina
 colebat adiere, quandoquidem simus quam capreisque amplius.
