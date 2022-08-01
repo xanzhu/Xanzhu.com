@@ -1,7 +1,7 @@
 export default {
   target: 'static',
   head: {
-    title: 'Xanzhu Security',
+    title: 'Xanzhu',
     bodyAttrs: {
       class: 'dark:bg-black bg-gray-200'
     },

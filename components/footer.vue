@@ -11,7 +11,7 @@
     </div>
     <Socials />
     <div class="sm:(flex flex-1 justify-end font-normal) font-medium">
-      © XANZHU 2021 (Release v0.3.2)
+      © XANZHU 2022 (v0.3.3)
     </div>
   </footer>
 </template>
