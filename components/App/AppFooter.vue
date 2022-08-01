@@ -5,10 +5,11 @@
   >
     <div class="flex space-x-3 py-4 sm:(space-x-6 flex-1 justify-start py-0)">
       <NuxtLink
-        v-t="'links.privacy_policy'"
         :to="localePath('/privacy-policy')"
         class="nav-link"
-      />
+      >
+      {{ $t("links.privacy_policy")}}
+      </NuxtLink>
       <a
         href="https://status.xanzhu.com"
         rel="nofollow noopener noreferrer"
