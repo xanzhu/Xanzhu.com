@@ -1,14 +1,12 @@
 {
   "name": "ailo",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "private": true,
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "production": "nuxt generate",
-    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore . --fix",
-    "lint": "yarn lint:js"
+    "production": "nuxt generate"
   },
   "dependencies": {
     "@nuxt/content": "^1.15.1",
@@ -20,15 +18,9 @@
     "sass": "^1.54.0"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.18.9",
     "@nuxt/image": "^0.7.1",
     "@nuxtjs/color-mode": "^2.1.1",
-    "@nuxtjs/eslint-config": "^10.0.0",
-    "@nuxtjs/eslint-module": "^3.1.0",
     "@nuxtjs/pwa": "^3.3.5",
-    "eslint": "^8.21.0",
-    "eslint-plugin-nuxt": "^3.2.0",
-    "eslint-plugin-vue": "^9.3.0",
     "nuxt-vite": "^0.2.4",
     "nuxt-windicss": "^2.5.0"
   }

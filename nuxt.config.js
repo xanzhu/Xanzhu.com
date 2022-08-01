@@ -31,7 +31,6 @@ export default {
   plugins: [],
   components: true,
   buildModules: [
-    '@nuxtjs/eslint-module',
     'nuxt-windicss',
     '@nuxt/image',
     '@nuxtjs/color-mode',

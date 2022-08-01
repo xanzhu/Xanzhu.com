@@ -30,13 +30,10 @@ fraternis minis. A formae moriens adspicit antra.
 
 Terrae hic mergis referuntur haud! Inde receperat *pectora animantis* suos? Nec
 cum; quas cavo aequora tangi voragine
-[laborum](http://www.rudente-ille.com/nidi) pennisque nihil,
-[conlucere](http://quo.com/sinevenatibus.html)!
-
 ## Ossa miserande quis
 
 Soli fuerat, medio amore seque vidit *tantos*, altae capiant. Interserit iacent
-saevae [tendebat damnarat](http://www.nec-valles.io/)! Tmolus *virgo* generique
+saevae Tmolus *virgo* generique
 habere.
 
 Ventis si densis animi, incensaque aevo ab et ignaro. Omne vetitis *aere*. Loco

@@ -24,7 +24,7 @@
   },
   "page": {
     "pp_title": "Privacy Policy",
-    "pp_date": "Last updated: July 10, 2021",
+    "pp_date": "Last updated: August 1, 2022",
     "pp_p1": "We value privacy and respect those who visit our website. No identifiable information is stored or accessed without your permission to ensure that we do not infringe upon your privacy.",
     "pp_p2": "Because our site contains links to third-party websites, we cannot prevent tracking outside of our domain.",
     "pp_p3": "Apart from usage data which your browser provides (User-Agent) nothing is collected",
@@ -45,7 +45,8 @@
       "Cmenu": "Close Menu",
       "translate": "Select Language",
       "light": "Light Mode",
-      "dark": "Dark Mode"
+      "dark": "Dark Mode",
+      "NewWindow": "The link will open in a new window or tab"
     }
   },
   "blog": {
