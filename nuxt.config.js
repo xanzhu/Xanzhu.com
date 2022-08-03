@@ -5,7 +5,7 @@ export default {
   head: {
     title: 'Xanzhu',
     bodyAttrs: {
-      class: 'dark:bg-black bg-gray-200 min-w-xs'
+      class: 'dark:bg-black bg-white min-w-xs'
     },
     meta: [
       { charset: 'utf-8' },

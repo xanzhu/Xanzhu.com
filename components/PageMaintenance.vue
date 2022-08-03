@@ -1,5 +1,5 @@
 <template>
-  <div class="p-4 dark:text-light-200 text-dark-900 sm:(justify-center items-center flex p-0 mt-10 space-x-8 mx-4)" role="main">
+  <div class="p-4 dark:text-light-200 text-black sm:(justify-center items-center flex p-0 mt-10 space-x-8 mx-4)" role="main">
     <NuxtImg
       src="v1632626904/night_dlu0rp.jpg"
       width="250"

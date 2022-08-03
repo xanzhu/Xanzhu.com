@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-2 sm:(container mx-auto mb-10) md:px-18 dark:text-light-200 text-dark-900 flex-grow" role="main">
+  <div class="mx-2 sm:(container mx-auto mb-10) md:px-18 dark:text-light-200 text-black flex-grow" role="main">
     <h1 class="text-center text-red-600 font-semibold text-3xl md:text-5xl mt-4">
       {{ $t('blog.landing.title') }}
     </h1>
@@ -10,7 +10,7 @@
       <article
         v-for="(post, $index) in posts"
         :key="`post-${$index}`"
-        class="max-w-md w-full rounded overflow-hidden shadow-lg flex flex-col dark:(bg-dark-900 shadow-none) bg-light-600 mx-auto"
+        class="max-w-md w-full rounded overflow-hidden shadow-md flex flex-col dark:(bg-dark-900 shadow-none) bg-white mx-auto"
         role="article"
       >
         <nuxt-link :to="localePath(post.path)" class="font-bold text-xl mb-2">
@@ -28,7 +28,7 @@
             provider="cloudinary"
           />
           <div class="flex flex-row items-center px-4 py-2 space-x-2">
-            <p class="dark:(text-red-500 border-1 border-red-600 bg-transparent) rounded-md px-2 bg-red-600 text-xs text-light-200">
+            <p class="text-red-500 border-1 border-red-600 bg-transparent rounded-md px-2 py-0.7 text-xs">
               {{ post.tag }}
             </p>
             <p class="text-sm font-medium text-right">

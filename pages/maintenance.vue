@@ -1,6 +1,6 @@
 <template>
   <body>
-    <div class="text-center dark:text-light-200 text-dark-900 m-50">
+    <div class="text-center dark:text-light-200 text-black m-50">
       <div class="h-10 w-1/2 m-auto p-10">
         <IconXanzhu />
       </div>
