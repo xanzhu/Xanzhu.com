@@ -6,7 +6,7 @@
     <p class="text-lg p-2 mb-5 text-center break-words sm:(text-xl) md:(mb-10) dark:text-gray-300">
       {{ $t('blog.landing.desc') }}
     </p>
-    <section class="grid grid-cols-1 gap-4 mx-2 sm:(grid-cols-2 mx-8 justify-center) md:(grid-cols-2 pt-6 gap-6) lg:(grid-cols-3 gap-8 mx-12 px-4 mx-auto)">
+    <section class="grid grid-cols-1 gap-4 mx-2 sm:(grid-cols-2 mx-8 justify-center) md:(grid-cols-2 pt-6 gap-6) lg:(grid-cols-3 gap-8 px-4 mx-auto)">
       <article
         v-for="(post, $index) in posts"
         :key="`post-${$index}`"
@@ -16,7 +16,7 @@
         <nuxt-link :to="localePath(post.path)" class="font-bold text-xl mb-2">
           <NuxtImg
             v-if="post.media"
-            class="relative w-full h-32 sm:h-40 object-cover sm:object-center md:object-top lg:object-center"
+            class="relative w-full h-32 object-cover sm:(object-center h-40)"
             :src="post.media"
             :alt="post.alt"
             format="webp"
@@ -28,7 +28,7 @@
             provider="cloudinary"
           />
           <div class="flex flex-row items-center px-4 py-2 space-x-2">
-            <p class="text-red-500 border-1 border-red-600 bg-transparent rounded-md px-2 py-0.7 text-xs">
+            <p class="text-red-500 bg-transparent rounded-md text-xs dark:(text-[#FF0000])">
               {{ post.tag }}
             </p>
             <p class="text-sm font-medium text-right">
