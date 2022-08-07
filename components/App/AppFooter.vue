@@ -2,8 +2,8 @@
   <footer
     class="flex flex-col-reverse p-1 sm:(flex-row px-2) justify-between text-black bg-light-400 dark:(text-white bg-dark-900) items-center">
     <div class="flex sm:(flex-col p-2)">
-      <p class="dark:text-[#FF0000] text-red-700 font-medium text-xs hidden sm:flex">All Rights Reserved</p>
-      <p class="text-xs">© Copyright 2022 Xanzhu</p>
+      <p class="dark:text-[#FF0000] text-red-700 font-medium text-xs hidden sm:flex" v-t="'footer.rights'" />
+      <p class="text-xs" v-t="'footer.copy'" />
     </div>
     <AppSocials />
     <div class="text-xs mx-4">
@@ -16,7 +16,7 @@
           {{ $t("links.status") }}
           <IconExternal class="h-3 flex-col inline-flex -mt-0.5" />
         </a>
-        <p class="justify-end hidden sm:flex">Developer 0.3.5</p>
+        <p class="justify-end hidden sm:flex">{{ $t('footer.dev') }} v0.3.5</p>
       </div>
     </div>
   </footer>

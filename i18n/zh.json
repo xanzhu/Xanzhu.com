@@ -58,5 +58,10 @@
       "title": "最新博客文章",
       "description": "Xanzhu 提供有关所有事物技术的有用文章、指南和技巧。\n专注于隐私、安全等。"
     }
+  },
+  "footer": {
+    "rights": "版权所有",
+    "copy": "版权 2022 Xanzhu",
+    "dev": "开发商"
   }
 }
