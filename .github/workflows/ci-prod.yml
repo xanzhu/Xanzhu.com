@@ -3,10 +3,10 @@ name: Xanzhu Production
 on:
   push:
     branches:
-      - production
+      - nuxt2
   pull_request:
     branches:
-      - production
+      - nuxt2
 
 jobs:
   ci:
@@ -20,6 +20,8 @@ jobs:
     steps:
       - name: Checkout 🛎
         uses: actions/checkout@master
+        with:
+          fetch-depth: 0
 
       - name: Setup node env 🏗
         uses: actions/setup-node@v2.5.0
@@ -38,5 +40,6 @@ jobs:
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
+            
       - name: Install dependencies 👨🏻‍💻
         run: yarn
