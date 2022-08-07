@@ -1,19 +1,23 @@
 <template>
   <footer
-    class="flex flex-col items-center text-xs mt-10 pb-4 sm:(h-4 flex-row py-4 px-4 w-full mt-0) md:px-6 lg:px-12 dark:(bg-dark-900 text-light-200) bg-gray-300 text-dark-900">
-    <div class="flex space-x-3 py-4 sm:(space-x-6 flex-1 justify-start py-0)">
-      <NuxtLink :to="localePath('/privacy-policy')" class="nav-link">
-        {{ $t("links.privacy_policy")}}
-      </NuxtLink>
-      <a href="https://status.xanzhu.com" rel="nofollow noopener noreferrer" target="_blank" class="nav-link"
-        :aria-label="$t('links.status') + ' ' + $t('aria.button.NewWindow')">
-        {{ $t("links.status") }}
-        <IconExternal class="h-3 flex-col inline-flex -mb-0.4" />
-      </a>
+    class="flex flex-col-reverse p-1 sm:(flex-row px-2) justify-between text-black bg-light-400 dark:(text-white bg-dark-900) items-center">
+    <div class="flex sm:(flex-col p-2)">
+      <p class="dark:text-[#FF0000] text-red-700 font-medium text-xs hidden sm:flex">All Rights Reserved</p>
+      <p class="text-xs">© Copyright 2022 Xanzhu</p>
     </div>
     <AppSocials />
-    <div class="sm:(flex flex-1 justify-end font-normal) font-medium">
-      © Xanzhu 2022 - Developer Preview
+    <div class="text-xs mx-4">
+      <div class="space-x-3 p-1 sm:p-0">
+        <NuxtLink :to="localePath('/privacy-policy')" class="nav-link">
+          {{ $t("links.privacy_policy")}}
+        </NuxtLink>
+        <a href="https://status.xanzhu.com" rel="nofollow noopener noreferrer" target="_blank" class="nav-link"
+          :aria-label="$t('links.status') + ' ' + $t('aria.button.NewWindow')">
+          {{ $t("links.status") }}
+          <IconExternal class="h-3 flex-col inline-flex -mt-0.5" />
+        </a>
+        <p class="justify-end hidden sm:flex">Developer 0.3.5</p>
+      </div>
     </div>
   </footer>
 </template>
