@@ -59,10 +59,13 @@ export default {
     "nuxt-vite",
   ],
   modules: [
+    ['nuxt-content-git', {
+      createdAtName : 'gitCreatedAt',
+      updatedAtName : 'gitUpdatedAt',
+    }],
     "@nuxtjs/i18n",
     "@nuxt/content",
     "@nuxtjs/sitemap",
-    "nuxt-content-git",
   ],
   i18n: {
     vueI18n: {

@@ -1,38 +1,25 @@
 <template>
-  <div class="mx-2 sm:(container mx-auto mb-10) md:px-18 dark:text-light-200 text-black flex-grow" role="main">
-    <h1 class="text-center text-red-600 font-semibold text-3xl md:text-5xl mt-4">
+  <div class="max-w-sm mx-auto my-4 sm:(container mx-auto mb-10) dark:text-light-200 text-black flex-grow" role="main">
+    <h1 class="text-center text-red-600 font-semibold text-4xl md:text-6xl mt-">
       {{ $t('blog.landing.title') }}
     </h1>
     <p class="text-lg p-2 mb-5 text-center break-words sm:(text-xl) md:(mb-10) dark:text-gray-300">
       {{ $t('blog.landing.desc') }}
     </p>
-    <section class="grid grid-cols-1 gap-4 mx-2 sm:(grid-cols-2 mx-8 justify-center) md:(grid-cols-2 pt-6 gap-6) lg:(grid-cols-3 gap-8 px-4 mx-auto)">
-      <article
-        v-for="(post, $index) in posts"
-        :key="`post-${$index}`"
-        class="max-w-md w-full rounded overflow-hidden shadow-md flex flex-col dark:(bg-dark-900 shadow-none) bg-white mx-auto"
-        role="article"
-      >
+    <section class="grid grid-cols-1 gap-4 sm:(grid-cols-2 mx-8) md:(grid-cols-2 gap-6) lg:(grid-cols-3 mx-10)">
+      <article v-for="(post, $index) in posts" :key="`post-${$index}`"
+        class="max-w-lg w-full rounded overflow-hidden flex flex-col shadow-md dark:(bg-dark-900 shadow-none border-dark-700 border-1) bg-white mx-auto border-0"
+        role="article">
         <nuxt-link :to="localePath(post.path)" class="font-bold text-xl mb-2">
-          <NuxtImg
-            v-if="post.media"
-            class="relative w-full h-32 object-cover sm:(object-center h-40)"
-            :src="post.media"
-            :alt="post.alt"
-            format="webp"
-            height="290"
-            width="130"
-            sizes="sm:100vw md:50vw lg:25vw"
-            loading="eager"
-            fit="cover"
-            provider="cloudinary"
-          />
+          <NuxtImg v-if="post.media" class="relative w-full h-32 object-cover sm:(object-center h-40)" :src="post.media"
+            :alt="post.alt" format="webp" height="290" width="130" sizes="sm:100vw md:50vw lg:25vw" loading="eager"
+            fit="cover" provider="cloudinary" />
           <div class="flex flex-row items-center px-4 py-2 space-x-2">
             <p class="text-red-500 bg-transparent rounded-md text-xs dark:(text-[#FF0000])">
               {{ post.tag }}
             </p>
             <p class="text-sm font-medium text-right">
-              {{ $d(new Date(post.createdAt), 'short', localePath ) }}
+              {{ $d(new Date(post.gitCreatedAt), 'short', localePath ) }}
             </p>
           </div>
           <h2 class="rounded-md font-medium text-xl px-4">
