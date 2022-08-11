@@ -16,7 +16,7 @@
           {{ $t("links.status") }}
           <IconExternal class="h-3 flex-col inline-flex -mt-0.5" />
         </a>
-        <p class="justify-end hidden font-thin sm:flex">{{ $t('footer.dev') }} v0.3.5</p>
+        <p class="justify-end hidden font-thin sm:flex">{{ $t('footer.dev') }} v0.3.6</p>
       </div>
     </div>
   </footer>

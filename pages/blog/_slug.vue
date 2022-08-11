@@ -16,7 +16,7 @@
             {{ post.title }}
           </h1>
           <div class="flex text-xs">
-            <!-- <BlogReadTime :content="post.body" /> Broken -->
+            <BlogReadTime :content="post.body" />
             <div v-if="post.author" class="inline-flex ml-2 py-1 lg:my-4 px-2 rounded-md border-1 border-red-700">
               {{ post.author }}
             </div>
