@@ -12,7 +12,7 @@
         https://xanzhu.com
         <Icon-External class="h-3 inline-flex" />
       </a>
-      <a class="nav-link mr-auto" href="https://a2.xanzhu.com" rel="noopener" target="_blank"
+      <a class="nav-link mr-auto" href="https://xanzhu.com" rel="noopener" target="_blank"
         :aria-label="'https://a2.xanzhu.com ' + $t('aria.button.NewWindow')">
         https://a2.xanzhu.com
         <Icon-External class="h-3 inline-flex" />

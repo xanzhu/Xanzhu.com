@@ -9,14 +9,12 @@
               {{ post.tag }}
             </p>
             <p>{{ $d(new Date(post.gitCreatedAt), 'short', localePath ) }}</p>
-            <!-- <p class="font-thin">Updated: {{ $d(new Date(post.gitUpdatedAt), 'short', localePath ) }}</p> Broken -->
           </div>
           <h1
             class="text-xl sm:leading-tight md:(text-2xl mr-6) lg:text-3xl xl:text-6xl font-semibold break-words lg:(flex-1 pb-2)">
             {{ post.title }}
           </h1>
           <div class="flex text-xs">
-            <!-- <BlogReadTime :content="post.body" /> Broken -->
             <div v-if="post.author" class="inline-flex ml-2 py-1 lg:my-4 px-2 rounded-md border-1 border-red-700">
               {{ post.author }}
             </div>
@@ -97,7 +95,7 @@ export default {
         {
           hid: 'og:url',
           name: 'og:url',
-          content: 'https://a2.xanzhu.com' + this.$nuxt.$route.fullPath
+          content: 'https://xanzhu.com' + this.$nuxt.$route.fullPath
         }
       ]
     }
@@ -105,7 +103,7 @@ export default {
   computed: {
     getPostMedia () {
       return this.post?.media
-        ? `https://a2.xanzhu.com${this.post?.media}`
+        ? `https://xanzhu.com${this.post?.media}`
         : 'https://res.cloudinary.com/xanzhu/image/upload/v1627084292/Twitter-image-v1.2_b0ebgw.png'
     }
   }
