@@ -1,11 +1,11 @@
 <template>
-  <div class="dark:text-light-200 mt-5 text-dark-900 flex-grow px-4 lg:max-w-4xl container mx-auto" role="main">
-    <h1 v-t="'page.pp_title'" class="text-3xl" />
+  <div class="dark:text-light-200 mt-5 text-black flex-grow px-4 lg:max-w-4xl container mx-auto" role="main">
+    <h1 v-t="'page.pp_title'" class="text-5xl font-bold" />
     <p v-t="'page.pp_date'" class="pb-4" />
     <p v-t="'page.pp_p1'" class="py-2" />
     <p v-t="'page.pp_p2'" />
     <p v-t="'page.pp_p3'" />
-    <p v-t="'page.pp_link'" class="py-5" />
+    <p v-t="'page.pp_link'" class="pt-5 pb-2 font-semibold text-xl" />
     <div class="flex-col flex">
       <a class="nav-link mr-auto" href="https://xanzhu.com" rel="noopener" target="_blank"
         :aria-label="'https://xanzhu.com ' + $t('aria.button.NewWindow')">

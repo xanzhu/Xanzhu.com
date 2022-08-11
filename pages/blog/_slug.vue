@@ -1,15 +1,17 @@
 <template>
   <div class="container mb-4 mx-auto md:(px-6 mb-0 justify-center) lg:px-12" role="main">
-    <article v-if="post" class="dark:(bg-dark-900 text-light-200 shadow-transparent) bg-light-400 text-dark-900 shadow-dark-100 shadow-md pb-2 sm:rounded-md md:mb-12">
+    <article v-if="post" class="dark:(bg-black text-light-200) bg-white text-black pb-2 sm:rounded-md md:mb-12">
       <header class="flex flex-col lg:(flex-row items-center top-0)">
         <div class="flex flex-col mx-4 mt-4 space-y-2 sm:space-y-1 md:mx-6">
           <div class="text-xs space-x-4 inline-flex items-center">
-            <p class="dark:(text-red-600 border-1 border-red-600 bg-transparent) rounded-md px-2 py-0.2 bg-red-600 text-light-200 font-semibold tracking-wide">
+            <p
+              class="dark:(text-[#FF0000] border-1 border-[#FF0000] bg-transparent) rounded-md px-2 py-0.2 bg-red-600 text-light-200 font-semibold tracking-wide">
               {{ post.tag }}
             </p>
-            <p>{{ $d(new Date(post.createdAt), 'short', localePath ) }}</p>
+            <p>{{ $d(new Date(post.gitCreatedAt), 'short', localePath ) }}</p>
           </div>
-          <h1 class="text-xl sm:leading-tight md:(text-2xl mr-6) lg:text-3xl xl:text-6xl font-semibold break-words lg:(flex-1 pb-2)">
+          <h1
+            class="text-xl sm:leading-tight md:(text-2xl mr-6) lg:text-3xl xl:text-6xl font-semibold break-words lg:(flex-1 pb-2)">
             {{ post.title }}
           </h1>
           <div class="flex text-xs">
@@ -17,29 +19,21 @@
             <div v-if="post.author" class="inline-flex ml-2 py-1 lg:my-4 px-2 rounded-md border-1 border-red-700">
               {{ post.author }}
             </div>
-            <!-- Add Post share -->
           </div>
         </div>
         <div class="flex justify-center items-center h-56 sm:(min-h-sm mx-4) md:(mx-4) my-4 overflow-hidden lg:(w-4/6)">
-          <NuxtImg
-            v-if="post.media"
-            class="object-cover w-full h-full sm:rounded-md"
-            sizes="sm:100vw md:50vw lg:25vw"
-            :src="post.media"
-            :alt="post.alt"
-            :title="post.alt"
-            format="webp"
-            fit="cover"
-            loading="eager"
-            provider="cloudinary"
-          />
+          <NuxtImg v-if="post.media" class="object-cover w-full h-full sm:rounded-md" sizes="sm:100vw md:50vw lg:25vw"
+            :src="post.media" :alt="post.alt" :title="post.alt" format="webp" fit="cover" loading="eager"
+            provider="cloudinary" />
         </div>
       </header>
-      <div v-if="post.source" class="dark:(text-light-200 opacity-45) text-dark-900 text-sm opacity-80 italic pr-2 sm:pr-6 -mt-2 text-right">
+      <div v-if="post.source"
+        class="dark:(text-light-200 opacity-45) text-black text-sm opacity-80 italic pr-2 sm:pr-6 -mt-2 text-right">
         <p v-t="'article.creditsource'" class="inline-block" />: {{ post.source }}
       </div>
-      <nuxt-content class="px-4 mx-auto my-4 dark:text-light-200 text-dark-900 leading-normal lg:(w-4xl)" :document="post" />
-      <BlogPrevNext loading="lazy" :prev="prev" :next="next" class="my-4 px-6 sm:px-12 mx-auto" />
+      <nuxt-content class="px-4 mx-auto my-4 dark:text-light-200 text-black leading-normal lg:(w-4xl)"
+        :document="post" />
+      <BlogPrevNext loading="lazy" :prev="prev" :next="next" />
     </article>
   </div>
 </template>

@@ -1,16 +1,6 @@
 <template>
-  <NuxtImg
-    :src="source"
-    :fit="fit"
-    :alt="alt"
-    format="webp"
-    height="424"
-    width="800"
-    class="mx-auto my-4 sm:px-8"
-    loading="lazy"
-    :title="title"
-    provider="cloudinary"
-  />
+  <NuxtImg crossorigin="anonymous" :src="source" :fit="fit" :alt="alt" format="webp" height="424" width="800"
+    class="mx-auto my-4 sm:px-8" loading="lazy" :title="title" provider="cloudinary" />
 </template>
 <script>
 export default {

@@ -58,5 +58,10 @@
     "privacy-policy": {
       "description": "Tirohia ta maatau Kaupapahere Tūmataiti me te aha o te hononga ki a koe"
     }
+  },
+  "footer": {
+    "rights": "All Rights Reserved",
+    "copy": "Copyright 2022 Xanzhu",
+    "dev": "Developer"
   }
 }
