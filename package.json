@@ -16,7 +16,7 @@
     "nuxt": "^2.15.8",
     "nuxt-content-git": "^2.0.14",
     "prism-themes": "^1.9.0",
-    "sass": "^1.54.0"
+    "sass": "^1.54.1"
   },
   "devDependencies": {
     "@nuxt/image": "^0.7.1",
