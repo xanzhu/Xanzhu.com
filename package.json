@@ -23,6 +23,6 @@
     "@nuxtjs/color-mode": "^2.1.1",
     "@nuxtjs/pwa": "^3.3.5",
     "nuxt-vite": "^0.2.4",
-    "nuxt-windicss": "^2.5.0"
+    "nuxt-windicss": "^2.5.1"
   }
 }
