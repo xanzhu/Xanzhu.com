@@ -1,6 +1,5 @@
-import { defineConfig } from 'windicss/helpers'
-import typography from 'windicss/plugin/typography'
-// import windiColors from 'windicss/colors';
+import { defineConfig } from "windicss/helpers";
+import typography from "windicss/plugin/typography";
 
 export default defineConfig({
   theme: {},
@@ -18,6 +17,6 @@ export default defineConfig({
   plugins: [
     typography({
       dark: true,
-    })
-  ]
+    }),
+  ],
 });

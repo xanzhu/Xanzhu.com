@@ -10,7 +10,7 @@
       <article v-for="(post, $index) in posts" :key="`post-${$index}`"
         class="max-w-lg w-full rounded overflow-hidden flex flex-col shadow-md dark:(bg-dark-900 shadow-none border-dark-700 border-1) bg-white mx-auto border-0"
         role="article">
-        <nuxt-link :to="localePath(post.path)" class="font-bold text-xl mb-2">
+        <nuxt-link :to="$localePath(post.path)" class="font-bold text-xl mb-2">
           <NuxtImg crossorigin="anonymous" v-if="post.media"
             class="relative w-full h-32 object-cover sm:(object-center h-40)" :src="post.media" :alt="post.alt"
             format="webp" height="290" width="130" sizes="sm:100vw md:50vw lg:25vw" loading="eager" fit="cover"
@@ -20,7 +20,7 @@
               {{ post.tag }}
             </p>
             <p class="text-sm font-medium text-right">
-              {{ $d(new Date(post.gitCreatedAt), 'short', localePath ) }}
+              {{ $d(new Date(post.gitCreatedAt), 'short', $localePath ) }}
             </p>
           </div>
           <h2 class="rounded-md font-medium text-xl px-4">
@@ -40,14 +40,14 @@ export default {
     const defaultLocale = app.i18n.locale
     const posts = await $content(`${defaultLocale}/blog`).fetch()
     return {
-      posts: posts.map(post => ({
+      osts: posts.map(post => ({
         ...post,
         path: post.path.replace(`/${defaultLocale}`, '')
       }))
     }
   },
   head () {
-    const i18nHead = this.$nuxtI18nHead({ addDirAttribute: true, addSeoAttributes: true })
+    const i18nHead = this.localeHead({ addDirAttribute: true, addSeoAttributes: true })
     return {
       htmlAttrs: {
         ...i18nHead.htmlAttrs
