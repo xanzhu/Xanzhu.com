@@ -8,8 +8,8 @@
               class="dark:(text-[#FF0000] border-1 border-[#FF0000] bg-transparent) rounded-md px-2 py-0.2 bg-red-600 text-light-200 font-semibold tracking-wide">
               {{ post.tag }}
             </p>
-            <p>{{ $d(new Date(post.gitCreatedAt), 'short', localePath ) }}</p>
-            <!-- <p class="font-thin">Updated: {{ $d(new Date(post.gitUpdatedAt), 'short', localePath ) }}</p> Broken -->
+            <p>{{ $d(new Date(post.gitCreatedAt), 'short', $localePath) }}</p>
+            <!-- <p class="font-thin">Updated: {{ $d(new Date(post.gitUpdatedAt), 'short', $localePath ) }}</p> Broken -->
           </div>
           <h1
             class="text-xl sm:leading-tight md:(text-2xl mr-6) lg:text-3xl xl:text-6xl font-semibold break-words lg:(flex-1 pb-2)">
@@ -41,13 +41,13 @@
 
 <script>
 export default {
-  name: 'PostView',
   async asyncData (context) {
     const { $content, params, app } = context
     const slug = params.slug
-    const post = await $content(`${app.i18n.locale}/blog`, slug).fetch()
+    // const post = await $content(`${app.i18n.locale}/blog`, slug).fetch() OLD
+    const { data: posts } = await useAsyncData('posts-list', () => queryContent(`${app.i18n.locale}/blog`), slug).find
     const [prev, next] = await $content(`${app.i18n.locale}/blog`)
-      .only(slug)
+      only(slug)
       .sortBy('createdAt', 'asc')
       .surround(slug)
       .fetch()
@@ -112,20 +112,22 @@ export default {
 }
 </script>
 <style>
-  .nuxt-content h1 {
-    font-weight: bold;
-    font-size: 46px;
-  }
+.nuxt-content h1 {
+  font-weight: bold;
+  font-size: 46px;
+}
 
-  .nuxt-content h2 {
-    font-weight: 600;
-    font-size: 28px;
-  }
-  .nuxt-content h3 {
-    font-weight: 500;
-    font-size: 22px;
-  }
-  .nuxt-content p {
-    margin-bottom: 20px;
-  }
+.nuxt-content h2 {
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.nuxt-content h3 {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.nuxt-content p {
+  margin-bottom: 20px;
+}
 </style>

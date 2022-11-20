@@ -1,7 +1,53 @@
+<script setup>
+const route = useRoute()
+const { t } = useI18n()
+const head = useLocaleHead({
+  addDirAttribute: true,
+  identifierAttribute: 'id',
+  addSeoAttributes: true
+})
+const title = computed(() => t(route.meta.title), { title: t(route.meta.title) })
+
+useHead({
+  meta: [
+    { property: 'og:title', content: t(route.meta.title) },
+    { property: 'description', content: t(route.meta.description) },
+    { property: 'og:description', content: t(route.meta.description) },
+    { property: 'twitter:title', content: t(route.meta.title) },
+    { property: 'twitter:description', content: t(route.meta.description) },
+    // { property: 'og:url', content: 'https://xanzhu.com' } Add later
+  ]
+})
+
+</script>
+
 <template>
+  <div>
+    <Html :lang="head.htmlAttrs.lang" :dir="head.htmlAttrs.dir">
+
+    <Head>
+      <Title>{{ title }}</Title>
+      <template v-for="link in head.link" :key="link.id">
+        <Link :id="link.id" :rel="link.rel" :href="link.href" :hreflang="link.hreflang" />
+      </template>
+      <template v-for="meta in head.meta" :key="meta.id">
+        <Meta :id="meta.id" :property="meta.property" :content="meta.content" />
+      </template>
+    </Head>
+
+    <Body class="flex flex-col min-h-screen subpixel-antialiased">
+      <slot />
+    </Body>
+
+    </Html>
+  </div>
+</template>
+
+
+<!-- <template>
   <div class="flex flex-col min-h-screen subpixel-antialiased">
     <AppHeader />
-    <Nuxt />
+    <slot />
     <AppFooter />
   </div>
 </template>
@@ -9,7 +55,7 @@
 export default {
   layout: 'AppDefault',
   head () {
-    const i18nHead = this.$nuxtI18nHead({ addDirAttribute: true, addSeoAttributes: true })
+    const i18nHead = this.localeHead({ addDirAttribute: true, addSeoAttributes: true })
     return {
       htmlAttrs: {
         ...i18nHead.htmlAttrs
@@ -19,16 +65,6 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.$i18n.t('meta.description')
-        },
-        {
-          hid: 'twitter:title',
-          name: 'twitter:title',
-          content: this.$i18n.t('meta.title')
-        },
-        {
-          hid: 'twitter:description',
-          name: 'twitter:description',
           content: this.$i18n.t('meta.description')
         },
         {
@@ -69,4 +105,4 @@ svg {
   display: inline-block;
   vertical-align: inherit;
 }
-</style>
+</style> -->
