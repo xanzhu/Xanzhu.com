@@ -1,66 +1,62 @@
+<script setup>
+const { t, locale } = useI18n()
+const localePath = useLocalePath()
+const switchLocalePath = useSwitchLocalePath()
+
+const MobileMenu = ref(false);
+const LangMenu = ref(false);
+
+function MobileToggle() {
+  MobileMenu.value = !MobileMenu.value
+}
+
+function LangToggle() {
+  LangMenu.value = !LangMenu.value;
+}
+</script>
 <template>
   <header
     class="flex flex-row justify-between items-center px-4 py-2 bg-transparent text-black dark:(bg-black text-light-200) md:(bg-transparent space-x-4 mx-2 py-4) lg:mx-12"
     role="banner">
     <NuxtLink :to="localePath('/')" aria-label="Xanzhu">
-      <Icon-Xanzhu class="flex w-40 sm:w-46 md:w-56" />
+      <IconXanzhu class="flex w-40 sm:w-46 md:w-56" />
     </NuxtLink>
+    <!-- Mobile Navigation Toggle -->
     <div class="flex text-black dark:text-light-200 md:hidden">
-      <button v-show="!MobileMenu" :aria-label="$t('aria.button.Omenu')" class="w-7 h-7" @click="Mobile_Menu">
-        <Icon-Menu aria-label="Menu" />
-      </button>
-      <button v-show="MobileMenu" :aria-label="$t('aria.button.Cmenu')" class="w-7 h-7" @click="Mobile_Menu">
-        <Icon-Cross />
+      <button @click="MobileToggle">
+        <IconMenu v-show="!MobileMenu" class="w-7 h-7" :aria-label="t('aria.button.Cmenu')" />
+        <IconCross v-show="MobileMenu" class="w-7 h-7" :aria-lable="t('aria.button.Omenu')" />
       </button>
     </div>
+    <!-- Navigation UI  -->
     <nav
       class="items-center font-semibold bg-gray-300 dark:(bg-dark-800 md:bg-transparent) md:(relative top-0 flex flex-row space-x-6 p-4 bg-transparent)"
-      :class="{'flex p-4 rounded-md absolute top-9.5 right-4.5 z-1 flex-col-reverse' : MobileMenu, 'hidden': !MobileMenu}"
+      :class="{ 'flex p-4 rounded-md absolute top-9.5 right-4.5 z-1 flex-col-reverse': MobileMenu, 'hidden': !MobileMenu }"
       role="navigation">
       <div class="md:(space-x-6 flex-row) font-semibold text-center text-sm flex-col flex w-full"
         @click="MobileMenu = false">
-        <p v-t="'links.docs'" class="nav-internal cursor-not-allowed" :aria-label="$t('links.docs')" />
-        <NuxtLink v-t="'links.blog'" :to="localePath('/blog')" class="nav-internal" :aria-label="$t('links.blog')" />
-        <NuxtLink v-t="'links.home'" :to="localePath('/')" class="nav-internal" :aria-label="$t('links.home')" />
+        <!-- TO:DO Convert into template with all urls -->
+        <p v-t="'links.docs'" class="nav-internal cursor-not-allowed" :aria-label="t('links.docs')" />
+        <NuxtLink v-t="'links.blog'" :to="localePath('/blog')" class="nav-internal" :aria-label="t('links.blog')" />
+        <NuxtLink v-t="'links.home'" :to="localePath('/')" class="nav-internal" :aria-label="t('links.home')" />
       </div>
-      <div class="flex flex-row space-x-2">
-        <button class="text-[#FF0000] hover:text-current px-1" @click="Lang_Menu">
-          <IconTranslate class="h-6 w-6 pt-1" :aria-label="$t('aria.button.translate')" />
+      <div class="flex flex-row">
+        <!-- Translate Menu Toggle -->
+        <button @click="LangToggle" class="text-[#FF0000] hover:text-current px-1">
+          <IconTranslate class="h-6 w-6 pt-1" :aria-label="t('aria.button.translate')" />
         </button>
-        <div v-show="TranslateMenu"
-          class="z-4 p-1 absolute top-13 rounded-md shadow-md space-y-4 dark:(bg-dark-500 text-light-200) bg-light-700 text-black">
-          <div class="py-0.5 text-center" @click="TranslateMenu = false">
-            <NuxtLink v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale.code)"
-              class="px-2 p-1 mb-2 rounded-md dark:hover:bg-dark-300 hover:bg-light-400" :aria-label="`${locale.name}`">
+        <ul v-show="LangMenu"
+          class="z-4 p-1 absolute top-13 rounded-md shadow-md space-y-1 dark:(bg-dark-500 text-light-200) bg-light-700 text-black">
+          <li v-for="locale in $i18n.locales" :key="locale.code"
+            class="text-center hover:bg-light-400 rounded-md p-1 dark:hover:bg-dark-300">
+            <NuxtLink @click="LangMenu = !LangMenu" :to="switchLocalePath(locale.code)"
+              class="mx-[-0.5em] px-[1em] inline-block">
               {{ locale.name }}
             </NuxtLink>
-          </div>
-        </div>
+          </li>
+        </ul>
         <ColorSwitch />
       </div>
     </nav>
   </header>
 </template>
-<script>
-export default {
-  data () {
-    return {
-      TranslateMenu: false,
-      MobileMenu: false
-    }
-  },
-  computed: {
-    availableLocales () {
-      return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
-    }
-  },
-  methods: {
-    Mobile_Menu () {
-      this.MobileMenu = !this.MobileMenu
-    },
-    Lang_Menu () {
-      this.TranslateMenu = !this.TranslateMenu
-    }
-  }
-}
-</script>
