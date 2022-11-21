@@ -13,6 +13,22 @@ function MobileToggle() {
 function LangToggle() {
   LangMenu.value = !LangMenu.value;
 }
+
+const links = [
+  {
+    url: '/docs',
+    name: 'links.docs'
+  },
+  {
+    url: '/blog',
+    name: 'links.blog'
+  },
+  {
+    url: '/',
+    name: 'links.home'
+  }
+
+]
 </script>
 <template>
   <header
@@ -35,10 +51,9 @@ function LangToggle() {
       role="navigation">
       <div class="md:(space-x-6 flex-row) font-semibold text-center text-sm flex-col flex w-full"
         @click="MobileMenu = false">
-        <!-- TO:DO Convert into template with all urls -->
-        <p v-t="'links.docs'" class="nav-internal cursor-not-allowed" :aria-label="t('links.docs')" />
-        <NuxtLink v-t="'links.blog'" :to="localePath('/blog')" class="nav-internal" :aria-label="t('links.blog')" />
-        <NuxtLink v-t="'links.home'" :to="localePath('/')" class="nav-internal" :aria-label="t('links.home')" />
+        <template v-for="link in links">
+          <NuxtLink :to="localePath(link.url)" :aria-label="t(link.name)" class="nav-internal" v-t="link.name" />
+        </template>
       </div>
       <div class="flex flex-row">
         <!-- Translate Menu Toggle -->
