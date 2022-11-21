@@ -1,20 +1,29 @@
+<script setup lang="ts">
+const links = [
+  {
+    url: 'https://twitter.com/Xanzhu1',
+    ico: 'IconTwitter',
+    title: 'Twitter'
+  },
+  {
+    url: 'https://github.com/xanzhu',
+    ico: 'IconGithub',
+    title: 'Github'
+  },
+  {
+    url: 'https://www.linkedin.com/company/xanzhu',
+    ico: 'IconLinkedIn',
+    title: 'LinkedIn'
+  }
+]
+</script>
 <template>
   <div class="flex flex-row text-red-600 dark:text-[#FF0000] space-x-4 items-center">
-    <NuxtLink to="https://twitter.com/Xanzhu1" rel="noopener noreferrer" target="_blank"
-      class="hover:text-black dark:(hover:text-light-300)" :aria-label="'Twitter ' + $t('aria.button.NewWindow')">
-      <Icon-Twitter class="h-5 w-5" />
-    </NuxtLink>
-    <NuxtLink to="https://www.linkedin.com/company/xanzhu" rel="noopener noreferrer" target="_blank"
-      class="hover:text-black dark:(hover:text-light-300)" :aria-label="'LinkedIn ' + $t('aria.button.NewWindow')">
-      <Icon-LinkedIn class="h-5 w-5" />
-    </NuxtLink>
-    <NuxtLink to="https://github.com/xanzhu" rel="noopener noreferrer" target="_blank"
-      class="hover:text-black dark:(hover:text-light-300)" :aria-label="'Github ' + $t('aria.button.NewWindow')">
-      <Icon-Github class="h-5 w-5" />
-    </NuxtLink>
-    <!-- <NuxtLink to="https://medium.com/@xanzhu" rel="noopener noreferrer" target="_blank"
-      class="hover:text-black dark:(hover:text-light-300)" :aria-label="'Medium ' + $t('aria.button.NewWindow')">
-      <Icon-Medium />
-    </NuxtLink> -->
+    <template v-for="link in links">
+      <NuxtLink :to="link.url" :aria-label="link.title" :title="link.title"
+        class="hover:text-black dark:(hover:text-light-300)" target="_blank">
+        <Component :is="link.ico" class="h-5 w-5" />
+      </NuxtLink>
+    </template>
   </div>
 </template>
