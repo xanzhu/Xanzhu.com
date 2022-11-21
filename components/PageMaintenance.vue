@@ -40,16 +40,16 @@ const { t } = useI18n({
   },
   "zh": {
     "maintenance": {
-      "title": "Tiakitanga Paetukutuku",
-      "description_1": "Ka whakahou tonu tenei whaarangi ka pai ake te hoahoa.",
-      "description_2": "Ko te tumanako ka tukuna ta maatau paetukutuku i te mutunga o te tau."
+      "title": "网站维护",
+      "description_1": "随着设计的改进，此页面将继续更新",
+      "description_2": "我们预计在今年年底发布您的网站"
     }
   },
   "mi": {
     "maintenance": {
-      "title": "网站维护",
-      "description_1": "随着设计的改进，此页面将继续更新",
-      "description_2": "我们预计在今年年底发布您的网站"
+      "title": "Tiakitanga Paetukutuku",
+      "description_1": "Ka whakahou tonu tenei whaarangi ka pai ake te hoahoa.",
+      "description_2": "Ko te tumanako ka tukuna ta maatau paetukutuku i te mutunga o te tau."
     }
   }
 }
