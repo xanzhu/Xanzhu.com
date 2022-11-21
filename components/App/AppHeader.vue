@@ -16,7 +16,7 @@ function LangToggle() {
 
 const links = [
   {
-    url: '/docs',
+    url: '#',
     name: 'links.docs'
   },
   {
@@ -55,7 +55,7 @@ const links = [
           <NuxtLink :to="localePath(link.url)" :aria-label="t(link.name)" class="nav-internal" v-t="link.name" />
         </template>
       </div>
-      <div class="flex flex-row">
+      <div class="flex flex-row space-x-1">
         <!-- Translate Menu Toggle -->
         <button @click="LangToggle" class="text-[#FF0000] hover:text-current px-1">
           <IconTranslate class="h-6 w-6 pt-1" :aria-label="t('aria.button.translate')" />
