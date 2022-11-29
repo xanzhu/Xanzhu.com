@@ -41,12 +41,12 @@ const links = [
     <div class="flex text-black dark:text-light-200 md:hidden">
       <button @click="MobileToggle">
         <IconMenu v-show="!MobileMenu" class="w-7 h-7" :aria-label="t('aria.button.Cmenu')" />
-        <IconCross v-show="MobileMenu" class="w-7 h-7" :aria-lable="t('aria.button.Omenu')" />
+        <IconCross v-show="MobileMenu" class="w-7 h-7" :aria-label="t('aria.button.Omenu')" />
       </button>
     </div>
     <!-- Navigation UI  -->
     <nav
-      class="items-center font-semibold bg-gray-300 dark:(bg-dark-800 md:bg-transparent) md:(relative top-0 flex flex-row space-x-6 p-4 bg-transparent)"
+class="items-center font-semibold bg-gray-300 dark:(bg-dark-800 md:bg-transparent) md:(relative top-0 flex flex-row space-x-6 p-4 bg-transparent)"
       :class="{ 'flex p-4 rounded-md absolute top-9.5 right-4.5 z-1 flex-col-reverse': MobileMenu, 'hidden': !MobileMenu }"
       role="navigation">
       <div class="md:(space-x-6 flex-row) font-semibold text-center text-sm flex-col flex w-full"
@@ -55,10 +55,10 @@ const links = [
           <NuxtLink :to="localePath(link.url)" :aria-label="t(link.name)" class="nav-internal" v-t="link.name" />
         </template>
       </div>
-      <div class="flex flex-row space-x-1">
+      <div class="flex flex-row space-x-2">
         <!-- Translate Menu Toggle -->
         <button @click="LangToggle" class="text-[#FF0000] hover:text-current px-1">
-          <IconTranslate class="h-6 w-6 pt-1" :aria-label="t('aria.button.translate')" />
+          <IconTranslate class="w-6 h-6" :aria-label="t('aria.button.translate')" />
         </button>
         <ul v-show="LangMenu"
           class="z-4 p-1 absolute top-13 rounded-md shadow-md space-y-1 dark:(bg-dark-500 text-light-200) bg-light-700 text-black">

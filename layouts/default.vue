@@ -26,7 +26,7 @@ useHead({
     <Html :lang="head.htmlAttrs.lang" :dir="head.htmlAttrs.dir">
 
     <Head>
-      <Title>{{ title }}</Title>
+      <Title>{{ t(route.meta.title) }}</Title>
       <template v-for="link in head.link" :key="link.id">
         <Link :id="link.id" :rel="link.rel" :href="link.href" :hreflang="link.hreflang" />
       </template>
@@ -35,7 +35,7 @@ useHead({
       </template>
     </Head>
 
-    <Body class="flex flex-col min-h-screen subpixel-antialiased">
+    <Body class="flex flex-col subpixel-antialiased">
       <slot />
     </Body>
 
