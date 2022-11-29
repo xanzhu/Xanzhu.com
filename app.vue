@@ -6,9 +6,9 @@ useHead({
 })
 </script>
 <template>
-    <NuxtLayout>
+    <div class="h-screen flex flex-col">
         <AppHeader />
-        <NuxtPage />
+        <NuxtPage class="flex-1" />
         <AppFooter />
-    </NuxtLayout>
+    </div>
 </template>
