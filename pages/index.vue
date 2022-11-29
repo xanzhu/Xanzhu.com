@@ -6,7 +6,8 @@ definePageMeta({
 </script>
 
 <template>
-  <div class="flex-1">
+  <div>
     <PageMaintenance />
+    <PageMaintenance class="h-screen" />
   </div>
 </template>
