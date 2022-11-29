@@ -5,7 +5,7 @@ const { t } = useI18n({
 </script>
 
 <template>
-  <div class="p-4 dark:text-light-200 text-black sm:(justify-center items-center flex p-0 mt-10 space-x-8 mx-4)"
+  <div class="p-4 dark:text-light-200 text-black sm:(justify-center items-center flex p-0 space-x-8)"
     role="main">
     <!-- TO:DO Update this image -->
     <nuxt-img crossorigin="anonymous" src="v1632626904/night_dlu0rp.jpg" width="250" height="400"
