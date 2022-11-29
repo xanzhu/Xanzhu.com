@@ -6,7 +6,7 @@ definePageMeta({
 </script>
 
 <template>
-  <div>
+  <div class="scroll-smooth">
     <PageMaintenance />
     <PageMaintenance class="h-screen" />
   </div>
