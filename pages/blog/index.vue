@@ -1,7 +1,5 @@
 <script setup>
 const { t, locale } = useI18n()
-const localePath = useLocalePath()
-const { path } = useRoute();
 
 definePageMeta({
   title: 'blog.landing.title',
@@ -9,7 +7,7 @@ definePageMeta({
 })
 
 const { data: posts } = await useAsyncData('blog', () => {
-  return queryContent(`${locale.value}/blog`).find()
+  return queryContent(locale.value + '/blog').find()
 })
 
 </script>
