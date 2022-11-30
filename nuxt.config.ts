@@ -81,7 +81,7 @@ export default defineNuxtConfig({
     defaultLocale: "en",
     strategy: "prefix",
     langDir: "i18n",
-    lazy: true,
+    // lazy: true,
     detectBrowserLanguage: {
       // Detect language based on root
       useCookie: true,
