@@ -4,6 +4,7 @@ description: 用中文简体字写的示例说明
 media: v1632626904/night_dlu0rp.jpg
 tag: 测试
 alt: 山
+date: '2022-11-30'
 ---
 
 # Nec patriae
