@@ -42,8 +42,7 @@ export default defineNuxtConfig({
       ],
     },
   },
-  css: [],
-  plugins: [],
+  css: ["virtual:windi.css"],
   modules: [
     "@nuxtjs/i18n",
     "@nuxt/content",
@@ -52,41 +51,6 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
   ],
   i18n: {
-    vueI18n: {
-      fallbackLocale: ["en", "mi", "ko", "zh"],
-      datetimeFormats: {
-        en: {
-          short: {
-            day: "numeric",
-            month: "long",
-            year: "numeric",
-          },
-        },
-        ko: {
-          short: {
-            day: "numeric",
-            month: "long",
-            year: "numeric",
-          },
-        },
-        zh: {
-          short: {
-            day: "numeric",
-            month: "long",
-            year: "numeric",
-          },
-        },
-      },
-    },
-    baseUrl: process.env.BASE_URL,
-    defaultLocale: "en",
-    strategy: "prefix",
-    langDir: "./i18n/",
-    detectBrowserLanguage: {
-      redirectOn: "root",
-      useCookie: true,
-      alwaysRedirect: true,
-    },
     locales: [
       {
         code: "en",
@@ -113,6 +77,17 @@ export default defineNuxtConfig({
         file: "zh.json",
       },
     ],
+    baseUrl: process.env.BASE_URL,
+    defaultLocale: "en",
+    strategy: "prefix",
+    langDir: "i18n",
+    lazy: true,
+    detectBrowserLanguage: {
+      // Detect language based on root
+      useCookie: true,
+      cookieKey: "i18n_redirected", // Custom cookie name
+      redirectOn: "root",
+    },
   },
   image: {
     cloudinary: {
@@ -120,14 +95,6 @@ export default defineNuxtConfig({
     },
   },
   colorMode: {
-    preference: "system",
-    fallback: "dark",
     classSuffix: "",
   },
-  components: [
-    {
-      path: "~/components",
-      global: true,
-    },
-  ],
 });
