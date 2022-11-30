@@ -4,6 +4,7 @@ description: Whakaahuatanga
 media: v1632626904/night_dlu0rp.jpg
 tag: TEST
 alt: Maunga
+date: '2022-11-30'
 ---
 
 # Nec patriae

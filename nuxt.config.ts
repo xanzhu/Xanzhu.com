@@ -35,7 +35,7 @@ export default defineNuxtConfig({
         },
         {
           rel: "apple-touch-icon",
-          size: "180x180",
+          sizes: "180x180",
           href: "/favicon/apple-180-dark.png",
         },
         { rel: "mask-icon", href: "/favicon.svg", color: "#FDFDFD" },
@@ -54,7 +54,7 @@ export default defineNuxtConfig({
   i18n: {
     vueI18n: {
       fallbackLocale: ["en", "mi", "ko", "zh"],
-      dateTimeFormats: {
+      datetimeFormats: {
         en: {
           short: {
             day: "numeric",
@@ -80,14 +80,13 @@ export default defineNuxtConfig({
     },
     baseUrl: process.env.BASE_URL,
     defaultLocale: "en",
-    strategy: "prefix_except_default",
+    strategy: "prefix",
     langDir: "./i18n/",
     detectBrowserLanguage: {
       redirectOn: "root",
       useCookie: true,
       alwaysRedirect: true,
     },
-    seo: false,
     locales: [
       {
         code: "en",
@@ -124,13 +123,6 @@ export default defineNuxtConfig({
     preference: "system",
     fallback: "dark",
     classSuffix: "",
-  },
-  content: {
-    markdown: {
-      prism: {
-        theme: "prism-themes/themes/prism-holi-theme.css",
-      },
-    },
   },
   components: [
     {
