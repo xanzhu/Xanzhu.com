@@ -8,7 +8,7 @@ definePageMeta({
 })
 
 const { data: post } = await useAsyncData(path.replace(/\/$/, ''), () => {
-  return queryContent(`${locale.value}/blog`)
+  return queryContent(locale.value + '/blog')
     .where({ _path: path })
     .findOne()
 })
