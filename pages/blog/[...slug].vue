@@ -13,11 +13,18 @@ const { data: post } = await useAsyncData(path.replace(/\/$/, ''), () => {
     .findOne()
 })
 
+const { data } = await useAsyncData('prev-next',
+  () => queryContent(locale.value + '/blog')
+    .sort({ date: -1 })
+    .only(['_path'])
+    .findSurround(path),
+)
+const [prev, next] = data.value || []
+
 </script>
 <template>
-  <div class="container mb-4 mx-auto md:(px-6 mb-0 justify-center) lg:px-12" role="main">
-    <article v-if="post !== null"
-      class="dark:(bg-black text-light-200) bg-white text-black pb-2 sm:rounded-md md:mb-12">
+  <div v-if="post !== null" class="container mb-4 mx-auto md:(px-6 mb-0 justify-center) lg:px-12" role="main">
+    <article class="dark:(bg-black text-light-200) bg-white text-black pb-2 sm:rounded-md md:mb-12">
       <header class="flex flex-col lg:(flex-row items-center top-0)">
         <div class="flex flex-col mx-4 mt-4 space-y-2 sm:space-y-1 md:mx-6">
           <div class="text-xs space-x-4 inline-flex items-center">
@@ -51,14 +58,13 @@ const { data: post } = await useAsyncData(path.replace(/\/$/, ''), () => {
       </div>
       <ContentRenderer :value="post" class="px-4 mx-auto my-4 dark:text-light-200 text-black leading-normal lg:(w-4xl)">
         <template #empty>
-          <!-- TO:DO Add translation -->
-          <p>No content found.</p>
+          <h1>hi</h1>
         </template>
       </ContentRenderer>
-      <!-- TO:DO Convert to new version 
-        <BlogPrevNext loading="lazy" :prev="prev" :next="next" /> -->
+      <BlogPrevNext loading="lazy" :prev="prev" :next="next" />
     </article>
   </div>
+  <!-- <NotFound v-else-if="post == null" /> -->
 </template>
 <style>
 .nuxt-content h1 {
