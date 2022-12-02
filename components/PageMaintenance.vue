@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 const { t } = useI18n({
   useScope: 'local'
 })
@@ -8,7 +9,7 @@ const { t } = useI18n({
   <div class="p-4 dark:text-light-200 text-black sm:(justify-center items-center flex p-0 space-x-8)"
     role="main">
     <!-- TO:DO Update this image -->
-    <nuxt-img crossorigin="anonymous" src="v1632626904/night_dlu0rp.jpg" width="250" height="400"
+    <NuxtImg crossorigin="anonymous" src="v1632626904/night_dlu0rp.jpg" width="250" height="400"
       sizes="md:50vw lg:100vw" class="hidden sm:flex" alt="Highway at night" format="webp" loading="eager"
       title="Highway" provider="cloudinary" fit="fill" :modifiers="{ roundCorner: '5' }" />
     <div class="text-4xl font-medium space-y-4">
@@ -26,7 +27,7 @@ const { t } = useI18n({
 {
   "en": {
     "maintenance": {
-      "title": "Website Maintenance.",
+      "title": "Website Maintenance",
       "description_1": "This page continues to be updated as the design improves.",
       "description_2": "We expect to release our website by the end of the year."
     }
