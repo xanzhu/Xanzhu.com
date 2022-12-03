@@ -58,7 +58,7 @@ const [prev, next] = data.value || []
       </div>
       <ContentRenderer :value="post" class="px-4 mx-auto my-4 dark:text-light-200 text-black leading-normal lg:(w-4xl)">
         <template #empty>
-          <h1>hi</h1>
+          <h1>Not found</h1>
         </template>
       </ContentRenderer>
       <BlogPrevNext loading="lazy" :prev="prev" :next="next" />
