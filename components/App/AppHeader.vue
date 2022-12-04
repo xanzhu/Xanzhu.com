@@ -54,7 +54,7 @@ const links = [
       :class="{ 'flex p-4 rounded-md absolute top-9.5 right-4.5 z-1 flex-col-reverse': MobileMenu, 'hidden': !MobileMenu }"
       role="navigation">
       <div class="md:(space-x-6 flex-row) font-semibold text-center text-sm flex-col flex w-full"
-        @click="MobileToggle">
+        @click="MobileMenu = false ">
         <template v-for="link in links">
           <NuxtLink :to="localePath(link.url)" :aria-label="t(link.name)" class="nav-internal" v-t="link.name" />
         </template>

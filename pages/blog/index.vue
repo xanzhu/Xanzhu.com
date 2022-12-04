@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 const { t, locale } = useI18n()
 
 definePageMeta({

@@ -1,17 +1,25 @@
-<script setup lang="ts">
+<script setup>
 const { path } = useRoute()
 const { locale } = useI18n()
-
-definePageMeta({
-  title: '',
-  description: ''
-})
 
 const { data: post } = await useAsyncData(path.replace(/\/$/, ''), () => {
   return queryContent(locale.value + '/blog')
     .where({ _path: path })
     .findOne()
 })
+
+useHead({
+  title: post.value?.title || '',
+  meta: [
+    { name: 'description', content: post.value?.desc }
+  ]
+})
+// Bug
+definePageMeta({
+  title: '',
+  description: ''
+})
+
 
 const { data } = await useAsyncData('prev-next',
   () => queryContent(locale.value + '/blog')

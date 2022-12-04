@@ -1,19 +1,19 @@
 {
   "maintenance": {
-    "title": "Website Maintenance.",
+    "title": "Website Maintenance",
     "description_1": "This page continues to be updated as the design improves.",
     "description_2": "We expect to release our website by the end of the year."
   },
   "error": {
-    "404": "Page not found.",
+    "404": "Page not found",
     "else": "An error has occurred.",
     "return": "Return",
     "title": "There's a problem",
     "desc": "Something has gone wrong with your request"
   },
   "meta": {
-    "title": "Xanzhu Security",
-    "description": "Helping improve privacy, accessibility and security of technology."
+    "title": "Latest news, guides, and technology updates",
+    "description": "Latest news, and advice in technology. From emerging, and cutting-edge, technologies, to industry-leading, and established, companies. Learn how to protect your security and privacy while staying ahead in the tech world."
   },
   "links": {
     "home": "HOME",

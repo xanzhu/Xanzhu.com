@@ -1,6 +1,6 @@
-<script setup>
+<script setup lang="ts">
 definePageMeta({
-  title: 'maintenance.title',
+  title: 'meta.title',
   description: 'meta.description'
 })
 </script>
