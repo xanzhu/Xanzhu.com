@@ -31,7 +31,7 @@ const [prev, next] = data.value || []
 
 </script>
 <template>
-  <div v-if="post !== null" class="container mb-4 mx-auto md:(px-6 mb-0 justify-center) lg:px-12" role="main">
+  <div v-if="post.title" class="container mb-4 mx-auto md:(px-6 mb-0 justify-center) lg:px-12" role="main">
     <article class="dark:(bg-black text-light-200) bg-white text-black pb-2 sm:rounded-md md:mb-12">
       <header class="flex flex-col lg:(flex-row items-center top-0)">
         <div class="flex flex-col mx-4 mt-4 space-y-2 sm:space-y-1 md:mx-6">
@@ -64,15 +64,11 @@ const [prev, next] = data.value || []
         class="dark:(text-light-200 opacity-45) text-black text-sm opacity-80 italic pr-2 sm:pr-6 -mt-2 text-right">
         <p v-t="'article.creditsource'" class="inline-block" />: {{ post.source }}
       </div>
-      <ContentRenderer :value="post" class="px-4 mx-auto my-4 dark:text-light-200 text-black leading-normal lg:(w-4xl)">
-        <template #empty>
-          <h1>Not found</h1>
-        </template>
-      </ContentRenderer>
-      <BlogPrevNext loading="lazy" :prev="prev" :next="next" />
     </article>
+    <ContentRenderer :value="post" class="px-4 mx-auto my-4 dark:text-light-200 text-black leading-normal lg:(w-4xl)" />
+    <BlogPrevNext loading="lazy" :prev="prev" :next="next" />
   </div>
-  <!-- <NotFound v-else-if="post == null" /> -->
+  <NotFound class="mt-20" v-else />
 </template>
 <style>
 .nuxt-content h1 {
