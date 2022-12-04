@@ -7,7 +7,7 @@ export default defineNuxtConfig({
       titleTemplate: "%s | Xanzhu ",
       meta: [
         { name: "format-detection", content: "telephone=no" },
-        { name: "og:type", property: "ogtype", content: "website" },
+        { name: "og:type", property: "og:type", content: "website" },
         { name: "twitter:site", content: "@xanzhu1" },
         { name: "twitter:card", content: "summary_large_image" },
       ],

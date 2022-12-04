@@ -28,7 +28,6 @@ useI18n({
 
 <i18n lang="json">
 {
-  // Rename all these values
   "en": {
     "page": {
       "pp_title": "Privacy Policy",
