@@ -16,7 +16,7 @@ const localePath = useLocalePath()
           {{ t("links.privacy_policy") }}
         </NuxtLink>
         <NuxtLink to="https://status.xanzhu.com" rel="noopener noreferrer" target="_blank" class="nav-link"
-          :aria-label="t('links.status') + ' ' + t('aria.button.NewWindow')">
+          :aria-label="t('links.status')">
           {{ t("links.status") }}
           <IconExternal class="h-3 flex-col inline-flex -mt-0.5" />
         </NuxtLink>
