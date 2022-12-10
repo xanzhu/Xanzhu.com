@@ -7,7 +7,7 @@ definePageMeta({
 })
 
 const { data: posts } = await useAsyncData('blog', () => {
-  return queryContent(locale.value + '/blog').find()
+  return queryContent(`${locale.value}/blog`).find()
 })
 
 </script>
@@ -23,7 +23,7 @@ const { data: posts } = await useAsyncData('blog', () => {
       <article v-for="(post, $index) in posts" :key="`post-${$index}`"
         class="max-w-lg w-full rounded overflow-hidden flex flex-col shadow-md dark:(bg-dark-900 shadow-none border-dark-700 border-1) bg-white mx-auto border-0"
         role="article">
-        <NuxtLink :to="(post._path)" class="font-bold text-xl mb-2">
+        <NuxtLink :to="post._path" class="font-bold text-xl mb-2">
           <NuxtImg crossorigin="anonymous" v-if="post.media"
             class="relative w-full h-32 object-cover sm:(object-center h-40)" :src="post.media" :alt="post.alt"
             format="webp" height="290" width="130" sizes="sm:100vw md:50vw lg:25vw" loading="eager" fit="cover"
