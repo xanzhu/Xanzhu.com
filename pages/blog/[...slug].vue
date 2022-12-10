@@ -1,8 +1,8 @@
-<script setup>
+<script setup lang="ts">
 const { path } = useRoute()
 const { locale } = useI18n()
 
-const { data: post } = await useAsyncData(path.replace(/\/$/), () => {
+const { data: post } = await useAsyncData(path.replace(/\/$/, ''), () => {
   return queryContent(`${locale.value}/blog`)
     .where({ _path: path })
     .findOne()
@@ -22,17 +22,17 @@ definePageMeta({
 })
 
 
-// const { data } = await useAsyncData('prev-next',
-//   () => queryContent(locale.value + '/blog')
-//     .sort({ date: -1 })
-//     .only(['_path'])
-//     .findSurround(path),
-// )
-// const [prev, next] = data.value || []
+const { data } = await useAsyncData('prev-next',
+  () => queryContent(locale.value + '/blog')
+    .sort({ date: -1 })
+    .only(['_path'])
+    .findSurround(path),
+)
+const [prev, next] = data.value || []
 
 </script>
 <template>
-  <div v-if="post.title" class="container mb-4 mx-auto md:(px-6 mb-0 justify-center) lg:px-12" role="main">
+  <div v-if="post" class="container mb-4 mx-auto md:(px-6 mb-0 justify-center) lg:px-12" role="main">
     <article class="dark:(bg-black text-light-200) bg-white text-black pb-2 sm:rounded-md md:mb-12">
       <header class="flex flex-col lg:(flex-row items-center top-0)">
         <div class="flex flex-col mx-4 mt-4 space-y-2 sm:space-y-1 md:mx-6">
@@ -67,7 +67,7 @@ definePageMeta({
       </div>
     </article>
     <ContentRenderer :value="post" class="px-4 mx-auto my-4 dark:text-light-200 text-black leading-normal lg:(w-4xl)" />
-    <!-- <BlogPrevNext loading="lazy" :prev="prev" :next="next" /> -->
+    <BlogPrevNext loading="lazy" :prev="prev" :next="next" />
   </div>
   <NotFound class="mt-20" v-else />
 </template>
