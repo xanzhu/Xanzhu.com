@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 definePageMeta({
   title: 'meta.title',
   description: 'meta.description'
@@ -6,8 +7,8 @@ definePageMeta({
 </script>
 
 <template>
-  <div class="scroll-smooth">
-    <PageMaintenance />
-    <PageMaintenance class="h-screen" />
+  <div class="scroll-smooth space-y-10">
+    <UILanding class="md:h-[42rem]" />
+    <UIFeature class="mx-10" />
   </div>
 </template>

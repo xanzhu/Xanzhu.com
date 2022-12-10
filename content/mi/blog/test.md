@@ -6,6 +6,7 @@ tag: TEST
 alt: Maunga
 source: xanzhu.com
 date: '2022-11-30'
+wide: true
 ---
 
 # Lacertis spissi

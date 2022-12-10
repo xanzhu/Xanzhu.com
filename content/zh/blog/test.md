@@ -5,6 +5,7 @@ media: v1632626904/sand_ukcj9h.jpg
 tag: 测试
 alt: 山
 date: '2022-11-30'
+wide: true
 ---
 
 # Nec patriae
