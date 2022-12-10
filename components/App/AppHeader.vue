@@ -66,9 +66,15 @@ const links = [
         </button>
         <ul v-show="LangMenu"
           class="z-4 p-1 absolute top-13 rounded-md shadow-md space-y-1 dark:(bg-dark-500 text-light-200) bg-light-700 text-black">
-          <li class="text-center hover:bg-light-400 rounded-md p-1 dark:hover:bg-dark-300"
+          <!-- <li class="text-center hover:bg-light-400 rounded-md p-1 dark:hover:bg-dark-300"
             v-for="locale in availableLocales" :key="locale.code">
             <NuxtLink @click="LangToggle" class="mx-[-0.5em] px-[1em] inline-block" :to="switchLocalePath(locale.code)">
+              {{ locale.name }}
+            </NuxtLink>
+          </li> -->
+          <li v-for="locale in $i18n.locales" :key="locale.code"
+            class="text-center hover:bg-light-400 rounded-md p-1 dark:hover:bg-dark-300">
+            <NuxtLink @click="LangToggle" :to="switchLocalePath(locale.code)" class="mx-[-0.5em] px-[1em] inline-block">
               {{ locale.name }}
             </NuxtLink>
           </li>
