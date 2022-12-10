@@ -7,8 +7,8 @@ definePageMeta({
 </script>
 
 <template>
-  <div class="scroll-smooth space-y-10">
+  <div class="scroll-smooth space-y-10 mb-10">
     <UILanding class="md:h-[42rem]" />
-    <UIFeature class="mx-10" />
+    <UIFeature class="sm:mx-10" />
   </div>
 </template>

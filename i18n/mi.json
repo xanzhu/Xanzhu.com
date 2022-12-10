@@ -15,7 +15,8 @@
     "status": "Tūnga",
     "home": "KĀINGA",
     "docs": "ARATOHU",
-    "blog": "RANGITAKI"
+    "blog": "RANGITAKI",
+    "resources": "Resources"
   },
   "aria": {
     "button": {
@@ -63,5 +64,10 @@
     "rights": "All Rights Reserved",
     "copy": "Copyright 2022 Xanzhu",
     "dev": "Developer"
+  },
+  "home": {
+    "feature-post": "Featured Posts",
+    "feature-desc": "News, guides and reviews on technology, how to use it and how to ensure your data remains is protected online.",
+    "landing-desc": "Xanzhu is a platform for sharing knowledge. Help set the standard for the next generation of privacy and accessibility. Teaches how to use technology and stay safe online."
   }
 }
