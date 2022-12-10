@@ -3,9 +3,10 @@ const { t, locale, locales } = useI18n()
 const localePath = useLocalePath()
 const switchLocalePath = useSwitchLocalePath()
 
-const availableLocales = computed(() => {
-  return (locales.value).filter(i => i.code !== locale.value)
-})
+// Bug - Doesn't work well with content
+// const availableLocales = computed(() => {
+//   return (locales.value).filter(i => i.code !== locale.value)
+// })
 
 const MobileMenu = ref(false);
 const LangMenu = ref(false);
@@ -66,6 +67,7 @@ const links = [
         </button>
         <ul v-show="LangMenu"
           class="z-4 p-1 absolute top-13 rounded-md shadow-md space-y-1 dark:(bg-dark-500 text-light-200) bg-light-700 text-black">
+          <!-- Bug - Content not switching correctly -->
           <!-- <li class="text-center hover:bg-light-400 rounded-md p-1 dark:hover:bg-dark-300"
             v-for="locale in availableLocales" :key="locale.code">
             <NuxtLink @click="LangToggle" class="mx-[-0.5em] px-[1em] inline-block" :to="switchLocalePath(locale.code)">
