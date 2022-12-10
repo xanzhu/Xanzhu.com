@@ -2,18 +2,19 @@
 const { path } = useRoute()
 const { locale } = useI18n()
 
-const { data: post } = await useAsyncData(path.replace(/\/$/, ''), () => {
-  return queryContent(locale.value + '/blog')
+const { data: post } = await useAsyncData(path.replace(/\/$/), () => {
+  return queryContent(`${locale.value}/blog`)
     .where({ _path: path })
     .findOne()
 })
 
-useHead({
-  title: post.value?.title || '',
-  meta: [
-    { name: 'description', content: post.value?.desc }
-  ]
-})
+// useHead({
+//   title: post.value?.title || '',
+//   meta: [
+//     { name: 'description', content: post.value?.desc }
+//   ]
+// })
+
 // Bug
 definePageMeta({
   title: '',
@@ -21,13 +22,13 @@ definePageMeta({
 })
 
 
-const { data } = await useAsyncData('prev-next',
-  () => queryContent(locale.value + '/blog')
-    .sort({ date: -1 })
-    .only(['_path'])
-    .findSurround(path),
-)
-const [prev, next] = data.value || []
+// const { data } = await useAsyncData('prev-next',
+//   () => queryContent(locale.value + '/blog')
+//     .sort({ date: -1 })
+//     .only(['_path'])
+//     .findSurround(path),
+// )
+// const [prev, next] = data.value || []
 
 </script>
 <template>
@@ -66,7 +67,7 @@ const [prev, next] = data.value || []
       </div>
     </article>
     <ContentRenderer :value="post" class="px-4 mx-auto my-4 dark:text-light-200 text-black leading-normal lg:(w-4xl)" />
-    <BlogPrevNext loading="lazy" :prev="prev" :next="next" />
+    <!-- <BlogPrevNext loading="lazy" :prev="prev" :next="next" /> -->
   </div>
   <NotFound class="mt-20" v-else />
 </template>

@@ -1,14 +1,15 @@
 <script setup lang="ts">
 const { t, locale } = useI18n()
 
+const { data: articles } = await useAsyncData('articles', () => {
+  return queryContent(`${locale.value}/blog`).find()
+})
+
 definePageMeta({
   title: 'blog.landing.title',
   description: 'blog.landing.desc'
 })
 
-const { data: posts } = await useAsyncData('blog', () => {
-  return queryContent(`${locale.value}/blog`).find()
-})
 
 </script>
 <template>
@@ -20,22 +21,22 @@ const { data: posts } = await useAsyncData('blog', () => {
       {{ t('blog.landing.desc') }}
     </p>
     <section class="grid grid-cols-1 gap-4 sm:(grid-cols-2 mx-8) md:(grid-cols-2 gap-6) lg:(grid-cols-3 mx-10)">
-      <article v-for="(post, $index) in posts" :key="`post-${$index}`"
+      <article v-for="(article, $index) in articles" :key="`post-${$index}`"
         class="max-w-lg w-full rounded overflow-hidden flex flex-col shadow-md dark:(bg-dark-900 shadow-none border-dark-700 border-1) bg-white mx-auto border-0"
         role="article">
-        <NuxtLink :to="post._path" class="font-bold text-xl mb-2">
-          <NuxtImg crossorigin="anonymous" v-if="post.media"
-            class="relative w-full h-32 object-cover sm:(object-center h-40)" :src="post.media" :alt="post.alt"
+        <NuxtLink :to="article._path" class="font-bold text-xl mb-2">
+          <NuxtImg crossorigin="anonymous" v-if="article.media"
+            class="relative w-full h-32 object-cover sm:(object-center h-40)" :src="article.media" :alt="article.alt"
             format="webp" height="290" width="130" sizes="sm:100vw md:50vw lg:25vw" loading="eager" fit="cover"
             provider="cloudinary" />
           <div class="flex flex-row items-center px-4 py-2 space-x-2">
             <p class="text-red-500 bg-transparent rounded-md text-xs dark:(text-[#FF0000])">
-              {{ post.tag }}
+              {{ article.tag }}
             </p>
-            <Date v-if="post.date" :date="post.date" class="text-sm font-medium text-right" />
+            <Date v-if="article.date" :date="article.date" class="text-sm font-medium text-right" />
           </div>
           <h2 class="rounded-md font-medium text-xl px-4">
-            {{ post.title }}
+            {{ article.title }}
           </h2>
         </NuxtLink>
       </article>
