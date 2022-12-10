@@ -1,10 +1,12 @@
 ---
-title: 나쁜 것처럼 보이기 전에이 상자에 얼마나 많은 텍스트를 넣을 수 있습니까?
+title: 3 나쁜 것처럼 보이기 전에이 상자에 얼마나 많은 텍스트를 넣을 수 있습니까?
 description: 예제 설명
 media: v1632626904/night_dlu0rp.jpg
 tag: 테스트
 alt: 산
-date: '2022-11-30'
+date: "2022-11-30"
+img: "https://source.unsplash.com/kUmcSBJcFPg/577x369"
+feature: true
 ---
 
 # Nec patriae
@@ -12,7 +14,7 @@ date: '2022-11-30'
 ## Simul pedes luctantemque subolemque exclusura dumque
 
 Lorem markdownum cur epops nymphae, Iove parvam umbrosum **conponere paratu
-creatam**? Tabo ille, nostrum ferrumque *homines sacra*. Figura loco, ostia
+creatam**? Tabo ille, nostrum ferrumque _homines sacra_. Figura loco, ostia
 iuvenci cacumine periit, caput exempta, curam tenui nihil ad vallibus, aequora.
 
     toolbar -= grayscale_risc_io.fddi_partition(11 - interface_streaming + 3);
@@ -22,7 +24,7 @@ iuvenci cacumine periit, caput exempta, curam tenui nihil ad vallibus, aequora.
 ## Dat postquam
 
 Ardor iubis pallebant praerupta quod iussit: cornu, **inductaque** quae egentes
-cum, *desierat percussit* obliquum sortite Corythi et! Tenerum condi in mollia
+cum, _desierat percussit_ obliquum sortite Corythi et! Tenerum condi in mollia
 illo Pallorque silvis mersurum telas oppositas.
 
 1. Flava nisi ipsamque
@@ -33,7 +35,7 @@ illo Pallorque silvis mersurum telas oppositas.
 6. Aeetias Aurora
 
 Erat Rhanisque de abdidit, amplexa fratribus defossos, et pinus cernunt, at
-pares praestantior! Fata tua refert nulla auras *oscula subducere superbum*,
+pares praestantior! Fata tua refert nulla auras _oscula subducere superbum_,
 nec. Ego nostro?
 
 ## Quae nemus inludens
@@ -48,7 +50,7 @@ Narve, extemplo quamvis primitias, in hos, ne leto.
 - Certe quibus maius est Phrygum tyranni
 - Fremitu sceleris
 
-Trux est quoque, et tange, *aut hiemsque ambiguo* remisit *Ixionis* te novitate
+Trux est quoque, et tange, _aut hiemsque ambiguo_ remisit _Ixionis_ te novitate
 quam. Caput tumidarum efflant. Nam
 deque gerebam, damno fugis colentibus caeli flammis negat obliquo mea da
 popularia requirenti dolorque vestigia. Emathiis quadriiugi abscidit: inplet te

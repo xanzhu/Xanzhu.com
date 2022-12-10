@@ -1,5 +1,5 @@
 ---
-title: 나쁜 것처럼 보이기 전에이 상자에 얼마나 많은 텍스트를 넣을 수 있습니까?
+title: 1 나쁜 것처럼 보이기 전에이 상자에 얼마나 많은 텍스트를 넣을 수 있습니까?
 description: 예제 설명
 media: v1632626904/sand_ukcj9h.jpg
 tag: 테스트
@@ -7,6 +7,8 @@ alt: 산
 source: xanzhu.com
 author: STAFF
 date: '2022-11-30'
+img: 'https://source.unsplash.com/td403QTpwVU/577x369'
+wide: true
 ---
 
 # Si dari hunc fuerat aspexisse labores
