@@ -20,7 +20,8 @@
     "privacy_policy": "隐私政策",
     "status": "地位",
     "blog": "博客",
-    "docs": "文档"
+    "docs": "文档",
+    "resources": "资源"
   },
   "page": {
     "pp_title": "隐私政策",
@@ -63,5 +64,10 @@
     "rights": "版权所有",
     "copy": "版权 2022 Xanzhu",
     "dev": "开发商"
+  },
+  "home": {
+    "feature-post": "精选文章",
+    "feature-desc": "技术、如何使用它以及如何确保您的数据在线保护的新闻、指南和评论。",
+    "landing-desc": "Xanzhu一个用于分享知识的平台。有助于建立下一代隐私和可访问性的标准。教授如何使用技术并保持在线安全。"
   }
 }
