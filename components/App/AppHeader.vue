@@ -37,7 +37,7 @@ const links = [
 </script>
 <template>
   <header
-    class="flex flex-row justify-between items-center px-4 py-2 bg-transparent text-black dark:(bg-black text-light-200) md:(bg-transparent space-x-4 mx-2 py-4) lg:mx-12"
+    class="flex flex-row justify-between items-center px-4 py-2 bg-transparent text-black dark:(bg-black text-light-200) md:(bg-transparent space-x-4 mx-2 py-4) lg:mx-6"
     role="banner">
     <NuxtLink :to="localePath('/')" aria-label="Xanzhu">
       <IconXanzhu class="flex w-40 sm:w-46 md:w-56" />
