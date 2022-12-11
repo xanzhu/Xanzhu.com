@@ -1,13 +1,28 @@
 <script setup lang="ts">
 const { t, locale } = useI18n()
+const path = useRoute()
 
 const { data: articles } = await useAsyncData('articles', () => {
   return queryContent(`${locale.value}/blog`).find()
 })
 
-definePageMeta({
-  title: 'blog.landing.title',
-  description: 'blog.landing.desc'
+const title = t('blog.landing.title')
+const desc = t('blog.landing.desc')
+
+useHead({
+  title: title,
+  meta: [
+    { property: 'og:title', content: title },
+    // Add custom meta.description/title for /blog
+    { name: 'description', content: desc },
+    { property: 'og:description', content: desc },
+    { property: 'twitter:title', content: title },
+    { property: 'twitter:description', content: desc },
+    // Double check this
+    { property: 'og:url', content: `https://xanzhu.com/${path}` },
+    // Replace this image with custom
+    { property: 'og:image', content: 'https://source.unsplash.com/kUmcSBJcFPg' }
+  ]
 })
 
 
@@ -16,13 +31,14 @@ definePageMeta({
   <div class="mx-auto space-y-20 dark:text-white text-black sm:mb-10" role="main">
     <div class="mt-15 mx-2 sm:mx-8 lg:mx-10">
       <h1 class="font-semibold text-4xl">
-        {{ t('blog.landing.title') }}
+        {{ title }}
       </h1>
       <p class="text-lg break-words font-thin sm:(text-xl) dark:text-gray-300">
-        {{ t('blog.landing.desc') }}
+        {{ desc }}
       </p>
     </div>
-    <section class="grid grid-cols-1 gap-10 md:(grid-cols-2 mx-6) lg:(grid-cols-3) p-4 sm:(py-15 px-10) dark:(bg-dark-900 border-dark-300) border-1 border-gray-200 bg-gray-100 rounded">
+    <section
+      class="grid grid-cols-1 gap-10 md:(grid-cols-2 mx-6) lg:(grid-cols-3) p-4 sm:(py-15 px-10) dark:(bg-dark-900 border-dark-300) border-1 border-gray-200 bg-gray-100 rounded">
       <div v-if="articles" v-for="(article, $index) in articles" :key="`fe-${$index}`">
         <NuxtLink class="flex flex-col space-y-3" :to="(article._path)">
           <NuxtImg v-if="article.img" class="dark:(border-dark-300 border-1) rounded-md max-h-xl" :src="article.img" />
