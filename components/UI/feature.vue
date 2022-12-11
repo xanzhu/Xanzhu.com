@@ -48,7 +48,7 @@ const { data: features } = await useAsyncData('feature',
                 <NuxtImg v-if="wide.img" :src="wide.img"
                     class="dark:(border-dark-300) border-1 border-gray-300 rounded-md" />
                 <NuxtImg v-else-if="wide.media" :src="wide.media" provider="cloudinary"
-                    class="dark:(border-dark-300) border-1 border-gray-300 rounded-md" />
+                    class="dark:(border-dark-300) border-1 border-gray-300 rounded-md max-h-lg" />
                 <NuxtImg v-else src="https://source.unsplash.com/bHOKatJHjII/577x369"
                     class="dark:(border-dark-300) border-1 border-gray-300 rounded-md" />
                 <!-- <NuxtImg v-if="wide.media"
