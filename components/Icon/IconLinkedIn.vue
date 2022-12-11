@@ -1,6 +1,8 @@
 <template>
-  <svg viewBox="0 0 24 24" class="fill-current" xmlns="http://www.w3.org/2000/svg" aria-labelledby="ico-linkedin">
+  <svg viewBox="0 0 24 24" class="fill-current h-5 w-5 hover:text-[#0072b1]" xmlns="http://www.w3.org/2000/svg"
+    aria-labelledby="ico-linkedin">
     <title id="ico-linkedin">LinkedIn</title>
-    <path d="M20.47 2H3.53a1.45 1.45 0 00-1.47 1.43v17.14A1.45 1.45 0 003.53 22h16.94a1.451 1.451 0 001.47-1.43V3.43A1.45 1.45 0 0020.47 2zM8.09 18.74h-3v-9h3v9zM6.59 8.48a1.56 1.56 0 010-3.12 1.57 1.57 0 110 3.12zm12.32 10.26h-3v-4.83c0-1.21-.43-2-1.52-2A1.65 1.65 0 0012.85 13a1.998 1.998 0 00-.1.73v5h-3v-9h3V11a3 3 0 012.71-1.5c2 0 3.45 1.29 3.45 4.06v5.18z" />
+    <path
+      d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002ZM7 8.48H3V21h4V8.48Zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68Z" />
   </svg>
 </template>
