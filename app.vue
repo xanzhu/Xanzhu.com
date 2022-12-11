@@ -1,7 +1,4 @@
-<script setup>
-const route = useRoute()
-const { t } = useI18n()
-
+<script setup lang=ts>
 const head = useLocaleHead({
     addDirAttribute: true,
     identifierAttribute: 'id',
@@ -9,25 +6,22 @@ const head = useLocaleHead({
 })
 
 useHead({
+    titleTemplate: (titleChunk) => {
+        return titleChunk ? `${titleChunk} | Xanzhu` : "Xanzhu";
+    },
     bodyAttrs: {
         class: 'dark:(bg-black text-white) bg-white text-black'
     },
     meta: [
-        { property: 'og:title', content: t(route.meta.title) },
-        { property: 'description', content: t(route.meta.description) },
-        { property: 'og:description', content: t(route.meta.description) },
-        { property: 'twitter:title', content: t(route.meta.title) },
-        { property: 'twitter:description', content: t(route.meta.description) },
-        // { property: 'og:url', content: 'https://xanzhu.com{path}' } Add later
+        { property: 'og:type', content: 'website' }
     ]
 })
 </script>
 <template>
     <div class="h-screen flex flex-col">
-        <Html :lang="head.htmlAttrs.lang" :dir="head.htmlAttrs.dir">
+        <Html v-if=head.htmlAttrs :lang="head.htmlAttrs.lang" :dir="head.htmlAttrs.dir">
 
         <Head>
-            <title>{{ t(route.meta.title) }}</title>
             <template v-for="link in head.link" :key="link.id">
                 <Link :id="link.id" :rel="link.rel" :href="link.href" :hreflang="link.hreflang" />
             </template>

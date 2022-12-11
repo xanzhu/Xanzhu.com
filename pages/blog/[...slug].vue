@@ -8,19 +8,24 @@ const { data: post } = await useAsyncData(path.replace(/\/$/, ''), () => {
     .findOne()
 })
 
-// useHead({
-//   title: post.value?.title || '',
-//   meta: [
-//     { name: 'description', content: post.value?.desc }
-//   ]
-// })
+const title = post.value?.title
+// Add a cutoff / limit for long titles
+const desc = post.value?.description
 
-// Bug
-definePageMeta({
-  title: '',
-  description: ''
+useHead({
+  title: title,
+  meta: [
+    { name: 'description', content: desc },
+    { property: 'og:title', content: title },
+    { property: 'og:description', content: desc },
+    { property: 'twitter:title', content: title },
+    { property: 'twitter:description', content: desc },
+    { property: 'og:url', content: `https://xanzhu.com${path}` },
+    { property: 'og:type', content: 'article' },
+    // Double check this
+    { property: 'og:image', content: post.value?.img || post.value?.media }
+  ]
 })
-
 
 const { data } = await useAsyncData('prev-next',
   () => queryContent(locale.value + '/blog')

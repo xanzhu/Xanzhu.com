@@ -4,12 +4,12 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      titleTemplate: "%s | Xanzhu ",
       meta: [
         { name: "format-detection", content: "telephone=no" },
-        { name: "og:type", property: "og:type", content: "website" },
+        // { name: "og:type", property: "og:type", content: "website" },
         { name: "twitter:site", content: "@xanzhu1" },
         { name: "twitter:card", content: "summary_large_image" },
+        { name: "theme-color", content: "#000" },
       ],
       noscript: [{ children: "Javascript is required" }],
       link: [

@@ -1,8 +1,11 @@
 <script setup>
+const { t } = useI18n()
 
-definePageMeta({
-  title:'error.404',
-  description: 'error.desc'
+useHead({
+  title: t('error.404'),
+  meta: [
+    { property: 'description', content: t('error.desc') },
+  ]
 })
 </script>
 

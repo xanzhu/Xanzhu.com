@@ -1,14 +1,28 @@
-<script setup>
-definePageMeta({
-  title: 'links.privacy_policy',
-  description: 'page.privacy-policy.description'
+<script setup lang="ts">
+const { t } = useI18n()
+const path = useRoute()
+
+const title = t('links.privacy_policy')
+const desc = t('page.privacy-policy.description')
+
+useHead({
+  title: title,
+  meta: [
+    { name: 'description', content: desc },
+    { property: 'og:title', content: title },
+    { property: 'og:description', content: desc },
+    { property: 'twitter:title', content: title },
+    { property: 'twitter:description', content: desc },
+    { property: 'og:url', content: `https://xanzhu.com${path}` },
+    // Add og:image
+
+  ]
 })
 
 useI18n({
   useScope: 'local'
 })
 </script>
-
 <template>
   <div class="dark:text-light-200 mt-5 text-black flex-grow px-4 lg:max-w-4xl container mx-auto" role="main">
     <h1 v-t="'page.pp_title'" class="text-5xl font-bold" />
