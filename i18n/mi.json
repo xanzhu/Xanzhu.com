@@ -49,25 +49,22 @@
       "description": "Kei a Xanzhu nga korero mo nga hangarau hou. Te arotahi ki te ahuru me te ahuru o nga kaiwhakamahi"
     }
   },
-  "page": {
-    "pp_title": "Kaupapahere Tūmataiti",
-    "pp_date": "Whakahoutanga whakamutunga: Hurae 1, 2022",
-    "pp_p1": "He mea nui ki a maatau muna me te whakaute ki te hunga e toro mai ana ki ta maatau paetukutuku. Kaore he korero tautuhi e penapena, e uru atu ana ranei ki te kore a koe e whakaaetia kia mohio kei poka ke to noho muna.",
-    "pp_p3": "I tua atu i nga raraunga whakamahinga e tukuna ana e to tirotiro (User-Agent) kaore he mea e kohia",
-    "pp_link": "Ko nga Paetukutuku Whaimana kei raro nei",
-    "pp_p2": "Na te mea kei roto i te papa anga nga hona nga ki nga paetukutuku a-tuatoru, kaore e taea e maatau te tiaki i a koe i waho atu o ta maatau rohe.",
-    "privacy-policy": {
-      "description": "Tirohia ta maatau Kaupapahere Tūmataiti me te aha o te hononga ki a koe"
-    }
-  },
   "footer": {
     "rights": "All Rights Reserved",
-    "copy": "Copyright 2022 Xanzhu",
-    "dev": "Developer"
+    "dev": "Developer",
+    "build": "Build"
   },
   "home": {
     "feature-post": "Featured Posts",
     "feature-desc": "News, guides and reviews on technology, how to use it and how to ensure your data remains is protected online.",
     "landing-desc": "Xanzhu is a platform for sharing knowledge. Help set the standard for the next generation of privacy and accessibility. Teaches how to use technology and stay safe online."
+  },
+  "privacy": {
+    "title": "Kaupapahere Tūmataiti",
+    "desc": "Arotakehia ta matou tauākī kaupapa here tūmataiti",
+    "date": "Updated",
+    "p-1": "He mea nui ki a maatau muna me te whakaute ki te hunga e toro mai ana ki ta maatau paetukutuku. Kaore he korero tautuhi e penapena, e uru atu ana ranei ki te kore a koe e whakaaetia kia mohio kei poka ke to noho muna.",
+    "p-2": "Na te mea kei roto i to maatau papaanga nga hononga ki nga paetukutuku tuatoru, kaore e taea e matou te aukati i te whai i waho o to maatau paetukutuku.",
+    "p-3": "Raraunga whakamahi e whakaratohia ana e to kaitirotiro (User-Agent), kei roto nga wahitau IP, nga kaitirotiro me nga taputapu e whakamahia ana. Ka whakamahia enei raraunga mo nga inenga me nga korero a te tūmau."
   }
 }

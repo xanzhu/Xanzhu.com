@@ -23,17 +23,6 @@
     "docs": "Docs",
     "resources": "Resources"
   },
-  "page": {
-    "pp_title": "Privacy Policy",
-    "pp_date": "Last updated: August 1, 2022",
-    "pp_p1": "We value privacy and respect those who visit our website. No identifiable information is stored or accessed without your permission to ensure that we do not infringe upon your privacy.",
-    "pp_p2": "Because our site contains links to third-party websites, we cannot prevent tracking outside of our domain.",
-    "pp_p3": "Apart from usage data which your browser provides (User-Agent) nothing is collected",
-    "pp_link": "Offical Websites are listed below",
-    "privacy-policy": {
-      "description": "See our Privacy Policy and how it could relate to you"
-    }
-  },
   "article": {
     "readtime": "min read",
     "creditsource": "Source",
@@ -69,5 +58,13 @@
     "feature-post": "Featured Posts",
     "feature-desc": "News, guides and reviews on technology, how to use it and how to ensure your data remains is protected online.",
     "landing-desc": "Xanzhu is a platform for sharing knowledge. Help set the standard for the next generation of privacy and accessibility. Teaches how to use technology and stay safe online."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "desc": "Review our privacy policy statement",
+    "date": "Modified",
+    "p-1": "We value privacy and respect those who visit our website. No identifiable information is stored or accessed without your permission to ensure that we do not infringe upon your privacy.",
+    "p-2": "Because our site contains links to third-party websites, we cannot prevent tracking outside of our domain.",
+    "p-3": "Usage data that your browser provides (User-Agent), includes IP addresses, browsers and devices used. This data is used for metrics and server communications."
   }
 }
