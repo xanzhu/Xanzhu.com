@@ -27,16 +27,16 @@ useHead({
 </script>
 <template>
   <div class="sm:mx-auto my-10 space-y-10 max-w-4xl">
-    <div class="flex flex-col space-y-4 sm:space-y-0 sm:flex-row justify-between sm:items-center mx-4">
+    <div class="flex flex-col space-y-4 sm:(space-y-0 flex-row justify-between items-center) mx-4">
       <div class="flex flex-col">
         <h1 class="text-2xl sm:text-3xl font-semibold">{{ t('privacy.title') }}</h1>
-        <p class="font-thin text-light-500">{{ t('privacy.desc') }}</p>
+        <p class="font-thin dark:text-light-500">{{ t('privacy.desc') }}</p>
       </div>
       <p>{{ t('privacy.date') }}:
         <Date class="font-thin" :date="date" />
       </p>
     </div>
-    <div class="bg-dark-900 border-1 border-dark-400 rounded-md space-y-4 font-thin text-md p-4 sm:mx-2 sm:p-10">
+    <div class="dark:(bg-dark-900 border-dark-400) border-1 border-gray-200 bg-light-300 rounded-md space-y-4 font-thin text-md p-4 sm:mx-2 sm:p-10">
       <p v-for="(paragraph, index) in paragraphs" :key="index">
         {{ paragraph }}
       </p>
