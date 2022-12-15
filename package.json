@@ -15,8 +15,5 @@
     "@nuxtjs/i18n": "^8.0.0-beta.7",
     "nuxt": "^3.0.0",
     "nuxt-windicss": "^2.6.0"
-  },
-  "dependencies": {
-    "nuxt-security": "^0.9.0"
   }
 }
