@@ -14,7 +14,7 @@ const { t } = useI18n()
         </div>
         <div class="pb-10 md:pb-0 flex-0 max-w-md">
             <!-- Add sizing -->
-            <NuxtImg class="dark:(border-dark-300 border-1) rounded-md"
+            <NuxtImg crossorigin="anonymous" class="dark:(border-dark-300 border-1) rounded-md"
                 src="https://source.unsplash.com/K5u5bXMGIwM/800x1000" />
         </div>
     </div>

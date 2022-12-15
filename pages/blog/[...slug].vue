@@ -61,9 +61,9 @@ const [prev, next] = data.value || []
           </div>
         </div>
         <div class="flex justify-center items-center h-56 sm:(min-h-sm mx-4) md:(mx-4) my-4 overflow-hidden lg:(w-4/6)">
-          <NuxtImg v-if="post.media" class="object-cover w-full h-full sm:rounded-md" sizes="sm:100vw md:50vw lg:25vw"
-            :src="post.media" :alt="post.alt" :title="post.alt" format="webp" fit="cover" loading="eager"
-            provider="cloudinary" />
+          <NuxtImg crossorigin="anonymous" v-if="post.media" class="object-cover w-full h-full sm:rounded-md"
+            sizes="sm:100vw md:50vw lg:25vw" :src="post.media" :alt="post.alt" :title="post.alt" format="webp"
+            fit="cover" loading="eager" provider="cloudinary" />
         </div>
       </header>
       <div v-if="post.source"
