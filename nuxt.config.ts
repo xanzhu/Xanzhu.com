@@ -1,7 +1,4 @@
 export default defineNuxtConfig({
-  typescript: {
-    shim: false,
-  },
   app: {
     head: {
       meta: [
@@ -57,7 +54,33 @@ export default defineNuxtConfig({
     "nuxt-windicss",
     "@nuxt/image-edge",
     "@nuxtjs/color-mode",
+    "nuxt-security",
   ],
+  security: {
+    hidePoweredBy: true,
+    headers: {
+      contentSecurityPolicy: {
+        value: {
+          "base-uri": ["'self'"],
+          "font-src": ["'self'", "https:", "data:"],
+          "form-action": ["'self'"],
+          "frame-ancestors": ["'self'"],
+          "img-src": [
+            "'self'",
+            "data:",
+            "https://images.unsplash.com/",
+            "https://source.unsplash.com",
+            "https://res.cloudinary.com",
+          ],
+          "object-src": ["'none'"],
+          "script-src-attr": ["'none'"],
+          "style-src": ["'self'", "https:", "'unsafe-inline'"],
+          "upgrade-insecure-requests": true,
+        },
+        route: "/**",
+      },
+    },
+  },
   i18n: {
     locales: [
       {

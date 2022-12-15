@@ -41,10 +41,12 @@ useHead({
       class="grid grid-cols-1 gap-10 md:(grid-cols-2 mx-6) lg:(grid-cols-3) p-4 sm:(py-15 px-10) dark:(bg-dark-900 border-dark-300) border-1 border-gray-200 bg-gray-100 rounded">
       <div v-if="articles" v-for="(article, $index) in articles" :key="`fe-${$index}`">
         <NuxtLink class="flex flex-col space-y-3" :to="(article._path)">
-          <NuxtImg v-if="article.img" class="dark:(border-dark-300 border-1) rounded-md max-h-xl" :src="article.img" />
-          <NuxtImg v-else-if="article.media" :src="article.media" sizes="sm:100vw md:50vw lg:25vw" provider="cloudinary"
+          <NuxtImg crossorigin="anonymous" v-if="article.img"
+            class="dark:(border-dark-300 border-1) rounded-md max-h-xl" :src="article.img" />
+          <NuxtImg crossorigin="anonymous" v-else-if="article.media" :src="article.media"
+            sizes="sm:100vw md:50vw lg:25vw" provider="cloudinary"
             class="dark:(border-dark-300 border-1) rounded-md max-h-xl" />
-          <NuxtImg v-else class="dark:(border-dark-300 border-1) rounded-md"
+          <NuxtImg crossorigin="anonymous" v-else class="dark:(border-dark-300 border-1) rounded-md"
             src="https://source.unsplash.com/kUmcSBJcFPg/577x369" />
           <div class="flex flex-row space-x-2">
             <p v-if="article.tag"
