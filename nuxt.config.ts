@@ -16,7 +16,6 @@ export default defineNuxtConfig({
           content: "#000",
         },
       ],
-      noscript: [{ children: "Javascript is required" }],
       link: [
         {
           rel: "icon",
