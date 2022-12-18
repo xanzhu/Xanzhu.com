@@ -39,7 +39,7 @@ const [prev, next] = data.value || []
 <template>
   <div v-if="post" class="container mb-4 mx-auto md:(px-6 mb-0 justify-center) lg:px-12" role="main">
     <article class="dark:(bg-black text-light-200) bg-white text-black pb-2 sm:rounded-md md:mb-12">
-      <header class="flex flex-col lg:(flex-row items-center top-0) md:(border-outline bg-gray-100) dark:bg-dark-900">
+      <header class="flex flex-col lg:(flex-row items-center top-0) md:(border-outline bg-gray-100 dark:bg-dark-900)">
         <div class="flex flex-col mx-4 mt-4 space-y-2 sm:space-y-1 md:mx-6">
           <div class="text-xs space-x-2 inline-flex items-center">
             <p class="dark:(text-[#FF0000] bg-transparent) font-semibold text-black tracking-wide">
