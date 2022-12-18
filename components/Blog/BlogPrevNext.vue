@@ -8,7 +8,7 @@
       </NuxtLink>
       <!-- <span v-else>&nbsp;</span> -->
       <NuxtLink v-if="next" :to="next._path"
-        class="border-outline dark:text-[#FF0000] dark:hover:(bg-red-600 text-black) hover:(bg-red-600 text-white) text-red-600">
+        class="border-outline dark:text-[#FF0000] dark:hover:(bg-[#FF0000] text-black) hover:(bg-[#FF0000] text-white) text-dark-600">
         <p v-t="'article.Next'" />
       </NuxtLink>
     </div>

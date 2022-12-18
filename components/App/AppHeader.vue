@@ -57,7 +57,7 @@ const links = [
       <div class="md:(space-x-6 flex-row bg-transparent) font-semibold mt-2 text-center text-sm flex-col flex w-full"
         @click="MobileMenu = false">
         <template v-for="link in links">
-          <NuxtLink :to="localePath(link.url)" :aria-label="t(link.name)" class="nav-internal dark:hover:bg-dark-300 hover:bg-light-400 md:(dark:hover:bg-transparent hover:transparent)" v-t="link.name" />
+          <NuxtLink :to="localePath(link.url)" :aria-label="t(link.name)" class="nav-internal dark:hover:bg-dark-300 hover:bg-light-400 md:(dark:hover:bg-transparent hover:bg-transparent)" v-t="link.name" />
         </template>
       </div>
       <div class="flex flex-row space-x-2 items-center align-middle justify-center">

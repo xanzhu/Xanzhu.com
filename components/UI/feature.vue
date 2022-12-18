@@ -44,12 +44,12 @@ const { data: features } = await useAsyncData('feature',
                 <NuxtImg crossorigin="anonymous" v-if="wide.img" :src="wide.img" :alt="wide.alt" loading="lazy"
                     class="border-outline" height="1253" width="1880" />
                 <NuxtImg crossorigin="anonymous" v-else-if="wide.media" :src="wide.media" :alt="wide.alt" loading="lazy"
-                    provider="cloudinary" class="border-outline max-h-lg"
+                    provider="cloudinary" class="border-outline md:max-h-lg lg:max-w-md"
                     height="1253" width="1880" />
                 <NuxtImg crossorigin="anonymous" v-else :alt="wide.alt" loading="lazy"
                     src="https://source.unsplash.com/bHOKatJHjII/577x369"
                     class="border-outline" height="1253" width="1880" />
-                <div class="sm:(space-y-7) md:(p-6) space-y-2">
+                <div class="sm:(space-y-7) space-y-4 lg:p-6">
                     <div class="flex flex-row space-x-2">
                         <p v-if="wide.tag"
                             class="dark:(bg-black text-white) px-4 border-outline py-1.5 text-xs">
@@ -58,7 +58,7 @@ const { data: features } = await useAsyncData('feature',
                         <Date v-if="wide.date" :date="wide.date"
                             class="dark:(bg-black text-white) mr-auto px-4 py-1.5 border-outline text-xs" />
                     </div>
-                    <h2 class="font-semibold text-xl sm:text-3xl group-hover:(underline decoration-6 underline-offset-3 decoration-red-600)">{{ wide.title }}</h2>
+                    <h2 class="font-semibold text-xl sm:text-3xl sm:group-hover:(underline decoration-4 underline-offset-3 decoration-[#FF0000])">{{ wide.title }}</h2>
                     <p v-if="wide.description" class="font-thin dark:text-gray-300 text-dark-400">{{ wide.description }}
                     </p>
                 </div>
@@ -84,7 +84,7 @@ const { data: features } = await useAsyncData('feature',
                         <Date v-if="feature.date" :date="feature.date"
                             class="dark:(bg-black text-white) border-outline mr-auto px-4 py-1.5 text-xs" />
                     </div>
-                    <h2 class="rounded-md font-medium text-xl dark:(text-white) group-hover:(underline decoration-3 underline-offset-2 decoration-red-600)">
+                    <h2 class="rounded-md font-medium text-xl dark:(text-white) sm:group-hover:(underline decoration-3 underline-offset-2 decoration-[#FF0000])">
                         {{ feature.title }}
                     </h2>
                 </NuxtLink>

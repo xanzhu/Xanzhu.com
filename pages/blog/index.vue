@@ -56,7 +56,7 @@ useHead({
               class="dark:(bg-black text-white) mr-auto px-4 border-outline py-1.5 text-xs" />
           </div>
           <h2
-            class="rounded-md font-medium text-xl dark:(text-white) group-hover:(underline decoration-4 underline-offset-2 decoration-red-600)">
+            class="rounded-md font-medium text-xl dark:(text-white) sm:group-hover:(underline decoration-4 underline-offset-2 decoration-[#FF0000])">
             {{ article.title }}
           </h2>
         </NuxtLink>

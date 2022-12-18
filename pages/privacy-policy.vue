@@ -36,7 +36,7 @@ useHead({
         <Date class="font-thin" :date="date" />
       </p>
     </div>
-    <div class="dark:(bg-dark-900) border-outline bg-light-300 space-y-4 font-thin text-md p-4 sm:mx-2 sm:p-10">
+    <div class="dark:(bg-dark-900) border-outline bg-light-300 space-y-4 font-thin text-md p-4 sm:(p-10 mx-3)">
       <p v-for="(paragraph, index) in paragraphs" :key="index">
         {{ paragraph }}
       </p>

@@ -1,5 +1,5 @@
 <template>
-  <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 hover:text-[#1DA1F2]" xmlns="http://www.w3.org/2000/svg"
+  <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 hover:text-[#FF0000]" xmlns="http://www.w3.org/2000/svg"
     aria-labelledby="ico-twitter">
     <title id="ico-twitter">Twitter</title>
     <path
