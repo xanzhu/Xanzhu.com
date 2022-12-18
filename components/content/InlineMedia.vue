@@ -1,8 +1,9 @@
 <template>
   <NuxtImg crossorigin="anonymous" :src="source" :fit="fit" :alt="alt" format="webp" height="424" width="800"
-    class="mx-auto my-4 sm:px-8" loading="lazy" :title="title" provider="cloudinary" />
+    class="mx-auto my-4" loading="lazy" :title="title" />
 </template>
-<script>
+
+<script lang="ts">
 export default {
   props: {
     source: {
@@ -23,7 +24,7 @@ export default {
     title: {
       type: String,
       default: 'Sand Dunes',
-      required: null
+      required: false
     }
   }
 }

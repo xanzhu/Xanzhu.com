@@ -74,3 +74,12 @@ attulit puer.
   font-family: Consolas, Roboto Mono, monospace;
 }
 ```
+
+Local Image Rendering
+<InlineMedia src="/images/mountain_2.jpeg" alt="example - 1 alt" title="Test"></InlineMedia>
+
+External Image Rendering
+<InlineMedia src="https://source.unsplash.com/YhfMDUHIKDU" alt="example - 1 alt" title="Test"></InlineMedia>
+
+Cloudinary Image rendering
+<InlineMedia src="/v1632626905/green-trees_hbugig.jpg" alt="example - 1 alt" title="Test" provider="cloudinary"></InlineMedia>
