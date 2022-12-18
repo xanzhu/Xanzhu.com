@@ -17,7 +17,7 @@ const { data: features } = await useAsyncData('feature',
 </script>
 <template>
     <div
-        class="flex flex-col text-black bg-gray-100 border-gray-200 dark:(text-white border-dark-300 bg-dark-900) border-1 rounded-md space-y-5 mx-auto">
+        class="flex flex-col text-black bg-gray-100 dark:(text-white bg-dark-900) border-outline space-y-5 mx-auto">
         <div class="flex flex-col lg:(space-x-0 space-y-3 justify-between flex-row p-12 items-center) space-y-10 p-6">
             <div class="flex flex-col space-y-2">
                 <h2 class="text-3xl font-medium">
@@ -27,46 +27,38 @@ const { data: features } = await useAsyncData('feature',
                     {{ t('home.feature-desc') }}
                 </p>
             </div>
-            <div class="flex flex-col space-y-5 sm:(flex-row space-x-5 space-y-0)">
+            <div class="flex flex-col space-y-5 sm:(flex-row space-x-5 space-y-0) children:border-outline">
                 <NuxtLink :to="localePath('/resources')"
-                    class="border-1 border-dark-700 bg-black rounded-md px-8 py-2 text-sm text-white hover:(bg-dark-500)">
+                    class="bg-black px-8 py-2 text-sm text-white hover:(bg-dark-500)">
                     {{ t('links.resources') }}
                 </NuxtLink>
                 <NuxtLink :to="localePath('/blog')"
-                    class="border-1 border-gray-300 text-black px-8 py-2 rounded-md text-sm dark:(text-black bg-white) hover:(bg-white) dark:hover:(border-white bg-transparent text-white)">
+                    class="text-black px-8 py-2 text-sm dark:(text-black bg-white) hover:(bg-white) dark:hover:(border-white bg-transparent text-white)">
                     {{ t('links.blog') }}
                 </NuxtLink>
             </div>
         </div>
         <div v-if="wideFeature" v-for="wide in wideFeature" :key="wide.title" class="sm:(mx-20 p-0) p-4">
             <NuxtLink :to="(wide._path)"
-                class="text-black dark:(text-white) flex flex-col lg:flex-row lg:items-center mx-auto space-y-3">
-                <!-- TO:DO
-                - A11y improvements
-                - Add image contraints and replace with object-fit to control sizing
-                -->
+                class="text-black dark:(text-white) group flex flex-col lg:flex-row lg:items-center mx-auto space-y-3">
                 <NuxtImg crossorigin="anonymous" v-if="wide.img" :src="wide.img" :alt="wide.alt" loading="lazy"
-                    class="dark:(border-dark-300) border-1 border-gray-300 rounded-md" height="1253" width="1880" />
+                    class="border-outline" height="1253" width="1880" />
                 <NuxtImg crossorigin="anonymous" v-else-if="wide.media" :src="wide.media" :alt="wide.alt" loading="lazy"
-                    provider="cloudinary" class="dark:(border-dark-300) border-1 border-gray-300 rounded-md max-h-lg"
+                    provider="cloudinary" class="border-outline max-h-lg"
                     height="1253" width="1880" />
                 <NuxtImg crossorigin="anonymous" v-else :alt="wide.alt" loading="lazy"
                     src="https://source.unsplash.com/bHOKatJHjII/577x369"
-                    class="dark:(border-dark-300) border-1 border-gray-300 rounded-md" height="1253" width="1880" />
-                <!-- <NuxtImg v-if="wide.media"
-                    class="object-cover w-full h-full sm:rounded-md dark:(border-dark-300 border-1) rounded-md"
-                    sizes="sm:100vw md:50vw lg:25vw" :src="wide.media" :alt="wide.alt" :title="wide.alt" format="webp"
-                    fit="cover" loading="eager" provider="cloudinary" /> -->
+                    class="border-outline" height="1253" width="1880" />
                 <div class="sm:(space-y-7) md:(p-6) space-y-2">
                     <div class="flex flex-row space-x-2">
                         <p v-if="wide.tag"
-                            class="dark:(bg-black text-white border-dark-300) px-4 border-1 py-1.5 rounded-md text-xs">
+                            class="dark:(bg-black text-white) px-4 border-outline py-1.5 text-xs">
                             {{ wide.tag }}
                         </p>
                         <Date v-if="wide.date" :date="wide.date"
-                            class="dark:(bg-black text-white border-dark-300) mr-auto px-4 border-1 py-1.5 rounded-md text-xs" />
+                            class="dark:(bg-black text-white) mr-auto px-4 py-1.5 border-outline text-xs" />
                     </div>
-                    <h2 class="font-semibold text-xl sm:text-3xl">{{ wide.title }}</h2>
+                    <h2 class="font-semibold text-xl sm:text-3xl group-hover:(underline decoration-6 underline-offset-3 decoration-red-600)">{{ wide.title }}</h2>
                     <p v-if="wide.description" class="font-thin dark:text-gray-300 text-dark-400">{{ wide.description }}
                     </p>
                 </div>
@@ -74,25 +66,25 @@ const { data: features } = await useAsyncData('feature',
         </div>
         <section class="grid grid-cols-1 gap-10 md:(grid-cols-2) p-4 sm:p-20">
             <div v-if="features" v-for="(feature, $index) in features" :key="`fe-${$index}`">
-                <NuxtLink v-if="feature.feature" class="flex flex-col space-y-3" :to="(feature._path)">
+                <NuxtLink v-if="feature.feature" class="flex flex-col space-y-3 group" :to="(feature._path)">
                     <NuxtImg crossorigin="anonymous" v-if="feature.img" :alt="feature.alt" loading="lazy" height="369"
-                        width="577" class="dark:(border-dark-300) border-1 border-gray-300 rounded-md"
+                        width="577" class="border-outline"
                         :src="feature.img" />
                     <NuxtImg crossorigin="anonymous" v-else-if="feature.media" :src="feature.media" :alt="feature.alt"
                         height="369" width="577" sizes="sm:100vw md:50vw lg:25vw" provider="cloudinary" loading="lazy"
-                        class="dark:(border-dark-300 border-1) rounded-md" />
+                        class="border-outline" />
                     <NuxtImg crossorigin="anonymous" :alt="feature.alt" loading="lazy" v-else height="369" width="577"
-                        class="dark:(border-dark-300 border-1) rounded-md"
+                        class="border-outline"
                         src="https://source.unsplash.com/kUmcSBJcFPg/577x369" />
                     <div class="flex flex-row space-x-2">
                         <p v-if="feature.tag"
-                            class="dark:(bg-black text-white border-dark-300) px-4 border-1 py-1.5 rounded-md text-xs">
+                            class="dark:(bg-black text-white) px-4 border-outline py-1.5 text-xs">
                             {{ feature.tag }}
                         </p>
                         <Date v-if="feature.date" :date="feature.date"
-                            class="dark:(bg-black text-white border-dark-300) mr-auto px-4 border-1 py-1.5 rounded-md text-xs" />
+                            class="dark:(bg-black text-white) border-outline mr-auto px-4 py-1.5 text-xs" />
                     </div>
-                    <h2 class="rounded-md font-medium text-xl dark:(text-white)">
+                    <h2 class="rounded-md font-medium text-xl dark:(text-white) group-hover:(underline decoration-3 underline-offset-2 decoration-red-600)">
                         {{ feature.title }}
                     </h2>
                 </NuxtLink>
