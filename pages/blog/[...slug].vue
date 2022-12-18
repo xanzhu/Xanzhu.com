@@ -39,17 +39,16 @@ const [prev, next] = data.value || []
 <template>
   <div v-if="post" class="container mb-4 mx-auto md:(px-6 mb-0 justify-center) lg:px-12" role="main">
     <article class="dark:(bg-black text-light-200) bg-white text-black pb-2 sm:rounded-md md:mb-12">
-      <header class="flex flex-col lg:(flex-row items-center top-0)">
+      <header class="flex flex-col lg:(flex-row items-center top-0) sm:border-outline bg-dark-900">
         <div class="flex flex-col mx-4 mt-4 space-y-2 sm:space-y-1 md:mx-6">
           <div class="text-xs space-x-4 inline-flex items-center">
-            <p
-              class="dark:(text-[#FF0000] border-1 border-[#FF0000] bg-transparent) rounded-md px-2 py-0.2 bg-red-600 text-light-200 font-semibold tracking-wide">
+            <p class="dark:(text-[#FF0000] bg-transparent) bg-red-600 text-light-200 font-semibold tracking-wide">
               {{ post.tag }}
             </p>
             <Date v-if="post.date" :date="post.date" />
           </div>
           <h1
-            class="text-xl sm:leading-tight md:(text-2xl mr-6) lg:text-3xl xl:text-6xl font-semibold break-words lg:(flex-1 pb-2)">
+            class="text-xl sm:leading-tight md:(text-2xl mr-6) lg:text-3xl xl:text-5xl font-semibold break-words lg:(flex-1 pb-2)">
             {{ post.title }}
           </h1>
           <div class="flex text-xs">
@@ -66,12 +65,14 @@ const [prev, next] = data.value || []
             fit="cover" loading="eager" provider="cloudinary" />
         </div>
       </header>
+      <!-- Fix sizing -->
       <div v-if="post.source"
         class="dark:(text-light-200 opacity-45) text-black text-sm opacity-80 italic pr-2 sm:pr-6 -mt-2 text-right">
         <p v-t="'article.creditsource'" class="inline-block" />: {{ post.source }}
       </div>
     </article>
-    <ContentRenderer :value="post" class="px-4 mx-auto my-4 dark:text-light-200 text-black leading-normal lg:(w-4xl)" />
+    <ContentRenderer :value="post"
+      class="prose md:prose-md px-4 mx-auto my-4 dark:text-light-200 text-black leading-normal" />
     <LazyBlogPrevNext :prev="prev" :next="next" />
     <LazyBlogBackToTop />
   </div>
