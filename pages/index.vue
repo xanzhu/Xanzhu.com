@@ -9,13 +9,12 @@ useHead({
   title: title,
   meta: [
     { property: 'og:title', content: title },
-    // Reduce description char size
     { name: 'description', content: desc },
     { property: 'og:description', content: desc },
     { property: 'twitter:title', content: title },
     { property: 'twitter:description', content: desc },
-    { property: 'og:url', content: `https://xanzhu.com${path}` }
-    // Add og:image
+    { property: 'og:url', content: `https://xanzhu.com${path}` },
+    { property: 'og:image', content: 'https://source.unsplash.com/fPNl6MFdbw4' }
   ]
 })
 

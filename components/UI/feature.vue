@@ -45,12 +45,14 @@ const { data: features } = await useAsyncData('feature',
                 - A11y improvements
                 - Add image contraints and replace with object-fit to control sizing
                 -->
-                <NuxtImg crossorigin="anonymous" v-if="wide.img" :src="wide.img"
-                    class="dark:(border-dark-300) border-1 border-gray-300 rounded-md" />
-                <NuxtImg crossorigin="anonymous" v-else-if="wide.media" :src="wide.media" provider="cloudinary"
-                    class="dark:(border-dark-300) border-1 border-gray-300 rounded-md max-h-lg" />
-                <NuxtImg crossorigin="anonymous" v-else src="https://source.unsplash.com/bHOKatJHjII/577x369"
-                    class="dark:(border-dark-300) border-1 border-gray-300 rounded-md" />
+                <NuxtImg crossorigin="anonymous" v-if="wide.img" :src="wide.img" :alt="wide.alt" loading="lazy"
+                    class="dark:(border-dark-300) border-1 border-gray-300 rounded-md" height="1253" width="1880" />
+                <NuxtImg crossorigin="anonymous" v-else-if="wide.media" :src="wide.media" :alt="wide.alt" loading="lazy"
+                    provider="cloudinary" class="dark:(border-dark-300) border-1 border-gray-300 rounded-md max-h-lg"
+                    height="1253" width="1880" />
+                <NuxtImg crossorigin="anonymous" v-else :alt="wide.alt" loading="lazy"
+                    src="https://source.unsplash.com/bHOKatJHjII/577x369"
+                    class="dark:(border-dark-300) border-1 border-gray-300 rounded-md" height="1253" width="1880" />
                 <!-- <NuxtImg v-if="wide.media"
                     class="object-cover w-full h-full sm:rounded-md dark:(border-dark-300 border-1) rounded-md"
                     sizes="sm:100vw md:50vw lg:25vw" :src="wide.media" :alt="wide.alt" :title="wide.alt" format="webp"
@@ -73,12 +75,14 @@ const { data: features } = await useAsyncData('feature',
         <section class="grid grid-cols-1 gap-10 md:(grid-cols-2) p-4 sm:p-20">
             <div v-if="features" v-for="(feature, $index) in features" :key="`fe-${$index}`">
                 <NuxtLink v-if="feature.feature" class="flex flex-col space-y-3" :to="(feature._path)">
-                    <NuxtImg crossorigin="anonymous" v-if="feature.img"
-                        class="dark:(border-dark-300) border-1 border-gray-300 rounded-md" :src="feature.img" />
-                    <NuxtImg crossorigin="anonymous" v-else-if="feature.media" :src="feature.media"
-                        sizes="sm:100vw md:50vw lg:25vw" provider="cloudinary"
+                    <NuxtImg crossorigin="anonymous" v-if="feature.img" :alt="feature.alt" loading="lazy" height="369"
+                        width="577" class="dark:(border-dark-300) border-1 border-gray-300 rounded-md"
+                        :src="feature.img" />
+                    <NuxtImg crossorigin="anonymous" v-else-if="feature.media" :src="feature.media" :alt="feature.alt"
+                        height="369" width="577" sizes="sm:100vw md:50vw lg:25vw" provider="cloudinary" loading="lazy"
                         class="dark:(border-dark-300 border-1) rounded-md" />
-                    <NuxtImg crossorigin="anonymous" v-else class="dark:(border-dark-300 border-1) rounded-md"
+                    <NuxtImg crossorigin="anonymous" :alt="feature.alt" loading="lazy" v-else height="369" width="577"
+                        class="dark:(border-dark-300 border-1) rounded-md"
                         src="https://source.unsplash.com/kUmcSBJcFPg/577x369" />
                     <div class="flex flex-row space-x-2">
                         <p v-if="feature.tag"
