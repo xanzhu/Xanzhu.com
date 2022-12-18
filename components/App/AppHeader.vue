@@ -1,12 +1,7 @@
 <script setup>
-const { t} = useI18n()
+const { t } = useI18n()
 const localePath = useLocalePath()
 const switchLocalePath = useSwitchLocalePath()
-
-// Bug - Doesn't work well with content
-// const availableLocales = computed(() => {
-//   return (locales.value).filter(i => i.code !== locale.value)
-// })
 
 const MobileMenu = ref(false);
 const LangMenu = ref(false);
@@ -45,36 +40,31 @@ const links = [
     <!-- Mobile Navigation Toggle -->
     <div class="flex text-black dark:text-light-200 md:hidden">
       <button @click="MobileToggle">
-        <IconMenu v-show="!MobileMenu" class="w-7 h-7" :aria-label="t('aria.button.Omenu')" />
-        <IconCross v-show="MobileMenu" class="w-7 h-7" :aria-label="t('aria.button.Cmenu')" />
+        <IconMenu v-if="!MobileMenu" class="w-7 h-7" :aria-label="t('aria.button.Omenu')" />
+        <IconCross v-if="MobileMenu" class="w-7 h-7" :aria-label="t('aria.button.Cmenu')" />
       </button>
     </div>
     <!-- Navigation UI  -->
     <nav
       class="items-center font-semibold bg-light-700 border-outline dark:(bg-dark-500 md:bg-transparent) md:(relative top-0 flex flex-row space-x-6 p-4 bg-transparent border-none)"
-      :class="{ 'flex p-4 rounded-md absolute top-9.5 right-4.5 z-1 flex-col-reverse': MobileMenu, 'hidden': !MobileMenu }"
+      :class="MobileMenu ? 'flex p-4 rounded-md absolute top-9.5 right-4.5 z-1 flex-col-reverse' : 'hidden'"
       role="navigation">
-      <div class="md:(space-x-6 flex-row bg-transparent) font-semibold mt-2 text-center text-sm flex-col flex w-full"
+      <div
+        class="md:(space-x-6 flex-row bg-transparent mt-0) mt-2 font-semibold text-center text-sm flex-col flex w-full"
         @click="MobileMenu = false">
-        <template v-for="link in links">
-          <NuxtLink :to="localePath(link.url)" :aria-label="t(link.name)" class="nav-internal dark:hover:bg-dark-300 hover:bg-light-400 md:(dark:hover:bg-transparent hover:bg-transparent)" v-t="link.name" />
-        </template>
+        <NuxtLink v-for="(link, index) in links" :key="index" :to="localePath(link.url)" :aria-label="t(link.name)"
+          class="nav-internal dark:hover:bg-dark-300 hover:bg-light-400 md:(dark:hover:bg-transparent hover:bg-transparent)"
+          v-t="link.name" />
       </div>
       <div class="flex flex-row space-x-2 items-center align-middle justify-center">
         <!-- Translate Menu Toggle -->
         <button @click="LangToggle" class="text-[#FF0000] hover:text-current px-1">
           <IconTranslate class="w-6 h-6 pt-0.5" :aria-label="t('aria.button.translate')" />
         </button>
-        <ul v-show="LangMenu"
-          class="z-4 p-1 absolute top-13 rounded-md shadow-md space-y-1 dark:(bg-dark-500 text-light-200) border-outline bg-light-700 text-black">
-          <!-- Bug - Content not switching correctly -->
-          <!-- <li class="text-center hover:bg-light-400 rounded-md p-1 dark:hover:bg-dark-300"
-            v-for="locale in availableLocales" :key="locale.code">
-            <NuxtLink @click="LangToggle" class="mx-[-0.5em] px-[1em] inline-block" :to="switchLocalePath(locale.code)">
-              {{ locale.name }}
-            </NuxtLink>
-          </li> -->
-          <li v-for="locale in $i18n.locales" :key="locale.code"
+        <ul
+          class="z-4 -right-1 p-1 absolute top-13 rounded-md shadow-md space-y-1 dark:(bg-dark-500 text-light-200) border-outline bg-light-700 text-black"
+          :class="LangMenu ? '' : 'hidden'">
+          <li v-for="(locale, index) in $i18n.locales" :key="index"
             class="text-center hover:bg-light-400 rounded-md p-1 dark:hover:bg-dark-300">
             <NuxtLink @click="LangToggle" :to="switchLocalePath(locale.code)" class="mx-[-0.5em] px-[1em] inline-block">
               {{ locale.name }}
@@ -87,7 +77,3 @@ const links = [
     </nav>
   </header>
 </template>
-<!-- TO:DO
-- Add active class for links
-- Redesign !
--->
