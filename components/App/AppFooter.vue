@@ -19,6 +19,9 @@ const localePath = useLocalePath()
       <NuxtLink to="https://twitter.com/Xanzhu1" target="_blank">
         <IconTwitter />
       </NuxtLink>
+      <NuxtLink rel="me" to="https://mastodon.social/@xanzhu" target="_blank">
+        <IconMastodon />
+      </NuxtLink>
     </div>
     <div class="text-xs mx-4">
       <div class="space-x-3 p-1 sm:p-0">
