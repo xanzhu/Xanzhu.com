@@ -3,7 +3,9 @@ const { t, locale } = useI18n()
 const path = useRoute()
 
 const { data: articles } = await useAsyncData('articles', () => {
-  return queryContent(`${locale.value}/blog`).find()
+  return queryContent(`${locale.value}/blog`)
+    .sort({ date: -1 })
+    .find()
 })
 
 const title = t('blog.landing.title')
@@ -56,7 +58,7 @@ useHead({
               class="dark:(bg-black text-white) mr-auto px-4 border-outline py-1.5 text-xs" />
           </div>
           <h2
-            class="rounded-md font-medium text-xl dark:(text-white) sm:group-hover:(underline decoration-4 underline-offset-2 decoration-[#FF0000])">
+            class="rounded-md font-medium text-xl dark:(text-white) sm:group-hover:(underline decoration-1 underline-offset-4)">
             {{ article.title }}
           </h2>
         </NuxtLink>
