@@ -8,7 +8,6 @@ source: xanzhu.com
 author: STAFF
 date: '2022-11-30'
 img: 'https://source.unsplash.com/td403QTpwVU/577x369'
-wide: true
 ---
 
 # Si dari hunc fuerat aspexisse labores

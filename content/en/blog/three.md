@@ -5,7 +5,6 @@ media: v1632626904/night_dlu0rp.jpg
 tag: TEST
 alt: "Highway Nightime"
 date: "2022-11-30"
-wide: true
 ---
 
 # Lacertis spissi
