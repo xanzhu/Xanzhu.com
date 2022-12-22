@@ -1,10 +1,11 @@
 <template>
-  <div class="inline-flex dark:bg-dark-500 bg-light-900 py-1 lg:my-4 px-2 rounded-md space-x-1">
-    <IconClock class="h-4 w-4 mr-1" />{{ readingTime }}
-    <p v-t="'article.readtime'" />
+  <div class="inline-flex space-x-1">
+    <p>{{ readingTime }}</p>
+    <span v-t="'article.readtime'" />
   </div>
 </template>
-<script>
+
+<script lang="ts">
 export default {
   props: {
     content: {
@@ -12,12 +13,14 @@ export default {
       required: true
     }
   },
-  computed: {
-    readingTime () {
-      const wordsPerMinute = 250
-      const contentString = JSON.stringify(this.content)
-      const words = contentString.split(' ').length
-      return Math.ceil(words / wordsPerMinute)
+  setup(props) {
+    const wordsPerMinute = 230
+    const contentString = JSON.stringify(props.content)
+    const words = contentString.split(' ').length
+    const readingTime = ref(Math.ceil(words / wordsPerMinute))
+
+    return {
+      readingTime
     }
   }
 }

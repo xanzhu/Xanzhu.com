@@ -55,7 +55,7 @@ const [prev, next] = data.value || []
       <header class="flex flex-col lg:(flex-row items-center top-0) md:(border-outline bg-gray-100 dark:bg-black)">
         <div class="flex flex-col mx-4 mt-4 space-y-2 sm:space-y-1 md:mx-6">
           <div class="text-xs space-x-2 inline-flex items-center">
-            <p class="dark:(text-[#FF0000] bg-transparent) font-semibold text-black tracking-wide">
+            <p class="dark:(text-[#FF0000] bg-transparent) font-semibold text-[#0066CC] tracking-wide">
               {{ post.tag }}
             </p>
             <Date v-if="post.date" :date="post.date" />
@@ -64,12 +64,12 @@ const [prev, next] = data.value || []
             class="text-xl sm:leading-tight md:(text-2xl mr-6) lg:text-3xl xl:text-5xl font-semibold break-words lg:(flex-1 pb-2)">
             {{ post.title }}
           </h1>
-          <!-- <div class="flex text-xs">
-            <BlogReadTime :content="post.body" /> 
-             <div v-if="post.author" class="inline-flex py-1 lg:my-4 px-2 border-outline">
-              {{ post.author }}
-            </div>
-          </div> -->
+          <!-- Convert into Component | Add Translation (Author) -->
+          <div class="flex flex-row items-center space-x-2 text-xs">
+            <p>By: <span class="text-[#0066CC] dark:text-[#FF0000] font-semibold">Example User</span>,</p>
+            <BlogReadTime class="flex" :content="post.body" />
+          </div>
+
         </div>
         <div class="flex justify-center items-center h-56 sm:(min-h-sm mx-4) md:(mx-4) my-4 overflow-hidden lg:(w-4/6)">
           <NuxtImg crossorigin="anonymous" v-if="post.media && !post.img"
@@ -89,6 +89,7 @@ const [prev, next] = data.value || []
     <LazyBlogPrevNext :prev="prev" :next="next" />
     <LazyBlogBackToTop />
   </div>
+  <!-- Bug: Redirect to 404 page on error -->
   <NotFound class="mt-20" v-else />
 </template>
 <style>
