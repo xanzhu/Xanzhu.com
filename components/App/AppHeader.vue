@@ -34,11 +34,11 @@ const links = [
   <header
     class="flex flex-row justify-between items-center px-4 py-2 bg-transparent text-black dark:(bg-black text-light-200) md:(bg-transparent space-x-4 mx-2 py-4) lg:mx-6"
     role="banner">
-    <div class="md:(flex flex-row space-x-4 justify-center items-center)">
+    <div class="md:(flex flex-row space-x-4 items-center)">
       <NuxtLink :to="localePath('/')" aria-label="Xanzhu">
         <IconXanzhu class="flex w-40 sm:w-46 md:w-56" />
       </NuxtLink>
-      <p class="hidden md:block border-outline px-1 py-0.2 font-thin text-xs">BETA</p>
+      <p class="hidden md:block border-outline px-1.5 py-0.2 font-thin text-xs">BETA</p>
     </div>
 
     <!-- Mobile Navigation Toggle -->

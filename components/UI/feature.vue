@@ -37,17 +37,18 @@ const { data: features } = await useAsyncData('feature',
                 </NuxtLink>
             </div>
         </div>
-        <div v-if="wideFeature" v-for="wide in wideFeature" :key="wide.title" class="sm:(mx-20 p-0) p-4">
+        <!-- Single Feature -->
+        <div v-if="wideFeature" v-for="wide in wideFeature" :key="wide.title" class="sm:(mx-5 p-0) lg:mx-20 p-4">
             <NuxtLink :to="(wide._path)"
                 class="text-black dark:(text-white) group flex flex-col lg:flex-row lg:items-center mx-auto space-y-3">
                 <NuxtImg crossorigin="anonymous" v-if="wide.img" :src="wide.img" :alt="wide.alt" loading="lazy"
-                    class="border-outline md:max-w-2xl" height="1253" width="1880" />
+                    class="border-outline md:max-w-lg xl:max-w-2xl" height="1253" width="1880" />
                 <NuxtImg crossorigin="anonymous" v-else-if="wide.media" :src="wide.media" :alt="wide.alt" loading="lazy"
                     provider="cloudinary" class="border-outline md:max-w-2xl" height="1253" width="1880" />
                 <NuxtImg crossorigin="anonymous" v-else :alt="wide.alt" loading="lazy"
                     src="https://source.unsplash.com/bHOKatJHjII/577x369" class="border-outline md:max-w-2xl"
                     height="1253" width="1880" />
-                <div class="sm:(space-y-7) space-y-4 lg:p-6">
+                <div class="sm:(space-y-7) md:space-y-2 space-y-4 lg:p-6">
                     <div class="flex flex-row space-x-2">
                         <p v-if="wide.tag" class="dark:(bg-black text-white) px-4 border-outline py-1.5 text-xs">
                             {{ wide.tag }}
@@ -63,7 +64,8 @@ const { data: features } = await useAsyncData('feature',
                 </div>
             </NuxtLink>
         </div>
-        <section class="grid grid-cols-1 gap-10 md:(grid-cols-2) p-4 sm:p-20">
+        <!-- Two Feature posts -->
+        <section class="grid grid-cols-1 gap-10 md:(grid-cols-2) p-4 sm:p-5 lg:p-20">
             <div v-if="features" v-for="(feature, $index) in features" :key="`fe-${$index}`">
                 <NuxtLink v-if="feature.feature" class="flex flex-col space-y-3 group" :to="(feature._path)">
                     <NuxtImg crossorigin="anonymous" v-if="feature.img" :alt="feature.alt" loading="lazy" height="369"
