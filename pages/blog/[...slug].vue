@@ -8,9 +8,22 @@ const { data: post } = await useAsyncData(path.replace(/\/$/, ''), () => {
     .findOne()
 })
 
-const title = post.value?.title
-// Add a cutoff / limit for long titles
-const desc = post.value?.description
+// Testing limiting title/desc lengths
+const sliceString = (str: string, maxLength: number): string => {
+  if (str.length <= maxLength) {
+    return str;
+  }
+  const lastSpaceIndex = str.substring(0, maxLength).lastIndexOf(' ');
+  return lastSpaceIndex !== -1 ? str.slice(0, lastSpaceIndex) : str.slice(0, maxLength);
+};
+
+const titleLength = 60;
+let title = post.value?.title.trim();
+title = sliceString(title, titleLength);
+
+const descLength = 120;
+let desc = post.value?.description.trim();
+desc = sliceString(desc, descLength)
 
 useHead({
   title: title,
@@ -59,10 +72,10 @@ const [prev, next] = data.value || []
           </div> -->
         </div>
         <div class="flex justify-center items-center h-56 sm:(min-h-sm mx-4) md:(mx-4) my-4 overflow-hidden lg:(w-4/6)">
-          <NuxtImg crossorigin="anonymous" v-if="post.media" class="object-cover w-full h-full sm:rounded-md"
-            sizes="sm:100vw md:50vw lg:25vw" :src="post.media" :alt="post.alt" :title="post.alt" format="webp"
-            fit="cover" loading="eager" provider="cloudinary" />
-             <NuxtImg crossorigin="anonymous" v-if="post.img" :alt="post.alt" loading="lazy"
+          <NuxtImg crossorigin="anonymous" v-if="post.media && !post.img"
+            class="object-cover w-full h-full sm:rounded-md" sizes="sm:100vw md:50vw lg:25vw" :src="post.media"
+            :alt="post.alt" :title="post.alt" format="webp" fit="cover" loading="eager" provider="cloudinary" />
+          <NuxtImg crossorigin="anonymous" v-if="post.img || (post.img && post.media)" :alt="post.alt" loading="lazy"
             class="border-outline max-h-xl" :src="post.img" />
         </div>
       </header>
