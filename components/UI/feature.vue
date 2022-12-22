@@ -50,11 +50,11 @@ const { data: features } = await useAsyncData('feature',
                     height="1253" width="1880" />
                 <div class="sm:(space-y-7) md:space-y-2 space-y-4 lg:p-6">
                     <div class="flex flex-row space-x-2">
-                        <p v-if="wide.tag" class="dark:(bg-black text-white) px-4 border-outline py-1.5 text-xs">
+                        <p v-if="wide.tag" class="dark:(bg-black text-white) bg-white px-4 border-outline py-1.5 text-xs">
                             {{ wide.tag }}
                         </p>
                         <Date v-if="wide.date" :date="wide.date"
-                            class="dark:(bg-black text-white) mr-auto px-4 py-1.5 border-outline text-xs" />
+                            class="dark:(bg-black text-white) bg-white mr-auto px-4 py-1.5 border-outline text-xs" />
                     </div>
                     <h2
                         class="font-semibold text-xl sm:text-3xl sm:group-hover:(underline decoration-1 underline-offset-4)">
