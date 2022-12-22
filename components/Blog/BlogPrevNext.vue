@@ -6,7 +6,7 @@
     </nuxt-link>
     <p class="invisible" v-else />
     <nuxt-link v-if="next" :to="next._path"
-      class="border-outline dark:text-[#FF0000] dark:hover:(bg-[#FF0000] text-black) hover:(bg-[#FF0000] text-white) text-dark-600">
+      class="border-outline dark:text-[#FF0000] dark:hover:(bg-[#FF0000] text-black) hover:(bg-[#0066CC] text-white) text-dark-600">
       <p v-t="'article.Next'" />
     </nuxt-link>
   </nav>

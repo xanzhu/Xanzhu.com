@@ -38,7 +38,7 @@ const links = [
       <NuxtLink :to="localePath('/')" aria-label="Xanzhu">
         <IconXanzhu class="flex w-40 sm:w-46 md:w-56" />
       </NuxtLink>
-      <p class="hidden md:block border-outline px-1.5 py-0.2 font-thin text-xs">BETA</p>
+      <p class="hidden md:block border-outline px-1.5 py-0.2 text-xs">BETA</p>
     </div>
 
     <!-- Mobile Navigation Toggle -->
@@ -62,7 +62,7 @@ const links = [
       </div>
       <div class="flex flex-row space-x-2 items-center align-middle justify-center">
         <!-- Translate Menu Toggle -->
-        <button @click="LangToggle" class="text-[#FF0000] hover:text-current px-1">
+        <button @click="LangToggle" class="text-[#0066CC] dark:text-[#FF0000] hover:text-current px-1">
           <IconTranslate class="w-6 h-6 pt-0.5" :aria-label="t('aria.button.translate')" />
         </button>
         <ul

@@ -1,5 +1,5 @@
 <template>
-  <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 hover:text-[#FF0000]"
+  <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 hover:text-[#0066CC] dark:hover:text-[#FF0000]"
     xmlns="http://www.w3.org/2000/svg" aria-labelledby="ico-github">
     <title id="ico-github">Github</title>
     <path
