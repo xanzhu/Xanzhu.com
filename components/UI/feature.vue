@@ -32,7 +32,7 @@ const { data: features } = await useAsyncData('feature',
                     {{ t('links.resources') }}
                 </NuxtLink>
                 <NuxtLink :to="localePath('/blog')"
-                    class="text-black px-8 py-2 text-sm dark:(text-black bg-white) hover:(bg-white) dark:hover:(border-white bg-transparent text-white)">
+                    class="text-black px-8 py-2 text-sm dark:(text-black bg-white) bg-white hover:border-black dark:hover:(border-white bg-transparent text-white)">
                     {{ t('links.blog') }}
                 </NuxtLink>
             </div>
@@ -50,7 +50,8 @@ const { data: features } = await useAsyncData('feature',
                     height="1253" width="1880" />
                 <div class="sm:(space-y-7) md:space-y-2 space-y-4 lg:p-6">
                     <div class="flex flex-row space-x-2">
-                        <p v-if="wide.tag" class="dark:(bg-black text-white) bg-white px-4 border-outline py-1.5 text-xs">
+                        <p v-if="wide.tag"
+                            class="dark:(bg-black text-white) bg-white px-4 border-outline py-1.5 text-xs">
                             {{ wide.tag }}
                         </p>
                         <Date v-if="wide.date" :date="wide.date"
@@ -76,11 +77,12 @@ const { data: features } = await useAsyncData('feature',
                     <NuxtImg crossorigin="anonymous" :alt="feature.alt" loading="lazy" v-else height="369" width="577"
                         class="border-outline zoomef" src="https://source.unsplash.com/kUmcSBJcFPg/577x369" />
                     <div class="flex flex-row space-x-2">
-                        <p v-if="feature.tag" class="dark:(bg-black text-white) px-4 border-outline py-1.5 text-xs">
+                        <p v-if="feature.tag"
+                            class="dark:(bg-black text-white) bg-white px-4 border-outline py-1.5 text-xs">
                             {{ feature.tag }}
                         </p>
                         <Date v-if="feature.date" :date="feature.date"
-                            class="dark:(bg-black text-white) border-outline mr-auto px-4 py-1.5 text-xs" />
+                            class="dark:(bg-black text-white) bg-white border-outline mr-auto px-4 py-1.5 text-xs" />
                     </div>
                     <h2
                         class="rounded-md font-medium text-xl dark:(text-white) sm:group-hover:(underline decoration-1 underline-offset-4)">
