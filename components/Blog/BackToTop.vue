@@ -1,4 +1,4 @@
-<!-- <script lang="ts">
+<script lang="ts">
 const isVisible = ref(false);
 
 const scrollToTop = () => {
@@ -38,4 +38,4 @@ export default {
         :class="isVisible ? 'block' : 'hidden'">
         <IconArrow class="h-7 w-7" />
     </button>
-</template> -->
+</template>
