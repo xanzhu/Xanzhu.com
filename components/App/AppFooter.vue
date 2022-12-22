@@ -25,10 +25,10 @@ const localePath = useLocalePath()
     </div>
     <div class="text-xs mx-4">
       <div class="space-x-3 p-1 sm:p-0">
-        <NuxtLink :to="localePath('/privacy-policy')" class="nav-link">
+        <NuxtLink :to="localePath('/privacy-policy')" class="nav-internal">
           {{ t("links.privacy_policy") }}
         </NuxtLink>
-        <NuxtLink to="https://status.xanzhu.com" target="_blank" class="nav-link">
+        <NuxtLink to="https://status.xanzhu.com" target="_blank" class="nav-internal">
           {{ t("links.status") }}
           <IconExternal class="h-3 flex-col inline-flex -mt-0.5" />
         </NuxtLink>
