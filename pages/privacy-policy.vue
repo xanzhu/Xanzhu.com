@@ -40,6 +40,7 @@ useHead({
       <p v-for="(paragraph, index) in paragraphs" :key="index">
         {{ paragraph }}
       </p>
+      <p>Cache Check</p>
     </div>
   </div>
 </template>
