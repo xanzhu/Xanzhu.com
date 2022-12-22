@@ -8,13 +8,14 @@
     "start": "nuxi start",
     "production": "nuxi generate"
   },
+  "dependencies": {
+    "nuxt": "^3.0.0"
+  },
   "devDependencies": {
     "@nuxt/content": "^2.2.2",
     "@nuxt/image-edge": "latest",
     "@nuxtjs/color-mode": "^3.2.0",
     "@nuxtjs/i18n": "^8.0.0-beta.7",
-    "nuxt": "^3.0.0",
-    "nuxt-windicss": "^2.6.0",
-    "nuxt-security": "^0.9.0"
+    "nuxt-windicss": "^2.6.0"
   }
 }

@@ -55,21 +55,21 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "nuxt-security",
   ],
-  security: {
-    hidePoweredBy: true,
-    headers: {
-      contentSecurityPolicy: {
-        value: {
-          "img-src": [
-            "https://images.unsplash.com/",
-            "https://source.unsplash.com",
-            "https://res.cloudinary.com",
-          ]
-        },
-        route: "/**",
-      },
-    },
-  },
+  // security: {
+  //   hidePoweredBy: true,
+  //   headers: {
+  //     contentSecurityPolicy: {
+  //       value: {
+  //         "img-src": [
+  //           "https://images.unsplash.com/",
+  //           "https://source.unsplash.com",
+  //           "https://res.cloudinary.com",
+  //         ]
+  //       },
+  //       route: "/**",
+  //     },
+  //   },
+  // },
   i18n: {
     locales: [
       {
