@@ -53,7 +53,6 @@ export default defineNuxtConfig({
     "nuxt-windicss",
     "@nuxt/image-edge",
     "@nuxtjs/color-mode",
-    "nuxt-security",
   ],
   // security: {
   //   hidePoweredBy: true,
