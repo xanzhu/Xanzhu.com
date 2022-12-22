@@ -44,11 +44,11 @@ useHead({
       <div v-if="articles" v-for="(article, $index) in articles" :key="`fe-${$index}`">
         <NuxtLink class="flex flex-col space-y-3 group children:object-cover" :to="(article._path)">
           <NuxtImg crossorigin="anonymous" v-if="article.img" :alt="article.alt" loading="lazy" height="369" width="577"
-            class="border-outline max-h-xl" :src="article.img" />
+            class="border-outline max-h-xl zoomef" :src="article.img" />
           <NuxtImg crossorigin="anonymous" v-else-if="article.media" :src="article.media" :alt="article.alt"
             loading="lazy" sizes="sm:100vw md:50vw lg:25vw" provider="cloudinary" height="369" width="577"
-            class="border-outline max-h-xl" />
-          <NuxtImg crossorigin="anonymous" v-else :alt="article.alt" class="border-outline" height="369" width="577"
+            class="border-outline max-h-xl zoomef" />
+          <NuxtImg crossorigin="anonymous" v-else :alt="article.alt" class="zoomef border-outline max-h-xl" height="369" width="577"
             loading="lazy" src="https://source.unsplash.com/kUmcSBJcFPg/577x369" />
           <div class="flex flex-row space-x-2">
             <p v-if="article.tag" class="dark:(bg-black text-white) bg-white px-4 py-1.5 border-outline text-xs">
@@ -66,3 +66,13 @@ useHead({
     </section>
   </div>
 </template>
+
+<style scoped>
+.zoomef {
+  transition: transform 0.5s;
+}
+
+.zoomef:hover {
+  transform: scale(1.04);
+}
+</style>
