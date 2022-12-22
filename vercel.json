@@ -8,6 +8,10 @@
           "value": "camera=(), microphone=(), magnetometer=(), gyroscope=(), payment=(), usb=(), accelerometer=()"
         },
         {
+          "key": "Cache-Control",
+          "value": "s-maxage=1, stale-while-revalidate=59"
+        },
+        {
           "key": "X-Content-Type-Options",
           "value": "nosniff"
         },
