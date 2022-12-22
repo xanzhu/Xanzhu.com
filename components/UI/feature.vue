@@ -92,12 +92,12 @@ const { data: features } = await useAsyncData('feature',
     </div>
 </template>
 
-<style scoped>
+<style>
 .zoomef {
     transition: transform 0.5s;
 }
 
 .zoomef:hover {
-    transform: scale(1.04);
+    transform: scale(1.02);
 }
 </style>

@@ -42,9 +42,9 @@ useHead({
     <section
       class="grid grid-cols-1 gap-10 md:(grid-cols-2 mx-6) lg:(grid-cols-3) p-4 sm:(py-15 px-10) dark:(bg-dark-900) border-outline bg-gray-100">
       <div v-if="articles" v-for="(article, $index) in articles" :key="`fe-${$index}`">
-        <NuxtLink class="flex flex-col space-y-3 group children:object-cover" :to="(article._path)">
+        <NuxtLink class="flex flex-col space-y-3 group" :to="(article._path)">
           <NuxtImg crossorigin="anonymous" v-if="article.img" :alt="article.alt" loading="lazy" height="369" width="577"
-            class="border-outline max-h-xl zoomef" :src="article.img" />
+            class="border-outline max-h-xl zoomef object-fit h-auto" :src="article.img" />
           <NuxtImg crossorigin="anonymous" v-else-if="article.media" :src="article.media" :alt="article.alt"
             loading="lazy" sizes="sm:100vw md:50vw lg:25vw" provider="cloudinary" height="369" width="577"
             class="border-outline max-h-xl zoomef" />
@@ -66,13 +66,3 @@ useHead({
     </section>
   </div>
 </template>
-
-<style scoped>
-.zoomef {
-  transition: transform 0.5s;
-}
-
-.zoomef:hover {
-  transform: scale(1.04);
-}
-</style>
