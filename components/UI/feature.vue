@@ -42,7 +42,7 @@ const { data: features } = await useAsyncData('feature',
             <NuxtLink :to="(wide._path)"
                 class="text-black dark:(text-white) group flex flex-col lg:flex-row lg:items-center mx-auto space-y-3">
                 <NuxtImg crossorigin="anonymous" v-if="wide.img" :src="wide.img" :alt="wide.alt" loading="lazy"
-                    class="border-outline md:max-w-lg xl:max-w-2xl" height="1253" width="1880" />
+                    class="border-outline md:(max-w-lg mx-auto) xl:max-w-2xl" height="1253" width="1880" />
                 <NuxtImg crossorigin="anonymous" v-else-if="wide.media" :src="wide.media" :alt="wide.alt" loading="lazy"
                     provider="cloudinary" class="border-outline md:max-w-2xl" height="1253" width="1880" />
                 <NuxtImg crossorigin="anonymous" v-else :alt="wide.alt" loading="lazy"
