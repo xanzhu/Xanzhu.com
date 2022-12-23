@@ -42,14 +42,14 @@ useHead({
     <section
       class="grid grid-cols-1 gap-10 md:(grid-cols-2 mx-6) lg:(grid-cols-3) p-4 sm:(py-15 px-10) dark:(bg-dark-900) border-outline bg-gray-100">
       <div v-if="articles" v-for="(article, $index) in articles" :key="`fe-${$index}`">
-        <NuxtLink class="flex flex-col space-y-3 group" :to="(article._path)">
+        <NuxtLink class="flex flex-col space-y-3 group grid-col-auto" :to="(article._path)">
           <NuxtImg crossorigin="anonymous" v-if="article.img" :alt="article.alt" loading="lazy" height="369" width="577"
-            class="border-outline max-h-xl zoomef object-fit h-auto" :src="article.img" />
+            class="border-outline zoomef object-fit w-full" :src="article.img" />
           <NuxtImg crossorigin="anonymous" v-else-if="article.media" :src="article.media" :alt="article.alt"
             loading="lazy" sizes="sm:100vw md:50vw lg:25vw" provider="cloudinary" height="369" width="577"
-            class="border-outline max-h-xl zoomef" />
-          <NuxtImg crossorigin="anonymous" v-else :alt="article.alt" class="zoomef border-outline max-h-xl" height="369" width="577"
-            loading="lazy" src="https://source.unsplash.com/kUmcSBJcFPg/577x369" />
+            class="border-outline zoomef object-fit w-full" />
+          <NuxtImg crossorigin="anonymous" v-else :alt="article.alt" class="zoomef border-outline object-fit w-full"
+            height="369" width="577" loading="lazy" src="https://source.unsplash.com/kUmcSBJcFPg/577x369" />
           <div class="flex flex-row space-x-2">
             <p v-if="article.tag" class="dark:(bg-black text-white) bg-white px-4 py-1.5 border-outline text-xs">
               {{ article.tag }}
