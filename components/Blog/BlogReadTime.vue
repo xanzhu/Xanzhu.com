@@ -1,6 +1,8 @@
 <template>
-  <div class="inline-flex space-x-1">
-    <p>{{ readingTime }}</p>
+  <div class="inline-flex space-x-1 items-center">
+    <IconClock class="h-3.5 w-3.5"/><p>
+      {{ readingTime }}
+    </p>
     <span v-t="'article.readtime'" />
   </div>
 </template>
