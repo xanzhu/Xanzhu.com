@@ -57,7 +57,6 @@ const [prev, next] = data.value || []
       class="prose prose-sm md:prose-md lg:prose-lg px-4 mx-auto my-4 dark:text-light-200 text-black leading-normal no-underline" />
     <LazyBlogPrevNext :prev="prev" :next="next" />
   </div>
-  <!-- Bug: Redirect to 404 page on error -->
   <NotFound class="mt-20" v-else />
 </template>
 <style>
