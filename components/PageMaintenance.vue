@@ -8,7 +8,6 @@ const { t } = useI18n({
 <template>
   <div class="p-4 dark:text-light-200 text-black sm:(justify-center items-center flex p-0 space-x-8)"
     role="main">
-    <!-- TO:DO Update this image -->
     <NuxtImg crossorigin="anonymous" src="v1632626904/night_dlu0rp.jpg" width="250" height="400"
       sizes="md:50vw lg:100vw" class="hidden sm:flex" alt="Highway at night" format="webp" loading="eager"
       title="Highway" provider="cloudinary" fit="fill" :modifiers="{ roundCorner: '5' }" />
@@ -21,8 +20,6 @@ const { t } = useI18n({
     </div>
   </div>
 </template>
-
-<!-- TO:DO Rename all these values -->
 <i18n lang="json">
 {
   "en": {

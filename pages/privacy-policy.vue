@@ -21,7 +21,6 @@ useHead({
     { property: 'twitter:title', content: title },
     { property: 'twitter:description', content: desc },
     { property: 'og:url', content: `https://xanzhu.com${path}` },
-    // Add og:image
   ]
 })
 </script>

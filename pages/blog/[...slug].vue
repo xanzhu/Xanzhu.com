@@ -35,7 +35,6 @@ useHead({
     { property: 'twitter:description', content: desc },
     { property: 'og:url', content: `https://xanzhu.com${path}` },
     { property: 'og:type', content: 'article' },
-    // Double check this
     { property: 'og:image', content: post.value?.ogLink || post.value?.media }
   ]
 })

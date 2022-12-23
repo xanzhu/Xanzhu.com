@@ -37,7 +37,6 @@ const { data: features } = await useAsyncData('feature',
                 </NuxtLink>
             </div>
         </div>
-        <!-- Single Feature -->
         <div v-if="wideFeature" v-for="wide in wideFeature" :key="wide.title" class="sm:(mx-5 p-0) lg:mx-20 p-4">
             <NuxtLink :to="(wide._path)"
                 class="text-black dark:(text-white) group flex flex-col lg:flex-row lg:items-center mx-auto space-y-3">
@@ -65,7 +64,6 @@ const { data: features } = await useAsyncData('feature',
                 </div>
             </NuxtLink>
         </div>
-        <!-- Two Feature posts -->
         <section class="grid grid-cols-1 gap-10 md:(grid-cols-2) p-4 sm:p-5 lg:p-20">
             <div v-if="features" v-for="(feature, $index) in features" :key="`fe-${$index}`">
                 <NuxtLink v-if="feature.feature" class="flex flex-col space-y-3 group" :to="(feature._path)">
