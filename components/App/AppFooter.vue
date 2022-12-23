@@ -32,7 +32,7 @@ const localePath = useLocalePath()
           {{ t("links.status") }}
           <IconExternal class="h-3 flex-col inline-flex -mt-0.5" />
         </NuxtLink>
-        <p class="justify-end hidden font-thin sm:flex">{{ $t('footer.dev') }} v0.3.7</p>
+        <p class="justify-end hidden font-thin sm:flex">{{ $t('footer.build') }} v0.3.7</p>
       </div>
     </div>
   </footer>
