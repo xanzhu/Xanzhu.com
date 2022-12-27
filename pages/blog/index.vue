@@ -39,25 +39,21 @@ useHead({
     <section
       class="grid grid-cols-1 gap-10 md:(grid-cols-2 mx-6) lg:(grid-cols-3) p-4 sm:(py-15 px-10) dark:(bg-dark-900) border-outline bg-gray-100">
       <div v-if="articles" v-for="(article, $index) in articles" :key="`fe-${$index}`">
-        <NuxtLink class="flex flex-col space-y-3 group" :to="(article._path)">
+        <NuxtLink class="flex flex-col group zoomef border-outline" :to="(article._path)">
           <NuxtImg crossorigin="anonymous" v-if="article.img" :alt="article.alt" loading="lazy" height="369" width="577"
-            class="border-outline zoomef object-fit w-full" :src="article.img" />
+            class="object-fit w-full rounded-t-md" :src="article.img" />
           <NuxtImg crossorigin="anonymous" v-else-if="article.media" :src="article.media" :alt="article.alt"
             loading="lazy" sizes="sm:100vw md:50vw lg:25vw" provider="cloudinary" height="369" width="577"
-            class="border-outline zoomef object-fit w-full" />
-          <NuxtImg crossorigin="anonymous" v-else :alt="article.alt" class="zoomef border-outline object-fit w-full"
+            class="object-fit w-full rounded-t-md" />
+          <NuxtImg crossorigin="anonymous" v-else :alt="article.alt" class="object-fit w-full rounded-t-md"
             height="369" width="577" loading="lazy" src="https://source.unsplash.com/kUmcSBJcFPg/577x369" />
-          <div class="flex flex-row space-x-2">
-            <p v-if="article.tag" class="dark:(bg-black text-white) bg-white px-4 py-1.5 border-outline text-xs">
-              {{ article.tag }}
-            </p>
-            <Date v-if="article.date" :date="article.date"
-              class="dark:(bg-black text-white) bg-white mr-auto px-4 border-outline py-1.5 text-xs" />
+          <Date v-if="article.date" :date="article.date"
+            class="dark:(bg-black text-white) bg-white px-4 py-2 border-outline rounded-tr-none rounded-bl-none rounded-tl-br-md text-xs absolute" />
+          <div class="dark:(bg-black text-white) bg-white rounded-b-md h-auto">
+            <h2 class="font-medium text-xl p-4 mx-3">
+              {{ article.title }}
+            </h2>
           </div>
-          <h2
-            class="rounded-md font-medium text-xl dark:(text-white) sm:group-hover:(underline decoration-1 underline-offset-4)">
-            {{ article.title }}
-          </h2>
         </NuxtLink>
       </div>
     </section>
