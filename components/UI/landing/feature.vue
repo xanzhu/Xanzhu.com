@@ -75,15 +75,17 @@ const { data: features } = await useAsyncData('feature',
                     <NuxtImg crossorigin="anonymous" :alt="feature.alt" loading="lazy" v-else height="369" width="577"
                         class="border-outline" src="https://source.unsplash.com/kUmcSBJcFPg/577x369" />
                     <Date v-if="feature.date" :date="feature.date"
-                        class="dark:(bg-black text-white) bg-white border-1 px-4 py-2 border-outline rounded-tr-none rounded-bl-none rounded-tl-br-md text-xs absolute" />
-                    <p v-if="feature.tag"
-                        class="dark:(bg-black text-white) mr-auto mt-3 bg-white px-4 border-outline py-1.5 text-xs group-hover:(text-border-600)">
-                        {{ feature.tag }}
-                    </p>
-                    <h2
-                        class="rounded-md font-medium mt-2 text-xl dark:(text-white) sm:group-hover:(underline decoration-1 underline-offset-4)">
-                        {{ feature.title }}
-                    </h2>
+                        class="dark:(bg-black text-white) bg-white px-4 py-2 border-outline rounded-tr-none rounded-bl-none rounded-tl-br-md text-xs absolute" />
+                    <div class="mt-3 space-y-2">
+                        <p v-if="feature.tag"
+                            class="dark:(bg-black text-white) bg-white px-4 border-outline py-1.5 text-xs group-hover:(text-border-600) inline-flex">
+                            {{ feature.tag }}
+                        </p>
+                        <h2
+                            class="rounded-md font-medium text-xl dark:(text-white) sm:group-hover:(underline decoration-1 underline-offset-4)">
+                            {{ feature.title }}
+                        </h2>
+                    </div>
                 </NuxtLink>
             </div>
         </section>
