@@ -1,8 +1,24 @@
 import { defineConfig } from "windicss/helpers";
-import typography from "windicss/plugin/typography";
 
 export default defineConfig({
-  theme: {},
+  theme: {
+    extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            color: "#333",
+            a: {
+              underline: "none",
+              color: "#3182ce",
+              "&:hover": {
+                color: "#2c5282",
+              },
+            },
+          },
+        },
+      },
+    },
+  },
   shortcuts: {
     "btn-focus":
       "focus:(outline-none border-red-600 border-1 rounded-md) border-1 border-transparent",
@@ -17,7 +33,7 @@ export default defineConfig({
   },
   darkMode: "class",
   plugins: [
-    typography({
+    require("windicss/plugin/typography")({
       dark: true,
     }),
   ],

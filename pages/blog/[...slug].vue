@@ -54,28 +54,8 @@ const [prev, next] = data.value || []
       <UIBlogPostHeader v-bind:post="post" />
     </article>
     <ContentRenderer :value="post"
-      class="prose prose-sm md:prose-md lg:prose-lg px-4 mx-auto my-4 dark:text-light-200 text-black leading-normal no-underline" />
+      class="prose dark:prose-red prose-blue prose-sm md:prose-md lg:prose-lg px-4 mx-auto my-4 dark:text-light-200 text-black leading-normal no-underline" />
     <LazyUIBlogPrevNext :prev="prev" :next="next" />
   </div>
   <NotFound class="mt-20" v-else />
 </template>
-<style scoped>
-.nuxt-content h1 {
-  font-weight: bold;
-  font-size: 46px;
-}
-
-.nuxt-content h2 {
-  font-weight: 600;
-  font-size: 28px;
-}
-
-.nuxt-content h3 {
-  font-weight: 500;
-  font-size: 22px;
-}
-
-.nuxt-content p {
-  margin-bottom: 20px;
-}
-</style>
