@@ -55,11 +55,11 @@ const [prev, next] = data.value || []
     </article>
     <ContentRenderer :value="post"
       class="prose prose-sm md:prose-md lg:prose-lg px-4 mx-auto my-4 dark:text-light-200 text-black leading-normal no-underline" />
-    <LazyBlogPrevNext :prev="prev" :next="next" />
+    <LazyUIBlogPrevNext :prev="prev" :next="next" />
   </div>
   <NotFound class="mt-20" v-else />
 </template>
-<style>
+<style scoped>
 .nuxt-content h1 {
   font-weight: bold;
   font-size: 46px;

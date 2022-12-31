@@ -16,8 +16,8 @@ function LangToggle() {
 
 const links = [
   {
-    url: '#',
-    name: 'links.docs'
+    url: '/resources',
+    name: 'links.resources'
   },
   {
     url: '/blog',
