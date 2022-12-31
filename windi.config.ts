@@ -8,8 +8,8 @@ export default defineConfig({
           css: {
             color: "#333",
             a: {
-              underline: "none",
               color: "#3182ce",
+              textDecoration: "none",
               "&:hover": {
                 color: "#2c5282",
               },
