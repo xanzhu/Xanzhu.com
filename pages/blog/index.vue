@@ -20,7 +20,7 @@
           <NuxtImg crossorigin="anonymous" v-else :alt="article.alt" class="object-fit w-full rounded-t-md" height="369"
             width="577" loading="lazy" src="https://source.unsplash.com/kUmcSBJcFPg/577x369" />
           <UtilsDate v-if="article.date" :date="article.date"
-            class="dark:(bg-black text-white) bg-white px-4 py-2 border-outline rounded-tr-none rounded-bl-none rounded-tl-br-md text-xs absolute" />
+            class="dark:(bg-black text-white) bg-white px-4 py-2 border-r-1 border-b-1 rounded-tr-none rounded-bl-none rounded-tl-md rounded-b border-t-none border-l-none text-xs absolute border-gray-300 dark:border-dark-300" />
           <div class="dark:(bg-black text-white) bg-white rounded-b-md h-auto">
             <h2 class="font-medium text-xl p-4 mx-3">
               {{ article.title }}
