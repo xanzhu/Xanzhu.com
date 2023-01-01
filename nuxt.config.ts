@@ -54,21 +54,6 @@ export default defineNuxtConfig({
     "@nuxt/image-edge",
     "@nuxtjs/color-mode",
   ],
-  // security: {
-  //   hidePoweredBy: true,
-  //   headers: {
-  //     contentSecurityPolicy: {
-  //       value: {
-  //         "img-src": [
-  //           "https://images.unsplash.com/",
-  //           "https://source.unsplash.com",
-  //           "https://res.cloudinary.com",
-  //         ]
-  //       },
-  //       route: "/**",
-  //     },
-  //   },
-  // },
   i18n: {
     locales: [
       {

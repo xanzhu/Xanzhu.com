@@ -1,3 +1,14 @@
+<template>
+  <div v-if="post" class="container mb-4 mx-auto md:(px-6 mb-0 justify-center) lg:px-12" role="main">
+    <article class="dark:(bg-black text-light-200) bg-white text-black pb-2 sm:rounded-md md:mb-12">
+      <BlogPostHeader v-bind:post="post" />
+    </article>
+    <ContentRenderer :value="post"
+      class="prose dark:prose-red prose-blue prose-sm md:prose-md lg:prose-lg px-4 mx-auto my-4 dark:text-light-200 text-black leading-normal no-underline" />
+    <LazyBlogPrevNext :prev="prev" :next="next" />
+  </div>
+  <LazyAppError class="mt-20" v-else />
+</template>
 <script setup lang="ts">
 const { path } = useRoute()
 const { locale } = useI18n()
@@ -46,16 +57,4 @@ const { data } = await useAsyncData('prev-next',
     .findSurround(path),
 )
 const [prev, next] = data.value || []
-
 </script>
-<template>
-  <div v-if="post" class="container mb-4 mx-auto md:(px-6 mb-0 justify-center) lg:px-12" role="main">
-    <article class="dark:(bg-black text-light-200) bg-white text-black pb-2 sm:rounded-md md:mb-12">
-      <UIBlogPostHeader v-bind:post="post" />
-    </article>
-    <ContentRenderer :value="post"
-      class="prose dark:prose-red prose-blue prose-sm md:prose-md lg:prose-lg px-4 mx-auto my-4 dark:text-light-200 text-black leading-normal no-underline" />
-    <LazyUIBlogPrevNext :prev="prev" :next="next" />
-  </div>
-  <NotFound class="mt-20" v-else />
-</template>

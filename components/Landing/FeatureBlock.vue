@@ -53,7 +53,7 @@ const { data: features } = await useAsyncData('feature',
                             class="dark:(bg-black text-white) bg-white px-4 border-outline py-1.5 text-xs">
                             {{ wide.tag }}
                         </p>
-                        <Date v-if="wide.date" :date="wide.date"
+                        <UtilsDate v-if="wide.date" :date="wide.date"
                             class="dark:(bg-black text-white) bg-white mr-auto px-4 py-1.5 border-outline text-xs" />
                     </div>
                     <h2
@@ -74,7 +74,7 @@ const { data: features } = await useAsyncData('feature',
                         class="border-outline" />
                     <NuxtImg crossorigin="anonymous" :alt="feature.alt" loading="lazy" v-else height="369" width="577"
                         class="border-outline" src="https://source.unsplash.com/kUmcSBJcFPg/577x369" />
-                    <Date v-if="feature.date" :date="feature.date"
+                    <UtilsDate v-if="feature.date" :date="feature.date"
                         class="dark:(bg-black text-white) bg-white px-4 py-2 border-outline rounded-tr-none rounded-bl-none rounded-tl-br-md text-xs absolute" />
                     <div class="mt-3 space-y-2">
                         <p v-if="feature.tag"

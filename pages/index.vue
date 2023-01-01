@@ -1,3 +1,9 @@
+<template>
+  <div class="scroll-smooth space-y-10 mb-10">
+    <LandingMainBlock class="md:h-[42rem]" />
+    <LandingFeatureBlock class="sm:mx-10" />
+  </div>
+</template>
 <script setup lang="ts">
 const path = useRoute()
 const { t } = useI18n()
@@ -17,11 +23,4 @@ useHead({
     { property: 'og:image', content: 'https://source.unsplash.com/fPNl6MFdbw4' }
   ]
 })
-
 </script>
-<template>
-  <div class="scroll-smooth space-y-10 mb-10">
-    <UILandingSplash class="md:h-[42rem]" />
-    <UILandingFeature class="sm:mx-10" />
-  </div>
-</template>

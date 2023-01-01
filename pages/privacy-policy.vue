@@ -32,7 +32,7 @@ useHead({
         <p class="font-thin dark:text-light-500">{{ t('privacy.desc') }}</p>
       </div>
       <p>{{ t('privacy.date') }}:
-        <Date class="font-thin" :date="date" />
+        <UtilsDate class="font-thin" :date="date" />
       </p>
     </div>
     <div class="dark:(bg-dark-900) border-outline bg-light-300 space-y-4 font-thin text-md p-4 sm:(p-10 mx-3)">

@@ -1,7 +1,3 @@
-<script setup lang="ts">
-const { t } = useI18n()
-const localePath = useLocalePath()
-</script>
 <template>
   <footer
     class="flex flex-col-reverse p-1 sm:(flex-row px-2) justify-between text-black sm:bg-light-400 dark:(text-white sm:bg-dark-900) items-center">
@@ -32,8 +28,12 @@ const localePath = useLocalePath()
           {{ t("links.status") }}
           <IconExternal class="h-3 flex-col inline-flex -mt-0.5" />
         </NuxtLink>
-        <p class="justify-end hidden font-thin sm:flex">{{ $t('footer.build') }} v0.3.7</p>
+        <p class="justify-end hidden font-thin sm:flex">{{ t('footer.build') }} v0.3.7</p>
       </div>
     </div>
   </footer>
 </template>
+<script setup lang="ts">
+const { t } = useI18n()
+const localePath = useLocalePath()
+</script>

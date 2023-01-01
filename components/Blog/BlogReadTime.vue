@@ -1,12 +1,12 @@
 <template>
   <div class="inline-flex space-x-1 items-center">
-    <IconClock class="h-3.5 w-3.5"/><p>
+    <IconClock class="h-3.5 w-3.5" />
+    <p>
       {{ readingTime }}
     </p>
     <span v-t="'article.readtime'" />
   </div>
 </template>
-
 <script lang="ts">
 export default {
   props: {

@@ -21,7 +21,7 @@
                     format="webp" />
                 <NuxtImg v-if="post.img || (post.img && post.media)" crossorigin="anonymous" :src="post.img"
                     :alt="post.alt" :title="post.alt" loading="auto" class="w-full object-cover md:rounded-r" />
-                <Date v-if="post.date" :date="post.date"
+                <UtilsDate v-if="post.date" :date="post.date"
                     class="dark:(bg-dark-900 text-white) bg-white px-4 py-2 rounded-bl-md md:(rounded-tl-none rounded-br-none rounded-tr-[4px] border-l-1 border-b-1 rounded-bl-md border-gray-300 dark:border-dark-300) text-xs absolute top-0 right-0" />
                 <div v-if="post.source"
                     class="dark:(text-light-200 opacity-65) text-dark-700 absolute right-0 px-1 py-0.5 text-xs italic opacity-80">

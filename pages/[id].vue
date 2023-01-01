@@ -1,3 +1,6 @@
+<template>
+  <AppError />
+</template>
 <script setup>
 const { t } = useI18n()
 
@@ -8,7 +11,3 @@ useHead({
   ]
 })
 </script>
-
-<template>
-  <NotFound />
-</template>
