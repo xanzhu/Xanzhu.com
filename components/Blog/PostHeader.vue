@@ -2,9 +2,9 @@
     <header
         class="md:(grid-cols-2 border-outline bg-light-600 dark:bg-dark-900 space-y-0 gap-4 m-4 place-items-center) grid grid-cols-1 space-y-5">
         <div class="col-span-1 shrink-0 space-y-2 px-4 mt-5 sm:px-0 md:(ml-4 mt-0)">
-            <div
+            <div v-if="post.tag"
                 class="text-sm inline-flex space-x-3 children:(border-outline px-2 py-0.5 dark:bg-black bg-white dark:text-white text-black)">
-                <span v-if="post.tag">
+                <span>
                     {{ post.tag }}
                 </span>
                 <BlogReadTime :content="post.body" />
@@ -14,7 +14,7 @@
                 {{ post.title }}
             </h1>
         </div>
-        <div class="relative col-span-1 grow-0">
+        <div v-if="post.img || post.media" class="relative col-span-1 grow-0">
             <div>
                 <NuxtImg v-if="post.media && !post.img" crossorigin="anonymous" class="w-full object-cover md:rounded-r"
                     :src="post.media" :alt="post.alt" :title="post.alt" provider="cloudinary" loading="auto"

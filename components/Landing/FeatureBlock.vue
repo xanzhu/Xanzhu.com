@@ -26,7 +26,7 @@ const { data: features } = await useAsyncData('feature',
                     {{ t('home.feature-desc') }}
                 </p>
             </div>
-            <div class="flex flex-col space-y-5 sm:(flex-row space-x-5 space-y-0) children:border-outline">
+            <div class="flex flex-col space-y-5 sm:(flex-row space-x-5 space-y-0) children:(border-outline text-center)">
                 <NuxtLink :to="localePath('/resources')"
                     class="bg-black px-8 py-2 text-sm text-white hover:(bg-dark-500)">
                     {{ t('links.resources') }}
@@ -39,9 +39,9 @@ const { data: features } = await useAsyncData('feature',
         </div>
         <div v-if="wideFeature" v-for="wide in wideFeature" :key="wide.title" class="sm:(mx-5 p-0) lg:mx-20 p-4">
             <NuxtLink :to="(wide._path)"
-                class="text-black dark:(text-white) group zoomef flex flex-col lg:flex-row lg:items-center mx-auto space-y-3">
+                class="text-black dark:(text-white) group zoomef flex flex-col lg:flex-row lg:items-center mx-auto space-y-3 md:p-9 lg:p-0">
                 <NuxtImg crossorigin="anonymous" v-if="wide.img" :src="wide.img" :alt="wide.alt" loading="lazy"
-                    class="border-outline md:(max-w-lg mx-auto) xl:max-w-2xl" height="1253" width="1880" />
+                    class="border-outline lg:max-w-lg xl:max-w-2xl" height="1253" width="1880" />
                 <NuxtImg crossorigin="anonymous" v-else-if="wide.media" :src="wide.media" :alt="wide.alt" loading="lazy"
                     provider="cloudinary" class="border-outline md:max-w-2xl" height="1253" width="1880" />
                 <NuxtImg crossorigin="anonymous" v-else :alt="wide.alt" loading="lazy"
