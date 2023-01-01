@@ -1,7 +1,7 @@
 # Global Content-Security Settings
 /*
   Permissions-Policy: camera=(), microphone=(), magnetometer=(), gyroscope=(), payment=(), usb=(), accelerometer=()
-  Cache-Control: s-maxage=86400, stale-while-revalidate=59
+  Cache-Control: s-maxage=0, stale-while-revalidate=59
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
