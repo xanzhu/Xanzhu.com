@@ -45,7 +45,7 @@
           </li>
           <!-- Add Translation warning -->
         </ul>
-        <UtilsColorSwitch />
+        <GlobalUtilsColorSwitch />
       </div>
     </nav>
   </header>
