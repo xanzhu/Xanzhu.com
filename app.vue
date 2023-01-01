@@ -29,9 +29,9 @@ useHead({
                 <Meta :id="meta.id" :property="meta.property" :content="meta.content" />
             </template>
         </Head>
-        <AppHeader />
+        <GlobalAppFooter />
         <NuxtPage class="flex-1" />
-        <AppFooter />
+        <GlobalAppFooter />
 
         </Html>
     </div>

@@ -1,13 +1,14 @@
 # Global Content-Security Settings
-/*
-  Permissions-Policy: camera=(), microphone=(), magnetometer=(), gyroscope=(), payment=(), usb=(), accelerometer=()
-  Cache-Control: s-maxage=0, stale-while-revalidate=59
-  X-Content-Type-Options: nosniff
-  X-Frame-Options: DENY
-  X-XSS-Protection: 1; mode=block
-  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
-  Referrer-Policy: strict-origin-when-cross-origin
-  Cross-Origin-Embedder-Policy: (require-corp)
-  Cross-Origin-Opener-Policy: (same-origin)
-  Cross-Origin-Resource-Policy: (same-orgin)
-  Content-Security-Policy: base-uri 'self'; font-src 'self' https: data:; form-action 'self'; frame-ancestors 'self'; img-src 'self' data: https://images.unsplash.com https://source.unsplash.com https://res.cloudinary.com; object-src 'none'; script-src-attr 'none'; style-src 'self' https:; upgrade-insecure-requests
+
+/\*
+Permissions-Policy: camera=(), microphone=(), magnetometer=(), gyroscope=(), payment=(), usb=(), accelerometer=()
+Cache-Control: s-maxage=86400, stale-while-revalidate=59
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 1; mode=block
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+Referrer-Policy: strict-origin-when-cross-origin
+Cross-Origin-Embedder-Policy: (require-corp)
+Cross-Origin-Opener-Policy: (same-origin)
+Cross-Origin-Resource-Policy: (same-orgin)
+Content-Security-Policy: base-uri 'self'; font-src 'self' https: data:; form-action 'self'; frame-ancestors 'self'; img-src 'self' data: https://images.unsplash.com https://source.unsplash.com https://res.cloudinary.com; object-src 'none'; script-src-attr 'none'; style-src 'self' https:; upgrade-insecure-requests
