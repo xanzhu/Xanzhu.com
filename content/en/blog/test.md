@@ -75,7 +75,7 @@ attulit puer.
 ```
 
 Local Image Rendering
-<InlineMedia src="~/images/mountain_2.jpeg" alt="example - 1 alt" title="Test"></InlineMedia>
+<InlineMedia src="/images/mountain_2.jpeg" alt="example - 1 alt" title="Test"></InlineMedia>
 
 External Image Rendering
 <InlineMedia src="https://source.unsplash.com/YhfMDUHIKDU" alt="example - 1 alt" title="Test"></InlineMedia>
