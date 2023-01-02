@@ -1,11 +1,12 @@
 <template>
   <div v-if="post" class="container mb-4 mx-auto md:(px-6 mb-0 justify-center) lg:px-12" role="main">
-    <article class="dark:(bg-black text-light-200) bg-white text-black pb-2 sm:rounded-md md:mb-12">
+    <article class="dark:(bg-black text-light-200) bg-white text-black pb-2 sm:rounded-md md:mb-12" itemscope
+      itemtype="https://schema.org/BlogPosting">
       <BlogPostHeader v-bind:post="post" />
+      <ContentRenderer :value="post" itemprop="articleBody"
+        class="prose dark:prose-red prose-blue prose-sm md:prose-md lg:prose-lg px-4 mx-auto my-4 dark:text-light-200 text-black leading-normal" />
+      <LazyBlogPrevNext :prev="prev" :next="next" />
     </article>
-    <ContentRenderer :value="post"
-      class="prose dark:prose-red prose-blue prose-sm md:prose-md lg:prose-lg px-4 mx-auto my-4 dark:text-light-200 text-black leading-normal" />
-    <LazyBlogPrevNext :prev="prev" :next="next" />
   </div>
   <LazyGlobalAppError class="mt-20" v-else />
 </template>

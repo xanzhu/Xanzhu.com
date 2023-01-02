@@ -20,7 +20,7 @@
     <nav
       class="items-center font-semibold bg-light-700 border-outline dark:(bg-dark-500 md:bg-transparent) md:(relative top-0 flex flex-row space-x-6 p-4 bg-transparent border-none)"
       :class="MobileMenu ? 'flex p-4 rounded-md absolute top-9.5 right-4.5 z-1 flex-col-reverse' : 'hidden'"
-      role="navigation">
+      role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
       <div
         class="md:(space-x-6 flex-row bg-transparent mt-0) mt-2 font-semibold text-center text-sm flex-col flex w-full"
         @click="MobileMenu = false">

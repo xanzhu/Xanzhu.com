@@ -13,7 +13,8 @@ useHead({
         class: 'dark:(bg-black text-white) bg-white text-black'
     },
     meta: [
-        { property: 'og:type', content: 'website' }
+        { property: 'og:type', content: 'website' },
+        { property: 'og:site_name', content: 'Xanzhu' }
     ]
 })
 </script>

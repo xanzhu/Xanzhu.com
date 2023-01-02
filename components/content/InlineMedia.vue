@@ -1,6 +1,6 @@
 <template>
-  <NuxtImg crossorigin="anonymous" :src="source" :fit="fit" :alt="alt" format="webp" height="424" width="800"
-    class="mx-auto my-4" loading="lazy" :title="title" />
+  <NuxtImg crossorigin="anonymous" itemprop="image" :src="source" :fit="fit" :alt="alt" height="424"
+    width="800" class="mx-auto my-4" loading="lazy" :title="title" />
 </template>
 
 <script lang="ts">
