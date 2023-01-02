@@ -1,5 +1,7 @@
 ---
 title: "Testing Inline Components For Content"
+img: "/images/blog/sky.jpeg"
+date: "2023-01-02"
 ---
 
 ### Test Inline Component with `</slot>`

@@ -13,7 +13,7 @@
       <div v-if="articles" v-for="(article, $index) in articles" :key="`fe-${$index}`">
         <NuxtLink class="flex flex-col group zoomef border-outline" :to="(article._path)">
           <NuxtImg crossorigin="anonymous" v-if="article.img" :alt="article.alt" loading="lazy" height="369" width="577"
-            class="object-fit w-full rounded-t-md" :src="article.img" />
+            class="rounded-t-md" :src="article.img" />
           <NuxtImg crossorigin="anonymous" v-else-if="article.media" :src="article.media" :alt="article.alt"
             loading="lazy" sizes="sm:100vw md:50vw lg:25vw" provider="cloudinary" height="369" width="577"
             class="object-fit w-full rounded-t-md" />
