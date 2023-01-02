@@ -25,13 +25,13 @@
         class="md:(space-x-6 flex-row bg-transparent mt-0) mt-2 font-semibold text-center text-sm flex-col flex w-full"
         @click="MobileMenu = false">
         <NuxtLink v-for="(link, index) in links" :key="index" :to="localePath(link.url)"
-          active-class="dark:border-[#FF0000] border-[#0066CC]" :aria-label="t(link.name)"
+          active-class="dark:border-primary-dark border-primary-light" :aria-label="t(link.name)"
           class="nav-internal dark:hover:bg-dark-300 hover:bg-light-400 md:(dark:hover:bg-transparent hover:bg-transparent)"
           v-t="link.name" />
       </div>
       <div class="flex flex-row space-x-2 items-center align-middle justify-center">
         <!-- Translate Menu Toggle -->
-        <button @click="LangToggle" class="text-[#0066CC] dark:text-[#FF0000] hover:text-current px-1">
+        <button @click="LangToggle" class="text-primary-light dark:text-primary-dark hover:text-current px-1">
           <IconTranslate class="w-6 h-6 pt-0.5" :aria-label="t('aria.button.translate')" />
         </button>
         <ul

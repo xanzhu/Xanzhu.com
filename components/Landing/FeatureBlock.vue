@@ -26,7 +26,8 @@ const { data: features } = await useAsyncData('feature',
                     {{ t('home.feature-desc') }}
                 </p>
             </div>
-            <div class="flex flex-col space-y-5 sm:(flex-row space-x-5 space-y-0) children:(border-outline text-center)">
+            <div
+                class="flex flex-col space-y-5 sm:(flex-row space-x-5 space-y-0) children:(border-outline text-center)">
                 <NuxtLink :to="localePath('/resources')"
                     class="bg-black px-8 py-2 text-sm text-white hover:(bg-dark-500)">
                     {{ t('links.resources') }}
