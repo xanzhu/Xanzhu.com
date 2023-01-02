@@ -16,10 +16,10 @@ const { data: features } = await useAsyncData('feature',
 
 </script>
 <template>
-    <div class="flex flex-col text-black bg-gray-100 dark:(text-white bg-dark-900) border-outline space-y-5 mx-auto">
-        <div class="flex flex-col lg:(space-x-0 space-y-3 justify-between flex-row p-12 items-center) space-y-10 p-6">
+    <div class="flex flex-col dark:(text-white bg-black) space-y-5 mx-auto">
+        <div class="flex flex-col lg:(space-x-0 space-y-3 justify-between flex-row items-center pb-12) space-y-10 p-6">
             <div class="flex flex-col space-y-2">
-                <h2 class="text-3xl font-medium">
+                <h2 class="text-4xl font-medium">
                     {{ t('home.feature-post') }}
                 </h2>
                 <p class="dark:(text-gray-300) text-black text-md break-words lg:mr-[49%] font-thin tracking-wide">
@@ -40,7 +40,7 @@ const { data: features } = await useAsyncData('feature',
         </div>
         <div v-if="wideFeature" v-for="wide in wideFeature" :key="wide.title" class="sm:(mx-5 p-0) lg:mx-20 p-4">
             <NuxtLink :to="(wide._path)"
-                class="text-black dark:(text-white) group zoomef flex flex-col lg:flex-row lg:items-center mx-auto space-y-3 md:p-9 lg:p-0">
+                class="text-black dark:(text-white) group zoomef flex flex-col lg:flex-row lg:items-center mx-auto space-y-3 md:p-9 lg:(p-0 space-x-4)">
                 <NuxtImg crossorigin="anonymous" v-if="wide.img" :src="wide.img" :alt="wide.alt" loading="lazy"
                     class="border-outline lg:max-w-lg xl:max-w-2xl" height="1253" width="1880" />
                 <NuxtImg crossorigin="anonymous" v-else-if="wide.media" :src="wide.media" :alt="wide.alt" loading="lazy"
@@ -48,7 +48,7 @@ const { data: features } = await useAsyncData('feature',
                 <NuxtImg crossorigin="anonymous" v-else :alt="wide.alt" loading="lazy"
                     src="https://source.unsplash.com/bHOKatJHjII/577x369" class="border-outline md:max-w-2xl"
                     height="1253" width="1880" />
-                <div class="sm:(space-y-7) md:space-y-2 space-y-4 lg:p-6">
+                <div class="sm:(space-y-7) md:space-y-2 space-y-4">
                     <div class="flex flex-row space-x-2">
                         <p v-if="wide.tag"
                             class="dark:(bg-black text-white) bg-white px-4 border-outline py-1.5 text-xs">
