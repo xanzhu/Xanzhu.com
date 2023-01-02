@@ -18,8 +18,8 @@
     </div>
     <!-- Navigation UI  -->
     <nav
-      class="items-center font-semibold bg-light-700 border-outline dark:(bg-dark-500 md:bg-transparent) md:(relative top-0 flex flex-row space-x-6 p-4 bg-transparent border-none)"
-      :class="MobileMenu ? 'flex p-4 rounded-md absolute top-9.5 right-4.5 z-1 flex-col-reverse' : 'hidden'"
+      class="items-center font-semibold bg-light-700 border-outline dark:(bg-dark-800 md:bg-transparent) md:(relative top-0 flex flex-row space-x-6 p-4 bg-transparent border-none)"
+      :class="MobileMenu ? 'flex p-4 rounded-md absolute top-9.5 right-4.5 z-1 flex-col-reverse children:(pt-2)' : 'hidden'"
       role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
       <div
         class="md:(space-x-6 flex-row bg-transparent mt-0) mt-2 font-semibold text-center text-sm flex-col flex w-full"
@@ -35,7 +35,7 @@
           <IconTranslate class="w-6 h-6 pt-0.5" :aria-label="t('aria.button.translate')" />
         </button>
         <ul
-          class="z-4 -right-1 p-1 absolute top-13 rounded-md shadow-md space-y-1 dark:(bg-dark-500 text-light-200) border-outline bg-light-700 text-black"
+          class="z-4 -right-1 p-1 absolute top-13 rounded-md shadow-md space-y-1 dark:(bg-dark-800 text-light-200) border-outline bg-light-800 text-black"
           :class="LangMenu ? '' : 'hidden'">
           <li v-for="(locale, index) in $i18n.locales" :key="index"
             class="text-center hover:bg-light-400 rounded-md p-1 dark:hover:bg-dark-300">
