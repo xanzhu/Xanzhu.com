@@ -4,7 +4,7 @@ const { t } = useI18n()
 <template>
     <section class="relative h-screen">
         <div class="absolute w-full h-full bg-center bg-cover"
-            style="background-image: url('/images/landing/globe.jpeg');">
+            style="background-image: url('/images/landing/globe.webp');">
         </div>
         <div class="absolute justify-start p-4 sm:p-12 left-0 top-4">
             <h1 class="text-3xl sm:text-5xl font-semibold text-white">{{ t('blog.landing.desc') }}</h1>
