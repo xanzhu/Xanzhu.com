@@ -1,5 +1,5 @@
 <template>
-  <AppError />
+  <GlobalAppError />
 </template>
 <script setup>
 const { t } = useI18n()
