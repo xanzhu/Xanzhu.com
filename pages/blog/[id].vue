@@ -4,7 +4,7 @@
       <BlogPostHeader v-bind:post="post" />
     </article>
     <ContentRenderer :value="post"
-      class="prose dark:prose-red prose-blue prose-sm md:prose-md lg:prose-lg px-4 mx-auto my-4 dark:text-light-200 text-black leading-normal no-underline" />
+      class="prose dark:prose-red prose-blue prose-sm md:prose-md lg:prose-lg px-4 mx-auto my-4 dark:text-light-200 text-black leading-normal" />
     <LazyBlogPrevNext :prev="prev" :next="next" />
   </div>
   <LazyAppError class="mt-20" v-else />
