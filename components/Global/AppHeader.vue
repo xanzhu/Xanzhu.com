@@ -31,7 +31,7 @@
       </div>
       <div class="flex flex-row space-x-2 items-center align-middle justify-center">
         <!-- Translate Menu Toggle -->
-        <button @click="LangToggle" class="text-primary-light dark:text-primary-dark hover:text-current px-1">
+        <button @click="LangToggle" class="accent-color hover:text-current px-1">
           <IconTranslate class="w-6 h-6 pt-0.5" :aria-label="t('aria.button.translate')" />
         </button>
         <ul
