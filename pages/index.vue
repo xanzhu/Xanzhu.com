@@ -1,6 +1,6 @@
 <template>
   <div class="scroll-smooth space-y-10 mb-10">
-    <LandingMainBlock class="md:h-[42rem]" />
+    <LandingMainBlock />
     <LandingFeatureBlock class="sm:mx-10" />
   </div>
 </template>
@@ -20,7 +20,7 @@ useHead({
     { property: 'twitter:title', content: title },
     { property: 'twitter:description', content: desc },
     { property: 'og:url', content: `https://xanzhu.com${path}` },
-    { property: 'og:image', content: 'https://source.unsplash.com/fPNl6MFdbw4' }
+    { property: 'og:image', content: 'https://source.unsplash.com/Q1p7bh3SHj8' }
   ]
 })
 </script>

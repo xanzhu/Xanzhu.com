@@ -15,7 +15,7 @@ const { t } = useI18n()
 }}
             </p>
         </div>
-        <span class="absolute font-thin text-xs bottom-0 right-0 m-2">{{ t('article.creditsource') }}: <NuxtLink
+        <span class="absolute font-thin text-xs bottom-0 right-0 m-2 p-1">{{ t('article.creditsource') }}: <NuxtLink
                 class="font-normal" to="https://www.nasa.gov/" target="_blank">NASA</NuxtLink>, <NuxtLink
                 class="font-normal"
                 to="https://unsplash.com/photos/Q1p7bh3SHj8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
