@@ -55,6 +55,18 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
   ],
   i18n: {
+    vueI18n: {
+      fallbackLocale: ["en", "mi", "ko", "zh"],
+    },
+    baseUrl: process.env.BASE_URL,
+    defaultLocale: "en",
+    strategy: "prefix_except_default",
+    langDir: "i18n",
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: "i18n_redirected",
+      redirectOn: "root",
+    },
     locales: [
       {
         code: "en",
@@ -81,21 +93,6 @@ export default defineNuxtConfig({
         file: "zh.json",
       },
     ],
-    baseUrl: process.env.BASE_URL,
-    defaultLocale: "en",
-    strategy: "prefix",
-    langDir: "i18n",
-    // lazy: true,
-    detectBrowserLanguage: {
-      // Detect language based on root
-      useCookie: true,
-      cookieKey: "i18n_redirected", // Custom cookie name
-      redirectOn: "root",
-    },
-    vueI18n: {
-      legacy: false,
-      locale: "en",
-    },
   },
   image: {
     cloudinary: {
