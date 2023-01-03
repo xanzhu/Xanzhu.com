@@ -13,14 +13,15 @@ const flattenLinks = (links: Array<any>) => {
         .flat(1)
     return _links
 }
+
+const { t } = useI18n()
 </script>
 
 <template>
     <nav class="p-4 dark:(bg-dark-900 text-white) bg-light-300 text-black border-outline bg">
         <header class="pb-2 mb-2 border-b border-slate-200">
-            <!-- Add Translation -->
             <h2 class="text-xl font-bold">
-                Table of contents
+                {{ t('blog.toc') }}
             </h2>
         </header>
         <ul class="flex flex-col gap-2 px-2 text-sm">
