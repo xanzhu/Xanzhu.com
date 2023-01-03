@@ -57,11 +57,11 @@ export default defineNuxtConfig({
   i18n: {
     vueI18n: {
       fallbackLocale: ["en", "mi", "ko", "zh"],
-      legacy: false
+      legacy: false,
     },
     baseUrl: process.env.BASE_URL,
     defaultLocale: "en",
-    strategy: "prefix_and_default",
+    strategy: "prefix",
     langDir: "i18n",
     detectBrowserLanguage: {
       useCookie: true,
