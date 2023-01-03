@@ -58,7 +58,7 @@ const { data: features } = await useAsyncData('feature',
                             class="dark:(bg-black text-white) bg-white mr-auto px-4 py-1.5 border-outline text-xs" />
                     </div>
                     <h2
-                        class="font-semibold text-xl sm:text-3xl sm:group-hover:(underline decoration-1 underline-offset-4)">
+                        class="font-semibold text-xl sm:text-3xl sm:group-hover:(underline decoration-1 underline-offset-6)">
                         {{ wide.title }}</h2>
                     <p v-if="wide.description" class="font-thin dark:text-gray-300 text-dark-400">{{ wide.description }}
                     </p>
@@ -83,7 +83,7 @@ const { data: features } = await useAsyncData('feature',
                             {{ feature.tag }}
                         </p>
                         <h2
-                            class="rounded-md font-medium text-xl dark:(text-white) sm:group-hover:(underline decoration-1 underline-offset-4)">
+                            class="rounded-md font-medium text-xl dark:(text-white) sm:group-hover:(underline decoration-1 underline-offset-6)">
                             {{ feature.title }}
                         </h2>
                     </div>
