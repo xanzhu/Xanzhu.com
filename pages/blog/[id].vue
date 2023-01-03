@@ -77,7 +77,9 @@ const [prev, next] = data.value || []
 .prose pre {
   background-color: #eaeaea;
   color: rgb(0, 0, 0);
-  border: 1px solid #d1d1d1
+  border: 1px solid #d1d1d1;
+  overflow: hidden;
+  white-space: pre-wrap;
 }
 
 .prose a[href^="https"] {
