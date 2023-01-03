@@ -2,7 +2,7 @@
     <header class="md:(grid-cols-2 space-y-0 gap-4 m-4 place-items-center) grid grid-cols-1 space-y-5">
         <div class="col-span-1 shrink-0 space-y-2 px-4 mt-5 sm:px-0 md:(ml-4 mt-0)">
             <div v-if="post.tag"
-                class="text-sm inline-flex space-x-3 children:(border-outline px-2 py-0.5 dark:bg-black bg-light-300 dark:text-white text-black)">
+                class="text-sm inline-flex space-x-3 children:(border-outline px-2 py-0.5 dark:bg-dark-900 bg-light-300 dark:text-white text-black)">
                 <span>
                     {{ post.tag }}
                 </span>
