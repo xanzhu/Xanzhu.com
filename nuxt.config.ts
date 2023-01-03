@@ -92,6 +92,10 @@ export default defineNuxtConfig({
       cookieKey: "i18n_redirected", // Custom cookie name
       redirectOn: "root",
     },
+    vueI18n: {
+      legacy: false,
+      locale: "en",
+    },
   },
   image: {
     cloudinary: {
@@ -101,6 +105,6 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: "",
     preference: "system",
-    fallback: "dark"
+    fallback: "dark",
   },
 });
