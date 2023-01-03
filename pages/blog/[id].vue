@@ -1,10 +1,16 @@
 <template>
-  <div v-if="post" class="container mb-4 mx-auto md:(px-6 mb-0 justify-center) lg:px-12" role="main">
+  <div v-if="post" class="container mb-4 mx-auto md:(px-6 mb-0 justify-center)" role="main">
     <article class="dark:(bg-black text-light-200) bg-white text-black pb-2 sm:rounded-md md:mb-12" itemscope
       itemtype="https://schema.org/BlogPosting">
       <BlogPostHeader v-bind:post="post" />
-      <ContentRenderer :value="post" itemprop="articleBody"
-        class="prose prose-sm md:prose-md lg:prose-lg px-4 mx-auto my-4 dark:text-light-200 text-black leading-normal" />
+      <div class="flex">
+        <ContentRenderer :value="post" itemprop="articleBody"
+          class="prose prose-sm md:prose-md lg:prose-lg px-4 mx-auto my-4 dark:text-light-200 text-black leading-normal" />
+        <aside class="dark:text-black mt-15">
+          <BlogToc :links="post.body.toc.links" class="sticky top-20" />
+        </aside>
+      </div>
+      <!-- Fix Sizing with new TOC -->
       <LazyBlogPrevNext :prev="prev" :next="next" />
     </article>
   </div>
@@ -19,23 +25,6 @@ const { data: post } = await useAsyncData(path.replace(/\/$/, ''), () => {
     .where({ _path: path })
     .findOne()
 })
-
-// Testing limiting title/desc lengths
-// const sliceString = (str: string, maxLength: number): string => {
-//   if (str.length <= maxLength) {
-//     return str;
-//   }
-//   const lastSpaceIndex = str.substring(0, maxLength).lastIndexOf(' ');
-//   return lastSpaceIndex !== -1 ? str.slice(0, lastSpaceIndex) : str.slice(0, maxLength);
-// };
-
-// const titleLength = 60;
-// let title = post.value?.title.trim();
-// title = sliceString(title, titleLength);
-
-// const descLength = 120;
-// let desc = post.value?.description.trim();
-// desc = sliceString(desc, descLength)
 
 const title = post.value?.title;
 const desc = post.value?.description;
@@ -65,6 +54,14 @@ const [prev, next] = data.value || []
 <style>
 .prose h1 {
   visibility: hidden;
+}
+
+.prose h3,
+h4,
+h5,
+h6 a {
+  text-decoration: none;
+  pointer-events: none;
 }
 
 .prose h2 a {
