@@ -44,7 +44,7 @@ const { data: features } = await useAsyncData('feature',
                 <NuxtImg crossorigin="anonymous" v-if="wide.img" :src="wide.img" :alt="wide.alt" loading="lazy"
                     class="border-outline lg:max-w-lg xl:max-w-2xl" height="1253" width="1880" />
                 <NuxtImg crossorigin="anonymous" v-else-if="wide.media" :src="wide.media" :alt="wide.alt" loading="lazy"
-                    provider="cloudinary" class="border-outline md:max-w-2xl" height="1253" width="1880" />
+                    provider="cloudinary" class="border-outline md:max-w-2xl lg:max-w-lg" height="1253" width="1880" />
                 <NuxtImg crossorigin="anonymous" v-else :alt="wide.alt" loading="lazy"
                     src="https://source.unsplash.com/bHOKatJHjII/577x369" class="border-outline md:max-w-2xl"
                     height="1253" width="1880" />
