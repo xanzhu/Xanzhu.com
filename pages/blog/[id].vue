@@ -3,14 +3,14 @@
     <article class="dark:(bg-black text-light-200) bg-white text-black pb-2 sm:rounded-md md:mb-12" itemscope
       itemtype="https://schema.org/BlogPosting">
       <BlogPostHeader v-bind:post="post" />
-      <div class="flex">
+      <div class="flex flex-col-reverse md:(flex-row)">
         <ContentRenderer :value="post" itemprop="articleBody"
           class="prose prose-sm md:prose-md lg:prose-lg px-4 mx-auto my-4 dark:text-light-200 text-black leading-normal" />
-        <aside class="dark:text-black mt-15">
-          <BlogToc :links="post.body.toc.links" class="sticky top-20" />
+        <aside class="mt-5 md:mt-15">
+          <BlogToc :links="post.body.toc.links" class="md:sticky top-20" />
         </aside>
       </div>
-      <!-- Fix Sizing with new TOC -->
+      <!-- Fix Sizing/Colors with new TOC -->
       <LazyBlogPrevNext :prev="prev" :next="next" />
     </article>
   </div>
