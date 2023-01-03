@@ -57,6 +57,7 @@ export default defineNuxtConfig({
   i18n: {
     vueI18n: {
       fallbackLocale: ["en", "mi", "ko", "zh"],
+      legacy: false
     },
     baseUrl: process.env.BASE_URL,
     defaultLocale: "en",
