@@ -21,21 +21,24 @@ const { data: post } = await useAsyncData(path.replace(/\/$/, ''), () => {
 })
 
 // Testing limiting title/desc lengths
-const sliceString = (str: string, maxLength: number): string => {
-  if (str.length <= maxLength) {
-    return str;
-  }
-  const lastSpaceIndex = str.substring(0, maxLength).lastIndexOf(' ');
-  return lastSpaceIndex !== -1 ? str.slice(0, lastSpaceIndex) : str.slice(0, maxLength);
-};
+// const sliceString = (str: string, maxLength: number): string => {
+//   if (str.length <= maxLength) {
+//     return str;
+//   }
+//   const lastSpaceIndex = str.substring(0, maxLength).lastIndexOf(' ');
+//   return lastSpaceIndex !== -1 ? str.slice(0, lastSpaceIndex) : str.slice(0, maxLength);
+// };
 
-const titleLength = 60;
-let title = post.value?.title.trim();
-title = sliceString(title, titleLength);
+// const titleLength = 60;
+// let title = post.value?.title.trim();
+// title = sliceString(title, titleLength);
 
-const descLength = 120;
-let desc = post.value?.description.trim();
-desc = sliceString(desc, descLength)
+// const descLength = 120;
+// let desc = post.value?.description.trim();
+// desc = sliceString(desc, descLength)
+
+const title = post.value?.title;
+const desc = post.value?.description;
 
 useHead({
   title: title,
