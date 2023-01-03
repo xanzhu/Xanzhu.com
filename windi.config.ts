@@ -2,21 +2,7 @@ import { defineConfig } from "windicss/helpers";
 
 export default defineConfig({
   theme: {
-    extend: {
-      typography: {
-        DEFAULT: {
-          css: {
-            a: {
-              color: "#3182ce",
-              textDecoration: "none",
-              "&:hover": {
-                color: "#2c5282",
-              },
-            },
-          },
-        },
-      },
-    },
+    extend: {},
   },
   shortcuts: {
     "btn-focus":
