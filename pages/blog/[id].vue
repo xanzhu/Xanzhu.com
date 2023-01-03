@@ -76,7 +76,7 @@ const [prev, next] = data.value || []
 
 .prose pre {
   background-color: #eaeaea;
-  color: rgb(0, 0, 0);
+  color: #000;
   border: 1px solid #d1d1d1;
   overflow: hidden;
   white-space: pre-wrap;
@@ -85,13 +85,21 @@ const [prev, next] = data.value || []
 .prose a[href^="https"] {
   color: #000;
   text-underline-offset: 4px;
-  text-decoration-color: #0066CC;
+  text-decoration-color: #0066cc;
   font-weight: normal;
 }
 
 .prose a:hover {
-  color: #0066CC;
+  color: #0066cc;
   text-decoration-thickness: 2px;
+}
+
+.prose ol>li::before {
+  color: #0066cc;
+}
+
+.prose ul>li::before {
+  background-color: #0066cc;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -117,6 +125,14 @@ const [prev, next] = data.value || []
     background-color: #141414;
     color: #fff;
     border: 1px solid #333333
+  }
+
+  .dark .prose ol>li::before {
+    color: #ff0000;
+  }
+
+  .dark .prose ul>li::before {
+    background-color: #ff0000;
   }
 }
 </style>
