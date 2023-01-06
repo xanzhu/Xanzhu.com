@@ -75,7 +75,7 @@ h6 a {
 }
 
 .prose pre {
-  background-color: #eaeaea;
+  background-color: #f1f1f1;
   color: #000;
   border: 1px solid #d1d1d1;
   overflow: hidden;
