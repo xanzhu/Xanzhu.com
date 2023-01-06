@@ -56,6 +56,7 @@ const [prev, next] = data.value || []
   visibility: hidden;
 }
 
+.prose h2 a,
 .prose h3 a,
 .prose h4 a,
 .prose h5 a,
@@ -64,8 +65,7 @@ const [prev, next] = data.value || []
   pointer-events: none;
 }
 
-.prose h2 a {
-  pointer-events: none;
+.prose h2 {
   font-weight: 500;
 }
 
