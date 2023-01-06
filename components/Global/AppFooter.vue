@@ -3,7 +3,7 @@
     class="flex flex-col-reverse p-1 sm:(flex-row px-2) justify-between text-black sm:bg-light-400 dark:(text-white sm:bg-dark-900) items-center">
     <div class="flex sm:(flex-col p-2)">
       <p class="text-xs font-medium">&copy; XANZHU 2023</p>
-      <p class="font-thin text-xs hidden sm:flex">{{ t('footer.rights') }}</p>
+      <p class="font-thin text-xs hidden sm:flex">{{ t('App.rights') }}</p>
     </div>
     <div class="flex-row flex children:p-1">
       <NuxtLink to="https://www.linkedin.com/company/xanzhu" target="_blank">
@@ -22,13 +22,13 @@
     <div class="text-xs mx-4">
       <div class="space-x-3 p-1 sm:p-0">
         <NuxtLink :to="localePath('/privacy-policy')" class="nav-internal">
-          {{ t("links.privacy_policy") }}
+          {{ t("Nav.privacy_policy") }}
         </NuxtLink>
         <NuxtLink to="https://status.xanzhu.com" target="_blank" class="nav-internal">
-          {{ t("links.status") }}
+          {{ t("Nav.status") }}
           <IconExternal class="h-3 flex-col inline-flex -mt-0.5" />
         </NuxtLink>
-        <p class="justify-end hidden font-thin sm:flex">{{ t('footer.build') }} v0.3.8</p>
+        <p class="justify-end hidden font-thin sm:flex">{{ t('App.build') }} v0.3.8</p>
       </div>
     </div>
   </footer>

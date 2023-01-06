@@ -8,8 +8,9 @@
 const path = useRoute()
 const { t } = useI18n()
 
-const desc = t('meta.description');
-const title = t('meta.title')
+// Update this
+const desc = t('Landing.meta.description');
+const title = t('Landing.meta.title')
 
 useHead({
   title: title,

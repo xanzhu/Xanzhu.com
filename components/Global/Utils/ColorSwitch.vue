@@ -12,5 +12,5 @@ function colorSwitch() {
   color.preference = color.value === 'dark' ? 'light' : 'dark'
 }
 
-const ariaLabel = color.preference === 'dark' ? t('aria.button.light') : t('aria.button.dark')
+const ariaLabel = color.preference === 'dark' ? t('a11y.light-mode') : t('a11y.dark-mode')
 </script>

@@ -21,7 +21,7 @@ const { t } = useI18n()
     <nav class="m-4 sm:m-0 p-4 dark:(bg-dark-900 text-white) bg-light-300 text-black border-outline bg">
         <header class="pb-2 mb-2 border-b border-slate-200">
             <h2 class="text-xl font-bold">
-                {{ t('blog.toc') }}
+                {{ t('Blog.toc') }}
             </h2>
         </header>
         <ul class="flex flex-col gap-2 px-2 text-sm">

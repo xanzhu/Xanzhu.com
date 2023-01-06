@@ -20,21 +20,21 @@ const { data: features } = await useAsyncData('feature',
         <div class="flex flex-col lg:(space-x-0 space-y-3 justify-between flex-row items-center pb-12) space-y-10 p-6">
             <div class="flex flex-col space-y-2">
                 <h2 class="text-4xl font-medium">
-                    {{ t('home.feature-post') }}
+                    {{ t('Landing.posts') }}
                 </h2>
                 <p class="dark:(text-gray-300) text-black text-md break-words lg:mr-[49%] font-thin tracking-wide">
-                    {{ t('home.feature-desc') }}
+                    {{ t('Landing.description') }}
                 </p>
             </div>
             <div
                 class="flex flex-col space-y-5 sm:(flex-row space-x-5 space-y-0) children:(border-outline text-center)">
                 <NuxtLink :to="localePath('/resources')"
                     class="bg-black px-8 py-2 text-sm text-white hover:(bg-dark-500)">
-                    {{ t('links.resources') }}
+                    {{ t('Nav.resources') }}
                 </NuxtLink>
                 <NuxtLink :to="localePath('/blog')"
                     class="text-black px-8 py-2 text-sm dark:(text-black bg-white) bg-white hover:border-black dark:hover:(border-white bg-transparent text-white)">
-                    {{ t('links.blog') }}
+                    {{ t('Nav.blog') }}
                 </NuxtLink>
             </div>
         </div>

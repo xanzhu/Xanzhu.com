@@ -4,7 +4,7 @@
     <p>
       {{ readingTime }}
     </p>
-    <span v-t="'article.readtime'" />
+    <span v-t="'Blog.read-time'" />
   </div>
 </template>
 <script lang="ts">

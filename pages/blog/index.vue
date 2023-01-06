@@ -41,8 +41,8 @@ const { data: articles } = await useAsyncData('articles', () => {
     .find()
 })
 
-const title = t('blog.landing.title')
-const desc = t('blog.landing.desc')
+const title = t('Blog.meta.title')
+const desc = t('Blog.meta.description')
 
 useHead({
   title: title,

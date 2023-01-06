@@ -12,8 +12,8 @@
     <!-- Mobile Navigation Toggle -->
     <div class="flex text-black dark:text-light-200 md:hidden">
       <button @click="MobileToggle">
-        <IconMenu v-if="!MobileMenu" class="w-7 h-7" :aria-label="t('aria.button.Omenu')" />
-        <IconCross v-if="MobileMenu" class="w-7 h-7" :aria-label="t('aria.button.Cmenu')" />
+        <IconMenu v-if="!MobileMenu" class="w-7 h-7" :aria-label="t('a11y.open-menu')" />
+        <IconCross v-if="MobileMenu" class="w-7 h-7" :aria-label="t('a11y.close-menu')" />
       </button>
     </div>
     <!-- Navigation UI  -->
@@ -32,7 +32,7 @@
       <div class="flex flex-row space-x-2 items-center align-middle justify-center">
         <!-- Translate Menu Toggle -->
         <button @click="LangToggle" @change="onChange" class="accent-color hover:text-current px-1">
-          <IconTranslate class="w-6 h-6 pt-0.5" :aria-label="t('aria.button.translate')" />
+          <IconTranslate class="w-6 h-6 pt-0.5" :aria-label="t('a11y.translate')" />
         </button>
         <ul
           class="z-4 -right-1 p-1 absolute top-13 rounded-md shadow-md space-y-1 dark:(bg-dark-800 text-light-200) border-outline bg-light-800 text-black"
@@ -69,15 +69,15 @@ function LangToggle() {
 const links = [
   {
     url: '/resources',
-    name: 'links.resources'
+    name: 'Nav.resources'
   },
   {
     url: '/blog',
-    name: 'links.blog'
+    name: 'Nav.blog'
   },
   {
     url: '/',
-    name: 'links.home'
+    name: 'Nav.home'
   }
 ]
 

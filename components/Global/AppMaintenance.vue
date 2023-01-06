@@ -12,10 +12,10 @@ const { t } = useI18n({
       sizes="md:50vw lg:100vw" class="hidden sm:flex" alt="Highway at night" format="webp" loading="eager"
       title="Highway" provider="cloudinary" fit="fill" :modifiers="{ roundCorner: '5' }" />
     <div class="text-4xl font-medium space-y-4">
-      <h1>{{ t('maintenance.title') }}</h1>
+      <h1>{{ t('Maintenance.title') }}</h1>
       <div class="text-base font-extralight">
-        <p>{{ t('maintenance.description_1') }}</p>
-        <p>{{ t('maintenance.description_2') }}</p>
+        <p>{{ t('Maintenance.section-one') }}</p>
+        <p>{{ t('Maintenance.section-two') }}</p>
       </div>
     </div>
   </div>

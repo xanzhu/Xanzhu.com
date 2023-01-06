@@ -2,14 +2,14 @@
 const { t } = useI18n()
 const path = useRoute()
 
-const title = t('privacy.title')
-const desc = t('privacy.desc')
+const title = t('Privacy-Policy.title')
+const desc = t('Privacy-Policy.description')
 const date = '2022-12-12'
 
 const paragraphs: { [key: number]: string } = {
-  1: t('privacy.p-1'),
-  2: t('privacy.p-2'),
-  3: t('privacy.p-3')
+  1: t('Privacy-Policy.section-one'),
+  2: t('Privacy-Policy.section-two'),
+  3: t('Privacy-Policy.section-three')
 }
 
 useHead({
@@ -28,10 +28,10 @@ useHead({
   <div class="sm:mx-auto my-10 space-y-10 max-w-4xl">
     <div class="flex flex-col space-y-4 sm:(space-y-0 flex-row justify-between items-center) mx-4">
       <div class="flex flex-col">
-        <h1 class="text-2xl sm:text-3xl font-semibold">{{ t('privacy.title') }}</h1>
-        <p class="font-thin dark:text-light-500">{{ t('privacy.desc') }}</p>
+        <h1 class="text-2xl sm:text-3xl font-semibold">{{ title }}</h1>
+        <p class="font-thin dark:text-light-500">{{desc }}</p>
       </div>
-      <p>{{ t('privacy.date') }}:
+      <p>{{ t('Privacy-Policy.date') }}:
         <GlobalUtilsDate class="font-thin" :date="date" />
       </p>
     </div>

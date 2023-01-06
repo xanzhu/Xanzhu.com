@@ -5,9 +5,9 @@
 const { t } = useI18n()
 
 useHead({
-  title: t('error.404'),
+  title: t('Error.not-found'),
   meta: [
-    { property: 'description', content: t('error.desc') },
+    { property: 'description', content: t('Error.description') },
   ]
 })
 </script>
