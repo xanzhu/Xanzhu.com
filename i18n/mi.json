@@ -1,70 +1,65 @@
 {
-  "article": {
-    "creditsource": "Mātāpuna",
-    "readtime": "min te panuihia",
-    "Next": "Panuku",
-    "Previous": "Tōmua"
+  "App": {
+    "title": "Privacy, Security and everything in between",
+    "developer": "Developer",
+    "build": "Build",
+    "rights": "All Rights Reserved"
   },
-  "maintenance": {
-    "title": "Tiakitanga Paetukutuku",
-    "description_1": "Ka whakahou tonu tenei whaarangi ka pai ake te hoahoa.",
-    "description_2": "Ko te tumanako ka tukuna ta maatau paetukutuku i te mutunga o te tau."
-  },
-  "links": {
-    "privacy_policy": "Kaupapahere Tūmataiti",
-    "status": "Tūnga",
-    "home": "KĀINGA",
-    "blog": "RANGITAKI",
-    "resources": "Resources"
-  },
-  "aria": {
-    "button": {
-      "Omenu": "Whakatuwhera Tahua",
-      "Cmenu": "Katia Tahua",
-      "translate": "Whiriwhiria te Reo",
-      "light": "Aratau Maama",
-      "dark": "Aratau Pouri",
-      "NewWindow": "Ka tuwhera te hono ki te matapihi hou, ripa ranei."
+  "Landing": {
+    "posts": "Featured Posts",
+    "description": "News, guides and reviews on technology, how to use it and how to ensure your data remains is protected online.",
+    "tagline": "Xanzhu is a platform for sharing knowledge. Help set the standard for the next generation of privacy and accessibility. Teaches how to use technology and stay safe online.",
+    "meta": {
+      "title": "Latest news, guides, and technology updates",
+      "description": "Latest tech news and advice. From emerging technologies to established companies, learn how to stay ahead in tech while protecting your security and privacy."
     }
   },
-  "meta": {
-    "title": "Latest news, guides, and technology updates",
-    "description": "Latest tech news and advice. From emerging technologies to established companies, learn how to stay ahead in tech while protecting your security and privacy."
-  },
-  "error": {
-    "404": "Kare i kitea te whaarangi.",
-    "else": "Kua puta he he.",
-    "return": "Hoki atu",
-    "title": "He raru",
-    "desc": "Kua raru tetahi mea o to tono"
-  },
-  "blog": {
-    "landing": {
-      "title": "Nga Korero Hou",
-      "desc": "Tūmataitinga, Haumarutanga me nga mea katoa i waenga."
-    },
+  "Blog": {
+    "title": "Nga Korero Hou",
+    "description": "Tūmataitinga, Haumarutanga me nga mea katoa i waenga.",
+    "toc": "Ripanga ihirangi",
+    "next": "Panuku",
+    "previous": "Tōmua",
+    "read-time": "min te panuihia",
+    "source": "Mātāpuna",
     "meta": {
       "title": "Nga Panui Blog Hou",
       "description": "Kei a Xanzhu nga korero mo nga hangarau hou. Te arotahi ki te ahuru me te ahuru o nga kaiwhakamahi"
-    },
-    "toc": "Ripanga ihirangi"
+    }
   },
-  "footer": {
-    "rights": "All Rights Reserved",
-    "dev": "Developer",
-    "build": "Build"
-  },
-  "home": {
-    "feature-post": "Featured Posts",
-    "feature-desc": "News, guides and reviews on technology, how to use it and how to ensure your data remains is protected online.",
-    "landing-desc": "Xanzhu is a platform for sharing knowledge. Help set the standard for the next generation of privacy and accessibility. Teaches how to use technology and stay safe online."
-  },
-  "privacy": {
+  "Privacy-Policy": {
     "title": "Kaupapahere Tūmataiti",
-    "desc": "Arotakehia ta matou tauākī kaupapa here tūmataiti",
-    "date": "Updated",
-    "p-1": "He mea nui ki a maatau muna me te whakaute ki te hunga e toro mai ana ki ta maatau paetukutuku. Kaore he korero tautuhi e penapena, e uru atu ana ranei ki te kore a koe e whakaaetia kia mohio kei poka ke to noho muna.",
-    "p-2": "Na te mea kei roto i to maatau papaanga nga hononga ki nga paetukutuku tuatoru, kaore e taea e matou te aukati i te whai i waho o to maatau paetukutuku.",
-    "p-3": "Raraunga whakamahi e whakaratohia ana e to kaitirotiro (User-Agent), kei roto nga wahitau IP, nga kaitirotiro me nga taputapu e whakamahia ana. Ka whakamahia enei raraunga mo nga inenga me nga korero a te tūmau."
+    "description": "Arotakehia ta matou tauākī kaupapa here tūmataiti",
+    "date": "Modified",
+    "section-one": "He mea nui ki a maatau muna me te whakaute ki te hunga e toro mai ana ki ta maatau paetukutuku. Kaore he korero tautuhi e penapena, e uru atu ana ranei ki te kore a koe e whakaaetia kia mohio kei poka ke to noho muna.",
+    "section-two": "Na te mea kei roto i to maatau papaanga nga hononga ki nga paetukutuku tuatoru, kaore e taea e matou te aukati i te whai i waho o to maatau paetukutuku.",
+    "section-three": "Raraunga whakamahi e whakaratohia ana e to kaitirotiro (User-Agent), kei roto nga wahitau IP, nga kaitirotiro me nga taputapu e whakamahia ana. Ka whakamahia enei raraunga mo nga inenga me nga korero a te tūmau."
+  },
+  "a11y": {
+    "open-menu": "Whakatuwhera Tahua",
+    "close-menu": "Katia Tahua",
+    "translate": "Whiriwhiria te Reo",
+    "dark-mode": "Aratau Pouri",
+    "light-mode": "Aratau Maama",
+    "new-window": "Ka tuwhera te hono ki te matapihi hou, ripa ranei"
+  },
+  "Maintenance": {
+    "title": "Tiakitanga Paetukutuku",
+    "section-one": "Ka whakahou tonu tenei whaarangi ka pai ake te hoahoa.",
+    "section-two": "Ko te tumanako ka tukuna ta maatau paetukutuku i te mutunga o te tau."
+  },
+  "Error": {
+    "not-found": "Kare i kitea te whaarangi.",
+    "else": "Kua puta he he.",
+    "return-home": "Hoki atu",
+    "title": "He raru",
+    "description": "Kua raru tetahi mea o to tono"
+  },
+  "Nav": {
+    "home": "Kāinga",
+    "privacy_policy": "Kaupapahere Tūmataiti",
+    "status": "Tūnga",
+    "blog": "Rangitaki",
+    "resources": "Resources"
   }
 }
