@@ -6,7 +6,7 @@
       <div class="flex flex-col-reverse md:(flex-row)">
         <ContentRenderer :value="post" itemprop="articleBody"
           class="prose prose-sm md:prose-md lg:prose-lg px-4 mx-auto my-4 dark:text-light-200 text-black leading-normal" />
-        <aside class="mt-5 md:mt-15">
+        <aside class="mt-5 md:(mt-15 mr-4)">
           <BlogToc :links="post.body.toc.links" class="md:sticky top-20" />
         </aside>
       </div>
