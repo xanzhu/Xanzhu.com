@@ -56,16 +56,15 @@ const [prev, next] = data.value || []
   visibility: hidden;
 }
 
-.prose h3,
-h4,
-h5,
-h6 a {
+.prose h3 a,
+.prose h4 a,
+.prose h5 a,
+.prose h6 a {
   text-decoration: none;
   pointer-events: none;
 }
 
 .prose h2 a {
-  text-decoration: none;
   pointer-events: none;
   font-weight: 500;
 }
