@@ -5,7 +5,7 @@
         {{ title }}
       </h1>
       <p class="text-lg break-words font-thin sm:(text-xl) dark:text-gray-300">
-        {{ t('App.title') }}
+        {{ t('Blog.description') }}
       </p>
     </div>
     <section
