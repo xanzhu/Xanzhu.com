@@ -18,7 +18,7 @@ const { t } = useI18n()
 </script>
 
 <template>
-    <nav class="m-4 sm:m-0 p-4 dark:(bg-dark-900 text-white) bg-light-300 text-black border-outline bg">
+    <nav class="m-4 md:m-0 p-4 dark:(bg-dark-900 text-white) bg-light-300 text-black border-outline bg">
         <header class="pb-2 mb-2 border-b border-slate-200">
             <h2 class="text-xl font-bold">
                 {{ t('Blog.toc') }}

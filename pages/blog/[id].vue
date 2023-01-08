@@ -3,11 +3,11 @@
     <article class="dark:(bg-black text-light-200) bg-white text-black pb-2 sm:rounded-md md:mb-12" itemscope
       itemtype="https://schema.org/BlogPosting">
       <BlogPostHeader v-bind:post="post" />
-      <div class="flex flex-col-reverse md:(flex-row)">
+      <div class="flex flex-col-reverse lg:(flex-row)">
         <ContentRenderer :value="post" itemprop="articleBody"
-          class="prose prose-sm md:prose-md lg:prose-lg px-4 mx-auto my-4 dark:text-light-200 text-black leading-normal" />
+          class="prose prose-sm md:prose-md lg:(prose-lg text-[18px]) px-4 mx-auto my-4 dark:text-light-200 text-black leading-normal" />
         <aside class="mt-5 md:(mt-15 mr-4)">
-          <BlogToc :links="post.body.toc.links" class="md:sticky top-20" />
+          <BlogToc :links="post.body.toc.links" class="lg:sticky top-20" />
         </aside>
       </div>
       <!-- Fix Sizing/Colors with new TOC -->
@@ -54,6 +54,10 @@ const [prev, next] = data.value || []
 <style>
 .prose h1 {
   visibility: hidden;
+}
+
+.prose p {
+  line-height: 1.4;
 }
 
 .prose h2 a,
