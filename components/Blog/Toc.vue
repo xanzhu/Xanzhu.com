@@ -25,8 +25,10 @@ const { t } = useI18n()
             </h2>
         </header>
         <ul class="flex flex-col gap-2 px-2 text-sm">
-            <li v-for="link of flattenLinks(links)" :key="link.id" class="text-gray-700 dark:text-light-400"
-                :class="link.depth === 3 ? 'pl-3' : ''">
+            <li v-for="link of flattenLinks(links)" :key="link.id" class="text-gray-700 dark:text-light-400" :class="{
+                'ml-6 list-disc': link.depth === 3,
+                'font-bold tracking-wide uppercase hover:(accent-color underline-transparent)': link.depth === 2
+            }">
                 <NuxtLink :href="`#${link.id}`" class="hover:underline">
                     {{ link.text }}
                 </NuxtLink>
