@@ -67,9 +67,6 @@ const [prev, next] = data.value || []
 
 .prose h2 {
   font-weight: 500;
-}
-
-.prose h2 {
   color: #000;
 }
 
