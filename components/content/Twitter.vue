@@ -31,9 +31,9 @@
             <!-- Section Three: Image -->
             <NuxtImg src="/images/mountain_4.jpeg" class="rounded-md h-[280px] w-[520px]" />
             <!-- Section Four: Date -->
-            <Time class="text-gray-500 text-sm">
+            <time class="text-gray-500 text-sm">
                 2023-01-01
-            </Time>
+            </time>
         </div>
     </div>
 </template>
