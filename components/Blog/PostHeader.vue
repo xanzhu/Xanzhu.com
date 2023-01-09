@@ -25,7 +25,7 @@
                 <GlobalUtilsDate v-if="post.date" :date="post.date" itemprop="datePublished"
                     class="dark:(bg-dark-900 text-white) bg-light-500 px-4 py-2 rounded-bl-md md:(rounded-tl-none rounded-br-none rounded-bl-md border-outline font-medium) text-xs absolute top-0 right-0" />
                 <div v-if="post.source"
-                    class="dark:(text-light-200 opacity-65) text-dark-700 absolute right-0 px-1 py-0.5 text-xs italic opacity-80">
+                    class="dark:(text-light-200) text-dark-700 absolute right-0 px-1 py-0.5 text-xs">
                     <p v-t="'Blog.source'" class="inline-block" />: {{ post.source }}
                 </div>
             </div>

@@ -15,10 +15,16 @@ const { t } = useI18n()
             }}
             </p>
         </div>
-        <span class="absolute font-thin text-xs bottom-0 right-0 m-3 p-1">{{ t('Blog.source') }}: <NuxtLink
-                class="font-normal" to="https://www.nasa.gov/" target="_blank">NASA</NuxtLink>, <NuxtLink
-                class="font-normal"
-                to="https://unsplash.com/photos/Q1p7bh3SHj8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-                target="_blank">Unsplash</NuxtLink></span>
+        <ul class="absolute font-thin text-xs bottom-0 flex flex-row right-0 m-3 p-1 space-x-1" aria-label="Sources">
+            <li>{{ t('Blog.source') }}: <NuxtLink class="font-normal hover:underline" to="https://www.nasa.gov/" target="_blank"
+                    rel="noopener">
+                    NASA<span class="font-thin">,</span></NuxtLink>
+            </li>
+            <li>
+                <NuxtLink class="font-normal hover:underline"
+                    to="https://unsplash.com/photos/Q1p7bh3SHj8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                    target="_blank" rel="noopener"> Unsplash</NuxtLink>
+            </li>
+        </ul>
     </section>
 </template>
