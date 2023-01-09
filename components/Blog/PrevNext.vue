@@ -1,11 +1,13 @@
 <template>
     <nav
         class="flex justify-between pt-5 mx-5 sm:(mx-40 pt-10) children:(md:text-lg text-sm m-4 px-3 py-1 border-outline)">
-        <NuxtLink v-if="prev" :to="prev._path" class="dark:(bg-dark-900 text-white) dark:hover:(bg-dark-800 accent-color) hover:(bg-gray-100 accent-color)">
+        <NuxtLink v-if="prev" :to="prev._path"
+            class="dark:(bg-dark-900 text-white) dark:hover:(bg-dark-900 accent-color) hover:(bg-gray-100 accent-color)">
             <p v-t="'Blog.previous'" />
         </NuxtLink>
         <p class="invisible" v-else />
-        <NuxtLink v-if="next" :to="next._path" class="dark:(bg-dark-900 text-white) dark:hover:(bg-dark-700 accent-color) hover:(bg-gray-100 accent-color)">
+        <NuxtLink v-if="next" :to="next._path"
+            class="dark:(bg-dark-900 text-white) dark:hover:(bg-dark-900 accent-color) hover:(bg-gray-100 accent-color)">
             <p v-t="'Blog.next'" />
         </NuxtLink>
     </nav>
