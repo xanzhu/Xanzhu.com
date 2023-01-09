@@ -6,7 +6,7 @@
                 <span>
                     {{ post.tag }}
                 </span>
-                <BlogReadTime :content="post.body" />
+                <BlogReadTime :content="post" />
             </div>
 
             <h1 itemprop="headline"
@@ -20,7 +20,7 @@
                     class="w-full object-cover sm:border-outline" :src="post.media" :alt="post.alt" :title="post.alt"
                     provider="cloudinary" loading="auto" format="webp" />
                 <NuxtImg v-if="post.img || (post.img && post.media)" crossorigin="anonymous" itemprop="image"
-                    :src="post.img" :alt="post.alt" :title="post.alt" loading="auto"
+                    :src="post.img" :alt="post.alt" :title="post.alt" loading="eager"
                     class="w-full object-cover sm:border-outline" />
                 <GlobalUtilsDate v-if="post.date" :date="post.date" itemprop="datePublished"
                     class="dark:(bg-dark-900 text-white) bg-light-500 px-4 py-2 rounded-bl-md md:(rounded-tl-none rounded-br-none rounded-bl-md border-outline font-medium) text-xs absolute top-0 right-0" />
