@@ -8,7 +8,7 @@
   "Landing": {
     "posts": "Featured Posts",
     "description": "News, guides and reviews on technology, how to use it and how to ensure your data remains is protected online.",
-    "tagline": "Xanzhu is a platform for sharing knowledge. Help set the standard for the next generation of privacy and accessibility. Teaches how to use technology and stay safe online.",
+    "tagline": "Xanzhu is a platform for sharing knowledge on technology and online privacy. Our articles, guides, and reviews teach users how to use technology safely and protect their data online.",
     "meta": {
       "title": "Latest news, guides, and technology updates",
       "description": "Latest tech news and advice. From emerging technologies to established companies, learn how to stay ahead in tech while protecting your security and privacy"
@@ -31,7 +31,7 @@
     "title": "Privacy Policy",
     "description": "Review our privacy policy statement",
     "date": "Modified",
-    "section-one": "We value privacy and respect those who visit our website. No identifiable information is stored or accessed without your permission to ensure that we do not infringe upon your privacy.",
+    "section-one": "We value privacy and respect the privacy of those who visit our website. No identifiable information is stored or accessed without your permission to ensure that we do not infringe upon your privacy.",
     "section-two": "Because our site contains links to third-party websites, we cannot prevent tracking outside of our domain.",
     "section-three": "Usage data that your browser provides (User-Agent), includes IP addresses, browsers and devices used. This data is used for metrics and server communications."
   },
@@ -53,7 +53,7 @@
     "else": "An error has occurred.",
     "return-home": "Return",
     "title": "There's a problem",
-    "description": "Something has gone wrong with your request"
+    "description": "Something has gone wrong with your request. Please try again or contact us if the problem persists."
   },
   "Nav": {
     "home": "Home",
