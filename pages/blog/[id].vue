@@ -1,13 +1,13 @@
 <template>
   <div v-if="post" class="container mb-4 mx-auto md:(px-6 mb-0 justify-center)" role="main">
-    <article class="dark:(bg-black text-light-200) bg-white text-black pb-2 sm:rounded-md md:mb-12" itemscope
+    <article class="dark:(bg-black text-light-200) bg-white text-black pb-2 sm:rounded-md md:mb-12 space-y-10" itemscope
       itemtype="https://schema.org/BlogPosting">
       <BlogPostHeader v-bind:post="post" />
       <!-- <BlogSocialShare  v-bind:post="post"/> -->
       <div class="flex flex-col-reverse lg:(flex-row)">
         <ContentRenderer :value="post" itemprop="articleBody"
           class="prose prose-sm md:prose-md lg:(prose-lg text-[18px]) px-4 mx-auto my-4 dark:text-light-200 text-black leading-normal" />
-        <aside class="mt-5 md:(mt-15 mr-4)">
+        <aside class="mt-5 md:(mr-4)">
           <BlogToc :links="post.body.toc.links" class="lg:sticky top-20" />
         </aside>
       </div>
@@ -68,6 +68,10 @@ const [prev, next] = data.value || []
 .prose h6 a {
   text-decoration: none;
   pointer-events: none;
+}
+
+.prose ol {
+  padding-left: 8px;
 }
 
 .prose h2 {
