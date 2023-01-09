@@ -20,14 +20,10 @@ The content of the card
 
 ![Example 1](/images/mountain_2.jpeg)
 
-#### Default `img`
-
-<img src='/images/mountain_3.jpeg'/>
-
 #### Media with `/` path
 
-<Media src='/images/mountain.png'></Media>
+<Media source='/images/mountain.png' credit="Hello"/></Media>
 
 #### Media Comp without `/` path
 
-<Media src='images/mountain_4.jpeg'></Media>
+<Media source='images/mountain_4.jpeg' credit="Yes"></Media>
