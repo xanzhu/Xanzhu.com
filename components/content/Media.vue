@@ -1,7 +1,7 @@
 <template>
     <figure>
         <NuxtImg :src="source" />
-        <figcaption v-bind:credit="credit">{{ t('Blog.source') + ": " + credit }}</figcaption>
+        <figcaption v-if="credit" v-bind:credit="credit">{{ t('Blog.source') + ": " + credit }}</figcaption>
     </figure>
 
 </template>
