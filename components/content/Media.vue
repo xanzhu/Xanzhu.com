@@ -1,6 +1,6 @@
 <template>
     <figure>
-        <NuxtImg :src="source" loading="lazy" placeholder :alt="alt" :title="alt" />
+        <LazyNuxtImg :src="source" :alt="alt" :title="alt" />
         <figcaption v-if="credit" v-bind:credit="credit">{{ t('Blog.source') + ": " + credit }}</figcaption>
     </figure>
 
