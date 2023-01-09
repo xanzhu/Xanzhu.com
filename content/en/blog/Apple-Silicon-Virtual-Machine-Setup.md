@@ -3,6 +3,9 @@ title: "Apple Silicon Virtual Machine Setup 2023"
 date: "2023-01-08"
 tag: "Guide"
 img: "/images/blog/VM/Apple.png"
+description: "Learn to set up virtual machines on Apple Silicon Macs using Parallels or UTM. Our guide covers installation, configuration, and running your firt virtual machine."
+alt: "Apple Silicon Chipset M1"
+ogLink: "https://source.unsplash.com/mP7aPSUm7aE"
 ---
 
 If you're a developer or tech enthusiast, you may need to use multiple operating systems for projects or personal use. In this post, we'll cover the setup process for popular operating systems such as Windows and Ubuntu using Parallels, a paid virtualization software and a Free Open source Solution called UTM. Whether you're a beginner or an experienced user, this guide will teach you how to install and set up each environment quickly and easily on your Apple Silicon Mac.
@@ -15,7 +18,7 @@ How do you know if you're Mac is running on Apple Silicon?
 
 ## Parallels
 
-<Media source="/images/blog/VM/Parallels.png" credit="Parallels / Xanzhu"></Media>
+<Media source="/images/blog/VM/Parallels.png" credit="Parallels / Xanzhu" alt="Parallels Virtual Machine Logo"></Media>
 
 A paid virtualisation software that works natively and is essentially a one-click install of all your favourite Operating Systems. It offers great tools and makes the whole process smooth as possible.
 
@@ -23,7 +26,7 @@ A paid virtualisation software that works natively and is essentially a one-clic
 2. Once installed open "Parallels Desktop".
 3. Now select the operating system you'd like to install.
 
-<Media source="/images/blog/VM/p-install.png"></Media>
+<Media source="/images/blog/VM/p-install.png" alt="Parallels Installation Wizard"></Media>
 
 Note it's ideal to have at least 25-30 GB of free space before installing any operating system.
 
@@ -46,7 +49,7 @@ Ubuntu follows the same process of simply clicking on the Ubuntu Icon and select
 1. Select the Ubuntu Icon and click continue
 2. Download Ubuntu, this will take some time.
 
-<Media source="/images/blog/VM/u-download.png"></Media>
+<Media source="/images/blog/VM/u-download.png" alt="Parallels ubuntu setup wizard"></Media>
 
 3. After downloading the virtual machine will automatically start
 4. You'll be prompted to create a password for the login
@@ -64,7 +67,7 @@ How do you manage or configure your virtual machines?
 1. Open "Parallels Desktop" this may automatically boot into your virtual machine, simply shut it down
 2. Right-click on the Parallels Desktop Application and select "Control Center", here you can add/edit or remove them.
 
-<Media source="/images/blog/VM/config.png"></Media>
+<Media source="/images/blog/VM/config.png" alt="Parallels Virtual Machine Configuration Panel"></Media>
 
 3. To add another virtual machine press the plus icon and go through the installation process mentioned above
 4. Deleting a virtual machine right click on the virtual machine and select _Remove (Device Name)_, Device name will be the name of the virtual machine.
@@ -72,7 +75,7 @@ How do you manage or configure your virtual machines?
 
 ## UTM
 
-<Media source="/images/blog/VM/UTM.png" credit="UTM / Xanzhu"></Media>
+<Media source="/images/blog/VM/UTM.png" credit="UTM / Xanzhu" alt="UTM installation wizard"></Media>
 
 UTM is a free tool that does the same thing as parallels but you're in charge of the customisations.
 The performance will be unstable and need adjusting to your system. This might not be a good choice if you need a responsive virtual machine without the fuss of configuring every aspect of the software.
@@ -93,7 +96,7 @@ Alternatively, you can install the version listed here:
 5. Visit download the latest Windows 11 ARM file from [Microsoft](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewarm64?wa=wsignin1.0){:target="\_blank"}
 6. Press Browse and Select the downloaded VHDX file, ensure import VHDX is checked
 
-<Media source="/images/blog/VM/u-install.png"></Media>
+<Media source="/images/blog/VM/u-install.png" alt="Installation Settings for UTM windows"></Media>
 
 7. Press Continue
 8. Select the amount of RAM, a good rule is to use half of what you're system has ie: 8GB using 4GB
@@ -116,7 +119,7 @@ Now installing windows
 5. Continue through the steps, setting name, password, and security questions.
 6. Once you've booted into Windows 11 open the file explorer and select the CD drive, double click on install spice-guest-tools
 
-<Media source="/images/blog/VM/u-spice.png"></Media>
+<Media source="/images/blog/VM/u-spice.png" alt="File explorer windows 11"></Media>
 
 7. Select Reboot and you now have a working Windows 11 virtual machine.
 
@@ -154,7 +157,7 @@ Installing Ubuntu can be a lengthy process in this guide we'll need to install t
 24. Featured Server Snaps.. press DOWN_ARROW and then press ENTER to continue
 25. The installation will now install
 
-<Media source="/images/blog/VM/u-linux.png"></Media>
+<Media source="/images/blog/VM/u-linux.png" alt="Linux server installing display"></Media>
 
 26. Once this is completed press the DOWN_ARROW so "Reboot now" is highlighted and press ENTER
 27. Once the screen goes black wait a couple of minutes and then up the top select the disc icon and eject the ISO file.

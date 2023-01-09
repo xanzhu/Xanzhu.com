@@ -1,6 +1,6 @@
 <template>
     <figure>
-        <NuxtImg :src="source" />
+        <NuxtImg :src="source" loading="lazy" placeholder :alt="alt" :title="alt" />
         <figcaption v-if="credit" v-bind:credit="credit">{{ t('Blog.source') + ": " + credit }}</figcaption>
     </figure>
 
@@ -10,7 +10,8 @@ const { t } = useI18n()
 
 defineProps({
     source: { type: String },
-    credit: { type: String }
+    credit: { type: String },
+    alt: { type: String }
 })
 </script>
 <style>
