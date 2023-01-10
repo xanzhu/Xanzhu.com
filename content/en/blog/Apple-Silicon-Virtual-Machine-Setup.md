@@ -3,14 +3,14 @@ title: "Apple Silicon Virtual Machine Setup 2023"
 date: "2023-01-08"
 tag: "Guide"
 img: "/images/blog/VM/Apple.png"
-description: "Learn to set up virtual machines on Apple Silicon Macs using Parallels or UTM. Our guide covers installation, configuration, and running your firt virtual machine."
+description: "Learn to set up virtual machines on Apple Silicon Macs using Parallels or UTM. Our guide covers installation, configuration, and running your first virtual machine."
 alt: "Apple Silicon Chipset M1"
 ogLink: "https://source.unsplash.com/mP7aPSUm7aE"
 ---
 
 If you're a developer or tech enthusiast, you may need to use multiple operating systems for projects or personal use. In this post, we'll cover the setup process for popular operating systems such as Windows and Ubuntu using Parallels, a paid virtualization software and a Free Open source Solution called UTM. Whether you're a beginner or an experienced user, this guide will teach you how to install and set up each environment quickly and easily on your Apple Silicon Mac.
 
-How do you know if you're Mac is running on Apple Silicon?
+How do you know if your Mac is running on Apple Silicon?
 
 1. Click the Apple Icon
 2. Click "About this Mac"
