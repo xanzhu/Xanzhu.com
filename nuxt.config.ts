@@ -56,7 +56,7 @@ export default defineNuxtConfig({
   ],
   i18n: {
     vueI18n: {
-      fallbackLocale: ["en", "mi", "ko", "zh"],
+      fallbackLocale: ["en", "ko", "zh"],
       legacy: false,
     },
     baseUrl: process.env.BASE_URL,
@@ -74,12 +74,6 @@ export default defineNuxtConfig({
         iso: "en",
         name: "English",
         file: "en.json",
-      },
-      {
-        code: "mi",
-        iso: "mi",
-        name: "Māori",
-        file: "mi.json",
       },
       {
         code: "ko",
