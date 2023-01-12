@@ -37,9 +37,10 @@
         <ul
           class="z-4 -right-1 p-1 absolute top-13 rounded-md shadow-md space-y-1 dark:(bg-dark-800 text-light-200) border-outline bg-light-800 text-black"
           :class="LangMenu ? '' : 'hidden'">
-          <li v-for="(locale, index) in $i18n.locales" :key="index"
+          <li v-for="locale in availableLocales" :key="locale.code"
             class="text-center hover:bg-light-400 rounded-md p-1 dark:hover:bg-dark-300">
-            <NuxtLink @click="LangToggle" :to="switchLocalePath(locale.code)" class="mx-[-0.5em] px-[1em] inline-block">
+            <NuxtLink @click="LangToggle" @click.prevent.stop="setLocale(locale.code)"
+              :to="switchLocalePath(locale.code)" class="mx-[-0.5em] px-[1em] inline-block">
               {{ locale.name }}
             </NuxtLink>
           </li>
@@ -51,9 +52,13 @@
   </header>
 </template>
 <script setup>
-const { t } = useI18n()
+const { t, locale, locales, setLocale } = useI18n()
 const localePath = useLocalePath()
 const switchLocalePath = useSwitchLocalePath()
+
+const availableLocales = computed(() => {
+  return (locales.value).filter(i => i.code !== locale.value)
+})
 
 const MobileMenu = ref(false);
 const LangMenu = ref(false);
