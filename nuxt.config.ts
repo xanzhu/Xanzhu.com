@@ -65,8 +65,9 @@ export default defineNuxtConfig({
     langDir: "i18n",
     detectBrowserLanguage: {
       useCookie: true,
-      cookieKey: "xanzhu-i18n-v1",
+      cookieKey: "xanzhu-i18n-v2",
       redirectOn: "root",
+      alwaysRedirect: true,
     },
     locales: [
       {
