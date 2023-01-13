@@ -1,6 +1,6 @@
 <template>
   <div v-if="post" class="container mb-4 mx-auto md:(px-6 mb-0 justify-center)" role="main">
-    <article class="dark:(bg-black text-light-200) bg-white text-black pb-2 sm:rounded-md md:mb-12 space-y-10" itemscope
+    <article class="dark:(bg-black text-light-200) bg-white text-black pb-2 sm:rounded-md md:(space-y-10 mb-12)" itemscope
       itemtype="https://schema.org/BlogPosting">
       <BlogPostHeader v-bind:post="post" />
       <!-- <BlogSocialShare  v-bind:post="post"/> -->
@@ -57,6 +57,10 @@ const [prev, next] = data.value || []
   visibility: hidden;
 }
 
+.prose-sm h2 {
+  font-weight: 700;
+}
+
 .prose p {
   line-height: 1.4;
 }
@@ -74,7 +78,7 @@ const [prev, next] = data.value || []
   padding-left: 8px;
 }
 
-.prose h2 {
+.prose-lg h2 {
   font-weight: 500;
   color: #000;
 }

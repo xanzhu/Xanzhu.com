@@ -1,10 +1,10 @@
 <template>
   <div class="mx-auto space-y-20 dark:text-white text-black sm:mb-10" role="main">
-    <div class="mt-15 mx-2 sm:mx-8 lg:mx-10 space-y-2">
+    <div class="mt-15 mx-4 sm:mx-8 lg:mx-10 space-y-2">
       <h1 class="font-semibold text-3xl sm:text-5xl">
         {{ title }}
       </h1>
-      <p class="text-lg break-words font-thin sm:(text-2xl) dark:text-gray-300 w-[50%]">
+      <p class="text-lg break-words font-thin sm:(text-2xl) dark:text-gray-300 lg:w-[50%] md:w-[25%]">
         {{ t('Blog.description') }}
       </p>
     </div>
