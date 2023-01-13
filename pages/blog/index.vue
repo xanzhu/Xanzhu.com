@@ -4,7 +4,7 @@
       <h1 class="font-semibold text-3xl sm:text-5xl">
         {{ title }}
       </h1>
-      <p class="text-lg break-words font-thin sm:(text-2xl) dark:text-gray-300 lg:w-[50%] md:w-[25%]">
+      <p class="text-lg break-words font-thin sm:(text-2xl) dark:text-gray-300 md:w-[80%] lg:w-[70%]">
         {{ t('Blog.description') }}
       </p>
     </div>
