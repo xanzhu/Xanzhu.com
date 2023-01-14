@@ -344,8 +344,8 @@ packages:
       vue-i18n:
         optional: true
     dependencies:
-      '@intlify/message-compiler': 9.3.0-beta.14
-      '@intlify/shared': 9.3.0-beta.14
+      '@intlify/message-compiler': 9.3.0-beta.15
+      '@intlify/shared': 9.3.0-beta.15
       jsonc-eslint-parser: 1.4.1
       source-map: 0.6.1
       vue-i18n: 9.3.0-beta.14-77e850b
@@ -369,14 +369,6 @@ packages:
       '@intlify/shared': 9.3.0-beta.14-77e850b
     dev: true
 
-  /@intlify/message-compiler/9.3.0-beta.14:
-    resolution: {integrity: sha512-PlZ3pl+YYuql54Nq+26wv6ohIa8Ig6ALrvQI+f2zZKUtkupb49M4wyVN3bDQbFlgYVE7/u3n19BJSY8lEuX5Eg==}
-    engines: {node: '>= 14'}
-    dependencies:
-      '@intlify/shared': 9.3.0-beta.14
-      source-map: 0.6.1
-    dev: true
-
   /@intlify/message-compiler/9.3.0-beta.14-77e850b:
     resolution: {integrity: sha512-MF7EdnBoKo21Unf8rDy37KEhRzcbPlel+FTD7VR+EzzMgk4R/sMtICnMgDxS3Kl5FS9tLdHlNF0Qbuxc6+NNmg==}
     engines: {node: '>= 14'}
@@ -385,18 +377,26 @@ packages:
       source-map: 0.6.1
     dev: true
 
+  /@intlify/message-compiler/9.3.0-beta.15:
+    resolution: {integrity: sha512-kxx+pXsyoWhyFLEaJgnMk4AFiW3fvaCqpiql1alOHtkvQwzDKlrcKJ784GO4v/8SLt6JUHWfPpQH65GoYahdLA==}
+    engines: {node: '>= 14'}
+    dependencies:
+      '@intlify/shared': 9.3.0-beta.15
+      source-map: 0.6.1
+    dev: true
+
   /@intlify/shared/9.3.0-beta.10:
     resolution: {integrity: sha512-h93uAanbAt/XgjDHclrVB7xix6r7Uz11wx0iGNOCdHP7aA2LCJjUT3uNbekJjjbo+Fl5jzTSJZdm2SexzoqhRA==}
     engines: {node: '>= 14'}
     dev: true
 
-  /@intlify/shared/9.3.0-beta.14:
-    resolution: {integrity: sha512-mJ/rFan+4uVsBAQSCAJnpQaPvSjQ49mJMNmGelTUbTDAmgf0oexYxwqtKOlFFyY3hmQ8lUDYaGQKuYrFgRuHnA==}
+  /@intlify/shared/9.3.0-beta.14-77e850b:
+    resolution: {integrity: sha512-aHZYRM0sJN+YSUnoC5Dv4L1TFYtP23kdTkrK5cHSEqUbI5UXc8FbnXPal0lJliMhO0ED7Ic7aEOeQX84BM3xCQ==}
     engines: {node: '>= 14'}
     dev: true
 
-  /@intlify/shared/9.3.0-beta.14-77e850b:
-    resolution: {integrity: sha512-aHZYRM0sJN+YSUnoC5Dv4L1TFYtP23kdTkrK5cHSEqUbI5UXc8FbnXPal0lJliMhO0ED7Ic7aEOeQX84BM3xCQ==}
+  /@intlify/shared/9.3.0-beta.15:
+    resolution: {integrity: sha512-thDJ+TGK8GGmOrgh/Vul24pPvRtRGvCyuGXcw/uh2t3lyJsCPfhzY5ZihJFkGvKEl4/J4M0F/SAeWKoZNm7hlw==}
     engines: {node: '>= 14'}
     dev: true
 
@@ -416,7 +416,7 @@ packages:
         optional: true
     dependencies:
       '@intlify/bundle-utils': 3.4.0_pnpokcjcqv6os2ag6wb47ha5cu
-      '@intlify/shared': 9.3.0-beta.14
+      '@intlify/shared': 9.3.0-beta.15
       '@rollup/pluginutils': 4.2.1
       '@vue/compiler-sfc': 3.2.45
       debug: 4.3.4
@@ -655,7 +655,7 @@ packages:
       semver: 7.3.8
       unctx: 2.1.1
       unimport: 1.2.0
-      untyped: 1.2.1
+      untyped: 1.2.2
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -681,7 +681,7 @@ packages:
       semver: 7.3.8
       unctx: 2.1.1
       unimport: 1.2.0_rollup@2.79.1
-      untyped: 1.2.1
+      untyped: 1.2.2
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -702,7 +702,7 @@ packages:
       std-env: 3.3.1
       ufo: 1.0.1
       unimport: 1.2.0
-      untyped: 1.2.1
+      untyped: 1.2.2
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -722,7 +722,7 @@ packages:
       std-env: 3.3.1
       ufo: 1.0.1
       unimport: 1.2.0_rollup@2.79.1
-      untyped: 1.2.1
+      untyped: 1.2.2
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -3023,8 +3023,8 @@ packages:
       wrap-ansi: 8.0.1
     dev: false
 
-  /ioredis/5.2.4:
-    resolution: {integrity: sha512-qIpuAEt32lZJQ0XyrloCRdlEdUUNGG9i0UOk6zgzK6igyudNWqEBxfH6OlbnOOoBBvr1WB02mm8fR55CnikRng==}
+  /ioredis/5.2.5:
+    resolution: {integrity: sha512-7HKo/ClM2DGLRXdFq8ruS3Uuadensz4A76wPOU0adqlOqd1qkhoLPDaBhmVhUhNGpB+J65/bhLmNB8DDY99HJQ==}
     engines: {node: '>=12.22.0'}
     dependencies:
       '@ioredis/commands': 1.2.0
@@ -4049,8 +4049,8 @@ packages:
     dev: true
     optional: true
 
-  /node-addon-api/5.0.0:
-    resolution: {integrity: sha512-CvkDw2OEnme7ybCykJpVcKH+uAOLV2qLqiyla128dN9TkEWfrYmxG6C2boDe5KcNQqZF3orkqzGgOMvZ/JNekA==}
+  /node-addon-api/5.1.0:
+    resolution: {integrity: sha512-eh0GgfEkpnoWDq+VY8OyvYhFEzBk6jIYbRKdIlyTiAXIVJ8PyBaKb0rp7oDtoddbdoHWhq8wwr+XZ81F1rpNdA==}
     dev: true
     optional: true
 
@@ -4223,7 +4223,7 @@ packages:
       unhead: 1.0.15
       unimport: 1.2.0
       unplugin: 1.0.1
-      untyped: 1.2.1
+      untyped: 1.2.2
       vue: 3.2.45
       vue-bundle-renderer: 1.0.0
       vue-devtools-stub: 0.1.0
@@ -5195,7 +5195,7 @@ packages:
     dependencies:
       color: 4.2.3
       detect-libc: 2.0.1
-      node-addon-api: 5.0.0
+      node-addon-api: 5.1.0
       prebuild-install: 7.1.1
       semver: 7.3.8
       simple-get: 4.0.1
@@ -5756,7 +5756,7 @@ packages:
       chokidar: 3.5.3
       destr: 1.2.2
       h3: 1.0.2
-      ioredis: 5.2.4
+      ioredis: 5.2.5
       listhen: 1.0.1
       mkdir: 0.0.2
       mri: 1.2.0
@@ -5768,8 +5768,8 @@ packages:
       - supports-color
       - utf-8-validate
 
-  /untyped/1.2.1:
-    resolution: {integrity: sha512-hEtBC6MvqXLEEpx5ItPhnpgHIf3hRP310IYHj7N3D5zjdLJnmJNsGRDFbovk6DM2dekF/OBWuxDr0b6479eUkA==}
+  /untyped/1.2.2:
+    resolution: {integrity: sha512-EANYd5L6AdpgfldlgMcmvOOnj092nWhy0ybhc7uhEH12ipytDYz89EOegBQKj8qWL3u1wgYnmFjADhsuCJs5Aw==}
     dependencies:
       '@babel/core': 7.20.12
       '@babel/standalone': 7.20.12
@@ -6027,7 +6027,7 @@ packages:
       vue-router:
         optional: true
     dependencies:
-      '@intlify/shared': 9.3.0-beta.14
+      '@intlify/shared': 9.3.0-beta.15
       '@intlify/vue-i18n-bridge': 0.8.0_pnpokcjcqv6os2ag6wb47ha5cu
       '@intlify/vue-router-bridge': 0.8.0
       ufo: 1.0.1
