@@ -1,20 +1,3 @@
-<script setup lang="ts">
-const { locale, t } = useI18n()
-const localePath = useLocalePath()
-
-const { data: wideFeature } = await useAsyncData('wide',
-    () => queryContent(locale.value + '/blog')
-        .where({ wide: true }).limit(1)
-        .find()
-)
-
-const { data: features } = await useAsyncData('feature',
-    () => queryContent(locale.value + '/blog')
-        .where({ feature: true }).limit(4)
-        .find()
-)
-
-</script>
 <template>
     <div class="flex flex-col dark:(text-white bg-black) space-y-5 mx-auto">
         <div class="flex flex-col lg:(space-x-0 space-y-3 justify-between flex-row items-center pb-12) space-y-10 p-6">
@@ -92,7 +75,6 @@ const { data: features } = await useAsyncData('feature',
         </section>
     </div>
 </template>
-
 <style>
 .zoomef {
     transition: transform 0.5s;
@@ -102,3 +84,19 @@ const { data: features } = await useAsyncData('feature',
     transform: scale(1.02);
 }
 </style>
+<script setup lang="ts">
+const { locale, t } = useI18n()
+const localePath = useLocalePath()
+
+const { data: wideFeature } = await useAsyncData('wide',
+    () => queryContent(locale.value + '/blog')
+        .where({ wide: true }).limit(1)
+        .find()
+)
+
+const { data: features } = await useAsyncData('feature',
+    () => queryContent(locale.value + '/blog')
+        .where({ feature: true }).limit(4)
+        .find()
+)
+</script>

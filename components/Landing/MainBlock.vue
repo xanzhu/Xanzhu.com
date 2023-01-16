@@ -1,6 +1,3 @@
-<script setup lang="ts">
-const { t } = useI18n()
-</script>
 <template>
     <section class="relative h-screen">
         <div class="absolute w-full h-full bg-center bg-cover"
@@ -16,8 +13,8 @@ const { t } = useI18n()
             </p>
         </div>
         <ul class="absolute font-thin text-xs bottom-0 flex flex-row right-0 m-3 p-1 space-x-1" aria-label="Sources">
-            <li>{{ t('Blog.source') }}: <NuxtLink class="font-normal hover:underline" to="https://www.nasa.gov/" target="_blank"
-                    rel="noopener">
+            <li>{{ t('Blog.source') }}: <NuxtLink class="font-normal hover:underline" to="https://www.nasa.gov/"
+                    target="_blank" rel="noopener">
                     NASA<span class="font-thin">,</span></NuxtLink>
             </li>
             <li>
@@ -28,3 +25,6 @@ const { t } = useI18n()
         </ul>
     </section>
 </template>
+<script setup lang="ts">
+const { t } = useI18n()
+</script>

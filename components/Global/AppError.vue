@@ -1,7 +1,3 @@
-<script setup lang="ts">
-const { t } = useI18n();
-const localePath = useLocalePath()
-</script>
 <template>
     <div class="h-full bg-black flex flex-col text-white justify-center items-center space-y-25">
         <div class="flex flex-col items-center sm:(flex-row space-x-10 text-xl)">
@@ -12,3 +8,7 @@ const localePath = useLocalePath()
             class="border-outline py-2 px-8 hover:(bg-white text-black) leading-none" />
     </div>
 </template>
+<script setup lang="ts">
+const { t } = useI18n();
+const localePath = useLocalePath()
+</script>
