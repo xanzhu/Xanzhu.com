@@ -1,35 +1,49 @@
 <template>
   <footer
-    class="flex flex-col-reverse p-1 sm:(flex-row px-2) justify-between text-black sm:bg-light-400 dark:(text-white sm:bg-dark-900) items-center">
-    <div class="flex sm:(flex-col p-2)">
+    class="sm:(flex-row bg-light-400) dark:(text-white sm:bg-dark-900) flex flex-col-reverse items-center justify-between p-1 px-2 text-black"
+    role="contentinfo">
+    <div class="sm:(flex-col p-2) flex">
       <p class="text-xs font-medium">&copy; XANZHU 2023</p>
-      <p class="font-thin text-xs hidden sm:flex">{{ t('App.rights') }}</p>
+      <p class="<sm:hidden text-xs font-thin">{{ t('App.rights') }}</p>
     </div>
-    <div class="flex-row flex children:p-1">
-      <NuxtLink to="https://www.linkedin.com/company/xanzhu" target="_blank">
-        <IconLinkedIn />
-      </NuxtLink>
-      <NuxtLink to="https://github.com/xanzhu" target="_blank">
-        <IconGithub />
-      </NuxtLink>
-      <NuxtLink to="https://twitter.com/Xanzhu1" target="_blank">
-        <IconTwitter />
-      </NuxtLink>
-      <NuxtLink rel="me" to="https://mastodon.social/@xanzhu" target="_blank">
-        <IconMastodon />
-      </NuxtLink>
-    </div>
-    <div class="text-xs mx-4">
-      <div class="space-x-3 p-1 sm:p-0">
-        <NuxtLink :to="localePath('/privacy-policy')" class="nav-internal">
-          {{ t("Nav.privacy_policy") }}
+    <ul class="children:p-1 flex flex-row">
+      <li>
+        <NuxtLink tabindex="0" to="https://www.linkedin.com/company/xanzhu" rel="me" target="_blank">
+          <IconLinkedIn />
         </NuxtLink>
-        <NuxtLink to="https://status.xanzhu.com" target="_blank" class="nav-internal">
-          {{ t("Nav.status") }}
-          <IconExternal class="h-3 flex-col inline-flex -mt-0.5" />
+      </li>
+      <li>
+        <NuxtLink tabindex="0" to="https://github.com/xanzhu" rel="me" target="_blank">
+          <IconGithub />
         </NuxtLink>
-        <p class="justify-end hidden font-thin sm:flex">{{ t('App.build') }} v0.3.8</p>
-      </div>
+      </li>
+      <li>
+        <NuxtLink tabindex="0" to="https://twitter.com/Xanzhu1" rel="me" target="_blank">
+          <IconTwitter />
+        </NuxtLink>
+      </li>
+      <li>
+        <NuxtLink tabindex="0" to="https://mastodon.social/@xanzhu" rel="me" target="_blank">
+          <IconMastodon />
+        </NuxtLink>
+      </li>
+    </ul>
+    <div class="mx-4 text-xs">
+      <ul class="<sm:p-1 space-x-3 flex" role="navigation">
+        <li role="menuitem">
+          <NuxtLink tabindex="0" :to="localePath('/privacy-policy')" class="nav-internal"> {{
+            t("Nav.privacy_policy")
+          }}
+          </NuxtLink>
+        </li>
+        <li role="menuitem">
+          <NuxtLink tabindex="0" to="https://status.xanzhu.com" target="_blank" class="nav-internal">
+            {{ t("Nav.status") }}
+            <IconExternal class="-mt-0.5 inline-flex h-3 flex-col" />
+          </NuxtLink>
+        </li>
+      </ul>
+      <p class="text-right font-thin <sm:hidden">{{ t('App.build') }} v0.3.8</p>
     </div>
   </footer>
 </template>
