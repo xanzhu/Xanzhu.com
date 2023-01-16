@@ -53,6 +53,7 @@ export default defineNuxtConfig({
     "nuxt-windicss",
     "@nuxt/image-edge",
     "@nuxtjs/color-mode",
+    "nuxt-simple-sitemap",
   ],
   i18n: {
     vueI18n: {
@@ -99,5 +100,13 @@ export default defineNuxtConfig({
     classSuffix: "",
     preference: "system",
     fallback: "dark",
+  },
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+    },
+  },
+  runtimeConfig: {
+    siteUrl: "https://xanzhu.com",
   },
 });
