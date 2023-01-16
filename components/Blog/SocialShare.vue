@@ -1,22 +1,21 @@
 <template>
-    <!-- WIP
-    - Fix url path -> figure out obtaining full URL path from browser window 
-    - Sizing and placement - where to put?
-    -->
-    <div class="flex flex-col border-outline dark:bg-dark-900 bg-light-700 p-1">
-        <span>Share this post!</span>
-        <div class="inline-flex space-x-2">
-            <NuxtLink
-                :to="`https://twitter.com/intent/tweet?url=https://xanzhu.com${post._path}&text=${post.title}&via=Xanzhu1`"
-                target="_blank">
-                <IconTwitter />
-            </NuxtLink>
-            <NuxtLink
-                :to="`https://www.linkedin.com/shareArticle?url=https://xanzhu.com${post._path}&title=${post.title}`"
-                target="_blank">
-                <IconLinkedIn />
-            </NuxtLink>
-        </div>
+    <div class="lg:(sticky top-20) <sm:(ml-10 mt-5) mt-5">
+        <ul class="items-center lg:(space-y-4 flex flex-col items-center space-x-0) flex flex-row justify-left space-x-2 children:(p-2 lg:p-4 border-outline)">
+            <li>
+                <NuxtLink
+                    :to="`https://twitter.com/intent/tweet?url=https://xanzhu.com${post._path}&text=${post.title}&via=Xanzhu1`"
+                    target="_blank">
+                    <IconTwitter />
+                </NuxtLink>
+            </li>
+            <li>
+                <NuxtLink
+                    :to="`https://www.linkedin.com/shareArticle?url=https://xanzhu.com${post._path}&title=${post.title}`"
+                    target="_blank">
+                    <IconLinkedIn />
+                </NuxtLink>
+            </li>
+        </ul>
     </div>
 </template>
 <script setup lang="ts">
