@@ -2,7 +2,7 @@
 title: "Apple Silicon 虚拟机设置 2023"
 date: "2023-01-08"
 tag: "指导"
-img: "/images/blog/VM/Apple.png"
+img: "/images/blog/VM/Apple.webp"
 description: "了解如何使用 Parallels 或 UTM 在 Apple Silicon Mac 上设置虚拟机。 我们的指南涵盖安装、配置和运行您的第一个虚拟机。"
 alt: "Apple Silicon 芯片组 M1"
 ogLink: "https://source.unsplash.com/mP7aPSUm7aE"
@@ -18,7 +18,7 @@ ogLink: "https://source.unsplash.com/mP7aPSUm7aE"
 
 ## Parallels
 
-<Media source="/images/blog/VM/Parallels.png" credit="Parallels / Xanzhu" alt="Parallels Virtual Machine Logo"></Media>
+<Media source="/images/blog/VM/Parallels.webp" credit="Parallels / Xanzhu" alt="Parallels Virtual Machine Logo"></Media>
 
 本机运行的付费虚拟化软件，本质上是所有您喜欢的操作系统的一键式安装。 它提供了很好的工具，并使整个过程尽可能顺利。
 
@@ -26,7 +26,7 @@ ogLink: "https://source.unsplash.com/mP7aPSUm7aE"
 2. 安装后打开“Parallels Desktop”。
 3. 现在选择您要安装的操作系统。
 
-<Media source="/images/blog/VM/p-install.png" alt="Parallels Installation Wizard"></Media>
+<Media source="/images/blog/VM/p-install.webp" alt="Parallels Installation Wizard"></Media>
 
 请注意，在安装操作系统之前最好至少有 25-30 GB 的可用空间。
 
@@ -49,7 +49,7 @@ Ubuntu 遵循相同的过程，只需单击 Ubuntu 图标并选择安装，这�
 1. 选择Ubuntu图标，点击继续
 2. 下载Ubuntu，这需要一些时间。
 
-<Media source="/images/blog/VM/u-download.png" alt="Parallels ubuntu setup wizard"></Media>
+<Media source="/images/blog/VM/u-download.webp" alt="Parallels ubuntu setup wizard"></Media>
 
 3. 下载完成后，虚拟机会自动启动
 4. 系统会提示您创建登录密码
@@ -67,7 +67,7 @@ It's always good practice to check for updates and ensure you're running the lat
 1. 打开“Parallels Desktop”这可能会自动启动到你的虚拟机，关闭它即可
 2. 右键单击 Parallels Desktop 应用程序并选择控制中心，您可以在其中添加/编辑或删除它们。
 
-<Media source="/images/blog/VM/config.png" alt="Parallels Virtual Machine Configuration Panel"></Media>
+<Media source="/images/blog/VM/config.webp" alt="Parallels Virtual Machine Configuration Panel"></Media>
 
 3. 要添加另一个虚拟机，请按加号图标并完成上述安装过程
 4. 删除虚拟机 右键点击虚拟机，选择_Remove(Device Name)_，Device name就是虚拟机的名字。
@@ -75,7 +75,7 @@ It's always good practice to check for updates and ensure you're running the lat
 
 ## UTM
 
-<Media source="/images/blog/VM/UTM.png" credit="UTM / Xanzhu" alt="UTM installation wizard"></Media>
+<Media source="/images/blog/VM/UTM.webp" credit="UTM / Xanzhu" alt="UTM installation wizard"></Media>
 
 UTM 是一款免费工具，其功能与平行线相同，但您需要负责定制。
 性能将不一致，需要根据您的系统进行调整。 如果您需要一个响应迅速的虚拟机而不用大惊小怪地配置软件的各个方面，这可能不是一个好的选择。
@@ -94,7 +94,7 @@ Windows 可以通过多种不同的方式安装。
 5. 访问从 [Microsoft](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewarm64?wa=wsignin1.0) 下载最新的 Windows 11 ARM 文件{:target="\_blank"}
 6. 按浏览并选择下载的 VHDX 文件，确保选择导入 VHDX
 
-<Media source="/images/blog/VM/u-install.png" alt="Installation Settings for UTM windows"></Media>
+<Media source="/images/blog/VM/u-install.webp" alt="Installation Settings for UTM windows"></Media>
 
 7. 按继续
 8. 选择 RAM 的大小，一个好的规则是使用系统的一半，即：8GB 使用 4GB
@@ -117,7 +117,7 @@ Now installing windows
 5. 继续执行设置名称、密码和安全问题的步骤。
 6. 开机进入Windows 11后，打开文件资源管理器，选择光驱，双击安装spice-guest-tools
 
-<Media source="/images/blog/VM/u-spice.png" alt="File explorer windows 11"></Media>
+<Media source="/images/blog/VM/u-spice.webp" alt="File explorer windows 11"></Media>
 
 7. 选择重新启动，您现在拥有一个正常工作的 Windows 11 虚拟机。
 
@@ -155,7 +155,7 @@ Now installing windows
 24. 精选服务器快照.. 按向下箭头键并回车继续
 25. Install 现在会安装
 
-<Media source="/images/blog/VM/u-linux.png" alt="Linux server installing display"></Media>
+<Media source="/images/blog/VM/u-linux.webp" alt="Linux server installing display"></Media>
 
 26. 完成后按向下箭头突出显示 Reboot Now 并按 ENTER
 27. 屏幕变黑后，等待几分钟，然后选择顶部的光盘图标，会弹出 ISO 文件。
