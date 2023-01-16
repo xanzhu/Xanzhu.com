@@ -104,9 +104,10 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
+      routes: ["/"],
     },
   },
-  runtimeConfig: {
-    siteUrl: "https://xanzhu.com",
+  sitemap: {
+    hostname: process.env.BASE_URL,
   },
 });
