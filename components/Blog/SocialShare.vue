@@ -16,6 +16,12 @@
                     <IconLinkedIn />
                 </NuxtLink>
             </li>
+            <li>
+                <NuxtLink :to="`https://www.reddit.com/submit?url=https://xanzhu.com${post._path}&title=${post.title}`"
+                    target="_blank">
+                    <IconReddit />
+                </NuxtLink>
+            </li>
         </ul>
     </div>
 </template>
