@@ -1,5 +1,5 @@
 <template>
-  <div class="scroll-smooth space-y-10 mb-10">
+  <div class="scroll-smooth sm:space-y-10 mb-10">
     <LandingMainBlock />
     <LandingFeatureBlock class="sm:mx-10" />
   </div>
