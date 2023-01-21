@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="sm:(flex-row bg-light-400) dark:(text-white sm:bg-dark-900) flex flex-col-reverse items-center justify-between p-1 px-2 text-black"
+    class="sm:(flex-row bg-light-400) dark:(text-white sm:bg-dark-900) flex flex-col-reverse items-center justify-between p-1 px-2 text-black 2xl:px-[3%]"
     role="contentinfo">
     <div class="sm:(flex-col p-2) flex">
       <p class="text-xs font-medium">&copy; XANZHU 2023</p>

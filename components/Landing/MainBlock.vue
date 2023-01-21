@@ -3,7 +3,7 @@
         <div class="absolute w-full h-full bg-center bg-cover"
             style="background-image: url('/images/landing/globe.webp');">
         </div>
-        <div class="absolute p-4 sm:p-12 left-0 md:right-[20%] xl:right-[30%] top-4">
+        <div class="absolute p-4 sm:p-12 left-0 md:right-[20%] xl:right-[30%] 2xl:p-[5%] top-4">
             <h1 class="pt-10 text-3xl sm:(pt-0 text-5xl) font-semibold text-white">{{ t('App.title') }}</h1>
         </div>
         <div>

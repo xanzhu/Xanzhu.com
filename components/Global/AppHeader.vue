@@ -1,6 +1,6 @@
 <template>
   <header
-    class="flex flex-row justify-between items-center px-4 py-2 bg-transparent text-black dark:(bg-black text-light-200) md:(bg-transparent space-x-4 mx-2 py-4) lg:mx-6"
+    class="flex flex-row justify-between items-center px-4 py-2 bg-transparent text-black dark:(bg-black text-light-200) md:(bg-transparent space-x-4 mx-2 py-4) lg:mx-6 2xl:mx-[3%]"
     role="banner">
     <div class="md:(flex flex-row space-x-4 items-center)">
       <NuxtLink :to="localePath('/')" aria-label="Xanzhu">
@@ -44,7 +44,7 @@
               {{ locale.name }}
             </NuxtLink>
           </li>
-          <!-- Add Translation warning -->
+          <!-- TODO: Add Translation warning -->
         </ul>
         <GlobalUtilsColorSwitch />
       </div>
