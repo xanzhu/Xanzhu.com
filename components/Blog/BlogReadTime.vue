@@ -12,18 +12,18 @@ export default {
   props: {
     content: {
       type: Object,
-      required: true
-    }
+      required: true,
+    },
   },
   setup(props) {
-    const wordsPerMinute = 230
-    const contentString = JSON.stringify(props.content)
-    const words = contentString.split(' ').length
-    const readingTime = ref(Math.ceil(words / wordsPerMinute))
+    const wordsPerMinute = 230;
+    const contentString = JSON.stringify(props.content);
+    const words = contentString.split(" ").length;
+    const readingTime = ref(Math.ceil(words / wordsPerMinute));
 
     return {
-      readingTime
-    }
-  }
-}
+      readingTime,
+    };
+  },
+};
 </script>
