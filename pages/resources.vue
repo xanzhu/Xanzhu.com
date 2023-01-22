@@ -32,13 +32,13 @@
           {{ t(resources.category) }}
         </h2>
         <ul class="list-disc ml-5">
-          <li v-for="url in resources.urls" :key="url">
+          <li v-for="link in resources.urls" :key="link.path">
             <NuxtLink
-              :to="url"
+              :to="link.path"
+              :target="isExternalLink(link.path)"
               class="opacity-70 hover:border-b"
-              target="_blank"
               rel="noopener"
-              >{{ url }}</NuxtLink
+              >{{ link.name }}</NuxtLink
             >
           </li>
         </ul>
@@ -53,18 +53,25 @@ const description =
   "Stay safe online with our curated list of the best security tools and services. From phishing protection to malware reporting, we've got you covered.";
 const path = useRoute();
 
+const isExternalLink = (url: string): "_blank" | "_self" => {
+  if (url.startsWith("https")) {
+    return "_blank";
+  }
+  return "_self";
+};
+
 const resource = [
   {
     category: "Resources.phishing",
-    urls: ["Links soon"],
+    urls: [{ name: "Links Soon", path: "https://xanzhu.com" }],
   },
   {
     category: "Resources.malware",
-    urls: ["Links soon"],
+    urls: [{ name: "Links Soon", path: "#" }],
   },
   {
     category: "Resources.accessibility",
-    urls: ["Links soon"],
+    urls: [{ name: "Links Soon", path: "#" }],
   },
 ];
 
