@@ -58,12 +58,14 @@ const { data } = await useAsyncData("prev-next", () =>
 const [prev, next] = data.value || [];
 </script>
 <style>
-.prose h1 {
-  visibility: hidden;
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif,
+    "sans-serif";
 }
 
-.prose-sm h2 {
-  font-weight: 700;
+.prose h1 {
+  visibility: hidden;
 }
 
 .prose p {
@@ -83,9 +85,15 @@ const [prev, next] = data.value || [];
   padding-left: 8px;
 }
 
-.prose-lg h2 {
-  font-weight: 500;
-  color: #000;
+.prose h2 {
+  color: #000000;
+  border-left: 4px solid #0066cc;
+  padding-left: 10px;
+  font-weight: 700;
+}
+
+.prose h3 {
+  font-weight: 300;
 }
 
 .prose pre {
@@ -128,6 +136,13 @@ const [prev, next] = data.value || [];
 
   .dark .prose h2 {
     color: #fff;
+    border-left: 8px solid #ff0000;
+    padding-left: 10px;
+    font-weight: 700;
+  }
+
+  .dark .prose h3 {
+    font-weight: 300;
   }
 
   .dark .prose a:hover {

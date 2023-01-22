@@ -13,8 +13,8 @@
         :key="link.id"
         class="text-gray-700 dark:text-light-400"
         :class="{
-          'ml-6 list-disc': link.depth === 3,
-          'font-bold tracking-wide  hover:(accent-color underline-transparent)':
+          'ml-6 list-disc opacity-70': link.depth === 3,
+          'font-bold tracking-wide  hover:underline-transparent':
             link.depth === 2,
         }"
       >
