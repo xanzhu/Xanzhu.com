@@ -61,5 +61,16 @@
     "status": "상태",
     "blog": "블로그",
     "resources": "자원"
+  },
+  "Resources": {
+    "heading": "필수 보안 툴킷으로 온라인 보안 유지",
+    "subheading": "디지털 생활을 보호하기 위한 필수 보안 리소스",
+    "phishing": "피싱",
+    "malware": "멀웨어",
+    "accessibility": "접근성",
+    "meta": {
+      "title": "Security Toolkit: 온라인 안전을 위한 필수 도구 및 서비스",
+      "description": "엄선된 최고의 보안 도구 및 서비스 목록으로 온라인에서 안전하게 지내십시오. 피싱 보호에서 맬웨어 보고에 이르기까지 모든 것을 다룹니다."
+    }
   }
 }

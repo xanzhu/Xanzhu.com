@@ -61,5 +61,16 @@
     "status": "地位",
     "blog": "博客",
     "resources": "资源"
+  },
+  "Resources": {
+    "heading": "使用我们的基本安全工具包确保在线安全",
+    "subheading": "由我精心挑选，为您的数字生活保驾护航的必备安全资源",
+    "phishing": "网络钓鱼",
+    "malware": "恶意程序",
+    "accessibility": "辅助功能",
+    "meta": {
+      "title": "Security Toolkit: 在线安全的基本工具和服务",
+      "description": "使用我们精选的最佳安全工具和服务列表确保在线安全。 从网络钓鱼防护到恶意软件报告，我们都能满足您的需求。"
+    }
   }
 }

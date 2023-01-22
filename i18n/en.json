@@ -61,5 +61,16 @@
     "status": "Status",
     "blog": "Blog",
     "resources": "Resources"
+  },
+  "Resources": {
+    "heading": "Stay Safe Online with Our Essential Security Toolkit",
+    "subheading": "Handpicked by me, the essential security resources for protecting your digital life",
+    "phishing": "Phishing",
+    "malware": "Malware",
+    "accessibility": "Accessibility",
+    "meta": {
+      "title": "Security Toolkit: Essential Tools & Services for Online Safety",
+      "description": "Stay safe online with our curated list of the best security tools and services. From phishing protection to malware reporting, we've got you covered."
+    }
   }
 }
