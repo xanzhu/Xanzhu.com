@@ -13,7 +13,7 @@
         <ContentRenderer
           :value="post"
           itemprop="articleBody"
-          class="prose prose-sm md:prose-md lg:(text-[18px]) 2xl:(text-[23px]) px-4 mx-auto my-4 dark:text-light-200 text-black leading-normal"
+          class="prose prose-sm md:prose-md lg:(text-[18px]) px-4 mx-auto my-4 dark:text-light-200 text-black leading-normal"
         />
         <aside v-if="post.toc == true" class="sm:mt-5 md:(mr-4)">
           <BlogToc :links="post.body.toc.links" class="lg:(sticky top-20)" />
@@ -105,14 +105,13 @@ html {
 }
 
 .prose a[href^="https"] {
-  color: #000;
-  text-underline-offset: 4px;
+  color: #0066cc;
+  text-underline-offset: 2px;
   text-decoration-color: #0066cc;
   font-weight: normal;
 }
 
 .prose a:hover {
-  color: #0066cc;
   text-decoration-thickness: 2px;
 }
 
@@ -126,8 +125,10 @@ html {
 
 @media (prefers-color-scheme: dark) {
   .dark .prose a[href^="https"] {
-    color: #fff;
+    color: #ff0000;
     text-decoration-color: #ff0000;
+    text-underline-offset: 2px;
+    font-weight: normal;
   }
 
   .dark .prose a {
@@ -136,7 +137,7 @@ html {
 
   .dark .prose h2 {
     color: #fff;
-    border-left: 8px solid #ff0000;
+    border-left: 6px solid #ff0000;
     padding-left: 10px;
     font-weight: 700;
   }
@@ -146,7 +147,6 @@ html {
   }
 
   .dark .prose a:hover {
-    color: #ff0000;
     text-decoration-thickness: 2px;
   }
 
