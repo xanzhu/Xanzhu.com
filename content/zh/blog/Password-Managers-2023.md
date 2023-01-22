@@ -168,12 +168,11 @@ LastPass 已经存在很长时间了，虽然我曾经使用过这个软件，�
 
 有关更多信息，您可以阅读以下文章：
 
-[https://www.theverge.com/2022/12/22/23523322/lastpass-data-breach-cloud-encrypted-password-vault-hackers](https://www.theverge.com/2022/12/22/23523322/lastpass-data-breach-cloud-encrypted-password-vault-hackers){:target="\_blank"}
+[The Verge](https://www.theverge.com/2022/12/22/23523322/lastpass-data-breach-cloud-encrypted-password-vault-hackers){:target="\_blank"}
 
-[https://www.wired.com/story/lastpass-breach-vaults-password-managers/](https://www.wired.com/story/lastpass-breach-vaults-password-managers/){:target="\_blank"} 
+[Wired](https://www.wired.com/story/lastpass-breach-vaults-password-managers/){:target="\_blank"} 
 
-[https://thehackernews.com/2022/12/lastpass-admits-to-severe-data-breach.html](https://thehackernews.com/2022/12/lastpass-admits-to-severe-data-breach.html){:target="\_blank"}
-
+[Hacker News](https://thehackernews.com/2022/12/lastpass-admits-to-severe-data-breach.html){:target="\_blank"}
 
 ## 膨胀软件
 

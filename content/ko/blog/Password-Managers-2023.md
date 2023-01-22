@@ -170,12 +170,11 @@ LastPass는 오랫동안 사용되어 왔으며 이 소프트웨어를 사용하
 
 자세한 내용은 다음 문서를 참조하세요.
 
-[https://www.theverge.com/2022/12/22/23523322/lastpass-data-breach-cloud-encrypted-password-vault-hackers](https://www.theverge.com/2022/12/22/23523322/lastpass-data-breach-cloud-encrypted-password-vault-hackers){:target="\_blank"}
+[The Verge](https://www.theverge.com/2022/12/22/23523322/lastpass-data-breach-cloud-encrypted-password-vault-hackers){:target="\_blank"}
 
-[https://www.wired.com/story/lastpass-breach-vaults-password-managers/](https://www.wired.com/story/lastpass-breach-vaults-password-managers/){:target="\_blank"} 
+[Wired](https://www.wired.com/story/lastpass-breach-vaults-password-managers/){:target="\_blank"} 
 
-[https://thehackernews.com/2022/12/lastpass-admits-to-severe-data-breach.html](https://thehackernews.com/2022/12/lastpass-admits-to-severe-data-breach.html){:target="\_blank"}
-
+[Hacker News](https://thehackernews.com/2022/12/lastpass-admits-to-severe-data-breach.html){:target="\_blank"}
 
 ## 블로트웨어
 

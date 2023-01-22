@@ -59,7 +59,7 @@
         />
         <div
           v-if="post.source"
-          class="dark:(text-light-200) text-dark-700 absolute right-0 px-1 py-0.5 text-xs"
+          class="dark:(text-light-200 opacity-70) text-dark-700 opacity-80 absolute right-0 px-1 py-0.5 text-xs"
         >
           <p v-t="'Blog.source'" class="inline-block" />
           : {{ post.source }}

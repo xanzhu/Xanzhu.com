@@ -4,20 +4,20 @@ description: "Discover the best password managers for securing online accounts b
 date: "2023-01-18"
 tag: "Guide"
 toc: true
-img: "/images/blog/PM/PM.png"
+img: "/images/blog/PM/PM.webp"
 ogLink: "https://www.pexels.com/photo/person-holding-iphone-6-with-red-case-7534801/"
 source: "Pexels"
 ---
 
-Keeping your password secure and unique can be a challenging process, whether you're using variations of the same password or using the same password across multiple platforms.
+ Keeping your password secure and unique can be a challenging process, whether you're using variations of the same password or using the same password across multiple platforms.
 
 A password manager is like a vault. You put your valuables into a box and secure it with a single lock. Password managers use this same logic. With passwords becoming more and more complex, requiring symbols, numbers, and being relatively long.
 
 How do you remember a password like this?
 
-```
+ ```
 Xj5#@gT7$uN9*aB1!
-```
+``` 
 
 These types of passwords are generated for you with the intention of being secure and hard to remember by introducing symbols, letters and varations of numbers and captialisations. This would be considered a strong password.
 Remembering a more simple password like this:
@@ -26,16 +26,16 @@ Remembering a more simple password like this:
 Password123
 ```
 
-Easy right, well this password doesn't meet today's security standards. This is the most commonly used password because it's simple. No matter how complex or simple you make your password please do not use the same password across multiple services.
+ Easy right, well this password doesn't meet today's security standards. This is the most commonly used password because it's simple. No matter how complex or simple you make your password please do not use the same password across multiple services.
 
 Lets upgrade this password to make it more secure.
-Add symbols, make it longer and avoid using common phrases or arrays of numbers like 123 or Password. By adding symbols and variations of captilisations this password can be upgraded to the following to make it a bit more secure:
+Add symbols, make it longer and avoid using common phrases or arrays of numbers like 123 or Password. By adding symbols and variations of captilisations this password can be upgraded to the following to make it a bit more secure: 
 
-```
+ ```
 p@s$w0rD!2E
-```
+```  
 
-While this may be easy to do for a couple of passwords, a password manager can automate the process for you. It can generate strong, unique passwords for each site automatically. The only thing you need to remember is the key to your vault: a single password that grants you access to all of your stored passwords.
+ While this may be easy to do for a couple of passwords, a password manager can automate the process for you. It can generate strong, unique passwords for each site automatically. The only thing you need to remember is the key to your vault: a single password that grants you access to all of your stored passwords.
 
 Breaches occur regularly, and it's important to not only check for yourself but also be notified when they happen. A popular, free service you can use is [HaveIBeenPwned](https://haveibeenpwned.com/){:target="\_blank"}. This website, maintained by Australian security expert Troy Hunt, allows you to enter your email address and see if it has been associated with any breaches. In the event that you find something, head over to the service and update your password.
 
@@ -158,7 +158,7 @@ It is also important to consider how each company responds to threats and breach
 Another important thing to consider is how user-friendly the password manager is, this can be an important factor when choosing which password manager to use. It's also important to ensure that the password manager is compatible with your devices, as different password managers have different compatibility options.
 
 Overall, it's essential to do your research and carefully consider all options before choosing a password manager that meets your needs and provides adequate security for your sensitive data.
-
+ 
 ### LastPass
 
 The numerous breaches and questionable security practices of LastPass have led me to not recommend this software to anyone. Following any guidance from "Password Managers of 2023" articles that recommend this software shows that they have not done proper research. If you're currently using or planning to use this software, I strongly recommend switching to Bitwarden as a safer alternative.
@@ -171,12 +171,11 @@ If you are currently using LastPass, I advise you to change all your passwords i
 
 For more information, you can read the following articles:
 
-[https://www.theverge.com/2022/12/22/23523322/lastpass-data-breach-cloud-encrypted-password-vault-hackers](https://www.theverge.com/2022/12/22/23523322/lastpass-data-breach-cloud-encrypted-password-vault-hackers){:target="\_blank"}
+[The Verge](https://www.theverge.com/2022/12/22/23523322/lastpass-data-breach-cloud-encrypted-password-vault-hackers){:target="\_blank"}
 
-[https://www.wired.com/story/lastpass-breach-vaults-password-managers/](https://www.wired.com/story/lastpass-breach-vaults-password-managers/){:target="\_blank"} 
+[Wired](https://www.wired.com/story/lastpass-breach-vaults-password-managers/){:target="\_blank"} 
 
-[https://thehackernews.com/2022/12/lastpass-admits-to-severe-data-breach.html](https://thehackernews.com/2022/12/lastpass-admits-to-severe-data-breach.html){:target="\_blank"}
-
+[Hacker News](https://thehackernews.com/2022/12/lastpass-admits-to-severe-data-breach.html){:target="\_blank"}
 
 ## Bloatware
 
