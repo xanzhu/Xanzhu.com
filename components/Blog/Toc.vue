@@ -11,9 +11,9 @@
       <li
         v-for="link of flattenLinks(links)"
         :key="link.id"
-        class="text-gray-700 dark:text-light-400"
+        class="text-dark-700 dark:text-light-400"
         :class="{
-          'ml-6 list-disc opacity-70': link.depth === 3,
+          'ml-6 list-disc dark:opacity-70 opacity-80': link.depth === 3,
           'font-bold tracking-wide  hover:underline-transparent':
             link.depth === 2,
         }"
