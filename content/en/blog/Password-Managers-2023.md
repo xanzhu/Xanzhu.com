@@ -7,6 +7,7 @@ toc: true
 img: "/images/blog/PM/PM.webp"
 ogLink: "https://www.pexels.com/photo/person-holding-iphone-6-with-red-case-7534801/"
 source: "Pexels"
+feature: true
 ---
 
  Keeping your password secure and unique can be a challenging process, whether you're using variations of the same password or using the same password across multiple platforms.

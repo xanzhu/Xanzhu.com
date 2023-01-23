@@ -6,7 +6,6 @@ tag: 테스트
 alt: 산
 date: "2022-11-30"
 img: "https://source.unsplash.com/kUmcSBJcFPg/577x369"
-feature: true
 ---
 
 # Nec patriae
