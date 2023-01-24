@@ -52,6 +52,11 @@
     <div class="mx-4 text-xs">
       <ul class="<sm:p-1 space-x-3 flex" role="navigation">
         <li role="menuitem">
+          <NuxtLink tabindex="0" to="/sitemap.xml" class="nav-internal">
+            {{ t("Nav.sitemap") }}
+          </NuxtLink>
+        </li>
+        <li role="menuitem">
           <NuxtLink
             tabindex="0"
             :to="localePath('/privacy-policy')"
