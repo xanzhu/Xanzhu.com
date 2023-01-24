@@ -65,13 +65,13 @@
           />
         </button>
         <ul
-          class="z-4 -right-1 p-1 absolute top-13 rounded-md shadow-md space-y-1 dark:(bg-dark-800 text-light-200) border-outline bg-light-800 text-black"
+          class="z-4 -right-1 p-1 absolute top-13 rounded-md shadow-md space-y-1 dark:(bg-dark-800 text-light-200) border-outline bg-light-700 text-black"
           :class="LangMenu ? '' : 'hidden'"
         >
           <li
             v-for="locale in availableLocales"
             :key="locale.code"
-            class="text-center hover:bg-light-400 rounded-md p-1 dark:hover:bg-dark-300"
+            class="text-center hover:bg-light-300 rounded-md p-1 dark:hover:bg-dark-300"
           >
             <NuxtLink
               @click="LangToggle"

@@ -15,7 +15,7 @@
           rel="me"
           target="_blank"
         >
-          <IconLinkedIn />
+          <IconLinkedIn class="hover:accent-color" />
         </NuxtLink>
       </li>
       <li>
@@ -25,7 +25,7 @@
           rel="me"
           target="_blank"
         >
-          <IconGithub />
+          <IconGithub class="hover:accent-color" />
         </NuxtLink>
       </li>
       <li>
@@ -35,7 +35,7 @@
           rel="me"
           target="_blank"
         >
-          <IconTwitter />
+          <IconTwitter class="hover:accent-color" />
         </NuxtLink>
       </li>
       <li>
@@ -45,7 +45,7 @@
           rel="me"
           target="_blank"
         >
-          <IconMastodon />
+          <IconMastodon class="hover:accent-color" />
         </NuxtLink>
       </li>
     </ul>

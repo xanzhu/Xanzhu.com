@@ -2,7 +2,7 @@
   <svg
     viewBox="0 0 24 24"
     fill="currentColor"
-    class="h-5 w-5 hover:accent-color"
+    class="h-5 w-5"
     xmlns="http://www.w3.org/2000/svg"
     aria-labelledby="ico-twitter"
   >

@@ -2,7 +2,7 @@
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 32 32"
-    class="h-5 w-5 hover:accent-color"
+    class="h-5 w-5"
     fill="currentColor"
     aria-labelledby="ico-mastodon"
   >
