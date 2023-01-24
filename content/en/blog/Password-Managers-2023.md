@@ -66,7 +66,7 @@ For those who need more features, Bitwarden offers paid plans that add a few mor
 * Support for Yubikey and security keys
 * Vault scanning and health monitoring
 
-For more information, visit the Bitwarden website at [https://bitwarden.com/]([https://bitwarden.com/]){:target="\_blank"}
+For more information, visit the Bitwarden website at [https://bitwarden.com](https://bitwarden.com/){:target="\_blank"}
 It's worth noting that when it comes to security and privacy, using open-source software is a good idea because it allows you to verify the code and ensure that there are no backdoors or malicious code.
 
 ### Keypass

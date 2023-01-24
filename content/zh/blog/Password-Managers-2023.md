@@ -64,7 +64,7 @@ Bitwarden 的一些显着特点包括：
 * 支持 Yubikey 和安全密钥
 * 金库扫描和健康监控
 
-如需更多信息，请访问 Bitwarden 网站 [https://bitwarden.com/]([https://bitwarden.com/]){:target="\_blank"}
+如需更多信息，请访问 Bitwarden 网站 [https://bitwarden.com/](https://bitwarden.com/){:target="\_blank"}
 值得注意的是，当涉及到安全和隐私时，使用开源软件是一个好主意，因为它允许您验证代码并确保没有后门或恶意代码。
 
 ### Keypass

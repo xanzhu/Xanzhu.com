@@ -67,7 +67,7 @@ Bitwarden의 몇 가지 주목할만한 기능은 다음과 같습니다.
 * Yubikey 및 보안 키 지원
 * 금고 스캔 및 상태 모니터링
 
-자세한 내용은 [https://bitwarden.com/]([https://bitwarden.com/]){:target="\_blank"}의 Bitwarden 웹사이트를 방문하십시오.
+자세한 내용은 [https://bitwarden.com/](https://bitwarden.com/){:target="\_blank"}의 Bitwarden 웹사이트를 방문하십시오.
 보안 및 개인 정보 보호와 관련하여 오픈 소스 소프트웨어를 사용하면 코드를 검증하고 백도어나 악성 코드가 없는지 확인할 수 있기 때문에 좋은 생각이라는 점은 주목할 가치가 있습니다.
 
 ### Keypass
