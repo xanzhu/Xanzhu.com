@@ -1,7 +1,7 @@
 <template>
-  <div class="lg:(sticky top-20) flex justify-center mt-5">
+  <div class="md:(sticky top-20) flex justify-center mt-5">
     <ul
-      class="items-center lg:(space-y-4 flex flex-col items-center space-x-0) flex flex-row justify-left space-x-2 children:(p-2 accent-color rounded-full cursor-pointer)"
+      class="items-center md:(space-y-4 flex flex-col items-center space-x-0) flex flex-row justify-left space-x-2 children:(p-2 accent-color rounded-full cursor-pointer)"
     >
       <li
         class="border-1 dark:border-[#15191b] dark:hover:(bg-gradient-to-r from-red-600 to-[#ff0000] text-white) hover:(bg-gradient-to-r from-blue-500 to-[#0066CC] text-white)"

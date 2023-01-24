@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="flex justify-between pt-5 sm:(mx-20 pt-10) md:mx-40 children:(md:text-lg text-sm m-4 px-3 py-1 border-outline)"
+    class="flex justify-between pt-5 sm:(mx-20 pt-10) children:(md:text-lg text-sm m-4 px-3 py-1 border-outline)"
   >
     <NuxtLink
       v-if="prev"

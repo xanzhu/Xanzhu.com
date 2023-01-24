@@ -6,7 +6,9 @@
       itemtype="https://schema.org/BlogPosting"
     >
       <BlogPostHeader v-bind:post="post" />
-      <div class="flex flex-col-reverse lg:(flex-row space-x-6 space-x-2) mx-auto justify-center">
+      <div
+        class="flex flex-col-reverse md:(flex-row space-x-6 space-x-2) mx-auto justify-center"
+      >
         <aside class="mt-2">
           <BlogSocialShare v-bind:post="post" />
         </aside>

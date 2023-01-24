@@ -1,9 +1,9 @@
 <template>
   <header
-    class="md:(grid-cols-2 space-y-0 gap-4 m-4 place-items-center) grid grid-cols-1 md:space-y-5"
+    class="md:(grid-cols-2 space-y-0 gap-4 my-4 place-items-center) grid grid-cols-1 md:space-y-5"
   >
     <div
-      class="col-span-1 shrink-0 space-y-2 px-4 mt-5 sm:px-0 mb-3 md:(ml-4 mt-0)"
+      class="col-span-1 shrink-0 space-y-2 px-4 mt-5 sm:px-0 mb-3 md:(mt-0)"
     >
       <div
         v-if="post.tag"
