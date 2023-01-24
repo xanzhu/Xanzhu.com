@@ -5,8 +5,6 @@
       :src="source"
       :alt="alt"
       :title="alt"
-      height="407"
-      width="600"
       loading="Lazy"
     />
     <figcaption v-if="credit" v-bind:credit="credit">
