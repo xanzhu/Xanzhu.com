@@ -2,8 +2,8 @@
   <nav
     class="m-4 p-4 dark:(bg-dark-800 text-white) bg-light-300 text-black border-outline md:(max-w-md mx-auto)"
   >
-    <header class="pb-2 mb-2 border-b border-slate-200">
-      <h2 class="text-lg font-bold">
+    <header class="pb-2 mb-2 border-b border-slate-200 dark:border-dark-300">
+      <h2 class="text-lg font-semibold">
         {{ t("Blog.toc") }}
       </h2>
     </header>
@@ -14,7 +14,7 @@
         class="text-dark-700 dark:text-light-400"
         :class="{
           'ml-6 list-disc opacity-80': link.depth === 3,
-          'font-bold tracking-wide  hover:underline-transparent':
+          'font-semibold tracking-wide  hover:underline-transparent':
             link.depth === 2,
         }"
       >
