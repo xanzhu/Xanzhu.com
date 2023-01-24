@@ -52,6 +52,8 @@
           :alt="post.alt"
           :title="post.alt"
           loading="eager"
+          height="407"
+          width="600"
           class="w-full object-cover md:border-outline"
         />
         <GlobalUtilsDate
