@@ -2,7 +2,7 @@
   <figure>
     <LazyNuxtImg class="rounded-md" :src="source" :alt="alt" :title="alt" />
     <figcaption v-if="credit" v-bind:credit="credit">
-      {{ t("Blog.source") + ": " + credit }}
+      <b>{{ t("Blog.source")}}</b> {{ " : " + credit }}
     </figcaption>
   </figure>
 </template>
@@ -19,7 +19,7 @@ defineProps({
 .prose figure figcaption {
   color: #000;
   font-size: 12px;
-  letter-spacing: 1px;
+  letter-spacing: 0.025em;
   opacity: 0.7;
 }
 

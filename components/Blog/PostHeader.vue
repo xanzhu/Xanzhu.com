@@ -20,12 +20,16 @@
         />
         <BlogReadTime class="<sm:hidden" :content="post" />
       </div>
-      <h1
+      <div>
+        <h1
         itemprop="headline"
         class="md:(text-2xl mr-6) break-words text-xl font-semibold sm:leading-tight lg:text-3xl xl:text-4xl"
       >
         {{ post.title }}
       </h1>
+      <p class="dark:opacity-70 p-1 opacity-80">{{ post.description }}</p>
+      </div>
+    
     </div>
     <div v-if="post.img || post.media" class="relative col-span-1 grow-0">
       <div>
@@ -59,9 +63,9 @@
         />
         <div
           v-if="post.source"
-          class="dark:(text-light-200 opacity-70) text-dark-700 opacity-80 absolute right-0 px-1 py-0.5 text-xs"
+          class="dark:(text-light-200 opacity-70) text-dark-700 opacity-80 absolute right-0 px-1 py-0.5 text-xs <sm:mr-2 tracking-wide"
         >
-          <p v-t="'Blog.source'" class="inline-block" />
+          <p v-t="'Blog.source'" class="inline-block font-medium" />
           : {{ post.source }}
         </div>
       </div>
