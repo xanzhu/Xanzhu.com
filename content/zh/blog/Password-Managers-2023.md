@@ -4,7 +4,7 @@ description: "根据个人经验和研究发现用于保护在线帐户的最佳
 date: "2023-01-18"
 tag: "指导"
 toc: true
-img: "/images/blog/PM/PM.png"
+img: "/images/blog/PM/PM.webp"
 alt: "拿着iphone的人"
 ogLink: "https://www.pexels.com/photo/person-holding-iphone-6-with-red-case-7534801/"
 source: "Mikhail Nilov, Pexels"
