@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col space-y-4">
+  <div class="flex flex-col space-y-4 children:lg:mx-40">
     <div
       class="flex flex-col mx-4 space-y-4 md:flex-row justify-center items-center"
     >
@@ -25,7 +25,7 @@
       </div>
     </div>
     <div
-      class="flex flex-col space-y-4 md:(flex-row space-x-8 items-center justify-evenly space-y-0) mx-4 h-1/6"
+      class="flex flex-col space-y-4 md:(flex-row space-x-8 items-center space-y-0) mx-4 h-1/6"
     >
       <div
         class="bg-dark-900 p-2 border-outline"
@@ -49,52 +49,6 @@
       </div>
     </div>
   </div>
-  <!-- <div
-    class="flex px-4 <lg:justify-between flex-col mx-auto sm:(p-10 mx-10) space-y-5"
-  >
-    <div
-      class="flex flex-col justify-between md:(flex-row justify-center) items-center space-y-4"
-    >
-      <div class="grid grid-cols-1 place-items-center sm:space-y-4">
-        <h1 class="text-2xl lg:text-4xl xl:text-5xl font-semibold sm:mt-10 mt-5 pr-2">
-          {{ t("Resources.heading") }}
-        </h1>
-        <p class="dark:text-white opacity-70">
-          {{ t("Resources.subheading") }}
-        </p>
-      </div>
-      <div class="h-[250px] w-auto md:w-[800px] object-cover">
-        <NuxtImg
-          src="images/resources/guard.webp"
-          alt="Security Guards"
-          title="Security Guards"
-          class="rounded-md"
-          height="700"
-          width="1000"
-        />
-      </div>
-    </div>
-    <div
-      class="flex flex-row justify-center items-center sm:(space-x-4) lg:pt-[8%] children:(py-2 px-4 sm:px-6 border-outline)"
-    >
-      <div v-for="(resources, index) in resource" :key="index">
-        <h2 class="text-lg font-bold tracking-wide">
-          {{ t(resources.category) }}
-        </h2>
-        <ul class="list-disc ml-5">
-          <li v-for="link in resources.urls" :key="link.path">
-            <NuxtLink
-              :to="link.path"
-              :target="isExternalLink(link.path)"
-              class="opacity-70 hover:border-b"
-              rel="noopener"
-              >{{ link.name }}</NuxtLink
-            >
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div> -->
 </template>
 <script setup lang="ts">
 const { t } = useI18n();
