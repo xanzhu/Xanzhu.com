@@ -29,6 +29,7 @@
             crossorigin="anonymous"
             v-if="article.img"
             :alt="article.alt"
+            :title="article.alt"
             loading="lazy"
             height="369"
             width="577"
@@ -40,6 +41,7 @@
             v-else-if="article.media"
             :src="article.media"
             :alt="article.alt"
+            :title="article.alt"
             loading="lazy"
             sizes="sm:100vw md:50vw lg:25vw"
             provider="cloudinary"
@@ -51,6 +53,7 @@
             crossorigin="anonymous"
             v-else
             :alt="article.alt"
+            :title="article.alt"
             class="object-fit w-full rounded-t-md"
             height="369"
             width="577"
@@ -62,10 +65,11 @@
             :date="article.date"
             class="dark:(bg-black text-white) bg-white px-4 py-2 border-r-1 border-b-1 rounded-tr-none rounded-bl-none rounded-tl-md rounded-b border-t-none border-l-none text-xs absolute border-gray-300 dark:border-dark-300"
           />
-          <div class="dark:(bg-black text-white) bg-white rounded-b-md h-auto">
-            <h2 class="font-medium text-xl p-4 mx-3">
+          <div class="dark:(bg-black text-white) bg-white rounded-b-md h-auto p-4">
+            <h2 class="font-medium text-xl">
               {{ article.title }}
             </h2>
+            <p class="opacity-80 pt-1">{{ article.description }}</p>
           </div>
         </NuxtLink>
       </div>
