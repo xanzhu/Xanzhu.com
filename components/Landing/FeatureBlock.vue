@@ -45,6 +45,7 @@
           v-if="wide.img"
           :src="wide.img"
           :alt="wide.alt"
+          :title="wide.alt"
           loading="lazy"
           class="border-outline lg:max-w-lg xl:max-w-2xl"
           height="1253"
@@ -55,6 +56,7 @@
           v-else-if="wide.media"
           :src="wide.media"
           :alt="wide.alt"
+          :title="wide.alt"
           loading="lazy"
           provider="cloudinary"
           class="border-outline md:max-w-2xl lg:max-w-lg"
@@ -90,10 +92,7 @@
           >
             {{ wide.title }}
           </h2>
-          <p
-            v-if="wide.description"
-            class="font-thin dark:text-gray-300 text-dark-400"
-          >
+          <p v-if="wide.description" class="font-thin opacity-80">
             {{ wide.description }}
           </p>
         </div>
@@ -109,13 +108,14 @@
       >
         <NuxtLink
           v-if="feature.feature"
-          class="flex flex-col group relative zoomef"
+          class="flex flex-col group zoomef"
           :to="feature._path"
         >
           <NuxtImg
             crossorigin="anonymous"
             v-if="feature.img"
             :alt="feature.alt"
+            :title="feature.alt"
             loading="lazy"
             height="369"
             width="577"
@@ -127,6 +127,7 @@
             v-else-if="feature.media"
             :src="feature.media"
             :alt="feature.alt"
+            :title="feature.alt"
             height="369"
             width="577"
             sizes="sm:100vw md:50vw lg:25vw"
@@ -137,6 +138,7 @@
           <NuxtImg
             crossorigin="anonymous"
             :alt="feature.alt"
+            :title="feature.alt"
             loading="lazy"
             v-else
             height="369"
@@ -144,23 +146,28 @@
             class="border-outline"
             src="https://source.unsplash.com/kUmcSBJcFPg/577x369"
           />
-          <GlobalUtilsDate
-            v-if="feature.date"
-            :date="feature.date"
-            class="dark:(bg-black text-white) bg-white px-4 py-2 border-outline rounded-tr-none rounded-bl-none rounded-tl-br-md text-xs absolute"
-          />
           <div class="mt-3 space-y-2">
-            <p
-              v-if="feature.tag"
-              class="dark:(bg-black text-white) bg-white px-4 border-outline py-1.5 text-xs group-hover:(text-border-600) inline-flex"
-            >
-              {{ feature.tag }}
-            </p>
-            <h2
-              class="rounded-md font-medium text-xl dark:(text-white) sm:group-hover:(underline decoration-1 underline-offset-6)"
-            >
-              {{ feature.title }}
-            </h2>
+            <div class="space-x-2">
+              <p
+                v-if="feature.tag"
+                class="dark:(bg-black text-white) bg-white px-4 border-outline py-1.5 text-xs group-hover:(text-border-600) inline-flex"
+              >
+                {{ feature.tag }}
+              </p>
+              <GlobalUtilsDate
+                v-if="feature.date"
+                :date="feature.date"
+                class="dark:(bg-black text-white) bg-white mr-auto px-4 py-1.5 border-outline text-xs"
+              />
+            </div>
+            <div>
+              <h2
+                class="rounded-md font-medium text-xl dark:(text-white) sm:group-hover:(underline decoration-1 underline-offset-6)"
+              >
+                {{ feature.title }}
+              </h2>
+              <p class="opacity-80 pt-1 font-thin">{{ feature.description }}</p>
+            </div>
           </div>
         </NuxtLink>
       </div>

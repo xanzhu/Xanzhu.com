@@ -27,7 +27,7 @@
       >
         {{ post.title }}
       </h1>
-      <p class="dark:opacity-70 p-1 opacity-80">{{ post.description }}</p>
+      <p class="dark:opacity-70 pt-1 opacity-80">{{ post.description }}</p>
       </div>
     
     </div>
