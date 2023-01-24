@@ -6,16 +6,18 @@
       itemtype="https://schema.org/BlogPosting"
     >
       <BlogPostHeader v-bind:post="post" />
-      <div class="flex flex-col-reverse lg:(flex-row)">
-        <aside>
+      <div class="flex flex-col-reverse lg:(flex-row space-x-6 space-x-2) mx-auto justify-center">
+        <aside class="mt-2">
           <BlogSocialShare v-bind:post="post" />
         </aside>
-        <ContentRenderer
-          :value="post"
-          itemprop="articleBody"
-          class="prose prose-sm md:prose-md lg:(prose-lg) px-4 mx-auto my-4 dark:text-light-200 text-black leading-normal"
-        />
-        <aside v-if="post.toc == true" class="mt-5 md:(mr-4)">
+        <div>
+          <ContentRenderer
+            :value="post"
+            itemprop="articleBody"
+            class="prose prose-sm md:prose-md lg:(prose-lg) mx-auto px-4 my-4 dark:text-light-200 text-black leading-normal"
+          />
+        </div>
+        <aside v-if="post.toc == true" class="mt-2">
           <BlogToc :links="post.body.toc.links" class="lg:(sticky top-20)" />
         </aside>
       </div>
