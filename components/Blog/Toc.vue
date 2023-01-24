@@ -1,9 +1,9 @@
 <template>
   <nav
-    class="m-4 p-4 dark:(bg-dark-900 text-white) bg-light-300 text-black border-outline"
+    class="m-4 p-4 dark:(bg-dark-800 text-white) bg-light-300 text-black border-outline md:(max-w-md mx-auto)"
   >
     <header class="pb-2 mb-2 border-b border-slate-200">
-      <h2 class="text-xl font-bold">
+      <h2 class="text-lg font-bold">
         {{ t("Blog.toc") }}
       </h2>
     </header>
@@ -13,7 +13,7 @@
         :key="link.id"
         class="text-dark-700 dark:text-light-400"
         :class="{
-          'ml-6 list-disc dark:opacity-70 opacity-80': link.depth === 3,
+          'ml-6 list-disc opacity-80': link.depth === 3,
           'font-bold tracking-wide  hover:underline-transparent':
             link.depth === 2,
         }"
