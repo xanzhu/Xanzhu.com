@@ -3,7 +3,7 @@
     class="md:(grid-cols-2 space-y-0 gap-4 my-4 place-items-center) grid grid-cols-1 md:space-y-5"
   >
     <div
-      class="col-span-1 shrink-0 space-y-2 px-4 mt-5 sm:px-0 mb-3 md:(mt-0)"
+      class="col-span-1 shrink-0 space-y-2 px-4 mt-5 sm:(px-0 mx-4) mb-3 md:(mt-0)"
     >
       <div
         v-if="post.tag"
@@ -22,14 +22,13 @@
       </div>
       <div>
         <h1
-        itemprop="headline"
-        class="md:(text-2xl mr-6) break-words text-xl font-semibold sm:leading-tight lg:text-3xl xl:text-4xl"
-      >
-        {{ post.title }}
-      </h1>
-      <p class="dark:opacity-70 pt-1 opacity-80">{{ post.description }}</p>
+          itemprop="headline"
+          class="md:(text-2xl mr-6) break-words text-xl font-semibold sm:leading-tight lg:text-3xl xl:text-4xl"
+        >
+          {{ post.title }}
+        </h1>
+        <p class="dark:opacity-70 pt-1 opacity-80">{{ post.description }}</p>
       </div>
-    
     </div>
     <div v-if="post.img || post.media" class="relative col-span-1 grow-0">
       <div>
