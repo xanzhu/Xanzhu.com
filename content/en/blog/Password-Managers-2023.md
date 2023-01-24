@@ -69,9 +69,9 @@ For those who need more features, Bitwarden offers paid plans that add a few mor
 For more information, visit the Bitwarden website at [https://bitwarden.com](https://bitwarden.com/){:target="\_blank"}
 It's worth noting that when it comes to security and privacy, using open-source software is a good idea because it allows you to verify the code and ensure that there are no backdoors or malicious code.
 
-### Keypass
+### Keepass
 
-<Media source="/images/blog/PM/keepass.webp" credit="Keypass / Xanzhu" alt="KeePass Logo"></Media>
+<Media source="/images/blog/PM/keepass.webp" credit="Keepass / Xanzhu" alt="KeePass Logo"></Media>
 
 Keepass is a great self-hosted solution for password managers, as it allows you to keep all of your data in your own hands. However, it might be a bit tricky for the average user as it requires a lot of configuration and your own hardware to host.
 

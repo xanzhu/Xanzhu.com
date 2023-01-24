@@ -70,9 +70,9 @@ Bitwarden의 몇 가지 주목할만한 기능은 다음과 같습니다.
 자세한 내용은 [https://bitwarden.com/](https://bitwarden.com/){:target="\_blank"}의 Bitwarden 웹사이트를 방문하십시오.
 보안 및 개인 정보 보호와 관련하여 오픈 소스 소프트웨어를 사용하면 코드를 검증하고 백도어나 악성 코드가 없는지 확인할 수 있기 때문에 좋은 생각이라는 점은 주목할 가치가 있습니다.
 
-### Keypass
+### Keepass
 
-<Media source="/images/blog/PM/keepass.webp" credit="Keypass / Xanzhu" alt="KeePass Logo"></Media>
+<Media source="/images/blog/PM/keepass.webp" credit="Keepass / Xanzhu" alt="KeePass Logo"></Media>
 
 Keepass는 암호 관리자를 위한 훌륭한 자체 호스팅 솔루션으로 모든 데이터를 직접 관리할 수 있습니다. 그러나 호스팅하려면 많은 구성과 자체 하드웨어가 필요하기 때문에 일반 사용자에게는 약간 까다로울 수 있습니다.
 

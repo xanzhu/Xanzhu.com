@@ -67,9 +67,9 @@ Bitwarden 的一些显着特点包括：
 如需更多信息，请访问 Bitwarden 网站 [https://bitwarden.com/](https://bitwarden.com/){:target="\_blank"}
 值得注意的是，当涉及到安全和隐私时，使用开源软件是一个好主意，因为它允许您验证代码并确保没有后门或恶意代码。
 
-### Keypass
+### Keepass
 
-<Media source="/images/blog/PM/keepass.webp" credit="Keypass / Xanzhu" alt="KeePass Logo"></Media>
+<Media source="/images/blog/PM/keepass.webp" credit="Keepass / Xanzhu" alt="KeePass Logo"></Media>
 
 Keepass 是一款出色的密码管理器自托管解决方案，因为它允许您将所有数据掌握在自己手中。 但是，对于普通用户来说这可能有点棘手，因为它需要大量配置和您自己的硬件来托管。
 
