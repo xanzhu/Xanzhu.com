@@ -14,7 +14,7 @@ export default defineConfig({
     "btn-prev-next":
       "font-medium px-4 py-2 dark:(hover:bg-dark-700 bg-dark-500) hover:(bg-gray-300) bg-light-900 rounded-md sm:px-6",
     "border-outline":
-      "border-1 border-gray-300 dark:border-dark-300 rounded-md",
+      "border-1 border-gray-300 dark:border-[#15191b] rounded-md",
     "accent-color": "text-[#0066CC] dark:text-[#FF0000]",
   },
   darkMode: "class",
