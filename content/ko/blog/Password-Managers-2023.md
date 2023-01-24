@@ -6,7 +6,8 @@ tag: "가이드"
 toc: true
 img: "/images/blog/PM/PM.png"
 ogLink: "https://www.pexels.com/photo/person-holding-iphone-6-with-red-case-7534801/"
-source: "Pexels"
+alt: "아이폰을 들고 있는 사람"
+source: "Mikhail Nilov, Pexels"
 feature: true
 ---
 

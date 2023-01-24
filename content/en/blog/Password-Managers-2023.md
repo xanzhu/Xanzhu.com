@@ -5,8 +5,9 @@ date: "2023-01-18"
 tag: "Guide"
 toc: true
 img: "/images/blog/PM/PM.webp"
+alt: "Person holding iPhone"
 ogLink: "https://www.pexels.com/photo/person-holding-iphone-6-with-red-case-7534801/"
-source: "Pexels"
+source: "Mikhail Nilov, Pexels"
 feature: true
 ---
 
