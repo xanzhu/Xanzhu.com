@@ -48,7 +48,7 @@ p@s$w0rD!2E
 
 ### Bitwarden
 
-<Media source="/images/blog/PM/bitwarden.webp" credit="Bitwarden / Xanzhu" alt="Bitwarden Password Manager Logo"></Media>
+<Media source="/images/blog/PM/bitwarden.webp" credit="Bitwarden / Xanzhu" alt="Bitwarden 암호 관리자 로고"></Media>
 
 사용할 수 있는 최고의 무료 암호 관리자 중 하나는 Bitwarden입니다. 옵션과 기능을 늘리는 유료 요금제를 제공하지만 대부분의 사용자에게는 [무료 요금제](https://bitwarden.com/pricing/){:target="\_blank"}로도 충분합니다.
 
@@ -85,7 +85,7 @@ Keepass에 대한 자세한 내용은 [https://keepass.info/](https://keepass.in
 
 ### 브라우저/OS
 
-<Media source="/images/blog/PM/googlepass.webp" credit="Google" alt="Google password manager"></Media>
+<Media source="/images/blog/PM/googlepass.webp" credit="Google" alt="Google 비밀번호 관리자"></Media>
 
 브라우저 기반 솔루션과 관련하여 빠르고 간단한 솔루션은 전적으로 브라우저 환경에서 실행되는 암호 관리자입니다. 다음에 방문할 때 자동으로 채워지도록 브라우저에 암호를 저장하라는 메시지가 표시되는 경우가 많습니다. 이것은 암호 관리자입니다. 크로스 플랫폼 환경에서 가장 안전하거나 액세스할 수는 없지만 잘 작동합니다.
 
@@ -99,7 +99,7 @@ Keepass에 대한 자세한 내용은 [https://keepass.info/](https://keepass.in
 
 ## 유료 솔루션
 
-<Media source="/images/blog/PM/t3.webp" credit="Dashlane, NordPass, 1Password / Xanzhu" alt="Paid Password Manager Logo; Dashlane, NordPass, 1Password"></Media>
+<Media source="/images/blog/PM/t3.webp" credit="Dashlane, NordPass, 1Password / Xanzhu" alt="유료 Password Manager 로고 Dashlane, NordPass, 1비밀번호"></Media>
 
 이것들은 모두 유료 서비스이며 잘 작동하며 종종 VPN이나 기업 환경에서 사용하는 것과 같이 유용할 수 있는 많은 다른 기능과 함께 제공됩니다.
 

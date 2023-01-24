@@ -45,7 +45,7 @@ p@s$w0rD!2E
 
 ### Bitwarden
 
-<Media source="/images/blog/PM/bitwarden.webp" credit="Bitwarden / Xanzhu" alt="Bitwarden Password Manager Logo"></Media>
+<Media source="/images/blog/PM/bitwarden.webp" credit="Bitwarden / Xanzhu" alt="Bitwarden 密码管理器徽标"></Media>
 
 您可以使用的最好的免费密码管理器之一是 Bitwarden。 虽然它确实提供了增加选项和功能的付费计划，但[免费计划](https://bitwarden.com/pricing/){:target="\_blank"} 对大多数用户来说已经足够了。
 
@@ -82,7 +82,7 @@ Keepass 是一个非常安全的密码管理器，它使用 AES 和 Twofish 加�
 
 ### 浏览器/操作系统
 
-<Media source="/images/blog/PM/googlepass.webp" credit="Google" alt="Google password manager"></Media>
+<Media source="/images/blog/PM/googlepass.webp" credit="Google" alt="谷歌密码管理器"></Media>
 
 对于基于浏览器的解决方案，快速简单的解决方案是完全在浏览器环境中运行的密码管理器。 您经常会注意到系统会要求您将密码保存到浏览器中，以便在您下次访问时自动填写。 这是一个密码管理器。 虽然它在跨平台环境中可能不是最安全或可访问的，但它运行良好。
 
@@ -96,7 +96,7 @@ Keepass 是一个非常安全的密码管理器，它使用 AES 和 Twofish 加�
 
 ## 付费解决方案
 
-<Media source="/images/blog/PM/t3.webp" credit="Dashlane, NordPass, 1Password / Xanzhu" alt="Paid Password Manager Logo; Dashlane, NordPass, 1Password"></Media>
+<Media source="/images/blog/PM/t3.webp" credit="Dashlane, NordPass, 1Password / Xanzhu" alt="付费密码管理器徽标； Dashlane、NordPass、1Password"></Media>
 
 这些都是付费服务，而且运行良好，通常附带许多其他有用的功能，例如 VPN 或在企业环境中使用。
 

@@ -20,7 +20,7 @@ ogLink: "https://source.unsplash.com/mP7aPSUm7aE"
 
 ## Parallels
 
-<Media source="/images/blog/VM/Parallels.webp" credit="Parallels / Xanzhu" alt="Parallels Virtual Machine Logo"></Media>
+<Media source="/images/blog/VM/Parallels.webp" credit="Parallels / Xanzhu" alt="Parallels 가상 머신 로고"></Media>
 
 기본적으로 작동하며 기본적으로 모든 즐겨찾는 운영 체제를 클릭 한 번으로 설치하는 유료 가상화 소프트웨어입니다. 훌륭한 도구를 제공하고 전체 프로세스를 최대한 원활하게 만듭니다.
 
@@ -28,7 +28,7 @@ ogLink: "https://source.unsplash.com/mP7aPSUm7aE"
 2. 설치가 완료되면 "Parallels Desktop"을 엽니다.
 3. 이제 설치할 운영 체제를 선택합니다.
 
-<Media source="/images/blog/VM/p-install.webp" alt="Parallels Installation Wizard"></Media>
+<Media source="/images/blog/VM/p-install.webp" alt="Parallels 설치 마법사"></Media>
 
 운영 체제를 설치하기 전에 최소 25~30GB의 여유 공간을 확보하는 것이 이상적입니다.
 
@@ -51,7 +51,7 @@ Ubuntu는 단순히 Ubuntu 아이콘을 클릭하고 설치를 선택하는 동�
 1. Ubuntu 아이콘을 선택하고 계속을 클릭합니다.
 2. Ubuntu를 다운로드합니다. 시간이 좀 걸립니다.
 
-<Media source="/images/blog/VM/u-download.webp" alt="Parallels ubuntu setup wizard"></Media>
+<Media source="/images/blog/VM/u-download.webp" alt="Parallels 우분투 설정 마법사"></Media>
 
 3. 다운로드 후 가상 머신이 자동으로 시작됩니다.
 4. 로그인을 위한 비밀번호를 생성하라는 메시지가 표시됩니다.
@@ -69,7 +69,7 @@ Ubuntu는 단순히 Ubuntu 아이콘을 클릭하고 설치를 선택하는 동�
 1. "Parallels Desktop"을 열면 자동으로 가상 머신으로 부팅될 수 있습니다. 종료하기만 하면 됩니다.
 2. Parallels Desktop 애플리케이션을 마우스 오른쪽 버튼으로 클릭하고 "제어 센터"를 선택하면 여기에서 추가/편집 또는 제거할 수 있습니다.
 
-<Media source="/images/blog/VM/config.webp" alt="Parallels Virtual Machine Configuration Panel"></Media>
+<Media source="/images/blog/VM/config.webp" alt="Parallels 가상 머신 구성 패널"></Media>
 
 3. 다른 가상 머신을 추가하려면 더하기 아이콘을 클릭하고 위에서 언급한 설치 프로세스를 진행합니다.
 4. 가상 머신 삭제 가상 머신을 마우스 오른쪽 버튼으로 클릭하고 제거(장치 이름)_를 선택하면 장치 이름이 가상 머신의 이름이 됩니다.
@@ -77,7 +77,7 @@ Ubuntu는 단순히 Ubuntu 아이콘을 클릭하고 설치를 선택하는 동�
 
 ## UTM
 
-<Media source="/images/blog/VM/UTM.webp" credit="UTM / Xanzhu" alt="UTM installation wizard"></Media>
+<Media source="/images/blog/VM/UTM.webp" credit="UTM / Xanzhu" alt="UTM 설정 마법사"></Media>
 
 UTM은 병렬과 동일한 작업을 수행하지만 사용자 정의를 처리하는 무료 도구입니다.
 성능이 불안정하며 시스템에 맞게 조정해야 합니다. 소프트웨어의 모든 측면을 구성하는 번거로움 없이 응답성이 뛰어난 가상 머신이 필요한 경우에는 좋은 선택이 아닐 수 있습니다.
@@ -98,7 +98,7 @@ Windows는 다양한 방법으로 설치할 수 있습니다. [UTM](https://docs
 5. [Microsoft](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewarm64?wa=wsignin1.0){:target="\_blank"}에서 최신 Windows 11 ARM 파일을 다운로드합니다.
 6. 찾아보기를 클릭하고 다운로드한 VHDX 파일을 선택하고 VHDX 가져오기가 선택되었는지 확인합니다.
 
-<Media source="/images/blog/VM/u-install.webp" alt="Installation Settings for UTM windows"></Media>
+<Media source="/images/blog/VM/u-install.webp" alt="UTM 창 설치 설정"></Media>
 
 7. 계속을 누릅니다.
 8. RAM 용량을 선택합니다. 시스템 용량의 절반을 사용하는 것이 좋습니다. 예: 4GB를 사용하는 8GB
@@ -121,7 +121,7 @@ Windows는 다양한 방법으로 설치할 수 있습니다. [UTM](https://docs
 5. 계속해서 이름, 암호 및 보안 질문을 설정합니다.
 6. Windows 11로 부팅한 후 파일 탐색기를 열고 CD 드라이브를 선택한 다음 spice-guest-tools 설치를 두 번 클릭합니다.
 
-<Media source="/images/blog/VM/u-spice.webp" alt="File explorer windows 11"></Media>
+<Media source="/images/blog/VM/u-spice.webp" alt="파일 탐색기 창 11"></Media>
 
 7. 재부팅을 선택하면 이제 Windows 11 가상 머신이 작동합니다.
 
@@ -159,7 +159,7 @@ Windows는 다양한 방법으로 설치할 수 있습니다. [UTM](https://docs
 24. 주요 서버 스냅.. 계속하려면 DOWN_ARROW를 누른 다음 ENTER를 누르십시오.
 25. 이제 설치가 설치됩니다.
 
-<Media source="/images/blog/VM/u-linux.webp" alt="Linux server installing display"></Media>
+<Media source="/images/blog/VM/u-linux.webp" alt="Linux 서버 설치 디스플레이"></Media>
 
 26. 이 작업이 완료되면 DOWN_ARROW를 눌러 "Reboot now"가 강조 표시되도록 하고 ENTER를 누릅니다.
 27. 화면이 검게 변하면 몇 분 정도 기다린 후 상단의 디스크 아이콘을 선택하고 ISO 파일을 꺼냅니다.
