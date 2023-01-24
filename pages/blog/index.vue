@@ -65,7 +65,9 @@
             :date="article.date"
             class="dark:(bg-black text-white) bg-white px-4 py-2 border-r-1 border-b-1 rounded-tr-none rounded-bl-none rounded-tl-md rounded-b border-t-none border-l-none text-xs absolute border-gray-300 dark:border-dark-300"
           />
-          <div class="dark:(bg-black text-white) bg-white rounded-b-md h-auto p-4">
+          <div
+            class="dark:(bg-black text-white) bg-white rounded-b-md h-auto p-4"
+          >
             <h2 class="font-medium text-xl">
               {{ article.title }}
             </h2>
@@ -87,19 +89,14 @@ const { data: articles } = await useAsyncData("articles", () => {
 const title = t("Blog.meta.title");
 const desc = t("Blog.meta.description");
 
-useHead({
+useSeoMeta({
   title: title,
-  meta: [
-    { property: "og:title", content: title },
-    { name: "description", content: desc },
-    { property: "og:description", content: desc },
-    { property: "twitter:title", content: title },
-    { property: "twitter:description", content: desc },
-    { property: "og:url", content: `https://xanzhu.com/${locale.value}/blog` },
-    {
-      property: "og:image",
-      content: "https://source.unsplash.com/kUmcSBJcFPg",
-    },
-  ],
+  description: desc,
+  ogDescription: desc,
+  ogTitle: title,
+  twitterTitle: title,
+  twitterDescription: desc,
+  ogUrl: `https://xanzhu.com/${locale.value}/blog`,
+  ogImage: "https://source.unsplash.com/kUmcSBJcFPg",
 });
 </script>

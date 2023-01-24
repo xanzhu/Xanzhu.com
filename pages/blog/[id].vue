@@ -39,18 +39,16 @@ const { data: post } = await useAsyncData(path.replace(/\/$/, ""), () => {
 const title = post.value?.title;
 const desc = post.value?.description;
 
-useHead({
+useSeoMeta({
   title: title,
-  meta: [
-    { name: "description", content: desc },
-    { property: "og:title", content: title },
-    { property: "og:description", content: desc },
-    { property: "twitter:title", content: title },
-    { property: "twitter:description", content: desc },
-    { property: "og:url", content: `https://xanzhu.com${path}` },
-    { property: "og:type", content: "article" },
-    { property: "og:image", content: post.value?.ogLink || post.value?.media },
-  ],
+  description: desc,
+  ogTitle: title,
+  ogDescription: desc,
+  twitterTitle: title,
+  twitterDescription: desc,
+  ogUrl: `https://xanzhu.com${path}`,
+  ogType: "article",
+  ogImage: post.value?.ogLink || post.value?.media,
 });
 
 const { data } = await useAsyncData("prev-next", () =>

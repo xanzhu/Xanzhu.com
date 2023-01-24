@@ -52,6 +52,7 @@
 </template>
 <script setup lang="ts">
 const { t } = useI18n();
+// TODO: Add translations
 const title = "Security Toolkit: Essential Tools & Services for Online Safety";
 const description =
   "Stay safe online with our curated list of the best security tools and services. From phishing protection to malware reporting, we've got you covered.";
@@ -79,19 +80,14 @@ const resource = [
   },
 ];
 
-useHead({
+useSeoMeta({
   title: title,
-  meta: [
-    { property: "og:title", content: title },
-    { name: "description", content: description },
-    { property: "og:description", content: description },
-    { property: "twitter:title", content: title },
-    { property: "twitter:description", content: description },
-    { property: "og:url", content: `https://xanzhu.com${path}` },
-    {
-      property: "og:image",
-      content: "https://source.unsplash.com/dCuA11z7xHg",
-    },
-  ],
+  description: description,
+  ogDescription: description,
+  ogTitle: title,
+  ogUrl: `https://xanzhu.com${path}`,
+  ogImage: "https://source.unsplash.com/dCuA11z7xHg",
+  twitterDescription: description,
+  twitterTitle: title,
 });
 </script>

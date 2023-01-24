@@ -4,8 +4,8 @@
 <script setup>
 const { t } = useI18n();
 
-useHead({
+useSeoMeta({
   title: t("Error.not-found"),
-  meta: [{ property: "description", content: t("Error.description") }],
+  description: t("Error.description"),
 });
 </script>

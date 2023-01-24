@@ -42,9 +42,10 @@ useHead({
   bodyAttrs: {
     class: "dark:(bg-black text-white) bg-white text-black",
   },
-  meta: [
-    { property: "og:type", content: "website" },
-    { property: "og:site_name", content: "Xanzhu" },
-  ],
+});
+
+useSeoMeta({
+  ogType: "website",
+  ogSiteName: "Xanzhu",
 });
 </script>

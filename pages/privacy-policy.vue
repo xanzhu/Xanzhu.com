@@ -12,16 +12,14 @@ const paragraphs: { [key: number]: string } = {
   3: t("Privacy-Policy.section-three"),
 };
 
-useHead({
+useSeoMeta({
   title: title,
-  meta: [
-    { name: "description", content: desc },
-    { property: "og:title", content: title },
-    { property: "og:description", content: desc },
-    { property: "twitter:title", content: title },
-    { property: "twitter:description", content: desc },
-    { property: "og:url", content: `https://xanzhu.com${path}` },
-  ],
+  description: desc,
+  ogTitle: title,
+  ogDescription: desc,
+  twitterTitle: title,
+  twitterDescription: desc,
+  ogUrl: `https://xanzhu.com${path}`,
 });
 </script>
 <template>

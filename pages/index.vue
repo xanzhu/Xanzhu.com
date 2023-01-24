@@ -8,23 +8,18 @@
 const path = useRoute();
 const { t } = useI18n();
 
-// Update this
+// TODO: Refactor
 const desc = t("Landing.meta.description");
 const title = t("Landing.meta.title");
 
-useHead({
+useSeoMeta({
   title: title,
-  meta: [
-    { property: "og:title", content: title },
-    { name: "description", content: desc },
-    { property: "og:description", content: desc },
-    { property: "twitter:title", content: title },
-    { property: "twitter:description", content: desc },
-    { property: "og:url", content: `https://xanzhu.com${path}` },
-    {
-      property: "og:image",
-      content: "https://source.unsplash.com/Q1p7bh3SHj8",
-    },
-  ],
+  ogTitle: title,
+  description: desc,
+  ogDescription: desc,
+  ogImage: "https://source.unsplash.com/Q1p7bh3SHj8",
+  twitterTitle: title,
+  twitterDescription: desc,
+  ogUrl: `https://xanzhu.com${path}`,
 });
 </script>
