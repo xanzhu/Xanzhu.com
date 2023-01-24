@@ -13,7 +13,7 @@
         <ContentRenderer
           :value="post"
           itemprop="articleBody"
-          class="prose prose-sm md:prose-md lg:(prose-lg text-[18px]) px-4 mx-auto my-4 dark:text-light-200 text-black leading-normal"
+          class="prose prose-sm md:prose-md lg:(prose-lg) px-4 mx-auto my-4 dark:text-light-200 text-black leading-normal"
         />
         <aside v-if="post.toc == true" class="mt-5 md:(mr-4)">
           <BlogToc :links="post.body.toc.links" class="lg:(sticky top-20)" />
@@ -117,12 +117,10 @@ html {
 
 .prose ol > li::before {
   color: #0066cc;
-  margin-top: -2.8px;
 }
 
 .prose ul > li::before {
   background-color: #0066cc;
-  margin-top: -2.8px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -156,16 +154,15 @@ html {
     background-color: #141414;
     color: #fff;
     border: 1px solid #333333;
+    font-family: "Inter", sans-serif;
   }
 
   .dark .prose ol > li::before {
     color: #ff0000;
-    margin-top: -2.8px;
   }
 
   .dark .prose ul > li::before {
     background-color: #ff0000;
-    margin-top: -2.8px;
   }
 }
 </style>
