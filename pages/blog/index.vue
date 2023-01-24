@@ -5,7 +5,7 @@
   >
     <div class="mt-15 mx-4 sm:mx-8 lg:mx-10 space-y-2">
       <h1 class="font-semibold text-3xl sm:text-5xl">
-        {{ title }}
+        {{ t('Blog.title') }}
       </h1>
       <p
         class="text-lg break-words font-thin sm:(text-2xl) dark:text-gray-300 md:w-[80%] lg:w-[70%]"

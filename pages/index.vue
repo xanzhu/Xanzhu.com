@@ -7,8 +7,6 @@
 <script setup lang="ts">
 const path = useRoute();
 const { t } = useI18n();
-
-// TODO: Refactor
 const desc = t("Landing.meta.description");
 const title = t("Landing.meta.title");
 

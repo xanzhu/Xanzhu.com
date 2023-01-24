@@ -949,7 +949,7 @@ packages:
     dependencies:
       '@nuxt/kit': 3.0.0
       consola: 2.15.3
-      defu: 6.1.1
+      defu: 6.1.2
       destr: 1.2.2
       detab: 3.0.2
       html-tags: 3.2.0
@@ -980,7 +980,7 @@ packages:
       unified: 10.1.2
       unist-builder: 3.0.1
       unist-util-position: 4.0.4
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
       unstorage: 1.0.1
       ws: 8.12.0
     transitivePeerDependencies:
@@ -998,9 +998,9 @@ packages:
     resolution: {integrity: sha512-r+lRkdAeB49wCpYmZAHWrhXNtjTSt3kz8MuPoVPpZB40FOVEpPCIQF8dBI5tXM19YOg76yFCdvpt1TFq3irA7g==}
     engines: {node: ^14.16.0 || ^16.11.0 || ^17.0.0 || ^18.0.0 || ^19.0.0}
     dependencies:
-      '@nuxt/kit': 3.0.0
+      '@nuxt/kit': 3.1.0
       consola: 2.15.3
-      defu: 6.1.1
+      defu: 6.1.2
       h3: 1.0.2
       image-meta: 0.1.1
       node-fetch-native: 1.0.1
@@ -1021,7 +1021,7 @@ packages:
       '@nuxt/schema': 3.0.0
       c12: 1.1.0
       consola: 2.15.3
-      defu: 6.1.1
+      defu: 6.1.2
       globby: 13.1.3
       hash-sum: 2.0.0
       ignore: 5.2.4
@@ -1048,7 +1048,7 @@ packages:
       '@nuxt/schema': 3.1.0
       c12: 1.1.0
       consola: 2.15.3
-      defu: 6.1.1
+      defu: 6.1.2
       globby: 13.1.3
       hash-sum: 2.0.0
       ignore: 5.2.4
@@ -1066,7 +1066,6 @@ packages:
     transitivePeerDependencies:
       - rollup
       - supports-color
-    dev: false
 
   /@nuxt/kit/3.1.0_rollup@3.10.1:
     resolution: {integrity: sha512-paZbbJlHtQuroUr5jQyzQux1LTSWBptPpZitId8ycuDPxcEypeSpZKWP/ABWac0b5uF0Lmqh1lxYlPWLNNpRPw==}
@@ -1075,7 +1074,7 @@ packages:
       '@nuxt/schema': 3.1.0_rollup@3.10.1
       c12: 1.1.0
       consola: 2.15.3
-      defu: 6.1.1
+      defu: 6.1.2
       globby: 13.1.3
       hash-sum: 2.0.0
       ignore: 5.2.4
@@ -1101,7 +1100,7 @@ packages:
     dependencies:
       c12: 1.1.0
       create-require: 1.1.1
-      defu: 6.1.1
+      defu: 6.1.2
       jiti: 1.16.2
       pathe: 1.1.0
       pkg-types: 1.0.1
@@ -1122,7 +1121,7 @@ packages:
     dependencies:
       c12: 1.1.0
       create-require: 1.1.1
-      defu: 6.1.1
+      defu: 6.1.2
       hookable: 5.4.2
       jiti: 1.16.2
       pathe: 1.1.0
@@ -1136,7 +1135,6 @@ packages:
     transitivePeerDependencies:
       - rollup
       - supports-color
-    dev: false
 
   /@nuxt/schema/3.1.0_rollup@3.10.1:
     resolution: {integrity: sha512-HF7gtGyAGMdTlGixHfLn9MbO6sbT2QTlouKFG1N4azK712/RiutRUffv4iM+o4PwC7GRpDQcEe5uFyMX/5faZQ==}
@@ -1144,7 +1142,7 @@ packages:
     dependencies:
       c12: 1.1.0
       create-require: 1.1.1
-      defu: 6.1.1
+      defu: 6.1.2
       hookable: 5.4.2
       jiti: 1.16.2
       pathe: 1.1.0
@@ -1169,7 +1167,7 @@ packages:
       ci-info: 3.7.1
       consola: 2.15.3
       create-require: 1.1.1
-      defu: 6.1.1
+      defu: 6.1.2
       destr: 1.2.2
       dotenv: 16.0.3
       fs-extra: 10.1.0
@@ -1182,7 +1180,7 @@ packages:
       node-fetch: 3.3.0
       ofetch: 1.0.0
       parse-git-config: 3.0.0
-      rc9: 2.0.0
+      rc9: 2.0.1
       std-env: 3.3.1
     transitivePeerDependencies:
       - rollup
@@ -1206,7 +1204,7 @@ packages:
       autoprefixer: 10.4.13_postcss@8.4.21
       chokidar: 3.5.3
       cssnano: 5.1.14_postcss@8.4.21
-      defu: 6.1.1
+      defu: 6.1.2
       esbuild: 0.17.4
       escape-string-regexp: 5.0.0
       estree-walker: 3.0.3
@@ -1254,7 +1252,7 @@ packages:
   /@nuxtjs/color-mode/3.2.0:
     resolution: {integrity: sha512-isDR01yfadopiHQ/VEVUpyNSPrk5PCjUHS4t1qYRZwuRGefU4s9Iaxf6H9nmr1QFzoMgTm+3T0r/54jLwtpZbA==}
     dependencies:
-      '@nuxt/kit': 3.0.0
+      '@nuxt/kit': 3.1.0
       lodash.template: 4.5.0
       pathe: 1.1.0
     transitivePeerDependencies:
@@ -1269,7 +1267,7 @@ packages:
       '@intlify/bundle-utils': 3.4.0_pnpokcjcqv6os2ag6wb47ha5cu
       '@intlify/shared': 9.3.0-beta.10
       '@intlify/unplugin-vue-i18n': 0.8.1_pnpokcjcqv6os2ag6wb47ha5cu
-      '@nuxt/kit': 3.0.0
+      '@nuxt/kit': 3.1.0
       '@vue/compiler-sfc': 3.2.45
       cookie-es: 0.5.0
       debug: 4.3.4
@@ -1983,14 +1981,14 @@ packages:
   /c12/1.1.0:
     resolution: {integrity: sha512-9KRFWEng+TH8sGST4NNdiKzZGw1Z1CHnPGAmNqAyVP7suluROmBjD8hsiR34f94DdlrvtGvvmiGDsoFXlCBWIw==}
     dependencies:
-      defu: 6.1.1
+      defu: 6.1.2
       dotenv: 16.0.3
       giget: 1.0.0
       jiti: 1.16.2
       mlly: 1.1.0
       pathe: 1.1.0
       pkg-types: 1.0.1
-      rc9: 2.0.0
+      rc9: 2.0.1
     transitivePeerDependencies:
       - supports-color
 
@@ -2482,8 +2480,8 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
-  /defu/6.1.1:
-    resolution: {integrity: sha512-aA964RUCsBt0FGoNIlA3uFgo2hO+WWC0fiC6DBps/0SFzkKcYoM/3CzVLIa5xSsrFjdioMdYgAIbwo80qp2MoA==}
+  /defu/6.1.2:
+    resolution: {integrity: sha512-+uO4+qr7msjNNWKYPHqN/3+Dx3NFkmIzayk2L1MyZQlvgZb/J1A0fo410dpKrN2SnqFjt8n4JL8fDJE0wIgjFQ==}
 
   /delegates/1.0.0:
     resolution: {integrity: sha512-bd2L678uiWATM6m5Z1VzNCErI3jiGzt6HGY8OVICs40JQq/HALfbyNJmp0UDakEY4pMMaN0Ly5om/B1VI/+xfQ==}
@@ -3011,7 +3009,7 @@ packages:
     hasBin: true
     dependencies:
       colorette: 2.0.19
-      defu: 6.1.1
+      defu: 6.1.2
       https-proxy-agent: 5.0.1
       mri: 1.2.0
       node-fetch-native: 1.0.1
@@ -3175,7 +3173,7 @@ packages:
       html-void-elements: 2.0.1
       parse5: 6.0.1
       unist-util-position: 4.0.4
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
       vfile: 5.3.6
       web-namespaces: 2.0.1
       zwitch: 2.0.4
@@ -3210,7 +3208,6 @@ packages:
 
   /hookable/5.4.2:
     resolution: {integrity: sha512-6rOvaUiNKy9lET1X0ECnyZ5O5kSV0PJbtA5yZUgdEF7fGJEVwSLSislltyt7nFwVVALYHQJtfGeAR2Y0A0uJkg==}
-    dev: false
 
   /html-tags/3.2.0:
     resolution: {integrity: sha512-vy7ClnArOZwCnqZgvv+ddgHgJiAFXe3Ge9ML5/mBctVJoUoYPCdxVucOywjDARn6CVoh3dRSFdPHy2sX80L0Wg==}
@@ -3347,7 +3344,7 @@ packages:
     requiresBuild: true
     dependencies:
       consola: 2.15.3
-      defu: 6.1.1
+      defu: 6.1.2
       destr: 1.2.2
       etag: 1.8.1
       image-meta: 0.1.1
@@ -3587,7 +3584,7 @@ packages:
     dependencies:
       clipboardy: 3.0.0
       colorette: 2.0.19
-      defu: 6.1.1
+      defu: 6.1.2
       get-port-please: 2.6.1
       http-shutdown: 1.2.2
       ip-regex: 5.0.0
@@ -3725,7 +3722,7 @@ packages:
     dependencies:
       '@types/mdast': 3.0.10
       '@types/unist': 2.0.6
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: true
 
   /mdast-util-find-and-replace/2.2.1:
@@ -3733,7 +3730,7 @@ packages:
     dependencies:
       escape-string-regexp: 5.0.0
       unist-util-is: 5.2.0
-      unist-util-visit-parents: 5.1.1
+      unist-util-visit-parents: 5.1.3
     dev: true
 
   /mdast-util-from-markdown/1.2.0:
@@ -3829,7 +3826,7 @@ packages:
       unist-builder: 3.0.1
       unist-util-generated: 2.0.1
       unist-util-position: 4.0.4
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: true
 
   /mdast-util-to-markdown/1.5.0:
@@ -3841,7 +3838,7 @@ packages:
       mdast-util-phrasing: 3.0.0
       mdast-util-to-string: 3.1.0
       micromark-util-decode-string: 1.0.2
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
       zwitch: 2.0.4
     dev: true
 
@@ -4282,7 +4279,7 @@ packages:
       chokidar: 3.5.3
       consola: 2.15.3
       cookie-es: 0.5.0
-      defu: 6.1.1
+      defu: 6.1.2
       destr: 1.2.2
       dot-prop: 7.2.0
       esbuild: 0.17.4
@@ -4445,7 +4442,7 @@ packages:
     dependencies:
       '@nuxt/kit': 3.0.0
       chalk: 5.2.0
-      defu: 6.1.1
+      defu: 6.1.2
       escape-string-regexp: 5.0.0
       knitwork: 1.0.0
       pathe: 1.1.0
@@ -4464,7 +4461,7 @@ packages:
       '@windicss/config': 1.8.10
       '@windicss/plugin-utils': 1.8.10
       consola: 2.15.3
-      defu: 6.1.1
+      defu: 6.1.2
       fs-extra: 10.1.0
       h3: 1.0.2
       listhen: 1.0.1
@@ -4498,7 +4495,7 @@ packages:
       '@vueuse/head': 1.0.23_vue@3.2.45
       chokidar: 3.5.3
       cookie-es: 0.5.0
-      defu: 6.1.1
+      defu: 6.1.2
       destr: 1.2.2
       escape-string-regexp: 5.0.0
       estree-walker: 3.0.3
@@ -5134,10 +5131,10 @@ packages:
     dev: true
     optional: true
 
-  /rc9/2.0.0:
-    resolution: {integrity: sha512-yVeYJHOpJLOhs3V6RKwz7RPPwPurrx3JjwK264sPgvo/lFdhuUrLien7iSvAO6STVkN0gSMk/MehQNHQhflqZw==}
+  /rc9/2.0.1:
+    resolution: {integrity: sha512-9EfjLgNmzP9255YX8bGnILQcmdtOXKtUlFTu8bOZPJVtaUDZ2imswcUdpK51tMjTRQyB7r5RebNijrzuyGXcVA==}
     dependencies:
-      defu: 6.1.1
+      defu: 6.1.2
       destr: 1.2.2
       flat: 5.0.2
 
@@ -5195,7 +5192,7 @@ packages:
       is-absolute-url: 4.0.1
       space-separated-tokens: 2.0.2
       unified: 10.1.2
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: true
 
   /rehype-raw/6.1.1:
@@ -5215,7 +5212,7 @@ packages:
       hast-util-heading-rank: 2.1.1
       hast-util-to-string: 2.0.0
       unified: 10.1.2
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: true
 
   /rehype-sort-attribute-values/4.0.0:
@@ -5224,7 +5221,7 @@ packages:
       '@types/hast': 2.3.4
       hast-util-is-element: 2.1.3
       unified: 10.1.2
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: true
 
   /rehype-sort-attributes/4.0.0:
@@ -5232,7 +5229,7 @@ packages:
     dependencies:
       '@types/hast': 2.3.4
       unified: 10.1.2
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: true
 
   /remark-emoji/3.0.2:
@@ -5241,7 +5238,7 @@ packages:
     dependencies:
       emoticon: 4.0.1
       node-emoji: 1.11.0
-      unist-util-visit: 4.1.1
+      unist-util-visit: 4.1.2
     dev: true
 
   /remark-gfm/3.0.1:
@@ -5270,8 +5267,8 @@ packages:
       parse-entities: 4.0.0
       scule: 1.0.0
       stringify-entities: 4.0.3
-      unist-util-visit: 4.1.1
-      unist-util-visit-parents: 5.1.1
+      unist-util-visit: 4.1.2
+      unist-util-visit-parents: 5.1.3
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -5451,7 +5448,7 @@ packages:
   /serve-placeholder/2.0.1:
     resolution: {integrity: sha512-rUzLlXk4uPFnbEaIz3SW8VISTxMuONas88nYWjAWaM2W9VDbt9tyFOr3lq8RhVOFrT3XISoBw8vni5una8qMnQ==}
     dependencies:
-      defu: 6.1.1
+      defu: 6.1.2
     dev: false
 
   /serve-static/1.15.0:
@@ -5901,7 +5898,7 @@ packages:
   /unenv/1.0.1:
     resolution: {integrity: sha512-08MoQ5+Edg9ckEP5y6vT8R6sOgCsNPxwPA1mKIOyergTtPOOuSyyJnbmF8CdnUplO2TUqSm0s1IysCkylxmndw==}
     dependencies:
-      defu: 6.1.1
+      defu: 6.1.2
       mime: 3.0.0
       node-fetch-native: 1.0.1
       pathe: 1.1.0
@@ -5979,7 +5976,6 @@ packages:
       unplugin: 1.0.1
     transitivePeerDependencies:
       - rollup
-    dev: false
 
   /unimport/2.0.1_rollup@3.10.1:
     resolution: {integrity: sha512-hMeDspGrEcocahicTr0AQYUGes24FvJtOxk9QEjeEOGv+n1EdpsDiT6z8t209PWhemPg0T5w/ooTVhup2GdrFA==}
@@ -6024,7 +6020,7 @@ packages:
     dependencies:
       '@types/unist': 2.0.6
       unist-util-is: 5.2.0
-      unist-util-visit-parents: 5.1.1
+      unist-util-visit-parents: 5.1.3
     dev: true
 
   /unist-util-stringify-position/3.0.3:
@@ -6033,19 +6029,19 @@ packages:
       '@types/unist': 2.0.6
     dev: true
 
-  /unist-util-visit-parents/5.1.1:
-    resolution: {integrity: sha512-gks4baapT/kNRaWxuGkl5BIhoanZo7sC/cUT/JToSRNL1dYoXRFl75d++NkjYk4TAu2uv2Px+l8guMajogeuiw==}
+  /unist-util-visit-parents/5.1.3:
+    resolution: {integrity: sha512-x6+y8g7wWMyQhL1iZfhIPhDAs7Xwbn9nRosDXl7qoPTSCy0yNxnKc+hWokFifWQIDGi154rdUqKvbCa4+1kLhg==}
     dependencies:
       '@types/unist': 2.0.6
       unist-util-is: 5.2.0
     dev: true
 
-  /unist-util-visit/4.1.1:
-    resolution: {integrity: sha512-n9KN3WV9k4h1DxYR1LoajgN93wpEi/7ZplVe02IoB4gH5ctI1AaF2670BLHQYbwj+pY83gFtyeySFiyMHJklrg==}
+  /unist-util-visit/4.1.2:
+    resolution: {integrity: sha512-MSd8OUGISqHdVvfY9TPhyK2VdUrPgxkUtWSuMHF6XAAFuL4LokseigBnZtPnJMu+FbynTkFNnFlyjxpVKujMRg==}
     dependencies:
       '@types/unist': 2.0.6
       unist-util-is: 5.2.0
-      unist-util-visit-parents: 5.1.1
+      unist-util-visit-parents: 5.1.3
     dev: true
 
   /universalify/2.0.0:

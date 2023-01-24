@@ -32,7 +32,7 @@
         v-for="(resources, index) in resource"
         :key="index"
       >
-        <h2 class="text-lg font-semibold tracking-wide">
+        <h2 class="text-lg font-medium tracking-wide">
           {{ t(resources.category) }}
         </h2>
         <ul class="list-disc ml-5">
@@ -52,10 +52,8 @@
 </template>
 <script setup lang="ts">
 const { t } = useI18n();
-// TODO: Add translations
-const title = "Security Toolkit: Essential Tools & Services for Online Safety";
-const description =
-  "Stay safe online with our curated list of the best security tools and services. From phishing protection to malware reporting, we've got you covered.";
+const title = t('Resources.meta.title');
+const description = t('Resources.meta.description');
 const path = useRoute();
 
 const isExternalLink = (url: string): "_blank" | "_self" => {
