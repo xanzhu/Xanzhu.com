@@ -94,8 +94,7 @@ Brave 浏览器的内置 VPN 功能在浏览网络时提供了额外的安全和
 ## FireFox
 <Media source="/images/blog/BB/firefox.webp" credit="Mozilla / Xanzhu" alt="火狐浏览器标志"></Media>
 
-Firefox is a fast and secure browser developed by Mozilla. It offers a range of great tools and services, unique on its own level, being outside of the Chromium ecosystem. It runs entirely on its own browser ecosystem, which works natively across all devices. While it may not have as many features compared to other browsers, it offers peace of mind when it comes to reliability.
-
+Firefox 是由 Mozilla 开发的一种快速且安全的浏览器。 它提供了一系列出色的工具和服务，在其自身层面上是独一无二的，在 Chromium 生态系统之外。 它完全在自己的浏览器生态系统上运行，该生态系统可在所有设备上原生运行。 虽然与其他浏览器相比，它可能没有那么多的功能，但在可靠性方面它让您高枕无忧。
 ### 性能和安全性
 
 Firefox 还在隐私和性能方面提供了改进的体验。 它使用更少的内存并采用平衡的内存解决方案来确保您的设备保持响应。
@@ -108,7 +107,7 @@ Firefox 提供的一些增强浏览器隐私和性能的内置功能包括：
 
 Firefox 提供快速和安全的浏览体验，具有一系列增强隐私和性能的内置功能。 开源，如果您正在寻找优先考虑隐私和性能的浏览器，则值得考虑。
 
-<Media source="/images/blog/BB/firefox-compare.webp" credit="Mozilla" alt="firefox 安全特性比较表"></Media>
+<Media source="/images/blog/BB/firefox-compare.webp" credit="Mozilla" alt="Firefox 安全特性比较表"></Media>
 
 Firefox 是重视可靠性和隐私的用户的绝佳选择。 它是 Brave 的完美替代品，提供相似的功能范围和快速的性能。 访问 [Firefox.com](https://www.mozilla.org/en-US/firefox/new/){:target="\_blank"} 下载浏览器并亲自体验不同之处。
 
