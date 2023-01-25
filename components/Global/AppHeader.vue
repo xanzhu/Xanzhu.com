@@ -1,7 +1,6 @@
 <template>
   <header
     class="flex flex-row justify-between items-center px-4 py-2 bg-transparent text-black dark:(bg-black text-light-200) md:(bg-transparent space-x-4 mx-2 py-4) lg:mx-6"
-    role="banner"
   >
     <div class="md:(flex flex-row space-x-4 items-center)">
       <NuxtLink :to="localePath('/')" aria-label="Xanzhu">
@@ -36,7 +35,6 @@
           ? 'flex p-4 rounded-md absolute top-9.5 right-4.5 z-1 flex-col-reverse children:(pt-2)'
           : 'hidden'
       "
-      role="navigation"
       itemscope
       itemtype="https://schema.org/SiteNavigationElement"
     >
