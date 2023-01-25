@@ -52,6 +52,7 @@
           :aria-label="t(link.name)"
           class="nav-internal dark:hover:bg-dark-300 hover:bg-light-400 md:(dark:hover:bg-transparent hover:bg-transparent)"
           v-t="link.name"
+          itemprop="url"
         />
       </div>
       <div
