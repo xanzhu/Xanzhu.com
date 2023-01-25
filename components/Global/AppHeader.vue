@@ -68,7 +68,7 @@
           />
         </button>
         <ul
-          class="z-4 -right-1 p-1 absolute top-13 rounded-md shadow-md space-y-1 dark:(bg-dark-800 text-light-200) border-outline bg-light-700 text-black"
+          class="z-4 -right-1 p-1 absolute top-13 shadow-md space-y-1 dark:(bg-dark-800 text-light-200) border-outline bg-light-700 text-black"
           :class="LangMenu ? '' : 'hidden'"
         >
           <li
