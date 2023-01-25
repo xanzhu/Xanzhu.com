@@ -66,12 +66,25 @@
   "Resources": {
     "heading": "Stay Safe Online with Our Essential Security Toolkit",
     "subheading": "Handpicked by me, the essential security resources for protecting your digital life",
-    "phishing": "Phishing",
     "malware": "Malware",
+    "phishing": "Phishing",
+    "explore": "Explore further",
     "accessibility": "Accessibility",
     "meta": {
       "title": "Security Toolkit: Essential Tools & Services for Online Safety",
       "description": "Stay safe online with our curated list of the best security tools and services. From phishing protection to malware reporting, we've got you covered."
+    },
+    "phish": {
+      "title": "Reporting Phishing Scams",
+      "subheading": "Don't Fall for Scams: Find resources to detect and report Phishing.",
+      "p-1": "Phishing explained: A type of online scam where attackers trick individuals into providing sensitive information, such as login credentials or financial information. These scams can appear on websites, emails, and text messages and often take the form of links to popular websites or fake sites that look legitimate.",
+      "p-2": "Detection: it is important to first check if the link has already been reported. There are several online services that can be used to scan the URL of the phishing link. It is important not to click on the link and instead, copy the link address and paste it into the scanning service.",
+      "detecting": "Detect",
+      "reporting": "Report",
+      "google": ", blocks content across the google ecosystem.",
+      "microsoft": ", blocks content on edge and windows services",
+      "urlscan": ", provides helpful information about the website such as IP/domain details",
+      "virus": ", checks against 90 Security Vendors"
     }
   }
 }

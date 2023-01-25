@@ -1,59 +1,118 @@
 <template>
-  <div class="flex flex-col space-y-4 children:lg:mx-40">
-    <div
-      class="flex flex-col mx-4 space-y-4 md:flex-row justify-center items-center"
-    >
-      <div class="flex flex-col text-left m-2 sm:space-y-4">
-        <h1
-          class="text-2xl lg:text-4xl xl:text-5xl font-semibold sm:mt-10 mt-5"
-        >
-          {{ t("Resources.heading") }}
-        </h1>
-        <p class="dark:text-white opacity-70">
+  <div class="container mx-auto p-2 space-y-4 sm:(p-0)">
+    <div class="grid grid-cols-2 lg:place-items-center space-y-2">
+      <div class="col-span-2 lg:col-span-1 pt-2">
+        <h1 class="text-4xl font-bold">{{ t("Resources.heading") }}</h1>
+        <h2 class="text-base font-medium opacity-90">
           {{ t("Resources.subheading") }}
-        </p>
+        </h2>
       </div>
-      <div class="h-auto w-auto md:w-[700px] object-cover">
+      <div class="col-span-2 lg:(col-span-1 p-10)">
         <NuxtImg
-          src="images/resources/guard.webp"
+          class="w-full h-auto rounded-md"
+          src="/images/resources/guard.webp"
           alt="Security Guards"
           title="Security Guards"
-          class="rounded-md"
-          height="700"
-          width="1000"
         />
       </div>
     </div>
-    <div
-      class="flex flex-col space-y-4 md:(flex-row space-x-8 items-center space-y-0) mx-4 h-1/6"
-    >
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 lg:mx-10">
       <div
-        class="bg-dark-900 p-2 border-outline"
-        v-for="(resources, index) in resource"
-        :key="index"
+        v-for="resources in resource"
+        :key="resources.category"
+        class="p-6 dark:bg-dark-900 border-outline bg-light-500 rounded-lg h-40"
       >
-        <h2 class="text-lg font-medium tracking-wide">
-          {{ t(resources.category) }}
-        </h2>
-        <ul class="list-disc ml-5">
-          <li v-for="link in resources.urls" :key="link.path">
-            <NuxtLink
-              :to="link.path"
-              :target="isExternalLink(link.path)"
-              class="opacity-70 hover:border-b"
-              rel="noopener"
-              >{{ link.name }}</NuxtLink
-            >
-          </li>
-        </ul>
+        <h3 class="text-lg font-semibold">{{ t(resources.category) }}</h3>
+        <div>
+          <ol
+            class="list-disc ml-6"
+            v-for="url in resources.urls"
+            :key="url.name"
+          >
+            <li>
+              <NuxtLink
+                :href="url.path"
+                :target="isExternalLink(url.path)"
+                class="opacity-80 hover:underline"
+                rel="noopener"
+                >{{ url.name }}</NuxtLink
+              >
+            </li>
+          </ol>
+        </div>
       </div>
+    </div>
+    <div class="p-4 pt-20 flex flex-col items-left h-screen">
+      <div class="my-6 sm:m-6">
+        <h2
+          id="section-2"
+          class=".heading1 font-bold text-3xl border-l-6 dark:border-[#FF0000] border-[#0066CC] pl-2"
+        >
+          {{ t("Resources.phish.title") }}
+        </h2>
+        <p class="opacity-80">
+          {{ t("Resources.phish.subheading") }}
+        </p>
+      </div>
+      <section class="prose prose-md flex flex-col mx-auto">
+        <div class="">
+          <p class="opacity-90">
+            {{ t("Resources.phish.p-1") }}
+          </p>
+          <p class="opacity-90">
+            {{ t("Resources.phish.p-2") }}
+          </p>
+        </div>
+        <div>
+          <div>
+            <h3 class="font-medium text-lg">
+              {{ t("Resources.phish.detecting") }}
+            </h3>
+            <ol class="list-decimal ml-6">
+              <li>
+                <NuxtLink
+                  to="https://www.virustotal.com/gui/home/url"
+                  class="hover:accent-color"
+                  >Virus Total</NuxtLink
+                >{{ t("Resources.phish.virus") }}
+              </li>
+              <li>
+                <NuxtLink class="hover:accent-color" to="https://urlscan.io/"
+                  >urlscan.io</NuxtLink
+                >{{ t("Resources.phish.urlscan") }}
+              </li>
+            </ol>
+          </div>
+          <div>
+            <h3 class="font-medium text-lg">
+              {{ t("Resources.phish.reporting") }}
+            </h3>
+            <ol class="list-decimal ml-6">
+              <li>
+                <NuxtLink
+                  class="hover:accent-color"
+                  to="https://safebrowsing.google.com/safebrowsing/report_phish/"
+                  >Google</NuxtLink
+                >{{ t("Resources.phish.google") }}
+              </li>
+              <li>
+                <NuxtLink
+                  class="hover:accent-color"
+                  to="https://safebrowsing.google.com/safebrowsing/report_phish/"
+                  >Microsoft</NuxtLink
+                >{{ t("Resources.phish.microsoft") }}
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
 </template>
 <script setup lang="ts">
 const { t } = useI18n();
-const title = t('Resources.meta.title');
-const description = t('Resources.meta.description');
+const title = t("Resources.meta.title");
+const description = t("Resources.meta.description");
 const path = useRoute();
 
 const isExternalLink = (url: string): "_blank" | "_self" => {
@@ -66,15 +125,37 @@ const isExternalLink = (url: string): "_blank" | "_self" => {
 const resource = [
   {
     category: "Resources.phishing",
-    urls: [{ name: "Links Soon", path: "https://xanzhu.com" }],
+    urls: [
+      {
+        name: t("Resources.explore"),
+        path: "#section-2",
+      },
+      {
+        name: "Google Safe Browsing",
+        path: "https://safebrowsing.google.com/safebrowsing/report_phish/",
+      },
+      {
+        name: "Microsoft Site Reporting",
+        path: "https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest",
+      },
+    ],
   },
   {
     category: "Resources.malware",
-    urls: [{ name: "Links Soon", path: "#" }],
+    urls: [
+      {
+        name: "Virus Total",
+        path: "https://www.virustotal.com/gui/home/upload",
+      },
+      {
+        name: "Hybrid Analysis",
+        path: "https://www.hybrid-analysis.com/",
+      },
+    ],
   },
   {
     category: "Resources.accessibility",
-    urls: [{ name: "Links Soon", path: "#" }],
+    urls: [{ name: "WebAim", path: "https://webaim.org/" }],
   },
 ];
 
