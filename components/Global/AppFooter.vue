@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="sm:(flex-row bg-light-400) dark:(text-white sm:bg-dark-900) flex flex-col-reverse items-center justify-between p-1 px-2 text-black lg:mx-6"
+    class="sm:(flex-row bg-light-400) dark:(text-white sm:bg-dark-900) flex flex-col-reverse items-center justify-between p-1 px-2 text-black lg:px-6"
     itemscope
     itemtype="http://schema.org/Organization"
   >
