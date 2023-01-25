@@ -9,6 +9,7 @@
         <NuxtLink
           :to="`https://twitter.com/intent/tweet?url=https://xanzhu.com${post._path}&text=${post.title}&via=Xanzhu1`"
           target="_blank"
+          itemprop="url" 
         >
           <IconTwitter />
         </NuxtLink>
@@ -19,6 +20,7 @@
         <NuxtLink
           :to="`https://www.linkedin.com/shareArticle?url=https://xanzhu.com${post._path}&title=${post.title}`"
           target="_blank"
+          itemprop="url"
         >
           <IconLinkedIn />
         </NuxtLink>
@@ -29,6 +31,7 @@
         <NuxtLink
           :to="`https://www.reddit.com/submit?url=https://xanzhu.com${post._path}&title=${post.title}`"
           target="_blank"
+          itemprop="url"
         >
           <IconReddit />
         </NuxtLink>
@@ -44,9 +47,3 @@ defineProps({
   },
 });
 </script>
-
-<!-- 
-  Dark
-  Background #0a0c0d
-  Border #15191b
- -->
