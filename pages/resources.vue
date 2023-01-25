@@ -12,7 +12,10 @@
           class="w-full h-auto rounded-md"
           src="/images/resources/guard.webp"
           alt="Security Guards"
+          width="560"
+          height="373"
           title="Security Guards"
+          loading="eager"
         />
       </div>
     </div>
