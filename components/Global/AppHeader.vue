@@ -7,7 +7,11 @@
       <NuxtLink :to="localePath('/')" aria-label="Xanzhu">
         <IconXanzhu class="flex w-40 sm:w-46 md:w-56" />
       </NuxtLink>
-      <p class="hidden md:block border-outline px-1.5 py-0.2 text-xs">BETA</p>
+      <p
+        class="hidden md:block dark:bg-dark-900 bg-light-400 border-outline px-1.5 py-0.2 text-xs"
+      >
+        BETA
+      </p>
     </div>
     <!-- Mobile Navigation Toggle -->
     <div class="flex text-black dark:text-light-200 md:hidden">

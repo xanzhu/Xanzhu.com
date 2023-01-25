@@ -77,14 +77,14 @@
           <div class="flex flex-row space-x-2">
             <p
               v-if="wide.tag"
-              class="dark:(bg-black text-white) bg-white px-4 border-outline py-1.5 text-xs"
+              class="dark:(bg-dark-900 text-white) bg-light-500 px-4 border-outline py-1.5 text-xs"
             >
               {{ wide.tag }}
             </p>
             <GlobalUtilsDate
               v-if="wide.date"
               :date="wide.date"
-              class="dark:(bg-black text-white) bg-white mr-auto px-4 py-1.5 border-outline text-xs"
+              class="dark:(bg-dark-900 text-white) bg-light-500 mr-auto px-4 py-1.5 border-outline text-xs"
             />
           </div>
           <h2
@@ -150,14 +150,14 @@
             <div class="space-x-2">
               <p
                 v-if="feature.tag"
-                class="dark:(bg-black text-white) bg-white px-4 border-outline py-1.5 text-xs group-hover:(text-border-600) inline-flex"
+                class="dark:(bg-dark-900 text-white) bg-light-400 px-4 border-outline py-1.5 text-xs group-hover:(text-border-600) inline-flex"
               >
                 {{ feature.tag }}
               </p>
               <GlobalUtilsDate
                 v-if="feature.date"
                 :date="feature.date"
-                class="dark:(bg-black text-white) bg-white mr-auto px-4 py-1.5 border-outline text-xs"
+                class="dark:(bg-dark-900 text-white) bg-light-400 mr-auto px-4 py-1.5 border-outline text-xs"
               />
             </div>
             <div>

@@ -7,7 +7,7 @@
     >
       <div
         v-if="post.tag"
-        class="text-sm inline-flex space-x-3 children:(border-outline px-2 py-0.5 dark:bg-transparent bg-light-200 dark:text-white text-black)"
+        class="text-sm inline-flex space-x-3 children:(border-outline px-2 py-0.5 dark:bg-dark-900 bg-light-400 dark:text-white text-black)"
       >
         <span>
           {{ post.tag }}
@@ -60,7 +60,7 @@
           v-if="post.date"
           :date="post.date"
           itemprop="datePublished"
-          class="dark:(bg-dark-900 text-white) <md:hidden md:(rounded-tl-none rounded-br-none rounded-bl-md border-outline font-medium) bg-light-500 px-4 py-2 rounded-bl-md text-xs absolute top-0 right-0"
+          class="dark:(bg-dark-900 text-white) <md:hidden md:(rounded-tl-none rounded-br-none rounded-bl-md border-outline font-medium) bg-light-400 px-4 py-2 rounded-bl-md text-xs absolute top-0 right-0"
         />
         <div
           v-if="post.source"
