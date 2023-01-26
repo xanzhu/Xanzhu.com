@@ -38,7 +38,7 @@
     >
       <NuxtLink
         :to="wide._path"
-        class="text-black dark:(text-white) group zoomef flex flex-col lg:flex-row lg:items-center mx-auto space-y-3 md:p-9 lg:(p-0 space-x-4)"
+        class="text-black dark:(text-white) group zoomef flex flex-col lg:flex-row lg:items-center mx-auto space-y-3 md:py-9 lg:(p-0 space-x-4)"
       >
         <NuxtImg
           crossorigin="anonymous"
