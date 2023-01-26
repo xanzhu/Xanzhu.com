@@ -45,7 +45,7 @@
         </div>
       </div>
     </div>
-    <div class="p-4 pt-20 flex flex-col items-left sm:h-screen">
+    <div class="p-4 pt-20 flex flex-col items-left">
       <div class="my-6 sm:m-6">
         <h2
           id="section-2"
