@@ -12,7 +12,6 @@
         BETA
       </p>
     </div>
-    <!-- Mobile Navigation Toggle -->
     <div class="flex text-black dark:text-light-200 md:hidden">
       <button @click="MobileToggle">
         <IconMenu
@@ -27,7 +26,6 @@
         />
       </button>
     </div>
-    <!-- Navigation UI  -->
     <nav
       class="items-center font-semibold bg-light-700 border-outline dark:(bg-dark-800 md:bg-transparent) md:(relative top-0 flex flex-row space-x-6 p-4 bg-transparent border-none)"
       :class="
@@ -56,7 +54,6 @@
       <div
         class="flex flex-row space-x-2 items-center align-middle justify-center"
       >
-        <!-- Translate Menu Toggle -->
         <button
           @click="LangToggle"
           @change="onChange"
@@ -85,7 +82,6 @@
               {{ locale.name }}
             </NuxtLink>
           </li>
-          <!-- TODO: Add Translation warning -->
         </ul>
         <GlobalUtilsColorSwitch />
       </div>
