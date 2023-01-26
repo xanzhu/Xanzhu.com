@@ -42,6 +42,12 @@ useHead({
   bodyAttrs: {
     class: "dark:(bg-black text-white) bg-white text-black",
   },
+  meta: [
+    {
+      name: "naver-site-verification",
+      content: "efe8928c52c47ffddfbd678ff1ac6fe5ca08b009",
+    },
+  ],
 });
 
 useSeoMeta({
