@@ -62,14 +62,14 @@ export default defineNuxtConfig({
     },
     baseUrl: process.env.BASE_URL,
     defaultLocale: "en",
-    strategy: "prefix",
+    strategy: "prefix_except_default",
     langDir: "i18n",
     // trailingSlash: true,
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: "xanzhu-i18n-v2",
       redirectOn: "root",
-      alwaysRedirect: true,
+      // alwaysRedirect: true,
     },
     locales: [
       {
