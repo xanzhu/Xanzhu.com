@@ -62,7 +62,7 @@ export default defineNuxtConfig({
     },
     baseUrl: process.env.BASE_URL,
     defaultLocale: "en",
-    strategy: "prefix_and_default",
+    strategy: "prefix",
     langDir: "i18n",
     // trailingSlash: true,
     detectBrowserLanguage: {
