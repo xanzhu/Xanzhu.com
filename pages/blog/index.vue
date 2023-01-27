@@ -5,7 +5,7 @@
   >
     <div class="mt-15 mx-4 sm:mx-8 lg:mx-10 space-y-2">
       <h1 class="font-semibold text-3xl sm:text-5xl">
-        {{ t('Blog.title') }}
+        {{ t("Blog.title") }}
       </h1>
       <p
         class="text-lg break-words font-thin sm:(text-2xl) dark:text-gray-300 md:w-[80%] lg:w-[70%]"
@@ -68,10 +68,8 @@
           <div
             class="dark:(bg-black text-white) bg-white rounded-b-md h-auto p-4"
           >
-            <h2 class="font-medium text-xl">
-              {{ article.title }}
-            </h2>
-            <p class="opacity-80 pt-1">{{ article.description }}</p>
+            <h2 class="font-medium text-xl" v-html="article.title" />
+            <p class="opacity-80 pt-1" v-html="article.description" />
           </div>
         </NuxtLink>
       </div>
@@ -80,10 +78,22 @@
 </template>
 <script setup lang="ts">
 const { t, locale } = useI18n();
-const path = useRoute();
+// const path = useRoute();
 
-const { data: articles } = await useAsyncData("articles", () => {
-  return queryContent(`${locale.value}/blog`).sort({ date: -1 }).find();
+// const { data: articles } = await useAsyncData("articles", () => {
+//   return queryContent(`${locale.value}/blog`).sort({ date: -1 }).find();
+// });
+
+// http://localhost:3000/ko/blog/apple-silicon-virtual-machine-setup/  - NW
+// http://localhost:3000/ko/blog/apple-silicon-virtual-machine-setup
+
+// TEST: New logic
+const { data: articles } = await useAsyncData("articles", async () => {
+  if (locale.value !== "en") {
+    return await queryContent(`${locale.value}/blog`).sort({ date: -1 }).find();
+  } else {
+    return await queryContent("/blog").sort({ date: -1 }).find();
+  }
 });
 
 const title = t("Blog.meta.title");
