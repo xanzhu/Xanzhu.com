@@ -70,6 +70,7 @@ export default defineNuxtConfig({
       redirectOn: "root",
       alwaysRedirect: true,
     },
+    trailingSlash: true,
     locales: [
       {
         code: "en",
