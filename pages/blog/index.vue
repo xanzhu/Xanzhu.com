@@ -68,8 +68,8 @@
           <div
             class="dark:(bg-black text-white) bg-white rounded-b-md h-auto p-4"
           >
-            <h2 class="font-medium text-xl" v-t="article.title" />
-            <p class="opacity-80 pt-1" v-t="article.description" />
+            <h2 class="font-medium text-xl" v-html="article.title" />
+            <p class="opacity-80 pt-1" v-html="article.description" />
           </div>
         </NuxtLink>
       </div>
