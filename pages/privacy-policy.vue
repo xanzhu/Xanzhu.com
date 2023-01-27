@@ -1,6 +1,7 @@
 <script setup lang="ts">
-const { t } = useI18n();
-const path = useRoute();
+import { localeCodes } from "~~/.nuxt/i18n.options.mjs";
+
+const { t, locale } = useI18n();
 
 const title = t("Privacy-Policy.title");
 const desc = t("Privacy-Policy.description");
@@ -12,6 +13,11 @@ const paragraphs: { [key: number]: string } = {
   3: t("Privacy-Policy.section-three"),
 };
 
+const url =
+  locale.value == "en"
+    ? "https://xanzhu.com/privacy-policy/"
+    : `https://xanzhu.com/${locale.value}/privacy-policy/`;
+
 useSeoMeta({
   title: title,
   description: desc,
@@ -19,7 +25,7 @@ useSeoMeta({
   ogDescription: desc,
   twitterTitle: title,
   twitterDescription: desc,
-  ogUrl: `https://xanzhu.com${path}`,
+  ogUrl: url,
 });
 </script>
 <template>
