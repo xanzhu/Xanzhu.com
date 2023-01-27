@@ -1,6 +1,6 @@
 {
   "name": "xanzhu.com",
-  "version": "0.3.9",
+  "version": "0.4.0",
   "private": true,
   "scripts": {
     "dev": "nuxi dev",
@@ -12,11 +12,11 @@
     "nuxt": "^3.1.1"
   },
   "devDependencies": {
-    "@nuxt/content": "^2.4.0",
+    "@nuxt/content": "^2.4.1",
     "@nuxt/image-edge": "1.0.0-27840416.dc1ed65",
     "@nuxtjs/color-mode": "^3.2.0",
-    "@nuxtjs/i18n": "8.0.0-beta.7",
-    "nuxt-windicss": "^2.6.0",
-    "nuxt-simple-sitemap": "^1.0.5"
+    "@nuxtjs/i18n": "8.0.0-beta.9",
+    "nuxt-simple-sitemap": "^1.0.5",
+    "nuxt-windicss": "^2.6.0"
   }
 }
