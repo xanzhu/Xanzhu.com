@@ -221,7 +221,7 @@ const { data: features } = await useAsyncData("feature", async () => {
       .limit(4)
       .find();
   } else {
-    return await queryContent("blog").where({ feature: true }).limit(1).find();
+    return await queryContent("blog").where({ feature: true }).limit(4).find();
   }
 });
 </script>
