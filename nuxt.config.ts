@@ -69,7 +69,7 @@ export default defineNuxtConfig({
       useCookie: true,
       cookieKey: "xanzhu-i18n-v2",
       redirectOn: "root",
-      // alwaysRedirect: true,
+      alwaysRedirect: true,
     },
     locales: [
       {
