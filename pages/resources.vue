@@ -14,10 +14,12 @@
           class="w-full h-auto rounded-md"
           src="/images/resources/guard.webp"
           alt="Security Guards"
+          role="presentation"
           width="560"
           height="373"
           title="Security Guards"
-          loading="eager"
+          loading="lazy"
+          decoding="async"
         />
       </div>
     </div>
