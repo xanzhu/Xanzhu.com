@@ -93,7 +93,7 @@
           </li>
         </ul>
       </nav>
-      <p class="text-right font-thin <sm:hidden">{{ t("App.build") }} v0.3.9</p>
+      <p class="text-right font-thin <sm:hidden">{{ t("App.build") }} v0.4.0</p>
     </div>
   </footer>
 </template>
