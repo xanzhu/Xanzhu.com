@@ -2,7 +2,9 @@
   <div class="container mx-auto p-2 space-y-4 sm:(pt-10 p-0)">
     <div class="grid grid-cols-2 lg:place-items-center space-y-2">
       <div class="col-span-2 lg:col-span-1 pt-2">
-        <h1 class="text-2xl sm:text-4xl font-bold">{{ t("Resources.heading") }}</h1>
+        <h1 class="text-2xl sm:text-4xl font-bold">
+          {{ t("Resources.heading") }}
+        </h1>
         <h2 class="text-base font-normal opacity-90">
           {{ t("Resources.subheading") }}
         </h2>

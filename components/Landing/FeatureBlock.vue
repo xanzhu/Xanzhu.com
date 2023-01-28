@@ -187,17 +187,41 @@
 const { locale, t } = useI18n();
 const localePath = useLocalePath();
 
-const { data: wideFeature } = await useAsyncData("wide", () =>
-  queryContent(locale.value + "/blog")
-    .where({ wide: true })
-    .limit(1)
-    .find()
-);
+// const { data: wideFeature } = await useAsyncData("wide", () =>
+//   queryContent(locale.value + "/blog")
+//     .where({ wide: true })
+//     .limit(1)
+//     .find()
+// );
 
-const { data: features } = await useAsyncData("feature", () =>
-  queryContent(locale.value + "/blog")
-    .where({ feature: true })
-    .limit(4)
-    .find()
-);
+// TEST: New Logic
+const { data: wideFeature } = await useAsyncData("wide", async () => {
+  if (locale.value !== "en") {
+    return await queryContent(`${locale.value}/blog`)
+      .where({ wide: true })
+      .limit(1)
+      .find();
+  } else {
+    return await queryContent("blog").where({ wide: true }).limit(1).find();
+  }
+});
+
+// const { data: features } = await useAsyncData("feature", () =>
+//   queryContent(locale.value + "/blog")
+//     .where({ feature: true })
+//     .limit(4)
+//     .find()
+// );
+
+//TEST: New Logic
+const { data: features } = await useAsyncData("feature", async () => {
+  if (locale.value !== "en") {
+    return await queryContent(`${locale.value}/blog`)
+      .where({ feature: true })
+      .limit(4)
+      .find();
+  } else {
+    return await queryContent("blog").where({ feature: true }).limit(4).find();
+  }
+});
 </script>

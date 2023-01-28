@@ -32,8 +32,19 @@
 const { path } = useRoute();
 const { locale } = useI18n();
 
-const { data: post } = await useAsyncData(path.replace(/\/$/, ""), () => {
-  return queryContent(`${locale.value}/blog`).where({ _path: path }).findOne();
+// const { data: post } = await useAsyncData(path.replace(/\/$/, ""), () => {
+//   return queryContent(`${locale.value}/blog`).where({ _path: path }).findOne();
+// });
+
+// TEST: New logic
+const { data: post } = await useAsyncData(path.replace(/\/$/, ""), async () => {
+  if (locale.value !== "en") {
+    return await queryContent(`${locale.value}/blog`)
+      .where({ _path: path })
+      .findOne();
+  } else {
+    return await queryContent("blog").where({ _path: path }).findOne();
+  }
 });
 
 const title = post.value?.title;
@@ -51,12 +62,28 @@ useSeoMeta({
   ogImage: post.value?.ogLink || post.value?.media,
 });
 
-const { data } = await useAsyncData("prev-next", () =>
-  queryContent(locale.value + "/blog")
-    .sort({ date: -1 })
-    .only(["_path"])
-    .findSurround(path)
-);
+// const { data } = await useAsyncData("prev-next", () =>
+//   queryContent(locale.value + "/blog")
+//     .sort({ date: -1 })
+//     .only(["_path"])
+//     .findSurround(path)
+// );
+
+// TEST: New logic
+const { data } = await useAsyncData("prev-next", async () => {
+  if (locale.value !== "en") {
+    return await queryContent(`${locale.value}/blog`)
+      .sort({ date: -1 })
+      .only(["_path"])
+      .findSurround(path);
+  } else {
+    return await queryContent("blog")
+      .sort({ date: -1 })
+      .only(["_path"])
+      .findSurround(path);
+  }
+});
+
 const [prev, next] = data.value || [];
 </script>
 <style>
