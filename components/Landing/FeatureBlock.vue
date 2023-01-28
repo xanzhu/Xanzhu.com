@@ -53,18 +53,6 @@
         />
         <NuxtImg
           crossorigin="anonymous"
-          v-else-if="wide.media"
-          :src="wide.media"
-          :alt="wide.alt"
-          :title="wide.alt"
-          loading="lazy"
-          provider="cloudinary"
-          class="border-outline md:max-w-2xl lg:max-w-lg"
-          height="1253"
-          width="1880"
-        />
-        <NuxtImg
-          crossorigin="anonymous"
           v-else
           :alt="wide.alt"
           loading="lazy"
@@ -121,19 +109,6 @@
             width="577"
             class="border-outline"
             :src="feature.img"
-          />
-          <NuxtImg
-            crossorigin="anonymous"
-            v-else-if="feature.media"
-            :src="feature.media"
-            :alt="feature.alt"
-            :title="feature.alt"
-            height="369"
-            width="577"
-            sizes="sm:100vw md:50vw lg:25vw"
-            provider="cloudinary"
-            loading="lazy"
-            class="border-outline"
           />
           <NuxtImg
             crossorigin="anonymous"

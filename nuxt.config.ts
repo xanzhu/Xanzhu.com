@@ -92,11 +92,6 @@ export default defineNuxtConfig({
       },
     ],
   },
-  image: {
-    cloudinary: {
-      baseURL: "https://res.cloudinary.com/xanzhu/image/upload/",
-    },
-  },
   colorMode: {
     classSuffix: "",
     preference: "system",

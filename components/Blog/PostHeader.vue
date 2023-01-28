@@ -30,22 +30,9 @@
         <p class="dark:opacity-70 pt-1 opacity-80">{{ post.description }}</p>
       </div>
     </div>
-    <div v-if="post.img || post.media" class="relative col-span-1 grow-0">
+    <div v-if="post.img" class="relative col-span-1 grow-0">
       <div>
         <NuxtImg
-          v-if="post.media && !post.img"
-          crossorigin="anonymous"
-          itemprop="image"
-          class="w-full object-cover md:border-outline"
-          :src="post.media"
-          :alt="post.alt"
-          :title="post.alt"
-          provider="cloudinary"
-          loading="auto"
-          format="webp"
-        />
-        <NuxtImg
-          v-if="post.img || (post.img && post.media)"
           crossorigin="anonymous"
           itemprop="image"
           :src="post.img"

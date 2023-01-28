@@ -38,19 +38,6 @@
           />
           <NuxtImg
             crossorigin="anonymous"
-            v-else-if="article.media"
-            :src="article.media"
-            :alt="article.alt"
-            :title="article.alt"
-            loading="lazy"
-            sizes="sm:100vw md:50vw lg:25vw"
-            provider="cloudinary"
-            height="369"
-            width="577"
-            class="object-fit w-full rounded-t-md"
-          />
-          <NuxtImg
-            crossorigin="anonymous"
             v-else
             :alt="article.alt"
             :title="article.alt"
