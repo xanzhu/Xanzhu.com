@@ -32,11 +32,6 @@
 const { path } = useRoute();
 const { locale } = useI18n();
 
-// const { data: post } = await useAsyncData(path.replace(/\/$/, ""), () => {
-//   return queryContent(`${locale.value}/blog`).where({ _path: path }).findOne();
-// });
-
-// TEST: New logic
 const { data: post } = await useAsyncData(path.replace(/\/$/, ""), async () => {
   if (locale.value !== "en") {
     return await queryContent(`${locale.value}/blog`)

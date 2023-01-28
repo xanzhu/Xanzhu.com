@@ -36,17 +36,6 @@
             class="rounded-t-md"
             :src="article.img"
           />
-          <NuxtImg
-            crossorigin="anonymous"
-            v-else
-            :alt="article.alt"
-            :title="article.alt"
-            class="object-fit w-full rounded-t-md"
-            height="369"
-            width="577"
-            loading="lazy"
-            src="https://source.unsplash.com/kUmcSBJcFPg/577x369"
-          />
           <GlobalUtilsDate
             v-if="article.date"
             :date="article.date"
@@ -65,21 +54,14 @@
 </template>
 <script setup lang="ts">
 const { t, locale } = useI18n();
-// const path = useRoute();
 
-// const { data: articles } = await useAsyncData("articles", () => {
-//   return queryContent(`${locale.value}/blog`).sort({ date: -1 }).find();
-// });
-
-// http://localhost:3000/ko/blog/apple-silicon-virtual-machine-setup/  - NW
-// http://localhost:3000/ko/blog/apple-silicon-virtual-machine-setup
-
-// TEST: New logic
 const { data: articles } = await useAsyncData("articles", async () => {
   if (locale.value !== "en") {
-    return await queryContent(`${locale.value}/blog`).sort({ date: -1 }).find();
+    return await queryContent(`${locale.value}/blog/`)
+      .sort({ date: -1 })
+      .find();
   } else {
-    return await queryContent("/blog").sort({ date: -1 }).find();
+    return await queryContent("/blog/").sort({ date: -1 }).find();
   }
 });
 
