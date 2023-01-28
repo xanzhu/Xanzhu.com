@@ -12,15 +12,14 @@
         </div>
         <div class="col-span-2 lg:(col-span-1 p-10)">
           <NuxtImg
+            crossorigin="anonymous"
             class="w-full h-auto rounded-md"
             src="/images/resources/guard.webp"
             alt="Security Guards"
-            role="presentation"
             width="560"
             height="373"
             title="Security Guards"
             loading="lazy"
-            decoding="async"
           />
         </div>
       </div>
