@@ -6,6 +6,7 @@
       :alt="alt"
       :title="alt"
       loading="Lazy"
+      decoding="async"
     />
     <figcaption v-if="credit" v-bind:credit="credit">
       <b>{{ t("Blog.source") }}</b> {{ " : " + credit }}
