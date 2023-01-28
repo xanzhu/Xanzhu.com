@@ -1,11 +1,17 @@
 <template>
   <section class="relative h-screen">
+    <div class="absolute w-full h-screen bg-cover -z-1">
+      <NuxtImg
+        src="/images/landing/globe.webp"
+        loading="lazy"
+        decoding="async"
+        role="presentation"
+        alt="Nasa Image of Earth"
+        class="h-full w-full object-cover"
+      />
+    </div>
     <div
-      class="absolute w-full h-full bg-center bg-cover"
-      style="background-image: url('/images/landing/globe.webp')"
-    ></div>
-    <div
-      class="absolute p-4 sm:p-12 left-0 md:right-[20%] xl:right-[30%] 2xl:p-[5%] top-4"
+      class="p-4 sm:p-12 left-0 md:right-[20%] xl:right-[30%] 2xl:p-[5%] top-4"
     >
       <h1 class="pt-10 text-3xl sm:(pt-0 text-5xl) font-semibold text-white">
         {{ t("App.title") }}
