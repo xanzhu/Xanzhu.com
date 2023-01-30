@@ -33,7 +33,7 @@
             loading="lazy"
             height="369"
             width="577"
-            class="rounded-t-md"
+            class="rounded-t-md object-cover h-full w-full"
             :src="article.img"
           />
           <GlobalUtilsDate
