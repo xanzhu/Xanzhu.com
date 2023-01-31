@@ -2,6 +2,7 @@
 title: "更好的浏览器造就更好的网络"
 description: "2023 年最佳浏览器，可改善网络体验、速度和隐私，一应俱全"
 date: "2023-01-24"
+updated: "2023-02-01"
 tag: 指导
 img: "/images/blog/BB/browser.webp"
 toc: true

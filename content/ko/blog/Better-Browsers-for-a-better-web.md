@@ -2,6 +2,7 @@
 title: "더 나은 웹을 위한 더 나은 브라우저"
 description: "향상된 웹 경험, 속도 및 개인 정보 보호를 위해 2023년 최고의 브라우저를 모두 하나의 목록에 모았습니다."
 date: "2023-01-24"
+updated: "2023-02-01"
 tag: 가이드
 img: "/images/blog/BB/browser.webp"
 toc: true
