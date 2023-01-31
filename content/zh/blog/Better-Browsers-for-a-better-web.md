@@ -80,10 +80,21 @@ Brave Search 建立在开源搜索引擎 Preact 之上，可提供快速、轻�
 Brave 不断致力于改进搜索引擎并添加新功能，例如语音搜索、更好地与 Brave 浏览器集成等。
 一个有前途的传统搜索引擎替代品，为用户提供更安全、私密和公正的搜索体验。
 
+### Tor
+
+<Media source="/images/blog/BB/snowflake-tor.webp" credit="Tor Project" alt="Diagram on Snowflake protocol by Tor"></Media>
+
+该浏览器还包括连接到 Tor 网络的选项，这对想要访问深层网络或 .onion 地址的用户很有用。 正在实施以帮助对抗审查制度的新功能是 Snowflake 协议，它允许用户创建一个节点供其他用户连接并充当中间人来浏览互联网上的限制
+
+<Media source="/images/blog/BB/snowflake.webp" credit="Brave" alt="Snowflake 在 brave 浏览器上的实现"></Media>
+
+您可以通过 [The Tor Project](https://snowflake.torproject.org/){:target="\_blank"} 了解有关 Snowflake 协议的更多信息
+要在 Brave 浏览器上实施或启用此功能，请参阅 [Brave 支持](https://support.brave.com/hc/en-us/articles/9059440641421-What-is-the-Snowflake-extension-){:target= "\_blank"}
+
 ### 其他特性
 Brave 提供了许多内置功能和工具，包括隐私浏览时的 VPN 选项，通过 Tor 私密连接以自动访问 .onion 地址的选项。 该浏览器的广告系统也有独特的方法，允许用户通过其奖励计划赚取 BAT（基本注意力令牌）并为创作者做出贡献。
 
-Brave 浏览器的内置 VPN 功能在浏览网络时提供了额外的安全和隐私层。 该浏览器还包括连接到 Tor 网络的选项，这对想要访问深层网络或 .onion 地址的用户很有用。
+Brave 浏览器的内置 VPN 功能在浏览网络时提供了额外的安全和隐私层。 
 
 该浏览器的奖励计划是一项独特的功能，允许用户通过观看尊重隐私的广告来赚取 BAT（基本注意力令牌），并用它来为他们最喜欢的内容创作者做出贡献。 这是一种创新方式，可以支持创作者并在您浏览网页时获得关注奖励。
 

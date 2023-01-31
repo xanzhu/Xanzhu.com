@@ -80,10 +80,21 @@ Brave Search is built on top of the open-source search engine, Preact, which pro
 Brave is continuously working to improve the search engine and add new features, such as voice search, better integration with the Brave browser, and more.
 A promising alternative to traditional search engines, providing users with a more secure, private and unbiased search experience.
 
+### Tor
+
+<Media source="/images/blog/BB/snowflake-tor.webp" credit="Tor Project" alt="Diagram on Snowflake protocol by Tor"></Media>
+
+The browser also includes the option to connect to the Tor network, which is useful for users who want to access the deep web or .onion addresses. A newer feature being implemented to help combat censorship is the Snowflake protocol, which allows users to create a node for other users to connect to and act as a middleman for navigating restrictions on the interne
+
+<Media source="/images/blog/BB/snowflake.webp" credit="Brave" alt="Implementation of Snowflake on brave browser"></Media>
+
+You can learn more about the Snowflake protocol via [The Tor Project](https://snowflake.torproject.org/){:target="\_blank"}
+For implementing or enabling this on Brave Browsers, see [Brave Support](https://support.brave.com/hc/en-us/articles/9059440641421-What-is-the-Snowflake-extension-){:target="\_blank"}
+
 ### Other features
 Brave is offering a lot of built-in features and tools, including the option for a VPN on private browsing, options to connect privately through Tor to gain access to .onion addresses automatically. The browser also has a unique approach to its ad system, allowing users to earn and contribute towards creators in BAT (Basic Attention Token) through its rewards program.
 
-The Brave browser's built-in VPN feature provides an added layer of security and privacy when browsing the web. The browser also includes the option to connect to the Tor network, which is useful for users who want to access the deep web or .onion addresses.
+The Brave browser's built-in VPN feature provides an added layer of security and privacy when browsing the web. 
 
 The browser's rewards program is a unique feature that allows users to earn BAT (Basic Attention Token) by viewing privacy-respecting ads and to use it to contribute to their favorite content creators. It's an innovative way to support creators and get rewarded for your attention while browsing the web.
 
@@ -107,7 +118,6 @@ Some of the built-in features offered by Firefox that enhance the privacy and pe
 * A basic password manager which saves your login credentials for different websites and autofills them for you when you revisit the site. This feature makes it easy to log in to your favorite websites and helps to protect your personal information from being stolen.
 
 Firefox offers a fast and secure browsing experience, with a range of built-in features that enhance privacy and performance. Open source and it's worth considering if you're looking for a browser that prioritizes privacy and performance.
-
 
 <Media source="/images/blog/BB/firefox-compare.webp" credit="Mozilla" alt="Comparison chart for security features on firefox"></Media>
 

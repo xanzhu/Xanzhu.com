@@ -79,10 +79,22 @@ Brave Search는 빠르고 가볍고 효율적인 검색 경험을 제공하는 �
 Brave는 검색 엔진을 개선하고 음성 검색, Brave 브라우저와의 더 나은 통합 등과 같은 새로운 기능을 추가하기 위해 지속적으로 노력하고 있습니다.
 기존 검색 엔진에 대한 유망한 대안으로 사용자에게 보다 안전하고 비공개이며 편견 없는 검색 경험을 제공합니다.
 
+### 토르
+
+<Media source="/images/blog/BB/snowflake-tor.webp" credit="Tor Project" alt="Tor가 제공하는 Snowflake 프로토콜 다이어그램"></Media>
+
+브라우저에는 Tor 네트워크에 연결하는 옵션도 포함되어 있어 딥 웹 또는 .onion 주소에 액세스하려는 사용자에게 유용합니다. 검열과 싸우기 위해 구현되는 새로운 기능은 사용자가 다른 사용자가 연결할 수 있는 노드를 생성하고 인터넷에 대한 제한을 탐색하기 위한 중개자 역할을 할 수 있는 Snowflake 프로토콜입니다.
+
+<Media source="/images/blog/BB/snowflake.webp" credit="Brave" alt="용감한 브라우저에서 Snowflake 구현"></Media>
+
+[The Tor Project](https://snowflake.torproject.org/){:target="\_blank"}에서 Snowflake 프로토콜에 대해 자세히 알아볼 수 있습니다.
+
+Brave 브라우저에서 이를 구현하거나 활성화하려면 [Brave 지원](https://support.brave.com/hc/en-us/articles/9059440641421-What-is-the-Snowflake-extension-){:target="\_blank"}
+
 ### 다른 특징들
 Brave는 비공개 브라우징의 VPN 옵션, Tor를 통해 비공개로 연결하여 .onion 주소에 자동으로 액세스할 수 있는 옵션을 포함하여 많은 내장 기능과 도구를 제공하고 있습니다. 브라우저는 또한 광고 시스템에 대한 고유한 접근 방식을 통해 사용자가 보상 프로그램을 통해 BAT(Basic Attention Token)로 제작자에게 기여하고 수익을 올릴 수 있도록 합니다.
 
-Brave 브라우저의 내장 VPN 기능은 웹을 검색할 때 추가 보안 및 개인 정보 보호 계층을 제공합니다. 브라우저에는 Tor 네트워크에 연결하는 옵션도 포함되어 있어 딥 웹 또는 .onion 주소에 액세스하려는 사용자에게 유용합니다.
+Brave 브라우저의 내장 VPN 기능은 웹을 검색할 때 추가 보안 및 개인 정보 보호 계층을 제공합니다.
 
 브라우저의 보상 프로그램은 사용자가 개인 정보를 존중하는 광고를 보고 BAT(Basic Attention Token)를 획득하고 이를 사용하여 좋아하는 콘텐츠 제작자에게 기여할 수 있는 고유한 기능입니다. 크리에이터를 지원하고 웹을 탐색하는 동안 관심에 대한 보상을 받을 수 있는 혁신적인 방법입니다.
 
