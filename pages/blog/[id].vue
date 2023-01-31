@@ -57,14 +57,6 @@ useSeoMeta({
   ogImage: post.value?.ogLink || post.value?.media,
 });
 
-// const { data } = await useAsyncData("prev-next", () =>
-//   queryContent(locale.value + "/blog")
-//     .sort({ date: -1 })
-//     .only(["_path"])
-//     .findSurround(path)
-// );
-
-// TEST: New logic
 const { data } = await useAsyncData("prev-next", async () => {
   if (locale.value !== "en") {
     return await queryContent(`${locale.value}/blog`)
@@ -130,13 +122,14 @@ html {
 
 .prose a[href^="https"] {
   color: #0066cc;
-  text-underline-offset: 2px;
-  text-decoration-color: #0066cc;
   font-weight: normal;
+  text-decoration: none;
 }
 
 .prose a:hover {
-  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+  text-decoration-color: #0066cc;
+  text-decoration: underline;
 }
 
 .prose ol > li::before {
@@ -150,9 +143,8 @@ html {
 @media (prefers-color-scheme: dark) {
   .dark .prose a[href^="https"] {
     color: #ff0000;
-    text-decoration-color: #ff0000;
-    text-underline-offset: 2px;
     font-weight: normal;
+    text-decoration: none;
   }
 
   .dark .prose a {
@@ -171,7 +163,9 @@ html {
   }
 
   .dark .prose a:hover {
-    text-decoration-thickness: 2px;
+    text-decoration-color: #ff0000;
+    text-underline-offset: 2px;
+    text-decoration: underline;
   }
 
   .dark .prose pre {

@@ -28,6 +28,10 @@
           {{ post.title }}
         </h1>
         <p class="dark:opacity-70 pt-1 opacity-80">{{ post.description }}</p>
+        <p v-if="post.updated" class="mt-5 opacity-80">
+          {{ t("Blog.updated") }}:
+          <GlobalUtilsDate :date="post.updated" itemprop="dateModified" />
+        </p>
       </div>
     </div>
     <div v-if="post.img" class="relative col-span-1 grow-0">
@@ -38,7 +42,7 @@
           :src="post.img"
           :alt="post.alt"
           :title="post.alt"
-          loading="eager"
+          loading="lazy"
           height="407"
           width="600"
           class="w-full object-cover md:border-outline"
@@ -61,6 +65,8 @@
   </header>
 </template>
 <script setup lang="ts">
+const { t } = useI18n();
+
 defineProps({
   post: {
     type: Object,
