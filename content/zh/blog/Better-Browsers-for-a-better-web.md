@@ -87,7 +87,7 @@ Brave 不断致力于改进搜索引擎并添加新功能，例如语音搜索�
 
 该浏览器还包括连接到 Tor 网络的选项，这对想要访问深层网络或 .onion 地址的用户很有用。 正在实施以帮助对抗审查制度的新功能是 Snowflake 协议，它允许用户创建一个节点供其他用户连接并充当中间人来浏览互联网上的限制
 
-<Media source="/images/blog/BB/snowflake.webp" credit="Brave" alt="Snowflake 在 brave 浏览器上的实现"></Media>
+<Media source="/images/blog/BB/snowflake.webp" alt="Snowflake 在 brave 浏览器上的实现"></Media>
 
 您可以通过 [The Tor Project](https://snowflake.torproject.org/){:target="\_blank"} 了解有关 Snowflake 协议的更多信息
 要在 Brave 浏览器上实施或启用此功能，请参阅 [Brave 支持](https://support.brave.com/hc/en-us/articles/9059440641421-What-is-the-Snowflake-extension-){:target= "\_blank"}

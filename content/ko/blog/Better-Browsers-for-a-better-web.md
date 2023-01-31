@@ -86,7 +86,7 @@ Brave는 검색 엔진을 개선하고 음성 검색, Brave 브라우저와의 �
 
 브라우저에는 Tor 네트워크에 연결하는 옵션도 포함되어 있어 딥 웹 또는 .onion 주소에 액세스하려는 사용자에게 유용합니다. 검열과 싸우기 위해 구현되는 새로운 기능은 사용자가 다른 사용자가 연결할 수 있는 노드를 생성하고 인터넷에 대한 제한을 탐색하기 위한 중개자 역할을 할 수 있는 Snowflake 프로토콜입니다.
 
-<Media source="/images/blog/BB/snowflake.webp" credit="Brave" alt="용감한 브라우저에서 Snowflake 구현"></Media>
+<Media source="/images/blog/BB/snowflake.webp" alt="용감한 브라우저에서 Snowflake 구현"></Media>
 
 [The Tor Project](https://snowflake.torproject.org/){:target="\_blank"}에서 Snowflake 프로토콜에 대해 자세히 알아볼 수 있습니다.
 

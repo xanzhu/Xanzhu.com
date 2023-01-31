@@ -85,9 +85,9 @@ A promising alternative to traditional search engines, providing users with a mo
 
 <Media source="/images/blog/BB/snowflake-tor.webp" credit="Tor Project" alt="Diagram on Snowflake protocol by Tor"></Media>
 
-The browser also includes the option to connect to the Tor network, which is useful for users who want to access the deep web or .onion addresses. A newer feature being implemented to help combat censorship is the Snowflake protocol, which allows users to create a node for other users to connect to and act as a middleman for navigating restrictions on the interne
+The browser also includes the option to connect to the Tor network, which is useful for users who want to access the deep web or .onion addresses. A newer feature being implemented to help combat censorship is the Snowflake protocol, which allows users to create a node for other users to connect to and act as a middleman for navigating restrictions on the internet
 
-<Media source="/images/blog/BB/snowflake.webp" credit="Brave" alt="Implementation of Snowflake on brave browser"></Media>
+<Media source="/images/blog/BB/snowflake.webp" alt="Implementation of Snowflake on brave browser"></Media>
 
 You can learn more about the Snowflake protocol via [The Tor Project](https://snowflake.torproject.org/){:target="\_blank"}
 For implementing or enabling this on Brave Browsers, see [Brave Support](https://support.brave.com/hc/en-us/articles/9059440641421-What-is-the-Snowflake-extension-){:target="\_blank"}
