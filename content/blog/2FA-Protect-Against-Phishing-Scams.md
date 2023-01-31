@@ -7,6 +7,7 @@ description: "How Two-Factor Authentication (2FA) improves your online security 
 alt: "Microsoft Authenticator"
 ogLink: "https://source.unsplash.com/RMIsZlv8qv4"
 toc: true
+source: "Ed Hardie, Unsplash"
 ---
 
 In my previous article, I discussed using password managers to enhance your security. Another crucial aspect to consider is using two-factor authentication (2FA).
