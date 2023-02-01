@@ -55,6 +55,7 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "nuxt-simple-sitemap",
   ],
+  plugins: [{ src: '~/plugins/vercel.js', mode: 'client' }],
   i18n: {
     vueI18n: {
       fallbackLocale: ["en", "ko", "zh"],
