@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { localeCodes } from "~~/.nuxt/i18n.options.mjs";
-
 const { t, locale } = useI18n();
 
 const title = t("Privacy-Policy.title");
