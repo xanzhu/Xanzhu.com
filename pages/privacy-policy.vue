@@ -20,6 +20,7 @@ useSeoMeta({
   title: title,
   description: desc,
   ogTitle: title,
+  ogImage: 'https://source.unsplash.com/-YiTdas-O1c',
   ogDescription: desc,
   twitterTitle: title,
   twitterDescription: desc,
