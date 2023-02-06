@@ -13,8 +13,8 @@ const paragraphs: { [key: number]: string } = {
 
 const url =
   locale.value == "en"
-    ? "https://xanzhu.com/privacy-policy/"
-    : `https://xanzhu.com/${locale.value}/privacy-policy/`;
+    ? "https://xanzhu.com/privacy-policy"
+    : `https://xanzhu.com/${locale.value}/privacy-policy`;
 
 useSeoMeta({
   title: title,
