@@ -30,14 +30,7 @@ Microsoft invested heavily in OpenAI to make use of technology like ChatGPT, inv
 
 There is potential for a war in AI technologies as Google recently announced that they will be introducing their adaptation of ChatGPT, called Bard, which is currently being tested with a public release expected in the next few months.
 
-<!-- Convert to component -->
-<figure>
-<video autoplay muted loop class="rounded-md" loading=lazy>
-<source src="/images/blog/AI/bard.webm"/>
-<p>Video not working :/</p>
-</video>
-<figcaption>Source: Google</figcaption>
-</figure>
+<Vid source="/images/blog/AI/bard.webm" credit="Google"></Vid>
 
 The possible difference with Google's AI model is the focus on safety and providing accurate information, as they recently invested in a startup called Anthropic that has developed an alternative to ChatGPT called Claude. Given the amount of data and resources this model will likely be trained on, it is important to consider ethical standards as a factor in the slow release of this technology. Find more information on [Google's blog](https://blog.google/technology/ai/bard-google-ai-search-updates/){:target="\_blank"}
 
