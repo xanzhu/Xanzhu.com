@@ -7,6 +7,7 @@ description: "이중 인증(2FA)이 온라인 보안을 개선하고 피싱 사�
 alt: "마이크로소프트 인증자"
 ogLink: "https://source.unsplash.com/RMIsZlv8qv4"
 source: "Ed Hardie, Unsplash"
+feature: true
 ---
 
 이전 기사에서 암호 관리자를 사용하여 보안을 강화하는 방법에 대해 설명했습니다. 고려해야 할 또 다른 중요한 측면은 2단계 인증(2FA)을 사용하는 것입니다.

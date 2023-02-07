@@ -9,7 +9,7 @@
       decoding="async"
     />
     <figcaption v-if="credit" v-bind:credit="credit">
-      <b>{{ t("Blog.source") }}</b> {{ " : " + credit }}
+      {{ t("Blog.source") + ": " + credit }}
     </figcaption>
   </figure>
 </template>

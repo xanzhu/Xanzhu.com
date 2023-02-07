@@ -8,7 +8,6 @@ img: "/images/blog/PM/PM.webp"
 ogLink: "https://www.pexels.com/photo/person-holding-iphone-6-with-red-case-7534801/"
 alt: "아이폰을 들고 있는 사람"
 source: "Mikhail Nilov, Pexels"
-feature: true
 ---
 
 동일한 암호의 변형을 사용하든 여러 플랫폼에서 동일한 암호를 사용하든 암호를 안전하고 고유하게 유지하는 것은 어려운 과정일 수 있습니다.

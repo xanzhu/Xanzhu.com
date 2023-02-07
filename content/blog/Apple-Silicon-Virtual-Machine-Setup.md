@@ -5,7 +5,7 @@ tag: "Guide"
 img: "/images/blog/VM/Apple.webp"
 description: "Learn to set up virtual machines on Apple Silicon using Parallels or UTM. Our guide covers installation, configuration, and running your first virtual machine."
 alt: "Apple Silicon Chipset M1"
-wide: true
+feature: true
 toc: true
 ogLink: "https://source.unsplash.com/mP7aPSUm7aE"
 ---

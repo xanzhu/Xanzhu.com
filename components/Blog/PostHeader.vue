@@ -57,8 +57,8 @@
           v-if="post.source"
           class="dark:(text-light-200 opacity-70) text-dark-700 opacity-80 absolute right-0 px-1 py-0.5 text-xs <sm:mr-2 tracking-wide"
         >
-          <p v-t="'Blog.source'" class="inline-block font-medium" />
-          : {{ post.source }}
+          <p class="inline-block" />
+          {{ t("Blog.source") + ": " + post.source }}
         </div>
       </div>
     </div>
