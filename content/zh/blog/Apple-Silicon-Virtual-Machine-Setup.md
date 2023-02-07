@@ -5,9 +5,9 @@ tag: "指导"
 img: "/images/blog/VM/Apple.webp"
 description: "了解如何使用 Parallels 或 UTM 在 Apple Silicon Mac 上设置虚拟机。 我们的指南涵盖安装、配置和运行您的第一个虚拟机。"
 alt: "Apple Silicon 芯片组 M1"
-wide: true
 toc: true
 ogLink: "https://source.unsplash.com/mP7aPSUm7aE"
+feature: true
 ---
 
 如果您是一名开发人员或技术爱好者，您可能需要为项目或个人使用使用多个操作系统。 在本文中，我们将介绍使用 Parallels、付费虚拟化软件和名为 UTM 的免费开源解决方案设置流行操作系统（例如 Windows 和 Ubuntu）的过程。 无论您是初学者还是经验丰富的用户，本指南都将教您如何在 Apple Silicon Mac 上快速轻松地安装和设置每个环境。

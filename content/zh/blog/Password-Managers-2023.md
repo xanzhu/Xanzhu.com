@@ -8,7 +8,6 @@ img: "/images/blog/PM/PM.webp"
 alt: "拿着iphone的人"
 ogLink: "https://www.pexels.com/photo/person-holding-iphone-6-with-red-case-7534801/"
 source: "Mikhail Nilov, Pexels"
-feature: true
 ---
 
 确保您的密码安全且唯一可能是一个具有挑战性的过程，无论您是使用相同密码的变体还是在多个平台上使用相同密码。
