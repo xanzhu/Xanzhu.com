@@ -190,29 +190,27 @@ const { data: wideFeature } = await useAsyncData("wide", async () => {
 // );
 
 // Updated Logic | Prefix_and_default
-// const { data: features } = await useAsyncData("feature", async () => {
-//   if (locale.value !== "en") {
-//     return await queryContent(`${locale.value}/blog`)
-//       .where({ feature: true })
-//       .limit(4)
-//       .find();
-//   } else {
-//     return await queryContent("blog").where({ feature: true }).limit(4).find();
-//   }
-// });
+const { data: features } = await useAsyncData("feature", async () => {
+  if (locale.value !== "en") {
+    return await queryContent(`${locale.value}/blog`)
+      .where({ feature: true })
+      .limit(4)
+      .find();
+  } else {
+    return await queryContent("blog").where({ feature: true }).limit(4).find();
+  }
+});
 
 // ! Bug - on load content isn't rendered in correct language
 
 // Test logic tweak v2
-const i18n = useI18n();
+// const { data: features } = await useAsyncData("feature", async () => {
+//   const endpoint = locale.value === "en" ? "blog" : `${locale.value}/blog`;
 
-const { data: features } = await useAsyncData("feature", async () => {
-  const endpoint = i18n.locale.value === "en" ? "blog" : `${i18n.locale.value}/blog`;
-
-  return await queryContent(endpoint)
-    .where({ feature: true })
-    .limit(4)
-    .find();
-});
+//   return await queryContent(endpoint)
+//     .where({ feature: true })
+//     .limit(4)
+//     .find();
+// });
 
 </script>
