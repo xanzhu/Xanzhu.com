@@ -54,6 +54,7 @@ export default defineNuxtConfig({
     "@nuxt/image-edge",
     "@nuxtjs/color-mode",
     "nuxt-simple-sitemap",
+    "@nuxt/devtools"
   ],
   plugins: [{ src: '~/plugins/vercel.js', mode: 'client' }],
   i18n: {
@@ -106,4 +107,10 @@ export default defineNuxtConfig({
   sitemap: {
     hostname: process.env.BASE_URL,
   },
+  router:{
+    options:
+    {
+      strict: true
+    }
+  }
 });
