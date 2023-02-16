@@ -201,16 +201,5 @@ const { data: features } = await useAsyncData("feature", async () => {
   }
 });
 
-// ! Bug - on load content isn't rendered in correct language
-
-// Test logic tweak v2
-// const { data: features } = await useAsyncData("feature", async () => {
-//   const endpoint = locale.value === "en" ? "blog" : `${locale.value}/blog`;
-
-//   return await queryContent(endpoint)
-//     .where({ feature: true })
-//     .limit(4)
-//     .find();
-// });
-
+// ! Bug - on load content isn't rendered in correct language unless page is refreshed
 </script>
