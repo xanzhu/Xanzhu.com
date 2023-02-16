@@ -5,6 +5,7 @@ tag: "消息"
 date: "2023-2-07"
 img: "/images/blog/AI/cover-v3.png"
 wide: true
+alt: "Bing、Google 和 OpenAI 的徽标"
 ---
 
 现在正在发生转变，谷歌和 Bing 等主要搜索引擎大力投资人工智能技术，这将改变我们搜索互联网的方式。 通过允许快速回答而无需搜索无数页面来找到答案，将搜索引擎提升到一个新的水平。

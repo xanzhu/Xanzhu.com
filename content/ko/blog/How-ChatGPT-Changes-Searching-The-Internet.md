@@ -5,6 +5,7 @@ tag: "소식"
 date: "2023-2-07"
 img: "/images/blog/AI/cover-v3.png"
 wide: true
+alt: "Bing, Google 및 OpenAI의 로고"
 ---
 
 Google 및 Bing과 같은 주요 검색 엔진은 우리가 인터넷 검색 방식을 바꿀 AI 기술에 막대한 투자를 하고 있습니다. 답변을 찾기 위해 수많은 페이지를 검색할 필요 없이 빠른 답변을 허용하여 검색 엔진을 한 단계 업그레이드합니다.

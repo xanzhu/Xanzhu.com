@@ -5,6 +5,7 @@ tag: "News"
 date: "2023-2-07"
 img: "/images/blog/AI/cover-v3.png"
 wide: true
+alt: "Logos of Bing, Google, and OpenAI"
 ---
 
 A shift is happening right now, with major search engines such as Google and Bing investing heavily in AI technologies that will change how we search the internet. Taking search engines to the next level by allowing for quick answers without the need to search countless pages to find an answer.
