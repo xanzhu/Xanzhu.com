@@ -2,7 +2,7 @@
 title: "How ChatGPT will Change the Way We Search the Internet"
 description: "Uncover the potential of ChatGPT, the advanced AI language model, and how it will transform the way we search for information."
 tag: "News"
-date: "2023-2-07"
+date: "2023-02-07"
 img: "/images/blog/AI/cover-v3.png"
 wide: true
 alt: "Logos of Bing, Google, and OpenAI"
