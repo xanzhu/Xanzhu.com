@@ -107,10 +107,10 @@ export default defineNuxtConfig({
   sitemap: {
     hostname: process.env.BASE_URL,
   },
-  router:{
-    options:
-    {
-      strict: true
-    }
-  }
+  // router:{
+  //   options:
+  //   {
+  //     strict: true
+  //   }
+  // }
 });
