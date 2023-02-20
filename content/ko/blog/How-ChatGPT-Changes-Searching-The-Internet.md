@@ -32,7 +32,7 @@ Microsoft는 ChatGPT와 같은 기술을 활용하기 위해 OpenAI에 막대한
 
 Google이 최근 몇 달 안에 공개 릴리스로 테스트 중인 Bard라고 하는 ChatGPT에 도전하기 위해 소프트웨어를 도입할 것이라고 최근 발표하면서 AI 기술 전쟁의 가능성이 있습니다.
 
-<Vid source="/images/blog/AI/bard.webm" credit="Google"></Vid>
+<Vid source="/images/blog/AI/bard.webm" credit="Google" thumbnail="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/feb_6_AI_hero.width-1000.format-webp.webp"></Vid>
 
 Google의 AI 모델과의 차이점은 최근 ChatGPT의 대안인 Claude를 개발한 Anthropic이라는 스타트업에 투자한 만큼 안전에 중점을 두고 정확한 정보를 제공한다는 것입니다. 이 모델이 훈련될 데이터 및 리소스의 양을 고려할 때 이 기술의 느린 릴리스의 요인으로 윤리적 기준을 고려하는 것이 중요합니다. [Google 블로그](https://blog.google/technology/ai/bard-google-ai-search-updates/){:target="\_blank"}에서 자세한 정보 찾기
 
