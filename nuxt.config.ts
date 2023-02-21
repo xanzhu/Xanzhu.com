@@ -64,7 +64,7 @@ export default defineNuxtConfig({
     },
     baseUrl: process.env.BASE_URL,
     defaultLocale: "en",
-    strategy: "prefix_and_default",
+    strategy: "prefix_except_default",
     langDir: "i18n",
     detectBrowserLanguage: {
       useCookie: true,
@@ -106,11 +106,5 @@ export default defineNuxtConfig({
   },
   sitemap: {
     hostname: process.env.BASE_URL,
-  },
-  // router:{
-  //   options:
-  //   {
-  //     strict: true
-  //   }
-  // }
+  }
 });
