@@ -79,18 +79,17 @@
               {{ t("Nav.privacy_policy") }}
             </NuxtLink>
           </li>
-          <li role="menuitem">
+          <!-- <li>
             <NuxtLink
               tabindex="0"
               to="https://status.xanzhu.com"
               target="_blank"
               class="nav-internal"
-              itemprop="url"
             >
               {{ t("Nav.status") }}
               <IconExternal class="-mt-0.5 inline-flex h-3 flex-col" />
             </NuxtLink>
-          </li>
+          </li> -->
         </ul>
       </nav>
       <p class="text-right font-thin <sm:hidden">{{ t("App.build") }} v0.4.1</p>

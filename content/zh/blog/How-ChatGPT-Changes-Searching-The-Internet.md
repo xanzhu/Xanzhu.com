@@ -32,7 +32,7 @@ ChatGPT 的功能已通过用户获得编码问题的答案、解决复杂的理
 
 人工智能技术有可能爆发战争，因为谷歌最近宣布他们将推出他们对 ChatGPT 的改编，称为 Bard，目前正在进行测试，预计将在未来几个月内公开发布。
 
-<Vid source="/images/blog/AI/bard.webm" credit="Google"></Vid>
+<Vid source="/images/blog/AI/bard.webm" credit="Google" thumbnail="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/feb_6_AI_hero.width-1000.format-webp.webp"></Vid>
 
 与谷歌 AI 模型的可能区别在于对安全和提供准确信息的关注，因为他们最近投资了一家名为 Anthropic 的初创公司，该公司开发了一种名为 Claude 的 ChatGPT 替代品。 考虑到该模型可能用于训练的数据量和资源量，将道德标准视为导致该技术缓慢发布的一个因素非常重要。 在 [Google 的博客](https://blog.google/technology/ai/bard-google-ai-search-updates/){:target="\_blank"} 上查找更多信息
 
