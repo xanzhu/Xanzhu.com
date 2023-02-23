@@ -1,7 +1,7 @@
 <template>
   <div class="scroll-smooth sm:space-y-10 mb-10">
     <LandingMainBlock />
-    <LandingFeatureBlock class="sm:mx-10 2xl:(max-w-[80%] mx-auto)" />
+    <LazyLandingFeatureBlock class="sm:mx-10 2xl:(max-w-[80%] mx-auto)" />
   </div>
 </template>
 <script setup lang="ts">
