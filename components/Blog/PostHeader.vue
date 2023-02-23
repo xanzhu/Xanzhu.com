@@ -28,7 +28,10 @@
           {{ post.title }}
         </h1>
         <p class="dark:opacity-70 pt-1 opacity-80">{{ post.description }}</p>
-        <p v-if="post.updated" class="mt-5 opacity-80">
+        <p
+          v-if="post.updated"
+          class="mt-5 opacity-80 accent-color inline-block font-medium"
+        >
           {{ t("Blog.updated") }}:
           <GlobalUtilsDate :date="post.updated" itemprop="dateModified" />
         </p>
