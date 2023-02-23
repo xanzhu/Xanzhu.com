@@ -45,6 +45,10 @@ export default defineNuxtConfig({
         { rel: "mask-icon", href: "/favicon.svg", color: "#FDFDFD" },
       ],
     },
+    pageTransition: {
+      name: 'fade',
+      mode: 'out-in' // default
+    },
   },
   css: ["virtual:windi.css"],
   modules: [
