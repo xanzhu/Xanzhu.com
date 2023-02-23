@@ -7,6 +7,7 @@
       <h1 class="text-center text-sm">{{ t("Error.not-found") }}</h1>
     </div>
     <NuxtLink
+      @click="handleError"
       v-t="'Error.return-home'"
       :to="localePath('/')"
       class="border-outline py-2 px-8 hover:(bg-white text-black) leading-none"
@@ -16,4 +17,6 @@
 <script setup lang="ts">
 const { t } = useI18n();
 const localePath = useLocalePath();
+
+const handleError = () => clearError({ redirect: localePath("/") });
 </script>
