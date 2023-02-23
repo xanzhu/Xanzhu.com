@@ -1,9 +1,9 @@
 <template>
   <div
-    class="mx-auto space-y-20 dark:text-white text-black sm:mb-10"
+    class="mx-auto space-y-10 sm:space-y-20 dark:text-white text-black sm:mb-10"
     role="main"
   >
-    <div class="mt-15 mx-4 sm:mx-8 lg:mx-10 space-y-2">
+    <div class="mt-5 mx-4 sm:(mx-8 mt-15) lg:mx-10 space-y-2">
       <h1 class="font-semibold text-3xl sm:text-5xl">
         {{ t("Blog.title") }}
       </h1>
