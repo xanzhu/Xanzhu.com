@@ -11,9 +11,3 @@ defineProps({
   error: Object,
 });
 </script>
-
-<style>
-html {
-  background-color: #000;
-}
-</style>
