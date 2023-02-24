@@ -23,7 +23,7 @@
         </template>
       </Head>
       <GlobalAppHeader />
-      <NuxtPage class="flex-1" />
+      <NuxtPage />
       <GlobalAppFooter />
     </Html>
   </div>
@@ -49,15 +49,3 @@ useSeoMeta({
   ogSiteName: "Xanzhu",
 });
 </script>
-
-<style>
-.page-enter-active,
-.page-leave-active {
-  transition: all 0.4s;
-}
-.page-enter-from,
-.page-leave-to {
-  opacity: 0;
-  filter: blur(1rem);
-}
-</style>
