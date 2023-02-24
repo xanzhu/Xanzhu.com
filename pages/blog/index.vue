@@ -46,7 +46,12 @@
           >
             <h2 class="font-medium text-xl" v-html="article.title" />
             <p class="opacity-80 pt-1" v-html="article.description" />
-            <p v-if="article.tag" class="mt-4 px-2 py-0.5 font-semibold dark:(bg-white text-black) bg-black text-white rounded-full inline-block">{{ article.tag }}</p>
+            <p
+              v-if="article.tag"
+              class="mt-4 px-2 py-0.5 font-medium dark:(bg-white text-black) bg-black text-white rounded-full inline-block"
+            >
+              {{ article.tag }}
+            </p>
           </div>
         </NuxtLink>
       </div>
