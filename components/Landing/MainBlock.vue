@@ -1,11 +1,8 @@
 <template>
   <section class="relative h-screen">
-    <div class="absolute w-full h-screen bg-cover -z-1">
+    <div class="absolute w-full h-screen bg-cover bg-black -z-1">
       <NuxtImg
         src="/images/landing/globe.webp"
-        loading="lazy"
-        decoding="async"
-        role="presentation"
         alt="Nasa Image of Earth"
         class="h-full w-full object-cover"
       />
