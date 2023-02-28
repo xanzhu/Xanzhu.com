@@ -9,7 +9,7 @@
     "production": "nuxi generate"
   },
   "dependencies": {
-    "nuxt": "^3.2.2"
+    "nuxt": "^3.2.3"
   },
   "devDependencies": {
     "@nuxt/content": "^2.4.3",
@@ -17,7 +17,7 @@
     "@nuxt/image-edge": "1.0.0-27840416.dc1ed65",
     "@nuxtjs/color-mode": "^3.2.0",
     "@nuxtjs/i18n": "8.0.0-beta.10",
-    "@vercel/analytics": "^0.1.10",
+    "@vercel/analytics": "^0.1.11",
     "nuxt-simple-sitemap": "^1.0.7",
     "nuxt-windicss": "^2.6.0"
   }
