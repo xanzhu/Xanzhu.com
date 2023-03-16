@@ -35,7 +35,7 @@ useSeoMeta({
   ogDescription: t("Home.Seo.desc"),
   twitterTitle: t("Home.Seo.title"),
   twitterDescription: t("Home.Seo.desc"),
-  ogUrl: `https://xz-v2.vercel.app${path}`,
+  ogUrl: `https://xanzhu.com${path}`,
   ogImage: "https://source.unsplash.com/lyOCWxa28Zk",
 });
 </script>
