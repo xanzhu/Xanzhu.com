@@ -1,0 +1,121 @@
+{
+  "Home": {
+    "title": "Privacy, Security and everything in between",
+    "desc": "Xanzhu is a platform for sharing knowledge on technology and online privacy. Our articles, guides, and reviews teach users how to use technology safely and protect their data online.",
+    "Seo": {
+      "title": "News, Guides on Technology, Privacy and Security",
+      "desc": "Discover the latest technology trends and insights in keeping yourself safe online with Xanzhu. Our news and guides help you navigate a changing environment"
+    },
+    "a11y": {
+      "mouseicon": "Scroll down"
+    }
+  },
+  "Links": {
+    "resources": "Resources",
+    "blog": "Blog",
+    "analysis": "Analysis",
+    "home": "Home",
+    "privacy-policy": "Privacy Policy"
+  },
+  "PagesCard": {
+    "resources": "Security tools and links",
+    "blog": "Latest News, Guides on Technology",
+    "analysis": "Reports and write-ups on threats",
+    "image": {
+      "street": "Street in Korea",
+      "sky": "Sky and Clouds",
+      "iceland": "Iceland Night Sky"
+    }
+  },
+  "Footer": "© Xanzhu 2022. All Rights reserved.",
+  "Error": {
+    "404": {
+      "title": "Page Not Found",
+      "desc": "Sorry, the page you are looking for could not be found.",
+      "code": "Code: 404"
+    },
+    "500": {
+      "title": "Internal Error",
+      "desc": "Sorry we messed up, please try again..",
+      "code": "Code: 500"
+    },
+    "return": "Return"
+  },
+  "StatsCard": {
+    "title": "Common Threats Observed in 2023",
+    "warn": "These are rough estimates, exact values may slightly differ. Obtained through research gathered in 2022",
+    "check": "Check your accounts",
+    "threats": {
+      "title": "Top Security Threats",
+      "data_1": "Ransomware Attacks - 236.1 million",
+      "data_2": "Compromised accounts - 310.8 million",
+      "data_3": "Phishing Attacks - 255 million"
+    },
+    "breaches": {
+      "title": "Recent Breaches",
+      "data_1": "Optus Security Breach - 9.8 million",
+      "data_2": "Twitter Data Breach - 211.5 million",
+      "data_3": "LastPass Breach - 30 million"
+    },
+    "image": {
+      "pwn": "HaveIBeenpwnd Logo",
+      "badge": "Security Badge"
+    }
+  },
+  "a11y": {
+    "langSwitch": "Switch Language",
+    "oMenu": "Open Menu",
+    "cMenu": "Close Menu",
+    "logo": "Xanzhu Logo",
+    "ResourcePage": "Visit Resources Page",
+    "BlogPage": "Visit Blog Page",
+    "AnalysisPage": "Visit our Analysis Page",
+    "Menu": "Menu"
+  },
+  "Resources": {
+    "heading": "Stay Safe Online with Our Essential Security Toolkit",
+    "subheading": "Handpicked by me, the essential security resources for protecting your digital life",
+    "malware": "Malware",
+    "phishing": "Phishing",
+    "explore": "Explore further",
+    "accessibility": "Accessibility",
+    "meta": {
+      "title": "Security Toolkit: Essential for Online Safety",
+      "description": "Stay safe online with our curated list of the best security tools and services. From phishing protection to malware reporting, we've got you covered."
+    },
+    "phish": {
+      "title": "Reporting Phishing Scams",
+      "subheading": "Don't Fall for Scams: Find resources to detect and report Phishing.",
+      "p-1": "Phishing explained: A type of online scam where attackers trick individuals into providing sensitive information, such as login credentials or financial information. These scams can appear on websites, emails, and text messages and often take the form of links to popular websites or fake sites that look legitimate.",
+      "p-2": "Detection: it is important to first check if the link has already been reported. There are several online services that can be used to scan the URL of the phishing link. It is important not to click on the link and instead, copy the link address and paste it into the scanning service.",
+      "detecting": "Detect",
+      "reporting": "Report",
+      "google": ", blocks content across the google ecosystem.",
+      "microsoft": ", blocks content on edge and windows services",
+      "urlscan": ", provides helpful information about the website such as IP/domain details",
+      "virus": ", checks against 90 Security Vendors"
+    }
+  },
+  "SocialsCard": {
+    "h1": "Follow our Socials"
+  },
+  "Blog": {
+    "title": "Discover the Latest Insights",
+    "description": "News, guides and reviews on technology, how to use it and how to ensure your data remains is protected online.",
+    "toc": "Table of contents",
+    "next": "Next",
+    "previous": "Previous",
+    "read-time": "min read",
+    "source": "Source",
+    "updated": "Updated",
+    "meta": {
+      "title": "Latest Blog Posts",
+      "description": "Xanzhu provides helpful articles, guides and tips on all things technology. Focusing on privacy, security and more."
+    },
+    "Video": "Video not found"
+  },
+  "Analysis": {
+    "h1": "Security Audits and Analysis",
+    "soon": "Uncovering vulnerabilities and offering recommendations for enhancing security measures."
+  }
+}

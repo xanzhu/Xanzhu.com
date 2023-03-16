@@ -9,14 +9,11 @@
       <div
         class="flex flex-col-reverse md:(flex-row space-x-6 space-x-2) mx-auto justify-center"
       >
-        <aside class="mt-2">
-          <BlogSocialShare v-bind:post="post" />
-        </aside>
         <div>
           <ContentRenderer
             :value="post"
             itemprop="articleBody"
-            class="prose prose-sm md:prose-md lg:(prose-lg) mx-auto px-4 my-4 dark:text-light-200 text-black leading-normal"
+            class="prose prose-sm md:prose-md lg:(prose-xl) mx-auto px-4 my-4 dark:text-light-200 text-black leading-normal"
           />
         </div>
         <aside v-if="post.toc == true" class="mt-2">
@@ -26,7 +23,6 @@
       <LazyBlogPrevNext :prev="prev" :next="next" />
     </article>
   </div>
-  <LazyGlobalAppError class="mt-20" v-else />
 </template>
 <script setup lang="ts">
 const { path } = useRoute();
@@ -75,7 +71,7 @@ const [prev, next] = data.value || [];
 </script>
 <style>
 html {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  font-family: "Open sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif,
     "sans-serif";
 }
@@ -85,7 +81,7 @@ html {
 }
 
 .prose p {
-  line-height: 1.4;
+  line-height: 1.2;
 }
 
 .prose h2 a,
@@ -103,7 +99,7 @@ html {
 
 .prose h2 {
   color: #000000;
-  border-left: 4px solid #0066cc;
+  border-left: 4px solid #ff0000;
   padding-left: 10px;
   font-weight: 700;
 }
@@ -121,24 +117,28 @@ html {
 }
 
 .prose a[href^="https"] {
-  color: #0066cc;
+  color: #ff0000;
   font-weight: normal;
   text-decoration: none;
 }
 
 .prose a:hover {
   text-underline-offset: 2px;
-  text-decoration-color: #0066cc;
+  text-decoration-color: #ff0000;
   text-decoration: underline;
 }
 
 .prose ol > li::before {
-  color: #0066cc;
+  color: #ff0000;
 }
 
 .prose ul > li::before {
-  background-color: #0066cc;
+  background-color: #ff0000;
 }
+
+.dark .prose ul > li::before {
+    background-color: #ff0000;
+  }
 
 @media (prefers-color-scheme: dark) {
   .dark .prose a[href^="https"] {
@@ -179,8 +179,6 @@ html {
     color: #ff0000;
   }
 
-  .dark .prose ul > li::before {
-    background-color: #ff0000;
-  }
+
 }
 </style>

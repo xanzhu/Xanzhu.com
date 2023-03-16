@@ -7,6 +7,7 @@ description: "双因素身份验证 (2FA) 如何提高在线安全性并保护�
 alt: "微软认证器"
 ogLink: "https://source.unsplash.com/RMIsZlv8qv4"
 source: "Ed Hardie, Unsplash"
+toc: true
 ---
 
 在我之前的文章中，我讨论了使用密码管理器来增强您的安全性。 另一个需要考虑的关键方面是使用双因素身份验证 (2FA)。

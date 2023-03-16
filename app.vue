@@ -1,5 +1,7 @@
 <template>
-  <div class="h-screen flex flex-col">
+  <div
+    class="h-screen font-main"
+  >
     <Html
       v-if="head.htmlAttrs"
       :lang="head.htmlAttrs.lang"
@@ -22,13 +24,15 @@
           />
         </template>
       </Head>
-      <GlobalAppHeader />
+      <AppHeader />
       <NuxtPage />
-      <GlobalAppFooter />
+      <LazyAppFooter />
     </Html>
   </div>
 </template>
 <script setup lang="ts">
+import "@fontsource/open-sans";
+
 const head = useLocaleHead({
   addDirAttribute: true,
   identifierAttribute: "id",
@@ -36,15 +40,18 @@ const head = useLocaleHead({
 });
 
 useHead({
-  titleTemplate: (titleChunk) => {
-    return titleChunk ? `${titleChunk} | Xanzhu` : "Xanzhu";
-  },
   bodyAttrs: {
-    class: "dark:(bg-black text-white) bg-white text-black",
+    class: "dark:(bg-black text-white) bg-white text-black"
   },
+  noscript: [
+    {
+      textContent: `Javascript is required`,
+    },
+  ],
 });
 
 useSeoMeta({
+  titleTemplate: "%s | Xanzhu",
   ogType: "website",
   ogSiteName: "Xanzhu",
 });

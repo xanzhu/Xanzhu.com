@@ -1,23 +1,41 @@
 <template>
-  <div class="scroll-smooth sm:space-y-10 mb-10">
-    <LandingMainBlock />
-    <LazyLandingFeatureBlock class="sm:mx-10 2xl:(max-w-[80%] mx-auto)" />
-  </div>
+  <main class="flex flex-col justify-center">
+    <div class="flex h-screen mt-1/3 sm:(items-center mt-0) px-4 md:px-12">
+      <div class="flex flex-col space-y-[14%] sm:max-w-5xl mx-auto">
+        <h1 class="font-bold mx- text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
+          {{ t("Home.title") }}
+        </h1>
+        <p
+          class="dark:(bg-dark-900 border-dark-600 text-gray-300 opacity-100) opacity-70 bg-light-500 border-1 rounded-sm p-4"
+        >
+          {{ t("Home.desc") }}
+        </p>
+        <div class="mx-auto hidden xl:(flex)">
+          <HomeMouseIcon
+            class="animate-bounce"
+            role="presentation"
+            :aria-label="t('Home.a11y.mouseicon')"
+          />
+        </div>
+      </div>
+    </div>
+    <LazyHomePagesCard class="min-h-screen" />
+    <LazyHomeStatsCard class="min-h-screen" />
+    <LazyHomeSocialsCard />
+  </main>
 </template>
 <script setup lang="ts">
-const path = useRoute();
 const { t } = useI18n();
-const desc = t("Landing.meta.description");
-const title = t("Landing.meta.title");
+const path = useRoute();
 
 useSeoMeta({
-  title: title,
-  ogTitle: title,
-  description: desc,
-  ogDescription: desc,
-  ogImage: "https://source.unsplash.com/Q1p7bh3SHj8",
-  twitterTitle: title,
-  twitterDescription: desc,
-  ogUrl: `https://xanzhu.com${path}`,
+  title: t("Home.Seo.title"),
+  ogTitle: t("Home.Seo.title"),
+  description: t("Home.Seo.desc"),
+  ogDescription: t("Home.Seo.desc"),
+  twitterTitle: t("Home.Seo.title"),
+  twitterDescription: t("Home.Seo.desc"),
+  ogUrl: `https://xz-v2.vercel.app${path}`,
+  ogImage: "https://source.unsplash.com/lyOCWxa28Zk",
 });
 </script>

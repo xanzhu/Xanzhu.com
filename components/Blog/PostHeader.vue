@@ -1,24 +1,35 @@
 <template>
   <header
-    class="md:(grid-cols-2 space-y-0 gap-4 my-4 place-items-center) grid grid-cols-1 md:space-y-5"
+    class="md:(grid-cols-2 space-y-5 gap-4 my-4 place-items-center) grid grid-cols-1"
   >
     <div
-      class="col-span-1 shrink-0 space-y-2 px-4 mt-5 sm:(px-0 mx-4) mb-3 md:(mt-0)"
+      class="col-span-1 shrink-0 space-y-3 px-4 mt-5 sm:(px-0 mx-4) mb-3 md:(mt-0)"
     >
       <div
         v-if="post.tag"
-        class="text-sm inline-flex space-x-3 children:(border-outline px-2 py-0.5 dark:bg-dark-900 bg-light-400 dark:text-white text-black)"
+        class="text-sm inline-flex space-x-3 children:(border-1 dark:border-dark-600 dark:opacity-100 opacity-80 border-gray-300 rounded-sm px-2 py-0.5 dark:bg-dark-900 bg-light-400 dark:text-white text-black)"
       >
         <span>
           {{ post.tag }}
         </span>
-        <GlobalUtilsDate
+        <Date
           v-if="post.date"
           :date="post.date"
           itemprop="datePublished"
           class="md:hidden"
         />
         <BlogReadTime class="<sm:hidden" :content="post" />
+        <p v-if="post.updated" class="flex items-center space-x-1">
+          <Icon
+            name="material-symbols:update-rounded"
+            class="h-3.5 w-3.5 dark:text-yellow-400"
+          />
+          <Date
+            :date="post.updated"
+            itemprop="dateModified"
+            class="dark:text-yellow-400 font-semibold"
+          />
+        </p>
       </div>
       <div>
         <h1
@@ -27,15 +38,9 @@
         >
           {{ post.title }}
         </h1>
-        <p class="dark:opacity-70 pt-1 opacity-80">{{ post.description }}</p>
-        <p
-          v-if="post.updated"
-          class="mt-5 opacity-80 accent-color inline-block font-medium"
-        >
-          {{ t("Blog.updated") }}:
-          <GlobalUtilsDate :date="post.updated" itemprop="dateModified" />
-        </p>
+        <p class="dark:opacity-70 pt-3 opacity-80">{{ post.description }}</p>
       </div>
+      <BlogSocialShare v-bind:post="post" />
     </div>
     <div v-if="post.img" class="relative col-span-1 grow-0">
       <div>
@@ -50,7 +55,7 @@
           width="600"
           class="w-full object-cover md:border-outline"
         />
-        <GlobalUtilsDate
+        <Date
           v-if="post.date"
           :date="post.date"
           itemprop="datePublished"
