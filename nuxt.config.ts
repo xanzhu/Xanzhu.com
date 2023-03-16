@@ -70,14 +70,14 @@ export default defineNuxtConfig({
         file: "en.json",
       },
       {
-        code: "ko-KR",
-        iso: "ko",
+        code: "ko",
+        iso: "ko-KO",
         name: "한국어",
         file: "ko.json",
       },
       {
         code: "zh",
-        iso: "zh",
+        iso: "zh-CN",
         name: "中文",
         file: "zh.json",
       },
