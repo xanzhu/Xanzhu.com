@@ -9,7 +9,7 @@ toc: true
 ogLink: "https://source.unsplash.com/JySoEnr-eOg"
 source: Denny Müller, Unsplash
 alt: "인기 있는 웹 브라우저의 아이콘"
-feature: true
+
 ---
 
 생태계에 맞는 완벽한 브라우저를 찾는 것은 어려운 과정일 수 있습니다. 몇 년 동안 Chrome을 사용해 왔거나 기기의 내장 브라우저에서 벗어나지 않았거나 상관없이 성능, 보안, 접근성 또는 더 나은 내장 브라우저와 같은 웹 브라우징 경험의 다양한 측면을 개선할 수 있는 옵션이 있습니다. 도구 및 기능.

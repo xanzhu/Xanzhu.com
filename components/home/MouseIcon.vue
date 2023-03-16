@@ -1,0 +1,47 @@
+<template>
+  <svg
+    width="29"
+    height="56"
+    viewBox="0 0 29 56"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <line
+      x1="10.2395"
+      y1="49.7041"
+      x2="14.414"
+      y2="53.8786"
+      stroke="red"
+      stroke-width="3"
+      stroke-linecap="round"
+    />
+    <line
+      x1="1.5"
+      y1="-1.5"
+      x2="7.40369"
+      y2="-1.5"
+      transform="matrix(-0.707107 0.707107 0.707107 0.707107 20.71 49.7041)"
+      stroke="red"
+      stroke-width="3"
+      stroke-linecap="round"
+    />
+    <line
+      x1="14.2573"
+      y1="10.4468"
+      x2="14.2573"
+      y2="15.3994"
+      stroke="currentColor"
+      stroke-width="3"
+      stroke-linecap="round"
+    />
+    <rect
+      x="1.66577"
+      y="1.5"
+      width="25.497"
+      height="40.0769"
+      rx="12.7485"
+      stroke="currentColor"
+      stroke-width="3"
+    />
+  </svg>
+</template>

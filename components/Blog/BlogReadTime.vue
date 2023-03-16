@@ -1,6 +1,6 @@
 <template>
   <div class="inline-flex space-x-1 items-center">
-    <IconClock class="h-3.5 w-3.5" />
+    <Icon name="mdi:clock-time-three-outline" class="h-3.5 w-3.5" />
     <p>
       {{ readingTime }}
     </p>

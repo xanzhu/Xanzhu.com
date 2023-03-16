@@ -1,17 +1,17 @@
 <template>
   <nav
-    class="flex justify-between pt-5 sm:(mx-20 pt-10) children:(md:text-lg text-sm m-4 px-3 py-1 border-outline)"
+    class="flex justify-between pt-5 sm:(mx-20 pt-10) children:(md:text-lg text-sm m-4 px-3 py-1 rounded-sm)"
   >
     <NuxtLink
       v-if="prev"
       :to="prev._path"
-      class="dark:(bg-dark-900 text-white) group dark:hover:accent-color hover:(accent-color) bg-light-400 flex items-center"
+      class="dark:(bg-dark-900 text-white) group bg-light-400 border-1 text-black flex items-center"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="currentColor"
         aria-hidden="true"
-        class="md:mr-2 w-5 h-5"
+        class="md:mr-2 w-5 h-5 group-hover:text-[#ff0000]"
         viewBox="0 0 20 20"
       >
         <path
@@ -20,20 +20,20 @@
           clip-rule="evenodd"
         />
       </svg>
-      <p class="<sm:hidden" v-t="'Blog.previous'" />
+      <p class="<sm:hidden opacity-80" v-t="'Blog.previous'" />
     </NuxtLink>
     <p class="invisible" v-else />
     <NuxtLink
       v-if="next"
       :to="next._path"
-      class="dark:(bg-dark-900 text-white) bg-light-400 group dark:hover:accent-color hover:(accent-color) flex items-center"
+      class="dark:(bg-dark-900 text-white) bg-light-400 border-1  group flex items-center"
     >
-      <p class="<sm:hidden" v-t="'Blog.next'" />
+      <p class="<sm:hidden opacity-80" v-t="'Blog.next'" />
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="currentColor"
         aria-hidden="true"
-        class="md:ml-2 w-5 h-5"
+        class="md:ml-2 w-5 h-5 group-hover:text-[#ff0000]"
         viewBox="0 0 20 20"
       >
         <path
