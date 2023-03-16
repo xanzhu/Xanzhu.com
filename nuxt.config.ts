@@ -86,7 +86,7 @@ export default defineNuxtConfig({
   // Sitemap
   runtimeConfig: {
     public: {
-      siteUrl: process.env.BASE_URL || 'https://xz-v2.vercel.app',
+      siteUrl: process.env.BASE_URL || 'https://xanzhu.com',
     }
   },
   nitro: {
