@@ -1,7 +1,6 @@
 <template>
-  <div
+  <main
     class="mx-auto space-y-10 sm:space-y-20 dark:text-white text-black sm:mb-10"
-    role="main"
   >
     <div
       class="sm:(mx-8 mt-15) xl:ml-30 mx-4 mt-5 flex flex-col space-y-2 lg:mx-10"
@@ -61,7 +60,7 @@
         </NuxtLink>
       </div>
     </section>
-  </div>
+  </main>
 </template>
 <script setup lang="ts">
 const { t, locale } = useI18n();

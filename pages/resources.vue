@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col space-y-10">
+  <main class="flex flex-col space-y-10">
     <div class="flex flex-col text-center space-y-4 items-center mt-[8%]">
       <h1
         class="font-semibold text-4xl sm:(text-5xl text-center) max-w-2xl text-left mx-4"
@@ -106,7 +106,7 @@
         </div>
       </section>
     </div>
-  </div>
+  </main>
 </template>
 <script setup lang="ts">
 const { t } = useI18n();

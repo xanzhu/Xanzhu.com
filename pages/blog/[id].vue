@@ -1,5 +1,5 @@
 <template>
-  <div v-if="post" class="container mb-4 mx-auto md:(px-6 mb-0)" role="main">
+  <main v-if="post" class="container mb-4 mx-auto md:(px-6 mb-0)" role="main">
     <article
       class="dark:(bg-black text-light-200) bg-white text-black pb-2 sm:rounded-md md:(space-y-10 mb-12)"
       itemscope
@@ -22,7 +22,7 @@
       </div>
       <LazyBlogPrevNext :prev="prev" :next="next" />
     </article>
-  </div>
+  </main>
 </template>
 <script setup lang="ts">
 const { path } = useRoute();
