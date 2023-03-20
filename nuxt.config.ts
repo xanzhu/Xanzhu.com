@@ -65,19 +65,19 @@ export default defineNuxtConfig({
     locales: [
       {
         code: "en",
-        iso: "en-NZ",
+        iso: "en",
         name: "English",
         file: "en.json",
       },
       {
         code: "ko",
-        iso: "ko-KO",
+        iso: "ko",
         name: "한국어",
         file: "ko.json",
       },
       {
         code: "zh",
-        iso: "zh-CN",
+        iso: "zh",
         name: "中文",
         file: "zh.json",
       },
