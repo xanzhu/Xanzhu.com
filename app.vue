@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="h-screen font-main"
-  >
+  <div class="h-screen font-main">
     <Html
       v-if="head.htmlAttrs"
       :lang="head.htmlAttrs.lang"
@@ -41,13 +39,8 @@ const head = useLocaleHead({
 
 useHead({
   bodyAttrs: {
-    class: "dark:(bg-black text-white) bg-white text-black"
+    class: "dark:(bg-black text-white) bg-white text-black",
   },
-  noscript: [
-    {
-      textContent: `Javascript is required`,
-    },
-  ],
 });
 
 useSeoMeta({
