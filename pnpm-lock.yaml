@@ -8,7 +8,7 @@ specifiers:
   '@nuxtjs/i18n': 8.0.0-beta.10
   nuxt: ^3.3.1
   nuxt-icon: ^0.3.3
-  nuxt-simple-sitemap: ^2.1.7
+  nuxt-simple-sitemap: ^1.0.9
   nuxt-windicss: ^2.6.0
 
 devDependencies:
@@ -19,7 +19,7 @@ devDependencies:
   '@nuxtjs/i18n': 8.0.0-beta.10
   nuxt: 3.3.1
   nuxt-icon: 0.3.3
-  nuxt-simple-sitemap: 2.1.7
+  nuxt-simple-sitemap: 1.0.9
   nuxt-windicss: 2.6.0
 
 packages:
@@ -1582,12 +1582,22 @@ packages:
     resolution: {integrity: sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==}
     dev: true
 
+  /@types/node/17.0.45:
+    resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
+    dev: true
+
   /@types/parse5/6.0.3:
     resolution: {integrity: sha512-SuT16Q1K51EAVPz1K29DJ/sXjhSQ0zjvsypYJ6tlwVsRV9jwW5Adq2ch8Dq8kDBCkYnELS7N7VNCSB5nC56t/g==}
     dev: true
 
   /@types/resolve/1.20.2:
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
+    dev: true
+
+  /@types/sax/1.2.4:
+    resolution: {integrity: sha512-pSAff4IAxJjfAXUG6tFkO7dsSbTmf8CtUpfhhZ5VhkRpC4628tJhh3+V6H1E+/Gs9piSzYKT5yzHO5M4GG9jkw==}
+    dependencies:
+      '@types/node': 17.0.45
     dev: true
 
   /@types/unist/2.0.6:
@@ -1940,6 +1950,10 @@ packages:
     dependencies:
       delegates: 1.0.0
       readable-stream: 3.6.2
+    dev: true
+
+  /arg/5.0.2:
+    resolution: {integrity: sha512-PYjyFOLKQ9y57JvQ6QLo8dAgNqswh8M1RMJYdQduT6xbWSgK36P/Z/v+p888pM69jMMfS8Xd8F6I1kQ/I9HUGg==}
     dev: true
 
   /argparse/2.0.1:
@@ -4751,16 +4765,17 @@ packages:
       - vue
     dev: true
 
-  /nuxt-simple-sitemap/2.1.7:
-    resolution: {integrity: sha512-hRNy8Rx89hC+rDGi/I/fa8IE+Pd1Tnv8C57XyHGf9HOvhiouC8bQuBwW/bVy/P45mxMDqdq7vyqngJBK5VwGTQ==}
+  /nuxt-simple-sitemap/1.0.9:
+    resolution: {integrity: sha512-wHlSNkBhCoZZLwbuQi1A+UzTwts2dUp4bqmmIKe3XoBSjwoFzS+SwUxVQ5J6GsrwSAD8xYyVvwlUFMLn2szzww==}
     dependencies:
-      '@nuxt/kit': 3.3.1
+      '@nuxt/kit': 3.2.3
       chalk: 5.2.0
       defu: 6.1.2
       escape-string-regexp: 5.0.0
       knitwork: 1.0.0
       pathe: 1.1.0
       radix3: 1.0.0
+      sitemap: 7.1.1
       ufo: 1.1.1
     transitivePeerDependencies:
       - rollup
@@ -5749,6 +5764,10 @@ packages:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: true
 
+  /sax/1.2.4:
+    resolution: {integrity: sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==}
+    dev: true
+
   /scule/1.0.0:
     resolution: {integrity: sha512-4AsO/FrViE/iDNEPaAQlb77tf0csuq27EsVpy6ett584EcRTp6pTDLoGWVxCD77y5iU5FauOvhsI4o1APwPoSQ==}
     dev: true
@@ -5892,6 +5911,17 @@ packages:
       '@polka/url': 1.0.0-next.21
       mrmime: 1.0.1
       totalist: 3.0.0
+    dev: true
+
+  /sitemap/7.1.1:
+    resolution: {integrity: sha512-mK3aFtjz4VdJN0igpIJrinf3EO8U8mxOPsTBzSsy06UtjZQJ3YY3o3Xa7zSc5nMqcMrRwlChHZ18Kxg0caiPBg==}
+    engines: {node: '>=12.0.0', npm: '>=5.6.0'}
+    hasBin: true
+    dependencies:
+      '@types/node': 17.0.45
+      '@types/sax': 1.2.4
+      arg: 5.0.2
+      sax: 1.2.4
     dev: true
 
   /slash/4.0.0:
