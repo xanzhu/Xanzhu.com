@@ -8,7 +8,6 @@ export default defineNuxtConfig({
     "nuxt-icon",
     "nuxt-simple-sitemap"
   ],
-  // https://color-mode.nuxtjs.org/
   colorMode: {
     classSuffix: "",
     preference: "dark",
@@ -51,7 +50,7 @@ export default defineNuxtConfig({
     strategy: "prefix_except_default",
     defaultLocale: "en",
     langDir: "locales",
-    baseUrl: process.env.BASE_URL || "https://xanzhu.com",
+    baseUrl: "https://xanzhu.com",
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: "xanzhu-i18n-v5",
@@ -83,10 +82,9 @@ export default defineNuxtConfig({
       },
     ],
   },
-  // Sitemap
   runtimeConfig: {
     public: {
-      siteUrl: process.env.BASE_URL || 'https://xanzhu.com',
+      siteUrl: 'https://xanzhu.com',
     }
   },
   nitro: {
