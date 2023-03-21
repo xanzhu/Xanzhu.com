@@ -29,13 +29,8 @@ const { path } = useRoute();
 const { locale } = useI18n();
 
 const { data: post } = await useAsyncData(path.replace(/\/$/, ""), async () => {
-  if (locale.value !== "en") {
-    return await queryContent(`${locale.value}/blog`)
-      .where({ _path: path })
-      .findOne();
-  } else {
-    return await queryContent("blog").where({ _path: path }).findOne();
-  }
+  const query = locale.value !== "en" ? `${locale.value}/blog` : "/blog";
+  return await queryContent(query).where({ _path: path }).findOne();
 });
 
 const title = post.value?.title;
@@ -54,26 +49,20 @@ useSeoMeta({
 });
 
 const { data } = await useAsyncData("prev-next", async () => {
-  if (locale.value !== "en") {
-    return await queryContent(`${locale.value}/blog`)
-      .sort({ date: -1 })
-      .only(["_path"])
-      .findSurround(path);
-  } else {
-    return await queryContent("blog")
-      .sort({ date: -1 })
-      .only(["_path"])
-      .findSurround(path);
-  }
+  const query = locale.value !== "en" ? `${locale.value}/blog` : "/blog";
+  return await queryContent(query)
+    .sort({ date: -1 })
+    .only(["_path"])
+    .findSurround(path);
 });
 
 const [prev, next] = data.value || [];
 </script>
 <style>
 html {
-  font-family: "Open sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif,
-    "sans-serif";
+  font-family: "Open sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif, "sans-serif";
 }
 
 .prose h1 {
@@ -137,8 +126,8 @@ html {
 }
 
 .dark .prose ul > li::before {
-    background-color: #ff0000;
-  }
+  background-color: #ff0000;
+}
 
 @media (prefers-color-scheme: dark) {
   .dark .prose a[href^="https"] {
@@ -178,7 +167,5 @@ html {
   .dark .prose ol > li::before {
     color: #ff0000;
   }
-
-
 }
 </style>
