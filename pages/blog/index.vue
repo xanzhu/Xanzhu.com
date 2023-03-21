@@ -10,7 +10,7 @@
         {{ t("Blog.description") }}
       </p>
     </div>
-    <BlogFeature />    
+    <BlogFeature />
     <section
       class="md:(grid-cols-2 mx-6) lg:(grid-cols-3) sm:(py-15 px-10) dark:bg-black grid grid-cols-1 gap-10 rounded-sm p-4"
     >
@@ -19,10 +19,7 @@
         v-for="(article, $index) in articles"
         :key="`fe-${$index}`"
       >
-        <NuxtLink
-          class="group flex flex-col"
-          :to="article._path"
-        >
+        <NuxtLink class="group flex flex-col" :to="article._path">
           <NuxtImg
             crossorigin="anonymous"
             v-if="article.img"
@@ -46,7 +43,7 @@
               />
               <p
                 v-if="article.tag"
-                class="dark:(bg-dark-900 text-white border-dark-700 opacity-100) opacity-80 bg-light-500 border-gray-300 px-4 py-1.5 border-1 rounded-sm  text-xs inline-block"
+                class="dark:(bg-dark-900 text-white border-dark-700 opacity-100) opacity-80 bg-light-500 border-gray-300 px-4 py-1.5 border-1 rounded-sm text-xs inline-block"
               >
                 {{ article.tag }}
               </p>
@@ -83,9 +80,7 @@ useSeoMeta({
   ogTitle: title,
   twitterTitle: title,
   twitterDescription: desc,
-  ogUrl: `https://xanzhu.com/${
-    locale.value === "en" ? "" : locale.value
-  }/blog`,
+  ogUrl: `https://xanzhu.com/${locale.value === "en" ? "" : locale.value}/blog`,
   ogImage: "https://source.unsplash.com/x6YWgAN3SX8",
 });
 </script>
