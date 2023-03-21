@@ -109,10 +109,9 @@
   </main>
 </template>
 <script setup lang="ts">
-const { t } = useI18n();
+const { t, locale } = useI18n();
 const title = t("Resources.meta.title");
 const description = t("Resources.meta.description");
-const path = useRoute();
 
 const isExternalLink = (url: string): "_blank" | "_self" => {
   if (url.startsWith("https")) {
@@ -163,7 +162,9 @@ useSeoMeta({
   description: description,
   ogDescription: description,
   ogTitle: title,
-  ogUrl: `https://xanzhu.com${path}`,
+  ogUrl: `https://xanzhu.com/${
+    locale.value === "en" ? "" : locale.value
+  }/resources`,
   ogImage: "https://source.unsplash.com/dCuA11z7xHg",
   twitterDescription: description,
   twitterTitle: title,
