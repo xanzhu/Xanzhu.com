@@ -9,7 +9,7 @@
     </div>
     <NuxtLink
       :to="localePath('/')"
-      class="mx-auto text-center dark:text-white text-black"
+      class="mx-auto text-center dark:text-white text-black hover:text-[#ff0000]"
     >
       <UiIconXanzhu class="h-6 inline-block" :aria-label="t('a11y.logo')" />
     </NuxtLink>
