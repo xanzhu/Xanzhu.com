@@ -76,11 +76,6 @@ const { data: articles } = await useAsyncData("articles", async () => {
 const title = t("Blog.meta.title");
 const desc = t("Blog.meta.description");
 
-const url =
-  locale.value == "en"
-    ? "https://xanzhu.com/blog"
-    : `https://xanzhu.com/${locale.value}/blog`;
-
 useSeoMeta({
   title: title,
   description: desc,
@@ -88,7 +83,9 @@ useSeoMeta({
   ogTitle: title,
   twitterTitle: title,
   twitterDescription: desc,
-  ogUrl: url,
+  ogUrl: `https://xanzhu.com/${
+    locale.value === "en" ? "" : locale.value
+  }/blog`,
   ogImage: "https://source.unsplash.com/x6YWgAN3SX8",
 });
 </script>
