@@ -1,7 +1,7 @@
 <template>
   <figure>
     <NuxtImg
-      class="rounded-md"
+      class="rounded-sm"
       :src="source"
       :alt="alt"
       :title="alt"

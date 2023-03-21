@@ -1,7 +1,7 @@
 <template>
   <main v-if="post" class="container mb-4 mx-auto md:(px-6 mb-0)" role="main">
     <article
-      class="dark:(bg-black text-light-200) bg-white text-black pb-2 sm:rounded-md md:(space-y-10 mb-12)"
+      class="dark:(bg-black text-light-200) bg-white text-black pb-2 sm:rounded-sm md:(space-y-10 mb-12)"
       itemscope
       itemtype="https://schema.org/BlogPosting"
     >

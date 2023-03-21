@@ -53,7 +53,7 @@
           loading="lazy"
           height="407"
           width="600"
-          class="w-full object-cover md:border-outline"
+          class="w-full object-cover md:rounded-sm"
         />
         <Date
           v-if="post.date"

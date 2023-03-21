@@ -1,6 +1,6 @@
 <template>
   <figure>
-    <video class="rounded-md" muted :autoplay="true" :loop="true" :poster="thumbnail">
+    <video class="rounded-sm" muted :autoplay="true" :loop="true" :poster="thumbnail">
       <source :src="source" />
     </video>
     <figcaption v-if="credit" v-bind:credit="credit">
