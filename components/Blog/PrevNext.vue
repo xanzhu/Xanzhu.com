@@ -5,7 +5,7 @@
     <NuxtLink
       v-if="prev"
       :to="prev._path"
-      class="dark:(bg-dark-900 text-white) group bg-light-400 border-1 text-black flex items-center"
+      class="dark:(bg-dark-900 border-dark-700 text-white) group bg-light-400 border-1 text-black flex items-center"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -26,7 +26,7 @@
     <NuxtLink
       v-if="next"
       :to="next._path"
-      class="dark:(bg-dark-900 text-white) bg-light-400 border-1  group flex items-center"
+      class="dark:(bg-dark-900 text-white border-dark-700) bg-light-400 border-1 group flex items-center"
     >
       <p class="<sm:hidden opacity-80" v-t="'Blog.next'" />
       <svg
