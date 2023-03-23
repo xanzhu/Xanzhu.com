@@ -12,7 +12,7 @@
         :to="link.url"
         :aria-label="link.name"
         target="_blank"
-        class="px-3 py-2 border-1 border-transparent rounded-sm hover:(underline underline-offset-4 decoration-2) dark:hover:(bg-dark-800 border-1 border-dark-500)"
+        class="px-3 py-2 border-1 border-transparent rounded-sm hover:(underline underline-offset-4 decoration-2)"
       >
         {{ link.name }}
       </NuxtLink>
