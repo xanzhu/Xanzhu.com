@@ -5,7 +5,9 @@
     <h4 class="text-4xl font-bold">
       {{ t("SocialsCard.h1") }}
     </h4>
-    <div class="flex flex-col sm:flex-row sm:space-x-4 space-y-0) space-y-0 opacity-75 space-y-4">
+    <div
+      class="flex flex-col sm:flex-row sm:space-x-4 space-y-0) space-y-0 opacity-75 space-y-4"
+    >
       <NuxtLink
         v-for="(link, index) in links"
         :key="index"
