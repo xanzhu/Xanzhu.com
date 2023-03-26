@@ -3,7 +3,7 @@ title: "ChatGPT: Leading a new generation in Artificial Intelligence"
 description: "Explore the power of AI and how it will continue to influence software. Our article covers upcoming solutions and news around ChatGPT and language models being widely adopted."
 date: "03/26/23"
 tag: Technology
-img: /images/blog/Gen/gptv1.png
+img: /images/blog/Gen/gptv2.png
 toc: true
 ---
 
@@ -16,37 +16,35 @@ Looking at what's latest on language models like GPT and where they're being use
 ### Microsoft
 Microsoft released Bing search with ChatGPT. It's currently running version 4 and is considerably more limited and restrictive when it comes to getting a response back. Released on a public model to all users of Bing gives it an edge over Chrome. However, the experience isn't the same interactive experience as having a conversation on OpenAI's website.
 
-Given that Bing's new chat feature is restrictive to the Edge browser, it ensures that there's enough of an advantage to compete with Google Chrome. The chat service offers three modes through a conversation selection method: Creative, Balanced, or Precise. Conversations are not saved and are restricted to 15 or fewer responses before having to start over.
+Given that Bing's new chat feature is restrictive to the Edge browser, it ensures that there's enough of an advantage to compete with Google Chrome. The chat service offers three modes through a conversation selection method: Creative, Balanced, or Precise. Conversations are not saved and are restricted to a few responses before having to start over.
 
-<!-- <Pic Bing/> -->
+<Media source="/images/blog/Gen/bing.webp"  alt="Bing's new Chatbot splash screen"></Media>
 
 After the initial use, it's quite helpful at returning answers in both a relevant context and general knowledge. Being able to integrate with Bing search, it essentially scans websites and then gives a summary with options to clarify or learn more through the provided links. It does a mixture of searching through its knowledge and just searching the web.
 
 The main difference is just a personality factor. It feels like searching the web, given exactly what you search, and then gives clarity from where the information originated by listing sources to those websites. To clarify information further, it can suggest options for you based on similar responses, acting as a follow-up to the initial request or simply allowing you to type in your answer.
 
-<!-- < dialogue box> -->
+<Media source="/images/blog/Gen/bdialog.webp"  alt="Bing Chatbot Dialog preview"></Media>
 
-Bing provides the user with limited options and often cuts off the request. The current limit is set to 15 responses before a new topic must be established, which blocks the existing conversation and encourages the user to select the broom button to sweep the chat away. This restriction is likely to prevent the model from going out of scope and ensures everyone can use it. Something interesting to consider is how history works with these models. At this stage, it isn't saved anywhere accessible and resets back to a default splash screen.
-
-<!-- end screen once 15 cap reached -->
+Bing provides the user with limited options and often cuts off the request. They've introduced a limit for responses before a new topic must be established, which blocks the existing conversation and encourages the user to select the broom button to sweep the chat away. This restriction is likely to prevent the model from going out of scope and ensures everyone can use it. Something interesting to consider is how history works with these models. At this stage, it isn't saved anywhere accessible and resets back to a default splash screen.
 
 ### Google
 Google recently opened up Bard for early access, and it's fast at responding, but it isn't entirely accurate yet. Offering streamlined performance is one thing, but being able to correctly return information is critical. Considering this is Google's in-house Language Model, there is a high expectation to ensure it works and aligns with the company's ethos. The current state of Bard is behind ChatGPT, extremely restrictive but much more responsive.
 
 Currently available in the United States and the United Kingdom through early access, no date for a public release has been announced. Google's concept for Bard is to provide a complement to searching the web. The model is likely to be similar to Bing, searching and responding with exact results. Bard in other software mentioned below will be slightly more advanced and specific to the software.
 
-<!-- <Gif example> -->
+<Media source="/images/blog/Gen/gbp.gif"  alt="Bard GIF Prompt" credit="Google"></Media>
 
 Expect more changes and improvements over the coming months for Google, improving accuracy and features in their software. Once their Language Model (LaMDA) is tested and perfected for use in Bard, fewer restrictions will be applied, allowing users to search and get results across Google's massive archive of data. For the time being, this is a slow release and will unlikely be the final product for Bard.
 
 Language Models in Software 
 Both Google and Microsoft are beginning to ship software with their AI solutions to help speed up mundane tasks across their software line up. Google first announced that they're working on introducing Generative AI tools in their software, such as Docs, Gmail, and more. These new AI features will enhance the way we work, reducing the amount of time spent planning. The following example shows a Google Doc with a ChatGPT-like box asking the user to input the information they want, and it generates an entire document!
 
-<!-- <Gif Google Docs> -->
+<Vid source="/images/blog/Gen/gde.webm" credit="Google" thumbnail="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Press_Copy_-_for_social__blog_As.width-1000.format-webp_ym4JQxH.webp"></Vid>
 
 Two days after this announcement, Microsoft also announced that they're working on shipping a new AI-powered line-up called Copilot that will be introduced across the 365 line-ups, including some of the following: Word, Excel, and Outlook. Their vision is to boost the level of creativity using the power of your own words. Much like Google's Doc approach, Microsoft follows a similar concept of simply inputting your request and watching the magic happen. Something a bit different is Copilot also adds a feature to generate content based on files.
 
-<!-- <Video Microsoft> -->
+<Media source="/images/blog/Gen/mfr.webp"  alt="Microsoft Generative AI visual" credit="Microsoft"></Media>
 
 Both announcements mean that it's about to get a lot easier to create and draft documents exactly the way you want. A possible concern with this is the usage of generating specific documents that may make it easier for bad actors to automate and perfect their attacks.
 
@@ -58,10 +56,10 @@ We cannot rely on the usage of plagiarism detection software to prevent AI-gener
 
 Businesses will likely utilize this tool for a lot of mundane tasks such as shown above creating job postings, ads, or content on their website. These tools shouldn't be an end solution but rather a way to create quick solutions and build your own ideas using them.
 
-### Co-Pilot
+### Copilot
 A new addition to Github's existing Copilot software introduces a more complex solution, incorporating a new language model that will be a true partner when it comes to coding. Being a part of the Microsoft ecosystem, Copilot will be running the latest ChatGPT version 4 and Github's own model in code auto-completion.
 
-<!-- <Video> -->
+<Media source="/images/blog/Gen/copilot.webp"  alt="Github Copilot X Promo visual" credit="Github"></Media>
 
 A new companion for coding, Copilot solves the problem of having to search Stack Overflow or other countless forums to solve a simple problem. Many designers and web developers search "How to center a Div." but directly within Visual Studio Code, Copilot will feature next to code, following suit like ChatGPT, being able to converse and read in code as it's being written.
 
@@ -76,11 +74,11 @@ The privacy-focused browser has released a new AI summary tool to their native s
 
 A step in the right direction is maintaining attribution of information, where the information is sourced and how to access them. Brave does this by listing source links under each response. Similar to Bing’s approach, this ensures that the content generated can be reviewed and assessed by the user to determine the trustworthiness of the sources.
 
-<!-- <Picture Summary> -->
+<Media source="/images/blog/Gen/bse.jpg"  alt="Brave Summarizer visual" credit="Brave"></Media>
 
 A lot of language models do not identify where information is sourced from, specifically speaking, ChatGPT displays information but doesn’t source where it’s from. Providing results without attribution, the level of bias can be set on what the language model has been trained on. It’s critical to ensure Language Models are trained to respect sources and mitigate bias in results.
 
-<!-- <Picture Inline desc changes compare> -->
+<Media source="/images/blog/Gen/bdc.webp"  alt="Brave in-line summary visual" credit="Brave"></Media>
 
 In addition to providing a specified section labelled Summarizer, Brave’s AI model is also capable of altering result snippets in search results with a more refined summary highlighting the specific answer, helping users better understand the content.
 
@@ -93,7 +91,7 @@ Spotify is working on something a bit different, giving premium users their own 
 
 Powered by OpenAI and a voice model from Sonantic used for the DJ’s voice, trained to act and respond as a typical DJ would, their AI model has different categories such as genre, artist, or mood, being much like a personalized DJ set based on all the music you like.
 
-<!-- Video -->
+<Media source="/images/blog/Gen/spotify.webp"  alt="Spotify DJ Promo visual" credit="Spotify"></Media>
 
 Spotify’s algorithm for personalizing and finding exactly the user's music taste has been incredible. It can match music exactly to you without any major language model. The problem with Spotify currently is giving the user an experience that isn’t the same. A common problem is for playlists or song radios the content is repeated, often in the same order.
 
