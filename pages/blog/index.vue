@@ -28,7 +28,7 @@
             loading="lazy"
             height="369"
             width="577"
-            class="rounded-sm transform transition duration-500 ease-in-out group-hover:scale-102"
+            class="rounded-sm transform md:(transition duration-500 ease-in-out) md:group-hover:scale-102"
             :src="article.img"
           />
 

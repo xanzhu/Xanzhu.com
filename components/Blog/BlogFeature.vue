@@ -18,7 +18,7 @@
           :src="feature.img"
           :alt="feature.alt"
           :title="feature.alt"
-          class="lg:max-w-lg xl:max-w-2xl group-hover:scale-102 transform transition duration-500 ease-in-out"
+          class="lg:max-w-lg xl:max-w-2xl md:group-hover:scale-102 md:(transform transition duration-500 ease-in-out)"
           height="1253"
           width="1880"
         />
