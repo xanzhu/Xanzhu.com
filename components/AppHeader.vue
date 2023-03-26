@@ -57,7 +57,7 @@
           :to="localePath(link.url)"
           active-class="text-[#ff0000]"
           :aria-label="t(link.name)"
-          class="dark:hover:(bg-dark-600 text-white ease-in duration-75) hover:(bg-light-400) text-black rounded-sm font-medium text-center py-2 px-3"
+          class="dark:hover:(bg-dark-600 text-white ease-in duration-75) dark:text-white hover:(bg-light-400) text-black rounded-sm font-medium text-center py-2 px-3"
           v-t="link.name"
         />
       </nav>
