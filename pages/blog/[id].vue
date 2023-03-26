@@ -70,7 +70,8 @@ html {
 }
 
 .prose p {
-  line-height: 1.5;
+  line-height: 1.4;
+  font-weight: 200;
 }
 
 .prose h2 a,
@@ -86,7 +87,7 @@ html {
   color: #000000;
   border-left: 4px solid #ff0000;
   padding-left: 10px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .prose pre {
