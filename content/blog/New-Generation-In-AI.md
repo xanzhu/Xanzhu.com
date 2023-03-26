@@ -40,7 +40,7 @@ Expect more changes and improvements over the coming months for Google, improvin
 Language Models in Software 
 Both Google and Microsoft are beginning to ship software with their AI solutions to help speed up mundane tasks across their software line up. Google first announced that they're working on introducing Generative AI tools in their software, such as Docs, Gmail, and more. These new AI features will enhance the way we work, reducing the amount of time spent planning. The following example shows a Google Doc with a ChatGPT-like box asking the user to input the information they want, and it generates an entire document!
 
-<Vid source="/images/blog/Gen/gde.webm" credit="Google" thumbnail="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Press_Copy_-_for_social__blog_As.width-1000.format-webp_ym4JQxH.webp"></Vid>
+<Vid source="/images/blog/Gen/gde.webm" credit="Google"></Vid>
 
 Two days after this announcement, Microsoft also announced that they're working on shipping a new AI-powered line-up called Copilot that will be introduced across the 365 line-ups, including some of the following: Word, Excel, and Outlook. Their vision is to boost the level of creativity using the power of your own words. Much like Google's Doc approach, Microsoft follows a similar concept of simply inputting your request and watching the magic happen. Something a bit different is Copilot also adds a feature to generate content based on files.
 
