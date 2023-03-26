@@ -2,10 +2,11 @@
 title: "ChatGPT: Leading a new generation in Artificial Intelligence"
 description: "Explore the power of AI and how it will continue to influence software. Our article covers upcoming solutions and news around ChatGPT and language models."
 date: "2023-03-27"
-tag: Technology
+tag: AI
 img: /images/blog/Gen/gptv2_s.png
 toc: true
 feature: true
+alt: "ChatGPT Visual Design Xanzhu"
 ---
 
 Released in February of this year, OpenAI's ChatGPT has been a hot topic for anyone in the technology world. It is widely used thanks to its attractive and somewhat accurate response to any question or query you might have, providing a lifeline for finding quick answers without the need to search and scroll through the many links a Google search would provide.
