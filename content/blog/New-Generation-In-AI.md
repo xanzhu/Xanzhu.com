@@ -1,9 +1,9 @@
 ---
 title: "ChatGPT: Leading a new generation in Artificial Intelligence"
-description: "Explore the power of AI and how it will continue to influence software. Our article covers upcoming solutions and news around ChatGPT and language models being widely adopted."
+description: "Explore the power of AI and how it will continue to influence software. Our article covers upcoming solutions and news around ChatGPT and language models."
 date: "03/26/23"
 tag: Technology
-img: /images/blog/Gen/gptv2.png
+img: /images/blog/Gen/gptv2_s.png
 toc: true
 ---
 
