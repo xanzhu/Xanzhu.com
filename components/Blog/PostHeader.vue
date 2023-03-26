@@ -67,7 +67,7 @@
           loading="lazy"
           height="407"
           width="600"
-          class="w-full object-cover rounded-sm"
+          class="w-full object-cover rounded-md"
         />
         <div
           v-if="post.source"
