@@ -70,7 +70,7 @@ html {
 }
 
 .prose p {
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 .prose h2 a,
@@ -82,19 +82,11 @@ html {
   pointer-events: none;
 }
 
-.prose ol {
-  padding-left: 8px;
-}
-
 .prose h2 {
   color: #000000;
   border-left: 4px solid #ff0000;
   padding-left: 10px;
   font-weight: 700;
-}
-
-.prose h3 {
-  font-weight: 300;
 }
 
 .prose pre {
@@ -106,15 +98,14 @@ html {
 }
 
 .prose a[href^="https"] {
-  color: #ff0000;
   font-weight: normal;
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .prose a:hover {
-  text-underline-offset: 2px;
   text-decoration-color: #ff0000;
-  text-decoration: underline;
+  color: #ff0000;
 }
 
 .prose ol > li::before {
@@ -125,36 +116,16 @@ html {
   background-color: #ff0000;
 }
 
-.dark .prose ul > li::before {
-  background-color: #ff0000;
-}
-
 @media (prefers-color-scheme: dark) {
-  .dark .prose a[href^="https"] {
-    color: #ff0000;
-    font-weight: normal;
-    text-decoration: none;
-  }
-
-  .dark .prose a {
-    color: #fff;
+  .dark .prose ul > li::before {
+    background-color: #ff0000;
   }
 
   .dark .prose h2 {
     color: #fff;
-    border-left: 6px solid #ff0000;
+    border-left: 4px solid #ff0000;
     padding-left: 10px;
     font-weight: 700;
-  }
-
-  .dark .prose h3 {
-    font-weight: 300;
-  }
-
-  .dark .prose a:hover {
-    text-decoration-color: #ff0000;
-    text-underline-offset: 2px;
-    text-decoration: underline;
   }
 
   .dark .prose pre {

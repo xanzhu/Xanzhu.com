@@ -38,7 +38,7 @@
         >
           {{ post.title }}
         </h1>
-        <p class="dark:opacity-70 pt-3 opacity-80">{{ post.description }}</p>
+        <p class="dark:opacity-70 pt-3 opacity-80 <sm:text-sm">{{ post.description }}</p>
       </div>
       <div class="flex flex-col space-y-2">
         <div class="flex flex-row items-center space-x-2 opacity-90">
@@ -71,7 +71,7 @@
         />
         <div
           v-if="post.source"
-          class="dark:(text-light-200 opacity-70) text-dark-700 opacity-80 absolute right-0 px-1 py-1 text-xs <sm:mr-2 tracking-wide"
+          class="dark:(text-light-200 opacity-70) text-dark-700 opacity-80 absolute right-0 px-1 py-1 text-xs <sm:(mr-2) tracking-wide"
         >
           <p class="inline-block" />
           {{ t("Blog.source") + ": " + post.source }}
