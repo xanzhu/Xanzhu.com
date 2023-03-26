@@ -78,7 +78,7 @@ Directly pointing out issues and providing solutions with understanding is going
 
 Copilot will be a helpful tool for all developers, improving workflows for production-ready code, to beginners trying to grasp concepts. This adds a level of understanding and guidance that will reduce the time spent trying to solve bugs or implement ideas within projects.
 
-Currently, in a technical preview stage, Copilot is only available on the Microsoft ecosystem: Visual Studio, and Visual Studio Code, with plans to expand into other Integrated Development Environments or IDEs over the next few months after releasing publicly.
+Currently, in a technical preview stage, Copilot is available on the Microsoft ecosystem: Visual Studio, and Visual Studio Code, with plans to expand into other Integrated Development Environments or IDEs such as Neovim, Jetbrains and more as the extension is developed.
 
 Learn more about Copilot X: [Github](https://github.blog/2023-03-22-github-copilot-x-the-ai-powered-developer-experience/){:target="\_blank"}
 
