@@ -65,7 +65,7 @@ const { data: features } = await useAsyncData("feature", async () => {
   const query = locale.value !== "en" ? `${locale.value}/blog` : "/blog";
   return await queryContent(query)
     .sort({ date: -1 })
-    .where({ wide: true })
+    .where({ feature: true })
     .limit(1)
     .find();
 });

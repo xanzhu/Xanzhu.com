@@ -2,9 +2,9 @@
 title: "ChatGPT가 인터넷 탐색 방식을 어떻게 바꿀 것인가"
 description: "고급 AI 언어 모델인 ChatGPT의 잠재력과 그것이 우리가 정보를 검색하는 방식을 어떻게 변화시킬 것인지 알아보세요."
 tag: "소식"
-date: "2023-2-07"
+date: "2023-02-07"
 img: "/images/blog/AI/cover-v3.png"
-wide: true
+feature: true
 alt: "Bing, Google 및 OpenAI의 로고"
 ---
 
