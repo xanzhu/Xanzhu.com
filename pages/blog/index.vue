@@ -49,7 +49,7 @@
               </p>
             </div>
             <h2
-              class="text-xl font-medium group-hover:(underline decoration-2 decoration-[#FF0000] underline-offset-6)"
+              class="text-xl font-medium decoration-2 group-hover:(underline underline-offset-6)"
               v-html="article.title"
             />
             <p class="pt-1 opacity-80" v-html="article.description" />

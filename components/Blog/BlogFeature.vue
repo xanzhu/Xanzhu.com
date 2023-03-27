@@ -46,7 +46,7 @@
             </p>
           </div>
           <h2
-            class="font-semibold decoration-2 text-xl sm:text-3xl sm:group-hover:(underline decoration-[#FF0000] underline-offset-6)"
+            class="font-semibold decoration-2 text-xl sm:text-3xl sm:group-hover:(underline underline-offset-6)"
           >
             {{ feature.title }}
           </h2>
