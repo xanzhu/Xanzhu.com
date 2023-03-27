@@ -117,7 +117,7 @@ Adding in this new feature builds on the shuffle button, playlists, and radio fe
 
 A few concerns with this are the model being trained on specific genres of music. There are many sub-genres of music that could be classified as something entirely different and this is a concern when recommending songs from a genre entirely unrelated. Given that it’s a mixture of either entirely new songs or old ones, the AI model could present potential risks in delivering undesirable titles or artists to the user. More to come on this.
 
-Learn More: [Spotify](https://brave.com/ai-summarizer/){:target="\_blank"}
+Learn More: [Spotify](https://newsroom.spotify.com/2023-02-22/spotify-debuts-a-new-ai-dj-right-in-your-pocket/){:target="\_blank"}
 
 ### Next
 From what’s happening across the various industries, it’s clear that artificial intelligence will continue to be incorporated into almost everything used in our daily lives. How we interact with websites through live chats, in the future, will be entirely run by models like ChatGPT, with less of a need for human interaction to answer simple queries.
