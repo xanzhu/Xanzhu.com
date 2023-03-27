@@ -4,7 +4,6 @@ description: "고급 AI 언어 모델인 ChatGPT의 잠재력과 그것이 우�
 tag: "소식"
 date: "2023-02-07"
 img: "/images/blog/AI/cover-v3.png"
-feature: true
 alt: "Bing, Google 및 OpenAI의 로고"
 ---
 

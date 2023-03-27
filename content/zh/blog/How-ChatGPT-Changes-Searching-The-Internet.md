@@ -4,7 +4,6 @@ description: "揭示高级 AI 语言模型 ChatGPT 的潜力，以及它将如�
 tag: "消息"
 date: "2023-02-07"
 img: "/images/blog/AI/cover-v3.png"
-feature: true
 alt: "Bing、Google 和 OpenAI 的徽标"
 ---
 
