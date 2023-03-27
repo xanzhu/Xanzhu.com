@@ -13,13 +13,13 @@
           {{ post.tag }}
         </span>
         <Date
-          v-if="post.date"
+          v-if="post.date && !post.updated"
           :date="post.date"
           itemprop="datePublished"
           class="md:hidden"
         />
         <BlogReadTime class="<sm:hidden" :content="post" />
-        <p v-if="post.updated" class="flex items-center space-x-1">
+        <p v-if="post.updated" class="md:hidden flex items-center space-x-1">
           <Icon
             name="material-symbols:update-rounded"
             class="h-3.5 w-3.5 dark:text-yellow-400"
@@ -34,13 +34,27 @@
       <div>
         <h1
           itemprop="headline"
-          class="md:(text-2xl mr-6) break-words text-xl font-semibold sm:leading-tight lg:text-3xl xl:text-4xl"
+          class="md:(text-2xl mr-6) break-words text-xl font-bold sm:leading-tight lg:text-3xl xl:text-4xl"
         >
           {{ post.title }}
         </h1>
-        <p class="dark:opacity-70 pt-3 opacity-80">{{ post.description }}</p>
+        <p class="dark:opacity-70 pt-3 opacity-80 <sm:text-sm">{{ post.description }}</p>
       </div>
-      <BlogSocialShare v-bind:post="post" />
+      <div class="flex flex-col space-y-2">
+        <div class="flex flex-row items-center space-x-2 opacity-90">
+          <!-- Add Author font matter -->
+          <p class="text-sm font-medium">Xanzhu</p>
+          <p class="text-[#ff0000] font-medium">/</p>
+          <!-- Shift updated here -->
+          <Date
+            v-if="post.date"
+            :date="post.date"
+            itemprop="datePublished"
+            class="text-sm"
+          />
+        </div>
+        <BlogSocialShare v-bind:post="post" />
+      </div>
     </div>
     <div v-if="post.img" class="relative col-span-1 grow-0">
       <div>
@@ -53,17 +67,11 @@
           loading="lazy"
           height="407"
           width="600"
-          class="w-full object-cover md:border-outline"
-        />
-        <Date
-          v-if="post.date"
-          :date="post.date"
-          itemprop="datePublished"
-          class="dark:(bg-dark-900 text-white) <md:hidden md:(rounded-tl-none rounded-br-none rounded-bl-md border-outline font-medium) bg-light-400 px-4 py-2 rounded-bl-md text-xs absolute top-0 right-0"
+          class="w-full object-cover rounded-md px-4 sm:px-0"
         />
         <div
           v-if="post.source"
-          class="dark:(text-light-200 opacity-70) text-dark-700 opacity-80 absolute right-0 px-1 py-0.5 text-xs <sm:mr-2 tracking-wide"
+          class="dark:(text-light-200 opacity-70) text-dark-700 opacity-80 absolute right-0 px-1 py-1 text-xs <sm:(mr-2) tracking-wide"
         >
           <p class="inline-block" />
           {{ t("Blog.source") + ": " + post.source }}

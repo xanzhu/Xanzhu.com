@@ -28,13 +28,16 @@
 const { t } = useI18n();
 const path = useRoute();
 
+const title = t("Home.Seo.title");
+const desc = t("Home.Seo.desc");
+
 useSeoMeta({
-  title: t("Home.Seo.title"),
-  ogTitle: t("Home.Seo.title"),
-  description: t("Home.Seo.desc"),
-  ogDescription: t("Home.Seo.desc"),
-  twitterTitle: t("Home.Seo.title"),
-  twitterDescription: t("Home.Seo.desc"),
+  title: title,
+  ogTitle: title,
+  description: desc,
+  ogDescription: desc,
+  twitterTitle: title,
+  twitterDescription: desc,
   ogUrl: `https://xanzhu.com${path}`,
   ogImage: "https://source.unsplash.com/lyOCWxa28Zk",
 });

@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="m-4 p-4 rounded-sm dark:(bg-dark-900 border-dark-600) border-1  md:(max-w-md mx-auto)"
+    class="m-4 p-4 rounded-sm dark:(bg-dark-900 border-dark-600) border-1 md:(max-w-md mx-auto)"
   >
     <header class="pb-2 mb-2 border-b border-slate-200 dark:border-dark-300">
       <h2 class="text-lg font-semibold">
@@ -13,7 +13,8 @@
         :key="link.id"
         class="text-dark-700 dark:text-light-400"
         :class="{
-          'ml-6 list-disc opacity-80 hover:(underline underline-offset-3 decoration-2 decoration-[#ff0000])': link.depth === 3,
+          'ml-6 list-disc opacity-80 hover:(underline underline-offset-3 decoration-2)':
+            link.depth === 3,
           'font-semibold tracking-wide  hover:underline-transparent':
             link.depth === 2,
         }"

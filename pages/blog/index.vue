@@ -10,7 +10,7 @@
         {{ t("Blog.description") }}
       </p>
     </div>
-    <BlogFeature />    
+    <BlogFeature />
     <section
       class="md:(grid-cols-2 mx-6) lg:(grid-cols-3) sm:(py-15 px-10) dark:bg-black grid grid-cols-1 gap-10 rounded-sm p-4"
     >
@@ -19,10 +19,7 @@
         v-for="(article, $index) in articles"
         :key="`fe-${$index}`"
       >
-        <NuxtLink
-          class="group flex flex-col"
-          :to="article._path"
-        >
+        <NuxtLink class="group flex flex-col" :to="article._path">
           <NuxtImg
             crossorigin="anonymous"
             v-if="article.img"
@@ -31,7 +28,7 @@
             loading="lazy"
             height="369"
             width="577"
-            class="rounded-sm transform transition duration-500 ease-in-out group-hover:scale-102"
+            class="rounded-sm transform md:(transition duration-500 ease-in-out) md:group-hover:scale-102"
             :src="article.img"
           />
 
@@ -46,13 +43,13 @@
               />
               <p
                 v-if="article.tag"
-                class="dark:(bg-dark-900 text-white border-dark-700 opacity-100) opacity-80 bg-light-500 border-gray-300 px-4 py-1.5 border-1 rounded-sm  text-xs inline-block"
+                class="dark:(bg-dark-900 text-white border-dark-700 opacity-100) opacity-80 bg-light-500 border-gray-300 px-4 py-1.5 border-1 rounded-sm text-xs inline-block"
               >
                 {{ article.tag }}
               </p>
             </div>
             <h2
-              class="text-xl font-medium group-hover:(underline decoration-2 decoration-[#FF0000] underline-offset-6)"
+              class="text-xl font-medium decoration-2 group-hover:(underline underline-offset-6)"
               v-html="article.title"
             />
             <p class="pt-1 opacity-80" v-html="article.description" />
@@ -69,17 +66,12 @@ const { data: articles } = await useAsyncData("articles", async () => {
   const query = locale.value !== "en" ? `${locale.value}/blog` : "/blog";
   return await queryContent(query)
     .sort({ date: -1 })
-    .where({ wide: { $ne: true } })
+    .where({ feature: { $ne: true } })
     .find();
 });
 
 const title = t("Blog.meta.title");
 const desc = t("Blog.meta.description");
-
-const url =
-  locale.value == "en"
-    ? "https://xanzhu.com/blog"
-    : `https://xanzhu.com/${locale.value}/blog`;
 
 useSeoMeta({
   title: title,
@@ -88,7 +80,7 @@ useSeoMeta({
   ogTitle: title,
   twitterTitle: title,
   twitterDescription: desc,
-  ogUrl: url,
+  ogUrl: `https://xanzhu.com/${locale.value === "en" ? "" : locale.value}/blog`,
   ogImage: "https://source.unsplash.com/x6YWgAN3SX8",
 });
 </script>

@@ -1,7 +1,7 @@
 <template>
   <main v-if="post" class="container mb-4 mx-auto md:(px-6 mb-0)" role="main">
     <article
-      class="dark:(bg-black text-light-200) bg-white text-black pb-2 sm:rounded-md md:(space-y-10 mb-12)"
+      class="dark:(bg-black text-light-200) bg-white text-black pb-2 sm:rounded-sm md:(space-y-10 mb-12)"
       itemscope
       itemtype="https://schema.org/BlogPosting"
     >
@@ -29,13 +29,8 @@ const { path } = useRoute();
 const { locale } = useI18n();
 
 const { data: post } = await useAsyncData(path.replace(/\/$/, ""), async () => {
-  if (locale.value !== "en") {
-    return await queryContent(`${locale.value}/blog`)
-      .where({ _path: path })
-      .findOne();
-  } else {
-    return await queryContent("blog").where({ _path: path }).findOne();
-  }
+  const query = locale.value !== "en" ? `${locale.value}/blog` : "/blog";
+  return await queryContent(query).where({ _path: path }).findOne();
 });
 
 const title = post.value?.title;
@@ -54,26 +49,20 @@ useSeoMeta({
 });
 
 const { data } = await useAsyncData("prev-next", async () => {
-  if (locale.value !== "en") {
-    return await queryContent(`${locale.value}/blog`)
-      .sort({ date: -1 })
-      .only(["_path"])
-      .findSurround(path);
-  } else {
-    return await queryContent("blog")
-      .sort({ date: -1 })
-      .only(["_path"])
-      .findSurround(path);
-  }
+  const query = locale.value !== "en" ? `${locale.value}/blog` : "/blog";
+  return await queryContent(query)
+    .sort({ date: -1 })
+    .only(["_path"])
+    .findSurround(path);
 });
 
 const [prev, next] = data.value || [];
 </script>
 <style>
 html {
-  font-family: "Open sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif,
-    "sans-serif";
+  font-family: "Open sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif, "sans-serif";
 }
 
 .prose h1 {
@@ -81,7 +70,8 @@ html {
 }
 
 .prose p {
-  line-height: 1.2;
+  line-height: 1.4;
+  font-weight: 200;
 }
 
 .prose h2 a,
@@ -93,19 +83,11 @@ html {
   pointer-events: none;
 }
 
-.prose ol {
-  padding-left: 8px;
-}
-
 .prose h2 {
   color: #000000;
   border-left: 4px solid #ff0000;
   padding-left: 10px;
-  font-weight: 700;
-}
-
-.prose h3 {
-  font-weight: 300;
+  font-weight: 600;
 }
 
 .prose pre {
@@ -117,15 +99,14 @@ html {
 }
 
 .prose a[href^="https"] {
-  color: #ff0000;
   font-weight: normal;
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .prose a:hover {
-  text-underline-offset: 2px;
   text-decoration-color: #ff0000;
-  text-decoration: underline;
+  color: #ff0000;
 }
 
 .prose ol > li::before {
@@ -136,36 +117,16 @@ html {
   background-color: #ff0000;
 }
 
-.dark .prose ul > li::before {
-    background-color: #ff0000;
-  }
-
 @media (prefers-color-scheme: dark) {
-  .dark .prose a[href^="https"] {
-    color: #ff0000;
-    font-weight: normal;
-    text-decoration: none;
-  }
-
-  .dark .prose a {
-    color: #fff;
+  .dark .prose ul > li::before {
+    background-color: #ff0000;
   }
 
   .dark .prose h2 {
     color: #fff;
-    border-left: 6px solid #ff0000;
+    border-left: 4px solid #ff0000;
     padding-left: 10px;
     font-weight: 700;
-  }
-
-  .dark .prose h3 {
-    font-weight: 300;
-  }
-
-  .dark .prose a:hover {
-    text-decoration-color: #ff0000;
-    text-underline-offset: 2px;
-    text-decoration: underline;
   }
 
   .dark .prose pre {
@@ -178,7 +139,5 @@ html {
   .dark .prose ol > li::before {
     color: #ff0000;
   }
-
-
 }
 </style>
