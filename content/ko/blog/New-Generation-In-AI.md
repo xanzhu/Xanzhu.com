@@ -56,7 +56,7 @@ Google과 Microsoft는 소프트웨어 라인업 전체에서 일상적인 작�
 
 <Media source="/images/blog/Gen/mfr.webp"  alt="Microsoft Generative AI 비주얼" credit="Microsoft"></Media>
 
-[Microsoft](https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/){:target="\_blank "}.
+[Microsoft](https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/){:target="\_blank "} 의 발표 읽기.
 
 두 가지 발표는 문서를 정확히 원하는 방식으로 작성하고 초안을 작성하는 것이 훨씬 더 쉬워진다는 것을 의미합니다. 이에 대한 가능한 우려는 악의적인 행위자가 공격을 자동화하고 완벽하게 만드는 것을 더 쉽게 만들 수 있는 특정 문서를 생성하는 사용입니다.
 
