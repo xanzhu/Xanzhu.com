@@ -86,12 +86,23 @@ export default defineNuxtConfig({
       },
     ],
   },
+  // runtimeConfig: {
+  //   public: {
+  //     siteUrl: 'https://xanzhu.com',
+  //   }
+  // },
   sitemap: {
-    siteUrl: "https://xanzhu.com",
+    siteUrl: "https://example.com",
   },
   routeRules: {
     "/ko/blog": { sitemap: { changefreq: "weekly" } },
     "/zh/blog": { sitemap: { changefreq: "weekly" } },
     "/blog": { sitemap: { changefreq: "weekly" } },
+  },
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ["/", "/ko", "/zh"],
+    },
   },
 });
