@@ -91,10 +91,6 @@ export default defineNuxtConfig({
       siteUrl: "https://xanzhu.com" || process.env.NUXT_PUBLIC_SITE_URL,
     },
   },
-
-  sitemap: {
-    trailingSlash: true,
-  },
   // routeRules: {
   //   "/ko/blog": { sitemap: { changefreq: "weekly" } },
   //   "/zh/blog": { sitemap: { changefreq: "weekly" } },
