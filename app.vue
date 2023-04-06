@@ -1,30 +1,20 @@
 <template>
-  <div class="h-screen font-main">
-    <Html
-      v-if="head.htmlAttrs"
-      :lang="head.htmlAttrs.lang"
-      :dir="head.htmlAttrs.dir"
-    >
-      <Head>
-        <template v-for="link in head.link" :key="link.id">
-          <Link
-            :id="link.id"
-            :rel="link.rel"
-            :href="link.href"
-            :hreflang="link.hreflang"
-          />
-        </template>
-        <template v-for="meta in head.meta" :key="meta.id">
-          <Meta
-            :id="meta.id"
-            :property="meta.property"
-            :content="meta.content"
-          />
-        </template>
-      </Head>
-      <AppHeader />
-      <NuxtPage />
-      <LazyAppFooter />
+  <div class="min-h-screen font-main">
+    <Html v-if="head.htmlAttrs" :lang="head.htmlAttrs.lang" :dir="head.htmlAttrs.dir">
+
+    <Head>
+      <template v-for="link in head.link" :key="link.id">
+        <Link :id="link.id" :rel="link.rel" :href="link.href" :hreflang="link.hreflang" />
+      </template>
+      <template v-for="meta in head.meta" :key="meta.id">
+        <Meta :id="meta.id" :property="meta.property" :content="meta.content" />
+      </template>
+    </Head>
+    <AppHeader
+      class="sticky top-0 z-1 transition-transform duration-700 backdrop-blur-md backdrop-filter dark:backdrop-brightness-70" />
+    <NuxtPage />
+    <LazyAppFooter />
+
     </Html>
   </div>
 </template>
