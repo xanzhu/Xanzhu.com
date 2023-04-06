@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     "@nuxt/image-edge",
     "@nuxtjs/color-mode",
     "nuxt-icon",
-    "nuxt-simple-sitemap"
+    "nuxt-simple-sitemap",
   ],
   colorMode: {
     classSuffix: "",
@@ -22,7 +22,11 @@ export default defineNuxtConfig({
         { name: "twitter:card", content: "summary_large_image" },
       ],
       link: [
-        { rel: "mask-icon", href: "/images/favicon/favicon.svg", color: "#FDFDFD" },
+        {
+          rel: "mask-icon",
+          href: "/images/favicon/favicon.svg",
+          color: "#FDFDFD",
+        },
         {
           rel: "icon",
           type: "image/svg+xml",
@@ -42,7 +46,7 @@ export default defineNuxtConfig({
           href: "/images/favicon/favicon-dark.png",
           sizes: "32x32",
           media: "(prefers-color-scheme:dark)",
-        }
+        },
       ],
     },
   },
@@ -82,24 +86,12 @@ export default defineNuxtConfig({
       },
     ],
   },
-  runtimeConfig: {
-    public: {
-      siteUrl: 'https://xanzhu.com',
-    }
+  sitemap: {
+    siteUrl: "https://xanzhu.com",
   },
-  nitro: {
-    prerender: {
-      crawlLinks: true,
-      routes: [
-        '/',
-        '/ko',
-        '/zh',
-      ]
-    },
-    routeRules: {
-      '/ko/blog':{ sitemap: { changefreq: 'weekly'} },
-      '/zh/blog':{ sitemap: { changefreq: 'weekly'} },
-      '/blog':{ sitemap: { changefreq: 'weekly'} }
-    },
-  }
+  routeRules: {
+    "/ko/blog": { sitemap: { changefreq: "weekly" } },
+    "/zh/blog": { sitemap: { changefreq: "weekly" } },
+    "/blog": { sitemap: { changefreq: "weekly" } },
+  },
 });
