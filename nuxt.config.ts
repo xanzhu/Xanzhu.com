@@ -86,13 +86,10 @@ export default defineNuxtConfig({
       },
     ],
   },
-  // runtimeConfig: {
-  //   public: {
-  //     siteUrl: 'https://xanzhu.com',
-  //   }
-  // },
-  sitemap: {
-    siteUrl: "https://example.com",
+  runtimeConfig: {
+    public: {
+      siteUrl: "https://xanzhu.com",
+    },
   },
   routeRules: {
     "/ko/blog": { sitemap: { changefreq: "weekly" } },
