@@ -3,8 +3,8 @@
   <div class="flex justify-center items-center h-screen">
     <div v-if="error?.statusCode == 404" class="space-y-2">
       <NuxtLink
-        class="text-[#ff0000] font-medium flex items-center p-1 hover:(bg-[#ff0000] text-white ease-in duration-300) inline-flex rounded-sm ease-out duration-500"
-        :to="localePath('/')">
+        class="text-[#ff0000] font-medium flex items-center p-1 hover:(bg-[#ff0000] text-white ease-in duration-300) inline-flex rounded-sm ease-out duration-500 cursor-pointer"
+        @click="handleError">
         <HomeArrowIcon class="transform rotate-180 h-4 w-4 mr-1" />{{
           t("Error.return")
         }}
@@ -19,7 +19,7 @@
       </div>
     </div>
     <div v-if="error?.statusCode == 500" class="space-y-3">
-      <NuxtLink class="text-[#ff0000] font-medium flex items-center p-1" :to="localePath('/')">
+      <NuxtLink class="text-[#ff0000] font-medium flex items-center p-1 cursor-pointer" @click="handleError">
         <HomeArrowIcon class="transform rotate-180 h-4 w-4 mr-1" />{{
           t("Error.return")
         }}
@@ -41,6 +41,9 @@
 defineProps({
   error: Object,
 });
+
+// Clear error
+const handleError = () => clearError({ redirect: localePath('/') });
 
 const localePath = useLocalePath();
 const { t } = useI18n();

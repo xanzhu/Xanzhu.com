@@ -1,10 +1,6 @@
 <template>
-  <main
-    class="mx-auto space-y-10 sm:space-y-20 dark:text-white text-black sm:mb-10"
-  >
-    <div
-      class="sm:(mx-8 mt-15) xl:ml-30 mx-4 mt-5 flex flex-col space-y-2 lg:mx-10"
-    >
+  <main class="mx-auto space-y-10 sm:space-y-20 dark:text-white text-black sm:mb-10">
+    <div class="sm:(mx-8 mt-15) xl:ml-30 mx-4 mt-5 flex flex-col space-y-2 lg:mx-10">
       <h1 class="text-3xl font-semibold sm:text-5xl">{{ t("Blog.title") }}</h1>
       <p class="text-md sm:(text-xl) break-words font-thin dark:text-gray-300">
         {{ t("Blog.description") }}
@@ -12,46 +8,25 @@
     </div>
     <BlogFeature />
     <section
-      class="md:(grid-cols-2 mx-6) lg:(grid-cols-3) sm:(py-15 px-10) dark:bg-black grid grid-cols-1 gap-10 rounded-sm p-4"
-    >
-      <div
-        v-if="articles"
-        v-for="(article, $index) in articles"
-        :key="`fe-${$index}`"
-      >
+      class="md:(grid-cols-2 mx-6) lg:(grid-cols-3) sm:(py-15 px-10) dark:bg-black grid grid-cols-1 gap-10 rounded-sm p-4">
+      <div v-if="articles" v-for="(article, $index) in articles" :key="`fe-${$index}`">
         <NuxtLink class="group flex flex-col" :to="article._path">
-          <NuxtImg
-            crossorigin="anonymous"
-            v-if="article.img"
-            :alt="article.alt"
-            :title="article.alt"
-            loading="lazy"
-            height="369"
-            width="577"
+          <NuxtImg crossorigin="anonymous" v-if="article.img" :alt="article.alt" :title="article.alt" loading="lazy"
+            height="369" width="577"
             class="rounded-sm transform md:(transition duration-500 ease-in-out) md:group-hover:scale-102"
-            :src="article.img"
-          />
+            :src="article.img" />
 
-          <div
-            class="dark:(bg-black text-white) space-y-3 h-auto rounded-b-md bg-white py-4"
-          >
+          <div class="dark:(bg-black text-white) space-y-3 h-auto rounded-b-md bg-white py-4">
             <div class="space-x-2">
-              <Date
-                v-if="article.date"
-                :date="article.date"
-                class="dark:(bg-dark-900 text-white border-dark-700 opacity-100) opacity-80 bg-light-500 px-4 py-1.5 border-1 rounded-sm border-gray-300 text-xs"
-              />
-              <p
-                v-if="article.tag"
-                class="dark:(bg-dark-900 text-white border-dark-700 opacity-100) opacity-80 bg-light-500 border-gray-300 px-4 py-1.5 border-1 rounded-sm text-xs inline-block"
-              >
+              <Date v-if="article.date" :date="article.date"
+                class="dark:(bg-dark-900 text-white border-dark-700 opacity-100) opacity-80 bg-light-500 px-4 py-1.5 border-1 rounded-sm border-gray-300 text-xs" />
+              <p v-if="article.tag"
+                class="dark:(bg-dark-900 text-white border-dark-700 opacity-100) opacity-80 bg-light-500 border-gray-300 px-4 py-1.5 border-1 rounded-sm text-xs inline-block">
                 {{ article.tag }}
               </p>
             </div>
-            <h2
-              class="text-xl font-medium decoration-2 group-hover:(underline underline-offset-6)"
-              v-html="article.title"
-            />
+            <h2 class="text-xl font-medium decoration-2 group-hover:(underline underline-offset-6)"
+              v-html="article.title" />
             <p class="pt-1 opacity-80" v-html="article.description" />
           </div>
         </NuxtLink>

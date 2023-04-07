@@ -1,20 +1,12 @@
 <template>
   <main v-if="post" class="container mb-4 mx-auto md:(px-6 mb-0)" role="main">
-    <article
-      class="dark:(bg-black text-light-200) bg-white text-black pb-2 sm:rounded-sm md:(space-y-10 mb-12)"
-      itemscope
-      itemtype="https://schema.org/BlogPosting"
-    >
+    <article class="dark:(bg-black text-light-200) bg-white text-black pb-2 sm:rounded-sm md:(space-y-10 mb-12)" itemscope
+      itemtype="https://schema.org/BlogPosting">
       <BlogPostHeader v-bind:post="post" />
-      <div
-        class="flex flex-col-reverse md:(flex-row space-x-6 space-x-2) mx-auto justify-center"
-      >
+      <div class="flex flex-col-reverse md:(flex-row space-x-6 space-x-2) mx-auto justify-center">
         <div>
-          <ContentRenderer
-            :value="post"
-            itemprop="articleBody"
-            class="prose prose-sm md:prose-md lg:(prose-xl) mx-auto px-4 my-4 dark:text-light-200 text-black leading-normal"
-          />
+          <ContentRenderer :value="post" itemprop="articleBody"
+            class="prose prose-sm md:prose-md lg:(prose-xl) mx-auto px-4 my-4 dark:text-light-200 text-black leading-normal" />
         </div>
         <aside v-if="post.toc == true" class="mt-2">
           <BlogToc :links="post.body.toc.links" class="lg:(sticky top-20)" />
@@ -23,6 +15,8 @@
       <LazyBlogPrevNext :prev="prev" :next="next" />
     </article>
   </main>
+  <template v-else>
+  </template>
 </template>
 <script setup lang="ts">
 const { path } = useRoute();
@@ -32,6 +26,9 @@ const { data: post } = await useAsyncData(path.replace(/\/$/, ""), async () => {
   const query = locale.value !== "en" ? `${locale.value}/blog` : "/blog";
   return await queryContent(query).where({ _path: path }).findOne();
 });
+
+// Returns error on 404
+if (!post.value) throw createError({ statusCode: 404 });
 
 const title = post.value?.title;
 const desc = post.value?.description;
@@ -109,16 +106,16 @@ html {
   color: #ff0000;
 }
 
-.prose ol > li::before {
+.prose ol>li::before {
   color: #ff0000;
 }
 
-.prose ul > li::before {
+.prose ul>li::before {
   background-color: #ff0000;
 }
 
 @media (prefers-color-scheme: dark) {
-  .dark .prose ul > li::before {
+  .dark .prose ul>li::before {
     background-color: #ff0000;
   }
 
@@ -136,7 +133,7 @@ html {
     font-family: "Inter", sans-serif;
   }
 
-  .dark .prose ol > li::before {
+  .dark .prose ol>li::before {
     color: #ff0000;
   }
 }

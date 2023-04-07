@@ -117,5 +117,8 @@
   "Analysis": {
     "h1": "Security Audits and Analysis",
     "soon": "Uncovering vulnerabilities and offering recommendations for enhancing security measures."
+  },
+  "alert": {
+    "maintenance": "Excuse our appearance! This page is currently under construction and may look a little different when it's finished."
   }
 }
