@@ -22,7 +22,7 @@ useSeoMeta({
   ogDescription: desc,
   twitterDescription: desc,
   twitterTitle: title,
-  ogUrl: `https://xanzhu.com/${locale.value === "en" ? "" : locale.value
+  ogUrl: `https://xanzhu.com${locale.value === "en" ? "" : '/' + locale.value
     }/analysis`,
   ogImage: "https://source.unsplash.com/FlPc9_VocJ4",
 });
