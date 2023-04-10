@@ -6,16 +6,11 @@
           {{ t("Home.title") }}
         </h1>
         <p
-          class="dark:(bg-dark-900 border-dark-600 text-gray-300 opacity-100) opacity-70 bg-light-500 border-1 rounded-sm p-4"
-        >
+          class="dark:(bg-dark-900 border-dark-600 text-gray-300 opacity-100) opacity-70 bg-light-500 border-1 rounded-sm p-4">
           {{ t("Home.desc") }}
         </p>
         <div class="mx-auto hidden xl:(flex)">
-          <HomeMouseIcon
-            class="animate-bounce"
-            role="presentation"
-            :aria-label="t('Home.a11y.mouseicon')"
-          />
+          <HomeMouseIcon class="animate-bounce" role="presentation" :aria-label="t('Home.a11y.mouseicon')" />
         </div>
       </div>
     </div>
@@ -25,8 +20,7 @@
   </main>
 </template>
 <script setup lang="ts">
-const { t } = useI18n();
-const path = useRoute();
+const { t, locale } = useI18n();
 
 const title = t("Home.Seo.title");
 const desc = t("Home.Seo.desc");
@@ -38,7 +32,8 @@ useSeoMeta({
   ogDescription: desc,
   twitterTitle: title,
   twitterDescription: desc,
-  ogUrl: `https://xanzhu.com${path}`,
+  ogUrl: `https://xanzhu.com${locale.value === "en" ? "" : '/' + locale.value
+    }`,
   ogImage: "https://source.unsplash.com/lyOCWxa28Zk",
 });
 </script>
