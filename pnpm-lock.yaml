@@ -16,6 +16,9 @@ devDependencies:
   '@nuxtjs/i18n':
     specifier: 8.0.0-beta.10
     version: 8.0.0-beta.10(vue@3.2.47)
+  consola:
+    specifier: ^3.0.1
+    version: 3.0.1
   nuxt:
     specifier: ^3.4.0
     version: 3.4.0(@types/node@18.15.11)
