@@ -1,11 +1,11 @@
 <template>
   <nav
-    class="flex justify-between pt-5 sm:(mx-20 pt-10) children:(md:text-lg text-sm m-4 px-3 py-1 rounded-sm)"
+    class="flex justify-between pt-5 sm:justify-around sm:pt-10 children:(md:text-lg text-sm m-4 px-3 py-1 rounded-sm)"
   >
     <NuxtLink
       v-if="prev"
       :to="prev._path"
-      class="dark:(bg-dark-900 border-dark-700 text-white) group bg-light-400 border-1 text-black flex items-center"
+      class="dark:(bg-dark-900 text-white) group bg-light-400 text-black flex items-center no-underline"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -20,15 +20,15 @@
           clip-rule="evenodd"
         />
       </svg>
-      <p class="<sm:hidden opacity-80" v-t="'Blog.previous'" />
+      <p class="<sm:hidden op80 m0" v-t="'Blog.previous'" />
     </NuxtLink>
     <p class="invisible" v-else />
     <NuxtLink
       v-if="next"
       :to="next._path"
-      class="dark:(bg-dark-900 text-white border-dark-700) bg-light-400 border-1 group flex items-center"
+      class="dark:(bg-dark-900 text-white) bg-light-400 group flex items-center no-underline"
     >
-      <p class="<sm:hidden opacity-80" v-t="'Blog.next'" />
+      <p class="<sm:hidden op80 m0" v-t="'Blog.next'" />
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="currentColor"

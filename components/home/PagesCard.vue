@@ -3,7 +3,7 @@
     <div
       class="grid grid-cols-1 sm:grid-cols-2 lg:(grid-cols-3 items-center) gap-10 sm:gap-20 p-4 sm:mx-10 grid-auto-rows-max"
     >
-      <NuxtLink :to="localePath('/resources')" class="group">
+      <NuxtLink :to="localePath('/resources')" class="group no-underline">
         <NuxtImg
           src="/images/Option2.png"
           class="sm:h-[367px] w-[327px] rounded-sm"
@@ -12,21 +12,21 @@
           :alt="t('PagesCard.image.iceland')"
           loading="lazy"
         />
-        <div class="flex flex-col justify-center m-2 sm:m-4 space-y-2">
-          <h2 class="dark:text-white text-3xl font-bold">
+        <div class="flex flex-col justify-center m-2 sm:m-4 space-y-2 dark:text-white text-black">
+          <h2 class="text-3xl font-bold m0">
             {{ t("Links.resources") }}
           </h2>
-          <p class="opacity-75">{{ t("PagesCard.resources") }}</p>
-          <div class="text-[#ff0000]">
+          <p class="op75 m0">{{ t("PagesCard.resources") }}</p>
+          <div class="text-[#001EFA]">
             <HomeArrowIcon
-              class="sm:group-hover:(bg-[#ff0000] text-white w-full p-1 ease-in-out duration-300) sm:(ease-out duration-500)"
+            class="sm:group-hover:(bg-[#001EFA] text-white w-full ease-in-out duration-300) p-1 b-rounded-sm sm:(ease-out duration-500)"
               :aria-label="t('a11y.ResourcePage')"
             />
           </div>
         </div>
       </NuxtLink>
 
-      <NuxtLink :to="localePath('/blog')" class="group">
+      <NuxtLink :to="localePath('/blog')" class="group no-underline">
         <NuxtImg
           src="/images/Option3.png"
           class="rounded-sm h-[599px] w-[327px]"
@@ -35,18 +35,18 @@
           :alt="t('PagesCard.image.sky')"
           loading="lazy"
         />
-        <div class="flex flex-col justify-center m-2 sm:m-4 space-y-2">
-          <h2 class="dark:text-white text-3xl font-bold">{{ t("Links.blog") }}</h2>
-          <p class="opacity-75">{{ t("PagesCard.blog") }}</p>
-          <div class="text-[#ff0000]">
+        <div class="flex flex-col justify-center m-2 sm:m-4 space-y-2 dark:text-white text-black">
+          <h2 class="text-3xl font-bold m0">{{ t("Links.blog") }}</h2>
+          <p class="op75 m0">{{ t("PagesCard.blog") }}</p>
+          <div class="text-[#001EFA]">
             <HomeArrowIcon
-              class="sm:group-hover:(bg-[#ff0000] text-white w-full p-1 ease-in-out duration-300) sm:(ease-out duration-500)"
+              class="sm:group-hover:(bg-[#001EFA] text-white w-full ease-in-out duration-300) p-1 b-rounded-sm sm:(ease-out duration-500)"
               :aria-label="t('a11y.BlogPage')"
             />
           </div>
         </div>
       </NuxtLink>
-      <NuxtLink :to="localePath('/analysis')" class="group">
+      <NuxtLink :to="localePath('/analysis')" class="group no-underline">
         <NuxtImg
           src="/images/Option1.png"
           class="sm:h-[367px] w-[327px] rounded-sm"
@@ -55,14 +55,14 @@
           width="327"
           loading="lazy"
         />
-        <div class="flex flex-col justify-center m-2 sm:m-4 space-y-2">
-          <h2 class="dark:text-white text-3xl font-bold">
+        <div class="flex flex-col justify-center m-2 sm:m-4 space-y-2 dark:text-white text-black">
+          <h2 class="text-3xl font-bold m0">
             {{ t("Links.analysis") }}
           </h2>
-          <p class="opacity-75">{{ t("PagesCard.analysis") }}</p>
-          <div class="text-[#ff0000]">
+          <p class="op75 m0">{{ t("PagesCard.analysis") }}</p>
+          <div class="text-[#001EFA]">
             <HomeArrowIcon
-              class="sm:group-hover:(bg-[#ff0000] text-white w-full p-1 ease-in-out duration-300) sm:(ease-out duration-500)"
+            class="sm:group-hover:(bg-[#001EFA] text-white w-full ease-in-out duration-300) p-1 b-rounded-sm sm:(ease-out duration-500)"
               :aria-label="t('a11y.AnalysisPage')"
             />
           </div>
