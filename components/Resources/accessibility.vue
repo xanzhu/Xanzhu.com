@@ -19,8 +19,8 @@
     >
     <ol class="m0 p2" v-for="url in urls" :key="url.name">
             <li
-              class="flex justify-center items-center space-x-1 opacity-80 sm:text-md text-xs group hover:(underline decoration-1 underline-offset-2)">
-              <NuxtLink :href="url.path" :target="isExternalLink(url.path)" rel="noopener" class="no-underline text-md text-white op75">{{ url.name }}</NuxtLink>
+              class="flex justify-center items-center space-x-1 opacity-80 sm:text-md text-sm group hover:(underline decoration-1 underline-offset-2)">
+              <NuxtLink :href="url.path" :target="isExternalLink(url.path)" rel="noopener" class="no-underline text-md dark:text-white text-black op95">{{ url.name }}</NuxtLink>
               <Icon v-if="isExternalLink(url.path) === '_blank'" name="ri:external-link-line" class="h-4 w-4" />
             </li>
           </ol>
