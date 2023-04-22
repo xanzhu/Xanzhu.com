@@ -2,17 +2,16 @@ export default defineNuxtConfig({
   modules: [
     "@nuxtjs/i18n",
     "@nuxt/content",
-    "nuxt-windicss",
     "@nuxt/image-edge",
     "@nuxtjs/color-mode",
     "nuxt-icon",
     "nuxt-simple-sitemap",
+    '@unocss/nuxt',
   ],
   colorMode: {
     classSuffix: "",
     preference: "dark",
   },
-  css: ["virtual:windi.css"],
   app: {
     head: {
       meta: [
