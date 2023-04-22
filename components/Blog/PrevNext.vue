@@ -20,7 +20,7 @@
           clip-rule="evenodd"
         />
       </svg>
-      <p class="<sm:hidden op80 m0" v-t="'Blog.previous'" />
+      <p class="lt-sm:hidden op80 m0" v-t="'Blog.previous'" />
     </NuxtLink>
     <p class="invisible" v-else />
     <NuxtLink
@@ -28,7 +28,7 @@
       :to="next._path"
       class="dark:(bg-dark-900 text-white) bg-light-400 group flex items-center no-underline"
     >
-      <p class="<sm:hidden op80 m0" v-t="'Blog.next'" />
+      <p class="lt-sm:hidden op80 m0" v-t="'Blog.next'" />
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="currentColor"
