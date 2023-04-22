@@ -1,21 +1,20 @@
 <template>
-<div>
   <div class="grid sm:grid-cols-2 gap-4">
     <div
-      class="sm:col-span-2 rounded-sm border-1 border-solid dark:border-white b-transparent h-30"
+      class="sm:col-span-2 rounded-sm border-1 border-solid dark:border-[#001EFA] b-transparent h-30"
     >
       <img
-        src="https://source.unsplash.com/facU72FcKBI"
+        src="https://source.unsplash.com/kBzQNk9AgOg"
         class="h-full w-full rounded-sm object-cover"
       />
     </div>
     <div
-      class="p-4 font-bold dark:(bg-white text-black) bg-black text-white b-solid b-1 rounded-sm text-center text-2xl"
+      class="p-4 font-bold bg-[#001EFA] rounded-sm text-center text-white text-2xl"
     >
-      ACCESSIBILITY
+      PHISHING
     </div>
     <div
-      class="b-1 b-solid rounded-sm bg-light-400 dark:(b-white bg-dark-900) b-black p-4 row-span-2 col-span-1"
+      class="dark:bg-dark-900 bg-light-600 b-1 b-solid rounded-sm border-[#001EFA] p-4 row-span-2 col-span-1"
     >
     <ol class="m0 p2" v-for="url in urls" :key="url.name">
             <li
@@ -26,12 +25,11 @@
           </ol>
     </div>
     <div
-      class="b-1 b-solid rounded-sm bg-light-400 dark:(b-white bg-dark-900) b-black h-sm p-4 col-span-1"
+      class="dark:bg-dark-900 bg-light-600 b-1 b-solid rounded-sm border-[#001EFA] h-sm p-4 col-span-1"
     >
       Explain
     </div>
   </div>
-</div>
 </template>
 <script setup lang="ts">
 const isExternalLink = (url: string): "_blank" | "_self" => {
@@ -41,5 +39,14 @@ const isExternalLink = (url: string): "_blank" | "_self" => {
   return "_self";
 }
 
-const urls = [{ name: "WebAim", path: "https://webaim.org/" }]
+const urls = [
+      {
+        name: "Google Safe Browsing",
+        path: "https://safebrowsing.google.com/safebrowsing/report_phish/",
+      },
+      {
+        name: "Microsoft Site Reporting",
+        path: "https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest",
+      },
+]
 </script>

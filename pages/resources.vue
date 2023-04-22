@@ -23,7 +23,7 @@
         </div>
       </div>
     </div>
-    <div class="-z-1 p-4 m-0 sm:m-10 flex flex-col items-left max-w-7xl">
+    <div class="p-4 m-0 sm:m-10 flex flex-col items-left max-w-7xl">
       <div class="my-6">
         <h2 id="section-2" class=".heading1 font-bold text-3xl border-l-6 border-[#FF0000] pl-2">
           {{ t("Resources.phish.title") }}
@@ -67,7 +67,7 @@
                   Google</NuxtLink>{{ t("Resources.phish.google") }}
               </li>
               <li>
-                <NuxtLink class="hover:text-[#ff0000]" to="https://safebrowsing.google.com/safebrowsing/report_phish/">
+                <NuxtLink class="hover:decoration-[#ff0000]" to="https://safebrowsing.google.com/safebrowsing/report_phish/">
                   Microsoft</NuxtLink>{{ t("Resources.phish.microsoft") }}
               </li>
             </ol>
