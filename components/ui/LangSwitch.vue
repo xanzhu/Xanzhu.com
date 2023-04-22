@@ -27,7 +27,7 @@ function closeMenu() {
     <div
       :class="
         LangToggle
-          ? 'flex p1 rounded-sm absolute top-12 left-5 z1 flex-col dark:(bg-black text-white) text-black bg-light-700 dark:bg-dark-900 b-1 b-solid b-gray-300'
+          ? 'flex p1 rounded-sm absolute top-12 left-5 z1 flex-col dark:(bg-black text-white b-dark-500) text-black bg-light-700 dark:bg-dark-900 b-1 b-solid b-gray-300'
           : 'hidden'
       "
     >
