@@ -6,7 +6,6 @@
     >
       Stay Safe Online with Our Essential Security Toolkit
     </div>
-    <UiAlertFeat desc="Work in progress.." />
     <div
       class="hidden md:flex rounded-full h-20 w-20 text-white items-center justify-center b-12 b-rounded-full b-dashed"
       :class="{'b-[#001EFA]':phishing, 'b-[#FF0000]':malware, 'b-white':a11y}"

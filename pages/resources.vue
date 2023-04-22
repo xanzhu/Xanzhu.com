@@ -1,5 +1,6 @@
 <template>
   <main class="flex flex-col space-y-10">
+    <LazyUiAlertFeat link="/re2" desc="Change is coming!" :ready="true" />
     <div class="flex flex-col text-center space-y-4 items-center mt-[8%]">
       <h1 class="font-semibold text-4xl sm:(text-5xl text-center) max-w-2xl text-left mx-4">
         {{ t("Resources.heading") }}
@@ -22,7 +23,7 @@
         </div>
       </div>
     </div>
-    <div class="p-4 m-0 sm:m-10 flex flex-col items-left max-w-7xl">
+    <div class="-z-1 p-4 m-0 sm:m-10 flex flex-col items-left max-w-7xl">
       <div class="my-6">
         <h2 id="section-2" class=".heading1 font-bold text-3xl border-l-6 border-[#FF0000] pl-2">
           {{ t("Resources.phish.title") }}
