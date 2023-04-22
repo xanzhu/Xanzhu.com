@@ -23,7 +23,7 @@
       <nav @click.outside="closeMenu"
         :class="
           MobileMenu
-            ? 'flex p-1 rounded-sm absolute top-12 right-6 z-1 flex-col-reverse children:pt-2 dark:bg-dark-900 bg-light-700 b-1 b-solid b-gray-300 dark:b-dark-500'
+            ? 'flex p-1 rounded-sm absolute top-12 right-6 flex-col-reverse children:pt-2 dark:bg-dark-900 bg-light-700 b-1 b-solid b-gray-300 dark:b-dark-500'
             : 'hidden'
         ">
         <NuxtLink v-for="(link, index) in links" :key="index" :to="localePath(link.url)" active-class="text-[#001EFA] dark:text-[#ff0000]"
