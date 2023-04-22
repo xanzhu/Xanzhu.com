@@ -1,6 +1,6 @@
 <template>
   <header
-    class="md:(grid-cols-2 space-y-5 gap-4 my-4 place-items-center) grid grid-cols-1"
+    class="lg:(grid-cols-2 space-y-5 gap-4 my-4 place-items-center) grid grid-cols-1"
   >
     <div
       class="col-span-1 shrink-0 space-y-2 px-4 mt-5 sm:(px-0 mx-4) mb-3 md:(mt-0)"
@@ -38,10 +38,10 @@
         >
           {{ post.title }}
         </h1>
-        <p class="dark:opacity-70 opacity-80 lt-sm:text-sm my2">{{ post.description }}</p>
+        <p class="dark:op70 op80 lt-sm:text-sm my2">{{ post.description }}</p>
       </div>
-      <div class="flex flex-col space-y-2 pt-5">
-        <div class="flex flex-row items-center space-x-2 opacity-90">
+      <div class="flex flex-col space-y-2">
+        <div class="flex flex-row items-center space-x-2 op90">
           <!-- Add Author font matter -->
           <p class="text-sm font-medium m0">Xanzhu</p>
           <p class="dark:text-[#ff0000] text-[#001EFA] font-black m0">/</p>
@@ -56,8 +56,8 @@
         <BlogSocialShare v-bind:post="post" />
       </div>
     </div>
-    <div v-if="post.img" class="relative col-span-1 grow-0">
-      <div>
+    <div v-if="post.img" class="relative col-span-1 grow-0 h-auto w-auto px-4 sm:px0 mb-5">
+      <div class="h-auto w-auto">
         <NuxtImg
           crossorigin="anonymous"
           itemprop="image"
@@ -67,16 +67,25 @@
           loading="lazy"
           height="407"
           width="600"
-          class="object-cover rounded-md px-4 sm:px-0"
+          class="h-full w-full rounded-sm"
         />
         <div
           v-if="post.source"
-          class="dark:(text-light-200 opacity-70) text-dark-700 opacity-80 absolute right-0 px-1 py-1 text-xs lt-sm:(mr-2) tracking-wide"
+          class="dark:(text-light-200 opacity-70) text-dark-700 op90 absolute right-3 sm:right-2 px-1 py-1 text-xs lt-sm:(mr-2) tracking-wide"
         >
           <p class="inline-block m0" />
           {{ t("Blog.source") + ": " + post.source }}
         </div>
       </div>
+      <!-- <NuxtImg
+      crossorigin="anonymous"
+      itemprop="image"
+      :src="post.img"
+      :alt="post.alt"
+      :title="post.alt"
+      loading="lazy"
+      class="h-full w-full rounded-sm object-cover"
+      /> -->
     </div>
   </header>
 </template>
