@@ -13,9 +13,9 @@
   </button>
 </template>
 <script setup lang="ts">
-const c = useColorMode();
+  const c = useColorMode();
 
-function switchColor() {
-  c.preference = c.value === "dark" ? "light" : "dark";
-}
+  function switchColor() {
+    c.preference = c.value === "dark" ? "light" : "dark";
+  }
 </script>

@@ -17,7 +17,11 @@ function closeMenu() {
 </script>
 <template>
   <div>
-    <button @click="LangSwitch" class="bg-transparent b-hidden cursor-pointer" :aria-label="t('a11y.langSwitch')">
+    <button
+      @click="LangSwitch"
+      class="bg-transparent b-hidden cursor-pointer"
+      :aria-label="t('a11y.langSwitch')"
+    >
       <Icon
         class="h8 w8 dark:text-white text-black"
         name="fontisto:language"
