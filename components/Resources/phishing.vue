@@ -11,7 +11,7 @@
     <div
       class="p-4 font-bold bg-[#001EFA] rounded-sm text-center text-white text-2xl"
     >
-      PHISHING
+    {{ $t("Resources.phishing") }}
     </div>
     <div
       class="dark:bg-dark-900 bg-light-600 b-1 b-solid rounded-sm border-[#001EFA] p-4 row-span-2 col-span-1"

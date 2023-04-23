@@ -4,7 +4,7 @@
     <div
       class="sm:text-center font-bold text-3xl sm:text-4xl break-words sm:max-w-md"
     >
-      Stay Safe Online with Our Essential Security Toolkit
+    {{ $t("Resources.heading") }}
     </div>
     <div
       class="hidden md:flex rounded-full h-20 w-20 text-white items-center justify-center b-12 b-rounded-full b-dashed"
@@ -19,21 +19,21 @@
       class="hover:b-[#001EFA]"
       :class="{'bg-[#001EFA] b-[#001EFA] text-white': phishing, 'bg-transparent':!phishing}"
     >
-      PHISHING
+    {{ $t("Resources.phishing") }}
     </button>
     <button
       @click="toggle('a11y')"
       class="dark:hover:b-white hover:b-black"
       :class="{'dark:bg-white dark:!text-black dark:b-white b-black bg-black text-white': a11y, 'bg-transparent':!a11y}"
     >
-      ACCESSIBILITY
+    {{ $t("Resources.accessibility") }}
     </button>
     <button
       @click="toggle('malware')"
       class="hover:b-[#FF0000]"
       :class="{'bg-[#FF0000] b-[#FF0000] !text-black': malware, 'bg-transparent':!malware}"
     >
-      MALWARE
+    {{ $t("Resources.malware") }}
     </button>
   </div>
   <ResourcesPhishing v-if="phishing && !malware && !a11y" />
