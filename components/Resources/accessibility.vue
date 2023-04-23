@@ -4,9 +4,10 @@
     <div
       class="sm:col-span-2 rounded-sm border-1 border-solid dark:border-white b-transparent h-30"
     >
-      <img
+      <NuxtImg
         src="https://source.unsplash.com/VqMraGI0BCo"
         class="h-full w-full rounded-sm object-cover"
+        alt="Neon White Light Graphic"
       />
     </div>
     <div

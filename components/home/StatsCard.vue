@@ -50,7 +50,6 @@
       <div class="text-xs font-thin op90 m-2">
         {{ $t("StatsCard.warn") }}
       </div>
-      <!-- TODO: Add HaveIBeenPwned Link / Info -->
     </div>
   </template>
   
