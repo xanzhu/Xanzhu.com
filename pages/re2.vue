@@ -43,6 +43,8 @@
 
 </template>
 <script setup lang="ts">
+const {t, locale} = useI18n();
+
 // Default option
 const phishing = ref(true);
 
@@ -54,4 +56,20 @@ function toggle(option: 'phishing' | 'malware' | 'a11y') {
   malware.value = option === 'malware';
   a11y.value = option === 'a11y';
 }
+
+// Seo
+const title = t("Resources.meta.title");
+const description = t("Resources.meta.description");
+
+useSeoMeta({
+  title: title,
+  description: description,
+  ogDescription: description,
+  ogTitle: title,
+  ogUrl: `https://xanzhu.com${locale.value === "en" ? "" : '/' + locale.value
+    }/resources`,
+  ogImage: "https://source.unsplash.com/dCuA11z7xHg",
+  twitterDescription: description,
+  twitterTitle: title,
+});
 </script>
