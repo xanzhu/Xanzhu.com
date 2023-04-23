@@ -27,7 +27,7 @@
       "iceland": "Iceland Night Sky"
     }
   },
-  "Footer": "© Xanzhu 2022. All Rights reserved.",
+  "Footer": "© Xanzhu 2023. All Rights reserved.",
   "Error": {
     "404": {
       "title": "Page Not Found",
@@ -46,20 +46,24 @@
     "warn": "These are rough estimates, exact values may slightly differ. Obtained through research gathered in 2022",
     "check": "Check your accounts",
     "threats": {
-      "title": "Top Security Threats",
-      "data_1": "Ransomware Attacks - 236.1 million",
-      "data_2": "Compromised accounts - 310.8 million",
-      "data_3": "Phishing Attacks - 255 million"
+      "1": "PHISHING",
+      "2": "RANSOMWARE",
+      "3": "SOCIAL ENGINEERING",
+      "4": "DENIAL OF SERVICE (DoS)",
+      "title": "Top Security Threats"
     },
     "breaches": {
-      "title": "Recent Breaches",
-      "data_1": "Optus Security Breach - 9.8 million",
-      "data_2": "Twitter Data Breach - 211.5 million",
-      "data_3": "LastPass Breach - 30 million"
+      "title": "Recent Breaches"
     },
     "image": {
       "pwn": "HaveIBeenpwnd Logo",
       "badge": "Security Badge"
+    },
+    "breach": {
+      "1": "OPTUS - 9.8 MILLION",
+      "2": "LAST PASS - 30 MILLION",
+      "3": "TWITTER - 211.5 MILLION",
+      "4": "LATITUDE - 14 MILLION"
     }
   },
   "a11y": {
@@ -75,10 +79,10 @@
   "Resources": {
     "heading": "Stay Safe Online with Our Essential Security Toolkit",
     "subheading": "Handpicked by me, the essential security resources for protecting your digital life",
-    "malware": "Malware",
-    "phishing": "Phishing",
+    "malware": "MALWARE",
+    "phishing": "PHISHING",
     "explore": "Explore further",
-    "accessibility": "Accessibility",
+    "accessibility": "ACCESSIBILITY",
     "meta": {
       "title": "Security Toolkit: Essential for Online Safety",
       "description": "Stay safe online with our curated list of the best security tools and services. From phishing protection to malware reporting, we've got you covered."

@@ -1,13 +1,13 @@
 <template>
   <nav
-    class="m-4 p-4 rounded-sm dark:(bg-dark-900 border-dark-600) border-1 md:(max-w-md mx-auto)"
+    class="m-4 p-4 rounded-sm dark:(bg-dark-900 b-dark-600) b-1 b-solid md:(max-w-md mx-auto)"
   >
-    <header class="pb-2 mb-2 border-b border-slate-200 dark:border-dark-300">
-      <h2 class="text-lg font-semibold">
+    <header class="pb-2 mb-2 border-b b-slate-200 dark:b-dark-300">
+      <h2 class="text-lg font-semibold m0">
         {{ t("Blog.toc") }}
       </h2>
     </header>
-    <ul class="flex flex-col gap-2 px-2 text-sm">
+    <ul class="flex flex-col gap-2 px-6 text-sm">
       <li
         v-for="link of flattenLinks(links)"
         :key="link.id"
@@ -19,7 +19,7 @@
             link.depth === 2,
         }"
       >
-        <NuxtLink :href="`#${link.id}`">
+        <NuxtLink class="no-underline dark:text-white text-black" :href="`#${link.id}`">
           {{ link.text }}
         </NuxtLink>
       </li>

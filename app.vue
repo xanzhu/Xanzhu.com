@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen font-main">
+  <div class="min-h-screen font-sans">
     <Html v-if="head.htmlAttrs" :lang="head.htmlAttrs.lang" :dir="head.htmlAttrs.dir">
 
     <Head>
@@ -19,8 +19,6 @@
   </div>
 </template>
 <script setup lang="ts">
-import "@fontsource/open-sans";
-
 const head = useLocaleHead({
   addDirAttribute: true,
   identifierAttribute: "id",
@@ -29,7 +27,7 @@ const head = useLocaleHead({
 
 useHead({
   bodyAttrs: {
-    class: "dark:(bg-black text-white) bg-white text-black",
+    class: "dark:(bg-black text-white) bg-white text-black m0",
   },
 });
 
