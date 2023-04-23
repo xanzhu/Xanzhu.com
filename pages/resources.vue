@@ -1,6 +1,6 @@
 <template>
   <main class="flex flex-col space-y-10">
-    <LazyUiAlertFeat link="/re2" desc="Change is coming!" :ready="true" />
+    <LazyUiAlertFeat link="/re2" :access="true" />
     <div class="flex flex-col text-center space-y-4 items-center mt-[8%]">
       <h1 class="font-semibold text-4xl sm:(text-5xl text-center) max-w-2xl text-left mx-4">
         {{ t("Resources.heading") }}
