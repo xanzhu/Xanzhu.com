@@ -5,7 +5,7 @@
       class="sm:col-span-2 rounded-sm border-1 border-solid dark:border-white b-transparent h-30"
     >
       <img
-        src="https://source.unsplash.com/facU72FcKBI"
+        src="https://source.unsplash.com/VqMraGI0BCo"
         class="h-full w-full rounded-sm object-cover"
       />
     </div>
