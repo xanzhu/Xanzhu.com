@@ -19,7 +19,7 @@
     >
       <ol class="m0 p2" v-for="url in urls" :key="url.name">
         <li
-          class="flex justify-center items-center space-x-1 opacity-80 sm:text-md text-sm group hover:(underline decoration-1 underline-offset-2)"
+          class="flex justify-center items-center space-x-1 op80 sm:text-md text-sm group hover:(underline decoration-1 underline-offset-2)"
         >
           <NuxtLink
             :href="url.path"
@@ -37,9 +37,12 @@
       </ol>
     </div>
     <div
-      class="dark:bg-dark-900 bg-light-600 b-1 b-solid rounded-sm border-[#001EFA] h-sm p-4 col-span-1"
+      class="dark:(bg-dark-900 op-80) bg-light-600 b-1 b-solid rounded-sm border-[#001EFA] h-sm p-4 col-span-1"
     >
-      Explain
+    <p class="font-medium items-center inline-flex ml-2">{{ $t('Resources.explain.title') }}<Icon class="h3.5 w3.5 ml-1" name=ooui:help-notice-ltr /></p>
+        <p class="px-5 m0">
+          {{ $t('Resources.explain.phishing') }}
+        </p>
     </div>
   </div>
 </template>

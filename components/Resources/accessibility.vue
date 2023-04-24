@@ -38,9 +38,12 @@
         </ol>
       </div>
       <div
-        class="b-1 b-solid rounded-sm bg-light-400 dark:(b-white bg-dark-900) b-black h-sm p-4 col-span-1"
+        class="b-1 b-solid rounded-sm bg-light-400 dark:(b-white bg-dark-900 op-80) b-black h-sm p-4 col-span-1"
       >
-        Explain
+      <p class="font-medium items-center inline-flex ml-2">{{ $t('Resources.explain.title') }}<Icon class="h3.5 w3.5 ml-1" name=ooui:help-notice-ltr /></p>
+        <p class="px-5 m0">
+          {{ $t('Resources.explain.a11y') }}
+        </p>
       </div>
     </div>
   </div>

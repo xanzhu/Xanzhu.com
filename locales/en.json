@@ -98,7 +98,14 @@
       "microsoft": ", blocks content on edge and windows services",
       "urlscan": ", provides helpful information about the website such as IP/domain details",
       "virus": ", checks against 90 Security Vendors"
-    }
+    },
+    "explain": {
+      "a11y": "Web accessibility ensures everyone can access and use products or services regardless of their abilities. It is critical for developers and designers to consider these factors, such as ensuring that text sizing, color, and contrast are readable and meet AA standards, providing alternate text for images, and other features that work with screen readers. Good design stems from how user-friendly your website is to everyone.",
+      "malware": "This is a type of attack that runs in the background and can cause a lot of problems for your computer. This attack directly affects the device being used by slowing it down, adding programs, and more. It is usually caused by downloading files or opening links that are infected.",
+      "phishing": "An attack method commonly used to obtain user information is phishing. This is a highly targeted attack and can be seen in emails, phone calls, or messages. It works by getting the victim to open a link, download a file, and enter or provide account information to critical accounts such as Banks, Phone Companies and more.",
+      "title": "Explaination"
+    },
+    "soon": "More coming soon"
   },
   "SocialsCard": {
     "h1": "Follow our Socials"
