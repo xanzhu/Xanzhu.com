@@ -1,7 +1,7 @@
 <template>
-  <div class="inline-flex space-x-1 items-center">
-    <Icon name="mdi:clock-time-three-outline" class="h-3.5 w-3.5" />
-    <p>
+  <div class="flex space-x-1">
+    <Icon name="mdi:clock-time-three-outline" class="h3.5 w3.5" />
+    <p class="m0">
       {{ readingTime }}
     </p>
     <span v-t="'Blog.read-time'" />

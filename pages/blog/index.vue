@@ -10,24 +10,26 @@
     <section
       class="md:(grid-cols-2 mx-6) lg:(grid-cols-3) sm:(py-15 px-10) dark:bg-black grid grid-cols-1 gap-10 rounded-sm p-4">
       <div v-if="articles" v-for="(article, $index) in articles" :key="`fe-${$index}`">
-        <NuxtLink class="group flex flex-col" :to="article._path">
-          <NuxtImg crossorigin="anonymous" v-if="article.img" :alt="article.alt" :title="article.alt" loading="lazy"
+        <NuxtLink class="group flex flex-col no-underline" :to="article._path">
+          <div class="h-auto w-auto">
+            <NuxtImg crossorigin="anonymous" v-if="article.img" :alt="article.alt" :title="article.alt" loading="lazy"
             height="369" width="577"
-            class="rounded-sm transform md:(transition duration-500 ease-in-out) md:group-hover:scale-102"
+            class="rounded-sm object-cover h-full w-full transform md:(transition duration-500 ease-in-out) md:group-hover:scale-102"
             :src="article.img" />
-
-          <div class="dark:(bg-black text-white) space-y-3 h-auto rounded-b-md bg-white py-4">
+          </div>
+          
+          <div class="dark:(bg-black text-white) h-auto rounded-b-md bg-white dark:text-white text-black">
             <div class="space-x-2">
               <Date v-if="article.date" :date="article.date"
-                class="dark:(bg-dark-900 text-white border-dark-700 opacity-100) opacity-80 bg-light-500 px-4 py-1.5 border-1 rounded-sm border-gray-300 text-xs" />
+                class="dark:(bg-dark-900 text-white border-dark-700 opacity-100) opacity-80 bg-light-500 px-4 py-1.5 b-1 b-solid rounded-sm b-gray-300 text-xs" />
               <p v-if="article.tag"
-                class="dark:(bg-dark-900 text-white border-dark-700 opacity-100) opacity-80 bg-light-500 border-gray-300 px-4 py-1.5 border-1 rounded-sm text-xs inline-block">
+                class="dark:(bg-dark-900 text-white border-dark-700 opacity-100) opacity-80 bg-light-500 b-gray-300 px-4 py-1.5 border-1 b-solid rounded-sm text-xs inline-block">
                 {{ article.tag }}
               </p>
             </div>
-            <h2 class="text-xl font-medium decoration-2 group-hover:(underline underline-offset-6)"
+            <h2 class="text-xl font-semibold decoration-2 group-hover:(underline underline-offset-6) m0"
               v-html="article.title" />
-            <p class="pt-1 opacity-80" v-html="article.description" />
+            <p class="op80" v-html="article.description" />
           </div>
         </NuxtLink>
       </div>

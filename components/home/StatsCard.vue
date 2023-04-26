@@ -1,66 +1,55 @@
 <template>
-  <div class="mx-auto sm:min-h-screen space-y-12 mt-20">
-    <div
-      class="flex flex-col items-center justify-evenly space-y-5 md:flex-row lg:space-y-0 lg:space-x-5"
-    >
-      <div class="sm:max-w-xl space-y-4 mx-4 sm:mx-0">
-        <h2 class="text-4xl lg:text-6xl font-bold">
-          {{ t("StatsCard.title") }}
-        </h2>
-        <p class="opacity-70 border-1 p-4 text-md rounded-sm dark:(bg-dark-900 border-dark-600 opacity-100) bg-light-500 border-gray-300">
-          {{ t("StatsCard.warn") }}
-        </p>
+    <div class="b-transparent md:b-1 b-solid b-dark-500 p-2 md:p-10 mx-auto max-w-4xl min-h-sm mb-10">
+      <div class="grid grid-cols-2 mt-5">
+        <div
+          class="row-span-1 col-span-2 h-full w-full flex justify-between max-h-30"
+        >
+          <div
+            class="w-3/2 bg-[#FAFF06] text-black m-1 text-4xl font-bold pl5 md:pr-100 py-4 md:py-6 rounded-sm"
+          >
+          {{ $t("StatsCard.title") }}
+          </div>
+          <div
+            class="hidden w-1/2 dark:bg-white bg-black m-1 rounded-sm md:flex items-center justify-center"
+          >
+            <Icon
+              name="material-symbols:shield-lock"
+              class="h20 w20 dark:text-black text-white"
+            ></Icon>
+          </div>
+        </div>
+        <div
+          class="row-span-1 col-span-2 h-full w-full md:flex-row flex flex-col justify-between children:m-1"
+        >
+          <div class="md:w-1/2 bg-black rounded-sm b-1 b-solid b-dark-600">
+            <p class="m0 p-4 font-semibold text-xl text-[#FAFF06]">
+                {{ $t("StatsCard.threats.title") }}
+            </p>
+            <div
+              class="text-white b-dark-400 p-4 mx-4 mb-5 rounded-sm font-bold space-y-5"
+            >
+              <p>{{ $t('StatsCard.threats.1')}}</p>
+              <p>{{ $t('StatsCard.threats.2')}}</p>
+              <p>{{ $t('StatsCard.threats.3')}}</p>
+              <p>{{ $t('StatsCard.threats.4')}}</p>
+            </div>
+          </div>
+          <div class="md:w-1/2 bg-black rounded-sm b-1 b-solid b-dark-600">
+            <p class="m0 p-4 font-semibold text-xl text-white"> {{ $t("StatsCard.breaches.title") }}</p>
+            <div
+              class="bg-[#FAFF06] p-4 mx-4 mb-5 rounded-sm text-black justify-center flex flex-col items-center font-bold space-y-5"
+            >
+              <p>{{ $t('StatsCard.breach.1')}}</p>
+              <p>{{ $t('StatsCard.breach.2')}}</p>
+              <p>{{ $t('StatsCard.breach.3')}}</p>
+              <p>{{ $t('StatsCard.breach.4')}}</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <NuxtImg
-        src="/images/badge.webp"
-        class="w-[360px] x h-[367px]"
-        height="367"
-        width="360"
-        :alt="t('StatsCard.image.badge')"
-        loading="lazy"
-      />
-    </div>
-    <div
-      class="m-10 flex flex-col sm:items-center justify-evenly space-y-10 sm:space-y-0 space-x-2 rounded-sm sm:flex-row"
-    >
-      <div class="p-2 md:(p-15) flex flex-col items-center">
-        <h3 class="mb-3 text-3xl font-semibold text-[#ff0000]">
-          {{ t("StatsCard.threats.title") }}
-        </h3>
-        <ul class="opacity-70 text-md rounded-sm dark:(bg-dark-900 border-dark-600 opacity-100) border-1 bg-light-500 border-gray-300 p-4">
-          <li>{{ t("StatsCard.threats.data_1") }}</li>
-          <li>{{ t("StatsCard.threats.data_2") }}</li>
-          <li>{{ t("StatsCard.threats.data_3") }}</li>
-        </ul>
-      </div>
-      <div class="p-3 md:(p-15) flex flex-col items-center">
-        <h3 class="mb-3 text-3xl font-semibold text-[#ff0000]">
-          {{ t("StatsCard.breaches.title") }}
-        </h3>
-        <ul class="opacity-70 text-md rounded-sm dark:(bg-dark-900 border-dark-600 opacity-100) border-1 bg-light-500 border-gray-300 p-4">
-          <li>{{ t("StatsCard.breaches.data_1") }}</li>
-          <li>{{ t("StatsCard.breaches.data_2") }}</li>
-          <li>{{ t("StatsCard.breaches.data_3") }}</li>
-        </ul>
+      <div class="text-xs font-thin op90 m-2">
+        {{ $t("StatsCard.warn") }}
       </div>
     </div>
-    <div
-      class="mx-auto flex flex-col items-center justify-center space-y-2 p-4 text-center mb-auto"
-    >
-      <p class="text-lg opacity-90">{{ t("StatsCard.check") }}</p>
-      <NuxtLink to="https://haveibeenpwned.com/" target="_blank">
-        <NuxtImg
-          class="h-[40px] rounded-xl bg-white p-1 hover:bg-[#ff0000]"
-          src="images/haveibeenpwned.png"
-          :alt="t('StatsCard.image.pwn')"
-          loading="lazy"
-          height="32"
-          width="201"
-        />
-      </NuxtLink>
-    </div>
-  </div>
-</template>
-<script setup lang="ts">
-const { t } = useI18n();
-</script>
+  </template>
+  
