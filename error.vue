@@ -1,5 +1,5 @@
 <template>
-  <Html class="bg-black text-white">
+  <Html class="bg-black text-white font-sans">
   <div class="flex justify-center items-center h-screen">
     <div v-if="error?.statusCode == 404" class="space-y-2">
       <NuxtLink

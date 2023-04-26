@@ -43,7 +43,7 @@
   },
   "StatsCard": {
     "title": "Common Threats Observed in 2023",
-    "warn": "These are rough estimates, exact values may slightly differ. Obtained through research gathered in 2022",
+    "warn": "These are rough estimates, exact values may slightly differ. Obtained through research gathered in 2023",
     "check": "Check your accounts",
     "threats": {
       "1": "PHISHING",
