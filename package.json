@@ -21,6 +21,6 @@
     "@unocss/transformer-variant-group": "^0.51.8",
     "nuxt": "^3.4.2",
     "nuxt-icon": "^0.3.3",
-    "nuxt-simple-sitemap": "^2.4.11"
+    "nuxt-simple-sitemap": "^2.4.12"
   }
 }
