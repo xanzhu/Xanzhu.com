@@ -52,6 +52,7 @@ export default defineNuxtConfig({
   i18n: {
     strategy: "prefix_except_default",
     defaultLocale: "en",
+    lazy: true, // Test perf
     langDir: "locales",
     baseUrl: "https://xanzhu.com",
     detectBrowserLanguage: {
@@ -90,15 +91,4 @@ export default defineNuxtConfig({
       siteUrl: "https://xanzhu.com" || process.env.NUXT_PUBLIC_SITE_URL,
     },
   },
-  // routeRules: {
-  //   "/ko/blog": { sitemap: { changefreq: "weekly" } },
-  //   "/zh/blog": { sitemap: { changefreq: "weekly" } },
-  //   "/blog": { sitemap: { changefreq: "weekly" } },
-  // },
-  // nitro: {
-  //   prerender: {
-  //     crawlLinks: true,
-  //     routes: ["/"],
-  //   },
-  // },
 });
