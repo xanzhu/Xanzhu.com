@@ -11,7 +11,7 @@
         xmlns="http://www.w3.org/2000/svg"
         fill="currentColor"
         aria-hidden="true"
-        class="md:mr-2 w-5 h-5 group-hover:text-[#ff0000]"
+        class="md:mr-2 w-5 h-5 dark:group-hover:text-[#ff0000] group-hover-text-[#001EFA]"
         viewBox="0 0 20 20"
       >
         <path
@@ -26,14 +26,14 @@
     <NuxtLink
       v-if="next"
       :to="next._path"
-      class="dark:(bg-dark-900 text-white) bg-light-400 group flex items-center no-underline"
+      class="dark:(bg-dark-900 text-white) text-black bg-light-400 group flex items-center no-underline"
     >
       <p class="lt-sm:hidden op80 m0" v-t="'Blog.next'" />
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="currentColor"
         aria-hidden="true"
-        class="md:ml-2 w-5 h-5 group-hover:text-[#ff0000]"
+        class="md:ml-2 w-5 h-5 dark:group-hover:text-[#ff0000] group-hover-text-[#001EFA]"
         viewBox="0 0 20 20"
       >
         <path
