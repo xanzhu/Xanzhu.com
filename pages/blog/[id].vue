@@ -77,7 +77,7 @@ const [prev, next] = data.value || [];
 
 .prose h2 {
   color: #000000;
-  border-left: 4px solid #ff0000;
+  border-left: 4px solid #001EFA;
   padding-left: 10px;
   font-weight: 600;
 }
@@ -101,19 +101,8 @@ const [prev, next] = data.value || [];
   color: #001EFA;
 }
 
-.prose ol>li::before {
-  color: #ff0000;
-}
-
-.prose ul>li::before {
-  background-color: #ff0000;
-}
 
 @media (prefers-color-scheme: dark) {
-  .dark .prose ul>li::before {
-    background-color: #ff0000;
-  }
-
   .dark .prose h2 {
     color: #fff;
     border-left: 4px solid #ff0000;
@@ -125,11 +114,6 @@ const [prev, next] = data.value || [];
     background-color: #141414;
     color: #fff;
     border: 1px solid #333333;
-    font-family: "Inter", sans-serif;
-  }
-
-  .dark .prose ol>li::before {
-    color: #ff0000;
   }
 
   .dark .prose a:hover {
