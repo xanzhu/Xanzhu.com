@@ -8,7 +8,7 @@
     </h1>
     <div
       class="hidden md:flex rounded-full h-20 w-20 text-white items-center justify-center b-12 b-rounded-full b-dashed"
-      :class="{'b-[#001EFA]':phishing, 'b-[#FF0000]':malware, 'b-white':a11y}"
+      :class="{'b-brand-light':phishing, 'b-brand-dark':malware, 'b-white':a11y}"
     />
   </div>
   <div
@@ -17,8 +17,8 @@
   <!-- TODO: Add hover colours -->
     <button
       @click="toggle('phishing')"
-      class="hover:b-[#001EFA]"
-      :class="{'bg-[#001EFA] b-[#001EFA] text-white': phishing, 'bg-transparent dark:b-white':!phishing}"
+      class="hover:b-brand-light"
+      :class="{'bg-brand-light b-brand-light text-white': phishing, 'bg-transparent dark:b-white':!phishing}"
     >
     {{ $t("Resources.phishing") }}
     </button>
@@ -31,8 +31,8 @@
     </button>
     <button
       @click="toggle('malware')"
-      class="hover:b-[#FF0000]"
-      :class="{'bg-[#FF0000] b-[#FF0000] !text-black': malware, 'bg-transparent dark:b-white':!malware}"
+      class="hover:b-brand-dark"
+      :class="{'bg-brand-dark b-brand-dark !text-black': malware, 'bg-transparent dark:b-white':!malware}"
     >
     {{ $t("Resources.malware") }}
     </button>

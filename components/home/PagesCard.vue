@@ -17,9 +17,9 @@
             {{ $t("Links.resources") }}
           </h2>
           <p class="op75 m0">{{ $t("PagesCard.resources") }}</p>
-          <div class="text-[#001EFA]">
+          <div class="text-brand-light">
             <HomeArrowIcon
-            class="sm:group-hover:(bg-[#001EFA] text-white w-full ease-in-out duration-300) p-1 b-rounded-sm sm:(ease-out duration-500)"
+            class="sm:group-hover:(bg-brand-light text-white w-full ease-in-out duration-300) p-1 b-rounded-sm sm:(ease-out duration-500)"
               :aria-label="$t('a11y.ResourcePage')"
             />
           </div>
@@ -37,9 +37,9 @@
         <div class="flex flex-col justify-center m-2 sm:m-4 space-y-2 dark:text-white text-black">
           <h2 class="text-3xl font-bold m0">{{ $t("Links.blog") }}</h2>
           <p class="op75 m0">{{ $t("PagesCard.blog") }}</p>
-          <div class="text-[#001EFA]">
+          <div class="text-brand-light">
             <HomeArrowIcon
-              class="sm:group-hover:(bg-[#001EFA] text-white w-full ease-in-out duration-300) p-1 b-rounded-sm sm:(ease-out duration-500)"
+              class="sm:group-hover:(bg-brand-light text-white w-full ease-in-out duration-300) p-1 b-rounded-sm sm:(ease-out duration-500)"
               :aria-label="$t('a11y.BlogPage')"
             />
           </div>
@@ -59,9 +59,9 @@
             {{ $t("Links.analysis") }}
           </h2>
           <p class="op75 m0">{{ $t("PagesCard.analysis") }}</p>
-          <div class="text-[#001EFA]">
+          <div class="text-brand-light">
             <HomeArrowIcon
-            class="sm:group-hover:(bg-[#001EFA] text-white w-full ease-in-out duration-300) p-1 b-rounded-sm sm:(ease-out duration-500)"
+            class="sm:group-hover:(bg-brand-light text-white w-full ease-in-out duration-300) p-1 b-rounded-sm sm:(ease-out duration-500)"
               :aria-label="$t('a11y.AnalysisPage')"
             />
           </div>

@@ -3,7 +3,7 @@
   <div class="flex justify-center items-center h-screen">
     <div v-if="error?.statusCode == 404" class="space-y-2">
       <NuxtLink
-        class="text-[#ff0000] font-500 flex items-center p1 hover:(bg-[#ff0000] text-white ease-in duration-300) inline-flex rounded-sm ease-out duration-500 cursor-pointer"
+        class="text-brand-dark font-500 flex items-center p1 hover:(bg-brand-dark text-white ease-in duration-300) inline-flex rounded-sm ease-out duration-500 cursor-pointer"
         @click="handleError">
         <HomeArrowIcon class="transform rotate-180 h4 w4 mr1" />{{
           t("Error.return")
@@ -19,7 +19,7 @@
       </div>
     </div>
     <div v-if="error?.statusCode == 500" class="space-y-3">
-      <NuxtLink class="text-[#ff0000] font-500 flex items-center p1 cursor-pointer" @click="handleError">
+      <NuxtLink class="text-brand-dark font-500 flex items-center p1 cursor-pointer" @click="handleError">
         <HomeArrowIcon class="transform rotate-180 h4 w4 mr1" />{{
           t("Error.return")
         }}

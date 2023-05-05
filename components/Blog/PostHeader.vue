@@ -44,7 +44,7 @@
         <div class="flex flex-row items-center space-x-2 op90">
           <!-- Add Author font matter -->
           <p class="text-sm font-medium m0">Xanzhu</p>
-          <p class="dark:text-[#ff0000] text-[#001EFA] font-black m0">/</p>
+          <p class="dark:text-brand-dark text-brand-light font-black m0">/</p>
           <!-- Shift updated here -->
           <Date
             v-if="post.date"

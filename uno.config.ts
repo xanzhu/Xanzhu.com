@@ -16,4 +16,12 @@ export default defineConfig({
     transformers: [
         transformerVariantGroup(),
     ],
+    theme: {
+      colors: {
+        'brand': {
+          'dark': '#ff0000', // text-brand-dark
+          'light': '#001EFA' // text-brand-light
+        }
+      }
+    }
 })

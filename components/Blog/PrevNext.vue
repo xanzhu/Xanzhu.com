@@ -11,7 +11,7 @@
         xmlns="http://www.w3.org/2000/svg"
         fill="currentColor"
         aria-hidden="true"
-        class="md:mr-2 w-5 h-5 dark:group-hover:text-[#ff0000] group-hover-text-[#001EFA]"
+        class="md:mr-2 w-5 h-5 dark:group-hover:text-brand-dark group-hover-text-brand-light"
         viewBox="0 0 20 20"
       >
         <path
@@ -33,7 +33,7 @@
         xmlns="http://www.w3.org/2000/svg"
         fill="currentColor"
         aria-hidden="true"
-        class="md:ml-2 w-5 h-5 dark:group-hover:text-[#ff0000] group-hover-text-[#001EFA]"
+        class="md:ml-2 w-5 h-5 dark:group-hover:text-brand-dark group-hover-text-brand-light"
         viewBox="0 0 20 20"
       >
         <path
