@@ -5,32 +5,29 @@
       <NuxtLink
         class="text-brand-dark font-500 flex items-center p1 hover:(bg-brand-dark text-white ease-in duration-300) inline-flex rounded-sm ease-out duration-500 cursor-pointer"
         @click="handleError">
-        <HomeArrowIcon class="transform rotate-180 h4 w4 mr1" />{{
-          t("Error.return")
-        }}
+        <HomeArrowIcon class="transform rotate-180 h4 w4 mr1" />
+        {{ $t("Error.return") }}
       </NuxtLink>
-      <h1 class="text-6xl font-700">{{ t("Error.404.title") }}</h1>
+      <h1 class="text-6xl font-700">{{ $t("Error.404.title") }}</h1>
       <p class="text-light-600 text-xl">
-        {{ t("Error.404.desc") }}
+        {{ $t("Error.404.desc") }}
       </p>
       <div class="space-x-0.5 flex items-center op75">
         <Icon name="material-symbols:error-outline" class="h4 w4" />
-        <p class="text-sm">{{ t("Error.404.code") }}</p>
+        <p class="text-sm">{{ $t("Error.404.code") }}</p>
       </div>
     </div>
     <div v-if="error?.statusCode == 500" class="space-y-3">
       <NuxtLink class="text-brand-dark font-500 flex items-center p1 cursor-pointer" @click="handleError">
-        <HomeArrowIcon class="transform rotate-180 h4 w4 mr1" />{{
-          t("Error.return")
-        }}
+        <HomeArrowIcon class="transform rotate-180 h4 w4 mr1" />{{ $t("Error.return") }}
       </NuxtLink>
-      <h1 class="text-6xl font-700">{{ t("Error.500.title") }}</h1>
+      <h1 class="text-6xl font-700">{{ $t("Error.500.title") }}</h1>
       <p class="text-light-600 text-xl">
-        {{ t("Error.500.desc") }}
+        {{ $t("Error.500.desc") }}
       </p>
       <div class="space-x-0.5 flex items-center op75">
         <Icon name="material-symbols:error-outline" class="h4 w4" />
-        <p class="text-sm">{{ t("Error.500.code") }}</p>
+        <p class="text-sm">{{ $t("Error.500.code") }}</p>
       </div>
     </div>
   </div>
@@ -46,5 +43,4 @@ defineProps({
 const handleError = () => clearError({ redirect: localePath('/') });
 
 const localePath = useLocalePath();
-const { t } = useI18n();
 </script>

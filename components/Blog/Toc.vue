@@ -4,7 +4,7 @@
   >
     <header class="pb-2 mb-2 border-b b-slate-200 dark:b-dark-300">
       <h2 class="text-lg font-semibold m0">
-        {{ t("Blog.toc") }}
+        {{ $t("Blog.toc") }}
       </h2>
     </header>
     <ul class="flex flex-col gap-2 px-6 text-sm">
@@ -41,6 +41,4 @@ const flattenLinks = (links: Array<any>) => {
     .flat(1);
   return _links;
 };
-
-const { t } = useI18n();
 </script>
