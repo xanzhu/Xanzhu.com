@@ -56,7 +56,9 @@ const { data } = await useAsyncData("prev-next", async () => {
 const [prev, next] = data.value || [];
 </script>
 <style>
-/* TODO: Conver to unocss @apply / --at-apply */
+/* TODO: Conver to unocss @apply / --at-apply 
+   - Improve H2-H4 Sizing and weights
+*/
 .prose h1 {
   visibility: hidden;
 }
@@ -73,13 +75,6 @@ const [prev, next] = data.value || [];
 .prose h6 a {
   text-decoration: none;
   pointer-events: none;
-}
-
-.prose h2 {
-  color: #000000;
-  border-left: 4px solid #001EFA;
-  padding-left: 10px;
-  font-weight: 600;
 }
 
 .prose pre {
@@ -102,13 +97,6 @@ const [prev, next] = data.value || [];
 
 
 @media (prefers-color-scheme: dark) {
-  .dark .prose h2 {
-    color: #fff;
-    border-left: 4px solid #ff0000;
-    padding-left: 10px;
-    font-weight: 700;
-  }
-
   .dark .prose pre {
     background-color: #141414;
     color: #fff;
@@ -116,7 +104,7 @@ const [prev, next] = data.value || [];
   }
 
   .dark .prose a:hover {
-  text-decoration-color: #ff0000;
-}
+    text-decoration-color: #ff0000;
+  }
 }
 </style>
