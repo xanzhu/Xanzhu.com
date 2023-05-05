@@ -1,24 +1,17 @@
 <template>
-  <nav
-    class="m-4 p-4 rounded-sm dark:(bg-dark-900 b-dark-600) b-gray-300 b-1 b-solid md:(max-w-md mx-auto)"
-  >
+  <nav class="m-4 p-4 rounded-sm dark:(bg-dark-900 b-dark-600) b-gray-300 b-1 b-solid md:(max-w-md mx-auto)">
     <header class="pb-2 mb-2 border-b b-slate-200 dark:b-dark-300">
       <h2 class="text-lg font-semibold m0">
         {{ $t("Blog.toc") }}
       </h2>
     </header>
     <ul class="flex flex-col gap-2 px-6 text-sm">
-      <li
-        v-for="link of flattenLinks(links)"
-        :key="link.id"
-        class="text-dark-700 dark:text-light-400"
-        :class="{
-          'ml-6 list-disc opacity-80 hover:(underline underline-offset-3 decoration-2)':
-            link.depth === 3,
-          'font-semibold tracking-wide  hover:underline-transparent':
-            link.depth === 2,
-        }"
-      >
+      <li v-for="link of flattenLinks(links)" :key="link.id" class="text-dark-700 dark:text-light-400" :class="{
+        'ml-4 list-disc opacity-80 hover:(underline underline-offset-3 decoration-2)':
+          link.depth === 3,
+        'font-semibold tracking-wide  hover:underline-transparent':
+          link.depth === 2,
+      }">
         <NuxtLink class="no-underline dark:text-white text-black" :href="`#${link.id}`">
           {{ link.text }}
         </NuxtLink>
