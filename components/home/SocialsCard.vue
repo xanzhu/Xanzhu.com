@@ -2,7 +2,7 @@
   <div
     class="flex flex-col text-center justify-center items-center my-10 sm:(flex-row space-x-5 space-y-0) space-y-4"
   >
-    <h4 class="text-4xl font-bold m0">
+    <h4 class="text-2xl sm:text-4xl font-bold m0">
       {{ t("SocialsCard.h1") }}
     </h4>
     <div
