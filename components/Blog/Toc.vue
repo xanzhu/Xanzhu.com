@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="m-4 p-4 rounded-sm dark:(bg-dark-900 b-dark-600) b-1 b-solid md:(max-w-md mx-auto)"
+    class="m-4 p-4 rounded-sm dark:(bg-dark-900 b-dark-600) b-gray-300 b-1 b-solid md:(max-w-md mx-auto)"
   >
     <header class="pb-2 mb-2 border-b b-slate-200 dark:b-dark-300">
       <h2 class="text-lg font-semibold m0">
