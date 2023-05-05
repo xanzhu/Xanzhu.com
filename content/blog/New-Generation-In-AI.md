@@ -20,6 +20,8 @@ Try ChatGPT for yourself: [ChatGPT](https://chat.openai.com/){:target="\_blank"}
 ### Microsoft
 Microsoft released Bing search with ChatGPT. It's currently running version 4 and is considerably more limited and restrictive when it comes to getting a response back. Released on a public model to all users of Bing gives it an edge over Chrome. However, the experience isn't the same interactive experience as having a conversation on OpenAI's website.
 
+<Quote :content="Technology is just a tool. In terms of getting the kids working together and motivating them, the teacher is the most important." :author="Bill Gates"></Quote>
+
 Given that Bing's new chat feature is restrictive to the Edge browser, it ensures that there's enough of an advantage to compete with Google Chrome. The chat service offers three modes through a conversation selection method: Creative, Balanced, or Precise. Conversations are not saved and are restricted to a few responses before having to start over.
 
 <Media source="/images/blog/Gen/bing.webp"  alt="Bing's new Chatbot splash screen"></Media>
