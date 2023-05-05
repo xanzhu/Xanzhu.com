@@ -56,12 +56,7 @@ const { data } = await useAsyncData("prev-next", async () => {
 const [prev, next] = data.value || [];
 </script>
 <style>
-html {
-  font-family: "Open sans", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif, "sans-serif";
-}
-
+/* TODO: Conver to unocss @apply / --at-apply */
 .prose h1 {
   visibility: hidden;
 }
@@ -102,8 +97,8 @@ html {
 }
 
 .prose a:hover {
-  text-decoration-color: #ff0000;
-  color: #ff0000;
+  text-decoration-color: #001EFA;
+  color: #001EFA;
 }
 
 .prose ol>li::before {
@@ -136,5 +131,10 @@ html {
   .dark .prose ol>li::before {
     color: #ff0000;
   }
+
+  .dark .prose a:hover {
+  text-decoration-color: #ff0000;
+  color: #ff0000;
+}
 }
 </style>
