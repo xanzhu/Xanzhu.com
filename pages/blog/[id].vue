@@ -92,13 +92,12 @@ const [prev, next] = data.value || [];
 
 .prose a[href^="https"] {
   font-weight: normal;
-  text-decoration: underline;
+  text-decoration: 2px underline;
   text-underline-offset: 2px;
 }
 
 .prose a:hover {
   text-decoration-color: #001EFA;
-  color: #001EFA;
 }
 
 
@@ -118,7 +117,6 @@ const [prev, next] = data.value || [];
 
   .dark .prose a:hover {
   text-decoration-color: #ff0000;
-  color: #ff0000;
 }
 }
 </style>
