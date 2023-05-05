@@ -1,6 +1,7 @@
 {
   "private": true,
-  "version": "0.5.2",
+  "version": "0.5.3",
+  "license": "MIT",
   "name": "xanzhu.com",
   "scripts": {
     "build": "nuxi build",
@@ -19,8 +20,8 @@
     "@unocss/preset-uno": "^0.51.8",
     "@unocss/preset-web-fonts": "^0.51.8",
     "@unocss/transformer-variant-group": "^0.51.8",
-    "nuxt": "^3.4.2",
+    "nuxt": "^3.4.3",
     "nuxt-icon": "^0.3.3",
-    "nuxt-simple-sitemap": "^2.4.12"
+    "nuxt-simple-sitemap": "^2.4.22"
   }
 }
