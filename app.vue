@@ -28,7 +28,7 @@ const head = useLocaleHead({
 useHead({
   bodyAttrs: {
     class: "dark:(bg-black text-white) bg-white text-black m0",
-  },
+  }
 });
 
 useSeoMeta({
