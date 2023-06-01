@@ -5,7 +5,7 @@
       <UiColorSwitch class="hidden lg:flex" />
     </div>
     <NuxtLink :to="localePath('/')"
-      class="mx-auto text-center dark:text-white text-black dark:hover:text-brand-dark hover:text-brand-light">
+      class="mx-auto text-center dark:text-white text-black">
       <UiIconXanzhu class="h-6 inline-block" :aria-label="t('a11y.logo')" />
     </NuxtLink>
     <div class="hidden lg:(block flex-1 text-right space-x-5 font-semibold text-sm mr5)">
