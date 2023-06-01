@@ -29,7 +29,7 @@ devDependencies:
     specifier: ^0.51.13
     version: 0.51.13
   nuxt:
-    specifier: ^3.5.2
+    specifier: ^3.5.0
     version: 3.5.2(@types/node@18.16.3)
   nuxt-icon:
     specifier: ^0.3.3
@@ -2117,7 +2117,7 @@ packages:
     resolution: {integrity: sha512-Ro3nmapMxi/remlJdzFH0tiA7A59KDbxVoLlKWaLDrPELiftb9b8w+CCyWRM+sXZH5KHRAgv8feedW6mihvCHA==}
     engines: {node: '>=14.19.0'}
     dependencies:
-      '@babel/parser': 7.21.8
+      '@babel/parser': 7.22.4
       '@babel/types': 7.22.4
     dev: true
 
@@ -2137,7 +2137,7 @@ packages:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.21.7
-      caniuse-lite: 1.0.30001482
+      caniuse-lite: 1.0.30001492
       fraction.js: 4.2.0
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -2273,10 +2273,6 @@ packages:
       caniuse-lite: 1.0.30001492
       lodash.memoize: 4.1.2
       lodash.uniq: 4.5.0
-    dev: true
-
-  /caniuse-lite@1.0.30001482:
-    resolution: {integrity: sha512-F1ZInsg53cegyjroxLNW9DmrEQ1SuGRTO1QlpA0o2/6OpQ0gFeDRoq1yFmnr8Sakn9qwwt9DmbxHB6w167OSuQ==}
     dev: true
 
   /caniuse-lite@1.0.30001492:
