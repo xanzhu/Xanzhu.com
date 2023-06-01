@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "nuxt-icon",
     "nuxt-simple-sitemap",
-    '@unocss/nuxt',
+    "@unocss/nuxt",
   ],
   colorMode: {
     classSuffix: "",
@@ -90,5 +90,9 @@ export default defineNuxtConfig({
     public: {
       siteUrl: "https://xanzhu.com" || process.env.NUXT_PUBLIC_SITE_URL,
     },
+  },
+  // Test new feature
+  routeRules: {
+    "/*": { isr: 3000 },
   },
 });
