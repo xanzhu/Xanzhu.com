@@ -13,11 +13,11 @@
         <NuxtLink class="group flex flex-col no-underline" :to="article._path">
           <div class="h-auto w-auto">
             <NuxtImg crossorigin="anonymous" v-if="article.img" :alt="article.alt" :title="article.alt" loading="lazy"
-            height="369" width="577"
-            class="rounded-sm object-cover h-full w-full transform md:(transition duration-500 ease-in-out) md:group-hover:scale-102"
-            :src="article.img" />
+              height="369" width="577"
+              class="rounded-sm object-cover h-full w-full transform md:(transition duration-400 ease-in-out) md:group-hover:scale-102"
+              :src="article.img" />
           </div>
-          
+
           <div class="dark:(bg-black text-white) h-auto rounded-b-md bg-white dark:text-white text-black">
             <div class="space-x-2">
               <Date v-if="article.date" :date="article.date"
