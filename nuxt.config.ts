@@ -92,7 +92,7 @@ export default defineNuxtConfig({
     },
   },
   // Test new feature
-  routeRules: {
-    "/*": { isr: 3000 },
-  },
+  // routeRules: {
+  //   "/*": { isr: 3000 },
+  // },
 });
