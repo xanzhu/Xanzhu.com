@@ -44,6 +44,8 @@ const { data: articles } = await useAsyncData("articles", async () => {
   return await queryContent(query)
     .sort({ date: -1 })
     .where({ feature: { $ne: true } })
+    // Reduce Payload - Only below options are included
+    .only(['title', 'description', 'img', 'date', 'tag', '_path', 'alt'])
     .find();
 });
 

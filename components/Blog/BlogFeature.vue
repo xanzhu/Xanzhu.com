@@ -35,10 +35,13 @@
 const { locale } = useI18n();
 
 const { data: features } = await useAsyncData("feature", async () => {
+  // Find better solution for this
   const query = locale.value !== "en" ? `${locale.value}/blog` : "/blog";
   return await queryContent(query)
     .sort({ date: -1 })
     .where({ feature: true })
+    // Reduce Payload size 
+    .only(['title', 'description', 'img', 'date', 'tag', '_path', 'alt', 'locale'])
     .limit(1)
     .find();
 });
