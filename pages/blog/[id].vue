@@ -56,12 +56,9 @@ const { data } = await useAsyncData("prev-next", async () => {
 const [prev, next] = data.value || [];
 </script>
 <style>
-html {
-  font-family: "Open sans", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif, "sans-serif";
-}
-
+/* TODO: Conver to unocss @apply / --at-apply 
+   - Improve H2-H4 Sizing and weights
+*/
 .prose h1 {
   visibility: hidden;
 }
@@ -80,13 +77,6 @@ html {
   pointer-events: none;
 }
 
-.prose h2 {
-  color: #000000;
-  border-left: 4px solid #ff0000;
-  padding-left: 10px;
-  font-weight: 600;
-}
-
 .prose pre {
   background-color: #f1f1f1;
   color: #000;
@@ -97,44 +87,24 @@ html {
 
 .prose a[href^="https"] {
   font-weight: normal;
-  text-decoration: underline;
+  text-decoration: 2px underline;
   text-underline-offset: 2px;
 }
 
 .prose a:hover {
-  text-decoration-color: #ff0000;
-  color: #ff0000;
+  text-decoration-color: #001EFA;
 }
 
-.prose ol>li::before {
-  color: #ff0000;
-}
-
-.prose ul>li::before {
-  background-color: #ff0000;
-}
 
 @media (prefers-color-scheme: dark) {
-  .dark .prose ul>li::before {
-    background-color: #ff0000;
-  }
-
-  .dark .prose h2 {
-    color: #fff;
-    border-left: 4px solid #ff0000;
-    padding-left: 10px;
-    font-weight: 700;
-  }
-
   .dark .prose pre {
     background-color: #141414;
     color: #fff;
     border: 1px solid #333333;
-    font-family: "Inter", sans-serif;
   }
 
-  .dark .prose ol>li::before {
-    color: #ff0000;
+  .dark .prose a:hover {
+    text-decoration-color: #ff0000;
   }
 }
 </style>

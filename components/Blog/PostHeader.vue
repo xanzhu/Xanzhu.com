@@ -44,7 +44,7 @@
         <div class="flex flex-row items-center space-x-2 op90">
           <!-- Add Author font matter -->
           <p class="text-sm font-medium m0">Xanzhu</p>
-          <p class="dark:text-[#ff0000] text-[#001EFA] font-black m0">/</p>
+          <p class="dark:text-brand-dark text-brand-light font-black m0">/</p>
           <!-- Shift updated here -->
           <Date
             v-if="post.date"
@@ -74,7 +74,7 @@
           class="dark:(text-light-200 opacity-70) text-dark-700 op90 absolute right-3 sm:right-2 px-1 py-1 text-xs lt-sm:(mr-2) tracking-wide"
         >
           <p class="inline-block m0" />
-          {{ t("Blog.source") + ": " + post.source }}
+          {{ $t("Blog.source") + ": " + post.source }}
         </div>
       </div>
       <!-- <NuxtImg
@@ -90,8 +90,6 @@
   </header>
 </template>
 <script setup lang="ts">
-const { t } = useI18n();
-
 defineProps({
   post: {
     type: Object,

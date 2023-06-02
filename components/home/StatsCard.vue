@@ -1,11 +1,11 @@
 <template>
-    <div class="b-transparent md:b-1 b-solid b-dark-500 p-2 md:p-10 mx-auto max-w-4xl min-h-sm mb-10">
+    <div class="b-transparent md:b-1 b-solid b-dark-500 p-2 md:p-10 mx-auto max-w-4xl sm:min-h-sm mb-10">
       <div class="grid grid-cols-2 mt-5">
         <div
           class="row-span-1 col-span-2 h-full w-full flex justify-between max-h-30"
         >
           <div
-            class="w-3/2 bg-[#FAFF06] text-black m-1 text-4xl font-bold pl5 md:pr-100 py-4 md:py-6 rounded-sm"
+            class="w-3/2 bg-[#FAFF06] text-black m-1 text-2xl sm:text-4xl font-bold md:pl5 lg:pr-100 p1 md:py-4 sm:py-6 rounded-sm"
           >
           {{ $t("StatsCard.title") }}
           </div>

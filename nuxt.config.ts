@@ -6,8 +6,9 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "nuxt-icon",
     "nuxt-simple-sitemap",
-    '@unocss/nuxt',
+    "@unocss/nuxt",
   ],
+
   colorMode: {
     classSuffix: "",
     preference: "dark",
@@ -16,7 +17,6 @@ export default defineNuxtConfig({
     head: {
       meta: [
         { name: "format-detection", content: "telephone=no" },
-        // Twitter
         { name: "twitter:site", content: "@xanzhu1" },
         { name: "twitter:card", content: "summary_large_image" },
       ],
@@ -49,9 +49,11 @@ export default defineNuxtConfig({
       ],
     },
   },
+
   i18n: {
     strategy: "prefix_except_default",
     defaultLocale: "en",
+    lazy: true,
     langDir: "locales",
     baseUrl: "https://xanzhu.com",
     detectBrowserLanguage: {
@@ -85,20 +87,14 @@ export default defineNuxtConfig({
       },
     ],
   },
+
   runtimeConfig: {
     public: {
       siteUrl: "https://xanzhu.com" || process.env.NUXT_PUBLIC_SITE_URL,
     },
   },
-  // routeRules: {
-  //   "/ko/blog": { sitemap: { changefreq: "weekly" } },
-  //   "/zh/blog": { sitemap: { changefreq: "weekly" } },
-  //   "/blog": { sitemap: { changefreq: "weekly" } },
-  // },
-  // nitro: {
-  //   prerender: {
-  //     crawlLinks: true,
-  //     routes: ["/"],
-  //   },
-  // },
+
+  devtools: {
+    enabled: true,
+  },
 });
