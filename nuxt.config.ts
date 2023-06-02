@@ -8,15 +8,16 @@ export default defineNuxtConfig({
     "nuxt-simple-sitemap",
     "@unocss/nuxt",
   ],
+
   colorMode: {
     classSuffix: "",
     preference: "dark",
   },
+
   app: {
     head: {
       meta: [
         { name: "format-detection", content: "telephone=no" },
-        // Twitter
         { name: "twitter:site", content: "@xanzhu1" },
         { name: "twitter:card", content: "summary_large_image" },
       ],
@@ -49,10 +50,11 @@ export default defineNuxtConfig({
       ],
     },
   },
+
   i18n: {
     strategy: "prefix_except_default",
     defaultLocale: "en",
-    lazy: true, // Test perf
+    lazy: true,
     langDir: "locales",
     baseUrl: "https://xanzhu.com",
     detectBrowserLanguage: {
@@ -86,13 +88,14 @@ export default defineNuxtConfig({
       },
     ],
   },
+
   runtimeConfig: {
     public: {
       siteUrl: "https://xanzhu.com" || process.env.NUXT_PUBLIC_SITE_URL,
     },
   },
-  // Test new feature
-  // routeRules: {
-  //   "/*": { isr: 3000 },
-  // },
+
+  devtools: {
+    enabled: true,
+  },
 });
