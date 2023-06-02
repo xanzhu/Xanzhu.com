@@ -4,8 +4,7 @@
       <UiLangSwitch />
       <UiColorSwitch class="hidden lg:flex" />
     </div>
-    <NuxtLink :to="localePath('/')"
-      class="mx-auto text-center dark:text-white text-black dark:hover:text-brand-dark hover:text-brand-light">
+    <NuxtLink :to="localePath('/')" class="mx-auto text-center dark:text-white text-black">
       <UiIconXanzhu class="h-6 inline-block" :aria-label="t('a11y.logo')" />
     </NuxtLink>
     <div class="hidden lg:(block flex-1 text-right space-x-5 font-semibold text-sm mr5)">
@@ -20,14 +19,12 @@
         <Icon v-if="!MobileMenu" class="h6 w6" name="ic:baseline-menu" :aria-label="t('a11y.oMenu')" />
         <Icon v-if="MobileMenu" class="h6 w6" name="ic:baseline-close" :aria-label="t('a11y.cMenu')" />
       </button>
-      <nav @click.outside="closeMenu"
-        :class="
-          MobileMenu
-            ? 'flex p-1 rounded-sm absolute top-12 right-6 flex-col-reverse children:pt-2 dark:bg-dark-900 bg-light-700 b-1 b-solid b-gray-300 dark:b-dark-500'
-            : 'hidden'
+      <nav @click.outside="closeMenu" :class="MobileMenu
+          ? 'flex p-1 rounded-sm absolute top-12 right-6 flex-col-reverse children:pt-2 dark:bg-dark-900 bg-light-700 b-1 b-solid b-gray-300 dark:b-dark-500'
+          : 'hidden'
         ">
-        <NuxtLink v-for="(link, index) in links" :key="index" :to="localePath(link.url)" active-class="text-brand-light dark:text-brand-dark"
-          :aria-label="t(link.name)"
+        <NuxtLink v-for="(link, index) in links" :key="index" :to="localePath(link.url)"
+          active-class="text-brand-light dark:text-brand-dark" :aria-label="t(link.name)"
           class="dark:hover:(bg-dark-600 ease-in duration-75) dark:text-white hover:(bg-light-400) text-black rounded-sm font-medium text-center py-2 px-3 no-underline"
           v-t="link.name" />
       </nav>
