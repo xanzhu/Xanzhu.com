@@ -35,5 +35,6 @@ useSeoMeta({
   titleTemplate: "%s - Xanzhu",
   ogType: "website",
   ogSiteName: "Xanzhu",
+  robots: "all"
 });
 </script>
