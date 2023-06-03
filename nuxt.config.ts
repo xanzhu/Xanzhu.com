@@ -52,7 +52,7 @@ export default defineNuxtConfig({
   },
 
   i18n: {
-    strategy: "prefix",
+    strategy: "prefix_except_default",
     defaultLocale: "en",
     lazy: true,
     langDir: "locales",
@@ -115,14 +115,14 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ["/"],
+      routes: ["/", "/ko", "/zh"],
     },
   },
 
   // Testing: Route Rules
-  // routeRules: {
-  //   "/blog/**": { sitemap: { changefreq: "daily", priority: 0.3 } },
-  //   "/ko/blog/**": { sitemap: { changefreq: "daily", priority: 0.3 } },
-  //   "/zh/blog/**": { sitemap: { changefreq: "daily", priority: 0.3 } },
-  // },
+  routeRules: {
+    "/blog/**": { sitemap: { changefreq: "daily", priority: 0.3 } },
+    "/ko/blog/**": { sitemap: { changefreq: "daily", priority: 0.3 } },
+    "/zh/blog/**": { sitemap: { changefreq: "daily", priority: 0.3 } },
+  },
 });
