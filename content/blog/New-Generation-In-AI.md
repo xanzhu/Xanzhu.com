@@ -17,7 +17,7 @@ Checkout the latest from: [Open AI](https://openai.com/){:target="\_blank"}
 
 Try ChatGPT for yourself: [ChatGPT](https://chat.openai.com/){:target="\_blank"}
 
-<Ad :message="Try ChatGPT for yourself, get" :discount="30%" :type="AD" link="https://chat.openai.com/"></Ad>
+<!-- <Ad :message="Try ChatGPT for yourself, get" :discount="30%" :type="AD" link="https://chat.openai.com/"></Ad> -->
 
 ### Microsoft
 
