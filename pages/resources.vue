@@ -49,6 +49,7 @@ function toggle(option: 'phishing' | 'malware' | 'a11y') {
 // Seo
 const title = t("Resources.meta.title");
 const description = t("Resources.meta.description");
+const image = 'https://source.unsplash.com/dCuA11z7xHg'
 
 useSeoMeta({
   title: title,
@@ -57,8 +58,9 @@ useSeoMeta({
   ogTitle: title,
   ogUrl: `https://xanzhu.com${locale.value === "en" ? "" : '/' + locale.value
     }/resources`,
-  ogImage: "https://source.unsplash.com/dCuA11z7xHg",
+  ogImage: image,
   twitterDescription: description,
   twitterTitle: title,
+  twitterImage: image
 });
 </script>

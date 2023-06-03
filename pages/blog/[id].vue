@@ -40,6 +40,7 @@ useSeoMeta({
   ogDescription: desc,
   twitterTitle: title,
   twitterDescription: desc,
+  twitterImage: post.value?.media,
   ogUrl: `https://xanzhu.com${path}`,
   ogType: "article",
   ogImage: post.value?.ogLink || post.value?.media,
