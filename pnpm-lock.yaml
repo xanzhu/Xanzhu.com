@@ -9,7 +9,7 @@ devDependencies:
     version: 0.5.5(nuxt@3.5.2)(vite@4.3.9)
   '@nuxt/image-edge':
     specifier: latest
-    version: 1.0.0-28094330.102af81
+    version: 1.0.0-28094923.e859bba
   '@nuxtjs/color-mode':
     specifier: ^3.2.0
     version: 3.2.0
@@ -31,6 +31,9 @@ devDependencies:
   '@unocss/transformer-variant-group':
     specifier: ^0.52.7
     version: 0.52.7
+  '@vercel/analytics':
+    specifier: ^1.0.1
+    version: 1.0.1
   nuxt:
     specifier: ^3.5.2
     version: 3.5.2(@types/node@20.2.5)
@@ -1099,8 +1102,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@nuxt/image-edge@1.0.0-28094330.102af81:
-    resolution: {integrity: sha512-a1hEriEZsjXy18YH2Grp0uvgq68+X7kQK0WY4qsvmgbGERNv4QHsgg5DGq+VrE20CdXgz4Y/4f8yv2HWI8z46Q==}
+  /@nuxt/image-edge@1.0.0-28094923.e859bba:
+    resolution: {integrity: sha512-1Yg9TP22qm6U6WqX7mwfwoUk2MbUTUvRVQjnry4CjVZziy2R2tL7EDjlTXPRzVxQxuyPDcH6ytCAxlbucC9dvw==}
     engines: {node: ^14.16.0 || >=16.11.0}
     dependencies:
       '@nuxt/kit': 3.5.2
@@ -1930,6 +1933,10 @@ packages:
       webpack-sources: 3.2.3
     transitivePeerDependencies:
       - rollup
+    dev: true
+
+  /@vercel/analytics@1.0.1:
+    resolution: {integrity: sha512-Ux0c9qUfkcPqng3vrR0GTrlQdqNJ2JREn/2ydrVuKwM3RtMfF2mWX31Ijqo1opSjNAq6rK76PwtANw6kl6TAow==}
     dev: true
 
   /@vercel/nft@0.22.6:

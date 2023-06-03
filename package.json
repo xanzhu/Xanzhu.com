@@ -21,6 +21,7 @@
     "@unocss/preset-uno": "^0.52.7",
     "@unocss/preset-web-fonts": "^0.52.7",
     "@unocss/transformer-variant-group": "^0.52.7",
+    "@vercel/analytics": "^1.0.1",
     "nuxt": "^3.5.2",
     "nuxt-icon": "^0.4.1",
     "nuxt-simple-sitemap": "^2.6.1"

@@ -133,4 +133,7 @@ export default defineNuxtConfig({
       },
     },
   },
+
+  // Vercel Analytics
+  plugins: [{ src: "~/plugins/vercel.ts", mode: "client" }],
 });
