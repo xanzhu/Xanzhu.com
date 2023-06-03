@@ -1,14 +1,14 @@
 {
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "https://xanzhu.com/$1",
+      "statusCode": 308
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
-      "rewrites": [
-        {
-          "source": "/(.*)",
-          "destination": "https://xanzhu.com/$1",
-          "statusCode": 301
-        }
-      ],
       "headers": [
         {
           "key": "Permissions-Policy",
