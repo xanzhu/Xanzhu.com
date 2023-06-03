@@ -117,12 +117,20 @@ export default defineNuxtConfig({
       crawlLinks: true,
       routes: ["/", "/ko", "/zh"],
     },
-  },
-
-  // Testing: Route Rules
-  routeRules: {
-    "/blog/**": { sitemap: { changefreq: "daily", priority: 0.3 } },
-    "/ko/blog/**": { sitemap: { changefreq: "daily", priority: 0.3 } },
-    "/zh/blog/**": { sitemap: { changefreq: "daily", priority: 0.3 } },
+    // Testing: Route Rules
+    routeRules: {
+      "/blog/**": {
+        sitemap: { changefreq: "daily", priority: 0.3 },
+        isr: 3000,
+      },
+      "/ko/blog/**": {
+        sitemap: { changefreq: "daily", priority: 0.3 },
+        isr: 3000,
+      },
+      "/zh/blog/**": {
+        sitemap: { changefreq: "daily", priority: 0.3 },
+        isr: 3000,
+      },
+    },
   },
 });
