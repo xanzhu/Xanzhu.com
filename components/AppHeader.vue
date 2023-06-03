@@ -3,6 +3,8 @@
     <div class="lg:flex-1 font-semibold items-center flex">
       <UiLangSwitch />
       <UiColorSwitch class="hidden lg:flex" />
+      <!-- TODO: Add Translation / Fix Placement -->
+      <p class="sr-only">Current Language locale: {{ $i18n.locale }}</p>
     </div>
     <NuxtLink :to="localePath('/')" class="mx-auto text-center dark:text-white text-black">
       <UiIconXanzhu class="h-6 inline-block" :aria-label="t('a11y.logo')" />
