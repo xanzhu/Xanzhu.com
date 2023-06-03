@@ -99,18 +99,30 @@ export default defineNuxtConfig({
     enabled: true,
   },
 
-  // Simple Sitemap
+  // Testing: Simple Sitemap
   sitemap: {
     sitemaps: false,
     trailingSlash: false,
     autoLastmod: true,
+    discoverImages: true,
+
+    // i18n support?
+    autoAlternativeLangPrefixes: undefined,
+    inferStaticPagesAsRoutes: false,
   },
 
   // Nitro
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ["/"],
+      routes: ["/", "/ko", "/zh"],
     },
   },
+
+  // Testing: Route Rules
+  // routeRules: {
+  //   "/blog/**": { sitemap: { changefreq: "daily", priority: 0.3 } },
+  //   "/ko/blog/**": { sitemap: { changefreq: "daily", priority: 0.3 } },
+  //   "/zh/blog/**": { sitemap: { changefreq: "daily", priority: 0.3 } },
+  // },
 });
