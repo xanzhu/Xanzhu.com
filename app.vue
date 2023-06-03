@@ -32,7 +32,7 @@ useHead({
 });
 
 useSeoMeta({
-  titleTemplate: "%s | Xanzhu",
+  titleTemplate: "%s - Xanzhu",
   ogType: "website",
   ogSiteName: "Xanzhu",
 });
