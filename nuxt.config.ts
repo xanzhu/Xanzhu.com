@@ -98,4 +98,19 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true,
   },
+
+  // Simple Sitemap
+  sitemap: {
+    sitemaps: false,
+    trailingSlash: false,
+    autoLastmod: true,
+  },
+
+  // Nitro
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ["/"],
+    },
+  },
 });
