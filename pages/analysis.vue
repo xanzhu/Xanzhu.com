@@ -27,5 +27,7 @@ useSeoMeta({
   ogUrl: `https://xanzhu.com${locale.value === "en" ? "" : '/' + locale.value
     }/analysis`,
   ogImage: image,
+  // Disable index while under development
+  robots: "noindex"
 });
 </script>
