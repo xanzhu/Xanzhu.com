@@ -10,15 +10,15 @@ ogLink: "https://www.pexels.com/photo/person-holding-iphone-6-with-red-case-7534
 source: "Mikhail Nilov, Pexels"
 ---
 
- Keeping your password secure and unique can be a challenging process, whether you're using variations of the same password or using the same password across multiple platforms.
+Keeping your password secure and unique can be a challenging process, whether you're using variations of the same password or using the same password across multiple platforms.
 
 A password manager is like a vault. You put your valuables into a box and secure it with a single lock. Password managers use this same logic. With passwords becoming more and more complex, requiring symbols, numbers, and being relatively long.
 
 How do you remember a password like this?
 
- ```
+```
 Xj5#@gT7$uN9*aB1!
-``` 
+```
 
 These types of passwords are generated for you with the intention of being secure and hard to remember by introducing symbols, letters and varations of numbers and captialisations. This would be considered a strong password.
 Remembering a more simple password like this:
@@ -27,23 +27,22 @@ Remembering a more simple password like this:
 Password123
 ```
 
- Easy right, well this password doesn't meet today's security standards. This is the most commonly used password because it's simple. No matter how complex or simple you make your password please do not use the same password across multiple services.
+Easy right, well this password doesn't meet today's security standards. This is the most commonly used password because it's simple. No matter how complex or simple you make your password please do not use the same password across multiple services.
 
 Lets upgrade this password to make it more secure.
-Add symbols, make it longer and avoid using common phrases or arrays of numbers like 123 or Password. By adding symbols and variations of captilisations this password can be upgraded to the following to make it a bit more secure: 
+Add symbols, make it longer and avoid using common phrases or arrays of numbers like 123 or Password. By adding symbols and variations of captilisations this password can be upgraded to the following to make it a bit more secure:
 
- ```
+```
 p@s$w0rD!2E
-```  
+```
 
- While this may be easy to do for a couple of passwords, a password manager can automate the process for you. It can generate strong, unique passwords for each site automatically. The only thing you need to remember is the key to your vault: a single password that grants you access to all of your stored passwords.
+While this may be easy to do for a couple of passwords, a password manager can automate the process for you. It can generate strong, unique passwords for each site automatically. The only thing you need to remember is the key to your vault: a single password that grants you access to all of your stored passwords.
 
 Breaches occur regularly, and it's important to not only check for yourself but also be notified when they happen. A popular, free service you can use is [HaveIBeenPwned](https://haveibeenpwned.com/){:target="\_blank"}. This website, maintained by Australian security expert Troy Hunt, allows you to enter your email address and see if it has been associated with any breaches. In the event that you find something, head over to the service and update your password.
 
 There are a variety of password managers available, both free and paid. I will share some of my recommendations based on my own experience and research.
 
 ## Free Solutions
-
 
 ### Bitwarden
 
@@ -53,17 +52,17 @@ One of the best free password managers you can use is Bitwarden. While it does o
 
 Some notable features of Bitwarden include:
 
-* Open source
-* Free to use
-* Unlimited devices and works cross-platform with device syncing
+- Open source
+- Free to use
+- Unlimited devices and works cross-platform with device syncing
 
 It has everything you need in a standard password manager, and it works natively on all devices. It is considered to be one of the top contenders for having all the features you need.
 
 For those who need more features, Bitwarden offers paid plans that add a few more features for both individual users and team environments. These plans include:
 
-* Support for multiple users
-* Support for Yubikey and security keys
-* Vault scanning and health monitoring
+- Support for multiple users
+- Support for Yubikey and security keys
+- Vault scanning and health monitoring
 
 For more information, visit the Bitwarden website at [https://bitwarden.com](https://bitwarden.com/){:target="\_blank"}
 It's worth noting that when it comes to security and privacy, using open-source software is a good idea because it allows you to verify the code and ensure that there are no backdoors or malicious code.
@@ -110,30 +109,28 @@ Dashlane offers a free trial for 14 days, providing a basic level of password ma
 
 Notable features of Dashlane's starter plan include:
 
-* Dark Web Scanning
-* Audit Logs
-* Unlimited devices
-* Password Health Monitoring
+- Dark Web Scanning
+- Audit Logs
+- Unlimited devices
+- Password Health Monitoring
 
 For those who need more advanced features, Dashlane offers higher-tiered plans that include additional features such as a Virtual Private Network (VPN) solution. This offers an extra layer of security for your password manager, helping to protect your online activities from hackers and prying eyes.
 
 To learn more about Dashlane and its features, you can visit the website at [https://www.dashlane.com](https://www.dashlane.com){:target="\_blank"}
 It's worth noting that, when it comes to security and privacy, using a password manager that has dark-web scanning feature is a good idea because it allows you to monitor your credentials and be alerted if they appear on the dark-web.
 
-
 ### NordPass
 
 NordPass offers a very limited and basic [free plan](https://nordpass.com/plans/){:target="\_blank"} that comes bundled with a 30-day free trial of the premium version. The main difference between the paid and free plans is that the free tier offers only the basics of a password manager, while the paid tiers offer additional features such as:
 
-* Sharing items with people you trust
-* Emergency vault access - the ability to assign an email or user to have access to your vault in case of being locked out
-* Dark web scanning
-* Password health monitoring
+- Sharing items with people you trust
+- Emergency vault access - the ability to assign an email or user to have access to your vault in case of being locked out
+- Dark web scanning
+- Password health monitoring
 
 It's worth noting that you may not need all of these features, and the free tier may be enough to meet your needs. However, it's worth considering the features that are important to you when comparing plans. One thing to consider is that the free plan only supports 6 logged-in devices, which might be enough for some users, but exceeding this amount will log you out.
 
 To learn more about NordPass and its features, you can visit the website at [https://nordpass.com/](https://nordpass.com/){:target="\_blank"}
-
 
 ### 1Password
 
@@ -141,11 +138,11 @@ To learn more about NordPass and its features, you can visit the website at [htt
 
 Some notable features of the baseline premium plan include:
 
-* Digital Wallet, securely store credit cards
-* 24/7 email support
-* Unlimited devices
-* Password Health (Watchtower)
-  
+- Digital Wallet, securely store credit cards
+- 24/7 email support
+- Unlimited devices
+- Password Health (Watchtower)
+
 1Password is well-integrated into the Apple ecosystem in terms of design and accessibility. It's a great choice with limited features compared to other solutions.
 
 To learn more about 1Password and its features, you can visit the website at [https://1password.com](https://1password.com){:target="\_blank"}
@@ -159,7 +156,7 @@ It is also important to consider how each company responds to threats and breach
 Another important thing to consider is how user-friendly the password manager is, this can be an important factor when choosing which password manager to use. It's also important to ensure that the password manager is compatible with your devices, as different password managers have different compatibility options.
 
 Overall, it's essential to do your research and carefully consider all options before choosing a password manager that meets your needs and provides adequate security for your sensitive data.
- 
+
 ### LastPass
 
 The numerous breaches and questionable security practices of LastPass have led me to not recommend this software to anyone. Following any guidance from "Password Managers of 2023" articles that recommend this software shows that they have not done proper research. If you're currently using or planning to use this software, I strongly recommend switching to Bitwarden as a safer alternative.
@@ -174,7 +171,7 @@ For more information, you can read the following articles:
 
 [The Verge](https://www.theverge.com/2022/12/22/23523322/lastpass-data-breach-cloud-encrypted-password-vault-hackers){:target="\_blank"}
 
-[Wired](https://www.wired.com/story/lastpass-breach-vaults-password-managers/){:target="\_blank"} 
+[Wired](https://www.wired.com/story/lastpass-breach-vaults-password-managers/){:target="\_blank"}
 
 [Hacker News](https://thehackernews.com/2022/12/lastpass-admits-to-severe-data-breach.html){:target="\_blank"}
 
@@ -182,18 +179,20 @@ For more information, you can read the following articles:
 
 Software bundled with other services for free, such as password managers provided by popular software that you might already have installed on your system, can be a good choice to make the most out of paid software as it's bundled. However, it's important to note that there are better solutions that can work better with your devices in terms of security, performance, and overall design. It's worth investigating and comparing different options before making a decision.
 
-### Anti-virus 
+### Anti-virus
 
 Some anti-virus software providers, such as Norton or McAfee, might include a password manager as a feature in their software package.
 
-### VPN 
+### VPN
 
 Some VPN providers, such as ExpressVPN, might include a password manager as a feature in their software package.
 
-### Security Suites 
+### Security Suites
+
 Some internet security suites, such as Kaspersky Internet Security or Norton Internet Security, might include a password manager as a feature in their software package.
 
 ### Browser extensions
+
 Some browser extension, such as Avast Online Security, might include a password manager as a feature.
 
 It is worth noting that just because a password manager is included as a bundled feature, it does not mean it is not a good solution, but it is important to evaluate the feature and compare it with other options available in the market.

@@ -15,12 +15,12 @@ ChatGPT solves a new problem, which is why it's gaining a lot of traction. As I 
 
 Checkout the latest from: [Open AI](https://openai.com/){:target="\_blank"}
 
-Try ChatGPT for yourself: [ChatGPT](https://chat.openai.com/){:target="\_blank"} 
-
+Try ChatGPT for yourself: [ChatGPT](https://chat.openai.com/){:target="\_blank"}
 
 <Ad :message="Try ChatGPT for yourself, get" :discount="30%" :type="AD" link="https://chat.openai.com/"></Ad>
 
 ### Microsoft
+
 Microsoft released Bing search with ChatGPT. It's currently running version 4 and is considerably more limited and restrictive when it comes to getting a response back. Released on a public model to all users of Bing gives it an edge over Chrome. However, the experience isn't the same interactive experience as having a conversation on OpenAI's website.
 
 <Quote :content="Technology is just a tool. In terms of getting the kids working together and motivating them, the teacher is the most important." :author="Bill Gates"></Quote>
@@ -40,6 +40,7 @@ Bing provides the user with limited options and often cuts off the request. They
 Try Bing's ChatBot Feature for yourself (Requires Edge Browser): [Bing](https://bing.com/){:target="\_blank"}
 
 ### Google
+
 Google recently opened up Bard for early access, and it's fast at responding, but it isn't entirely accurate yet. Offering streamlined performance is one thing, but being able to correctly return information is critical. Considering this is Google's in-house Language Model, there is a high expectation to ensure it works and aligns with the company's ethos. The current state of Bard is behind ChatGPT, extremely restrictive but much more responsive.
 
 Currently available in the United States and the United Kingdom through early access, no date for a public release has been announced. Google's concept for Bard is to provide a complement to searching the web. The model is likely to be similar to Bing, searching and responding with exact results. Bard in other software mentioned below will be slightly more advanced and specific to the software.
@@ -51,6 +52,7 @@ Expect more changes and improvements over the coming months for Google, improvin
 Learn more about Bard and join the waitlist: [Google](https://bard.google.com/){:target="\_blank"}
 
 ### Software adapting
+
 Both Google and Microsoft are beginning to ship software with their AI solutions to help speed up mundane tasks across their software line up. Google first announced that they're working on introducing Generative AI tools in their software, such as Docs, Gmail, and more. These new AI features will enhance the way we work, reducing the amount of time spent planning. The following example shows a Google Doc with a ChatGPT-like box asking the user to input the information they want, and it generates an entire document!
 
 <Vid source="/images/blog/Gen/gde.webm" credit="Google"></Vid>
@@ -74,6 +76,7 @@ We cannot rely on the usage of plagiarism detection software to prevent AI-gener
 Businesses will likely utilize this tool for a lot of mundane tasks such as shown above creating job postings, ads, or content on their website. These tools shouldn't be an end solution but rather a way to create quick solutions and build your own ideas using them.
 
 ### Copilot
+
 A new addition to Github's existing Copilot software introduces a more complex solution, incorporating a new language model that will be a true partner when it comes to coding. Being a part of the Microsoft ecosystem, Copilot will be running the latest ChatGPT version 4 and Github's own model in code auto-completion.
 
 <Media source="/images/blog/Gen/copilot.webp"  alt="Github Copilot X Promo visual" credit="Github"></Media>
@@ -89,6 +92,7 @@ Currently, in a technical preview stage, Copilot is available on the Microsoft e
 Learn more about Copilot X: [Github](https://github.blog/2023-03-22-github-copilot-x-the-ai-powered-developer-experience/){:target="\_blank"}
 
 ### Summarizer
+
 The privacy-focused browser has released a new AI summary tool to their native search engine called Summarizer, providing a concise-to-the-point answer at the top of search results based entirely on web search results. They’ve trained their Large Language Model to process multiple sources across the web, resulting in a more accurate answer.
 
 A step in the right direction is maintaining attribution of information, where the information is sourced and how to access them. Brave does this by listing source links under each response. Similar to Bing’s approach, this ensures that the content generated can be reviewed and assessed by the user to determine the trustworthiness of the sources.
@@ -109,7 +113,8 @@ Read more about [Brave](https://brave.com/ai-summarizer/){:target="\_blank"}'s n
 
 Try their search engine - It's private! [Brave Search](https://search.brave.com){:target="\_blank"}
 
-### Spotify 
+### Spotify
+
 Spotify is working on something a bit different, giving premium users their own personal DJ based on their listening habits using historical data from the user. Much like the end-of-year analytics of the most played or top artists, this new feature being introduced will take all that information and create your own DJ personalized to you, removing the need to search for songs, find songs, or listen to playlists.
 
 Powered by OpenAI and a voice model from Sonantic used for the DJ’s voice, trained to act and respond as a typical DJ would, their AI model has different categories such as genre, artist, or mood, being much like a personalized DJ set based on all the music you like.
@@ -125,7 +130,7 @@ A few concerns with this are the model being trained on specific genres of music
 Learn More: [Spotify](https://newsroom.spotify.com/2023-02-22/spotify-debuts-a-new-ai-dj-right-in-your-pocket/){:target="\_blank"}
 
 ### Next
+
 From what’s happening across the various industries, it’s clear that artificial intelligence will continue to be incorporated into almost everything used in our daily lives. How we interact with websites through live chats, in the future, will be entirely run by models like ChatGPT, with less of a need for human interaction to answer simple queries.
 
 A popular area where I personally think ChatGPT and other large language models would work well is virtual assistants. Apple’s Siri has been around for years and is behind a lot of its competitors. Apple will plan on either developing its own solution or something influenced by ChatGPT and vastly improving Siri beyond the point of Google, Amazon, and Samsung combined. Apple is known to be a slow adapter when it comes to new technology or features until it’s refined and perfected. If their model were to outperform ChatGPT, then they’ll likely take the lead in OpenAI’s direction and the future of artificial intelligence.
-
