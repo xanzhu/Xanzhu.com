@@ -52,7 +52,7 @@ export default defineNuxtConfig({
   },
 
   i18n: {
-    strategy: "prefix_except_default",
+    strategy: "prefix",
     defaultLocale: "en",
     lazy: true,
     langDir: "locales",
@@ -101,7 +101,6 @@ export default defineNuxtConfig({
 
   // Testing: Simple Sitemap
   sitemap: {
-    include: ["/blog/**", "/ko/blog/**", "/zh/blog/**"],
     sitemaps: false,
     trailingSlash: false,
     autoLastmod: true,
@@ -116,7 +115,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ["/", "/ko", "/zh"],
+      routes: ["/"],
     },
   },
 
