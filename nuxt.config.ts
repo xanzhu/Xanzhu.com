@@ -101,6 +101,7 @@ export default defineNuxtConfig({
 
   // Testing: Simple Sitemap
   sitemap: {
+    include: ["/blog/**", "/ko/blog/**", "/zh/blog/**"],
     sitemaps: false,
     trailingSlash: false,
     autoLastmod: true,
@@ -108,7 +109,7 @@ export default defineNuxtConfig({
 
     // i18n support?
     autoAlternativeLangPrefixes: undefined,
-    inferStaticPagesAsRoutes: false,
+    //inferStaticPagesAsRoutes: false,
   },
 
   // Nitro
