@@ -5,19 +5,7 @@ export default defineNuxtConfig({
     "@nuxt/image-edge",
     "@nuxtjs/color-mode",
     "nuxt-icon",
-    [
-      // Test 2: Sitemap
-      "nuxt-simple-sitemap",
-      {
-        xsl: false,
-        sitemaps: false,
-        trailingSlash: false,
-        autoLastmod: true,
-        alternatives: true,
-        discoverImages: true,
-        autoAlternativeLangPrefixes: undefined,
-      },
-    ],
+    "nuxt-simple-sitemap",
     "@unocss/nuxt",
     "@nuxtjs/web-vitals",
   ],
@@ -112,17 +100,16 @@ export default defineNuxtConfig({
     enabled: true,
   },
 
-  // // Testing: Simple Sitemap
-  // sitemap: {
-  //   sitemaps: false,
-  //   trailingSlash: false,
-  //   autoLastmod: true,
-  //   discoverImages: true,
+  // Testing: Simple Sitemap
+  sitemap: {
+    sitemaps: false,
+    trailingSlash: false,
+    autoLastmod: true,
+    discoverImages: true,
 
-  //   // i18n support?
-  //   autoAlternativeLangPrefixes: undefined,
-  //   //inferStaticPagesAsRoutes: false,
-  // },
+    // i18n support?
+    autoAlternativeLangPrefixes: undefined,
+  },
 
   // Nitro
   nitro: {
@@ -130,7 +117,7 @@ export default defineNuxtConfig({
       crawlLinks: true,
       routes: ["/", "/ko", "/zh"],
     },
-    // Route Rules
+    // Testing: Route Rules
     routeRules: {
       "/blog/**": {
         sitemap: { changefreq: "daily", priority: 0.3 },
