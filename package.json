@@ -16,6 +16,7 @@
     "@nuxt/image-edge": "latest",
     "@nuxtjs/color-mode": "^3.2.0",
     "@nuxtjs/i18n": "8.0.0-beta.10",
+    "@nuxtjs/web-vitals": "^0.2.6",
     "@unocss/nuxt": "^0.52.7",
     "@unocss/preset-typography": "^0.52.7",
     "@unocss/preset-uno": "^0.52.7",

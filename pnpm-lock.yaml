@@ -16,6 +16,9 @@ devDependencies:
   '@nuxtjs/i18n':
     specifier: 8.0.0-beta.10
     version: 8.0.0-beta.10(vue@3.3.4)
+  '@nuxtjs/web-vitals':
+    specifier: ^0.2.6
+    version: 0.2.6
   '@unocss/nuxt':
     specifier: ^0.52.7
     version: 0.52.7(postcss@8.4.24)(vite@4.3.9)(webpack@5.85.0)
@@ -1397,6 +1400,19 @@ packages:
       - vue
       - vue-i18n-bridge
       - vue-router
+    dev: true
+
+  /@nuxtjs/web-vitals@0.2.6:
+    resolution: {integrity: sha512-hoLo/Lcl63rDEm1gR/VN3sSG7mO4UKzJF69lyKjm+cSWtnSinSQo4n/8V0qmDqVgC3GPfvC1X/IqZx5FaRSS/g==}
+    dependencies:
+      '@nuxt/kit': 3.5.2
+      defu: 6.1.2
+      pathe: 1.1.1
+      ufo: 1.1.2
+      web-vitals: 3.3.2
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
     dev: true
 
   /@pkgjs/parseargs@0.11.0:
@@ -8432,6 +8448,10 @@ packages:
   /web-streams-polyfill@3.2.1:
     resolution: {integrity: sha512-e0MO3wdXWKrLbL0DgGnUV7WHVuw9OUvL4hjgnPkIeEvESk74gAITi5G606JtZPp39cd8HA9VQzCIvA49LpPN5Q==}
     engines: {node: '>= 8'}
+    dev: true
+
+  /web-vitals@3.3.2:
+    resolution: {integrity: sha512-qRkpmSeKfEWAzNhtX541xA8gCJ+pqCqBmUlDVkVDSCSYUvfvNqF+k9g8I+uyreRcDBdfiJrd0/aLbTy5ydo49Q==}
     dev: true
 
   /webidl-conversions@3.0.1:
