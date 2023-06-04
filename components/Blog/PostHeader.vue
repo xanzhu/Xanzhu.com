@@ -42,10 +42,8 @@
       </div>
       <div class="flex flex-col space-y-2">
         <div class="flex flex-row items-center space-x-2 op90">
-          <!-- Add Author font matter -->
           <p class="text-sm font-medium m0">Xanzhu</p>
           <p class="dark:text-brand-dark text-brand-light font-black m0">/</p>
-          <!-- Shift updated here -->
           <Date
             v-if="post.date"
             :date="post.date"
@@ -57,7 +55,7 @@
       </div>
     </div>
     <div v-if="post.img" class="relative col-span-1 grow-0 h-auto w-auto px-4 sm:px0 mb-5">
-      <div class="h-auto w-auto">
+      <div class="h-auto w-auto aspect-16/9">
         <NuxtImg
           crossorigin="anonymous"
           itemprop="image"
@@ -77,15 +75,6 @@
           {{ $t("Blog.source") + ": " + post.source }}
         </div>
       </div>
-      <!-- <NuxtImg
-      crossorigin="anonymous"
-      itemprop="image"
-      :src="post.img"
-      :alt="post.alt"
-      :title="post.alt"
-      loading="lazy"
-      class="h-full w-full rounded-sm object-cover"
-      /> -->
     </div>
   </header>
 </template>
