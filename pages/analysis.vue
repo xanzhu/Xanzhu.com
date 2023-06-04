@@ -24,8 +24,7 @@ useSeoMeta({
   twitterDescription: desc,
   twitterTitle: title,
   twitterImage: image,
-  ogUrl: `https://xanzhu.com${locale.value === "en" ? "" : '/' + locale.value
-    }/analysis`,
+  ogUrl: `https://xanzhu.com${locale.value === "en" ? "" : `/${locale.value}`}/analysis`,
   ogImage: image,
   // Disable index while under development
   robots: "noindex"

@@ -1,12 +1,13 @@
 <template>
-  <main class="mx-auto space-y-10 sm:space-y-20 dark:text-white text-black sm:mb-10">
-    <div class="sm:(mx-8 mt-15) xl:ml-30 mx-4 mt-5 flex flex-col space-y-2 lg:mx-10">
+  <main class="mx-auto space-y-10 dark:text-white text-black sm:mb-10">
+    <div class="sm:(mx-10 mt-15) xl:ml-15 mx-4 mt-5 flex flex-col space-y-2 lg:mx-10">
       <h1 class="text-3xl font-semibold sm:text-5xl mb0">{{ $t("Blog.title") }}</h1>
       <p class="text-md sm:(text-xl) break-words font-thin dark:text-gray-300 sm:w2/3">
         {{ $t("Blog.description") }}
       </p>
     </div>
-    <BlogFeature />
+    <!-- TODO: Fix cls shift -->
+    <!-- <BlogFeature /> -->
     <section
       class="md:(grid-cols-2 mx-6) lg:(grid-cols-3) sm:(py-15 px-10) dark:bg-black grid grid-cols-1 gap-10 rounded-sm p-4">
       <div v-if="articles" v-for="(article, $index) in articles" :key="`fe-${$index}`">
@@ -14,10 +15,9 @@
           <div class="h-auto w-auto">
             <NuxtImg crossorigin="anonymous" v-if="article.img" :alt="article.alt" :title="article.alt" loading="lazy"
               height="369" width="577"
-              class="rounded-sm object-cover h-full w-full transform md:(transition duration-400 ease-in-out) md:group-hover:scale-102"
+              class="rounded-md object-cover h-full w-full transform md:(transition duration-400 ease-in-out) md:group-hover:scale-102"
               :src="article.img" />
           </div>
-
           <div class="dark:(bg-black text-white) h-auto rounded-b-md bg-white dark:text-white text-black">
             <div class="space-x-2">
               <Date v-if="article.date" :date="article.date"
@@ -43,7 +43,7 @@ const { data: articles } = await useAsyncData("articles", async () => {
   const query = locale.value !== "en" ? `${locale.value}/blog` : "/blog";
   return await queryContent(query)
     .sort({ date: -1 })
-    .where({ feature: { $ne: true } })
+    // .where({ feature: { $ne: true } })
     // Reduce Payload - Only below options are included
     .only(['title', 'description', 'img', 'date', 'tag', '_path', 'alt'])
     .find();
@@ -61,8 +61,7 @@ useSeoMeta({
   twitterTitle: title,
   twitterDescription: desc,
   twitterImage: image,
-  ogUrl: `https://xanzhu.com${locale.value === "en" ? "" : '/' + locale.value
-    }/blog`,
+  ogUrl: `https://xanzhu.com${locale.value === "en" ? "" : `/${locale.value}`}/blog`,
   ogImage: image,
 });
 </script>

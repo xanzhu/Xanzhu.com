@@ -56,8 +56,7 @@ useSeoMeta({
   description: description,
   ogDescription: description,
   ogTitle: title,
-  ogUrl: `https://xanzhu.com${locale.value === "en" ? "" : '/' + locale.value
-    }/resources`,
+  ogUrl: `https://xanzhu.com${locale.value === "en" ? "" : `/${locale.value}`}/resources`,
   ogImage: image,
   twitterDescription: description,
   twitterTitle: title,

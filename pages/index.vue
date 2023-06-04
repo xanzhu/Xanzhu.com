@@ -34,8 +34,7 @@ useSeoMeta({
   ogDescription: desc,
   twitterTitle: title,
   twitterDescription: desc,
-  ogUrl: `https://xanzhu.com${locale.value === "en" ? "" : '/' + locale.value
-    }`,
+  ogUrl: `https://xanzhu.com${locale.value === "en" ? "" : `/${locale.value}`}`,
   ogImage: image,
 });
 </script>
