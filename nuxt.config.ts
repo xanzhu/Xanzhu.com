@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     "nuxt-icon",
     "nuxt-simple-sitemap",
     "@unocss/nuxt",
+    "@nuxtjs/web-vitals",
   ],
 
   colorMode: {
@@ -97,4 +98,42 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true,
   },
+
+  // Testing: Simple Sitemap
+  sitemap: {
+    sitemaps: false,
+    trailingSlash: false,
+    autoLastmod: true,
+    discoverImages: true,
+
+    // i18n support?
+    autoAlternativeLangPrefixes: undefined,
+    //inferStaticPagesAsRoutes: false,
+  },
+
+  // Nitro
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ["/", "/ko", "/zh"],
+    },
+    // Testing: Route Rules
+    routeRules: {
+      "/blog/**": {
+        sitemap: { changefreq: "daily", priority: 0.3 },
+        isr: 3000,
+      },
+      "/ko/blog/**": {
+        sitemap: { changefreq: "daily", priority: 0.3 },
+        isr: 3000,
+      },
+      "/zh/blog/**": {
+        sitemap: { changefreq: "daily", priority: 0.3 },
+        isr: 3000,
+      },
+    },
+  },
+
+  // Vercel Analytics
+  plugins: [{ src: "~/plugins/vercel.ts", mode: "client" }],
 });

@@ -30,8 +30,13 @@ const { data: post } = await useAsyncData(path.replace(/\/$/, ""), async () => {
 // Returns error on 404
 if (!post.value) throw createError({ statusCode: 404 });
 
+// Runtime to get default url 
+const rC = useRuntimeConfig();
+const image = rC.public.siteUrl + (post.value?.ogLink || post.value?.img);
+
 const title = post.value?.title;
 const desc = post.value?.description;
+
 
 useSeoMeta({
   title: title,
@@ -40,9 +45,10 @@ useSeoMeta({
   ogDescription: desc,
   twitterTitle: title,
   twitterDescription: desc,
+  twitterImage: image,
   ogUrl: `https://xanzhu.com${path}`,
   ogType: "article",
-  ogImage: post.value?.ogLink || post.value?.media,
+  ogImage: image,
 });
 
 const { data } = await useAsyncData("prev-next", async () => {

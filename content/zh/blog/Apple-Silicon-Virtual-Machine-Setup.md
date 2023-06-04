@@ -7,7 +7,6 @@ description: "了解如何使用 Parallels 或 UTM 在 Apple Silicon Mac 上设�
 alt: "Apple Silicon 芯片组 M1"
 toc: true
 ogLink: "https://source.unsplash.com/mP7aPSUm7aE"
-
 ---
 
 如果您是一名开发人员或技术爱好者，您可能需要为项目或个人使用使用多个操作系统。 在本文中，我们将介绍使用 Parallels、付费虚拟化软件和名为 UTM 的免费开源解决方案设置流行操作系统（例如 Windows 和 Ubuntu）的过程。 无论您是初学者还是经验丰富的用户，本指南都将教您如何在 Apple Silicon Mac 上快速轻松地安装和设置每个环境。
@@ -37,10 +36,10 @@ ogLink: "https://source.unsplash.com/mP7aPSUm7aE"
 从 2022 年开始，Windows 将在原生 ARM 版本上运行，只需单击 Windows 图标并点击安装即可。 Parallels 将为您完成剩下的工作。 安装过程将从下载操作系统开始，然后您将被引导到一个虚拟机中，您可以在其中开始根据自己的喜好进行调整和微调。
 
 1. 选择 Windows 图标并选择继续
-2. 下载windows，需要一些时间
+2. 下载 windows，需要一些时间
 3. 下载完成后，虚拟机会自动启动。
 4. 运行后系统会提示你重启虚拟机完成“Parallels Tools”的安装，按重启即可。
-5. Windows 11现在安装好了，桌面会有快捷方式或者直接打开“Parallels Desktop”运行虚拟机。
+5. Windows 11 现在安装好了，桌面会有快捷方式或者直接打开“Parallels Desktop”运行虚拟机。
 
 之后，最好开始将 Windows 更新到最新版本以获得最佳和安全的体验。
 
@@ -48,15 +47,15 @@ ogLink: "https://source.unsplash.com/mP7aPSUm7aE"
 
 Ubuntu 遵循相同的过程，只需单击 Ubuntu 图标并选择安装，这将下载应用程序并直接引导您进入虚拟机。 启动时，系统会要求您设置密码，然后您需要安装 Parallels Tools，这需要重启虚拟机。
 
-1. 选择Ubuntu图标，点击继续
-2. 下载Ubuntu，这需要一些时间。
+1. 选择 Ubuntu 图标，点击继续
+2. 下载 Ubuntu，这需要一些时间。
 
 <Media source="/images/blog/VM/u-download.webp" alt="Parallels ubuntu 安装向导"></Media>
 
 3. 下载完成后，虚拟机会自动启动
 4. 系统会提示您创建登录密码
 5. 登录后会要求重启虚拟机安装“Parallels Tools”
-6. 虚拟机重启后，重新登录，开始配置新的Ubuntu虚拟机。
+6. 虚拟机重启后，重新登录，开始配置新的 Ubuntu 虚拟机。
 
 It's always good practice to check for updates and ensure you're running the latest versions. This can help with performance and security issues.
 
@@ -72,7 +71,7 @@ It's always good practice to check for updates and ensure you're running the lat
 <Media source="/images/blog/VM/config.webp" alt="Parallels 虚拟机配置面板"></Media>
 
 3. 要添加另一个虚拟机，请按加号图标并完成上述安装过程
-4. 删除虚拟机 右键点击虚拟机，选择_Remove(Device Name)_，Device name就是虚拟机的名字。
+4. 删除虚拟机 右键点击虚拟机，选择*Remove(Device Name)*，Device name 就是虚拟机的名字。
 5. 配置虚拟机 右键单击它并选择配置，在这里您可以设置和调整您可能需要的设置。 例如名称、外部设备、打印机、互联网连接等。
 
 ## UTM
@@ -82,8 +81,8 @@ It's always good practice to check for updates and ensure you're running the lat
 UTM 是一款免费工具，其功能与平行线相同，但您需要负责定制。
 性能将不一致，需要根据您的系统进行调整。 如果您需要一个响应迅速的虚拟机而不用大惊小怪地配置软件的各个方面，这可能不是一个好的选择。
 
-1. 下载[UTM](https://mac.getutm.app/){:target="\_blank"} 有App store版本但是这个是付费的，选择下载
-2. 打开UTM，选择“创建新的虚拟机”
+1. 下载[UTM](https://mac.getutm.app/){:target="\_blank"} 有 App store 版本但是这个是付费的，选择下载
+2. 打开 UTM，选择“创建新的虚拟机”
 3. 选择“虚拟化”
 
 ### Windows 11
@@ -100,8 +99,8 @@ Windows 可以通过多种不同的方式安装。
 
 7. 按继续
 8. 选择 RAM 的大小，一个好的规则是使用系统的一半，即：8GB 使用 4GB
-9. 选择存储大小：建议至少设置35GB或保持默认选项
-10. 共享目录，在这里你可以指定一个文件夹在虚拟机和你的Mac之间工作。 这可以稍后设置。
+9. 选择存储大小：建议至少设置 35GB 或保持默认选项
+10. 共享目录，在这里你可以指定一个文件夹在虚拟机和你的 Mac 之间工作。 这可以稍后设置。
 11. Summary 页面将显示所有已配置的设置，并允许您为虚拟机设置名称。
 12. 按播放键第一次运行虚拟机，加载需要一些时间。
 
@@ -117,7 +116,7 @@ Now installing windows
 
 4. 这将重启虚拟机，继续完成设置过程，点击网络部分后，选择“我没有互联网”
 5. 继续执行设置名称、密码和安全问题的步骤。
-6. 开机进入Windows 11后，打开文件资源管理器，选择光驱，双击安装spice-guest-tools
+6. 开机进入 Windows 11 后，打开文件资源管理器，选择光驱，双击安装 spice-guest-tools
 
 <Media source="/images/blog/VM/u-spice.webp" alt="文件资源管理器 Windows 11"></Media>
 
@@ -131,22 +130,22 @@ Now installing windows
 
 在本指南中安装 Ubuntu 可能是一个漫长的过程，我们需要先安装服务器版本，然后再转到桌面版本。
 
-1. 打开UTM，选择“创建新的虚拟机”
+1. 打开 UTM，选择“创建新的虚拟机”
 2. 选择“虚拟化”
-3. 选择Linux
-4. 下载[Linux](https://ubuntu.com/download/server/arm){:target="\_blank"}，打开UTM，按浏览
+3. 选择 Linux
+4. 下载[Linux](https://ubuntu.com/download/server/arm){:target="\_blank"}，打开 UTM，按浏览
 5. 按浏览并选择下载的 Ubuntu Server ISO 文件
 6. 选择继续
 7. 选择要使用的内存量 (RAM)
 8. 选择存储量保留为自动管理的默认值。
 9. 共享目录，添加操作系统之间的共享文件夹。
-10. Summary会显示所有的配置选项
+10. Summary 会显示所有的配置选项
 11. 按播放键运行虚拟机
 12. 选择第一个选项“Try or install Ubuntu”，加载需要一些时间。
 13. 选择您的语言并按 ENTER
 14. 选择键盘布局并按 ENTER
 15. 按 ENTER 选择安装类型
-16. 网络连接按ENTER
+16. 网络连接按 ENTER
 17. 配置代理按 ENTER
 18. 配置 Ubuntu 存档镜像按 ENTER
 19. 引导存储。 按向下箭头直到突出显示完成，然后按 ENTER

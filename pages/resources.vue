@@ -5,8 +5,8 @@
         {{ $t("Resources.heading") }}
       </h1>
       <div
-        class="hidden md:flex rounded-full h-20 w-20 text-white items-center justify-center b-12 b-rounded-full b-dashed"
-        :class="{ 'b-brand-light': phishing, 'b-brand-dark': malware, 'dark:b-white b-black': a11y }" />
+        class="hidden md:(flex rounded-full h-20 w-20 text-white items-center justify-center b-12 b-rounded-full b-dashed)"
+        :class="{ 'md:b-brand-light': phishing, 'md:b-brand-dark': malware, 'md:dark:b-white md:b-black': a11y }" />
     </div>
     <div
       class="flex flex-col space-y-5 sm:flex-row sm:space-x-5 sm:space-y-0 font-medium children:(dark:text-white text-black cursor-pointer b-1 b-solid rounded-sm px6 py2 font-bold)">
@@ -49,16 +49,17 @@ function toggle(option: 'phishing' | 'malware' | 'a11y') {
 // Seo
 const title = t("Resources.meta.title");
 const description = t("Resources.meta.description");
+const image = 'https://source.unsplash.com/dCuA11z7xHg'
 
 useSeoMeta({
   title: title,
   description: description,
   ogDescription: description,
   ogTitle: title,
-  ogUrl: `https://xanzhu.com${locale.value === "en" ? "" : '/' + locale.value
-    }/resources`,
-  ogImage: "https://source.unsplash.com/dCuA11z7xHg",
+  ogUrl: `https://xanzhu.com${locale.value === "en" ? "" : `/${locale.value}`}/resources`,
+  ogImage: image,
   twitterDescription: description,
   twitterTitle: title,
+  twitterImage: image
 });
 </script>

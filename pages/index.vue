@@ -24,16 +24,17 @@ const { t, locale } = useI18n();
 
 const title = t("Home.Seo.title");
 const desc = t("Home.Seo.desc");
+const image = 'https://source.unsplash.com/TCbn80k-lrg';
 
 useSeoMeta({
   title: title,
   ogTitle: title,
   description: desc,
+  twitterImage: image,
   ogDescription: desc,
   twitterTitle: title,
   twitterDescription: desc,
-  ogUrl: `https://xanzhu.com${locale.value === "en" ? "" : '/' + locale.value
-    }`,
-  ogImage: "https://source.unsplash.com/lyOCWxa28Zk",
+  ogUrl: `https://xanzhu.com${locale.value === "en" ? "" : `/${locale.value}`}`,
+  ogImage: image,
 });
 </script>
