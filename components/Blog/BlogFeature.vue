@@ -1,14 +1,14 @@
 <template>
   <div
     class="flex flex-col dark:(text-white bg-black) space-y-5 mx-auto items-center b-1 b-solid rounded-md dark:b-dark-700 b-gray-300 sm:mb-10">
-    <h2 class="text-2xl sm:py-10">{{ $t('Home.release') }} 😊</h2>
+    <h2 class="text-2xl mt-12 sm:(py-10 mt-0)">{{ $t('Home.release') }}</h2>
     <div v-if="features" v-for="feature in features" :key="feature.title"
       class="sm:(mx-5 p-0) lg:mx-20 p-4 justify-center mx-auto">
       <NuxtLink :to="feature._path"
         class="text-black dark:(text-white) no-underline group flex flex-col lg:flex-row lg:items-center mx-auto space-y-3 md:mb-10 md:py-9 lg:(p-0 space-x-8)">
-        <div class="h-auto w-auto max-h-xl max-w-2xl">
+        <div class="h-auto w-auto max-h-xl max-w-xl">
           <NuxtImg crossorigin="anonymous" v-if="feature.img" :src="feature.img" :alt="feature.alt" :title="feature.alt"
-            class="h-full w-full max-w-xl rounded-md object-cover md:group-hover:scale-102 md:(transform transition duration-400 ease-in-out) b-1 b-solid dark:b-dark-700 b-gray-300"
+            class="h-full w-full rounded-md object-cover md:group-hover:scale-102 md:(transform transition duration-400 ease-in-out) b-1 b-solid dark:b-dark-700 b-gray-300"
             height="269" width="377" />
           <NuxtImg crossorigin="anonymous" v-else :alt="feature.alt" src="https://source.unsplash.com/bHOKatJHjII/577x369"
             class="md:max-w-2xl" height="369" width="577" />
