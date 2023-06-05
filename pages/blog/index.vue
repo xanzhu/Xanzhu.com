@@ -15,7 +15,7 @@
           <div class="h-auto w-auto">
             <NuxtImg crossorigin="anonymous" v-if="article.img" :alt="article.alt" :title="article.alt" loading="lazy"
               height="369" width="577"
-              class="rounded-md object-cover h-full w-full transform md:(transition duration-400 ease-in-out) md:group-hover:scale-102"
+              class="rounded-md object-cover h-full w-full transform md:(transition duration-400 ease-in-out) md:group-hover:scale-102 b-1 b-solid dark:b-dark-700 b-light-700"
               :src="article.img" />
           </div>
           <div class="dark:(bg-black text-white) h-auto rounded-b-md bg-white dark:text-white text-black">
