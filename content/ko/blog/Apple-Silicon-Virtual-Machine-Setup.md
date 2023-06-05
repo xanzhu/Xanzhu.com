@@ -6,6 +6,7 @@ img: "/images/blog/VM/Apple.webp"
 description: "Parallels 또는 UTM을 사용하여 Apple Silicon Mac에서 가상 머신을 설정하는 방법을 배웁니다. 가이드에서는 첫 번째 가상 머신의 설치, 구성 및 실행에 대해 다룹니다."
 alt: "Apple 실리콘 칩셋 M1"
 toc: true
+feature: true
 ogLink: "https://source.unsplash.com/mP7aPSUm7aE"
 ---
 
