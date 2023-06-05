@@ -74,6 +74,13 @@ const [prev, next] = data.value || [];
   font-weight: 200;
 }
 
+.prose h2,
+h3,
+h4,
+h5 {
+  scroll-margin-top: 65px;
+}
+
 .prose h2 a,
 .prose h3 a,
 .prose h4 a,
