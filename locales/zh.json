@@ -8,7 +8,9 @@
     },
     "a11y": {
       "mouseicon": "向下滚动"
-    }
+    },
+    "release": "新版本",
+    "more": "探索更多文章"
   },
   "Links": {
     "resources": "资源",

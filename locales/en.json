@@ -8,7 +8,9 @@
     },
     "a11y": {
       "mouseicon": "Scroll down"
-    }
+    },
+    "release": "New Releases",
+    "more": "Explore More Articles"
   },
   "Links": {
     "resources": "Resources",

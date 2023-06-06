@@ -14,6 +14,7 @@
         </div>
       </div>
     </div>
+    <BlogFeature class="min-h-screen" />
     <LazyHomePagesCard class="min-h-screen" />
     <LazyHomeStatsCard class="min-h-screen" />
     <LazyHomeSocialsCard />

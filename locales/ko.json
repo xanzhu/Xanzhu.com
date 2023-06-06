@@ -8,7 +8,9 @@
     },
     "a11y": {
       "mouseicon": "아래로 스크롤"
-    }
+    },
+    "release": "새로운 출시",
+    "more": "더 많은 기사 살펴보기"
   },
   "Links": {
     "resources": "자원",

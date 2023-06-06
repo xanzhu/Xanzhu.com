@@ -108,14 +108,13 @@ export default defineNuxtConfig({
 
     // i18n support?
     autoAlternativeLangPrefixes: undefined,
-    //inferStaticPagesAsRoutes: false,
   },
 
   // Nitro
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ["/", "/ko", "/zh"],
+      routes: ["/", "/ko", "/zh", "sitemap.xml"],
     },
     // Testing: Route Rules
     routeRules: {

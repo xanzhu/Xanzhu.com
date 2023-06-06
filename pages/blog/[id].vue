@@ -74,6 +74,13 @@ const [prev, next] = data.value || [];
   font-weight: 200;
 }
 
+.prose h2,
+h3,
+h4,
+h5 {
+  scroll-margin-top: 65px;
+}
+
 .prose h2 a,
 .prose h3 a,
 .prose h4 a,
@@ -92,13 +99,14 @@ const [prev, next] = data.value || [];
 }
 
 .prose a[href^="https"] {
-  font-weight: normal;
-  text-decoration: 2px underline;
-  text-underline-offset: 2px;
+  font-weight: 500;
+  color: #001EFA;
+  text-decoration: none;
 }
 
 .prose a:hover {
-  text-decoration-color: #001EFA;
+  text-decoration: 1px underline;
+  text-underline-offset: 3px;
 }
 
 
@@ -109,8 +117,14 @@ const [prev, next] = data.value || [];
     border: 1px solid #333333;
   }
 
+  .dark .prose a[href^="https"] {
+    color: #ff0000;
+    text-decoration: none;
+  }
+
   .dark .prose a:hover {
-    text-decoration-color: #ff0000;
+    text-decoration: 1px underline;
+    text-underline-offset: 3px;
   }
 }
 </style>
