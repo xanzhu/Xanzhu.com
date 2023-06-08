@@ -64,10 +64,6 @@ export default defineNuxtConfig({
       redirectOn: "root",
       alwaysRedirect: true,
     },
-    vueI18n: {
-      legacy: false,
-      fallbackLocale: ["en", "ko", "zh"],
-    },
     locales: [
       {
         code: "en",
