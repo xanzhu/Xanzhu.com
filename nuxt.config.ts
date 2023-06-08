@@ -91,8 +91,9 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
+      siteUrl: "https://xanzhu.com" || process.env.NUXT_PUBLIC_SITE_URL,
       i18n: {
-        baseUrl: "https://xanzhu.com",
+        baseUrl: "https://xanzhu.com" || process.env.NUXT_PUBLIC_I18N_BASE_URL,
       },
     },
   },
