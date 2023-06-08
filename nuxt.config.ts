@@ -2,7 +2,7 @@ export default defineNuxtConfig({
   modules: [
     "@nuxtjs/i18n",
     "@nuxt/content",
-    "@nuxt/image-edge",
+    "@nuxt/image",
     "@nuxtjs/color-mode",
     "nuxt-icon",
     "nuxt-simple-sitemap",
@@ -115,7 +115,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ["/", "/ko", "/zh", "sitemap.xml"],
+      routes: ["/", "/ko", "/zh"],
     },
     // Testing: Route Rules
     routeRules: {
