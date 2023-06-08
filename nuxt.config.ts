@@ -2,7 +2,7 @@ export default defineNuxtConfig({
   modules: [
     "@nuxtjs/i18n",
     "@nuxt/content",
-    "@nuxt/image-edge",
+    "@nuxt/image",
     "@nuxtjs/color-mode",
     "nuxt-icon",
     "nuxt-simple-sitemap",
