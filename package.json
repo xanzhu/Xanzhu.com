@@ -11,20 +11,20 @@
     "postinstall": "nuxi prepare"
   },
   "devDependencies": {
-    "@nuxt/content": "^2.6.0",
+    "@nuxt/content": "^2.7.0",
     "@nuxt/devtools": "^0.5.5",
     "@nuxt/image": "rc",
     "@nuxtjs/color-mode": "^3.2.0",
-    "@nuxtjs/i18n": "8.0.0-beta.12",
+    "@nuxtjs/i18n": "8.0.0-beta.10",
     "@nuxtjs/web-vitals": "^0.2.6",
-    "@unocss/nuxt": "^0.53.0",
-    "@unocss/preset-typography": "^0.53.0",
-    "@unocss/preset-uno": "^0.53.0",
-    "@unocss/preset-web-fonts": "^0.53.0",
-    "@unocss/transformer-variant-group": "^0.53.0",
+    "@unocss/nuxt": "^0.53.1",
+    "@unocss/preset-typography": "^0.53.1",
+    "@unocss/preset-uno": "^0.53.1",
+    "@unocss/preset-web-fonts": "^0.53.1",
+    "@unocss/transformer-variant-group": "^0.53.1",
     "@vercel/analytics": "^1.0.1",
-    "nuxt": "^3.5.2",
+    "nuxt": "^3.5.3",
     "nuxt-icon": "^0.4.1",
-    "nuxt-simple-sitemap": "^2.6.1"
+    "nuxt-simple-sitemap": "^2.6.2"
   }
 }

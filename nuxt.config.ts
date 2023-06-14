@@ -57,13 +57,13 @@ export default defineNuxtConfig({
     defaultLocale: "en",
     lazy: true,
     langDir: "i18n",
-    vueI18n: "./i18n.config.ts",
-    // experimental: {
-    //   jsTsFormatResource: true,
-    // },
+    vueI18n: {
+      legacy: false,
+      fallbackLocale: ["en", "ko", "zh"],
+    },
     detectBrowserLanguage: {
       useCookie: true,
-      cookieKey: "xanzhu-i18n-v6",
+      cookieKey: "xanzhu-i18n-v7",
       redirectOn: "root",
       // alwaysRedirect: true,
     },
@@ -92,9 +92,6 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       siteUrl: "https://xanzhu.com" || process.env.NUXT_PUBLIC_SITE_URL,
-      i18n: {
-        baseUrl: "https://xanzhu.com" || process.env.NUXT_PUBLIC_I18N_BASE_URL,
-      },
     },
   },
 
