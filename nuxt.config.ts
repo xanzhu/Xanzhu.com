@@ -57,15 +57,14 @@ export default defineNuxtConfig({
     defaultLocale: "en",
     lazy: true,
     langDir: "i18n",
-    vueI18n: {
-      legacy: false,
-      fallbackLocale: ["en", "ko", "zh"],
-    },
+    // vueI18n: {
+    //   legacy: false,
+    //   fallbackLocale: ["en", "ko", "zh"],
+    // },
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: "xanzhu-i18n-v7",
       redirectOn: "root",
-      // alwaysRedirect: true,
     },
     locales: [
       {
