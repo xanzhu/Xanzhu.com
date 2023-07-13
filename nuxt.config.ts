@@ -91,20 +91,16 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-    autoAlternativeLangPrefixes: true,
+    autoAlternativeLangPrefixes: undefined,
     strictNuxtContentPaths: true,
+    autoLastmod: false,
     xslColumns: [
       { label: "URL", width: "50%" },
       { label: "Last Modified", select: "sitemap:lastmod", width: "50%" },
     ],
     xslTips: false,
+    credits: false,
   },
-
-  // runtimeConfig: {
-  //   public: {
-  //     siteUrl: "https://xanzhu.com" || process.env.NUXT_PUBLIC_SITE_URL,
-  //   },
-  // },
 
   routeRules: {
     "/blog/**": {
