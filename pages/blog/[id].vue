@@ -22,33 +22,29 @@
 const { path } = useRoute();
 const { locale } = useI18n();
 
-const { data: post } = await useAsyncData(path.replace(/\/$/, ""), async () => {
-  const query = locale.value !== "en" ? `${locale.value}/blog` : "/blog";
-  return await queryContent(query).where({ _path: path }).findOne();
+const { data: post } = await useAsyncData(path.replace(/\/$/, "/"), async () => {
+  return await queryContent().where({ _path: path })
+    .findOne();
 });
 
 // Returns error on 404
 if (!post.value) throw createError({ statusCode: 404 });
 
-// Runtime to get default url 
-const rC = useRuntimeConfig();
-const image = rC.public.siteUrl + (post.value?.ogLink || post.value?.img);
-
-const title = post.value?.title;
-const desc = post.value?.description;
+const seoTitle = post.value?.title;
+const seoDesc = post.value?.description;
+const seoImage = post.value?.img;
 
 
 useSeoMeta({
-  title: title,
-  description: desc,
-  ogTitle: title,
-  ogDescription: desc,
-  twitterTitle: title,
-  twitterDescription: desc,
-  twitterImage: image,
-  ogUrl: `https://xanzhu.com${path}`,
+  title: seoTitle,
+  description: seoDesc,
+  ogTitle: seoTitle,
+  ogDescription: seoDesc,
+  twitterTitle: seoTitle,
+  twitterDescription: seoDesc,
+  twitterImage: seoImage,
   ogType: "article",
-  ogImage: image,
+  ogImage: seoImage,
 });
 
 const { data } = await useAsyncData("prev-next", async () => {

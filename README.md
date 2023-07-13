@@ -1,6 +1,6 @@
 # Xanzhu.com
 
-Xanzhu Security, helping improve privacy, accessiblity and security of 
-technology we use. Redefining what is the standard and going beyond. 
+Xanzhu Security, helping improve privacy, accessiblity and security of
+technology we use. Redefining what is the standard and going beyond.
 
-Version: 0.5.4 (2023 Edition)
+Version: 0.6.0

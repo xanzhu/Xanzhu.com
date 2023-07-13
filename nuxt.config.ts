@@ -1,27 +1,26 @@
 export default defineNuxtConfig({
+  devtools: { enabled: true },
   modules: [
     "@nuxtjs/i18n",
     "@nuxt/content",
     "@nuxt/image",
-    "@nuxtjs/color-mode",
-    "nuxt-icon",
-    "nuxt-simple-sitemap",
     "@unocss/nuxt",
-    "@nuxtjs/web-vitals",
+    "nuxt-simple-sitemap",
+    "@nuxtjs/color-mode",
+
+    // Deprecated
+    "nuxt-icon",
+
+    // Production only
+    // "@nuxtjs/web-vitals",
   ],
 
   colorMode: {
     classSuffix: "",
     preference: "dark",
   },
-
   app: {
     head: {
-      meta: [
-        { name: "format-detection", content: "telephone=no" },
-        { name: "twitter:site", content: "@xanzhu1" },
-        { name: "twitter:card", content: "summary_large_image" },
-      ],
       link: [
         {
           rel: "mask-icon",
@@ -52,83 +51,75 @@ export default defineNuxtConfig({
     },
   },
 
+  // i18n Beta 13
   i18n: {
-    strategy: "prefix_except_default",
+    vueI18n: "i18n.config.ts",
+    baseUrl: "https://xanzhu.com",
     defaultLocale: "en",
     lazy: true,
-    langDir: "i18n",
-    // vueI18n: {
-    //   legacy: false,
-    //   fallbackLocale: ["en", "ko", "zh"],
-    // },
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: "xanzhu-i18n-v7",
-      redirectOn: "root",
-    },
+    strategy: "prefix_except_default",
+    langDir: "locales",
     locales: [
       {
         code: "en",
-        iso: "en",
+        iso: "en-NZ",
         name: "English",
         file: "en.json",
       },
       {
         code: "ko",
-        iso: "ko",
+        iso: "ko-KR",
         name: "한국어",
         file: "ko.json",
       },
       {
         code: "zh",
-        iso: "zh",
+        iso: "zh-CN",
         name: "中文",
         file: "zh.json",
       },
     ],
-  },
-
-  runtimeConfig: {
-    public: {
-      siteUrl: "https://xanzhu.com" || process.env.NUXT_PUBLIC_SITE_URL,
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: "xanzhu-1",
+      redirectOn: "root",
+      alwaysRedirect: true,
     },
   },
 
-  devtools: {
-    enabled: true,
+  // Sitemap V3 Syntax
+  site: {
+    url: "https://xanzhu.com",
   },
 
-  // Testing: Simple Sitemap
   sitemap: {
-    sitemaps: false,
-    trailingSlash: false,
-    autoLastmod: true,
-    discoverImages: true,
-
-    // i18n support?
-    autoAlternativeLangPrefixes: undefined,
+    autoAlternativeLangPrefixes: true,
+    strictNuxtContentPaths: true,
+    xslColumns: [
+      { label: "URL", width: "50%" },
+      { label: "Last Modified", select: "sitemap:lastmod", width: "50%" },
+    ],
+    xslTips: false,
   },
 
-  // Nitro
-  nitro: {
-    prerender: {
-      crawlLinks: true,
-      routes: ["/", "/ko", "/zh"],
+  // runtimeConfig: {
+  //   public: {
+  //     siteUrl: "https://xanzhu.com" || process.env.NUXT_PUBLIC_SITE_URL,
+  //   },
+  // },
+
+  routeRules: {
+    "/blog/**": {
+      sitemap: { changefreq: "weekly", priority: 0.2 },
+      isr: 3000,
     },
-    // Testing: Route Rules
-    routeRules: {
-      "/blog/**": {
-        sitemap: { changefreq: "daily", priority: 0.3 },
-        isr: 3000,
-      },
-      "/ko/blog/**": {
-        sitemap: { changefreq: "daily", priority: 0.3 },
-        isr: 3000,
-      },
-      "/zh/blog/**": {
-        sitemap: { changefreq: "daily", priority: 0.3 },
-        isr: 3000,
-      },
+    "/ko/blog/**": {
+      sitemap: { changefreq: "weekly", priority: 0.2 },
+      isr: 3000,
+    },
+    "/zh/blog/**": {
+      sitemap: { changefreq: "weekly", priority: 0.2 },
+      isr: 3000,
     },
   },
 

@@ -3,7 +3,7 @@
     <div class="sm:(mx-10 mt-15) xl:ml-15 mx-4 mt-5 flex flex-col space-y-2 lg:mx-10">
       <h1 class="text-3xl font-semibold sm:text-5xl mb0">{{ $t("Blog.title") }}</h1>
       <p class="text-md sm:(text-xl) break-words font-thin dark:text-gray-300 sm:w2/3">
-        {{ $t("Blog.description") }}
+        {{ t("Blog.description") }}
       </p>
     </div>
     <!-- TODO: Fix cls shift -->
@@ -40,28 +40,31 @@
 const { t, locale } = useI18n();
 
 const { data: articles } = await useAsyncData("articles", async () => {
-  const query = locale.value !== "en" ? `${locale.value}/blog` : "/blog";
+  let query = locale.value !== "en" ? `${locale.value}/blog` : "/blog";
   return await queryContent(query)
     .sort({ date: -1 })
-    // .where({ feature: { $ne: true } })
-    // Reduce Payload - Only below options are included
     .only(['title', 'description', 'img', 'date', 'tag', '_path', 'alt'])
     .find();
 });
+;
+const seoImage = 'https://source.unsplash.com/x6YWgAN3SX8';
 
-const title = t("Blog.meta.title");
-const desc = t("Blog.meta.description");
-const image = 'https://source.unsplash.com/x6YWgAN3SX8';
+const seoTitle = computed(() => {
+  return t('Blog.meta.title');
+});
+
+const seoDesc = computed(() => {
+  return t('Blog.meta.description');
+});
 
 useSeoMeta({
-  title: title,
-  description: desc,
-  ogDescription: desc,
-  ogTitle: title,
-  twitterTitle: title,
-  twitterDescription: desc,
-  twitterImage: image,
-  ogUrl: `https://xanzhu.com${locale.value === "en" ? "" : `/${locale.value}`}/blog`,
-  ogImage: image,
+  title: seoTitle,
+  description: seoDesc,
+  ogDescription: seoDesc,
+  ogTitle: seoTitle,
+  twitterTitle: seoTitle,
+  twitterDescription: seoDesc,
+  twitterImage: seoImage,
+  ogImage: seoImage,
 });
 </script>

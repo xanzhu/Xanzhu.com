@@ -9,7 +9,7 @@
         <Date v-if="post.date && !post.updated" :date="post.date" itemprop="datePublished" class="md:hidden" />
         <BlogReadTime class="lt-sm:hidden items-center" :content="post" />
         <p v-if="post.updated" class="md:hidden flex items-center space-x-1">
-          <Icon name="material-symbols:update-rounded" class="h-3.5 w-3.5 dark:text-yellow-400" />
+          <span class="h-3.5 w-3.5 dark:text-yellow-400 i-tabler-clock-edit" />
           <Date :date="post.updated" itemprop="dateModified" class="dark:text-yellow-400 font-semibold" />
         </p>
       </div>
@@ -37,13 +37,15 @@
         <div v-if="post.source"
           class="dark:(text-light-200 opacity-70) text-dark-700 op90 absolute right-3 sm:right-2 px-1 py-1 text-xs lt-sm:(mr-2) tracking-wide">
           <p class="inline-block m0" />
-          {{ $t("Blog.source") + ": " + post.source }}
+          {{ t("Blog.source") + ": " + post.source }}
         </div>
       </div>
     </div>
   </header>
 </template>
 <script setup lang="ts">
+const { t } = useI18n();
+
 defineProps({
   post: {
     type: Object,
