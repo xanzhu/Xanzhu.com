@@ -7,12 +7,10 @@ export default defineNuxtConfig({
     "@unocss/nuxt",
     "nuxt-simple-sitemap",
     "@nuxtjs/color-mode",
-
     // Deprecated
     "nuxt-icon",
-
     // Production only
-    // "@nuxtjs/web-vitals",
+    "@nuxtjs/web-vitals",
   ],
 
   colorMode: {
@@ -74,7 +72,7 @@ export default defineNuxtConfig({
       },
       {
         code: "zh",
-        iso: "zh-CN",
+        iso: "zh",
         name: "中文",
         file: "zh.json",
       },
