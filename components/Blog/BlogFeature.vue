@@ -1,7 +1,7 @@
 <template>
   <div
     class="flex flex-col dark:(text-white bg-black) space-y-5 mx-auto items-center b-1 b-solid rounded-md dark:b-dark-700 b-gray-300 sm:mb-10">
-    <h2 class="text-2xl mt-12 sm:(py-10 mt-0)">{{ $t('Home.release') }}</h2>
+    <h2 class="text-2xl mt-12 sm:(py-10 mt-0)">{{ t('Home.release') }}</h2>
     <div v-if="features" v-for="feature in features" :key="feature.title"
       class="sm:(mx-5 p-0) lg:mx-20 p-4 justify-center mx-auto">
       <NuxtLink :to="feature._path"
@@ -34,20 +34,19 @@
     <div class="flex flex-row space-x-2 py-10">
       <NuxtLink :to="path('/blog')"
         class="px-8 py-2 dark:bg-white bg-black dark:text-black text-white hover:(dark:bg-brand-dark bg-brand-light) decoration-none rounded-md font-semibold">
-        {{ $t('Home.more') }}</NuxtLink>
+        {{ t('Home.more') }}</NuxtLink>
     </div>
-
   </div>
 </template>
 <script setup lang="ts">
-const { locale } = useI18n();
+const { locale, t } = useI18n();
 const path = useLocalePath();
 
 const { data: features } = await useAsyncData("feature", async () => {
-  const query = locale.value !== "en" ? `${locale.value}/blog` : "/blog";
-  return await queryContent(query)
+  let query = locale.value !== "en" ? `${locale.value}/blog` : "/blog";
+  return queryContent(query)
     .where({ feature: true })
-    .only(['title', 'description', 'img', 'date', 'tag', '_path', 'alt', 'locale'])
+    .only(['title', 'description', 'img', 'date', 'tag', '_path', 'alt'])
     .sort({ date: -1 })
     .limit(3)
     .find();

@@ -9,7 +9,7 @@
         <Date v-if="post.date && !post.updated" :date="post.date" itemprop="datePublished" class="md:hidden" />
         <BlogReadTime class="lt-sm:hidden items-center" :content="post" />
         <p v-if="post.updated" class="md:hidden flex items-center space-x-1">
-          <Icon name="material-symbols:update-rounded" class="h-3.5 w-3.5 dark:text-yellow-400" />
+          <span class="h-3.5 w-3.5 dark:text-yellow-400 i-tabler-clock-edit" />
           <Date :date="post.updated" itemprop="dateModified" class="dark:text-yellow-400 font-semibold" />
         </p>
       </div>
