@@ -32,11 +32,10 @@
   </div>
 </template>
 <script setup lang="ts">
-const { t, locale } = useI18n();
+const { t } = useI18n();
 
 // Default option
 const phishing = ref(true);
-
 const malware = ref(false);
 const a11y = ref(false);
 
@@ -47,19 +46,24 @@ function toggle(option: 'phishing' | 'malware' | 'a11y') {
 }
 
 // Seo
-const title = t("Resources.meta.title");
-const description = t("Resources.meta.description");
-const image = 'https://source.unsplash.com/dCuA11z7xHg'
+const seoImage = 'https://source.unsplash.com/dCuA11z7xHg'
+
+const seoTitle = computed(() => {
+  return t('Resources.meta.title');
+});
+
+const seoDesc = computed(() => {
+  return t('Resources.meta.description');
+});
 
 useSeoMeta({
-  title: title,
-  description: description,
-  ogDescription: description,
-  ogTitle: title,
-  ogUrl: `https://xanzhu.com${locale.value === "en" ? "" : `/${locale.value}`}/resources`,
-  ogImage: image,
-  twitterDescription: description,
-  twitterTitle: title,
-  twitterImage: image
+  title: seoTitle,
+  description: seoDesc,
+  ogDescription: seoDesc,
+  ogTitle: seoTitle,
+  ogImage: seoImage,
+  twitterImage: seoImage,
+  twitterDescription: seoDesc,
+  twitterTitle: seoTitle
 });
 </script>

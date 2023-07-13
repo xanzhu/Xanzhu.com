@@ -1,6 +1,6 @@
 {
   "private": true,
-  "version": "0.5.4",
+  "version": "0.6.0",
   "license": "MIT",
   "name": "xanzhu.com",
   "scripts": {
@@ -11,20 +11,20 @@
     "postinstall": "nuxi prepare"
   },
   "devDependencies": {
-    "@nuxt/content": "^2.6.0",
-    "@nuxt/devtools": "^0.5.5",
+    "@nuxt/content": "^2.7.0",
+    "@nuxt/devtools": "^0.6.7",
     "@nuxt/image": "rc",
-    "@nuxtjs/color-mode": "^3.2.0",
-    "@nuxtjs/i18n": "8.0.0-beta.10",
+    "@nuxtjs/color-mode": "^3.3.0",
+    "@nuxtjs/i18n": "8.0.0-beta.13",
     "@nuxtjs/web-vitals": "^0.2.6",
-    "@unocss/nuxt": "^0.53.0",
-    "@unocss/preset-typography": "^0.53.0",
-    "@unocss/preset-uno": "^0.53.0",
-    "@unocss/preset-web-fonts": "^0.53.0",
-    "@unocss/transformer-variant-group": "^0.53.0",
+    "@unocss/nuxt": "^0.53.5",
+    "@unocss/preset-typography": "^0.53.5",
+    "@unocss/preset-uno": "^0.53.5",
+    "@unocss/preset-web-fonts": "^0.53.5",
+    "@unocss/transformer-variant-group": "^0.53.5",
     "@vercel/analytics": "^1.0.1",
-    "nuxt": "^3.5.2",
-    "nuxt-icon": "^0.4.1",
-    "nuxt-simple-sitemap": "^2.6.1"
+    "nuxt": "^3.6.2",
+    "nuxt-icon": "^0.4.2",
+    "nuxt-simple-sitemap": "^3.0.9"
   }
 }

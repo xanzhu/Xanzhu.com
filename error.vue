@@ -1,46 +1,23 @@
 <template>
-  <Html class="bg-black text-white font-sans">
-  <div class="flex justify-center items-center h-screen">
-    <div v-if="error?.statusCode == 404" class="space-y-2">
-      <NuxtLink
-        class="text-brand-dark font-500 flex items-center p1 hover:(bg-brand-dark text-white ease-in duration-300) inline-flex rounded-sm ease-out duration-500 cursor-pointer"
-        @click="handleError">
-        <HomeArrowIcon class="transform rotate-180 h4 w4 mr1" />
-        {{ $t("Error.return") }}
-      </NuxtLink>
-      <h1 class="text-6xl font-700">{{ $t("Error.404.title") }}</h1>
-      <p class="text-light-600 text-xl">
-        {{ $t("Error.404.desc") }}
-      </p>
-      <div class="space-x-0.5 flex items-center op75">
-        <Icon name="material-symbols:error-outline" class="h4 w4" />
-        <p class="text-sm">{{ $t("Error.404.code") }}</p>
-      </div>
+  <client-only v-if="error?.statusCode == 404" class="bg-orange">
+    <html class="flex items-center justify-center bg-black font-sans text-white sm:h-screen m0">
+    <div class="flex flex-col items-center text-center">
+      <h1 class="font-700 m0 text-9xl">404</h1>
+      <h2 class="mt-10 font-normal">{{ t("Error.404.title") }}</h2>
+      <p class="text-lg">{{ t("Error.404.desc") }}</p>
+      <button class="py2 b-none cursor-pointer rounded-md px-6 text-sm font-bold" @click="handleError">
+        {{ t("Error.return") }}
+      </button>
     </div>
-    <div v-if="error?.statusCode == 500" class="space-y-3">
-      <NuxtLink class="text-brand-dark font-500 flex items-center p1 cursor-pointer" @click="handleError">
-        <HomeArrowIcon class="transform rotate-180 h4 w4 mr1" />{{ $t("Error.return") }}
-      </NuxtLink>
-      <h1 class="text-6xl font-700">{{ $t("Error.500.title") }}</h1>
-      <p class="text-light-600 text-xl">
-        {{ $t("Error.500.desc") }}
-      </p>
-      <div class="space-x-0.5 flex items-center op75">
-        <Icon name="material-symbols:error-outline" class="h4 w4" />
-        <p class="text-sm">{{ $t("Error.500.code") }}</p>
-      </div>
-    </div>
-  </div>
 
-  </Html>
+    </html>
+  </client-only>
 </template>
 <script setup lang="ts">
 defineProps({
   error: Object,
 });
-
-// Clear error
+const { t } = useI18n();
 const handleError = () => clearError({ redirect: localePath('/') });
-
 const localePath = useLocalePath();
 </script>
