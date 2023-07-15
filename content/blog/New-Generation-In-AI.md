@@ -45,7 +45,7 @@ Google recently opened up Bard for early access, and it's fast at responding, bu
 
 Currently available in the United States and the United Kingdom through early access, no date for a public release has been announced. Google's concept for Bard is to provide a complement to searching the web. The model is likely to be similar to Bing, searching and responding with exact results. Bard in other software mentioned below will be slightly more advanced and specific to the software.
 
-<Media source="/images/blog/Gen/gbp.gif"  alt="Bard GIF Prompt" credit="Google"></Media>
+<Media source="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/AI_features_feb6.gif "  alt="Bard GIF Prompt" credit="Google"></Media>
 
 Expect more changes and improvements over the coming months for Google, improving accuracy and features in their software. Once their Language Model (LaMDA) is tested and perfected for use in Bard, fewer restrictions will be applied, allowing users to search and get results across Google's massive archive of data. For the time being, this is a slow release and will unlikely be the final product for Bard.
 
@@ -55,7 +55,7 @@ Learn more about Bard and join the waitlist: [Google](https://bard.google.com/){
 
 Both Google and Microsoft are beginning to ship software with their AI solutions to help speed up mundane tasks across their software line up. Google first announced that they're working on introducing Generative AI tools in their software, such as Docs, Gmail, and more. These new AI features will enhance the way we work, reducing the amount of time spent planning. The following example shows a Google Doc with a ChatGPT-like box asking the user to input the information they want, and it generates an entire document!
 
-<Vid source="/images/blog/Gen/gde.webm" credit="Google"></Vid>
+<Vid source="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_videos/Docs_Web_030623_1.mp4" credit="Google"></Vid>
 
 Read the announcement from [Google](https://blog.google/technology/ai/ai-developers-google-cloud-workspace/){:target="\_blank"}.
 

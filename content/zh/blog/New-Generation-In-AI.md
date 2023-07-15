@@ -41,7 +41,7 @@ Bing 为用户提供的选项有限，而且经常会中断请求。 他们在�
 
 目前可通过抢先体验在美国和英国使用，尚未公布公开发布的日期。 谷歌对 Bard 的概念是提供对网络搜索的补充。 该模型很可能与 Bing 类似，搜索并以准确的结果进行响应。 下面提到的其他软件中的巴德会稍微高级一些，并且针对软件。
 
-<Media source="/images/blog/Gen/gbp.gif"  alt="吟游诗人 GIF" credit="Google"></Media>
+<Media source="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/AI_features_feb6.gif"  alt="吟游诗人 GIF" credit="Google"></Media>
 
 预计未来几个月 Google 会发生更多变化和改进，从而提高其软件的准确性和功能。 一旦他们的语言模型 (LaMDA) 经过测试和完善以在 Bard 中使用，将应用更少的限制，从而允许用户在 Google 的海量数据存档中搜索并获得结果。 目前，这是一个缓慢的发布，不太可能成为 Bard 的最终产品。
 
@@ -51,7 +51,7 @@ Bing 为用户提供的选项有限，而且经常会中断请求。 他们在�
 
 谷歌和微软都开始将软件与他们的人工智能解决方案一起发布，以帮助加快他们软件系列中的日常任务。 谷歌首先宣布他们正在努力在他们的软件中引入生成式 AI 工具，例如 Docs、Gmail 等。 这些新的 AI 功能将改善我们的工作方式，减少计划所花费的时间。 下面的例子展示了一个谷歌文档，它有一个类似 ChatGPT 的框，要求用户输入他们想要的信息，它会生成一个完整的文档！
 
-<Vid source="/images/blog/Gen/gde.webm" credit="Google"></Vid>
+<Vid source="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_videos/Docs_Web_030623_1.mp4" credit="Google"></Vid>
 
 阅读来自 [Google](https://blog.google/technology/ai/ai-developers-google-cloud-workspace/){:target="\_blank"} 的公告。
 

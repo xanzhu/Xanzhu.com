@@ -41,7 +41,7 @@ Google은 최근 조기 액세스를 위해 Bard를 열었고 응답 속도는 �
 
 현재 미국과 영국에서 조기 액세스를 통해 사용할 수 있으며 공개 날짜는 발표되지 않았습니다. Bard에 대한 Google의 개념은 웹 검색을 보완하는 것입니다. 이 모델은 정확한 결과를 검색하고 응답하는 Bing과 유사할 가능성이 높습니다. 아래에 언급된 다른 소프트웨어의 음유시인은 약간 더 고급이며 해당 소프트웨어에 고유합니다.
 
-<Media source="/images/blog/Gen/gbp.gif"  alt="Bard GIF 프롬프트" credit="Google"></Media>
+<Media source="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/AI_features_feb6.gif "  alt="Bard GIF 프롬프트" credit="Google"></Media>
 
 소프트웨어의 정확도와 기능이 개선되어 앞으로 몇 달 동안 Google에 더 많은 변화와 개선이 있을 것으로 기대합니다. 그들의 언어 모델(LaMDA)이 Bard에서 사용하기 위해 테스트되고 완성되면 더 적은 제한이 적용되어 사용자가 Google의 방대한 데이터 아카이브에서 검색하고 결과를 얻을 수 있습니다. 당분간 이것은 느린 릴리스이며 Bard의 최종 제품이 아닐 것입니다.
 
@@ -51,7 +51,7 @@ Bard에 대해 자세히 알아보고 대기자 명단에 등록하세요. [Goog
 
 Google과 Microsoft는 소프트웨어 라인업 전체에서 일상적인 작업의 속도를 높이는 데 도움이 되는 AI 솔루션과 함께 소프트웨어를 제공하기 시작했습니다. Google은 처음에 문서, Gmail 등과 같은 소프트웨어에 Generative AI 도구를 도입하는 작업을 하고 있다고 발표했습니다. 이러한 새로운 AI 기능은 작업 방식을 개선하여 계획하는 데 소요되는 시간을 줄여줍니다. 다음 예는 사용자에게 원하는 정보를 입력하도록 요청하는 ChatGPT와 같은 상자가 있는 Google 문서를 보여 주며 전체 문서를 생성합니다!
 
-<Vid source="/images/blog/Gen/gde.webm" credit="Google"></Vid>
+<Vid source="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_videos/Docs_Web_030623_1.mp4" credit="Google"></Vid>
 
 [Google](https://blog.google/technology/ai/ai-developers-google-cloud-workspace/){:target="\_blank"}의 발표를 읽어보세요.
 
