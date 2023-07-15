@@ -48,5 +48,11 @@ const getCurrentDate = () => {
     });
 };
 
-onMounted(getCurrentDate);
+watch(locale, () => {
+    getCurrentDate();
+});
+
+onMounted(() => {
+    getCurrentDate();
+});
 </script>
