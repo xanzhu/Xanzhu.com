@@ -1,10 +1,5 @@
 // uno.config.ts
-import {
-  defineConfig,
-  presetIcons,
-  presetWebFonts,
-  presetTypography,
-} from "unocss";
+import { defineConfig, presetWebFonts, presetTypography } from "unocss";
 import presetUno from "@unocss/preset-uno";
 import transformerVariantGroup from "@unocss/transformer-variant-group";
 import transformerDirectives from "@unocss/transformer-directives";
@@ -12,12 +7,11 @@ import transformerDirectives from "@unocss/transformer-directives";
 export default defineConfig({
   presets: [
     presetUno(),
-    presetIcons(),
     presetTypography(),
     presetWebFonts({
       provider: "google",
       fonts: {
-        sans: "Noto Sans KR",
+        sans: ["Noto Sans KR", "Open Sans"],
       },
     }),
   ],

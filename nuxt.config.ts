@@ -7,9 +7,7 @@ export default defineNuxtConfig({
     "@unocss/nuxt",
     "nuxt-simple-sitemap",
     "@nuxtjs/color-mode",
-    // Deprecated
     "nuxt-icon",
-    // Production only
     "@nuxtjs/web-vitals",
   ],
 
