@@ -1,7 +1,7 @@
 <template>
   <div
-    class="flex flex-col dark:(text-white bg-black) space-y-5 mx-auto items-center b-1 b-solid rounded-md dark:b-dark-700 b-gray-300 sm:mb-10">
-    <h2 class="text-2xl mt-12 sm:(py-10 mt-0)">{{ t('Home.release') }}</h2>
+    class="flex flex-col dark:(text-white bg-black) space-y-5 mx-auto b-1 b-solid rounded-md dark:b-dark-700 b-gray-300 sm:mb-10">
+    <h2 class="text-2xl mt-12 sm:(py-10 mt-0) 2xl:text-3xl text-center">{{ t('Home.release') }}</h2>
     <div v-if="features" v-for="feature in features" :key="feature.title"
       class="sm:(mx-5 p-0) lg:mx-20 p-4 justify-center mx-auto">
       <NuxtLink :to="feature._path"
@@ -22,16 +22,16 @@
               {{ feature.tag }}
             </p>
           </div>
-          <h2 class="font-semibold decoration-2 text-xl sm:text-3xl sm:group-hover:(underline underline-offset-6)">
+          <h3 class="font-semibold decoration-2 text-xl sm:text-3xl sm:group-hover:(underline underline-offset-6)">
             {{ feature.title }}
-          </h2>
+          </h3>
           <p v-if="feature.description" class="op80 m0">
             {{ feature.description }}
           </p>
         </div>
       </NuxtLink>
     </div>
-    <div class="flex flex-row space-x-2 py-10">
+    <div class="flex flex-row space-x-2 py-10 justify-center">
       <NuxtLink :to="path('/blog')"
         class="px-8 py-2 dark:bg-white bg-black dark:text-black text-white hover:(dark:bg-brand-dark bg-brand-light) decoration-none rounded-md font-semibold">
         {{ t('Home.more') }}</NuxtLink>

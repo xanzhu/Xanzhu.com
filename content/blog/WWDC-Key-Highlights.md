@@ -391,7 +391,7 @@ Provides more metrics around the state of mind, correlating lifestyle factors wi
 
 As mentioned above with the new time spent outside, this metric will be recorded in the vision health application. Prevent early-onset myopia or near-sightedness by tracking and promoting getting outside and spending time in the sun.
 
-[Supported devices](https://www.apple.com/watchos/watchos-preview/){:target="\_blank"}: :
+[Supported devices](https://www.apple.com/watchos/watchos-preview/){:target="\_blank"}:
 
 - Series 4, 5, 6, 7, 8
 - SE, Ultra

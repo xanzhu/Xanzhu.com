@@ -25,8 +25,8 @@
       </button>
     </div>
     <ResourcesPhishing v-if="phishing && !malware && !a11y" />
-    <LazyResourcesMalware v-else-if="malware && !phishing && !a11y" />
-    <LazyResourcesAccessibility v-else-if="a11y && !phishing && !malware" />
+    <ResourcesMalware v-else-if="malware && !phishing && !a11y" />
+    <ResourcesAccessibility v-else-if="a11y && !phishing && !malware" />
 
     <p class="text-center">{{ t('Resources.soon') }}</p>
   </div>

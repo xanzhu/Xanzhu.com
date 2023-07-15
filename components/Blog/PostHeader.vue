@@ -7,7 +7,7 @@
           {{ post.tag }}
         </span>
         <Date v-if="post.date && !post.updated" :date="post.date" itemprop="datePublished" class="md:hidden" />
-        <BlogReadTime class="lt-sm:hidden items-center" itemprop="readTime" :content="post" />
+        <BlogReadTime class="lt-sm:hidden items-center" :content="post" />
         <p v-if="post.updated" class="md:hidden flex items-center space-x-1">
           <Icon class="h-3.5 w-3.5 dark:text-yellow-400" name="material-symbols:update-rounded" />
           <Date :date="post.updated" itemprop="dateModified" class="dark:text-yellow-400 font-semibold" />
@@ -30,10 +30,10 @@
       </div>
     </div>
     <div v-if="post.img" class="relative col-span-1 grow-0 h-auto w-auto px-4 sm:px0 mb-5">
-      <div class="h-auto lg:h-70 w-auto sm:w-md mx-auto lg:w-auto">
+      <div class="h-auto lg:h-70 w-auto sm:w-md mx-auto lg:w-auto" itemscope itemtype="https://schema.org/ImageObject">
         <NuxtImg crossorigin="anonymous" itemprop="image" :src="post.img" :alt="post.alt" :title="post.alt" loading="lazy"
           height="369" width="577"
-          class="h-full w-full rounded-sm b-brand-border b-1 b-solid dark:b-dark-700 b-gray-300" />
+          class="h-full w-full rounded-md b-brand-border b-1 b-solid dark:b-dark-700 b-gray-300" />
         <div v-if="post.source"
           class="dark:(text-light-200 opacity-70) text-dark-700 op90 absolute right-3 sm:right-2 px-1 py-1 text-xs lt-sm:(mr-2) tracking-wide">
           <p class="inline-block m0" />
