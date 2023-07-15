@@ -20,8 +20,8 @@
         <Icon v-if="MobileMenu" class="h6 w6" name="ic:baseline-close" :aria-label="t('a11y.cMenu')" />
       </button>
       <nav @click.outside="closeMenu" :class="MobileMenu
-          ? 'flex p-1 rounded-sm absolute top-12 right-6 flex-col-reverse children:pt-2 dark:bg-dark-900 bg-light-700 b-1 b-solid b-gray-300 dark:b-dark-500'
-          : 'hidden'
+        ? 'flex p-1 rounded-sm absolute top-12 right-6 flex-col-reverse children:pt-2 dark:bg-dark-900 bg-light-700 b-1 b-solid b-gray-300 dark:b-dark-500'
+        : 'hidden'
         ">
         <NuxtLink v-for="(link, index) in links" :key="index" :to="localePath(link.url)"
           active-class="text-brand-light dark:text-brand-dark" :aria-label="t(link.name)"
