@@ -25,10 +25,6 @@ const links = [
   {
     url: "https://twitter.com/xanzhu1",
     name: "Twitter",
-  },
-  {
-    url: "https://mastodon.social/@xanzhu",
-    name: "Mastodon",
-  },
+  }
 ];
 </script>
