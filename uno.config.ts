@@ -9,9 +9,9 @@ export default defineConfig({
     presetUno(),
     presetTypography(),
     presetWebFonts({
-      provider: "google",
+      provider: "bunny",
       fonts: {
-        sans: ["Noto Sans KR", "Open Sans"],
+        sans: "Noto Sans KR",
       },
     }),
   ],
