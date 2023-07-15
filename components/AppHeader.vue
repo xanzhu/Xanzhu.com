@@ -5,11 +5,12 @@
       <UiColorSwitch class="hidden lg:flex" />
     </div>
     <NuxtLink :to="localePath('/')" class="mx-auto text-center dark:text-white text-black">
-      <UiIconXanzhu class="h-6 inline-block" :aria-label="t('a11y.logo')" title="Home page" />
+      <UiIconXanzhu class="h-6 inline-block" :aria-label="t('a11y.logo')" />
+      <span class="sr-only">{{ t('a11y.Home') }}</span>
     </NuxtLink>
     <div class="hidden lg:(block flex-1 text-right space-x-5 font-semibold text-sm mr5)">
       <NuxtLink v-for="(link, index) in links" :key="index" :to="localePath(link.url)" active-class="font-bold"
-        :aria-label="t(link.name)" :title="link.anchor"
+        :aria-label="t(link.name)"
         class="dark:text-white text-black underline-offset-5 dark:hover:(decoration-brand-dark) inline-block underline decoration-transparent decoration-2 hover:decoration-brand-light"
         v-t="link.name" />
     </div>
@@ -24,7 +25,7 @@
         : 'hidden'
         ">
         <NuxtLink v-for="(link, index) in links" :key="index" :to="localePath(link.url)"
-          active-class="text-brand-light dark:text-brand-dark" :aria-label="t(link.name)" :title="link.anchor"
+          active-class="text-brand-light dark:text-brand-dark" :aria-label="t(link.name)"
           class="dark:hover:(bg-dark-600 ease-in duration-75) dark:text-white hover:(bg-light-400) text-black rounded-sm font-medium text-center py-2 px-3 no-underline"
           v-t="link.name" />
       </nav>
@@ -49,12 +50,10 @@ const links = [
   {
     url: "/resources",
     name: "Links.resources",
-    anchor: "View our helpful resources and tools"
   },
   {
     url: "/blog",
     name: "Links.blog",
-    anchor: "See the latest blog posts"
   },
   {
     url: "/analysis",
@@ -63,7 +62,6 @@ const links = [
   {
     url: "/",
     name: "Links.home",
-    anchor: "Visit the home page"
   },
 ];
 </script>

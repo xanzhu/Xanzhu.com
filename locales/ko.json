@@ -76,7 +76,8 @@
     "AnalysisPage": "분석 페이지 방문",
     "BlogPage": "블로그 페이지 방문",
     "ResourcePage": "리소스 페이지 방문",
-    "Menu": "메뉴"
+    "Menu": "메뉴",
+    "Home": "홈페이지 방문"
   },
   "Resources": {
     "heading": "필수 보안 툴킷으로 온라인 보안 유지",
