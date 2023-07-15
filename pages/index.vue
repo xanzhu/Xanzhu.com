@@ -44,4 +44,16 @@ useSeoMeta({
   twitterImage: seoImage,
   titleTemplate: 'Xanzhu - %s',
 })
+
+// URL Validation | Redirection for "/?<example>" (Temp Fix)
+definePageMeta({
+  validate(route) {
+    if (route.fullPath.includes('?')) {
+      // Throw a 404 error
+      throw createError({ statusCode: 404 });
+    }
+    // The route is valid
+    return true;
+  },
+})
 </script>
