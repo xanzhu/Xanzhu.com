@@ -1,6 +1,6 @@
 <template>
-  <main v-if="post" class="container mb-4 mx-auto md:(px-6 mb-0)" role="main">
-    <article class="dark:(bg-black text-light-200) bg-white text-black pb-2 sm:rounded-sm md:(space-y-10 mb-12)"
+  <main v-if="post" class="container mb-4 mx-auto mt10 sm:mt10 md:(px-6 mb-0 mt-15)" role="main">
+    <article class="dark:(bg-black text-light-200) bg-white text-black pb-2 sm:(rounded-sm) md:(space-y-10 mb-12)"
       itemtype="https://schema.org/Article" itemscope>
       <BlogPostHeader v-bind:post="post" />
       <div class="flex flex-col-reverse md:(flex-row space-x-6 space-x-2) mx-auto justify-center">
@@ -74,7 +74,7 @@ const [prev, next] = data.value || [];
 h3,
 h4,
 h5 {
-  scroll-margin-top: 65px;
+  scroll-margin-top: 74px;
 }
 
 .prose h2 a,
@@ -96,13 +96,13 @@ h5 {
 
 .prose a[href^="https"] {
   font-weight: 500;
-  color: #001EFA;
+  color: #d51600;
   text-decoration: none;
 }
 
 .prose a:hover {
   text-decoration: 1px underline;
-  text-underline-offset: 3px;
+  text-underline-offset: 2px;
 }
 
 
@@ -120,7 +120,7 @@ h5 {
 
   .dark .prose a:hover {
     text-decoration: 1px underline;
-    text-underline-offset: 3px;
+    text-underline-offset: 2px;
   }
 }
 </style>

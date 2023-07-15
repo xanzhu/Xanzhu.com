@@ -1,12 +1,12 @@
 <template>
-  <div class="flex justify-center items-center h-[70%]">
-    <LazyUiAlertFeat title="Updated: 23/4/23" />
-    <div class="flex flex-col items-center space-y-5 lg:max-w-lg xl:max-w-2xl">
+  <div class="flex flex-col justify-center items-center h-[78vh]">
+    <LazyUiAlertFeat title="Updated: 16/7/23" />
+    <!-- <div class="flexflex-col items-center space-y-5 lg:max-w-lg xl:max-w-2xl">
       <h1 class="text-5xl font-bold">{{ seoTitle }}</h1>
-      <p class="dark:(bg-dark-900 border-dark-700 opacity-100) opacity-80 p-2 border-1 xl:max-w-lg">
+      <p class="dark:(opacity-100) opacity-80 p-2">
         {{ seoDesc }}
       </p>
-    </div>
+    </div> -->
   </div>
 </template>
 <script setup lang="ts">

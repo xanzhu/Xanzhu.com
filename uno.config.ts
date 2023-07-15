@@ -19,8 +19,8 @@ export default defineConfig({
   theme: {
     colors: {
       brand: {
-        dark: "#ff0000", // text-brand-dark
-        light: "#001EFA", // text-brand-light
+        dark: "#ff0000", // text-brand-dark //
+        light: "#d51600", // text-brand-light // #b0100d (AAA)
       },
     },
   },

@@ -10,9 +10,9 @@
             {{ t("Links.resources") }}
           </h2>
           <p class="op75 m0">{{ t("PagesCard.resources") }}</p>
-          <div class="text-brand-light">
+          <div class="text-brand-light dark:text-brand-dark">
             <Icon
-              class="sm:group-hover:(bg-brand-light text-white w-full ease-in-out duration-300) p-1 b-rounded-sm sm:(ease-out duration-500) h8 w8"
+              class="sm:group-hover:(bg-brand-light text-white w-full ease-in-out duration-300) dark:group-hover:(bg-brand-dark) b-rounded-sm sm:(ease-out duration-500) w8 h8"
               name="uil:arrow-right" :aria-label="t('a11y.ResourcePage')" />
           </div>
         </div>
@@ -23,9 +23,9 @@
         <div class="flex flex-col justify-center m-2 sm:m-4 space-y-2 dark:text-white text-black">
           <h2 class="text-3xl font-bold m0">{{ t("Links.blog") }}</h2>
           <p class="op75 m0">{{ t("PagesCard.blog") }}</p>
-          <div class="text-brand-light">
+          <div class="text-brand-light dark:text-brand-dark">
             <Icon
-              class="sm:group-hover:(bg-brand-light text-white w-full ease-in-out duration-300) p-1 b-rounded-sm sm:(ease-out duration-500) h8 w8"
+              class="sm:group-hover:(bg-brand-light text-white w-full ease-in-out duration-300) dark:group-hover:(bg-brand-dark) b-rounded-sm sm:(ease-out duration-500) w8 h8"
               :aria-label="t('a11y.BlogPage')" name="uil:arrow-right" />
           </div>
         </div>
@@ -38,9 +38,9 @@
             {{ t("Links.analysis") }}
           </h2>
           <p class="op75 m0">{{ t("PagesCard.analysis") }}</p>
-          <div class="text-brand-light">
+          <div class="text-brand-light dark:text-brand-dark">
             <Icon
-              class="sm:group-hover:(bg-brand-light text-white w-full ease-in-out duration-300) b-rounded-sm sm:(ease-out duration-500) w8 h8"
+              class="sm:group-hover:(bg-brand-light text-white w-full ease-in-out duration-300) dark:group-hover:(bg-brand-dark) b-rounded-sm sm:(ease-out duration-500) w8 h8"
               name="uil:arrow-right" :aria-label="t('a11y.AnalysisPage')" />
           </div>
         </div>

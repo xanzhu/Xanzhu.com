@@ -1,5 +1,5 @@
 <template>
-  <Html v-if="head.htmlAttrs" :lang="head.htmlAttrs.lang" class="bg-black">
+  <Html v-if="head.htmlAttrs" :lang="head.htmlAttrs.lang" class="dark:bg-black bg-white">
 
   <Head>
     <template v-for="link in head.link" :key="link.id">
@@ -10,12 +10,12 @@
     </template>
   </Head>
   <div class="m0 font-sans dark:(bg-black text-white) text-black bg-white">
-    <AppHeader
-      class="sticky top-0 z-1 transition-transform duration-700 backdrop-blur-md backdrop-filter dark:backdrop-brightness-70" />
+    <AppHeaderV2 class="sticky top-0 z-1" />
+    <UiCurrentDate />
+    <HomeBrandLinks />
     <NuxtPage />
     <LazyAppFooter />
   </div>
-
 
   </Html>
 </template>
