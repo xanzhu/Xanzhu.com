@@ -5,7 +5,7 @@
         loading="Lazy" decoding="async" />
     </div>
     <div class="p-4 font-bold bg-brand-light rounded-sm text-center text-white text-2xl">
-      {{ $t("Resources.phishing") }}
+      {{ t("Resources.phishing") }}
     </div>
     <div class="dark:bg-dark-900 bg-light-600 b-1 b-solid rounded-sm border-brand-light p-4 row-span-2 col-span-1">
       <ol class="m0 p2" v-for="url in urls" :key="url.name">
@@ -18,16 +18,17 @@
       </ol>
     </div>
     <div class="dark:(bg-dark-900 op-80) bg-light-600 b-1 b-solid rounded-sm border-brand-light h-sm p-4 col-span-1">
-      <p class="font-medium items-center inline-flex ml-2">{{ $t('Resources.explain.title') }}
+      <p class="font-medium items-center inline-flex ml-2">{{ t('Resources.explain.title') }}
         <Icon class="h3.5 w3.5 ml-1" name=ooui:help-notice-ltr />
       </p>
       <p class="px-5 m0">
-        {{ $t('Resources.explain.phishing') }}
+        {{ t('Resources.explain.phishing') }}
       </p>
     </div>
   </div>
 </template>
 <script setup lang="ts">
+const { t } = useI18n();
 const isExternalLink = (url: string): "_blank" | "_self" => {
   if (url.startsWith("https")) {
     return "_blank";

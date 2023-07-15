@@ -10,7 +10,7 @@
           {{ t("Home.desc") }}
         </p>
         <div class="mx-auto hidden xl:(flex)">
-          <HomeMouseIcon class="animate-bounce" role="presentation" :aria-label="$t('Home.a11y.mouseicon')" />
+          <HomeMouseIcon class="animate-bounce" role="presentation" :aria-label="t('Home.a11y.mouseicon')" />
         </div>
       </div>
     </div>

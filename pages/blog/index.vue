@@ -1,7 +1,7 @@
 <template>
   <main class="mx-auto space-y-10 dark:text-white text-black sm:mb-10">
     <div class="sm:(mx-10 mt-15) xl:ml-15 mx-4 mt-5 flex flex-col space-y-2 lg:mx-10">
-      <h1 class="text-3xl font-semibold sm:text-5xl mb0">{{ $t("Blog.title") }}</h1>
+      <h1 class="text-3xl font-semibold sm:text-5xl mb0">{{ t("Blog.title") }}</h1>
       <p class="text-md sm:(text-xl) break-words font-thin dark:text-gray-300 sm:w2/3">
         {{ t("Blog.description") }}
       </p>

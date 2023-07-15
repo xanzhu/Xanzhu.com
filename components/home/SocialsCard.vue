@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col text-center justify-center items-center my-10 sm:(flex-row space-x-5 space-y-0) space-y-4">
     <h3 class="text-2xl sm:text-4xl font-bold m0">
-      {{ $t("SocialsCard.h1") }}
+      {{ t("SocialsCard.h1") }}
     </h3>
     <div class="flex flex-col sm:flex-row sm:space-x-4 space-y-0) space-y-0 op75 items-center">
       <NuxtLink v-for="(link, index) in links" :key="index" :to="link.url" :aria-label="link.name" target="_blank"
@@ -12,6 +12,7 @@
   </div>
 </template>
 <script setup lang="ts">
+const { t } = useI18n();
 const links = [
   {
     url: "https://www.linkedin.com/company/xanzhu",
