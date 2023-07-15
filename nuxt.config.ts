@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "nuxt-icon",
     "@nuxtjs/web-vitals",
+    "nuxt-simple-robots",
   ],
 
   colorMode: {

@@ -27,6 +27,7 @@
     "@vercel/analytics": "^1.0.1",
     "nuxt": "^3.6.3",
     "nuxt-icon": "^0.4.2",
+    "nuxt-simple-robots": "^3.0.2",
     "nuxt-simple-sitemap": "^3.0.9"
   }
 }
