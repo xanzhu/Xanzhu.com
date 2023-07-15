@@ -5,7 +5,7 @@
       <BlogPostHeader v-bind:post="post" />
       <div class="flex flex-col-reverse md:(flex-row space-x-6 space-x-2) mx-auto justify-center">
         <div>
-          <ContentRenderer :value="post" itemprop="mainContent"
+          <ContentRenderer :value="post" itemprop="articleBody"
             class="prose prose-sm md:prose-md lg:(prose-xl) mx-auto px-4 my-4 dark:text-light-200 text-black leading-normal" />
         </div>
         <aside v-if="post.toc == true" class="mt-2">

@@ -1,7 +1,7 @@
 <template>
   <nav
     class="flex justify-between pt-5 sm:justify-around sm:pt-10 children:(md:text-lg text-sm m-4 px-3 py-1 rounded-sm)">
-    <NuxtLink v-if="prev" :to="prev._path" itemprop="prev"
+    <NuxtLink v-if="prev" :to="prev._path"
       class="dark:(bg-dark-900 text-white) group bg-light-400 text-black flex items-center no-underline">
       <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"
         class="md:mr-2 w-5 h-5 dark:group-hover:text-brand-dark group-hover-text-brand-light" viewBox="0 0 20 20">
@@ -12,7 +12,7 @@
       <p class="lt-sm:hidden op80 m0" v-t="'Blog.previous'" />
     </NuxtLink>
     <p class="invisible" v-else />
-    <NuxtLink v-if="next" itemprop="next" :to="next._path"
+    <NuxtLink v-if="next" :to="next._path"
       class="dark:(bg-dark-900 text-white) text-black bg-light-400 group flex items-center no-underline">
       <p class="lt-sm:hidden op80 m0" v-t="'Blog.next'" />
       <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"

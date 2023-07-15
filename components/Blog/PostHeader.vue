@@ -14,7 +14,7 @@
         </p>
       </div>
       <div>
-        <h1 itemprop="name"
+        <h1 itemprop="headline"
           class="md:(text-2xl mr-6) break-words text-xl font-bold sm:leading-tight lg:text-3xl xl:text-4xl my0">
           {{ post.title }}
         </h1>

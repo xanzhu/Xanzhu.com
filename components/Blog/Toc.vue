@@ -5,7 +5,7 @@
         {{ t("Blog.toc") }}
       </h2>
     </header>
-    <ul class="flex flex-col gap-2 px-6 text-sm" itemprop="toc">
+    <ul class="flex flex-col gap-2 px-6 text-sm">
       <li v-for="link of flattenLinks(links)" :key="link.id" class="text-dark-700 dark:text-light-400" :class="{
         'ml-4 list-disc opacity-80 hover:(underline underline-offset-3 decoration-2)':
           link.depth === 3,
