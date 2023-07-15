@@ -6,6 +6,7 @@ img: /images/blog/wwdc/swift.jpg
 description: "Latest announcements and releases from Apple's Worldwide Developer conference."
 toc: true
 feature: true
+alt: "WWDC 2023"
 ---
 
 Each year at WWDC or World Wide Developers Conference Apple announces the latest software and hardware releases they've been working on. Alongside the announcements around this, they provide additional things
