@@ -11,9 +11,9 @@
           </h2>
           <p class="op75 m0">{{ t("PagesCard.resources") }}</p>
           <div class="text-brand-light">
-            <HomeArrowIcon
-              class="sm:group-hover:(bg-brand-light text-white w-full ease-in-out duration-300) p-1 b-rounded-sm sm:(ease-out duration-500)"
-              :aria-label="t('a11y.ResourcePage')" />
+            <Icon
+              class="sm:group-hover:(bg-brand-light text-white w-full ease-in-out duration-300) p-1 b-rounded-sm sm:(ease-out duration-500) h8 w8"
+              name="uil:arrow-right" :aria-label="t('a11y.ResourcePage')" />
           </div>
         </div>
       </NuxtLink>
@@ -24,9 +24,9 @@
           <h2 class="text-3xl font-bold m0">{{ t("Links.blog") }}</h2>
           <p class="op75 m0">{{ t("PagesCard.blog") }}</p>
           <div class="text-brand-light">
-            <HomeArrowIcon
-              class="sm:group-hover:(bg-brand-light text-white w-full ease-in-out duration-300) p-1 b-rounded-sm sm:(ease-out duration-500)"
-              :aria-label="t('a11y.BlogPage')" />
+            <Icon
+              class="sm:group-hover:(bg-brand-light text-white w-full ease-in-out duration-300) p-1 b-rounded-sm sm:(ease-out duration-500) h8 w8"
+              :aria-label="t('a11y.BlogPage')" name="uil:arrow-right" />
           </div>
         </div>
       </NuxtLink>
@@ -39,9 +39,9 @@
           </h2>
           <p class="op75 m0">{{ t("PagesCard.analysis") }}</p>
           <div class="text-brand-light">
-            <HomeArrowIcon
-              class="sm:group-hover:(bg-brand-light text-white w-full ease-in-out duration-300) p-1 b-rounded-sm sm:(ease-out duration-500)"
-              :aria-label="t('a11y.AnalysisPage')" />
+            <Icon
+              class="sm:group-hover:(bg-brand-light text-white w-full ease-in-out duration-300) b-rounded-sm sm:(ease-out duration-500) w8 h8"
+              name="uil:arrow-right" :aria-label="t('a11y.AnalysisPage')" />
           </div>
         </div>
       </NuxtLink>
