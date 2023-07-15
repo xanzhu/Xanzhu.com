@@ -7,18 +7,18 @@
           {{ post.tag }}
         </span>
         <Date v-if="post.date && !post.updated" :date="post.date" itemprop="datePublished" class="md:hidden" />
-        <BlogReadTime class="lt-sm:hidden items-center" :content="post" />
+        <BlogReadTime class="lt-sm:hidden items-center" itemprop="readTime" :content="post" />
         <p v-if="post.updated" class="md:hidden flex items-center space-x-1">
           <Icon class="h-3.5 w-3.5 dark:text-yellow-400" name="material-symbols:update-rounded" />
           <Date :date="post.updated" itemprop="dateModified" class="dark:text-yellow-400 font-semibold" />
         </p>
       </div>
       <div>
-        <h1 itemprop="headline"
+        <h1 itemprop="name"
           class="md:(text-2xl mr-6) break-words text-xl font-bold sm:leading-tight lg:text-3xl xl:text-4xl my0">
           {{ post.title }}
         </h1>
-        <p class="dark:op70 op80 lt-sm:text-sm my2">{{ post.description }}</p>
+        <p class="dark:op70 op80 lt-sm:text-sm my2" itemprop="description">{{ post.description }}</p>
       </div>
       <div class="flex flex-col space-y-5">
         <div class="flex flex-row items-center space-x-2 op90">

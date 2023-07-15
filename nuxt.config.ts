@@ -92,7 +92,7 @@ export default defineNuxtConfig({
   sitemap: {
     autoAlternativeLangPrefixes: undefined,
     strictNuxtContentPaths: true,
-    autoLastmod: false,
+    autoLastmod: true,
     xslColumns: [
       { label: "URL", width: "50%" },
       { label: "Last Modified", select: "sitemap:lastmod", width: "50%" },
