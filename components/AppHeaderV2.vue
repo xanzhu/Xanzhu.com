@@ -1,9 +1,9 @@
 <template>
     <header
-        class="flex justify-between items-center dark:(text-black bg-white) text-white bg-black md:p4 px4 py2 mx-auto md:px-6 xl:px10 2xl:px20">
+        class="flex justify-between items-center dark:(text-black bg-white) text-white bg-black md:p3 px4 py2 mx-auto md:px-6 xl:px10 2xl:px20">
         <div class="flex md:space-x-10">
             <NuxtLink :to="localePath('/')" class="mx-auto text-center dark:text-black text-white">
-                <UiIconXanzhu class="h-6 inline-block" :aria-label="t('a11y.logo')" />
+                <UiIconXanzhu class="h6" :aria-label="t('a11y.logo')" />
                 <span class="sr-only">{{ t('a11y.Home') }}</span>
             </NuxtLink>
             <nav class="hidden md:(block space-x-5 decoration-none)">
