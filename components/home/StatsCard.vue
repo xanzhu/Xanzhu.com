@@ -3,7 +3,7 @@
     <div class="grid grid-cols-2 mt-5">
       <div class="row-span-1 col-span-2 h-full w-full flex justify-between max-h-30">
         <div
-          class="w-3/2 bg-[#FAFF06] text-black m-1 text-2xl sm:text-4xl font-bold md:pl5 lg:pr-100 p1 md:py-4 sm:py-6 rounded-sm">
+          class="w-3/2 bg-[#FAFF06] text-black m-1 text-2xl sm:text-4xl font-bold md:pl5 lg:(pr-100) p1 md:py-4 sm:py-6 rounded-sm">
           {{ t("StatsCard.title") }}
         </div>
         <div class="hidden w-1/2 dark:bg-white bg-black m-1 rounded-sm md:flex items-center justify-center">
@@ -25,7 +25,7 @@
         <div class="md:w-1/2 bg-black rounded-sm b-1 b-solid b-dark-600">
           <p class="m0 p-4 font-semibold text-xl text-white"> {{ t("StatsCard.breaches.title") }}</p>
           <div
-            class="bg-[#FAFF06] p-4 mx-4 mb-5 rounded-sm text-black justify-center flex flex-col items-center font-bold space-y-5">
+            class="bg-[#FAFF06] p4 mx-4 rounded-sm text-black justify-center flex flex-col items-center font-bold mb4 children:my-3">
             <p>{{ t('StatsCard.breach.1') }}</p>
             <p>{{ t('StatsCard.breach.2') }}</p>
             <p>{{ t('StatsCard.breach.3') }}</p>
