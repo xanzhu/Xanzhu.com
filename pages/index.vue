@@ -1,12 +1,15 @@
 <template>
   <main class="flex flex-col justify-center">
-    <div class="mt1/3 sm:(mt-10) flex h-screen px-4 md:px-12">
-      <div class="mx-auto flex flex-col space-y-[10%] sm:max-w-5xl xl:space-y-[7%] 2xl:space-y-[12%]">
-        <h1 class="mt0 text-5xl font-bold sm:text-6xl md:text-7xl lg:text-8xl">{{ t("Home.title") }}</h1>
+    <div class="flex h-screen mt1/3 sm:(mt-10) px-4 md:px-12">
+      <div class="flex flex-col space-y-[10%] xl:space-y-[7%] 2xl:space-y-[12%] sm:max-w-5xl mx-auto">
+        <h1 class="font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl mt0">
+          {{ t("Home.title") }}
+        </h1>
         <p
-          class="dark:(bg-dark-900 b-dark-600 op100) bg-light-500 b-1 rounded-sm b-solid b-gray-200 p-4 text-gray-300 op70">
-          {{ t("Home.desc") }}</p>
-        <div class="2xl:pt30 mx-auto hidden xl:flex">
+          class="dark:(bg-dark-900 border-dark-600 text-gray-300 opacity-100) opacity-70 bg-light-500 border-solid border-1 rounded-sm p-4 border-gray-200">
+          {{ t("Home.desc") }}
+        </p>
+        <div class="mx-auto hidden xl:flex 2xl:pt30">
           <HomeMouseIcon class="animate-bounce" role="presentation" :aria-label="t('Home.a11y.mouseicon')" />
         </div>
       </div>

@@ -1,26 +1,29 @@
 <template>
-  <main class="mx-auto space-y-10 text-black dark:text-white sm:mb-10">
+  <main class="mx-auto space-y-10 dark:text-white text-black sm:mb-10">
     <div class="sm:(mx-10 mt-15) xl:ml-15 mx-4 mt-5 flex flex-col space-y-2 lg:mx-10">
-      <h1 class="mb0 text-3xl font-semibold sm:text-5xl">{{ t("Blog.title") }}</h1>
-      <p class="text-md sm:(text-xl) sm:w2/3 break-words font-thin dark:text-gray-300">{{ t("Blog.description") }}</p>
+      <h1 class="text-3xl font-semibold sm:text-5xl mb0">{{ t("Blog.title") }}</h1>
+      <p class="text-md sm:(text-xl) break-words font-thin dark:text-gray-300 sm:w2/3">
+        {{ t("Blog.description") }}
+      </p>
     </div>
     <section
-      class="md:(grid-cols-2 gap-10) lg:(grid-cols-3) sm:(py-15 px-10) mx-6 grid grid-cols-1 gap-5 rounded-sm p-4 dark:bg-black">
+      class="grid grid-cols-1 gap-5 md:(grid-cols-2 mx-6 gap-10) lg:(grid-cols-3) sm:(py-15 px-10) dark:bg-black rounded-sm p-4">
       <div v-if="articles" v-for="(article, $index) in articles" :key="`fe-${$index}`">
         <NuxtLink class="group flex flex-col no-underline" :to="article._path">
           <NuxtImg crossorigin="anonymous" v-if="article.img" :alt="article.alt" :title="article.alt" loading="lazy"
             height="369" width="577" object-fit="contain"
-            class="md:(transition duration-400 ease-in-out) md:group-hover:scale-102 b-1 b-solid dark:b-dark-700 b-light-700 h-full w-full transform rounded-md"
+            class="rounded-md h-full w-full transform md:(transition duration-400 ease-in-out) md:group-hover:scale-102 b-1 b-solid dark:b-dark-700 b-light-700"
             :src="article.img" />
-          <div class="dark:(bg-black text-white) h-auto rounded-b-md bg-white text-black dark:text-white">
+          <div class="dark:(bg-black text-white) h-auto rounded-b-md bg-white dark:text-white text-black">
             <div class="space-x-2">
               <Date v-if="article.date" :date="article.date"
-                class="dark:(bg-dark-900 b-dark-700 opacity-100) bg-light-500 b-1 b-solid b-gray-300 rounded-sm px-4 py-1.5 text-xs text-white op80" />
+                class="dark:(bg-dark-900 text-white border-dark-700 opacity-100) opacity-80 bg-light-500 px-4 py-1.5 b-1 b-solid rounded-sm b-gray-300 text-xs" />
               <p v-if="article.tag"
-                class="dark:(bg-dark-900 b-dark-700 opacity-100) bg-light-500 b-gray-300 b-1 b-solid inline-block rounded-sm px-4 py-1.5 text-xs text-white op80">
-                {{ article.tag }}</p>
+                class="dark:(bg-dark-900 text-white border-dark-700 opacity-100) opacity-80 bg-light-500 b-gray-300 px-4 py-1.5 border-1 b-solid rounded-sm text-xs inline-block">
+                {{ article.tag }}
+              </p>
             </div>
-            <h2 class="group-hover:(underline underline-offset-6) m0 text-xl font-semibold decoration-2"
+            <h2 class="text-xl font-semibold decoration-2 group-hover:(underline underline-offset-6) m0"
               v-html="article.title" />
             <p class="op80" v-html="article.description" />
           </div>
