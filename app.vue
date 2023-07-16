@@ -40,7 +40,6 @@ useServerSeoMeta({
 })
 
 </script>
-<!-- TODO: Replace with unocss/reset -->
 <style>
 body {
   margin: 0;
