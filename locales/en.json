@@ -144,5 +144,8 @@
       "lang": "Select Language",
       "menu": "Open Menu"
     }
+  },
+  "email": {
+    "share": "Checkout this article"
   }
 }

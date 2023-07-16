@@ -1,35 +1,43 @@
 <template>
-  <div class="flex">
-    <div class="space-x-2 children:(dark:text-white text-black)">
-      <NuxtLink
-        :to="`https://twitter.com/intent/tweet?url=https://xanzhu.com${post._path}&text=${post.title}&via=Xanzhu1`"
-        target="_blank"
-        class="dark:hover:text-brand-dark hover:text-brand-light"
-      >
-        <Icon name="mdi:twitter" class="h-5 w-5" />
-      </NuxtLink>
-      <NuxtLink
-        :to="`https://www.linkedin.com/shareArticle?url=https://xanzhu.com${post._path}&title=${post.title}`"
-        target="_blank"
-        class="dark:hover:text-brand-dark hover:text-brand-light"
-      >
-        <Icon name="mdi:linkedin" class="h-5 w-5" />
-      </NuxtLink>
-      <NuxtLink
-        :to="`https://www.reddit.com/submit?url=https://xanzhu.com${post._path}&title=${post.title}`"
-        target="_blank"
-        class="dark:hover:text-brand-dark hover:text-brand-light"
-      >
-        <Icon name="mdi:reddit" class="h-5 w-5" />
+  <div class="flex space-x-2 justify-center">
+    <div v-for="social in socials" class="children:(dark:text-white text-black)">
+      <NuxtLink :to="social.url" target="_blank" class="dark:hover:text-brand-dark hover:text-brand-light">
+        <Icon :name="social.icon" class="h5 w5" />
       </NuxtLink>
     </div>
   </div>
 </template>
 <script setup lang="ts">
-defineProps({
+interface Props {
   post: {
-    type: Object,
-    required: true,
+    _path: string;
+    title: string;
+  };
+}
+
+const { post } = defineProps<Props>();
+const { t } = useI18n();
+
+const postPath = post._path;
+const postTitle = post.title;
+const emailTitle = t('email.share')
+
+const socials = [
+  {
+    url: `https://twitter.com/intent/tweet?url=https://xanzhu.com${postPath}&text=${postTitle}&via=Xanzhu1`,
+    icon: "mdi:twitter"
   },
-});
+  {
+    url: `https://www.linkedin.com/shareArticle?url=https://xanzhu.com${postPath}&title=${postTitle}`,
+    icon: "mdi:linkedin"
+  },
+  {
+    url: `https://www.reddit.com/submit?url=https://xanzhu.com${postPath}&title=${postTitle}`,
+    icon: "mdi:reddit"
+  },
+  {
+    url: `mailto:?subject=${postTitle}&body=${emailTitle}: ${postTitle}`,
+    icon: "mdi:email"
+  }
+];
 </script>
