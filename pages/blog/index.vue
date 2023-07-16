@@ -7,15 +7,13 @@
       </p>
     </div>
     <section
-      class="md:(grid-cols-2 mx-6) lg:(grid-cols-3) sm:(py-15 px-10) dark:bg-black grid grid-cols-1 gap-10 rounded-sm p-4">
+      class="grid grid-cols-1 gap-5 md:(grid-cols-2 mx-6 gap-10) lg:(grid-cols-3) sm:(py-15 px-10) dark:bg-black rounded-sm p-4">
       <div v-if="articles" v-for="(article, $index) in articles" :key="`fe-${$index}`">
         <NuxtLink class="group flex flex-col no-underline" :to="article._path">
-          <div>
-            <NuxtImg crossorigin="anonymous" v-if="article.img" :alt="article.alt" :title="article.alt" loading="lazy"
-              height="369" width="577"
-              class="rounded-md object-contain h-full w-full transform md:(transition duration-400 ease-in-out) md:group-hover:scale-102 b-1 b-solid dark:b-dark-700 b-light-700"
-              :src="article.img" />
-          </div>
+          <NuxtImg crossorigin="anonymous" v-if="article.img" :alt="article.alt" :title="article.alt" loading="lazy"
+            height="369" width="577" object-fit="contain"
+            class="rounded-md h-full w-full transform md:(transition duration-400 ease-in-out) md:group-hover:scale-102 b-1 b-solid dark:b-dark-700 b-light-700"
+            :src="article.img" />
           <div class="dark:(bg-black text-white) h-auto rounded-b-md bg-white dark:text-white text-black">
             <div class="space-x-2">
               <Date v-if="article.date" :date="article.date"
