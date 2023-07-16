@@ -2,7 +2,7 @@
 title: "WWDC 2023：主要亮点"
 date: "2023-06-06"
 tag: "Apple"
-img: /images/blog/wwdc/swift.jpg
+img: /images/blog/wwdc/airdrop.jpeg
 description: "Apple 全球开发者大会的最新公告和发布。"
 toc: true
 feature: true
