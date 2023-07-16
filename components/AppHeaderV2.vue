@@ -1,6 +1,6 @@
 <template>
     <header
-        class="flex justify-between items-center dark:(text-black bg-white) text-white bg-black p4 mx-auto md:px-6 xl:px10 2xl:px20 pb3">
+        class="flex justify-between items-center dark:(text-black bg-white) text-white bg-black md:p4 px4 py2 mx-auto md:px-6 xl:px10 2xl:px20">
         <div class="flex md:space-x-10">
             <NuxtLink :to="localePath('/')" class="mx-auto text-center dark:text-black text-white">
                 <UiIconXanzhu class="h-6 inline-block" :aria-label="t('a11y.logo')" />
@@ -35,7 +35,7 @@
                 <span class="sr-only">{{ t('app.sr.lang') }}</span>
             </Icon>
             <div
-                :class="Toggle.lang ? 'flex flex-col list-none absolute children:(decoration-none dark:text-white text-black font-medium) dark:bg-dark-900 bg-white top-14 right-17 p2 rounded-md children:mt1 text-center b-solid b-1 dark:b-dark-500 b-gray-300' : 'hidden'">
+                :class="Toggle.lang ? 'flex flex-col list-none absolute children:(decoration-none dark:text-white text-black font-medium) dark:bg-dark-900 bg-white top-12 right-17 p2 rounded-md children:mt1 text-center b-solid b-1 dark:b-dark-500 b-gray-300' : 'hidden'">
                 <NuxtLink v-for="(locale, index) in availableLocales" @click.prevent.capture="setLocale(locale.code)"
                     :key="`x-${index}`" :aria-label="t('app.sr.lang_select') + locale.name" @click="langToggle"
                     :to="switchLocalePath(locale.code)"
@@ -49,7 +49,7 @@
                 <span class="sr-only">{{ t('app.sr.menu') }}</span>
             </Icon>
             <nav
-                :class="Toggle.menu ? 'flex flex-col list-none absolute children:(decoration-none text-black font-medium) bg-white text-black top-14 right-6 p2 rounded-md children:mt1 text-center b-solid b-1 b-gray-300' : 'hidden'">
+                :class="Toggle.menu ? 'flex flex-col list-none absolute children:(decoration-none text-black font-medium) bg-white text-black top-12 right-6 p2 rounded-md children:mt1 text-center b-solid b-1 b-gray-300' : 'hidden'">
                 <NuxtLink v-for="(link, index) in links" :key="index" :to="localePath(link.url)"
                     active-class="pointer-events-none order-first !bg-black text-white mt0" :aria-label="t(link.name)"
                     @click="closeMenu" class="order-1 px4 py2 rounded-md hover:bg-gray-200">

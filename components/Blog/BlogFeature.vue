@@ -1,7 +1,6 @@
 <template>
-  <div
-    class="flex flex-col dark:(text-white bg-black) space-y-5 mx-auto b-1 b-solid rounded-md dark:b-dark-700 b-gray-300 sm:mb-10">
-    <h2 class="text-2xl mt-12 sm:(py-10 mt-0) 2xl:text-3xl text-center">{{ t('Home.release') }}</h2>
+  <div class="flex flex-col dark:(text-white bg-black) space-y-5 mx-auto rounded-md sm:mb-10">
+    <h2 class="text-2xl mt-12 sm:(py-10 mt-0) 2xl:text-4xl text-center">{{ t('Home.release') }}</h2>
     <div v-if="features" v-for="feature in features" :key="feature.title"
       class="sm:(mx-5 p-0) lg:mx-20 p-4 justify-center mx-auto">
       <NuxtLink :to="feature._path"
