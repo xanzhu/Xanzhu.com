@@ -16,7 +16,7 @@
     </div>
     <BlogFeature class="min-h-screen" />
     <HomePagesCard class="my-20" />
-    <LazyHomeStatsCard class="min-h-screen" /> Rebuilding..
+    <LazyHomeStatsCard class="min-h-screen" />
     <LazyHomeSocialsCard />
   </main>
 </template>
