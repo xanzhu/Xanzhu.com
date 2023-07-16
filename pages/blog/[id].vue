@@ -15,8 +15,6 @@
       <LazyBlogPrevNext :prev="prev" :next="next" />
     </article>
   </main>
-  <template v-else>
-  </template>
 </template>
 <script setup lang="ts">
 const { path } = useRoute();
@@ -33,7 +31,6 @@ if (!post.value) throw createError({ statusCode: 404 });
 const seoTitle = post.value?.title;
 const seoDesc = post.value?.description;
 const seoImage = post.value?.img;
-
 
 useSeoMeta({
   title: seoTitle,

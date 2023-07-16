@@ -10,7 +10,6 @@
     </div>
     <div
       class="flex flex-col space-y-5 sm:flex-row sm:space-x-5 sm:space-y-0 font-medium children:(dark:text-white text-black cursor-pointer b-1 b-solid rounded-sm px6 py2 font-bold)">
-      <!-- TODO: Add hover colours -->
       <button @click="toggle('phishing')" class="hover:b-brand-light"
         :class="{ 'bg-brand-light b-brand-light text-white': phishing, 'bg-transparent dark:b-white': !phishing }">
         {{ t("Resources.phishing") }}
@@ -34,7 +33,6 @@
 <script setup lang="ts">
 const { t } = useI18n();
 
-// Default option
 const phishing = ref(true);
 const malware = ref(false);
 const a11y = ref(false);
