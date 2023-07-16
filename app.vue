@@ -36,6 +36,7 @@ useServerSeoMeta({
   ogSiteName: 'Xanzhu',
   charset: 'utf-8',
   formatDetection: 'telephone=no',
+  colorScheme: 'dark light'
 })
 
 </script>
