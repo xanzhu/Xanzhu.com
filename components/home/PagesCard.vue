@@ -1,48 +1,24 @@
 <template>
-  <div class="flex justify-center">
-    <div
-      class="grid grid-cols-1 md:grid-cols-2 lg:(grid-cols-3 items-center) gap-10 sm:gap-20 p-4 sm:mx-10 grid-auto-rows-max">
-      <NuxtLink :to="localePath('/resources')" class="group no-underline mx-auto">
-        <NuxtImg src="/images/Option2.png" class="sm:h-[367px] sm:w-[327px] w-[290px] rounded-sm" height="367" width="327"
-          :alt="t('PagesCard.image.iceland')" loading="lazy" />
-        <div class="flex flex-col justify-center m-2 sm:m-4 space-y-2 dark:text-white text-black">
-          <h2 class="text-3xl font-bold m0">
-            {{ t("Links.resources") }}
-          </h2>
-          <p class="op75 m0">{{ t("PagesCard.resources") }}</p>
-          <div class="text-brand-light dark:text-brand-dark">
-            <Icon
-              class="sm:group-hover:(bg-brand-light text-white w-full ease-in-out duration-300) dark:group-hover:(bg-brand-dark) b-rounded-sm sm:(ease-out duration-500) w8 h8"
-              name="uil:arrow-right" :aria-label="t('a11y.ResourcePage')" />
-          </div>
+  <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 mx-auto">
+    <div class="b-solid b-1 rounded-md p4 dark:b-dark-300 b-gray-300 hover:(bg-black) dark:hover:(bg-white) group"
+      v-for="page in pages">
+      <NuxtLink :to="localePath(page.path)" class="no-underline mx-auto">
+        <div class="h-auto w-auto">
+          <NuxtImg :src="page.img" class="h-full w-full max-w-xl rounded-sm object-cover" height="367" width="327"
+            :alt="t(page.alt)" loading="lazy" />
         </div>
-      </NuxtLink>
-      <NuxtLink :to="localePath('/blog')" class="group no-underline mx-auto">
-        <NuxtImg src="/images/Option3.png" class="rounded-sm h-[367px] sm:h-[599px] sm:w-[327px] w-[290px]" height="599"
-          width="327" :alt="t('PagesCard.image.sky')" loading="lazy" />
-        <div class="flex flex-col justify-center m-2 sm:m-4 space-y-2 dark:text-white text-black">
-          <h2 class="text-3xl font-bold m0">{{ t("Links.blog") }}</h2>
-          <p class="op75 m0">{{ t("PagesCard.blog") }}</p>
-          <div class="text-brand-light dark:text-brand-dark">
-            <Icon
-              class="sm:group-hover:(bg-brand-light text-white w-full ease-in-out duration-300) dark:group-hover:(bg-brand-dark) b-rounded-sm sm:(ease-out duration-500) w8 h8"
-              :aria-label="t('a11y.BlogPage')" name="uil:arrow-right" />
+        <div class="flex flex-col dark:text-white text-black group-hover:text-white dark:group-hover:(text-black)">
+          <div class="flex-row flex items-center justify-between relative">
+            <h2 class="text-3xl font-bold m0">
+              {{ t(page.title) }}
+            </h2>
+            <div class="absolute right-0 top-3 mt2">
+              <Icon
+                class="bg-brand-light text-white dark:(bg-brand-dark) b-rounded-md w8 h8 dark:group-hover:(bg-transparent text-brand-light) group-hover:(bg-transparent text-brand-dark)"
+                name="uil:arrow-right" :aria-label="t(page.aria)" />
+            </div>
           </div>
-        </div>
-      </NuxtLink>
-      <NuxtLink :to="localePath('/analysis')" class="group no-underline mx-auto">
-        <NuxtImg src="/images/Option1.png" class="sm:h-[367px] sm:w-[327px] rounded-sm w-[290px]"
-          :alt="t('PagesCard.image.street')" height="367" width="327" loading="lazy" />
-        <div class="flex flex-col justify-center m-2 sm:m-4 space-y-2 dark:text-white text-black">
-          <h2 class="text-3xl font-bold m0">
-            {{ t("Links.analysis") }}
-          </h2>
-          <p class="op75 m0">{{ t("PagesCard.analysis") }}</p>
-          <div class="text-brand-light dark:text-brand-dark">
-            <Icon
-              class="sm:group-hover:(bg-brand-light text-white w-full ease-in-out duration-300) dark:group-hover:(bg-brand-dark) b-rounded-sm sm:(ease-out duration-500) w8 h8"
-              name="uil:arrow-right" :aria-label="t('a11y.AnalysisPage')" />
-          </div>
+          <p class="m0">{{ t(page.p) }}</p>
         </div>
       </NuxtLink>
     </div>
@@ -51,4 +27,31 @@
 <script setup lang="ts">
 const { t } = useI18n();
 const localePath = useLocalePath();
+
+const pages = [
+  {
+    path: "/resources",
+    title: "Links.resources",
+    p: "PagesCard.resources",
+    img: "/images/Option3.png",
+    alt: "PagesCard.image.iceland",
+    aria: "a11y.ResourcePage"
+  },
+  {
+    path: "/blog",
+    title: "Links.blog",
+    p: "PagesCard.blog",
+    img: "/images/Option2.png",
+    alt: "PagesCard.image.sky",
+    aria: "a11y.BlogPage"
+  },
+  {
+    path: "/analysis",
+    title: "Links.analysis",
+    p: "PagesCard.analysis",
+    img: "/images/Option1.png",
+    alt: "PagesCard.image.street",
+    aria: "a11y.AnalysisPage"
+  },
+];
 </script>
