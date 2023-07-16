@@ -9,7 +9,7 @@
           class="dark:(bg-dark-900 border-dark-600 text-gray-300 opacity-100) opacity-70 bg-light-500 border-solid border-1 rounded-sm p-4 border-gray-200">
           {{ t("Home.desc") }}
         </p>
-        <div class="mx-auto hidden xl:(flex)">
+        <div class="mx-auto hidden xl:(flex) 2xl:pt30">
           <HomeMouseIcon class="animate-bounce" role="presentation" :aria-label="t('Home.a11y.mouseicon')" />
         </div>
       </div>
