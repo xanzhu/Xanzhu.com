@@ -34,7 +34,7 @@ const pages = [
     title: "Links.resources",
     p: "PagesCard.resources",
     img: "/images/Option3.png",
-    alt: "PagesCard.image.iceland",
+    alt: "PagesCard.image.street",
     aria: "a11y.ResourcePage"
   },
   {
