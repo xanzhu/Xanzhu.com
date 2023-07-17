@@ -30,7 +30,7 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
 })
 
-// Static Meta Configurations
+// Static Meta Configuration
 useServerSeoMeta({
   ogType: 'website',
   ogSiteName: 'Xanzhu',
