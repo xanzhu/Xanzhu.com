@@ -111,9 +111,6 @@ export default defineNuxtConfig({
     "/zh/blog/**": {
       isr: 3000,
     },
-    "/": {
-      prerender: true,
-    },
   },
 
   // Vercel Analytics
