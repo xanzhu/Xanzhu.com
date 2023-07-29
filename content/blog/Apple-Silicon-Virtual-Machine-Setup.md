@@ -10,7 +10,11 @@ toc: true
 ogLink: "https://source.unsplash.com/mP7aPSUm7aE"
 ---
 
-If you're a developer or tech enthusiast, you may need to use multiple operating systems for projects or personal use. In this post, we'll cover the setup process for popular operating systems such as Windows and Ubuntu using Parallels, a paid virtualization software and a Free Open source Solution called UTM. Whether you're a beginner or an experienced user, this guide will teach you how to install and set up each environment quickly and easily on your Apple Silicon Mac.
+If you're a developer or tech enthusiast, you may need to use multiple operating systems for projects or personal use.
+
+In this post, we'll cover the setup process for popular operating systems such as Windows and Ubuntu using Parallels, a paid virtualization software and a Free Open source Solution called UTM.
+
+Whether you're a beginner or an experienced user, this guide will teach you how to install and set up each environment quickly and easily on your Apple Silicon Mac.
 
 How do you know if your Mac is running on Apple Silicon?
 
@@ -22,7 +26,9 @@ How do you know if your Mac is running on Apple Silicon?
 
 <Media source="/images/blog/VM/Parallels.webp" credit="Parallels / Xanzhu" alt="Parallels Virtual Machine Logo"></Media>
 
-A paid virtualisation software that works natively and is essentially a one-click install of all your favourite Operating Systems. It offers great tools and makes the whole process smooth as possible.
+A paid virtualisation software that works natively and is essentially a one-click install of all your favourite Operating Systems.
+
+It offers great tools and makes the whole process smooth as possible.
 
 1. Vist [Parallels.com](https://www.parallels.com/products/desktop/trial/){:target="\_blank"} and download the free trial.
 2. Once installed open "Parallels Desktop".
@@ -32,9 +38,11 @@ A paid virtualisation software that works natively and is essentially a one-clic
 
 Note it's ideal to have at least 25-30 GB of free space before installing any operating system.
 
-### Windows 11
+### Windows 11 ARM
 
-Windows will run on the native ARM version as of 2022, simply click on the windows icon and hit install. Parallels will do the rest for you. The setup process will start by downloading the Operating System, then you'll be booted into the virtual machine where you can begin making adjustments and tweaks to your liking.
+Windows will run on the native ARM version as of 2022, simply click on the windows icon and hit install. Parallels will do the rest for you.
+
+The setup process will start by downloading the Operating System, then you'll be booted into the virtual machine where you can begin making adjustments and tweaks to your liking.
 
 1. Select the Windows Icon and select continue
 2. Download windows, this will take some time
@@ -46,7 +54,9 @@ Afterwards, it's ideal to begin updating Windows to the latest version for the m
 
 ### Ubuntu 22.04
 
-Ubuntu follows the same process of simply clicking on the Ubuntu Icon and selecting install, this will download the application and boot you straight into the virtual machine. Upon startup, you'll be asked to set a password and then Parallels tools will need to be installed and which requires the virtual machine to restart.
+Ubuntu follows the same process of simply clicking on the Ubuntu Icon and selecting install, this will download the application and boot you straight into the virtual machine.
+
+Upon startup, you'll be asked to set a password and then Parallels tools will need to be installed and which requires the virtual machine to restart.
 
 1. Select the Ubuntu Icon and click continue
 2. Download Ubuntu, this will take some time.
@@ -59,8 +69,6 @@ Ubuntu follows the same process of simply clicking on the Ubuntu Icon and select
 6. After the virtual machine has restarted, log back in and begin configuring your new Ubuntu Virtual Machine.
 
 It's always good practice to check for updates and ensure you're running the latest versions. This can help with performance and security issues.
-
-### Other
 
 Other operating systems are available for you to install such as Kali Linux, Fedora, Debian or your ISO file with some exceptions.
 
@@ -80,13 +88,14 @@ How do you manage or configure your virtual machines?
 <Media source="/images/blog/VM/UTM.webp" credit="UTM / Xanzhu" alt="UTM installation wizard"></Media>
 
 UTM is a free tool that does the same thing as parallels but you're in charge of the customisations.
-The performance will be unstable and need adjusting to your system. This might not be a good choice if you need a responsive virtual machine without the fuss of configuring every aspect of the software.
+
+The performance will be relatively stable but needs adjusting to your system. This might not be a good choice if you need a responsive virtual machine without the fuss of configuring every aspect of the software.
 
 1. Download [UTM](https://mac.getutm.app/){:target="\_blank"} there is an App store version but this is paid, select download
 2. Open UTM and select "Create a new Virtual Machine"
 3. Select "Virtualize"
 
-### Windows 11
+### Windows 11 ARM / X86
 
 Windows can be installed in many different ways [UTM](https://docs.getutm.app/guides/windows/#cannot-run-uup_download_macossh){:target="\_blank"} offers an in-depth guide on installing windows.
 
@@ -187,15 +196,14 @@ sudo reboot
 
 31. After rebooting, log in and that’s it!
 
-### Other
+UTM provides a vast range of [pre-build virtual machines](https://mac.getutm.app/gallery/){:target="\_blank"} spanning all types of operating systems. Which can work on the "Emulation" option. Lots of options and completely free to use.
 
-UTM provides a vast range of [pre-build virtual machines](https://mac.getutm.app/gallery/){:target="\_blank"} spanning all types of operating systems.
-Which can work on the "Emulation" option. Lots of options and completely free to use.
+---
 
-## Future Solutions
+#### Other solutions
 
-While these are two popular choices and ones I've personally used. As ARM gets more adoption from Microsoft and other competitors more tools and software will come. Linux at the moment is making fantastic moves to get Apple Silicon's Hardware working natively and being able to utilise all aspects of the Chipset acting as a bare metal solution.
+While these are two popular choices and ones I've personally used. As ARM gets more adoption from Microsoft and other competitors more tools and software will come.
 
-### Asahi Linux
+Linux at the moment is making fantastic moves to get Apple Silicon's Hardware working natively and being able to utilise all aspects of the Chipset acting as a bare metal solution.
 
-[Asashi Linux](https://asahilinux.org/){:target="\_blank"} provides the groundwork for future installations of Linux-based Operating systems which will eventually allow a smooth bare metal experience and end reliance on virtual machines.
+- [Asashi Linux](https://asahilinux.org/){:target="\_blank"} provides the groundwork for future installations of Linux-based Operating systems which will eventually allow a smooth bare metal experience and end reliance on virtual machines.

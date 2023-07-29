@@ -3,8 +3,8 @@
     class="max-w-md dark:text-white rounded-md mx2 p5 text-sm backdrop-blur-xl backdrop-filter b-1 dark:border-dark-300 b-gray-300 b-dashed">
     <!-- <Icon class="h4 w4 cursor-pointer relative right-2 -top-2 hover:text-red-600" name="ic:baseline-close"
       @click="closeBtn" /> -->
-    <p class="text-xl m0 font-semibold">{{ title || t('Alert.feature') }}</p>
-    <p>{{ desc || t('Alert.maintenance') }}</p>
+    <h1 class="text-xl m0 font-semibold">{{ title || t('Alert.feature') }}</h1>
+    <h2>{{ desc || t('Alert.maintenance') }}</h2>
     <NuxtLink v-if="access" :to="localePath(link ?? '')" class="no-underline animate-bounce text-[#FF0]">
       {{ t('Alert.view') }}</NuxtLink>
   </div>

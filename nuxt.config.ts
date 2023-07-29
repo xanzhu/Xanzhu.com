@@ -90,7 +90,7 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-    autoAlternativeLangPrefixes: undefined,
+    autoAlternativeLangPrefixes: true,
     strictNuxtContentPaths: true,
     autoLastmod: true,
     xslColumns: [
@@ -103,15 +103,12 @@ export default defineNuxtConfig({
 
   routeRules: {
     "/blog/**": {
-      sitemap: { changefreq: "weekly", priority: 0.2 },
       isr: 3000,
     },
     "/ko/blog/**": {
-      sitemap: { changefreq: "weekly", priority: 0.2 },
       isr: 3000,
     },
     "/zh/blog/**": {
-      sitemap: { changefreq: "weekly", priority: 0.2 },
       isr: 3000,
     },
   },

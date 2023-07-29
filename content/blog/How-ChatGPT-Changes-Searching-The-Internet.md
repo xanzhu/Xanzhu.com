@@ -1,5 +1,5 @@
 ---
-title: "How ChatGPT will Change the Way We Search the Internet"
+title: "The Future of Search Engines, Redfined by AI"
 description: "Uncover the potential of ChatGPT, the advanced AI language model, and how it will transform the way we search for information."
 tag: "News"
 date: "2023-02-07"
