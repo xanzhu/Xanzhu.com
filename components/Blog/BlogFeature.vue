@@ -8,9 +8,9 @@
         <div class="h-auto w-auto max-h-xl max-w-xl">
           <NuxtImg crossorigin="anonymous" v-if="feature.img" :src="feature.img" :alt="feature.alt" :title="feature.alt"
             class="h-full w-full rounded-md object-cover md:group-hover:scale-102 md:(transform transition duration-400 ease-in-out) b-1 b-solid dark:b-dark-700 b-gray-300"
-            height="269" width="377" />
+            height="269" width="377" loading="lazy" />
           <NuxtImg crossorigin="anonymous" v-else :alt="feature.alt" src="https://source.unsplash.com/bHOKatJHjII/577x369"
-            class="md:max-w-2xl" height="369" width="577" />
+            class="md:max-w-2xl" height="369" width="577" loading="lazy" />
         </div>
         <div class="sm:(space-y-7) md:space-y-2 space-y-4 lg:max-w-xl">
           <div class="flex flex-row space-x-2">
