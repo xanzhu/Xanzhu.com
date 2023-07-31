@@ -93,13 +93,14 @@ export default defineNuxtConfig({
     autoAlternativeLangPrefixes: false,
     strictNuxtContentPaths: true,
     autoLastmod: true,
-    xslColumns: [
-      { label: "URL", width: "50%" },
-      { label: "Last Modified", select: "sitemap:lastmod", width: "25%" },
-      { label: "Hreflangs", select: "count(xhtml)", width: "25%" },
-    ],
+    // xslColumns: [
+    //   { label: "URL", width: "50%" },
+    //   { label: "Last Modified", select: "sitemap:lastmod", width: "25%" },
+    //   { label: "Hreflangs", select: "count(xhtml)", width: "25%" },
+    // ],
     xslTips: false,
     credits: false,
+    xsl: false,
   },
 
   routeRules: {
