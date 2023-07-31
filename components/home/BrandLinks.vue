@@ -9,9 +9,9 @@
                 </Icon>
             </NuxtLink>
         </div>
-        <time class="h4">
+        <div class="h4">
             {{ formattedDate }}
-        </time>
+        </div>
     </div>
 </template>
 <script setup lang="ts">
