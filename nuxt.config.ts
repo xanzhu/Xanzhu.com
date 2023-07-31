@@ -59,13 +59,13 @@ export default defineNuxtConfig({
     locales: [
       {
         code: "en",
-        iso: "en-NZ",
+        iso: "en",
         name: "English",
         file: "en.json",
       },
       {
         code: "ko",
-        iso: "ko-KR",
+        iso: "ko",
         name: "한국어",
         file: "ko.json",
       },
@@ -78,7 +78,7 @@ export default defineNuxtConfig({
     ],
     detectBrowserLanguage: {
       useCookie: true,
-      cookieKey: "xanzhu-1",
+      cookieKey: "xanzhu-2",
       redirectOn: "root",
       alwaysRedirect: true,
     },
@@ -90,7 +90,7 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-    // autoAlternativeLangPrefixes: true,
+    autoAlternativeLangPrefixes: false,
     strictNuxtContentPaths: true,
     autoLastmod: true,
     xslColumns: [
