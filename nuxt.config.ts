@@ -90,7 +90,7 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-    autoAlternativeLangPrefixes: true,
+    // autoAlternativeLangPrefixes: true,
     strictNuxtContentPaths: true,
     autoLastmod: true,
     xslColumns: [

@@ -57,8 +57,8 @@ devDependencies:
     specifier: ^3.0.3
     version: 3.0.3
   nuxt-simple-sitemap:
-    specifier: ^3.0.15
-    version: 3.0.15(nuxt@3.6.5)(vite@4.4.7)
+    specifier: ^3.1.1
+    version: 3.1.1(nuxt@3.6.5)(vite@4.4.7)
 
 packages:
 
@@ -6167,8 +6167,8 @@ packages:
       - supports-color
     dev: true
 
-  /nuxt-simple-sitemap@3.0.15(nuxt@3.6.5)(vite@4.4.7):
-    resolution: {integrity: sha512-7XBOrlYYr+OleSF63BH0THiAGdJhHyxyttQxb9c8w2tau1xg+zHrmxWKJZKFlaux6e4femsmZB2M/kRNuYq7Tw==}
+  /nuxt-simple-sitemap@3.1.1(nuxt@3.6.5)(vite@4.4.7):
+    resolution: {integrity: sha512-0XLfaxsnv7F2lhf9L5Ri2IzaKcqu0nK9f7oOiQFwt/RiyS0wcYfRJQShUGhWBKVmKhH9swMfUHyBpNpjm0SvaQ==}
     dependencies:
       '@nuxt/devtools-kit': 0.7.1(nuxt@3.6.5)(vite@4.4.7)
       '@nuxt/kit': 3.6.5
