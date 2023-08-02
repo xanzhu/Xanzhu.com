@@ -2,7 +2,7 @@
   <div class="flex space-x-2 justify-center sm:justify-start">
     <div v-for="social in socials" class="children:(dark:text-white text-black)">
       <NuxtLink :to="social.url" :aria-label="social.aria" target="_blank"
-        class="dark:hover:text-brand-dark hover:text-brand-light">
+        class="dark:hover:text-brand-dark hover:text-brand-light p1">
         <Icon :name="social.icon" class="h5 w5" />
       </NuxtLink>
     </div>
