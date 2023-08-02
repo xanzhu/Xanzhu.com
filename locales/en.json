@@ -147,5 +147,11 @@
   },
   "email": {
     "share": "Checkout this article"
+  },
+  "share": {
+    "twitter": "Share this on Twitter",
+    "reddit": "Share this on Reddit",
+    "linkedin": "Share this on LinkedIn",
+    "email": "Share this page via email"
   }
 }
