@@ -1,12 +1,12 @@
 <template>
   <main v-if="post" class="container mb-4 mx-auto mt10 sm:mt10 md:(px-6 mb-0 mt-15)" role="main">
-    <article class="dark:(bg-black text-light-200) bg-white text-black pb-2 sm:(rounded-sm) md:(space-y-10 mb-12)"
+    <article class="dark:(bg-black text-light) bg-white text-black pb-2 sm:(rounded-sm) md:(space-y-10 mb-12)"
       itemtype="https://schema.org/Article" itemscope>
       <BlogPostHeader v-bind:post="post" />
       <div class="flex flex-col-reverse md:(flex-row space-x-6 space-x-2) mx-auto justify-center">
         <div>
           <ContentRenderer :value="post" itemprop="articleBody"
-            class="prose prose-sm md:prose-md lg:(prose-xl) mx-auto px-4 my-4 dark:text-light-200 text-black leading-normal" />
+            class="prose prose-sm md:prose-md lg:(prose-xl) mx-auto px-4 my-4 dark:text-light text-black leading-normal" />
         </div>
         <aside v-if="post.toc == true" class="mt-2">
           <BlogToc :links="post.body.toc.links" class="lg:(sticky top-20)" />
@@ -30,7 +30,8 @@ if (!post.value) throw createError({ statusCode: 404 });
 
 const seoTitle = post.value?.title;
 const seoDesc = post.value?.description;
-const seoImage = post.value?.img;
+// Double check this
+const seoImage = "https://xanzhu.com" + post.value?.img;
 
 useSeoMeta({
   title: seoTitle,
@@ -92,8 +93,7 @@ h5 {
 }
 
 .prose a[href^="https"] {
-  font-weight: 500;
-  color: #d51600;
+  color: #ff0000;
   text-decoration: none;
 }
 

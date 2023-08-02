@@ -9,7 +9,7 @@ export default defineConfig({
     presetUno(),
     presetTypography(),
     presetWebFonts({
-      provider: "bunny",
+      provider: "google",
       fonts: {
         sans: "Noto Sans KR",
       },
@@ -20,7 +20,7 @@ export default defineConfig({
     colors: {
       brand: {
         dark: "#ff0000", // text-brand-dark //
-        light: "#d51600", // text-brand-light // #b0100d (AAA)
+        light: "#d51600", // text-brand-light // #b0100d // #B00F0C (AAA)
       },
     },
   },

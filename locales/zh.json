@@ -147,5 +147,11 @@
   },
   "email": {
     "share": "看看这篇文章"
+  },
+  "share": {
+    "twitter": "在 Twitter 上分享此内容",
+    "reddit": "在 Reddit 上分享",
+    "linkedin": "在 LinkedIn 上分享此内容",
+    "email": "通过电子邮件分享此页面"
   }
 }

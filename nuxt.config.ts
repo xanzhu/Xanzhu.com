@@ -80,7 +80,7 @@ export default defineNuxtConfig({
       useCookie: true,
       cookieKey: "xanzhu-2",
       redirectOn: "root",
-      alwaysRedirect: true,
+      // alwaysRedirect: true,
     },
   },
 

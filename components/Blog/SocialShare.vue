@@ -1,7 +1,8 @@
 <template>
   <div class="flex space-x-2 justify-center sm:justify-start">
     <div v-for="social in socials" class="children:(dark:text-white text-black)">
-      <NuxtLink :to="social.url" target="_blank" class="dark:hover:text-brand-dark hover:text-brand-light">
+      <NuxtLink :to="social.url" :aria-label="social.aria" target="_blank"
+        class="dark:hover:text-brand-dark hover:text-brand-light p1">
         <Icon :name="social.icon" class="h5 w5" />
       </NuxtLink>
     </div>
@@ -25,19 +26,23 @@ const emailTitle = t('email.share')
 const socials = [
   {
     url: `https://twitter.com/intent/tweet?url=https://xanzhu.com${postPath}&text=${postTitle}&via=Xanzhu1`,
-    icon: "mdi:twitter"
+    icon: "mdi:twitter",
+    aria: t('share.twitter')
   },
   {
     url: `https://www.linkedin.com/shareArticle?url=https://xanzhu.com${postPath}&title=${postTitle}`,
-    icon: "mdi:linkedin"
+    icon: "mdi:linkedin",
+    aria: t('share.linkedin')
   },
   {
     url: `https://www.reddit.com/submit?url=https://xanzhu.com${postPath}&title=${postTitle}`,
-    icon: "mdi:reddit"
+    icon: "mdi:reddit",
+    aria: t('share.reddit')
   },
   {
     url: `mailto:?subject=${postTitle}&body=${emailTitle}: ${postTitle}`,
-    icon: "mdi:email"
+    icon: "mdi:email",
+    aria: t('share.email')
   }
 ];
 </script>
