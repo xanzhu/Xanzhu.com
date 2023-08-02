@@ -1,6 +1,6 @@
 <template>
   <main v-if="post" class="container mb-4 mx-auto mt10 sm:mt10 md:(px-6 mb-0 mt-15)" role="main">
-    <article class="dark:(bg-black text-light-200) bg-white text-black pb-2 sm:(rounded-sm) md:(space-y-10 mb-12)"
+    <article class="dark:(bg-black text-light) bg-white text-black pb-2 sm:(rounded-sm) md:(space-y-10 mb-12)"
       itemtype="https://schema.org/Article" itemscope>
       <BlogPostHeader v-bind:post="post" />
       <div class="flex flex-col-reverse md:(flex-row space-x-6 space-x-2) mx-auto justify-center">
