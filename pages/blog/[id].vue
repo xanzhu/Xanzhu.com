@@ -94,7 +94,7 @@ h5 {
 
 .prose a[href^="https"] {
   font-weight: 500;
-  color: #d51600;
+  color: #AD1100;
   text-decoration: none;
 }
 

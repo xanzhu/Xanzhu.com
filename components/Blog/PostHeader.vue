@@ -31,9 +31,8 @@
     </div>
     <div v-if="post.img" class="relative col-span-1 grow-0 h-auto w-auto px-4 sm:px0 mb-5">
       <div class="h-auto lg:h-70 w-auto sm:w-md mx-auto lg:w-auto" itemscope itemtype="https://schema.org/ImageObject">
-        <NuxtImg crossorigin="anonymous" itemprop="image" :src="post.img" :alt="post.alt" :title="post.alt" loading="lazy"
-          height="369" width="577"
-          class="h-full w-full rounded-md b-brand-border b-1 b-solid dark:b-dark-700 b-gray-300" />
+        <NuxtImg crossorigin="anonymous" itemprop="image" :src="post.img" :alt="post.alt" :title="post.alt" height="369"
+          width="577" class="h-full w-full rounded-md b-brand-border b-1 b-solid dark:b-dark-700 b-gray-300" />
         <div v-if="post.source"
           class="dark:(text-light-200 opacity-70) text-dark-700 op90 absolute right-3 sm:right-2 px-1 py-1 text-xs lt-sm:(mr-2) tracking-wide">
           <p class="inline-block m0" />
