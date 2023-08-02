@@ -93,7 +93,7 @@ h5 {
 }
 
 .prose a[href^="https"] {
-  color: #AD1100;
+  color: #ff0000;
   text-decoration: none;
 }
 
