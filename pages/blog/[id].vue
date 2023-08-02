@@ -30,7 +30,8 @@ if (!post.value) throw createError({ statusCode: 404 });
 
 const seoTitle = post.value?.title;
 const seoDesc = post.value?.description;
-const seoImage = post.value?.img;
+// Double check this
+const seoImage = "https://xanzhu.com" + post.value?.img;
 
 useSeoMeta({
   title: seoTitle,
