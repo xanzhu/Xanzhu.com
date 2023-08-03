@@ -10,3 +10,29 @@
         </div>
     </div>
 </template>
+<script setup lang="ts">
+
+const { t } = useI18n();
+
+const seoImage = 'https://source.unsplash.com/WLORfDtl7oM'
+
+const seoTitle = computed(() => {
+    return t('About.title');
+});
+
+const seoDesc = computed(() => {
+    return t('About.desc');
+});
+
+useSeoMeta({
+    title: seoTitle,
+    description: seoDesc,
+    ogTitle: seoTitle,
+    ogDescription: seoDesc,
+    twitterDescription: seoDesc,
+    twitterTitle: seoTitle,
+    twitterImage: seoImage,
+    ogImage: seoImage,
+});
+
+</script>
