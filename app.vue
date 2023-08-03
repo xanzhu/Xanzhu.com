@@ -1,5 +1,5 @@
 <template>
-  <Html v-if="head.htmlAttrs" :lang="head.htmlAttrs.lang" class="dark:bg-black bg-white">
+  <Html v-if="head.htmlAttrs" :lang="head.htmlAttrs.lang" class="bg-black">
 
   <Head>
     <template v-for="link in head.link" :key="link.id">

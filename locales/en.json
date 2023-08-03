@@ -153,5 +153,13 @@
     "reddit": "Share this on Reddit",
     "linkedin": "Share this on LinkedIn",
     "email": "Share this page via email"
+  },
+  "About": {
+    "p1": "Cybersecurity is a crucial part of the internet and is a growing concern for many users and businesses. Attacks can strike at any moment, devastating individuals and organisations. That's why we created Xanzhu.",
+    "p2": "Our mission is to become a leading source for information and knowledge on security, privacy, and accessibility. ",
+    "p3": "We want to provide a space for technology lovers, as well as average consumers and business owners, to gain insight into how to protect themselves online.",
+    "p4": "Knowing how to protect yourself or your business is important. Privacy and security should be a top priority.",
+    "p5": "We are new and will likely make a few mistakes. But we're passionate about making the internet a safer place, and we hope you'll join us in developing the next standard of security practices and guidelines.",
+    "h1": "About Xanzhu.com"
   }
 }
