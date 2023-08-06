@@ -45,7 +45,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "base-uri 'self'; form-action 'self'; frame-ancestors 'self'; img-src 'self' https://images.unsplash.com https://source.unsplash.com https://storage.googleapis.com; object-src 'none'; style-src 'self' https:; upgrade-insecure-requests connect-src vitals.vercel-insights.com;"
+          "value": "base-uri 'self'; form-action 'self'; frame-ancestors 'self'; img-src 'self' https://images.unsplash.com https://source.unsplash.com https://storage.googleapis.com; object-src 'none'; style-src 'self' unsafe-inline https:; upgrade-insecure-requests; connect-src vitals.vercel-insights.com;"
         }
       ]
     }
