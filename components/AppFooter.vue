@@ -3,7 +3,7 @@
     <p class="font-thin">{{ t("Footer") }}</p>
     <div class="flex-row flex">
       <div v-for="(link, index) in links" :key="index">
-        <NuxtLink class="text-white decoration-none" :to="link.url">{{ t(link.name) }}<span
+        <NuxtLink class="dark:text-white text-black decoration-none" :to="link.url">{{ t(link.name) }}<span
             v-if="index !== links.length - 1" class="text-brand-dark px-1">/</span>
         </NuxtLink>
       </div>
