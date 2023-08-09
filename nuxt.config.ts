@@ -8,7 +8,6 @@ export default defineNuxtConfig({
     "nuxt-simple-sitemap",
     "@nuxtjs/color-mode",
     "nuxt-icon",
-    "@nuxtjs/web-vitals",
     "nuxt-simple-robots",
   ],
 
