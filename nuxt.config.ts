@@ -116,8 +116,14 @@ export default defineNuxtConfig({
   // Vercel Analytics
   plugins: [{ src: "~/plugins/vercel.ts", mode: "client" }],
 
+  // Temp fix for Nuxt 3.7~
+  alias: {
+    "micromark/lib/preprocess.js": "micromark",
+    "micromark/lib/postprocess.js": "micromark",
+  },
+
   // Experimental Nuxt Features
-  // experimental: {
-  //   headNext: true
-  // }
+  experimental: {
+    headNext: true,
+  },
 });
