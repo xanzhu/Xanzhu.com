@@ -89,7 +89,8 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-    autoAlternativeLangPrefixes: false,
+    // autoAlternativeLangPrefixes: false,
+    autoI18n: true,
     strictNuxtContentPaths: true,
     autoLastmod: true,
     xslColumns: [
@@ -114,4 +115,9 @@ export default defineNuxtConfig({
 
   // Vercel Analytics
   plugins: [{ src: "~/plugins/vercel.ts", mode: "client" }],
+
+  // Experimental Nuxt Features
+  // experimental: {
+  //   headNext: true
+  // }
 });

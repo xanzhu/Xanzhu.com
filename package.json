@@ -27,6 +27,6 @@
     "nuxt": "^3.6.5",
     "nuxt-icon": "^0.4.2",
     "nuxt-simple-robots": "^3.1.0",
-    "nuxt-simple-sitemap": "^3.1.5"
+    "nuxt-simple-sitemap": "^3.2.5"
   }
 }
