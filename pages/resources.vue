@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-col space-y-10 pt-10 ma px-5 sm:px-20 max-w-4xl">
+  <div class="flex flex-col space-y-10 pt-10 ma px-5 md:px-20 max-w-4xl">
     <div class="flex items-center justify-center sm:justify-between mb-10">
-      <h1 class="sm:text-center font-bold text-3xl sm:text-4xl break-words sm:max-w-md">
+      <h1 class="font-bold text-3xl sm:text-4xl break-words sm:max-w-md">
         {{ t("Resources.heading") }}
       </h1>
       <div

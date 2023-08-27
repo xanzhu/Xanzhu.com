@@ -4,7 +4,7 @@
       <NuxtImg src="/images/resources/phish.webp" class="h-full w-full rounded-sm object-cover" alt="Paint Waves Graphic"
         loading="Lazy" />
     </div>
-    <h2 class="p-4 font-bold bg-[#0000FF] rounded-sm text-center text-white text-2xl">
+    <h2 class="p6 m0 font-bold bg-[#0000FF] rounded-sm text-center text-white text-2xl">
       {{ t("Resources.phishing") }}
     </h2>
     <div class="dark:bg-dark-900 bg-light-600 b-1 b-solid rounded-sm border-[#0000FF] p-4 row-span-2 col-span-1">

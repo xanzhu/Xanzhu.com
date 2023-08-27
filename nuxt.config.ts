@@ -8,7 +8,6 @@ export default defineNuxtConfig({
     "nuxt-simple-sitemap",
     "@nuxtjs/color-mode",
     "nuxt-icon",
-    "@nuxtjs/web-vitals",
     "nuxt-simple-robots",
   ],
 
@@ -90,7 +89,8 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-    autoAlternativeLangPrefixes: false,
+    // autoAlternativeLangPrefixes: false,
+    autoI18n: true,
     strictNuxtContentPaths: true,
     autoLastmod: true,
     xslColumns: [
@@ -115,4 +115,15 @@ export default defineNuxtConfig({
 
   // Vercel Analytics
   plugins: [{ src: "~/plugins/vercel.ts", mode: "client" }],
+
+  // Temp fix for Nuxt 3.7~
+  alias: {
+    "micromark/lib/preprocess.js": "micromark",
+    "micromark/lib/postprocess.js": "micromark",
+  },
+
+  // Experimental Nuxt Features
+  experimental: {
+    headNext: true,
+  },
 });
