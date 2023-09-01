@@ -1,30 +1,32 @@
 <template>
-  <div class="flex flex-col text-center justify-center items-center my-10 sm:(flex-row space-x-5 space-y-0) space-y-4">
-    <h3 class="text-2xl sm:text-4xl font-bold m0">
-      {{ t("SocialsCard.h1") }}
-    </h3>
-    <div class="flex flex-col sm:flex-row sm:space-x-4 space-y-0) space-y-0 op75 items-center pt1">
-      <NuxtLink v-for="(link, index) in links" :key="index" :to="link.url" :aria-label="link.name" target="_blank"
-        class="p4 sm:p2 b-transparent rounded-sm hover:(underline underline-offset-4 decoration-2) no-underline dark:text-white text-black">
-        {{ link.name }}
-      </NuxtLink>
-    </div>
+  <div class="flex flex-row md:space-x-6 items-center pt1 md:items-end font-none">
+    <NuxtLink v-for="(link, index) in links" :key="index" :to="link.url" :aria-label="link.name" target="_blank"
+      class="pr4 md:p2 text-white dark:text-black hover:text-brand-dark">
+      <Icon :name="link.icon" class="h5 w5" />
+    </NuxtLink>
   </div>
 </template>
 <script setup lang="ts">
-const { t } = useI18n();
 const links = [
   {
     url: "https://www.linkedin.com/company/xanzhu",
+    icon: "mdi:linkedin",
     name: "LinkedIn",
   },
   {
     url: "https://github.com/xanzhu",
+    icon: "mdi:github",
     name: "Github",
   },
   {
     url: "https://twitter.com/xanzhu1",
+    icon: "mdi:twitter",
     name: "Twitter",
+  },
+  {
+    url: "https://instagram.com/xanzhuu",
+    icon: "mdi:instagram",
+    name: "Instagram",
   }
 ];
 </script>

@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col items-center">
+    <div class="flex flex-col items-center min-h-screen md:mt-20">
         <h1>{{ t('About.h1') }}</h1>
         <div class="prose text-sm p4 sm:(text-base p2)">
             <p> {{ t('About.p1') }}</p>
