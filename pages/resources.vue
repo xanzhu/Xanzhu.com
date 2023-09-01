@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col space-y-10 pt-10 ma px-5 md:px-20 max-w-4xl">
+  <div class="flex flex-col space-y-10 pt-10 ma px-5 md:px-20 max-w-4xl min-h-screen">
     <div class="flex items-center justify-center sm:justify-between mb-10">
       <h1 class="font-bold text-3xl sm:text-4xl break-words sm:max-w-md">
         {{ t("Resources.heading") }}
@@ -27,7 +27,7 @@
     <ResourcesMalware v-else-if="malware && !phishing && !a11y" />
     <ResourcesAccessibility v-else-if="a11y && !phishing && !malware" />
 
-    <p class="text-center">{{ t('Resources.soon') }}</p>
+    <p class="text-center pb-5">{{ t('Resources.soon') }}</p>
   </div>
 </template>
 <script setup lang="ts">
