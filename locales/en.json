@@ -166,6 +166,11 @@
     "title": "About"
   },
   "PP": {
-    "title": "Privacy Policy"
+    "title": "Privacy Policy",
+    "description": "Review our privacy policy statement",
+    "section-one": "We value privacy and respect the privacy of those who visit our website. No identifiable information is stored or accessed without your permission to ensure that we do not infringe upon your privacy.",
+    "section-two": "Because our site contains links to third-party websites, we cannot prevent tracking outside of our domain.",
+    "section-three": "Usage data that your browser provides (User-Agent), includes IP addresses, browsers and devices used. This data is used for metrics and server communications.",
+    "date": "Modified"
   }
 }

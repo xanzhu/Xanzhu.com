@@ -8,12 +8,14 @@
                     <div v-for="(link, index) in links" :key="index">
                         <NuxtLink
                             class="text-white dark:text-black decoration-none hover:(underline underline-offset-6 decoration-2 decoration-brand-dark)"
-                            :to="link.url">{{ t(link.name) }}</NuxtLink>
+                            :to=localePath(link.url)>{{ t(link.name) }}</NuxtLink>
                     </div>
                 </div>
                 <HomeSocialsCard class="mt-10 md:hidden" />
             </div>
-            <p class="mt-5 font-normal text-sm">{{ t("Footer") }}</p>
+            <p class="mt-5 font-normal text-sm">{{ t("Footer") }} <NuxtLink :to="localePath('/privacy-policy')"
+                    class="font-semibold text-white decoration-none hover:(text-brand-dark)">{{ t('PP.title') }}</NuxtLink>
+            </p>
         </div>
         <div class="hidden md:(flex-col flex items-end)">
             <HomeSocialsCard class="mb-5" />
@@ -27,6 +29,7 @@
 </template>
 <script setup lang="ts">
 const { t } = useI18n();
+const localePath = useLocalePath();
 
 const links = [
     {
