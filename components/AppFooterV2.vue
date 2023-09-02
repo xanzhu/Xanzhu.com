@@ -14,7 +14,8 @@
                 <HomeSocialsCard class="mt-10 md:hidden" />
             </div>
             <p class="mt-5 font-normal text-sm">{{ t("Footer") }} <NuxtLink :to="localePath('/privacy-policy')"
-                    class="font-semibold text-white decoration-none hover:(text-brand-dark)">{{ t('PP.title') }}</NuxtLink>
+                    class="font-semibold text-white dark:text-black decoration-none hover:(text-brand-dark)">{{
+                        t('PP.title') }}</NuxtLink>
             </p>
         </div>
         <div class="hidden md:(flex-col flex items-end)">
@@ -22,7 +23,7 @@
             <NuxtLink
                 href="https://www.digitalocean.com/?refcode=2cc6381920cd&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge">
                 <NuxtImg src="https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%203.svg"
-                    alt="DigitalOcean Referral Badge" />
+                    alt="DigitalOcean Referral Badge" loading="lazy" />
             </NuxtLink>
         </div>
     </div>
