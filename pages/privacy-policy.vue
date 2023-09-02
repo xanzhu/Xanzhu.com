@@ -21,8 +21,6 @@
 <script setup lang="ts">
 const { t } = useI18n();
 
-const title = t("PP.title");
-const desc = t("PP.description");
 const date = "2023-09-02";
 
 const paragraphs: { [key: number]: string } = {
@@ -30,4 +28,21 @@ const paragraphs: { [key: number]: string } = {
     2: t("PP.section-two"),
     3: t("PP.section-three"),
 };
+
+const title = computed(() => {
+    return t('PP.title');
+});
+
+const desc = computed(() => {
+    return t('PP.description');
+});
+
+useSeoMeta({
+    title: title,
+    description: desc,
+    ogTitle: title,
+    ogDescription: desc,
+    twitterDescription: desc,
+    twitterTitle: title,
+});
 </script>
