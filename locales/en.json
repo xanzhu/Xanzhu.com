@@ -1,6 +1,6 @@
 {
   "Home": {
-    "title": "Privacy, Security and everything in between",
+    "title": "Privacy, Security and everything in between.",
     "desc": "Xanzhu is a platform for sharing knowledge on technology and online privacy. Our articles, guides, and reviews teach users how to use technology safely and protect their data online, covering topics such as VPNs, password managers, two-factor authentication, and online safety. Learn more about how to protect your privacy online and sign up for our newsletter to get the latest cybersecurity tips.",
     "Seo": {
       "title": "News, Guides on Technology, Privacy and Security",
@@ -10,7 +10,8 @@
       "mouseicon": "Scroll down"
     },
     "release": "New Releases",
-    "more": "Explore More Articles"
+    "more": "Explore More Articles",
+    "tag": "Leading the future"
   },
   "Links": {
     "resources": "Resources",
@@ -163,5 +164,13 @@
     "h1": "About Xanzhu.com",
     "desc": "Xanzhu.com - Your cybersecurity hub. Protecting you online with valuable insights on security, privacy, and accessibility. Join us!",
     "title": "About"
+  },
+  "PP": {
+    "title": "Privacy Policy",
+    "description": "Review our privacy policy statement",
+    "section-one": "We value privacy and respect the privacy of those who visit our website. No identifiable information is stored or accessed without your permission to ensure that we do not infringe upon your privacy.",
+    "section-two": "Because our site contains links to third-party websites, we cannot prevent tracking outside of our domain.",
+    "section-three": "Usage data that your browser provides (User-Agent), includes IP addresses, browsers and devices used. This data is used for metrics and server communications.",
+    "date": "Modified"
   }
 }

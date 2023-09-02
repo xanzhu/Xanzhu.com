@@ -89,7 +89,6 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-    // autoAlternativeLangPrefixes: false,
     autoI18n: true,
     strictNuxtContentPaths: true,
     autoLastmod: true,
@@ -117,10 +116,10 @@ export default defineNuxtConfig({
   plugins: [{ src: "~/plugins/vercel.ts", mode: "client" }],
 
   // Temp fix for Nuxt 3.7~
-  alias: {
-    "micromark/lib/preprocess.js": "micromark",
-    "micromark/lib/postprocess.js": "micromark",
-  },
+  // alias: {
+  //   "micromark/lib/preprocess.js": "micromark",
+  //   "micromark/lib/postprocess.js": "micromark",
+  // },
 
   // Experimental Nuxt Features
   experimental: {

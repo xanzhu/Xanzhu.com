@@ -1,6 +1,6 @@
 <template>
-  <div class="flex h-[78vh] items-center justify-center">
-    <LazyUiAlertFeat title="Updated: 16/7/23" />
+  <div class="flex min-h-screen items-center justify-center">
+    <LazyUiAlertFeat date="02/09/23" />
   </div>
 </template>
 <script setup lang="ts">

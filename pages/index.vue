@@ -2,7 +2,7 @@
   <main class="flex flex-col justify-center">
     <div class="flex sm:h-screen mt-10 px-4 md:px-12">
       <div class="flex flex-col space-y-[10%] xl:space-y-[7%] 2xl:space-y-[12%] sm:max-w-5xl mx-auto">
-        <h1 class="font-bold text-4xl sm:text-6xl md:text-7xl lg:text-8xl mt0">
+        <h1 class="font-bold text-4xl sm:text-6xl md:text-7xl lg:text-8xl mt5 text-center">
           {{ t("Home.title") }}
         </h1>
         <p
@@ -15,9 +15,8 @@
       </div>
     </div>
     <BlogFeature class="min-h-screen" />
-    <HomePagesCard class="my-20" />
+    <HomePagesCardV2 class="my-20" />
     <LazyHomeStatsCard class="min-h-screen" />
-    <LazyHomeSocialsCard />
   </main>
 </template>
 <script setup lang="ts">
