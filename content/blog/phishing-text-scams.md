@@ -22,6 +22,7 @@ Look at the supplied number. These numbers often use the wrong area codes in New
 New Zealand uses +64.
 
 For numbers that are quite short, such as 3720, 3136, or 5678, these types of text messages are used to send notifications or authentication codes. The purpose of these numbers is to provide a quick text with a code or an important announcement directly to your phone.
+
 These are used when signing into some services; they'll ask you to enter these numbers to verify the identity of the account. These are called 2-Factor Authentication codes or 2FA Codes. Generally, these are considered safe, but be aware when being asked to enter them.
 
 If you've received a code for a service you haven't used or signed into, ignore it, as the code will expire.
