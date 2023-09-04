@@ -74,7 +74,7 @@ As for the links provided in these examples, they don't match any known website,
 In the above example, NZTA suggests that you may have an outstanding fee. Do not click on the link. Instead, go directly to your web browser and enter the official NZTA website.
 
 Lets compare the links used:
-<Media source="/images/blog/sep/Compare.svg" alt="Comparing phishing link vs legitimate"></Media>
+<Media source="/images/blog/sep/compare.svg" alt="Comparing phishing link vs legitimate"></Media>
 
 Offical government based links will always have the .govt.nz domain.
 Always navigate to the offical website before entering sensitive information.
