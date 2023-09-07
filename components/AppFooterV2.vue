@@ -1,6 +1,6 @@
 <template>
     <div
-        class="flex flex-row space-x-2 bg-black text-white dark:(bg-white text-black) justify-between p12 pb4 items-center">
+        class="flex flex-row space-x-2 bg-black text-white dark:(bg-white text-black) justify-between p6 md:(p12 pb4) items-center">
         <div class="flex flex-col">
             <div class="flex-col md:(flex-row items-center space-x-10 space-y-0) flex space-y-4">
                 <UiLogo class="dark:text-black text-white" />
