@@ -12,7 +12,7 @@ devDependencies:
     specifier: ^0.7.6
     version: 0.7.6(nuxt@3.7.1)(vite@4.4.9)
   '@nuxt/image-edge':
-    specifier: ^1.0.0-rc.1-28236947.6058c63
+    specifier: 1.0.0-rc.1-28236947.6058c63
     version: 1.0.0-rc.1-28236947.6058c63
   '@nuxtjs/color-mode':
     specifier: ^3.3.0
