@@ -52,4 +52,19 @@ const { data: features } = await useAsyncData("feature", async () => {
     .limit(3)
     .find();
 });
+
+// Test backup rendering method: onload locale
+watch(() => locale.value, async (newLocale) => {
+  let query = newLocale !== "en" ? `${newLocale}/blog` : "/blog";
+  const { data: newFeatures } = await useAsyncData("feature", async () => {
+    return queryContent(query)
+      .where({ feature: true })
+      .only(['title', 'description', 'img', 'date', 'tag', '_path', 'alt'])
+      .sort({ date: -1 })
+      .limit(3)
+      .find();
+  });
+
+  Object.assign(features, newFeatures);
+});
 </script>
