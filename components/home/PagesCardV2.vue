@@ -5,7 +5,7 @@
                 <div class="h-[208px] sm:w-[308px]">
                     <NuxtImg :src="page.img"
                         class="h-full w-full max-w-xl rounded-sm object-cover transform md:(transition duration-400 ease-in-out) md:group-hover:scale-102"
-                        height="208" width="308" :alt="t(page.alt)" loading="lazy" />
+                        height="208" width="308" :alt="t(page.alt)" loading="lazy" format="webp" />
                 </div>
                 <div class="dark:text-white text-black flex flex-row items-center space-x-4 justify-between">
                     <div class="flex flex-col">

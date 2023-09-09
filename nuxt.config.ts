@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   modules: [
     "@nuxtjs/i18n",
     "@nuxt/content",
-    "@nuxt/image",
+    "@nuxt/image-edge",
     "@unocss/nuxt",
     "nuxt-simple-sitemap",
     "@nuxtjs/color-mode",
@@ -117,5 +117,10 @@ export default defineNuxtConfig({
   // Experimental Nuxt Features
   experimental: {
     headNext: true,
+  },
+
+  // Test Image Edge
+  image: {
+    domains: ["source.unsplash.com"],
   },
 });
