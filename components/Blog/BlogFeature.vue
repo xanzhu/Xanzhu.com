@@ -35,8 +35,6 @@
         class="px-8 py-2 dark:bg-white bg-black dark:text-black text-white hover:(dark:bg-brand-dark bg-brand-light) decoration-none rounded-md font-semibold">
         {{ t('Home.more') }}</NuxtLink>
     </div>
-    <p>TESTING</p>
-    {{ locale }}
   </div>
 </template>
 <script setup lang="ts">
@@ -51,20 +49,5 @@ const { data: features } = await useAsyncData("feature", async () => {
     .sort({ date: -1 })
     .limit(3)
     .find();
-});
-
-// Test backup rendering method: onload locale
-watch(() => locale.value, async (newLocale) => {
-  let query = newLocale !== "en" ? `${newLocale}/blog` : "/blog";
-  const { data: newFeatures } = await useAsyncData("feature", async () => {
-    return queryContent(query)
-      .where({ feature: true })
-      .only(['title', 'description', 'img', 'date', 'tag', '_path', 'alt'])
-      .sort({ date: -1 })
-      .limit(3)
-      .find();
-  });
-
-  Object.assign(features, newFeatures);
 });
 </script>
