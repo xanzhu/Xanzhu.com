@@ -16,7 +16,7 @@
     "@nuxt/image": "1.0.0-rc.1",
     "@nuxtjs/color-mode": "^3.3.0",
     "@nuxtjs/i18n": "8.0.0-rc.4",
-    "@types/node": "^18.17.14",
+    "@types/node": "^18.17.15",
     "@unocss/nuxt": "^0.55.7",
     "@unocss/preset-typography": "^0.55.7",
     "@unocss/preset-uno": "^0.55.7",
@@ -27,6 +27,6 @@
     "nuxt": "^3.7.1",
     "nuxt-icon": "^0.5.0",
     "nuxt-simple-robots": "^3.1.2",
-    "nuxt-simple-sitemap": "^3.2.6"
+    "nuxt-simple-sitemap": "^3.2.7"
   }
 }
