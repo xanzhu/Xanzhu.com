@@ -35,6 +35,8 @@
         class="px-8 py-2 dark:bg-white bg-black dark:text-black text-white hover:(dark:bg-brand-dark bg-brand-light) decoration-none rounded-md font-semibold">
         {{ t('Home.more') }}</NuxtLink>
     </div>
+    <p>TESTING</p>
+    {{ locale }}
   </div>
 </template>
 <script setup lang="ts">
