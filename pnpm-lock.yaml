@@ -45,7 +45,7 @@ devDependencies:
     specifier: ^1.0.2
     version: 1.0.2
   nuxt:
-    specifier: ^3.7.1
+    specifier: ^3.7.0
     version: 3.7.1(@types/node@18.17.15)
   nuxt-icon:
     specifier: ^0.5.0
@@ -1696,7 +1696,6 @@ packages:
     dependencies:
       is-glob: 4.0.3
       micromatch: 4.0.5
-      napi-wasm: 1.1.0
     dev: true
     bundledDependencies:
       - napi-wasm
@@ -6314,10 +6313,6 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
-
-  /napi-wasm@1.1.0:
-    resolution: {integrity: sha512-lHwIAJbmLSjF9VDRm9GoVOy9AGp3aIvkjv+Kvz9h16QR3uSVYH78PNQUnT2U4X53mhlnV2M7wrhibQ3GHicDmg==}
-    dev: true
 
   /negotiator@0.6.3:
     resolution: {integrity: sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==}
