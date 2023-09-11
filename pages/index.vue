@@ -1,7 +1,7 @@
 <template>
   <main class="flex flex-col justify-center">
-    <div class="flex sm:h-screen mt-10 px-4 md:px-12">
-      <div class="flex flex-col space-y-[10%] xl:space-y-[7%] 2xl:space-y-[12%] sm:max-w-6xl mx-auto">
+    <div class="flex min-h-screen mt-10 px-4 md:px-12">
+      <div class="flex flex-col sm:space-y-[10%] xl:space-y-[7%] 2xl:space-y-[12%] sm:max-w-6xl mx-auto">
         <h1 class="font-bold text-4xl sm:text-6xl md:text-7xl lg:text-8xl mt5 text-center">
           {{ t("Home.title") }}
         </h1>
@@ -9,7 +9,7 @@
           class="hidden sm:flex dark:(bg-dark-900 border-dark-600 text-gray-300 opacity-100) opacity-70 bg-light-500 border-solid border-1 rounded-sm p-4 border-gray-200">
           {{ t("Home.desc") }}
         </p>
-        <div class="hidden xl:(flex mx-auto) 2xl:pt30">
+        <div class="flex mx-auto pt-45 sm:hidden xl:(flex mx-auto) 2xl:pt30">
           <HomeMouseIcon class="animate-bounce" role="presentation" :aria-label="t('Home.a11y.mouseicon')" />
         </div>
       </div>
