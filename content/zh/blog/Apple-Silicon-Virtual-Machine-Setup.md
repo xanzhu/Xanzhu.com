@@ -1,5 +1,5 @@
 ---
-title: "Apple Silicon 虚拟机设置 2023"
+title: "Apple Silicon 虚拟机设置2023"
 date: "2023-01-08"
 tag: "指导"
 img: "/images/blog/VM/Apple.webp"
