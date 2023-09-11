@@ -76,7 +76,7 @@ alt: "拿手机的人"
 在上述示例中，NZTA 暗示您可能有未付费用。不要点击链接。而是直接打开您的网络浏览器，输入官方 NZTA 网站。
 
 让我们比较所使用的链接：
-<Media source="/images/blog/sep/Compare.svg" alt="比较钓鱼链接与合法链接"></Media>
+<Media source="/images/blog/sep/compare.svg" alt="比较钓鱼链接与合法链接"></Media>
 
 官方政府基础链接将始终具有 .govt.nz 域名。
 在输入敏感信息之前，务必导航至官方网站。

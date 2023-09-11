@@ -75,7 +75,7 @@ alt: "사람이 핸드폰을 들고 있습니다."
 위의 예에서 NZTA는 여러분이 미납 요금이 있을 수 있다고 제안합니다. 링크를 클릭하지 마십시오. 대신 공식 NZTA 웹사이트로 직접 이동하십시오.
 
 링크를 비교해 봅시다:
-<Media source="/images/blog/sep/Compare.svg" alt="스미싱 링크 대 비정상적인 링크 비교"></Media>
+<Media source="/images/blog/sep/compare.svg" alt="스미싱 링크 대 비정상적인 링크 비교"></Media>
 
 공식 정부 기반 링크는 항상 .govt.nz 도메인을 가지고 있습니다.
 민감한 정보를 입력하기 전에 항상 공식 웹사이트로 이동하십시오.
