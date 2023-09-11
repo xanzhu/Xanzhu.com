@@ -1,6 +1,6 @@
 <template>
   <figure>
-    <video class="rounded-sm border-1 rounded-md border-light-900 dark:border-dark-300" muted :autoplay="true"
+    <video class="rounded-md b-1 b-solid rounded-md border-light-900 dark:border-dark-300" muted :autoplay="true"
       :loop="true" :poster="thumbnail">
       <source :src="source" />
     </video>

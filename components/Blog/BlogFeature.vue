@@ -7,12 +7,12 @@
         class="text-black dark:(text-white) no-underline group flex flex-col lg:flex-row lg:items-center mx-auto space-y-3 md:mb-10 md:py-9 lg:(p-0 space-x-8)">
         <div class="h-auto w-auto max-h-xl max-w-xl">
           <NuxtImg crossorigin="anonymous" v-if="feature.img" :src="feature.img" :alt="feature.alt" :title="feature.alt"
-            class="h-full w-full rounded-md object-cover md:group-hover:scale-102 md:(transform transition duration-400 ease-in-out) b-1 b-solid dark:b-dark-700 b-gray-300"
+            class="h-full w-full rounded-sm object-cover md:group-hover:scale-102 md:(transform transition duration-400 ease-in-out)"
             height="269" width="377" />
           <NuxtImg crossorigin="anonymous" v-else :alt="feature.alt" src="https://source.unsplash.com/bHOKatJHjII/577x369"
-            class="md:max-w-2xl" height="369" width="577" />
+            class="md:max-w-2xl" height="269" width="577" />
         </div>
-        <div class="sm:(space-y-7) md:space-y-2 space-y-4 lg:max-w-xl">
+        <div class="space-y-2 sm:(space-y-7) md:space-y-2 lg:max-w-xl">
           <div class="flex flex-row space-x-2">
             <Date v-if="feature.date" :date="feature.date"
               class="dark:(bg-dark-900 text-white border-dark-700 op100) op80 bg-light-500 px-4 py-1.5 b-1 b-solid rounded-sm b-gray-300 text-xs" />
@@ -21,16 +21,16 @@
               {{ feature.tag }}
             </p>
           </div>
-          <h3 class="font-semibold decoration-2 text-xl sm:text-3xl sm:group-hover:(underline underline-offset-6)">
+          <h3 class="mt-0 font-semibold decoration-2 text-xl sm:text-3xl sm:group-hover:(underline underline-offset-6)">
             {{ feature.title }}
           </h3>
-          <p v-if="feature.description" class="op80 m0">
+          <p v-if="feature.description" class="op70 font-normal">
             {{ feature.description }}
           </p>
         </div>
       </NuxtLink>
     </div>
-    <div class="flex flex-row space-x-2 py-10 justify-center">
+    <div class="flex flex-row space-x-2 pt-10 justify-center">
       <NuxtLink :to="path('/blog')"
         class="px-8 py-2 dark:bg-white bg-black dark:text-black text-white hover:(dark:bg-brand-dark bg-brand-light) decoration-none rounded-md font-semibold">
         {{ t('Home.more') }}</NuxtLink>

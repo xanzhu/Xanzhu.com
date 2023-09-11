@@ -1,11 +1,13 @@
 ---
-title: "Phishing, Text Message Scams"
+title: "Phishing: Text Message Scams"
 description: "Text scams are a real problem, but you don't have to be a victim. This article explains how text scams work, what to avoid, and how to stay safe online."
 img: "/images/blog/sep/17723.png"
 feature: true
 date: "2023-09-04"
 toc: false
 tag: Safety
+alt: "Person holding phone"
+source: "Lindsey LaMont, unsplash"
 ---
 
 A common scam that is affecting everyone who owns a device, targeting victims who fall for a simple message that contains a link.

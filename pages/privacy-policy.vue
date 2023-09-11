@@ -37,6 +37,8 @@ const desc = computed(() => {
     return t('PP.description');
 });
 
+const seoImage = 'https://source.unsplash.com/wO49cx3Bibw'
+
 useSeoMeta({
     title: title,
     description: desc,
@@ -44,5 +46,7 @@ useSeoMeta({
     ogDescription: desc,
     twitterDescription: desc,
     twitterTitle: title,
+    twitterImage: seoImage,
+    ogImage: seoImage
 });
 </script>

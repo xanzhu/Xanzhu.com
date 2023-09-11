@@ -2,11 +2,12 @@
 title: "WWDC 2023: 주요 하이라이트"
 date: "2023-06-06"
 tag: "Apple"
-img: /images/blog/wwdc/airdrop.jpeg
+img: /images/blog/wwdc/WWDC.png
 description: "Apple의 Worldwide Developer Conference의 최신 발표 및 릴리스."
 toc: true
 feature: true
 alt: "WWDC 2023"
+source: Apple
 ---
 
 매년 WWDC 또는 World Wide Developers Conference에서 Apple은 그들이 작업해 온 최신 소프트웨어 및 하드웨어 릴리스를 발표합니다. 이에 대한 발표와 함께 추가 사항을 제공합니다.

@@ -1,11 +1,13 @@
 ---
-title: "钓鱼、短信诈骗"
+title: "钓鱼: 短信诈骗"
 description: "短信诈骗是一个真正的问题，但您不必成为受害者。本文解释了短信诈骗的工作原理，需要避免什么，以及如何在线保持安全。"
 img: "/images/blog/sep/17723.png"
 feature: true
 date: "2023-09-04"
 toc: false
 tag: 安全
+alt: "拿手机的人"
+source: "Lindsey LaMont, unsplash"
 ---
 
 一种普遍的骗局正在影响拥有设备的每个人，目标受害者会上当受骗，点击包含链接的简单消息。
@@ -75,7 +77,7 @@ tag: 安全
 在上述示例中，NZTA 暗示您可能有未付费用。不要点击链接。而是直接打开您的网络浏览器，输入官方 NZTA 网站。
 
 让我们比较所使用的链接：
-<Media source="/images/blog/sep/Compare.svg" alt="比较钓鱼链接与合法链接"></Media>
+<Media source="/images/blog/sep/compare.svg" alt="比较钓鱼链接与合法链接"></Media>
 
 官方政府基础链接将始终具有 .govt.nz 域名。
 在输入敏感信息之前，务必导航至官方网站。
