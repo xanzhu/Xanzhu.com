@@ -25,6 +25,36 @@ const head = useLocaleHead({
   addSeoAttributes: true,
 });
 
+useHead({
+  link: [
+    {
+      rel: "mask-icon",
+      href: "/images/favicon/favicon.svg",
+      color: "#FDFDFD",
+    },
+    {
+      rel: "icon",
+      type: "image/svg+xml",
+      href: "/images/favicon/favicon.svg",
+      sizes: "any",
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      href: "/images/favicon/favicon.png",
+      sizes: "32x32",
+      media: "(prefers-color-scheme:light)",
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      href: "/images/favicon/favicon-dark.png",
+      sizes: "32x32",
+      media: "(prefers-color-scheme:dark)",
+    },
+  ],
+})
+
 useSeoMeta({
   titleTemplate: '%s - Xanzhu',
   twitterCard: 'summary_large_image',
@@ -40,7 +70,6 @@ useServerSeoMeta({
 })
 
 </script>
-<!-- TODO: Replace with unocss/reset -->
 <style>
 body {
   margin: 0;

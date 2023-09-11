@@ -15,37 +15,6 @@ export default defineNuxtConfig({
     classSuffix: "",
     preference: "dark",
   },
-  app: {
-    head: {
-      link: [
-        {
-          rel: "mask-icon",
-          href: "/images/favicon/favicon.svg",
-          color: "#FDFDFD",
-        },
-        {
-          rel: "icon",
-          type: "image/svg+xml",
-          href: "/images/favicon/favicon.svg",
-          sizes: "any",
-        },
-        {
-          rel: "icon",
-          type: "image/png",
-          href: "/images/favicon/favicon.png",
-          sizes: "32x32",
-          media: "(prefers-color-scheme:light)",
-        },
-        {
-          rel: "icon",
-          type: "image/png",
-          href: "/images/favicon/favicon-dark.png",
-          sizes: "32x32",
-          media: "(prefers-color-scheme:dark)",
-        },
-      ],
-    },
-  },
 
   // i18n Beta 13
   i18n: {
