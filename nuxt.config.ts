@@ -88,8 +88,7 @@ export default defineNuxtConfig({
     headNext: true,
   },
 
-  // Test Image Edge
   image: {
-    domains: ["source.unsplash.com", ""],
+    domains: ["source.unsplash.com"],
   },
 });
