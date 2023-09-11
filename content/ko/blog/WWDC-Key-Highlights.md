@@ -2,7 +2,7 @@
 title: "WWDC 2023: 주요 하이라이트"
 date: "2023-06-06"
 tag: "Apple"
-img: /images/blog/wwdc/airdrop.jpeg
+img: /images/blog/wwdc/WWDC.png
 description: "Apple의 Worldwide Developer Conference의 최신 발표 및 릴리스."
 toc: true
 feature: true

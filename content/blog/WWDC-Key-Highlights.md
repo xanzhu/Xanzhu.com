@@ -2,7 +2,7 @@
 title: "WWDC 2023: Key Highlights"
 date: "2023-06-06"
 tag: "Apple"
-img: /images/blog/wwdc/airdrop.jpeg
+img: /images/blog/wwdc/WWDC.png
 description: "Latest announcements and releases from Apple's Worldwide Developer conference."
 toc: true
 feature: true
