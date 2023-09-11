@@ -7,6 +7,7 @@ date: "2023-09-04"
 toc: false
 tag: Safety
 alt: "Person holding phone"
+source: "Lindsey LaMont, unsplash"
 ---
 
 A common scam that is affecting everyone who owns a device, targeting victims who fall for a simple message that contains a link.

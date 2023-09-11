@@ -7,6 +7,7 @@ description: "Latest announcements and releases from Apple's Worldwide Developer
 toc: true
 feature: true
 alt: "WWDC 2023"
+source: Apple
 ---
 
 Each year at WWDC or World Wide Developers Conference Apple announces the latest software and hardware releases they've been working on. Alongside the announcements around this, they provide additional things

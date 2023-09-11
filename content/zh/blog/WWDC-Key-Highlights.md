@@ -7,6 +7,7 @@ description: "Apple 全球开发者大会的最新公告和发布。"
 toc: true
 feature: true
 alt: "WWDC 2023"
+source: "Apple"
 ---
 
 每年在 WWDC 或全球开发者大会上，Apple 都会宣布他们一直在开发的最新软件和硬件版本。 除了有关此的公告外，他们还提供了其他内容

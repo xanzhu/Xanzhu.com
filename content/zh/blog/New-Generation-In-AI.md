@@ -5,7 +5,6 @@ date: "2023-03-27"
 tag: AI
 img: /images/blog/Gen/gptv2_s.png
 toc: true
-feature: true
 alt: "ChatGPT视觉设计 Xanzhu"
 ---
 
