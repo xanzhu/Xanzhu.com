@@ -1,8 +1,9 @@
 <template>
   <main class="flex flex-col justify-center">
     <div class="flex mt-10 px-4 md:px-12">
-      <div class="flex flex-col sm:h-screen sm:space-y-[10%] xl:space-y-[7%] 2xl:space-y-[12%] sm:max-w-6xl mx-auto">
-        <h1 class="font-bold text-4xl sm:text-6xl md:text-7xl lg:text-8xl mt5 text-center">
+      <div
+        class="flex flex-col mx-auto min-h-75vh sm:max-w-6xl md:(space-y-10% h-screen) xl:space-y-7% 2xl:space-y-12%">
+        <h1 class="font-bold text-4xl mt5 text-center sm:text-6xl md:text-7xl lg:text-8xl">
           {{ t("Home.title") }}
         </h1>
         <p
