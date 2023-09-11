@@ -77,7 +77,7 @@ export default defineNuxtConfig({
     ],
     detectBrowserLanguage: {
       useCookie: true,
-      cookieKey: "xanzhu-2",
+      cookieKey: "xanzhu-3",
       redirectOn: "root",
     },
   },
@@ -121,6 +121,6 @@ export default defineNuxtConfig({
 
   // Test Image Edge
   image: {
-    domains: ["source.unsplash.com"],
+    domains: ["source.unsplash.com", ""],
   },
 });
