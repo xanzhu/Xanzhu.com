@@ -5,9 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 devDependencies:
-  '@nuxt/content-edge':
-    specifier: 2.8.2-28240670.1cebdab
-    version: 2.8.2-28240670.1cebdab(vue@3.3.4)
+  '@nuxt/content':
+    specifier: 2.8.2
+    version: 2.8.2(vue@3.3.4)
   '@nuxt/devtools':
     specifier: ^0.7.6
     version: 0.7.6(nuxt@3.7.1)(vite@4.4.9)
@@ -1204,8 +1204,8 @@ packages:
       - supports-color
     dev: true
 
-  /@nuxt/content-edge@2.8.2-28240670.1cebdab(vue@3.3.4):
-    resolution: {integrity: sha512-znnjw2JPCcRC5LcV0hy/NJ5B7XCt1GLG9eZ24iBhGR5F5iKBYp0NTpHYeNPUId5T9UDoaH6EPKv3DUIxbEM2OA==}
+  /@nuxt/content@2.8.2(vue@3.3.4):
+    resolution: {integrity: sha512-fi5/axuYNGccJ/dXyaf5C/WqgEd5wSijpGHZ9O+pH7754S2NeKyx8fUFGfXsLN9VyJP+Mx8EUihfWKJm09SCRA==}
     dependencies:
       '@nuxt/kit': 3.7.1
       '@nuxtjs/mdc': 0.1.6

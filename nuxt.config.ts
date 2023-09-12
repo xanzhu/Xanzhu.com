@@ -2,7 +2,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     "@nuxtjs/i18n",
-    "@nuxt/content-edge",
+    "@nuxt/content",
     "@nuxt/image-edge",
     "@unocss/nuxt",
     "nuxt-simple-sitemap",
