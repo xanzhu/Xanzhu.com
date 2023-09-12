@@ -8,12 +8,6 @@ export default defineConfig({
   presets: [
     presetUno(),
     presetTypography(),
-    // presetWebFonts({
-    //   provider: "google",
-    //   fonts: {
-    //     sans: "Noto Sans KR",
-    //   },
-    // }),
   ],
   transformers: [transformerVariantGroup(), transformerDirectives()],
   theme: {

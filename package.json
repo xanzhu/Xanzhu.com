@@ -1,6 +1,6 @@
 {
   "private": true,
-  "version": "0.6.1",
+  "version": "0.6.2",
   "license": "MIT",
   "name": "xanzhu.com",
   "scripts": {
@@ -11,7 +11,7 @@
     "postinstall": "nuxi prepare"
   },
   "devDependencies": {
-    "@nuxt/content": "2.8.2",
+    "@nuxt/content-edge": "2.8.2-28240670.1cebdab",
     "@nuxt/devtools": "^0.7.6",
     "@nuxt/image-edge": "1.0.0-rc.1-28236947.6058c63",
     "@nuxtjs/color-mode": "^3.3.0",
