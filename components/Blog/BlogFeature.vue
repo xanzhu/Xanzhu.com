@@ -49,5 +49,5 @@ const { data: features } = await useAsyncData("feature", async () => {
     .sort({ date: -1 })
     .limit(3)
     .find();
-}, { watch: [locale] });
+});
 </script>
