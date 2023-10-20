@@ -22,13 +22,20 @@ function closeMenu() {
 }
 
 const loadLocale = ref(locale.value);
+const localeSet = ref(false);
+
+// Test onMounted
+onMounted(() => {
+  setLocale(loadLocale.value);
+  localeSet.value = true;
+});
 </script>
 <template>
   <div>
     <button @click="LangSwitch" class="bg-transparent b-hidden cursor-pointer" :aria-label="t('a11y.langSwitch')">
       <Icon class="h8 w8 dark:text-white text-black" name="fontisto:language" :aria-label="t('a11y.langSwitch')" />
     </button>
-    <div :class="LangToggle
+    <div v-if="localeSet" :class="LangToggle
       ? 'flex p1 rounded-sm absolute top-12 left-5 z1 flex-col dark:(bg-black text-white b-dark-500) text-black bg-light-700 dark:bg-dark-900 b-1 b-solid b-gray-300'
       : 'hidden'
       ">
