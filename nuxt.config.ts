@@ -3,12 +3,12 @@ export default defineNuxtConfig({
   modules: [
     "@nuxtjs/i18n",
     "@nuxt/content",
-    "@nuxt/image-edge",
     "@unocss/nuxt",
     "nuxt-simple-sitemap",
     "@nuxtjs/color-mode",
     "nuxt-icon",
     "nuxt-simple-robots",
+    "@nuxt/image",
   ],
 
   colorMode: {
