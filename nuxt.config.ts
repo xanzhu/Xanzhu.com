@@ -16,7 +16,6 @@ export default defineNuxtConfig({
     preference: "dark",
   },
 
-  // i18n Beta 13
   i18n: {
     vueI18n: "i18n.config.ts",
     baseUrl: "https://xanzhu.com",
@@ -51,7 +50,6 @@ export default defineNuxtConfig({
     },
   },
 
-  // Sitemap V3 Syntax
   site: {
     url: "https://xanzhu.com",
   },
