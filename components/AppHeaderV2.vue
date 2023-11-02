@@ -80,16 +80,19 @@ watch('locale', (detect_lang, current_lang) => {
 });
 
 function langToggle() {
-    if (detect_lang.value === locale.value) {
-        console.log('Locale not changed');
-        return;
-    }
+    setTimeout(() => {
+        if (detect_lang.value === locale.value) {
+            console.log('Locale not changed');
+            return;
+        }
 
-    locale.value = detect_lang.value;
-    console.log('Locale changed!');
 
-    Toggle.value.lang = !Toggle.value.lang;
-    Toggle.value.menu = false;
+        locale.value = detect_lang.value;
+        console.log('Locale changed!');
+
+        Toggle.value.lang = !Toggle.value.lang;
+        Toggle.value.menu = false;
+    })
 }
 
 const Toggle = ref({
