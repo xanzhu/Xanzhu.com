@@ -64,12 +64,7 @@ const localePath = useLocalePath();
 const { locales, setLocale, t, locale } = useI18n();
 const switchLocalePath = useSwitchLocalePath();
 
-
-// const availableLocales = computed(() => {
-//     return locales.value.filter((i) => i.code);
-// });
-
-// Testing Tweaks:
+const detect_lang = ref(null);
 const availableLocales = ref(computed(() => {
     return locales.value.filter((i) => i.code);
 }));
@@ -78,7 +73,24 @@ watch('locale', (detect_lang, current_lang) => {
     availableLocales.value = computed(() => {
         return locales.value.filter((i) => i.code !== locale.value);
     });
+
+    const selectedLocale = availableLocales.value.find(i => i.code === locale.value);
+    availableLocales.value = availableLocales.value.filter(i => i !== selectedLocale);
+    availableLocales.value.unshift(selectedLocale);
 });
+
+function langToggle() {
+    if (detect_lang.value === locale.value) {
+        console.log('Locale not changed');
+        return;
+    }
+
+    locale.value = detect_lang.value;
+    console.log('Locale changed!');
+
+    Toggle.value.lang = !Toggle.value.lang;
+    Toggle.value.menu = false;
+}
 
 const Toggle = ref({
     menu: false,
@@ -91,25 +103,6 @@ function openMenu() {
 }
 
 function closeMenu() {
-    Toggle.value.menu = false;
-}
-
-// function langToggle() {
-//     Toggle.value.lang = !Toggle.value.lang;
-
-// }
-
-function langToggle() {
-    // Check if the detected language is already the current locale
-    if (detect_lang.value === locale.value) {
-        console.log('Locale not changed');
-        return;
-    }
-
-    locale.value = detect_lang.value;
-    console.log('Locale changed!');
-
-    Toggle.value.lang = !Toggle.value.lang;
     Toggle.value.menu = false;
 }
 
