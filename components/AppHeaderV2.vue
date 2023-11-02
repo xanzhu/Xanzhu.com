@@ -74,22 +74,11 @@ const availableLocales = ref(computed(() => {
     return locales.value.filter((i) => i.code);
 }));
 
-// watch('locale', (detected_Lang, current_lang) => {
-//     availableLocales.value = computed(() => {
-//         return locales.value.filter((i) => i.code !== locale.value);
-//     });
-// });
-
-// function langToggle() {
-//     if (locale.value === availableLocales.value[0].code) {
-//         locale.value = availableLocales.value[1].code;
-//     } else {
-//         locale.value = availableLocales.value[0].code;
-//     }
-
-//     Toggle.value.lang = !Toggle.value.lang;
-// }
-
+watch('locale', (detect_lang, current_lang) => {
+    availableLocales.value = computed(() => {
+        return locales.value.filter((i) => i.code !== locale.value);
+    });
+});
 
 const Toggle = ref({
     menu: false,
@@ -105,7 +94,21 @@ function closeMenu() {
     Toggle.value.menu = false;
 }
 
+// function langToggle() {
+//     Toggle.value.lang = !Toggle.value.lang;
+
+// }
+
 function langToggle() {
+    // Check if the detected language is already the current locale
+    if (detect_lang.value === locale.value) {
+        console.log('Locale not changed');
+        return;
+    }
+
+    locale.value = detect_lang.value;
+    console.log('Locale changed!');
+
     Toggle.value.lang = !Toggle.value.lang;
     Toggle.value.menu = false;
 }
