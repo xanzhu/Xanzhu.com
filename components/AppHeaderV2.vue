@@ -18,11 +18,11 @@
         <div class="hidden md:(flex items-center space-x-2)">
             <UiColorSwitch />
             <div class="md:(flex dark:bg-dark-800 bg-light-700 px1 py1 rounded-full)">
-                <NuxtLink v-for="locale in availableLocales" @click.prevent.capture="setLocale(locale.code)"
-                    :key="locale.code" :aria-label="t('app.sr.lang_select') + locale.name"
-                    :to="switchLocalePath(locale.code)"
+                <NuxtLink v-for="locale in availableLocales" :key="locale.code"
+                    :aria-label="t('app.sr.lang_select') + locale.name" :to="switchLocalePath(locale.code)"
                     active-class="dark:(bg-white !text-black) text-white bg-black pointer-events-none order-first"
-                    class="dark:text-white text-black decoration-none font-medium text-sm px3 py1 rounded-full dark:hover:bg-dark-300 hover-bg-gray-300 order-1 mr-1">
+                    class="dark:text-white text-black decoration-none font-medium text-sm px3 py1 rounded-full dark:hover:bg-dark-300 hover-bg-gray-300 order-1 mr-1"
+                    @click="isCurrentLocale(locale) ? $event.preventDefault() : setLocale(locale.code)">
                     {{ locale.name }}
                 </NuxtLink>
             </div>
@@ -64,35 +64,12 @@ const localePath = useLocalePath();
 const { locales, setLocale, t, locale } = useI18n();
 const switchLocalePath = useSwitchLocalePath();
 
-const detect_lang = ref(null);
-const availableLocales = ref(computed(() => {
+const availableLocales = computed(() => {
     return locales.value.filter((i) => i.code);
-}));
-
-watch('locale', (detect_lang, current_lang) => {
-    availableLocales.value = computed(() => {
-        return locales.value.filter((i) => i.code !== locale.value);
-    });
-
-    const selectedLocale = availableLocales.value.find(i => i.code === locale.value);
-    availableLocales.value = availableLocales.value.filter(i => i !== selectedLocale);
-    availableLocales.value.unshift(selectedLocale);
 });
 
-function langToggle() {
-    setTimeout(() => {
-        if (detect_lang.value === locale.value) {
-            console.log('Locale not changed');
-            return;
-        }
-
-
-        locale.value = detect_lang.value;
-        console.log('Locale changed!');
-
-        Toggle.value.lang = !Toggle.value.lang;
-        Toggle.value.menu = false;
-    })
+function isCurrentLocale(selectedLocale) {
+    return selectedLocale.code === locale.value;
 }
 
 const Toggle = ref({
@@ -106,6 +83,11 @@ function openMenu() {
 }
 
 function closeMenu() {
+    Toggle.value.menu = false;
+}
+
+function langToggle() {
+    Toggle.value.lang = !Toggle.value.lang;
     Toggle.value.menu = false;
 }
 
