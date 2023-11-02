@@ -72,6 +72,10 @@ function isCurrentLocale(selectedLocale) {
     return selectedLocale.code === locale.value;
 }
 
+watch(locale, (newLocale, oldLocale) => {
+    console.log('Locale changed from', oldLocale, 'to', newLocale);
+});
+
 const Toggle = ref({
     menu: false,
     lang: false
