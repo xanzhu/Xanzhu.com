@@ -36,7 +36,7 @@
             </Icon>
             <div
                 :class="Toggle.lang ? 'flex flex-col list-none absolute children:(decoration-none dark:text-white text-black font-medium) dark:bg-dark-900 bg-white top-12 right-17 p2 rounded-md children:mt1 text-center b-solid b-1 dark:b-dark-500 b-gray-300' : 'hidden'">
-                <NuxtLink v-for="(locale, index) in availableLocales.value" @click.prevent.capture="setLocale(locale.code)"
+                <NuxtLink v-for="(locale, index) in availableLocales" @click.prevent.capture="setLocale(locale.code)"
                     :key="`x-${index}`" :aria-label="t('app.sr.lang_select') + locale.name" @click="langToggle"
                     :to="switchLocalePath(locale.code)"
                     class="text-white decoration-none font-medium px3 py1 order-1 dark:hover:bg-dark-500 hover:bg-gray-200 rounded-md dark:text-white text-dark-900"
@@ -74,21 +74,21 @@ const availableLocales = ref(computed(() => {
     return locales.value.filter((i) => i.code);
 }));
 
-watch('locale', (detected_Lang, current_lang) => {
-    availableLocales.value = computed(() => {
-        return locales.value.filter((i) => i.code !== locale.value);
-    });
-});
+// watch('locale', (detected_Lang, current_lang) => {
+//     availableLocales.value = computed(() => {
+//         return locales.value.filter((i) => i.code !== locale.value);
+//     });
+// });
 
-function langToggle() {
-    if (locale.value === availableLocales.value[0].code) {
-        locale.value = availableLocales.value[1].code;
-    } else {
-        locale.value = availableLocales.value[0].code;
-    }
+// function langToggle() {
+//     if (locale.value === availableLocales.value[0].code) {
+//         locale.value = availableLocales.value[1].code;
+//     } else {
+//         locale.value = availableLocales.value[0].code;
+//     }
 
-    Toggle.value.lang = !Toggle.value.lang;
-}
+//     Toggle.value.lang = !Toggle.value.lang;
+// }
 
 
 const Toggle = ref({
@@ -105,11 +105,10 @@ function closeMenu() {
     Toggle.value.menu = false;
 }
 
-// 
-// function langToggle() {
-//     Toggle.value.lang = !Toggle.value.lang;
-//     Toggle.value.menu = false;
-// }
+function langToggle() {
+    Toggle.value.lang = !Toggle.value.lang;
+    Toggle.value.menu = false;
+}
 
 const links = [
     {
