@@ -70,16 +70,16 @@ export default defineNuxtConfig({
     "/blog/*": { isr: true },
   },
 
-  plugins: [{ src: "~/plugins/vercel.ts", mode: "client" }],
+  // plugins: [{ src: "~/plugins/vercel.ts", mode: "client" }],
 
   // Experimental Nuxt Features
   // experimental: {
   //   headNext: true,
   // },
 
-  image: {
-    domains: ["source.unsplash.com"],
-  },
+  // image: {
+  //   domains: ["source.unsplash.com"],
+  // },
 
   content: {
     defaultLocale: "en",
