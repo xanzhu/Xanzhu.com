@@ -31,9 +31,10 @@
       </NuxtLink>
     </div>
     <div class="flex flex-row space-x-2 pt-10 justify-center">
-      <NuxtLink :to="path('/blog')"
+      <NuxtLinkLocale to="/blog"
         class="px-8 py-2 dark:bg-white bg-black dark:text-black text-white hover:(dark:bg-brand-dark bg-brand-light) decoration-none rounded-md font-semibold">
-        {{ t('Home.more') }}</NuxtLink>
+        {{ t('Home.more') }}
+      </NuxtLinkLocale>
     </div>
   </div>
 </template>
