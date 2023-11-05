@@ -18,7 +18,7 @@ export default defineNuxtConfig({
 
   i18n: {
     // vueI18n: "i18n.config.ts",
-    // baseUrl: "https://xanzhu.com",
+    baseUrl: "https://xanzhu.com",
     defaultLocale: "en",
     lazy: true,
     strategy: "prefix_except_default",
@@ -70,16 +70,16 @@ export default defineNuxtConfig({
     "/blog/*": { isr: true },
   },
 
-  // plugins: [{ src: "~/plugins/vercel.ts", mode: "client" }],
+  plugins: [{ src: "~/plugins/vercel.ts", mode: "client" }],
 
   // Experimental Nuxt Features
   // experimental: {
   //   headNext: true,
   // },
 
-  // image: {
-  //   domains: ["source.unsplash.com"],
-  // },
+  image: {
+    domains: ["source.unsplash.com"],
+  },
 
   content: {
     defaultLocale: "en",
