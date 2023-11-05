@@ -45,7 +45,7 @@ export default defineNuxtConfig({
     ],
     detectBrowserLanguage: {
       useCookie: true,
-      cookieKey: "xanzhu-3",
+      cookieKey: "xanzhu-v4",
       redirectOn: "root",
     },
   },
@@ -67,18 +67,9 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    "/blog/**": {
-      isr: 3000,
-    },
-    "/ko/blog/**": {
-      isr: 3000,
-    },
-    "/zh/blog/**": {
-      isr: 3000,
-    },
+    "/blog/*": { isr: true },
   },
 
-  // Vercel Analytics
   plugins: [{ src: "~/plugins/vercel.ts", mode: "client" }],
 
   // Experimental Nuxt Features
@@ -88,5 +79,10 @@ export default defineNuxtConfig({
 
   image: {
     domains: ["source.unsplash.com"],
+  },
+
+  content: {
+    defaultLocale: "en",
+    locales: ["en", "ko", "zh"],
   },
 });
