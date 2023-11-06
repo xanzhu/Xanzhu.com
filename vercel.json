@@ -8,10 +8,6 @@
           "value": "camera=(), magnetometer=(), gyroscope=(), usb=(), accelerometer=()"
         },
         {
-          "key": "Cache-Control",
-          "value": "s-maxage=86400"
-        },
-        {
           "key": "X-Content-Type-Options",
           "value": "nosniff"
         },
@@ -42,6 +38,10 @@
         {
           "key": "Cross-Origin-Resource-Policy",
           "value": "(same-origin)"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "base-uri 'self'; connect-src 'self' data: blob:; frame-ancestors 'self'; img-src 'self' https://source.unsplash.com https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%203.svg; object-src 'none'; style-src 'self' 'unsafe-inline' https:; upgrade-insecure-requests;"
         }
       ]
     }
