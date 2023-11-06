@@ -8,6 +8,10 @@
           "value": "camera=(), magnetometer=(), gyroscope=(), usb=(), accelerometer=()"
         },
         {
+          "key": "Cache-Control",
+          "value": "max-age=3600, must-revalidate"
+        },
+        {
           "key": "X-Content-Type-Options",
           "value": "nosniff"
         },
