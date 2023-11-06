@@ -20,10 +20,8 @@
 const { path } = useRoute();
 const { locale } = useI18n();
 
-const { data: post } = await useAsyncData(path.replace(/\/$/, "/"), async () => {
-  return await queryContent().where({ _path: path })
-    .findOne();
-});
+const { data: post } = await useAsyncData('blog-view', () =>
+  queryContent().where({ _locale: locale.value }).findOne())
 
 if (!post.value) throw createError({ statusCode: 404 });
 
