@@ -17,7 +17,6 @@ export default defineNuxtConfig({
   },
 
   i18n: {
-    // vueI18n: "i18n.config.ts",
     baseUrl: "https://xanzhu.com",
     defaultLocale: "en",
     lazy: true,
@@ -45,7 +44,7 @@ export default defineNuxtConfig({
     ],
     detectBrowserLanguage: {
       useCookie: true,
-      cookieKey: "xanzhu_v6",
+      cookieKey: "0002",
       redirectOn: "root",
     },
   },
