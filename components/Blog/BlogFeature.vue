@@ -40,17 +40,6 @@
 </template>
 <script setup lang="ts">
 const { locale, t } = useI18n();
-const path = useLocalePath();
-
-// const { data: features } = await useAsyncData("feature", async () => {
-//   let query = locale.value !== "en" ? `${locale.value}/blog` : "/blog";
-//   return queryContent(query)
-//     .where({ feature: true })
-//     .only(['title', 'description', 'img', 'date', 'tag', '_path', 'alt'])
-//     .sort({ date: -1 })
-//     .limit(3)
-//     .find();
-// });
 
 const { data: features } = await useAsyncData('featured_articles', () => queryContent(`blog`)
   .where({ _locale: locale.value, feature: true })

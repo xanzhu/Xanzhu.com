@@ -2,12 +2,12 @@
     <header
         class="flex justify-between items-center dark:(text-black bg-white) text-white bg-black md:p3 px4 py2 mx-auto md:px-6 xl:px10 2xl:px20">
         <div class="flex md:space-x-10">
-            <NuxtLink :to="localePath('/')" class="mx-auto text-center dark:text-black text-white">
+            <NuxtLinkLocale to="/" class="mx-auto text-center dark:text-black text-white">
                 <UiIconXanzhu class="h6" :aria-label="t('a11y.logo')" />
                 <span class="sr-only">{{ t('a11y.Home') }}</span>
-            </NuxtLink>
+            </NuxtLinkLocale>
             <nav class="hidden md:(block space-x-5 decoration-none)">
-                <NuxtLink v-for="(link, index) in links" :key="index" :to="localePath(link.url)"
+                <NuxtLinkLocale v-for="(link, index) in links" :key="index" :to="link.url"
                     active-class="!text-brand-dark !decoration-brand-dark dark:(!text-brand-light !decoration-brand-light) decoration-6 underline-offset-22"
                     :aria-label="t(link.name)"
                     class="dark:text-black text-white hover:(text-brand-dark) dark:hover:(text-brand-light) underline decoration-transparent"
@@ -50,31 +50,23 @@
             </Icon>
             <nav
                 :class="Toggle.menu ? 'flex flex-col list-none absolute children:(decoration-none text-black font-medium) bg-white text-black top-12 right-6 p2 rounded-md children:mt1 text-center b-solid b-1 b-gray-300' : 'hidden'">
-                <NuxtLink v-for="(link, index) in links" :key="index" :to="localePath(link.url)"
+                <NuxtLinkLocale v-for="(link, index) in links" :key="index" :to="link.url"
                     active-class="pointer-events-none order-first !bg-black text-white mt0" :aria-label="t(link.name)"
                     @click="closeMenu" class="order-1 px4 py2 rounded-md hover:bg-gray-200">
                     {{ t(link.name) }}
-                </NuxtLink>
+                </NuxtLinkLocale>
             </nav>
         </div>
     </header>
 </template>
 <script setup>
-const localePath = useLocalePath();
-const { locales, setLocale, t, locale } = useI18n();
+const { locales, setLocale, t } = useI18n();
 const switchLocalePath = useSwitchLocalePath();
 
 const availableLocales = computed(() => {
     return locales.value.filter((i) => i.code);
 });
 
-watch(locale, () => {
-    availableLocales.value;
-});
-
-nextTick(() => {
-    availableLocales.value;
-});
 
 const Toggle = ref({
     menu: false,
@@ -107,7 +99,6 @@ const links = [
     {
         url: "/analysis",
         name: "Links.analysis",
-    },
-    // Add Reviews & Guides Later
+    }
 ];
 </script>

@@ -9,11 +9,6 @@ const availableLocales = computed(() => {
 const LangToggle = ref(false);
 
 function LangSwitch() {
-  if (locale.value === loadLocale.value) {
-    locale.value = availableLocales.value[0].code;
-  } else {
-    locale.value = loadLocale.value;
-  }
   LangToggle.value = !LangToggle.value;
 }
 
@@ -21,14 +16,6 @@ function closeMenu() {
   LangToggle.value = false;
 }
 
-const loadLocale = ref(locale.value);
-const localeSet = ref(false);
-
-// Test onMounted
-onMounted(() => {
-  setLocale(loadLocale.value);
-  localeSet.value = true;
-});
 </script>
 <template>
   <div>
