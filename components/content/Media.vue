@@ -1,7 +1,7 @@
 <template>
   <figure class="flex flex-col object-cover">
     <NuxtImg class="rounded-md b-1 b-solid border-light-900 dark:border-dark-300" :src="source" :alt="alt" :title="alt"
-      loading="Lazy" decoding="async" />
+      loading="lazy" decoding="async" />
     <figcaption v-if="credit" v-bind:credit="credit">
       {{ t("Blog.source") + ": " + credit }}
     </figcaption>
