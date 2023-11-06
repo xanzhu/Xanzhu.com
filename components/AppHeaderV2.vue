@@ -64,32 +64,17 @@ const localePath = useLocalePath();
 const { locales, setLocale, t, locale } = useI18n();
 const switchLocalePath = useSwitchLocalePath();
 
-
-// const availableLocales = computed(() => {
-//     return locales.value.filter((i) => i.code);
-// });
-
-// Testing Tweaks:
-const availableLocales = ref(computed(() => {
+const availableLocales = computed(() => {
     return locales.value.filter((i) => i.code);
-}));
+});
 
-// watch('locale', (detected_Lang, current_lang) => {
-//     availableLocales.value = computed(() => {
-//         return locales.value.filter((i) => i.code !== locale.value);
-//     });
-// });
+watch(locale, () => {
+    availableLocales.value;
+});
 
-// function langToggle() {
-//     if (locale.value === availableLocales.value[0].code) {
-//         locale.value = availableLocales.value[1].code;
-//     } else {
-//         locale.value = availableLocales.value[0].code;
-//     }
-
-//     Toggle.value.lang = !Toggle.value.lang;
-// }
-
+nextTick(() => {
+    availableLocales.value;
+});
 
 const Toggle = ref({
     menu: false,
@@ -123,5 +108,6 @@ const links = [
         url: "/analysis",
         name: "Links.analysis",
     },
+    // Add Reviews & Guides Later
 ];
 </script>
