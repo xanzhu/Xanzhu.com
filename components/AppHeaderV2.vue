@@ -61,11 +61,19 @@
 </template>
 <script setup>
 const localePath = useLocalePath();
-const { locales, setLocale, t } = useI18n();
+const { locales, setLocale, t, locale } = useI18n();
 const switchLocalePath = useSwitchLocalePath();
 
 const availableLocales = computed(() => {
     return locales.value.filter((i) => i.code);
+});
+
+watch(locale, () => {
+    availableLocales.value;
+});
+
+nextTick(() => {
+    availableLocales.value;
 });
 
 const Toggle = ref({

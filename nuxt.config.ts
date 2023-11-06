@@ -3,12 +3,12 @@ export default defineNuxtConfig({
   modules: [
     "@nuxtjs/i18n",
     "@nuxt/content",
-    "@nuxt/image-edge",
     "@unocss/nuxt",
     "nuxt-simple-sitemap",
     "@nuxtjs/color-mode",
     "nuxt-icon",
     "nuxt-simple-robots",
+    "@nuxt/image",
   ],
 
   colorMode: {
@@ -16,9 +16,8 @@ export default defineNuxtConfig({
     preference: "dark",
   },
 
-  // i18n Beta 13
   i18n: {
-    vueI18n: "i18n.config.ts",
+    // vueI18n: "i18n.config.ts",
     baseUrl: "https://xanzhu.com",
     defaultLocale: "en",
     lazy: true,
@@ -46,12 +45,11 @@ export default defineNuxtConfig({
     ],
     detectBrowserLanguage: {
       useCookie: true,
-      cookieKey: "xanzhu-3",
+      cookieKey: "xanzhu_v6",
       redirectOn: "root",
     },
   },
 
-  // Sitemap V3 Syntax
   site: {
     url: "https://xanzhu.com",
   },
@@ -69,26 +67,17 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    "/blog/**": {
-      isr: 3000,
-    },
-    "/ko/blog/**": {
-      isr: 3000,
-    },
-    "/zh/blog/**": {
-      isr: 3000,
-    },
+    "/blog/*": { isr: true },
   },
 
-  // Vercel Analytics
   plugins: [{ src: "~/plugins/vercel.ts", mode: "client" }],
-
-  // Experimental Nuxt Features
-  experimental: {
-    headNext: true,
-  },
 
   image: {
     domains: ["source.unsplash.com"],
   },
+
+  content: {
+    defaultLocale: "en",
+    locales: ["en", "ko", "zh"],
+  }
 });

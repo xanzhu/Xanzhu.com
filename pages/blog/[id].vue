@@ -9,7 +9,7 @@
             class="prose text-sm md:text-lg 2xl:(text-xl) mx-auto px-4 my-4 dark:text-light text-black leading-normal" />
         </div>
         <aside v-if="post.toc == true" class="mt-2">
-          <BlogToc :links="post.body.toc.links" class="lg:(sticky top-20)" />
+          <BlogToc :links="post.body?.toc?.links" class="lg:(sticky top-20)" />
         </aside>
       </div>
       <LazyBlogPrevNext :prev="prev" :next="next" />
@@ -25,12 +25,10 @@ const { data: post } = await useAsyncData(path.replace(/\/$/, "/"), async () => 
     .findOne();
 });
 
-// Returns error on 404
 if (!post.value) throw createError({ statusCode: 404 });
 
 const seoTitle = post.value?.title;
 const seoDesc = post.value?.description;
-// Double check this
 const seoImage = "https://xanzhu.com" + post.value?.img;
 
 useSeoMeta({
@@ -56,9 +54,6 @@ const { data } = await useAsyncData("prev-next", async () => {
 const [prev, next] = data.value || [];
 </script>
 <style>
-/* TODO: Conver to unocss @apply / --at-apply 
-   - Improve H2-H4 Sizing and weights
-*/
 .prose h1 {
   visibility: hidden;
 }
