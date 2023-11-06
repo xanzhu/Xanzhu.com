@@ -9,7 +9,7 @@
     <section
       class="grid grid-cols-1 gap-5 md:(grid-cols-2 mx-6 gap-10) lg:(grid-cols-3) sm:(py-15 px-10) dark:bg-black rounded-sm p-4">
       <div v-if="posts" v-for="(article, $index) in posts" :key="`fe-${$index}`">
-        <NuxtLink class="group flex flex-col no-underline" :to="article._path">
+        <NuxtLinkLocale class="group flex flex-col no-underline" :to="article._path">
           <NuxtImg crossorigin="anonymous" v-if="article.img" :alt="article.alt" :title="article.alt" loading="lazy"
             height="369" width="577" object-fit="contain"
             class="rounded-md h-full w-full transform md:(transition duration-400 ease-in-out) md:group-hover:scale-102 b-1 b-solid dark:b-dark-700 b-light-700"
@@ -27,7 +27,7 @@
               v-html="article.title" />
             <p class="op80" v-html="article.description" />
           </div>
-        </NuxtLink>
+        </NuxtLinkLocale>
       </div>
     </section>
   </main>
@@ -35,21 +35,12 @@
 <script setup lang="ts">
 const { t, locale } = useI18n();
 
-// const { data: articles } = await useAsyncData("articles", async () => {
-//   let query = locale.value !== "en" ? `${locale.value}/blog` : "/blog";
-//   return await queryContent(query)
-//     .sort({ date: -1 })
-//     .only(['title', 'description', 'img', 'date', 'tag', '_path', 'alt'])
-//     .find();
-// });
-
-
-const { data: posts } = await useAsyncData('blog_posts', () => queryContent(`blog`)
+const { data: posts } = await useAsyncData('blog_posts', () => 
+queryContent(`blog`)
   .where({ _locale: locale.value })
   .sort({ date: -1 })
-  .only(['title', 'description', 'img', 'date', 'tag', '_path', 'alt'])
+  .only(['title', 'description', 'id', '_path', '_locale', 'img', 'date', 'tag'])
   .find())
-
 
 const seoImage = 'https://source.unsplash.com/x6YWgAN3SX8';
 

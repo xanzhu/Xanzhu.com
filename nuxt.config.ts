@@ -78,5 +78,5 @@ export default defineNuxtConfig({
   content: {
     defaultLocale: "en",
     locales: ["en", "ko", "zh"],
-  }
+  },
 });
