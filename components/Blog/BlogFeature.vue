@@ -31,27 +31,16 @@
       </NuxtLink>
     </div>
     <div class="flex flex-row space-x-2 pt-10 justify-center">
-      <<<<<<< HEAD <NuxtLink :to="path('/blog')"=======<NuxtLinkLocale to="/blog">>>>>>> developer
-        class="px-8 py-2 dark:bg-white bg-black dark:text-black text-white hover:(dark:bg-brand-dark bg-brand-light)
+      <NuxtLink :to="path('/blog')" class="px-8 py-2 dark:bg-white bg-black dark:text-black text-white hover:(dark:bg-brand-dark bg-brand-light)
         decoration-none rounded-md font-semibold">
         {{ t('Home.more') }}
-        </NuxtLinkLocale>
+      </NuxtLink>
     </div>
   </div>
 </template>
 <script setup lang="ts">
 const { locale, t } = useI18n();
 const path = useLocalePath();
-
-// const { data: features } = await useAsyncData("feature", async () => {
-//   let query = locale.value !== "en" ? `${locale.value}/blog` : "/blog";
-//   return queryContent(query)
-//     .where({ feature: true })
-//     .only(['title', 'description', 'img', 'date', 'tag', '_path', 'alt'])
-//     .sort({ date: -1 })
-//     .limit(3)
-//     .find();
-// });
 
 const { data: features } = await useAsyncData('featured_articles', () => queryContent(`blog`)
   .where({ _locale: locale.value, feature: true })
@@ -60,5 +49,4 @@ const { data: features } = await useAsyncData('featured_articles', () => queryCo
   .limit(3)
   .find()
 );
-
 </script>
