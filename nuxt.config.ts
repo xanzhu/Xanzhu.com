@@ -17,7 +17,6 @@ export default defineNuxtConfig({
   },
 
   i18n: {
-    // vueI18n: "i18n.config.ts",
     baseUrl: "https://xanzhu.com",
     defaultLocale: "en",
     lazy: true,
@@ -45,7 +44,7 @@ export default defineNuxtConfig({
     ],
     detectBrowserLanguage: {
       useCookie: true,
-      cookieKey: "0001",
+      cookieKey: "0002",
       redirectOn: "root",
     },
   },
@@ -72,11 +71,6 @@ export default defineNuxtConfig({
 
   plugins: [{ src: "~/plugins/vercel.ts", mode: "client" }],
 
-  // Experimental Nuxt Features
-  // experimental: {
-  //   headNext: true,
-  // },
-
   image: {
     domains: ["source.unsplash.com"],
   },
@@ -84,5 +78,5 @@ export default defineNuxtConfig({
   content: {
     defaultLocale: "en",
     locales: ["en", "ko", "zh"],
-  },
+  }
 });

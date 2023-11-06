@@ -1,14 +1,14 @@
 {
   "private": true,
-  "version": "0.6.4",
+  "version": "0.6.9",
   "license": "MIT",
   "name": "xanzhu.com",
   "scripts": {
-    "build": "nuxi build",
-    "dev": "nuxi dev",
-    "generate": "nuxi generate",
-    "preview": "nuxi preview",
-    "postinstall": "nuxi prepare"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
     "@nuxt/content": "2.9.0",

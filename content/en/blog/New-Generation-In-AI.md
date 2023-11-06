@@ -18,8 +18,6 @@ Checkout the latest from: [Open AI](https://openai.com/){:target="\_blank"}
 
 Try ChatGPT for yourself: [ChatGPT](https://chat.openai.com/){:target="\_blank"}
 
-<!-- <Ad :message="Try ChatGPT for yourself, get" :discount="30%" :type="AD" link="https://chat.openai.com/"></Ad> -->
-
 ### Microsoft
 
 Microsoft released Bing search with ChatGPT. It's currently running version 4 and is considerably more limited and restrictive when it comes to getting a response back. Released on a public model to all users of Bing gives it an edge over Chrome. However, the experience isn't the same interactive experience as having a conversation on OpenAI's website.

@@ -9,7 +9,7 @@
         },
         {
           "key": "Cache-Control",
-          "value": "s-maxage=86400"
+          "value": "max-age=3600, must-revalidate"
         },
         {
           "key": "X-Content-Type-Options",

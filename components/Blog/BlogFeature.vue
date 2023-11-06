@@ -59,5 +59,4 @@ const { data: features } = await useAsyncData('featured_articles', () => queryCo
   .limit(3)
   .find()
 );
-
 </script>
