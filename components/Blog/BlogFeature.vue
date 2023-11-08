@@ -3,7 +3,7 @@
     <h2 class="text-2xl mt-12 sm:(py-10 mt-0) 2xl:text-4xl text-center">{{ t('Home.release') }}</h2>
     <div v-if="features" v-for="feature in features" :key="feature.title"
       class="sm:(mx-5 p-0) lg:mx-20 p-4 justify-center mx-auto">
-      <NuxtLink :to="feature._path"
+      <NuxtLinkLocale :to="feature._path"
         class="text-black dark:(text-white) no-underline group flex flex-col lg:flex-row lg:items-center mx-auto space-y-3 md:mb-10 md:py-9 lg:(p-0 space-x-8)">
         <div class="h-auto w-auto max-h-xl max-w-xl">
           <NuxtImg crossorigin="anonymous" v-if="feature.img" :src="feature.img" :alt="feature.alt" :title="feature.alt"
@@ -28,7 +28,7 @@
             {{ feature.description }}
           </p>
         </div>
-      </NuxtLink>
+      </NuxtLinkLocale>
     </div>
     <div class="flex flex-row space-x-2 pt-10 justify-center">
       <NuxtLinkLocale to="/blog"
