@@ -2,7 +2,7 @@
   <div class="grid sm:grid-cols-2 gap-4">
     <div class="sm:col-span-2 rounded-sm h-30">
       <NuxtImg src="/images/resources/phish.webp" class="h-full w-full rounded-sm object-cover" alt="Paint Waves Graphic"
-        loading="Lazy" />
+        loading="lazy" />
     </div>
     <h2 class="p6 m0 font-bold bg-[#0000FF] rounded-sm text-center text-white text-2xl">
       {{ t("Resources.phishing") }}
