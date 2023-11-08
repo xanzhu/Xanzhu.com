@@ -5,7 +5,7 @@
             <NuxtLink
                 class="group hover:(underline underline-offset-2 decoration-black dark:decoration-white decoration-2) sm:inline-flex items-center"
                 v-for="link in urls" :to="link.url" target="_blank">{{ link.name }}
-                <Icon name="tabler-external-link" class="group-hover:(h3.5 w3.5) ml0.5 -mt-0.5 sm:mt0 h3.5 w3.5 ">
+                <Icon name="ri:external-link-line" class="group-hover:(h3.5 w3.5) ml0.5 -mt-0.5 sm:mt0 h3.5 w3.5 ">
                 </Icon>
             </NuxtLink>
         </div>
@@ -38,9 +38,9 @@ const urls = [
 
 const formattedDate = ref('');
 
-const getCurrentDate = () => {
+const getFormattedDate = (locale: string): string => {
     const now = new Date();
-    formattedDate.value = now.toLocaleString(locale.value, {
+    return now.toLocaleString(locale, {
         weekday: 'long',
         month: 'long',
         day: 'numeric',
@@ -48,11 +48,13 @@ const getCurrentDate = () => {
     });
 };
 
+const getCurrentDate = () => {
+    formattedDate.value = getFormattedDate(locale.value);
+};
+
 watch(locale, () => {
     getCurrentDate();
 });
 
-onMounted(() => {
-    getCurrentDate();
-});
+getCurrentDate();
 </script>
