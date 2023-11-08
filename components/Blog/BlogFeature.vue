@@ -41,11 +41,11 @@
 <script setup lang="ts">
 const { locale, t } = useI18n();
 
-const { data: features } = await useAsyncData('featured_articles', () => queryContent(`blog`)
-  .where({ _locale: locale.value, feature: true })
-  .only(['title', 'description', 'img', 'date', 'tag', '_path', 'alt'])
-  .sort({ date: -1 })
-  .limit(3)
-  .find()
-);
+const { data: features } = await useAsyncData("feature-articles", async () => {
+  let query = locale.value !== "en" ? `${locale.value}/blog` : "/blog";
+  return await queryContent(query)
+    .sort({ date: -1 })
+    .only(['title', 'description', 'img', 'date', 'tag', '_path', 'alt'])
+    .find();
+});
 </script>

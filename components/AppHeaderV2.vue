@@ -11,7 +11,8 @@
                     active-class="!text-brand-dark !decoration-brand-dark dark:(!text-brand-light !decoration-brand-light) decoration-6 underline-offset-22"
                     :aria-label="t(link.name)"
                     class="dark:text-black text-white hover:(text-brand-dark) dark:hover:(text-brand-light) underline decoration-transparent"
-                    v-t="link.name" />
+                    v-t="link.name">
+                </NuxtLinkLocale>
             </nav>
         </div>
         <!-- Language Selector Default -->

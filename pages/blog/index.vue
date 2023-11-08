@@ -35,12 +35,13 @@
 <script setup lang="ts">
 const { t, locale } = useI18n();
 
-const { data: posts } = await useAsyncData('blog_posts', () => 
-queryContent(`blog`)
-  .where({ _locale: locale.value })
-  .sort({ date: -1 })
-  .only(['title', 'description', 'id', '_path', '_locale', 'img', 'date', 'tag'])
-  .find())
+const { data: posts } = await useAsyncData("articles", async () => {
+  let query = locale.value !== "en" ? `${locale.value}/blog` : "/blog";
+  return await queryContent(query)
+    .sort({ date: -1 })
+    .only(['title', 'description', 'img', 'date', 'tag', '_path', 'alt'])
+    .find();
+});
 
 const seoImage = 'https://source.unsplash.com/x6YWgAN3SX8';
 

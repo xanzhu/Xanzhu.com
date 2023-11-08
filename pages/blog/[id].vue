@@ -6,7 +6,8 @@
       <div class="flex flex-col-reverse md:(flex-row space-x-6 space-x-2) mx-auto justify-center">
         <div>
           <ContentRenderer :value="post" itemprop="articleBody"
-            class="prose text-sm md:text-lg 2xl:(text-xl) mx-auto px-4 my-4 dark:text-light text-black leading-normal" />
+            class="prose text-sm md:text-lg 2xl:(text-xl) mx-auto px-4 my-4 dark:text-light text-black leading-normal">
+          </ContentRenderer>
         </div>
         <aside v-if="post.toc == true" class="mt-2">
           <BlogToc :links="post.body?.toc?.links" class="lg:(sticky top-20)" />
@@ -20,8 +21,10 @@
 const { path } = useRoute();
 const { locale } = useI18n();
 
-const { data: post } = await useAsyncData('blog-view', () =>
-  queryContent().where({ _locale: locale.value }).findOne())
+const { data: post } = await useAsyncData(path.replace(/\/$/, "/"), async () => {
+  return await queryContent().where({ _path: path })
+    .findOne();
+});
 
 if (!post.value) throw createError({ statusCode: 404 });
 
@@ -42,10 +45,10 @@ useSeoMeta({
 });
 
 const { data } = await useAsyncData("prev-next", async () => {
-  const query = locale.value !== "en" ? `${locale.value}/blog` : "/blog";
+  let query = locale.value !== "en" ? `${locale.value}/blog` : "/blog";
   return await queryContent(query)
     .sort({ date: -1 })
-    .only(["_path"])
+    .only(['_path'])
     .findSurround(path);
 });
 

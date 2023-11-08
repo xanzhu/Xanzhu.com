@@ -26,7 +26,7 @@
           <p class="dark:text-brand-dark text-brand-light font-black m0">/</p>
           <Date v-if="post.date" :date="post.date" itemprop="datePublished" class="text-sm" />
         </div>
-        <BlogSocialShare v-bind:post="post" />
+        <BlogSocialShare v-bind:post="{ _path: post._path, title: post.title }" />
       </div>
     </div>
     <div v-if="post.img" class="relative col-span-1 grow-0 h-auto w-auto px-4 sm:px0 mb-5">
