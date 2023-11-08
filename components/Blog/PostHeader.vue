@@ -15,7 +15,7 @@
       </div>
       <div>
         <h1 itemprop="headline"
-          class="md:(text-2xl mr-6) break-words text-xl font-bold sm:leading-tight lg:text-3xl xl:text-4xl my0">
+          class="md:(text-3xl mr-6 mb-5) break-words text-xl font-bold sm:leading-tight lg:(text-3xl) xl:text-4xl my0">
           {{ post.title }}
         </h1>
         <p class="dark:op70 op80 lt-sm:text-sm my2" itemprop="description">{{ post.description }}</p>
@@ -29,8 +29,9 @@
         <BlogSocialShare v-bind:post="{ _path: post._path, title: post.title }" />
       </div>
     </div>
-    <div v-if="post.img" class="relative col-span-1 grow-0 h-auto w-auto px-4 sm:px0 mb-5">
-      <div class="h-auto lg:h-70 w-auto sm:w-md mx-auto lg:w-auto" itemscope itemtype="https://schema.org/ImageObject">
+    <div v-if="post.img" class="relative col-span-1 grow-0 h-auto w-auto px-4 sm:px0 mb-5 md:m4">
+      <div class="h-auto md:(h-100 w-auto) lg:h-70 w-auto sm:w-md mx-auto lg:w-auto" itemscope
+        itemtype="https://schema.org/ImageObject">
         <NuxtImg crossorigin="anonymous" itemprop="image" :src="post.img" :alt="post.alt" :title="post.alt" height="369"
           width="577" class="h-full w-full rounded-md b-brand-border b-1 b-solid dark:b-dark-700 b-gray-300"
           format="webp" />
