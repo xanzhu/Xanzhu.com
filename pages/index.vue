@@ -1,8 +1,7 @@
 <template>
   <main class="flex flex-col justify-center">
     <div class="flex mt-10 px-4 md:px-12">
-      <div
-        class="flex flex-col mx-auto min-h-75vh sm:max-w-6xl md:(space-y-10% h-screen) xl:space-y-7% 2xl:space-y-12%">
+      <div class="flex flex-col mx-auto min-h-75vh sm:max-w-6xl md:(space-y-10% h-screen) xl:space-y-7% 2xl:space-y-12%">
         <h1 class="font-bold text-4xl mt5 text-center sm:text-6xl md:text-7xl lg:text-8xl">
           {{ t("Home.title") }}
         </h1>
@@ -16,8 +15,8 @@
       </div>
     </div>
     <BlogFeature class="min-h-screen" />
-    <HomePagesCardV2 class="my-20" />
-    <LazyHomeStatsCard class="min-h-screen" />
+    <HomePagesCard class="my-20" />
+    <HomeStatsCard class="min-h-screen" />
   </main>
 </template>
 <script setup lang="ts">
@@ -49,10 +48,8 @@ useSeoMeta({
 definePageMeta({
   validate(route) {
     if (route.fullPath.includes('?')) {
-      // Throw a 404 error
       throw createError({ statusCode: 404 });
     }
-    // The route is valid
     return true;
   },
 })

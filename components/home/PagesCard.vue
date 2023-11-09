@@ -1,7 +1,7 @@
 <template>
     <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 mx-auto">
         <div class="rounded-md p4" v-for="page in pages">
-            <NuxtLink :to="localePath(page.path)" class="no-underline mx-auto space-y-2 group">
+            <NuxtLinkLocale :to="page.path" class="no-underline mx-auto space-y-2 group">
                 <div class="h-[208px] sm:w-[308px]">
                     <NuxtImg :src="page.img"
                         class="h-full w-full max-w-xl rounded-sm object-cover transform md:(transition duration-400 ease-in-out) md:group-hover:scale-102"
@@ -19,13 +19,12 @@
                             name="uil:arrow-right" :aria-label="t(page.aria)" />
                     </div>
                 </div>
-            </NuxtLink>
+            </NuxtLinkLocale>
         </div>
     </div>
 </template>
 <script setup lang="ts">
 const { t } = useI18n();
-const localePath = useLocalePath();
 
 // TODO: Update ALT + Translations
 

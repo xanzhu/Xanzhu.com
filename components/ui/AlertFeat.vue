@@ -1,6 +1,8 @@
 <template>
   <div v-if="!cb"
     class="max-w-md dark:text-white rounded-md mx2 p5 text-sm backdrop-blur-xl backdrop-filter b-1 dark:border-dark-300 b-gray-300 b-dashed mb-5">
+    <!-- <Icon class="h4 w4 cursor-pointer relative right-2 -top-2 hover:text-red-600" name="ic:baseline-close"
+      @click="closeBtn" /> -->
     <h1 class="text-xl m0 font-semibold">{{ title || t('Alert.feature') }}</h1>
     <h2 class="font-thin">{{ desc || t('Alert.maintenance') }}</h2>
     <NuxtLink v-if="access" :to="localePath(link ?? '')" class="no-underline animate-bounce text-[#FF0]">
