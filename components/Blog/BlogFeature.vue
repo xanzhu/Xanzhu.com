@@ -4,7 +4,7 @@
     <div v-if="features" v-for="feature in features" :key="feature.title"
       class="sm:(mx-5 p-0) lg:mx-20 p-4 justify-center mx-auto">
       <NuxtLinkLocale :to="feature._path"
-        class="text-black dark:(text-white) no-underline group flex flex-col lg:flex-row lg:items-center mx-auto space-y-3 md:mb-10 md:py-9 lg:(p-0 space-x-8)">
+        class="text-black dark:(text-white) no-underline group flex flex-col lg:flex-row lg:items-center mx-auto space-y-3 md:(mb-10 justify-center max-w-lg py-9) lg:(p-0 space-x-8)">
         <div class="h-auto w-auto max-h-xl max-w-xl">
           <NuxtImg crossorigin="anonymous" v-if="feature.img" :src="feature.img" :alt="feature.alt" :title="feature.alt"
             class="h-full w-full rounded-sm object-cover md:group-hover:scale-102 md:(transform transition duration-400 ease-in-out)"
