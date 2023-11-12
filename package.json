@@ -27,8 +27,6 @@
     "nuxt": "^3.8.1",
     "nuxt-icon": "^0.6.5",
     "nuxt-simple-robots": "^3.1.9",
-    "nuxt-simple-sitemap": "^3.4.1",
-    "vue": "^3.3.7",
-    "vue-router": "^4.2.5"
+    "nuxt-simple-sitemap": "^3.4.1"
   }
 }
