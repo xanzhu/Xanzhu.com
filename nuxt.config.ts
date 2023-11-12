@@ -66,7 +66,7 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    "/blog/*": { isr: true },
+    "/blog/**": { isr: true },
   },
 
   plugins: [{ src: "~/plugins/vercel.ts", mode: "client" }],
