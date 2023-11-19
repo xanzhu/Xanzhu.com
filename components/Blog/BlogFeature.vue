@@ -46,6 +46,7 @@ const { data: features } = await useAsyncData("feature-articles", async () => {
   return await queryContent(query)
     .sort({ date: -1 })
     .only(['title', 'description', 'img', 'date', 'tag', '_path', 'alt'])
+    .limit(4)
     .find();
 });
 </script>
