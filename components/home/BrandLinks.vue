@@ -15,7 +15,7 @@
     </div>
 </template>
 <script setup lang="ts">
-const { locale } = useI18n();   
+const { locale } = useI18n();
 
 const urls = [
     {
@@ -35,18 +35,21 @@ const urls = [
         name: "Samsung"
     }
 ];
-
-const formattedDate = ref('');
+const formattedDate = ref<string | null>(null);
 
 const getFormattedDate = (locale: string): string => {
     const now = new Date();
     return now.toLocaleString(locale, {
-        weekday: 'long',
-        month: 'long',
-        day: 'numeric',
-        year: 'numeric',
+        weekday: "long",
+        month: "long",
+        day: "numeric",
+        year: "numeric",
     });
 };
+
+onMounted(() => {
+    getCurrentDate();
+});
 
 const getCurrentDate = () => {
     formattedDate.value = getFormattedDate(locale.value);
@@ -55,6 +58,4 @@ const getCurrentDate = () => {
 watch(locale, () => {
     getCurrentDate();
 });
-
-getCurrentDate();
 </script>
