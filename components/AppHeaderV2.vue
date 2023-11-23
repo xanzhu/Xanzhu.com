@@ -8,9 +8,9 @@
             </NuxtLinkLocale>
             <nav class="hidden md:(block space-x-5 decoration-none)">
                 <NuxtLinkLocale v-for="(link, index) in links" :key="index" :to="link.url"
-                    active-class="!underline underline-offset-6 !decoration-2 !dark:decoration-brand-light !decoration-brand-dark"
+                    active-class="!underline underline-offset-6 !decoration-3 !dark:decoration-brand-light !decoration-brand-dark"
                     :aria-label="t(link.name)"
-                    class="dark:text-black text-white decoration-none hover:(underline underline-offset-6 decoration-2  dark:decoration-brand-light decoration-brand-dark)"
+                    class="dark:text-black text-white decoration-none hover:(underline underline-offset-6 decoration-3  dark:decoration-brand-light decoration-brand-dark)"
                     v-t="link.name">
                 </NuxtLinkLocale>
             </nav>
