@@ -14,12 +14,12 @@ This article covers using the latest version of Windows on ARM processors using 
 
 To check your device is using the new chipset introduced in 2020, click on the Apple icon and select "About This Mac". Here you will find details whether it is Intel or using the new M1-M3 Chips.
 
-This is an updated version from our [previous article](https://xanzhu.com/blog/apple-silicon-virtualmachine-setup) at the beginning of the year, where we covered the installation of Windows using UTM and Parallels. Since then, the process has become much easier and reliable!
+This is an updated version from our [previous article](https://xanzhu.com/blog/apple-silicon-virtual-machine-setup){:target="\_blank"} at the beginning of the year, where we covered the installation of Windows using UTM and Parallels. Since then, the process has become much easier and reliable!
 
 Downloads:
 
-- [UTM](https://mac.getutm.app/)
-- [CrystalFetch](https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12)
+- [UTM](https://mac.getutm.app/){:target="\_blank"}
+- [CrystalFetch](https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12){:target="\_blank"}
 
 Prerequisites:
 
@@ -29,7 +29,7 @@ Prerequisites:
 
 ## Installing UTM
 
-1. Visit [UTM](https://mac.getutm.app/).
+1. Visit [UTM](https://mac.getutm.app/){:target="\_blank"}.
 2. Select Download
 
 The application will look like this when opened
@@ -159,4 +159,4 @@ Double-check that Spice Guest Tools has been installed correctly. To install Spi
 2. Go to the CD drive and click on it.
 3. Double-click on "utm-guest-tools" to run the installation.
 
-If you need more help please refer to UTM's docs [found here](https://docs.getutm.app/guides/windows/).
+If you need more help please refer to UTM's docs [found here](https://docs.getutm.app/guides/windows/){:target="\_blank"}.

@@ -14,12 +14,12 @@ alt: "2023 年 Macbook Pro 黑色版显示三种新芯片组的图标"
 
 要检查您的设备是否使用 2020 年推出的新芯片组，请单击 Apple 图标并选择“关于本机”。 在这里您可以找到详细信息，无论是英特尔还是使用新的 M1-M3 芯片。
 
-这是我们年初的 [上一篇文章](https://xanzhu.com/blog/zh/apple-silicon-virtualmachine-setup) 的更新版本，其中我们介绍了使用 UTM 和 Parallels 安装 Windows。 从那时起，这个过程变得更加容易和可靠！
+这是我们年初的 [上一篇文章](https://xanzhu.com/zh/blog/apple-silicon-virtual-machine-setup){:target="\_blank"} 的更新版本，其中我们介绍了使用 UTM 和 Parallels 安装 Windows。 从那时起，这个过程变得更加容易和可靠！
 
 下载次数：
 
-- [UTM](https://mac.getutm.app/)
-- [CrystalFetch](https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12)
+- [UTM](https://mac.getutm.app/){:target="\_blank"}
+- [CrystalFetch](https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12){:target="\_blank"}
 
 先决条件：
 
@@ -159,4 +159,4 @@ Windows 11 不需要激活密钥：
 2. 转到 CD 驱动器并单击它。
 3. 双击“utm-guest-tools”运行安装。
 
-如果您需要更多帮助，请参阅 UTM 的文档 [在此处找到](https://docs.getutm.app/guides/windows/)
+如果您需要更多帮助，请参阅 UTM 的文档 [在此处找到](https://docs.getutm.app/guides/windows/){:target="\_blank"}

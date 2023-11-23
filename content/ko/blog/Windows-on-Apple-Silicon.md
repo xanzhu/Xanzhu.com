@@ -14,12 +14,12 @@ alt: "3가지 새로운 칩셋의 아이콘을 표시하는 2023년 Macbook Pro 
 
 장치가 2020년에 출시된 새로운 칩셋을 사용하고 있는지 확인하려면 Apple 아이콘을 클릭하고 "이 Mac 정보"를 선택하세요. 여기서는 Intel인지 아니면 새로운 M1-M3 칩을 사용하는지에 대한 세부 정보를 확인할 수 있습니다.
 
-이는 연초에 UTM 및 Parallels를 사용한 Windows 설치를 다룬 [이전 기사](https://xanzhu.com/blog/ko/apple-silicon-virtualmachine-setup) 의 업데이트 버전입니다. 그 이후로 프로세스가 훨씬 더 쉽고 안정적이 되었습니다!
+이는 연초에 UTM 및 Parallels를 사용한 Windows 설치를 다룬 [이전 기사](https://xanzhu.com/ko/blog/apple-silicon-virtual-machine-setup){:target="\_blank"} 의 업데이트 버전입니다. 그 이후로 프로세스가 훨씬 더 쉽고 안정적이 되었습니다!
 
 다운로드:
 
-- [UTM](https://mac.getutm.app/)
-- [CrystalFetch](https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12)
+- [UTM](https://mac.getutm.app/){:target="\_blank"}
+- [CrystalFetch](https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12){:target="\_blank"}
 
 전제 조건:
 
@@ -29,7 +29,7 @@ alt: "3가지 새로운 칩셋의 아이콘을 표시하는 2023년 Macbook Pro 
 
 ## UTM 설치하기
 
-1. [UTM](https://mac.getutm.app/)을 방문하세요.
+1. [UTM](https://mac.getutm.app/){:target="\_blank"}을 방문하세요.
 2. 다운로드를 선택하세요
 
 응용 프로그램을 열면 다음과 같이 표시됩니다.
@@ -159,4 +159,4 @@ Spice Guest Tools가 올바르게 설치되었는지 다시 확인하세요. Spi
 2. CD 드라이브로 이동하여 클릭합니다.
 3. "utm-guest-tools"를 두 번 클릭하여 설치를 실행합니다.
 
-추가 도움이 필요하면 UTM 문서 [여기](https://docs.getutm.app/guides/windows/) 를 참조하세요.
+추가 도움이 필요하면 UTM 문서 [여기](https://docs.getutm.app/guides/windows/){:target="\_blank"} 를 참조하세요.
