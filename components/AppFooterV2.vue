@@ -7,7 +7,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div v-for="(link, index) in links" :key="index">
                         <NuxtLinkLocale
-                            class="text-white dark:text-black decoration-none hover:(underline underline-offset-6 decoration-2 decoration-brand-dark)"
+                            class="text-white dark:text-black decoration-none hover:(underline underline-offset-6 decoration-2 dark:decoration-brand-light decoration-brand-dark)"
                             :to=link.url>{{ t(link.name) }}</NuxtLinkLocale>
                     </div>
                 </div>

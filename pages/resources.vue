@@ -6,7 +6,7 @@
       </h1>
       <div
         class="hidden md:(flex rounded-full h-20 w-20 text-white items-center justify-center b-12 b-rounded-full b-dashed)"
-        :class="{ 'md:b-[#0000FF]': phishing, 'md:b-brand-dark': malware, 'md:dark:b-white md:b-black': a11y }" />
+        :class="{ 'md:b-[#0000FF]': phishing, 'md:b-[#ff0000]': malware, 'md:dark:b-white md:b-black': a11y }" />
     </div>
     <div
       class="flex flex-col space-y-5 sm:flex-row sm:space-x-5 sm:space-y-0 font-medium children:(dark:text-white text-black cursor-pointer b-1 b-solid rounded-sm px6 py2 font-bold)">
@@ -18,8 +18,8 @@
         :class="{ 'dark:bg-white dark:!text-black dark:b-white b-black bg-black text-white': a11y, 'bg-transparent dark:b-white': !a11y }">
         {{ t("Resources.accessibility") }}
       </button>
-      <button @click="toggle('malware')" class="hover:b-brand-dark"
-        :class="{ 'bg-brand-dark b-brand-dark !text-black': malware, 'bg-transparent dark:b-white': !malware }">
+      <button @click="toggle('malware')" class="hover:b-[#ff0000]"
+        :class="{ 'bg-[#ff0000] b-[#ff0000] !text-black': malware, 'bg-transparent dark:b-white': !malware }">
         {{ t("Resources.malware") }}
       </button>
     </div>

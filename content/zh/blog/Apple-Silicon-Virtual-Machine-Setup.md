@@ -6,7 +6,6 @@ img: "/images/blog/VM/vm1.png"
 description: "了解如何使用 Parallels 或 UTM 在 Apple Silicon Mac 上设置虚拟机。 我们的指南涵盖安装、配置和运行您的第一个虚拟机。"
 alt: "Apple Silicon 芯片组 M1"
 toc: true
-feature: true
 ogLink: "https://source.unsplash.com/mP7aPSUm7aE"
 ---
 

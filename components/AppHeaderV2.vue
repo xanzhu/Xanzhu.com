@@ -1,6 +1,6 @@
 <template>
     <header
-        class="flex justify-between items-center dark:(text-black bg-white) text-white bg-black md:p3 px4 py2 mx-auto md:px-6 xl:px10 2xl:px20">
+        class="flex justify-between items-center dark:(text-black bg-white) text-white bg-black md:p3 px4 py2 mx-auto md:px-6 xl:px10 2xl:px20 border-b-1 b-0 dark:border-light-900 border-dark-100 b-solid">
         <div class="flex md:space-x-10">
             <NuxtLinkLocale to="/" class="mx-auto text-center dark:text-black text-white">
                 <UiIconXanzhu class="h6" :aria-label="t('a11y.logo')" />
@@ -8,9 +8,9 @@
             </NuxtLinkLocale>
             <nav class="hidden md:(block space-x-5 decoration-none)">
                 <NuxtLinkLocale v-for="(link, index) in links" :key="index" :to="link.url"
-                    active-class="!text-brand-dark !decoration-brand-dark dark:(!text-brand-light !decoration-brand-light) decoration-6 underline-offset-22"
+                    active-class="!underline underline-offset-6 !decoration-3 !dark:decoration-brand-light !decoration-brand-dark"
                     :aria-label="t(link.name)"
-                    class="dark:text-black text-white hover:(text-brand-dark) dark:hover:(text-brand-light) underline decoration-transparent"
+                    class="dark:text-black text-white decoration-none hover:(underline underline-offset-6 decoration-3  dark:decoration-brand-light decoration-brand-dark)"
                     v-t="link.name">
                 </NuxtLinkLocale>
             </nav>

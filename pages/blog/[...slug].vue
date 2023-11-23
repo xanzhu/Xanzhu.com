@@ -89,12 +89,12 @@ h5 {
 }
 
 .prose a[href^="https"] {
-  color: #ff0000;
+  color: #0067d4;
   text-decoration: none;
 }
 
 .prose a:hover {
-  text-decoration: 1px underline;
+  text-decoration: 2px underline;
   text-underline-offset: 2px;
 }
 
@@ -107,12 +107,12 @@ h5 {
   }
 
   .dark .prose a[href^="https"] {
-    color: #ff0000;
+    color: #007BFF;
     text-decoration: none;
   }
 
   .dark .prose a:hover {
-    text-decoration: 1px underline;
+    text-decoration: 2px underline;
     text-underline-offset: 2px;
   }
 }

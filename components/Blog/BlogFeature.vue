@@ -45,7 +45,9 @@ const { data: features } = await useAsyncData("feature-articles", async () => {
   let query = locale.value !== "en" ? `${locale.value}/blog` : "/blog";
   return await queryContent(query)
     .sort({ date: -1 })
+    .where({ feature: true })
     .only(['title', 'description', 'img', 'date', 'tag', '_path', 'alt'])
+    .limit(4)
     .find();
 });
 </script>
