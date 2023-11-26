@@ -14,12 +14,13 @@ alt: "2023 年 Macbook Pro 黑色版显示三种新芯片组的图标"
 
 要检查您的设备是否使用 2020 年推出的新芯片组，请单击 Apple 图标并选择“关于本机”。 在这里您可以找到详细信息，无论是英特尔还是使用新的 M1-M3 芯片。
 
-这是我们年初的 [上一篇文章](https://xanzhu.com/zh/blog/apple-silicon-virtual-machine-setup){:target="\_blank"} 的更新版本，其中我们介绍了使用 UTM 和 Parallels 安装 Windows。 从那时起，这个过程变得更加容易和可靠！
+这是我们年初的 <PageLink title="上一篇文章" url="/zh/blog/apple-silicon-virtual-machine-setup"></PageLink> 的更新版本，其中我们介绍了使用 UTM 和 Parallels 安装 Windows。 从那时起，这个过程变得更加容易和可靠！
 
 下载次数：
 
-- [UTM](https://mac.getutm.app/){:target="\_blank"}
-- [CrystalFetch](https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12){:target="\_blank"}
+- <PageLink title="UTM 网站" url="https://mac.getutm.app/"></PageLink>
+- <PageLink title="UTM Github" url="https://github.com/utmapp/UTM/releases"></PageLink>
+- <PageLink title="CrystalFetch" url="https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12"></PageLink>
 
 先决条件：
 
@@ -29,8 +30,9 @@ alt: "2023 年 Macbook Pro 黑色版显示三种新芯片组的图标"
 
 ## 安装 UTM
 
-1. 访问 [UTM](https://mac.getutm.app/)
-2. 选择下载
+- 从 <PageLink title="官方网站" url="https://mac.getutm.app/"></PageLink> 下载 UTM 或从 <PageLink title="Github" url="https://github.com/utmapp/UTM/releases"></PageLink>
+
+<i>注意：UTM 也可以在应用商店中使用，尽管这是提供更新的付费选项，但与上述两个选项一样，任何更新都需要手动下载。</i>
 
 打开后该应用程序将如下所示
 
@@ -40,7 +42,8 @@ alt: "2023 年 Macbook Pro 黑色版显示三种新芯片组的图标"
 
 这是一个免费工具，可帮助我们生成 UTM 虚拟机所需的更新的 Windows ISO 文件。
 
-1. 从 App Store 下载 CrystalFetch。
+1. 从 <PageLink title="App Store" url="https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12"></PageLink> 下载 CrystalFetch。
+
 2. 打开 CrystalFetch 并选择语言和版本 (Windows 11)
 
 看起来应该与此类似：
@@ -159,4 +162,4 @@ Windows 11 不需要激活密钥：
 2. 转到 CD 驱动器并单击它。
 3. 双击“utm-guest-tools”运行安装。
 
-如果您需要更多帮助，请参阅 UTM 的文档 [在此处找到](https://docs.getutm.app/guides/windows/){:target="\_blank"}
+如果您需要更多帮助，请参阅 UTM 的文档 <PageLink title="文档" url="https://docs.getutm.app/guides/windows/"></PageLink>

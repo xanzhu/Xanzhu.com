@@ -19,7 +19,7 @@ alt: "流行网络浏览器的图标"
 
 <Media source="/images/blog/BB/arc.webp" credit="The Browser Company / Xanzhu" alt="Arc 浏览器徽标"></Media>
 
-市场上的新竞争者由 [The Browser Company](https://thebrowser.company/){:target="\_blank"} 打造，是一个成熟的校友开发者集体，他们曾与一些 互联网最流行的网络服务，例如 Google Chrome、Instagram 等。 凭借在这一领域的深厚专业知识，The Browser Company 致力于通过重新激发浏览体验中的创造力和可访问性来改变普通浏览器的行为。
+市场上的新竞争者由 <PageLink title="The Browser Company" url="https://thebrowser.company/"></PageLink> 打造，是一个成熟的校友开发者集体，他们曾与一些 互联网最流行的网络服务，例如 Google Chrome、Instagram 等。 凭借在这一领域的深厚专业知识，The Browser Company 致力于通过重新激发浏览体验中的创造力和可访问性来改变普通浏览器的行为。
 
 这款名为 Arc 的浏览器带来了全新的浏览体验，使用起来流畅有趣。 该浏览器目前正在开发中，仅限受邀者使用。 我很早就开始使用这款浏览器，并对其独特的设计和感觉印象深刻。 这是一款将改变我们看待传统浏览器方式的浏览器。
 
@@ -49,7 +49,7 @@ Arc 提供内置的画中画 (PiP) 模式，当切换离开正在播放媒体的
 - 笔记和画架 - 内置笔记和设计工具
 - Little Arc - 选项卡功能中的选项卡
 
-详细了解 The Browser Company 如何改变所有浏览器的游戏规则并注册以访问 [Arc.net](https://arc.net/){:target="\_blank"}
+详细了解 The Browser Company 如何改变所有浏览器的游戏规则并注册以访问 <PageLink title="Arc.net" url="https://arc.net/"></PageLink>
 
 ## Brave
 
@@ -81,7 +81,7 @@ Brave 将这些功能集成到浏览器中的努力表明，它致力于使向 W
 
 ### 勇敢的搜索
 
-为了减少对使用 Google 或 Bing 作为搜索提供商的依赖，Brave 最近发布了自己的搜索引擎 [Brave search](https://search.brave.com/){:target="\_blank"}，它提供了更好的搜索引擎 比使用以前的 DuckDuckGo 方法安全。 在继续获得动力和更多功能的同时，Brave Search 正在采取措施引领下一代搜索无偏见并确保内容可访问。
+为了减少对使用 Google 或 Bing 作为搜索提供商的依赖，Brave 最近发布了自己的搜索引擎 <PageLink title="Brave Search" url="https://search.brave.com/"></PageLink>，它提供了更好的搜索引擎 比使用以前的 DuckDuckGo 方法安全。 在继续获得动力和更多功能的同时，Brave Search 正在采取措施引领下一代搜索无偏见并确保内容可访问。
 
 Brave Search 建立在开源搜索引擎 Preact 之上，可提供快速、轻量级和高效的搜索体验。 搜索引擎也尊重用户的隐私，不跟踪或存储任何个人数据。 此外，Brave Search 使用一种算法过滤掉赞助商的结果，这确保了搜索结果没有偏见，并且用户看到的是最相关和最有用的结果。
 
@@ -96,7 +96,7 @@ Brave 不断致力于改进搜索引擎并添加新功能，例如语音搜索�
 
 <Media source="/images/blog/BB/snowflake.webp" alt="Snowflake 在 brave 浏览器上的实现"></Media>
 
-您可以通过 [The Tor Project](https://snowflake.torproject.org/){:target="\_blank"} 了解有关 Snowflake 协议的更多信息
+您可以通过 <PageLink title="The Tor Project" url="https://snowflake.torproject.org/"></PageLink> 了解有关 Snowflake 协议的更多信息
 要在 Brave 浏览器上实施或启用此功能，请参阅 [Brave 支持](https://support.brave.com/hc/en-us/articles/9059440641421-What-is-the-Snowflake-extension-){:target= "\_blank"}
 
 ### 其他特性
@@ -109,7 +109,7 @@ Brave 浏览器的内置 VPN 功能在浏览网络时提供了额外的安全和
 
 <Media source="/images/blog/BB/brave-compare.webp" credit="Brave" alt="Brave 的安全特性对比图"></Media>
 
-访问 [Brave.com](https://brave.com/){:target="\_blank"} 下载浏览器并亲自体验不同之处。 无论您是临时用户还是开发人员，Brave 都提供一系列功能来增强您的浏览体验。 使用 Brave，您将能够以更多隐私、安全和高效的方式浏览网络。
+访问 <PageLink title="Brave.com" url="https://brave.com/"></PageLink> 下载浏览器并亲自体验不同之处。 无论您是临时用户还是开发人员，Brave 都提供一系列功能来增强您的浏览体验。 使用 Brave，您将能够以更多隐私、安全和高效的方式浏览网络。
 
 ## FireFox
 
@@ -131,7 +131,7 @@ Firefox 提供快速和安全的浏览体验，具有一系列增强隐私和性
 
 <Media source="/images/blog/BB/firefox-compare.webp" credit="Mozilla" alt="Firefox 安全特性比较表"></Media>
 
-Firefox 是重视可靠性和隐私的用户的绝佳选择。 它是 Brave 的完美替代品，提供相似的功能范围和快速的性能。 访问 [Firefox.com](https://www.mozilla.org/en-US/firefox/new/){:target="\_blank"} 下载浏览器并亲自体验不同之处。
+Firefox 是重视可靠性和隐私的用户的绝佳选择。 它是 Brave 的完美替代品，提供相似的功能范围和快速的性能。 访问 <PageLink title="Firefox.com" url="https://www.mozilla.org/en-US/firefox/new/"></PageLink> 下载浏览器并亲自体验不同之处。
 
 ## 默认值
 
@@ -145,7 +145,7 @@ Windows 的默认选项是 Microsoft Edge，这是他们自己使用的 Chromium
 
 Microsoft Edge 是一款可靠的浏览器，已更新为 Chromium 引擎，这意味着它与大多数网站兼容并且具有快速的性能。 它还包括一系列功能，如内置广告拦截器、跟踪预防和密码管理器，可增强隐私和安全性。 对某些用户可能有用的另一个功能是能够访问旧的 Internet Explorer 站点。
 
-详细了解 [Microsoft Edge](https://www.microsoft.com/en-us/edge){:target="\_blank"}，看看它是否适合您和您的需求。
+详细了解 <PageLink title="Microsoft Edge" url="https://www.microsoft.com/en-us/edge"></PageLink>，看看它是否适合您和您的需求。
 
 ### 苹果系统
 

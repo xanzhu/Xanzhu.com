@@ -14,9 +14,9 @@ alt: "ChatGPT 시각 디자인 Xanzhu"
 
 ChatGPT는 새로운 문제를 해결하므로 많은 관심을 받고 있습니다. 이전 기사에서 언급했듯이 ChatGPT와 같은 언어 모델은 우리의 미래가 어떤 모습일지 엿볼 수 있게 해줍니다. 초기 기사를 게시한 이후 유사한 서비스를 제공하거나 단순히 ChatGPT의 API를 활용하는 더 많은 회사에서 모델 자체가 버전 4로 업데이트되어 더 복잡한 결과와 기능을 제공하는 등 몇 가지 사항이 변경되었습니다.
 
-[Open AI](https://openai.com/){:target="\_blank"}에서 최신 정보를 확인하세요.
+<PageLink title="OpenAI" url="https://openai.com/"></PageLink> 에서 최신 정보를 확인하세요.
 
-직접 ChatGPT를 사용해 보세요: [ChatGPT](https://chat.openai.com/){:target="\_blank"}
+직접 ChatGPT를 사용해 보세요: <PageLink title="ChatGPT" url="https://chat.openai.com/"></PageLink>
 
 ### Microsoft
 
@@ -34,7 +34,7 @@ Bing의 새로운 채팅 기능이 Edge 브라우저에 제한된다는 점을 �
 
 Bing은 사용자에게 제한된 옵션을 제공하고 종종 요청을 차단합니다. 그들은 새로운 주제가 설정되기 전에 응답에 대한 제한을 도입하여 기존 대화를 차단하고 사용자가 채팅을 쓸어버리기 위해 빗자루 버튼을 선택하도록 권장합니다. 이 제한은 모델이 범위를 벗어나는 것을 방지하고 모든 사람이 모델을 사용할 수 있도록 합니다. 고려해야 할 흥미로운 점은 이러한 모델에서 역사가 작동하는 방식입니다. 이 단계에서는 액세스할 수 있는 위치에 저장되지 않고 기본 스플래시 화면으로 다시 재설정됩니다.
 
-Bing의 ChatBot 기능을 직접 사용해 보십시오(Edge 브라우저 필요): [Bing](https://bing.com/){:target="\_blank"}
+Bing의 ChatBot 기능을 직접 사용해 보십시오(Edge 브라우저 필요): <PageLink title="Bing" url="https://bing.com/"></PageLink>
 
 ### Google
 
@@ -46,7 +46,7 @@ Google은 최근 조기 액세스를 위해 Bard를 열었고 응답 속도는 �
 
 소프트웨어의 정확도와 기능이 개선되어 앞으로 몇 달 동안 Google에 더 많은 변화와 개선이 있을 것으로 기대합니다. 그들의 언어 모델(LaMDA)이 Bard에서 사용하기 위해 테스트되고 완성되면 더 적은 제한이 적용되어 사용자가 Google의 방대한 데이터 아카이브에서 검색하고 결과를 얻을 수 있습니다. 당분간 이것은 느린 릴리스이며 Bard의 최종 제품이 아닐 것입니다.
 
-Bard에 대해 자세히 알아보고 대기자 명단에 등록하세요. [Google](https://bard.google.com/){:target="\_blank"}
+Bard에 대해 자세히 알아보고 대기자 명단에 등록하세요. <PageLink title="Google" url="https://bard.google.com/"></PageLink>
 
 ### 소프트웨어 적응
 
@@ -54,13 +54,13 @@ Google과 Microsoft는 소프트웨어 라인업 전체에서 일상적인 작�
 
 <Vid source="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_videos/Docs_Web_030623_1.mp4" credit="Google"></Vid>
 
-[Google](https://blog.google/technology/ai/ai-developers-google-cloud-workspace/){:target="\_blank"}의 발표를 읽어보세요.
+<PageLink title="Google" url="https://blog.google/technology/ai/ai-developers-google-cloud-workspace/"></PageLink> 의 발표를 읽어보세요.
 
 이 발표 이틀 후 Microsoft는 또한 Word, Excel 및 Outlook과 같은 365 라인업에 도입될 Copilot이라는 새로운 AI 기반 라인업을 출시하기 위해 노력하고 있다고 발표했습니다. 그들의 비전은 자신의 말의 힘을 사용하여 창의성 수준을 높이는 것입니다. Google의 Doc 접근 방식과 마찬가지로 Microsoft는 단순히 요청을 입력하고 마법이 일어나는 것을 지켜보는 유사한 개념을 따릅니다. 약간 다른 점은 Copilot이 파일을 기반으로 콘텐츠를 생성하는 기능도 추가한다는 것입니다.
 
 <Media source="/images/blog/Gen/mfr.webp"  alt="Microsoft Generative AI 비주얼" credit="Microsoft"></Media>
 
-[Microsoft](https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/){:target="\_blank "} 의 발표 읽기.
+<PageLink title="Microsoft" url="https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/"></PageLink> 의 발표 읽기.
 
 두 가지 발표는 문서를 정확히 원하는 방식으로 작성하고 초안을 작성하는 것이 훨씬 더 쉬워진다는 것을 의미합니다. 이에 대한 가능한 우려는 악의적인 행위자가 공격을 자동화하고 완벽하게 만드는 것을 더 쉽게 만들 수 있는 특정 문서를 생성하는 사용입니다.
 
@@ -86,7 +86,7 @@ Copilot은 모든 개발자에게 유용한 도구가 될 것이며, 프로덕�
 
 현재 기술 미리보기 단계에서 Copilot은 Visual Studio 및 Visual Studio Code와 같은 Microsoft 에코시스템에서 사용할 수 있으며 확장이 개발됨에 따라 Neovim, Jetbrains 등과 같은 다른 통합 개발 환경 또는 IDE로 확장할 계획입니다.
 
-Copilot X 자세히 알아보기: [Github](https://github.blog/2023-03-22-github-copilot-x-the-ai-powered-developer-experience/){:target="\_blank"}
+Copilot X 자세히 알아보기: <PageLink title="Github" url="https://github.blog/2023-03-22-github-copilot-x-the-ai-powered-developer-experience/"></PageLink>
 
 ### Summarizer
 
@@ -106,9 +106,9 @@ Bing 또는 Google을 사용하는 것과 차별화되는 점은 Brave의 AI 모
 
 Brave는 업계 거대 기업에 대한 대안에 계속해서 도전하고 혁신하고 있습니다. 비교적 새롭기 때문에 완벽하지 않으며 AI가 발전하고 검색 엔진이 발전함에 따라 계속 적응할 것입니다.
 
-[Brave](https://brave.com/ai-summarizer/){:target="\_blank"}의 새로운 기능에 대해 자세히 알아보세요.
+<PageLink title="Brave" url="https://brave.com/ai-summarizer/"></PageLink> 의 새로운 기능에 대해 자세히 알아보세요.
 
-그들의 검색 엔진을 사용해보십시오 - 비공개입니다! [용감한 검색](https://search.brave.com){:target="\_blank"}
+그들의 검색 엔진을 사용해보십시오 - 비공개입니다! <PageLink title="Brave Search" url="https://search.brave.com"></PageLink>
 
 ### 스포티 파이
 
@@ -124,7 +124,7 @@ OpenAI와 DJ의 목소리에 사용되는 Sonantic의 음성 모델로 구동되
 
 이것에 대한 몇 가지 우려는 특정 음악 장르에 대해 훈련되는 모델입니다. 완전히 다른 것으로 분류될 수 있는 음악의 하위 장르가 많이 있으며 이는 전혀 관련 없는 장르의 노래를 추천할 때 문제가 됩니다. 완전히 새로운 노래 또는 오래된 노래가 혼합되어 있다는 점을 감안할 때 AI 모델은 사용자에게 바람직하지 않은 제목이나 아티스트를 제공할 때 잠재적인 위험을 제시할 수 있습니다. 이것에 대해 더 자세히 설명합니다.
 
-자세히 알아보기: [Spotify](https://newsroom.spotify.com/2023-02-22/spotify-debuts-a-new-ai-dj-right-in-your-pocket/){:target="\ \_공백"}
+자세히 알아보기: <PageLink title="Spotify" url="https://newsroom.spotify.com/2023-02-22/spotify-debuts-a-new-ai-dj-right-in-your-pocket/"></PageLink>
 
 ### 다음
 

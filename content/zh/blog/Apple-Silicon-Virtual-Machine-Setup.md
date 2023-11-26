@@ -9,6 +9,10 @@ toc: true
 ogLink: "https://source.unsplash.com/mP7aPSUm7aE"
 ---
 
+::alert
+Windows 11 的安装略有变化，请查看 <PageLink title="更新指南" url="/blog/windows-on-apple-silicon"></PageLink>
+::
+
 如果您是一名开发人员或技术爱好者，您可能需要为项目或个人使用使用多个操作系统。 在本文中，我们将介绍使用 Parallels、付费虚拟化软件和名为 UTM 的免费开源解决方案设置流行操作系统（例如 Windows 和 Ubuntu）的过程。 无论您是初学者还是经验丰富的用户，本指南都将教您如何在 Apple Silicon Mac 上快速轻松地安装和设置每个环境。
 
 您如何知道您的 Mac 是否运行在 Apple Silicon 上？
@@ -23,7 +27,7 @@ ogLink: "https://source.unsplash.com/mP7aPSUm7aE"
 
 本机运行的付费虚拟化软件，本质上是所有您喜欢的操作系统的一键式安装。 它提供了很好的工具，并使整个过程尽可能顺利。
 
-1. 访问 [Parallels.com](https://www.parallels.com/products/desktop/trial/){:target="\_blank"} 并下载免费试用版。
+1. 访问 <PageLink title="Parallels.com" url="https://www.parallels.com/products/desktop/trial/"></PageLink> 并下载免费试用版。
 2. 安装后打开“Parallels Desktop”。
 3. 现在选择您要安装的操作系统。
 
@@ -54,7 +58,7 @@ Ubuntu 遵循相同的过程，只需单击 Ubuntu 图标并选择安装，这�
 
 3. 下载完成后，虚拟机会自动启动
 4. 系统会提示您创建登录密码
-5. 登录后会要求重启虚拟机安装“Parallels Tools”
+5. 登录后会要求重启虚拟机安装 “Parallels Tools”
 6. 虚拟机重启后，重新登录，开始配置新的 Ubuntu 虚拟机。
 
 It's always good practice to check for updates and ensure you're running the latest versions. This can help with performance and security issues.
@@ -81,7 +85,7 @@ It's always good practice to check for updates and ensure you're running the lat
 UTM 是一款免费工具，其功能与平行线相同，但您需要负责定制。
 性能将不一致，需要根据您的系统进行调整。 如果您需要一个响应迅速的虚拟机而不用大惊小怪地配置软件的各个方面，这可能不是一个好的选择。
 
-1. 下载[UTM](https://mac.getutm.app/){:target="\_blank"} 有 App store 版本但是这个是付费的，选择下载
+1. 下载 <PageLink title="UTM" url="https://mac.getutm.app/"></PageLink> 有 App store 版本但是这个是付费的，选择下载
 2. 打开 UTM，选择“创建新的虚拟机”
 3. 选择“虚拟化”
 
@@ -92,7 +96,7 @@ Windows 可以通过多种不同的方式安装。
 或者，您可以安装此处列出的版本：
 
 4. 选择窗口
-5. 访问从 [Microsoft](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewarm64?wa=wsignin1.0) 下载最新的 Windows 11 ARM 文件{:target="\_blank"}
+5. 访问从 <PageLink title="Microsoft" url="https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewarm64"></PageLink> 下载最新的 Windows 11 ARM 文件
 6. 按浏览并选择下载的 VHDX 文件，确保选择导入 VHDX
 
 <Media source="/images/blog/VM/u-install.webp" alt="UTM 窗口的安装设置"></Media>
@@ -133,7 +137,7 @@ Now installing windows
 1. 打开 UTM，选择“创建新的虚拟机”
 2. 选择“虚拟化”
 3. 选择 Linux
-4. 下载[Linux](https://ubuntu.com/download/server/arm){:target="\_blank"}，打开 UTM，按浏览
+4. 下载 <PageLink title="Ubuntu" url="https://ubuntu.com/download/server/arm"></PageLink>，打开 UTM，按浏览
 5. 按浏览并选择下载的 Ubuntu Server ISO 文件
 6. 选择继续
 7. 选择要使用的内存量 (RAM)
@@ -186,7 +190,8 @@ sudo reboot
 
 ### 其他
 
-UTM 提供范围广泛的[预构建虚拟机](https://mac.getutm.app/gallery/){:target="\_blank"}，涵盖所有类型的操作系统。
+UTM 提供范围广泛的 <PageLink title="预构建虚拟机" url="https://mac.getutm.app/gallery/"></PageLink>，涵盖所有类型的操作系统。
+
 这适用于“仿真”选项。 很多选项，完全免费使用。
 
 ## 未来的解决方案
@@ -195,4 +200,4 @@ UTM 提供范围广泛的[预构建虚拟机](https://mac.getutm.app/gallery/){:
 
 ### Asahi Linux
 
-[Asashi Linux](https://asahilinux.org/){:target="\_blank"} 为将来安装基于 Linux 的操作系统奠定基础，最终将提供流畅的裸机体验并结束对虚拟机的依赖。
+<PageLink title="Asashi Linux" url="https://asahilinux.org/"></PageLink> 为将来安装基于 Linux 的操作系统奠定基础，最终将提供流畅的裸机体验并结束对虚拟机的依赖。

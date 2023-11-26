@@ -14,12 +14,13 @@ alt: "3가지 새로운 칩셋의 아이콘을 표시하는 2023년 Macbook Pro 
 
 장치가 2020년에 출시된 새로운 칩셋을 사용하고 있는지 확인하려면 Apple 아이콘을 클릭하고 "이 Mac 정보"를 선택하세요. 여기서는 Intel인지 아니면 새로운 M1-M3 칩을 사용하는지에 대한 세부 정보를 확인할 수 있습니다.
 
-이는 연초에 UTM 및 Parallels를 사용한 Windows 설치를 다룬 [이전 기사](https://xanzhu.com/ko/blog/apple-silicon-virtual-machine-setup){:target="\_blank"} 의 업데이트 버전입니다. 그 이후로 프로세스가 훨씬 더 쉽고 안정적이 되었습니다!
+이는 연초에 UTM 및 Parallels를 사용한 Windows 설치를 다룬 <PageLink title="이전 기사" url="/ko/blog/apple-silicon-virtual-machine-setup"></PageLink> 의 업데이트 버전입니다. 그 이후로 프로세스가 훨씬 더 쉽고 안정적이 되었습니다!
 
 다운로드:
 
-- [UTM](https://mac.getutm.app/){:target="\_blank"}
-- [CrystalFetch](https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12){:target="\_blank"}
+- <PageLink title="UTM 웹사이트" url="https://mac.getutm.app/"></PageLink>
+- <PageLink title="UTM Github" url="https://github.com/utmapp/UTM/releases"></PageLink>
+- <PageLink title="CrystalFetch" url="https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12"></PageLink>
 
 전제 조건:
 
@@ -29,19 +30,20 @@ alt: "3가지 새로운 칩셋의 아이콘을 표시하는 2023년 Macbook Pro 
 
 ## UTM 설치하기
 
-1. [UTM](https://mac.getutm.app/){:target="\_blank"}을 방문하세요.
-2. 다운로드를 선택하세요
+- <PageLink title="공식 웹사이트" url="https://mac.getutm.app/"></PageLink> 에서 UTM을 다운로드하거나 <PageLink title="Github" url="https:/에서 최신 버전을 다운로드합니다. /github.com/utmapp/UTM/releases"></PageLink>
+
+<i>참고: UTM은 앱 스토어에서도 사용할 수 있습니다. 단, UTM은 업데이트를 제공하는 유료 옵션이므로 위의 두 가지 옵션처럼 모든 업데이트를 수동으로 다운로드해야 합니다.</i>
 
 응용 프로그램을 열면 다음과 같이 표시됩니다.
 
-<Media source="/images/blog/wvm/wvm-1.png" alt="UTM 애플리케이션 오프닝 화면></Media>
+<Media source="/images/blog/wvm/wvm-1.png" alt="UTM 애플리케이션 오프닝 화면"></Media>
 
 ## CrystalFetch
 
 이는 UTM 가상 머신에 필요한 업데이트된 Windows ISO 파일을 생성하는 데 도움이 되는 무료 도구입니다.
 
-1. 앱스토어에서 CrystalFetch를 다운로드하세요.
-2. CrystalFetch를 열고 언어 및 버전 선택(Windows 11)
+1. <PageLink title="앱 스토어" url="https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12"></PageLink> 에서 CrystalFetch를 다운로드하세요.
+1. CrystalFetch를 열고 언어 및 버전 선택(Windows 11)
 
 다음과 유사해야 합니다.
 
@@ -159,4 +161,4 @@ Spice Guest Tools가 올바르게 설치되었는지 다시 확인하세요. Spi
 2. CD 드라이브로 이동하여 클릭합니다.
 3. "utm-guest-tools"를 두 번 클릭하여 설치를 실행합니다.
 
-추가 도움이 필요하면 UTM 문서 [여기](https://docs.getutm.app/guides/windows/){:target="\_blank"} 를 참조하세요.
+추가 도움이 필요하시면 UTM <PageLink Link title="문서" url="https://docs.getutm.app/guides/windows/"></PageLink> 를 참조하세요.

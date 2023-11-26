@@ -10,16 +10,17 @@ ogURL: "/images/blog/wvm/wvm.png"
 alt: "2023 Macbook Pro Black Edition displaying icons of the three new chipsets"
 ---
 
-This article covers using the latest version of Windows on ARM processors using UTM. This will work on all Apple Silicon Devices, including the new Mac lineup from M1 to M3 chipset.
+This article covers using the latest version of Windows on ARM processors using UTM. This will work on all Apple Silicon Devices, including the new Mac line up from M1 to M3 chipset.
 
 To check your device is using the new chipset introduced in 2020, click on the Apple icon and select "About This Mac". Here you will find details whether it is Intel or using the new M1-M3 Chips.
 
-This is an updated version from our [previous article](https://xanzhu.com/blog/apple-silicon-virtual-machine-setup){:target="\_blank"} at the beginning of the year, where we covered the installation of Windows using UTM and Parallels. Since then, the process has become much easier and reliable!
+This is an updated version from our <PageLink title="previous article" url="/blog/apple-silicon-virtual-machine-setup"></PageLink> at the beginning of the year, where we covered the installation of Windows using UTM and Parallels. Since then, the process has become much easier and reliable!
 
 Downloads:
 
-- [UTM](https://mac.getutm.app/){:target="\_blank"}
-- [CrystalFetch](https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12){:target="\_blank"}
+- <PageLink title="UTM Website" url="https://mac.getutm.app/"></PageLink>
+- <PageLink title="UTM Github" url="https://github.com/utmapp/UTM/releases"></PageLink>
+- <PageLink title="CrystalFetch" url="https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12"></PageLink>
 
 Prerequisites:
 
@@ -29,18 +30,19 @@ Prerequisites:
 
 ## Installing UTM
 
-1. Visit [UTM](https://mac.getutm.app/){:target="\_blank"}.
-2. Select Download
+- Download UTM from their <PageLink title="Offical website" url="https://mac.getutm.app/"></PageLink> or the latest version from <PageLink title="Github" url="https://github.com/utmapp/UTM/releases"></PageLink>
+
+<i>Note: UTM is also available on the app store though this is paid option offering updates where as the above two options any updates need to be downloaded manually.</i>
 
 The application will look like this when opened
 
-<Media source="/images/blog/wvm/wvm-1.png"  alt="UTM Application Opening Screen"></Media>
+<Media source="/images/blog/wvm/wvm-1.png" alt="UTM Application Opening Screen"></Media>
 
 ## CrystalFetch
 
 This is a free tool what will help us to generate an updated windows ISO file needed for the UTM virtual machine.
 
-1. Download CrystalFetch from the App Store.
+1. Download CrystalFetch from the <PageLink title="App Store" url="https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12"></PageLink>.
 2. Open CrystalFetch and Select Language and Edition (Windows 11)
 
 Should look similar to this:
@@ -159,4 +161,4 @@ Double-check that Spice Guest Tools has been installed correctly. To install Spi
 2. Go to the CD drive and click on it.
 3. Double-click on "utm-guest-tools" to run the installation.
 
-If you need more help please refer to UTM's docs [found here](https://docs.getutm.app/guides/windows/){:target="\_blank"}.
+If you need more help please refer to UTM's <PageLink title="Documentation" url="https://docs.getutm.app/guides/windows/"></PageLink>

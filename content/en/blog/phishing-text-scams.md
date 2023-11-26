@@ -87,7 +87,7 @@ Always navigate to the offical website before entering sensitive information.
 If you have come across a scam, please forward the message to the Department of Internal Affairs for further investigation.
 Simply forward the text message to the following number: 7726.
 
-See here how to forward a message in [iOS](https://support.apple.com/en-nz/guide/iphone/iph125628311/ios). For Andriod devices this should be a similar process of holding down the message and selecting forward.
+See here how to forward a message in <PageLink title="iOS" url="https://support.apple.com/en-nz/guide/iphone/iph125628311/ios"></PageLink>. For Andriod devices this should be a similar process of holding down the message and selecting forward.
 
 Report directly to the organization. I have listed the email addresses for popular services operating within New Zealand.
 Please screenshot the suspicious text message or email and attach it to the email sent to one of the following:
@@ -107,8 +107,8 @@ Spark NZ - scamhelp@spark.co.nz
 <hr> 
 Learn more:
 
-[dia.govt.nz](https://www.dia.govt.nz/Spam-How-to-Report-Scams)
+<PageLink title="dia.govt.nz" url="https://www.dia.govt.nz/Spam-How-to-Report-Scams"></PageLink>
 
-[cert.nz](https://www.cert.govt.nz/individuals/common-threats/phishing/)
+<PageLink title="cert.nz" url="https://www.cert.govt.nz/individuals/common-threats/phishing/"></PageLink>
 
-[netsafe.org.nz](https://report.netsafe.org.nz/hc/en-au/requests/new)
+<PageLink title="netsafe.org.nz" url="https://report.netsafe.org.nz/hc/en-au/requests/new"></PageLink>

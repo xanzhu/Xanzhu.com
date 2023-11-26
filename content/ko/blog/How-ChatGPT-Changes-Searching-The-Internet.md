@@ -17,23 +17,23 @@ Google 및 Bing과 같은 주요 검색 엔진은 우리가 인터넷 검색 방
 
 인공 지능 또는 AI는 우리의 미래가 향하는 곳입니다. 시스템은 연중무휴 24시간 실행되어 다운타임을 최소화하고 인적 오류를 줄일 수 있습니다. 현재 대부분의 AI 솔루션은 특정 작업을 해결하고 효율성을 높이는 것을 목표로 할 것입니다. ChatGPT는 웹을 검색할 필요 없이 신속하게 정보를 제공하고 이 AI와 앞뒤로 대화할 수 있는 기능을 추가하여 더 많은 이해와 명확성을 얻음으로써 이를 수행합니다.
 
-[ChatGPT](https://chat.openai.com/){:target="\_blank"}는 OpenAI에서 개발한 2022년 11월부터 사용되어 인터넷에서 수집된 데이터를 통해 훈련된 인간과 같은 상호 작용을 허용합니다. OpenAI의 언어 모델은 매우 강력하고 많은 일상적인 작업을 해결할 것이며 이미 가능한 소프트웨어의 프리뷰를 발표했습니다. 이 기술의 잠재력은 무한하며 소프트웨어 전반에 걸쳐 계속 구현되어 현재 우리가 가지고 있는 것을 개선할 것입니다.
+<PageLink title="ChatGPT" url="https://chat.openai.com/"></PageLink> 는 OpenAI에서 개발한 2022년 11월부터 사용되어 인터넷에서 수집된 데이터를 통해 훈련된 인간과 같은 상호 작용을 허용합니다. OpenAI의 언어 모델은 매우 강력하고 많은 일상적인 작업을 해결할 것이며 이미 가능한 소프트웨어의 프리뷰를 발표했습니다. 이 기술의 잠재력은 무한하며 소프트웨어 전반에 걸쳐 계속 구현되어 현재 우리가 가지고 있는 것을 개선할 것입니다.
 
 <Media source="/images/blog/AI/chatgpt.png"  alt="ChatGPT"></Media>
 
 아이디어, 질문 또는 생각을 AI와 소통할 수 있는 옵션이 있다는 것은 이상하지만 종종 도움이 되는 경험입니다. 2021년까지 대부분 정보를 다루는 학습 데이터 세트를 기반으로 AI는 일반적으로 정확합니다. 다만, 리서치 프리뷰인 만큼 특정 질문에 대한 답변을 거부하거나 부정확한 계산을 하는 등 답변에 대한 버그와 한계가 여전히 많다.
 
-[OpenAI](https://openai.com/){:target="\_blank"}는 사용자가 겪고 있는 문제를 해결하기 위해 소프트웨어를 지속적으로 개선해 왔습니다. 주요 과제 중 하나는 사용자가 1억 명에 달하고 무료인 서비스를 확장하는 것인데, 서버 부하로 인해 때때로 서비스를 사용할 수 없게 됩니다. 수익을 창출하고 이 문제를 줄이기 위해 OpenAI는 API 액세스와 거의 무제한에 가까운 경험을 제공하는 유료 요금제를 도입했습니다.
+<PageLink title="OpenAI" url="https://openai.com/"></PageLink> 는 사용자가 겪고 있는 문제를 해결하기 위해 소프트웨어를 지속적으로 개선해 왔습니다. 주요 과제 중 하나는 사용자가 1억 명에 달하고 무료인 서비스를 확장하는 것인데, 서버 부하로 인해 때때로 서비스를 사용할 수 없게 됩니다. 수익을 창출하고 이 문제를 줄이기 위해 OpenAI는 API 액세스와 거의 무제한에 가까운 경험을 제공하는 유료 요금제를 도입했습니다.
 
 ChatGPT의 기능은 사용자가 코딩 문제에 대한 답을 얻고, 복잡한 이론 시험을 풀고, 심지어 학생들을 위한 에세이를 작성함으로써 입증되었습니다. 이것은 대학과 학교의 공통적인 관심사였으며, 기존 커리큘럼을 조정하고 ChatGPT를 학습 및 이해를 위한 도구로 사용하는 대신 기술이 완전히 금지되었습니다.
 
-Microsoft는 ChatGPT와 같은 기술을 활용하기 위해 OpenAI에 막대한 투자를 했으며 100억 달러를 투자했습니다. 이 투자를 통해 그들은 이 기술을 검색 엔진, [Bing](https://bing.com/){:target="\_blank"} 및 기타 제품에 직접 통합할 수 있습니다. bing이 최고의 검색 엔진은 아닐 수 있지만, 이 통합은 Google과 경쟁하는 데 필요한 우위를 제공할 수 있습니다.
+Microsoft는 ChatGPT와 같은 기술을 활용하기 위해 OpenAI에 막대한 투자를 했으며 100억 달러를 투자했습니다. 이 투자를 통해 그들은 이 기술을 검색 엔진, <PageLink title="Bing" url="https://bing.com/"></PageLink> 및 기타 제품에 직접 통합할 수 있습니다. bing이 최고의 검색 엔진은 아닐 수 있지만, 이 통합은 Google과 경쟁하는 데 필요한 우위를 제공할 수 있습니다.
 
 Google이 최근 몇 달 안에 공개 릴리스로 테스트 중인 Bard라고 하는 ChatGPT에 도전하기 위해 소프트웨어를 도입할 것이라고 최근 발표하면서 AI 기술 전쟁의 가능성이 있습니다.
 
 <Vid source="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_videos/Super_G_BRD2023_blogEXP_v024a.mp4" credit="Google" thumbnail="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/feb_6_AI_hero.width-1000.format-webp.webp"></Vid>
 
-Google의 AI 모델과의 차이점은 최근 ChatGPT의 대안인 Claude를 개발한 Anthropic이라는 스타트업에 투자한 만큼 안전에 중점을 두고 정확한 정보를 제공한다는 것입니다. 이 모델이 훈련될 데이터 및 리소스의 양을 고려할 때 이 기술의 느린 릴리스의 요인으로 윤리적 기준을 고려하는 것이 중요합니다. [Google 블로그](https://blog.google/technology/ai/bard-google-ai-search-updates/){:target="\_blank"}에서 자세한 정보 찾기
+Google의 AI 모델과의 차이점은 최근 ChatGPT의 대안인 Claude를 개발한 Anthropic이라는 스타트업에 투자한 만큼 안전에 중점을 두고 정확한 정보를 제공한다는 것입니다. 이 모델이 훈련될 데이터 및 리소스의 양을 고려할 때 이 기술의 느린 릴리스의 요인으로 윤리적 기준을 고려하는 것이 중요합니다. <PageLink title="Google 블로그" url="https://blog.google/technology/ai/bard-google-ai-search-updates/"></PageLink> 에서 자세한 정보 찾기
 
 초기에 이 기술에 뛰어든 두 업계 거대 기업은 향후 소프트웨어 개발뿐만 아니라 서비스와 검색 방법 전반에 걸쳐 상당한 개선을 보게 될 것이라고 제안합니다.
 

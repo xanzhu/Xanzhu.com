@@ -10,7 +10,7 @@ ogLink: "https://source.unsplash.com/mP7aPSUm7aE"
 ---
 
 ::alert
-Installation for Windows 11 has changed slightly checkout the <PageLink title="updated guide" url="/blog/apple-silicon-virtual-machine-setup"></PageLink>.
+Installation for Windows 11 has changed slightly checkout the <PageLink title="updated guide" url="/blog/windows-on-apple-silicon"></PageLink>.
 ::
 
 If you're a developer or tech enthusiast, you may need to use multiple operating systems for projects or personal use.
@@ -209,4 +209,4 @@ While these are two popular choices and ones I've personally used. As ARM gets m
 
 Linux at the moment is making fantastic moves to get Apple Silicon's Hardware working natively and being able to utilise all aspects of the Chipset acting as a bare metal solution.
 
-- <PageLink title="Asashi Linux" url="https://asahilinux.org/"></PageLink> provides the groundwork for future installations of Linux-based Operating systems which will eventually allow a smooth bare metal experience and end reliance on virtual machines.
+<PageLink title="Asashi Linux" url="https://asahilinux.org/"></PageLink> provides the groundwork for future installations of Linux-based Operating systems which will eventually allow a smooth bare metal experience and end reliance on virtual machines.

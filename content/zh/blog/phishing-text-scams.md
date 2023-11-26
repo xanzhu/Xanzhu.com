@@ -87,7 +87,7 @@ source: "Lindsey LaMont, unsplash"
 如果您遇到了一起欺诈案件，请将消息转发至内政部以进行进一步调查。
 只需将文本消息转发至以下号码：7726。
 
-看这里如何转发消息： [iOS](https://support.apple.com/en-nz/guide/iphone/iph125628311/ios). 对于安卓设备，这应该是一个类似的过程，按住消息并选择转发。
+看这里如何转发消息： <PageLink title="iOS" url="https://support.apple.com/en-nz/guide/iphone/iph125628311/ios"></PageLink>. 对于安卓设备，这应该是一个类似的过程，按住消息并选择转发。
 
 请直接向该组织报告。我已列出了在新西兰运营的受欢迎服务的电子邮件地址。
 请截图可疑的短信或电子邮件，并将其附加到发送至以下之一的电子邮件中：
@@ -107,8 +107,8 @@ Spark NZ - scamhelp@spark.co.nz
 <hr> 
 学更多：
 
-[dia.govt.nz](https://www.dia.govt.nz/Spam-How-to-Report-Scams)
+<PageLink title="dia.govt.nz" url="https://www.dia.govt.nz/Spam-How-to-Report-Scams"></PageLink>
 
-[cert.nz](https://www.cert.govt.nz/individuals/common-threats/phishing/)
+<PageLink title="cert.nz" url="https://www.cert.govt.nz/individuals/common-threats/phishing/"></PageLink>
 
-[netsafe.org.nz](https://report.netsafe.org.nz/hc/en-au/requests/new)
+<PageLink title="netsafe.org.nz" url="https://report.netsafe.org.nz/hc/en-au/requests/new"></PageLink>

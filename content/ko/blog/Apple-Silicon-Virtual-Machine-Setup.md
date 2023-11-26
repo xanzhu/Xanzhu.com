@@ -9,6 +9,10 @@ toc: true
 ogLink: "https://source.unsplash.com/mP7aPSUm7aE"
 ---
 
+::alert
+Windows 11 설치가 약간 변경되었습니다. <PageLink title="업데이트된 가이드" url="/blog/windows-on-apple-silicon"></PageLink> 를 확인하세요
+::
+
 개발자 또는 기술 애호가인 경우 프로젝트 또는 개인 용도로 여러 운영 체제를 사용해야 할 수 있습니다. 이 게시물에서는 유료 가상화 소프트웨어인 Parallels와 UTM이라는 무료 오픈 소스 솔루션을 사용하여 Windows 및 Ubuntu와 같은 널리 사용되는 운영 체제의 설정 프로세스를 다룰 것입니다. 초보자이든 숙련된 사용자이든 이 가이드는 Apple Silicon Mac에서 각 환경을 빠르고 쉽게 설치하고 설정하는 방법을 알려줍니다.
 
 내 Mac이 Apple Silicon에서 실행되고 있는지 어떻게 알 수 있습니까?
@@ -23,7 +27,7 @@ ogLink: "https://source.unsplash.com/mP7aPSUm7aE"
 
 기본적으로 작동하며 기본적으로 모든 즐겨찾는 운영 체제를 클릭 한 번으로 설치하는 유료 가상화 소프트웨어입니다. 훌륭한 도구를 제공하고 전체 프로세스를 최대한 원활하게 만듭니다.
 
-1. [Parallels.com](https://www.parallels.com/products/desktop/trial/){:target="\_blank"}을 방문하여 무료 평가판을 다운로드합니다.
+1. <PageLink title="Parallels.com" url="https://www.parallels.com/products/desktop/trial/"></PageLink> 을 방문하여 무료 평가판을 다운로드합니다.
 2. 설치가 완료되면 "Parallels Desktop"을 엽니다.
 3. 이제 설치할 운영 체제를 선택합니다.
 
@@ -79,20 +83,20 @@ Ubuntu는 단순히 Ubuntu 아이콘을 클릭하고 설치를 선택하는 동�
 UTM은 병렬과 동일한 작업을 수행하지만 사용자 정의를 처리하는 무료 도구입니다.
 성능이 불안정하며 시스템에 맞게 조정해야 합니다. 소프트웨어의 모든 측면을 구성하는 번거로움 없이 응답성이 뛰어난 가상 머신이 필요한 경우에는 좋은 선택이 아닐 수 있습니다.
 
-1. [UTM](https://mac.getutm.app/){:target="\_blank"} 다운로드 앱스토어 버전이 있지만 유료입니다. 다운로드 선택
+1. <PageLink title="UTM" url="https://mac.getutm.app/"></PageLink> 다운로드 앱스토어 버전이 있지만 유료입니다. 다운로드 선택
 2. UTM을 열고 "새 가상 머신 생성"을 선택합니다.
 3. "가상화"를 선택합니다.
 
 ### 윈도우 11 ARM / x86
 
-Windows는 다양한 방법으로 설치할 수 있습니다. [UTM](https://docs.getutm.app/guides/windows/#cannot-run-uup_download_macossh){:target="\_blank"}에서 자세한 설치 가이드를 제공합니다. 창문.
+Windows는 다양한 방법으로 설치할 수 있습니다. <PageLink title="UTM" url="https://docs.getutm.app/guides/windows"></PageLink>에서 자세한 설치 가이드를 제공합니다. 창문.
 
 이 가이드는 Windows Insider Preview 버전을 사용합니다. 이를 위해서는 내부자 계정이 필요합니다.
 
 또는 여기에 나열된 버전을 설치할 수 있습니다.
 
 4. 창 선택
-5. [Microsoft](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewarm64?wa=wsignin1.0){:target="\_blank"}에서 최신 Windows 11 ARM 파일을 다운로드합니다.
+5. <PageLink title="Microsoft" url="https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewarm64"></PageLink> 에서 최신 Windows 11 ARM 파일을 다운로드합니다.
 6. 찾아보기를 클릭하고 다운로드한 VHDX 파일을 선택하고 VHDX 가져오기가 선택되었는지 확인합니다.
 
 <Media source="/images/blog/VM/u-install.webp" alt="UTM 창 설치 설정"></Media>
@@ -108,7 +112,7 @@ Windows는 다양한 방법으로 설치할 수 있습니다. [UTM](https://docs
 
 1. 언어 선택
 2. 키보드 선택
-3. 아무 것도 표시되지 않으면 네트워크를 선택하고 <b>SHIFT + F10</b>을 누른 다음 예를 누르고 명령 프롬프트에 다음을 입력합니다.
+3. 아무 것도 표시되지 않으면 네트워크를 선택하고 <b>SHIFT + F10</b> 을 누른 다음 예를 누르고 명령 프롬프트에 다음을 입력합니다.
 
 ```CODE
  OOBE\BYPASSNRO
@@ -133,7 +137,7 @@ Windows는 다양한 방법으로 설치할 수 있습니다. [UTM](https://docs
 1. UTM을 열고 "새 가상 머신 생성"을 선택합니다.
 2. "가상화"를 선택합니다.
 3. 리눅스를 선택하라
-4. [Linux](https://ubuntu.com/download/server/arm){:target="\_blank"}를 다운로드하고 UTM을 열고 찾아보기를 누릅니다.
+4. <PageLink title="Ubuntu" url="https://ubuntu.com/download/server/arm"></PageLink> 를 다운로드하고 UTM을 열고 찾아보기를 누릅니다.
 5. 찾아보기를 클릭하고 다운로드한 Ubuntu Server ISO 파일을 선택합니다.
 6. 계속을 선택합니다.
 7. 사용할 메모리(RAM)의 양을 선택합니다.
@@ -184,7 +188,7 @@ sudo reboot
 
 31. 재부팅 후 로그인하면 끝!
 
-UTM은 모든 유형의 운영 체제에 걸쳐 광범위한 [사전 빌드 가상 머신](https://mac.getutm.app/gallery/){:target="\_blank"}을 제공합니다.
+UTM은 모든 유형의 운영 체제에 걸쳐 광범위한 <PageLink title="사전 빌드 가상 머신" url="https://mac.getutm.app/gallery/"></PageLink> 을 제공합니다.
 "에뮬레이션" 옵션에서 작동할 수 있습니다. 많은 옵션과 완전히 무료로 사용할 수 있습니다.
 
 ---
@@ -193,4 +197,4 @@ UTM은 모든 유형의 운영 체제에 걸쳐 광범위한 [사전 빌드 가�
 
 이것들은 두 가지 인기있는 선택과 개인적으로 사용한 것입니다. ARM이 Microsoft 및 기타 경쟁업체로부터 더 많이 채택됨에 따라 더 많은 도구와 소프트웨어가 출시될 것입니다. 현재 Linux는 Apple Silicon의 하드웨어가 기본적으로 작동하고 베어 메탈 솔루션으로 작동하는 칩셋의 모든 측면을 활용할 수 있도록 환상적인 움직임을 보이고 있습니다.
 
-- [Asahi 리눅스](https://asahilinux.org/){:target="\_blank"}는 Linux 기반 운영 체제의 향후 설치를 위한 토대를 제공하여 궁극적으로 원활한 베어 메탈 환경을 허용하고 가상 머신에 대한 의존도를 종식시킵니다. .
+<PageLink title="Asahi 리눅스" url="https://asahilinux.org/"></PageLink> 는 Linux 기반 운영 체제의 향후 설치를 위한 토대를 제공하여 궁극적으로 원활한 베어 메탈 환경을 허용하고 가상 머신에 대한 의존도를 종식시킵니다.

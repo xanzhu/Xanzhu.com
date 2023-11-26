@@ -43,7 +43,7 @@ Aegis is a free and open-source authenticator app available on Android through t
 
 Additionally, it allows you to export and import tokens between devices, making it convenient when switching phones. As an open-source app, you can review its codebase for transparency and security.
 
-Learn more about Aegis by visting [getaegis.app](https://getaegis.app/){:target="\_blank"}
+Learn more about Aegis by visting <PageLink title="getaegis.app" url="https://getaegis.app/"></PageLink>
 
 ### 2FAS
 
@@ -59,7 +59,7 @@ Some notable features include:
 - biometric/passcode protection
 - Offline functionality.
 
-2FAS is open-source, free to use, and does not store any password or metadata, giving you peace of mind in terms of security and privacy. More features are in the works and you can learn more about them by visiting at [2fas.com](https://2fas.com/){:target="\_blank"}.
+2FAS is open-source, free to use, and does not store any password or metadata, giving you peace of mind in terms of security and privacy. More features are in the works and you can learn more about them by visiting at <PageLink title="2fas.com" url="https://2fas.com/"></PageLink>
 
 ### Raivo OTP
 
@@ -73,7 +73,7 @@ Notable features include:
 - Syncing with iCloud
 - Customizing each one-time password (OTP).
 
-You can learn more about Ravio OTP by visting [raivo-otp.com](https://raivo-otp.com/){:target="\_blank"}.
+You can learn more about Ravio OTP by visting <PageLink title="raivo-otp.com" url="https://raivo-otp.com/"></PageLink>
 
 ## SMS Authentication
 
@@ -107,7 +107,7 @@ Security keys are a physical form of multi-factor authentication (MFA) that add 
 
 This method of authentication is more secure as it is a physical device that you have on hand, making it nearly impossible for attackers to compromise your accounts. Security keys eliminate the need for additional codes to authenticate, as once the key is verified on your account, no further authentication is required.
 
-MFA is ideal for enterprise usage, as it integrates with WebAuth/FIDO and Smart Card/PIV authentication, protecting against common phishing attempts. Security keys will continue to be widely adopted by platforms and services as this technology evolves. You can learn more about security keys and their features by visiting [Yubico.com](https://www.yubico.com/){:target="\_blank"}
+MFA is ideal for enterprise usage, as it integrates with WebAuth/FIDO and Smart Card/PIV authentication, protecting against common phishing attempts. Security keys will continue to be widely adopted by platforms and services as this technology evolves. You can learn more about security keys and their features by visiting <PageLink title="Yubico.com" url="https://www.yubico.com/"></PageLink>
 
 ## Summary
 
