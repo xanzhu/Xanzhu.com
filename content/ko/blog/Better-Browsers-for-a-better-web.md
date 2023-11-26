@@ -97,7 +97,7 @@ Brave는 검색 엔진을 개선하고 음성 검색, Brave 브라우저와의 �
 
 <PageLink title="The Tor Project" url="https://snowflake.torproject.org/"></PageLink> 에서 Snowflake 프로토콜에 대해 자세히 알아볼 수 있습니다.
 
-Brave 브라우저에서 이를 구현하거나 활성화하려면 [Brave 지원](https://support.brave.com/hc/en-us/articles/9059440641421-What-is-the-Snowflake-extension-){:target="\_blank"}
+Brave 브라우저에서 이를 구현하거나 활성화하려면 <PageLink title="Brave 지원" url="https://support.brave.com/hc/en-us/articles/9059440641421-What-is-the-Snowflake-extension"></PageLink>
 
 ### 다른 특징들
 

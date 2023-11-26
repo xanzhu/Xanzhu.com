@@ -97,7 +97,7 @@ Brave 不断致力于改进搜索引擎并添加新功能，例如语音搜索�
 <Media source="/images/blog/BB/snowflake.webp" alt="Snowflake 在 brave 浏览器上的实现"></Media>
 
 您可以通过 <PageLink title="The Tor Project" url="https://snowflake.torproject.org/"></PageLink> 了解有关 Snowflake 协议的更多信息
-要在 Brave 浏览器上实施或启用此功能，请参阅 [Brave 支持](https://support.brave.com/hc/en-us/articles/9059440641421-What-is-the-Snowflake-extension-){:target= "\_blank"}
+要在 Brave 浏览器上实施或启用此功能，请参阅 <PageLink title="Brave 支持" url="https://support.brave.com/hc/en-us/articles/9059440641421-What-is-the-Snowflake-extension"></PageLink>
 
 ### 其他特性
 
