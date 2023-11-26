@@ -9,6 +9,10 @@ toc: true
 ogLink: "https://source.unsplash.com/mP7aPSUm7aE"
 ---
 
+::alert
+Installation for Windows 11 has changed slightly checkout the <PageLink title="updated guide" url="/blog/apple-silicon-virtual-machine-setup"></PageLink>.
+::
+
 If you're a developer or tech enthusiast, you may need to use multiple operating systems for projects or personal use.
 
 In this post, we'll cover the setup process for popular operating systems such as Windows and Ubuntu using Parallels, a paid virtualization software and a Free Open source Solution called UTM.
@@ -29,7 +33,7 @@ A paid virtualisation software that works natively and is essentially a one-clic
 
 It offers great tools and makes the whole process smooth as possible.
 
-1. Vist [Parallels.com](https://www.parallels.com/products/desktop/trial/){:target="\_blank"} and download the free trial.
+1. Vist <PageLink title="Parallels.com" url="https://www.parallels.com/products/desktop/trial/"></PageLink> and download the free trial.
 2. Once installed open "Parallels Desktop".
 3. Now select the operating system you'd like to install.
 
@@ -90,20 +94,20 @@ UTM is a free tool that does the same thing as parallels but you're in charge of
 
 The performance will be relatively stable but needs adjusting to your system. This might not be a good choice if you need a responsive virtual machine without the fuss of configuring every aspect of the software.
 
-1. Download [UTM](https://mac.getutm.app/){:target="\_blank"} there is an App store version but this is paid, select download
+1. Download <PageLink title="UTM" url="https://mac.getutm.app/"></PageLink> there is an App store version but this is paid, select download
 2. Open UTM and select "Create a new Virtual Machine"
 3. Select "Virtualize"
 
 ### Windows 11 ARM / X86
 
-Windows can be installed in many different ways [UTM](https://docs.getutm.app/guides/windows/#cannot-run-uup_download_macossh){:target="\_blank"} offers an in-depth guide on installing windows.
+Windows can be installed in many different ways <PageLink title="UTM" url="https://docs.getutm.app/guides/windows"></PageLink> offers an in-depth guide on installing windows.
 
 In this guide, we'll be using the Windows Insider Preview version. This requires an insider account.
 
 Alternatively, you can install the version listed here:
 
 4. Select Windows
-5. Visit download the latest Windows 11 ARM file from [Microsoft](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewarm64?wa=wsignin1.0){:target="\_blank"}
+5. Visit download the latest Windows 11 ARM file from <PageLink title="Microsoft" url="https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewarm64"></PageLink>
 6. Press Browse and Select the downloaded VHDX file, ensure import VHDX is checked
 
 <Media source="/images/blog/VM/u-install.webp" alt="Installation Settings for UTM windows"></Media>
@@ -144,7 +148,7 @@ Installing Ubuntu can be a lengthy process in this guide we'll need to install t
 1. Open UTM and select "Create a new Virtual Machine"
 2. Select "Virtualize"
 3. Select Linux
-4. Download [Linux](https://ubuntu.com/download/server/arm){:target="\_blank"}, open UTM and press browse
+4. Download <PageLink title="Ubuntu" url="https://ubuntu.com/download/server/arm"></PageLink>, open UTM and press browse
 5. Press browse and select the downloaded Ubuntu Server ISO file
 6. Select Continue
 7. Select the Amount of Memory (RAM) to use
@@ -195,7 +199,7 @@ sudo reboot
 
 31. After rebooting, log in and that’s it!
 
-UTM provides a vast range of [pre-build virtual machines](https://mac.getutm.app/gallery/){:target="\_blank"} spanning all types of operating systems. Which can work on the "Emulation" option. Lots of options and completely free to use.
+UTM provides a vast range of <PageLink title="pre-build virtual machines" url="https://mac.getutm.app/gallery/"></PageLink> spanning all types of operating systems. Which can work on the "Emulation" option. Lots of options and completely free to use.
 
 ---
 
@@ -205,4 +209,4 @@ While these are two popular choices and ones I've personally used. As ARM gets m
 
 Linux at the moment is making fantastic moves to get Apple Silicon's Hardware working natively and being able to utilise all aspects of the Chipset acting as a bare metal solution.
 
-- [Asashi Linux](https://asahilinux.org/){:target="\_blank"} provides the groundwork for future installations of Linux-based Operating systems which will eventually allow a smooth bare metal experience and end reliance on virtual machines.
+- <PageLink title="Asashi Linux" url="https://asahilinux.org/"></PageLink> provides the groundwork for future installations of Linux-based Operating systems which will eventually allow a smooth bare metal experience and end reliance on virtual machines.
