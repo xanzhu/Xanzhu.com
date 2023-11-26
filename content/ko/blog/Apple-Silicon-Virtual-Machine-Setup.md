@@ -10,7 +10,7 @@ ogLink: "https://source.unsplash.com/mP7aPSUm7aE"
 ---
 
 ::alert
-Windows 11 설치가 약간 변경되었습니다. <PageLink title="업데이트된 가이드" url="/blog/windows-on-apple-silicon"></PageLink> 를 확인하세요
+Windows 11 설치가 약간 변경되었습니다. <PageLink title="업데이트된 가이드" url="/ko/blog/windows-on-apple-silicon"></PageLink> 를 확인하세요
 ::
 
 개발자 또는 기술 애호가인 경우 프로젝트 또는 개인 용도로 여러 운영 체제를 사용해야 할 수 있습니다. 이 게시물에서는 유료 가상화 소프트웨어인 Parallels와 UTM이라는 무료 오픈 소스 솔루션을 사용하여 Windows 및 Ubuntu와 같은 널리 사용되는 운영 체제의 설정 프로세스를 다룰 것입니다. 초보자이든 숙련된 사용자이든 이 가이드는 Apple Silicon Mac에서 각 환경을 빠르고 쉽게 설치하고 설정하는 방법을 알려줍니다.

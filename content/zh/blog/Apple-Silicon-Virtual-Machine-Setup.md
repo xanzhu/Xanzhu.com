@@ -10,7 +10,7 @@ ogLink: "https://source.unsplash.com/mP7aPSUm7aE"
 ---
 
 ::alert
-Windows 11 的安装略有变化，请查看 <PageLink title="更新指南" url="/blog/windows-on-apple-silicon"></PageLink>
+Windows 11 的安装略有变化，请查看 <PageLink title="更新指南" url="/zh/blog/windows-on-apple-silicon"></PageLink>
 ::
 
 如果您是一名开发人员或技术爱好者，您可能需要为项目或个人使用使用多个操作系统。 在本文中，我们将介绍使用 Parallels、付费虚拟化软件和名为 UTM 的免费开源解决方案设置流行操作系统（例如 Windows 和 Ubuntu）的过程。 无论您是初学者还是经验丰富的用户，本指南都将教您如何在 Apple Silicon Mac 上快速轻松地安装和设置每个环境。
