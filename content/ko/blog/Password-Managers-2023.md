@@ -39,7 +39,7 @@ p@s$w0rD!2E
 
 몇 가지 암호에 대해 이 작업을 수행하는 것이 쉬울 수 있지만 암호 관리자가 프로세스를 자동화할 수 있습니다. 각 사이트에 대해 강력하고 고유한 암호를 자동으로 생성할 수 있습니다. 기억해야 할 유일한 것은 저장소의 키, 즉 저장된 모든 암호에 대한 액세스 권한을 부여하는 단일 암호입니다.
 
-침해는 정기적으로 발생하며, 자신을 확인하는 것뿐만 아니라 발생 시 알림을 받는 것도 중요합니다. 사용할 수 있는 인기 있는 무료 서비스는 [HaveIBeenPwned](https://haveibeenpwned.com/){:target="\_blank"}입니다. 호주 보안 전문가인 Troy Hunt가 관리하는 이 웹사이트에서는 이메일 주소를 입력하고 위반 여부를 확인할 수 있습니다. 무언가를 찾으면 서비스로 이동하여 비밀번호를 업데이트하십시오.
+침해는 정기적으로 발생하며, 자신을 확인하는 것뿐만 아니라 발생 시 알림을 받는 것도 중요합니다. 사용할 수 있는 인기 있는 무료 서비스는 <PageLink title="HaveIBeenPwned" url="https://haveibeenpwned.com/"></PageLink> 입니다. 호주 보안 전문가인 Troy Hunt가 관리하는 이 웹사이트에서는 이메일 주소를 입력하고 위반 여부를 확인할 수 있습니다. 무언가를 찾으면 서비스로 이동하여 비밀번호를 업데이트하십시오.
 
 무료 및 유료로 다양한 암호 관리자를 사용할 수 있습니다. 내 자신의 경험과 연구를 바탕으로 몇 가지 권장 사항을 공유하겠습니다.
 
@@ -49,7 +49,7 @@ p@s$w0rD!2E
 
 <Media source="/images/blog/PM/bitwarden.webp" credit="Bitwarden / Xanzhu" alt="Bitwarden 암호 관리자 로고"></Media>
 
-사용할 수 있는 최고의 무료 암호 관리자 중 하나는 Bitwarden입니다. 옵션과 기능을 늘리는 유료 요금제를 제공하지만 대부분의 사용자에게는 [무료 요금제](https://bitwarden.com/pricing/){:target="\_blank"}로도 충분합니다.
+사용할 수 있는 최고의 무료 암호 관리자 중 하나는 Bitwarden입니다. 옵션과 기능을 늘리는 유료 요금제를 제공하지만 대부분의 사용자에게는 <PageLink title="무료 요금제" url="https://bitwarden.com/pricing/"></PageLink> 로도 충분합니다.
 
 Bitwarden의 몇 가지 주목할만한 기능은 다음과 같습니다.
 
@@ -65,7 +65,7 @@ Bitwarden의 몇 가지 주목할만한 기능은 다음과 같습니다.
 - Yubikey 및 보안 키 지원
 - 금고 스캔 및 상태 모니터링
 
-자세한 내용은 [https://bitwarden.com/](https://bitwarden.com/){:target="\_blank"}의 Bitwarden 웹사이트를 방문하십시오.
+자세한 내용은 <PageLink title="bitwarden.com" url="https://bitwarden.com/"></PageLink> 의 Bitwarden 웹사이트를 방문하십시오.
 보안 및 개인 정보 보호와 관련하여 오픈 소스 소프트웨어를 사용하면 코드를 검증하고 백도어나 악성 코드가 없는지 확인할 수 있기 때문에 좋은 생각이라는 점은 주목할 가치가 있습니다.
 
 ### Keepass
@@ -80,7 +80,7 @@ Keepass는 매우 안전한 암호 관리자입니다. AES 및 Twofish 암호화
 
 비밀번호 관리자를 자체 호스팅하면 소프트웨어 업데이트 유지, 데이터 백업 유지, 서버 보안 유지와 같은 책임이 따릅니다.
 
-Keepass에 대한 자세한 내용은 [https://keepass.info/](https://keepass.info/){:target="\_blank"} 웹사이트를 참조하세요.
+Keepass에 대한 자세한 내용은 <PageLink title="keepass.info" url="https://keepass.info/"></PageLink> 웹사이트를 참조하세요.
 
 ### 브라우저/OS
 
@@ -94,7 +94,7 @@ Keepass에 대한 자세한 내용은 [https://keepass.info/](https://keepass.in
 
 브라우저 기반 암호 관리자를 사용하기로 선택한 경우 강력한 마스터 암호 사용 및 이중 인증 활성화와 같이 저장된 암호의 보안을 보장하기 위해 추가 예방 조치를 취하는 것이 중요합니다.
 
-브라우저 기반 비밀번호 관리자에 대한 자세한 내용은 Google 비밀번호 관리자 웹사이트를 참조하세요. [https://passwords.google.com/](https://passwords.google.com/){:target="\_blank "}
+브라우저 기반 비밀번호 관리자에 대한 자세한 내용은 Google 비밀번호 관리자 웹사이트를 참조하세요. <PageLink title="passwords.google.com" url="https://passwords.google.com/"></PageLink>
 
 ## 유료 솔루션
 
@@ -106,7 +106,7 @@ Keepass에 대한 자세한 내용은 [https://keepass.info/](https://keepass.in
 
 ### Dashlane
 
-Dashlane은 기본 수준의 암호 관리를 제공하는 14일 동안의 무료 평가판을 제공합니다. [스타터 플랜](https://www.dashlane.com/pricing){:target="\_blank"}은 다크 웹에서 도난당한 콘텐츠를 추적하는 기능과 같은 몇 가지 유용한 기능을 제공합니다. 이 서비스는 다크 웹에서 자격 증명을 노출했을 수 있는 침해를 검색하여 일치하는 것이 있으면 보고서를 제공합니다.
+Dashlane은 기본 수준의 암호 관리를 제공하는 14일 동안의 무료 평가판을 제공합니다. <PageLink title="스타터 플랜" url="https://www.dashlane.com/pricing"></PageLink> 은 다크 웹에서 도난당한 콘텐츠를 추적하는 기능과 같은 몇 가지 유용한 기능을 제공합니다. 이 서비스는 다크 웹에서 자격 증명을 노출했을 수 있는 침해를 검색하여 일치하는 것이 있으면 보고서를 제공합니다.
 
 Dashlane 스타터 플랜의 주목할만한 기능은 다음과 같습니다.
 
@@ -117,12 +117,12 @@ Dashlane 스타터 플랜의 주목할만한 기능은 다음과 같습니다.
 
 고급 기능이 필요한 사용자를 위해 Dashlane은 VPN(가상 사설망) 솔루션과 같은 추가 기능을 포함하는 상위 계층 요금제를 제공합니다. 이것은 암호 관리자를 위한 추가 보안 계층을 제공하여 해커와 엿보는 눈으로부터 온라인 활동을 보호하는 데 도움이 됩니다.
 
-Dashlane과 해당 기능에 대해 자세히 알아보려면 [https://www.dashlane.com](https://www.dashlane.com){:target="\_blank"} 웹사이트를 방문하세요.
+Dashlane과 해당 기능에 대해 자세히 알아보려면 <PageLink title="dashlane.com" url="https://www.dashlane.com"></PageLink> 웹사이트를 방문하세요.
 보안 및 개인 정보 보호와 관련하여 다크 웹 검색 기능이 있는 암호 관리자를 사용하는 것이 좋습니다. 자격 증명을 모니터링하고 다크 웹에 나타날 경우 경고를 받을 수 있기 때문입니다.
 
 ### NordPass
 
-NordPass는 프리미엄 버전의 30일 무료 평가판과 함께 제공되는 매우 제한적이고 기본적인 [무료 요금제](https://nordpass.com/plans/){:target="\_blank"}를 제공합니다. 유료 요금제와 무료 요금제의 주요 차이점은 무료 요금제는 암호 관리자의 기본 기능만 제공하는 반면 유료 요금제는 다음과 같은 추가 기능을 제공한다는 것입니다.
+NordPass는 프리미엄 버전의 30일 무료 평가판과 함께 제공되는 매우 제한적이고 기본적인 <PageLink title="무료 요금제" url="https://nordpass.com/plans/"></PageLink> 를 제공합니다. 유료 요금제와 무료 요금제의 주요 차이점은 무료 요금제는 암호 관리자의 기본 기능만 제공하는 반면 유료 요금제는 다음과 같은 추가 기능을 제공한다는 것입니다.
 
 - 신뢰하는 사람들과 아이템 공유
 - 긴급 볼트 액세스 - 잠겨 있는 경우 볼트에 액세스할 수 있도록 이메일 또는 사용자를 할당하는 기능
@@ -131,11 +131,11 @@ NordPass는 프리미엄 버전의 30일 무료 평가판과 함께 제공되는
 
 이러한 기능이 모두 필요하지 않을 수 있으며 프리 티어로 충분할 수 있습니다. 그러나 계획을 비교할 때 중요한 기능을 고려해 볼 가치가 있습니다. 한 가지 고려해야 할 사항은 무료 플랜은 로그인된 장치를 6개만 지원하므로 일부 사용자에게는 충분할 수 있지만 이 수를 초과하면 로그아웃됩니다.
 
-NordPass 및 그 기능에 대해 자세히 알아보려면 [https://nordpass.com/](https://nordpass.com/){:target="\_blank"} 웹사이트를 방문하십시오.
+NordPass 및 그 기능에 대해 자세히 알아보려면 <PageLink title="nordpass.com" url="https://nordpass.com"></PageLink> 웹사이트를 방문하십시오.
 
 ### 1Password
 
-1Password는 [프리미엄 요금제](https://1password.com/sign-up/){:target="\_blank"}에 대한 무료 평가판을 제공합니다. 이 솔루션은 잘 설계되었으며 데스크톱 및 모바일을 포함한 모든 장치에서 작동합니다. 1Password는 무제한 장치를 제공하며 "여행 모드"라는 고유한 기능을 제공합니다. 이 기능은 여행 중에 장치에서 민감한 데이터를 제거하여 이동 중에 암호와 계정이 손상되지 않도록 합니다. 또한 반품 시 원클릭 복원 솔루션을 허용합니다.
+1Password는 <PageLink title="프리미엄 요금제" url="https://1password.com/sign-up/"></PageLink> 에 대한 무료 평가판을 제공합니다. 이 솔루션은 잘 설계되었으며 데스크톱 및 모바일을 포함한 모든 장치에서 작동합니다. 1Password는 무제한 장치를 제공하며 "여행 모드"라는 고유한 기능을 제공합니다. 이 기능은 여행 중에 장치에서 민감한 데이터를 제거하여 이동 중에 암호와 계정이 손상되지 않도록 합니다. 또한 반품 시 원클릭 복원 솔루션을 허용합니다.
 
 기본 프리미엄 계획의 몇 가지 주목할만한 기능은 다음과 같습니다.
 
@@ -146,7 +146,7 @@ NordPass 및 그 기능에 대해 자세히 알아보려면 [https://nordpass.co
 
 1Password는 디자인과 접근성 측면에서 Apple 생태계에 잘 통합되어 있습니다. 다른 솔루션에 비해 기능이 제한된 훌륭한 선택입니다.
 
-1Password 및 그 기능에 대해 자세히 알아보려면 [https://1password.com](https://1password.com){:target="\_blank"} 웹사이트를 방문하십시오.
+1Password 및 그 기능에 대해 자세히 알아보려면 <PageLink title="1password.com" url="https://1password.com"></PageLink> 웹사이트를 방문하십시오.
 
 ## 보안
 
@@ -170,11 +170,11 @@ LastPass는 오랫동안 사용되어 왔으며 이 소프트웨어를 사용하
 
 자세한 내용은 다음 문서를 참조하세요.
 
-[The Verge](https://www.theverge.com/2022/12/22/23523322/lastpass-data-breach-cloud-encrypted-password-vault-hackers){:target="\_blank"}
+<PageLink title="The Verge" url="https://www.theverge.com/2022/12/22/23523322/lastpass-data-breach-cloud-encrypted-password-vault-hackers"></PageLink>
 
-[Wired](https://www.wired.com/story/lastpass-breach-vaults-password-managers/){:target="\_blank"}
+<PageLink title="Wired" url="https://www.wired.com/story/lastpass-breach-vaults-password-managers/"></PageLink>
 
-[Hacker News](https://thehackernews.com/2022/12/lastpass-admits-to-severe-data-breach.html){:target="\_blank"}
+<PageLink title="Hacker News" url="https://thehackernews.com/2022/12/lastpass-admits-to-severe-data-breach.html"></PageLink>
 
 ## 블로트웨어
 

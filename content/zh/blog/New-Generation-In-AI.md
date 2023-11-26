@@ -14,9 +14,9 @@ alt: "ChatGPT视觉设计 Xanzhu"
 
 ChatGPT 解决了一个新问题，这就是它获得大量关注的原因。 正如我在上一篇文章中提到的，ChatGPT 等语言模型让我们得以一窥我们的未来。 自从发布那篇初始文章以来，一些事情发生了变化，从提供类似服务或简单地使用 ChatGPT 的 API 到模型本身更新到版本 4，提供更复杂的结果和功能。
 
-查看最新消息：[Open AI](https://openai.com/){:target="\_blank"}
+查看最新消息：<PageLink title="OpenAI" url="https://openai.com/"></PageLink>
 
-亲自试用 ChatGPT：[ChatGPT](https://chat.openai.com/){:target="\_blank"}
+亲自试用 ChatGPT：<PageLink title="ChatGPT" url="https://chat.openai.com/"></PageLink>
 
 ### Microsoft
 
@@ -34,7 +34,7 @@ Microsoft 发布了带有 ChatGPT 的 Bing 搜索。 它目前运行的是第 4 
 
 Bing 为用户提供的选项有限，而且经常会中断请求。 他们在必须建立新主题之前引入了响应限制，这会阻止现有对话并鼓励用户选择扫帚按钮以清除聊天。 此限制可能会防止模型超出范围并确保每个人都可以使用它。 值得考虑的一件有趣的事情是历史如何与这些模型一起工作。 在此阶段，它不会保存在任何可访问的地方，并会重置为默认的启动画面。
 
-亲自尝试 Bing 的 ChatBot 功能（需要 Edge 浏览器）：[Bing](https://bing.com/){:target="\_blank"}
+亲自尝试 Bing 的 ChatBot 功能（需要 Edge 浏览器）：<PageLink title="Bing" url="https://bing.com/"></PageLink>
 
 ### Google
 
@@ -46,7 +46,7 @@ Bing 为用户提供的选项有限，而且经常会中断请求。 他们在�
 
 预计未来几个月 Google 会发生更多变化和改进，从而提高其软件的准确性和功能。 一旦他们的语言模型 (LaMDA) 经过测试和完善以在 Bard 中使用，将应用更少的限制，从而允许用户在 Google 的海量数据存档中搜索并获得结果。 目前，这是一个缓慢的发布，不太可能成为 Bard 的最终产品。
 
-详细了解 Bard 并加入候补名单：[Google](https://bard.google.com/){:target="\_blank"}
+详细了解 Bard 并加入候补名单：<PageLink title="Google" url="https://bard.google.com/"></PageLink>
 
 ### 软件适配
 
@@ -54,13 +54,13 @@ Bing 为用户提供的选项有限，而且经常会中断请求。 他们在�
 
 <Vid source="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_videos/Docs_Web_030623_1.mp4" credit="Google"></Vid>
 
-阅读来自 [Google](https://blog.google/technology/ai/ai-developers-google-cloud-workspace/){:target="\_blank"} 的公告。
+阅读来自 <PageLink title="Google" url="https://blog.google/technology/ai/ai-developers-google-cloud-workspace/"></PageLink> 的公告。
 
 宣布此消息两天后，微软还宣布他们正在努力推出一个名为 Copilot 的新 AI 驱动产品线，该产品线将在 365 产品线中引入，包括以下一些产品：Word、Excel 和 Outlook。 他们的愿景是利用您自己语言的力量来提高创造力水平。 与 Google 的 Doc 方法非常相似，Microsoft 遵循类似的概念，即简单地输入您的请求并观察魔术的发生。 有点不同的是，Copilot 还添加了一项功能，可以根据文件生成内容。
 
 <Media source="/images/blog/Gen/mfr.webp"  alt="Microsoft 生成式 AI 视觉" credit="Microsoft"></Media>
 
-阅读来自 [Microsoft](https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/){:target="\_blank “}。
+阅读来自 <PageLink title="Microsoft" url="https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/"></PageLink>
 
 这两个公告都意味着您可以更轻松地完全按照您想要的方式创建和起草文档。 一个可能的问题是生成特定文档的使用，这可能使不良行为者更容易自动化和完善他们的攻击。
 
@@ -86,7 +86,7 @@ Copilot 将成为所有开发人员的有用工具，改进生产就绪代码的
 
 目前，在技术预览阶段，Copilot 可用于 Microsoft 生态系统：Visual Studio 和 Visual Studio Code，并计划随着扩展的开发扩展到其他集成开发环境或 IDE，如 Neovim、Jetbrains 等。
 
-了解有关 Copilot X 的更多信息：[Github](https://github.blog/2023-03-22-github-copilot-x-the-ai-powered-developer-experience/){:target="\_blank"}
+了解有关 Copilot X 的更多信息：<PageLink title="Github" url="https://github.blog/2023-03-22-github-copilot-x-the-ai-powered-developer-experience/"></PageLink>
 
 ### Summarizer
 
@@ -106,9 +106,9 @@ Brave 的 AI 模型完全由 Brave 运行，并且不依赖第三方的语言模
 
 勇敢者不断挑战和创新替代行业巨头。 由于相对较新，它并不完美，并且会随着 AI 的发展和搜索引擎的进步而不断适应。
 
-详细了解 [Brave](https://brave.com/ai-summarizer/){:target="\_blank"} 的新功能
+详细了解 <PageLink title="Brave" url="https://brave.com/ai-summarizer/"></PageLink> 的新功能
 
-试试他们的搜索引擎——它是私人的！ [勇敢搜索](https://search.brave.com){:target="\_blank"}
+试试他们的搜索引擎——它是私人的！<PageLink title="Brave Search" url="https://search.brave.com"></PageLink>
 
 ### Spotify
 
@@ -124,7 +124,7 @@ Spotify 用于个性化和准确找到用户音乐品味的算法令人难以置
 
 对此的一些担忧是针对特定音乐类型训练的模型。 有许多音乐子流派可以归类为完全不同的东西，在推荐完全不相关的流派的歌曲时，这是一个问题。 鉴于它是全新歌曲或旧歌曲的混合体，AI 模型可能会在向用户提供不受欢迎的歌曲或艺术家时带来潜在风险。 还有更多内容。
 
-了解更多：[Spotify](https://newsroom.spotify.com/2023-02-22/spotify-debuts-a-new-ai-dj-right-in-your-pocket/){:target="\_blank"}
+了解更多：<PageLink title="Spotify" url="https://newsroom.spotify.com/2023-02-22/spotify-debuts-a-new-ai-dj-right-in-your-pocket/"></PageLink>
 
 ### 下一个
 

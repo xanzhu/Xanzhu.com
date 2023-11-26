@@ -65,7 +65,7 @@ M2를 사용하는 듀얼 칩 성능 모델과 새로운 R1 칩을 사용하여 
 - 공간 오디오
 - OLED 디스플레이(각 눈 4K+)
 
-매우 [흥미로운 개념](https://www.apple.com/apple-vision-pro/){:target="\_blank"} 그리고 완전히 다르지만 판도를 바꾸는 일을 한 Apple에 찬사를 보냅니다. 신경망만으로 이 작업을 수행하는 데 필요한 프로세싱은 인상적이며 향후 몇 년 동안 이것이 어떻게 적응하고 개선될지 기대됩니다.
+매우 <PageLink title="흥미로운 개념" url="https://www.apple.com/apple-vision-pro/"></PageLink> 그리고 완전히 다르지만 판도를 바꾸는 일을 한 Apple에 찬사를 보냅니다. 신경망만으로 이 작업을 수행하는 데 필요한 프로세싱은 인상적이며 향후 몇 년 동안 이것이 어떻게 적응하고 개선될지 기대됩니다.
 
 <Media source="/images/blog/wwdc/sensor.jpeg"  alt="VisionPro 감지기" credit="Apple"></Media>
 
@@ -74,13 +74,13 @@ M2를 사용하는 듀얼 칩 성능 모델과 새로운 R1 칩을 사용하여 
 
 ### Macbook Air 15"
 
-상징적인 [MacBook Air](https://www.apple.com/macbook-air-13-and-15-m2/){:target="\_blank"}가 이제 15" 버전으로 나옵니다. M2 사용 이 칩은 13인치 및 14인치 모델과 동일한 배터리 성능을 유지하면서 더 많은 화면을 추가하고 팬리스 디자인을 계속 사용합니다.
+상징적인 <PageLink title="MacBook Air" url="https://www.apple.com/macbook-air-13-and-15-m2/"></PageLink>가 이제 15" 버전으로 나옵니다. M2 사용 이 칩은 13인치 및 14인치 모델과 동일한 배터리 성능을 유지하면서 더 많은 화면을 추가하고 팬리스 디자인을 계속 사용합니다.
 
 <Vid source="https://www.apple.com/105/media/us/macbook-air-13-and-15/2023/f52c7a72-dff4-4f3c-9511-bf08e46c6f5f/anim/design/hero/medium_2x.mp4#t=4.033333" credit="Apple"></Vid>
 
 ### Mac Studio
 
-차세대 칩셋 M2 Max(12코어) 및 새로운 M2 Ultra(24코어)를 사용하여 [새로고침](https://www.apple.com/mac-studio/){:target="\_blank"}되었습니다. ). 엄청난 성능 향상. 비디오 편집, 3D 모델 등과 같은 업계 표준 작업용.
+차세대 칩셋 M2 Max(12코어) 및 새로운 M2 Ultra(24코어)를 사용하여 <PageLink title="새로고침" url="https://www.apple.com/mac-studio/"></PageLink> 되었습니다. 엄청난 성능 향상. 비디오 편집, 3D 모델 등과 같은 업계 표준 작업용.
 
 구성:
 
@@ -104,7 +104,7 @@ M2를 사용하는 듀얼 칩 성능 모델과 새로운 R1 칩을 사용하여 
 
 ### Mac Pro
 
-엄청난 [성능 향상](https://www.apple.com/mac-pro/){:target="\_blank"}, 이 새로운 고성능 컴퓨터는 이전보다 7.6배 향상된 새로운 M2 Ultra 칩을 사용합니다. 인텔 버전.
+엄청난 <PageLink title="성능 향상" url="https://www.apple.com/mac-pro/"></PageLink>, 이 새로운 고성능 컴퓨터는 이전보다 7.6배 향상된 새로운 M2 Ultra 칩을 사용합니다. 인텔 버전.
 
 <Media source="/images/blog/wwdc/macpro.jpeg"  alt="Mac Pro" credit="Apple"></Media>
 
@@ -223,7 +223,7 @@ AirPod를 음소거 및 음소거 해제하려면 한 번 누르십시오.
 
 개선된 전기 자동차 경로, 충전소에 대한 더 나은 옵션 및 이동 시 가용성에 대한 실시간 지표를 표시합니다.
 
-[지원되는 기기](https://www.apple.com/ios/ios-17-preview/){:target="\_blank"}:
+<PageLink title="지원되는 기기" url="https://www.apple.com/ios/ios-17-preview/"></PageLink>:
 
 - 아이폰 SE(2세대), XS, XR, 11, 12, 13, 14
 - 아이폰 11 프로, 12 프로, 13 프로, 14 프로
@@ -258,7 +258,7 @@ AirPod를 음소거 및 음소거 해제하려면 한 번 누르십시오.
 
 각 운영 체제 간에 많은 기능이 공유됩니다. 특히 iPad의 경우 눈에 띄는 기능이 많지는 않지만 개선 사항이 좋습니다.
 
-[지원되는 기기](https://www.apple.com/ipados/ipados-17-preview/){:target="\_blank"}:
+<PageLink title="지원되는 기기" url="https://www.apple.com/ipados/ipados-17-preview/"></PageLink>:
 
 - iPad Pro 2세대 이상.
 - iPad Air 3세대 이상.
@@ -344,7 +344,7 @@ Mac에서 더 많은 게임을 지원하도록 개선되었습니다. 게임 모
 
 개인 음성은 언어 손실이 있는 사용자가 Facetime 및 통화에서 실시간 음성 통신을 허용하는 것처럼 들리는 음성을 만드는 데 도움이 됩니다. 의사 소통이 더 쉬워집니다.
 
-[지원되는 장치](https://www.apple.com/macos/sonoma-preview/){:target="\_blank"}:
+<PageLink title="지원되는 장치" url="https://www.apple.com/macos/sonoma-preview/"></PageLink>
 
 - 아이맥 2019 이상
 - 아이맥 프로 2017
@@ -391,7 +391,7 @@ Ultra-edition은 하이킹을 개선하여 연결이 마지막으로 설정되�
 
 밖에서 보내는 새로운 시간에 대해 위에서 언급했듯이 이 메트릭은 시력 건강 애플리케이션에 기록됩니다. 야외 활동과 태양 아래에서 시간을 보내는 것을 추적 및 홍보하여 조기 발병 근시 또는 근시를 예방합니다.
 
-[지원되는 기기](https://www.apple.com/watchos/watchos-preview/){:target="\_blank"}:
+<PageLink title="지원되는 기기" url="https://www.apple.com/watchos/watchos-preview/"></PageLink>
 
 - 시리즈 4, 5, 6, 7, 8
 - SE, 울트라

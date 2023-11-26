@@ -65,7 +65,7 @@ VisionPro 具有一个按钮，可以实时拍摄视频和照片。 然后可以
 - 空间音频
 - OLED 显示屏（每只眼睛 4K+）
 
-非常[有趣的概念](https://www.apple.com/apple-vision-pro/){:target="\_blank"}，感谢 Apple 做了一些完全不同但改变游戏规则的事情。 仅使用神经网络完成这项工作所需的处理过程就令人印象深刻，我很高兴看到这将在未来几年内如何适应和改进。
+非常 <PageLink title="有趣的概念" url="https://www.apple.com/apple-vision-pro/"></PageLink>，感谢 Apple 做了一些完全不同但改变游戏规则的事情。 仅使用神经网络完成这项工作所需的处理过程就令人印象深刻，我很高兴看到这将在未来几年内如何适应和改进。
 
 <Media source="/images/blog/wwdc/sensor.jpeg" alt="VisionPro sensor" credit="Apple"></Media>
 
@@ -75,13 +75,13 @@ VisionPro 具有一个按钮，可以实时拍摄视频和照片。 然后可以
 
 ### MacBook Air 15"
 
-标志性的 [MacBook Air](https://www.apple.com/macbook-air-13-and-15-m2/){:target="\_blank"} 现在推出 15" 版本。使用 M2 芯片这增加了更多的屏幕，同时保持与 13 和 14 英寸型号相同的电池性能。还继续使用无风扇设计
+标志性的 <PageLink title="MacBook Air" url="https://www.apple.com/macbook-air-13-and-15-m2/"></PageLink> 现在推出 15" 版本。使用 M2 芯片这增加了更多的屏幕，同时保持与 13 和 14 英寸型号相同的电池性能。还继续使用无风扇设计
 
 <Vid source="https://www.apple.com/105/media/us/macbook-air-13-and-15/2023/f52c7a72-dff4-4f3c-9511-bf08e46c6f5f/anim/design/hero/medium_2x.mp4#t=4.033333" credit="Apple"></Vid>
 
 ### Mac Studio
 
-[刷新](https://www.apple.com/mac-studio/){:target="\_blank"} 使用下一代芯片组 M2 Max（12 核）和新的 M2 Ultra（24 核 ). 性能大幅提升。 适用于视频编辑、3D 模型等行业标准任务。
+<PageLink title="刷新" url="https://www.apple.com/mac-studio/"></PageLink> 使用下一代芯片组 M2 Max（12 核）和新的 M2 Ultra 24 核 性能大幅提升。 适用于视频编辑、3D 模型等行业标准任务。
 
 配置：
 
@@ -105,7 +105,7 @@ VisionPro 具有一个按钮，可以实时拍摄视频和照片。 然后可以
 
 ### Mac Pro
 
-疯狂的 [性能改进](https://www.apple.com/mac-pro/){:target="\_blank"}，这款新的高性能机器使用新的 M2 Ultra 芯片，性能提升 7.6 倍 英特尔版本。
+疯狂的 <PageLink title="性能改进" url="https://www.apple.com/mac-pro/"></PageLink> ，这款新的高性能机器使用新的 M2 Ultra 芯片，性能提升 7.6 倍 英特尔版本。
 
 <Media source="/images/blog/wwdc/macpro.jpeg" alt="Mac Pro" credit="Apple"></Media>
 
@@ -224,7 +224,7 @@ Apple 向开发人员展示他们的软件以供测试，并在接下来的几�
 
 改进的电动汽车路线，显示更好的充电站选项和旅行时可用性的实时指标。
 
-[支持的设备](https://www.apple.com/ios/ios-17-preview/){:target="\_blank"}：
+<PageLink title="支持的设备" url="https://www.apple.com/ios/ios-17-preview/"></PageLink>:
 
 - iPhone SE（第 2 代）、XS、XR、11、12、13、14
 - iPhone 11 专业版、12 专业版、13 专业版、14 专业版
@@ -259,7 +259,7 @@ Apple 向开发人员展示他们的软件以供测试，并在接下来的几�
 
 每个操作系统之间共享许多功能。 专门针对 iPad 的，没有很多值得注意的功能，但有很好的改进。
 
-[支持的设备](https://www.apple.com/ipados/ipados-17-preview/){:target="\_blank"}：
+<PageLink title="支持的设备" url="https://www.apple.com/ipados/ipados-17-preview/"></PageLink>:
 
 - iPad Pro 第二代及更新机型。
 - iPad Air 第三代及更新机型。
@@ -345,7 +345,7 @@ Safari 现在有配置文件，允许为学校、工作或个人用途等进行�
 
 个人语音可帮助有语言障碍的用户创建听起来像他们的声音，从而允许在 Facetime 和通话中进行实时语音通信。 使沟通更容易。
 
-[支持的设备](https://www.apple.com/macos/sonoma-preview/){:target="\_blank"}：
+<PageLink title="支持的设备" url="https://www.apple.com/macos/sonoma-preview/"></PageLink>:
 
 - iMac 2019 及更新机型
 - iMac 专业版 2017
@@ -392,7 +392,7 @@ Ultra 版正在改进远足功能，允许在上次建立连接时自动设置�
 
 正如上面提到的新的户外时间，该指标将记录在视力健康应用程序中。 通过跟踪和促进外出和在阳光下度过时间来预防早发性近视或近视。
 
-[支持的设备](https://www.apple.com/watchos/watchos-preview/){:target="\_blank"}:
+<PageLink title="支持的设备" url="https://www.apple.com/watchos/watchos-preview/"></PageLink>:
 
 - 系列 4、5、6、7、8
 - 东南，超

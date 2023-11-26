@@ -43,7 +43,7 @@ Aegis 是一款免费的开源身份验证器应用程序，可通过 Google Pla
 
 此外，它还允许您在设备之间导出和导入令牌，方便切换手机。 作为开源应用程序，您可以查看其代码库以确保透明度和安全性。
 
-访问 [getaegis.app](https://getaegis.app/){:target="\_blank"} 了解有关 Aegis 的更多信息
+访问 <PageLink title="getaegis.app" url="https://getaegis.app/"></PageLink> 了解有关 Aegis 的更多信息
 
 ### 2FAS
 
@@ -58,7 +58,7 @@ Aegis 是一款免费的开源身份验证器应用程序，可通过 Google Pla
 - 备份和恢复功能
 - 生物识别/密码保护 \*离线功能。
 
-2FAS 是开源的，可以免费使用，并且不存储任何密码或元数据，让您在安全和隐私方面高枕无忧。 更多功能正在开发中，您可以访问 [2fas.com](https://2fas.com/){:target="\_blank"} 了解更多信息。
+2FAS 是开源的，可以免费使用，并且不存储任何密码或元数据，让您在安全和隐私方面高枕无忧。 更多功能正在开发中，您可以访问 <PageLink title="2fas.com" url="https://2fas.com/"></PageLink> 了解更多信息。
 
 ### Raivo 一次性密码
 
@@ -72,7 +72,7 @@ Raivo OTP 是一款轻量级、开源且免费使用的身份验证器应用程�
 - 与 iCloud 同步
 - 自定义每个一次性密码 (OTP)。
 
-您可以访问 [raivo-otp.com](https://raivo-otp.com/){:target="\_blank"} 了解有关 Ravio OTP 的更多信息。
+您可以访问 <PageLink title="raivo-otp.com" url="https://raivo-otp.com/"></PageLink> 了解有关 Ravio OTP 的更多信息。
 
 ## 短信认证
 
@@ -106,7 +106,7 @@ Raivo OTP 是一款轻量级、开源且免费使用的身份验证器应用程�
 
 这种身份验证方法更安全，因为它是您手边的物理设备，使攻击者几乎不可能破坏您的帐户。 安全密钥消除了对额外代码进行身份验证的需要，因为一旦密钥在您的帐户上得到验证，就不需要进一步的身份验证。
 
-MFA 非常适合企业使用，因为它集成了 WebAuth/FIDO 和智能卡/PIV 身份验证，可防止常见的网络钓鱼尝试。 随着这项技术的发展，安全密钥将继续被平台和服务广泛采用。 您可以访问 [Yubico.com](https://www.yubico.com/){:target="\_blank"} 了解有关安全密钥及其功能的更多信息
+MFA 非常适合企业使用，因为它集成了 WebAuth/FIDO 和智能卡/PIV 身份验证，可防止常见的网络钓鱼尝试。 随着这项技术的发展，安全密钥将继续被平台和服务广泛采用。 您可以访问 <PageLink title="Yubico.com" url="https://www.yubico.com/"></PageLink> 了解有关安全密钥及其功能的更多信息
 
 ## 概括
 

@@ -88,32 +88,11 @@ h5 {
   white-space: pre-wrap;
 }
 
-.prose a[href^="https"] {
-  color: #0067d4;
-  text-decoration: none;
-}
-
-.prose a:hover {
-  text-decoration: 2px underline;
-  text-underline-offset: 2px;
-}
-
-
 @media (prefers-color-scheme: dark) {
   .dark .prose pre {
     background-color: #141414;
     color: #fff;
     border: 1px solid #333333;
-  }
-
-  .dark .prose a[href^="https"] {
-    color: #007BFF;
-    text-decoration: none;
-  }
-
-  .dark .prose a:hover {
-    text-decoration: 2px underline;
-    text-underline-offset: 2px;
   }
 }
 </style>

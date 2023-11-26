@@ -86,7 +86,7 @@ source: "Lindsey LaMont, unsplash"
 만약 사기를 당한 경우, 추가 조사를 위해 해당 메시지를 내무부에 전달해 주십시오.
 문자 메시지를 다음 번호로 단순히 전달하십시오: 7726.
 
-여기에서 메시지를 전달하는 방법을 보십시오: [iOS](https://support.apple.com/en-nz/guide/iphone/iph125628311/ios). 안드로이드 기기의 경우, 이것은 메시지를 누르고 전달을 선택하는 비슷한 프로세스여야 합니다.
+여기에서 메시지를 전달하는 방법을 보십시오: <PageLink title="iOS" url="https://support.apple.com/en-nz/guide/iphone/iph125628311/ios"></PageLink>. 안드로이드 기기의 경우, 이것은 메시지를 누르고 전달을 선택하는 비슷한 프로세스여야 합니다.
 
 직접 해당 기관에 신고하십시오. 뉴질랜드 내에서 활동 중인 인기 있는 서비스의 이메일 주소를 나열했습니다. 의심스러운 텍스트 메시지나 이메일을 스크린샷으로 찍어 이메일에 첨부하십시오.
 
@@ -107,8 +107,8 @@ Spark NZ - scamhelp@spark.co.nz
 <hr> 
 더 알아보기:
 
-[dia.govt.nz](https://www.dia.govt.nz/Spam-How-to-Report-Scams)
+<PageLink title="dia.govt.nz" url="https://www.dia.govt.nz/Spam-How-to-Report-Scams"></PageLink>
 
-[cert.nz](https://www.cert.govt.nz/individuals/common-threats/phishing/)
+<PageLink title="cert.nz" url="https://www.cert.govt.nz/individuals/common-threats/phishing/"></PageLink>
 
-[netsafe.org.nz](https://report.netsafe.org.nz/hc/en-au/requests/new)
+<PageLink title="netsafe.org.nz" url="https://report.netsafe.org.nz/hc/en-au/requests/new"></PageLink>

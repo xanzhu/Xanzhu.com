@@ -19,7 +19,7 @@ It's worth noting that some of these browsers are specific to a particular envir
 
 <Media source="/images/blog/BB/arc.webp" credit="The Browser Company / Xanzhu" alt="Arc browser logo"></Media>
 
-The new contender on the market, built by [The Browser Company](https://thebrowser.company/){:target="\_blank"}, is a well-established collective of alumni developers who have worked alongside some of the internet's most popular web services such as Google Chrome, Instagram, and more. With a strong expertise in this field, The Browser Company is working to change the behavior of the average browser by reigniting creativity and accessibility in the browsing experience.
+The new contender on the market, built by <PageLink title="The Browser Company" url="https://thebrowser.company/"></PageLink>, is a well-established collective of alumni developers who have worked alongside some of the internet's most popular web services such as Google Chrome, Instagram, and more. With a strong expertise in this field, The Browser Company is working to change the behavior of the average browser by reigniting creativity and accessibility in the browsing experience.
 
 The browser, called Arc, brings in a new experience with browsing that makes it fluid and interesting to use. This browser is currently in development and is invite-only. I was able to get in on this browser early on and have been impressed by its unique design and feel. It's a browser that will shift the way we view traditional ones.
 
@@ -49,7 +49,7 @@ Some other features of the browser include:
 - Notes and Easel - A built-in note-taking and design tool
 - Little Arc - A tab within a tab feature
 
-Learn more about how The Browser Company is changing the game for all browsers and sign up to get access on [Arc.net](https://arc.net/){:target="\_blank"}
+Learn more about how The Browser Company is changing the game for all browsers and sign up to get access on <PageLink title="Arc.net" url="https://arc.net/"></PageLink>
 
 ## Brave
 
@@ -81,7 +81,7 @@ Brave's efforts in integrating these features into the browser demonstrate its c
 
 ### Brave Search
 
-Reducing the reliance on using Google or Bing as a search provider, Brave recently released their own search engine called [Brave search](https://search.brave.com/){:target="\_blank"}, which offers better security than using the previous method of DuckDuckGo. While still gaining momentum and more features, Brave Search is taking steps to lead the next generation of searching to be non-biased and ensures that content is accessible.
+Reducing the reliance on using Google or Bing as a search provider, Brave recently released their own search engine called <PageLink title="Brave Search" url="https://search.brave.com/"></PageLink>, which offers better security than using the previous method of DuckDuckGo. While still gaining momentum and more features, Brave Search is taking steps to lead the next generation of searching to be non-biased and ensures that content is accessible.
 
 Brave Search is built on top of the open-source search engine, Preact, which provides a fast, lightweight and efficient search experience. The search engine also respects the user's privacy and does not track or store any personal data. Additionally, Brave Search uses an algorithm that filters out sponsored results, which ensures that the search results are unbiased, and the user sees the most relevant and useful results.
 
@@ -96,8 +96,8 @@ The browser also includes the option to connect to the Tor network, which is use
 
 <Media source="/images/blog/BB/snowflake.webp" alt="Implementation of Snowflake on brave browser"></Media>
 
-You can learn more about the Snowflake protocol via [The Tor Project](https://snowflake.torproject.org/){:target="\_blank"}
-For implementing or enabling this on Brave Browsers, see [Brave Support](https://support.brave.com/hc/en-us/articles/9059440641421-What-is-the-Snowflake-extension-){:target="\_blank"}
+You can learn more about the Snowflake protocol via <PageLink title="The Tor Project" url="https://snowflake.torproject.org/"></PageLink>
+For implementing or enabling this on Brave Browsers, see <PageLink title="Brave Support" url="https://support.brave.com/hc/en-us/articles/9059440641421-What-is-the-Snowflake-extension"></PageLink>
 
 ### Other features
 
@@ -109,7 +109,7 @@ The browser's rewards program is a unique feature that allows users to earn BAT 
 
 <Media source="/images/blog/BB/brave-compare.webp" credit="Brave" alt="Brave's Comparison chart for security features"></Media>
 
-Visit [Brave.com](https://brave.com/){:target="\_blank"} to download the browser and experience the difference for yourself. Whether you're a casual user or a developer, Brave offers a range of features that will enhance your browsing experience. With Brave, you'll be able to browse the web with more privacy, security, and efficiency.
+Visit <PageLink title="Brave.com" url="https://brave.com/"></PageLink> to download the browser and experience the difference for yourself. Whether you're a casual user or a developer, Brave offers a range of features that will enhance your browsing experience. With Brave, you'll be able to browse the web with more privacy, security, and efficiency.
 
 ## FireFox
 
@@ -131,7 +131,7 @@ Firefox offers a fast and secure browsing experience, with a range of built-in f
 
 <Media source="/images/blog/BB/firefox-compare.webp" credit="Mozilla" alt="Comparison chart for security features on firefox"></Media>
 
-Firefox is a great choice for users who value reliability and privacy. It's a perfect alternative to Brave, offering a similar range of features and fast performance. Visit [Firefox.com](https://www.mozilla.org/en-US/firefox/new/){:target="\_blank"} to download the browser and experience the difference for yourself.
+Firefox is a great choice for users who value reliability and privacy. It's a perfect alternative to Brave, offering a similar range of features and fast performance. Visit <PageLink title="Firefox.com" url="https://www.mozilla.org/en-US/firefox/new/"></PageLink> to download the browser and experience the difference for yourself.
 
 ## The defaults
 
@@ -145,7 +145,7 @@ While this won't be the best in terms of user experience, with the amount of pop
 
 Microsoft Edge is a solid browser that has been updated to the Chromium engine, which means it's compatible with most websites and has a fast performance. It also includes a range of features such as built-in ad-blocker, tracking prevention and password manager, which enhance privacy and security. Another feature that might be useful for some users is the ability to access old Internet Explorer sites.
 
-Learn more about [Microsoft Edge](https://www.microsoft.com/en-us/edge){:target="\_blank"} to see if it's the right browser for you and your needs.
+Learn more about <PageLink title="Microsoft Edge" url="https://www.microsoft.com/en-us/edge"></PageLink> to see if it's the right browser for you and your needs.
 
 ### MacOS
 

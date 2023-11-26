@@ -38,7 +38,7 @@ p@s$w0rD!2E
 
 While this may be easy to do for a couple of passwords, a password manager can automate the process for you. It can generate strong, unique passwords for each site automatically. The only thing you need to remember is the key to your vault: a single password that grants you access to all of your stored passwords.
 
-Breaches occur regularly, and it's important to not only check for yourself but also be notified when they happen. A popular, free service you can use is [HaveIBeenPwned](https://haveibeenpwned.com/){:target="\_blank"}. This website, maintained by Australian security expert Troy Hunt, allows you to enter your email address and see if it has been associated with any breaches. In the event that you find something, head over to the service and update your password.
+Breaches occur regularly, and it's important to not only check for yourself but also be notified when they happen. A popular, free service you can use is <PageLink title="HaveIBeenPwned" url="https://haveibeenpwned.com/"></PageLink>. This website, maintained by Australian security expert Troy Hunt, allows you to enter your email address and see if it has been associated with any breaches. In the event that you find something, head over to the service and update your password.
 
 There are a variety of password managers available, both free and paid. I will share some of my recommendations based on my own experience and research.
 
@@ -48,7 +48,7 @@ There are a variety of password managers available, both free and paid. I will s
 
 <Media source="/images/blog/PM/bitwarden.webp" credit="Bitwarden / Xanzhu" alt="Bitwarden Password Manager Logo"></Media>
 
-One of the best free password managers you can use is Bitwarden. While it does offer paid plans that increase the options and features, the [free plan](https://bitwarden.com/pricing/){:target="\_blank"} is sufficient for most users.
+One of the best free password managers you can use is Bitwarden. While it does offer paid plans that increase the options and features, the <PageLink title="free plan" url="https://bitwarden.com/pricing/"></PageLink> is sufficient for most users.
 
 Some notable features of Bitwarden include:
 
@@ -64,7 +64,7 @@ For those who need more features, Bitwarden offers paid plans that add a few mor
 - Support for Yubikey and security keys
 - Vault scanning and health monitoring
 
-For more information, visit the Bitwarden website at [https://bitwarden.com](https://bitwarden.com/){:target="\_blank"}
+For more information, visit the <PageLink title="Bitwarden" url="https://bitwarden.com"></PageLink>
 It's worth noting that when it comes to security and privacy, using open-source software is a good idea because it allows you to verify the code and ensure that there are no backdoors or malicious code.
 
 ### Keepass
@@ -79,7 +79,7 @@ Keepass is a very secure password manager, it uses AES and Twofish encryption al
 
 Keep in mind that self-hosting your password manager does come with some responsibilities, such as keeping the software updated, maintaining a backup of your data and making sure your server is secure.
 
-For more information on Keepass, visit the website at [https://keepass.info/](https://keepass.info/){:target="\_blank"}
+For more information on Keepass, visit the website at <PageLink title="keepass.info" url="https://keepass.info/"></PageLink>
 
 ### Browser / OS
 
@@ -93,7 +93,7 @@ Additionally, while browser-based password managers are simple to use, they are 
 
 If you choose to use a browser-based password manager, it's important to take extra precautions to ensure the security of your stored passwords, such as using a strong master password and enabling two-factor authentication.
 
-For more information on browser-based password managers, you can visit the Google password manager website: [https://passwords.google.com/](https://passwords.google.com/){:target="\_blank"}
+For more information on browser-based password managers, you can visit <PageLink title="Google Password Manager" url="https://passwords.google.com/"></PageLink>
 
 ## Paid Solutions
 
@@ -105,7 +105,7 @@ It's important to note that when considering paid solutions, it's essential to r
 
 ### Dashlane
 
-Dashlane offers a free trial for 14 days, providing a basic level of password management. The [starter plan](https://www.dashlane.com/pricing){:target="\_blank"} offers some helpful features such as the ability to track for stolen content on the Dark Web. This service scans the dark web for breaches that might have exposed your credentials, giving you a report if anything matches.
+Dashlane offers a free trial for 14 days, providing a basic level of password management. The <PageLink title="Starter Plan" url="https://www.dashlane.com/pricing"></PageLink> offers some helpful features such as the ability to track for stolen content on the Dark Web. This service scans the dark web for breaches that might have exposed your credentials, giving you a report if anything matches.
 
 Notable features of Dashlane's starter plan include:
 
@@ -116,12 +116,12 @@ Notable features of Dashlane's starter plan include:
 
 For those who need more advanced features, Dashlane offers higher-tiered plans that include additional features such as a Virtual Private Network (VPN) solution. This offers an extra layer of security for your password manager, helping to protect your online activities from hackers and prying eyes.
 
-To learn more about Dashlane and its features, you can visit the website at [https://www.dashlane.com](https://www.dashlane.com){:target="\_blank"}
+To learn more about Dashlane and its features, you can visit the website at <PageLink title="dashlane.com" url="https://www.dashlane.com"></PageLink>
 It's worth noting that, when it comes to security and privacy, using a password manager that has dark-web scanning feature is a good idea because it allows you to monitor your credentials and be alerted if they appear on the dark-web.
 
 ### NordPass
 
-NordPass offers a very limited and basic [free plan](https://nordpass.com/plans/){:target="\_blank"} that comes bundled with a 30-day free trial of the premium version. The main difference between the paid and free plans is that the free tier offers only the basics of a password manager, while the paid tiers offer additional features such as:
+NordPass offers a very limited and basic <PageLink title="Free Plan" url="https://nordpass.com/plans/"></PageLink> that comes bundled with a 30-day free trial of the premium version. The main difference between the paid and free plans is that the free tier offers only the basics of a password manager, while the paid tiers offer additional features such as:
 
 - Sharing items with people you trust
 - Emergency vault access - the ability to assign an email or user to have access to your vault in case of being locked out
@@ -130,11 +130,11 @@ NordPass offers a very limited and basic [free plan](https://nordpass.com/plans/
 
 It's worth noting that you may not need all of these features, and the free tier may be enough to meet your needs. However, it's worth considering the features that are important to you when comparing plans. One thing to consider is that the free plan only supports 6 logged-in devices, which might be enough for some users, but exceeding this amount will log you out.
 
-To learn more about NordPass and its features, you can visit the website at [https://nordpass.com/](https://nordpass.com/){:target="\_blank"}
+To learn more about NordPass and its features, you can visit the website at <PageLink title="nordpass.com" url="https://nordpass.com"></PageLink>
 
 ### 1Password
 
-1Password offers a free trial for its [premium plan](https://1password.com/sign-up/){:target="\_blank"}. This solution is well-designed and works on all your devices, including desktop and mobile. 1Password offers unlimited devices and features a unique feature called "Travel Mode", which can remove sensitive data from your device when traveling, ensuring that your passwords and accounts don't get compromised while on the go. It also allows for a one-click restore solution when returning.
+1Password offers a free trial for its <PageLink title="Premium Plan" url="https://1password.com/sign-up/"></PageLink>. This solution is well-designed and works on all your devices, including desktop and mobile. 1Password offers unlimited devices and features a unique feature called "Travel Mode", which can remove sensitive data from your device when traveling, ensuring that your passwords and accounts don't get compromised while on the go. It also allows for a one-click restore solution when returning.
 
 Some notable features of the baseline premium plan include:
 
@@ -145,7 +145,7 @@ Some notable features of the baseline premium plan include:
 
 1Password is well-integrated into the Apple ecosystem in terms of design and accessibility. It's a great choice with limited features compared to other solutions.
 
-To learn more about 1Password and its features, you can visit the website at [https://1password.com](https://1password.com){:target="\_blank"}
+To learn more about 1Password and its features, you can visit the website at <PageLink title="1password.com" url="https://1password.com"></PageLink>
 
 ## Security
 
@@ -169,11 +169,11 @@ If you are currently using LastPass, I advise you to change all your passwords i
 
 For more information, you can read the following articles:
 
-[The Verge](https://www.theverge.com/2022/12/22/23523322/lastpass-data-breach-cloud-encrypted-password-vault-hackers){:target="\_blank"}
+<PageLink title="The Verge" url="https://www.theverge.com/2022/12/22/23523322/lastpass-data-breach-cloud-encrypted-password-vault-hackers"></PageLink>
 
-[Wired](https://www.wired.com/story/lastpass-breach-vaults-password-managers/){:target="\_blank"}
+<PageLink title="Wired" url="https://www.wired.com/story/lastpass-breach-vaults-password-managers/"></PageLink>
 
-[Hacker News](https://thehackernews.com/2022/12/lastpass-admits-to-severe-data-breach.html){:target="\_blank"}
+<PageLink title="Hacker News" url="https://thehackernews.com/2022/12/lastpass-admits-to-severe-data-breach.html"></PageLink>
 
 ## Bloatware
 

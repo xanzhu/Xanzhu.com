@@ -65,7 +65,7 @@ Features:
 - Spatial Audio
 - OLED Display (4K+ Each eye)
 
-Extremely [interesting concept](https://www.apple.com/apple-vision-pro/){:target="\_blank"} and kudos to Apple for doing something entirely different but game-changing. The processing needed to do this with neural networks alone is impressive and I'm excited to see how this will adapt and improve over the coming years.
+Extremely <PageLink title="interesting concept" url="https://www.apple.com/apple-vision-pro/"></PageLink> and kudos to Apple for doing something entirely different but game-changing. The processing needed to do this with neural networks alone is impressive and I'm excited to see how this will adapt and improve over the coming years.
 
 <Media source="/images/blog/wwdc/sensor.jpeg"  alt="VisionPro sensor" credit="Apple"></Media>
 
@@ -75,13 +75,13 @@ A brand new Operating system that will house all the new custom-designed applica
 
 ### MacBook Air 15"
 
-The iconic [MacBook Air](https://www.apple.com/macbook-air-13-and-15-m2/){:target="\_blank"} now comes in a 15" version. Using the M2 chip this adds even more screen while keeping the same battery performance as the 13 and 14-inch models. Also continuing to use a fanless design
+The iconic <PageLink title="MacBook Air" url="https://www.apple.com/macbook-air-13-and-15-m2/"></PageLink> now comes in a 15" version. Using the M2 chip this adds even more screen while keeping the same battery performance as the 13 and 14-inch models. Also continuing to use a fanless design
 
 <Vid source="https://www.apple.com/105/media/us/macbook-air-13-and-15/2023/f52c7a72-dff4-4f3c-9511-bf08e46c6f5f/anim/design/hero/medium_2x.mp4#t=4.033333" credit="Apple"></Vid>
 
 ### Mac Studio
 
-Has been [refreshed](https://www.apple.com/mac-studio/){:target="\_blank"} using the next-generation chipsets M2 Max (12 Cores) and the new M2 Ultra (24 Cores). Massive jump in performance. For industry-standard tasks such as Video Editing, 3D models and more.
+Has been <PageLink title="refreshed" url="https://www.apple.com/mac-studio/"></PageLink> using the next-generation chipsets M2 Max (12 Cores) and the new M2 Ultra (24 Cores). Massive jump in performance. For industry-standard tasks such as Video Editing, 3D models and more.
 
 Configurations:
 
@@ -105,7 +105,7 @@ Back Ports:
 
 ### Mac Pro
 
-Insane [performance improvements](https://www.apple.com/mac-pro/){:target="\_blank"}, this new high-powered machine is using the new M2 Ultra chip with a 7.6x improvement over the intel version.
+Insane <PageLink title="performance improvements" url="https://www.apple.com/mac-pro/"></PageLink>, this new high-powered machine is using the new M2 Ultra chip with a 7.6x improvement over the intel version.
 
 <Media source="/images/blog/wwdc/macpro.jpeg"  alt="Mac Pro" credit="Apple"></Media>
 
@@ -224,7 +224,7 @@ Can be downloaded for offline support, selecting an area and exploring while off
 
 Improved electric vehicle routing, showing better options for charging stations and real-time metrics for availability when travelling.
 
-[Supported devices](https://www.apple.com/ios/ios-17-preview/){:target="\_blank"}:
+<PageLink title="Supported Devices" url="https://www.apple.com/ios/ios-17-preview/"></PageLink>:
 
 - iPhone SE (Gen 2), XS, XR, 11, 12, 13, 14
 - iPhone 11 Pro, 12 Pro, 13 Pro, 14 Pro
@@ -259,7 +259,7 @@ Minor improvements for moving and resizing windows for better layout options.
 
 A lot of features are shared between each of the operating systems. Specifically for the iPad not a lot of notable features but good improvements.
 
-[Supported devices](https://www.apple.com/ipados/ipados-17-preview/){:target="\_blank"}:
+<PageLink title="Supported Devices" url="https://www.apple.com/ipados/ipados-17-preview/"></PageLink>:
 
 - iPad Pro 2nd Generation and later.
 - iPad Air 3rd Generation and later.
@@ -345,7 +345,7 @@ Increases security for the Mac helping to protect against cyber-attacks. This no
 
 Personal voice helps users with speech loss create a voice that sounds like them allowing for Live speech communication in Facetime and calls. Making it easier to communicate.
 
-[Supported devices](https://www.apple.com/macos/sonoma-preview/){:target="\_blank"}:
+<PageLink title="Supported Devices" url="https://www.apple.com/macos/sonoma-preview/"></PageLink>:
 
 - iMac 2019 and Later
 - iMac Pro 2017
@@ -392,7 +392,7 @@ Provides more metrics around the state of mind, correlating lifestyle factors wi
 
 As mentioned above with the new time spent outside, this metric will be recorded in the vision health application. Prevent early-onset myopia or near-sightedness by tracking and promoting getting outside and spending time in the sun.
 
-[Supported devices](https://www.apple.com/watchos/watchos-preview/){:target="\_blank"}:
+<PageLink title="Supported Devices" url="https://www.apple.com/watchos/watchos-preview/"></PageLink>:
 
 - Series 4, 5, 6, 7, 8
 - SE, Ultra

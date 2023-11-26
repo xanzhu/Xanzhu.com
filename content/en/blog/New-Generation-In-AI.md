@@ -14,9 +14,9 @@ Released in February of this year, OpenAI's ChatGPT has been a hot topic for any
 
 ChatGPT solves a new problem, which is why it's gaining a lot of traction. As I mentioned in my previous article, language models such as ChatGPT offer a glimpse into what our future will look like. Since posting that initial article, a few things have changed, from more companies offering similar services or simply utilizing ChatGPT's API, to the model itself being updated to version 4, offering more complex results and capabilities.
 
-Checkout the latest from: [Open AI](https://openai.com/){:target="\_blank"}
+Checkout the latest from: <PageLink title="OpenAI" url="https://openai.com/"></PageLink>
 
-Try ChatGPT for yourself: [ChatGPT](https://chat.openai.com/){:target="\_blank"}
+Try ChatGPT for yourself: <PageLink title="ChatGPT" url="https://chat.openai.com/"></PageLink>
 
 ### Microsoft
 
@@ -36,7 +36,7 @@ The main difference is just a personality factor. It feels like searching the we
 
 Bing provides the user with limited options and often cuts off the request. They've introduced a limit for responses before a new topic must be established, which blocks the existing conversation and encourages the user to select the broom button to sweep the chat away. This restriction is likely to prevent the model from going out of scope and ensures everyone can use it. Something interesting to consider is how history works with these models. At this stage, it isn't saved anywhere accessible and resets back to a default splash screen.
 
-Try Bing's ChatBot Feature for yourself (Requires Edge Browser): [Bing](https://bing.com/){:target="\_blank"}
+Try Bing's ChatBot Feature for yourself (Requires Edge Browser): <PageLink title="Bing" url="https://bing.com/"></PageLink>
 
 ### Google
 
@@ -48,7 +48,7 @@ Currently available in the United States and the United Kingdom through early ac
 
 Expect more changes and improvements over the coming months for Google, improving accuracy and features in their software. Once their Language Model (LaMDA) is tested and perfected for use in Bard, fewer restrictions will be applied, allowing users to search and get results across Google's massive archive of data. For the time being, this is a slow release and will unlikely be the final product for Bard.
 
-Learn more about Bard and join the waitlist: [Google](https://bard.google.com/){:target="\_blank"}
+Learn more about Bard and join the waitlist: <PageLink title="Google" url="https://bard.google.com/"></PageLink>
 
 ### Software adapting
 
@@ -56,13 +56,13 @@ Both Google and Microsoft are beginning to ship software with their AI solutions
 
 <Vid source="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_videos/Docs_Web_030623_1.mp4" credit="Google"></Vid>
 
-Read the announcement from [Google](https://blog.google/technology/ai/ai-developers-google-cloud-workspace/){:target="\_blank"}.
+Read the announcement from <PageLink title="Google" url="https://blog.google/technology/ai/ai-developers-google-cloud-workspace/"></PageLink>
 
 Two days after this announcement, Microsoft also announced that they're working on shipping a new AI-powered line-up called Copilot that will be introduced across the 365 line-ups, including some of the following: Word, Excel, and Outlook. Their vision is to boost the level of creativity using the power of your own words. Much like Google's Doc approach, Microsoft follows a similar concept of simply inputting your request and watching the magic happen. Something a bit different is Copilot also adds a feature to generate content based on files.
 
 <Media source="/images/blog/Gen/mfr.webp"  alt="Microsoft Generative AI visual" credit="Microsoft"></Media>
 
-Read the announcement from [Microsoft](https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/){:target="\_blank"}.
+Read the announcement from <PageLink title="Microsoft" url="https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/"></PageLink>.
 
 Both announcements mean that it's about to get a lot easier to create and draft documents exactly the way you want. A possible concern with this is the usage of generating specific documents that may make it easier for bad actors to automate and perfect their attacks.
 
@@ -88,7 +88,7 @@ Copilot will be a helpful tool for all developers, improving workflows for produ
 
 Currently, in a technical preview stage, Copilot is available on the Microsoft ecosystem: Visual Studio, and Visual Studio Code, with plans to expand into other Integrated Development Environments or IDEs such as Neovim, Jetbrains and more as the extension is developed.
 
-Learn more about Copilot X: [Github](https://github.blog/2023-03-22-github-copilot-x-the-ai-powered-developer-experience/){:target="\_blank"}
+Learn more about Copilot X: <PageLink title="Github" url="https://github.blog/2023-03-22-github-copilot-x-the-ai-powered-developer-experience/"></PageLink>
 
 ### Summarizer
 
@@ -108,9 +108,9 @@ What makes this stand out from using Bing or Google is Brave’s AI model is ent
 
 Brave continues to challenge and innovate alternatives to the industry giants. Being relatively new, it’s not perfect and will continue to adapt as AI develops and their search engine advances.
 
-Read more about [Brave](https://brave.com/ai-summarizer/){:target="\_blank"}'s new feature
+Read more about <PageLink title="Brave" url="https://brave.com/ai-summarizer/"></PageLink>'s new feature
 
-Try their search engine - It's private! [Brave Search](https://search.brave.com){:target="\_blank"}
+Try their search engine - It's private! <PageLink title="Brave Search" url="https://search.brave.com"></PageLink>
 
 ### Spotify
 
@@ -126,7 +126,7 @@ Adding in this new feature builds on the shuffle button, playlists, and radio fe
 
 A few concerns with this are the model being trained on specific genres of music. There are many sub-genres of music that could be classified as something entirely different and this is a concern when recommending songs from a genre entirely unrelated. Given that it’s a mixture of either entirely new songs or old ones, the AI model could present potential risks in delivering undesirable titles or artists to the user. More to come on this.
 
-Learn More: [Spotify](https://newsroom.spotify.com/2023-02-22/spotify-debuts-a-new-ai-dj-right-in-your-pocket/){:target="\_blank"}
+Learn More: <PageLink title="Spotify" url="https://newsroom.spotify.com/2023-02-22/spotify-debuts-a-new-ai-dj-right-in-your-pocket/"></PageLink>
 
 ### Next
 
