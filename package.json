@@ -16,7 +16,7 @@
     "@nuxt/image": "^1.1.0",
     "@nuxtjs/color-mode": "^3.3.2",
     "@nuxtjs/i18n": "8.0.0-rc.5",
-    "@types/node": "^18.18.12",
+    "@types/node": "^18.19.3",
     "@unocss/nuxt": "^0.57.7",
     "@unocss/preset-typography": "^0.57.7",
     "@unocss/preset-uno": "^0.57.7",
@@ -25,10 +25,10 @@
     "@unocss/transformer-variant-group": "^0.57.7",
     "@vercel/analytics": "^1.1.1",
     "nuxt": "^3.8.2",
-    "nuxt-icon": "^0.6.6",
-    "nuxt-simple-robots": "^3.1.9",
-    "nuxt-simple-sitemap": "^4.1.6",
-    "vue": "^3.3.8",
+    "nuxt-icon": "^0.6.7",
+    "nuxt-simple-robots": "^3.1.10",
+    "nuxt-simple-sitemap": "^4.1.17",
+    "vue": "^3.3.11",
     "vue-router": "^4.2.5"
   }
 }
