@@ -9,25 +9,27 @@
     <section
       class="grid grid-cols-1 gap-5 md:(grid-cols-2 mx-6 gap-10) lg:(grid-cols-3) sm:(py-15 px-10) dark:bg-black rounded-sm p-4">
       <div v-if="posts" v-for="(article, $index) in posts" :key="`fe-${$index}`">
-        <NuxtLinkLocale class="group flex flex-col no-underline" :to="article._path">
-          <NuxtImg crossorigin="anonymous" v-if="article.img" :alt="article.alt" :title="article.alt" loading="lazy"
-            height="369" width="577" object-fit="contain"
-            class="rounded-md h-full w-full transform md:(transition duration-400 ease-in-out) md:group-hover:scale-102 b-1 b-solid dark:b-dark-700 b-light-700"
-            :src="article.img" />
-          <div class="dark:(bg-black text-white) h-auto rounded-b-md bg-white dark:text-white text-black">
-            <div class="space-x-2">
-              <Date v-if="article.date" :date="article.date"
-                class="dark:(bg-dark-900 text-white border-dark-700 opacity-100) opacity-80 bg-light-500 px-4 py-1.5 b-1 b-solid rounded-sm b-gray-300 text-xs" />
-              <p v-if="article.tag"
-                class="dark:(bg-dark-900 text-white border-dark-700 opacity-100) opacity-80 bg-light-500 b-gray-300 px-4 py-1.5 border-1 b-solid rounded-sm text-xs inline-block">
-                {{ article.tag }}
-              </p>
+        <Suspense>
+          <NuxtLinkLocale class="group flex flex-col no-underline" :to="article._path">
+            <NuxtImg crossorigin="anonymous" v-if="article.img" :alt="article.alt" :title="article.alt" loading="lazy"
+              height="369" width="577" object-fit="contain"
+              class="rounded-md h-full w-full transform md:(transition duration-400 ease-in-out) md:group-hover:scale-102 b-1 b-solid dark:b-dark-700 b-light-700"
+              :src="article.img" />
+            <div class="dark:(bg-black text-white) h-auto rounded-b-md bg-white dark:text-white text-black">
+              <div class="space-x-2">
+                <Date v-if="article.date" :date="article.date"
+                  class="dark:(bg-dark-900 text-white border-dark-700 opacity-100) opacity-80 bg-light-500 px-4 py-1.5 b-1 b-solid rounded-sm b-gray-300 text-xs" />
+                <p v-if="article.tag"
+                  class="dark:(bg-dark-900 text-white border-dark-700 opacity-100) opacity-80 bg-light-500 b-gray-300 px-4 py-1.5 border-1 b-solid rounded-sm text-xs inline-block">
+                  {{ article.tag }}
+                </p>
+              </div>
+              <h2 class="text-xl font-semibold decoration-2 group-hover:(underline underline-offset-6) m0"
+                v-html="article.title" />
+              <p class="op80" v-html="article.description" />
             </div>
-            <h2 class="text-xl font-semibold decoration-2 group-hover:(underline underline-offset-6) m0"
-              v-html="article.title" />
-            <p class="op80" v-html="article.description" />
-          </div>
-        </NuxtLinkLocale>
+          </NuxtLinkLocale>
+        </Suspense>
       </div>
     </section>
   </main>
