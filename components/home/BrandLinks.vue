@@ -9,9 +9,9 @@
                 </Icon>
             </NuxtLink>
         </div>
-        <div class="h4">
-            {{ formattedDate }}
-        </div>
+        <client-only class="h4">
+            <span>{{ formatDate(locale) }}</span>
+        </client-only>
     </div>
 </template>
 <script setup lang="ts">
@@ -35,9 +35,8 @@ const urls = [
         name: "Samsung"
     }
 ];
-const formattedDate = ref<string | null>(null);
 
-const getFormattedDate = (locale: string): string => {
+const formatDate = (locale: string) => {
     const now = new Date();
     return now.toLocaleString(locale, {
         weekday: "long",
@@ -47,15 +46,4 @@ const getFormattedDate = (locale: string): string => {
     });
 };
 
-onMounted(() => {
-    getCurrentDate();
-});
-
-const getCurrentDate = () => {
-    formattedDate.value = getFormattedDate(locale.value);
-};
-
-watch(locale, () => {
-    getCurrentDate();
-});
 </script>
