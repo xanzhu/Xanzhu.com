@@ -1,16 +1,16 @@
 <template>
     <header
-        class="flex justify-between items-center dark:(text-black bg-white) text-white bg-black md:p3 px4 py2 mx-auto md:px-6 xl:px10 2xl:px20 border-b-1 b-0 dark:border-light-900 border-dark-100 b-solid">
+        class="flex justify-between items-center dark:(text-white bg-black) text-black bg-white md:p3 px4 py2 mx-auto md:px-6 xl:px10 2xl:px20 border-b-1 b-0 border-light-700 dark:border-dark-800 b-solid">
         <div class="flex md:space-x-10">
-            <NuxtLinkLocale to="/" class="mx-auto text-center dark:text-black text-white">
+            <NuxtLinkLocale to="/" class="mx-auto text-center text-black dark:text-white">
                 <UiIconXanzhu class="h6" :aria-label="t('a11y.logo')" />
                 <span class="sr-only">{{ t('a11y.Home') }}</span>
             </NuxtLinkLocale>
             <nav class="hidden md:(block space-x-5 decoration-none)">
                 <NuxtLinkLocale v-for="(link, index) in links" :key="index" :to="link.url"
-                    active-class="!underline underline-offset-6 !decoration-3 !dark:decoration-brand-light !decoration-brand-dark"
+                    active-class="!underline underline-offset-6 !decoration-3 !dark:decoration-brand-dark !decoration-brand-light"
                     :aria-label="t(link.name)"
-                    class="dark:text-black text-white decoration-none hover:(underline underline-offset-6 decoration-3  dark:decoration-brand-light decoration-brand-dark)"
+                    class="text-black dark:text-white decoration-none hover:(underline underline-offset-6 decoration-3  dark:decoration-brand-light decoration-brand-dark)"
                     v-t="link.name">
                 </NuxtLinkLocale>
             </nav>
@@ -18,12 +18,13 @@
         <!-- Language Selector Default -->
         <div class="hidden md:(flex items-center space-x-2)">
             <UiColorSwitch />
-            <div class="md:(flex dark:bg-dark-800 bg-light-700 px1 py1 rounded-full)">
+            <div
+                class="md:(flex dark:bg-dark-900 bg-light-700 px1 py1 rounded-full border-1 dark:border-dark-400 b-solid border-light-800)">
                 <NuxtLink v-for="locale in availableLocales" @click.prevent.capture="setLocale(locale.code)"
                     :key="locale.code" :aria-label="t('app.sr.lang_select') + locale.name"
                     :to="switchLocalePath(locale.code)"
                     active-class="dark:(bg-white !text-black) text-white bg-black pointer-events-none order-first"
-                    class="dark:text-white text-black decoration-none font-medium text-sm px3 py1 rounded-full dark:hover:bg-dark-300 hover-bg-gray-300 order-1 mr-1">
+                    class="dark:text-white text-black decoration-none font-medium text-sm px3 py1 rounded-full dark:hover:bg-dark-600 hover-bg-gray-300 order-1 mr-1 last:mr-0">
                     {{ locale.name }}
                 </NuxtLink>
             </div>
