@@ -51,10 +51,10 @@
                 <span class="sr-only">{{ t('app.sr.menu') }}</span>
             </Icon>
             <nav
-                :class="Toggle.menu ? 'flex flex-col list-none absolute children:(decoration-none text-black font-medium) bg-white text-black top-12 right-6 p2 rounded-md children:mt1 text-center b-solid b-1 b-gray-300' : 'hidden'">
+                :class="Toggle.menu ? 'flex flex-col list-none absolute children:(decoration-none dark:text-white text-black font-medium) bg-white dark:bg-black dark:b-dark-500 text-black top-12 right-6 p2 rounded-md children:mt1 text-center b-solid b-1 b-gray-300' : 'hidden'">
                 <NuxtLinkLocale v-for="(link, index) in links" :key="index" :to="link.url"
-                    active-class="pointer-events-none order-first !bg-black text-white mt0" :aria-label="t(link.name)"
-                    @click="closeMenu" class="order-1 px4 py2 rounded-md hover:bg-gray-200">
+                    active-class="pointer-events-none order-first dark:(!bg-white !text-black) !bg-black text-white mt0" :aria-label="t(link.name)"
+                    @click="closeMenu" class="order-1 px4 py2 rounded-md hover:bg-gray-200 dark:hover:bg-dark-700">
                     {{ t(link.name) }}
                 </NuxtLinkLocale>
             </nav>
