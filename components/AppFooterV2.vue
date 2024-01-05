@@ -7,14 +7,15 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div v-for="(link, index) in links" :key="index">
                         <NuxtLinkLocale
-                            class="dark:text-white text-black decoration-none hover:(underline underline-offset-6 decoration-2 dark:decoration-brand-light decoration-brand-dark)"
-                            :to=link.url>{{ t(link.name) }}
+                            class="font-medium text-brand-light dark:text-brand-dark decoration-none dark:hover:text-white hover:text-black"
+                            :to=link.url>{{
+                                t(link.name) }}
                         </NuxtLinkLocale>
                     </div>
                 </div>
                 <HomeSocialsCard class="mt-10 md:hidden" />
             </div>
-            <p class="mt-5 font-normal text-sm dark:text-gray-300 text-black">{{ t("Footer") }} <NuxtLinkLocale
+            <p class="mt-5 font-normal text-sm dark:text-gray-300 text-dark-300">{{ t("Footer") }} <NuxtLinkLocale
                     to="/privacy-policy"
                     class="font-semibold decoration-none dark:text-gray-300 text-black hover:(text-brand-dark)">{{
                         t('PP.title') }}</NuxtLinkLocale>
@@ -26,7 +27,7 @@
                 to="https://www.digitalocean.com/?refcode=2cc6381920cd&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"
                 target="_blank">
                 <NuxtImg src="https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%203.svg"
-                    alt="DigitalOcean Referral Badge" loading="lazy" height="65" width="200" />
+                    alt="DigitalOcean Referral Badge" loading="lazy" height="65" width="215" />
             </NuxtLink>
         </div>
     </div>
