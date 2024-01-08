@@ -1,6 +1,6 @@
 <template>
     <div
-        class="mt2 mx4 flex sm:(flex-row justify-between mx6) md:spacy-y-0 flex-col items-center space-y-2 justify-center text-xs font-medium xl:px10 2xl:px20 text-center">
+        class="mx-10 p1 xl:(px5 py2) dark:bg-dark-900 bg-gray-100 rounded-md mt2 mx4 flex sm:(flex-row justify-between mx6) md:space-y-0 flex-col items-center space-y-2 justify-center text-xs font-medium xl:mx10 2xl:mx20 text-center">
         <div class="children:(decoration-none dark:text-white text-black) space-x-4">
             <NuxtLink
                 class="group hover:(underline underline-offset-2 decoration-black dark:decoration-white decoration-2) sm:inline-flex items-center"
