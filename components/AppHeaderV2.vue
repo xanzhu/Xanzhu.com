@@ -10,7 +10,7 @@
                 <NuxtLinkLocale v-for="(link, index) in links" :key="index" :to="link.url"
                     active-class="!underline underline-offset-6 !decoration-3 !dark:decoration-brand-dark !decoration-brand-light"
                     :aria-label="t(link.name)"
-                    class="text-black dark:text-white decoration-none hover:(underline underline-offset-6 decoration-3  dark:decoration-brand-light decoration-brand-dark)"
+                    class="text-white dark:text-black decoration-none hover:(underline underline-offset-6 decoration-3  dark:decoration-brand-light decoration-brand-dark)"
                     v-t="link.name">
                 </NuxtLinkLocale>
             </nav>
