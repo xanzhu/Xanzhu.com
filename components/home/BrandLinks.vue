@@ -1,16 +1,17 @@
 <template>
     <div
-        class="mx-10 p1 xl:(px5 py2) dark:bg-dark-900 bg-gray-100 rounded-md mt2 mx4 flex sm:(flex-row justify-between mx6) md:space-y-0 flex-col items-center space-y-2 justify-center text-xs font-medium xl:mx10 2xl:mx20 text-center">
+        class="mx-2 p1 justify-center space-y-4 mt2 flex flex-col items-center justify-center text-xs font-medium text-center xl:(px5 py2) sm:(flex-row justify-between max-w-[38.5rem] space-y-0 mx-auto) md:(max-w-[46.5rem] px3 py1.5) lg:(max-w-[62.5rem]) children:(dark:(bg-dark-900 text-white b-dark-700) bg-light-400 text-black px4 py1.5 rounded-sm b-1 b-solid b-gray-300)">
         <div class="children:(decoration-none dark:text-white text-black) space-x-4">
             <NuxtLink
-                class="group hover:(underline underline-offset-2 decoration-black dark:decoration-white decoration-2) sm:inline-flex items-center"
+                class="group sm:inline-flex hover:(decoration-2 decoration-brand-light dark:decoration-brand-dark underline underline-offset-3) p0 items-center"
                 v-for="link in urls" :to="link.url" target="_blank">{{ link.name }}
-                <Icon name="ri:external-link-line" class="group-hover:(h3.5 w3.5) ml0.5 -mt-0.5 sm:mt0 h3.5 w3.5 ">
+                <Icon name="ri:external-link-line"
+                    class="group-hover:(dark:text-brand-dark text-brand-light rounded-md) ml0.5 -mt-0.5 sm:mt0 h3.5 w3.5 ">
                 </Icon>
             </NuxtLink>
         </div>
         <client-only>
-            <span>{{ formatDate(locale) }}</span>
+            <span class="">{{ formatDate(locale) }}</span>
         </client-only>
     </div>
 </template>

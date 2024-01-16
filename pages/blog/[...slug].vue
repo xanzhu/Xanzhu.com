@@ -3,7 +3,7 @@
     <article class="dark:(bg-black text-light) bg-white text-black pb-2 sm:(rounded-sm) md:(space-y-10 mb-12)"
       itemtype="https://schema.org/Article" itemscope>
       <BlogPostHeader v-bind:post="post" />
-      <div class="flex flex-col-reverse md:(flex-row space-x-6 space-x-2) mx-auto justify-center">
+      <div class="pt-10 flex flex-col-reverse md:(flex-row space-x-6) space-x-2 mx-auto justify-center">
         <div>
           <ContentRenderer :value="post" itemprop="articleBody"
             class="prose text-sm md:text-lg 2xl:(text-xl) mx-auto px-4 my-4 dark:text-light text-black leading-normal">

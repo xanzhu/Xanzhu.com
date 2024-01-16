@@ -7,7 +7,7 @@
           {{ t("Home.title") }}
         </h1>
         <p
-          class="hidden sm:flex dark:(bg-dark-900 border-dark-600 text-gray-300) bg-light-500 border-solid border-1 rounded-sm p-4 border-gray-200 lg:(max-w-[48rem] ml20)">
+          class="hidden sm:flex dark:(bg-dark-900 border-dark-600 text-gray-300) bg-light-500 border-solid border-1 rounded-sm p-4 border-gray-200 md:(max-w-[44rem] mx-auto) lg:(max-w-[48rem] ml20)">
           {{ t("Home.desc") }}
         </p>
         <div class="flex mx-auto pt-60 sm:hidden xl:(flex mx-auto pt20) 2xl:(pt70)">

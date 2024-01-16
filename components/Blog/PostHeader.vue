@@ -1,5 +1,5 @@
 <template>
-  <header class="lg:(grid-cols-2 mt-15 gap-4 my-4 place-items-center ml-10) grid grid-cols-1">
+  <header class="lg:(grid-cols-2 mt-15 gap-20 my-4 place-items-center) grid grid-cols-1">
     <div class="col-span-1 shrink-0 space-y-2 px-4 mt-5 sm:(px-0 mx-4) mb-3 md:(mt-0)">
       <div v-if="post.tag"
         class="text-sm inline-flex items-center space-x-3 children:(dark:opacity-100 opacity-80 px4 py1.0 rounded-sm b-1 b-solid dark:b-dark-700 dark:bg-dark-900 bg-light-400 dark:text-white text-black b-gray-300)">
@@ -20,16 +20,17 @@
         </h1>
         <p class="dark:op70 op80 lt-sm:text-sm my2" itemprop="description">{{ post.description }}</p>
       </div>
-      <div class="flex flex-col space-y-5">
-        <div class="flex flex-row items-center space-x-2 op90">
+      <div class="flex flex-col">
+        <div class="flex flex-row items-center space-x-2 mt5 op90 flex-wrap">
           <p class="text-sm font-medium m0">Xanzhu</p>
           <p class="dark:text-brand-dark text-brand-light font-black m0">/</p>
           <Date v-if="post.date" :date="post.date" itemprop="datePublished" class="text-sm" />
+          <p class="dark:text-brand-dark text-brand-light font-black m0 ">/</p>
+          <BlogSocialShare v-bind:post="{ _path: post._path, title: post.title }" />
         </div>
-        <BlogSocialShare v-bind:post="{ _path: post._path, title: post.title }" />
       </div>
     </div>
-    <div v-if="post.img" class="relative col-span-1 grow-0 h-auto w-auto px-4 sm:px0 mb-5 md:m4">
+    <div v-if="post.img" class="relative col-span-1 grow-0 h-auto w-auto px-4 sm:px0 mb-5 md:(m4 mr0) lg:(-mr3)">
       <div class="h-auto md:(h-120 w-auto) lg:h-70 w-auto sm:w-md mx-auto lg:w-auto" itemscope
         itemtype="https://schema.org/ImageObject">
         <NuxtImg crossorigin="anonymous" itemprop="image" :src="post.img" :alt="post.alt" :title="post.alt" height="369"
