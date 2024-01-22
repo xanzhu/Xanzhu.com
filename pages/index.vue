@@ -3,7 +3,7 @@
     <div class="flex mt-10 px-4 md:px-12">
       <div class="flex flex-col mx-auto min-h-75vh sm:max-w-6xl md:(space-y-10% h-screen) lg:space-y-10">
         <h1
-          class="font-bold text-4xl mt5 text-center sm:text-6xl  md:(text-7xl max-w-[48rem] mx-auto mt-5rem text-left ml20) xl:(max-w-[55rem]) 2xl:(pt-10)">
+          class="font-bold text-4xl mt5 text-center sm:text-6xl md:(text-7xl max-w-[48rem] mx-auto mt-5rem text-left ml20) xl:(max-w-[55rem]) 2xl:(pt-10)">
           {{ t("Home.title") }}
         </h1>
         <p
