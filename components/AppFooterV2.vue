@@ -1,20 +1,23 @@
 <template>
     <div
-        class="flex flex-row space-x-2 bg-black text-white dark:(bg-white text-black) justify-between p6 md:(p12 pb4) items-center">
+        class="flex flex-row space-x-2 dark:(bg-black text-white) bg-white text-black justify-between p6 md:(p12 pb4) items-center border-t-1 b-0 dark:border-dark-800 border-light-700 b-solid">
         <div class="flex flex-col">
             <div class="flex-col md:(flex-row items-center space-x-10 space-y-0) flex space-y-4">
-                <UiLogo class="dark:text-black text-white" />
+                <UiLogo class="text-black dark:text-white" />
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div v-for="(link, index) in links" :key="index">
                         <NuxtLinkLocale
-                            class="text-white dark:text-black decoration-none hover:(underline underline-offset-6 decoration-2 dark:decoration-brand-light decoration-brand-dark)"
-                            :to=link.url>{{ t(link.name) }}</NuxtLinkLocale>
+                            class="font-medium text-brand-light dark:text-brand-dark decoration-none dark:hover:text-white hover:text-black"
+                            :to=link.url>{{
+                                t(link.name) }}
+                        </NuxtLinkLocale>
                     </div>
                 </div>
                 <HomeSocialsCard class="mt-10 md:hidden" />
             </div>
-            <p class="mt-5 font-normal text-sm">{{ t("Footer") }} <NuxtLinkLocale to="/privacy-policy"
-                    class="font-semibold text-white dark:text-black decoration-none hover:(text-brand-dark)">{{
+            <p class="mt-5 font-normal text-sm dark:text-gray-300 text-dark-300">{{ t("Footer") }} <NuxtLinkLocale
+                    to="/privacy-policy"
+                    class="font-semibold decoration-none dark:text-gray-300 text-black hover:(text-brand-dark)">{{
                         t('PP.title') }}</NuxtLinkLocale>
             </p>
         </div>
@@ -24,7 +27,7 @@
                 to="https://www.digitalocean.com/?refcode=2cc6381920cd&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"
                 target="_blank">
                 <NuxtImg src="https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%203.svg"
-                    alt="DigitalOcean Referral Badge" loading="lazy" height="65" width="200" />
+                    alt="DigitalOcean Referral Badge" loading="lazy" height="65" width="215" />
             </NuxtLink>
         </div>
     </div>
