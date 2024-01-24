@@ -95,4 +95,9 @@ h5 {
     border: 1px solid #333333;
   }
 }
+
+iframe {
+  display: block;
+  margin: 0 auto;
+}
 </style>
