@@ -5,8 +5,7 @@
             <NuxtLink
                 class="group sm:inline-flex hover:(decoration-2 decoration-brand-light dark:decoration-brand-dark underline underline-offset-3) p0 items-center"
                 v-for="link in urls" :to="link.url" target="_blank">{{ link.name }}
-                <Icon name="ri:external-link-line"
-                    class="group-hover:(dark:text-brand-dark text-brand-light rounded-md) ml0.5 -mt-0.5 sm:mt0 h3.5 w3.5 ">
+                <Icon name="ri:external-link-line" class="ml0.5 -mt-0.5 sm:mt0 h3.5 w3.5 ">
                 </Icon>
             </NuxtLink>
         </div>

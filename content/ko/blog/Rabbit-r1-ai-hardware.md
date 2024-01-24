@@ -3,6 +3,7 @@ title: "Rabbit R1: 하드웨어와 AI의 만남"
 description: "번거로움을 없애고 기술 공간 탐색에서 벗어나는 새로운 장치입니다. 더 적은 수의 앱, 더 많은 작업."
 tag: "기술"
 date: "2024-01-25"
+feature: true
 img: "/images/blog/R1/cover.png"
 alt: "Rabbit의 R1 하드웨어 장치 프로모션 이미지"
 ---

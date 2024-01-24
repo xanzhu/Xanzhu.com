@@ -3,6 +3,7 @@ title: "Rabbit R1：硬件遇见人工智能"
 description: "一款全新的设备，可以省去麻烦，让您不再在科技领域中探索。 更少的应用程序，更多的操作。"
 tag: "Technology"
 date: "2024-01-25"
+feature: true
 img: "/images/blog/R1/cover.png"
 alt: "兔子R1硬件设备宣传图"
 ---

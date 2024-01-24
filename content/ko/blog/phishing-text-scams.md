@@ -4,7 +4,6 @@ description: "문자 메시지 사기는 실질적인 문제이지만 피해자�
 img: "/images/blog/sep/17723.png"
 feature: true
 date: "2023-09-04"
-toc: false
 tag: 안전
 alt: "사람이 핸드폰을 들고 있습니다."
 source: "Lindsey LaMont, unsplash"

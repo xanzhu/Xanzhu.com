@@ -4,6 +4,7 @@ description: "A brand new device that takes the hassle and steps out of navigati
 tag: "Technology"
 date: "2024-01-25"
 img: "/images/blog/R1/cover.png"
+feature: true
 alt: "Rabbit's R1 Hardware Device promotion image"
 ---
 
