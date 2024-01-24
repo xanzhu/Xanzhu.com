@@ -4,7 +4,6 @@ description: "Text scams are a real problem, but you don't have to be a victim. 
 img: "/images/blog/sep/17723.png"
 feature: true
 date: "2023-09-04"
-toc: false
 tag: Safety
 alt: "Person holding phone"
 source: "Lindsey LaMont, unsplash"
