@@ -34,7 +34,9 @@ AI가 어떻게 컴퓨터 비전과 통합되고 더 많은 일을 할 수 있�
 
 R1에 대해 자세히 알아보려면 기조연설을 시청하세요.
 
+<div class="ifr">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/22wlLy7hKP4?si=vWN_Iu84Mp2dlDxV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 이것의 좋은 점은 장치가 얼마나 상황을 인식할 수 있는지입니다. 데모에서는 R1에 "내가 늦을 거라고 모두에게 전해 주세요."라는 메시지가 언급되었습니다. 여기서 "모든 사람"이라는 표현이 사용되는 경우는 장치가 해당 상황과 관련된 목록이나 그룹을 제공하지 않고 모든 사람이 누구인지 아는 상황입니다. 이것이 시간이 지남에 따라 어떻게 발전하는지 보는 것은 흥미로울 것입니다.
 
