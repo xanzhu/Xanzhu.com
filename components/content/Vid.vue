@@ -1,7 +1,7 @@
 <template>
   <figure>
     <video class="rounded-md b-1 b-solid rounded-md border-light-5 dark:border-dark-7" muted :autoplay="true" :loop="true"
-      :poster="thumbnail">
+      :controls="false" playsinline :poster="thumbnail">
       <source :src="source" />
     </video>
     <figcaption v-if="credit" v-bind:credit="credit">
