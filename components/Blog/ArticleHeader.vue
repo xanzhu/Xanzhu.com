@@ -3,8 +3,7 @@
         <!-- Tags -->
 
         <!-- Main Heading -->
-        <div class="mx-auto flex flex-col items-start justify-center p1"
-            :class="post.toc ? 'max-w-screen-lg' : 'max-w-screen-md'">
+        <div class="mx-auto flex flex-col items-start justify-center p1">
             <span
                 class="text-sm inline-flex b-1 b-solid dark:b-dark-700 dark:bg-dark-900 bg-light-300 b-light-500 dark:text-white text-black font-medium py-2 px-6">
                 {{ post.tag }}
