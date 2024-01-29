@@ -54,7 +54,7 @@ useHead({
     },
   ],
   meta: [
-    { name: 'naver-site-verification', content: '' }
+    { name: 'naver-site-verification', content: 'efe8928c52c47ffddfbd678ff1ac6fe5ca08b009' }
   ]
 })
 
