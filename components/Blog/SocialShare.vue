@@ -26,7 +26,7 @@ const emailTitle = t('email.share')
 const socials = [
   {
     url: `https://twitter.com/intent/tweet?url=https://xanzhu.com${postPath}&text=${postTitle}&via=Xanzhu1`,
-    icon: "mdi:twitter",
+    icon: "line-md:twitter-x",
     aria: t('share.twitter')
   },
   {
