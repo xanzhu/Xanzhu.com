@@ -2,7 +2,7 @@
   <main v-if="post" class="container mb-4 mx-auto mt10 sm:mt10 md:(px-6 mb-0 mt-15)" role="main">
     <article class="dark:(bg-black text-light) bg-white text-black pb-2 sm:(rounded-sm) md:(space-y-10 mb-12)"
       itemtype="https://schema.org/Article" itemscope>
-      <BlogPostHeader v-bind:post="post" />
+      <BlogArticleHeader v-bind:post="post" />
       <div class="pt-10 flex flex-col-reverse md:(flex-row space-x-6) space-x-2 mx-auto justify-center">
         <div>
           <ContentRenderer :value="post" itemprop="articleBody"
@@ -102,17 +102,18 @@ h5 {
 } */
 
 .ifr {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio */
+  height: 0;
 }
 
 .ifr iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 </style>
