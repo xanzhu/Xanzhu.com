@@ -20,7 +20,7 @@ feature: true
 
 在点击该视频初次看到该广告后，我们会看到一个快速动作视频，描述：“作为观看者，您如何赚到 X 笔钱！”，并将观看者引向评论部分。
 
-<Media source="/images/blog/PS/j2-3.png" alt="YouTube 的广告报告对话框，其中包含有关广告商的信息以及报告或阻止的选项"></Media>
+<Media source="/images/blog/PS/j2-2.png" alt="YouTube 评论部分，广告商评论钓鱼网站的链接"></Media>
 
 在评论中，固定评论或点赞评论将提供指向旨在收集用户信息（称为网络钓鱼诈骗）的网站的链接。
 
@@ -32,7 +32,7 @@ feature: true
 
 这种情况已经发生很长时间了，它遵循相同的视频缩略图、相同的视频和相似的网站设计的结构。 宣传这些骗局的广告商在 YouTube 的广告商平台上进行了验证，并且通常是同一群人。
 
-<Media source="/images/blog/PS/j2-2.png" alt="YouTube 评论部分，广告商评论钓鱼网站的链接"></Media>
+<Media source="/images/blog/PS/j2-3.png" alt="YouTube 的广告报告对话框，其中包含有关广告商的信息以及报告或阻止的选项"></Media>
 
 通过 Google 的透明度服务查看广告商的广告，没有发现来自用户的广告。 托管视频的 YouTube 频道经常被删除并被类似的频道取代。
 
