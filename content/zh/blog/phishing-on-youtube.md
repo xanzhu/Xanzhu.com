@@ -5,6 +5,7 @@ img: "/images/blog/PS/j2-cover-2.png"
 description: "探索网络钓鱼诈骗如何设法将自己推广到 YouTube 主页、逃避检测并给用户带来风险。"
 tag: "网络钓鱼"
 alt: "人行横道标志的图像，在黑白设置中显示突出显示的红手"
+feature: true
 ---
 
 最近，我一直在收集信息并报告 YouTube 主页上出现的一个非常特殊的广告。 这是一个高度针对性和推广性的广告，将自己置于主页的第一个位置，使其看起来像一个合法的视频。
@@ -54,9 +55,9 @@ alt: "人行横道标志的图像，在黑白设置中显示突出显示的红�
 5. 向 Google、Microsoft 安全浏览服务报告域名
 6. 直接向域名提供商报告域名
 
-调查广告商是否可以通过 Google 的 <PageLink title="Ad Transparency Service" url="https://adstransparency.google.com/?region=anywhere"></PageLink> 进行举报，我们可以在举报时获取广告商的名称 YouTube 上的广告。 该工具很有用，但在该骗局的背景下，它在调查时不会显示任何相关广告。
+调查广告商是否可以通过 Google 的 <PageLink title="广告透明度服务" url="https://adstransparency.google.com/?region=anywhere"></PageLink> 进行举报，我们可以在举报时获取广告商的名称 YouTube 上的广告。 该工具很有用，但在该骗局的背景下，它在调查时不会显示任何相关广告。
 
-向 Google 的 <PageLink title="Safe Browser Report" url="https://safebrowsing.google.com/safebrowsing/report_phish/?hl=en"></PageLink> 或 Microsoft 的 <PageLink title= 等网站报告的方法 “安全情报”url="https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest"></PageLink>。 这些报告工具在采取任何行动之前往往依赖于多个报告。
+向 Google 的 <PageLink title="安全浏览器报告" url="https://safebrowsing.google.com/safebrowsing/report_phish/?hl=en"></PageLink> 或 Microsoft 的 <PageLink title="等网站报告的方法 安全情报" url="https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest"></PageLink>。 这些报告工具在采取任何行动之前往往依赖于多个报告。
 
 检查现有检测的 URL 可以通过使用 <PageLink title="VirusTotal" url="https://www.virustotal.com/gui/home/url"></PageLink> 并提交 URL 进行分析来完成。 这是一个很好的工具，可以集体查看该域是否已被其他安全供应商报告。
 
@@ -76,6 +77,6 @@ alt: "人行横道标志的图像，在黑白设置中显示突出显示的红�
 
 这仍然是一场举报广告和视频以及直接举报列出的每个域的持续战斗。 说我们可以捕获所有这些是不现实的，但我们可以尝试减少我们遇到的任何情况。
 
-我们现在面临的主要问题是人工智能的引入使得诈骗变得更容易，相比之下，这种网络钓鱼诈骗在互联网上漂浮的人工智能视频范围内微不足道。 好处是 YouTube <PageLink title="investing more" url="https://www.theverge.com/2024/1/25/24050443/youtube-is-investing-heavily-in-its-ability-to -stop-ai-celebrity-scam-ads"></PageLink>。
+我们现在面临的主要问题是人工智能的引入使得诈骗变得更容易，相比之下，这种网络钓鱼诈骗在互联网上漂浮的人工智能视频范围内微不足道。 好处是 YouTube <PageLink title="投资更多" url="https://www.theverge.com/2024/1/25/24050443/youtube-is-investing-heavily-in-its-ability-to -stop-ai-celebrity-scam-ads"></PageLink>。
 潜在地减少人工智能生成的内容宣传诈骗的数量，请阅读 <PageLink title="404Media" url="https://www.404media.co/youtube-deletes-1-000-videos-of-celebrity- 的更多信息 ai-诈骗广告/
 "></页面链接>。

@@ -5,6 +5,7 @@ img: "/images/blog/PS/j2-cover-2.png"
 description: "Explore how a phishing scam manages to promote itself to the YouTube Homepage, evading detection and posing a risk to users."
 tag: "Phishing"
 alt: "Image of a crossing walk sign showing highlighted red hand in black and white setting"
+feature: true
 ---
 
 Recently I've been collecting information and reporting a very particular ad appearing on the home page of YouTube. It's a highly targeted and promoted ad that places itself in the first position of the home page making it look like a legitimate video.
@@ -68,19 +69,14 @@ Here is an example of what we usually see in the wild
 
 Reporting the domain the first thing to do is see the <PageLink title="whois" url="https://whois.domaintools.com/"></PageLink> of the domain this will tell us who the domain provider is, and then it can be reported directly to their abuse email address.
 
-Phishing isn't new on YouTube and we've seen more aggressive solutions previously in comment sections powered by bots spamming links to external websites, Telegram Numbers and more impersonating the creator. <PageLink title="The Verge" url="https://www.theverge.com/2022/4/8/23016861/youtube-comment-spam-testing-moderation"></PageLink> covered this a while back over the frustrations experienced by YouTubers. 
+Phishing isn't new on YouTube and we've seen more aggressive solutions previously in comment sections powered by bots spamming links to external websites, Telegram Numbers and more impersonating the creator. <PageLink title="The Verge" url="https://www.theverge.com/2022/4/8/23016861/youtube-comment-spam-testing-moderation"></PageLink> covered this a while back over the frustrations experienced by YouTubers.
 
 While this has reduced significantly some still slip through the cracks of YouTube's Spam Bot Detection System. This type of scam we're seeing has likely been operating for a very long time rarely gaining traction.
 
 General advice on phishing is to avoid clicking on the links and avoid entering any information such as logins or similar as this is the point of the scam. Information will lead to account takeovers and more. Learn more about implementing better authentication practices using <PageLink title="2FA" url="https://xanzhu.com/blog/2fa-protect-against-phishing-scams"></PageLink>.
 
-This continues to be an ongoing battle of reporting the ads, and the videos and directly reporting each domain listed. It's unrealistic to say we could catch them all but we can try to reduce any we come across. 
+This continues to be an ongoing battle of reporting the ads, and the videos and directly reporting each domain listed. It's unrealistic to say we could catch them all but we can try to reduce any we come across.
 
 The major problem we are facing now is the introduction of AI making it easier to establish scams, in comparison, this phishing scam is minuscule in the range of AI Videos floating on the internet. The good thing is YouTube is <PageLink title="investing more" url="https://www.theverge.com/2024/1/25/24050443/youtube-is-investing-heavily-in-its-ability-to-stop-ai-celebrity-scam-ads"></PageLink>.
- to potentially reduce the amount of AI-generated content-promoting scams read more on <PageLink title="404Media" url="https://www.404media.co/youtube-deletes-1-000-videos-of-celebrity-ai-scam-ads/
+to potentially reduce the amount of AI-generated content-promoting scams read more on <PageLink title="404Media" url="https://www.404media.co/youtube-deletes-1-000-videos-of-celebrity-ai-scam-ads/
 "></PageLink>.
-
-
-
-
-
