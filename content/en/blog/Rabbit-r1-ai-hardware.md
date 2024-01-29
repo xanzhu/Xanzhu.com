@@ -40,7 +40,7 @@ Watch the keynote to learn more about the R1:
 
 A good point of this is how context-aware the device could be. The demo mentioned a prompt to the R1 stating, "Tell everyone I'm going to be late." Where the usage of "everyone" comes into play here is in what context does the device know who everyone is without providing a list or a group of people relevant to the context. It will be interesting to see how this develops over time.
 
-### Specs
+## Specs
 
 - Dimensions: 78mm78mm13mm / 3in3in0.5in
 - Weight: 115g

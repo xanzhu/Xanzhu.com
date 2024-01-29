@@ -53,6 +53,9 @@ useHead({
       media: "(prefers-color-scheme:dark)",
     },
   ],
+  meta: [
+    { name: 'naver-site-verification', content: '' }
+  ]
 })
 
 useSeoMeta({

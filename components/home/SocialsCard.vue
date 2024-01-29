@@ -20,7 +20,7 @@ const links = [
   },
   {
     url: "https://twitter.com/xanzhu1",
-    icon: "mdi:twitter",
+    icon: "line-md:twitter-x",
     name: "Twitter",
   },
   {

@@ -70,7 +70,6 @@ const availableLocales = computed(() => {
     return locales.value.filter((i) => i.code);
 });
 
-
 const Toggle = ref({
     menu: false,
     lang: false
