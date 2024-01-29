@@ -5,7 +5,6 @@ tag: "Apple"
 img: /images/blog/wwdc/WWDC.png
 description: "Latest announcements and releases from Apple's Worldwide Developer conference."
 toc: true
-feature: true
 alt: "WWDC 2023"
 source: Apple
 ---

@@ -5,7 +5,6 @@ tag: "Apple"
 img: /images/blog/wwdc/WWDC.png
 description: "Apple 全球开发者大会的最新公告和发布。"
 toc: true
-feature: true
 alt: "WWDC 2023"
 source: "Apple"
 ---
