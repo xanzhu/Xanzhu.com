@@ -22,8 +22,9 @@
                 </div>
             </div>
             <figure class="w-full h-auto mx-auto">
-                <NuxtImg :src="post.img" :alt="post.alt" class="w-full h-auto object-cover rounded-md mt0 md:mt-10" />
-                <figcaption class="dark:(text-white opacity-60) text-dark-700 op90 text-xs tracking-wide">
+                <NuxtImg :src="post.img" :alt="post.alt" class="w-full h-auto object-cover rounded-md mt0 md:mt-5" />
+                <figcaption v-if="post.source"
+                    class="dark:(text-white opacity-60) text-dark-700 op90 text-xs tracking-wide">
                     <p class="inline-block m0" />
                     {{ t("Blog.source") + ": " + post.source }}
                 </figcaption>
