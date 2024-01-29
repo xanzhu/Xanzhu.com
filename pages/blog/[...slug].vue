@@ -96,16 +96,10 @@ h5 {
   }
 }
 
-/* iframe {
-  display: block;
-  margin: 0 auto;
-} */
-
 .ifr {
   position: relative;
   width: 100%;
   padding-bottom: 56.25%;
-  /* 16:9 aspect ratio */
   height: 0;
 }
 
