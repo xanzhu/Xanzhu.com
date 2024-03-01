@@ -52,6 +52,10 @@ useHead({
       sizes: "32x32",
       media: "(prefers-color-scheme:dark)",
     },
+    {
+      rel: "icon",
+      href: "/favicon.ico",
+    },
   ],
   meta: [
     { name: 'naver-site-verification', content: '' }

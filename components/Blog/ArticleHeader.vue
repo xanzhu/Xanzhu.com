@@ -22,7 +22,9 @@
                 </div>
             </div>
             <figure class="w-full h-auto mx-auto">
-                <NuxtImg :src="post.img" :alt="post.alt" class="w-full h-auto object-cover rounded-md mt0 md:mt-5" />
+                <NuxtImg v-if="post.img" :src="post.img" :alt="post.alt"
+                    class="w-full h-auto object-cover rounded-md mt0 md:mt-5" />
+                <NuxtImg v-else src="/images/resources/a11y.webp" class="w-full h-auto object-cover rounded-md" />
                 <figcaption v-if="post.source"
                     class="dark:(text-white opacity-60) text-dark-700 op90 text-xs tracking-wide">
                     <p class="inline-block m0" />
