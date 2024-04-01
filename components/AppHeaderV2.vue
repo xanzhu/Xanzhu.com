@@ -23,7 +23,7 @@
                 <NuxtLink v-for="locale in availableLocales" @click.prevent.capture="setLocale(locale.code)"
                     :key="locale.code" :aria-label="t('app.sr.lang_select') + locale.name"
                     :to="switchLocalePath(locale.code)"
-                    active-class="dark:(bg-white !text-black) text-white bg-black pointer-events-none order-first"
+                    active-class="dark:(!bg-white !text-black) !text-white !bg-black pointer-events-none order-first"
                     class="dark:text-white text-black decoration-none font-medium text-sm px3 py1 rounded-full dark:hover:bg-dark-600 hover-bg-gray-300 order-1 mr-1 last:mr-0">
                     {{ locale.name }}
                 </NuxtLink>
@@ -33,7 +33,8 @@
         <!-- Mobile Menu -->
         <div class="md:hidden flex space-x-3 items-center">
             <UiColorSwitch />
-            <Icon name="tabler:language" class="cursor-pointer h5 w5" :aria-label="t('app.sr.lang')" @click="langToggle">
+            <Icon name="tabler:language" class="cursor-pointer h5 w5" :aria-label="t('app.sr.lang')"
+                @click="langToggle">
                 <span class="sr-only">{{ t('app.sr.lang') }}</span>
             </Icon>
             <div
@@ -46,7 +47,8 @@
                     {{ locale.name }}
                 </NuxtLink>
             </div>
-            <Icon name="tabler:menu" class="h6 w6 cursor-pointer inline-flex items-center p-2 text-sm rounded-lg md:hidden"
+            <Icon name="tabler:menu"
+                class="h6 w6 cursor-pointer inline-flex items-center p-2 text-sm rounded-lg md:hidden"
                 @click="openMenu">
                 <span class="sr-only">{{ t('app.sr.menu') }}</span>
             </Icon>
