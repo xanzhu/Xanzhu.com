@@ -11,7 +11,7 @@
     </div>
 </template>
 <script setup>
-import { getWeather } from '~/lib/w.js';
+import { getWeather } from '~/lib/weather.js';
 
 const weatherData = ref(null);
 const { locale } = useI18n();
