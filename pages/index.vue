@@ -30,3 +30,38 @@
         <HomeStatsCard class="min-h-screen" />
     </main>
 </template>
+<script setup lang="ts">
+const { t } = useI18n();
+
+const seoTitle = computed(() => {
+    return t('Home.Seo.title');
+});
+
+const seoDesc = computed(() => {
+    return t('Home.Seo.desc');
+});
+
+const seoImage = 'https://source.unsplash.com/IayKLkmz6g0';
+
+useSeoMeta({
+    title: seoTitle,
+    description: seoDesc,
+    ogTitle: seoTitle,
+    ogDescription: seoDesc,
+    ogImage: seoImage,
+    twitterTitle: seoTitle,
+    twitterDescription: seoDesc,
+    twitterImage: seoImage,
+    titleTemplate: 'Xanzhu - %s',
+})
+
+// URL Validation | Redirection for "/?<example>" (Temp Fix)
+definePageMeta({
+    validate(route) {
+        if (route.fullPath.includes('?')) {
+            throw createError({ statusCode: 404 });
+        }
+        return true;
+    },
+})
+</script>
