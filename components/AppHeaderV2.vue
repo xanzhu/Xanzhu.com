@@ -1,6 +1,6 @@
 <template>
     <header
-        class="flex justify-between items-center dark:(text-black bg-white) text-white bg-black md:p3 px4 py2 mx-auto md:px-6 xl:px10 2xl:px20 border-b-1 b-0 border-light-700 dark:border-dark-800 b-solid">
+        class="flex justify-between items-center dark:(text-black bg-white) text-white bg-black md:p3 px4 py2 mx-auto md:px-6 xl:px10 2xl:px20">
         <div class="flex md:space-x-10">
             <NuxtLinkLocale to="/" class="mx-auto text-center text-white dark:text-black">
                 <UiIconXanzhu class="h6" :aria-label="t('a11y.logo')" />

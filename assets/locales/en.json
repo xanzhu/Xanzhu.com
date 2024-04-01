@@ -1,6 +1,9 @@
 {
   "Home": {
     "title": "Privacy, Security and everything in between.",
+    "subhead": "Navigating Technology with confidence",
+    "cta-1": "Explore",
+    "cta-2": "Get Updates",
     "desc": "At Xanzhu, we help you use technology safely and protect your data online. Learn from our articles, guides, and reviews on topics like VPNs, password managers, two-factor authentication, and more.",
     "Seo": {
       "title": "News, Guides on Technology, Privacy and Security",
@@ -11,7 +14,8 @@
     },
     "release": "New Releases",
     "more": "Explore More Articles",
-    "tag": "Leading the future"
+    "tag": "Leading the future",
+    "weatherLoad": "Loading"
   },
   "Links": {
     "resources": "Resources",
