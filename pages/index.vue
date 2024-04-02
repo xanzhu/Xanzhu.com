@@ -4,7 +4,7 @@
             <UiSvg loadSVG="landing-1" class="hidden md:flex" />
             <UiSvg loadSVG="landing-2" class="op60 md:op100" />
             <div class="flex flex-col items-center justify-center h-full z-0 text-center pt-70">
-                <h1 class="text-6xl max-w-screen-md mx5 sm:(text-8xl max-w-screen-lg text-center mx0 -mt-20) m0 -mt-40">
+                <h1 class="text-6xl max-w-screen-md mx5 sm:(text-8xl max-w-screen-lg text-center mx4 -mt-20) m0 -mt-40">
                     {{
                         $t("Home.title")
                     }}</h1>
@@ -25,7 +25,7 @@
             </div>
         </div>
         <HomeCompany />
-        <BlogFeature class="min-h-screen" />
+        <HomeArticleFeature class="min-h-screen" />
         <HomePagesCard class="my-20" />
         <HomeStatsCard class="min-h-screen" />
     </main>

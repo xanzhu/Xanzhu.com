@@ -176,5 +176,8 @@
     "section-two": "Because our site contains links to third-party websites, we cannot prevent tracking outside of our domain.",
     "section-three": "Usage data that your browser provides (User-Agent), includes IP addresses, browsers and devices used. This data is used for metrics and server communications.",
     "date": "Modified"
+  },
+  "home": {
+    "latest": "RECENT POSTS"
   }
 }
