@@ -7,6 +7,7 @@ description: "Parallels 또는 UTM을 사용하여 Apple Silicon Mac에서 가�
 alt: "Apple 실리콘 칩셋 M1"
 toc: true
 ogLink: "https://source.unsplash.com/mP7aPSUm7aE"
+feature: true
 ---
 
 ::alert

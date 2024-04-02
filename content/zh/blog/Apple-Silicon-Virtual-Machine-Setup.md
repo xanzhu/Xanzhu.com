@@ -7,6 +7,7 @@ description: "了解如何使用 Parallels 或 UTM 在 Apple Silicon Mac 上设�
 alt: "Apple Silicon 芯片组 M1"
 toc: true
 ogLink: "https://source.unsplash.com/mP7aPSUm7aE"
+feature: true
 ---
 
 ::alert

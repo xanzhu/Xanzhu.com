@@ -9,6 +9,7 @@ toc: true
 ogLink: "https://source.unsplash.com/JySoEnr-eOg"
 alt: "Icons of popular web browsers"
 source: Denny Müller, Unsplash
+feature: true
 ---
 
 Finding the perfect browser for your ecosystem can be a challenging process. Whether you've been using Chrome for years or haven't strayed away from your device's built-in browser, there are options available that may improve various aspects of your web browsing experience such as performance, security, accessibility, or better built-in tools and features.
