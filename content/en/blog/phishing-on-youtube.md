@@ -20,7 +20,7 @@ The perfect placement for a scam. Usually, this ad will appear next to random vi
 
 After the initial exposure to this ad upon clicking on this video we're given a fast-action video describing: "How you as a viewer can earn X amount of money!", and referring the viewer to the comment section.
 
-<Media source="/images/blog/PS/j2-2.png" alt="Youtube Comment section where the advertiser comments a link to a phishing website"></Media>
+<Media source="/images/blog/PS/j2-3.png" alt="Youtube's Ad Reporting Dialog Box with information about advertiser and options to report or block"></Media>
 
 In the comments, the pinned comment or liked comment will provide a link to a website designed to collect user information known as a phishing scam.
 
@@ -32,7 +32,7 @@ As the video is unlisted it appears out of public view unless the ad is being pr
 
 This has been happening for a very long time it follows the structure of the same video thumbnail, same video and similar website design. The advertisers promoting these scams are verified on YouTube's Advertiser platform and are usually the same set of people.
 
-<Media source="/images/blog/PS/j2-3.png" alt="Youtube's Ad Reporting Dialog Box with information about advertiser and options to report or block"></Media>
+<Media source="/images/blog/PS/j2-2.png" alt="Youtube Comment section where the advertiser comments a link to a phishing website"></Media>
 
 Reviewing the advertiser's ads through Google's Transparency service there are no ads found from the user. The YouTube channel that hosts the videos often gets taken down and replaced with a similar channel.
 

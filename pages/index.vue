@@ -1,57 +1,67 @@
 <template>
-  <main class="flex flex-col justify-center">
-    <div class="flex mt-10 px-4 md:px-12">
-      <div class="flex flex-col mx-auto min-h-75vh sm:max-w-6xl md:(space-y-10% h-screen) lg:space-y-10">
-        <h1
-          class="font-bold text-4xl mt5 text-center sm:text-6xl md:(text-7xl max-w-[48rem] mx-auto mt-5rem text-left ml20) xl:(max-w-[55rem]) 2xl:(pt-10)">
-          {{ t("Home.title") }}
-        </h1>
-        <p
-          class="hidden sm:flex dark:(bg-dark-900 border-dark-600 text-gray-300) bg-light-500 border-solid border-1 rounded-sm p-4 border-gray-200 md:(max-w-[44rem] mx-auto) lg:(max-w-[48rem] ml20)">
-          {{ t("Home.desc") }}
-        </p>
-        <div class="flex mx-auto pt-60 sm:hidden xl:(flex mx-auto pt20) 2xl:(pt70)">
-          <HomeMouseIcon class="animate-bounce" role="presentation" :aria-label="t('Home.a11y.mouseicon')" />
+    <main class="flex flex-col justify-center">
+        <div class="relative min-h-screen flex justify-center">
+            <UiSvg loadSVG="landing-1" class="hidden md:flex" />
+            <UiSvg loadSVG="landing-2" class="op60 md:op100" />
+            <div class="flex flex-col items-center justify-center h-full z-0 text-center pt-60">
+                <h1 class="text-6xl max-w-screen-md mx5 sm:(text-8xl max-w-screen-lg text-center mx4 -mt-20) m0 -mt-40">
+                    {{
+                        $t("Home.title")
+                    }}</h1>
+                <div class="mt-20">
+                    <h2 class="text-xl font-thin dark:text-gray-300 text-dark-8">{{ $t("Home.subhead") }}</h2>
+                    <div class="flex flex-col space-y-5 justify-center sm:(flex-row space-y-0 space-x-4)">
+                        <NuxtLinkLocale to="/blog"
+                            class="no-underline px-5 sm:px-10 py-3 dark:(bg-white text-black) bg-black text-white rounded-full border-none font-semibold hover:(cursor-pointer bg-[#0000ff] text-white) bg-[#0000ff]">
+                            {{
+                        $t("Home.cta-1") }}</NuxtLinkLocale>
+                        <NuxtLinkLocale to="/about"
+                            class="no-underline px-5 sm:px-10 py-3 bg-transparent b-1 b-solid rounded-full dark:(text-white b-white) font-semibold hover:(cursor-pointer border-[#0000ff]  text-[#0000ff]) dark:hover:(text-[#0067d4] b-[#0067d4]) text-black">
+                            {{ $t("Home.cta-2") }}
+                        </NuxtLinkLocale>
+                    </div>
+                </div>
+                <UiSvg loadSVG="landing-3" class="hidden lg:flex" />
+            </div>
         </div>
-      </div>
-    </div>
-    <BlogFeature class="min-h-screen" />
-    <HomePagesCard class="my-20" />
-    <HomeStatsCard class="min-h-screen" />
-  </main>
+        <HomeCompany />
+        <HomeArticleFeature class="min-h-screen" />
+        <HomePagesCard class="my-20" />
+        <HomeStatsCard class="min-h-screen" />
+    </main>
 </template>
 <script setup lang="ts">
 const { t } = useI18n();
 
 const seoTitle = computed(() => {
-  return t('Home.Seo.title');
+    return t('Home.Seo.title');
 });
 
 const seoDesc = computed(() => {
-  return t('Home.Seo.desc');
+    return t('Home.Seo.desc');
 });
 
 const seoImage = 'https://source.unsplash.com/IayKLkmz6g0';
 
 useSeoMeta({
-  title: seoTitle,
-  description: seoDesc,
-  ogTitle: seoTitle,
-  ogDescription: seoDesc,
-  ogImage: seoImage,
-  twitterTitle: seoTitle,
-  twitterDescription: seoDesc,
-  twitterImage: seoImage,
-  titleTemplate: 'Xanzhu - %s',
+    title: seoTitle,
+    description: seoDesc,
+    ogTitle: seoTitle,
+    ogDescription: seoDesc,
+    ogImage: seoImage,
+    twitterTitle: seoTitle,
+    twitterDescription: seoDesc,
+    twitterImage: seoImage,
+    titleTemplate: 'Xanzhu - %s',
 })
 
 // URL Validation | Redirection for "/?<example>" (Temp Fix)
 definePageMeta({
-  validate(route) {
-    if (route.fullPath.includes('?')) {
-      throw createError({ statusCode: 404 });
-    }
-    return true;
-  },
+    validate(route) {
+        if (route.fullPath.includes('?')) {
+            throw createError({ statusCode: 404 });
+        }
+        return true;
+    },
 })
 </script>

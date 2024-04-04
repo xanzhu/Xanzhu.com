@@ -11,7 +11,7 @@
   </Head>
   <div class="m0 font-sans dark:(bg-black text-white) text-black bg-white">
     <AppHeaderV2 class="sticky top-0 z-1" />
-    <HomeBrandLinks />
+    <UiInfoBar />
     <NuxtPage />
     <AppFooterV2 />
   </div>
@@ -51,6 +51,10 @@ useHead({
       href: "/images/favicon/favicon-dark.png",
       sizes: "32x32",
       media: "(prefers-color-scheme:dark)",
+    },
+    {
+      rel: "icon",
+      href: "/favicon.ico",
     },
   ],
   meta: [
