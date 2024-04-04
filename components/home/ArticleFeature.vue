@@ -6,9 +6,8 @@
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 grid-rows-3 gap-4 justify-items-center px6 md:px25 lg:px45 md:max-w-5xl max-w-lg children:(b-1 b-solid rounded-lg border-dark-700)"
             v-if="features">
-            <div v-for="(feature, index) in features.slice(0, 3) " :key="index">
-                <div class="col-span-1 p-5 group hover:b-[#0000ff] dark:text-white cursor-pointer"
-                    v-if="features && features[index]">
+            <div v-for="(feature, index) in features.slice(0, 3) " :key="index" class="group hover:b-[#0000ff]">
+                <div class="col-span-1 p-5 dark:text-white cursor-pointer" v-if="features && features[index]">
                     <NuxtLinkLocale class="group-hover no-underline dark:text-white text-black" :to="feature._path">
                         <span class="text-sm op-60">{{ feature.tag }}</span>
                         <h3>{{ feature.title }}</h3>
@@ -21,9 +20,8 @@
                 <NuxtImg :src="features[1].img" :alt="features[1].alt" class="object-cover h-full w-full rounded-lg" />
             </div>
 
-            <div v-for="(feature, index) in features.slice(3, 6)" :key="index">
-                <div class="col-span-1 p-5 group hover:b-[#0000ff] dark:text-white cursor-pointer"
-                    v-if="features && features[index + 3]">
+            <div v-for="(feature, index) in features.slice(3, 6)" :key="index" class="group hover:b-[#0000ff]">
+                <div class="col-span-1 p-5 dark:text-white cursor-pointer" v-if="features && features[index + 3]">
                     <NuxtLinkLocale class="group-hover no-underline dark:text-white text-black" :to="feature._path">
                         <span class="text-sm op-60">{{ feature.tag }}</span>
                         <h3>{{ feature.title }}</h3>
