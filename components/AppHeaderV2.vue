@@ -38,7 +38,7 @@
                 <span class="sr-only">{{ t('app.sr.lang') }}</span>
             </Icon>
             <div
-                :class="Toggle.lang ? 'flex flex-col list-none absolute children:(decoration-none dark:text-white text-black font-medium) dark:bg-dark-900 bg-white top-12 right-17 p2 rounded-md children:mt1 text-center b-solid b-1 dark:b-dark-500 b-gray-300' : 'hidden'">
+                :class="Toggle.lang ? 'flex flex-col list-none absolute children:(decoration-none dark:text-white text-black font-medium) dark:bg-dark-900 bg-white top-12 right-17 p2 rounded-md children:mt1 text-center b-solid b-1 dark:b-dark-500 b-gray-300 dark:text-white text-black' : 'hidden'">
                 <NuxtLink v-for="(locale, index) in availableLocales" @click.prevent.capture="setLocale(locale.code)"
                     :key="`x-${index}`" :aria-label="t('app.sr.lang_select') + locale.name" @click="langToggle"
                     :to="switchLocalePath(locale.code)"
