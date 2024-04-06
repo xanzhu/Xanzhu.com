@@ -24,7 +24,7 @@
                     :key="locale.code" :aria-label="t('app.sr.lang_select') + locale.name"
                     :to="switchLocalePath(locale.code)"
                     active-class="dark:(!bg-white !text-black) !text-white !bg-black pointer-events-none order-first"
-                    class="dark:text-white text-black decoration-none font-medium text-sm px3 py1 rounded-full dark:hover:bg-dark-600 hover-bg-gray-300 order-1 mr-1 last:mr-0">
+                    class="dark:!text-white !text-black decoration-none font-medium text-sm px3 py1 rounded-full dark:hover:bg-dark-600 hover-bg-gray-300 order-1 mr-1 last:mr-0">
                     {{ locale.name }}
                 </NuxtLink>
             </div>
