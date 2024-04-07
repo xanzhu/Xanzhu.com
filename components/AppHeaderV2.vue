@@ -42,7 +42,7 @@
                 <NuxtLink v-for="(locale, index) in availableLocales" @click.prevent.capture="setLocale(locale.code)"
                     :key="`x-${index}`" :aria-label="t('app.sr.lang_select') + locale.name" @click="langToggle"
                     :to="switchLocalePath(locale.code)"
-                    class="dark:text-white decoration-none font-medium px3 py1 order-1 dark:hover:bg-dark-500 hover:bg-gray-100 rounded-md dark:text-dark-900"
+                    class="!dark:text-white decoration-none font-medium px3 py1 order-1 dark:hover:bg-dark-500 hover:bg-gray-100 rounded-md dark:text-dark-900"
                     active-class="bg-black !text-white !dark:(text-black bg-white) pointer-events-none order-first mt0">
                     {{ locale.name }}
                 </NuxtLink>
