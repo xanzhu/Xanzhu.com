@@ -23,8 +23,8 @@
                 <NuxtLink v-for="locale in availableLocales" @click.prevent.capture="setLocale(locale.code)"
                     :key="locale.code" :aria-label="t('app.sr.lang_select') + locale.name"
                     :to="switchLocalePath(locale.code)"
-                    active-class="dark:(!bg-white !text-black) !text-white !bg-black pointer-events-none order-first"
-                    class="dark:!text-white !text-black decoration-none font-medium text-sm px3 py1 rounded-full dark:hover:bg-dark-600 hover-bg-gray-300 order-1 mr-1 last:mr-0">
+                    active-class="!dark:(bg-white text-black) text-white bg-black pointer-events-none order-first"
+                    class="dark:text-white text-black decoration-none font-medium text-sm px3 py1 rounded-full dark:hover:bg-dark-600 hover-bg-gray-300 order-1 mr-1 last:mr-0">
                     {{ locale.name }}
                 </NuxtLink>
             </div>
@@ -42,8 +42,8 @@
                 <NuxtLink v-for="(locale, index) in availableLocales" @click.prevent.capture="setLocale(locale.code)"
                     :key="`x-${index}`" :aria-label="t('app.sr.lang_select') + locale.name" @click="langToggle"
                     :to="switchLocalePath(locale.code)"
-                    class="text-black decoration-none font-medium px3 py1 order-1 dark:hover:bg-dark-500 hover:bg-gray-100 rounded-md dark:text-dark-900"
-                    active-class="bg-black !text-white dark:(!text-black bg-white) pointer-events-none order-first mt0">
+                    class="dark:text-white decoration-none font-medium px3 py1 order-1 dark:hover:bg-dark-500 hover:bg-gray-100 rounded-md dark:text-dark-900"
+                    active-class="bg-black !text-white !dark:(text-black bg-white) pointer-events-none order-first mt0">
                     {{ locale.name }}
                 </NuxtLink>
             </div>
