@@ -140,7 +140,7 @@
   },
   "Alert": {
     "feature": "Feature Preview",
-    "maintenance": "Excuse our appearance! This page is currently under construction and may look a little different when it's finished.",
+    "maintenance": "This page is currently under construction and may look a little different when it's finished.",
     "view": "View latest version"
   },
   "app": {
