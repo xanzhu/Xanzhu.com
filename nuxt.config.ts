@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     "nuxt-icon",
     "nuxt-simple-robots",
     "@nuxt/image",
+    "nitro-cloudflare-dev",
   ],
 
   colorMode: {
@@ -83,5 +84,10 @@ export default defineNuxtConfig({
     public: {
       WEATHER_API: process.env.WEATHER_API,
     },
+  },
+
+  // CF TEST
+  nitro: {
+    preset: "cloudflare-pages",
   },
 });
