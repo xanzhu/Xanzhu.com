@@ -70,7 +70,8 @@ export default defineNuxtConfig({
     "/blog/**": { isr: true },
   },
 
-  plugins: [{ src: "~/plugins/vercel.ts", mode: "client" }],
+  // DISABLED - Testing Cloudflare !
+  // plugins: [{ src: "~/plugins/vercel.ts", mode: "client" }],
 
   image: {
     domains: ["source.unsplash.com"],
@@ -86,7 +87,7 @@ export default defineNuxtConfig({
     },
   },
 
-  // CF TEST
+  // CF TEST - PASS
   nitro: {
     preset: "cloudflare-pages",
   },
