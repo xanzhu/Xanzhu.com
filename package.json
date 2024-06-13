@@ -21,7 +21,7 @@
     "@nuxtjs/sitemap": "^5.2.0",
     "@types/node": "^20.14.1",
     "@unocss/nuxt": "^0.58.9",
-    "@unocss/preset-typography": "^0.58.9",
+    "@unocss/preset-typography": "^0.60.3",
     "@unocss/preset-uno": "^0.58.9",
     "@unocss/preset-web-fonts": "^0.58.9",
     "@unocss/transformer-directives": "^0.58.9",
