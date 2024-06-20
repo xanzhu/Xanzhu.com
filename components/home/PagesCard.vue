@@ -5,7 +5,7 @@
                 <div class="h-[208px] sm:w-[308px]">
                     <NuxtImg :src="page.img"
                         class="h-full w-full max-w-xl rounded-sm object-cover transform md:(transition duration-400 ease-in-out) md:group-hover:scale-102"
-                        height="208" width="308" :alt="t(page.alt)" loading="lazy" format="webp" />
+                        height="208" width="308" :alt="t(page.alt)" loading="lazy" format="webp" aria-hidden="true" />
                 </div>
                 <div class="dark:text-white text-black flex flex-row items-center space-x-4 justify-between">
                     <div class="flex flex-col">
@@ -26,31 +26,29 @@
 <script setup lang="ts">
 const { t } = useI18n();
 
-// TODO: Update ALT + Translations
-
 const pages = [
     {
         path: "/resources",
         title: "Links.resources",
         p: "PagesCard.resources",
-        img: "https://source.unsplash.com/_wpce-AsLxk",
-        alt: "PagesCard.image.street",
+        img: "/images/home/_wpce-AsLxk.webp",
+        alt: "PagesCard.image.building-1",
         aria: "a11y.ResourcePage"
     },
     {
         path: "/blog",
         title: "Links.blog",
         p: "PagesCard.blog",
-        img: "https://source.unsplash.com/ACt8ycSzpdE",
-        alt: "PagesCard.image.sky",
+        img: "/images/home/ACt8ycSzpdE.webp",
+        alt: "PagesCard.image.building-2",
         aria: "a11y.BlogPage"
     },
     {
         path: "/analysis",
         title: "Links.analysis",
         p: "PagesCard.analysis",
-        img: "https://source.unsplash.com/FBkrQhnLQoY",
-        alt: "PagesCard.image.street",
+        img: "/images/home/FBkrQhnLQoY.webp",
+        alt: "PagesCard.image.building-3",
         aria: "a11y.AnalysisPage"
     },
 ];

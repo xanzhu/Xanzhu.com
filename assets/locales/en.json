@@ -30,9 +30,9 @@
     "blog": "Latest News, Guides on Technology",
     "analysis": "Reports and write-ups on threats",
     "image": {
-      "street": "Street in Korea",
-      "sky": "Sky and Clouds",
-      "iceland": "Iceland Night Sky"
+      "building-1": "two teal and white skyscrapers",
+      "building-2": "white concrete building during daytime",
+      "building-3": "tall building"
     }
   },
   "Footer": "© Xanzhu 2024. All Rights reserved.",
