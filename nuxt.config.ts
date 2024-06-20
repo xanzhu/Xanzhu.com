@@ -9,7 +9,6 @@ export default defineNuxtConfig({
     "nuxt-icon",
     "nuxt-simple-robots",
     "@nuxt/image",
-    "nitro-cloudflare-dev",
   ],
 
   colorMode: {
@@ -70,8 +69,7 @@ export default defineNuxtConfig({
     "/blog/**": { isr: true },
   },
 
-  // DISABLED - Testing Cloudflare !
-  // plugins: [{ src: "~/plugins/vercel.ts", mode: "client" }],
+  plugins: [{ src: "~/plugins/vercel.ts", mode: "client" }],
 
   image: {
     domains: ["source.unsplash.com"],
@@ -79,16 +77,14 @@ export default defineNuxtConfig({
 
   content: {
     defaultLocale: "en",
+    experimental: {
+      search: true,
+    },
   },
 
   runtimeConfig: {
     public: {
       WEATHER_API: process.env.WEATHER_API,
     },
-  },
-
-  // CF TEST - PASS
-  nitro: {
-    preset: "cloudflare-pages",
   },
 });
