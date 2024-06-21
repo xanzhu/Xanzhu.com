@@ -1,8 +1,8 @@
 <template>
     <div class="hidden lg:(flex justify-center items-center h20vh overflow-hidden)">
         <div class="h100% overflow-hidden">
-            <div class="slide flex">
-                <div class="flex justify-center items-center mr100px shrink-0"
+            <div class="slide flex min-w200%">
+                <div class="flex justify-center items-center mr170px shrink-0"
                     v-for="link in repeatedUrls" :key="link.name + Math.random()">
                     <NuxtLink :href="link.url" target="_blank" class="inline-block group">
                         <NuxtImg :src="getSvgIconUrl(link.name)"
@@ -50,7 +50,7 @@ onMounted(() => {
 
 <style scoped>
 .slide {
-    animation: marquee 150s linear infinite;
+    animation: marquee 175s linear infinite;
 }
 
 
@@ -60,7 +60,7 @@ onMounted(() => {
     }
 
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 }
 
