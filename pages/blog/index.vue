@@ -5,6 +5,7 @@
       <p class="text-md sm:(text-xl) break-words font-thin dark:text-gray-300 sm:w2/3">
         {{ t("Blog.description") }}
       </p>
+      <Search />
     </div>
     <section
       class="grid grid-cols-1 gap-5 md:(grid-cols-2 mx-6 gap-10) lg:(grid-cols-3) sm:(py-15 px-10) dark:bg-black rounded-sm p-4">
