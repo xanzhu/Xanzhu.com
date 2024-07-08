@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     "@unocss/nuxt",
     "@nuxtjs/sitemap",
     "@nuxtjs/color-mode",
-    "nuxt-icon",
+    "@nuxt/icon",
     "nuxt-simple-robots",
     "@nuxt/image",
   ],
@@ -76,10 +76,7 @@ export default defineNuxtConfig({
   },
 
   content: {
-    defaultLocale: "en",
-    experimental: {
-      search: true,
-    },
+    defaultLocale: "en"
   },
 
   runtimeConfig: {
@@ -87,4 +84,6 @@ export default defineNuxtConfig({
       WEATHER_API: process.env.WEATHER_API,
     },
   },
+
+  compatibilityDate: "2024-07-08",
 });
