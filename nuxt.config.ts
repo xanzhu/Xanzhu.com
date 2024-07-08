@@ -78,7 +78,21 @@ export default defineNuxtConfig({
   content: {
     defaultLocale: "en",
     experimental: {
-      search: true,
+      search: {
+        options: {
+          fields: ["title", "content", "path"],
+          storeFields: ["title", "content", "path"],
+          searchOptions: {
+            prefix: false,
+            fuzzy: 0.2,
+            boost: {
+              title: 1,
+              content: 2,
+              titles: 0,
+            },
+          },
+        },
+      },
     },
   },
 

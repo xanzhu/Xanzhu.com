@@ -1,9 +1,9 @@
 <template>
-    <main class="p-4 rounded-md overflow-hidden dark:bg-gray-800">
+    <main class="p-4 overflow-hidden dark:bg-dark-900">
         <div class="relative mb-4">
             <input v-model="search" @input="debouncedSearch" type="search" id="default-search"
-                placeholder="Search Articles.." required
-                class="w-full px-3 py-2 border rounded-md focus:outline-none dark:focus:ring-2 dark:focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600" />
+                placeholder="Search Articles.." required class="w-full px-3 py-2 border rounded-md focus:outline-none dark:focus:ring-2 
+      dark:focus:ring-blue-500 dark:bg-dark-700 dark:border-dark-300 dark:placeholder-light" />
         </div>
         <div v-if="isLoading" class="font-bold text-sm text-blue-700 uppercase dark:text-blue-500">
             Searching for "{{ search }}"..
@@ -14,10 +14,12 @@
         </div>
         <ul v-if="searchResults.length && !isLoading" class="list-none p-0">
             <li v-for="result in searchResults" :key="result.id" class="border-b last:border-b-0 dark:border-gray-600">
-                <a :href="result.id" class="block hover:bg-gray-100 px-4 py-3 dark:hover:bg-gray-600 no-underline">
+                <a :href="result.id" class="block hover:bg-gray-100 px-4 py-3 dark:hover:bg-dark-300 no-underline">
                     <div>
-                        <h3 class="font-bold text-xl dark:text-white text-black">{{ result.title }}</h3>
-                        <div class="font-semibold text-lg text-black dark:text-white"
+                        <h3 class="font-bold text-xl dark:text-white text-black cursor-pointer">
+                            {{ result.title }}
+                        </h3>
+                        <div class="font-semibold text-lg text-black dark:text-white"ww
                             v-html="result.highlightedContent"></div>
                     </div>
                 </a>
@@ -127,8 +129,10 @@ watch([search, () => locale.value], () => {
 });
 </script>
 
-<style scoped>
+<style>
 mark {
-    background-color: yellow;
+    color: #1d4ed8;
+    font-weight: bold;
+    background-color: transparent;
 }
 </style>
