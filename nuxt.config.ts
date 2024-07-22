@@ -7,8 +7,9 @@ export default defineNuxtConfig({
     "@nuxtjs/sitemap",
     "@nuxtjs/color-mode",
     "@nuxt/icon",
-    "nuxt-simple-robots",
+    "@nuxtjs/robots",
     "@nuxt/image",
+    "nuxt-link-checker"
   ],
 
   colorMode: {
@@ -51,6 +52,7 @@ export default defineNuxtConfig({
 
   site: {
     url: "https://xanzhu.com",
+    name: "Xanzhu"
   },
 
   sitemap: {
@@ -72,7 +74,7 @@ export default defineNuxtConfig({
   plugins: [{ src: "~/plugins/vercel.ts", mode: "client" }],
 
   image: {
-    domains: ["source.unsplash.com"],
+    domains: ["images.pexels.com"],
   },
 
   content: {
@@ -84,6 +86,12 @@ export default defineNuxtConfig({
     public: {
       WeatherAPI: "",
     },
+  },
+
+  // ICON
+  icon: {
+    provider: 'iconify',
+    mode: 'css'
   },
 
   compatibilityDate: "2024-07-08",
