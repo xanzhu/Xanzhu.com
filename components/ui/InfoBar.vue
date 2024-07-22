@@ -1,6 +1,6 @@
 <template>
     <div
-        class="flex flex-col sm:(flex-row py2 px4) py4 space-y-2 md:(flex-row px20 py2 space-y-0) justify-between items-center text-sm font-normal bg-black text-white">
+        class="flex flex-col sm:(flex-row py2 px4) py4 space-y-2 md:(flex-row px20 py2 space-y-0) justify-between items-center text-sm font-normal dark:(bg-black text-white) bg-white text-black">
         <UiWeather />
         <span v-if="formattedDate">{{ formattedDate }}</span>
     </div>
