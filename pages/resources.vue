@@ -45,23 +45,5 @@ function toggle(option: 'phishing' | 'malware' | 'a11y') {
 
 // Seo
 const seoImage = 'https://images.pexels.com/photos/27206011/pexels-photo-27206011.jpeg';
-
-const seoTitle = computed(() => {
-  return t('Resources.meta.title');
-});
-
-const seoDesc = computed(() => {
-  return t('Resources.meta.description');
-});
-
-useSeoMeta({
-  title: seoTitle,
-  description: seoDesc,
-  ogDescription: seoDesc,
-  ogTitle: seoTitle,
-  ogImage: seoImage,
-  twitterImage: seoImage,
-  twitterDescription: seoDesc,
-  twitterTitle: seoTitle
-});
+useLangMeta('Resources.meta', seoImage);
 </script>

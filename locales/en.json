@@ -7,7 +7,7 @@
     "desc": "At Xanzhu, we help you use technology safely and protect your data online. Learn from our articles, guides, and reviews on topics like VPNs, password managers, two-factor authentication, and more.",
     "Seo": {
       "title": "News, Guides on Technology, Privacy and Security",
-      "desc": "Discover the latest technology trends and insights in keeping yourself safe online with Xanzhu. Our news and guides help you navigate a changing environment"
+      "description": "Discover the latest technology trends and insights in keeping yourself safe online with Xanzhu. Our news and guides help you navigate a changing environment"
     },
     "a11y": {
       "mouseicon": "Scroll down"
@@ -166,7 +166,7 @@
     "p4": "Knowing how to protect yourself or your business is important. Privacy and security should be a top priority.",
     "p5": "We are new and will likely make a few mistakes. But we're passionate about making the internet a safer place, and we hope you'll join us in developing the next standard of security practices and guidelines.",
     "h1": "About Xanzhu.com",
-    "desc": "Xanzhu.com - Your cybersecurity hub. Protecting you online with valuable insights on security, privacy, and accessibility. Join us!",
+    "description": "Xanzhu.com - Your cybersecurity hub. Protecting you online with valuable insights on security, privacy, and accessibility. Join us!",
     "title": "About"
   },
   "PP": {

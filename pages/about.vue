@@ -19,25 +19,6 @@ const paragraphs: { [key: number]: string } = {
     5: t('About.p5')
 };
 
-
 const seoImage = 'https://images.pexels.com/photos/27050060/pexels-photo-27050060.jpeg';
-
-const seoTitle = computed(() => {
-    return t('About.title');
-});
-
-const seoDesc = computed(() => {
-    return t('About.desc');
-});
-
-useSeoMeta({
-    title: seoTitle,
-    description: seoDesc,
-    ogTitle: seoTitle,
-    ogDescription: seoDesc,
-    twitterDescription: seoDesc,
-    twitterTitle: seoTitle,
-    twitterImage: seoImage,
-    ogImage: seoImage,
-});
+useLangMeta('About', seoImage, 'prefix');
 </script>

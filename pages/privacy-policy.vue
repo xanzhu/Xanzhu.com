@@ -2,8 +2,8 @@
     <div class="sm:mx-auto my-10 space-y-10 max-w-4xl min-h-screen">
         <div class="flex flex-col space-y-4 sm:(space-y-0 flex-row justify-between items-center) mx-4">
             <div class="flex flex-col">
-                <h1 class="text-2xl sm:text-3xl font-semibold m0">{{ title }}</h1>
-                <p class="font-thin dark:text-light-500 m0">{{ desc }}</p>
+                <h1 class="text-2xl sm:text-3xl font-semibold m0">{{ t('PP.title') }}</h1>
+                <p class="font-thin dark:text-light-500 m0">{{ t('PP.description') }}</p>
             </div>
             <p class="m0">
                 {{ t("PP.date") }}:
@@ -29,24 +29,6 @@ const paragraphs: { [key: number]: string } = {
     3: t("PP.section-three"),
 };
 
-const title = computed(() => {
-    return t('PP.title');
-});
-
-const desc = computed(() => {
-    return t('PP.description');
-});
-
 const seoImage = 'https://images.pexels.com/photos/27286458/pexels-photo-27286458.jpeg';
-
-useSeoMeta({
-    title: title,
-    description: desc,
-    ogTitle: title,
-    ogDescription: desc,
-    twitterDescription: desc,
-    twitterTitle: title,
-    twitterImage: seoImage,
-    ogImage: seoImage
-});
+useLangMeta('PP', seoImage);
 </script>
