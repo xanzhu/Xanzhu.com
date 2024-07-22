@@ -5,7 +5,7 @@
   </div>
   <button @click="switchColor" class="bg-transparent border-none flex inline-block cursor-pointer mr-0"
     aria-label="Color Switcher">
-    <Icon :name="colorIcon" class="h-6 w-6 transition-all duration-500 dark:bg-black bg-white" />
+    <Icon :name="colorIcon" class="h-6 w-6 transition-all duration-500 dark:text-black text-white" />
   </button>
 </template>
 
