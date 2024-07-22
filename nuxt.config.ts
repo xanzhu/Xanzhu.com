@@ -91,7 +91,7 @@ export default defineNuxtConfig({
   // ICON
   icon: {
     provider: 'iconify',
-    mode: 'css'
+    mode: 'svg'
   },
 
   compatibilityDate: "2024-07-08",
