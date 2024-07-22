@@ -33,7 +33,7 @@
         <!-- Mobile Menu -->
         <div class="md:hidden flex space-x-3 items-center">
             <UiColorSwitch />
-            <Icon name="tabler:language" class="cursor-pointer h5 w5" :aria-label="t('app.sr.lang')"
+            <Icon name="fluent:local-language-16-filled" class="cursor-pointer h6 w6" :aria-label="t('app.sr.lang')"
                 @click="langToggle">
                 <span class="sr-only">{{ t('app.sr.lang') }}</span>
             </Icon>
@@ -47,9 +47,8 @@
                     {{ locale.name }}
                 </NuxtLink>
             </div>
-            <Icon name="tabler:menu"
-                class="h6 w6 cursor-pointer inline-flex items-center p-2 text-sm rounded-lg md:hidden"
-                @click="openMenu">
+            <Icon name="fluent:list-rtl-16-filled"
+                class="h6 w6 cursor-pointer inline-flex items-center p2 text-sm rounded-lg md:hidden" @click="openMenu">
                 <span class="sr-only">{{ t('app.sr.menu') }}</span>
             </Icon>
             <nav
