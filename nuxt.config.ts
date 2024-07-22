@@ -79,9 +79,10 @@ export default defineNuxtConfig({
     defaultLocale: "en"
   },
 
+  // API
   runtimeConfig: {
     public: {
-      WEATHER_API: process.env.WEATHER_API,
+      WeatherAPI: "",
     },
   },
 
