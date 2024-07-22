@@ -6,7 +6,6 @@ tag: "가이드"
 toc: true
 feature: true
 img: "/images/blog/wvm/wvm.png"
-ogURL: "/images/blog/wvm/wvm.png"
 alt: "3가지 새로운 칩셋의 아이콘을 표시하는 2023년 Macbook Pro Black Edition"
 ---
 

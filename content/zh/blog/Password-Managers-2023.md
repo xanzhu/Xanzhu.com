@@ -6,7 +6,6 @@ tag: "指导"
 toc: true
 img: "/images/blog/PM/PM.webp"
 alt: "拿着iphone的人"
-ogLink: "https://www.pexels.com/photo/person-holding-iphone-6-with-red-case-7534801/"
 source: "Mikhail Nilov, Pexels"
 ---
 

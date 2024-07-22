@@ -44,7 +44,7 @@ function toggle(option: 'phishing' | 'malware' | 'a11y') {
 }
 
 // Seo
-const seoImage = 'https://source.unsplash.com/dCuA11z7xHg'
+const seoImage = 'https://images.pexels.com/photos/27206011/pexels-photo-27206011.jpeg';
 
 const seoTitle = computed(() => {
   return t('Resources.meta.title');

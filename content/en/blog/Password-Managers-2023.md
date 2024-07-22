@@ -6,7 +6,6 @@ tag: "Guide"
 toc: true
 img: "/images/blog/PM/PM.webp"
 alt: "Person holding iPhone"
-ogLink: "https://www.pexels.com/photo/person-holding-iphone-6-with-red-case-7534801/"
 source: "Mikhail Nilov, Pexels"
 ---
 

@@ -6,7 +6,6 @@ tag: "指导"
 toc: true
 feature: true
 img: "/images/blog/wvm/wvm.png"
-ogURL: "/images/blog/wvm/wvm.png"
 alt: "2023 年 Macbook Pro 黑色版显示三种新芯片组的图标"
 ---
 

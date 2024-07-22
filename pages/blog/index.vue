@@ -43,7 +43,7 @@ const { data: posts } = await useAsyncData("articles", async () => {
     .find();
 });
 
-const seoImage = 'https://source.unsplash.com/x6YWgAN3SX8';
+const seoImage = 'https://images.pexels.com/photos/27277185/pexels-photo-27277185.jpeg';
 
 const seoTitle = computed(() => {
   return t('Blog.meta.title');

@@ -41,7 +41,7 @@ const seoDesc = computed(() => {
     return t('Home.Seo.desc');
 });
 
-const seoImage = 'https://source.unsplash.com/IayKLkmz6g0';
+const seoImage = 'https://images.pexels.com/photos/24253539/pexels-photo-24253539.jpeg';
 
 useSeoMeta({
     title: seoTitle,

@@ -5,7 +5,6 @@ tag: "보안"
 img: "/images/blog/2FA/2FA.webp"
 description: "이중 인증(2FA)이 온라인 보안을 개선하고 피싱 사기로부터 보호하는 방법"
 alt: "마이크로소프트 인증자"
-ogLink: "https://source.unsplash.com/RMIsZlv8qv4"
 source: "Ed Hardie, Unsplash"
 toc: true
 ---

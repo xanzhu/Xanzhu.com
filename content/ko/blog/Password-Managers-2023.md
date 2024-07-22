@@ -5,7 +5,6 @@ date: "2023-01-18"
 tag: "가이드"
 toc: true
 img: "/images/blog/PM/PM.webp"
-ogLink: "https://www.pexels.com/photo/person-holding-iphone-6-with-red-case-7534801/"
 alt: "아이폰을 들고 있는 사람"
 source: "Mikhail Nilov, Pexels"
 ---

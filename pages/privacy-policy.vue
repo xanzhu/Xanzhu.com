@@ -37,7 +37,7 @@ const desc = computed(() => {
     return t('PP.description');
 });
 
-const seoImage = 'https://source.unsplash.com/wO49cx3Bibw'
+const seoImage = 'https://images.pexels.com/photos/27286458/pexels-photo-27286458.jpeg';
 
 useSeoMeta({
     title: title,

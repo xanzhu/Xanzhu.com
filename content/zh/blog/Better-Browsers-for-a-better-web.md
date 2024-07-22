@@ -6,7 +6,6 @@ updated: "2023-02-01"
 tag: 指导
 img: "/images/blog/BB/browser.webp"
 toc: true
-ogLink: "https://source.unsplash.com/JySoEnr-eOg"
 source: Denny Müller, Unsplash
 alt: "流行网络浏览器的图标"
 ---

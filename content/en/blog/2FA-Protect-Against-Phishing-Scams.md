@@ -5,7 +5,6 @@ tag: "Security"
 img: "/images/blog/2FA/2FA.webp"
 description: "How Two-Factor Authentication (2FA) improves your online security and protects you from phishing scams"
 alt: "Microsoft Authenticator"
-ogLink: "https://source.unsplash.com/RMIsZlv8qv4"
 toc: true
 source: "Ed Hardie, Unsplash"
 ---

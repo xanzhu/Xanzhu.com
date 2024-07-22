@@ -9,8 +9,9 @@
           <NuxtImg crossorigin="anonymous" v-if="feature.img" :src="feature.img" :alt="feature.alt" :title="feature.alt"
             class="h-full w-full rounded-sm object-cover md:group-hover:scale-102 md:(transform transition duration-400 ease-in-out)"
             height="269" width="377" />
-          <NuxtImg crossorigin="anonymous" v-else :alt="feature.alt" src="https://source.unsplash.com/bHOKatJHjII/577x369"
-            class="md:max-w-2xl" height="269" width="577" />
+          <NuxtImg crossorigin="anonymous" v-else :alt="feature.alt"
+            src="https://images.pexels.com/photos/27277185/pexels-photo-27277185.jpeg" class="md:max-w-2xl" height="269"
+            width="577" />
         </div>
         <div class="space-y-2 sm:(space-y-7) md:space-y-2 lg:max-w-xl">
           <div class="flex flex-row space-x-2">

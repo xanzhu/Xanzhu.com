@@ -6,7 +6,6 @@ tag: "Guide"
 toc: true
 feature: true
 img: "/images/blog/wvm/wvm.png"
-ogURL: "/images/blog/wvm/wvm.png"
 alt: "2023 Macbook Pro Black Edition displaying icons of the three new chipsets"
 ---
 

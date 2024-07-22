@@ -20,7 +20,7 @@ const paragraphs: { [key: number]: string } = {
 };
 
 
-const seoImage = 'https://source.unsplash.com/WLORfDtl7oM'
+const seoImage = 'https://images.pexels.com/photos/27050060/pexels-photo-27050060.jpeg';
 
 const seoTitle = computed(() => {
     return t('About.title');

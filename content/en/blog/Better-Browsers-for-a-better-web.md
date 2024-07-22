@@ -6,7 +6,6 @@ updated: "2023-02-01"
 tag: Guide
 img: "/images/blog/BB/browser.webp"
 toc: true
-ogLink: "https://source.unsplash.com/JySoEnr-eOg"
 alt: "Icons of popular web browsers"
 source: Denny Müller, Unsplash
 feature: true
