@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     "@nuxt/icon",
     "@nuxtjs/robots",
     "@nuxt/image",
-    "nuxt-link-checker"
+    "nuxt-link-checker",
   ],
 
   colorMode: {
@@ -52,7 +52,7 @@ export default defineNuxtConfig({
 
   site: {
     url: "https://xanzhu.com",
-    name: "Xanzhu"
+    name: "Xanzhu",
   },
 
   sitemap: {
@@ -78,7 +78,7 @@ export default defineNuxtConfig({
   },
 
   content: {
-    defaultLocale: "en"
+    defaultLocale: "en",
   },
 
   // API
@@ -90,8 +90,24 @@ export default defineNuxtConfig({
 
   // ICON
   icon: {
-    provider: 'iconify',
-    mode: 'svg'
+    provider: "iconify",
+    mode: "svg",
+    // Testing Client Bundle
+    clientBundle: {
+      icons: [
+        "mdi:github",
+        "mdi:instagram",
+        "mdi:linkedin",
+        "line-md:twitter-x",
+        "fluent:clock-12-regular",
+        "fluent:weather-moon-48-filled",
+        "fluent:weather-sunny-32-filled",
+        "fluent:local-language-16-filled",
+        "fluent:list-rtl-16-filled",
+        "fluent:mail-16-filled",
+        "fluent:local-language-16-filled",
+      ],
+    },
   },
 
   compatibilityDate: "2024-07-08",
