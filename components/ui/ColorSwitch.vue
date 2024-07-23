@@ -1,7 +1,7 @@
 <template>
   <div class="hidden">
-    <Icon name="fluent:weather-sunny-32-filled" />
-    <Icon name="fluent:weather-moon-48-filled" />
+    <Icon name="line-md:moon-filled-alt-to-sunny-filled-loop-transition" />
+    <Icon name="line-md:moon-filled-alt-loop" />
   </div>
   <button @click="switchColor" class="bg-transparent border-none flex inline-block cursor-pointer mr-0"
     aria-label="Color Switcher">
@@ -13,7 +13,7 @@
 const colorMode = useColorMode();
 
 const colorIcon = computed(() => {
-  return colorMode.preference === 'dark' ? 'fluent:weather-sunny-32-filled' : 'fluent:weather-moon-48-filled';
+  return colorMode.preference === 'dark' ? 'line-md:moon-filled-alt-to-sunny-filled-loop-transition' : 'line-md:moon-filled-alt-loop';
 });
 
 function switchColor() {

@@ -48,6 +48,9 @@ importers:
       '@iconify-json/fluent':
         specifier: ^1.1.59
         version: 1.1.59
+      '@iconify-json/line-md':
+        specifier: ^1.1.38
+        version: 1.1.38
       '@nuxt/devtools':
         specifier: ^1.3.9
         version: 1.3.9(rollup@4.19.0)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))
@@ -699,6 +702,9 @@ packages:
 
   '@iconify-json/fluent@1.1.59':
     resolution: {integrity: sha512-4gihRqVI4aVfx26VOk0LAcjLkii7DWsdb1AP0NXRQ/fZ5VJOIqf7NdVfz5K01w+4ayDLl+aDdp7X1zlCh2kOwg==}
+
+  '@iconify-json/line-md@1.1.38':
+    resolution: {integrity: sha512-W+y4G/7QqO1sTGUypwsm0UUwjbGt/BjRg4kZylek7BwH5EG8f1uUJgcZwRASjsH4xGL+LVQbw6FAGbQ1UHNCow==}
 
   '@iconify/collections@1.0.441':
     resolution: {integrity: sha512-8iYZgo7iV65lMD7+Dsg4boOF+/75ozIAQQPspznNlNmQIyniho7Vi5yBEL5ZFykLHX126gl+IN9vc6PWVtuUfA==}
@@ -4874,6 +4880,10 @@ snapshots:
   '@fastify/busboy@2.1.1': {}
 
   '@iconify-json/fluent@1.1.59':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/line-md@1.1.38':
     dependencies:
       '@iconify/types': 2.0.0
 

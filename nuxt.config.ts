@@ -95,13 +95,13 @@ export default defineNuxtConfig({
     // Testing Client Bundle
     clientBundle: {
       icons: [
-        "mdi:github",
-        "mdi:instagram",
-        "mdi:linkedin",
+        "line-md:github",
+        "line-md:instagram",
+        "line-md:linkedin",
         "line-md:twitter-x",
         "fluent:clock-12-regular",
-        "fluent:weather-moon-48-filled",
-        "fluent:weather-sunny-32-filled",
+        "line-md:moon-filled-alt-loop",
+        "line-md:moon-filled-alt-to-sunny-filled-loop-transition",
         "fluent:local-language-16-filled",
         "fluent:list-rtl-16-filled",
         "fluent:mail-16-filled",
