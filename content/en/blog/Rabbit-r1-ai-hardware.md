@@ -35,7 +35,7 @@ While it's amazing to see how AI will integrate with computer vision and be capa
 Watch the keynote to learn more about the R1:
 
 <div class="ifr">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/22wlLy7hKP4?si=vWN_Iu84Mp2dlDxV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe credentialless width="560" height="315" src="https://www.youtube.com/embed/22wlLy7hKP4?si=a16Fb1UEFLTRE1Aq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 A good point of this is how context-aware the device could be. The demo mentioned a prompt to the R1 stating, "Tell everyone I'm going to be late." Where the usage of "everyone" comes into play here is in what context does the device know who everyone is without providing a list or a group of people relevant to the context. It will be interesting to see how this develops over time.
