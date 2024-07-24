@@ -9,7 +9,6 @@ export default defineNuxtConfig({
     "@nuxt/icon",
     "@nuxtjs/robots",
     "@nuxt/image",
-    "nuxt-link-checker",
     "nuxt-security"
   ],
 
