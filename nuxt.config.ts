@@ -93,22 +93,6 @@ export default defineNuxtConfig({
   icon: {
     provider: "iconify",
     mode: "svg",
-    // Testing Client Bundle
-    clientBundle: {
-      icons: [
-        "line-md:github",
-        "line-md:instagram",
-        "line-md:linkedin",
-        "line-md:twitter-x",
-        "fluent:clock-12-regular",
-        "line-md:moon-filled-alt-loop",
-        "line-md:moon-filled-alt-to-sunny-filled-loop-transition",
-        "fluent:local-language-16-filled",
-        "fluent:list-rtl-16-filled",
-        "fluent:mail-16-filled",
-        "fluent:local-language-16-filled",
-      ],
-    },
   },
 
   // SECURITY V1
