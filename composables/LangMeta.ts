@@ -23,5 +23,6 @@ export function useLangMeta(
     twitterImage: seoImage,
     ogImage: seoImage,
     titleTemplate: formatTitle,
+    ogType: 'website'
   });
 }
