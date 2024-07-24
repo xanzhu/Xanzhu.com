@@ -126,7 +126,7 @@ export default defineNuxtConfig({
           "https:",
           "'unsafe-inline'",
           "'strict-dynamic'",
-          "'nonce-{{nonce}}'"
+          "'nonce-{{nonce}}'",
         ],
         'style-src': [
           "'self'", 
@@ -138,8 +138,12 @@ export default defineNuxtConfig({
         'font-src': ["'self'", "https:", "data:"], 
         'object-src': ["'none'"],
         'script-src-attr': ["'none'"],
-        'upgrade-insecure-requests': true
-      }
+        'frame-src': ["'self'", "https://www.youtube.com", "https://youtube.com"],
+      },
+      // Disable for iframe?
+      crossOriginEmbedderPolicy: false,
+      crossOriginOpenerPolicy: false,
+      crossOriginResourcePolicy: false,
     },
     sri: true
   },
