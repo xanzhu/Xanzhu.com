@@ -35,7 +35,7 @@ alt: "2023 年 Macbook Pro 黑色版显示三种新芯片组的图标"
 
 打开后该应用程序将如下所示
 
-<Media source="/images/blog/wvm/wvm-1.png"  alt="UTM 应用程序打开屏幕"></Media>
+<Media source="/images/blog/wvm/wvm-1.png" alt="UTM 应用程序打开屏幕"></Media>
 
 ## CrystalFetch
 
@@ -47,7 +47,7 @@ alt: "2023 年 Macbook Pro 黑色版显示三种新芯片组的图标"
 
 看起来应该与此类似：
 
-<Media source="/images/blog/wvm/wvm-2.png"  alt="CrystalFetch 应用程序打开屏幕"></Media>
+<Media source="/images/blog/wvm/wvm-2.png" alt="CrystalFetch 应用程序打开屏幕"></Media>
 
 3.点击下载
 
@@ -66,7 +66,7 @@ alt: "2023 年 Macbook Pro 黑色版显示三种新芯片组的图标"
 
 应该看起来与此类似
 
-<Media source="/images/blog/wvm/wvm-3.png"  alt="虚拟机的 UTM 配置屏幕"></Media>
+<Media source="/images/blog/wvm/wvm-3.png" alt="虚拟机的 UTM 配置屏幕"></Media>
 
 1. 选择该虚拟机要使用的 RAM 量。 4096 是默认值，等于 4GB。 您的系统使用的一半是理想的，但如果需要，可以稍后进行调整。 现在，将其保留为默认值。
 
@@ -78,7 +78,7 @@ alt: "2023 年 Macbook Pro 黑色版显示三种新芯片组的图标"
 
 至此虚拟机已经创建完毕。 您应该会看到与此类似的内容。
 
-<Media source="/images/blog/wvm/wvm-4.png"  alt="显示 UTM 虚拟机"></Media>
+<Media source="/images/blog/wvm/wvm-4.png" alt="显示 UTM 虚拟机"></Media>
 
 ## 运行虚拟机
 
@@ -88,11 +88,11 @@ alt: "2023 年 Macbook Pro 黑色版显示三种新芯片组的图标"
 
 2. 单击该窗口内部并按任意键。
 
-<Media source="/images/blog/wvm/wvm-5.png"  alt="UTM 显示提示按任意键继续"></Media>
+<Media source="/images/blog/wvm/wvm-5.png" alt="UTM 显示提示按任意键继续"></Media>
 
 此步骤很重要，因为如果您按下按键的速度不够快，您将看到以下屏幕。
 
-<Media source="/images/blog/wvm/wvm-5b.png"  alt="UTM 在启动过程中显示错误提示"></Media>
+<Media source="/images/blog/wvm/wvm-5b.png" alt="UTM 在启动过程中显示错误提示"></Media>
 
 要解决此问题，请关闭虚拟机并再次运行它，或者选择重新启动虚拟机按钮（即三角形按钮）。
 
@@ -102,7 +102,7 @@ alt: "2023 年 Macbook Pro 黑色版显示三种新芯片组的图标"
 
 完成此操作后，我们将进入此屏幕，我们现在可以在其中配置 Windows 的安装。
 
-<Media source="/images/blog/wvm/wvm-6.png"  alt="Windows ISO 安装菜单"></Media>
+<Media source="/images/blog/wvm/wvm-6.png" alt="Windows ISO 安装菜单"></Media>
 
 1. 选择语言，然后按下一步。
 

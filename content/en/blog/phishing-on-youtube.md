@@ -77,6 +77,6 @@ General advice on phishing is to avoid clicking on the links and avoid entering 
 
 This continues to be an ongoing battle of reporting the ads, and the videos and directly reporting each domain listed. It's unrealistic to say we could catch them all but we can try to reduce any we come across.
 
-The major problem we are facing now is the introduction of AI making it easier to establish scams, in comparison, this phishing scam is minuscule in the range of AI Videos floating on the internet. The good thing is YouTube is <PageLink title="investing more" url="https://www.theverge.com/2024/1/25/24050443/youtube-is-investing-heavily-in-its-ability-to-stop-ai-celebrity-scam-ads"></PageLink>.
+The major problem we are facing now is the introduction of AI making it easier to establish scams, in comparison, this phishing scam is minuscule in the range of AI Videos floating on the internet. The good thing is YouTube is investing more
 to potentially reduce the amount of AI-generated content-promoting scams read more on <PageLink title="404Media" url="https://www.404media.co/youtube-deletes-1-000-videos-of-celebrity-ai-scam-ads/
 "></PageLink>.

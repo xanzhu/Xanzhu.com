@@ -17,7 +17,7 @@ The hardware released is usually Mac based with iPhone / iPad and Apple Watch be
 
 ### Vision Pro
 
-<Media source="/images/blog/wwdc/VP.webp"  alt="VisionPro VR Headset" credit="The Verge"></Media>
+<Media source="/images/blog/wwdc/VP.webp" alt="VisionPro VR Headset" credit="The Verge"></Media>
 
 Apple's first attempt at a virtual reality headset. Offering a unique experience of mixing reality with virtuality. This headset offers some impressive software techniques and handles many features that most headsets haven't taken into consideration.
 
@@ -43,7 +43,7 @@ When immersed into the device the front glass panel will display some animations
 The headset also displays the eyes of the user indicating they're aware of you and are paying attention.
 This feature alone is something that all VR headsets do not incorporate awareness of surroundings and options for interaction with others not wearing the headset.
 
-<Media source="/images/blog/wwdc/human.jpeg"  alt="VisionPro Demo" credit="Apple"></Media>
+<Media source="/images/blog/wwdc/human.jpeg" alt="VisionPro Demo" credit="Apple"></Media>
 
 <h4>Charging / Cables</h4>
 
@@ -66,7 +66,7 @@ Features:
 
 Extremely <PageLink title="interesting concept" url="https://www.apple.com/apple-vision-pro/"></PageLink> and kudos to Apple for doing something entirely different but game-changing. The processing needed to do this with neural networks alone is impressive and I'm excited to see how this will adapt and improve over the coming years.
 
-<Media source="/images/blog/wwdc/sensor.jpeg"  alt="VisionPro sensor" credit="Apple"></Media>
+<Media source="/images/blog/wwdc/sensor.jpeg" alt="VisionPro sensor" credit="Apple"></Media>
 
 <h4>VisionOS</h4>
 
@@ -106,7 +106,7 @@ Back Ports:
 
 Insane <PageLink title="performance improvements" url="https://www.apple.com/mac-pro/"></PageLink>, this new high-powered machine is using the new M2 Ultra chip with a 7.6x improvement over the intel version.
 
-<Media source="/images/blog/wwdc/macpro.jpeg"  alt="Mac Pro" credit="Apple"></Media>
+<Media source="/images/blog/wwdc/macpro.jpeg" alt="Mac Pro" credit="Apple"></Media>
 
 Supports:
 
@@ -140,7 +140,7 @@ This gives us consumers a glimpse into what the next iteration of software will 
 
 ### iOS 17
 
-<Media source="/images/blog/wwdc/ios17.png"  alt="iOS 17 Preview" credit="Apple"></Media>
+<Media source="/images/blog/wwdc/ios17.png" alt="iOS 17 Preview" credit="Apple"></Media>
 
 <h4>Profiles Improved</h4>
 
@@ -158,7 +158,7 @@ Find the exact messages you're looking for faster. This new feature helps narrow
 
 Audio messages now have the option to display the live transcript without needing to play. Allowing for quicker response when unable to listen.
 
-<Media source="/images/blog/wwdc/transcribe.jpeg"  alt="iOS 17 Audio Transcription Feature" credit="Apple"></Media>
+<Media source="/images/blog/wwdc/transcribe.jpeg" alt="iOS 17 Audio Transcription Feature" credit="Apple"></Media>
 
 <h4>FaceTime</h4>
 
@@ -182,7 +182,7 @@ Now featuring better improvements for transferring files. Once a connection is e
 
 New contact sharing feature, simply put phones near each other to share contact details. Seems like an interesting feature that might not be used that often. Hopefully, this activates the same as Apple Pay requiring input before initiating as bumping into someone could cause this to display leading to privacy concerns.
 
-<Media source="/images/blog/wwdc/airdrop.jpeg"  alt="iOS 17 AirDrop Feature" credit="Apple"></Media>
+<Media source="/images/blog/wwdc/airdrop.jpeg" alt="iOS 17 AirDrop Feature" credit="Apple"></Media>
 
 <h4>SharePlay Improvements</h4>
 
@@ -202,7 +202,7 @@ Using the built-in photos application that would typically archive photos into c
 
 Take a picture of a food item for example and use the visual lookup feature to find similar recipes or dishes based on the initial photo. This can be activated by holding down on the image and selecting "Lookup"
 
-<Media source="/images/blog/wwdc/lookup.jpeg"  alt="iOS 17 Lookup Feature" credit="Apple"></Media>
+<Media source="/images/blog/wwdc/lookup.jpeg" alt="iOS 17 Lookup Feature" credit="Apple"></Media>
 
 <h4>AirPlay</h4>
 
@@ -232,7 +232,7 @@ Improved electric vehicle routing, showing better options for charging stations 
 
 ### iPadOS 17
 
-<Media source="/images/blog/wwdc/ipados.png"  alt="iPadOS 17 Preview" credit="Apple"></Media>
+<Media source="/images/blog/wwdc/ipados.png" alt="iPadOS 17 Preview" credit="Apple"></Media>
 
 <h4>Lock screen</h4>
 
@@ -246,7 +246,7 @@ View live applications that are time-sensitive. These include Timers, Flights, F
 
 An awesome feature allowing for notes to be annotated in real-time, meaning you can share a pdf/note with another person and both annotate on it and see them in real-time. This works on FaceTime as well which promotes better collaboration.
 
-<Media source="/images/blog/wwdc/pdf.jpeg"  alt="PDF Collaboration Preview" credit="Apple"></Media>
+<Media source="/images/blog/wwdc/pdf.jpeg" alt="PDF Collaboration Preview" credit="Apple"></Media>
 
 <h4>Freeform</h4>
 
@@ -308,7 +308,7 @@ Awesome new security feature with sharing locations, now when sharing a location
 
 Stickers got an improvement now and can be applied directly to the message by a simple drag and drop anywhere on the screen. Custom stickers also getting a significant improvement now can take live images and extract them to create custom animations.
 
-<Media source="/images/blog/wwdc/stickers.jpeg"  alt="macOS Message Stickers Feature" credit="Apple"></Media>
+<Media source="/images/blog/wwdc/stickers.jpeg" alt="macOS Message Stickers Feature" credit="Apple"></Media>
 
 <h4>PDFs and Notes</h4>
 
@@ -334,7 +334,7 @@ Also releasing a new architecture to assist developers in transitioning their ga
 
 The feature introduces protection for sensitive videos and photos within the messaging application. This can be enabled to prevent unsolicited images from being reviewed. There is also an option for setting a content warning on images and videos allowing the user to choose to view them.
 
-<Media source="/images/blog/wwdc/comms.png"  alt="Messages Communication Safety" credit="Apple"></Media>
+<Media source="/images/blog/wwdc/comms.png" alt="Messages Communication Safety" credit="Apple"></Media>
 
 <h4>Lockdown mode</h4>
 
@@ -357,7 +357,7 @@ Personal voice helps users with speech loss create a voice that sounds like them
 
 Complete redesign of system applications. Offering a more seem lined experience and a much-needed design improvement on usability and
 
-<Media source="/images/blog/wwdc/watchos.png"  alt="watchOS 10 Preview" credit="Apple"></Media>
+<Media source="/images/blog/wwdc/watchos.png" alt="watchOS 10 Preview" credit="Apple"></Media>
 
 <h4>Smart Stack</h4>
 
@@ -376,7 +376,7 @@ Animated versions of Snoopy and Woodstock have interactive animations based on e
 
 Ultra-edition is seeing improvements for hiking, allowing for automatic waypoints for when the connection was last established. Also indicating points where the native SOS feature can be available through the network. Plus adding a new three-dimensional view using Elevation Views.
 
-<Media source="/images/blog/wwdc/hiking.jpeg"  alt="watchOS Hiking Feature" credit="Apple"></Media>
+<Media source="/images/blog/wwdc/hiking.jpeg" alt="watchOS Hiking Feature" credit="Apple"></Media>
 
 <h4>Topographic maps</h4>
 

@@ -46,7 +46,7 @@ This is a free tool what will help us to generate an updated windows ISO file ne
 
 Should look similar to this:
 
-<Media source="/images/blog/wvm/wvm-2.png"  alt="CrystalFetch Application Opening Screen"></Media>
+<Media source="/images/blog/wvm/wvm-2.png" alt="CrystalFetch Application Opening Screen"></Media>
 
 3. Click on download
 
@@ -65,7 +65,7 @@ We can now setup our virtual machine!
 
 Should look similar to this
 
-<Media source="/images/blog/wvm/wvm-3.png"  alt="UTM Configuration Screen For Virtual Machine"></Media>
+<Media source="/images/blog/wvm/wvm-3.png" alt="UTM Configuration Screen For Virtual Machine"></Media>
 
 1. Select the amount of RAM to be used for this virtual machine. 4096 is the default, which is equal to 4GB. Half of what your system is using is ideal, but this can be adjusted later on if needed. For now, leave it as the default.
 
@@ -77,7 +77,7 @@ Should look similar to this
 
 The virtual machine has now been created. You should see something similar to this.
 
-<Media source="/images/blog/wvm/wvm-4.png"  alt="Showing UTM Virtual Machines"></Media>
+<Media source="/images/blog/wvm/wvm-4.png" alt="Showing UTM Virtual Machines"></Media>
 
 ## Running Virtual Machine
 
@@ -87,11 +87,11 @@ This will now boot up the virtual machine. During this process it will open up a
 
 2. Click inside this window and press any key.
 
-<Media source="/images/blog/wvm/wvm-5.png"  alt="UTM showing prompt to press any key to proceed"></Media>
+<Media source="/images/blog/wvm/wvm-5.png" alt="UTM showing prompt to press any key to proceed"></Media>
 
 This step is important as if you don't press a key fast enough you will get the following screen.
 
-<Media source="/images/blog/wvm/wvm-5b.png"  alt="UTM showing error prompt during boot"></Media>
+<Media source="/images/blog/wvm/wvm-5b.png" alt="UTM showing error prompt during boot"></Media>
 
 To solve this close the virtual machine and run it again or select the restart virtual machine button which is the triangle button.
 
@@ -101,7 +101,7 @@ If you keep getting the above error then refer to the Issues and bugs section of
 
 After doing this we will get to this screen where we can now configure the installation for windows.
 
-<Media source="/images/blog/wvm/wvm-6.png"  alt="Windows ISO installation menu"></Media>
+<Media source="/images/blog/wvm/wvm-6.png" alt="Windows ISO installation menu"></Media>
 
 1. Select the language and press Next.
 
