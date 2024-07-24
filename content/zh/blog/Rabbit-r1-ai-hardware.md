@@ -35,7 +35,7 @@ R1 提到登录过程将由本机第三方登录系统处理，这意味着所�
 观看主题演讲以了解有关 R1 的更多信息：
 
 <div class="ifr">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/22wlLy7hKP4?si=a16Fb1UEFLTRE1Aq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe credentialless width="560" height="315" src="https://www.youtube.com/embed/22wlLy7hKP4?si=a16Fb1UEFLTRE1Aq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 这样做的一个好处是设备的上下文感知能力。 演示中提到了对 R1 的提示：“告诉大家我要迟到了。” 这里“每个人”的用法发挥作用的是设备在什么上下文中知道每个人是谁，而无需提供与上下文相关的列表或一组人。 随着时间的推移，看看这种情况如何发展将会很有趣。

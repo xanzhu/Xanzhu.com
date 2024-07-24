@@ -140,10 +140,9 @@ export default defineNuxtConfig({
         'script-src-attr': ["'none'"],
         'frame-src': ["'self'", "https://www.youtube.com", "https://youtube.com"],
       },
-      // Disable for iframe?
-      crossOriginEmbedderPolicy: false,
-      crossOriginOpenerPolicy: false,
-      crossOriginResourcePolicy: false,
+      crossOriginEmbedderPolicy: 'credentialless',
+      crossOriginOpenerPolicy: 'same-origin',
+      crossOriginResourcePolicy: 'same-origin',
     },
     sri: true
   },
