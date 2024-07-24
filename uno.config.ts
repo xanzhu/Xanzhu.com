@@ -17,7 +17,7 @@ export default defineConfig({
           "text-decoration": "none",
         },
         "pre, code": {
-          "--uno": "dark:(bg-dark-800 text-light-700 border-dark-300)",
+          "--uno": "dark:(bg-dark-800 text-light-700 border-dark-300) text-dark8",
           border: "1px solid #d1d1d1",
           overflow: "hidden",
           "background-color": "#f1f1f1",
