@@ -123,7 +123,7 @@ export default defineNuxtConfig({
         'script-src-attr': ["'none'"],
         'frame-src': ["'self'", "https://www.youtube.com", "https://youtube.com"],
       },
-      crossOriginEmbedderPolicy: 'credentialless',
+      crossOriginEmbedderPolicy: process.env.NODE_ENV === 'development' ? 'unsafe-none' : 'credentialless',
       crossOriginOpenerPolicy: 'same-origin',
       crossOriginResourcePolicy: 'same-origin',
     },
