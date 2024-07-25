@@ -6,7 +6,6 @@ tag: "Guide"
 toc: true
 img: "/images/blog/PM/PM.webp"
 alt: "Person holding iPhone"
-ogLink: "https://www.pexels.com/photo/person-holding-iphone-6-with-red-case-7534801/"
 source: "Mikhail Nilov, Pexels"
 ---
 
@@ -169,11 +168,9 @@ If you are currently using LastPass, I advise you to change all your passwords i
 
 For more information, you can read the following articles:
 
-<PageLink title="The Verge" url="https://www.theverge.com/2022/12/22/23523322/lastpass-data-breach-cloud-encrypted-password-vault-hackers"></PageLink>
-
-<PageLink title="Wired" url="https://www.wired.com/story/lastpass-breach-vaults-password-managers/"></PageLink>
-
-<PageLink title="Hacker News" url="https://thehackernews.com/2022/12/lastpass-admits-to-severe-data-breach.html"></PageLink>
+- <PageLink title="The Verge" url="https://www.theverge.com/2022/12/22/23523322/lastpass-data-breach-cloud-encrypted-password-vault-hackers"></PageLink>
+- <PageLink title="Wired" url="https://www.wired.com/story/lastpass-breach-vaults-password-managers/"></PageLink>
+- <PageLink title="Hacker News" url="https://thehackernews.com/2022/12/lastpass-admits-to-severe-data-breach.html"></PageLink>
 
 ## Bloatware
 

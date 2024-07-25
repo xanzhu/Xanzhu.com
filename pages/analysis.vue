@@ -6,7 +6,7 @@
 <script setup lang="ts">
 const { t } = useI18n();
 
-const seoImage = 'https://source.unsplash.com/yLDabpoCL3s'
+const seoImage = 'https://images.pexels.com/photos/27141316/pexels-photo-27141316.jpeg';
 
 const seoTitle = computed(() => {
   return t('Analysis.h1');

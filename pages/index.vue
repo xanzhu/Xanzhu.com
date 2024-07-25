@@ -3,7 +3,7 @@
         <div class="relative min-h-screen flex justify-center">
             <UiSvg loadSVG="landing-1" class="hidden md:flex" />
             <UiSvg loadSVG="landing-2" class="op60 md:op100" />
-            <div class="flex flex-col items-center justify-center h-full z-0 text-center pt-60">
+            <div class="flex flex-col items-center justify-center h-full z-0 text-center pt-70">
                 <h1 class="text-6xl max-w-screen-md mx5 sm:(text-8xl max-w-screen-lg text-center mx4 -mt-20) m0 -mt-40">
                     {{
                         $t("Home.title")
@@ -14,7 +14,7 @@
                         <NuxtLinkLocale to="/blog"
                             class="no-underline px-5 sm:px-10 py-3 dark:(bg-white text-black) bg-black text-white rounded-full border-none font-semibold hover:(cursor-pointer bg-[#0000ff] text-white) bg-[#0000ff]">
                             {{
-                        $t("Home.cta-1") }}</NuxtLinkLocale>
+                                $t("Home.cta-1") }}</NuxtLinkLocale>
                         <NuxtLinkLocale to="/about"
                             class="no-underline px-5 sm:px-10 py-3 bg-transparent b-1 b-solid rounded-full dark:(text-white b-white) font-semibold hover:(cursor-pointer border-[#0000ff]  text-[#0000ff]) dark:hover:(text-[#0067d4] b-[#0067d4]) text-black">
                             {{ $t("Home.cta-2") }}
@@ -31,29 +31,8 @@
     </main>
 </template>
 <script setup lang="ts">
-const { t } = useI18n();
-
-const seoTitle = computed(() => {
-    return t('Home.Seo.title');
-});
-
-const seoDesc = computed(() => {
-    return t('Home.Seo.desc');
-});
-
-const seoImage = 'https://source.unsplash.com/IayKLkmz6g0';
-
-useSeoMeta({
-    title: seoTitle,
-    description: seoDesc,
-    ogTitle: seoTitle,
-    ogDescription: seoDesc,
-    ogImage: seoImage,
-    twitterTitle: seoTitle,
-    twitterDescription: seoDesc,
-    twitterImage: seoImage,
-    titleTemplate: 'Xanzhu - %s',
-})
+const seoImage = 'https://images.pexels.com/photos/24253539/pexels-photo-24253539.jpeg';
+useLangMeta('Home.Seo', seoImage, 'prefix');
 
 // URL Validation | Redirection for "/?<example>" (Temp Fix)
 definePageMeta({

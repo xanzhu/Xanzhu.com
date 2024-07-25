@@ -77,6 +77,5 @@ Google과 같은 사이트에 신고하는 방식 <PageLink Link title="안전�
 
 이는 광고와 동영상을 신고하고 나열된 각 도메인을 직접 신고하는 전투가 계속되고 있습니다. 우리가 모든 것을 잡을 수 있다고 말하는 것은 비현실적입니다. 그러나 우리가 발견하는 것을 줄이려고 노력할 수는 있습니다.
 
-현재 우리가 직면하고 있는 가장 큰 문제는 AI의 도입으로 사기를 더 쉽게 만들 수 있다는 점입니다. 이에 비해 이러한 피싱 사기는 인터넷에 떠도는 AI 동영상 중 미미합니다. 좋은 점은 유튜브가 <PageLink title="더 투자하다" url="https://www.theverge.com/2024/1/25/24050443/youtube-is-investing-heavily-in-its-ability-to -stop-ai-celebrity-scam-ads"></PageLink>.
-AI 생성 콘텐츠 홍보 사기의 양을 잠재적으로 줄이기 위해 <PageLink title="404Media" url="https://www.404media.co/youtube-deletes-1-000-videos-of-celebrity-에서 자세히 알아보세요. ai-사기-광고/
+현재 우리가 직면하고 있는 가장 큰 문제는 AI의 도입으로 사기를 더 쉽게 만들 수 있다는 점입니다. 이에 비해 이러한 피싱 사기는 인터넷에 떠도는 AI 동영상 중 미미합니다. 좋은 점은 유튜브가 더 투자하다 AI 생성 콘텐츠 홍보 사기의 양을 잠재적으로 줄이기 위해 <PageLink title="404Media" url="https://www.404media.co/youtube-deletes-1-000-videos-of-celebrity-에서 자세히 알아보세요. ai-사기-광고/
 "></페이지링크>.

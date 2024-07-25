@@ -77,6 +77,5 @@ feature: true
 
 这仍然是一场举报广告和视频以及直接举报列出的每个域的持续战斗。 说我们可以捕获所有这些是不现实的，但我们可以尝试减少我们遇到的任何情况。
 
-我们现在面临的主要问题是人工智能的引入使得诈骗变得更容易，相比之下，这种网络钓鱼诈骗在互联网上漂浮的人工智能视频范围内微不足道。 好处是 YouTube <PageLink title="投资更多" url="https://www.theverge.com/2024/1/25/24050443/youtube-is-investing-heavily-in-its-ability-to -stop-ai-celebrity-scam-ads"></PageLink>。
-潜在地减少人工智能生成的内容宣传诈骗的数量，请阅读 <PageLink title="404Media" url="https://www.404media.co/youtube-deletes-1-000-videos-of-celebrity- 的更多信息 ai-诈骗广告/
-"></页面链接>。
+我们现在面临的主要问题是人工智能的引入使得诈骗变得更容易，相比之下，这种网络钓鱼诈骗在互联网上漂浮的人工智能视频范围内微不足道。 好处是 YouTube 投资更多 潜在地减少人工智能生成的内容宣传诈骗的数量，请阅读 <PageLink title="404Media" url="https://www.404media.co/youtube-deletes-1-000-videos-of-celebrity-ai-scam-ads/
+"></PageLink>。

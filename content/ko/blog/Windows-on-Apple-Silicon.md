@@ -6,7 +6,6 @@ tag: "가이드"
 toc: true
 feature: true
 img: "/images/blog/wvm/wvm.png"
-ogURL: "/images/blog/wvm/wvm.png"
 alt: "3가지 새로운 칩셋의 아이콘을 표시하는 2023년 Macbook Pro Black Edition"
 ---
 
@@ -30,7 +29,7 @@ alt: "3가지 새로운 칩셋의 아이콘을 표시하는 2023년 Macbook Pro 
 
 ## UTM 설치하기
 
-- <PageLink title="공식 웹사이트" url="https://mac.getutm.app/"></PageLink> 에서 UTM을 다운로드하거나 <PageLink title="Github" url="https:/에서 최신 버전을 다운로드합니다. /github.com/utmapp/UTM/releases"></PageLink>
+- <PageLink title="공식 웹사이트" url="https://mac.getutm.app/"></PageLink> 에서 UTM을 다운로드하거나 <PageLink title="Github" url="https://github.com/utmapp/UTM/releases"></PageLink>
 
 <i>참고: UTM은 앱 스토어에서도 사용할 수 있습니다. 단, UTM은 업데이트를 제공하는 유료 옵션이므로 위의 두 가지 옵션처럼 모든 업데이트를 수동으로 다운로드해야 합니다.</i>
 
@@ -47,7 +46,7 @@ alt: "3가지 새로운 칩셋의 아이콘을 표시하는 2023년 Macbook Pro 
 
 다음과 유사해야 합니다.
 
-<Media source="/images/blog/wvm/wvm-2.png"  alt="CrystalFetch 애플리케이션 시작 화면"></Media>
+<Media source="/images/blog/wvm/wvm-2.png" alt="CrystalFetch 애플리케이션 시작 화면"></Media>
 
 3. 다운로드를 클릭하세요
 
@@ -66,7 +65,7 @@ ISO 파일을 다운로드해야 합니다. 파일 크기가 약 5GB이므로 �
 
 이것과 비슷하게 보일 것입니다
 
-<Media source="/images/blog/wvm/wvm-3.png"  alt="가상 머신의 UTM 구성 화면"></Media>
+<Media source="/images/blog/wvm/wvm-3.png" alt="가상 머신의 UTM 구성 화면"></Media>
 
 1. 이 가상 머신에 사용할 RAM의 양을 선택합니다. 4096이 기본값이며 4GB와 같습니다. 시스템이 사용하는 것의 절반이 이상적이지만 필요한 경우 나중에 조정할 수 있습니다. 지금은 기본값으로 두세요.
 
@@ -78,7 +77,7 @@ ISO 파일을 다운로드해야 합니다. 파일 크기가 약 5GB이므로 �
 
 이제 가상 머신이 생성되었습니다. 이와 비슷한 내용이 표시되어야 합니다.
 
-<Media source="/images/blog/wvm/wvm-4.png"  alt="UTM 가상 머신 표시"></Media>
+<Media source="/images/blog/wvm/wvm-4.png" alt="UTM 가상 머신 표시"></Media>
 
 ## 가상 머신 실행
 
@@ -88,11 +87,11 @@ ISO 파일을 다운로드해야 합니다. 파일 크기가 약 5GB이므로 �
 
 2. 이 창 내부를 클릭하고 아무 키나 누르십시오.
 
-<Media source="/images/blog/wvm/wvm-5.png"  alt="계속 진행하려면 아무 키나 누르라는 메시지를 표시하는 UTM"></Media>
+<Media source="/images/blog/wvm/wvm-5.png" alt="계속 진행하려면 아무 키나 누르라는 메시지를 표시하는 UTM"></Media>
 
 이 단계는 중요합니다. 키를 충분히 빨리 누르지 않으면 다음 화면이 표시되기 때문입니다.
 
-<Media source="/images/blog/wvm/wvm-5b.png"  alt="부팅 오류를 표시하는 UTM"></Media>
+<Media source="/images/blog/wvm/wvm-5b.png" alt="부팅 오류를 표시하는 UTM"></Media>
 
 이 문제를 해결하려면 가상 머신을 닫았다가 다시 실행하거나 삼각형 버튼인 가상 머신 다시 시작 버튼을 선택하세요.
 
@@ -102,7 +101,7 @@ ISO 파일을 다운로드해야 합니다. 파일 크기가 약 5GB이므로 �
 
 이 작업을 수행하면 이제 Windows 설치를 구성할 수 있는 화면이 표시됩니다.
 
-<Media source="/images/blog/wvm/wvm-6.png"  alt="Windows ISO 설치 메뉴"></Media>
+<Media source="/images/blog/wvm/wvm-6.png" alt="Windows ISO 설치 메뉴"></Media>
 
 1. 언어를 선택하고 다음을 누르세요.
 

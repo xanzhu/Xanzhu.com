@@ -6,7 +6,6 @@ updated: "2023-02-01"
 tag: 가이드
 img: "/images/blog/BB/browser.webp"
 toc: true
-ogLink: "https://source.unsplash.com/JySoEnr-eOg"
 source: Denny Müller, Unsplash
 alt: "인기 있는 웹 브라우저의 아이콘"
 ---

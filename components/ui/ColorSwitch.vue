@@ -1,14 +1,30 @@
 <template>
-  <button @click="switchColor" class="bg-transparent b-hidden flex inline-block cursor-pointer mr0"
+  <div class="hidden">
+    <Icon name="line-md:moon-filled-alt-to-sunny-filled-loop-transition" />
+    <Icon name="line-md:moon-filled-alt-loop" />
+  </div>
+  <button @click="switchColor" class="bg-transparent border-none flex inline-block cursor-pointer mr-0"
     aria-label="Color Switcher">
-    <Icon v-if="$colorMode.preference === 'dark'" class="h4.5 w4.5 dark:text-black text-white" name="uil:sun" />
-    <Icon v-else class="h5 w5 text-white dark:text-black" name="uil:moon" />
+    <Icon :name="colorIcon" class="h-6 w-6 transition-all duration-500 dark:text-black text-white" />
   </button>
 </template>
-<script setup lang="ts">
-let c = useColorMode();
+
+<script lang="ts" setup>
+const colorMode = useColorMode();
+
+const colorIcon = computed(() => {
+  return colorMode.preference === 'dark' ? 'line-md:moon-filled-alt-to-sunny-filled-loop-transition' : 'line-md:moon-filled-alt-loop';
+});
 
 function switchColor() {
-  c.preference = c.value === "dark" ? "light" : "dark";
+  colorMode.preference = colorMode.value === "dark" ? "light" : "dark";
 }
 </script>
+
+<style scoped>
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+</style>

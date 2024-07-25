@@ -1,6 +1,6 @@
 <template>
   <div class="flex space-x-1">
-    <Icon class="h3.5 w3.5" name="tabler:clock-hour-3" />
+    <Icon class="h4 w4" name="fluent:clock-12-regular" />
     <p class="m0">
       {{ readingTime }}
     </p>

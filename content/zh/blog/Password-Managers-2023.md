@@ -6,7 +6,6 @@ tag: "指导"
 toc: true
 img: "/images/blog/PM/PM.webp"
 alt: "拿着iphone的人"
-ogLink: "https://www.pexels.com/photo/person-holding-iphone-6-with-red-case-7534801/"
 source: "Mikhail Nilov, Pexels"
 ---
 
@@ -169,11 +168,9 @@ LastPass 已经存在很长时间了，虽然我曾经使用过这个软件，�
 
 有关更多信息，您可以阅读以下文章：
 
-<PageLink title="The Verge" url="https://www.theverge.com/2022/12/22/23523322/lastpass-data-breach-cloud-encrypted-password-vault-hackers"></PageLink>
-
-<PageLink title="Wired" url="https://www.wired.com/story/lastpass-breach-vaults-password-managers/"></PageLink>
-
-<PageLink title="Hacker News" url="https://thehackernews.com/2022/12/lastpass-admits-to-severe-data-breach.html"></PageLink>
+- <PageLink title="The Verge" url="https://www.theverge.com/2022/12/22/23523322/lastpass-data-breach-cloud-encrypted-password-vault-hackers"></PageLink>
+- <PageLink title="Wired" url="https://www.wired.com/story/lastpass-breach-vaults-password-managers/"></PageLink>
+- <PageLink title="Hacker News" url="https://thehackernews.com/2022/12/lastpass-admits-to-severe-data-breach.html"></PageLink>
 
 ## 膨胀软件
 

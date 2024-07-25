@@ -5,7 +5,6 @@ tag: "安全"
 img: "/images/blog/2FA/2FA.webp"
 description: "双因素身份验证 (2FA) 如何提高在线安全性并保护您免受网络钓鱼诈骗"
 alt: "微软认证器"
-ogLink: "https://source.unsplash.com/RMIsZlv8qv4"
 source: "Ed Hardie, Unsplash"
 toc: true
 ---

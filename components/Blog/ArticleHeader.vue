@@ -2,19 +2,19 @@
     <div class="flex flex-col justify-center items-center px4 lg:min-w-screen-lg  max-w-screen-lg mx-auto">
         <div class="mx-auto flex flex-col items-start justify-center p1">
             <span
-                class="text-sm inline-flex b-1 b-solid dark:b-dark-700 dark:bg-dark-900 bg-light-300 b-light-500 dark:text-white text-black font-medium py-2 px-6">
+                class="text-sm inline-flex b-1 b-solid bg-dark-900 dark:bg-light-400 dark:b-light-500 text-white dark:text-black b-dark-300 font-medium py1 px-8 rounded-md">
                 {{ post.tag }}
             </span>
             <h1 class="font-bold text-4xl md:text-5xl my4 leading-tight">
                 {{ post.title }}
             </h1>
-            <div class="flex w-full mb4 items-center space-x-2">
-                <Date v-if="post.date" :date="post.date" itemprop="datePublished" class="text-sm mt1" />
-                <p class="lt-sm:hidden dark:text-brand-dark text-brand-light font-black m0">/</p>
-                <BlogReadTime class="lt-sm:hidden items-center mt0.2" :content="post" />
+            <div class="flex w-full mb4 items-center space-x-1.5">
+                <Date v-if="post.date" :date="post.date" itemprop="datePublished" class="mt1" />
+                <p class="lt-sm:hidden dark:text-brand-dark text-brand-light font-black m0">|</p>
+                <BlogReadTime class="lt-sm:hidden items-center mt0.7" :content="post" />
             </div>
-            <div class="justify-between flex w-full md:mb8">
-                <div class="font-thin text-xl md:text-2xl opacity-80 max-w-screen-sm">
+            <div class="flex flex-col space-y-5 justify-left w-full">
+                <div class="font-thin text-xl md:text-2xl opacity-80 max-w-screen-sm lg:max-w-screen-md">
                     {{ post.description }}
                 </div>
                 <div>

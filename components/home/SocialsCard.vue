@@ -10,12 +10,12 @@
 const links = [
   {
     url: "https://www.linkedin.com/company/xanzhu",
-    icon: "mdi:linkedin",
+    icon: "line-md:linkedin",
     name: "LinkedIn",
   },
   {
     url: "https://github.com/xanzhu",
-    icon: "mdi:github",
+    icon: "line-md:github",
     name: "Github",
   },
   {
@@ -25,7 +25,7 @@ const links = [
   },
   {
     url: "https://instagram.com/xanzhuu",
-    icon: "mdi:instagram",
+    icon: "line-md:instagram",
     name: "Instagram",
   }
 ];

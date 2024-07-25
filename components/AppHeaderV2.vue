@@ -23,7 +23,7 @@
                 <NuxtLink v-for="locale in availableLocales" @click.prevent.capture="setLocale(locale.code)"
                     :key="locale.code" :aria-label="t('app.sr.lang_select') + locale.name"
                     :to="switchLocalePath(locale.code)"
-                    active-class="dark:(!bg-white !text-black) !text-white !bg-black pointer-events-none order-first"
+                    active-class="!dark:(bg-white text-black) text-white bg-black pointer-events-none order-first"
                     class="dark:text-white text-black decoration-none font-medium text-sm px3 py1 rounded-full dark:hover:bg-dark-600 hover-bg-gray-300 order-1 mr-1 last:mr-0">
                     {{ locale.name }}
                 </NuxtLink>
@@ -33,23 +33,22 @@
         <!-- Mobile Menu -->
         <div class="md:hidden flex space-x-3 items-center">
             <UiColorSwitch />
-            <Icon name="tabler:language" class="cursor-pointer h5 w5" :aria-label="t('app.sr.lang')"
+            <Icon name="fluent:local-language-16-filled" class="cursor-pointer h6 w6" :aria-label="t('app.sr.lang')"
                 @click="langToggle">
                 <span class="sr-only">{{ t('app.sr.lang') }}</span>
             </Icon>
             <div
-                :class="Toggle.lang ? 'flex flex-col list-none absolute children:(decoration-none dark:text-white text-black font-medium) dark:bg-dark-900 bg-white top-12 right-17 p2 rounded-md children:mt1 text-center b-solid b-1 dark:b-dark-500 b-gray-300' : 'hidden'">
+                :class="Toggle.lang ? 'flex flex-col list-none absolute children:(decoration-none dark:text-white text-black font-medium) dark:bg-dark-900 bg-white top-12 right-17 p2 rounded-md children:mt1 text-center b-solid b-1 dark:b-dark-500 b-gray-300 dark:text-white text-black' : 'hidden'">
                 <NuxtLink v-for="(locale, index) in availableLocales" @click.prevent.capture="setLocale(locale.code)"
                     :key="`x-${index}`" :aria-label="t('app.sr.lang_select') + locale.name" @click="langToggle"
                     :to="switchLocalePath(locale.code)"
-                    class="text-black decoration-none font-medium px3 py1 order-1 dark:hover:bg-dark-500 hover:bg-gray-100 rounded-md dark:text-dark-900"
-                    active-class="bg-black !text-white dark:(!text-black bg-white) pointer-events-none order-first mt0">
+                    class="dark:text-white decoration-none font-medium px3 py1 order-1 dark:hover:bg-dark-500 hover:bg-gray-100 rounded-md"
+                    active-class="bg-black !text-white !dark:(text-black bg-white) pointer-events-none order-first mt0">
                     {{ locale.name }}
                 </NuxtLink>
             </div>
-            <Icon name="tabler:menu"
-                class="h6 w6 cursor-pointer inline-flex items-center p-2 text-sm rounded-lg md:hidden"
-                @click="openMenu">
+            <Icon name="fluent:list-rtl-16-filled"
+                class="h6 w6 cursor-pointer inline-flex items-center p2 text-sm rounded-lg md:hidden" @click="openMenu">
                 <span class="sr-only">{{ t('app.sr.menu') }}</span>
             </Icon>
             <nav

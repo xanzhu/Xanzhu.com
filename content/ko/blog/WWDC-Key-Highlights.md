@@ -17,7 +17,7 @@ source: Apple
 
 ### Vision Pro
 
-<Media source="/images/blog/wwdc/VP.webp"  alt="VisionPro VR 헤드셋" credit="The Verge"></Media>
+<Media source="/images/blog/wwdc/VP.webp" alt="VisionPro VR 헤드셋" credit="The Verge"></Media>
 
 가상 현실 헤드셋에 대한 Apple의 첫 번째 시도. 현실과 가상이 혼합된 독특한 경험을 제공합니다. 이 헤드셋은 몇 가지 인상적인 소프트웨어 기술을 제공하며 대부분의 헤드셋이 고려하지 않은 많은 기능을 처리합니다.
 
@@ -43,7 +43,7 @@ VisionPro에는 비디오와 사진을 실시간으로 찍을 수 있는 버튼�
 헤드셋은 또한 사용자가 사용자를 인식하고 주의를 기울이고 있음을 나타내는 사용자의 눈을 표시합니다.
 이 기능만으로는 모든 VR 헤드셋이 주변 인식 및 헤드셋을 착용하지 않은 다른 사람과의 상호 작용 옵션을 통합하지 않는 것입니다.
 
-<Media source="/images/blog/wwdc/human.jpeg"  alt="VisionPro 데모" credit="Apple"></Media>
+<Media source="/images/blog/wwdc/human.jpeg" alt="VisionPro 데모" credit="Apple"></Media>
 
 <h4>충전/케이블</h4>
 
@@ -66,7 +66,7 @@ M2를 사용하는 듀얼 칩 성능 모델과 새로운 R1 칩을 사용하여 
 
 매우 <PageLink title="흥미로운 개념" url="https://www.apple.com/apple-vision-pro/"></PageLink> 그리고 완전히 다르지만 판도를 바꾸는 일을 한 Apple에 찬사를 보냅니다. 신경망만으로 이 작업을 수행하는 데 필요한 프로세싱은 인상적이며 향후 몇 년 동안 이것이 어떻게 적응하고 개선될지 기대됩니다.
 
-<Media source="/images/blog/wwdc/sensor.jpeg"  alt="VisionPro 감지기" credit="Apple"></Media>
+<Media source="/images/blog/wwdc/sensor.jpeg" alt="VisionPro 감지기" credit="Apple"></Media>
 
 <h4>비전OS</h4>
    새로운 Vision Pro 가상 현실 헤드셋과 함께 작동할 모든 새로운 맞춤 설계 응용 프로그램을 수용할 완전히 새로운 운영 체제입니다. 개발자는 이러한 응용 프로그램을 개발하기 위한 특별한 플랫폼과 응용 프로그램을 갖게 됩니다.
@@ -105,7 +105,7 @@ M2를 사용하는 듀얼 칩 성능 모델과 새로운 R1 칩을 사용하여 
 
 엄청난 <PageLink title="성능 향상" url="https://www.apple.com/mac-pro/"></PageLink>, 이 새로운 고성능 컴퓨터는 이전보다 7.6배 향상된 새로운 M2 Ultra 칩을 사용합니다. 인텔 버전.
 
-<Media source="/images/blog/wwdc/macpro.jpeg"  alt="Mac Pro" credit="Apple"></Media>
+<Media source="/images/blog/wwdc/macpro.jpeg" alt="Mac Pro" credit="Apple"></Media>
 
 지원:
 
@@ -139,7 +139,7 @@ Apple은 향후 몇 개월에 걸쳐 출시되는 공개 베타 테스트를 위
 
 ### iOS 17
 
-<Media source="/images/blog/wwdc/ios17.png"  alt="iOS 17 시사" credit="Apple"></Media>
+<Media source="/images/blog/wwdc/ios17.png" alt="iOS 17 시사" credit="Apple"></Media>
 
 <h4>프로필 개선</h4>
 
@@ -157,7 +157,7 @@ Apple은 향후 몇 개월에 걸쳐 출시되는 공개 베타 테스트를 위
 
 이제 오디오 메시지에 재생하지 않고도 실시간 대본을 표시할 수 있는 옵션이 있습니다. 들을 수 없을 때 더 빠른 응답을 허용합니다.
 
-<Media source="/images/blog/wwdc/transcribe.jpeg"  alt="iOS 17 오디오 전사 기능" credit="Apple"></Media>
+<Media source="/images/blog/wwdc/transcribe.jpeg" alt="iOS 17 오디오 전사 기능" credit="Apple"></Media>
 
 <h4>페이스타임</h4>
 
@@ -181,7 +181,7 @@ Apple은 향후 몇 개월에 걸쳐 출시되는 공개 베타 테스트를 위
 
 새로운 연락처 공유 기능으로 휴대폰을 서로 가까이 두면 연락처 정보를 공유할 수 있습니다. 자주 사용하지 않는 흥미로운 기능인 것 같습니다. 누군가와 부딪히면 개인 정보 보호 문제로 이어질 수 있으므로 시작하기 전에 입력이 필요한 Apple Pay와 동일하게 활성화되기를 바랍니다.
 
-<Media source="/images/blog/wwdc/airdrop.jpeg"  alt="iOS 17 AirDrop 특징" credit="Apple"></Media>
+<Media source="/images/blog/wwdc/airdrop.jpeg" alt="iOS 17 AirDrop 특징" credit="Apple"></Media>
 
 <h4>SharePlay 개선</h4>
 
@@ -201,7 +201,7 @@ AirDrop을 사용하여 다른 사람과 직접 연결하는 더 나은 경험�
 
 예를 들어 음식 항목의 사진을 찍고 시각적 조회 기능을 사용하여 초기 사진을 기반으로 유사한 레시피나 요리를 찾습니다. 이것은 이미지를 누른 상태에서 "조회"를 선택하여 활성화할 수 있습니다.
 
-<Media source="/images/blog/wwdc/lookup.jpeg"  alt="iOS 17 조회 기능" credit="Apple"></Media>
+<Media source="/images/blog/wwdc/lookup.jpeg" alt="iOS 17 조회 기능" credit="Apple"></Media>
 
 <h4>AirPlay</h4>
 
@@ -231,7 +231,7 @@ AirPod를 음소거 및 음소거 해제하려면 한 번 누르십시오.
 
 ### iPadOS 17
 
-<Media source="/images/blog/wwdc/ipados.png"  alt="iPadOS 17 시사" credit="Apple"></Media>
+<Media source="/images/blog/wwdc/ipados.png" alt="iPadOS 17 시사" credit="Apple"></Media>
 
 <h4>잠금 화면</h4>
 

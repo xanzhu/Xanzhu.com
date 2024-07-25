@@ -43,24 +43,6 @@ const { data: posts } = await useAsyncData("articles", async () => {
     .find();
 });
 
-const seoImage = 'https://source.unsplash.com/x6YWgAN3SX8';
-
-const seoTitle = computed(() => {
-  return t('Blog.meta.title');
-});
-
-const seoDesc = computed(() => {
-  return t('Blog.meta.description');
-});
-
-useSeoMeta({
-  title: seoTitle,
-  description: seoDesc,
-  ogDescription: seoDesc,
-  ogTitle: seoTitle,
-  twitterTitle: seoTitle,
-  twitterDescription: seoDesc,
-  twitterImage: seoImage,
-  ogImage: seoImage,
-});
+const seoImage = 'https://images.pexels.com/photos/27277185/pexels-photo-27277185.jpeg';
+useLangMeta('Blog.meta', seoImage);
 </script>

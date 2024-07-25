@@ -1,11 +1,16 @@
 <template>
-    <div class="flex justify-center">
-        <div
-            class="flex items-center justify-center space-y-10 flex-col lg:(flex-row justify-between space-x-30 space-y-0 mx-10) my-10">
-            <NuxtLink v-for="link in urls" :key="link.name" :href="link.url" target="_blank" class="group">
-                <img :src="getSvgIconUrl(link.name)"
-                    class="h-auto w-auto fill-current grayscale group-hover:(grayscale-0)" alt="SVG Icon" />
-            </NuxtLink>
+    <div class="hidden lg:(flex justify-center items-center h20vh overflow-hidden)">
+        <div class="h100% overflow-hidden">
+            <div class="slide flex min-w200%">
+                <div class="flex justify-center items-center mr170px shrink-0"
+                    v-for="link in repeatedUrls" :key="link.name + Math.random()">
+                    <NuxtLink :href="link.url" target="_blank" class="inline-block group">
+                        <NuxtImg :src="getSvgIconUrl(link.name)"
+                            class="w-32 h-auto filter grayscale transition duration-300 ease-in-out group-hover:filter-none"
+                            :alt="link.name" loading="lazy" />
+                    </NuxtLink>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -35,4 +40,31 @@ const urls = [
 const getSvgIconUrl = (name) => {
     return `/images/home/${name.toLowerCase()}.svg`;
 };
+
+const repeatedUrls = ref([]);
+
+onMounted(() => {
+    repeatedUrls.value = [...urls, ...urls, ...urls];
+});
 </script>
+
+<style scoped>
+.slide {
+    animation: marquee 175s linear infinite;
+}
+
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.slide:hover {
+    animation-play-state: paused;
+}
+</style>

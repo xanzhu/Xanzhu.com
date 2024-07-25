@@ -55,45 +55,8 @@ const { data } = await useAsyncData("prev-next", async () => {
 const [prev, next] = data.value || [];
 </script>
 <style>
-.prose h1 {
-  visibility: hidden;
-}
-
-.prose p {
-  line-height: 1.4;
-  font-weight: 200;
-}
-
-.prose h2,
-h3,
-h4,
-h5 {
-  scroll-margin-top: 74px;
-}
-
-.prose h2 a,
-.prose h3 a,
-.prose h4 a,
-.prose h5 a,
-.prose h6 a {
-  text-decoration: none;
-  pointer-events: none;
-}
-
-.prose pre {
-  background-color: #f1f1f1;
-  color: #000;
-  border: 1px solid #d1d1d1;
-  overflow: hidden;
-  white-space: pre-wrap;
-}
-
-@media (prefers-color-scheme: dark) {
-  .dark .prose pre {
-    background-color: #141414;
-    color: #fff;
-    border: 1px solid #333333;
-  }
+html {
+  scroll-padding-top: 73px;
 }
 
 .ifr {

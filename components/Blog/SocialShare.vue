@@ -1,5 +1,5 @@
 <template>
-  <div class="flex space-x-2 justify-center sm:justify-start">
+  <div class="flex space-x-2 sm:justify-start">
     <div v-for="social in socials" class="children:(dark:text-white text-black)">
       <NuxtLink :to="social.url" :aria-label="social.aria" target="_blank"
         class="dark:hover:text-brand-dark hover:text-brand-light p1">
@@ -31,17 +31,17 @@ const socials = [
   },
   {
     url: `https://www.linkedin.com/shareArticle?url=https://xanzhu.com${postPath}&title=${postTitle}`,
-    icon: "mdi:linkedin",
+    icon: "line-md:linkedin",
     aria: t('share.linkedin')
   },
   {
     url: `https://www.reddit.com/submit?url=https://xanzhu.com${postPath}&title=${postTitle}`,
-    icon: "mdi:reddit",
+    icon: "line-md:reddit",
     aria: t('share.reddit')
   },
   {
     url: `mailto:?subject=${postTitle}&body=${emailTitle}: ${postTitle}`,
-    icon: "mdi:email",
+    icon: "line-md:email",
     aria: t('share.email')
   }
 ];
