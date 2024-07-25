@@ -1,6 +1,7 @@
 #:schema node_modules/wrangler/config-schema.json
-name = "xanzhu"
+name = "xanzhu-v8"
 compatibility_date = "2024-07-08"
+branch = "release/7.x"
 pages_build_output_dir = "./dist"
 
 # Automatically place your workloads in an optimal location to minimize latency.
