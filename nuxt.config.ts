@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "@unocss/nuxt",
     "@nuxtjs/sitemap",
+    "@nuxtjs/sitemap",
     "@nuxtjs/color-mode",
     "@nuxt/icon",
     "@nuxtjs/robots",
