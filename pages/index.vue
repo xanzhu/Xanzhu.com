@@ -21,7 +21,6 @@
                         </NuxtLinkLocale>
                     </div>
                 </div>
-                <UiSvg loadSVG="landing-3" class="hidden md:flex" />
             </div>
         </div>
         <HomeCompany />

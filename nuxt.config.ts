@@ -117,7 +117,7 @@ export default defineNuxtConfig({
           "'unsafe-inline'" 
         ],
         'base-uri': ["'none'"],
-        'img-src': ["'self'", "data:", "https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%203.svg", "https://assets.lotofcarrots.com/media/home/section/desktop/4.webp", "https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/AI_features_feb6.gif", "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/feb_6_AI_hero.width-1000.format-webp.webp"], // Add relevant https://... sources if you load images from external sources 
+        'img-src': ["'self'", "data:", "https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%203.svg", "https://assets.lotofcarrots.com/media/home/section/desktop/4.webp", "https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/AI_features_feb6.gif", "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/feb_6_AI_hero.width-1000.format-webp.webp"], 
         'font-src': ["'self'", "https:", "data:"], 
         'object-src': ["'none'"],
         'script-src-attr': ["'none'"],
