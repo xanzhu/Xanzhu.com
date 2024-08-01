@@ -31,28 +31,29 @@ if (!post.value) throw createError({ statusCode: 404 });
 const seoTitle = post.value?.title;
 const seoDesc = post.value?.description;
 const seoImage = "https://xanzhu.com" + post.value?.img;
+const titleSuffix = " - Xanzhu"
 
 useSeoMeta({
   title: seoTitle,
   description: seoDesc,
-  ogTitle: seoTitle,
+  ogTitle: `${seoTitle}${titleSuffix}`,
   ogDescription: seoDesc,
-  twitterTitle: seoTitle,
+  twitterTitle: `${seoTitle}${titleSuffix}`,
   twitterDescription: seoDesc,
   twitterImage: seoImage,
   ogType: "article",
   ogImage: seoImage,
 });
 
-const { data } = await useAsyncData("prev-next", async () => {
-  let query = locale.value !== "en" ? `${locale.value}/blog` : "/blog";
-  return await queryContent(query)
+const { data: prevNext } = await useAsyncData("prev-next", async () => {
+  let queryPath = locale.value !== "en" ? `${locale.value}/blog` : "/blog";
+  return await queryContent(queryPath)
     .sort({ date: -1 })
     .only(['_path'])
     .findSurround(path);
 });
 
-const [prev, next] = data.value || [];
+const [prev, next] = prevNext.value || [];
 </script>
 <style>
 html {
