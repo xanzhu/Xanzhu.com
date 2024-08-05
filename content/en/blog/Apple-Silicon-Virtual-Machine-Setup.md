@@ -3,7 +3,7 @@ title: "Apple Silicon Virtual Machine Setup 2023"
 date: "2023-01-08"
 tag: "Guide"
 img: "/images/blog/VM/vm1.webp"
-description: "Learn to set up virtual machines on Apple Silicon using Parallels or UTM. Our guide covers installation, configuration, and running your first virtual machine."
+description: "Learn setup of virtual machines on Apple Silicon using Parallels or UTM. Covering installation, configuration, and running your first virtual machine"
 alt: "Apple Silicon Chipset M1"
 toc: true
 ---
