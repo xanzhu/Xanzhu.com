@@ -8,7 +8,9 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "deploy": "pnpm run build && wrangler pages deploy",
+    "cf-typegen": "wrangler types"
   },
   "dependencies": {
     "@nuxt/content": "2.13.2",
@@ -33,6 +35,10 @@
     "@unocss/preset-uno": "^0.62.2",
     "@unocss/preset-web-fonts": "^0.62.2",
     "@unocss/transformer-directives": "^0.62.2",
-    "@unocss/transformer-variant-group": "^0.62.2"
+    "@unocss/transformer-variant-group": "^0.62.2",
+    "@cloudflare/workers-types": "^4.20240620.0",
+    "h3": "^1.12.0",
+    "nitro-cloudflare-dev": "^0.1.5",
+    "wrangler": "^3.63.1"
   }
 }
