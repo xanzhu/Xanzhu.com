@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="flex justify-between pt-5 sm:justify-around sm:pt-10 children:(md:text-lg text-sm m-4 px-3 py-1 rounded-sm)">
+    class="flex justify-between pt-5 sm:justify-around sm:pt-10 children:(md:text-lg text-sm m-4 px4 py2 rounded-md)">
     <NuxtLink v-if="prev" :to="prev._path" :aria-label="t('Blog.previous')"
       class="dark:(bg-dark-900 text-white) group bg-light-400 text-black flex items-center no-underline">
       <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"
