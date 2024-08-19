@@ -2,7 +2,7 @@
 title: "2023년 애플 실리콘 가상 머신 설정 최종 가이드: 완벽한 팁과 지침"
 date: "2023-01-08"
 tag: "가이드"
-img: "/images/blog/VM/vm1.png"
+img: "/images/blog/VM/vm1.webp"
 description: "Parallels 또는 UTM을 사용하여 Apple Silicon Mac에서 가상 머신을 설정하는 방법을 배웁니다. 가이드에서는 첫 번째 가상 머신의 설치, 구성 및 실행에 대해 다룹니다."
 alt: "Apple 실리콘 칩셋 M1"
 toc: true

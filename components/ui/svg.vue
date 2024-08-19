@@ -27,13 +27,6 @@
             <path fill="#fff" class="invert dark:invert-0"
                 d="M110 209.5c0 3.595-2.905 6.5-6.5 6.5a6.493 6.493 0 0 1-6.5-6.5c0-3.595 2.905-6.5 6.5-6.5 3.583 0 6.5 2.905 6.5 6.5Z" />
         </svg>
-
-        <!-- Scroll Down SVG -->
-        <svg v-if="loadSVG === 'landing-3'" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
-            class="absolute bottom-40 animate-bounce">
-            <path fill="#0000ff"
-                d="M7.293 15.707a1 1 0 0 0 1.414 0l6.364-6.364a1 1 0 0 0-1.414-1.414L8 13.586 2.343 7.929A1 1 0 0 0 .93 9.343l6.364 6.364ZM7 0v15h2V0H7Z" />
-        </svg>
     </div>
 </template>
 <script setup lang="ts">

@@ -5,7 +5,6 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "@unocss/nuxt",
     "@nuxtjs/sitemap",
-    "@nuxtjs/sitemap",
     "@nuxtjs/color-mode",
     "@nuxt/icon",
     "@nuxtjs/robots",
@@ -28,19 +27,19 @@ export default defineNuxtConfig({
     locales: [
       {
         code: "en",
-        iso: "en",
+        language: "en",
         name: "English",
         file: "en.json",
       },
       {
         code: "ko",
-        iso: "ko",
+        language: "ko",
         name: "한국어",
         file: "ko.json",
       },
       {
         code: "zh",
-        iso: "zh",
+        language: "zh",
         name: "中文",
         file: "zh.json",
       },
@@ -121,7 +120,7 @@ export default defineNuxtConfig({
           "'unsafe-inline'" 
         ],
         'base-uri': ["'none'"],
-        'img-src': ["'self'", "data:", "https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%203.svg", "https://assets.lotofcarrots.com/media/home/section/desktop/4.webp", "https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/AI_features_feb6.gif", "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/feb_6_AI_hero.width-1000.format-webp.webp"], // Add relevant https://... sources if you load images from external sources 
+        'img-src': ["'self'", "data:", "https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%203.svg", "https://assets.lotofcarrots.com/media/home/section/desktop/4.webp", "https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/AI_features_feb6.gif", "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/feb_6_AI_hero.width-1000.format-webp.webp"], 
         'font-src': ["'self'", "https:", "data:"], 
         'object-src': ["'none'"],
         'script-src-attr': ["'none'"],
