@@ -1,23 +1,23 @@
 <template>
     <div
-        class="flex flex-row space-x-2 dark:(bg-black text-white) bg-white text-black justify-between p6 md:(p12 pb4) items-center border-t-1 b-0 dark:border-dark-800 border-light-700 b-solid">
+        class="flex flex-row space-x-2 bg-black text-white dark:(bg-white text-black) justify-between p6 md:(p12 pb4) items-center border-t-1 b-0 border-dark-800 dark:border-light-700 b-solid">
         <div class="flex flex-col">
             <div class="flex-col md:(flex-row items-center space-x-10 space-y-0) flex space-y-4">
-                <UiLogo class="text-black dark:text-white" />
+                <UiLogo class="dark:text-black text-white" />
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div v-for="(link, index) in links" :key="index">
                         <NuxtLinkLocale
-                            class="font-medium text-brand-light dark:text-brand-dark decoration-none dark:hover:text-white hover:text-black"
+                            class="font-medium text-white dark:text-black decoration-none px2 py1.5 rounded-md dark:hover:(text-black bg-light7) hover:(bg-dark-700 text-white) duration-400 transition ease-in-out"
                             :to=link.url>{{
-                                t(link.name) }}
+                        t(link.name) }}
                         </NuxtLinkLocale>
                     </div>
                 </div>
                 <HomeSocialsCard class="mt-10 md:hidden" />
             </div>
-            <p class="mt-5 font-normal text-sm dark:text-gray-300 text-dark-300">{{ t("Footer") }} <NuxtLinkLocale
+            <p class="mt-5 font-normal text-sm text-gray-300 dark:text-dark-300">{{ t("Footer") }} <NuxtLinkLocale
                     to="/privacy-policy"
-                    class="font-semibold decoration-none dark:text-gray-300 text-black hover:(text-brand-dark)">{{
+                    class="font-semibold decoration-none text-gray-300 dark:text-black hover:(text-brand-dark)">{{
                         t('PP.title') }}</NuxtLinkLocale>
             </p>
         </div>
