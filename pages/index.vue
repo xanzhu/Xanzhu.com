@@ -15,10 +15,6 @@
                             class="no-underline px-5 sm:px-10 py-3 dark:(bg-white text-black) bg-black text-white rounded-full border-none font-semibold hover:(cursor-pointer bg-[#0000ff] text-white) bg-[#0000ff]">
                             {{
                         $t("Home.cta-1") }}</NuxtLinkLocale>
-                        <NuxtLinkLocale to="/about"
-                            class="no-underline px-5 sm:px-10 py-3 bg-transparent b-1 b-solid rounded-full dark:(text-white b-white) font-semibold hover:(cursor-pointer border-[#0000ff]  text-[#0000ff]) dark:hover:(text-[#0067d4] b-[#0067d4]) text-black">
-                            {{ $t("Home.cta-2") }}
-                        </NuxtLinkLocale>
                     </div>
                 </div>
             </div>
