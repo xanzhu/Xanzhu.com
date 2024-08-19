@@ -130,5 +130,9 @@ export default defineNuxtConfig({
     sri: true
   },
 
+  robots: {
+    allow: "/"
+  },
+
   compatibilityDate: "2024-07-08",
 });
