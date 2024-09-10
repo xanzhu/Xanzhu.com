@@ -41,16 +41,8 @@ useHead({
     {
       rel: "icon",
       type: "image/png",
-      href: "/images/favicon/favicon.png",
+      href: "/images/favicon/favicon-32x32.png",
       sizes: "32x32",
-      media: "(prefers-color-scheme:light)",
-    },
-    {
-      rel: "icon",
-      type: "image/png",
-      href: "/images/favicon/favicon-dark.png",
-      sizes: "32x32",
-      media: "(prefers-color-scheme:dark)",
     },
     {
       rel: "icon",
