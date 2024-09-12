@@ -50,7 +50,8 @@ useHead({
     },
   ],
   meta: [
-    { name: 'naver-site-verification', content: '' }
+    { name: 'naver-site-verification', content: '' },
+    { name: 'og:logo', content: 'https://xanzhu.com/images/favicon/logo.png' }
   ]
 })
 
