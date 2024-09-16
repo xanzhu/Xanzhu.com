@@ -7,9 +7,10 @@
     </header>
     <ul class="flex flex-col gap-2 px-6 text-sm">
       <li v-for="link of flattenLinks(links)" :key="link.id" class="text-gray-500 dark:text-light-400" :class="{
-          'ml-4 list-disc opacity-80 hover:(underline underline-offset-3 decoration-2 decoration-brand-light)': link.depth === 3,
-          'font-semibold list-none -ml4 mr-auto py1 px3 rounded-md bg-light8 dark:bg-dark7': link.depth === 2,
-        }">
+        'list-disc': !hasChildren && link.depth === 2,
+        'ml-4 opacity-80 hover:(underline underline-offset-3 decoration-2 decoration-brand-light)': link.depth === 3,
+        'font-semibold list-none -ml4 mr-auto py1 px3 rounded-md bg-light8 dark:bg-dark7': link.depth === 2 && hasChildren,
+      }">
         <NuxtLink class="no-underline dark:text-white text-black" :href="`#${link.id}`">
           {{ link.text }}
         </NuxtLink>
@@ -17,10 +18,12 @@
     </ul>
   </nav>
 </template>
+
 <script setup lang="ts">
 const { t } = useI18n();
 
-defineProps(["links"]);
+const props = defineProps(["links"]);
+
 const flattenLinks = (links: Array<any>) => {
   const _links = links
     .map((link) => {
@@ -34,4 +37,8 @@ const flattenLinks = (links: Array<any>) => {
     .flat(1);
   return _links;
 };
+
+const hasChildren = computed(() => {
+  return flattenLinks(props.links).some(link => link.depth === 3);
+});
 </script>
