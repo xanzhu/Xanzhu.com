@@ -13,7 +13,7 @@
     <AppHeaderV2 class="sticky top-0 z-1" />
     <UiInfoBar />
     <NuxtPage />
-    <AppFooterV2 />
+    <LazyAppFooterV2 />
   </div>
 
   </Html>

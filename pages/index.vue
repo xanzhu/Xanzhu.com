@@ -19,10 +19,10 @@
                 </div>
             </div>
         </div>
-        <HomeCompany />
-        <HomeArticleFeature class="min-h-screen" />
-        <HomePagesCard class="my-20" />
-        <HomeStatsCard class="min-h-screen" />
+        <LazyHomeCompany />
+        <LazyHomeArticleFeature class="min-h-screen" />
+        <LazyHomePagesCard class="my-20" />
+        <LazyHomeStatsCard class="min-h-screen" />
     </main>
 </template>
 <script setup lang="ts">
