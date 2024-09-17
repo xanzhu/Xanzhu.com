@@ -10,14 +10,15 @@ export default defineConfig({
     presetTypography({
       cssExtend: {
         h1: {
-          visbility: "hidden",
+          visibility: "hidden",
         },
         "h2 > a, h3 > a, h4 > a, h5 > a, h6 > a": {
           "pointer-events": "none",
           "text-decoration": "none",
         },
         "pre, code": {
-          "--uno": "dark:(bg-dark-800 text-light-700 border-dark-300) text-dark8",
+          "--uno":
+            "dark:(bg-dark-800 text-light-700 border-dark-300) text-dark8",
           border: "1px solid #d1d1d1",
           overflow: "hidden",
           "background-color": "#f1f1f1",
