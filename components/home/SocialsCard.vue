@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-row md:space-x-6 items-center pt1 md:items-end font-none">
     <NuxtLink v-for="(link, index) in links" :key="index" :to="link.url" :aria-label="link.name" target="_blank"
-      class="pr4 md:p2 dark:text-white text-black hover:text-brand-dark">
+      class="pr4 md:p2 dark:text-black text-white hover:text-brand-dark">
       <Icon :name="link.icon" class="h5 w5" />
     </NuxtLink>
   </div>

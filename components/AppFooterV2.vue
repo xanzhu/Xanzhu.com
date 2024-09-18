@@ -3,7 +3,7 @@
         class="flex flex-row space-x-2 bg-black text-white dark:(bg-white text-black) justify-between p6 md:(p12 pb4) items-center border-t-1 b-0 border-dark-800 dark:border-light-700 b-solid">
         <div class="flex flex-col">
             <div class="flex-col md:(flex-row items-center space-x-10 space-y-0) flex space-y-4">
-                <UiLogo class="text-black dark:text-white" />
+                <UiLogo class="text-white dark:text-black" />
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div v-for="(link, index) in links" :key="index">
                         <NuxtLinkLocale
