@@ -2,8 +2,8 @@
     <div class="hidden lg:(flex justify-center items-center h20vh overflow-hidden)">
         <div class="h100% overflow-hidden">
             <div class="slide flex min-w200%">
-                <div class="flex justify-center items-center mr170px shrink-0"
-                    v-for="link in repeatedUrls" :key="link.name + Math.random()">
+                <div class="flex justify-center items-center mr170px shrink-0" v-for="link in repeatedUrls"
+                    :key="link.name + Math.random()">
                     <NuxtLink :href="link.url" target="_blank" class="inline-block group">
                         <NuxtImg :src="getSvgIconUrl(link.name)"
                             class="w-32 h-auto filter grayscale transition duration-300 ease-in-out group-hover:filter-none"

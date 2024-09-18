@@ -14,7 +14,7 @@
                         <NuxtLinkLocale to="/blog"
                             class="no-underline px-5 sm:px-10 py-3 dark:(bg-white text-black) bg-black text-white rounded-full border-none font-semibold hover:(cursor-pointer bg-[#0000ff] text-white) bg-[#0000ff]">
                             {{
-                        $t("Home.cta-1") }}</NuxtLinkLocale>
+                                $t("Home.cta-1") }}</NuxtLinkLocale>
                     </div>
                 </div>
             </div>

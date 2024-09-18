@@ -9,7 +9,8 @@ export default defineNuxtConfig({
     "@nuxt/icon",
     "@nuxtjs/robots",
     "@nuxt/image",
-    "nuxt-security"
+    "nitro-cloudflare-dev",
+    "nuxt-security",
   ],
 
   colorMode: {
@@ -71,7 +72,9 @@ export default defineNuxtConfig({
     "/blog/**": { isr: true },
   },
 
-  plugins: [{ src: "~/plugins/vercel.ts", mode: "client" }],
+  nitro: {
+    preset: "cloudflare-pages",
+  },
 
   image: {
     domains: ["images.pexels.com"],
@@ -136,7 +139,6 @@ export default defineNuxtConfig({
 
   compatibilityDate: "2024-07-08",
 
-  
   // Experimental Features
   experimental: {
     buildCache: true
