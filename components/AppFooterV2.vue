@@ -21,14 +21,8 @@
                         t('PP.title') }}</NuxtLinkLocale>
             </p>
         </div>
-        <div class="hidden md:(flex-col flex items-end)">
+        <div class="hidden md:flex">
             <HomeSocialsCard class="mb-5" />
-            <NuxtLink
-                to="https://www.digitalocean.com/?refcode=2cc6381920cd&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"
-                target="_blank">
-                <NuxtImg src="https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%203.svg"
-                    alt="DigitalOcean Referral Badge" loading="lazy" height="65" width="215" />
-            </NuxtLink>
         </div>
     </div>
 </template>

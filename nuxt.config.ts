@@ -48,6 +48,7 @@ export default defineNuxtConfig({
       useCookie: true,
       cookieKey: "0002",
       redirectOn: "root",
+      cookieSecure: true,
     },
   },
 
@@ -98,49 +99,58 @@ export default defineNuxtConfig({
   },
 
   // SECURITY V1
-   security: {
+  security: {
     nonce: true,
     ssg: {
       meta: true,
       hashScripts: true,
-      hashStyles: false
+      hashStyles: false,
     },
     headers: {
       contentSecurityPolicy: {
-        'script-src': [
+        "script-src": [
           "'self'",
           "https:",
           "'unsafe-inline'",
           "'strict-dynamic'",
           "'nonce-{{nonce}}'",
         ],
-        'style-src': [
-          "'self'", 
-          "https:",
-          "'unsafe-inline'" 
+        "style-src": ["'self'", "https:", "'unsafe-inline'"],
+        "base-uri": ["'none'"],
+        "img-src": [
+          "'self'",
+          "data:",
+          "https://assets.lotofcarrots.com/media/home/section/desktop/4.webp",
+          "https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/AI_features_feb6.gif",
+          "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/feb_6_AI_hero.width-1000.format-webp.webp",
         ],
-        'base-uri': ["'none'"],
-        'img-src': ["'self'", "data:", "https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%203.svg", "https://assets.lotofcarrots.com/media/home/section/desktop/4.webp", "https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/AI_features_feb6.gif", "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/feb_6_AI_hero.width-1000.format-webp.webp"], 
-        'font-src': ["'self'", "https:", "data:"], 
-        'object-src': ["'none'"],
-        'script-src-attr': ["'none'"],
-        'frame-src': ["'self'", "https://www.youtube.com", "https://youtube.com"],
+        "font-src": ["'self'", "https:", "data:"],
+        "object-src": ["'none'"],
+        "script-src-attr": ["'none'"],
+        "frame-src": [
+          "'self'",
+          "https://www.youtube.com",
+          "https://youtube.com",
+        ],
       },
-      crossOriginEmbedderPolicy: process.env.NODE_ENV === 'development' ? 'unsafe-none' : 'credentialless',
-      crossOriginOpenerPolicy: 'same-origin',
-      crossOriginResourcePolicy: 'same-origin',
+      crossOriginEmbedderPolicy:
+        process.env.NODE_ENV === "development"
+          ? "unsafe-none"
+          : "credentialless",
+      crossOriginOpenerPolicy: "same-origin",
+      crossOriginResourcePolicy: "same-origin",
     },
-    sri: true
+    sri: true,
   },
 
   robots: {
-    allow: "/"
+    allow: "/",
   },
 
   compatibilityDate: "2024-07-08",
 
   // Experimental Features
   experimental: {
-    buildCache: true
-  }
+    buildCache: true,
+  },
 });
