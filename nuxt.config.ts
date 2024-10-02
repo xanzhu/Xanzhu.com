@@ -114,7 +114,6 @@ export default defineNuxtConfig({
           "'unsafe-inline'",
           "'strict-dynamic'",
           "'nonce-{{nonce}}'",
-          "https://xanzhu.com/cdn-cgi/speculation"
         ],
         "style-src": ["'self'", "https:", "'unsafe-inline'"],
         "base-uri": ["'none'"],
