@@ -114,6 +114,7 @@ export default defineNuxtConfig({
           "'unsafe-inline'",
           "'strict-dynamic'",
           "'nonce-{{nonce}}'",
+          "https://xanzhu.com/cdn-cgi/"
         ],
         "style-src": ["'self'", "https:", "'unsafe-inline'"],
         "base-uri": ["'none'"],
@@ -145,6 +146,7 @@ export default defineNuxtConfig({
 
   robots: {
     allow: "/",
+    disallow: "/cdn-cgi/"
   },
 
   compatibilityDate: "2024-07-08",
