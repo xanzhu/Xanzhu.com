@@ -2,12 +2,19 @@
     <div class="hidden lg:(flex justify-center items-center h20vh overflow-hidden)">
         <div class="h100% overflow-hidden">
             <div class="slide flex min-w200%">
-                <div class="flex justify-center items-center mr170px shrink-0"
-                    v-for="link in repeatedUrls" :key="link.name + Math.random()">
+                <div class="flex justify-center items-center mr170px shrink-0" v-for="link in urls" :key="link.name">
                     <NuxtLink :href="link.url" target="_blank" class="inline-block group">
                         <NuxtImg :src="getSvgIconUrl(link.name)"
                             class="w-32 h-auto filter grayscale transition duration-300 ease-in-out group-hover:filter-none"
-                            :alt="link.name" loading="lazy" />
+                            :alt="link.name" width="128" height="40" loading="lazy" />
+                    </NuxtLink>
+                </div>
+                <div class="flex justify-center items-center mr170px shrink-0" v-for="link in urls"
+                    :key="'clone-' + link.name">
+                    <NuxtLink :href="link.url" target="_blank" class="inline-block group">
+                        <NuxtImg :src="getSvgIconUrl(link.name)"
+                            class="w-32 h-auto filter grayscale transition duration-300 ease-in-out group-hover:filter-none"
+                            :alt="link.name" width="128" height="40" loading="lazy" />
                     </NuxtLink>
                 </div>
             </div>
@@ -40,19 +47,12 @@ const urls = [
 const getSvgIconUrl = (name) => {
     return `/images/home/${name.toLowerCase()}.svg`;
 };
-
-const repeatedUrls = ref([]);
-
-onMounted(() => {
-    repeatedUrls.value = [...urls, ...urls, ...urls];
-});
 </script>
 
 <style scoped>
 .slide {
     animation: marquee 175s linear infinite;
 }
-
 
 @keyframes marquee {
     0% {

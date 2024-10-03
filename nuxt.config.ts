@@ -142,6 +142,7 @@ export default defineNuxtConfig({
 
   robots: {
     allow: "/",
+    disallow: "/cdn-cgi/" // Cloudflare Script
   },
 
   compatibilityDate: "2024-07-08",
