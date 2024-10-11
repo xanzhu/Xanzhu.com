@@ -1,11 +1,10 @@
 <template>
-    <div class="flex flex-col justify-center items-center px4 lg:min-w-screen-lg  max-w-screen-lg mx-auto">
+    <div class="flex flex-col justify-center items-center px4 lg:min-w-screen-lg max-w-screen-lg mx-auto">
         <div class="mx-auto flex flex-col items-start justify-center p1">
-            <span
-                class="text-sm inline-flex b-1 b-solid bg-dark-900 dark:bg-light-400 dark:b-light-500 text-white dark:text-black b-dark-300 font-medium py1 px-8 rounded-md">
+            <span class="text-inherit op95 font-medium uppercase text-sm tracking-widest">
                 {{ post.tag }}
             </span>
-            <h1 class="font-bold text-4xl md:text-5xl my4 leading-tight">
+            <h1 class="font-bold text-4xl md:text-5xl mt0 mb4 leading-tight">
                 {{ post.title }}
             </h1>
             <div class="flex w-full mb4 items-center space-x-1.5">
