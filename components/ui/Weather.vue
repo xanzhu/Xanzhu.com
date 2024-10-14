@@ -1,12 +1,13 @@
 <template>
-    <div class="flex items-center space-x-2 children:m0">
+    <div class="flex items-center space-x-2 children:m0" :style="{
+        height: '30px',
+        opacity: weatherData ? 1 : 0,
+        transition: 'opacity 0.3s ease'
+    }">
         <template v-if="weatherData">
             <p>{{ weatherData.location.name }}</p>
             <p class="font-bold">{{ weatherData.current.temp_c }}°C</p>
             <p>{{ weatherData.current.condition.text }}</p>
-        </template>
-        <template v-else>
-            <p class="m0">{{ $t('Home.weatherLoad') }}</p>
         </template>
     </div>
 </template>

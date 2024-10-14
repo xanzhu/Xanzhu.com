@@ -2,7 +2,10 @@
     <div
         class="flex flex-col sm:(flex-row py2 px4) py4 space-y-2 md:(flex-row px20 py2 space-y-0) justify-between items-center text-sm font-normal dark:(bg-black text-white) bg-white text-black">
         <UiWeather />
-        <span v-if="formattedDate">{{ formattedDate }}</span>
+        <span
+            :style="{ height: '20px', opacity: formattedDate ? 1 : 0, transition: 'opacity 0.3s ease' }">
+            {{ formattedDate || ' ' }}
+        </span>
     </div>
 </template>
 

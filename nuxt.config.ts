@@ -133,6 +133,11 @@ export default defineNuxtConfig({
           "https://youtube.com",
         ],
       },
+      strictTransportSecurity: {
+        maxAge: 31536000,
+        includeSubdomains: true,
+        preload: true,
+      },
       crossOriginEmbedderPolicy:
         process.env.NODE_ENV === "development"
           ? "unsafe-none"
@@ -145,7 +150,7 @@ export default defineNuxtConfig({
 
   robots: {
     allow: "/",
-    disallow: "/cdn-cgi/"
+    disallow: "/cdn-cgi/", // Cloudflare Script
   },
 
   compatibilityDate: "2024-07-08",

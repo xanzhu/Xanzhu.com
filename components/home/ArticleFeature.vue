@@ -19,7 +19,7 @@
 
             <div class="hidden lg:(grid row-span-2 col-span-2)" v-if="features && features[1]">
                 <NuxtImg :src="features[1].img" :alt="features[1].alt" class="object-cover h-full w-full rounded-lg"
-                    loading="lazy" />
+                    loading="lazy" format="webp" />
             </div>
 
             <div v-for="(feature, index) in features.slice(3, 6)" :key="index" class="group hover:b-[#0000ff]">

@@ -1,8 +1,11 @@
 // uno.config.ts
-import { defineConfig, presetTypography } from "unocss";
-import presetUno from "@unocss/preset-uno";
-import transformerVariantGroup from "@unocss/transformer-variant-group";
-import transformerDirectives from "@unocss/transformer-directives";
+import {
+  defineConfig,
+  presetTypography,
+  presetUno,
+  transformerDirectives,
+  transformerVariantGroup,
+} from "unocss";
 
 export default defineConfig({
   presets: [
