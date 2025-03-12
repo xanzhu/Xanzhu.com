@@ -1,6 +1,6 @@
 {
   "name": "xanzhu.com",
-  "version": "1.0.102",
+  "version": "1.0.103",
   "private": true,
   "license": "MIT",
   "scripts": {
@@ -16,7 +16,7 @@
     "@nuxt/icon": "1.10.3",
     "@nuxt/image": "^1.9.0",
     "@nuxtjs/color-mode": "^3.5.2",
-    "@nuxtjs/i18n": "^9.3.0",
+    "@nuxtjs/i18n": "^9.3.1",
     "@nuxtjs/robots": "^5.2.4",
     "@nuxtjs/sitemap": "^7.2.6",
     "chart.js": "^4.4.8",
@@ -38,7 +38,8 @@
     "@unocss/transformer-variant-group": "^66.0.0"
   },
   "resolutions": {
-    "@nuxtjs/mdc": "^0.15.0"
-  },
-  "packageManager": "pnpm@9.3.0+sha1.d4f1da7af76dbdb4ab1a08f6b5add602ffad6fd4"
+    "@nuxtjs/mdc": "^0.15.0",
+    "esbuild": "^0.25.1",
+    "vue-i18n": "^10.0.6"
+  }
 }
