@@ -84,7 +84,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       Version: "1.0.101",
-      WeatherAPI: "",
+      WeatherAPI: process.env.WEATHER_API,
       i18n: {
         baseUrl: "https://xanzhu.com",
       },
@@ -114,10 +114,9 @@ export default defineNuxtConfig({
           "'nonce-{{nonce}}'",
           "'unsafe-inline'",
           "https://*.xanzhu.com",
-          "https://*.cloudflare.com",
         ],
         "style-src": ["'self'", "'unsafe-inline'"],
-        "base-uri": ["'none'"],
+        "base-uri": "'none'",
         "img-src": [
           "'self'",
           "https://cdn.xanzhu.com",
@@ -141,10 +140,11 @@ export default defineNuxtConfig({
         "connect-src": [
           "'self'",
           "https://*.xanzhu.com",
-          "https://*.cloudflare.com",
           "https://api.weatherapi.com",
           "https://api.iconify.design",
-          "ws://localhost:4000",
+          ...(process.env.NODE_ENV === "development"
+            ? ["ws://localhost:4000"]
+            : []),
         ],
         "frame-src": [
           "'self'",
@@ -168,8 +168,7 @@ export default defineNuxtConfig({
   },
 
   robots: {
-    // Developer Build!
-    disallow: "/",
+    disallow: process.env.NODE_ENV === "development" ? "/" : "",
   },
 
   compatibilityDate: "2025-01-31",
