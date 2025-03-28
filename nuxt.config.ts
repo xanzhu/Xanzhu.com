@@ -23,6 +23,9 @@ export default defineNuxtConfig({
     defaultLocale: "en",
     lazy: true,
     strategy: "prefix_except_default",
+    bundle: {
+      optimizeTranslationDirective: false,
+    },
     locales: [
       {
         code: "en",
@@ -83,7 +86,7 @@ export default defineNuxtConfig({
   // API
   runtimeConfig: {
     public: {
-      Version: "1.0.101",
+      Version: "1.0.110",
       WeatherAPI: process.env.WEATHER_API,
       i18n: {
         baseUrl: "https://xanzhu.com",
