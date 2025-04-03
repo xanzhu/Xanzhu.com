@@ -13,7 +13,7 @@
     <AppHeaderV2 class="sticky top-0 z-20" />
     <UiInfoBar />
     <NuxtPage />
-    <LazyV2AppFooter />
+    <LazyV2AppFooter hydrate-never />
   </div>
 
   </Html>
