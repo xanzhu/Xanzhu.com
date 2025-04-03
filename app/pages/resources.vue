@@ -2,7 +2,7 @@
   <div class="min-h-screen bg-gradient-to-b core-ui">
     <div class="relative">
       <div class="absolute inset-0 overflow-hidden">
-        <NuxtImg src="/images/chi.webp" alt="Hero Background" class="w-full h-full object-cover" height="200" width="800"
+        <NuxtImg src="https://cdn.xanzhu.com/chi.webp" alt="Hero Background" class="w-full h-full object-cover" height="200" width="800"
           loading="eager" />
       </div>
       <div class="relative max-w-7xl mx-auto px-4 py-24 text-center">
