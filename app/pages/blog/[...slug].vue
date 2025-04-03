@@ -18,7 +18,7 @@
           <LazyBlogSocialShare :post="{ _path: post._path, title: post.title }" hydrate-never />
         </div>
       </div>
-      <LazyBlogPrevNext :prev="prev" :next="next" hydrate-never />
+      <LazyBlogPrevNext :prev?="prev" :next?="next" hydrate-never />
     </article>
   </main>
 </template>
