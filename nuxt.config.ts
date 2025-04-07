@@ -52,6 +52,10 @@ export default defineNuxtConfig({
       redirectOn: "root",
       cookieSecure: true,
     },
+    experimental: {
+      generatedLocaleFilePathFormat: "off",
+      hmr: true
+    },
   },
 
   site: {
