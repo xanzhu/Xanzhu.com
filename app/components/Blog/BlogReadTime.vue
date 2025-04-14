@@ -3,7 +3,7 @@
     <p class="m0">
       {{ readingTime }}
     </p>
-    <span v-t="'Blog.read-time'" />
+    <span>{{ $t("Blog.read-time") }}</span>
   </div>
 </template>
 <script lang="ts">
