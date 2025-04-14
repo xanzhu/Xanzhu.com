@@ -1,6 +1,6 @@
 {
   "name": "xanzhu.com",
-  "version": "1.0.111",
+  "version": "1.0.112",
   "private": true,
   "license": "MIT",
   "scripts": {
@@ -39,7 +39,8 @@
   },
   "resolutions": {
     "@nuxtjs/mdc": "^0.16.1",
-    "esbuild": "^0.25.1",
-    "vue-i18n": "^10.0.6"
-  }
+    "esbuild": "^0.25.2",
+    "vue-i18n": "^10.0.7"
+  },
+  "packageManager": "pnpm@10.8.0"
 }
