@@ -115,8 +115,9 @@ export default defineConfig({
         "figure figcaption": {
           "font-size": "0.875rem",
           "line-height": "1.5",
+          "margin-top": "0.3rem",
           "text-align": "left",
-          "--uno": "dark:text-white text-gray-600",
+          "--uno": "dark:text-light-900 text-gray-600",
           "font-family": "'Geist Mono', monospace",
         },
 
