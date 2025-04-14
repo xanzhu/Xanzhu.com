@@ -60,7 +60,7 @@
 <script setup lang="ts">
 const { t } = useI18n();
 
-interface PrevNext {
+export interface PrevNext {
   title?: string;
   _path: string;
   img: string;

@@ -18,7 +18,8 @@
           <LazyBlogSocialShare :post="{ _path: post._path, title: post.title }" hydrate-never />
         </div>
       </div>
-      <LazyBlogPrevNext :prev?="prev" :next?="next" hydrate-never />
+      <LazyBlogPrevNext :prev="prev" :next="next" />
+
     </article>
   </main>
 </template>
@@ -59,6 +60,12 @@ const { data: prevNext } = await useAsyncData("prev-next", async () => {
     .findSurround(path);
 });
 
-const [prev, next] = prevNext.value || [];
+import type { PrevNext } from '../../components/Blog/PrevNext.vue';
+
+const [prevData, nextData] = prevNext.value || [];
+
+// Assert the types before passing them as props
+const prev = prevData as PrevNext | undefined;
+const next = nextData as PrevNext | undefined;
 
 </script>
