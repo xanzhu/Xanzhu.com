@@ -8,7 +8,7 @@
             class="prose mx-auto px-4 md:px-0 dark:prose-invert leading-normal max-w-3xl" />
         </div>
         <aside v-if="post.toc" class="mt2">
-          <BlogToc :links="post.body?.toc?.links" class="lg:sticky lg:top-30" />
+          <BlogToc :links="post.body?.toc?.links ?? []" class="lg:sticky lg:top-30" />
         </aside>
       </div>
       <div class="mt10 flex flex-col items-center justify-center">
