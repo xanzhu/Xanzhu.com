@@ -53,7 +53,7 @@ export default defineConfig({
 
         // Paragraphs
         p: {
-          "font-size": "1rem", // 16px base
+          "font-size": "1rem",
           "line-height": "1.75",
           "margin-bottom": "1.25rem",
           "--uno": "dark:text-gray-200 text-gray-800",
@@ -70,6 +70,10 @@ export default defineConfig({
           "margin-bottom": "1.25rem",
           "padding-left": "1.5rem",
         },
+        "ol li::marker": {
+          "font-weight": "bold",
+        },
+
         li: {
           "margin-bottom": "0.5rem",
           "--uno": "dark:text-gray-200 text-gray-800",
@@ -78,11 +82,9 @@ export default defineConfig({
         // Code and Pre
         "pre, code": {
           "--uno":
-            "dark:(bg-dark-900 text-light-700 border-dark-300) bg-gray-100 text-gray-800 border-gray-300",
-          border: "1px solid",
-          "border-radius": "0.375rem",
+            "dark:(bg-dark-900 text-light-700) text-gray-800 core-border",
           "font-family": "'Geist Mono', monospace",
-          "font-size": "0.875rem", // 14px
+          "font-size": "0.875rem",
         },
         pre: {
           padding: "1rem",
@@ -111,11 +113,11 @@ export default defineConfig({
 
         // Figure styling
         "figure figcaption": {
-          "font-size": "0.875rem", // 14px
+          "font-size": "0.875rem",
           "line-height": "1.5",
-          "margin-top": "0.5rem",
-          "text-align": "center",
+          "text-align": "left",
           "--uno": "dark:text-white text-gray-600",
+          "font-family": "'Geist Mono', monospace",
         },
 
         // Italics
@@ -129,7 +131,7 @@ export default defineConfig({
           width: "100%",
           "border-collapse": "collapse",
           margin: "1.5rem 0",
-          "font-size": "0.875rem", // 14px
+          "font-size": "0.875rem",
           "--uno": "core-theme core-border",
           display: "table",
         },

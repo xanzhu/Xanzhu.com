@@ -5,7 +5,7 @@
       <div class="flex flex-col-reverse justify-center lg:(flex-row gap10)">
         <div>
           <ContentRenderer :value="post" itemprop="articleBody"
-            class="prose text-sm md:text-lg mx-auto 2xl:text-xl px4 md:px0 dark:text-light text-black leading-normal" />
+            class="prose mx-auto px-4 md:px-0 dark:prose-invert leading-normal max-w-3xl" />
         </div>
         <aside v-if="post.toc" class="mt2">
           <BlogToc :links="post.body?.toc?.links" class="lg:sticky lg:top-30" />
