@@ -1,14 +1,14 @@
 <template>
   <main v-if="post" class="container mx-auto mt-10 sm:mt-10 md:(px-6 mb-0 mt-15)" role="main">
     <article class="text-inherit pb-2 sm:rounded-sm md:(mb-12)" itemtype="https://schema.org/Article" itemscope>
-      <BlogArticleHeader :post="post" />
+      <V2BlogArticleHeader :post="post" />
       <div class="flex flex-col-reverse justify-center lg:(flex-row gap10)">
         <div>
           <ContentRenderer :value="post" itemprop="articleBody"
             class="prose mx-auto px-4 md:px-0 dark:prose-invert leading-normal max-w-3xl" />
         </div>
         <aside v-if="post.toc" class="mt2">
-          <BlogToc :links="post.body?.toc?.links ?? []" class="lg:sticky lg:top-30" />
+          <V2BlogToc :links="post.body?.toc?.links ?? []" class="lg:sticky lg:top-30" />
         </aside>
       </div>
       <div class="mt10 flex flex-col items-center justify-center">
