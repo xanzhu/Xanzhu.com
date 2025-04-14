@@ -19,13 +19,11 @@ export default defineNuxtConfig({
     preference: "dark",
   },
 
+  // i18n V10
   i18n: {
     defaultLocale: "en",
     lazy: true,
     strategy: "prefix_except_default",
-    bundle: {
-      optimizeTranslationDirective: false,
-    },
     locales: [
       {
         code: "en",
@@ -52,10 +50,7 @@ export default defineNuxtConfig({
       redirectOn: "root",
       cookieSecure: true,
     },
-    experimental: {
-      generatedLocaleFilePathFormat: "off",
-      hmr: true
-    },
+    hmr: true
   },
 
   site: {
@@ -90,7 +85,7 @@ export default defineNuxtConfig({
   // API
   runtimeConfig: {
     public: {
-      Version: "1.0.112",
+      Version: "1.0.113",
       WeatherAPI: process.env.WEATHER_API,
       i18n: {
         baseUrl: "https://xanzhu.com",
