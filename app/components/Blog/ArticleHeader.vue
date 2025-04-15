@@ -27,15 +27,13 @@
                 <figcaption v-if="post.source"
                     class="dark:(text-white opacity-60) text-dark-700 op90 text-xs tracking-wide">
                     <p class="inline-block m0" />
-                    {{ t("Blog.source") + ": " + post.source }}
+                    {{ $t("Blog.source") + ": " + post.source }}
                 </figcaption>
             </figure>
         </div>
     </div>
 </template>
 <script setup lang="ts">
-const { t } = useI18n();
-
 defineProps({
     post: {
         type: Object,

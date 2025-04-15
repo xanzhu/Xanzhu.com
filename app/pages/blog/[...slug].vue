@@ -14,7 +14,7 @@
       <div class="mt10 flex flex-col items-center justify-center">
         <hr class="core-ui core-border op40 rounded-md w-80%">
         <div v-if="post._path && post.title">
-          <h4 class="mt5 text-center font-normal text-lg op90">{{ t('share.title') }}</h4>
+          <h4 class="mt5 text-center font-normal text-lg op90">{{ $t('share.title') }}</h4>
           <LazyBlogSocialShare :post="{ _path: post._path, title: post.title }" hydrate-never />
         </div>
       </div>
@@ -25,7 +25,7 @@
 </template>
 <script setup lang="ts">
 const { path } = useRoute();
-const { locale, t } = useI18n();
+const { locale } = useI18n();
 const config = useRuntimeConfig();
 
 const { data: post } = await useAsyncData(path.replace(/\/$/, "/"), async () => {

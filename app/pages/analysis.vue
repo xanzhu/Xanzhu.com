@@ -2,9 +2,9 @@
   <div class="min-h-screen bg-white dark:bg-black">
     <!-- Header Section -->
     <div class="py-12 text-inherit text-center">
-      <h1 class="text-4xl font-bold mb-4">{{ t('analysis.hero.title') }}</h1>
+      <h1 class="text-4xl font-bold mb-4">{{ $t('analysis.hero.title') }}</h1>
       <p class="text-lg max-w-2xl mx-auto">
-        {{ t('analysis.hero.subhead') }}
+        {{ $t('analysis.hero.subhead') }}
       </p>
     </div>
 
@@ -12,10 +12,10 @@
     <div class="max-w-4xl mx-auto py-12 px-4 space-y-12">
       <div class="bg-white p-6 rounded-lg shadow-lg core-border">
         <h2 class="text-2xl font-semibold mb-4 text-gray-800">
-          {{ t('analysis.keyTrend.title') }}
+          {{ $t('analysis.keyTrend.title') }}
         </h2>
         <p class="text-gray-700 mb-6">
-          {{ t('analysis.keyTrend.desc') }}
+          {{ $t('analysis.keyTrend.desc') }}
         </p>
         <div class="relative">
           <canvas ref="aiThreatChartRef" class="max-w-full"></canvas>

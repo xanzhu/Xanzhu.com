@@ -7,7 +7,7 @@
 >
   <header class="pb-2 mb-2" id="toc-heading">
     <p class="text-lg font-semibold m-0 text-center font-mono">
-      {{ t("Blog.toc") }}
+      {{ $t("Blog.toc") }}
     </p>
   </header>
   <ul class="flex flex-col gap-2 px-6 text-sm" role="list">

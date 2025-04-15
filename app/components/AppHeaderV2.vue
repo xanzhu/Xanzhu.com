@@ -10,7 +10,7 @@
                 class="text-inherit underline-2 underline-offset-6 decoration-transparent hover:(underline-black ease-in duration-150) dark:hover:underline-white transition duration-350 ease-out"
                 active-class="underline-2 underline-black dark:underline-white" v-for="(link, index) in links"
                 :key="index" :to="link.url">
-                {{ t(link.name) }}
+                {{ $t(link.name) }}
             </NuxtLinkLocale>
         </nav>
         <!-- Language Selector -->

@@ -32,8 +32,8 @@
       </nav>
     </div>
     <div class="mt-6 flex flex-col md:flex-row justify-between items-center text-xs dark:text-gray-300 text-dark-200">
-      <p>{{ t('footer.copyright') }}</p>
-      <p>{{ t('footer.version') }}: {{ $config.public.Version }}</p>
+      <p>{{ $t('footer.copyright') }}</p>
+      <p>{{ $t('footer.version') }}: {{ $config.public.Version }}</p>
     </div>
   </footer>
 </template>

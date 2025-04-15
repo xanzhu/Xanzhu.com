@@ -8,13 +8,13 @@
                 <div class="relative h-full flex flex-col dark:text-white text-black">
                     <div class="flex justify-between items-start">
                         <h2 class="text-4xl font-bold text-inherit">
-                            {{ t(page.title) }}
+                            {{ $t(page.title) }}
                         </h2>
                         <Icon name="lucide:arrow-up-right"
                             class="w6 h6 text-inherit transition-colors group-hover:(bg-black text-white ) dark:group-hover:(bg-white text-black) p2 rounded-full core-ui flex" />
                     </div>
                     <p class="dark:text-white text-sm flex-grow">
-                        {{ t(page.description) }}
+                        {{ $t(page.description) }}
                     </p>
                 </div>
             </div>
@@ -23,8 +23,6 @@
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n();
-
 const pages = [
     {
         path: "/resources",

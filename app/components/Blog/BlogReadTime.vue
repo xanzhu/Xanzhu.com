@@ -16,13 +16,18 @@ export default {
   },
   setup(props) {
     const wordsPerMinute = 230;
-    const contentString = JSON.stringify(props.content);
-    const words = contentString.split(" ").length;
+
+    const contentString = JSON.stringify(props.content)
+      .replace(/[^a-zA-Z0-9\s]/g, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+
+    const words = contentString.split(' ').filter(Boolean).length;
     const readingTime = ref(Math.ceil(words / wordsPerMinute));
 
     return {
       readingTime,
     };
-  },
+  }
 };
 </script>
