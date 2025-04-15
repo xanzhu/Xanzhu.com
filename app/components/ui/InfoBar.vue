@@ -1,6 +1,6 @@
 <template>
     <div v-if="!disablePath"
-        class="flex flex-col sm:(flex-row py2 px6) py4 space-y-2 md:(flex-row px9 py2 space-y-0) xl:px22 2xl:px43 justify-between items-center text-sm font-normal bg-transparent text-inherit z-10">
+        class="flex flex-col sm:(flex-row py2 px6) py4 space-y-2 md:(flex-row px9 py2 space-y-0) xl:px30 2xl:px43 justify-between items-center text-sm font-normal bg-transparent text-inherit z-10">
         <UiWeather />
         <span :style="{ height: '20px', opacity: formattedDate ? 1 : 0, transition: 'opacity 0.3s ease' }">
             {{ formattedDate || ' ' }}

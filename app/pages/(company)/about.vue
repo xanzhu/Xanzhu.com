@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col items-center min-h-screen md:mt-20">
         <h1>{{ t('about.title') }}</h1>
-        <div class="prose text-sm p4 sm:(text-base p2)">
+        <div class="prose text-sm p8 sm:(text-base p2)">
             <p>{{ t('about.paragraphs.introduction') }}</p>
             <p>{{ t('about.paragraphs.mission') }}</p>
             <p>{{ t('about.paragraphs.goal') }}</p>

@@ -3,15 +3,15 @@
         <div class="flex flex-col space-y-4 sm:(space-y-0 flex-row justify-between items-center) mx-4">
             <div class="flex flex-col">
                 <h1 class="text-2xl sm:text-3xl font-semibold m0">{{ t('PP.title') }}</h1>
-                <p class="font-300 dark:text-light-500 m0">{{ t('PP.description') }}</p>
+                <p class="font-300 dark:text-light-500 m0 op80">{{ t('PP.description') }}</p>
             </div>
             <p class="m0">
                 {{ t("PP.date") }}:
-                <span class="font-300">{{ date }}</span>
+                <span class="font-300 font-mono">{{ date }}</span>
             </p>
         </div>
         <div
-            class="dark:(bg-dark-900) border-outline bg-gradient-to-b from-light-100 to-light-300 dark:from-dark-800 dark:to-dark-900 space-y-6 font-300 text-md p-6 sm:(p-10 mx-3) rounded-lg shadow-sm">
+            class="core-border bg-gradient-to-b from-light-100 to-neutral-200 dark:from-dark-800 dark:to-dark-900 space-y-6 font-300 text-md p-6 sm:(p-10 mx-3) rounded-lg shadow-sm">
             <p v-for="(paragraph, index) in paragraphs" :key="index" class="leading-relaxed">
                 {{ paragraph }}
             </p>

@@ -1,7 +1,7 @@
 <template>
   <section class="relative min-h-screen flex items-center justify-center dark:bg-black bg-white">
     <div class="hidden md:(flex items-center justify-center z-0 absolute inset-0)" aria-hidden="true">
-      <LazyUiSvg loadSVG="beta02" class="w-full h-80% object-cover" />
+      <UiSvg loadSVG="beta02" class="w-full h-80% object-cover"/>
     </div>
 
     <!-- Hero content -->

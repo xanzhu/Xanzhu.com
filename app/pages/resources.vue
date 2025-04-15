@@ -2,16 +2,16 @@
   <div class="min-h-screen bg-gradient-to-b core-ui">
     <div class="relative">
       <div class="absolute inset-0 overflow-hidden">
-        <NuxtImg src="/images/chi.webp" alt="Hero Background" class="w-full h-full object-cover" height="200" width="800"
+        <NuxtImg src="https://cdn.xanzhu.com/chi.webp" alt="Hero Background" class="w-full h-full object-cover" height="200" width="800"
           loading="eager" />
       </div>
       <div class="relative max-w-7xl mx-auto px-4 py-24 text-center">
         <div class="bg-white dark:bg-black rounded-xl p-8 inline-block">
           <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-800 dark:text-gray-100">
-            {{ t('resources.hero.title') }}
+            {{ $t('resources.hero.title') }}
           </h1>
           <p class="text-lg max-w-2xl mx-auto text-gray-700 dark:text-gray-300 opacity-90 font-300">
-            {{ t('resources.hero.description') }}
+            {{ $t('resources.hero.description') }}
           </p>
         </div>
       </div>
@@ -25,7 +25,7 @@
             class="w-full pl-10 pr-4 p4 rounded-lg focus:ring-none bg-white dark:bg-black focus:outline-none border-none text-dark1 dark:text-white text-16px" />
         </div>
         <p v-if="!filteredResources.length" class="text-center text-dark1 dark:text-white mt-4">
-          {{ t('resources.search.noResults') }}
+          {{ $t('resources.search.noResults') }}
         </p>
       </div>
     </div>

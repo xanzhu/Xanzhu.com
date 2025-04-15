@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="text-inherit px-6 md:px-20 lg:px-40 justify-center py-6 border-t-dark-4/10 dark:border-t-dark-2/30 border-t-1 border-solid border-b-none border-r-none border-l-none bg-inherit">
+    class="text-inherit px-6 md:px-15 lg:px30 xl:px40 justify-center py-6 border-t-dark-4/10 dark:border-t-dark-2/30 border-t-1 border-solid border-b-none border-r-none border-l-none bg-inherit">
     <div class="flex flex-col md:flex-row justify-between items-start">
       <UiLogo class="text-inherit" />
       <nav :aria-label="t('footer.sr.community')">
@@ -32,8 +32,8 @@
       </nav>
     </div>
     <div class="mt-6 flex flex-col md:flex-row justify-between items-center text-xs dark:text-gray-300 text-dark-200">
-      <p>{{ t('footer.copyright') }}</p>
-      <p>{{ t('footer.version') }}: {{ $config.public.Version }}</p>
+      <p>{{ $t('footer.copyright') }}</p>
+      <p>{{ $t('footer.version') }}: {{ $config.public.Version }}</p>
     </div>
   </footer>
 </template>

@@ -21,7 +21,7 @@ const availableLocales = computed(() => {
         <UiColorSwitch />
         <Icon name="fluent:local-language-16-filled" class="cursor-pointer h6 w6" :aria-label="t('app.sr.lang')"
             :aria-expanded="isLangOpen ? 'true' : 'false'" @click="toggle('language')" aria-controls="language-options">
-            <span class="sr-only">{{ t('app.sr.lang') }}</span>
+            <span class="sr-only">{{ $t('app.sr.lang') }}</span>
         </Icon>
         <div id="language-options"
             :class="isActive('language') ? 'flex flex-col absolute top-13 core-ui core-border rounded-md p2 shadow-md right-13 children:(mb1) w-20' : 'hidden'">
@@ -35,7 +35,7 @@ const availableLocales = computed(() => {
         </div>
         <Icon name="fluent:list-rtl-16-filled" class="h6 w6 cursor-pointer"
             :aria-expanded="isMenuOpen ? 'true' : 'false'" @click="toggle('menu')" aria-controls="menu-options">
-            <span class="sr-only">{{ t('app.sr.menu') }}</span>
+            <span class="sr-only">{{ $t('app.sr.menu') }}</span>
         </Icon>
         <nav id="menu-options"
             :class="isActive('menu') ? 'flex flex-col absolute top-13 core-ui core-border rounded-md p2 shadow-md right-4 children:(mb1) min-w-25' : 'hidden'"
@@ -43,7 +43,7 @@ const availableLocales = computed(() => {
             <NuxtLinkLocale v-for="(link, index) in links" :key="index" :to="link.url" @click="toggle('menu')"
                 class="text-black dark:(text-white) no-underline p2 hover:(core-theme core-border) b-1 b-transparent b-solid rounded-md h-5"
                 active-class="dark:bg-black bg-white pointer-events-none order-first !core-border">
-                {{ t(link.name) }}
+                {{ $t(link.name) }}
             </NuxtLinkLocale>
         </nav>
     </div>
