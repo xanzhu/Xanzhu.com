@@ -1,6 +1,6 @@
 {
   "name": "xanzhu.com",
-  "version": "1.0.113",
+  "version": "1.0.114",
   "private": true,
   "license": "MIT",
   "scripts": {
@@ -30,7 +30,7 @@
   "devDependencies": {
     "@iconify-json/fluent": "^1.2.19",
     "@iconify-json/line-md": "^1.2.7",
-    "@nuxt/devtools": "^2.3.2",
+    "@nuxt/devtools": "^2.4.0",
     "@unocss/nuxt": "^66.0.0",
     "@unocss/preset-typography": "^66.0.0",
     "@unocss/preset-wind3": "^66.0.0",
