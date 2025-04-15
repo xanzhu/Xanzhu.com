@@ -113,7 +113,7 @@ export default defineConfig({
 
         // Figure styling
         "figure figcaption": {
-          "font-size": "0.875rem",
+          "font-size": "0.75rem",
           "line-height": "1.5",
           "margin-top": "0.3rem",
           "text-align": "left",

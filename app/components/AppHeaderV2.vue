@@ -1,6 +1,6 @@
 <template>
     <header
-        class="flex justify-between items-center dark:(text-white bg-black) text-black bg-white p2 mx-auto md:px-6 xl:px20 2xl:px40 b-solid b-l-none b-r-none b-t-none border-b-dark-4/10 dark:b-b-dark-2/30 b-1">
+        class="flex justify-between items-center dark:(text-white bg-black) text-black bg-white p2 mx-auto md:px-6 xl:px25 2xl:px40 b-solid b-l-none b-r-none b-t-none border-b-dark-4/10 dark:b-b-dark-2/30 b-1">
         <NuxtLinkLocale to="/" class="text-inherit">
             <AppLogo class="h10 md:h12" />
         </NuxtLinkLocale>
