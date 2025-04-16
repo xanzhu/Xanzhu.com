@@ -48,10 +48,6 @@ useHead({
       rel: "icon",
       href: "/favicon.ico",
     },
-    {
-      rel: "icon",
-      href: "/favicon.ico",
-    },
   ],
   meta: [
     { name: 'naver-site-verification', content: 'efe8928c52c47ffddfbd678ff1ac6fe5ca08b009' },
