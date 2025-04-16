@@ -6,6 +6,7 @@ tag: "가이드"
 toc: true
 feature: true
 img: "/images/blog/covers/utm-ubuntu-m4.webp"
+alt: "Apple Silicon의 UTM을 사용한 Ubuntu 24.10"
 ---
 
 Ubuntu는 이제 네이티브 ARM 데스크톱 빌드를 제공합니다. 이는 Linux를 탐색하고, 개발하거나, 효율적으로 가상화하려는 Apple Silicon 사용자에게 완벽합니다. 이 가이드에서는 macOS에 맞춰 제작된 무료 오픈소스 가상화 도구인 UTM을 사용하여 Ubuntu 24.10 (Oracular Oriole) 을 가상 머신에 설정하는 과정을 안내합니다.
