@@ -136,7 +136,7 @@ export default defineNuxtConfig({
           "https://www.apple.com/105/media/us/macbook-air-13-and-15/2023/f52c7a72-dff4-4f3c-9511-bf08e46c6f5f/anim/design/hero/medium_2x.mp4",
           "https://www.apple.com/105/media/us/macos/sonoma-preview/2023/e6d837c5-8a7e-49d8-b0bd-137b21320db3/anim/share-preview/large_2x.mp4",
         ],
-        "font-src": ["'self'"],
+        "font-src": ["'self'", "https://fonts.gstatic.com"],
         "object-src": ["'none'"],
         "script-src-attr": ["'none'"],
         "connect-src": [
@@ -177,7 +177,7 @@ export default defineNuxtConfig({
 
   // Experimental Features
   experimental: {
-    // buildCache: true,
+    buildCache: true,
     headNext: true,
   },
   future: {
