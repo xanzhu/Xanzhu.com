@@ -6,11 +6,12 @@ tag: "가이드"
 toc: true
 feature: true
 img: "/images/blog/covers/utm-ubuntu-m4.webp"
+alt: "Apple Silicon의 UTM을 사용한 Ubuntu 24.10"
 ---
 
 Ubuntu는 이제 네이티브 ARM 데스크톱 빌드를 제공합니다. 이는 Linux를 탐색하고, 개발하거나, 효율적으로 가상화하려는 Apple Silicon 사용자에게 완벽합니다. 이 가이드에서는 macOS에 맞춰 제작된 무료 오픈소스 가상화 도구인 UTM을 사용하여 Ubuntu 24.10 (Oracular Oriole) 을 가상 머신에 설정하는 과정을 안내합니다.
 
-이전 <PageLink title="이전 글" url="/blog/apple-silicon-virtual-machine-setup#ubuntu-2204-1">글</PageLink> 
+이전 <PageLink title="이전 글" url="/blog/apple-silicon-virtual-machine-setup#ubuntu-2204-1">글</PageLink>
 에서는 데스크톱 환경을 추가한 Ubuntu Server 설정에 대해 자세히 설명했습니다. 이 업데이트된 가이드는 최근 출시된 전용 ARM 데스크톱 빌드를 사용하여 프로세스를 단순화합니다.
 
 ## 요구 사항
@@ -23,7 +24,7 @@ Ubuntu는 이제 네이티브 ARM 데스크톱 빌드를 제공합니다. 이는
 
 ## UTM 다운로드
 
-에서 UTM 버전 4.6.5를 다운로드하세요. 이전 4.x.x 버전도 작동해야 합니다. <PageLink title="UTM Github 릴리스 페이지" url="https://github.com/utmapp/UTM/releases"></PageLink> 
+에서 UTM 버전 4.6.5를 다운로드하세요. 이전 4.x.x 버전도 작동해야 합니다. <PageLink title="UTM Github 릴리스 페이지" url="https://github.com/utmapp/UTM/releases"></PageLink>
 
 을 통해 UTM 자동 업데이트가 가능하지만 유료입니다. 또는 GitHub 버전을 사용하고 필요에 따라 수동으로 업데이트하세요. <PageLink title="앱 스토어 버전" url="https://apps.apple.com/us/app/utm-virtual-machines/id1538878817"></PageLink>
 

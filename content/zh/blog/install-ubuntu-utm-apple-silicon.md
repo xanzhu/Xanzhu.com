@@ -6,6 +6,7 @@ tag: "指南"
 toc: true
 feature: true
 img: "/images/blog/covers/utm-ubuntu-m4.webp"
+alt: "在搭载 UTM 的 Apple 芯片上运行 Ubuntu 24.10"
 ---
 
 Ubuntu 现在提供了一个原生的 ARM 桌面构建版本——非常适合希望探索 Linux、进行开发或高效虚拟化的 Apple 芯片用户。在本指南中，我们将逐步介绍如何使用 UTM（一款专为 macOS 量身定制的免费开源虚拟化工具）在虚拟机中设置 Ubuntu 24.10 (Oracular Oriole)。
