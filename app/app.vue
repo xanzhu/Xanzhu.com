@@ -58,10 +58,6 @@ useHead({
 useSeoMeta({
   titleTemplate: '%s - Xanzhu',
   twitterCard: 'summary_large_image',
-})
-
-// Static Meta Configuration
-useServerSeoMeta({
   ogType: 'website',
   ogSiteName: 'Xanzhu',
   charset: 'utf-8',
