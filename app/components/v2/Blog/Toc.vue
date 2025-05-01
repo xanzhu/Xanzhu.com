@@ -1,6 +1,6 @@
 <template>
 <nav
-  class="m-4 p-4 rounded-md bg-neutral-100 dark:bg-neutral-900 md:(max-w-md mx-auto sticky top-4)"
+  class="m-4 p-4 rounded-md bg-neutral-100 dark:bg-neutral-900 md:(max-w-md mx-auto sticky)"
   :aria-label="t('Blog.toc')"
   aria-labelledby="toc-heading"
   role="navigation"
