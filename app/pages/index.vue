@@ -1,10 +1,10 @@
 <template>
     <main class="flex flex-col justify-center">
-        <V2HomeHero />
-        <LazyV2HomeBrandList hydrate-never />
-        <LazyV2HomeBlogFeature class="min-h-screen" hydrate-never />
+        <HomeHero />
+        <LazyHomeBrandList hydrate-never />
+        <LazyHomeBlogFeature class="min-h-screen" hydrate-never />
         <LazyHomePagesCard class="my-20" hydrate-never />
-        <LazyV2HomeThreatCard class="mt-20" hydrate-never />
+        <LazyHomeThreatCard class="mt-20" hydrate-never />
     </main>
 </template>
 <script setup lang="ts">

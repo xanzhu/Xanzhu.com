@@ -1,7 +1,7 @@
 <template>
-  <time :datetime="date">
+  <NuxtTime :datetime="date" month="long" day="numeric" year="numeric" :locale="$i18n.locale">
     {{ formatDate(date) }}
-  </time>
+  </NuxtTime>
 </template>
 <script setup lang="ts">
 defineProps<{

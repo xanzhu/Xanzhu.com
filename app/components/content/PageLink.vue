@@ -6,7 +6,6 @@
 </template>
 
 <script setup lang="ts">
-const config = useRuntimeConfig();
 defineProps({
     title: { type: String },
     url: { type: String },

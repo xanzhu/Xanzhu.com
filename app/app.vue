@@ -10,10 +10,10 @@
     </template>
   </Head>
   <div class="m0 font-sans core-theme">
-    <AppHeaderV2 class="sticky top-0 z-20" />
+    <AppHeader class="sticky top-0 z-20" />
     <UiInfoBar />
     <NuxtPage />
-    <LazyV2AppFooter hydrate-never />
+    <LazyAppFooter hydrate-never />
   </div>
 
   </Html>
@@ -58,10 +58,6 @@ useHead({
 useSeoMeta({
   titleTemplate: '%s - Xanzhu',
   twitterCard: 'summary_large_image',
-})
-
-// Static Meta Configuration
-useServerSeoMeta({
   ogType: 'website',
   ogSiteName: 'Xanzhu',
   charset: 'utf-8',
