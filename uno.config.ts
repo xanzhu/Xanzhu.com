@@ -167,7 +167,7 @@ export default defineConfig({
       },
     },
     fontFamily: {
-      sans: "Geist, Geist Fallback,  system-ui, sans-serif",
+      sans: "Geist, system-ui, sans-serif",
       mono: "Geist Mono, monospace",
     },
   },

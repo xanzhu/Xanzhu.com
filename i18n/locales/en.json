@@ -252,5 +252,8 @@
       "resource": "Resource Links",
       "blog": "Blog Links"
     }
+  },
+  "v2": {
+    "blog_updated": "Last Updated"
   }
 }

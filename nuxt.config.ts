@@ -85,7 +85,7 @@ export default defineNuxtConfig({
   // API
   runtimeConfig: {
     public: {
-      Version: "1.0.114",
+      Version: "1.0.120",
       WeatherAPI: process.env.WEATHER_API,
       i18n: {
         baseUrl: "https://xanzhu.com",
@@ -177,7 +177,7 @@ export default defineNuxtConfig({
 
   // Experimental Features
   experimental: {
-    buildCache: true,
+    // buildCache: true,
     headNext: true,
   },
   future: {

@@ -18,7 +18,7 @@
           </div>
           <div
             class="absolute bottom-0 left-0 right-0 p-3 text-white transform translate-y-full transition-transform duration-300 group-hover:translate-y-0 bg-gradient-to-t from-black/70 to-transparent">
-            <span class="text-sm font-medium op90">{{ $t('Blog.previous') }}</span>
+            <span class="text-sm font-medium op90">{{ t('Blog.previous') }}</span>
           </div>
         </div>
         <h4
@@ -45,7 +45,7 @@
           </div>
           <div
             class="absolute bottom-0 left-0 right-0 p-3 text-white text-right transform translate-y-full transition-transform duration-300 group-hover:translate-y-0 bg-gradient-to-t from-black/70 to-transparent">
-            <span class="text-sm font-medium">{{ $t('Blog.next') }}</span>
+            <span class="text-sm font-medium">{{ t('Blog.next') }}</span>
           </div>
         </div>
         <h4

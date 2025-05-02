@@ -2,7 +2,7 @@
   <div class="px4 pt4 md:(px8 pt8) lg:w-4xl mx-auto rounded-lg border sm:core-ui sm:core-border mb4">
     <div class="flex flex-col sm:flex-row justify-between items-center mb-4 sm:mb-6 bg-yellow-4 p-3 sm:p-4 rounded-lg">
       <h2 class="text-xl sm:text-2xl md:text-4xl font-bold text-black text-center sm:text-left mb-2 sm:mb-0">
-        {{ $t('threatCard.title') }}
+        {{ t('threatCard.title') }}
       </h2>
       <Icon name="lucide:shield" class="h-8 w-8 sm:h-12 sm:w-12 text-black" aria-hidden="true" />
     </div>
@@ -11,7 +11,7 @@
         <div class="flex items-center mb-3 sm:mb-4">
           <Icon name="lucide:alert-triangle" class="h-5 w-5 text-4 mr-2 text-yellow-4 flex-shrink-0" />
           <h3 id="regional-threats-title" class="text-lg sm:text-xl font-semibold text-yellow-4">
-            {{ $t('threatCard.regional.title') }}
+            {{ t('threatCard.regional.title') }}
           </h3>
         </div>
         <ul role="list" class="space-y-3 p0">
@@ -28,7 +28,7 @@
         <div class="flex items-center mb-3 sm:mb-4">
           <Icon name="lucide:lock" class="h-5 w-5 text-white mr-2 flex-shrink-0" aria-hidden="true" />
           <h3 id="recent-breaches-title" class="text-lg sm:text-xl font-semibold text-white">
-            {{ $t('threatCard.recent.title') }}
+            {{ t('threatCard.recent.title') }}
           </h3>
         </div>
         <ul role="list" class="space-y-3 p0 list-none">
@@ -55,7 +55,7 @@
       </section>
     </div>
     <p class="text-xs sm:text-sm text-inherit op70 mt-4 px-1">
-      {{ $t('threatCard.source') }}
+      {{ t('threatCard.source') }}
     </p>
   </div>
 </template>

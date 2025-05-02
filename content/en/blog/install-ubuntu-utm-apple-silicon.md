@@ -6,7 +6,7 @@ tag: "Guide"
 toc: true
 feature: true
 img: "/images/blog/covers/utm-ubuntu-m4.webp"
-alt: "Ubuntu 24.10 on Apple Silicon with UTM"
+alt: "Ubuntu 24.10 running on Apple Silicon with UTM"
 ---
 
 Ubuntu now offers a native ARM desktop build — perfect for Apple Silicon users looking to explore Linux, develop, or virtualize efficiently. In this guide, we'll walk through setting up Ubuntu 24.10 (Oracular Oriole) in a virtual machine using UTM, a free and open-source virtualization tool tailored for macOS.
