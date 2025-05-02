@@ -1,7 +1,7 @@
 <template>
   <section class="mt-10 mx-auto">
     <div class="flex md:justify-center items-center sm:space-x-45 lg:space-x-50 lg:p10">
-      <h2 class="text-4xl mx6 md:(text-5xl)">{{ $t('home.latest') }}</h2>
+      <h2 class="text-4xl mx6 md:(text-5xl)">{{ t('home.latest') }}</h2>
       <span class="hidden md:(flex h-2px bg-dark-400 w-30% mx-10) lg:w-40%" />
     </div>
     <div

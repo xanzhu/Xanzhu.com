@@ -3,31 +3,24 @@
     <p class="m0">
       {{ readingTime }}
     </p>
-    <span>{{ $t("Blog.read-time") }}</span>
+    <span>{{ t("Blog.read-time") }}</span>
   </div>
 </template>
-<script lang="ts">
-export default {
-  props: {
-    content: {
-      type: Object,
-      required: true,
-    },
-  },
-  setup(props) {
-    const wordsPerMinute = 230;
 
-    const contentString = JSON.stringify(props.content)
-      .replace(/[^a-zA-Z0-9\s]/g, '')
-      .replace(/\s+/g, ' ')
-      .trim();
+<script setup lang="ts">
+const { t } = useI18n()
 
-    const words = contentString.split(' ').filter(Boolean).length;
-    const readingTime = ref(Math.ceil(words / wordsPerMinute));
+const props = defineProps<{
+  content: object
+}>()
 
-    return {
-      readingTime,
-    };
-  }
-};
+const wordsPerMinute = 230
+
+const contentString = JSON.stringify(props.content)
+  .replace(/[^a-zA-Z0-9\s]/g, '')
+  .replace(/\s+/g, ' ')
+  .trim()
+
+const words = contentString.split(' ').filter(Boolean).length
+const readingTime = ref(Math.ceil(words / wordsPerMinute))
 </script>

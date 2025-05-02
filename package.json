@@ -1,6 +1,6 @@
 {
   "name": "xanzhu.com",
-  "version": "1.0.115",
+  "version": "1.0.120",
   "private": true,
   "license": "MIT",
   "scripts": {
@@ -28,7 +28,7 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "@iconify-json/fluent": "^1.2.19",
+    "@iconify-json/fluent": "^1.2.20",
     "@iconify-json/line-md": "^1.2.7",
     "@nuxt/devtools": "^2.4.0",
     "@unocss/nuxt": "^66.0.0",

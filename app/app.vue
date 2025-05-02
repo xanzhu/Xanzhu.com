@@ -10,10 +10,10 @@
     </template>
   </Head>
   <div class="m0 font-sans core-theme">
-    <AppHeaderV2 class="sticky top-0 z-20" />
+    <AppHeader class="sticky top-0 z-20" />
     <UiInfoBar />
     <NuxtPage />
-    <LazyV2AppFooter hydrate-never />
+    <LazyAppFooter hydrate-never />
   </div>
 
   </Html>

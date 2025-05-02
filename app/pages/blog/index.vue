@@ -1,9 +1,9 @@
 <template>
   <main class="mx-auto space-y-10 text-black dark:text-white sm:mb-10 md:px5 xl:px28 lg:px25 2xl:px35">
     <div class="sm:(mx-10 mt-15) mx-4 mt-5 flex flex-col space-y-2 lg:mx-10">
-      <h1 class="text-3xl font-semibold sm:text-5xl mb0">{{ $t("Blog.title") }}</h1>
+      <h1 class="text-3xl font-semibold sm:text-5xl mb0">{{ t("Blog.title") }}</h1>
       <p class="text-md op70 sm:(text-xl) break-words font-300 dark:text-gray-300 sm:w2/3">
-        {{ $t("Blog.description") }}
+        {{ t("Blog.description") }}
       </p>
     </div>
     <section class="grid grid-cols-1 gap-5 md:(grid-cols-2 gap-10) lg:(grid-cols-3 gap-5) sm:(py-15 px-10) rounded-sm p-4"
@@ -34,7 +34,7 @@
   </main>
 </template>
 <script setup lang="ts">
-const { locale } = useI18n();
+const { locale, t } = useI18n();
 
 const { data: posts } = await useAsyncData("articles", async () => {
   let query = locale.value !== "en" ? `${locale.value}/blog` : "/blog";
