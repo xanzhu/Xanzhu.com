@@ -200,7 +200,6 @@ sudo reboot
 
 UTM provides a vast range of <PageLink title="pre-build virtual machines" url="https://mac.getutm.app/gallery/"></PageLink> spanning all types of operating systems. Which can work on the "Emulation" option. Lots of options and completely free to use.
 
-
 #### Other solutions
 
 While these are two popular choices and ones I've personally used. As ARM gets more adoption from Microsoft and other competitors more tools and software will come.

@@ -85,10 +85,10 @@ CrystalFetch 和直接下载的区别在于，CrystalFetch 允许选择下载特
 
 UTM 提供两种模式：
 
-| 模式   | 优点                     | 缺点                                 |
-| ------ | ------------------------ | ------------------------------------ |
-| 虚拟化 | 更快，原生 ARM 支持     | 无法运行 x86 或非 ARM 处理器       |
-| 模拟   | 支持非 ARM 系统          | 较慢，可能存在性能问题               |
+| 模式   | 优点                | 缺点                         |
+| ------ | ------------------- | ---------------------------- |
+| 虚拟化 | 更快，原生 ARM 支持 | 无法运行 x86 或非 ARM 处理器 |
+| 模拟   | 支持非 ARM 系统     | 较慢，可能存在性能问题       |
 
 <Media source="https://cdn.xanzhu.com/v1/m4-windows/utm-windows-mode.webp" alt="虚拟化和模拟之间的 UTM 配置模式选择"></Media>
 
@@ -191,8 +191,8 @@ Windows 现在将开始安装。这需要一些时间。
 
 您可以通过访问控制面板验证 Spice Guest Tools 是否已安装。在“卸载程序”下，Guest Tools 将按以下方式列出：
 
-* UTM Guest Tools 0.229
-* Spice webdavd ARM64 2.5.0
+- UTM Guest Tools 0.229
+- Spice webdavd ARM64 2.5.0
 
 ## 附加说明
 
