@@ -1,14 +1,17 @@
 {
   "name": "xanzhu.com",
-  "version": "1.0.120",
+  "version": "1.0.130",
   "private": true,
+  "packageManager": "pnpm@10.8.0",
   "license": "MIT",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix"
   },
   "dependencies": {
     "@nuxt/content": "2.13.4",
@@ -28,18 +31,21 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^4.12.0",
     "@iconify-json/fluent": "^1.2.20",
     "@iconify-json/line-md": "^1.2.7",
     "@nuxt/devtools": "^2.4.0",
+    "@unocss/eslint-plugin": "^66.0.0",
     "@unocss/nuxt": "^66.0.0",
     "@unocss/preset-typography": "^66.0.0",
     "@unocss/preset-wind3": "^66.0.0",
     "@unocss/transformer-directives": "^66.0.0",
-    "@unocss/transformer-variant-group": "^66.0.0"
+    "@unocss/transformer-variant-group": "^66.0.0",
+    "eslint": "^9.24.0",
+    "eslint-plugin-format": "^1.0.1"
   },
   "resolutions": {
     "@nuxtjs/mdc": "^0.17.0",
     "esbuild": "^0.25.3"
-  },
-  "packageManager": "pnpm@10.8.0"
+  }
 }
