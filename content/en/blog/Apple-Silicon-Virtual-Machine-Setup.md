@@ -9,7 +9,7 @@ toc: true
 ---
 
 ::alert
-Installation for Windows 11 has changed slightly checkout the <PageLink title="updated guide" url="/blog/windows-on-apple-silicon"></PageLink>.
+Installation for Windows 11 has changed slightly checkout the :PageLink{title="Updated Guide" url="/blog/install-windows-utm-apple-silicon"}
 ::
 
 If you're a developer or tech enthusiast, you may need to use multiple operating systems for projects or personal use.
@@ -26,17 +26,28 @@ How do you know if your Mac is running on Apple Silicon?
 
 ## Parallels
 
-<Media source="https://cdn.xanzhu.com/v1/m1-virtual-machine/Parallels.webp" credit="Parallels / Xanzhu" alt="Parallels Virtual Machine Logo"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m1-virtual-machine/Parallels.webp
+credit: Parallels / Xanzhu
+alt: Parallels Virtual Machine Logo
+---
+::
 
 A paid virtualisation software that works natively and is essentially a one-click install of all your favourite Operating Systems.
 
 It offers great tools and makes the whole process smooth as possible.
 
-1. Vist <PageLink title="Parallels.com" url="https://www.parallels.com/products/desktop/trial/"></PageLink> and download the free trial.
+1. Vist :PageLink{title="Parallels.com" url="https://www.parallels.com/products/desktop/trial/"} and download the free trial. 
 2. Once installed open "Parallels Desktop".
 3. Now select the operating system you'd like to install.
 
-<Media source="https://cdn.xanzhu.com/v1/m1-virtual-machine/p-install.webp" alt="Parallels Installation Wizard"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m1-virtual-machine/p-install.webp
+alt: Parallels Installation Wizard
+---
+::
 
 Note it's ideal to have at least 25-30 GB of free space before installing any operating system.
 
@@ -63,7 +74,12 @@ Upon startup, you'll be asked to set a password and then Parallels tools will ne
 1. Select the Ubuntu Icon and click continue
 2. Download Ubuntu, this will take some time.
 
-<Media source="https://cdn.xanzhu.com/v1/m1-virtual-machine/u-download.webp" alt="Parallels ubuntu setup wizard"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m1-virtual-machine/u-download.webp
+alt: Parallels ubuntu setup wizard
+---
+::
 
 3. After downloading the virtual machine will automatically start
 4. You'll be prompted to create a password for the login
@@ -79,7 +95,12 @@ How do you manage or configure your virtual machines?
 1. Open "Parallels Desktop" this may automatically boot into your virtual machine, simply shut it down
 2. Right-click on the Parallels Desktop Application and select "Control Center", here you can add/edit or remove them.
 
-<Media source="https://cdn.xanzhu.com/v1/m1-virtual-machine/config.webp" alt="Parallels Virtual Machine Configuration Panel"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m1-virtual-machine/config.webp
+alt: Parallels Virtual Machine Configuration Panel
+---
+::
 
 3. To add another virtual machine press the plus icon and go through the installation process mentioned above
 4. Deleting a virtual machine right click on the virtual machine and select _Remove (Device Name)_, Device name will be the name of the virtual machine.
@@ -87,29 +108,40 @@ How do you manage or configure your virtual machines?
 
 ## UTM
 
-<Media source="https://cdn.xanzhu.com/v1/m1-virtual-machine/UTM.webp" credit="UTM / Xanzhu" alt="UTM installation wizard"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m1-virtual-machine/UTM.webp
+credit: UTM / Xanzhu
+alt: UTM installation wizard
+---
+::
 
 UTM is a free tool that does the same thing as parallels but you're in charge of the customisations.
 
 The performance will be relatively stable but needs adjusting to your system. This might not be a good choice if you need a responsive virtual machine without the fuss of configuring every aspect of the software.
 
-1. Download <PageLink title="UTM" url="https://mac.getutm.app/"></PageLink> there is an App store version but this is paid, select download
+1. Download :PageLink{title="UTM" url="https://mac.getutm.app/"} there is an App store version but this is paid, select download
 2. Open UTM and select "Create a new Virtual Machine"
 3. Select "Virtualize"
 
 ### Windows 11 ARM / X86
 
-Windows can be installed in many different ways <PageLink title="UTM" url="https://docs.getutm.app/guides/windows"></PageLink> offers an in-depth guide on installing windows.
+Windows can be installed in many different ways :PageLink{title="UTM" url="https://docs.getutm.app/guides/windows"} offers an in-depth guide on installing windows.
 
 In this guide, we'll be using the Windows Insider Preview version. This requires an insider account.
 
 Alternatively, you can install the version listed here:
 
 4. Select Windows
-5. Visit download the latest Windows 11 ARM file from <PageLink title="Microsoft" url="https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewarm64"></PageLink>
+5. Visit download the latest Windows 11 ARM file from :PageLink{title="Microsoft" url="https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewarm64"}
 6. Press Browse and Select the downloaded VHDX file, ensure import VHDX is checked
 
-<Media source="https://cdn.xanzhu.com/v1/m1-virtual-machine/u-install.webp" alt="Installation Settings for UTM windows"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m1-virtual-machine/u-install.webp
+alt: Installation Settings for UTM windows
+---
+::
 
 7. Press Continue
 8. Select the amount of RAM, a good rule is to use half of what you're system has ie: 8GB using 4GB
@@ -125,14 +157,19 @@ Now installing windows
 3. Select a network, if nothing shows up press <b>SHIFT + F10</b> and press yes and in the command prompt enter the following:
 
 ```CODE
- OOBE\BYPASSNRO
+OOBE\BYPASSNRO
 ```
 
 4. This will restart the Virtual machine, continue through the setup process and once hitting the network section select "I don't have internet"
 5. Continue through the steps, setting name, password, and security questions.
 6. Once you've booted into Windows 11 open the file explorer and select the CD drive, double click on install spice-guest-tools
 
-<Media source="https://cdn.xanzhu.com/v1/m1-virtual-machine/u-spice.webp" alt="File explorer windows 11"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m1-virtual-machine/u-spice.webp
+alt: File explorer windows 11
+---
+::
 
 7. Select Reboot and you now have a working Windows 11 virtual machine.
 
@@ -147,7 +184,7 @@ Installing Ubuntu can be a lengthy process in this guide we'll need to install t
 1. Open UTM and select "Create a new Virtual Machine"
 2. Select "Virtualize"
 3. Select Linux
-4. Download <PageLink title="Ubuntu" url="https://ubuntu.com/download/server/arm"></PageLink>, open UTM and press browse
+4. Download :PageLink{title="Ubuntu" url="https://ubuntu.com/download/server/arm"}, open UTM and press browse
 5. Press browse and select the downloaded Ubuntu Server ISO file
 6. Select Continue
 7. Select the Amount of Memory (RAM) to use
@@ -170,7 +207,12 @@ Installing Ubuntu can be a lengthy process in this guide we'll need to install t
 24. Featured Server Snaps.. press DOWN_ARROW and then press ENTER to continue
 25. The installation will now install
 
-<Media source="https://cdn.xanzhu.com/v1/m1-virtual-machine/u-linux.webp" alt="Linux server installing display"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m1-virtual-machine/u-linux.webp
+alt: Linux server installing display
+---
+::
 
 26. Once this is completed press the DOWN_ARROW so "Reboot now" is highlighted and press ENTER
 27. Once the screen goes black wait a couple of minutes and then up the top select the disc icon and eject the ISO file.
@@ -196,9 +238,9 @@ Reboot the virtual machine:
 sudo reboot
 ```
 
-31. After rebooting, log in and that’s it!
+31. After rebooting, log in and that's it!
 
-UTM provides a vast range of <PageLink title="pre-build virtual machines" url="https://mac.getutm.app/gallery/"></PageLink> spanning all types of operating systems. Which can work on the "Emulation" option. Lots of options and completely free to use.
+UTM provides a vast range of :PageLink{title="pre-build virtual machines" url="https://mac.getutm.app/gallery/"} spanning all types of operating systems.
 
 #### Other solutions
 
@@ -206,4 +248,4 @@ While these are two popular choices and ones I've personally used. As ARM gets m
 
 Linux at the moment is making fantastic moves to get Apple Silicon's Hardware working natively and being able to utilise all aspects of the Chipset acting as a bare metal solution.
 
-<PageLink title="Asashi Linux" url="https://asahilinux.org/"></PageLink> provides the groundwork for future installations of Linux-based Operating systems which will eventually allow a smooth bare metal experience and end reliance on virtual machines.
+:PageLink{title="Asashi Linux" url="https://asahilinux.org/"} provides the groundwork for future installations of Linux-based Operating systems which will eventually allow a smooth bare metal experience and end reliance on virtual machines.
