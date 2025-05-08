@@ -1,8 +1,8 @@
 {
   "name": "xanzhu.com",
-  "version": "1.0.130",
+  "version": "1.0.131",
   "private": true,
-  "packageManager": "pnpm@10.8.0",
+  "packageManager": "pnpm@10.10.0",
   "license": "MIT",
   "scripts": {
     "build": "nuxt build",
@@ -24,28 +24,28 @@
     "@nuxtjs/sitemap": "^7.2.10",
     "chart.js": "^4.4.9",
     "nitro-cloudflare-dev": "^0.2.2",
-    "nuxt": "^3.17.1",
+    "nuxt": "^3.17.2",
     "nuxt-security": "^2.2.0",
     "vue": "^3.5.13",
     "vue-chartjs": "^5.3.2",
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.12.0",
+    "@antfu/eslint-config": "^4.13.0",
     "@iconify-json/fluent": "^1.2.20",
-    "@iconify-json/line-md": "^1.2.7",
+    "@iconify-json/line-md": "^1.2.8",
     "@nuxt/devtools": "^2.4.0",
-    "@unocss/eslint-plugin": "^66.0.0",
-    "@unocss/nuxt": "^66.0.0",
-    "@unocss/preset-typography": "^66.0.0",
-    "@unocss/preset-wind3": "^66.0.0",
-    "@unocss/transformer-directives": "^66.0.0",
-    "@unocss/transformer-variant-group": "^66.0.0",
-    "eslint": "^9.24.0",
+    "@unocss/eslint-plugin": "^66.1.0",
+    "@unocss/nuxt": "^66.1.0",
+    "@unocss/preset-typography": "^66.1.0",
+    "@unocss/preset-wind3": "^66.1.0",
+    "@unocss/transformer-directives": "^66.1.0",
+    "@unocss/transformer-variant-group": "^66.1.0",
+    "eslint": "^9.26.0",
     "eslint-plugin-format": "^1.0.1"
   },
   "resolutions": {
     "@nuxtjs/mdc": "^0.17.0",
-    "esbuild": "^0.25.3"
+    "esbuild": "^0.25.4"
   }
 }
