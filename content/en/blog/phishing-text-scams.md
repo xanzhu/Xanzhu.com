@@ -34,28 +34,40 @@ Be mindful of the message; it will say what the authentication code is used for.
 
 Here is an example of a 2-Factor Authentication code you'd typically see:
 
-<Media source="https://cdn.xanzhu.com/v1/text-scams/Uber.webp" alt="Uber Authentication Code Example"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/text-scams/Uber.webp
+alt: Uber Authentication Code Example
+---
+::
 
 - This code is from 3362.
 - It states the code is from Uber.
 - I'm expecting this code as I've just signed into Uber.
 - Note: This code is no longer valid and has expired.
 
-<hr>
-
 Here is an example of a text scam:
 
-<Media source="https://cdn.xanzhu.com/v1/text-scams/EURO.webp" alt="Phishing Text example international"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/text-scams/EURO.webp
+alt: Phishing Text example international
+---
+::
 
 - The message comes from +61 (Australian-based).
 - I didn't know this number and wasn't expecting it.
 - The message mentions something to do with Euro.
 - Contains a strange-looking url/link.
 
-<hr>
+Here's another example:
 
-Here’s another example:
-<Media source="https://cdn.xanzhu.com/v1/text-scams/NZD.webp" alt="Phishing Text example local"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/text-scams/NZD.webp
+alt: Phishing Text example local
+---
+::
 
 - This message comes from +64 (New Zealand-based).
 - Mentions getting NZD, specifically for me.
@@ -64,7 +76,13 @@ Here’s another example:
 As you can see, the point of these text scams is for you to click on this link.
 
 A more recent example:
-<Media source="https://cdn.xanzhu.com/v1/text-scams/nzta.webp" alt="NZ Transport agency phishing example"></Media>
+
+::media
+---
+source: https://cdn.xanzhu.com/v1/text-scams/nzta.webp
+alt: NZ Transport agency phishing example
+---
+::
 
 - Claims to be from NZ Transport Agency and is asking you to pay an outstanding fee.
 - This message is unexpected.
@@ -76,7 +94,13 @@ As for the links provided in these examples, they don't match any known website,
 In the above example, NZTA suggests that you may have an outstanding fee. Do not click on the link. Instead, go directly to your web browser and enter the official NZTA website.
 
 Lets compare the links used:
-<Media source="https://cdn.xanzhu.com/v1/text-scams/compare.svg" alt="Comparing phishing link vs legitimate"></Media>
+
+::media
+---
+source: https://cdn.xanzhu.com/v1/text-scams/compare.svg
+alt: Comparing phishing link vs legitimate
+---
+::
 
 Offical government based links will always have the .govt.nz domain.
 Always navigate to the offical website before entering sensitive information.
@@ -86,7 +110,7 @@ Always navigate to the offical website before entering sensitive information.
 If you have come across a scam, please forward the message to the Department of Internal Affairs for further investigation.
 Simply forward the text message to the following number: 7726.
 
-See here how to forward a message in <PageLink title="iOS" url="https://support.apple.com/en-nz/guide/iphone/iph125628311/ios"></PageLink>. For Andriod devices this should be a similar process of holding down the message and selecting forward.
+See here how to forward a message in :PageLink{title="iOS" url="https://support.apple.com/en-nz/guide/iphone/iph125628311/ios"}. For Andriod devices this should be a similar process of holding down the message and selecting forward.
 
 Report directly to the organization. I have listed the email addresses for popular services operating within New Zealand.
 Please screenshot the suspicious text message or email and attach it to the email sent to one of the following:
@@ -103,11 +127,8 @@ ANZ - hoax@cybersecurity.anz.com
 
 Spark NZ - scamhelp@spark.co.nz
 
-<hr>
 Learn more:
 
-- <PageLink title="dia.govt.nz" url="https://www.dia.govt.nz/Spam-How-to-Report-Scams"></PageLink>
-
-- <PageLink title="cert.nz" url="https://www.cert.govt.nz/individuals/common-threats/phishing/"></PageLink>
-
-- <PageLink title="netsafe.org.nz" url="https://report.netsafe.org.nz/hc/en-au/requests/new"></PageLink>
+- :PageLink{title="dia.govt.nz" url="https://www.dia.govt.nz/Spam-How-to-Report-Scams"}
+- :PageLink{title="cert.nz" url="https://www.cert.govt.nz/individuals/common-threats/phishing/"}
+- :PageLink{title="netsafe.org.nz" url="https://report.netsafe.org.nz/hc/en-au/requests/new"}
