@@ -47,15 +47,8 @@ Watch the keynote to learn more about the R1:
 
 ::youtube
 ---
-credentialless: true
-width: 560
-height: 315
-src: https://www.youtube.com/embed/22wlLy7hKP4?si=a16Fb1UEFLTRE1Aq
-title: YouTube video player
-frameborder: 0
-allow: accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share
-referrerpolicy: strict-origin-when-cross-origin
-allowfullscreen: true
+src: https://www.youtube.com/embed/22wlLy7hKP4?si=I6LdPG0Isj85f5mA
+title: "Introducing r1"
 ---
 ::
 

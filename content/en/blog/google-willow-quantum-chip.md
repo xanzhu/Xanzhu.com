@@ -30,15 +30,8 @@ The development of this chip has been 10 years in the making. Google's Quantum A
 
 ::youtube
 ---
-credentialless: true
-width: 560
-height: 315
 src: https://www.youtube.com/embed/l_KrC1mzd0g?si=1QVYdmS9NURCuyO8
-title: YouTube video player
-frameborder: 0
-allow: accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share
-referrerpolicy: strict-origin-when-cross-origin
-allowfullscreen: true
+title: "Quantum's next leap: Ten septillion years beyond-classical"
 ---
 ::
 
