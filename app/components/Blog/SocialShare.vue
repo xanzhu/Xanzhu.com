@@ -40,7 +40,7 @@ const socials = computed(() => [
 </script>
 
 <template>
-  <div class="mx-auto inline-flex rounded-full px3 py1.5 space-x-2 core-border core-theme">
+  <div class="mx-auto inline-flex rounded-full px3 pb1 pt2 space-x-2 core-border core-theme">
     <div v-for="social in socials" :key="social.url" class="children:(text-black dark:text-white)">
       <NuxtLink
         :to="social.url" :aria-label="social.aria" target="_blank" rel="noopener noreferrer"
