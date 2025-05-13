@@ -20,6 +20,7 @@ source: https://assets.lotofcarrots.com/media/home/section/desktop/4.mp4
 credit: Rabbit
 thumbnail: https://assets.lotofcarrots.com/media/home/section/desktop/4.webp    
 ---
+::
 
 Rabbit's CEO, Jesse Lyu, gave a very interesting demo of the product in usage, from being able to book an Uber to a specific location and provide any customizations needed in a single step. A voice prompt is made, and using the device's Large Action Model, it can compute and give a final action for confirmation.
 
