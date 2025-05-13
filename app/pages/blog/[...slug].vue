@@ -29,17 +29,17 @@ useSeoMeta({
   ogImage: seoImage,
 })
 
-const { data: prevNext } = await useAsyncData('prev-next', async () => {
-  const queryPath = locale.value !== 'en' ? `${locale.value}/blog` : '/blog'
+const { data: prevNext } = await useAsyncData(`prev-next-${path}`, async () => {
+  const queryPath = locale.value !== 'en' ? `/${locale.value}/blog` : '/blog'
   return await queryContent(queryPath)
     .sort({ date: -1 })
     .only(['_path', 'title', 'img', 'alt'])
+    .limit(2)
     .findSurround(path)
 })
 
 const [prevData, nextData] = prevNext.value || []
 
-// Assert the types before passing them as props
 const prev = prevData as PrevNext | undefined
 const next = nextData as PrevNext | undefined
 </script>
