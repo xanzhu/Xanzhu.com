@@ -4,10 +4,6 @@
     "maintenance": "This page is currently under construction and may look a little different when it's finished.",
     "view": "View latest version"
   },
-  "Analysis": {
-    "h1": "Security Audits and Analysis",
-    "soon": "Uncovering vulnerabilities and offering recommendations for enhancing security measures."
-  },
   "Blog": {
     "Video": "Video not found",
     "description": "News, guides and reviews on technology, how to use it and how to ensure your data remains is protected online.",
@@ -142,7 +138,7 @@
     }
   },
   "email": {
-    "share": "Checkout this article"
+    "share": "Check out this article"
   },
   "footer": {
     "about": "About",

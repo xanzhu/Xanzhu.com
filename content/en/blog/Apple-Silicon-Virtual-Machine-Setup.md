@@ -9,7 +9,7 @@ toc: true
 ---
 
 ::alert
-Installation for Windows 11 has changed slightly checkout the :PageLink{title="Updated Guide" url="/blog/install-windows-utm-apple-silicon"}
+Installation for Windows 11 has changed slightly check out the :PageLink{title="Updated Guide" url="/blog/install-windows-utm-apple-silicon"}
 ::
 
 If you're a developer or tech enthusiast, you may need to use multiple operating systems for projects or personal use.
@@ -38,7 +38,7 @@ A paid virtualisation software that works natively and is essentially a one-clic
 
 It offers great tools and makes the whole process smooth as possible.
 
-1. Vist :PageLink{title="Parallels.com" url="https://www.parallels.com/products/desktop/trial/"} and download the free trial. 
+1. Visit :PageLink{title="Parallels.com" url="https://www.parallels.com/products/desktop/trial/"} and download the free trial. 
 2. Once installed open "Parallels Desktop".
 3. Now select the operating system you'd like to install.
 
@@ -120,13 +120,13 @@ UTM is a free tool that does the same thing as parallels but you're in charge of
 
 The performance will be relatively stable but needs adjusting to your system. This might not be a good choice if you need a responsive virtual machine without the fuss of configuring every aspect of the software.
 
-1. Download :PageLink{title="UTM" url="https://mac.getutm.app/"} there is an App store version but this is paid, select download
+1. Download :PageLink{title="UTM" url="https://mac.getutm.app/"}, there is an App store version but this is paid, select download
 2. Open UTM and select "Create a new Virtual Machine"
-3. Select "Virtualize"
+3. Select "Virtualise"
 
 ### Windows 11 ARM / X86
 
-Windows can be installed in many different ways :PageLink{title="UTM" url="https://docs.getutm.app/guides/windows"} offers an in-depth guide on installing windows.
+Windows can be installed in several ways :PageLink{title="UTM" url="https://docs.getutm.app/guides/windows"} offers an in-depth guide on installing windows.
 
 In this guide, we'll be using the Windows Insider Preview version. This requires an insider account.
 
@@ -154,7 +154,7 @@ Now installing windows
 
 1. Select your language
 2. Select your Keyboard
-3. Select a network, if nothing shows up press <b>SHIFT + F10</b> and press yes and in the command prompt enter the following:
+3. Select a network, if nothing shows up press `SHIFT + F10` and press yes and in the command prompt enter the following:
 
 ```CODE
 OOBE\BYPASSNRO
@@ -182,7 +182,7 @@ This article will be updated with that method in future.
 Installing Ubuntu can be a lengthy process in this guide we'll need to install the server version first and then proceed to install a desktop.
 
 1. Open UTM and select "Create a new Virtual Machine"
-2. Select "Virtualize"
+2. Select "Virtualise"
 3. Select Linux
 4. Download :PageLink{title="Ubuntu" url="https://ubuntu.com/download/server/arm"}, open UTM and press browse
 5. Press browse and select the downloaded Ubuntu Server ISO file

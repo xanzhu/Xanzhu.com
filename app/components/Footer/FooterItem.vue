@@ -8,7 +8,7 @@ defineProps<{
 <template>
   <div>
     <h4 class="text-md mb-4 font-bold">
-      {{ (title) }}
+      {{ title }}
     </h4>
     <ul class="list-none p0 text-sm">
       <li v-for="(item, index) in links" :key="index" class="mb-2">
@@ -16,7 +16,7 @@ defineProps<{
           v-if="item.href" :to="item.href"
           class="text-dark-100 no-underline dark:text-light-900 hover:(underline underline-2 underline-dark-400 underline-offset-3 dark:underline-white)"
         >
-          {{ (item.text) }} <span v-if="item.external" class="text-xs">↗</span>
+          {{ item.text }} <span v-if="item.external" class="text-xs">↗</span>
         </NuxtLinkLocale>
       </li>
     </ul>

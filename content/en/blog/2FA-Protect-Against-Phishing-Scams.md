@@ -48,7 +48,7 @@ Aegis is a free and open-source authenticator app available on Android through t
 
 Additionally, it allows you to export and import tokens between devices, making it convenient when switching phones. As an open-source app, you can review its codebase for transparency and security.
 
-Learn more about Aegis by visting :PageLink{title="getaegis.app" url="https://getaegis.app/"}
+Learn more about Aegis by visiting :PageLink{title="getaegis.app" url="https://getaegis.app/"}
 
 ### 2FAS
 
@@ -88,7 +88,7 @@ Notable features include:
 - Syncing with iCloud
 - Customizing each one-time password (OTP).
 
-You can learn more about Ravio OTP by visting :PageLink{title="raivo-otp.com" url="https://raivo-otp.com/"}
+You can learn more about Ravio OTP by visiting :PageLink{title="raivo-otp.com" url="https://raivo-otp.com/"}
 
 ## SMS Authentication
 

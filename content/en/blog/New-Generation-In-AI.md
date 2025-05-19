@@ -15,7 +15,7 @@ Released in February of this year, OpenAI's ChatGPT has been a hot topic for any
 
 ChatGPT solves a new problem, which is why it's gaining a lot of traction. As I mentioned in my previous article, language models such as ChatGPT offer a glimpse into what our future will look like. Since posting that initial article, a few things have changed, from more companies offering similar services or simply utilizing ChatGPT's API, to the model itself being updated to version 4, offering more complex results and capabilities.
 
-Checkout the latest from: :PageLink{title="OpenAI" url="https://openai.com/"}
+Check out the latest from: :PageLink{title="OpenAI" url="https://openai.com/"}
 
 Try ChatGPT for yourself: :PageLink{title="ChatGPT" url="https://chat.openai.com/"}
 

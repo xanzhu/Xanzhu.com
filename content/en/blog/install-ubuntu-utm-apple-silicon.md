@@ -9,7 +9,7 @@ img: "/images/blog/covers/utm-ubuntu-m4.webp"
 alt: "Ubuntu 24.10 running on Apple Silicon with UTM"
 ---
 
-Ubuntu now offers a native ARM desktop build — perfect for Apple Silicon users looking to explore Linux, develop, or virtualize efficiently. In this guide, we'll walk through setting up Ubuntu 24.10 (Oracular Oriole) in a virtual machine using UTM, a free and open-source virtualization tool tailored for macOS.
+Ubuntu now offers a native ARM desktop build — perfect for Apple Silicon users looking to explore Linux, develop, or Virtualise efficiently. In this guide, we'll walk through setting up Ubuntu 24.10 (Oracular Oriole) in a virtual machine using UTM, a free and open-source virtualization tool tailored for macOS.
 
 Our :PageLink{title="previous article" url="/blog/apple-silicon-virtual-machine-setup#ubuntu-2204-1"} detailed setting up Ubuntu Server with a desktop environment added.
 
@@ -48,16 +48,16 @@ alt: UTM application interface showing the main window with a plus icon to creat
 ---
 ::
 
-### Virtualize or Emulate
+### Virtualise or Emulate
 
 UTM offers two modes:
 
-- **Virtualize**
+- **Virtualise**
 - **Emulate**
 
 | Mode       | Pros                       | Cons                                 |
 | ---------- | -------------------------- | ------------------------------------ |
-| Virtualize | Faster, native ARM support | Can't run x86 or non ARM processors  |
+| Virtualise | Faster, native ARM support | Can't run x86 or non ARM processors  |
 | Emulate    | Supports non-ARM systems   | Slower, potential performance issues |
 
 ::media
@@ -67,7 +67,7 @@ alt: UTM Configuration Mode selection between Virtualise and Emulate
 ---
 ::
 
-Select **Virtualize** to leverage Apple Silicon's efficiency.
+Select **Virtualise** to leverage Apple Silicon's efficiency.
 
 Emulation is slower but supports older systems. Pre-built VMs are also available via the :PageLink{title="UTM Gallery" url="https://mac.getutm.app/gallery/"}
 

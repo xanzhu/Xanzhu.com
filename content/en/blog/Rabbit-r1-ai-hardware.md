@@ -78,7 +78,7 @@ If you would like to learn more about :PageLink{title="Rabbit" url="https://www.
 ::media
 ---
 source: https://cdn.xanzhu.com/v1/rabbit-r1/inline-1.webp
-alt: Rabbit's R1 Hardware device a striking orange design with a screen and tactile buttons
+alt: Rabbit R1 Hardware device a striking orange design with a screen and tactile buttons
 ---
 ::
 
