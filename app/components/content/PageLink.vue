@@ -1,8 +1,10 @@
 <script setup lang="ts">
-defineProps({
-  title: { type: String },
-  url: { type: String },
-})
+interface PageLinkProps {
+  title: string
+  url: string
+}
+
+defineProps<PageLinkProps>()
 </script>
 
 <template>
