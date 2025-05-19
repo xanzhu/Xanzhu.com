@@ -1,104 +1,81 @@
-<script setup lang="ts">
-interface WeatherData {
-  location: { name: string }
-  current: { temp_c: number, condition: { text: string } }
-}
+<script setup>
+import { getWeather } from '../lib/WeatherApi.js'
 
+const weatherData = ref(null)
 const { locale } = useI18n()
-const { getWeather } = useWeather()
-
-const weatherData: Ref<WeatherData | null> = ref(null)
-const isLoading: Ref<boolean> = ref(false)
-const error: Ref<Error | null> = ref(null)
 
 const CACHE_EXPIRATION = 30 * 60 * 1000 // 30 minutes
 
-async function fetchWeatherData(newLocale: string) {
-  const cacheKey = `weatherData_${newLocale}`
-  let cachedData = null
-  try {
-    const cached = localStorage.getItem(cacheKey)
-    if (cached) {
-      cachedData = JSON.parse(cached)
-    }
-  }
-  catch (e) {
-    console.warn('Failed to parse localStorage cache:', e)
-  }
+function getCachedWeather(key) {
+  const cachedData = JSON.parse(localStorage.getItem(key))
   const now = Date.now()
 
-  if (cachedData && cachedData.timestamp && now - cachedData.timestamp < CACHE_EXPIRATION) {
-    weatherData.value = cachedData.data
+  if (cachedData?.timestamp && now - cachedData.timestamp < CACHE_EXPIRATION) {
+    return cachedData.data
+  }
+
+  return null
+}
+
+async function fetchWeatherData(newLocale) {
+  const cacheKey = `weatherData_${newLocale}`
+  const cached = getCachedWeather(cacheKey)
+
+  if (cached) {
+    weatherData.value = cached
     return
   }
 
-  isLoading.value = true
-  error.value = null
   try {
     const data = await getWeather(newLocale)
     weatherData.value = data
-    try {
-      localStorage.setItem(
-        cacheKey,
-        JSON.stringify({
-          data,
-          timestamp: now,
-        }),
-      )
-    }
-    catch (e) {
-      console.warn('Failed to write to localStorage:', e)
-    }
+    localStorage.setItem(cacheKey, JSON.stringify({
+      data,
+      timestamp: Date.now(),
+    }))
   }
-  catch (err) {
-    error.value = err as Error
-    console.error('Error fetching weather data:', err)
-  }
-  finally {
-    isLoading.value = false
+  catch (error) {
+    console.error('Error fetching weather data:', error)
+    weatherData.value = { error: true }
   }
 }
 
-watch(
-  () => locale.value,
-  (newLocale, oldLocale) => {
-    if (newLocale !== oldLocale) {
-      fetchWeatherData(newLocale)
-    }
-  },
-)
-
 onMounted(() => {
-  fetchWeatherData(locale.value)
+  const cached = getCachedWeather(`weatherData_${locale.value}`)
+  if (cached) {
+    weatherData.value = cached
+  }
+  else {
+    fetchWeatherData(locale.value)
+  }
+})
+
+watch(() => locale.value, (newLocale, oldLocale) => {
+  if (newLocale !== oldLocale) {
+    weatherData.value = null
+    fetchWeatherData(newLocale)
+  }
 })
 </script>
 
 <template>
-  <ClientOnly>
-    <div
-      class="flex items-center children:m0 space-x-2" :style="{
-        height: '30px',
-        opacity: weatherData && !isLoading ? 1 : 0,
-        transition: 'opacity 0.3s ease',
-      }"
-    >
-      <template v-if="error">
-        <p class="text-red-500">
-          Weather unavailable
-        </p>
-      </template>
-      <template v-else-if="weatherData">
-        <p>{{ weatherData.location.name }}</p>
-        <p class="font-bold">
-          {{ weatherData.current.temp_c }}°C
-        </p>
-        <p>{{ weatherData.current.condition.text }}</p>
-      </template>
-    </div>
-    <template #fallback>
-      <div class="flex items-center children:m0 space-x-2" style="height: 30px">
-        <p>Loading weather...</p>
-      </div>
+  <div
+    class="flex items-center children:m0 space-x-2" :style="{
+      height: '30px',
+      opacity: weatherData ? 1 : 0,
+      transition: 'opacity 0.3s ease',
+    }"
+  >
+    <template v-if="weatherData && !weatherData.error">
+      <p>{{ weatherData.location.name }}</p>
+      <p class="font-bold">
+        {{ weatherData.current.temp_c }}°C
+      </p>
+      <p>{{ weatherData.current.condition.text }}</p>
     </template>
-  </ClientOnly>
+
+    <template v-else-if="weatherData && weatherData.error">
+      <p>Weather data unavailable</p>
+    </template>
+  </div>
 </template>
