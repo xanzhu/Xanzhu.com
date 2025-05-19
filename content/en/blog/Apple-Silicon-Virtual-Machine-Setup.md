@@ -240,7 +240,7 @@ sudo reboot
 
 31. After rebooting, log in and that's it!
 
-UTM provides a vast range of :PageLink{title="pre-build virtual machines" url="https://mac.getutm.app/gallery/"} spanning all types of operating systems. Which can work on the "Emulation" option. Lots of options and completely free to use.
+UTM provides a vast range of :PageLink{title="pre-build virtual machines" url="https://mac.getutm.app/gallery/"} spanning all types of operating systems, which can work on the "Emulation" option. Lots of options and completely free to use.
 
 #### Other solutions
 
