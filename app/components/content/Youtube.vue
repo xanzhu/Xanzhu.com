@@ -15,9 +15,9 @@ const allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyrosc
 const referrerpolicy = 'strict-origin-when-cross-origin'
 const allowfullscreen = true
 
-const computedWidth = computed(() => `${width}px`)
-const computedHeight = computed(() => `${height}px`)
-const computedFrameborder = computed(() => frameborder.toString())
+const computedWidth = `${width}px`
+const computedHeight = `${height}px`
+const computedFrameborder = frameborder.toString()
 const iframeTitle = computed(() => props.title || t('v2.blog_iframe'))
 </script>
 

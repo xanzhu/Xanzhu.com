@@ -6,9 +6,6 @@ defineProps({
 const { t } = useI18n()
 const localePath = useLocalePath()
 const handleError = () => clearError({ redirect: localePath('/') })
-
-// TODO: Add back button to UI
-// const handleGoBack = () => window.history.back()
 </script>
 
 <template>

@@ -101,13 +101,13 @@ alt: UTM application interface showing the main window with a plus icon to creat
 ---
 ::
 
-#### Virtualize or Emulate
+#### Virtualise or Emulate
 
 UTM offers two modes:
 
 | Mode       | Pros                       | Cons                                 |
 | ---------- | -------------------------- | ------------------------------------ |
-| Virtualize | Faster, native ARM support | Can't run x86 or non-ARM processors  |
+| Virtualise | Faster, native ARM support | Can't run x86 or non-ARM processors  |
 | Emulate    | Supports non-ARM systems   | Slower, potential performance issues |
 
 ::media
@@ -117,7 +117,7 @@ alt: UTM Configuration Mode selection between Virtualise and Emulate
 ---
 ::
 
-Select **Virtualize** to leverage Apple Silicon's efficiency.
+Select **Virtualise** to leverage Apple Silicon's efficiency.
 
 Emulation is slower but supports older systems. Pre-built VMs are also available via the :PageLink{title="UTM Gallery" url="https://mac.getutm.app/gallery/"}.
 
