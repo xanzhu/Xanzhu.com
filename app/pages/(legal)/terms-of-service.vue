@@ -1,9 +1,23 @@
+<script setup lang="ts">
+const { t } = useI18n({
+  useScope: 'local',
+})
+
+// SEO Metadata
+const seoImage = 'https://images.pexels.com/photos/273209/pexels-photo-273209.jpeg'
+useLangMeta('terms', seoImage)
+</script>
+
 <template>
-  <div class="sm:mx-auto my-10 space-y-10 max-w-4xl min-h-screen">
-    <div class="flex flex-col space-y-4 sm:(space-y-0 flex-row justify-between items-center) mx-4">
+  <div class="my-10 max-w-4xl min-h-screen sm:mx-auto space-y-10">
+    <div class="mx-4 flex flex-col sm:(flex-row items-center justify-between space-y-0) space-y-4">
       <div class="flex flex-col">
-        <h1 class="text-2xl sm:text-3xl font-semibold m0">{{ t('terms.title') }}</h1>
-        <p class="font-300 dark:text-light-500 m0 op80">{{ t('terms.description') }}</p>
+        <h1 class="m0 text-2xl font-semibold sm:text-3xl">
+          {{ t('terms.title') }}
+        </h1>
+        <p class="m0 font-300 op80 dark:text-light-500">
+          {{ t('terms.description') }}
+        </p>
       </div>
       <p class="m0">
         {{ t("terms.date") }}:
@@ -11,19 +25,20 @@
       </p>
     </div>
     <div
-      class="core-border bg-gradient-to-b from-light-100 to-neutral-200 dark:from-dark-800 dark:to-dark-900 space-y-6 font-300 text-md p-6 sm:(p-10 mx-3) rounded-lg shadow-sm">
+      class="text-md rounded-lg from-light-100 to-neutral-200 bg-gradient-to-b p-6 font-300 shadow-sm sm:(mx-3 p-10) space-y-6 core-border dark:from-dark-800 dark:to-dark-900"
+    >
       <p class="text-dark-300 dark:text-gray-300">
         {{ t('terms.introduction') }}
       </p>
 
-      <h2 class="text-2xl font-semibold mt-8 mb-4 dark:text-gray-100 text-dark-900">
+      <h2 class="mb-4 mt-8 text-2xl text-dark-900 font-semibold dark:text-gray-100">
         {{ t('terms.intellectualProperty.title') }}
       </h2>
       <p class="text-dark-300 dark:text-gray-300">
         {{ t('terms.intellectualProperty.content') }}
       </p>
 
-      <h2 class="text-2xl font-semibold mt-8 mb-4 dark:text-gray-100 text-dark-900">
+      <h2 class="mb-4 mt-8 text-2xl text-dark-900 font-semibold dark:text-gray-100">
         {{ t('terms.userResponsibilities.title') }}
       </h2>
       <p class="text-dark-300 dark:text-gray-300">
@@ -34,33 +49,33 @@
         <li>{{ t('terms.userResponsibilities.list.noDisruption') }}</li>
       </ul>
 
-      <h2 class="text-2xl font-semibold mt-8 mb-4 dark:text-gray-100 text-dark-900">
+      <h2 class="mb-4 mt-8 text-2xl text-dark-900 font-semibold dark:text-gray-100">
         {{ t('terms.disclaimer.title') }}
       </h2>
       <p class="text-dark-300 dark:text-gray-300">
         {{ t('terms.disclaimer.content') }}
       </p>
 
-      <h2 class="text-2xl font-semibold mt-8 mb-4 dark:text-gray-100 text-dark-900">
+      <h2 class="mb-4 mt-8 text-2xl text-dark-900 font-semibold dark:text-gray-100">
         {{ t('terms.thirdPartyLinks.title') }}
       </h2>
       <p class="text-dark-300 dark:text-gray-300">
         {{ t('terms.thirdPartyLinks.content') }}
       </p>
 
-      <h2 class="text-2xl font-semibold mt-8 mb-4 dark:text-gray-100 text-dark-900">
+      <h2 class="mb-4 mt-8 text-2xl text-dark-900 font-semibold dark:text-gray-100">
         {{ t('terms.changesToTerms.title') }}
       </h2>
       <p class="text-dark-300 dark:text-gray-300">
         {{ t('terms.changesToTerms.content') }}
       </p>
 
-      <h2 class="text-2xl font-semibold mt-8 mb-4 dark:text-gray-100 text-dark-900">
+      <h2 class="mb-4 mt-8 text-2xl text-dark-900 font-semibold dark:text-gray-100">
         {{ t('terms.contactUs.title') }}
       </h2>
       <p class="text-dark-300 dark:text-gray-300">
         {{ t('terms.contactUs.content') }}
-        <NuxtLink href="mailto:feedback@xanzhu.com" class="text-black dark:text-white no-underline hover:underline ">
+        <NuxtLink href="mailto:feedback@xanzhu.com" class="text-black no-underline dark:text-white hover:underline">
           feedback@xanzhu.com
         </NuxtLink>
       </p>
@@ -68,19 +83,8 @@
   </div>
 </template>
 
-<script setup lang="ts">
-import { useI18n } from 'vue-i18n';
-
-const { t } = useI18n({
-  useScope: 'local'
-});
-
-// SEO Metadata
-const seoImage = 'https://images.pexels.com/photos/273209/pexels-photo-273209.jpeg';
-useLangMeta('terms', seoImage);
-</script>
-
-<i18n lang="json">{
+<i18n lang="json">
+{
   "en": {
     "terms": {
       "title": "Terms of Service",
@@ -201,4 +205,5 @@ useLangMeta('terms', seoImage);
       }
     }
   }
-}</i18n>
+}
+</i18n>

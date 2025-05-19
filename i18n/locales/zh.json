@@ -1,55 +1,89 @@
 {
+  "Alert": {
+    "feature": "功能预览",
+    "maintenance": "此页面正在建设中，完成后可能会有所不同。",
+    "view": "查看最新版本"
+  },
+  "Blog": {
+    "Video": "找不到视频",
+    "description": "新闻、指南和评论，涵盖技术、隐私与安全，帮助您在线保护数据。",
+    "meta": {
+      "description": "Xanzhu 提供有关技术、隐私与安全的有用文章、指南和技巧。",
+      "title": "最新博客文章"
+    },
+    "next": "下一篇",
+    "previous": "上一篇",
+    "read-time": "分钟阅读",
+    "source": "来源",
+    "title": "发现最新见解",
+    "toc": "目录",
+    "updated": "已更新"
+  },
+  "Error": {
+    "404": {
+      "code": "代码: 404",
+      "desc": "无法找到您要查找的页面。",
+      "title": "找不到网页"
+    },
+    "500": {
+      "code": "代码: 500",
+      "desc": "对不起，我们搞砸了，请重试。",
+      "title": "内部错误"
+    },
+    "return": "返回"
+  },
   "Home": {
-    "title": "隐私、安全以及介于两者之间的一切",
-    "desc": "在 Xanzhu，我们帮助您安全地使用技术并保护您的在线数据。阅读我们有关 VPN、密码管理器、双因素身份验证等主题的文章、指南和评论。",
-    "subhead": "自信驾驭数字世界",
     "Seo": {
-      "title": "新闻、技术指南、隐私与安全",
-      "description": "使用 Xanzhu 发现最新的技术趋势和见解，确保您的在线安全。我们的新闻和指南帮助您在不断变化的数字环境中游刃有余。"
+      "description": "使用 Xanzhu 发现最新的技术趋势和见解，确保您的在线安全。我们的新闻和指南帮助您在不断变化的数字环境中游刃有余。",
+      "title": "新闻、技术指南、隐私与安全"
     },
     "a11y": {
       "mouseicon": "向下滚动"
     },
-    "release": "新版本",
+    "desc": "在 Xanzhu，我们帮助您安全地使用技术并保护您的在线数据。阅读我们有关 VPN、密码管理器、双因素身份验证等主题的文章、指南和评论。",
     "more": "探索更多文章",
+    "release": "新版本",
+    "subhead": "自信驾驭数字世界",
     "tag": "引领未来",
+    "title": "隐私、安全以及介于两者之间的一切",
     "weatherLoad": "加载中"
   },
   "Links": {
-    "resources": "资源",
-    "blog": "博客",
     "analysis": "分析",
+    "blog": "博客",
     "home": "主页",
     "privacy-policy": "隐私政策",
+    "resources": "资源",
     "reviews": "评论"
   },
   "PagesCard": {
-    "resources": "安全工具与链接",
-    "blog": "最新消息与技术指南",
     "analysis": "威胁报告与深度分析",
+    "blog": "最新消息与技术指南",
     "image": {
       "building-1": "两座蓝绿色和白色的摩天大楼",
       "building-2": "白天的白色混凝土建筑",
       "building-3": "高层建筑"
-    }
+    },
+    "resources": "安全工具与链接"
   },
-  "Error": {
-    "404": {
-      "title": "找不到网页",
-      "desc": "无法找到您要查找的页面。",
-      "code": "代码: 404"
-    },
-    "500": {
-      "title": "内部错误",
-      "desc": "对不起，我们搞砸了，请重试。",
-      "code": "代码: 500"
-    },
-    "return": "返回"
+  "SocialsCard": {
+    "h1": "关注我们的社交媒体"
   },
   "StatsCard": {
-    "title": "2023 年观察到的常见威胁",
-    "warn": "这些是粗略估计，确切值可能略有不同。数据来源于 2023 年收集的研究。",
+    "breach": {
+      "1": "OPTUS—980 万",
+      "2": "LastPass—3000 万",
+      "3": "Twitter—2.115 亿",
+      "4": "Latitude—1400 万"
+    },
+    "breaches": {
+      "title": "最近的网络攻击"
+    },
     "check": "检查您的账户",
+    "image": {
+      "badge": "安全徽章",
+      "pwn": "HaveIBeenPwned 徽标"
+    },
     "threats": {
       "1": "网络钓鱼",
       "2": "勒索软件",
@@ -57,135 +91,147 @@
       "4": "拒绝服务 (DoS)",
       "title": "顶级安全威胁"
     },
-    "breaches": {
-      "title": "最近的网络攻击"
-    },
-    "image": {
-      "pwn": "HaveIBeenPwned 徽标",
-      "badge": "安全徽章"
-    },
-    "breach": {
-      "1": "OPTUS—980 万",
-      "2": "LastPass—3000 万",
-      "3": "Twitter—2.115 亿",
-      "4": "Latitude—1400 万"
-    }
+    "title": "2023 年观察到的常见威胁",
+    "warn": "这些是粗略估计，确切值可能略有不同。数据来源于 2023 年收集的研究。"
   },
   "a11y": {
-    "langSwitch": "切换语言",
-    "oMenu": "打开菜单",
-    "cMenu": "关闭菜单",
-    "logo": "Xanzhu 标识",
     "AnalysisPage": "访问我们的分析页面",
     "BlogPage": "访问博客页面",
-    "ResourcePage": "访问资源页面",
+    "Home": "访问主页",
     "Menu": "菜单",
-    "Home": "访问主页"
+    "ResourcePage": "访问资源页面",
+    "cMenu": "关闭菜单",
+    "langSwitch": "切换语言",
+    "logo": "Xanzhu 标识",
+    "oMenu": "打开菜单"
   },
-  "SocialsCard": {
-    "h1": "关注我们的社交媒体"
-  },
-  "Blog": {
-    "title": "发现最新见解",
-    "description": "新闻、指南和评论，涵盖技术、隐私与安全，帮助您在线保护数据。",
-    "toc": "目录",
-    "next": "下一篇",
-    "previous": "上一篇",
-    "read-time": "分钟阅读",
-    "source": "来源",
-    "updated": "已更新",
-    "meta": {
-      "title": "最新博客文章",
-      "description": "Xanzhu 提供有关技术、隐私与安全的有用文章、指南和技巧。"
+  "analysis": {
+    "graph": {
+      "advancedPersistentThreat": "高级持续威胁",
+      "aiIntegration": "人工智能整合",
+      "initialThreat": "初始威胁",
+      "label": "网络威胁的复杂性",
+      "peakSophistication": "顶尖的复杂性",
+      "targetedAttacks": "有针对性的攻击",
+      "title": "人工智能驱动的网络威胁进展",
+      "xAxis": "威胁演化阶段",
+      "yAxis": "威胁复杂度 (%)"
     },
-    "Video": "找不到视频"
-  },
-  "Analysis": {
-    "h1": "安全审计与分析",
-    "soon": "发现漏洞并提供增强安全措施的建议。"
-  },
-  "Alert": {
-    "feature": "功能预览",
-    "maintenance": "此页面正在建设中，完成后可能会有所不同。",
-    "view": "查看最新版本"
+    "hero": {
+      "subhead": "人工智能的主要网络安全挑战",
+      "title": "2024 年网络安全趋势"
+    },
+    "keyTrend": {
+      "desc": "跟踪人工智能增强型网络威胁的兴起及其日益复杂的情况。",
+      "title": "人工智能驱动的威胁演变"
+    },
+    "meta": {
+      "description": "Xanzhu 的网络安全分析：专家见解、趋势威胁和真实案例研究。",
+      "title": "网络安全分析 | 趋势与案例研究"
+    }
   },
   "app": {
     "sr": {
-      "menu": "打开菜单",
+      "lang": "选择语言",
       "lang_select": "所选语言：",
-      "lang": "选择语言"
+      "menu": "打开菜单"
     }
   },
   "email": {
     "share": "看看这篇文章"
   },
-  "share": {
-    "twitter": "在 Twitter 上分享",
-    "reddit": "在 Reddit 上分享",
-    "linkedin": "在 LinkedIn 上分享",
-    "email": "通过电子邮件分享此页面",
-    "title": "分享这篇文章！"
+  "footer": {
+    "about": "关于",
+    "blog": "博客",
+    "brand": "品牌",
+    "community": "社区",
+    "company": "公司",
+    "copyright": "© Xanzhu 2025. 保留所有权利。",
+    "github": "GitHub",
+    "latest": "最新",
+    "legal": "法律",
+    "privacy": "隐私政策",
+    "resources": "资源",
+    "sr": {
+      "blog": "博客链接",
+      "community": "社区链接",
+      "company": "公司链接",
+      "legal": "法律链接",
+      "resource": "资源链接"
+    },
+    "terms": "使用条款",
+    "tools": "工具",
+    "twitter": "Twitter",
+    "version": "版本"
   },
   "home": {
-    "latest": "最新文章",
     "hero": {
-      "subhead": "探索推动技术向前发展的趋势、工具和技术——从保护数据到重新定义数字世界。",
       "cta": "开始探索",
       "heading": "现代网络的隐私与安全",
+      "subhead": "探索推动技术向前发展的趋势、工具和技术——从保护数据到重新定义数字世界。",
       "tagline": "超越代码与创新"
-    }
-  },
-  "resources": {
-    "hero": {
-      "title": "安全工具包",
-      "description": "全面收集免费安全工具、教育资源和报告平台，帮助保护您的数字存在。"
     },
-    "reporting_tools": "报告工具",
-    "quick_links": "快速链接",
-    "search": {
-      "placeholder": "搜索安全资源",
-      "noResults": "抱歉，未找到相关内容，请重试。"
-    },
-    "explain": {
-      "phishing": "帮助识别、避免和报告网络钓鱼尝试和可疑网站的工具和资源。",
-      "network": "用于监控网络流量、检测漏洞和保护连接的基本工具。",
-      "malware": "用于分析可疑文件、检测恶意软件和维护系统安全的免费工具和平台。"
-    },
-    "phishing": "网络钓鱼",
-    "malware": "恶意软件分析",
-    "network": "网络安全",
-    "reporting": {
-      "securityheaders": "分析网站的 HTTP 安全标头是否存在漏洞",
-      "shodan": "用于发现暴露于互联网的设备和系统的搜索引擎。",
-      "anyrun": "用于实时分析和共享结果的交互式恶意软件分析工具。",
-      "hybrid": "免费的恶意软件分析平台，用于分析可疑文件和 URL",
-      "microsoft": "Microsoft 用于报告网络钓鱼和恶意 URL 的平台",
-      "google": "向 Google 安全浏览报告可疑网站以获得保护更新"
-    },
-    "tools": {
-      "snort": "用于实时流量分析和威胁预防的入侵检测系统。",
-      "owaspzap": "用于识别 Web 应用程序漏洞的开源渗透测试工具",
-      "wireshark": "用于监控网络流量并排除故障的网络协议分析器。",
-      "sandboxie": "用于在隔离沙箱环境中运行应用程序的工具。",
-      "clamav": "用于检测恶意软件和恶意文件的开源防病毒引擎。",
-      "malwarebytes": "适合家庭和企业使用的恶意软件保护和删除软件。",
-      "virustotal": "用于分析文件和 URL 中是否存在恶意软件和可疑内容的在线扫描程序。",
-      "openphish": "自动网络钓鱼检测和情报源服务。",
-      "urlvoid": "检查网站声誉并检测恶意活动的工具。",
-      "apwg": "反网络钓鱼工作组提供资源以打击全球网络钓鱼",
-      "phishtank": "由社区支持的数据库，用于识别和报告网络钓鱼网站"
-    },
-    "meta": {
-      "title": "安全工具包：在线安全的基本工具和服务",
-      "description": "使用我们精选的最佳安全工具和服务列表确保在线安全。从网络钓鱼防护到恶意软件报告，我们都能满足您的需求。"
-    }
+    "latest": "最新文章"
   },
   "pageCard": {
-    "tools": "免费工具和资源，帮助改善和保护您的安全",
     "article": "随时了解我们有关安全趋势和最佳实践的最新文章",
-    "caseStudy": "深入研究详细的安全案例研究和技术文章"
+    "caseStudy": "深入研究详细的安全案例研究和技术文章",
+    "tools": "免费工具和资源，帮助改善和保护您的安全"
+  },
+  "resources": {
+    "explain": {
+      "malware": "用于分析可疑文件、检测恶意软件和维护系统安全的免费工具和平台。",
+      "network": "用于监控网络流量、检测漏洞和保护连接的基本工具。",
+      "phishing": "帮助识别、避免和报告网络钓鱼尝试和可疑网站的工具和资源。"
+    },
+    "hero": {
+      "description": "全面收集免费安全工具、教育资源和报告平台，帮助保护您的数字存在。",
+      "title": "安全工具包"
+    },
+    "malware": "恶意软件分析",
+    "meta": {
+      "description": "使用我们精选的最佳安全工具和服务列表确保在线安全。从网络钓鱼防护到恶意软件报告，我们都能满足您的需求。",
+      "title": "安全工具包：在线安全的基本工具和服务"
+    },
+    "network": "网络安全",
+    "phishing": "网络钓鱼",
+    "quick_links": "快速链接",
+    "reporting": {
+      "anyrun": "用于实时分析和共享结果的交互式恶意软件分析工具。",
+      "google": "向 Google 安全浏览报告可疑网站以获得保护更新",
+      "hybrid": "免费的恶意软件分析平台，用于分析可疑文件和 URL",
+      "microsoft": "Microsoft 用于报告网络钓鱼和恶意 URL 的平台",
+      "securityheaders": "分析网站的 HTTP 安全标头是否存在漏洞",
+      "shodan": "用于发现暴露于互联网的设备和系统的搜索引擎。"
+    },
+    "reporting_tools": "报告工具",
+    "search": {
+      "noResults": "抱歉，未找到相关内容，请重试。",
+      "placeholder": "搜索安全资源"
+    },
+    "tools": {
+      "apwg": "反网络钓鱼工作组提供资源以打击全球网络钓鱼",
+      "clamav": "用于检测恶意软件和恶意文件的开源防病毒引擎。",
+      "malwarebytes": "适合家庭和企业使用的恶意软件保护和删除软件。",
+      "openphish": "自动网络钓鱼检测和情报源服务。",
+      "owaspzap": "用于识别 Web 应用程序漏洞的开源渗透测试工具",
+      "phishtank": "由社区支持的数据库，用于识别和报告网络钓鱼网站",
+      "sandboxie": "用于在隔离沙箱环境中运行应用程序的工具。",
+      "snort": "用于实时流量分析和威胁预防的入侵检测系统。",
+      "urlvoid": "检查网站声誉并检测恶意活动的工具。",
+      "virustotal": "用于分析文件和 URL 中是否存在恶意软件和可疑内容的在线扫描程序。",
+      "wireshark": "用于监控网络流量并排除故障的网络协议分析器。"
+    }
+  },
+  "share": {
+    "email": "通过电子邮件分享此页面",
+    "linkedin": "在 LinkedIn 上分享",
+    "reddit": "在 Reddit 上分享",
+    "title": "分享这篇文章！",
+    "twitter": "在 Twitter 上分享"
   },
   "threatCard": {
+    "ariaLabel": "（在新标签中阅读更多内容）",
     "recent": {
       "crowdStrike": "850 万个系统崩溃",
       "latitude": "1400 万条记录",
@@ -201,59 +247,10 @@
       "title": "主要安全威胁"
     },
     "source": "数据来源于公共违规通知和安全报告。数字代表大约受影响的用户/记录。",
-    "title": "2024 年 ANZ 网络威胁",
-    "ariaLabel": "（在新标签中阅读更多内容）"
-  },
-  "analysis": {
-    "hero": {
-      "title": "2024 年网络安全趋势",
-      "subhead": "人工智能的主要网络安全挑战"
-    },
-    "keyTrend": {
-      "title": "人工智能驱动的威胁演变",
-      "desc": "跟踪人工智能增强型网络威胁的兴起及其日益复杂的情况。"
-    },
-    "graph": {
-      "xAxis": "威胁演化阶段",
-      "yAxis": "威胁复杂度 (%)",
-      "initialThreat": "初始威胁",
-      "aiIntegration": "人工智能整合",
-      "targetedAttacks": "有针对性的攻击",
-      "advancedPersistentThreat": "高级持续威胁",
-      "peakSophistication": "顶尖的复杂性",
-      "title": "人工智能驱动的网络威胁进展",
-      "label": "网络威胁的复杂性"
-    },
-    "meta": {
-      "title": "网络安全分析 | 趋势与案例研究",
-      "description": "Xanzhu 的网络安全分析：专家见解、趋势威胁和真实案例研究。"
-    }
-  },
-  "footer": {
-    "version": "版本",
-    "latest": "最新",
-    "tools": "工具",
-    "community": "社区",
-    "github": "GitHub",
-    "twitter": "Twitter",
-    "about": "关于",
-    "brand": "品牌",
-    "privacy": "隐私政策",
-    "terms": "使用条款",
-    "blog": "博客",
-    "resources": "资源",
-    "company": "公司",
-    "legal": "法律",
-    "copyright": "© Xanzhu 2025. 保留所有权利。",
-    "sr": {
-      "community": "社区链接",
-      "blog": "博客链接",
-      "resource": "资源链接",
-      "company": "公司链接",
-      "legal": "法律链接"
-    }
+    "title": "2024 年 ANZ 网络威胁"
   },
   "v2": {
+    "blog_iframe": "Youtube 视频",
     "blog_updated": "最后更新"
   }
 }

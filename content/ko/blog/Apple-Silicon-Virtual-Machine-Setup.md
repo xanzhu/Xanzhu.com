@@ -1,6 +1,7 @@
 ---
 title: "2023년 애플 실리콘 가상 머신 설정 최종 가이드: 완벽한 팁과 지침"
 date: "2023-01-08"
+updated: "2023-01-08"
 tag: "가이드"
 img: "/images/blog/covers/apple-vm-setup-v1.webp"
 description: "Parallels 또는 UTM을 사용하여 Apple Silicon Mac에서 가상 머신을 설정하는 방법을 배웁니다. 가이드에서는 첫 번째 가상 머신의 설치, 구성 및 실행에 대해 다룹니다."
@@ -111,9 +112,9 @@ Windows는 다양한 방법으로 설치할 수 있습니다. <PageLink title="U
 
 1. 언어 선택
 2. 키보드 선택
-3. 아무 것도 표시되지 않으면 네트워크를 선택하고 <b>SHIFT + F10</b> 을 누른 다음 예를 누르고 명령 프롬프트에 다음을 입력합니다.
+3. 아무 것도 표시되지 않으면 네트워크를 선택하고 `SHIFT + F10`을 누른 다음 예를 누르고 명령 프롬프트에 다음을 입력합니다.
 
-```CODE
+```
  OOBE\BYPASSNRO
 ```
 

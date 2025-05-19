@@ -1,28 +1,31 @@
 export function useLangMeta(
-  key: string,
+  i18nKey: string,
   seoImage: string,
-  format: "prefix" | "suffix" = "suffix"
+  format: 'prefix' | 'suffix' = 'suffix',
 ) {
-  const { t } = useI18n();
+  const { t } = useI18n()
 
   // Compute i18n values
-  const seoTitle = computed(() => t(`${key}.title`));
-  const seoDesc = computed(() => t(`${key}.description`));
+  const seoTitle = computed(() => t(`${i18nKey}.title`))
+  const seoDesc = computed(() => t(`${i18nKey}.description`))
 
   // titleTemplate position
-  const formatTitle = format === "prefix" ? `Xanzhu - %s` : `%s - Xanzhu`;
+  const formatTitle = format === 'prefix' ? `Xanzhu - %s` : `%s - Xanzhu`
+
+  // Formatted title with title template! >_>
+  const formatSeoTitle = `${formatTitle.replace('%s', seoTitle.value)}`
 
   // Built-in SeoMeta Composable
   useSeoMeta({
     title: seoTitle.value,
     description: seoDesc.value,
-    ogTitle: formatTitle,
+    ogTitle: formatSeoTitle,
     ogDescription: seoDesc.value,
     twitterDescription: seoDesc.value,
-    twitterTitle: formatTitle,
+    twitterTitle: formatSeoTitle,
     twitterImage: seoImage,
     ogImage: seoImage,
     titleTemplate: formatTitle,
-    ogType: 'website'
-  });
+    ogType: 'website',
+  })
 }

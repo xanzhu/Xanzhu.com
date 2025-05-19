@@ -1,19 +1,4 @@
-<template>
-  <div v-if="!cb"
-    class="max-w-md dark:text-white rounded-md mx2 p5 text-sm backdrop-blur-xl backdrop-filter b-1 dark:border-dark-300 b-gray-300 b-dashed mb-5">
-    <!-- <Icon class="h4 w4 cursor-pointer relative right-2 -top-2 hover:text-red-600" name="ic:baseline-close"
-      @click="closeBtn" /> -->
-    <h1 class="text-xl m0 font-semibold">{{ title || t('Alert.feature') }}</h1>
-    <h2 class="font-normal">{{ desc || t('Alert.maintenance') }}</h2>
-    <NuxtLink v-if="access" :to="localePath(link ?? '')" class="no-underline animate-bounce text-[#FF0]">
-      {{ t('Alert.view') }}</NuxtLink>
-    <p v-if="date" class="text-sm font-normal">Updated: {{ date }}</p>
-  </div>
-</template>
 <script setup lang="ts">
-const { t } = useI18n();
-const localePath = useLocalePath()
-
 defineProps({
   link: {
     type: String,
@@ -21,25 +6,49 @@ defineProps({
   },
   desc: {
     type: String,
-    required: false
+    required: false,
   },
   access: {
     type: Boolean,
-    required: false
+    required: false,
   },
   title: {
     type: String,
-    required: false
+    required: false,
   },
   date: {
     type: String,
-    required: false
-  }
-});
+    required: false,
+  },
+})
+const { t } = useI18n()
+const localePath = useLocalePath()
 
-const cb = ref<boolean>(false);
+const cb = ref<boolean>(false)
 
 // function closeBtn() {
 //   cb.value = true
 // }
 </script>
+
+<template>
+  <div
+    v-if="!cb"
+    class="mx2 mb-5 max-w-md b-1 b-gray-300 rounded-md b-dashed p5 text-sm backdrop-blur-xl backdrop-filter dark:border-dark-300 dark:text-white"
+  >
+    <!-- <Icon class="h4 w4 cursor-pointer relative right-2 -top-2 hover:text-red-600" name="ic:baseline-close"
+      @click="closeBtn" /> -->
+    <h1 class="m0 text-xl font-semibold">
+      {{ title || t('Alert.feature') }}
+    </h1>
+    <h2 class="font-normal">
+      {{ desc || t('Alert.maintenance') }}
+    </h2>
+    <NuxtLink v-if="access" :to="localePath(link ?? '')" class="animate-bounce text-[#FF0] no-underline">
+      {{ t('Alert.view') }}
+    </NuxtLink>
+    <p v-if="date" class="text-sm font-normal">
+      Updated: {{ date }}
+    </p>
+  </div>
+</template>

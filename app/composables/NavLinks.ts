@@ -1,10 +1,10 @@
 export interface NavLink {
-  name: string;
-  url: string;
+  name: string
+  url: string
 }
 
 export function useNavLinks(...pages: NavLink[]): Ref<NavLink[]> {
-  const links = ref<NavLink[]>(pages);
+  const links = ref<NavLink[]>(pages)
 
-  return links;
+  return links
 }

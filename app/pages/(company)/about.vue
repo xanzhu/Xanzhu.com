@@ -1,26 +1,27 @@
-<template>
-    <div class="flex flex-col items-center min-h-screen md:mt-20">
-        <h1>{{ t('about.title') }}</h1>
-        <div class="prose text-sm p8 sm:(text-base p2)">
-            <p>{{ t('about.paragraphs.introduction') }}</p>
-            <p>{{ t('about.paragraphs.mission') }}</p>
-            <p>{{ t('about.paragraphs.goal') }}</p>
-            <p>{{ t('about.paragraphs.importance') }}</p>
-            <p>{{ t('about.paragraphs.closing') }}</p>
-        </div>
-    </div>
-</template>
-
 <script setup lang="ts">
 const { t } = useI18n({
-    useScope: 'local'
+  useScope: 'local',
 })
 
-const seoImage = 'https://images.pexels.com/photos/27050060/pexels-photo-27050060.jpeg';
-useLangMeta('about.meta', seoImage, 'prefix');
+const seoImage = 'https://images.pexels.com/photos/27050060/pexels-photo-27050060.jpeg'
+useLangMeta('about.meta', seoImage, 'prefix')
 </script>
 
-<i18n lang="json">{
+<template>
+  <div class="min-h-screen flex flex-col items-center md:mt-20">
+    <h1>{{ t('about.title') }}</h1>
+    <div class="p8 text-sm prose sm:(p2 text-base)">
+      <p>{{ t('about.paragraphs.introduction') }}</p>
+      <p>{{ t('about.paragraphs.mission') }}</p>
+      <p>{{ t('about.paragraphs.goal') }}</p>
+      <p>{{ t('about.paragraphs.importance') }}</p>
+      <p>{{ t('about.paragraphs.closing') }}</p>
+    </div>
+  </div>
+</template>
+
+<i18n lang="json">
+{
     "en": {
         "about": {
             "title": "About Xanzhu.com",
@@ -69,4 +70,5 @@ useLangMeta('about.meta', seoImage, 'prefix');
             }
         }
     }
-}</i18n>
+}
+</i18n>

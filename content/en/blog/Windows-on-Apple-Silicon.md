@@ -13,13 +13,13 @@ This article covers using the latest version of Windows on ARM processors using 
 
 To check your device is using the new chipset introduced in 2020, click on the Apple icon and select "About This Mac". Here you will find details whether it is Intel or using the new M1-M3 Chips.
 
-This is an updated version from our <PageLink title="previous article" url="/blog/apple-silicon-virtual-machine-setup"></PageLink> at the beginning of the year, where we covered the installation of Windows using UTM and Parallels. Since then, the process has become much easier and reliable!
+This is an updated version from our :PageLink{title="previous article" url="/blog/apple-silicon-virtual-machine-setup"} at the beginning of the year, where we covered the installation of Windows using UTM and Parallels. Since then, the process has become much easier and reliable!
 
 Downloads:
 
-- <PageLink title="UTM Website" url="https://mac.getutm.app/"></PageLink>
-- <PageLink title="UTM Github" url="https://github.com/utmapp/UTM/releases"></PageLink>
-- <PageLink title="CrystalFetch" url="https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12"></PageLink>
+- :PageLink{title="UTM Website" url="https://mac.getutm.app/"}
+- :PageLink{title="UTM Github" url="https://github.com/utmapp/UTM/releases"}
+- :PageLink{title="CrystalFetch" url="https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12"}
 
 Prerequisites:
 
@@ -29,24 +29,34 @@ Prerequisites:
 
 ## Installing UTM
 
-- Download UTM from their <PageLink title="Offical website" url="https://mac.getutm.app/"></PageLink> or the latest version from <PageLink title="Github" url="https://github.com/utmapp/UTM/releases"></PageLink>
+- Download UTM from their :PageLink{title="Offical website" url="https://mac.getutm.app/"} or the latest version from :PageLink{title="Github" url="https://github.com/utmapp/UTM/releases"}
 
 <i>Note: UTM is also available on the app store though this is paid option offering updates where as the above two options any updates need to be downloaded manually.</i>
 
 The application will look like this when opened
 
-<Media source="https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-1.webp" alt="UTM Application Opening Screen"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-1.webp
+alt: UTM Application Opening Screen
+---
+::
 
 ## CrystalFetch
 
 This is a free tool what will help us to generate an updated windows ISO file needed for the UTM virtual machine.
 
-1. Download CrystalFetch from the <PageLink title="App Store" url="https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12"></PageLink>.
+1. Download CrystalFetch from the :PageLink{title="App Store" url="https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12"}.
 2. Open CrystalFetch and Select Language and Edition (Windows 11)
 
 Should look similar to this:
 
-<Media source="https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-2.webp" alt="CrystalFetch Application Opening Screen"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-2.webp
+alt: CrystalFetch Application Opening Screen
+---
+::
 
 3. Click on download
 
@@ -65,7 +75,12 @@ We can now setup our virtual machine!
 
 Should look similar to this
 
-<Media source="https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-3.webp" alt="UTM Configuration Screen For Virtual Machine"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-3.webp
+alt: UTM Configuration Screen For Virtual Machine
+---
+::
 
 1. Select the amount of RAM to be used for this virtual machine. 4096 is the default, which is equal to 4GB. Half of what your system is using is ideal, but this can be adjusted later on if needed. For now, leave it as the default.
 
@@ -77,7 +92,12 @@ Should look similar to this
 
 The virtual machine has now been created. You should see something similar to this.
 
-<Media source="https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-4.webp" alt="Showing UTM Virtual Machines"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-4.webp
+alt: Showing UTM Virtual Machines
+---
+::
 
 ## Running Virtual Machine
 
@@ -87,11 +107,21 @@ This will now boot up the virtual machine. During this process it will open up a
 
 2. Click inside this window and press any key.
 
-<Media source="https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-5.webp" alt="UTM showing prompt to press any key to proceed"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-5.webp
+alt: UTM showing prompt to press any key to proceed
+---
+::
 
 This step is important as if you don't press a key fast enough you will get the following screen.
 
-<Media source="https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-5b.webp" alt="UTM showing error prompt during boot"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-5b.webp
+alt: UTM showing error prompt during boot
+---
+::
 
 To solve this close the virtual machine and run it again or select the restart virtual machine button which is the triangle button.
 
@@ -101,7 +131,12 @@ If you keep getting the above error then refer to the Issues and bugs section of
 
 After doing this we will get to this screen where we can now configure the installation for windows.
 
-<Media source="https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-6.webp" alt="Windows ISO installation menu"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-6.webp
+alt: Windows ISO installation menu
+---
+::
 
 1. Select the language and press Next.
 
@@ -117,7 +152,12 @@ The Windows installer will now begin to install the required files for Windows. 
 
 After this has been completed, it will reboot a few times. Let it run without interfering. Once you reach the following screen, we need to make sure we eject the current ISO to prevent the installer from running again if we reboot.
 
-<Media source="https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-7.webp" alt="UTM guide on ejecting current ISO from Virtual Machine"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-7.webp
+alt: UTM guide on ejecting current ISO from Virtual Machine
+---
+::
 
 1. Click on the disc Icon
 2. Hover over CD/DVD and select eject.
@@ -132,7 +172,12 @@ After signing into your new virtual machine, you need to ensure Spice Guest Tool
 
 By default, the installation menu will pop up. Click Next to install and wait. This will install the drivers, so the virtual machine may flash or slow down until the installation is complete.
 
-<Media source="https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-8.webp" alt="UTM Spice Guest Tools Installer screen"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-8.webp
+alt: UTM Spice Guest Tools Installer screen
+---
+::
 
 If the virtual machine becomes unresponsive close and reboot the virtual machine.
 
@@ -160,4 +205,4 @@ Double-check that Spice Guest Tools has been installed correctly. To install Spi
 2. Go to the CD drive and click on it.
 3. Double-click on "utm-guest-tools" to run the installation.
 
-If you need more help please refer to UTM's <PageLink title="Documentation" url="https://docs.getutm.app/guides/windows/"></PageLink>
+If you need more help please refer to UTM's :PageLink{title="Documentation" url="https://docs.getutm.app/guides/windows/"}

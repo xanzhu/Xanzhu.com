@@ -64,7 +64,7 @@ Windows 11 **ARM64** ISO를 다운로드하십시오. Microsoft 웹사이트에�
 
 Microsoft 웹사이트에서 직접 다운로드하려면 <PageLink title="Windows 11 ISO" url="https://www.microsoft.com/en-us/software-download/windows11arm64"></PageLink>로 이동하십시오.
 
-1. 드롭다운 메뉴에서 **Windows 11 (Arm64용 다중 에디션 ISO)**를 선택하십시오.
+1. 드롭다운 메뉴에서 **Windows 11 (Arm64용 다중 에디션 ISO)** 를 선택하십시오.
 2. **다운로드**를 선택하여 ISO를 다운로드하십시오.
 3. **제품 언어**를 선택하고 **확인**을 선택하십시오.
 4. **지금 다운로드**를 선택하십시오.
