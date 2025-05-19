@@ -1,6 +1,7 @@
 ---
 title: "Apple Silicon Virtual Machine Setup 2023"
 date: "2023-01-08"
+updated: "2023-01-08"
 tag: "Guide"
 img: "/images/blog/covers/apple-vm-setup-v1.webp"
 description: "Learn setup of virtual machines on Apple Silicon using Parallels or UTM. Covering installation, configuration, and running your first virtual machine"
@@ -156,7 +157,7 @@ Now installing windows
 2. Select your Keyboard
 3. Select a network, if nothing shows up press `SHIFT + F10` and press yes and in the command prompt enter the following:
 
-```CODE
+```
 OOBE\BYPASSNRO
 ```
 

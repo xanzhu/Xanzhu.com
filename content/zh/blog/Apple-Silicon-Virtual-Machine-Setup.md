@@ -1,6 +1,7 @@
 ---
 title: "Apple Silicon 虚拟机设置2023"
 date: "2023-01-08"
+updated: "2023-01-08"
 tag: "指导"
 img: "/images/blog/covers/apple-vm-setup-v1.webp"
 description: "了解如何使用 Parallels 或 UTM 在 Apple Silicon Mac 上设置虚拟机。 我们的指南涵盖安装、配置和运行您的第一个虚拟机。"
@@ -112,9 +113,9 @@ Now installing windows
 
 1. 选择您的语言
 2. 选择你的键盘
-3. 选择一个网络，如果没有出现，请按 `SHIFT + F10` 并按是，然后在命令提示符下输入以下内容：
+3. 选择一个网络，如果没有出现，请按 `SHIFT + F10`并按是，然后在命令提示符下输入以下内容：
 
-```CODE
+```
  OOBE\BYPASSNRO
 ```
 

@@ -168,7 +168,7 @@
     "hero": {
       "cta": "Start the Journey",
       "heading": "Privacy and Security for the Modern Web",
-      "subhead": "Explore trends, tools, and techniques driving technology forward—from safeguarding data to       redefining the       digital world.",
+      "subhead": "Explore trends, tools, and techniques driving technology forward—from safeguarding data to redefining the digital world.",
       "tagline": "Beyond Code and Innovation"
     },
     "latest": "RECENT POSTS"
@@ -241,7 +241,7 @@
     "regional": {
       "dataBreach": "Data Breaches",
       "phish": "Phishing Attacks",
-      "ransomware": "Ransomeware and Cyber Extortion",
+      "ransomware": "Ransomware and Cyber Extortion",
       "supplyChain": "Supply Chain Vulnerabilities",
       "takeOver": "Account Compromises",
       "title": "Top Security Threats"
