@@ -37,17 +37,27 @@ A good option would be to use an authenticator with the ability to backup codes 
 
 ### Aegis
 
-<Media source="https://cdn.xanzhu.com/v1/2-factor-auth/aegis.webp" alt="Aegis Authenticator Logo"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/2-factor-auth/aegis.webp
+alt: Aegis Authenticator Logo
+---
+::
 
 Aegis is a free and open-source authenticator app available on Android through the Google Play Store and F-Droid. It offers added security compared to standard software, as tokens are not displayed as soon as you open the app.
 
 Additionally, it allows you to export and import tokens between devices, making it convenient when switching phones. As an open-source app, you can review its codebase for transparency and security.
 
-Learn more about Aegis by visting <PageLink title="getaegis.app" url="https://getaegis.app/"></PageLink>
+Learn more about Aegis by visting :PageLink{title="getaegis.app" url="https://getaegis.app/"}
 
 ### 2FAS
 
-<Media source="https://cdn.xanzhu.com/v1/2-factor-auth/2fas.webp" alt="2FAS Authenticator Logo"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/2-factor-auth/2fas.webp
+alt: 2FAS Authenticator Logo
+---
+::
 
 2FAS is my personal favorite, offering a seamless two-factor authentication experience on both Android and iOS. It also has a browser extension for Brave, Firefox, Opera, and more, allowing for quick access to 2FA codes in the browser.
 
@@ -63,7 +73,12 @@ Some notable features include:
 
 ### Raivo OTP
 
-<Media source="https://cdn.xanzhu.com/v1/2-factor-auth/ravio.webp" alt="Ravio Authenticator Logo"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/2-factor-auth/ravio.webp
+alt: Ravio Authenticator Logo
+---
+::
 
 Raivo OTP is a lightweight, open-source, and free to use authenticator app that syncs across all your Apple devices. Built using Swift 5, it is a native app in the Apple ecosystem and works on both mobile devices and MacOS.
 
@@ -73,7 +88,7 @@ Notable features include:
 - Syncing with iCloud
 - Customizing each one-time password (OTP).
 
-You can learn more about Ravio OTP by visting <PageLink title="raivo-otp.com" url="https://raivo-otp.com/"></PageLink>
+You can learn more about Ravio OTP by visting :PageLink{title="raivo-otp.com" url="https://raivo-otp.com/"}
 
 ## SMS Authentication
 
@@ -107,7 +122,7 @@ Security keys are a physical form of multi-factor authentication (MFA) that add 
 
 This method of authentication is more secure as it is a physical device that you have on hand, making it nearly impossible for attackers to compromise your accounts. Security keys eliminate the need for additional codes to authenticate, as once the key is verified on your account, no further authentication is required.
 
-MFA is ideal for enterprise usage, as it integrates with WebAuth/FIDO and Smart Card/PIV authentication, protecting against common phishing attempts. Security keys will continue to be widely adopted by platforms and services as this technology evolves. You can learn more about security keys and their features by visiting <PageLink title="Yubico.com" url="https://www.yubico.com/"></PageLink>
+MFA is ideal for enterprise usage, as it integrates with WebAuth/FIDO and Smart Card/PIV authentication, protecting against common phishing attempts. Security keys will continue to be widely adopted by platforms and services as this technology evolves. You can learn more about security keys and their features by visiting :PageLink{title="Yubico.com" url="https://www.yubico.com/"}
 
 ## Summary
 

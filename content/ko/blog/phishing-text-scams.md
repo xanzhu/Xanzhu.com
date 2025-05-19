@@ -102,7 +102,7 @@ ANZ - hoax@cybersecurity.anz.com
 
 Spark NZ - scamhelp@spark.co.nz
 
-<hr> 
+<hr>
 더 알아보기:
 
 - <PageLink title="dia.govt.nz" url="https://www.dia.govt.nz/Spam-How-to-Report-Scams"></PageLink>

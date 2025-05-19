@@ -11,7 +11,7 @@ alt: "Ubuntu 24.10 running on Apple Silicon with UTM"
 
 Ubuntu now offers a native ARM desktop build — perfect for Apple Silicon users looking to explore Linux, develop, or virtualize efficiently. In this guide, we'll walk through setting up Ubuntu 24.10 (Oracular Oriole) in a virtual machine using UTM, a free and open-source virtualization tool tailored for macOS.
 
-Our <PageLink title="previous article" url="/blog/apple-silicon-virtual-machine-setup#ubuntu-2204-1">previous article</PageLink> detailed setting up Ubuntu Server with a desktop environment added. This updated guide simplifies the process using the dedicated ARM desktop build recently released.
+Our :PageLink{title="previous article" url="/blog/apple-silicon-virtual-machine-setup#ubuntu-2204-1"} detailed setting up Ubuntu Server with a desktop environment added.
 
 ## Requirements
 
@@ -23,15 +23,15 @@ Our <PageLink title="previous article" url="/blog/apple-silicon-virtual-machine-
 
 ## UTM Download
 
-Download UTM version 4.6.5 from the <PageLink title="UTM Github releases page" url="https://github.com/utmapp/UTM/releases"></PageLink>. Previous 4.x.x versions should also work.
+Download UTM version 4.6.5 from the :PageLink{title="UTM Github releases page" url="https://github.com/utmapp/UTM/releases"} Previous 4.x.x versions should also work.
 
-Automatic updates are available for UTM via the <PageLink title="App Store Version" url="https://apps.apple.com/us/app/utm-virtual-machines/id1538878817"></PageLink> though this is paid. Alternatively, use the GitHub version and manually update as needed.
+Automatic updates are available for UTM via the :PageLink{title="App Store Version" url="https://apps.apple.com/us/app/utm-virtual-machines/id1538878817"} though this is paid.
 
 Drag UTM to your Applications folder and verify it opens correctly.
 
 ## Ubuntu ISO Download
 
-Next, download the Ubuntu 24.10 **ARM64** ISO, approximately 3.54 GB, from the <PageLink title="Ubuntu website" url="https://cdimage.ubuntu.com/releases/oracular/release/"></PageLink>.
+Next, download the Ubuntu 24.10 **ARM64** ISO, approximately 3.54 GB, from the :PageLink{title="Ubuntu website" url="https://cdimage.ubuntu.com/releases/oracular/release/"}.
 
 This is Ubuntu's first ARM64 desktop build, with LTS variants planned for the future. As a pre-release version, some features may be experimental.
 
@@ -41,7 +41,12 @@ With the ISO downloaded, open UTM to create the virtual machine.
 
 In UTM, click the **+** icon to start creating a new virtual machine.
 
-<Media source="https://cdn.xanzhu.com/v1/m3-ubuntu/utm.webp" alt="UTM application interface showing the main window with a plus icon to create a new virtual machine"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m3-ubuntu/utm.webp
+alt: UTM application interface showing the main window with a plus icon to create a new virtual machine
+---
+::
 
 ### Virtualize or Emulate
 
@@ -55,24 +60,44 @@ UTM offers two modes:
 | Virtualize | Faster, native ARM support | Can't run x86 or non ARM processors  |
 | Emulate    | Supports non-ARM systems   | Slower, potential performance issues |
 
-<Media source="https://cdn.xanzhu.com/v1/m3-ubuntu/utm-mode.webp" alt="UTM Configuration Mode selection between Virtualise and Emulate"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m3-ubuntu/utm-mode.webp
+alt: UTM Configuration Mode selection between Virtualise and Emulate
+---
+::
 
 Select **Virtualize** to leverage Apple Silicon's efficiency.
 
-Emulation is slower but supports older systems. Pre-built VMs are also available via the <PageLink title="UTM Gallery" url="https://mac.getutm.app/gallery/"></PageLink>.
+Emulation is slower but supports older systems. Pre-built VMs are also available via the :PageLink{title="UTM Gallery" url="https://mac.getutm.app/gallery/"}
 
 ### Operating System
 
-<Media source="https://cdn.xanzhu.com/v1/m3-ubuntu/utm-os.webp" alt="UTM Configuration OS selection between Linux and macOS"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m3-ubuntu/utm-os.webp
+alt: UTM Configuration OS selection between Linux and macOS
+---
+::
 
 1. Choose **Linux**.
 2. Enable **Use Apple Virtualization** for native performance.
 
-<Media source="https://cdn.xanzhu.com/v1/m3-ubuntu/utm-avirt.webp" alt="UTM Configuration for Apple Virtualization"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m3-ubuntu/utm-avirt.webp
+alt: UTM Configuration for Apple Virtualization
+---
+::
 
 Apple Virtualization optimizes performance on macOS 15, though older macOS versions may work with reduced stability. Alternatively, uncheck **Use Apple Virtualization** to use QEMU for broader compatibility:
 
-<Media source="https://cdn.xanzhu.com/v1/m3-ubuntu/utm-qemu.webp" alt="UTM Configuration for QEMU"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m3-ubuntu/utm-qemu.webp
+alt: UTM Configuration for QEMU
+---
+::
 
 Click **Browse**, select the Ubuntu ISO, and click **Continue**.
 
@@ -92,13 +117,23 @@ Review the configuration summary, name the VM, and click **Save**.
 
 Your new VM appears in UTM's sidebar. Click the play button to start it.
 
-<Media source="https://cdn.xanzhu.com/v1/m3-ubuntu/utm-complete-avirt.webp" alt="UTM Application completed Virtual Machine"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m3-ubuntu/utm-complete-avirt.webp
+alt: UTM Application completed Virtual Machine
+---
+::
 
 ## Ubuntu Installation
 
 The Ubuntu setup begins automatically.
 
-<Media source="https://cdn.xanzhu.com/v1/m3-ubuntu/utm-linux-install.webp" alt="Ubuntu Virtual Machine Installation selection"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m3-ubuntu/utm-linux-install.webp
+alt: Ubuntu Virtual Machine Installation selection
+---
+::
 
 Select **Try or Install Ubuntu**.
 
@@ -106,7 +141,12 @@ The installer will connect and download necessary files. Display scaling may var
 
 You'll arrive at the Ubuntu welcome screen:
 
-<Media source="https://cdn.xanzhu.com/v1/m3-ubuntu/utm-ubuntu-welcome.webp" alt="Ubuntu welcome screen after booting"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m3-ubuntu/utm-ubuntu-welcome.webp
+alt: Ubuntu welcome screen after booting
+---
+::
 
 1. Choose your language and click **Next**.
 2. Select your keyboard layout and click **Next**.
@@ -118,19 +158,34 @@ You'll arrive at the Ubuntu welcome screen:
 8. Choose **Erase disk and install Ubuntu** and click **Next**.
 9. Enter your name, computer name, username, and a password (e.g., “test”). Confirm the password and click **Next**.
 
-<Media source="https://cdn.xanzhu.com/v1/m3-ubuntu/utm-ubuntu-account.webp" alt="Ubuntu account creation showing sample values"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m3-ubuntu/utm-ubuntu-account.webp
+alt: Ubuntu account creation showing sample values
+---
+::
 
 10. Select your time zone on the map and click **Next**.
 11. Review your choices and click **Install**.
 
 The installation will copy and configure files, which may take some time. When prompted, click **Restart Now**.
 
-<Media source="https://cdn.xanzhu.com/v1/m3-ubuntu/utm-ubuntu-restart.webp" alt="Ubuntu prompting user to restart"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m3-ubuntu/utm-ubuntu-restart.webp
+alt: Ubuntu prompting user to restart
+---
+::
 
 - **Apple Virtualization**: The VM restarts automatically.
 - **QEMU**: Eject the ISO manually by clicking the disc icon, selecting the ISO, and choosing **Eject**. Press **Enter** to reboot.
 
-<Media source="https://cdn.xanzhu.com/v1/m3-ubuntu/utm-qemu-eject.webp" alt="Ubuntu prompting user to eject ISO to continue"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m3-ubuntu/utm-qemu-eject.webp
+alt: Ubuntu prompting user to eject ISO to continue
+---
+::
 
 The VM now boots into Ubuntu. If using QEMU, a “Display output is not active” message may appear briefly. Wait 1-2 minutes for the desktop to load.
 
@@ -146,19 +201,34 @@ To enhance usability, adjust the display settings for better resolution.
 2. Right-click the VM, select **Edit**, and go to **Display**.
 3. Enable **HiDPI (Retina)** and keep dynamic resolution enabled.
 
-<Media source="https://cdn.xanzhu.com/v1/m3-ubuntu/utm-avirt-display.webp" alt="UTM Configuration for Apple Virtualization display settings"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m3-ubuntu/utm-avirt-display.webp
+alt: UTM Configuration for Apple Virtualization display settings
+---
+::
 
 #### QEMU
 
 1. Stop the VM, edit it, and navigate to **Display**.
 2. Check **Retina Mode** to enable high-resolution scaling, click **Save**.
 
-<Media source="https://cdn.xanzhu.com/v1/m3-ubuntu/utm-qemu-display-setting.webp" alt="UTM Configuration for QEMU display settings"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m3-ubuntu/utm-qemu-display-setting.webp
+alt: UTM Configuration for QEMU display settings
+---
+::
 
 3. Boot the VM. The UI may appear small.
 4. In Ubuntu, open **Settings**, select **Display**, and set **Scale** to 200%.
 
-<Media source="https://cdn.xanzhu.com/v1/m3-ubuntu/utm-ubuntu-display200.webp" alt="Ubuntu display settings for high-resolution scaling"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m3-ubuntu/utm-ubuntu-display200.webp
+alt: Ubuntu display settings for high-resolution scaling
+---
+::
 
 The desktop now uses native macOS resolution for clarity.
 
@@ -166,9 +236,14 @@ Finally, update Ubuntu's packages. Open the menu, select **Software Updater**, a
 
 ### Issues (QEMU)
 
-A “Display output is not active” message may appear during QEMU boot. Wait 1-2 minutes for the desktop to load. The <PageLink title="Community discussion" url="https://github.com/utmapp/UTM/discussions/5555"></PageLink> suggests workarounds that may resolve this for your setup.
+A “Display output is not active” message may appear during QEMU boot. Wait 1-2 minutes for the desktop to load. The :PageLink{title="Community discussion" url="https://github.com/utmapp/UTM/discussions/5555"} suggests workarounds that may resolve this for your setup.
 
-<Media source="https://cdn.xanzhu.com/v1/m3-ubuntu/utm-qemu-bug.webp" alt="UTM QEMU prompting user to wait for desktop to load known bug"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m3-ubuntu/utm-qemu-bug.webp
+alt: UTM QEMU prompting user to wait for desktop to load known bug
+---
+::
 
 ### Conclusion
 

@@ -1,56 +1,81 @@
-<template>
-    <div class="flex items-center space-x-2 children:m0" :style="{
-        height: '30px',
-        opacity: weatherData ? 1 : 0,
-        transition: 'opacity 0.3s ease'
-    }">
-        <template v-if="weatherData">
-            <p>{{ weatherData.location.name }}</p>
-            <p class="font-bold">{{ weatherData.current.temp_c }}°C</p>
-            <p>{{ weatherData.current.condition.text }}</p>
-        </template>
-    </div>
-</template>
-
 <script setup>
-import { getWeather } from '../lib/WeatherApi.js';
-const weatherData = ref(null);
-const { locale } = useI18n();
+import { getWeather } from '../lib/WeatherApi.js'
 
-const CACHE_EXPIRATION = 10 * 60 * 1000;
+const weatherData = ref(null)
+const { locale } = useI18n()
 
-const fetchWeatherData = async (newLocale) => {
-    const cacheKey = `weatherData_${newLocale}`;
-    const cachedData = JSON.parse(localStorage.getItem(cacheKey));
-    const now = new Date().getTime();
+const CACHE_EXPIRATION = 30 * 60 * 1000 // 30 minutes
 
-    if (cachedData && cachedData.timestamp && now - cachedData.timestamp < CACHE_EXPIRATION) {
-        weatherData.value = cachedData.data;
-        return;
-    }
+function getCachedWeather(key) {
+  const cachedData = JSON.parse(localStorage.getItem(key))
+  const now = Date.now()
 
-    try {
-        const data = await getWeather(null, newLocale);
-        weatherData.value = data;
-        localStorage.setItem(cacheKey, JSON.stringify({
-            data: data,
-            timestamp: now
-        }));
-    } catch (error) {
-        console.error('Error fetching weather data:', error);
-    }
-};
+  if (cachedData?.timestamp && now - cachedData.timestamp < CACHE_EXPIRATION) {
+    return cachedData.data
+  }
 
-watch(
-    () => locale.value,
-    (newLocale, oldLocale) => {
-        if (newLocale !== oldLocale) {
-            fetchWeatherData(newLocale);
-        }
-    }
-);
+  return null
+}
+
+async function fetchWeatherData(newLocale) {
+  const cacheKey = `weatherData_${newLocale}`
+  const cached = getCachedWeather(cacheKey)
+
+  if (cached) {
+    weatherData.value = cached
+    return
+  }
+
+  try {
+    const data = await getWeather(newLocale)
+    weatherData.value = data
+    localStorage.setItem(cacheKey, JSON.stringify({
+      data,
+      timestamp: Date.now(),
+    }))
+  }
+  catch (error) {
+    console.error('Error fetching weather data:', error)
+    weatherData.value = { error: true }
+  }
+}
 
 onMounted(() => {
-    fetchWeatherData(locale.value);
-});
+  const cached = getCachedWeather(`weatherData_${locale.value}`)
+  if (cached) {
+    weatherData.value = cached
+  }
+  else {
+    fetchWeatherData(locale.value)
+  }
+})
+
+watch(() => locale.value, (newLocale, oldLocale) => {
+  if (newLocale !== oldLocale) {
+    weatherData.value = null
+    fetchWeatherData(newLocale)
+  }
+})
 </script>
+
+<template>
+  <div
+    class="flex items-center children:m0 space-x-2" :style="{
+      height: '30px',
+      opacity: weatherData ? 1 : 0,
+      transition: 'opacity 0.3s ease',
+    }"
+  >
+    <template v-if="weatherData && !weatherData.error">
+      <p>{{ weatherData.location.name }}</p>
+      <p class="font-bold">
+        {{ weatherData.current.temp_c }}°C
+      </p>
+      <p>{{ weatherData.current.condition.text }}</p>
+    </template>
+
+    <template v-else-if="weatherData && weatherData.error">
+      <p>Weather data unavailable</p>
+    </template>
+  </div>
+</template>

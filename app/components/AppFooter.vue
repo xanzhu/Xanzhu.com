@@ -1,44 +1,56 @@
+<script lang="ts" setup>
+import FooterItem from './Footer/FooterItem.vue'
+
+const { t } = useI18n()
+</script>
+
 <template>
   <footer
-    class="text-inherit px-6 md:px-15 lg:px30 xl:px40 justify-center py-6 border-t-dark-4/10 dark:border-t-dark-2/30 border-t-1 border-solid border-b-none border-r-none border-l-none bg-inherit">
-    <div class="flex flex-col md:flex-row justify-between items-start">
+    class="justify-center border-t-1 border-t-dark-4/10 border-solid border-b-none border-l-none border-r-none bg-inherit px-6 py-6 text-inherit dark:border-t-dark-2/30 lg:px30 md:px-15 xl:px40"
+  >
+    <div class="flex flex-col items-start justify-between md:flex-row">
       <UiLogo class="text-inherit" />
       <nav :aria-label="t('footer.sr.community')">
-        <FooterItem :title="t('footer.community')" :links="[
-          { text: t('footer.github'), href: 'https://github.com/xanzhu', external: true },
-          { text: t('footer.twitter'), href: 'https://x.com/xanzhu1', external: true },
-        ]" />
+        <FooterItem
+          :title="t('footer.community')" :links="[
+            { text: t('footer.github'), href: 'https://github.com/xanzhu', external: true },
+            { text: t('footer.twitter'), href: 'https://x.com/xanzhu1', external: true },
+          ]"
+        />
       </nav>
       <nav :aria-label="t('footer.sr.blog')">
-        <FooterItem :title="t('footer.blog')" :links="[
-          { text: t('footer.latest'), href: '/blog' },
-        ]" />
+        <FooterItem
+          :title="t('footer.blog')" :links="[
+            { text: t('footer.latest'), href: '/blog' },
+          ]"
+        />
       </nav>
       <nav :aria-label="t('footer.sr.resource')">
-        <FooterItem :title="t('footer.resources')" :links="[
-          { text: t('footer.tools'), href: '/resources' },
-        ]" />
+        <FooterItem
+          :title="t('footer.resources')" :links="[
+            { text: t('footer.tools'), href: '/resources' },
+          ]"
+        />
       </nav>
       <nav :aria-label="t('footer.sr.company')">
-        <FooterItem :title="t('footer.company')" :links="[
-          { text: t('footer.about'), href: '/about' },
-        ]" />
+        <FooterItem
+          :title="t('footer.company')" :links="[
+            { text: t('footer.about'), href: '/about' },
+          ]"
+        />
       </nav>
       <nav :aria-label="t('footer.sr.legal')">
-        <FooterItem :title="t('footer.legal')" :links="[
-          { text: t('footer.privacy'), href: '/privacy-policy' },
-          { text: t('footer.terms'), href: '/terms-of-service' },
-        ]" />
+        <FooterItem
+          :title="t('footer.legal')" :links="[
+            { text: t('footer.privacy'), href: '/privacy-policy' },
+            { text: t('footer.terms'), href: '/terms-of-service' },
+          ]"
+        />
       </nav>
     </div>
-    <div class="mt-6 flex flex-col md:flex-row justify-between items-center text-xs dark:text-gray-300 text-dark-200">
+    <div class="mt-6 flex flex-col items-center justify-between text-xs text-dark-200 md:flex-row dark:text-gray-300">
       <p>{{ t('footer.copyright') }}</p>
       <p>{{ t('footer.version') }}: {{ $config.public.Version }}</p>
     </div>
   </footer>
 </template>
-
-<script lang="ts" setup>
-import FooterItem from './Footer/FooterItem.vue';
-const { t } = useI18n();
-</script>

@@ -1,5 +1,5 @@
 <template>
-    <p class="text-center p2 rounded-md b-1 b-solid border-brand-dark dark:(border-brand-light bg-transparent) bg-blue-100">
-        <slot />
-    </p>
+  <p class="b-1 border-brand-dark rounded-md b-solid bg-blue-100 p2 text-center dark:(border-brand-light bg-transparent)">
+    <slot />
+  </p>
 </template>

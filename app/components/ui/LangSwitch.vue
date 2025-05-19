@@ -1,35 +1,39 @@
 <script setup>
-const { locale, locales, setLocale, t } = useI18n();
-const switchLocalePath = useSwitchLocalePath();
+const { locale, locales, setLocale, t } = useI18n()
+const switchLocalePath = useSwitchLocalePath()
 
 const availableLocales = computed(() => {
-  return locales.value.filter(i => i.code !== locale.value);
-});
+  return locales.value.filter(i => i.code !== locale.value)
+})
 
-const LangToggle = ref(false);
+const LangToggle = ref(false)
 
 function LangSwitch() {
-  LangToggle.value = !LangToggle.value;
+  LangToggle.value = !LangToggle.value
 }
 
 function closeMenu() {
-  LangToggle.value = false;
+  LangToggle.value = false
 }
-
 </script>
+
 <template>
   <div>
-    <button @click="LangSwitch" class="bg-transparent b-hidden cursor-pointer" :aria-label="t('a11y.langSwitch')">
-      <Icon class="h8 w8 dark:text-white text-black" name="fontisto:language" :aria-label="t('a11y.langSwitch')" />
+    <button class="cursor-pointer b-hidden bg-transparent" :aria-label="t('a11y.langSwitch')" @click="LangSwitch">
+      <Icon class="h8 w8 text-black dark:text-white" name="fontisto:language" :aria-label="t('a11y.langSwitch')" />
     </button>
-    <div v-if="localeSet" :class="LangToggle
-      ? 'flex p1 rounded-sm absolute top-12 left-5 z1 flex-col dark:(bg-black text-white b-dark-500) text-black bg-light-700 dark:bg-dark-900 b-1 b-solid b-gray-300'
-      : 'hidden'
-      ">
-      <NuxtLink :to="switchLocalePath('/')" v-for="locale in availableLocales" :key="locale.code"
-        @click.prevent.stop="setLocale(locale.code); closeMenu()" :aria-label="locale.name"
-        class="dark:hover:(bg-dark-600 text-white ease-in duration-75) hover:(bg-light-200) text-center text-sm ease-out duration-300 px3 py2 rounded-sm text-black dark:text-white no-underline font-700 b-1 cursor-pointer">
-        {{ locale.name }}
+    <div
+      v-if="localeSet" :class="LangToggle
+        ? 'flex p1 rounded-sm absolute top-12 left-5 z1 flex-col dark:(bg-black text-white b-dark-500) text-black bg-light-700 dark:bg-dark-900 b-1 b-solid b-gray-300'
+        : 'hidden'
+      "
+    >
+      <NuxtLink
+        v-for="lang in availableLocales" :key="lang.code" :to="switchLocalePath('/')"
+        :aria-label="lang.name" class="cursor-pointer b-1 rounded-sm px3 py2 text-center text-sm text-black font-700 no-underline duration-300 ease-out hover:(bg-light-200) dark:text-white dark:hover:(bg-dark-600 text-white duration-75 ease-in)"
+        @click.prevent.stop="setLocale(lang.code); closeMenu()"
+      >
+        {{ lang.name }}
       </NuxtLink>
     </div>
   </div>

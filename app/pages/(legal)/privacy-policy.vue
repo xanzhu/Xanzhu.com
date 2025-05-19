@@ -1,47 +1,52 @@
-<template>
-    <div class="sm:mx-auto my-10 space-y-10 max-w-4xl min-h-screen">
-        <div class="flex flex-col space-y-4 sm:(space-y-0 flex-row justify-between items-center) mx-4">
-            <div class="flex flex-col">
-                <h1 class="text-2xl sm:text-3xl font-semibold m0">{{ t('PP.title') }}</h1>
-                <p class="font-300 dark:text-light-500 m0 op80">{{ t('PP.description') }}</p>
-            </div>
-            <p class="m0">
-                {{ t("PP.date") }}:
-                <span class="font-300 font-mono">{{ date }}</span>
-            </p>
-        </div>
-        <div
-            class="core-border bg-gradient-to-b from-light-100 to-neutral-200 dark:from-dark-800 dark:to-dark-900 space-y-6 font-300 text-md p-6 sm:(p-10 mx-3) rounded-lg shadow-sm">
-            <p v-for="(paragraph, index) in paragraphs" :key="index" class="leading-relaxed">
-                {{ paragraph }}
-            </p>
-        </div>
-    </div>
-</template>
-
 <script setup lang="ts">
-
 const { t } = useI18n({
-    useScope: 'local'
-});
+  useScope: 'local',
+})
 
-const date = "27/01/2025";
+const date = '27/01/2025'
 
 const paragraphs: { [key: number]: string } = {
-    1: t("PP.section-one"),
-    2: t("PP.section-two"),
-    3: t("PP.section-three"),
-    4: t("PP.section-four"),
-    5: t("PP.section-five"),
-    6: t("PP.section-six"),
-};
+  1: t('PP.section-one'),
+  2: t('PP.section-two'),
+  3: t('PP.section-three'),
+  4: t('PP.section-four'),
+  5: t('PP.section-five'),
+  6: t('PP.section-six'),
+}
 
 // SEO Metadata
-const seoImage = 'https://images.pexels.com/photos/27286458/pexels-photo-27286458.jpeg';
-useLangMeta('PP', seoImage);
+const seoImage = 'https://images.pexels.com/photos/27286458/pexels-photo-27286458.jpeg'
+useLangMeta('PP', seoImage)
 </script>
 
-<i18n lang="json">{
+<template>
+  <div class="my-10 max-w-4xl min-h-screen sm:mx-auto space-y-10">
+    <div class="mx-4 flex flex-col sm:(flex-row items-center justify-between space-y-0) space-y-4">
+      <div class="flex flex-col">
+        <h1 class="m0 text-2xl font-semibold sm:text-3xl">
+          {{ t('PP.title') }}
+        </h1>
+        <p class="m0 font-300 op80 dark:text-light-500">
+          {{ t('PP.description') }}
+        </p>
+      </div>
+      <p class="m0">
+        {{ t("PP.date") }}:
+        <span class="font-300 font-mono">{{ date }}</span>
+      </p>
+    </div>
+    <div
+      class="text-md rounded-lg from-light-100 to-neutral-200 bg-gradient-to-b p-6 font-300 shadow-sm sm:(mx-3 p-10) space-y-6 core-border dark:from-dark-800 dark:to-dark-900"
+    >
+      <p v-for="(paragraph, index) in paragraphs" :key="index" class="leading-relaxed">
+        {{ paragraph }}
+      </p>
+    </div>
+  </div>
+</template>
+
+<i18n lang="json">
+{
     "en": {
         "PP": {
             "title": "Privacy Policy",
@@ -81,4 +86,5 @@ useLangMeta('PP', seoImage);
             "section-six": "我们可能会不时更新本隐私政策。任何更改都将发布在此页面上，并相应地修订“最后更新”日期。"
         }
     }
-}</i18n>
+}
+</i18n>
