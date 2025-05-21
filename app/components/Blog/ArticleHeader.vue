@@ -11,7 +11,7 @@ const { t } = useI18n()
 
 <template>
   <header>
-    <div class="mx-auto px-6 pb-5 lg:max-w-4xl md:(max-w-2xl)">
+    <div class="mx-auto max-w-5xl px-6 pb-5 md:px-0">
       <div
         class="mb-4 flex flex-col gap-1 text-sm text-neutral-600 tracking-wide font-mono uppercase sm:flex-row sm:items-center sm:gap-4 dark:text-neutral-300"
       >
