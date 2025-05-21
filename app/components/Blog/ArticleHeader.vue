@@ -11,7 +11,7 @@ const { t } = useI18n()
 
 <template>
   <header>
-    <div class="mx-auto max-w-5xl px-6 pb-5">
+    <div class="mx-auto px-6 pb-5 lg:max-w-4xl md:(max-w-2xl)">
       <div
         class="mb-4 flex flex-col gap-1 text-sm text-neutral-600 tracking-wide font-mono uppercase sm:flex-row sm:items-center sm:gap-4 dark:text-neutral-300"
       >
@@ -38,8 +38,8 @@ const { t } = useI18n()
         class="mt-6 aspect-video overflow-hidden border border-neutral-200 rounded-md bg-neutral-100 dark:border-neutral-800 dark:bg-neutral-900"
       >
         <NuxtImg
-          v-if="post.img" height="400" width="700" loading="eager" :src="post.img" :alt="post.alt"
-          class="h-full w-full object-cover"
+          v-if="post.img" :src="post.img" :alt="post.alt" width="1200" height="675" loading="eager"
+          class="h-full w-full object-cover" sizes="sm:100vw md:768px lg:960px xl:1200px"
         />
       </div>
       <div v-if="post.updated" class="mt-4 flex">
