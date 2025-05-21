@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const { locale, t } = useI18n()
 
-const { data: features } = await useAsyncData('feature-articles', async () => {
+const { data: features } = await useAsyncData(`featuredArticles-${locale.value}`, async () => {
   const query = locale.value !== 'en' ? `${locale.value}/blog` : '/blog'
   try {
     return await queryContent(query)

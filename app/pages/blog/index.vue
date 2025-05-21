@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const { locale, t } = useI18n()
 
-const { data: posts } = await useAsyncData('articles', async () => {
+const { data: posts } = await useAsyncData(`blogArticles-${locale.value}`, async () => {
   const query = locale.value !== 'en' ? `${locale.value}/blog` : '/blog'
   return await queryContent(query)
     .sort({ date: -1 })

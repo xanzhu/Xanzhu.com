@@ -29,7 +29,7 @@ useSeoMeta({
   ogImage: seoImage,
 })
 
-const { data: prevNext } = await useAsyncData(`prev-next-${path}`, async () => {
+const { data: prevNext } = await useAsyncData(`prevNext-${path}`, async () => {
   const queryPath = locale.value !== 'en' ? `/${locale.value}/blog` : '/blog'
   return await queryContent(queryPath)
     .sort({ date: -1 })
