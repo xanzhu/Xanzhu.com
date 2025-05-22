@@ -84,7 +84,7 @@ onUnmounted(() => {
 
 <template>
   <nav
-    class="m-4 rounded-md bg-neutral-100 p-4 md:(sticky mx-auto max-w-md) dark:bg-neutral-900"
+    class="m-4 rounded-md bg-neutral-100 p-4 md:(mx-auto max-w-xl) lg:(max-w-md) core-border dark:bg-neutral-900"
     :aria-label="t('Blog.toc')"
     aria-labelledby="toc-heading"
     role="navigation"
@@ -98,12 +98,12 @@ onUnmounted(() => {
       <li
         v-for="link of flattenLinks(links)"
         :key="link.id"
-        class="text-gray-800 transition-colors duration-200 dark:text-light-400"
+        class="rounded-sm text-gray-800 transition-colors duration-200 dark:text-light-400"
         :class="{
           'list-disc hover:(underline underline-offset-3 underline-2)': !hasChildren && link.depth === 2,
-          'ml-4 opacity-80 hover:(underline underline-offset-3 underline-2)': link.depth === 3,
+          'ml-4 opacity-80 hover:(underline underline-offset-3 underline-2) p1': link.depth === 3,
           'font-semibold list-none -ml-4 mr-auto py-1 px-3 text-gray-600 dark:text-light-300': link.depth === 2 && hasChildren,
-          'font-semibold bg-neutral-200 dark:bg-neutral-800': activeSection === link.id,
+          'font-semibold bg-neutral-200 dark:bg-neutral-800 rounded-sm core-border': activeSection === link.id,
         }"
         role="listitem"
       >
