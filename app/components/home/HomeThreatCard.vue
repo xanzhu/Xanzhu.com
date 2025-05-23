@@ -48,7 +48,7 @@ const breaches: Breach[] = [
 </script>
 
 <template>
-  <div class="mx-auto mb4 border rounded-lg px4 pt4 lg:w-4xl sm:core-border sm:core-ui md:(px8 pt8)">
+  <div class="mx-auto mb4 border rounded-md px4 pt4 lg:w-4xl sm:core-border sm:core-theme md:(px8 pt8)">
     <div class="mb-4 flex flex-col items-center justify-between rounded-lg bg-yellow-4 p-3 sm:mb-6 sm:flex-row sm:p-4">
       <h2 class="mb-2 text-center text-xl text-black font-bold sm:mb-0 sm:text-left md:text-4xl sm:text-2xl">
         {{ t('threatCard.title') }}

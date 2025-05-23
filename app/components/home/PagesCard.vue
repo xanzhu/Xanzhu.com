@@ -26,7 +26,7 @@ const pages = [
       class="group relative block max-w-sm w-full decoration-none"
     >
       <div
-        class="relative h-[180px] overflow-hidden border rounded-2xl from-gray-2 to-white bg-gradient-to-tr p4 transition-all duration-300 group-hover:(scale-102) core-border core-theme dark:(from-zinc-900 to-black bg-gradient-to-bl)"
+        class="relative h-[180px] overflow-hidden border rounded-md p4 transition-all duration-300 group-hover:(scale-102) core-border core-theme"
       >
         <div class="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
         <div class="relative h-full flex flex-col text-black dark:text-white">
