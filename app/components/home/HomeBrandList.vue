@@ -27,8 +27,8 @@ function getSvgIconUrl(name) {
 
 <template>
   <div class="hidden lg:(mt25 h12vh flex items-center justify-center)">
-    <div class="flex flex-wrap justify-center gap-12 px-8">
-      <NuxtLink v-for="link in urls" :key="link.name" :href="link.url" target="_blank" class="group inline-block">
+    <div class="flex flex-wrap justify-center gap-12 px-8" role="list">
+      <NuxtLink v-for="link in urls" :key="link.name" :href="link.url" target="_blank" class="group inline-block" role="listitem">
         <div class="h-24 flex items-center justify-center p-4">
           <NuxtImg
             :src="getSvgIconUrl(link.name)"

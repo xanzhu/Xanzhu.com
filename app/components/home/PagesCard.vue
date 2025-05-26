@@ -20,7 +20,7 @@ const pages = [
 </script>
 
 <template>
-  <div class="grid grid-cols-1 mx-auto justify-items-center gap-6 p-6 md:grid-cols-2 xl:grid-cols-3 lg:w-5xl">
+  <nav class="grid grid-cols-1 mx-auto justify-items-center gap-6 p-6 md:grid-cols-2 xl:grid-cols-3 lg:w-5xl">
     <NuxtLinkLocale
       v-for="page in pages" :key="page.path" :to="page.path"
       class="group relative block max-w-sm w-full decoration-none"
@@ -31,12 +31,12 @@ const pages = [
         <div class="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
         <div class="relative h-full flex flex-col text-black dark:text-white">
           <div class="flex items-start justify-between">
-            <h2 class="text-4xl text-inherit font-bold">
+            <h2 id="page-card-title" class="text-4xl text-inherit font-bold">
               {{ t(page.title) }}
             </h2>
             <Icon
               name="lucide:arrow-up-right"
-              class="h6 w6 flex rounded-full p2 text-inherit transition-colors core-ui group-hover:(bg-black text-white) dark:group-hover:(bg-white text-black)"
+              class="h6 w6 flex rounded-full p2 text-inherit transition-colors core-ui group-hover:(bg-black text-white) dark:group-hover:(bg-white text-black)" aria-hidden="true"
             />
           </div>
           <p class="flex-grow text-sm dark:text-white">
@@ -45,5 +45,5 @@ const pages = [
         </div>
       </div>
     </NuxtLinkLocale>
-  </div>
+  </nav>
 </template>

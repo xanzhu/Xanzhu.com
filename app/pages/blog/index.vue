@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { locale, t } = useI18n()
+const { locale } = useI18n()
 
 const { data: posts } = await useAsyncData(`blogArticles-${locale.value}`, async () => {
   const query = locale.value !== 'en' ? `${locale.value}/blog` : '/blog'
@@ -17,10 +17,10 @@ useLangMeta('Blog.meta', seoImage)
   <main class="mx-auto text-black sm:mb-10 space-y-10 2xl:px35 lg:px25 md:px5 xl:px28 dark:text-white">
     <div class="mx-4 mt-5 flex flex-col lg:mx-10 sm:(mx-10 mt-15) space-y-2">
       <h1 class="mb0 text-3xl font-semibold sm:text-5xl">
-        {{ t("Blog.title") }}
+        {{ $t("Blog.title") }}
       </h1>
       <p class="text-md break-words font-300 op70 sm:(w2/3 text-xl) dark:text-gray-300">
-        {{ t("Blog.description") }}
+        {{ $t("Blog.description") }}
       </p>
     </div>
     <section
@@ -37,7 +37,7 @@ useLangMeta('Blog.meta', seoImage)
           />
           <div class="h-auto rounded-b-md text-black dark:text-white">
             <div
-              class="children:(inline-flex core-border rounded-sm core-ui px4 py1.5 text-xs font-mono op80 dark:op100) space-x-2"
+              class="children:(inline-flex core-border rounded-md core-ui px4 py1.5 text-xs font-mono op80 dark:op100) space-x-2"
             >
               <Date v-if="article.date" :date="article.date" />
               <p v-if="article.tag">

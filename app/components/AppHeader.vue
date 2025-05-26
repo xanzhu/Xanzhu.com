@@ -21,7 +21,7 @@ const availableLocales = computed(() => {
       <AppLogo class="h10 md:h12" />
     </NuxtLinkLocale>
     <!-- Navigation -->
-    <nav class="hidden md:(flex decoration-none space-x-10)">
+    <nav class="hidden md:(flex decoration-none space-x-10)" role="navigation">
       <NuxtLinkLocale
         v-for="(link, index) in links"
         :key="index" class="text-inherit underline-2 decoration-transparent underline-offset-6 transition duration-350 ease-out hover:(underline-black duration-150 ease-in) dark:hover:underline-white"
@@ -31,9 +31,9 @@ const availableLocales = computed(() => {
       </NuxtLinkLocale>
     </nav>
     <!-- Language Selector -->
-    <div class="hidden md:(flex items-center space-x-2)">
+    <div class="hidden md:(flex items-center space-x-2)" role="group">
       <UiColorSwitch />
-      <div class="md:(inline-flex gap1 core-border rounded-full core-ui p1)">
+      <div class="md:(inline-flex gap1 core-border rounded-full core-ui p1)" role="navigation">
         <NuxtLink
           v-for="locale in availableLocales" :key="locale.code"
           :aria-label="t('app.sr.lang_select') + locale.name" :to="switchLocalePath(locale.code)"

@@ -12,7 +12,7 @@ function switchColor() {
 
 <template>
   <button
-    class="mr-0 inline-block flex w-8 cursor-pointer items-center justify-center border-none bg-transparent" aria-label="Color Switcher"
+    class="mr-0 inline-block w-8 flex cursor-pointer items-center justify-center border-none bg-transparent" aria-label="Color Switcher"
     @click="switchColor"
   >
     <ClientOnly>
