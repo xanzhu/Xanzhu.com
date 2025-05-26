@@ -250,6 +250,47 @@
     "title": "ANZ Cyber Threats 2024"
   },
   "v2": {
+    "app": {
+      "sr": {
+        "colorSwitch": "Colour Switcher"
+      }
+    },
+    "blog": {
+      "noPosts": "No posts available."
+    },
+    "blog_iframe": "Youtube Video",
+    "blog_updated": "Last Updated",
+    "home": {
+      "featuredPosts": "Featured Blog Posts"
+    }
+  },
+  "share": {
+    "email": "Share this page via email",
+    "linkedin": "Share this on LinkedIn",
+    "reddit": "Share this on Reddit",
+    "title": "Share this article!",
+    "twitter": "Share this on Twitter"
+  },
+  "threatCard": {
+    "ariaLabel": "(Read more in new tab)",
+    "recent": {
+      "crowdStrike": "8.5M SYSTEMS CRASHED",
+      "latitude": "14M RECORDS",
+      "optus": "10M CUSTOMERS IMPACTED",
+      "title": "Recent Attacks"
+    },
+    "regional": {
+      "dataBreach": "Data Breaches",
+      "phish": "Phishing Attacks",
+      "ransomware": "Ransomware and Cyber Extortion",
+      "supplyChain": "Supply Chain Vulnerabilities",
+      "takeOver": "Account Compromises",
+      "title": "Top Security Threats"
+    },
+    "source": "Data sourced from public breach notifications and security reports. Numbers represent approximate affected users/records.",
+    "title": "ANZ Cyber Threats 2024"
+  },
+  "v2": {
     "blog_iframe": "Youtube Video",
     "blog_updated": "Last Updated"
   }

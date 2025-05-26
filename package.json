@@ -1,6 +1,6 @@
 {
   "name": "xanzhu.com",
-  "version": "1.0.132",
+  "version": "1.0.133",
   "private": true,
   "packageManager": "pnpm@10.11.0",
   "license": "MIT",
@@ -21,17 +21,17 @@
     "@nuxtjs/color-mode": "^3.5.2",
     "@nuxtjs/i18n": "10.0.0-beta.3",
     "@nuxtjs/robots": "^5.2.10",
-    "@nuxtjs/sitemap": "^7.2.10",
+    "@nuxtjs/sitemap": "^7.3.0",
     "chart.js": "^4.4.9",
     "nitro-cloudflare-dev": "^0.2.2",
-    "nuxt": "^3.17.3",
+    "nuxt": "^3.17.4",
     "nuxt-security": "^2.2.0",
     "vue": "^3.5.14",
     "vue-chartjs": "^5.3.2",
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.13.1",
+    "@antfu/eslint-config": "^4.13.2",
     "@iconify-json/fluent": "^1.2.21",
     "@iconify-json/line-md": "^1.2.8",
     "@nuxt/devtools": "^2.4.1",

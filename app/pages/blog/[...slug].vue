@@ -2,7 +2,7 @@
 import type { PrevNext } from '../../components/Blog/PrevNext.vue'
 
 const { path } = useRoute()
-const { locale, t } = useI18n()
+const { locale } = useI18n()
 const config = useRuntimeConfig()
 
 const { data: post } = await useAsyncData(path.replace(/\/$/, '/'), async () => {
@@ -29,7 +29,7 @@ useSeoMeta({
   ogImage: seoImage,
 })
 
-const { data: prevNext } = await useAsyncData(`prev-next-${path}`, async () => {
+const { data: prevNext } = await useAsyncData(`prevNext-${path}`, async () => {
   const queryPath = locale.value !== 'en' ? `/${locale.value}/blog` : '/blog'
   return await queryContent(queryPath)
     .sort({ date: -1 })
@@ -45,7 +45,7 @@ const next = nextData as PrevNext | undefined
 </script>
 
 <template>
-  <main v-if="post" class="mx-auto mt-10 container md:(mb-0 mt-15 px-6) sm:mt-10" role="main">
+  <main v-if="post" class="mx-auto mt-10 md:(mb-0 mt-15 px-6) sm:mt-10" role="main">
     <article class="pb-2 text-inherit md:(mb-12) sm:rounded-sm" itemtype="https://schema.org/Article" itemscope>
       <BlogArticleHeader :post="post" />
       <div class="flex flex-col-reverse justify-center lg:(flex-row gap10)">
@@ -63,9 +63,9 @@ const next = nextData as PrevNext | undefined
         <hr class="w-80% rounded-md op40 core-border core-ui">
         <div v-if="post._path && post.title">
           <h4 class="mt5 text-center text-lg font-normal op90">
-            {{ t('share.title') }}
+            {{ $t('share.title') }}
           </h4>
-          <LazyBlogSocialShare :post="{ _path: post._path, title: post.title }" hydrate-never />
+          <LazyBlogSocialShare :post="{ _path: post._path, title: post.title }" />
         </div>
       </div>
       <LazyBlogPrevNext :prev="prev" :next="next" />

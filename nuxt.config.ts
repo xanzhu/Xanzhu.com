@@ -18,7 +18,9 @@ export default defineNuxtConfig({
 
   colorMode: {
     classSuffix: '',
-    preference: 'dark',
+    preference: 'system',
+    fallback: 'dark',
+    storageKey: 'xanzhu-color-mode',
   },
 
   // i18n V10
@@ -87,7 +89,7 @@ export default defineNuxtConfig({
   // API
   runtimeConfig: {
     public: {
-      Version: '1.0.132',
+      Version: '1.0.133',
       WeatherAPI: process.env.WEATHER_API,
       i18n: {
         baseUrl: 'https://xanzhu.com',
@@ -175,7 +177,7 @@ export default defineNuxtConfig({
     disallow: process.env.NODE_ENV === 'development' ? '/' : '',
   },
 
-  compatibilityDate: '2025-01-31',
+  compatibilityDate: '2025-05-15',
 
   // Experimental Features
   experimental: {

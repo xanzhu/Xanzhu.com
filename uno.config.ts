@@ -133,7 +133,7 @@ export default defineConfig({
           'border-collapse': 'collapse',
           'margin': '1.5rem 0',
           'font-size': '0.875rem',
-          '--uno': 'core-theme core-border',
+          '--uno': 'core-theme core-border min-w-5rem',
           'display': 'table',
         },
         'th, td': {
