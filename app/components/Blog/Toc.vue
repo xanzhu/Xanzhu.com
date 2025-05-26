@@ -90,7 +90,7 @@ onUnmounted(() => {
     role="navigation"
   >
     <header id="toc-heading" class="mb-2 pb-2">
-      <p class="m-0 text-center text-lg font-semibold font-mono">
+      <p class="m-0 text-center text-lg font-semibold">
         {{ t("Blog.toc") }}
       </p>
     </header>
@@ -108,7 +108,7 @@ onUnmounted(() => {
         role="listitem"
       >
         <NuxtLink
-          class="text-inherit font-mono no-underline dark:text-inherit focus:outline-none focus:ring focus:ring-brand-dark focus:ring-opacity-50 dark:focus:ring-brand-light dark:focus:ring-opacity-50"
+          class="text-inherit no-underline dark:text-inherit focus:outline-none focus:ring focus:ring-brand-dark focus:ring-opacity-50 dark:focus:ring-brand-light dark:focus:ring-opacity-50"
           :href="`#${link.id}`"
           :aria-current="activeSection === link.id ? 'true' : 'false'"
         >
