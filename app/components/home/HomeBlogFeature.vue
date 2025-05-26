@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const { locale, t } = useI18n()
 
-const { data: features } = await useAsyncData('feature-articles', async () => {
+const { data: features } = await useAsyncData(`featuredArticles-${locale.value}`, async () => {
   const query = locale.value !== 'en' ? `${locale.value}/blog` : '/blog'
   try {
     return await queryContent(query)
@@ -19,18 +19,20 @@ const { data: features } = await useAsyncData('feature-articles', async () => {
 </script>
 
 <template>
-  <section class="mx-auto mt-10">
+  <div class="mx-auto mt-10">
     <div class="flex items-center md:justify-center lg:p10 lg:space-x-50 sm:space-x-45">
-      <h2 class="mx6 text-4xl md:(text-5xl)">
-        {{ t('home.latest') }}
+      <h2 id="latest-posts" class="mx6 text-4xl md:(text-5xl)">
+        {{ $t('home.latest') }}
       </h2>
-      <span class="hidden md:(mx-10 h-2px w-30% flex bg-dark-400) lg:w-40%" />
+      <span class="hidden md:(mx-10 h-2px w-30% flex bg-dark-400) lg:w-40%" role="presentation" />
     </div>
     <div
-      class="grid auto-rows-fr grid-cols-1 max-w-lg justify-items-center gap-4 px6 lg:grid-cols-3 md:grid-cols-2 md:max-w-5xl children:(core-border rounded-lg) lg:px45 md:px25"
+      class="grid auto-rows-fr grid-cols-1 mx-auto max-w-lg justify-items-center gap-4 px6 lg:grid-cols-3 md:grid-cols-2 md:max-w-5xl children:(core-border rounded-lg) lg:px45 md:px25"
+      role="feed"
+      :aria-label="t('v2.home.featuredPosts')"
     >
       <article
-        v-for="(feature, index) in features?.slice(0, 3)" :key="index"
+        v-for="feature in features?.slice(0, 3)" :key="feature._path"
         class="group transition duration-300 ease-linear hover:(scale-102 bg-white shadow-lg dark:bg-black) core-theme"
       >
         <div class="col-span-1 cursor-pointer p-5 dark:text-white">
@@ -62,15 +64,16 @@ const { data: features } = await useAsyncData('feature-articles', async () => {
       </div>
 
       <article
-        v-for="(feature, index) in features?.slice(3, 6)" :key="index"
+        v-for="feature in features?.slice(3, 6)" :key="feature._path"
         class="group transition duration-300 ease-linear hover:(scale-102 bg-white shadow-lg dark:bg-black) core-theme"
+        role="article"
       >
         <div class="col-span-1 cursor-pointer p-5 dark:text-white">
           <NuxtLinkLocale
             class="group-hover text-black no-underline dark:text-white" :to="feature._path"
-            :aria-label="`Read more about ${feature.title}`"
+            :aria-label="`Read ${feature.title}`"
           >
-            <span class="rounded-md bg-light4 px4 py1 text-sm op-60 core-border dark:bg-dark8">{{
+            <span class="rounded-md bg-light4 px4 py1 text-sm op-60 core-border dark:bg-dark8" role="doc-subtitle">{{
               feature.tag }}</span>
             <h3 class="group-hover:text-primary text-xl font-semibold">
               {{ feature.title }}
@@ -82,5 +85,5 @@ const { data: features } = await useAsyncData('feature-articles', async () => {
         </div>
       </article>
     </div>
-  </section>
+  </div>
 </template>

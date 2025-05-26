@@ -28,11 +28,16 @@ useHead({
       rel: 'icon',
       href: '/favicon.ico',
     },
+    {
+      rel: 'preconnect',
+      href: 'https://cdn.xanzhu.com',
+      crossorigin: 'anonymous',
+    },
   ],
   meta: [
     { name: 'naver-site-verification', content: 'efe8928c52c47ffddfbd678ff1ac6fe5ca08b009' },
-    { name: 'og:logo', content: 'https://xanzhu.com/images/favicon/logo.png' }
-  ]
+    { name: 'og:logo', content: 'https://xanzhu.com/images/favicon/logo.png' },
+  ],
 })
 
 useSeoMeta({
@@ -56,17 +61,11 @@ useSeoMeta({
         <Meta :id="meta.id" :property="meta.property" :content="meta.content" />
       </template>
     </Head>
-    <div class="m0 font-sans core-theme">
+    <Body class="m0 font-sans core-theme">
       <AppHeader class="sticky top-0 z-20" />
       <UiInfoBar />
       <NuxtPage />
-      <LazyAppFooter hydrate-never />
-    </div>
+      <LazyAppFooter />
+    </Body>
   </Html>
 </template>
-
-<style>
-body {
-  margin: 0;
-}
-</style>

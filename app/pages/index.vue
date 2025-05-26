@@ -15,10 +15,20 @@ definePageMeta({
 
 <template>
   <main class="flex flex-col justify-center">
-    <HomeHero />
-    <LazyHomeBrandList hydrate-never />
-    <LazyHomeBlogFeature class="min-h-screen" hydrate-never />
-    <LazyHomePagesCard class="my-20" hydrate-never />
-    <LazyHomeThreatCard class="mt-20" hydrate-never />
+    <section aria-labelledby="hero">
+      <HomeHero />
+    </section>
+    <section aria-labelledby="brand-list">
+      <LazyHomeBrandList />
+    </section>
+    <section aria-labelledby="latest-posts" class="mb42">
+      <LazyHomeBlogFeature />
+    </section>
+    <section aria-labelledby="pages-card" class="mb32">
+      <LazyHomePagesCard />
+    </section>
+    <section aria-labelledby="threat-card" class="pb24">
+      <LazyHomeThreatCard />
+    </section>
   </main>
 </template>

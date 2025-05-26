@@ -22,27 +22,27 @@ defineProps({
         />
         <line
           y1="-0.5" x2="1056.65" y2="-0.5" transform="matrix(0.429952 -0.902852 0.429952 0.902852 88 934)"
-          stroke="url(#paint1_linear_788_4279)"
+          stroke="url(#paint0_linear_788_4279)"
         />
         <line
           y1="-0.5" x2="1056.65" y2="-0.5" transform="matrix(0.429952 -0.902852 0.429952 0.902852 286 934)"
-          stroke="url(#paint2_linear_788_4279)"
+          stroke="url(#paint0_linear_788_4279)"
         />
         <line
           y1="-0.5" x2="1056.65" y2="-0.5" transform="matrix(0.429952 -0.902852 0.429952 0.902852 484 934)"
-          stroke="url(#paint3_linear_788_4279)"
+          stroke="url(#paint0_linear_788_4279)"
         />
         <line
           y1="-0.5" x2="1056.65" y2="-0.5" transform="matrix(0.429952 -0.902852 0.429952 0.902852 682 934)"
-          stroke="url(#paint4_linear_788_4279)"
+          stroke="url(#paint0_linear_788_4279)"
         />
         <line
           y1="-0.5" x2="1056.65" y2="-0.5" transform="matrix(0.429952 -0.902852 0.429952 0.902852 880 934)"
-          stroke="url(#paint5_linear_788_4279)"
+          stroke="url(#paint0_linear_788_4279)"
         />
         <line
           y1="-0.5" x2="1056.65" y2="-0.5" transform="matrix(0.429952 -0.902852 0.429952 0.902852 1078 934)"
-          stroke="url(#paint6_linear_788_4279)"
+          stroke="url(#paint0_linear_788_4279)"
         />
         <circle cx="880" cy="-319" r="968.5" stroke="url(#paint7_linear_788_4279)" stroke-opacity="0.39" />
         <circle cx="880" cy="-152" r="968.5" stroke="url(#paint8_linear_788_4279)" stroke-opacity="0.39" />
@@ -100,48 +100,6 @@ defineProps({
       <defs>
         <linearGradient
           id="paint0_linear_788_4279" x1="742.592" y1="0.971416" x2="152.041" y2="0.971386"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="#3D3D3D" stop-opacity="0" />
-          <stop offset="1" stop-color="#2D2929" />
-        </linearGradient>
-        <linearGradient
-          id="paint1_linear_788_4279" x1="742.592" y1="0.971416" x2="152.041" y2="0.971386"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="#3D3D3D" stop-opacity="0" />
-          <stop offset="1" stop-color="#2D2929" />
-        </linearGradient>
-        <linearGradient
-          id="paint2_linear_788_4279" x1="742.592" y1="0.971416" x2="152.041" y2="0.971386"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="#3D3D3D" stop-opacity="0" />
-          <stop offset="1" stop-color="#2D2929" />
-        </linearGradient>
-        <linearGradient
-          id="paint3_linear_788_4279" x1="742.592" y1="0.971416" x2="152.041" y2="0.971386"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="#3D3D3D" stop-opacity="0" />
-          <stop offset="1" stop-color="#2D2929" />
-        </linearGradient>
-        <linearGradient
-          id="paint4_linear_788_4279" x1="742.592" y1="0.971416" x2="152.041" y2="0.971386"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="#3D3D3D" stop-opacity="0" />
-          <stop offset="1" stop-color="#2D2929" />
-        </linearGradient>
-        <linearGradient
-          id="paint5_linear_788_4279" x1="742.592" y1="0.971416" x2="152.041" y2="0.971386"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="#3D3D3D" stop-opacity="0" />
-          <stop offset="1" stop-color="#2D2929" />
-        </linearGradient>
-        <linearGradient
-          id="paint6_linear_788_4279" x1="742.592" y1="0.971416" x2="152.041" y2="0.971386"
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#3D3D3D" stop-opacity="0" />

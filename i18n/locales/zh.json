@@ -250,7 +250,18 @@
     "title": "2024 年 ANZ 网络威胁"
   },
   "v2": {
+    "app": {
+      "sr": {
+        "colorSwitch": "颜色切换器"
+      }
+    },
+    "blog": {
+      "noPosts": "没有可用的帖子。"
+    },
     "blog_iframe": "Youtube 视频",
-    "blog_updated": "最后更新"
+    "blog_updated": "最后更新",
+    "home": {
+      "featuredPosts": "精选博客文章"
+    }
   }
 }

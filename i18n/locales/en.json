@@ -250,7 +250,18 @@
     "title": "ANZ Cyber Threats 2024"
   },
   "v2": {
+    "app": {
+      "sr": {
+        "colorSwitch": "Colour Switcher"
+      }
+    },
+    "blog": {
+      "noPosts": "No posts available."
+    },
     "blog_iframe": "Youtube Video",
-    "blog_updated": "Last Updated"
+    "blog_updated": "Last Updated",
+    "home": {
+      "featuredPosts": "Featured Blog Posts"
+    }
   }
 }

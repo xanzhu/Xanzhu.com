@@ -4,7 +4,7 @@ import { getWeather } from '../lib/WeatherApi.js'
 const weatherData = ref(null)
 const { locale } = useI18n()
 
-const CACHE_EXPIRATION = 10 * 60 * 1000
+const CACHE_EXPIRATION = 30 * 60 * 1000
 
 async function fetchWeatherData(newLocale) {
   const cacheKey = `weatherData_${newLocale}`
