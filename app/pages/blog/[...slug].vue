@@ -65,7 +65,7 @@ const next = nextData as PrevNext | undefined
           <h4 class="mt5 text-center text-lg font-normal op90">
             {{ t('share.title') }}
           </h4>
-          <LazyBlogSocialShare :post="{ _path: post._path, title: post.title }" hydrate-never />
+          <LazyBlogSocialShare :post="{ _path: post._path, title: post.title }" />
         </div>
       </div>
       <LazyBlogPrevNext :prev="prev" :next="next" />

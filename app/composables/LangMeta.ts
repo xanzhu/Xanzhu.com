@@ -17,11 +17,11 @@ export function useLangMeta(
 
   // Built-in SeoMeta Composable
   useSeoMeta({
-    title: seoTitle.value,
-    description: seoDesc.value,
+    title: seoTitle,
+    description: seoDesc,
     ogTitle: formatSeoTitle,
-    ogDescription: seoDesc.value,
-    twitterDescription: seoDesc.value,
+    ogDescription: seoDesc,
+    twitterDescription: seoDesc,
     twitterTitle: formatSeoTitle,
     twitterImage: seoImage,
     ogImage: seoImage,

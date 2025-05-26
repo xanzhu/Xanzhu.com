@@ -16,9 +16,9 @@ definePageMeta({
 <template>
   <main class="flex flex-col justify-center">
     <HomeHero />
-    <LazyHomeBrandList hydrate-never />
-    <LazyHomeBlogFeature class="min-h-screen" hydrate-never />
-    <LazyHomePagesCard class="my-20" hydrate-never />
-    <LazyHomeThreatCard class="mt-20" hydrate-never />
+    <LazyHomeBrandList />
+    <LazyHomeBlogFeature class="min-h-screen" />
+    <LazyHomePagesCard class="my-20" />
+    <LazyHomeThreatCard class="mt-20" />
   </main>
 </template>

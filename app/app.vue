@@ -60,7 +60,7 @@ useSeoMeta({
       <AppHeader class="sticky top-0 z-20" />
       <UiInfoBar />
       <NuxtPage />
-      <LazyAppFooter hydrate-never />
+      <LazyAppFooter />
     </div>
   </Html>
 </template>

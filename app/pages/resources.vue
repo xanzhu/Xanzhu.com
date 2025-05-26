@@ -15,7 +15,7 @@ interface Resource {
 }
 
 const { t } = useI18n()
-const resources: Resource[] = [
+const resources = ref<Resource[]>([
   {
     id: '01',
     title: t('resources.phishing'),
@@ -131,14 +131,14 @@ const resources: Resource[] = [
       },
     ],
   },
-]
+])
 
 const searchQuery = ref<string>('')
 const filteredResources = computed(() => {
   const query = searchQuery.value.toLowerCase()
   return !query
-    ? resources
-    : resources
+    ? resources.value
+    : resources.value
         .map(resource => ({
           ...resource,
           links: resource.links.filter(
@@ -192,12 +192,11 @@ useLangMeta('resources.meta', seoImage)
           <input
             v-model="searchQuery" type="text" :placeholder="t('resources.search.placeholder')"
             :aria-label="t('resources.search.placeholder')" role="searchbox" class="w-full rounded-lg border-none bg-white p4 pl-10 pr-4 text-16px text-dark1 dark:bg-black dark:text-white focus:outline-none focus:ring-none"
-            @touchstart.prevent
-          >
+          />
         </div>
-        <p v-if="!filteredResources.length" class="mt-4 text-center text-dark1 dark:text-white">
+        <div v-if="!filteredResources.length" class="mt-4 text-center text-dark1 dark:text-white">
           {{ t('resources.search.noResults') }}
-        </p>
+        </div>
       </div>
     </div>
     <div

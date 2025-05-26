@@ -18,7 +18,7 @@ export default defineNuxtConfig({
 
   colorMode: {
     classSuffix: '',
-    preference: 'dark',
+    preference: 'system',
   },
 
   // i18n V10
