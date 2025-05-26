@@ -13,6 +13,8 @@ useHead({
     { name: 'robots', content: 'noindex' },
   ],
 })
+
+const handleGoBack = () => window.history.length > 1 ? window.history.back() : handleError()
 </script>
 
 <template>
@@ -28,7 +30,7 @@ useHead({
         <p class="text-lg">
           {{ $t('Error.404.desc') }}
         </p>
-        <button class="cursor-pointer rounded-sm px-6 py-2 text-sm font-bold core-border hover:core-theme" @click="handleError">
+        <button class="cursor-pointer rounded-sm px-6 py-2 text-sm font-bold core-border hover:core-theme" @click="handleGoBack">
           {{ $t('Error.return') }}
         </button>
       </div>

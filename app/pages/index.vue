@@ -14,20 +14,20 @@ definePageMeta({
 </script>
 
 <template>
-  <main class="flex flex-col justify-center pb-32 space-y-32">
+  <main class="flex flex-col justify-center">
     <section aria-labelledby="hero">
       <HomeHero />
     </section>
     <section aria-labelledby="brand-list">
       <LazyHomeBrandList />
     </section>
-    <section aria-labelledby="latest-posts">
+    <section aria-labelledby="latest-posts" class="mb42">
       <LazyHomeBlogFeature />
     </section>
-    <section aria-labelledby="pages-card">
+    <section aria-labelledby="pages-card" class="mb32">
       <LazyHomePagesCard />
     </section>
-    <section aria-labelledby="threat-card">
+    <section aria-labelledby="threat-card" class="pb24">
       <LazyHomeThreatCard />
     </section>
   </main>

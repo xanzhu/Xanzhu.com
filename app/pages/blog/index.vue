@@ -55,7 +55,7 @@ useLangMeta('Blog.meta', seoImage)
       </div>
     </section>
     <p v-else class="text-center op70">
-      {{  $t('v2.blog.noPosts') }}
+      {{ $t('v2.blog.noPosts') }}
     </p>
   </main>
 </template>
