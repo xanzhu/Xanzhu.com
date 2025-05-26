@@ -19,6 +19,8 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: '',
     preference: 'system',
+    fallback: 'dark',
+    storageKey: 'xanzhu-color-mode',
   },
 
   // i18n V10

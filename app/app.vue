@@ -28,6 +28,11 @@ useHead({
       rel: 'icon',
       href: '/favicon.ico',
     },
+    {
+      rel: 'preconnect',
+      href: 'https://cdn.xanzhu.com',
+      crossorigin: 'anonymous',
+    },
   ],
   meta: [
     { name: 'naver-site-verification', content: '' },
@@ -56,17 +61,11 @@ useSeoMeta({
         <Meta :id="meta.id" :property="meta.property" :content="meta.content" />
       </template>
     </Head>
-    <div class="m0 font-sans core-theme">
+    <Body class="m0 font-sans core-theme">
       <AppHeader class="sticky top-0 z-20" />
       <UiInfoBar />
       <NuxtPage />
       <LazyAppFooter />
-    </div>
+    </Body>
   </Html>
 </template>
-
-<style>
-body {
-  margin: 0;
-}
-</style>

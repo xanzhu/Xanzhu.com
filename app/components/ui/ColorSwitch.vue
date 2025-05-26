@@ -2,7 +2,7 @@
 const colorMode = useColorMode()
 
 const colorIcon = computed(() => {
-  return colorMode.preference === 'dark' ? 'line-md:moon-filled-alt-to-sunny-filled-loop-transition' : 'line-md:moon-filled-alt-loop'
+  return colorMode.value === 'dark' ? 'line-md:moon-filled-alt-to-sunny-filled-loop-transition' : 'line-md:moon-filled-alt-loop'
 })
 
 function switchColor() {
