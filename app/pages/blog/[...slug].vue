@@ -2,7 +2,7 @@
 import type { PrevNext } from '../../components/Blog/PrevNext.vue'
 
 const { path } = useRoute()
-const { locale, t } = useI18n()
+const { locale } = useI18n()
 const config = useRuntimeConfig()
 
 const { data: post } = await useAsyncData(path.replace(/\/$/, '/'), async () => {
@@ -63,7 +63,7 @@ const next = nextData as PrevNext | undefined
         <hr class="w-80% rounded-md op40 core-border core-ui">
         <div v-if="post._path && post.title">
           <h4 class="mt5 text-center text-lg font-normal op90">
-            {{ t('share.title') }}
+            {{ $t('share.title') }}
           </h4>
           <LazyBlogSocialShare :post="{ _path: post._path, title: post.title }" />
         </div>

@@ -12,7 +12,8 @@ function switchColor() {
 
 <template>
   <button
-    class="mr-0 inline-block w-8 flex cursor-pointer items-center justify-center border-none bg-transparent" aria-label="Color Switcher"
+    class="mr-0 inline-block w-8 flex cursor-pointer items-center justify-center border-none bg-transparent"
+    :aria-label="$t('v2.app.sr.colorSwitch')"
     @click="switchColor"
   >
     <ClientOnly>

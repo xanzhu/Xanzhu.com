@@ -22,14 +22,14 @@ const { data: features } = await useAsyncData(`featuredArticles-${locale.value}`
   <div class="mx-auto mt-10">
     <div class="flex items-center md:justify-center lg:p10 lg:space-x-50 sm:space-x-45">
       <h2 id="latest-posts" class="mx6 text-4xl md:(text-5xl)">
-        {{ t('home.latest') }}
+        {{ $t('home.latest') }}
       </h2>
       <span class="hidden md:(mx-10 h-2px w-30% flex bg-dark-400) lg:w-40%" role="presentation" />
     </div>
     <div
       class="grid auto-rows-fr grid-cols-1 max-w-lg justify-items-center gap-4 px6 lg:grid-cols-3 md:grid-cols-2 md:max-w-5xl children:(core-border rounded-lg) lg:px45 md:px25"
       role="feed"
-      aria-label="Featured Blog Posts"
+      :aria-label="t('v2.home.featuredPosts')"
     >
       <article
         v-for="feature in features?.slice(0, 3)" :key="feature._path"

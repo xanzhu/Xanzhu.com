@@ -55,7 +55,7 @@ useLangMeta('Blog.meta', seoImage)
       </div>
     </section>
     <p v-else class="text-center op70">
-      No posts available.
+      {{  $t('v2.blog.noPosts') }}
     </p>
   </main>
 </template>

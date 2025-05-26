@@ -110,7 +110,7 @@ const breaches: Breach[] = [
       </section>
     </div>
     <p class="mt-4 px-1 text-xs text-inherit op70 sm:text-sm">
-      {{ t('threatCard.source') }}
+      {{ $t('threatCard.source') }}
     </p>
   </div>
 </template>

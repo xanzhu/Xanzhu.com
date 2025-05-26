@@ -179,7 +179,7 @@ export default defineNuxtConfig({
 
   // Experimental Features
   experimental: {
-    buildCache: true,
+    // buildCache: true,
     headNext: true,
   },
   future: {
