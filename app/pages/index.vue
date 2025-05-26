@@ -15,7 +15,9 @@ definePageMeta({
 
 <template>
   <main class="flex flex-col justify-center">
-    <HomeHero />
+    <section aria-labelledby="hero">
+      <HomeHero />
+    </section>
     <LazyHomeBrandList />
     <LazyHomeBlogFeature class="min-h-screen" />
     <LazyHomePagesCard class="my-20" />

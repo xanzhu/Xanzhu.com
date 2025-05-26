@@ -30,7 +30,7 @@ const { data: features } = await useAsyncData(`featuredArticles-${locale.value}`
       class="grid auto-rows-fr grid-cols-1 max-w-lg justify-items-center gap-4 px6 lg:grid-cols-3 md:grid-cols-2 md:max-w-5xl children:(core-border rounded-lg) lg:px45 md:px25"
     >
       <article
-        v-for="(feature, index) in features?.slice(0, 3)" :key="index"
+        v-for="feature in features?.slice(0, 3)" :key="feature._path"
         class="group transition duration-300 ease-linear hover:(scale-102 bg-white shadow-lg dark:bg-black) core-theme"
       >
         <div class="col-span-1 cursor-pointer p-5 dark:text-white">
