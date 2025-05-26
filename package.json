@@ -1,6 +1,6 @@
 {
   "name": "xanzhu.com",
-  "version": "1.0.133",
+  "version": "1.0.134",
   "private": true,
   "packageManager": "pnpm@10.11.0",
   "license": "MIT",
@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.13.2",
-    "@iconify-json/fluent": "^1.2.21",
+    "@iconify-json/fluent": "^1.2.22",
     "@iconify-json/line-md": "^1.2.8",
     "@nuxt/devtools": "^2.4.1",
     "@unocss/eslint-plugin": "^66.1.2",
