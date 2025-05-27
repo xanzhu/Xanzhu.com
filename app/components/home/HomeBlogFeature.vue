@@ -56,7 +56,7 @@ const { data: features } = await useAsyncData(`featuredArticles-${locale.value}`
           sizes="sm:100vw md:50vw lg:800px"
         />
         <NuxtLink
-          to="https://rabbit.tech"
+          to="https://www.rabbit.tech"
           class="absolute bottom-2 right-2 rounded-md px3 py1 text-sm underline-none decoration-none core-border core-ui hover:core-theme"
         >
           Rabbit.tech
