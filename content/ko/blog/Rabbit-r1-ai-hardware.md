@@ -34,9 +34,12 @@ AI가 어떻게 컴퓨터 비전과 통합되고 더 많은 일을 할 수 있�
 
 R1에 대해 자세히 알아보려면 기조연설을 시청하세요.
 
-<div class="ifr">
-<iframe credentialless width="560" height="315" src="https://www.youtube.com/embed/22wlLy7hKP4?si=a16Fb1UEFLTRE1Aq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
+::youtube
+---
+src: https://www.youtube.com/embed/22wlLy7hKP4?si=a16Fb1UEFLTRE1Aq
+title: Rabbit R1 공개 영상
+---
+::
 
 이것의 좋은 점은 장치가 얼마나 상황을 인식할 수 있는지입니다. 데모에서는 R1에 "내가 늦을 거라고 모두에게 전해 주세요."라는 메시지가 언급되었습니다. 여기서 "모든 사람"이라는 표현이 사용되는 경우는 장치가 해당 상황과 관련된 목록이나 그룹을 제공하지 않고 모든 사람이 누구인지 아는 상황입니다. 이것이 시간이 지남에 따라 어떻게 발전하는지 보는 것은 흥미로울 것입니다.
 
@@ -58,10 +61,15 @@ R1에 대해 자세히 알아보려면 기조연설을 시청하세요.
 
 Rabbit은 새로운 것이며 우리는 그들이 Rabbit OS와 R1을 통해 또 무엇을 할 것인지에 관심이 있습니다. 개인 정보 보호 및 보안에 대한 모범 사례를 계속해서 준수할 수 있다면 이는 잠재적인 판도를 바꿀 수 있는 기회가 될 수 있습니다. 우리가 아직 알지 못하는 이 장치에 대한 다른 참고 사항은 이 장치로 인해 발생하는 추가 비용, 구독 또는 특정 기능을 잠금 해제하기 위한 추가 비용입니다. 시간이 말해 줄 것이다
 
-더 자세히 알아보고 싶으시다면 <PageLink title="Rabbit" url="https://www.rabbit.tech/"></PageLink> 회사로서, 그들이 하는 일을 확인하고 웹사이트를 확인하고 Large Action Model에 도입되는 기능을 포함하여 향후 기능과 작업 중인 내용을 포함하여 장치에 제공되는 다른 내용을 알아보세요.
+더 자세히 알아보고 싶으시다면 :PageLink{title="Rabbit" url="https://www.rabbit.tech/"} 회사로서, 그들이 하는 일을 확인하고 웹사이트를 확인하고 Large Action Model에 도입되는 기능을 포함하여 향후 기능과 작업 중인 내용을 포함하여 장치에 제공되는 다른 내용을 알아보세요.
 
-<Media source="https://cdn.xanzhu.com/v1/rabbit-r1/inline-1.webp" alt="Rabbit의 R1 하드웨어 장치는 화면과 촉각 버튼이 있는 눈에 띄는 주황색 디자인입니다."></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/rabbit-r1/inline-1.webp
+alt: Rabbit의 R1 하드웨어 장치는 화면과 촉각 버튼이 있는 눈에 띄는 주황색 디자인입니다.
+---
+::
 
-이 장치는 선주문이 진행되는 동안 AI를 가지고 놀고 무료로 기능을 확인하는 데 관심이 있다면 확인해 보세요. <PageLink title="ChatGPT" url="https://chat.openai.com/"></PageLink>, <PageLink title="Bard" url="https://bard.google.com/chat"></PageLink>, 아니면 시도해 보세요 <PageLink title="CoPilot" url="https://www.microsoft.com/en-us/windows/copilot-ai-features"></PageLink> Windows에서.
+이 장치는 선주문이 진행되는 동안 AI를 가지고 놀고 무료로 기능을 확인하는 데 관심이 있다면 확인해 보세요. :PageLink{title="ChatGPT" url="https://chat.openai.com/"}, :PageLink{title="Bard" url="https://bard.google.com/chat"}, 아니면 시도해 보세요 :PageLink{title="CoPilot" url="https://www.microsoft.com/en-us/windows/copilot-ai-features"} Windows에서.
 
 이러한 모델은 무료이며 유료 고객에게는 더 많은 고급 기능이 제공되지 않습니다. 인공 지능은 여기에 있으므로 공유하는 내용에 유의하세요. 이러한 내용은 아직 비공개가 아니기 때문입니다.

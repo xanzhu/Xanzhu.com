@@ -28,9 +28,12 @@ Willow는 벤치마크를 수행한 후 5분 이내에 표준 벤치마크 계�
 
 이 칩의 개발은 10년이 걸렸습니다. 2012년에 설립된 Google의 Quantum AI는 과학적 발견을 발전시키기 위해 대규모 양자 컴퓨터를 구축한다는 비전을 꾸준히 추구해 왔습니다.
 
-<div class="ifr">
-<iframe credentialless width="560" height="315" src="https://www.youtube.com/embed/l_KrC1mzd0g?si=1QVYdmS9NURCuyO8" title="Google의 Willow 양자 컴퓨터 소개 영상" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
+::youtube
+---
+src: https://www.youtube.com/embed/l_KrC1mzd0g?si=1QVYdmS9NURCuyO8
+title: Google의 Willow 양자 컴퓨터 소개 영상
+---
+::
 
 ### 양자 오류 수정
 
@@ -46,7 +49,13 @@ Willow는 미국 산타바바라에 자체 전담 제조 시설을 보유하고 
 
 Willow의 성능은 오늘날 양자 컴퓨터에 가장 어려운 지표로 간주되는 Random Circuit Sampling(RCS) 벤치마크를 사용하여 측정됩니다. Willow는 벤치마크를 5분 만에 완료하여 가장 빠른 기존 슈퍼컴퓨터보다 성능이 우수했습니다. 비교를 위해 동일한 작업을 완료하는 데 가장 빠른 슈퍼컴퓨터는 10조년이 걸립니다.
 
-<Media source="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_Fig1.width-1000.format-webp.webp" alt="윌로우의 RCS 성능이 최고의 슈퍼컴퓨터와 동등하다는 것을 알려주는 그림 카드" credit="Google"></Media>
+::media
+---
+source: https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_Fig1.width-1000.format-webp.webp
+alt: 윌로우의 RCS 성능이 최고의 슈퍼컴퓨터와 동등하다는 것을 알려주는 그림 카드
+credit: Google
+---
+::
 
 이 벤치마크에서 Willow의 점수는 현재 운영 중인 모든 슈퍼컴퓨터의 지표를 능가합니다.
 
@@ -56,6 +65,12 @@ Willow는 양자 컴퓨팅의 미래 발전, 특히 계산을 실제 시나리�
 
 지금까지 양자 컴퓨터는 관련 애플리케이션에서 슈퍼컴퓨터보다 성능이 뛰어나지 않았지만, Willow가 Random Circuit Sampling(RCS)에서 성공한 것은 이를 바꿀 수 있는 잠재력을 보여줍니다.
 
-<Media source="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_Fig4.width-1000.format-webp.webp" alt="윌로우의 마일스톤 달성에 대한 마일스톤 그래프, 마일스톤 1 및 2 완료, 향후 마일스톤 6까지" credit="Google"></Media>
+::media
+---
+source: https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_Fig4.width-1000.format-webp.webp
+alt: 윌로우의 마일스톤 달성에 대한 마일스톤 그래프, 마일스톤 1 및 2 완료, 향후 마일스톤 6까지
+credit: Google
+---
+::
 
 구글의 양자 컴퓨팅 로드맵은 이제 두 번째 이정표에 도달했으며 연구 개발이 진행됨에 따라 계속 발전하고 있습니다. 이 기술은 글로벌 컴퓨팅 및 처리 능력의 미래를 이끌 준비가 되었습니다.

@@ -34,7 +34,12 @@ source: "Lindsey LaMont, unsplash"
 
 以下是您通常会看到的两因素身份验证代码示例：
 
-<Media source="https://cdn.xanzhu.com/v1/text-scams/Uber.webp" alt="Uber身份验证代码示例"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/text-scams/Uber.webp
+alt: Uber身份验证代码示例
+---
+::
 
 - 这个代码来自 3362。
 - 它声明这个代码来自 Uber。
@@ -45,7 +50,12 @@ source: "Lindsey LaMont, unsplash"
 
 这是一个文本诈骗的示例：
 
-<Media source="https://cdn.xanzhu.com/v1/text-scams/EURO.webp" alt="国际钓鱼短信示例"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/text-scams/EURO.webp
+alt: 国际钓鱼短信示例
+---
+::
 
 - 这条消息来自+61（澳大利亚基地）。
 - 我不认识这个号码，也没有预料到它。
@@ -55,7 +65,12 @@ source: "Lindsey LaMont, unsplash"
 <hr>
 
 这里是另一个例子：
-<Media source="https://cdn.xanzhu.com/v1/text-scams/NZD.webp" alt="本地钓鱼短信示例"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/text-scams/NZD.webp
+alt: 本地钓鱼短信示例
+---
+::
 
 - 这条消息来自+64（基于新西兰）。
 - 提到了获取新西兰元（NZD），特别是为了我。
@@ -64,7 +79,12 @@ source: "Lindsey LaMont, unsplash"
 正如您所看到的，这些文本诈骗的目的是让您点击这个链接。
 
 一个更近期的例子：
-<Media source="https://cdn.xanzhu.com/v1/text-scams/nzta.webp" alt="新西兰交通管理局钓鱼示例"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/text-scams/nzta.webp
+alt: 新西兰交通管理局钓鱼示例
+---
+::
 
 - 声称来自新西兰交通局（NZ Transport Agency）并要求您支付未付费用。
 - 这条消息出乎意料。
@@ -76,7 +96,12 @@ source: "Lindsey LaMont, unsplash"
 在上述示例中，NZTA 暗示您可能有未付费用。不要点击链接。而是直接打开您的网络浏览器，输入官方 NZTA 网站。
 
 让我们比较所使用的链接：
-<Media source="https://cdn.xanzhu.com/v1/text-scams/compare.svg" alt="比较钓鱼链接与合法链接"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/text-scams/compare.svg
+alt: 比较钓鱼链接与合法链接
+---
+::
 
 官方政府基础链接将始终具有 .govt.nz 域名。
 在输入敏感信息之前，务必导航至官方网站。
@@ -86,7 +111,7 @@ source: "Lindsey LaMont, unsplash"
 如果您遇到了一起欺诈案件，请将消息转发至内政部以进行进一步调查。
 只需将文本消息转发至以下号码：7726。
 
-看这里如何转发消息： <PageLink title="iOS" url="https://support.apple.com/en-nz/guide/iphone/iph125628311/ios"></PageLink>. 对于安卓设备，这应该是一个类似的过程，按住消息并选择转发。
+看这里如何转发消息： :PageLink{title="iOS" url="https://support.apple.com/en-nz/guide/iphone/iph125628311/ios"}. 对于安卓设备，这应该是一个类似的过程，按住消息并选择转发。
 
 请直接向该组织报告。我已列出了在新西兰运营的受欢迎服务的电子邮件地址。
 请截图可疑的短信或电子邮件，并将其附加到发送至以下之一的电子邮件中：
@@ -106,8 +131,8 @@ Spark NZ - scamhelp@spark.co.nz
 <hr>
 学更多：
 
-- <PageLink title="dia.govt.nz" url="https://www.dia.govt.nz/Spam-How-to-Report-Scams"></PageLink>
+- :PageLink{title="dia.govt.nz" url="https://www.dia.govt.nz/Spam-How-to-Report-Scams"}
 
-- <PageLink title="cert.nz" url="https://www.cert.govt.nz/report/business-and-individuals/"></PageLink>
+- :PageLink{title="cert.nz" url="https://www.cert.govt.nz/report/business-and-individuals/"}
 
-- <PageLink title="netsafe.org.nz" url="https://report.netsafe.org.nz/hc/en-au/requests/new"></PageLink>
+- :PageLink{title="netsafe.org.nz" url="https://report.netsafe.org.nz/hc/en-au/requests/new"}
