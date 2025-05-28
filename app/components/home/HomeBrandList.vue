@@ -3,7 +3,7 @@ const { locale } = useI18n()
 
 const urls = [
   {
-    url: 'https://www.cert.govt.nz/individuals/',
+    url: 'https://www.cert.govt.nz/',
     name: 'Certnz',
   },
   {
@@ -13,6 +13,10 @@ const urls = [
   {
     url: 'https://bitwarden.com/',
     name: 'Bitwarden',
+  },
+  {
+    url: 'https://ownyouronline.gov.nz/',
+    name: 'OwnYourOnline',
   },
   {
     url: (locale.value === 'ko') ? 'https://www.samsung.com/sec/' : 'https://www.samsung.com/nz/',
@@ -27,16 +31,18 @@ function getSvgIconUrl(name) {
 
 <template>
   <div class="hidden lg:(mt25 h12vh flex items-center justify-center)">
-    <div class="flex flex-wrap justify-center gap-12 px-8" role="list">
-      <NuxtLink v-for="link in urls" :key="link.name" :href="link.url" target="_blank" class="group inline-block" role="listitem">
-        <div class="h-24 flex items-center justify-center p-4">
-          <NuxtImg
-            :src="getSvgIconUrl(link.name)"
-            class="h-auto max-h-16 max-w-[120px] grayscale filter transition duration-300 ease-in-out group-hover:filter-none"
-            :alt="`${link.name} logo`" width="128" height="40" loading="lazy"
-          />
-        </div>
-      </NuxtLink>
-    </div>
+    <ul class="flex flex-wrap list-none justify-center gap-12 px-8" role="list">
+      <li v-for="link in urls" :key="link.name" role="listitem">
+        <NuxtLink :href="link.url" target="_blank" class="group inline-block">
+          <div class="h-24 flex items-center justify-center p-4">
+            <NuxtImg
+              :src="getSvgIconUrl(link.name)"
+              class="h-auto max-h-16 max-w-[120px] grayscale filter transition duration-300 ease-in-out dark:invert-0 group-hover:filter-none"
+              :alt="`${link.name} logo`" width="128" height="40" loading="lazy"
+            />
+          </div>
+        </NuxtLink>
+      </li>
+    </ul>
   </div>
 </template>
