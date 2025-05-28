@@ -15,7 +15,7 @@ const urls = [
     name: 'Bitwarden',
   },
   {
-    url: 'https://ownyouronline.gov.nz/',
+    url: 'https://www.ownyouronline.govt.nz/',
     name: 'OwnYourOnline',
   },
   {
