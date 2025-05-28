@@ -38,7 +38,7 @@ p@s$w0rD!2E
 
 虽然这对于几个密码来说可能很容易做到，但密码管理器可以为您自动执行该过程。 它可以自动为每个站点生成强而独特的密码。 您唯一需要记住的是您保险库的钥匙：一个单一的密码，可以让您访问所有存储的密码。
 
-违规行为经常发生，重要的是不仅要自己检查，还要在发生违规行为时得到通知。 您可以使用的一项流行的免费服务是 <PageLink title="HaveIBeenPwned" url="https://haveibeenpwned.com/"></PageLink>。 该网站由澳大利亚安全专家 Troy Hunt 维护，允许您输入您的电子邮件地址并查看它是否与任何违规行为相关联。 如果您发现了什么，请前往该服务并更新您的密码。
+违规行为经常发生，重要的是不仅要自己检查，还要在发生违规行为时得到通知。 您可以使用的一项流行的免费服务是 :PageLink{title="HaveIBeenPwned" url="https://haveibeenpwned.com/"}。 该网站由澳大利亚安全专家 Troy Hunt 维护，允许您输入您的电子邮件地址并查看它是否与任何违规行为相关联。 如果您发现了什么，请前往该服务并更新您的密码。
 
 有多种密码管理器可用，有免费的也有付费的。 我将根据自己的经验和研究分享一些建议。
 
@@ -46,9 +46,15 @@ p@s$w0rD!2E
 
 ### Bitwarden
 
-<Media source="https://cdn.xanzhu.com/v1/password-managers/bitwarden.webp" credit="Bitwarden / Xanzhu" alt="Bitwarden 密码管理器徽标"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/password-managers/bitwarden.webp
+credit: Bitwarden / Xanzhu
+alt: Bitwarden 密码管理器徽标
+---
+::
 
-您可以使用的最好的免费密码管理器之一是 Bitwarden。 虽然它确实提供了增加选项和功能的付费计划，但 <PageLink title="免费计划" url="https://bitwarden.com/pricing/"></PageLink> 对大多数用户来说已经足够了。
+您可以使用的最好的免费密码管理器之一是 Bitwarden。 虽然它确实提供了增加选项和功能的付费计划，但 :PageLink{title="免费计划" url="https://bitwarden.com/pricing/"} 对大多数用户来说已经足够了。
 
 Bitwarden 的一些显着特点包括：
 
@@ -64,12 +70,18 @@ Bitwarden 的一些显着特点包括：
 - 支持 Yubikey 和安全密钥
 - 金库扫描和健康监控
 
-如需更多信息，请访问 Bitwarden 网站 <PageLink title="bitwarden.com" url="https://bitwarden.com/"></PageLink>
+如需更多信息，请访问 Bitwarden 网站 :PageLink{title="bitwarden.com" url="https://bitwarden.com/"}
 值得注意的是，当涉及到安全和隐私时，使用开源软件是一个好主意，因为它允许您验证代码并确保没有后门或恶意代码。
 
 ### Keepass
 
-<Media source="https://cdn.xanzhu.com/v1/password-managers/keepass.webp" credit="Keepass / Xanzhu" alt="KeePass Logo"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/password-managers/keepass.webp
+credit: Keepass / Xanzhu
+alt: KeePass Logo
+---
+::
 
 Keepass 是一款出色的密码管理器自托管解决方案，因为它允许您将所有数据掌握在自己手中。 但是，对于普通用户来说这可能有点棘手，因为它需要大量配置和您自己的硬件来托管。
 
@@ -79,11 +91,17 @@ Keepass 是一个非常安全的密码管理器，它使用 AES 和 Twofish 加�
 
 请记住，自托管密码管理器确实需要承担一些责任，例如保持软件更新、维护数据备份以及确保服务器安全。
 
-有关 Keepass 的更多信息，请访问网站 <PageLink title="keepass.info" url="https://keepass.info/"></PageLink>
+有关 Keepass 的更多信息，请访问网站 :PageLink{title="keepass.info" url="https://keepass.info/"}
 
 ### 浏览器/操作系统
 
-<Media source="https://cdn.xanzhu.com/v1/password-managers/googlepass.webp" credit="Google" alt="谷歌密码管理器"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/password-managers/googlepass.webp
+credit: Google
+alt: 谷歌密码管理器
+---
+::
 
 对于基于浏览器的解决方案，快速简单的解决方案是完全在浏览器环境中运行的密码管理器。 您经常会注意到系统会要求您将密码保存到浏览器中，以便在您下次访问时自动填写。 这是一个密码管理器。 虽然它在跨平台环境中可能不是最安全或可访问的，但它运行良好。
 
@@ -93,11 +111,17 @@ Keepass 是一个非常安全的密码管理器，它使用 AES 和 Twofish 加�
 
 如果您选择使用基于浏览器的密码管理器，请务必采取额外的预防措施以确保您存储的密码的安全，例如使用强主密码和启用双因素身份验证。
 
-有关基于浏览器的密码管理器的更多信息，您可以访问 Google 密码管理器网站：<PageLink title="passwords.google.com" url="https://passwords.google.com/"></PageLink>
+有关基于浏览器的密码管理器的更多信息，您可以访问 Google 密码管理器网站： :PageLink{title="passwords.google.com" url="https://passwords.google.com/"}
 
 ## 付费解决方案
 
-<Media source="https://cdn.xanzhu.com/v1/password-managers/t3.webp" credit="Dashlane, NordPass, 1Password / Xanzhu" alt="付费密码管理器徽标； Dashlane、NordPass、1Password"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/password-managers/t3.webp
+credit: Dashlane, NordPass, 1Password / Xanzhu
+alt: 付费密码管理器徽标； Dashlane、NordPass、1Password
+---
+::
 
 这些都是付费服务，而且运行良好，通常附带许多其他有用的功能，例如 VPN 或在企业环境中使用。
 
@@ -105,7 +129,7 @@ Keepass 是一个非常安全的密码管理器，它使用 AES 和 Twofish 加�
 
 ### Dashlane
 
-Dashlane 提供 14 天的免费试用，提供基本级别的密码管理。 <PageLink title="入门计划" url="https://www.dashlane.com/pricing"></PageLink> 提供了一些有用的功能，例如能够在暗网上跟踪被盗内容。 该服务会扫描暗网以查找可能泄露您凭据的漏洞，如果有任何匹配项，则会向您报告。
+Dashlane 提供 14 天的免费试用，提供基本级别的密码管理。 :PageLink{title="入门计划" url="https://www.dashlane.com/pricing"} 提供了一些有用的功能，例如能够在暗网上跟踪被盗内容。 该服务会扫描暗网以查找可能泄露您凭据的漏洞，如果有任何匹配项，则会向您报告。
 
 Dashlane 入门计划的显着特点包括：
 
@@ -116,12 +140,12 @@ Dashlane 入门计划的显着特点包括：
 
 对于那些需要更高级功能的人，Dashlane 提供更高层次的计划，其中包括虚拟专用网络 (VPN) 解决方案等附加功能。 这为您的密码管理器提供了额外的安全层，有助于保护您的在线活动免受黑客和窥探。
 
-要了解有关 Dashlane 及其功能的更多信息，您可以访问网站 <PageLink title="dashlane.com" url="https://www.dashlane.com"></PageLink>
+要了解有关 Dashlane 及其功能的更多信息，您可以访问网站 :PageLink{title="dashlane.com" url="https://www.dashlane.com"}
 值得注意的是，在安全和隐私方面，使用具有暗网扫描功能的密码管理器是个好主意，因为它可以让您监控您的凭据，并在它们出现在暗网上时收到警报。
 
 ### NordPass
 
-NordPass 提供非常有限和基本的 <PageLink title="免费计划" url="https://nordpass.com/plans/"></PageLink>，捆绑了高级版本的 30 天免费试用。 付费和免费计划之间的主要区别在于免费套餐仅提供密码管理器的基本功能，而付费套餐提供额外的功能，例如：
+NordPass 提供非常有限和基本的 :PageLink{title="免费计划" url="https://nordpass.com/plans/"}，捆绑了高级版本的 30 天免费试用。 付费和免费计划之间的主要区别在于免费套餐仅提供密码管理器的基本功能，而付费套餐提供额外的功能，例如：
 
 - 与您信任的人分享物品
 - 紧急金库访问 - 在被锁定的情况下分配电子邮件或用户访问您的金库的能力
@@ -130,11 +154,11 @@ NordPass 提供非常有限和基本的 <PageLink title="免费计划" url="http
 
 值得注意的是，您可能不需要所有这些功能，免费套餐可能足以满足您的需求。 但是，在比较计划时，值得考虑对您来说很重要的功能。 需要考虑的一件事是，免费计划仅支持 6 个已登录设备，这对某些用户来说可能足够了，但超过此数量将使您注销。
 
-要了解有关 NordPass 及其功能的更多信息，您可以访问网站 <PageLink title="nordpass.com" url="https://nordpass.com"></PageLink>
+要了解有关 NordPass 及其功能的更多信息，您可以访问网站 :PageLink{title="nordpass.com" url="https://nordpass.com"}
 
 ### 1Password
 
-1Password 为其 <PageLink title="高级计划" url="https://1password.com/sign-up/"></PageLink> 提供免费试用。 该解决方案设计精良，适用于您的所有设备，包括台式机和移动设备。 1Password 提供无限的设备并具有称为“旅行模式”的独特功能，它可以在旅行时从您的设备中删除敏感数据，确保您的密码和帐户在旅途中不会受到损害。 它还允许返回时一键恢复解决方案。
+1Password 为其 :PageLink{title="高级计划" url="https://1password.com/sign-up/"} 提供免费试用。 该解决方案设计精良，适用于您的所有设备，包括台式机和移动设备。 1Password 提供无限的设备并具有称为“旅行模式”的独特功能，它可以在旅行时从您的设备中删除敏感数据，确保您的密码和帐户在旅途中不会受到损害。 它还允许返回时一键恢复解决方案。
 
 基准保费计划的一些显着特点包括：
 
@@ -145,7 +169,7 @@ NordPass 提供非常有限和基本的 <PageLink title="免费计划" url="http
 
 1Password 在设计和可访问性方面很好地融入了 Apple 生态系统。 与其他解决方案相比，这是一个功能有限的绝佳选择。
 
-要了解有关 1Password 及其功能的更多信息，您可以访问网站 <PageLink title="1password.com" url="https://1password.com"></PageLink>
+要了解有关 1Password 及其功能的更多信息，您可以访问网站 :PageLink{title="1password.com" url="https://1password.com"}
 
 ## 安全
 
@@ -169,9 +193,9 @@ LastPass 已经存在很长时间了，虽然我曾经使用过这个软件，�
 
 有关更多信息，您可以阅读以下文章：
 
-- <PageLink title="The Verge" url="https://www.theverge.com/2022/12/22/23523322/lastpass-data-breach-cloud-encrypted-password-vault-hackers"></PageLink>
-- <PageLink title="Wired" url="https://www.wired.com/story/lastpass-breach-vaults-password-managers/"></PageLink>
-- <PageLink title="Hacker News" url="https://thehackernews.com/2022/12/lastpass-admits-to-severe-data-breach.html"></PageLink>
+- :PageLink{title="The Verge" url="https://www.theverge.com/2022/12/22/23523322/lastpass-data-breach-cloud-encrypted-password-vault-hackers"}
+- :PageLink{title="Wired" url="https://www.wired.com/story/lastpass-breach-vaults-password-managers/"}
+- :PageLink{title="Hacker News" url="https://thehackernews.com/2022/12/lastpass-admits-to-severe-data-breach.html"}
 
 ## 膨胀软件
 

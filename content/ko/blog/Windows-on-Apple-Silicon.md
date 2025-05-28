@@ -2,6 +2,7 @@
 title: "Apple Silicon 2023에서 Windows 가상 머신 설정"
 description: "무료 오픈 소스 가상화 소프트웨어인 UTM을 사용하여 Apple Silicon에서 Windows를 설정하는 방법을 알아보세요."
 date: "2023-11-23"
+updated: "2023-11-23"
 tag: "가이드"
 toc: true
 feature: true
@@ -13,13 +14,13 @@ alt: "3가지 새로운 칩셋의 아이콘을 표시하는 2023년 Macbook Pro 
 
 장치가 2020년에 출시된 새로운 칩셋을 사용하고 있는지 확인하려면 Apple 아이콘을 클릭하고 "이 Mac 정보"를 선택하세요. 여기서는 Intel인지 아니면 새로운 M1-M3 칩을 사용하는지에 대한 세부 정보를 확인할 수 있습니다.
 
-이는 연초에 UTM 및 Parallels를 사용한 Windows 설치를 다룬 <PageLink title="이전 기사" url="/ko/blog/apple-silicon-virtual-machine-setup"></PageLink> 의 업데이트 버전입니다. 그 이후로 프로세스가 훨씬 더 쉽고 안정적이 되었습니다!
+이는 연초에 UTM 및 Parallels를 사용한 Windows 설치를 다룬 :PageLink{title="이전 기사" url="/ko/blog/apple-silicon-virtual-machine-setup"} 의 업데이트 버전입니다. 그 이후로 프로세스가 훨씬 더 쉽고 안정적이 되었습니다!
 
 다운로드:
 
-- <PageLink title="UTM 웹사이트" url="https://mac.getutm.app/"></PageLink>
-- <PageLink title="UTM Github" url="https://github.com/utmapp/UTM/releases"></PageLink>
-- <PageLink title="CrystalFetch" url="https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12"></PageLink>
+- :PageLink{title="UTM 웹사이트" url="https://mac.getutm.app/"}
+- :PageLink{title="UTM Github" url="https://github.com/utmapp/UTM/releases"}
+- :PageLink{title="CrystalFetch" url="https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12"}
 
 전제 조건:
 
@@ -29,24 +30,34 @@ alt: "3가지 새로운 칩셋의 아이콘을 표시하는 2023년 Macbook Pro 
 
 ## UTM 설치하기
 
-- <PageLink title="공식 웹사이트" url="https://mac.getutm.app/"></PageLink> 에서 UTM을 다운로드하거나 <PageLink title="Github" url="https://github.com/utmapp/UTM/releases"></PageLink>
+- :PageLink{title="공식 웹사이트" url="https://mac.getutm.app/"} 에서 UTM을 다운로드하거나 :PageLink{title="Github" url="https://github.com/utmapp/UTM/releases"}
 
 <i>참고: UTM은 앱 스토어에서도 사용할 수 있습니다. 단, UTM은 업데이트를 제공하는 유료 옵션이므로 위의 두 가지 옵션처럼 모든 업데이트를 수동으로 다운로드해야 합니다.</i>
 
 응용 프로그램을 열면 다음과 같이 표시됩니다.
 
-<Media source="https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-1.webp" alt="UTM 애플리케이션 오프닝 화면"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-1.webp
+alt: UTM 애플리케이션 오프닝 화면
+---
+::
 
 ## CrystalFetch
 
 이는 UTM 가상 머신에 필요한 업데이트된 Windows ISO 파일을 생성하는 데 도움이 되는 무료 도구입니다.
 
-1. <PageLink title="앱 스토어" url="https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12"></PageLink> 에서 CrystalFetch를 다운로드하세요.
+1. :PageLink{title="앱 스토어" url="https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12"} 에서 CrystalFetch를 다운로드하세요.
 1. CrystalFetch를 열고 언어 및 버전 선택(Windows 11)
 
 다음과 유사해야 합니다.
 
-<Media source="https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-2.webp" alt="CrystalFetch 애플리케이션 시작 화면"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-2.webp
+alt: CrystalFetch 애플리케이션 시작 화면
+---
+::
 
 3. 다운로드를 클릭하세요
 
@@ -65,7 +76,12 @@ ISO 파일을 다운로드해야 합니다. 파일 크기가 약 5GB이므로 �
 
 이것과 비슷하게 보일 것입니다
 
-<Media source="https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-3.webp" alt="가상 머신의 UTM 구성 화면"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-3.webp
+alt: 가상 머신의 UTM 구성 화면
+---
+::
 
 1. 이 가상 머신에 사용할 RAM의 양을 선택합니다. 4096이 기본값이며 4GB와 같습니다. 시스템이 사용하는 것의 절반이 이상적이지만 필요한 경우 나중에 조정할 수 있습니다. 지금은 기본값으로 두세요.
 
@@ -77,7 +93,12 @@ ISO 파일을 다운로드해야 합니다. 파일 크기가 약 5GB이므로 �
 
 이제 가상 머신이 생성되었습니다. 이와 비슷한 내용이 표시되어야 합니다.
 
-<Media source="https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-4.webp" alt="UTM 가상 머신 표시"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-4.webp
+alt: UTM 가상 머신 표시
+---
+::
 
 ## 가상 머신 실행
 
@@ -87,11 +108,21 @@ ISO 파일을 다운로드해야 합니다. 파일 크기가 약 5GB이므로 �
 
 2. 이 창 내부를 클릭하고 아무 키나 누르십시오.
 
-<Media source="https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-5.webp" alt="계속 진행하려면 아무 키나 누르라는 메시지를 표시하는 UTM"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-5.webp
+alt: 계속 진행하려면 아무 키나 누르라는 메시지를 표시하는 UTM
+---
+::
 
 이 단계는 중요합니다. 키를 충분히 빨리 누르지 않으면 다음 화면이 표시되기 때문입니다.
 
-<Media source="https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-5b.webp" alt="부팅 오류를 표시하는 UTM"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-5b.webp
+alt: 부팅 오류를 표시하는 UTM
+---
+::
 
 이 문제를 해결하려면 가상 머신을 닫았다가 다시 실행하거나 삼각형 버튼인 가상 머신 다시 시작 버튼을 선택하세요.
 
@@ -101,7 +132,12 @@ ISO 파일을 다운로드해야 합니다. 파일 크기가 약 5GB이므로 �
 
 이 작업을 수행하면 이제 Windows 설치를 구성할 수 있는 화면이 표시됩니다.
 
-<Media source="https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-6.webp" alt="Windows ISO 설치 메뉴"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-6.webp
+alt: Windows ISO 설치 메뉴
+---
+::
 
 1. 언어를 선택하고 다음을 누르세요.
 
@@ -117,7 +153,12 @@ ISO 파일을 다운로드해야 합니다. 파일 크기가 약 5GB이므로 �
 
 이 작업이 완료되면 몇 번 재부팅됩니다. 방해받지 않고 실행되도록 하세요. 다음 화면에 도달하면 재부팅 시 설치 프로그램이 다시 실행되지 않도록 현재 ISO를 꺼내야 합니다.
 
-<Media source="https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-7.webp" alt="가상 머신에서 현재 ISO를 꺼내는 방법에 대한 UTM 가이드"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-7.webp
+alt: 가상 머신에서 현재 ISO를 꺼내는 방법에 대한 UTM 가이드
+---
+::
 
 1. 디스크 아이콘을 클릭합니다
 2. CD/DVD 위에 마우스를 놓고 꺼내기를 선택합니다.
@@ -132,7 +173,12 @@ ISO 파일을 다운로드해야 합니다. 파일 크기가 약 5GB이므로 �
 
 기본적으로 설치 메뉴가 나타납니다. 다음을 클릭하여 설치하고 기다리세요. 이렇게 하면 드라이버가 설치되므로 설치가 완료될 때까지 가상 머신이 깜박이거나 속도가 느려질 수 있습니다.
 
-<Media source="https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-8.webp" alt="UTM Spice 게스트 도구 설치 프로그램 화면"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-8.webp
+alt: UTM Spice 게스트 도구 설치 프로그램 화면
+---
+::
 
 가상 머신이 응답하지 않으면 가상 머신을 닫고 재부팅하세요.
 
@@ -160,4 +206,4 @@ Spice Guest Tools가 올바르게 설치되었는지 다시 확인하세요. Spi
 2. CD 드라이브로 이동하여 클릭합니다.
 3. "utm-guest-tools"를 두 번 클릭하여 설치를 실행합니다.
 
-추가 도움이 필요하시면 UTM <PageLink Link title="문서" url="https://docs.getutm.app/guides/windows/"></PageLink> 를 참조하세요.
+추가 도움이 필요하시면 UTM :PageLink{Link title="문서" url="https://docs.getutm.app/guides/windows/"} 를 참조하세요.

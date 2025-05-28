@@ -28,9 +28,12 @@ Willow 取得的最重大突破是它能够减少错误。
 
 这款芯片的研发历时 10 年，谷歌量子人工智能实验室成立于 2012 年，始终致力于打造大规模量子计算机，推动科学发现。
 
-<div class="ifr">
-<iframe credentialless width="560" height="315" src="https://www.youtube.com/embed/l_KrC1mzd0g?si=1QVYdmS9NURCuyO8" title="谷歌量子计算机 Willow 介绍视频" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
+::youtube
+---
+src: https://www.youtube.com/embed/l_KrC1mzd0g?si=1QVYdmS9NURCuyO8
+title: 谷歌量子计算机 Willow 介绍视频
+---
+::
 
 ### 量子纠错
 
@@ -46,7 +49,13 @@ Willow 在美国圣巴巴拉拥有自己的专用制造工厂。这是全球为�
 
 Willow 的性能使用随机电路采样 (RCS) 基准进行测量，该基准被认为是当今量子计算机最具挑战性的指标。Willow 在五分钟内完成了基准测试，超越了现有最快的超级计算机。相比之下，最快的超级计算机需要 10 千万亿年才能完成同样的任务。
 
-<Media source="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_Fig1.width-1000.format-webp.webp" alt="插图显示 Willow 的 RCS 性能可与最好的超级计算机媲美" credit="Google"></Media>
+::media
+---
+source: https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_Fig1.width-1000.format-webp.webp
+alt: 插图显示 Willow 的 RCS 性能可与最好的超级计算机媲美
+credit: Google
+---
+::
 
 Willow 在这项基准测试中的得分超过了目前所有运行的超级计算机的指标。
 
@@ -56,6 +65,12 @@ Willow 很可能为量子计算的未来发展铺平道路，特别是在使计�
 
 到目前为止，还没有一台量子计算机在相关应用中胜过超级计算机，但 Willow 在随机电路采样 (RCS) 方面的成功表明了它有潜力改变这一现状。
 
-<Media source="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_Fig4.width-1000.format-webp.webp" alt="Willow 里程碑成就的里程碑图，已完成里程碑 1 和 2，未来里程碑将达到 6" credit="Google"></Media>
+::media
+---
+source: https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_Fig4.width-1000.format-webp.webp
+alt: Willow 里程碑成就的里程碑图，已完成里程碑 1 和 2，未来里程碑将达到 6
+credit: Google
+---
+::
 
 谷歌的量子计算路线图现已达到第二个里程碑，并随着研发的进展而不断推进。这项技术有望引领全球计算和处理能力的未来。
