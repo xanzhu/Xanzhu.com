@@ -82,7 +82,7 @@ const { data: features } = await useAsyncData(`featuredArticles-${locale.value}`
             class="group-hover text-black no-underline dark:text-white" :to="feature._path"
             :aria-label="`Read ${feature.title}`"
           >
-            <span class="rounded-md bg-light4 px4 py1 text-sm op-60 core-border dark:bg-dark8" role="doc-subtitle">{{
+            <span class="rounded-md bg-light2 px4 py1 text-sm op-90 core-border dark:bg-dark8" role="doc-subtitle">{{
               feature.tag }}</span>
             <h3 class="group-hover:text-primary text-xl font-semibold">
               {{ feature.title }}

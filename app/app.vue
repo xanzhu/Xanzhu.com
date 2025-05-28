@@ -52,7 +52,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <Html v-if="head.htmlAttrs" :lang="head.htmlAttrs.lang" class="scroll-pt-[73px]">
+  <Html v-if="head.htmlAttrs" :lang="head.htmlAttrs.lang" class="scroll-pt-[73px] antialiased">
     <Head>
       <template v-for="link in head.link" :key="link.id">
         <Link :id="link.id" :rel="link.rel" :href="link.href" :hreflang="link.hreflang" />
