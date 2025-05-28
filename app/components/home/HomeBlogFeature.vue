@@ -24,10 +24,10 @@ const { data: features } = await useAsyncData(`featuredArticles-${locale.value}`
       <h2 id="latest-posts" class="mx6 text-4xl md:(text-5xl)">
         {{ $t('home.latest') }}
       </h2>
-      <span class="hidden md:(mx-10 h-2px w-30% flex bg-dark-400) lg:w-40%" role="presentation" />
+      <span class="hidden lg:(mx-10 h-2px w-30% w-40% flex bg-dark-400)" role="presentation" />
     </div>
     <div
-      class="grid auto-rows-fr grid-cols-1 mx-auto max-w-lg justify-items-center gap-4 px6 lg:grid-cols-3 md:grid-cols-2 md:max-w-5xl children:(core-border rounded-lg) lg:px45 md:px25"
+      class="grid auto-rows-fr grid-cols-1 mx-auto max-w-lg justify-items-center gap-4 px6 lg:grid-cols-3 md:grid-cols-2 md:max-w-5xl children:(core-border rounded-lg) 2xl:px45 xl:px25"
       role="feed"
       :aria-label="t('v2.home.featuredPosts')"
     >
