@@ -19,7 +19,7 @@ const { data: features } = await useAsyncData(`featuredArticles-${locale.value}`
 </script>
 
 <template>
-  <div class="mx-auto bg-light-5 py10 dark:bg-dark-900">
+  <div class="mx-auto bg-light-3 py10 dark:bg-dark-900">
     <div class="mx-auto mt10 max-w-lg flex items-center justify-between px6 md:max-w-5xl 2xl:px45 xl:px25">
       <div class="mb-10 flex flex-col justify-center space-y-2">
         <h2 id="latest-posts" class="m0 text-4xl font-bold tracking-wide md:text-5xl">
