@@ -171,7 +171,10 @@
       "subhead": "Explore trends, tools, and techniques driving technology forward—from safeguarding data to redefining the digital world.",
       "tagline": "Beyond Code and Innovation"
     },
-    "latest": "RECENT POSTS"
+    "latest": "Recent Posts",
+    "features": {
+      "description": "Explore our key articles and featured new content."
+    }
   },
   "pageCard": {
     "article": "Stay updated with our latest articles on security trends and best practices",

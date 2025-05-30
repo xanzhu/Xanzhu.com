@@ -20,7 +20,7 @@ const pages = [
 </script>
 
 <template>
-  <nav class="grid grid-cols-1 mx-auto justify-items-center gap-6 p-6 md:grid-cols-2 xl:grid-cols-3 lg:w-5xl">
+  <nav class="grid grid-cols-1 mx-auto justify-items-center gap-6 p-6 md:grid-cols-2 xl:grid-cols-3 xl:w-5xl">
     <NuxtLinkLocale
       v-for="page in pages" :key="page.path" :to="page.path"
       class="group relative block max-w-sm w-full decoration-none"

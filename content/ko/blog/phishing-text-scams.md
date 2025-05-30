@@ -32,7 +32,12 @@ source: "Lindsey LaMont, unsplash"
 
 다음은 일반적으로 볼 수 있는 2단계 인증 코드의 예입니다:
 
-<Media source="https://cdn.xanzhu.com/v1/text-scams/Uber.webp" alt="Uber 인증 코드 예시"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/text-scams/Uber.webp
+alt: Uber 인증 코드 예시
+---
+::
 
 - 이 코드는 3362번에서 왔습니다.
 - 코드가 Uber에서 온다고 명시되어 있습니다.
@@ -43,7 +48,12 @@ source: "Lindsey LaMont, unsplash"
 
 여기 문자 메시지 사기의 예가 있습니다:
 
-<Media source="https://cdn.xanzhu.com/v1/text-scams/EURO.webp" alt="국제적인 스미싱 텍스트 예시"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/text-scams/EURO.webp
+alt: 국제적인 스미싱 텍스트 예시
+---
+::
 
 - 메시지는 +61(호주 기반)에서 옵니다.
 - 이 번호를 모르고 예상하지 않았습니다.
@@ -53,7 +63,12 @@ source: "Lindsey LaMont, unsplash"
 <hr>
 
 여기 또 다른 예입니다:
-<Media source="https://cdn.xanzhu.com/v1/text-scams/NZD.webp" alt="지역적인 스미싱 텍스트 예시"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/text-scams/NZD.webp
+alt: 지역적인 스미싱 텍스트 예시
+---
+::
 
 - 이 메시지는 +64(뉴질랜드 기반)에서 옵니다.
 - NZD를 받게 될 것임을 구체적으로 언급합니다.
@@ -62,7 +77,12 @@ source: "Lindsey LaMont, unsplash"
 보시다시피, 이러한 문자 메시지 사기의 목적은 귀하가 이 링크를 클릭하도록 하는 것입니다.
 
 최근의 예:
-<Media source="https://cdn.xanzhu.com/v1/text-scams/nzta.webp" alt="NZ Transport Agency 스미싱 예시"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/text-scams/nzta.webp
+alt: NZ Transport Agency 스미싱 예시
+---
+::
 
 - NZ Transport Agency로부터 온 것으로 주장하며 미납 요금을 지불하라고 요청합니다.
 - 이 메시지는 예상치 못한 것입니다.
@@ -74,7 +94,12 @@ source: "Lindsey LaMont, unsplash"
 위의 예에서 NZTA는 여러분이 미납 요금이 있을 수 있다고 제안합니다. 링크를 클릭하지 마십시오. 대신 공식 NZTA 웹사이트로 직접 이동하십시오.
 
 링크를 비교해 봅시다:
-<Media source="https://cdn.xanzhu.com/v1/text-scams/compare.svg" alt="스미싱 링크 대 비정상적인 링크 비교"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/text-scams/compare.svg
+alt: 스미싱 링크 대 비정상적인 링크 비교
+---
+::
 
 공식 정부 기반 링크는 항상 .govt.nz 도메인을 가지고 있습니다.
 민감한 정보를 입력하기 전에 항상 공식 웹사이트로 이동하십시오.
@@ -84,7 +109,7 @@ source: "Lindsey LaMont, unsplash"
 만약 사기를 당한 경우, 추가 조사를 위해 해당 메시지를 내무부에 전달해 주십시오.
 문자 메시지를 다음 번호로 단순히 전달하십시오: 7726.
 
-여기에서 메시지를 전달하는 방법을 보십시오: <PageLink title="iOS" url="https://support.apple.com/en-nz/guide/iphone/iph125628311/ios"></PageLink>. 안드로이드 기기의 경우, 이것은 메시지를 누르고 전달을 선택하는 비슷한 프로세스여야 합니다.
+여기에서 메시지를 전달하는 방법을 보십시오: :PageLink{title="iOS" url="https://support.apple.com/en-nz/guide/iphone/iph125628311/ios"}. 안드로이드 기기의 경우, 이것은 메시지를 누르고 전달을 선택하는 비슷한 프로세스여야 합니다.
 
 직접 해당 기관에 신고하십시오. 뉴질랜드 내에서 활동 중인 인기 있는 서비스의 이메일 주소를 나열했습니다. 의심스러운 텍스트 메시지나 이메일을 스크린샷으로 찍어 이메일에 첨부하십시오.
 
@@ -105,8 +130,8 @@ Spark NZ - scamhelp@spark.co.nz
 <hr>
 더 알아보기:
 
-- <PageLink title="dia.govt.nz" url="https://www.dia.govt.nz/Spam-How-to-Report-Scams"></PageLink>
+- :PageLink{title="dia.govt.nz" url="https://www.dia.govt.nz/Spam-How-to-Report-Scams"}
 
-- <PageLink title="cert.nz" url="https://www.cert.govt.nz/individuals/common-threats/phishing/"></PageLink>
+- :PageLink{title="cert.nz" url="https://www.cert.govt.nz/report/business-and-individuals/"}
 
-- <PageLink title="netsafe.org.nz" url="https://report.netsafe.org.nz/hc/en-au/requests/new"></PageLink>
+- :PageLink{title="netsafe.org.nz" url="https://report.netsafe.org.nz/hc/en-au/requests/new"}
