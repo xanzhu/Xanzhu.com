@@ -17,15 +17,27 @@ feature: true
 
 ## Arc
 
-<Media source="https://cdn.xanzhu.com/v1/better-browsers/arc.webp" credit="The Browser Company / Xanzhu" alt="아크 브라우저 로고"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/better-browsers/arc.webp
+credit: The Browser Company / Xanzhu
+alt: 아크 브라우저 로고
+---
+::
 
-<PageLink title="The Browser Company" url="https://thebrowser.company/"></PageLink> 가 구축한 시장의 새로운 경쟁자는 일부 개발자들과 함께 일해 온 동문 개발자들의 확고한 집합체입니다. 구글 크롬, 인스타그램 등과 같은 인터넷에서 가장 인기 있는 웹 서비스. 이 분야에 대한 강력한 전문 지식을 갖춘 The Browser Company는 브라우징 경험의 창의성과 접근성을 재점화하여 일반 브라우저의 동작을 변경하기 위해 노력하고 있습니다.
+:PageLink{title="The Browser Company" url="https://thebrowser.company/"} 가 구축한 시장의 새로운 경쟁자는 일부 개발자들과 함께 일해 온 동문 개발자들의 확고한 집합체입니다. 구글 크롬, 인스타그램 등과 같은 인터넷에서 가장 인기 있는 웹 서비스. 이 분야에 대한 강력한 전문 지식을 갖춘 The Browser Company는 브라우징 경험의 창의성과 접근성을 재점화하여 일반 브라우저의 동작을 변경하기 위해 노력하고 있습니다.
 
 Arc라는 브라우저는 유동적이고 흥미롭게 사용할 수 있는 새로운 브라우징 경험을 제공합니다. 이 브라우저는 현재 개발 중이며 초대 전용입니다. 나는 초기에 이 브라우저를 사용할 수 있었고 독특한 디자인과 느낌에 깊은 인상을 받았습니다. 우리가 전통적인 브라우저를 보는 방식을 바꿀 브라우저입니다.
 
 Arc는 삶에서 멀티태스킹과 창의성이 필요한 학생과 전문가를 위한 완벽한 브라우저입니다. 생산성과 창의성을 지원하는 기능이 추가되어 매끄럽고 효율적인 브라우징 경험을 중시하는 사람들에게 이상적인 도구입니다.
 
-<Media source="https://cdn.xanzhu.com/v1/better-browsers/arc-features.webp" credit="The Browser Company" alt="Arc 브라우저 기능 프로모션"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/better-browsers/arc-features.webp
+credit: The Browser Company
+alt: Arc 브라우저 기능 프로모션
+---
+::
 
 ### 개발자 모드
 
@@ -34,7 +46,14 @@ Arc는 삶에서 멀티태스킹과 창의성이 필요한 학생과 전문가�
 ### 네이티브 PiP
 
 Arc는 미디어가 재생 중인 탭에서 전환할 때 자동으로 활성화되는 내장 PiP(Picture-in-Picture) 모드를 제공합니다. 이 기능은 멀티태스킹 프로세스를 간소화하는 데 매우 유용하며 사용자 인터페이스(UI)에서 직접 미디어 컨트롤을 제공하므로 매번 탭으로 다시 전환할 필요 없이 일시 중지, 앞 또는 뒤로 건너뛰기, 볼륨 조절이 가능합니다. PiP 창은 필요에 맞게 크기를 조정하고 화면의 어느 위치에나 배치할 수 있어 보다 개인화되고 편리한 미디어 재생 경험을 제공합니다. 이 기능은 다른 작업을 하면서 비디오를 볼 수 있는 좋은 방법이며 멀티태스킹을 좋아하는 사람들에게 매우 유용합니다.
-<Media source="https://cdn.xanzhu.com/v1/better-browsers/split-view.webp" credit="Xanzhu" alt="Arc 브라우저 분할 보기 기능"></Media>
+
+::media
+---
+source: https://cdn.xanzhu.com/v1/better-browsers/split-view.webp
+credit: Xanzhu
+alt: Arc 브라우저 분할 보기 기능
+---
+::
 
 ### Spaces
 
@@ -48,11 +67,17 @@ Arc는 미디어가 재생 중인 탭에서 전환할 때 자동으로 활성화
 - Notes and Easel - 내장된 메모 작성 및 디자인 도구
 - 리틀 아크 - 탭 기능 내의 탭
 
-The Browser Company가 모든 브라우저의 판도를 어떻게 바꾸고 있는지 자세히 알아보고 <PageLink title="Arc.net" url="https://arc.net/"></PageLink> 에 가입하여 액세스 권한을 얻으세요.
+The Browser Company가 모든 브라우저의 판도를 어떻게 바꾸고 있는지 자세히 알아보고 :PageLink{title="Arc.net" url="https://arc.net/"} 에 가입하여 액세스 권한을 얻으세요.
 
 ## Brave
 
-<Media source="https://cdn.xanzhu.com/v1/better-browsers/brave.webp" credit="Brave / Xanzhu" alt="아크 브라우저 로고"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/better-browsers/brave.webp
+credit: Brave / Xanzhu
+alt: 아크 브라우저 로고
+---
+::
 
 궁극적으로 Brave는 Chromium을 사용하여 동일한 생태계에 구축된 Google Chrome 자체에 대한 도전자입니다. 두 브라우저의 주요 차이점은 Brave가 개인 정보를 최우선으로 한다는 것입니다. Chrome은 널리 사용되는 브라우저이지만 브라우징 경험의 모든 측면을 추적하는 많은 도구와 서비스가 함께 제공됩니다. Brave는 이러한 핵심 추적 기능을 제거하고 제거하여 보안을 크게 향상시킵니다.
 
@@ -68,7 +93,13 @@ Brave의 광고 차단기는 모든 수준의 광고를 제거하는 데 탁월�
 
 Brave를 사용하면 개인 정보를 보호하면서 브라우징 경험을 더 잘 제어할 수 있습니다. 브라우저의 고급 광고 및 트래커 차단, 쿠키 관리 기능은 지문 방지 제어 기능과 함께 개인 정보 및 보안을 보호하는 강력한 도구입니다.
 
-<Media source="https://cdn.xanzhu.com/v1/better-browsers/brave-adblock.webp" credit="Brave" alt="용감한 광고 차단기 패널"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/better-browsers/brave-adblock.webp
+credit: Brave
+alt: 용감한 광고 차단기 패널
+---
+::
 
 ### 웹3 지원
 
@@ -80,7 +111,7 @@ Web3로의 전환이 진행되는 동안 Brave는 브라우저 고유의 암호�
 
 ### Brave Search
 
-Google 또는 Bing을 검색 공급자로 사용하는 것에 대한 의존도를 줄이기 위해 Brave는 최근 <PageLink title="Brave Search" url="https://search.brave.com/"></PageLink> 라는 자체 검색 엔진을 출시했습니다. DuckDuckGo의 이전 방법을 사용하는 것보다 보안. 여전히 추진력과 더 많은 기능을 확보하면서 Brave Search는 차세대 검색이 편향되지 않고 콘텐츠에 액세스할 수 있도록 하기 위한 조치를 취하고 있습니다.
+Google 또는 Bing을 검색 공급자로 사용하는 것에 대한 의존도를 줄이기 위해 Brave는 최근 :PageLink{title="Brave Search" url="https://search.brave.com/"} 라는 자체 검색 엔진을 출시했습니다. DuckDuckGo의 이전 방법을 사용하는 것보다 보안. 여전히 추진력과 더 많은 기능을 확보하면서 Brave Search는 차세대 검색이 편향되지 않고 콘텐츠에 액세스할 수 있도록 하기 위한 조치를 취하고 있습니다.
 
 Brave Search는 빠르고 가볍고 효율적인 검색 경험을 제공하는 오픈 소스 검색 엔진인 Preact를 기반으로 구축되었습니다. 검색 엔진은 또한 사용자의 개인 정보를 존중하며 개인 데이터를 추적하거나 저장하지 않습니다. 또한 Brave Search는 스폰서 결과를 필터링하는 알고리즘을 사용하여 검색 결과가 편향되지 않고 사용자가 가장 관련성 있고 유용한 결과를 볼 수 있도록 합니다.
 
@@ -89,15 +120,26 @@ Brave는 검색 엔진을 개선하고 음성 검색, Brave 브라우저와의 �
 
 ### 토르
 
-<Media source="https://cdn.xanzhu.com/v1/better-browsers/snowflake-tor.webp" credit="Tor Project" alt="Tor가 제공하는 Snowflake 프로토콜 다이어그램"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/better-browsers/snowflake-tor.webp
+credit: Tor Project
+alt: Tor가 제공하는 Snowflake 프로토콜 다이어그램
+---
+::
 
 브라우저에는 Tor 네트워크에 연결하는 옵션도 포함되어 있어 딥 웹 또는 .onion 주소에 액세스하려는 사용자에게 유용합니다. 검열과 싸우기 위해 구현되는 새로운 기능은 사용자가 다른 사용자가 연결할 수 있는 노드를 생성하고 인터넷에 대한 제한을 탐색하기 위한 중개자 역할을 할 수 있는 Snowflake 프로토콜입니다.
 
-<Media source="https://cdn.xanzhu.com/v1/better-browsers/snowflake.webp" alt="용감한 브라우저에서 Snowflake 구현"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/better-browsers/snowflake.webp
+alt: 용감한 브라우저에서 Snowflake 구현
+---
+::
 
-<PageLink title="The Tor Project" url="https://snowflake.torproject.org/"></PageLink> 에서 Snowflake 프로토콜에 대해 자세히 알아볼 수 있습니다.
+:PageLink{title="The Tor Project" url="https://snowflake.torproject.org/"} 에서 Snowflake 프로토콜에 대해 자세히 알아볼 수 있습니다.
 
-Brave 브라우저에서 이를 구현하거나 활성화하려면 <PageLink title="Brave 지원" url="https://support.brave.com/hc/en-us/articles/9059440641421-What-is-the-Snowflake-extension"></PageLink>
+Brave 브라우저에서 이를 구현하거나 활성화하려면 :PageLink{title="Brave 지원" url="https://support.brave.com/hc/en-us/articles/9059440641421-What-is-the-Snowflake-extension"}
 
 ### 다른 특징들
 
@@ -107,13 +149,25 @@ Brave 브라우저의 내장 VPN 기능은 웹을 검색할 때 추가 보안 �
 
 브라우저의 보상 프로그램은 사용자가 개인 정보를 존중하는 광고를 보고 BAT(Basic Attention Token)를 획득하고 이를 사용하여 좋아하는 콘텐츠 제작자에게 기여할 수 있는 고유한 기능입니다. 크리에이터를 지원하고 웹을 탐색하는 동안 관심에 대한 보상을 받을 수 있는 혁신적인 방법입니다.
 
-<Media source="https://cdn.xanzhu.com/v1/better-browsers/brave-compare.webp" credit="Brave" alt="보안 기능에 대한 Brave의 비교 차트"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/better-browsers/brave-compare.webp
+credit: Brave
+alt: 보안 기능에 대한 Brave의 비교 차트
+---
+::
 
-<PageLink title="Brave.com" url="https://brave.com/"></PageLink> 을 방문하여 브라우저를 다운로드하고 차이점을 직접 경험해 보세요. 일반 사용자이든 개발자이든 Brave는 브라우징 경험을 향상시키는 다양한 기능을 제공합니다. Brave를 사용하면 더 많은 개인 정보 보호, 보안 및 효율성으로 웹을 탐색할 수 있습니다.
+:PageLink{title="Brave.com" url="https://brave.com/"} 을 방문하여 브라우저를 다운로드하고 차이점을 직접 경험해 보세요. 일반 사용자이든 개발자이든 Brave는 브라우징 경험을 향상시키는 다양한 기능을 제공합니다. Brave를 사용하면 더 많은 개인 정보 보호, 보안 및 효율성으로 웹을 탐색할 수 있습니다.
 
 ## FireFox
 
-<Media source="https://cdn.xanzhu.com/v1/better-browsers/firefox.webp" credit="Mozilla / Xanzhu" alt="파이어폭스 브라우저 로고"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/better-browsers/firefox.webp
+credit: Mozilla / Xanzhu
+alt: 파이어폭스 브라우저 로고
+---
+::
 
 Firefox는 Mozilla에서 개발한 빠르고 안전한 브라우저입니다. Chromium 생태계 외부에 있는 자체 수준에서 고유한 다양한 훌륭한 도구와 서비스를 제공합니다. 모든 장치에서 기본적으로 작동하는 자체 브라우저 생태계에서 전적으로 실행됩니다. 다른 브라우저에 비해 기능이 많지는 않지만 안정성 면에서 안심할 수 있습니다.
 
@@ -129,9 +183,15 @@ Firefox는 또한 개인 정보 보호 및 성능 측면에서 향상된 경험�
 
 Firefox는 개인 정보 보호 및 성능을 향상시키는 다양한 내장 기능을 통해 빠르고 안전한 브라우징 경험을 제공합니다. 오픈 소스이며 개인 정보 보호와 성능을 우선시하는 브라우저를 찾고 있다면 고려해 볼 가치가 있습니다.
 
-<Media source="https://cdn.xanzhu.com/v1/better-browsers/firefox-compare.webp" credit="Mozilla" alt="Firefox의 보안 기능 비교 차트"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/better-browsers/firefox-compare.webp
+credit: Mozilla
+alt: Firefox의 보안 기능 비교 차트
+---
+::
 
-Firefox는 안정성과 개인 정보 보호를 중시하는 사용자에게 탁월한 선택입니다. 비슷한 범위의 기능과 빠른 성능을 제공하는 Brave의 완벽한 대안입니다. <PageLink title="Firefox.com" url="https://www.mozilla.org/en-US/firefox/new/"></PageLink> 을 방문하여 브라우저를 다운로드하고 차이점을 직접 경험해 보십시오.
+Firefox는 안정성과 개인 정보 보호를 중시하는 사용자에게 탁월한 선택입니다. 비슷한 범위의 기능과 빠른 성능을 제공하는 Brave의 완벽한 대안입니다. :PageLink{title="Firefox.com" url="https://www.mozilla.org/en-US/firefox/new/"} 을 방문하여 브라우저를 다운로드하고 차이점을 직접 경험해 보십시오.
 
 ## 기본값
 
@@ -145,7 +205,7 @@ Windows의 기본 옵션은 Microsoft Edge로, Windows 에코시스템과 잘 �
 
 Microsoft Edge는 Chromium 엔진으로 업데이트된 견고한 브라우저로, 대부분의 웹사이트와 호환되며 빠른 성능을 제공합니다. 또한 개인 정보 보호 및 보안을 강화하는 내장형 광고 차단기, 추적 방지 및 암호 관리자와 같은 다양한 기능이 포함되어 있습니다. 일부 사용자에게 유용할 수 있는 또 다른 기능은 이전 Internet Explorer 사이트에 액세스하는 기능입니다.
 
-<PageLink title="Microsoft Edge" url="https://www.microsoft.com/en-us/edge"></PageLink> 에 대해 자세히 알아보고 귀하와 귀하의 요구에 적합한 브라우저인지 확인하세요.
+:PageLink{title="Microsoft Edge" url="https://www.microsoft.com/en-us/edge"} 에 대해 자세히 알아보고 귀하와 귀하의 요구에 적합한 브라우저인지 확인하세요.
 
 ### 맥 OS
 

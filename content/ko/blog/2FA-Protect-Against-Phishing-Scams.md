@@ -37,17 +37,27 @@ feature: true
 
 ### Aegis
 
-<Media source="https://cdn.xanzhu.com/v1/2-factor-auth/aegis.webp" alt="Aegis Authenticator 로고"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/2-factor-auth/aegis.webp
+alt: Aegis Authenticator 로고
+---
+::
 
 Aegis는 Google Play 스토어 및 F-Droid를 통해 Android에서 사용할 수 있는 무료 오픈 소스 인증 앱입니다. 앱을 열자마자 토큰이 표시되지 않기 때문에 표준 소프트웨어에 비해 보안이 강화되었습니다.
 
 또한 장치 간에 토큰을 내보내고 가져올 수 있으므로 전화를 전환할 때 편리합니다. 오픈 소스 앱으로서 투명성과 보안을 위해 코드베이스를 검토할 수 있습니다.
 
-<PageLink title="getaegis.app" url="https://getaegis.app/"></PageLink> 를 방문하여 Aegis에 대해 자세히 알아보세요.
+:PageLink{title="getaegis.app" url="https://getaegis.app/"} 를 방문하여 Aegis에 대해 자세히 알아보세요.
 
 ### 2FAS
 
-<Media source="https://cdn.xanzhu.com/v1/2-factor-auth/2fas.webp" alt="2FAS 인증 로고"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/2-factor-auth/2fas.webp
+alt: 2FAS 인증 로고
+---
+::
 
 2FAS는 제가 개인적으로 가장 좋아하는 것으로, Android와 iOS 모두에서 완벽한 2단계 인증 경험을 제공합니다. 또한 Brave, Firefox, Opera 등을 위한 브라우저 확장 기능이 있어 브라우저에서 2FA 코드에 빠르게 액세스할 수 있습니다.
 
@@ -59,11 +69,16 @@ Aegis는 Google Play 스토어 및 F-Droid를 통해 Android에서 사용할 수
 - 생체 인식/암호 보호
 - 오프라인 기능.
 
-2FAS는 오픈 소스이며 무료로 사용할 수 있으며 암호나 메타데이터를 저장하지 않으므로 보안 및 개인 정보 보호 측면에서 안심할 수 있습니다. 더 많은 기능이 작업 중이며 <PageLink title="2fas.com" url="https://2fas.com/"></PageLink> 을 방문하여 이에 대해 자세히 알아볼 수 있습니다.
+2FAS는 오픈 소스이며 무료로 사용할 수 있으며 암호나 메타데이터를 저장하지 않으므로 보안 및 개인 정보 보호 측면에서 안심할 수 있습니다. 더 많은 기능이 작업 중이며 :PageLink{title="2fas.com" url="https://2fas.com/"} 을 방문하여 이에 대해 자세히 알아볼 수 있습니다.
 
 ### Raivo OTP
 
-<Media source="https://cdn.xanzhu.com/v1/2-factor-auth/ravio.webp" alt="Ravio Authenticator 로고"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/2-factor-auth/ravio.webp
+alt: Ravio Authenticator 로고
+---
+::
 
 Raivo OTP는 경량의 오픈 소스이며 모든 Apple 장치에서 동기화되는 인증 앱을 무료로 사용할 수 있습니다. Swift 5를 사용하여 제작된 이 앱은 Apple 에코시스템의 기본 앱이며 모바일 장치와 MacOS 모두에서 작동합니다.
 
@@ -73,7 +88,7 @@ Raivo OTP는 경량의 오픈 소스이며 모든 Apple 장치에서 동기화�
 - iCloud와 동기화
 - 각각의 일회용 비밀번호(OTP)를 사용자 정의합니다.
 
-<PageLink title="raivo-otp.com" url="https://raivo-otp.com/"></PageLink> 을 방문하면 Ravio OTP에 대해 자세히 알아볼 수 있습니다.
+:PageLink{title="raivo-otp.com" url="https://raivo-otp.com/"} 을 방문하면 Ravio OTP에 대해 자세히 알아볼 수 있습니다.
 
 ## SMS 인증
 
@@ -107,7 +122,7 @@ SIM 스와핑의 위험을 방지하기 위해 다음을 수행할 수 있습니
 
 이 인증 방법은 손에 들고 있는 물리적 장치이므로 공격자가 계정을 손상시키는 것이 거의 불가능하므로 더 안전합니다. 보안 키를 사용하면 계정에서 키가 확인되면 추가 인증이 필요하지 않으므로 인증을 위한 추가 코드가 필요하지 않습니다.
 
-MFA는 WebAuth/FIDO 및 스마트 카드/PIV 인증과 통합되어 일반적인 피싱 시도로부터 보호하므로 엔터프라이즈 사용에 이상적입니다. 보안 키는 이 기술이 발전함에 따라 플랫폼과 서비스에서 계속 널리 채택될 것입니다. <PageLink title="Yubico.com" url="https://www.yubico.com/"></PageLink> 을 방문하여 보안 키 및 해당 기능에 대해 자세히 알아볼 수 있습니다.
+MFA는 WebAuth/FIDO 및 스마트 카드/PIV 인증과 통합되어 일반적인 피싱 시도로부터 보호하므로 엔터프라이즈 사용에 이상적입니다. 보안 키는 이 기술이 발전함에 따라 플랫폼과 서비스에서 계속 널리 채택될 것입니다. :PageLink{title="Yubico.com" url="https://www.yubico.com/"} 을 방문하여 보안 키 및 해당 기능에 대해 자세히 알아볼 수 있습니다.
 
 ## 요약
 

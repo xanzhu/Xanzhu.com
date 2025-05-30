@@ -2,6 +2,7 @@
 title: "Windows Virtual Machine on Apple Silicon 2023"
 description: "Learn how to setup Windows on Apple Silicon using UTM, a free and open-source virtualisation software."
 date: "2023-11-23"
+updated: "2023-11-23"
 tag: "Guide"
 toc: true
 feature: true

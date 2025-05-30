@@ -18,10 +18,10 @@ definePageMeta({
     <section aria-labelledby="hero">
       <HomeHero />
     </section>
-    <section aria-labelledby="brand-list">
+    <section aria-labelledby="brand-list" class="mb24">
       <LazyHomeBrandList />
     </section>
-    <section aria-labelledby="latest-posts" class="mb42">
+    <section aria-labelledby="latest-posts" class="mb32">
       <LazyHomeBlogFeature />
     </section>
     <section aria-labelledby="pages-card" class="mb32">

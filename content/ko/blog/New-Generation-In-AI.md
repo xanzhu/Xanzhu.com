@@ -14,9 +14,9 @@ alt: "ChatGPT 시각 디자인 Xanzhu"
 
 ChatGPT는 새로운 문제를 해결하므로 많은 관심을 받고 있습니다. 이전 기사에서 언급했듯이 ChatGPT와 같은 언어 모델은 우리의 미래가 어떤 모습일지 엿볼 수 있게 해줍니다. 초기 기사를 게시한 이후 유사한 서비스를 제공하거나 단순히 ChatGPT의 API를 활용하는 더 많은 회사에서 모델 자체가 버전 4로 업데이트되어 더 복잡한 결과와 기능을 제공하는 등 몇 가지 사항이 변경되었습니다.
 
-<PageLink title="OpenAI" url="https://openai.com/"></PageLink> 에서 최신 정보를 확인하세요.
+:PageLink{title="OpenAI" url="https://openai.com/"} 에서 최신 정보를 확인하세요.
 
-직접 ChatGPT를 사용해 보세요: <PageLink title="ChatGPT" url="https://chat.openai.com/"></PageLink>
+직접 ChatGPT를 사용해 보세요: :PageLink{title="ChatGPT" url="https://chat.openai.com/"}
 
 ### Microsoft
 
@@ -24,17 +24,27 @@ Microsoft는 ChatGPT로 Bing 검색을 출시했습니다. 현재 버전 4를 �
 
 Bing의 새로운 채팅 기능이 Edge 브라우저에 제한된다는 점을 감안할 때 Google Chrome과 경쟁할 충분한 이점이 있음을 보장합니다. 채팅 서비스는 대화 선택 방법을 통해 Creative, Balanced 또는 Precise의 세 가지 모드를 제공합니다. 대화는 저장되지 않으며 다시 시작하기 전에 몇 가지 응답으로 제한됩니다.
 
-<Media source="https://cdn.xanzhu.com/v1/next-gen-ai/bing.webp" alt="Bing의 새로운 챗봇 스플래시 화면"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/next-gen-ai/bing.webp
+alt: Bing의 새로운 챗봇 스플래시 화면
+---
+::
 
 초기 사용 후에는 관련 컨텍스트와 일반 지식 모두에서 답변을 반환하는 데 매우 유용합니다. Bing 검색과 통합할 수 있기 때문에 기본적으로 웹사이트를 스캔한 다음 제공된 링크를 통해 자세히 알아보거나 명확히 할 수 있는 옵션이 포함된 요약을 제공합니다. 지식을 통한 검색과 웹 검색이 혼합되어 있습니다.
 
 주요 차이점은 단지 성격 요인입니다. 정확히 검색한 내용이 주어지면 웹을 검색하는 것과 같은 느낌이 들며 해당 웹사이트에 대한 소스를 나열하여 정보의 출처를 명확하게 제공합니다. 정보를 더 명확하게 하기 위해 초기 요청에 대한 후속 조치로 작용하거나 단순히 답변을 입력할 수 있도록 유사한 응답을 기반으로 옵션을 제안할 수 있습니다.
 
-<Media source="https://cdn.xanzhu.com/v1/next-gen-ai/bdialog.webp" alt="Bing Chatbot 대화상자 미리보기"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/next-gen-ai/bdialog.webp
+alt: Bing Chatbot 대화상자 미리보기
+---
+::
 
 Bing은 사용자에게 제한된 옵션을 제공하고 종종 요청을 차단합니다. 그들은 새로운 주제가 설정되기 전에 응답에 대한 제한을 도입하여 기존 대화를 차단하고 사용자가 채팅을 쓸어버리기 위해 빗자루 버튼을 선택하도록 권장합니다. 이 제한은 모델이 범위를 벗어나는 것을 방지하고 모든 사람이 모델을 사용할 수 있도록 합니다. 고려해야 할 흥미로운 점은 이러한 모델에서 역사가 작동하는 방식입니다. 이 단계에서는 액세스할 수 있는 위치에 저장되지 않고 기본 스플래시 화면으로 다시 재설정됩니다.
 
-Bing의 ChatBot 기능을 직접 사용해 보십시오(Edge 브라우저 필요): <PageLink title="Bing" url="https://bing.com/"></PageLink>
+Bing의 ChatBot 기능을 직접 사용해 보십시오(Edge 브라우저 필요): :PageLink{title="Bing" url="https://bing.com/"}
 
 ### Google
 
@@ -42,25 +52,42 @@ Google은 최근 조기 액세스를 위해 Bard를 열었고 응답 속도는 �
 
 현재 미국과 영국에서 조기 액세스를 통해 사용할 수 있으며 공개 날짜는 발표되지 않았습니다. Bard에 대한 Google의 개념은 웹 검색을 보완하는 것입니다. 이 모델은 정확한 결과를 검색하고 응답하는 Bing과 유사할 가능성이 높습니다. 아래에 언급된 다른 소프트웨어의 음유시인은 약간 더 고급이며 해당 소프트웨어에 고유합니다.
 
-<Media source="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/AI_features_feb6.gif " alt="Bard GIF 프롬프트" credit="Google"></Media>
+::media
+---
+source: https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/AI_features_feb6.gif
+alt: Bard GIF 프롬프트
+credit: Google
+---
+::
 
 소프트웨어의 정확도와 기능이 개선되어 앞으로 몇 달 동안 Google에 더 많은 변화와 개선이 있을 것으로 기대합니다. 그들의 언어 모델(LaMDA)이 Bard에서 사용하기 위해 테스트되고 완성되면 더 적은 제한이 적용되어 사용자가 Google의 방대한 데이터 아카이브에서 검색하고 결과를 얻을 수 있습니다. 당분간 이것은 느린 릴리스이며 Bard의 최종 제품이 아닐 것입니다.
 
-Bard에 대해 자세히 알아보고 대기자 명단에 등록하세요. <PageLink title="Google" url="https://bard.google.com/"></PageLink>
+Bard에 대해 자세히 알아보고 대기자 명단에 등록하세요. :PageLink{title="Google" url="https://bard.google.com/"}
 
 ### 소프트웨어 적응
 
 Google과 Microsoft는 소프트웨어 라인업 전체에서 일상적인 작업의 속도를 높이는 데 도움이 되는 AI 솔루션과 함께 소프트웨어를 제공하기 시작했습니다. Google은 처음에 문서, Gmail 등과 같은 소프트웨어에 Generative AI 도구를 도입하는 작업을 하고 있다고 발표했습니다. 이러한 새로운 AI 기능은 작업 방식을 개선하여 계획하는 데 소요되는 시간을 줄여줍니다. 다음 예는 사용자에게 원하는 정보를 입력하도록 요청하는 ChatGPT와 같은 상자가 있는 Google 문서를 보여 주며 전체 문서를 생성합니다!
 
-<Vid source="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_videos/Docs_Web_030623_1.mp4" credit="Google"></Vid>
+::vid
+---
+source: https://storage.googleapis.com/gweb-uniblog-publish-prod/original_videos/Docs_Web_030623_1.mp4
+credit: Google
+---
+::
 
-<PageLink title="Google" url="https://blog.google/technology/ai/ai-developers-google-cloud-workspace/"></PageLink> 의 발표를 읽어보세요.
+:PageLink{title="Google" url="https://blog.google/technology/ai/ai-developers-google-cloud-workspace/"} 의 발표를 읽어보세요.
 
 이 발표 이틀 후 Microsoft는 또한 Word, Excel 및 Outlook과 같은 365 라인업에 도입될 Copilot이라는 새로운 AI 기반 라인업을 출시하기 위해 노력하고 있다고 발표했습니다. 그들의 비전은 자신의 말의 힘을 사용하여 창의성 수준을 높이는 것입니다. Google의 Doc 접근 방식과 마찬가지로 Microsoft는 단순히 요청을 입력하고 마법이 일어나는 것을 지켜보는 유사한 개념을 따릅니다. 약간 다른 점은 Copilot이 파일을 기반으로 콘텐츠를 생성하는 기능도 추가한다는 것입니다.
 
-<Media source="https://cdn.xanzhu.com/v1/next-gen-ai/mfr.webp" alt="Microsoft Generative AI 비주얼" credit="Microsoft"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/next-gen-ai/mfr.webp
+alt: Microsoft Generative AI 비주얼
+credit: Microsoft
+---
+::
 
-<PageLink title="Microsoft" url="https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/"></PageLink> 의 발표 읽기.
+:PageLink{title="Microsoft" url="https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/"} 의 발표 읽기.
 
 두 가지 발표는 문서를 정확히 원하는 방식으로 작성하고 초안을 작성하는 것이 훨씬 더 쉬워진다는 것을 의미합니다. 이에 대한 가능한 우려는 악의적인 행위자가 공격을 자동화하고 완벽하게 만드는 것을 더 쉽게 만들 수 있는 특정 문서를 생성하는 사용입니다.
 
@@ -76,7 +103,13 @@ AI로 생성된 콘텐츠가 합격점을 받는 것을 방지하기 위해 표�
 
 Github의 기존 Copilot 소프트웨어에 새로 추가된 기능은 코딩과 관련하여 진정한 파트너가 될 새로운 언어 모델을 통합하는 보다 복잡한 솔루션을 도입합니다. Microsoft 에코시스템의 일부인 Copilot은 코드 자동 완성에서 최신 ChatGPT 버전 4 및 Github 자체 모델을 실행할 것입니다.
 
-<Media source="https://cdn.xanzhu.com/v1/next-gen-ai/copilot.webp" alt="Github Copilot X 프로모션 비주얼" credit="Github"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/next-gen-ai/copilot.webp
+alt: Github Copilot X 프로모션 비주얼
+credit: Github
+---
+::
 
 코딩의 새로운 동반자인 Copilot은 간단한 문제를 해결하기 위해 Stack Overflow 또는 기타 수많은 포럼을 검색해야 하는 문제를 해결합니다. 많은 디자이너와 웹 개발자는 "How to center a Div."를 검색합니다. 그러나 Visual Studio Code 내에서 직접 Copilot은 ChatGPT와 같은 코드 옆에 기능을 제공하여 코드가 작성되는 동안 대화하고 코드를 읽을 수 있습니다.
 
@@ -86,7 +119,7 @@ Copilot은 모든 개발자에게 유용한 도구가 될 것이며, 프로덕�
 
 현재 기술 미리보기 단계에서 Copilot은 Visual Studio 및 Visual Studio Code와 같은 Microsoft 에코시스템에서 사용할 수 있으며 확장이 개발됨에 따라 Neovim, Jetbrains 등과 같은 다른 통합 개발 환경 또는 IDE로 확장할 계획입니다.
 
-Copilot X 자세히 알아보기: <PageLink title="Github" url="https://github.blog/2023-03-22-github-copilot-x-the-ai-powered-developer-experience/"></PageLink>
+Copilot X 자세히 알아보기: :PageLink{title="Github" url="https://github.blog/2023-03-22-github-copilot-x-the-ai-powered-developer-experience/"}
 
 ### Summarizer
 
@@ -94,21 +127,33 @@ Copilot X 자세히 알아보기: <PageLink title="Github" url="https://github.b
 
 올바른 방향으로 나아가는 단계는 정보의 출처, 정보 출처 및 액세스 방법을 유지하는 것입니다. Brave는 각 응답 아래에 소스 링크를 나열하여 이를 수행합니다. Bing의 접근 방식과 마찬가지로 생성된 콘텐츠를 사용자가 검토하고 평가하여 소스의 신뢰성을 확인할 수 있습니다.
 
-<Media source="https://cdn.xanzhu.com/v1/next-gen-ai/bse.webp" alt="Brave 요약기 시각적 개체" credit="Brave"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/next-gen-ai/bse.webp
+alt: Brave 요약기 시각적 개체
+credit: Brave
+---
+::
 
 많은 언어 모델은 정보의 출처를 식별하지 않습니다. 특히 ChatGPT는 정보를 표시하지만 출처는 밝히지 않습니다. 속성 없이 결과를 제공하면 언어 모델이 학습된 대상에 따라 편향 수준을 설정할 수 있습니다. 언어 모델이 소스를 존중하고 결과의 편향을 완화하도록 훈련되었는지 확인하는 것이 중요합니다.
 
 Summarizer라는 지정된 섹션을 제공하는 것 외에도 Brave의 AI 모델은 특정 답변을 강조하는 보다 세련된 요약으로 검색 결과의 결과 스니펫을 변경하여 사용자가 콘텐츠를 더 잘 이해할 수 있도록 합니다.
 
-<Media source="https://cdn.xanzhu.com/v1/next-gen-ai/bdc.webp" alt="Brave 인라인 요약 시각적 개체" credit="Brave"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/next-gen-ai/bdc.webp
+alt: Brave 인라인 요약 시각적 개체
+credit: Brave
+---
+::
 
 Bing 또는 Google을 사용하는 것과 차별화되는 점은 Brave의 AI 모델이 전적으로 Brave에 의해 실행되며 ChatGPT와 같은 언어 모델 솔루션에 대해 타사에 의존하지 않는다는 것입니다. 사내에서 개발된 그들의 언어 모델은 소프트웨어 라인업 전반에 걸쳐 독립적이고 비공개라는 동일한 정신을 따르는 세 가지 다른 대규모 언어 모델 또는 LLM에서 훈련됩니다. 이러한 모델은 BART, DeBerta 및 검색 결과의 자체 데이터를 기반으로 하며 모두 질문 응답, 분류 및 요약과 같은 다양한 작업을 완료하도록 훈련되었습니다.
 
 Brave는 업계 거대 기업에 대한 대안에 계속해서 도전하고 혁신하고 있습니다. 비교적 새롭기 때문에 완벽하지 않으며 AI가 발전하고 검색 엔진이 발전함에 따라 계속 적응할 것입니다.
 
-<PageLink title="Brave" url="https://brave.com/ai-summarizer/"></PageLink> 의 새로운 기능에 대해 자세히 알아보세요.
+:PageLink{title="Brave" url="https://brave.com/ai-summarizer/"} 의 새로운 기능에 대해 자세히 알아보세요.
 
-그들의 검색 엔진을 사용해보십시오 - 비공개입니다! <PageLink title="Brave Search" url="https://search.brave.com"></PageLink>
+그들의 검색 엔진을 사용해보십시오 - 비공개입니다! :PageLink{title="Brave Search" url="https://search.brave.com"}
 
 ### 스포티 파이
 
@@ -116,7 +161,13 @@ Spotify는 사용자의 과거 데이터를 사용하여 청취 습관을 기반
 
 OpenAI와 DJ의 목소리에 사용되는 Sonantic의 음성 모델로 구동되며 일반적인 DJ처럼 행동하고 반응하도록 훈련된 그들의 AI 모델은 장르, 아티스트 또는 분위기와 같은 다양한 카테고리를 가지고 있습니다. 당신이 좋아하는 모든 음악.
 
-<Media source="https://cdn.xanzhu.com/v1/next-gen-ai/spotify.webp" alt="Spotify DJ 프로모션 비주얼" credit="Spotify"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/next-gen-ai/spotify.webp
+alt: Spotify DJ 프로모션 비주얼
+credit: Spotify
+---
+::
 
 사용자의 음악 취향을 정확하게 개인화하고 찾는 Spotify의 알고리즘은 놀라웠습니다. 주요 언어 모델 없이 음악을 정확하게 일치시킬 수 있습니다. 현재 Spotify의 문제는 사용자에게 동일하지 않은 경험을 제공하는 것입니다. 일반적인 문제는 재생 목록이나 노래 라디오에서 콘텐츠가 종종 동일한 순서로 반복된다는 것입니다.
 
@@ -124,7 +175,7 @@ OpenAI와 DJ의 목소리에 사용되는 Sonantic의 음성 모델로 구동되
 
 이것에 대한 몇 가지 우려는 특정 음악 장르에 대해 훈련되는 모델입니다. 완전히 다른 것으로 분류될 수 있는 음악의 하위 장르가 많이 있으며 이는 전혀 관련 없는 장르의 노래를 추천할 때 문제가 됩니다. 완전히 새로운 노래 또는 오래된 노래가 혼합되어 있다는 점을 감안할 때 AI 모델은 사용자에게 바람직하지 않은 제목이나 아티스트를 제공할 때 잠재적인 위험을 제시할 수 있습니다. 이것에 대해 더 자세히 설명합니다.
 
-자세히 알아보기: <PageLink title="Spotify" url="https://newsroom.spotify.com/2023-02-22/spotify-debuts-a-new-ai-dj-right-in-your-pocket/"></PageLink>
+자세히 알아보기: :PageLink{title="Spotify" url="https://newsroom.spotify.com/2023-02-22/spotify-debuts-a-new-ai-dj-right-in-your-pocket/"}
 
 ### 다음
 

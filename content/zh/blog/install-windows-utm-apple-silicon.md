@@ -11,9 +11,9 @@ alt: "在 Apple Silicon 上通过 UTM 运行 Windows 11"
 
 在 Apple Silicon 上运行 Windows 越来越受欢迎。在本指南中，我们将逐步介绍如何使用专为 macOS 设计的免费开源虚拟化工具 UTM 在虚拟机中设置 Windows 11。
 
-我们之前的<PageLink title="文章" url="/blog/windows-on-apple-silicon">文章</PageLink>介绍了 Windows 11 的设置过程，但自那时以来发生了一些变化，因此本新指南将作为 2025 年在 Apple Silicon 上安装 Windows 11 的最新说明！
+我们之前的 :PageLink{title="文章" url="/blog/windows-on-apple-silicon"} 介绍了 Windows 11 的设置过程，但自那时以来发生了一些变化，因此本新指南将作为 2025 年在 Apple Silicon 上安装 Windows 11 的最新说明！
 
-对于在 Apple Silicon 上安装 Windows 的替代解决方案，请注意这些是付费解决方案，可能以更高的价格提供更好的性能。查看<PageLink title="Parallels Desktop" url="https://www.parallels.com/products/desktop/"></PageLink>或<PageLink title="VMware Fusion" url="https://www.vmware.com/products/fusion.html"></PageLink>。
+对于在 Apple Silicon 上安装 Windows 的替代解决方案，请注意这些是付费解决方案，可能以更高的价格提供更好的性能。查看 :PageLink{title="Parallels Desktop" url="https://www.parallels.com/products/desktop/"}或 :PageLink{title="VMware Fusion" url="https://www.vmware.com/products/fusion.html"}
 
 UTM 是一款适用于 macOS 的免费开源虚拟化工具，旨在简单易用，并通过自定义提供原生性能。
 
@@ -26,19 +26,24 @@ UTM 是一款适用于 macOS 的免费开源虚拟化工具，旨在简单易用
 
 ## UTM 下载
 
-从<PageLink title="UTM Github 发布页面" url="https://github.com/utmapp/UTM/releases"></PageLink>下载 UTM 4.6.5 版本。之前的 4.x.x 版本也应该可以工作。
+从 :PageLink{title="UTM Github 发布页面" url="https://github.com/utmapp/UTM/releases"} 下载 UTM 4.6.5 版本。之前的 4.x.x 版本也应该可以工作。
 
-UTM 的自动更新可通过付费的<PageLink title="App Store 版本" url="https://apps.apple.com/us/app/utm-virtual-machines/id1538878817"></PageLink>获得。或者，使用 GitHub 版本并根据需要手动更新。
+UTM 的自动更新可通过付费的 :PageLink{title="App Store 版本" url="https://apps.apple.com/us/app/utm-virtual-machines/id1538878817"} 获得。或者，使用 GitHub 版本并根据需要手动更新。
 
 将 UTM 拖到您的“应用程序”文件夹中，并验证它是否正确打开。
 
 ## CrystalFetch 下载
 
-<Media source="https://cdn.xanzhu.com/v1/m4-windows/windows-crystalfetch-appstore.webp" alt="显示 CrystalFetch 应用程序的 Apple App Store"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m4-windows/windows-crystalfetch-appstore.webp
+alt: 显示 CrystalFetch 应用程序的 Apple App Store
+---
+::
 
-从<PageLink title="App Store" url="https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12"></PageLink>下载 CrystalFetch 2.2.0 版本。此选项免费，并提供自动更新。
+从 :PageLink{title="App Store" url="https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12"} 下载 CrystalFetch 2.2.0 版本。此选项免费，并提供自动更新。
 
-或者，从<PageLink title="CrystalFetch Github 发布页面" url="https://github.com/TuringSoftware/CrystalFetch/releases"></PageLink>下载最新版本。这将需要手动更新，但可能会在正式发布之前提供新功能以及潜在的错误修复。
+或者，从 :PageLink{title="CrystalFetch Github 发布页面" url="https://github.com/TuringSoftware/CrystalFetch/releases"} 下载最新版本。这将需要手动更新，但可能会在正式发布之前提供新功能以及潜在的错误修复。
 
 将 CrystalFetch 拖到您的“应用程序”文件夹中，并验证它是否正确打开。
 
@@ -56,20 +61,30 @@ UTM 的自动更新可通过付费的<PageLink title="App Store 版本" url="htt
 4. 选择您的语言和 Windows 版本（**Windows 11**）。
 5. 选择 **下载** 并接受许可协议。
 
-<Media source="https://cdn.xanzhu.com/v1/m4-windows/windows-crystalfetch.webp" alt="Windows 11 的 CrystalFetch 应用程序设置"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m4-windows/windows-crystalfetch.webp
+alt: Windows 11 的 CrystalFetch 应用程序设置
+---
+::
 
 下载将自动开始。ISO 大约 4.69GB。完成后，选择目标文件夹并确认存储 ISO。我们将使用默认的“下载”文件夹。
 
 ### Windows - 直接下载
 
-要直接从 Microsoft 网站下载，请导航至<PageLink title="Windows 11 ISO" url="https://www.microsoft.com/zh-cn/software-download/windows11arm64"></PageLink>。
+要直接从 Microsoft 网站下载，请导航至 :PageLink{title="Windows 11 ISO" url="https://www.microsoft.com/zh-cn/software-download/windows11arm64"}
 
 1. 从下拉菜单中选择 **Windows 11 (适用于 Arm64 的多版本 ISO)**。
 2. 选择 **下载** 以下载 ISO。
 3. 选择您的 **产品语言** 并选择 **确认**。
 4. 选择 **立即下载**。
 
-<Media source="https://cdn.xanzhu.com/v1/m4-windows/windows-iso-download.webp" alt="Windows 11 ISO 下载页面"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m4-windows/windows-iso-download.webp
+alt: Windows 11 ISO 下载页面
+---
+::
 
 这将开始下载 ISO。它大约 5.47GB，将存储在“下载”文件夹中。
 
@@ -79,7 +94,12 @@ CrystalFetch 和直接下载的区别在于，CrystalFetch 允许选择下载特
 
 在 UTM 中，单击 **+** 图标开始创建新的虚拟机。
 
-<Media source="https://cdn.xanzhu.com/v1/m4-windows/windows-utm-app.webp" alt="UTM 应用程序界面，显示带有用于创建新虚拟机的加号图标的主窗口"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m4-windows/windows-utm-app.webp
+alt: UTM 应用程序界面，显示带有用于创建新虚拟机的加号图标的主窗口
+---
+::
 
 #### 虚拟化或模拟
 
@@ -90,20 +110,35 @@ UTM 提供两种模式：
 | 虚拟化 | 更快，原生 ARM 支持 | 无法运行 x86 或非 ARM 处理器 |
 | 模拟   | 支持非 ARM 系统     | 较慢，可能存在性能问题       |
 
-<Media source="https://cdn.xanzhu.com/v1/m4-windows/utm-windows-mode.webp" alt="虚拟化和模拟之间的 UTM 配置模式选择"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m4-windows/utm-windows-mode.webp
+alt: 虚拟化和模拟之间的 UTM 配置模式选择
+---
+::
 
 选择 **虚拟化** 以利用 Apple Silicon 的效率。
 
-模拟较慢，但支持旧系统。也可以通过<PageLink title="UTM Gallery" url="https://mac.getutm.app/gallery/"></PageLink>获得预构建的 VM。
+模拟较慢，但支持旧系统。也可以通过 :PageLink{title="UTM Gallery" url="https://mac.getutm.app/gallery/"} 获得预构建的 VM。
 
 #### 操作系统
 
-<Media source="https://cdn.xanzhu.com/v1/m4-windows/utm-windows-os.webp" alt="Windows、Linux 和 macOS 之间的 UTM 配置操作系统选择"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m4-windows/utm-windows-os.webp
+alt: Windows、Linux 和 macOS 之间的 UTM 配置操作系统选择
+---
+::
 
 1. 选择 **Windows**。
 2. 单击 **浏览**，选择 Windows ISO，然后单击 **继续**。
 
-<Media source="https://cdn.xanzhu.com/v1/m4-windows/windows-utm-iso.webp" alt="显示 ISO 选择的 UTM 配置界面"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m4-windows/windows-utm-iso.webp
+alt: 显示 ISO 选择的 UTM 配置界面
+---
+::
 
 #### 硬件设置
 
@@ -119,7 +154,12 @@ UTM 提供两种模式：
 
 查看配置摘要，命名虚拟机，然后单击 **保存**。
 
-<Media source="https://cdn.xanzhu.com/v1/m4-windows/utm-windows-complete.webp" alt="已完成的 UTM 配置"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m4-windows/utm-windows-complete.webp
+alt: 已完成的 UTM 配置
+---
+::
 
 您的新虚拟机将出现在 UTM 的侧边栏中。单击播放按钮以启动虚拟机！
 
@@ -127,20 +167,35 @@ UTM 提供两种模式：
 
 启动虚拟机后，系统将提示您“按任意键继续”。这将启动 Windows 安装过程。
 
-<Media source="https://cdn.xanzhu.com/v1/m4-windows/windows-cdboot.webp" alt="UTM 设置，按任意键从 ISO 文件启动"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m4-windows/windows-cdboot.webp
+alt: UTM 设置，按任意键从 ISO 文件启动
+---
+::
 
 1. 选择您的语言设置，然后单击 **下一步**。
 2. 选择您的键盘设置，然后单击 **下一步**。
 3. 对于产品密钥，选择 **我没有产品密钥**。
 
-<Media source="https://cdn.xanzhu.com/v1/m4-windows/windows-productkey.webp" alt="显示产品密钥选择的 Windows 设置"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m4-windows/windows-productkey.webp
+alt: 显示产品密钥选择的 Windows 设置
+---
+::
 
 4. 阅读并接受许可协议，然后单击 **下一步**。
 5. 选择安装 Windows 的默认位置，然后单击 **下一步**。
 
 Windows 现在将开始安装。这需要一些时间。
 
-<Media source="https://cdn.xanzhu.com/v1/m4-windows/windows-iso-updates.webp" alt="从 ISO 安装的 Windows 设置"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m4-windows/windows-iso-updates.webp
+alt: 从 ISO 安装的 Windows 设置
+---
+::
 
 此过程完成后，虚拟机将重新启动。请注意，您将看到相同的提示“按任意键或 CD 进入启动”。这是因为 ISO 仍然连接着。
 
@@ -163,7 +218,12 @@ Windows 现在将开始安装。这需要一些时间。
 
 您可能会收到比平时更多的更新，原因是它会自动尝试推送最新版本的 Windows。
 
-<Media source="https://cdn.xanzhu.com/v1/m4-windows/windows-setup-updates.webp" alt="显示正在下载更新的 Windows 设置"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m4-windows/windows-setup-updates.webp
+alt: 显示正在下载更新的 Windows 设置
+---
+::
 
 之后，您应该启动进入 Windows，准备安装 Spice Guest Tools。
 
@@ -173,7 +233,12 @@ Windows 现在将开始安装。这需要一些时间。
 
 应该会弹出一个窗口，询问是否设置 UTM Guest Tools。
 
-<Media source="https://cdn.xanzhu.com/v1/m4-windows/windows-spiceguest.webp" alt="Spice Guest Tools 设置的默认窗口"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m4-windows/windows-spiceguest.webp
+alt: Spice Guest Tools 设置的默认窗口
+---
+::
 
 1. 选择 **下一步**。
 2. 同意许可协议，然后按 **下一步**。
@@ -187,7 +252,12 @@ Windows 现在将开始安装。这需要一些时间。
 3. 找到 .exe 文件并打开它。
 4. 屏幕可能会闪烁或出现显示错误。
 
-<Media source="https://cdn.xanzhu.com/v1/m4-windows/windows-spiceguest-manual.webp" alt="显示打开 CD-ROM 的 Windows 文件资源管理器"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m4-windows/windows-spiceguest-manual.webp
+alt: 显示打开 CD-ROM 的 Windows 文件资源管理器
+---
+::
 
 您可以通过访问控制面板验证 Spice Guest Tools 是否已安装。在“卸载程序”下，Guest Tools 将按以下方式列出：
 
@@ -207,7 +277,12 @@ Windows 现在将开始安装。这需要一些时间。
 3. 选中 **Retina 模式** 以启用高分辨率缩放，然后单击 **保存**。
 4. 启动虚拟机。
 
-<Media source="https://cdn.xanzhu.com/v1/m4-windows/utm-display-settings.webp" alt="用于启用 Retina 模式的 UTM 显示设置"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m4-windows/utm-display-settings.webp
+alt: 用于启用 Retina 模式的 UTM 显示设置
+---
+::
 
 虚拟机现在将使用您 Mac 的原生分辨率。
 
@@ -231,7 +306,12 @@ Windows 现在将开始安装。这需要一些时间。
 
 安装 Spice Guest Tools 后，可能会出现“显示输出不活动”消息。
 
-<Media source="https://cdn.xanzhu.com/v1/m4-windows/utm-display-bug.webp" alt="显示“显示输出不活动”消息的窗口"></Media>
+::media
+---
+source: https://cdn.xanzhu.com/v1/m4-windows/utm-display-bug.webp
+alt: 显示“显示输出不活动”消息的窗口
+---
+::
 
 重新启动虚拟机。
 

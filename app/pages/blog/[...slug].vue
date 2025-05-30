@@ -45,7 +45,7 @@ const next = nextData as PrevNext | undefined
 </script>
 
 <template>
-  <main v-if="post" class="mx-auto mt-10 md:(mb-0 mt-15 px-6) sm:mt-10" role="main">
+  <main v-if="post" class="mx-auto mt-10 md:(mb-0 mt-15 px-6) sm:mt-10">
     <article class="pb-2 text-inherit md:(mb-12) sm:rounded-sm" itemtype="https://schema.org/Article" itemscope>
       <BlogArticleHeader :post="post" />
       <div class="flex flex-col-reverse justify-center lg:(flex-row gap10)">

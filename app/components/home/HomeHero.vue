@@ -1,5 +1,5 @@
 <template>
-  <div class="relative min-h-screen flex items-center justify-center bg-white dark:bg-black" role="banner">
+  <header class="relative min-h-screen flex items-center justify-center bg-white dark:bg-black">
     <div class="hidden md:(absolute inset-0 z-0 flex items-center justify-center)" aria-hidden="true">
       <UiSvg load-s-v-g="beta02" class="h-80% w-full object-cover" />
     </div>
@@ -30,5 +30,5 @@
         <Icon name="lucide:arrow-up-right" class="h5 w5" aria-hidden="true" />
       </NuxtLinkLocale>
     </div>
-  </div>
+  </header>
 </template>
