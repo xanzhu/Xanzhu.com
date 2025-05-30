@@ -207,7 +207,7 @@ alt: 계속하려면 ISO를 꺼내라는 Ubuntu 메시지
 source: https://cdn.xanzhu.com/v1/m3-ubuntu/utm-avirt-display.webp
 alt: Apple 가상화 디스플레이 설정을 위한 UTM 구성
 ---
-::>
+::
 
 #### QEMU
 
