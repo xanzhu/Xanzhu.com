@@ -26,7 +26,6 @@ export default defineNuxtConfig({
   // i18n V10
   i18n: {
     defaultLocale: 'en',
-    lazy: true,
     strategy: 'prefix_except_default',
     locales: [
       {
@@ -80,6 +79,7 @@ export default defineNuxtConfig({
 
   image: {
     domains: ['cdn.xanzhu.com'],
+    provider: 'ipx',
   },
 
   content: {
@@ -89,7 +89,7 @@ export default defineNuxtConfig({
   // API
   runtimeConfig: {
     public: {
-      Version: '1.0.135',
+      Version: '1.0.140',
       WeatherAPI: process.env.WEATHER_API,
       i18n: {
         baseUrl: 'https://xanzhu.com',
@@ -181,7 +181,7 @@ export default defineNuxtConfig({
 
   // Experimental Features
   experimental: {
-    // buildCache: true,
+    buildCache: true,
     headNext: true,
   },
   future: {

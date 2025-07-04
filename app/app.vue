@@ -1,7 +1,6 @@
 <script setup lang="ts">
 const head = useLocaleHead({
   dir: true,
-  key: 'id',
   seo: true,
 })
 
@@ -61,7 +60,7 @@ useSeoMeta({
         <Meta :id="meta.id" :property="meta.property" :content="meta.content" />
       </template>
     </Head>
-    <Body class="m0 font-sans core-theme">
+    <Body class="m0 core-theme font-sans">
       <AppHeader class="sticky top-0 z-20" />
       <UiInfoBar />
       <NuxtPage />
