@@ -60,7 +60,7 @@ const next = nextData as PrevNext | undefined
         </aside>
       </div>
       <div class="mt10 flex flex-col items-center justify-center">
-        <hr class="w-80% rounded-md op40 core-border core-ui">
+        <hr class="w-80% core-border rounded-md core-ui op40">
         <div v-if="post._path && post.title">
           <h4 class="mt5 text-center text-lg font-normal op90">
             {{ $t('share.title') }}
