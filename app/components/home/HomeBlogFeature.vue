@@ -30,7 +30,7 @@ const { data: features } = await useAsyncData(`featuredArticles-${locale.value}`
         </p>
       </div>
       <NuxtLinkLocale
-        class="self-start rounded-md p4 text-inherit decoration-none transition duration-150 ease-linear core-border core-theme hover:(bg-black text-white) dark:hover:(invert)"
+        class="self-start core-border rounded-md core-theme p4 text-inherit decoration-none transition duration-150 ease-linear hover:(bg-black text-white) dark:hover:(invert)"
         to="/blog"
       >
         {{ $t('footer.blog') }}
@@ -42,11 +42,11 @@ const { data: features } = await useAsyncData(`featuredArticles-${locale.value}`
     >
       <article
         v-for="feature in features?.slice(0, 3)" :key="feature._path"
-        class="group transition duration-300 ease-linear hover:(scale-102 bg-white shadow-lg dark:bg-black) core-theme"
+        class="group core-theme transition duration-300 ease-linear hover:(scale-102 bg-white shadow-lg dark:bg-black)"
       >
         <div class="col-span-1 cursor-pointer p-5 dark:text-white">
           <NuxtLinkLocale class="group-hover text-black no-underline dark:text-white" :to="feature._path">
-            <span class="rounded-md bg-light2 px4 py1 text-sm op-90 core-border dark:bg-dark8">{{
+            <span class="core-border rounded-md bg-light2 px4 py1 text-sm op-90 dark:bg-dark8">{{
               feature.tag }}</span>
             <h3 class="group-hover:text-primary text-xl font-semibold">
               {{ feature.title }}
@@ -60,13 +60,13 @@ const { data: features } = await useAsyncData(`featuredArticles-${locale.value}`
 
       <div class="relative hidden lg:(grid col-span-2 row-span-2)">
         <NuxtImg
-          src="https://cdn.xanzhu.com/v1/rabbit-r1/graphic.webp" class="h-full w-full rounded-lg object-cover"
-          alt="Rabbit R1 Animation Graphic" loading="lazy" format="webp" width="800" height="600"
-          sizes="sm:100vw md:50vw lg:800px"
+          src="https://cdn.xanzhu.com/v1/rabbit-r1/graphic.webp" alt="Rabbit R1 Animation Graphic" loading="lazy"
+          format="webp" class="h-full w-full rounded-lg object-cover"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 854px" width="854" height="532"
         />
         <NuxtLink
           to="https://www.rabbit.tech"
-          class="absolute bottom-2 right-2 rounded-md px3 py1 text-sm underline-none decoration-none core-border core-ui hover:core-theme"
+          class="absolute bottom-2 right-2 core-border rounded-md core-ui px3 py1 text-sm underline-none decoration-none hover:core-theme"
         >
           Rabbit.tech
         </NuxtLink>
@@ -74,7 +74,7 @@ const { data: features } = await useAsyncData(`featuredArticles-${locale.value}`
 
       <article
         v-for="feature in features?.slice(3, 6)" :key="feature._path"
-        class="group transition duration-300 ease-linear hover:(scale-102 bg-white shadow-lg dark:bg-black) core-theme"
+        class="group core-theme transition duration-300 ease-linear hover:(scale-102 bg-white shadow-lg dark:bg-black)"
         role="article"
       >
         <div class="col-span-1 cursor-pointer p-5 dark:text-white">
@@ -82,7 +82,7 @@ const { data: features } = await useAsyncData(`featuredArticles-${locale.value}`
             class="group-hover text-black no-underline dark:text-white" :to="feature._path"
             :aria-label="`Read ${feature.title}`"
           >
-            <span class="rounded-md bg-light2 px4 py1 text-sm op-90 core-border dark:bg-dark8" role="doc-subtitle">{{
+            <span class="core-border rounded-md bg-light2 px4 py1 text-sm op-90 dark:bg-dark8" role="doc-subtitle">{{
               feature.tag }}</span>
             <h3 class="group-hover:text-primary text-xl font-semibold">
               {{ feature.title }}
