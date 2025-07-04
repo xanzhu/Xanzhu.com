@@ -79,7 +79,7 @@ export default defineNuxtConfig({
 
   image: {
     domains: ['cdn.xanzhu.com'],
-    provider: 'ipx',
+    // provider: 'ipx',
   },
 
   content: {
