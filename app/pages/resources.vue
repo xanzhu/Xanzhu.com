@@ -177,7 +177,7 @@ useLangMeta('resources.meta', seoImage)
       </div>
       <div class="relative mx-auto max-w-7xl px-4 py-24 text-center">
         <div class="inline-block rounded-xl bg-white p-8 dark:bg-black">
-          <h1 class="mb-6 text-4xl text-gray-800 font-bold md:text-5xl dark:text-gray-100">
+          <h1 class="mb-6 min-h-50px text-4xl text-gray-800 font-bold md:text-5xl dark:text-gray-100">
             {{ t('resources.hero.title') }}
           </h1>
           <p class="mx-auto max-w-2xl text-lg text-gray-700 font-300 opacity-90 dark:text-gray-300">
