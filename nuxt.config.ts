@@ -125,6 +125,7 @@ export default defineNuxtConfig({
         'base-uri': '\'none\'',
         'img-src': [
           '\'self\'',
+          'data:',
           'https://cdn.xanzhu.com',
           'https://assets.lotofcarrots.com/media/home/section/desktop/4.webp',
           'https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/AI_features_feb6.gif',
