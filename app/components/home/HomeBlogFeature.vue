@@ -38,25 +38,31 @@ const { data: features } = await useAsyncData(`featuredArticles-${locale.value}`
     </div>
     <div
       class="grid auto-rows-fr grid-cols-1 mx-auto max-w-lg justify-items-center gap-4 px6 pb10 lg:grid-cols-3 md:grid-cols-2 md:max-w-5xl children:(core-border rounded-lg) 2xl:px45 xl:px25"
-      role="feed" :aria-label="t('v2.home.featuredPosts')"
     >
-      <article
-        v-for="feature in features?.slice(0, 3)" :key="feature._path"
-        class="group core-theme transition duration-300 ease-linear hover:(scale-102 bg-white shadow-lg dark:bg-black)"
-      >
-        <div class="col-span-1 cursor-pointer p-5 dark:text-white">
-          <NuxtLinkLocale class="group-hover text-black no-underline dark:text-white" :to="feature._path">
-            <span class="core-border rounded-md bg-light2 px4 py1 text-sm op-90 dark:bg-dark8">{{
-              feature.tag }}</span>
-            <h3 class="group-hover:text-primary text-xl font-semibold">
-              {{ feature.title }}
-            </h3>
-            <p class="font-300 op70 group-hover:op-100">
-              {{ feature.description }}
-            </p>
-          </NuxtLinkLocale>
-        </div>
-      </article>
+      <div class="contents" role="feed" :aria-label="t('v2.home.featuredPosts')">
+        <article
+          v-for="feature in features?.slice(0, 3)" :key="feature._path"
+          class="group core-theme transition duration-300 ease-linear hover:(scale-102 bg-white shadow-lg dark:bg-black)"
+          role="article"
+        >
+          <div class="col-span-1 cursor-pointer p-5 dark:text-white">
+            <NuxtLinkLocale
+              class="group-hover text-black no-underline dark:text-white" :to="feature._path"
+              :aria-labelledby="`post${feature._path?.replaceAll('/', '-')}`"
+            >
+              <span class="core-border rounded-md bg-light2 px4 py1 text-sm op-90 dark:bg-dark8">
+                {{ feature.tag }}
+              </span>
+              <h3 :id="`post${feature._path?.replaceAll('/', '-')}`" class="group-hover:text-primary text-xl font-semibold">
+                {{ feature.title }}
+              </h3>
+              <p class="font-300 op70 group-hover:op-100">
+                {{ feature.description }}
+              </p>
+            </NuxtLinkLocale>
+          </div>
+        </article>
+      </div>
 
       <div class="relative hidden lg:(grid col-span-2 row-span-2)">
         <NuxtImg
@@ -72,27 +78,33 @@ const { data: features } = await useAsyncData(`featuredArticles-${locale.value}`
         </NuxtLink>
       </div>
 
-      <article
-        v-for="feature in features?.slice(3, 6)" :key="feature._path"
-        class="group core-theme transition duration-300 ease-linear hover:(scale-102 bg-white shadow-lg dark:bg-black)"
-        role="article"
-      >
-        <div class="col-span-1 cursor-pointer p-5 dark:text-white">
-          <NuxtLinkLocale
-            class="group-hover text-black no-underline dark:text-white" :to="feature._path"
-            :aria-label="`Read ${feature.title}`"
-          >
-            <span class="core-border rounded-md bg-light2 px4 py1 text-sm op-90 dark:bg-dark8" role="doc-subtitle">{{
-              feature.tag }}</span>
-            <h3 class="group-hover:text-primary text-xl font-semibold">
-              {{ feature.title }}
-            </h3>
-            <p class="font-300 op70 group-hover:op-100">
-              {{ feature.description }}
-            </p>
-          </NuxtLinkLocale>
-        </div>
-      </article>
+      <div class="contents" role="feed" aria-label="Featured Blog Posts Continued">
+        <article
+          v-for="feature in features?.slice(3, 6)" :key="feature._path"
+          class="group core-theme transition duration-300 ease-linear hover:(scale-102 bg-white shadow-lg dark:bg-black)"
+          role="article"
+        >
+          <div class="col-span-1 cursor-pointer p-5 dark:text-white">
+            <NuxtLinkLocale
+              class="group-hover text-black no-underline dark:text-white" :to="feature._path"
+              :aria-labelledby="`post${feature._path?.replaceAll('/', '-')}`"
+            >
+              <span class="core-border rounded-md bg-light2 px4 py1 text-sm op-90 dark:bg-dark8" role="doc-subtitle">
+                {{ feature.tag }}
+              </span>
+              <h3
+                :id="`post${feature._path?.replaceAll('/', '-')}`"
+                class="group-hover:text-primary text-xl font-semibold"
+              >
+                {{ feature.title }}
+              </h3>
+              <p class="font-300 op70 group-hover:op-100">
+                {{ feature.description }}
+              </p>
+            </NuxtLinkLocale>
+          </div>
+        </article>
+      </div>
     </div>
   </div>
 </template>
