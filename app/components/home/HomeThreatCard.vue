@@ -59,9 +59,9 @@ const breaches: Breach[] = [
       <section aria-labelledby="regional-threats-title" class="rounded-lg bg-zinc-900 p-3 sm:p-4">
         <div class="mb-3 flex items-center sm:mb-4">
           <Icon name="lucide:alert-triangle" class="mr-2 h-5 w-5 flex-shrink-0 text-4 text-yellow-4" />
-          <h3 id="regional-threats-title" class="text-lg text-yellow-4 font-semibold sm:text-xl">
+          <p id="regional-threats-title" class="text-lg text-yellow-4 font-semibold sm:text-xl">
             {{ t('threatCard.regional.title') }}
-          </h3>
+          </p>
         </div>
         <ul role="list" class="p0 space-y-3">
           <li
@@ -78,9 +78,9 @@ const breaches: Breach[] = [
       <section aria-labelledby="recent-breaches-title" class="rounded-lg bg-zinc-900 p-3 sm:p-4">
         <div class="mb-3 flex items-center sm:mb-4">
           <Icon name="lucide:lock" class="mr-2 h-5 w-5 flex-shrink-0 text-white" aria-hidden="true" />
-          <h3 id="recent-breaches-title" class="text-lg text-white font-semibold sm:text-xl">
+          <p id="recent-breaches-title" class="text-lg text-white font-semibold sm:text-xl">
             {{ t('threatCard.recent.title') }}
-          </h3>
+          </p>
         </div>
         <ul role="list" class="list-none p0 space-y-3">
           <li

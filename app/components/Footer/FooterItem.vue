@@ -7,9 +7,9 @@ defineProps<{
 
 <template>
   <div role="group" aria-labelledby="footer-item-title">
-    <h4 id="footer-item-title" class="text-md mb-4 font-bold">
+    <h3 id="footer-item-title" class="text-md mb-4 font-bold">
       {{ title }}
-    </h4>
+    </h3>
     <ul class="list-none p0 text-sm" role="list">
       <li v-for="(item, index) in links" :key="index" class="mb-2" role="listitem">
         <NuxtLinkLocale
