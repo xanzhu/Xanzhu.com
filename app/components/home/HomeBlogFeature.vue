@@ -20,12 +20,14 @@ const { data: features } = await useAsyncData(`featuredArticles-${locale.value}`
 
 <template>
   <div class="mx-auto bg-light-3 py10 dark:bg-dark-900">
-    <div class="mx-auto mt10 max-w-lg flex items-center justify-between px6 md:max-w-5xl 2xl:px45 xl:px25">
-      <div class="mb-10 flex flex-col justify-center space-y-2">
+    <div
+      class="mx-auto mb5 max-w-lg flex flex-col items-center justify-between px6 md:mb0 md:max-w-5xl md:flex-row space-y-5 2xl:px45 xl:px25 md:space-y-0"
+    >
+      <div class="flex flex-col self-start md:mb10 md:justify-center">
         <h2 id="latest-posts" class="m0 text-4xl font-bold tracking-wide md:text-5xl">
           {{ $t('home.latest') }}
         </h2>
-        <p class="m0 text-sm text-dark-400 dark:text-gray-200">
+        <p class="m0 pt3 text-sm text-dark-400 dark:text-gray-200">
           {{ $t('home.features.description') }}
         </p>
       </div>
@@ -37,9 +39,9 @@ const { data: features } = await useAsyncData(`featuredArticles-${locale.value}`
       </NuxtLinkLocale>
     </div>
     <div
-      class="grid auto-rows-fr grid-cols-1 mx-auto max-w-lg justify-items-center gap-4 px6 pb10 lg:grid-cols-3 md:grid-cols-2 md:max-w-5xl children:(core-border rounded-lg) 2xl:px45 xl:px25"
+      class="grid auto-rows-fr grid-cols-1 mx-auto max-w-lg justify-items-center gap-4 px6 pb10 lg:grid-cols-3 md:grid-cols-2 md:max-w-5xl 2xl:px45 xl:px25"
     >
-      <div class="contents" role="feed" :aria-label="t('v2.home.featuredPosts')">
+      <div class="contents children:(core-border rounded-lg)" role="feed" :aria-label="t('v2.home.featuredPosts')">
         <article
           v-for="feature in features?.slice(0, 3)" :key="feature._path"
           class="group core-theme transition duration-300 ease-linear hover:(scale-102 bg-white shadow-lg dark:bg-black)"
@@ -53,7 +55,10 @@ const { data: features } = await useAsyncData(`featuredArticles-${locale.value}`
               <span class="core-border rounded-md bg-light2 px4 py1 text-sm op-90 dark:bg-dark8">
                 {{ feature.tag }}
               </span>
-              <h3 :id="`post${feature._path?.replaceAll('/', '-')}`" class="group-hover:text-primary text-xl font-semibold">
+              <h3
+                :id="`post${feature._path?.replaceAll('/', '-')}`"
+                class="group-hover:text-primary text-xl font-semibold"
+              >
                 {{ feature.title }}
               </h3>
               <p class="font-300 op70 group-hover:op-100">
@@ -78,7 +83,7 @@ const { data: features } = await useAsyncData(`featuredArticles-${locale.value}`
         </NuxtLink>
       </div>
 
-      <div class="contents" role="feed" aria-label="Featured Blog Posts Continued">
+      <div class="contents children:(core-border rounded-lg)" role="feed" aria-label="Featured Blog Posts Continued">
         <article
           v-for="feature in features?.slice(3, 6)" :key="feature._path"
           class="group core-theme transition duration-300 ease-linear hover:(scale-102 bg-white shadow-lg dark:bg-black)"
