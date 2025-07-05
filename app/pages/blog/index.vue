@@ -32,6 +32,7 @@ useLangMeta('Blog.meta', seoImage)
           <NuxtImg
             v-if="article.img" crossorigin="anonymous" :alt="article.alt" :title="article.alt" loading="lazy"
             height="369" width="577" object-fit="contain" format="webp"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 557px"
             class="h-full w-full transform b-1 b-light-700 rounded-md b-solid dark:b-dark-700 md:(transition duration-400 ease-in-out group-hover:scale-102)"
             :src="article.img"
           />

@@ -79,7 +79,7 @@ export default defineNuxtConfig({
 
   image: {
     domains: ['cdn.xanzhu.com'],
-    provider: 'ipx',
+    // provider: 'ipx',
   },
 
   content: {
@@ -89,7 +89,7 @@ export default defineNuxtConfig({
   // API
   runtimeConfig: {
     public: {
-      Version: '1.0.140',
+      Version: '1.0.141',
       WeatherAPI: process.env.WEATHER_API,
       i18n: {
         baseUrl: 'https://xanzhu.com',
@@ -181,7 +181,7 @@ export default defineNuxtConfig({
 
   // Experimental Features
   experimental: {
-    buildCache: true,
+    // buildCache: true,
     headNext: true,
   },
   future: {
