@@ -1,21 +1,20 @@
 <script setup lang="ts">
 const { locale, t } = useI18n()
 
-const { data: features } = await useAsyncData(`featuredArticles-${locale.value}`, async () => {
-  const query = locale.value !== 'en' ? `${locale.value}/blog` : '/blog'
-  try {
-    return await queryContent(query)
+const { data: features } = await useAsyncData(
+  `featuredArticles-${locale.value}`,
+  async () => {
+    return await queryContent('blog')
+      .locale(locale.value)
       .sort({ date: -1 })
-      .where({ feature: true })
       .only(['title', 'description', 'date', 'tag', '_path'])
       .limit(5)
       .find()
-  }
-  catch (err) {
-    console.error('Error fetching articles:', err)
-    return []
-  }
-})
+  },
+  {
+    watch: [locale],
+  },
+)
 </script>
 
 <template>

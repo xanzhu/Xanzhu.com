@@ -79,17 +79,17 @@ export default defineNuxtConfig({
 
   image: {
     domains: ['cdn.xanzhu.com'],
-    // provider: 'ipx',
   },
 
   content: {
+    locales: ['en', 'ko', 'zh'],
     defaultLocale: 'en',
   },
 
   // API
   runtimeConfig: {
     public: {
-      Version: '1.0.142',
+      Version: '1.0.200',
       WeatherAPI: process.env.WEATHER_API,
       i18n: {
         baseUrl: 'https://xanzhu.com',
