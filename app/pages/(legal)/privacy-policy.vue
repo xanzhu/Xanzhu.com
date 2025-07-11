@@ -16,7 +16,7 @@ const paragraphs: { [key: number]: string } = {
 
 // SEO Metadata
 const seoImage = 'https://images.pexels.com/photos/27286458/pexels-photo-27286458.jpeg'
-useLangMeta('PP', seoImage)
+useLangMeta('PP', seoImage, 'prefix', t)
 </script>
 
 <template>

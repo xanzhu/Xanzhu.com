@@ -5,7 +5,7 @@ const { t } = useI18n({
 
 // SEO Metadata
 const seoImage = 'https://images.pexels.com/photos/273209/pexels-photo-273209.jpeg'
-useLangMeta('terms', seoImage)
+useLangMeta('terms', seoImage, 'prefix', t)
 </script>
 
 <template>
