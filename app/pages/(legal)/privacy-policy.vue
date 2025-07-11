@@ -20,29 +20,13 @@ useLangMeta('PP', seoImage, 'prefix', t)
 </script>
 
 <template>
-  <div class="my-10 max-w-4xl min-h-screen sm:mx-auto space-y-10">
-    <div class="mx-4 flex flex-col sm:(flex-row items-center justify-between space-y-0) space-y-4">
-      <div class="flex flex-col">
-        <h1 class="m0 text-2xl font-semibold sm:text-3xl">
-          {{ t('PP.title') }}
-        </h1>
-        <p class="m0 font-300 op80 dark:text-light-500">
-          {{ t('PP.description') }}
-        </p>
-      </div>
-      <p class="m0">
-        {{ t("PP.date") }}:
-        <span class="font-300 font-mono">{{ date }}</span>
-      </p>
-    </div>
-    <div
-      class="text-md rounded-lg from-light-100 to-neutral-200 bg-gradient-to-b p-6 font-300 shadow-sm sm:(mx-3 p-10) space-y-6 core-border dark:from-dark-800 dark:to-dark-900"
-    >
+  <InternalPage :title="t('PP.title')" :description="t('PP.description')" :date="date" :datelabel="t('PP.date')">
+    <template #content>
       <p v-for="(paragraph, index) in paragraphs" :key="index" class="leading-relaxed">
         {{ paragraph }}
       </p>
-    </div>
-  </div>
+    </template>
+  </InternalPage>
 </template>
 
 <i18n lang="json">

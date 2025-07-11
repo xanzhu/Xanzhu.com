@@ -3,84 +3,80 @@ const { t } = useI18n({
   useScope: 'local',
 })
 
+const date = '27/01/2025'
+
+const sections = [
+  {
+    title: t('terms.intellectualProperty.title'),
+    content: t('terms.intellectualProperty.content'),
+  },
+  {
+    title: t('terms.userResponsibilities.title'),
+    intro: t('terms.userResponsibilities.intro'),
+    list: [
+      t('terms.userResponsibilities.list.useLawfully'),
+      t('terms.userResponsibilities.list.noDisruption'),
+    ],
+  },
+  {
+    title: t('terms.disclaimer.title'),
+    content: t('terms.disclaimer.content'),
+  },
+  {
+    title: t('terms.thirdPartyLinks.title'),
+    content: t('terms.thirdPartyLinks.content'),
+  },
+  {
+    title: t('terms.changesToTerms.title'),
+    content: t('terms.changesToTerms.content'),
+  },
+  {
+    title: t('terms.contactUs.title'),
+    content: t('terms.contactUs.content'),
+    isContact: true,
+  },
+]
+
 // SEO Metadata
 const seoImage = 'https://images.pexels.com/photos/273209/pexels-photo-273209.jpeg'
 useLangMeta('terms', seoImage, 'prefix', t)
 </script>
 
 <template>
-  <div class="my-10 max-w-4xl min-h-screen sm:mx-auto space-y-10">
-    <div class="mx-4 flex flex-col sm:(flex-row items-center justify-between space-y-0) space-y-4">
-      <div class="flex flex-col">
-        <h1 class="m0 text-2xl font-semibold sm:text-3xl">
-          {{ t('terms.title') }}
-        </h1>
-        <p class="m0 font-300 op80 dark:text-light-500">
-          {{ t('terms.description') }}
+  <InternalPage
+    :title="t('terms.title')" :description="t('terms.description')" :date="date"
+    :datelabel="t('terms.date')"
+  >
+    <template #content>
+      <div>
+        <p class="text-dark-300 dark:text-gray-300">
+          {{ t('terms.introduction') }}
         </p>
+        <div v-for="(section, index) in sections" :key="index" class="mb-8">
+          <h2 class="mb-4 mt-8 text-2xl text-dark-900 font-semibold dark:text-gray-100">
+            {{ section.title }}
+          </h2>
+          <p v-if="section.intro" class="text-dark-300 dark:text-gray-300">
+            {{ section.intro }}
+          </p>
+          <ul v-if="section.list" class="list-disc pl-6 text-dark-300 dark:text-gray-300">
+            <li v-for="(item, itemIndex) in section.list" :key="itemIndex">
+              {{ item }}
+            </li>
+          </ul>
+          <p v-if="section.content" class="text-dark-300 dark:text-gray-300">
+            {{ section.content }}
+            <NuxtLink
+              v-if="section.isContact" href="mailto:feedback@xanzhu.com"
+              class="text-black no-underline dark:text-white hover:underline"
+            >
+              feedback@xanzhu.com
+            </NuxtLink>
+          </p>
+        </div>
       </div>
-      <p class="m0">
-        {{ t("terms.date") }}:
-        <span class="font-300 font-mono">27/01/2025</span>
-      </p>
-    </div>
-    <div
-      class="text-md rounded-lg from-light-100 to-neutral-200 bg-gradient-to-b p-6 font-300 shadow-sm sm:(mx-3 p-10) space-y-6 core-border dark:from-dark-800 dark:to-dark-900"
-    >
-      <p class="text-dark-300 dark:text-gray-300">
-        {{ t('terms.introduction') }}
-      </p>
-
-      <h2 class="mb-4 mt-8 text-2xl text-dark-900 font-semibold dark:text-gray-100">
-        {{ t('terms.intellectualProperty.title') }}
-      </h2>
-      <p class="text-dark-300 dark:text-gray-300">
-        {{ t('terms.intellectualProperty.content') }}
-      </p>
-
-      <h2 class="mb-4 mt-8 text-2xl text-dark-900 font-semibold dark:text-gray-100">
-        {{ t('terms.userResponsibilities.title') }}
-      </h2>
-      <p class="text-dark-300 dark:text-gray-300">
-        {{ t('terms.userResponsibilities.intro') }}
-      </p>
-      <ul class="list-disc pl-6 text-dark-300 dark:text-gray-300">
-        <li>{{ t('terms.userResponsibilities.list.useLawfully') }}</li>
-        <li>{{ t('terms.userResponsibilities.list.noDisruption') }}</li>
-      </ul>
-
-      <h2 class="mb-4 mt-8 text-2xl text-dark-900 font-semibold dark:text-gray-100">
-        {{ t('terms.disclaimer.title') }}
-      </h2>
-      <p class="text-dark-300 dark:text-gray-300">
-        {{ t('terms.disclaimer.content') }}
-      </p>
-
-      <h2 class="mb-4 mt-8 text-2xl text-dark-900 font-semibold dark:text-gray-100">
-        {{ t('terms.thirdPartyLinks.title') }}
-      </h2>
-      <p class="text-dark-300 dark:text-gray-300">
-        {{ t('terms.thirdPartyLinks.content') }}
-      </p>
-
-      <h2 class="mb-4 mt-8 text-2xl text-dark-900 font-semibold dark:text-gray-100">
-        {{ t('terms.changesToTerms.title') }}
-      </h2>
-      <p class="text-dark-300 dark:text-gray-300">
-        {{ t('terms.changesToTerms.content') }}
-      </p>
-
-      <h2 class="mb-4 mt-8 text-2xl text-dark-900 font-semibold dark:text-gray-100">
-        {{ t('terms.contactUs.title') }}
-      </h2>
-      <p class="text-dark-300 dark:text-gray-300">
-        {{ t('terms.contactUs.content') }}
-        <NuxtLink href="mailto:feedback@xanzhu.com" class="text-black no-underline dark:text-white hover:underline">
-          feedback@xanzhu.com
-        </NuxtLink>
-      </p>
-    </div>
-  </div>
+    </template>
+  </InternalPage>
 </template>
 
 <i18n lang="json">

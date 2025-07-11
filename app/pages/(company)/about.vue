@@ -3,21 +3,25 @@ const { t } = useI18n({
   useScope: 'local',
 })
 
+const paragraphs: { [key: number]: string } = {
+  1: t('about.paragraphs.introduction'),
+  2: t('about.paragraphs.mission'),
+  3: t('about.paragraphs.goal'),
+  4: t('about.paragraphs.importance'),
+  5: t('about.paragraphs.closing'),
+}
 const seoImage = 'https://images.pexels.com/photos/27050060/pexels-photo-27050060.jpeg'
 useLangMeta('about.meta', seoImage, 'prefix', t)
 </script>
 
 <template>
-  <div class="min-h-screen flex flex-col items-center md:mt-20">
-    <h1>{{ t('about.title') }}</h1>
-    <div class="p8 text-sm prose sm:(p2 text-base)">
-      <p>{{ t('about.paragraphs.introduction') }}</p>
-      <p>{{ t('about.paragraphs.mission') }}</p>
-      <p>{{ t('about.paragraphs.goal') }}</p>
-      <p>{{ t('about.paragraphs.importance') }}</p>
-      <p>{{ t('about.paragraphs.closing') }}</p>
-    </div>
-  </div>
+  <InternalPage :title="t('about.title')">
+    <template #content>
+      <p v-for="(paragraph, index) in paragraphs" :key="index" class="leading-relaxed">
+        {{ paragraph }}
+      </p>
+    </template>
+  </InternalPage>
 </template>
 
 <i18n lang="json">
