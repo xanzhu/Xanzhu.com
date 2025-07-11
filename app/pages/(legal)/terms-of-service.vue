@@ -89,7 +89,7 @@ useLangMeta('terms', seoImage, 'prefix', t)
       "introduction": "Welcome to Xanzhu (the \"Blog\"). By accessing or using this Blog, you agree to comply with and be bound by the following Terms of Service (\"Terms\"). If you do not agree to these Terms, please do not use this Blog.",
       "intellectualProperty": {
         "title": "1. Intellectual Property",
-        "content": "All content on this Blog, including but not limited to text, graphics, logos, images, and software, is the property of Xanzhu or its content suppliers and is protected by international copyright laws. You may not reproduce, distribute, or modify any content without prior written consent from Xanzhu ."
+        "content": "All content on this Blog, including but not limited to text, graphics, logos, images, and software, is the property of Xanzhu or its content suppliers and is protected by international copyright laws. You may not reproduce, distribute, or modify any content without prior written consent from Xanzhu."
       },
       "userResponsibilities": {
         "title": "2. User Responsibilities",
@@ -129,11 +129,11 @@ useLangMeta('terms', seoImage, 'prefix', t)
       "introduction": "Xanzhu(이하 \"블로그\")에 오신 것을 환영합니다. 이 블로그에 접속하거나 사용함으로써 귀하는 다음 이용 약관(\"약관\")에 동의하게 됩니다. 이 약관에 동의하지 않으시면 블로그를 사용하지 마십시오.",
       "intellectualProperty": {
         "title": "1. 지적 재산권",
-        "content": "이 블로그의 모든 콘텐츠(텍스트, 그래픽, 로고, 이미지, 소프트웨어 등)는 Xanzhu 또는 해당 콘텐츠 공급자의 소유이며 국제 저작권법에 의해 보호됩니다. Xanzhu 의 사전 서면 동의 없이 콘텐츠를 복제, 배포 또는 수정할 수 없습니다."
+        "content": "이 블로그의 모든 콘텐츠(텍스트, 그래픽, 로고, 이미지, 소프트웨어 등)는 Xanzhu의 소유이거나 콘텐츠 공급자의 소유이며, 국제 저작권법에 의해 보호됩니다. Xanzhu의 사전 서면 동의 없이 콘텐츠를 복제, 배포 또는 수정할 수 없습니다."
       },
       "userResponsibilities": {
         "title": "2. 사용자 책임",
-        "intro": "이 블로그를 사용할 때 귀하는 다음에 동의합니다:",
+        "intro": "이 블로그를 사용함으로써 귀하는 다음 사항에 동의하게 됩니다:",
         "list": {
           "useLawfully": "블로그를 합법적인 목적으로만 사용합니다.",
           "noDisruption": "블로그의 기능을 방해하거나 간섭하는 활동을 하지 않습니다."
@@ -141,15 +141,15 @@ useLangMeta('terms', seoImage, 'prefix', t)
       },
       "disclaimer": {
         "title": "3. 보증의 부인",
-        "content": "이 블로그는 \"있는 그대로\" 및 \"이용 가능한 상태로\" 제공되며, 명시적 또는 묵시적인 어떠한 보증도 제공하지 않습니다. Xanzhu 은 블로그가 오류 없이, 안전하게 또는 항상 이용 가능할 것이라고 보장하지 않습니다."
+        "content": "이 블로그는 \"있는 그대로\" 및 \"이용 가능한 상태로\" 제공되며, 명시적 또는 묵시적인 어떠한 보증도 제공하지 않습니다. Xanzhu는 블로그가 오류 없이, 안전하게 또는 항상 이용 가능할 것이라고 보장하지 않습니다."
       },
       "thirdPartyLinks": {
         "title": "4. 제3자 링크",
-        "content": "이 블로그에는 제3자 웹사이트 또는 서비스에 대한 링크가 포함될 수 있습니다. Xanzhu 은 이러한 제3자 사이트의 콘텐츠 또는 관행에 대해 책임을 지지 않습니다. 이러한 사이트를 사용할 때는 귀하의 책임 하에 이용하십시오."
+        "content": "이 블로그에는 제3자 웹사이트 또는 서비스에 대한 링크가 포함될 수 있습니다. Xanzhu는 이러한 제3자 사이트의 콘텐츠 또는 관행에 대해 책임을 지지 않습니다. 이러한 사이트를 사용할 때는 귀하의 책임 하에 이용하십시오."
       },
       "changesToTerms": {
         "title": "5. 약관 변경",
-        "content": "Xanzhu 은 언제든지 이 약관을 수정하거나 대체할 권리를 보유합니다. 변경 후에도 블로그를 계속 사용하면 새로운 약관에 동의한 것으로 간주됩니다."
+        "content": "Xanzhu는 언제든지 이 약관을 수정하거나 대체할 권리를 보유합니다. 변경 후에도 블로그를 계속 사용하면 새로운 약관에 동의한 것으로 간주됩니다."
       },
       "contactUs": {
         "title": "6. 문의하기",
@@ -166,10 +166,10 @@ useLangMeta('terms', seoImage, 'prefix', t)
       "title": "服务条款",
       "description": "使用本博客即表示您同意我们的服务条款。请仔细阅读。",
       "date": "最后更新",
-      "introduction": "欢迎访问Xanzhu（以下简称“博客”）。通过访问或使用本博客，您同意遵守并受以下服务条款（“条款”）的约束。如果您不同意这些条款，请不要使用本博客。",
+      "introduction": "欢迎访问 Xanzhu（以下简称“博客”）。通过访问或使用本博客，您同意遵守并受以下服务条款（“条款”）的约束。如果您不同意这些条款，请不要使用本博客。",
       "intellectualProperty": {
         "title": "1. 知识产权",
-        "content": "本博客上的所有内容，包括但不限于文本、图形、徽标、图像和软件，均为Xanzhu 或其内容供应商的财产，并受国际版权法保护。未经Xanzhu 事先书面同意，您不得复制、分发或修改任何内容。"
+        "content": "本博客上的所有内容，包括但不限于文本、图形、徽标、图像和软件，均为 Xanzhu 或其内容供应商的财产，并受国际版权法保护。未经 Xanzhu 事先书面同意，您不得复制、分发或修改任何内容。"
       },
       "userResponsibilities": {
         "title": "2. 用户责任",
@@ -181,7 +181,7 @@ useLangMeta('terms', seoImage, 'prefix', t)
       },
       "disclaimer": {
         "title": "3. 免责声明",
-        "content": "本博客“按原样”和“可用”提供，不提供任何明시或暗示的保证。Xanzhu 不保证博客无错误、安全或始终可用。"
+        "content": "本博客“按原样”和“可用”提供，不提供任何明示或暗示的保证。Xanzhu 不保证博客始终无错误、安全或可用。"
       },
       "thirdPartyLinks": {
         "title": "4. 第三方链接",
@@ -197,7 +197,7 @@ useLangMeta('terms', seoImage, 'prefix', t)
       },
       "meta": {
         "title": "服务条款 - Xanzhu",
-        "description": "阅读Xanzhu的服务条款。使用本博客即表示您同意这些条款。"
+        "description": "阅读 Xanzhu 的服务条款。使用本博客即表示您同意这些条款。"
       }
     }
   }
