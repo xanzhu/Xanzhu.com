@@ -21,7 +21,7 @@
         {{ $t('home.hero.subhead') }}
       </p>
       <NuxtLinkLocale
-        class="mt5 flex items-center border-brand-light rounded-full border-dashed px5 py1.5 text-center text-blue-6 no-underline transition duration-300 ease-in-out <sm:mr-auto hover:(scale-110 border-solid) space-x-1 core-border dark:border-yellow-3 core-theme dark:text-yellow-4"
+        class="mt5 flex items-center core-border border-brand-light rounded-full border-dashed core-theme px5 py1.5 text-center text-blue-6 no-underline transition duration-300 ease-in-out <sm:mr-auto hover:(scale-110 border-solid) space-x-1 dark:border-yellow-3 dark:text-yellow-4"
         to="/blog"
       >
         <span class="m0">

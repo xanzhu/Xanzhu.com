@@ -2,10 +2,18 @@ export function useLangMeta(
   i18nKey: string,
   seoImage: string,
   format: 'prefix' | 'suffix' = 'suffix',
+  localScope?: (key: string) => string,
 ) {
-  const { t } = useI18n()
+  let t: (key: string) => string
 
-  // Compute i18n values
+  if (localScope !== undefined) {
+    t = localScope
+  }
+  else {
+    const { t: globalT } = useI18n()
+    t = globalT
+  }
+
   const seoTitle = computed(() => t(`${i18nKey}.title`))
   const seoDesc = computed(() => t(`${i18nKey}.description`))
 

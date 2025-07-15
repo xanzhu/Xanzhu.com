@@ -18,7 +18,7 @@ definePageMeta({
     <section aria-labelledby="hero">
       <HomeHero />
     </section>
-    <section aria-labelledby="brand-list" class="mb24">
+    <section class="hidden lg:(mb24 inline-flex justify-center)">
       <LazyHomeBrandList />
     </section>
     <section aria-labelledby="latest-posts" class="mb32">

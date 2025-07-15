@@ -166,17 +166,18 @@ useLangMeta('resources.meta', seoImage)
 </script>
 
 <template>
-  <div class="min-h-screen bg-gradient-to-b core-ui">
+  <div class="min-h-screen core-ui bg-gradient-to-b">
     <div class="relative">
       <div class="absolute inset-0 overflow-hidden">
         <NuxtImg
-          src="https://cdn.xanzhu.com/chi.webp" alt="Hero Background" class="h-full w-full object-cover" height="200" width="800"
-          loading="eager"
+          src="https://cdn.xanzhu.com/chi.webp" alt="Hero Background" class="h-auto w-full object-cover"
+          height="auto" width="800" loading="eager" fetchpriority="high"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 800px"
         />
       </div>
       <div class="relative mx-auto max-w-7xl px-4 py-24 text-center">
         <div class="inline-block rounded-xl bg-white p-8 dark:bg-black">
-          <h1 class="mb-6 text-4xl text-gray-800 font-bold md:text-5xl dark:text-gray-100">
+          <h1 class="mb-6 min-h-50px text-4xl text-gray-800 font-bold md:text-5xl dark:text-gray-100">
             {{ t('resources.hero.title') }}
           </h1>
           <p class="mx-auto max-w-2xl text-lg text-gray-700 font-300 opacity-90 dark:text-gray-300">
@@ -191,7 +192,8 @@ useLangMeta('resources.meta', seoImage)
           <Icon name="ri:search-line" class="absolute left-3 h-5 w-5 text-gray-3" aria-hidden="true" />
           <input
             v-model="searchQuery" type="text" :placeholder="t('resources.search.placeholder')"
-            :aria-label="t('resources.search.placeholder')" role="searchbox" class="w-full rounded-lg border-none bg-white p4 pl-10 pr-4 text-16px text-dark1 dark:bg-black dark:text-white focus:outline-none focus:ring-none"
+            :aria-label="t('resources.search.placeholder')" role="searchbox"
+            class="w-full rounded-lg border-none bg-white p4 pl-10 pr-4 text-16px text-dark1 dark:bg-black dark:text-white focus:outline-none focus:ring-none"
           >
         </div>
         <div v-if="!filteredResources.length" class="mt-4 text-center text-dark1 dark:text-white">
