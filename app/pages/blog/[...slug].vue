@@ -43,7 +43,7 @@ const seoTitle = computed(() => post.value?.title || 'Default Blog Title')
 const seoDesc = computed(() => post.value?.description || 'Explore our latest blog posts.')
 const seoImage = computed(() => {
   const imageUrl = post.value?.img
-  return imageUrl ? config.public.i18n.baseUrl + imageUrl : `${config.public.i18n.baseUrl}/default-seo-image.jpg`
+  return imageUrl ? config.public.i18n.baseUrl + imageUrl : `${config.public.i18n.baseUrl}/guard.webp`
 })
 const titleSuffix = ' - Xanzhu'
 
