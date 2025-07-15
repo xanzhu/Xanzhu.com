@@ -2,6 +2,7 @@
 interface PageLinkProps {
   title: string
   url: string
+  rel?: string
 }
 
 defineProps<PageLinkProps>()
@@ -9,7 +10,7 @@ defineProps<PageLinkProps>()
 
 <template>
   <NuxtLink
-    :to="url" target="_blank"
+    :to="url" target="_blank" :rel="rel"
     class="text-brand-light decoration-none dark:text-brand-dark hover:(underline decoration-2 underline-offset-3)"
   >
     {{ title }}
