@@ -26,7 +26,6 @@ export default defineNuxtConfig({
   // i18n V10
   i18n: {
     defaultLocale: 'en',
-    lazy: true,
     strategy: 'prefix_except_default',
     locales: [
       {
@@ -83,13 +82,14 @@ export default defineNuxtConfig({
   },
 
   content: {
+    locales: ['en', 'ko', 'zh'],
     defaultLocale: 'en',
   },
 
   // API
   runtimeConfig: {
     public: {
-      Version: '1.0.134',
+      Version: '1.0.200',
       WeatherAPI: process.env.WEATHER_API,
       i18n: {
         baseUrl: 'https://xanzhu.com',
@@ -125,6 +125,7 @@ export default defineNuxtConfig({
         'base-uri': '\'none\'',
         'img-src': [
           '\'self\'',
+          'data:',
           'https://cdn.xanzhu.com',
           'https://assets.lotofcarrots.com/media/home/section/desktop/4.webp',
           'https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/AI_features_feb6.gif',

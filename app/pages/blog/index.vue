@@ -1,13 +1,20 @@
 <script setup lang="ts">
 const { locale } = useI18n()
+const localePath = useLocalePath()
 
-const { data: posts } = await useAsyncData(`blogArticles-${locale.value}`, async () => {
-  const query = locale.value !== 'en' ? `${locale.value}/blog` : '/blog'
-  return await queryContent(query)
-    .sort({ date: -1 })
-    .only(['title', 'description', 'img', 'date', 'tag', '_path', 'alt'])
-    .find()
-})
+const { data: posts } = await useAsyncData(
+  `blogArticles-${locale.value}`,
+  async () => {
+    return await queryContent('blog')
+      .locale(locale.value)
+      .sort({ date: -1 })
+      .only(['title', 'description', 'img', 'date', 'tag', '_path', 'alt'])
+      .find()
+  },
+  {
+    watch: [locale],
+  },
+)
 
 const seoImage = 'https://images.pexels.com/photos/27277185/pexels-photo-27277185.jpeg'
 useLangMeta('Blog.meta', seoImage)
@@ -28,10 +35,11 @@ useLangMeta('Blog.meta', seoImage)
       class="grid grid-cols-1 gap-5 rounded-sm p-4 lg:(grid-cols-3 gap-5) md:(grid-cols-2 gap-10) sm:(px-10 py-15)"
     >
       <div v-for="article in posts" :key="article._path">
-        <NuxtLinkLocale class="group flex flex-col no-underline" :to="article._path">
+        <NuxtLinkLocale v-if="article._path" class="group flex flex-col no-underline" :to="localePath(article._path)">
           <NuxtImg
             v-if="article.img" crossorigin="anonymous" :alt="article.alt" :title="article.alt" loading="lazy"
             height="369" width="577" object-fit="contain" format="webp"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 557px"
             class="h-full w-full transform b-1 b-light-700 rounded-md b-solid dark:b-dark-700 md:(transition duration-400 ease-in-out group-hover:scale-102)"
             :src="article.img"
           />

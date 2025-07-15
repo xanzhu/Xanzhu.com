@@ -69,7 +69,7 @@ Some notable features include:
 - biometric/passcode protection
 - Offline functionality.
 
-2FAS is open-source, free to use, and does not store any password or metadata, giving you peace of mind in terms of security and privacy. More features are in the works, and you can learn more about them by visiting :PageLink{title="2fas.com" url="https://2fas.com/"}
+2FAS is open-source, free to use, and does not store any password or metadata, giving you peace of mind in terms of security and privacy. More features are in the works and you can learn more about them by visiting at :PageLink{title="2fas.com" url="https://2fas.com/"}
 
 ### Raivo OTP
 
