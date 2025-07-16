@@ -2,11 +2,12 @@
 const { locale } = useI18n()
 const localePath = useLocalePath()
 
+const blogPathPrefix = locale.value === 'en' ? '/blog' : `/${locale.value}/blog`
 const { data: posts } = await useAsyncData(
   `blogArticles-${locale.value}`,
   async () => {
-    return await queryContent('blog')
-      .locale(locale.value)
+    return await queryContent()
+      .where({ _path: { $regex: `^${blogPathPrefix}` } })
       .sort({ date: -1 })
       .only(['title', 'description', 'img', 'date', 'tag', '_path', 'alt'])
       .find()

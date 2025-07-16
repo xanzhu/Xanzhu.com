@@ -82,7 +82,6 @@ export default defineNuxtConfig({
   },
 
   content: {
-    locales: ['en', 'ko', 'zh'],
     defaultLocale: 'en',
   },
 
@@ -103,7 +102,7 @@ export default defineNuxtConfig({
     mode: 'svg',
   },
 
-  // SECURITY V1.5
+  // SECURITY V1.6
   security: {
     nonce: true,
     ssg: {
@@ -120,6 +119,7 @@ export default defineNuxtConfig({
           '\'nonce-{{nonce}}\'',
           '\'unsafe-inline\'',
           'https://*.xanzhu.com',
+          '\'unsafe-eval\'',
         ],
         'style-src': ['\'self\'', '\'unsafe-inline\''],
         'base-uri': '\'none\'',
@@ -179,15 +179,6 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: '2025-07-15',
-
-  // Experimental Features
-  experimental: {
-    // buildCache: true,
-    headNext: true,
-  },
-  future: {
-    compatibilityVersion: 4,
-  },
 
   // Testing features
   sourcemap: false,
