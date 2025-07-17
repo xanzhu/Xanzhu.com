@@ -10,30 +10,33 @@ const articleSlug = Array.isArray(slugParam)
   ? slugParam.join('/')
   : slugParam || ''
 
+const blogPrefix = locale.value === 'en' ? '/blog' : `/${locale.value}/blog`
+const fullPath = `${blogPrefix}/${articleSlug}`.replace(/\/+$/, '')
+
 const { data: post } = await useAsyncData(
   `blogPost-${locale.value}-${articleSlug}`,
   async () => {
-    if (!articleSlug) {
+    if (!articleSlug)
       return null
-    }
-    const fetchedPost = await queryContent('blog', articleSlug)
-      .locale(locale.value)
+
+    const post = await queryContent()
+      .where({ _path: { $regex: `^${fullPath}$` } })
       .only(['_path', 'title', 'body', 'toc', 'description', 'img', 'date', 'tag', 'alt', 'updated'])
       .findOne()
-    return fetchedPost
+
+    return post
   },
   {
     watch: [locale, () => route.params.slug],
+    default: () => null,
   },
 )
 
 watch(
   post,
   (newPost) => {
-    if (!newPost) {
-      if (route.name && String(route.name).includes('blog-slug')) {
-        throw createError({ statusCode: 404, fatal: true })
-      }
+    if (!newPost && route.name?.toString().includes('blog-slug')) {
+      throw createError({ statusCode: 404, fatal: true })
     }
   },
   { immediate: true },
@@ -42,8 +45,8 @@ watch(
 const seoTitle = computed(() => post.value?.title || 'Default Blog Title')
 const seoDesc = computed(() => post.value?.description || 'Explore our latest blog posts.')
 const seoImage = computed(() => {
-  const imageUrl = post.value?.img
-  return imageUrl ? config.public.i18n.baseUrl + imageUrl : `${config.public.i18n.baseUrl}/guard.webp`
+  const img = post.value?.img
+  return img ? config.public.i18n.baseUrl + img : `${config.public.i18n.baseUrl}/guard.webp`
 })
 const titleSuffix = ' - Xanzhu'
 
@@ -59,25 +62,29 @@ useSeoMeta({
   ogImage: seoImage,
 })
 
+// --- Prev / Next
 const { data: prevNext } = await useAsyncData(
-  `prevNext-${locale.value}-${post.value?._path}`,
+  `prevNext-${locale.value}-${fullPath}`,
   async () => {
-    if (!post.value || !post.value._path) {
+    if (!post.value?._path)
       return null
-    }
-    return await queryContent('blog')
-      .locale(locale.value)
+
+    const surroundPathPrefix = blogPrefix
+
+    return await queryContent()
+      .where({ _path: { $regex: `^${surroundPathPrefix}` } })
       .sort({ date: -1 })
       .only(['_path', 'title', 'img', 'alt'])
-      .findSurround(post.value._path)
+      .findSurround(post.value._path, { before: 1, after: 1 })
   },
   {
     watch: [locale, () => post.value?._path],
+    server: true,
+    default: () => null,
   },
 )
 
 const [prevData, nextData] = prevNext.value || []
-
 const prev = prevData as PrevNext | undefined
 const next = nextData as PrevNext | undefined
 </script>

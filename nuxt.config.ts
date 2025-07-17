@@ -82,14 +82,13 @@ export default defineNuxtConfig({
   },
 
   content: {
-    locales: ['en', 'ko', 'zh'],
     defaultLocale: 'en',
   },
 
   // API
   runtimeConfig: {
     public: {
-      Version: '1.0.200',
+      Version: '1.0.201',
       WeatherAPI: process.env.WEATHER_API,
       i18n: {
         baseUrl: 'https://xanzhu.com',
@@ -103,7 +102,7 @@ export default defineNuxtConfig({
     mode: 'svg',
   },
 
-  // SECURITY V1.5
+  // SECURITY V1.6
   security: {
     nonce: true,
     ssg: {
@@ -120,6 +119,7 @@ export default defineNuxtConfig({
           '\'nonce-{{nonce}}\'',
           '\'unsafe-inline\'',
           'https://*.xanzhu.com',
+          '\'unsafe-eval\'',
         ],
         'style-src': ['\'self\'', '\'unsafe-inline\''],
         'base-uri': '\'none\'',
@@ -178,16 +178,7 @@ export default defineNuxtConfig({
     disallow: process.env.NODE_ENV === 'development' ? '/' : '',
   },
 
-  compatibilityDate: '2025-05-15',
-
-  // Experimental Features
-  experimental: {
-    // buildCache: true,
-    headNext: true,
-  },
-  future: {
-    compatibilityVersion: 4,
-  },
+  compatibilityDate: '2025-07-15',
 
   // Testing features
   sourcemap: false,
