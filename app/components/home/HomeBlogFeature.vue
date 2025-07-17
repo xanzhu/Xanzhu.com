@@ -4,8 +4,9 @@ const { locale, t } = useI18n()
 const { data: features } = await useAsyncData(
   `featuredArticles-${locale.value}`,
   async () => {
-    const articles = await queryContent('blog')
-      .locale(locale.value)
+    const basePath = locale.value !== 'en' ? `/${locale.value}/blog` : '/blog'
+    const articles = await queryContent()
+      .where({ _path: { $regex: `^${basePath}` }, feature: true })
       .sort({ date: -1 })
       .only(['title', 'description', 'date', 'tag', '_path'])
       .limit(5)
@@ -16,7 +17,6 @@ const { data: features } = await useAsyncData(
     watch: [locale],
   },
 )
-
 const featureSetOne = computed(() => features.value?.slice(0, 3) || [])
 const featureSetTwo = computed(() => features.value?.slice(3, 6) || [])
 </script>
@@ -90,7 +90,7 @@ const featureSetTwo = computed(() => features.value?.slice(3, 6) || [])
 
       <div
         class="contents children:(core-border rounded-lg)" role="feed"
-        :aria-label="t('v2.home.featuredPostsContinued')"
+        :aria-label="t('v2.home.featuredPosts')"
       >
         <article
           v-for="feature in featureSetTwo" :key="feature._path"
