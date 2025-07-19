@@ -17,7 +17,7 @@ async function fetchWeatherData(newLocale) {
   }
 
   try {
-    const data = await getWeather(null, newLocale)
+    const data = await getWeather(newLocale)
     weatherData.value = data
     localStorage.setItem(cacheKey, JSON.stringify({
       data,

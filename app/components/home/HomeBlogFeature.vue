@@ -90,7 +90,7 @@ const featureSetTwo = computed(() => features.value?.slice(3, 6) || [])
 
       <div
         class="contents children:(core-border rounded-lg)" role="feed"
-        :aria-label="t('v2.home.featuredPostsContinued')"
+        :aria-label="t('v2.home.featuredPosts')"
       >
         <article
           v-for="feature in featureSetTwo" :key="feature._path"
