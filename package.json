@@ -23,7 +23,7 @@
     "@nuxtjs/sitemap": "^7.4.3",
     "chart.js": "^4.5.0",
     "nitro-cloudflare-dev": "^0.2.2",
-    "nuxt": "^4.0.0",
+    "nuxt": "^4.0.1",
     "nuxt-security": "^2.2.0",
     "vue": "^3.5.17",
     "vue-chartjs": "^5.3.2",
