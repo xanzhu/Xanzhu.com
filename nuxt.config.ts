@@ -16,6 +16,33 @@ export default defineNuxtConfig({
     'nitro-cloudflare-dev',
   ],
 
+  app: {
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+      meta: [
+        { name: 'format-detection', content: 'telephone=no' },
+        { name: 'color-scheme', content: 'dark light' },
+        { name: 'robots', content: 'index, follow' },
+        // Open Graph
+        { property: 'og:site_name', content: 'Xanzhu' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: 'https://xanzhu.com' },
+        { property: 'og:logo', content: 'https://xanzhu.com/images/favicon/logo.png' },
+        // Twitter
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:site', content: '@xanzhu1' },
+        // Naver Verification
+        { name: 'naver-site-verification', content: '' },
+      ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico', sizes: '32x32' },
+        { rel: 'icon', type: 'image/svg+xml', href: '/icon.svg', sizes: 'any' },
+        { rel: 'preconnect', href: 'https://cdn.xanzhu.com', crossorigin: 'anonymous' },
+      ],
+    },
+  },
+
   colorMode: {
     classSuffix: '',
     preference: 'system',
@@ -183,9 +210,16 @@ export default defineNuxtConfig({
   // Testing features
   sourcemap: false,
 
+  unocss: {
+    disableNuxtInlineStyle: false,
+  },
+
   nitro: {
     future: {
       nativeSWR: true,
+    },
+    prerender: {
+      routes: ['/robots.txt', '/sitemap.xml'],
     },
   },
 })
