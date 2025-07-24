@@ -148,7 +148,6 @@ export default defineNuxtConfig({
         'style-src': [
           '\'self\'',
           '\'nonce-{{nonce}}\'',
-          '\'unsafe-hashes\'',
           'https://*.xanzhu.com',
         ],
         'base-uri': '\'none\'',
