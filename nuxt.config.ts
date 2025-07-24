@@ -169,6 +169,7 @@ export default defineNuxtConfig({
         'font-src': ['\'self\''],
         'object-src': ['\'none\''],
         'script-src-attr': ['\'none\''],
+        'style-src-attr': ['\'unsafe-inline\''],
         'form-action': ['\'self\''],
         'connect-src': [
           '\'self\'',
