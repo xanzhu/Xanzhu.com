@@ -4,7 +4,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@nuxtjs/i18n',
-    '@nuxtjs/robots',
     '@nuxtjs/sitemap',
     '@nuxt/content',
     '@unocss/nuxt',
@@ -149,6 +148,7 @@ export default defineNuxtConfig({
         'style-src': [
           '\'self\'',
           '\'nonce-{{nonce}}\'',
+          '\'unsafe-hashes\'',
           'https://*.xanzhu.com',
         ],
         'base-uri': '\'none\'',
@@ -198,10 +198,6 @@ export default defineNuxtConfig({
       crossOriginResourcePolicy: 'same-origin',
     },
     sri: true,
-  },
-
-  robots: {
-    disallow: process.env.NODE_ENV === 'development' ? '/' : '',
   },
 
   compatibilityDate: '2025-07-15',
