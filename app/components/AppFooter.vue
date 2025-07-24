@@ -48,7 +48,7 @@ const { t } = useI18n()
         />
       </nav>
     </div>
-    <div class="mt-6 flex flex-col items-center justify-between text-xs text-dark-200 md:flex-row dark:text-gray-300" role="contentinfo">
+    <div class="mt-6 flex flex-col items-center justify-between text-xs text-dark-200 md:flex-row dark:text-gray-300">
       <p>{{ t('footer.copyright') }}</p>
       <p>{{ t('footer.version') }}: {{ $config.public.Version }}</p>
     </div>

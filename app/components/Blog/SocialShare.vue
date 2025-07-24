@@ -43,10 +43,11 @@ const socials = computed(() => [
   <div class="mx-auto inline-flex rounded-full px3 pb1 pt2 space-x-2 core-border core-theme">
     <div v-for="social in socials" :key="social.url" class="children:(text-black dark:text-white)">
       <NuxtLink
-        :to="social.url" :aria-label="social.aria" target="_blank" rel="noopener noreferrer"
+        :to="social.url" target="_blank" rel="noopener noreferrer"
         class="p1 op90 hover:text-brand-light dark:hover:text-brand-dark"
       >
         <Icon :name="social.icon" class="h5 w5" />
+        <span class="sr-only">{{ social.aria }}</span>
       </NuxtLink>
     </div>
   </div>
