@@ -1,0 +1,5 @@
+# Developer Build
+User-agent: *
+Disallow: /
+
+Sitemap: https://xanzhu.com/sitemap_index.xml
