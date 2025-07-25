@@ -165,16 +165,16 @@
     "version": "版本"
   },
   "home": {
+    "features": {
+      "description": "探索我们的关键文章并提供新内容。"
+    },
     "hero": {
       "cta": "开始探索",
       "heading": "现代网络的隐私与安全",
       "subhead": "探索推动技术向前发展的趋势、工具和技术——从保护数据到重新定义数字世界。",
       "tagline": "超越代码与创新"
     },
-    "latest": "最新文章",
-    "features": {
-      "description": "探索我们的关键文章并提供新内容。"
-    }
+    "latest": "最新文章"
   },
   "pageCard": {
     "article": "随时了解我们有关安全趋势和最佳实践的最新文章",
@@ -253,18 +253,22 @@
     "title": "2024 年 ANZ 网络威胁"
   },
   "v2": {
-    "app": {
-      "sr": {
-        "colorSwitch": "颜色切换器"
-      }
-    },
     "blog": {
       "noPosts": "没有可用的帖子。"
     },
     "blog_iframe": "Youtube 视频",
     "blog_updated": "最后更新",
+    "colorSwitch": {
+      "dark": "切换到黑暗模式",
+      "light": "切换到光模式"
+    },
     "home": {
       "featuredPosts": "精选博客文章"
+    },
+    "langSwitch": {
+      "current": "当前的",
+      "select": "选择语言",
+      "switch": "切换到"
     }
   }
 }

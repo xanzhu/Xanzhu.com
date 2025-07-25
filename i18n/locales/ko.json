@@ -165,16 +165,16 @@
     "version": "버전"
   },
   "home": {
+    "features": {
+      "description": "주요 기사를 탐색하고 새로운 콘텐츠를 소개하십시오."
+    },
     "hero": {
       "cta": "여행을 시작하세요",
       "heading": "최신 웹을 위한 개인 정보 보호 및 보안",
       "subhead": "데이터 보호부터 디지털 세계 재정의에 이르기까지 기술을 발전시키는 트렌드, 도구 및 기술을 살펴보세요.",
       "tagline": "코드와 혁신을 넘어서"
     },
-    "latest": "최근 게시물",
-    "features": {
-      "description": "주요 기사를 탐색하고 새로운 콘텐츠를 소개하십시오."
-    }
+    "latest": "최근 게시물"
   },
   "pageCard": {
     "article": "보안 동향 및 모범 사례에 대한 최신 기사를 받아보세요.",
@@ -253,18 +253,22 @@
     "title": "ANZ 사이버 위협 2024"
   },
   "v2": {
-    "app": {
-      "sr": {
-        "colorSwitch": "컬러 스위처"
-      }
-    },
     "blog": {
       "noPosts": "사용 가능한 게시물이 없습니다."
     },
     "blog_iframe": "YouTube 비디오",
     "blog_updated": "마지막으로 업데이트되었습니다",
+    "colorSwitch": {
+      "dark": "다크 모드로 전환하십시오",
+      "light": "라이트 모드로 전환하십시오"
+    },
     "home": {
       "featuredPosts": "추천 블로그 게시물"
+    },
+    "langSwitch": {
+      "current": "현재의",
+      "select": "언어를 선택하십시오",
+      "switch": "전환하십시오"
     }
   }
 }

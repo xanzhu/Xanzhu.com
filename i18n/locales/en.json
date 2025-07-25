@@ -165,16 +165,16 @@
     "version": "Version"
   },
   "home": {
+    "features": {
+      "description": "Explore our key articles and featured new content."
+    },
     "hero": {
       "cta": "Start the Journey",
       "heading": "Privacy and Security for the Modern Web",
       "subhead": "Explore trends, tools, and techniques driving technology forward—from safeguarding data to redefining the digital world.",
       "tagline": "Beyond Code and Innovation"
     },
-    "latest": "Recent Posts",
-    "features": {
-      "description": "Explore our key articles and featured new content."
-    }
+    "latest": "Recent Posts"
   },
   "pageCard": {
     "article": "Stay updated with our latest articles on security trends and best practices",
@@ -253,18 +253,22 @@
     "title": "ANZ Cyber Threats 2024"
   },
   "v2": {
-    "app": {
-      "sr": {
-        "colorSwitch": "Colour Switcher"
-      }
-    },
     "blog": {
       "noPosts": "No posts available."
     },
     "blog_iframe": "Youtube Video",
     "blog_updated": "Last Updated",
+    "colorSwitch": {
+      "dark": "Switch to dark mode",
+      "light": "Switch to light mode"
+    },
     "home": {
       "featuredPosts": "Featured Blog Posts"
+    },
+    "langSwitch": {
+      "current": "Current",
+      "select": "Select Language",
+      "switch": "Switch to"
     }
   }
 }
