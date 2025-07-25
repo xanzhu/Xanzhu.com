@@ -15,7 +15,6 @@ const disablePath = computed(() => {
   >
     <!-- Breadcrumb -->
     <UiBreadcrumbs />
-    
     <!-- Weather (fallback when no breadcrumbs) -->
     <UiWeather v-if="route.path === '/' || route.path === '/ko' || route.path === '/zh'" />
 
