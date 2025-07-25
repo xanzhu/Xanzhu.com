@@ -24,6 +24,7 @@ useSeoMeta({
       <UiInfoBar />
       <NuxtPage />
       <LazyAppFooter />
+      <UiScrollToTop />
     </Body>
   </Html>
 </template>

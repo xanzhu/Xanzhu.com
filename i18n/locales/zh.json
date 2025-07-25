@@ -274,5 +274,13 @@
       "select": "选择语言",
       "switch": "切换到"
     }
+  },
+  "breadcrumbs": {
+    "home": "首页",
+    "blog": "博客",
+    "analysis": "分析",
+    "resources": "资源",
+    "privacy": "隐私政策",
+    "terms": "服务条款"
   }
 }

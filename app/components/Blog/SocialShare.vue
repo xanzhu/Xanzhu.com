@@ -17,6 +17,12 @@ const encodedTitle = computed(() => encodeURIComponent(props.post.title))
 
 const socials = computed(() => [
   {
+    url: `${baseUrl.value}${props.post._path || ''}`,
+    icon: 'line-md:link',
+    aria: t('share.copy'),
+    isCopy: true,
+  },
+  {
     url: `https://twitter.com/intent/tweet?url=${baseUrl.value}${encodedPath.value}&text=${encodedTitle.value}&via=Xanzhu1`,
     icon: 'line-md:twitter-x',
     aria: t('share.twitter'),
@@ -37,18 +43,33 @@ const socials = computed(() => [
     aria: t('share.email'),
   },
 ])
+
+const handleClick = (social: any) => {
+  if (social.isCopy) {
+    navigator.clipboard.writeText(social.url)
+  }
+}
 </script>
 
 <template>
   <div class="mx-auto inline-flex rounded-full px3 pb1 pt2 space-x-2 core-border core-theme">
     <div v-for="social in socials" :key="social.url" class="children:(text-black dark:text-white)">
       <NuxtLink
+        v-if="!social.isCopy"
         :to="social.url" target="_blank" rel="noopener noreferrer"
         class="p1 op90 hover:text-brand-light dark:hover:text-brand-dark"
       >
         <Icon :name="social.icon" class="h5 w5" />
         <span class="sr-only">{{ social.aria }}</span>
       </NuxtLink>
+      <div
+        v-else
+        @click="handleClick(social)"
+        class="p1 op90 hover:text-brand-light dark:hover:text-brand-dark cursor-pointer"
+      >
+        <Icon :name="social.icon" class="h5 w5" />
+        <span class="sr-only">{{ social.aria }}</span>
+      </div>
     </div>
   </div>
 </template>

@@ -227,6 +227,7 @@
     }
   },
   "share": {
+    "copy": "Copy link to clipboard",
     "email": "Share this page via email",
     "linkedin": "Share this on LinkedIn",
     "reddit": "Share this on Reddit",
@@ -274,5 +275,13 @@
       "select": "Select Language",
       "switch": "Switch to"
     }
+  },
+  "breadcrumbs": {
+    "home": "Home",
+    "blog": "Blog",
+    "analysis": "Analysis",
+    "resources": "Resources",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
   }
 }

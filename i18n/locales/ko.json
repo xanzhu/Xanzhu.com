@@ -274,5 +274,13 @@
       "select": "언어를 선택하십시오",
       "switch": "전환하십시오"
     }
+  },
+  "breadcrumbs": {
+    "home": "홈",
+    "blog": "블로그",
+    "analysis": "분석",
+    "resources": "리소스",
+    "privacy": "개인정보 처리방침",
+    "terms": "이용약관"
   }
 }
