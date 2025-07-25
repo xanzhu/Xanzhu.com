@@ -263,7 +263,11 @@
       "light": "切换到光模式"
     },
     "home": {
-      "featuredPosts": "精选博客文章"
+      "featuredPosts": "精选博客文章",
+      "heroCta": "看看有什么新鲜事物",
+      "heroHeading": "现代网络的隐私和安全性",
+      "heroSubhead": "现实世界中的指南和工具可帮助您保护隐私，保护数据并使所有人都可以访问技术。",
+      "heroTagline": "开放，安全且可访问"
     },
     "langSwitch": {
       "current": "当前的",

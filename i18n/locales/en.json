@@ -263,7 +263,11 @@
       "light": "Switch to light mode"
     },
     "home": {
-      "featuredPosts": "Featured Blog Posts"
+      "featuredPosts": "Featured Blog Posts",
+      "heroCta": "See What's New",
+      "heroHeading": "Privacy and Security for the Modern Web",
+      "heroSubhead": "Real-world guides and tools to help you protect your privacy, secure your data, and make technology accessible for all.",
+      "heroTagline": "Open, Secure and Accessible"
     },
     "langSwitch": {
       "current": "Current",

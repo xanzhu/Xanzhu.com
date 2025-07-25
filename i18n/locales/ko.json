@@ -263,7 +263,11 @@
       "light": "라이트 모드로 전환하십시오"
     },
     "home": {
-      "featuredPosts": "추천 블로그 게시물"
+      "featuredPosts": "추천 블로그 게시물",
+      "heroCta": "새로운 것이 무엇인지 확인하십시오",
+      "heroHeading": "현대 웹의 개인 정보 및 보안",
+      "heroSubhead": "개인 정보를 보호하고 데이터를 보호하며 기술에 액세스 할 수 있도록 실제 안내서 및 도구.",
+      "heroTagline": "개방적이고 안전하며 접근 가능합니다"
     },
     "langSwitch": {
       "current": "현재의",
