@@ -65,11 +65,11 @@ const handleClick = (social: any) => {
       <div
         v-else
         @click="handleClick(social)"
-        class="op90 hover:text-brand-light dark:hover:text-brand-dark"
+        class="p1 op90 hover:text-brand-light dark:hover:text-brand-dark cursor-pointer"
       >
         <Icon :name="social.icon" class="h5 w5" />
         <span class="sr-only">{{ social.aria }}</span>
-    </div>
+      </div>
     </div>
   </div>
 </template>
