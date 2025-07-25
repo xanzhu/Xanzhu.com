@@ -147,7 +147,8 @@ export default defineNuxtConfig({
         ],
         'style-src': [
           '\'self\'',
-          '\'nonce-{{nonce}}\'',
+          // Allow devtools !
+          process.env.NODE_ENV === 'development' ? '\'unsafe-inline\'' : '\'nonce-{{nonce}}\'',
           'https://*.xanzhu.com',
         ],
         'base-uri': '\'none\'',
