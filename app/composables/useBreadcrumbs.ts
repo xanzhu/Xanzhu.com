@@ -10,6 +10,8 @@ export function useBreadcrumbs() {
   const localePath = useLocalePath()
   const config = useRuntimeConfig()
 
+  // Move useState outside of computed
+  const currentPost = useState<any>('currentPost', () => null)
   const baseUrl = computed(() => config.public.i18n.baseUrl)
 
   const breadcrumbs = computed<BreadcrumbItem[]>(() => {
@@ -31,7 +33,6 @@ export function useBreadcrumbs() {
 
       // Individual blog post
       if (!path.endsWith('/blog')) {
-        const currentPost = useState<any>('currentPost')
         if (currentPost.value?.title) {
           items.push({
             name: currentPost.value.title,
@@ -90,7 +91,7 @@ export function useBreadcrumbs() {
         '@type': 'ListItem',
         position: index + 1,
         name: item.name,
-        item: `${useRuntimeConfig().public.baseUrl || 'https://xanzhu.com'}${item.path}`,
+        item: `${baseUrl.value || 'https://xanzhu.com'}${item.path}`,
       })),
     }
   })
@@ -100,6 +101,7 @@ export function useBreadcrumbs() {
     jsonLd,
   }
 }
+
 
 
 
