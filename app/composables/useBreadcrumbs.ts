@@ -1,0 +1,99 @@
+export interface BreadcrumbItem {
+  name: string
+  path: string
+  current?: boolean
+}
+
+export function useBreadcrumbs() {
+  const { t } = useI18n()
+  const route = useRoute()
+  const localePath = useLocalePath()
+
+  const breadcrumbs = computed<BreadcrumbItem[]>(() => {
+    const path = route.path
+    const items: BreadcrumbItem[] = []
+
+    // Home breadcrumb
+    items.push({
+      name: t('breadcrumbs.home'),
+      path: localePath('/'),
+    })
+
+    // Blog breadcrumbs
+    if (path.includes('/blog')) {
+      items.push({
+        name: t('breadcrumbs.blog'),
+        path: localePath('/blog'),
+      })
+
+      // Individual blog post
+      if (!path.endsWith('/blog')) {
+        const currentPost = useState<any>('currentPost')
+        if (currentPost.value?.title) {
+          items.push({
+            name: currentPost.value.title,
+            path: path,
+            current: true,
+          })
+        }
+      }
+    }
+
+    // Legal pages
+    else if (path.includes('/privacy-policy')) {
+      items.push({
+        name: t('breadcrumbs.privacy'),
+        path: path,
+        current: true,
+      })
+    }
+    else if (path.includes('/terms-of-service')) {
+      items.push({
+        name: t('breadcrumbs.terms'),
+        path: path,
+        current: true,
+      })
+    }
+
+    // Analysis page
+    else if (path.includes('/analysis')) {
+      items.push({
+        name: t('breadcrumbs.analysis'),
+        path: path,
+        current: true,
+      })
+    }
+
+    // Resources page
+    else if (path.includes('/resources')) {
+      items.push({
+        name: t('breadcrumbs.resources'),
+        path: path,
+        current: true,
+      })
+    }
+
+    return items
+  })
+
+  // Generate JSON-LD structured data
+  const jsonLd = computed(() => {
+    if (breadcrumbs.value.length <= 1) return null
+
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: breadcrumbs.value.map((item, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: item.name,
+        item: `https://xanzhu.com${item.path}`,
+      })),
+    }
+  })
+
+  return {
+    breadcrumbs,
+    jsonLd,
+  }
+}
