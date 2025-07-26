@@ -274,5 +274,13 @@
       "select": "Select Language",
       "switch": "Switch to"
     }
+  },
+  "breadcrumbs": {
+    "home": "Home",
+    "blog": "Blog",
+    "analysis": "Analysis",
+    "resources": "Resources",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
   }
 }

@@ -1,3 +1,4 @@
+
 <script setup lang="ts">
 import type { PrevNext } from '../../components/Blog/PrevNext.vue'
 
@@ -61,6 +62,12 @@ useSeoMeta({
   ogType: 'article',
   ogImage: seoImage,
 })
+
+// Set current post for breadcrumbs
+const currentPost = useState<any>('currentPost', () => null)
+watch(post, (newPost) => {
+  currentPost.value = newPost
+}, { immediate: true })
 
 // --- Prev / Next
 const { data: prevNext } = await useAsyncData(
