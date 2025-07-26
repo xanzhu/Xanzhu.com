@@ -36,7 +36,7 @@ export function useBreadcrumbs() {
         if (currentPost.value?.title) {
           items.push({
             name: currentPost.value.title,
-            path: path,
+            path,
             current: true,
           })
         }
@@ -47,14 +47,14 @@ export function useBreadcrumbs() {
     else if (path === localePath('/privacy-policy')) {
       items.push({
         name: t('breadcrumbs.privacy'),
-        path: path,
+        path,
         current: true,
       })
     }
     else if (path === localePath('/terms-of-service')) {
       items.push({
         name: t('breadcrumbs.terms'),
-        path: path,
+        path,
         current: true,
       })
     }
@@ -63,7 +63,7 @@ export function useBreadcrumbs() {
     else if (path === localePath('/analysis')) {
       items.push({
         name: t('breadcrumbs.analysis'),
-        path: path,
+        path,
         current: true,
       })
     }
@@ -72,7 +72,7 @@ export function useBreadcrumbs() {
     else if (path === localePath('/resources')) {
       items.push({
         name: t('breadcrumbs.resources'),
-        path: path,
+        path,
         current: true,
       })
     }
@@ -82,16 +82,17 @@ export function useBreadcrumbs() {
 
   // Generate JSON-LD structured data
   const jsonLd = computed(() => {
-    if (breadcrumbs.value.length <= 1) return null
+    if (breadcrumbs.value.length <= 1)
+      return null
 
     return {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
-      itemListElement: breadcrumbs.value.map((item, index) => ({
+      'itemListElement': breadcrumbs.value.map((item, index) => ({
         '@type': 'ListItem',
-        position: index + 1,
-        name: item.name,
-        item: `${baseUrl.value || 'https://xanzhu.com'}${item.path}`,
+        'position': index + 1,
+        'name': item.name,
+        'item': `${baseUrl.value || 'https://xanzhu.com'}${item.path}`,
       })),
     }
   })
@@ -101,9 +102,3 @@ export function useBreadcrumbs() {
     jsonLd,
   }
 }
-
-
-
-
-
-

@@ -3,26 +3,28 @@ const { breadcrumbs, jsonLd } = useBreadcrumbs()
 
 // Add JSON-LD to head
 useHead({
-  script: computed(() => 
-    jsonLd.value ? [{
-      type: 'application/ld+json',
-      innerHTML: JSON.stringify(jsonLd.value),
-    }] : []
+  script: computed(() =>
+    jsonLd.value
+      ? [{
+          type: 'application/ld+json',
+          innerHTML: JSON.stringify(jsonLd.value),
+        }]
+      : [],
   ),
 })
 </script>
 
 <template>
-  <nav 
-    v-if="breadcrumbs.length > 1" 
+  <nav
+    v-if="breadcrumbs.length > 1"
     class="text-sm"
     aria-label="Breadcrumb"
     itemscope
     itemtype="https://schema.org/BreadcrumbList"
   >
     <ol class="flex items-center space-x-2">
-      <li 
-        v-for="(item, index) in breadcrumbs" 
+      <li
+        v-for="(item, index) in breadcrumbs"
         :key="item.path"
         class="flex items-center"
         itemprop="itemListElement"
@@ -30,26 +32,26 @@ useHead({
         itemtype="https://schema.org/ListItem"
       >
         <meta :content="String(index + 1)" itemprop="position">
-        
+
         <NuxtLinkLocale
           v-if="!item.current"
           :to="item.path"
-          class="text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 transition-colors"
+          class="text-neutral-600 transition-colors dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100"
           itemprop="item"
         >
           <span itemprop="name">{{ item.name }}</span>
         </NuxtLinkLocale>
-        
-        <span 
+
+        <span
           v-else
-          class="text-neutral-900 dark:text-neutral-100 font-medium"
+          class="text-neutral-900 font-medium dark:text-neutral-100"
           itemprop="name"
           :aria-current="item.current ? 'page' : undefined"
         >
           {{ item.name }}
         </span>
 
-        <span 
+        <span
           v-if="index < breadcrumbs.length - 1"
           class="mx-2 text-neutral-400"
           aria-hidden="true"
