@@ -25,10 +25,13 @@ export function useBreadcrumbs() {
     })
 
     // Blog breadcrumbs
+    const blogPath = localePath('/blog')
+
     if (path.includes('/blog')) {
       items.push({
         name: t('breadcrumbs.blog'),
         path: localePath('/blog'),
+        current: path === blogPath,
       })
 
       // Individual blog post
@@ -72,6 +75,15 @@ export function useBreadcrumbs() {
     else if (path === localePath('/resources')) {
       items.push({
         name: t('breadcrumbs.resources'),
+        path,
+        current: true,
+      })
+    }
+
+    // About page
+    else if (path === localePath('/about')) {
+      items.push({
+        name: t('breadcrumbs.about'),
         path,
         current: true,
       })

@@ -137,6 +137,15 @@
       "menu": "메뉴 열기"
     }
   },
+  "breadcrumbs": {
+    "about": "에 대한",
+    "analysis": "분석",
+    "blog": "블로그",
+    "home": "홈",
+    "privacy": "개인정보 처리방침",
+    "resources": "리소스",
+    "terms": "이용약관"
+  },
   "email": {
     "share": "이 기사를 확인하세요"
   },
@@ -274,13 +283,5 @@
       "select": "언어를 선택하십시오",
       "switch": "전환하십시오"
     }
-  },
-  "breadcrumbs": {
-    "home": "홈",
-    "blog": "블로그",
-    "analysis": "분석",
-    "resources": "리소스",
-    "privacy": "개인정보 처리방침",
-    "terms": "이용약관"
   }
 }

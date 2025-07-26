@@ -137,6 +137,15 @@
       "menu": "Open Menu"
     }
   },
+  "breadcrumbs": {
+    "about": "About",
+    "analysis": "Analysis",
+    "blog": "Blog",
+    "home": "Home",
+    "privacy": "Privacy Policy",
+    "resources": "Resources",
+    "terms": "Terms of Service"
+  },
   "email": {
     "share": "Check out this article"
   },
@@ -274,13 +283,5 @@
       "select": "Select Language",
       "switch": "Switch to"
     }
-  },
-  "breadcrumbs": {
-    "home": "Home",
-    "blog": "Blog",
-    "analysis": "Analysis",
-    "resources": "Resources",
-    "privacy": "Privacy Policy",
-    "terms": "Terms of Service"
   }
 }

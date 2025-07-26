@@ -137,6 +137,15 @@
       "menu": "打开菜单"
     }
   },
+  "breadcrumbs": {
+    "about": "关于",
+    "analysis": "分析",
+    "blog": "博客",
+    "home": "首页",
+    "privacy": "隐私政策",
+    "resources": "资源",
+    "terms": "服务条款"
+  },
   "email": {
     "share": "看看这篇文章"
   },
@@ -274,13 +283,5 @@
       "select": "选择语言",
       "switch": "切换到"
     }
-  },
-  "breadcrumbs": {
-    "home": "首页",
-    "blog": "博客",
-    "analysis": "分析",
-    "resources": "资源",
-    "privacy": "隐私政策",
-    "terms": "服务条款"
   }
 }
