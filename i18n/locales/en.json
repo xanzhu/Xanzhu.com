@@ -237,8 +237,12 @@
   },
   "share": {
     "email": "Share this page via email",
+    "facebook": "Share this on Facebook",
+    "instagram": "Share this on Instagram",
     "linkedin": "Share this on LinkedIn",
     "reddit": "Share this on Reddit",
+    "telegram": "Share this on Telegram",
+    "threads": "Share this on Threads",
     "title": "Share this article!",
     "twitter": "Share this on Twitter"
   },
