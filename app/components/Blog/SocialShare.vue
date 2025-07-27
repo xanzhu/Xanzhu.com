@@ -55,7 +55,7 @@ const socials = computed(() => [
 </script>
 
 <template>
-  <div class="mx-auto inline-flex rounded-full px3 pb1 pt2 space-x-2 core-border core-theme">
+  <div class="mx-auto inline-flex core-border rounded-full core-theme px3 pb1 pt2 space-x-2">
     <div v-for="social in socials" :key="social.url" class="children:(text-black dark:text-white)">
       <NuxtLink
         :to="social.url" target="_blank" rel="noopener noreferrer"

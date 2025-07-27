@@ -240,7 +240,9 @@
     "linkedin": "在 LinkedIn 上分享",
     "reddit": "在 Reddit 上分享",
     "title": "分享这篇文章！",
-    "twitter": "在 Twitter 上分享"
+    "twitter": "在 Twitter 上分享",
+    "threads": "在线程上分享",
+    "facebook": "在Facebook上分享"
   },
   "threatCard": {
     "ariaLabel": "（在新标签中阅读更多内容）",
@@ -282,6 +284,10 @@
       "current": "当前的",
       "select": "选择语言",
       "switch": "切换到"
+    },
+    "ui": {
+      "scrollTop": "回到顶部",
+      "scrollBottom": "转到底部"
     }
   }
 }

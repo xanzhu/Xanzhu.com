@@ -286,6 +286,10 @@
       "current": "Current",
       "select": "Select Language",
       "switch": "Switch to"
+    },
+    "ui": {
+      "scrollTop": "Back to Top",
+      "scrollBottom": "Go to Bottom"
     }
   }
 }

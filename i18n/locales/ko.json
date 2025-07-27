@@ -240,7 +240,9 @@
     "linkedin": "링크드인에서 공유하기",
     "reddit": "Reddit에서 공유",
     "title": "이 기사를 공유해보세요!",
-    "twitter": "이것을 트위터에 공유"
+    "twitter": "이것을 트위터에 공유",
+    "threads": "스레드에서 공유하십시오",
+    "facebook": "이것을 Facebook에서 공유하십시오"
   },
   "threatCard": {
     "ariaLabel": "(새 탭에서 자세히 알아보세요)",
@@ -282,6 +284,10 @@
       "current": "현재의",
       "select": "언어를 선택하십시오",
       "switch": "전환하십시오"
+    },
+    "ui": {
+      "scrollTop": "위로 돌아갑니다",
+      "scrollBottom": "바닥으로 이동하십시오"
     }
   }
 }

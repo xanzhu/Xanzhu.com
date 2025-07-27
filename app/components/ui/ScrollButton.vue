@@ -6,7 +6,7 @@ function checkScrollPosition() {
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop
   const windowHeight = window.innerHeight
   const documentHeight = document.documentElement.scrollHeight
-  
+
   isVisible.value = scrollTop > 300
   isAtBottom.value = scrollTop + windowHeight >= documentHeight - 100
 }
@@ -44,17 +44,17 @@ onUnmounted(() => {
     >
       <button
         v-if="!isAtBottom"
+        class="h-10 w-10 flex cursor-pointer items-center justify-center core-border rounded-full core-ui shadow-lg transition-all duration-200 hover:core-theme focus:outline-none focus:ring-2 focus:ring-brand-dark focus:ring-opacity-50 dark:focus:ring-brand-light"
+        :aria-label="$t('v2.ui.scrollBottom')"
         @click="scrollToBottom"
-        class="flex h-10 w-10 items-center justify-center rounded-full core-border core-ui shadow-lg transition-all duration-200 hover:core-theme focus:outline-none focus:ring-2 focus:ring-brand-dark focus:ring-opacity-50 dark:focus:ring-brand-light"
-        :aria-label="$t('ui.scroll.bottom')"
       >
         <Icon name="mdi:chevron-down" class="h-5 w-5" />
       </button>
-      
+
       <button
+        class="h-10 w-10 flex cursor-pointer items-center justify-center core-border rounded-full core-ui shadow-lg transition-all duration-200 hover:core-theme focus:outline-none focus:ring-2 focus:ring-brand-dark focus:ring-opacity-50 dark:focus:ring-brand-light"
+        :aria-label="$t('v2.ui.scrollTop')"
         @click="scrollToTop"
-        class="flex h-10 w-10 items-center justify-center rounded-full core-border core-ui shadow-lg transition-all duration-200 hover:core-theme focus:outline-none focus:ring-2 focus:ring-brand-dark focus:ring-opacity-50 dark:focus:ring-brand-light"
-        :aria-label="$t('ui.scroll.top')"
       >
         <Icon name="mdi:chevron-up" class="h-5 w-5" />
       </button>
