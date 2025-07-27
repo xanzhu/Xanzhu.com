@@ -5,19 +5,14 @@
     "view": "View latest version"
   },
   "Blog": {
-    "Video": "Video not found",
     "description": "News, guides and reviews on technology, how to use it and how to ensure your data remains is protected online.",
     "meta": {
       "description": "Xanzhu provides helpful articles, guides and tips on all things technology. Focusing on privacy, security and more.",
       "title": "Latest Posts on Security and Technology News"
     },
-    "next": "Next",
-    "previous": "Previous",
-    "read-time": "min read",
     "source": "Source",
     "title": "Discover the Latest Insights",
-    "toc": "Table of contents",
-    "updated": "Updated"
+    "toc": "Table of contents"
   },
   "Error": {
     "404": {
@@ -36,74 +31,20 @@
     "Seo": {
       "description": "Stay safe online with Xanzhu. Get the latest tech trends, security tips, and privacy guides to navigate the digital world.",
       "title": "News, Guides on Technology, Privacy and Security"
-    },
-    "a11y": {
-      "mouseicon": "Scroll down"
-    },
-    "desc": "At Xanzhu, we help you use technology safely and protect your data online. Learn from our articles, guides, and reviews on topics like VPNs, password managers, two-factor authentication, and more.",
-    "more": "Explore More Articles",
-    "release": "New Releases",
-    "subhead": "Navigating Technology with confidence",
-    "tag": "Leading the future",
-    "title": "Privacy, Security and everything in between.",
-    "weatherLoad": "Loading"
+    }
   },
   "Links": {
     "analysis": "Analysis",
     "blog": "Latest",
-    "home": "Home",
-    "privacy-policy": "Privacy Policy",
-    "resources": "Resources",
-    "reviews": "Reviews"
+    "resources": "Resources"
   },
   "PagesCard": {
     "analysis": "Reports and write-ups on threats",
     "blog": "Latest News, Guides on Technology",
-    "image": {
-      "building-1": "two teal and white skyscrapers",
-      "building-2": "white concrete building during daytime",
-      "building-3": "tall building"
-    },
     "resources": "Security tools and links"
   },
   "SocialsCard": {
     "h1": "Follow our Socials"
-  },
-  "StatsCard": {
-    "breach": {
-      "1": "OPTUS - 9.8 MILLION",
-      "2": "LAST PASS - 30 MILLION",
-      "3": "TWITTER - 211.5 MILLION",
-      "4": "LATITUDE - 14 MILLION"
-    },
-    "breaches": {
-      "title": "Recent Breaches"
-    },
-    "check": "Check your accounts",
-    "image": {
-      "badge": "Security Badge",
-      "pwn": "HaveIBeenpwnd Logo"
-    },
-    "threats": {
-      "1": "PHISHING",
-      "2": "RANSOMWARE",
-      "3": "SOCIAL ENGINEERING",
-      "4": "DENIAL OF SERVICE (DoS)",
-      "title": "Top Security Threats"
-    },
-    "title": "Common Threats Observed in 2023",
-    "warn": "These are rough estimates, exact values may slightly differ. Obtained through research gathered in 2023"
-  },
-  "a11y": {
-    "AnalysisPage": "Visit our Analysis Page",
-    "BlogPage": "Visit Blog Page",
-    "Home": "Visit the Home page",
-    "Menu": "Menu",
-    "ResourcePage": "Visit Resources Page",
-    "cMenu": "Close Menu",
-    "langSwitch": "Switch Language",
-    "logo": "Xanzhu Logo",
-    "oMenu": "Open Menu"
   },
   "analysis": {
     "graph": {
@@ -132,7 +73,6 @@
   },
   "app": {
     "sr": {
-      "lang": "Select Language",
       "lang_select": "Selected Language: ",
       "menu": "Open Menu"
     }
@@ -152,7 +92,6 @@
   "footer": {
     "about": "About",
     "blog": "Blog",
-    "brand": "Brand",
     "community": "Community",
     "company": "Company",
     "copyright": "© Xanzhu 2025. All Rights reserved.",
@@ -176,12 +115,6 @@
   "home": {
     "features": {
       "description": "Explore our key articles and featured new content."
-    },
-    "hero": {
-      "cta": "Start the Journey",
-      "heading": "Privacy and Security for the Modern Web",
-      "subhead": "Explore trends, tools, and techniques driving technology forward—from safeguarding data to redefining the digital world.",
-      "tagline": "Beyond Code and Innovation"
     },
     "latest": "Recent Posts"
   },
@@ -238,7 +171,6 @@
   "share": {
     "email": "Share this page via email",
     "facebook": "Share this on Facebook",
-    "instagram": "Share this on Instagram",
     "linkedin": "Share this on LinkedIn",
     "reddit": "Share this on Reddit",
     "telegram": "Share this on Telegram",
@@ -267,10 +199,13 @@
   },
   "v2": {
     "blog": {
-      "noPosts": "No posts available."
+      "noPosts": "No posts available.",
+      "lastUpdated": "Last Updated",
+      "videoIframe": "Youtube Video",
+      "readTime": "min read",
+      "prevPost": "Previous",
+      "nextPost": "Next"
     },
-    "blog_iframe": "Youtube Video",
-    "blog_updated": "Last Updated",
     "colorSwitch": {
       "dark": "Switch to dark mode",
       "light": "Switch to light mode"

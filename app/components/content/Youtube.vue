@@ -18,7 +18,7 @@ const allowfullscreen = true
 const computedWidth = `${width}px`
 const computedHeight = `${height}px`
 const computedFrameborder = frameborder.toString()
-const iframeTitle = computed(() => props.title || t('v2.blog_iframe'))
+const iframeTitle = computed(() => props.title || t('v2.blog.videoIframe'))
 </script>
 
 <template>

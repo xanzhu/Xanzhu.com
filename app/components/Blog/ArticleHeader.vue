@@ -47,7 +47,7 @@ const { t } = useI18n()
           class="flex items-center core-border rounded-md bg-white px-4 py-2 text-sm text-gray-7 space-x-2 dark:bg-dark-8 dark:text-gray-3"
         >
           <span class="h-3 w-3 rounded-full bg-brand-dark" />
-          <span>{{ t('v2.blog_updated') }}:</span>
+          <span>{{ t('v2.blog.lastUpdated') }}:</span>
           <Updated :date="post.updated" itemprop="dateModified" />
         </div>
       </div>
