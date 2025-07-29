@@ -199,10 +199,10 @@
     },
     "home": {
       "featuredPosts": "精选博客文章",
-      "heroCta": "看看有什么新鲜事物",
+      "heroCta": "查看最新动态",
       "heroHeading": "现代网络的隐私和安全性",
-      "heroSubhead": "现实世界中的指南和工具可帮助您保护隐私，保护数据并使所有人都可以访问技术。",
-      "heroTagline": "开放，安全且可访问"
+      "heroSubhead": "提供实用的指南和工具，助您保护个人隐私与数据安全，并让技术惠及所有人。",
+      "heroTagline": "开放、安全、普惠"
     },
     "langSwitch": {
       "current": "当前的",
