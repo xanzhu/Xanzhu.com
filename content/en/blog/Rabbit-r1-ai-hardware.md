@@ -82,6 +82,6 @@ alt: Rabbit R1 Hardware device a striking orange design with a screen and tactil
 ---
 ::
 
-While this device is up for pre-order, if you are interested in playing around with AI and seeing the capabilities for free, check out :PageLink{title="ChatGPT" url="https://chat.openai.com/"}, :PageLink{title="Gemini" url="https://gemini.google.com/chat"}, or Try :PageLink{title="CoPilot" url="https://www.microsoft.com/en-us/windows/copilot-ai-features"} on Windows.
+While this device is up for pre-order, if you are interested in playing around with AI and seeing the capabilities for free, check out :PageLink{title="ChatGPT" url="https://chatgpt.com/"}, :PageLink{title="Gemini" url="https://gemini.google.com/chat"}, or Try :PageLink{title="CoPilot" url="https://www.microsoft.com/en-us/windows/ai-features"} on Windows.
 
 These models are free, with more advanced features locked away for paying customers. Artificial Intelligence is here to stay, so be mindful of what you share, as these aren't yet private.

@@ -137,7 +137,7 @@ alt: Snowflake 在 brave 浏览器上的实现
 ::
 
 您可以通过 :PageLink{title="The Tor Project" url="https://snowflake.torproject.org/"} 了解有关 Snowflake 协议的更多信息
-要在 Brave 浏览器上实施或启用此功能，请参阅 :PageLink{title="Brave 支持" url="https://support.brave.com/hc/en-us/articles/9059440641421-What-is-the-Snowflake-extension"}
+要在 Brave 浏览器上实施或启用此功能，请参阅 :PageLink{title="Brave 支持" url="https://support.brave.app/hc/en-us/articles/9059440641421-What-is-the-Snowflake-extension"}
 
 ### 其他特性
 
@@ -189,7 +189,7 @@ alt: Firefox 安全特性比较表
 ---
 ::
 
-Firefox 是重视可靠性和隐私的用户的绝佳选择。 它是 Brave 的完美替代品，提供相似的功能范围和快速的性能。 访问 :PageLink{title="Firefox.com" url="https://www.mozilla.org/en-US/firefox/new/"} 下载浏览器并亲自体验不同之处。
+Firefox 是重视可靠性和隐私的用户的绝佳选择。 它是 Brave 的完美替代品，提供相似的功能范围和快速的性能。 访问 :PageLink{title="Firefox.com" url="https://www.firefox.com/"} 下载浏览器并亲自体验不同之处。
 
 ## 默认值
 

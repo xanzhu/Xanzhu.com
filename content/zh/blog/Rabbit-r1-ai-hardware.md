@@ -82,6 +82,6 @@ alt: Rabbit 的 R1 硬件设备采用醒目的橙色设计，配有屏幕和触�
 ---
 ::
 
-虽然该设备已接受预订，但如果您有兴趣尝试 AI 并免费了解其功能，请查看 :PageLink{title="ChatGPT" url="https://chat.openai.com/"}, :PageLink{title="Bard" url="https://bard.google.com/chat"}, or Try :PageLink{title="CoPilot" url="https://www.microsoft.com/en-us/windows/copilot-ai-features"} 在 Windows 上。
+虽然该设备已接受预订，但如果您有兴趣尝试 AI 并免费了解其功能，请查看 :PageLink{title="ChatGPT" url="https://chatgpt.com/"}, :PageLink{title="Bard" url="https://bard.google.com/chat"}, or Try :PageLink{title="CoPilot" url="https://www.microsoft.com/en-us/windows/ai-features"} 在 Windows 上。
 
 这些模型是免费的，付费客户可以使用更高级的功能。 人工智能将继续存在，因此请注意您分享的内容，因为这些内容还不是私有的。
