@@ -76,7 +76,7 @@ export interface PrevNext {
           <div
             class="absolute bottom-0 left-0 right-0 translate-y-full transform from-black/70 to-transparent bg-gradient-to-t p-3 text-right text-white transition-transform duration-300 group-hover:translate-y-0"
           >
-            <span class="text-sm font-medium">v2.blog.nextPostg.next') }}</span>
+            <span class="text-sm font-medium">{{ t('v2.blog.nextPost') }}</span>
           </div>
         </div>
         <h4
