@@ -223,6 +223,9 @@
       "p": "Something isn't working right now. Please try again soon.",
       "h1": "Server's Taking a Coffee Break...",
       "label": "500 Internal Error"
+    },
+    "sr": {
+      "mainNav": "Main navigation"
     }
   }
 }

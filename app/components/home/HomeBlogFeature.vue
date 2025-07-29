@@ -73,7 +73,7 @@ const featureSetTwo = computed(() => features.value?.slice(3, 6) || [])
         </article>
       </div>
 
-      <aside class="relative hidden lg:(grid col-span-2 row-span-2)">
+      <div class="relative hidden lg:(grid col-span-2 row-span-2)">
         <NuxtImg
           src="https://cdn.xanzhu.com/v1/rabbit-r1/graphic.webp" alt="Rabbit R1 Animation Graphic" loading="lazy"
           format="webp" class="h-full w-full rounded-lg object-cover"
@@ -86,7 +86,7 @@ const featureSetTwo = computed(() => features.value?.slice(3, 6) || [])
         >
           Rabbit.tech
         </NuxtLink>
-      </aside>
+      </div>
 
       <div
         class="contents children:(core-border rounded-lg)" role="feed"
