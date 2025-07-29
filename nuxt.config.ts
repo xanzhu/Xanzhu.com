@@ -75,7 +75,7 @@ export default defineNuxtConfig({
     ],
     detectBrowserLanguage: {
       useCookie: true,
-      cookieKey: '0002',
+      cookieKey: 'xanzhu-i18n',
       redirectOn: 'root',
       cookieSecure: true,
     },
@@ -114,7 +114,7 @@ export default defineNuxtConfig({
   // API
   runtimeConfig: {
     public: {
-      Version: '1.0.207',
+      Version: '1.0.210',
       WeatherAPI: process.env.WEATHER_API,
       i18n: {
         baseUrl: 'https://xanzhu.com',
