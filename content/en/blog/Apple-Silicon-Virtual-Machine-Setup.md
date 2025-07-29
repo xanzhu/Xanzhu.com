@@ -39,7 +39,7 @@ A paid virtualisation software that works natively and is essentially a one-clic
 
 It offers great tools and makes the whole process smooth as possible.
 
-1. Visit :PageLink{title="Parallels.com" url="https://www.parallels.com/products/desktop/trial/"} and download the free trial. 
+1. Visit :PageLink{title="Parallels.com" url="https://www.parallels.com/products/desktop/trial/"} and download the free trial.
 2. Once installed open "Parallels Desktop".
 3. Now select the operating system you'd like to install.
 

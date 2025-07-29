@@ -70,6 +70,6 @@ alt: Rabbit의 R1 하드웨어 장치는 화면과 촉각 버튼이 있는 눈�
 ---
 ::
 
-이 장치는 선주문이 진행되는 동안 AI를 가지고 놀고 무료로 기능을 확인하는 데 관심이 있다면 확인해 보세요. :PageLink{title="ChatGPT" url="https://chat.openai.com/"}, :PageLink{title="Bard" url="https://bard.google.com/chat"}, 아니면 시도해 보세요 :PageLink{title="CoPilot" url="https://www.microsoft.com/en-us/windows/copilot-ai-features"} Windows에서.
+이 장치는 선주문이 진행되는 동안 AI를 가지고 놀고 무료로 기능을 확인하는 데 관심이 있다면 확인해 보세요. :PageLink{title="ChatGPT" url="https://chatgpt.com/"}, :PageLink{title="Bard" url="https://bard.google.com/chat"}, 아니면 시도해 보세요 :PageLink{title="CoPilot" url="https://www.microsoft.com/en-us/windows/ai-features"} Windows에서.
 
 이러한 모델은 무료이며 유료 고객에게는 더 많은 고급 기능이 제공되지 않습니다. 인공 지능은 여기에 있으므로 공유하는 내용에 유의하세요. 이러한 내용은 아직 비공개가 아니기 때문입니다.

@@ -21,6 +21,6 @@ const readingTime = ref(Math.ceil(words / wordsPerMinute))
     <p class="m0">
       {{ readingTime }}
     </p>
-    <span>{{ t("Blog.read-time") }}</span>
+    <span>{{ t("v2.blog.readTime") }}</span>
   </div>
 </template>

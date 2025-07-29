@@ -104,7 +104,7 @@ useLangMeta('analysis.meta', seoImage)
 
     <!-- Key Trend Section -->
     <div class="mx-auto max-w-4xl px-4 py-12 space-y-12">
-      <div class="rounded-lg bg-white p-6 shadow-lg core-border">
+      <div class="core-border rounded-lg bg-white p-6 shadow-lg">
         <h2 class="mb-4 text-2xl text-gray-800 font-semibold">
           {{ $t('analysis.keyTrend.title') }}
         </h2>

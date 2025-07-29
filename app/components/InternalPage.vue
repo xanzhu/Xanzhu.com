@@ -31,11 +31,15 @@ const hasSubInfo = computed(() => !!props.description || !!props.date)
           </p>
         </div>
         <p v-if="date" class="m0 flex flex-col">
-          <slot v-if="datelabel" name="date-label">
-            {{ datelabel }}
-          </slot>
-          <span class="font-300 font-mono">
-            <slot name="date">{{ formattedDate }}</slot>
+          <span v-if="datelabel" class="flex self-end font-semibold">
+            <slot name="date-label">
+              {{ datelabel }}
+            </slot>
+          </span>
+          <span v-if="formattedDate" class="font-300">
+            <slot name="date">
+              <Date :date="formattedDate" />
+            </slot>
           </span>
         </p>
       </div>

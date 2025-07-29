@@ -14,9 +14,9 @@ alt: "ChatGPT视觉设计 Xanzhu"
 
 ChatGPT 解决了一个新问题，这就是它获得大量关注的原因。 正如我在上一篇文章中提到的，ChatGPT 等语言模型让我们得以一窥我们的未来。 自从发布那篇初始文章以来，一些事情发生了变化，从提供类似服务或简单地使用 ChatGPT 的 API 到模型本身更新到版本 4，提供更复杂的结果和功能。
 
-查看最新消息： :PageLink{title="OpenAI" url="https://openai.com/"} 
+查看最新消息： :PageLink{title="OpenAI" url="https://openai.com/"}
 
-亲自试用 ChatGPT： :PageLink{title="ChatGPT" url="https://chat.openai.com/"}
+亲自试用 ChatGPT： :PageLink{title="ChatGPT" url="https://chatgpt.com/"}
 
 ### Microsoft
 
@@ -44,7 +44,7 @@ alt: Bing 聊天机器人对话框预览
 
 Bing 为用户提供的选项有限，而且经常会中断请求。 他们在必须建立新主题之前引入了响应限制，这会阻止现有对话并鼓励用户选择扫帚按钮以清除聊天。 此限制可能会防止模型超出范围并确保每个人都可以使用它。 值得考虑的一件有趣的事情是历史如何与这些模型一起工作。 在此阶段，它不会保存在任何可访问的地方，并会重置为默认的启动画面。
 
-亲自尝试 Bing 的 ChatBot 功能（需要 Edge 浏览器）： :PageLink{title="Bing" url="https://bing.com/"}
+亲自尝试 Bing 的 ChatBot 功能（需要 Edge 浏览器）： :PageLink{title="Bing" url="https://www.bing.com/"}
 
 ### Google
 
@@ -119,7 +119,7 @@ Copilot 将成为所有开发人员的有用工具，改进生产就绪代码的
 
 目前，在技术预览阶段，Copilot 可用于 Microsoft 生态系统：Visual Studio 和 Visual Studio Code，并计划随着扩展的开发扩展到其他集成开发环境或 IDE，如 Neovim、Jetbrains 等。
 
-了解有关 Copilot X 的更多信息： :PageLink{title="Github" url="https://github.blog/2023-03-22-github-copilot-x-the-ai-powered-developer-experience/"} 
+了解有关 Copilot X 的更多信息： :PageLink{title="Github" url="https://github.blog/news-insights/product-news/github-copilot-x-the-ai-powered-developer-experience/"}
 
 ### Summarizer
 
@@ -151,7 +151,7 @@ Brave 的 AI 模型完全由 Brave 运行，并且不依赖第三方的语言模
 
 勇敢者不断挑战和创新替代行业巨头。 由于相对较新，它并不完美，并且会随着 AI 的发展和搜索引擎的进步而不断适应。
 
-详细了解 :PageLink{title="Brave" url="https://brave.com/ai-summarizer/"} 的新功能
+详细了解 :PageLink{title="Brave" url="https://brave.com/blog/ai-summarizer/"} 的新功能
 
 试试他们的搜索引擎——它是私人的！ :PageLink{title="Brave Search" url="https://search.brave.com"}
 

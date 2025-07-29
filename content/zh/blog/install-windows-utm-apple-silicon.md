@@ -13,7 +13,7 @@ alt: "在 Apple Silicon 上通过 UTM 运行 Windows 11"
 
 我们之前的 :PageLink{title="文章" url="/blog/windows-on-apple-silicon"} 介绍了 Windows 11 的设置过程，但自那时以来发生了一些变化，因此本新指南将作为 2025 年在 Apple Silicon 上安装 Windows 11 的最新说明！
 
-对于在 Apple Silicon 上安装 Windows 的替代解决方案，请注意这些是付费解决方案，可能以更高的价格提供更好的性能。查看 :PageLink{title="Parallels Desktop" url="https://www.parallels.com/products/desktop/"}或 :PageLink{title="VMware Fusion" url="https://www.vmware.com/products/fusion.html"}
+对于在 Apple Silicon 上安装 Windows 的替代解决方案，请注意这些是付费解决方案，可能以更高的价格提供更好的性能。查看 :PageLink{title="Parallels Desktop" url="https://www.parallels.com/products/desktop/"}或 :PageLink{title="VMware Fusion" url="https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion"}
 
 UTM 是一款适用于 macOS 的免费开源虚拟化工具，旨在简单易用，并通过自定义提供原生性能。
 

@@ -4,49 +4,8 @@ const head = useLocaleHead({
   seo: true,
 })
 
-useHead({
-  link: [
-    {
-      rel: 'mask-icon',
-      href: '/images/favicon/favicon.svg',
-      color: '#FDFDFD',
-    },
-    {
-      rel: 'icon',
-      type: 'image/svg+xml',
-      href: '/images/favicon/favicon.svg',
-      sizes: 'any',
-    },
-    {
-      rel: 'icon',
-      type: 'image/png',
-      href: '/images/favicon/favicon-32x32.png',
-      sizes: '32x32',
-    },
-    {
-      rel: 'icon',
-      href: '/favicon.ico',
-    },
-    {
-      rel: 'preconnect',
-      href: 'https://cdn.xanzhu.com',
-      crossorigin: 'anonymous',
-    },
-  ],
-  meta: [
-    { name: 'naver-site-verification', content: 'efe8928c52c47ffddfbd678ff1ac6fe5ca08b009' },
-    { name: 'og:logo', content: 'https://xanzhu.com/images/favicon/logo.png' },
-  ],
-})
-
 useSeoMeta({
   titleTemplate: '%s - Xanzhu',
-  twitterCard: 'summary_large_image',
-  ogType: 'website',
-  ogSiteName: 'Xanzhu',
-  charset: 'utf-8',
-  formatDetection: 'telephone=no',
-  colorScheme: 'dark light',
 })
 </script>
 
@@ -65,6 +24,7 @@ useSeoMeta({
       <UiInfoBar />
       <NuxtPage />
       <LazyAppFooter />
+      <UiScrollButton />
     </Body>
   </Html>
 </template>

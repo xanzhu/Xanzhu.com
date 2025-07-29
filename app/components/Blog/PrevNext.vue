@@ -18,9 +18,14 @@ export interface PrevNext {
   <div class="mt-10 flex flex-col items-center sm:flex-row sm:justify-evenly sm:gap-10">
     <div v-if="prev" class="w-[250px]">
       <NuxtLink
+        <<<<<<< HEAD
         :to="prev._path" :aria-label="t('Blog.previous')" rel="prev"
-        class="group relative flex flex-col no-underline transition-all duration-300"
+        =="====="
+        :to="prev._path" :aria-label="t('v2.blog.prevPost')" rel="prev"
       >
+        >>>>>> developer
+        class="group relative flex flex-col no-underline transition-all duration-300"
+        >
         <div class="relative overflow-hidden rounded-lg">
           <NuxtImg
             :src="prev.img" height="150" width="250"
@@ -41,7 +46,11 @@ export interface PrevNext {
           <div
             class="absolute bottom-0 left-0 right-0 translate-y-full transform from-black/70 to-transparent bg-gradient-to-t p-3 text-white transition-transform duration-300 group-hover:translate-y-0"
           >
+            <<<<<<< HEAD
             <span class="text-sm font-medium op90">{{ t('Blog.previous') }}</span>
+            =======
+            <span class="text-sm font-medium op90">{{ t('v2.blog.prevPost') }}</span>
+            >>>>>>> developer
           </div>
         </div>
         <h4
@@ -53,7 +62,7 @@ export interface PrevNext {
     </div>
     <div v-if="next" class="w-[250px]">
       <NuxtLink
-        :to="next._path" :aria-label="t('Blog.next')" rel="next"
+        :to="next._path" :aria-label="t('v2.blog.nextPost')" rel="next"
         class="group relative flex flex-col no-underline transition-all duration-300"
       >
         <div class="relative overflow-hidden rounded-lg">
@@ -76,7 +85,7 @@ export interface PrevNext {
           <div
             class="absolute bottom-0 left-0 right-0 translate-y-full transform from-black/70 to-transparent bg-gradient-to-t p-3 text-right text-white transition-transform duration-300 group-hover:translate-y-0"
           >
-            <span class="text-sm font-medium">{{ t('Blog.next') }}</span>
+            <span class="text-sm font-medium">{{ t('v2.blog.nextPost') }}</span>
           </div>
         </div>
         <h4

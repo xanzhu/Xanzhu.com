@@ -17,7 +17,7 @@ async function fetchWeatherData(newLocale) {
   }
 
   try {
-    const data = await getWeather(null, newLocale)
+    const data = await getWeather(newLocale)
     weatherData.value = data
     localStorage.setItem(cacheKey, JSON.stringify({
       data,
@@ -45,12 +45,18 @@ onMounted(() => {
 
 <template>
   <div
+    <<<<<<< HEAD
     class="flex items-center children:m0 space-x-2" :style="{
       height: '30px',
       opacity: weatherData ? 1 : 0,
       transition: 'opacity 0.3s ease',
     }"
+    =="====="
+    class="h-[30px] flex items-center transition-opacity duration-300 ease-linear children:m-0 space-x-2"
+    :class="weatherData ? 'opacity-100' : 'opacity-0'"
   >
+    >>>>>> developer
+    >
     <template v-if="weatherData">
       <p>{{ weatherData.location.name }}</p>
       <p class="font-bold">

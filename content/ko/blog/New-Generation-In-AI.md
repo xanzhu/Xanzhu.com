@@ -16,7 +16,7 @@ ChatGPT는 새로운 문제를 해결하므로 많은 관심을 받고 있습니
 
 :PageLink{title="OpenAI" url="https://openai.com/"} 에서 최신 정보를 확인하세요.
 
-직접 ChatGPT를 사용해 보세요: :PageLink{title="ChatGPT" url="https://chat.openai.com/"}
+직접 ChatGPT를 사용해 보세요: :PageLink{title="ChatGPT" url="https://chatgpt.com/"}
 
 ### Microsoft
 
@@ -44,7 +44,7 @@ alt: Bing Chatbot 대화상자 미리보기
 
 Bing은 사용자에게 제한된 옵션을 제공하고 종종 요청을 차단합니다. 그들은 새로운 주제가 설정되기 전에 응답에 대한 제한을 도입하여 기존 대화를 차단하고 사용자가 채팅을 쓸어버리기 위해 빗자루 버튼을 선택하도록 권장합니다. 이 제한은 모델이 범위를 벗어나는 것을 방지하고 모든 사람이 모델을 사용할 수 있도록 합니다. 고려해야 할 흥미로운 점은 이러한 모델에서 역사가 작동하는 방식입니다. 이 단계에서는 액세스할 수 있는 위치에 저장되지 않고 기본 스플래시 화면으로 다시 재설정됩니다.
 
-Bing의 ChatBot 기능을 직접 사용해 보십시오(Edge 브라우저 필요): :PageLink{title="Bing" url="https://bing.com/"}
+Bing의 ChatBot 기능을 직접 사용해 보십시오(Edge 브라우저 필요): :PageLink{title="Bing" url="https://www.bing.com/"}
 
 ### Google
 
@@ -119,7 +119,7 @@ Copilot은 모든 개발자에게 유용한 도구가 될 것이며, 프로덕�
 
 현재 기술 미리보기 단계에서 Copilot은 Visual Studio 및 Visual Studio Code와 같은 Microsoft 에코시스템에서 사용할 수 있으며 확장이 개발됨에 따라 Neovim, Jetbrains 등과 같은 다른 통합 개발 환경 또는 IDE로 확장할 계획입니다.
 
-Copilot X 자세히 알아보기: :PageLink{title="Github" url="https://github.blog/2023-03-22-github-copilot-x-the-ai-powered-developer-experience/"}
+Copilot X 자세히 알아보기: :PageLink{title="Github" url="https://github.blog/news-insights/product-news/github-copilot-x-the-ai-powered-developer-experience/"}
 
 ### Summarizer
 
@@ -151,7 +151,7 @@ Bing 또는 Google을 사용하는 것과 차별화되는 점은 Brave의 AI 모
 
 Brave는 업계 거대 기업에 대한 대안에 계속해서 도전하고 혁신하고 있습니다. 비교적 새롭기 때문에 완벽하지 않으며 AI가 발전하고 검색 엔진이 발전함에 따라 계속 적응할 것입니다.
 
-:PageLink{title="Brave" url="https://brave.com/ai-summarizer/"} 의 새로운 기능에 대해 자세히 알아보세요.
+:PageLink{title="Brave" url="https://brave.com/blog/ai-summarizer/"} 의 새로운 기능에 대해 자세히 알아보세요.
 
 그들의 검색 엔진을 사용해보십시오 - 비공개입니다! :PageLink{title="Brave Search" url="https://search.brave.com"}
 

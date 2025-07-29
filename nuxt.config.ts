@@ -4,7 +4,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@nuxtjs/i18n',
-    '@nuxtjs/robots',
     '@nuxtjs/sitemap',
     '@nuxt/content',
     '@unocss/nuxt',
@@ -15,6 +14,33 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     'nitro-cloudflare-dev',
   ],
+
+  app: {
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+      meta: [
+        { name: 'format-detection', content: 'telephone=no' },
+        { name: 'color-scheme', content: 'dark light' },
+        { name: 'robots', content: 'index, follow' },
+        // Open Graph
+        { property: 'og:site_name', content: 'Xanzhu' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: 'https://xanzhu.com' },
+        { property: 'og:logo', content: 'https://xanzhu.com/images/favicon/logo.png' },
+        // Twitter
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:site', content: '@xanzhu1' },
+        // Naver Verification
+        { name: 'naver-site-verification', content: 'efe8928c52c47ffddfbd678ff1ac6fe5ca08b009' },
+      ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico', sizes: '32x32' },
+        { rel: 'icon', type: 'image/svg+xml', href: '/icon.svg', sizes: 'any' },
+        { rel: 'preconnect', href: 'https://cdn.xanzhu.com', crossorigin: 'anonymous' },
+      ],
+    },
+  },
 
   colorMode: {
     classSuffix: '',
@@ -49,7 +75,7 @@ export default defineNuxtConfig({
     ],
     detectBrowserLanguage: {
       useCookie: true,
-      cookieKey: '0002',
+      cookieKey: 'xanzhu-i18n',
       redirectOn: 'root',
       cookieSecure: true,
     },
@@ -88,7 +114,7 @@ export default defineNuxtConfig({
   // API
   runtimeConfig: {
     public: {
-      Version: '1.0.201',
+      Version: '1.0.210',
       WeatherAPI: process.env.WEATHER_API,
       i18n: {
         baseUrl: 'https://xanzhu.com',
@@ -102,7 +128,7 @@ export default defineNuxtConfig({
     mode: 'svg',
   },
 
-  // SECURITY V1.6
+  // SECURITY V1.7
   security: {
     nonce: true,
     ssg: {
@@ -117,25 +143,24 @@ export default defineNuxtConfig({
           '\'self\'',
           '\'strict-dynamic\'',
           '\'nonce-{{nonce}}\'',
-          '\'unsafe-inline\'',
           'https://*.xanzhu.com',
-          '\'unsafe-eval\'',
         ],
-        'style-src': ['\'self\'', '\'unsafe-inline\''],
+        'style-src': [
+          '\'self\'',
+          // Allow devtools !
+          process.env.NODE_ENV === 'development' ? '\'unsafe-inline\'' : '\'nonce-{{nonce}}\'',
+          'https://*.xanzhu.com',
+        ],
         'base-uri': '\'none\'',
         'img-src': [
           '\'self\'',
           'data:',
           'https://cdn.xanzhu.com',
           'https://assets.lotofcarrots.com/media/home/section/desktop/4.webp',
-          'https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/AI_features_feb6.gif',
-          'https://storage.googleapis.com/gweb-uniblog-publish-prod/images/feb_6_AI_hero.width-1000.format-webp.webp',
-          'https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_Fig1.width-1000.format-webp.webp',
-          'https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_Fig4.width-1000.format-webp.webp',
+          'https://storage.googleapis.com/gweb-uniblog-publish-prod/',
         ],
         'media-src': [
-          'https://storage.googleapis.com/gweb-uniblog-publish-prod/original_videos/Super_G_BRD2023_blogEXP_v024a.mp4',
-          'https://storage.googleapis.com/gweb-uniblog-publish-prod/original_videos/Docs_Web_030623_1.mp4',
+          'https://storage.googleapis.com/gweb-uniblog-publish-prod/',
           'https://storage.quantum-engine.ai/Rabbits_Factory_4K_h264.mp4',
           'https://assets.lotofcarrots.com/media/home/section/desktop/4.mp4',
           'https://www.apple.com/105/media/us/macbook-air-13-and-15/2023/f52c7a72-dff4-4f3c-9511-bf08e46c6f5f/anim/design/hero/medium_2x.mp4',
@@ -144,6 +169,8 @@ export default defineNuxtConfig({
         'font-src': ['\'self\''],
         'object-src': ['\'none\''],
         'script-src-attr': ['\'none\''],
+        'style-src-attr': ['\'unsafe-inline\''],
+        'form-action': ['\'self\''],
         'connect-src': [
           '\'self\'',
           'https://*.xanzhu.com',
@@ -174,18 +201,21 @@ export default defineNuxtConfig({
     sri: true,
   },
 
-  robots: {
-    disallow: process.env.NODE_ENV === 'development' ? '/' : '',
-  },
-
   compatibilityDate: '2025-07-15',
 
   // Testing features
   sourcemap: false,
 
+  unocss: {
+    disableNuxtInlineStyle: false,
+  },
+
   nitro: {
     future: {
       nativeSWR: true,
+    },
+    prerender: {
+      routes: ['/robots.txt', '/sitemap.xml'],
     },
   },
 })

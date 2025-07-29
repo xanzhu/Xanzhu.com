@@ -11,7 +11,7 @@ const { t } = useI18n()
 <template>
   <figure>
     <video
-      class="rounded-md rounded-md core-border" muted :autoplay="true" :loop="true" :controls="false" playsinline
+      class="core-border rounded-md rounded-md" muted :autoplay="true" :loop="true" :controls="false" playsinline
       :poster="thumbnail"
     >
       <source :src="source">

@@ -132,6 +132,6 @@ Spark NZ - scamhelp@spark.co.nz
 
 - :PageLink{title="dia.govt.nz" url="https://www.dia.govt.nz/Spam-How-to-Report-Scams"}
 
-- :PageLink{title="cert.nz" url="https://www.cert.govt.nz/report/business-and-individuals/"}
+- :PageLink{title="ncsc.govt.nz" url="https://www.ncsc.govt.nz/report/business-and-individuals/"}
 
 - :PageLink{title="netsafe.org.nz" url="https://report.netsafe.org.nz/hc/en-au/requests/new"}
