@@ -5,9 +5,12 @@
     </div>
 
     <div
-      class="relative z-10 mx-auto flex flex-col px5 py10 sm:items-center sm:text-center dark:backdrop-brightness-90">
-      <div class="mb2 flex items-center text-sm text-brand-light font-semibold uppercase space-x-2 dark:text-yellow-400"
-        role="doc-subtitle">
+      class="relative z-10 mx-auto flex flex-col px5 py10 sm:items-center sm:text-center dark:backdrop-brightness-90"
+    >
+      <div
+        class="mb2 flex items-center text-sm text-brand-light font-semibold uppercase space-x-2 dark:text-yellow-400"
+        role="doc-subtitle"
+      >
         <Icon name="mdi:web" class="h6 w6 text-inherit" aria-hidden="true" />
         <span>{{ $t('v2.home.heroTagline') }}</span>
       </div>
@@ -15,11 +18,12 @@
         {{ $t('v2.home.heroHeading') }}
       </h1>
       <p class="mx-auto max-w-[90%] max-w-lg w-full bg-white text-sm font-300 op70 dark:bg-element-dark md:text-lg">
-        {{  $t('v2.home.heroSubhead') }}
+        {{ $t('v2.home.heroSubhead') }}
       </p>
       <NuxtLinkLocale
         class="mt5 flex items-center core-border border-brand-light rounded-full border-dashed core-theme px5 py1.5 text-center text-blue-6 no-underline transition duration-300 ease-in-out <sm:mr-auto hover:(scale-110 border-solid) space-x-1 dark:border-yellow-3 dark:text-yellow-4"
-        to="/blog">
+        to="/blog"
+      >
         <span class="m0">
           {{ $t('v2.home.heroCta') }}
         </span>

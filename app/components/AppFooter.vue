@@ -6,7 +6,7 @@ const { t } = useI18n()
 
 <template>
   <footer
-    class="bg-white dark:bg-black justify-center border-t-1 border-t-dark-4/10 border-solid border-b-none border-l-none border-r-none bg-inherit px-6 py-6 text-inherit dark:border-t-dark-2/30 lg:px30 md:px-15 xl:px40"
+    class="justify-center border-t-1 border-t-dark-4/10 border-solid border-b-none border-l-none border-r-none bg-inherit bg-white px-6 py-6 text-inherit dark:border-t-dark-2/30 dark:bg-black lg:px30 md:px-15 xl:px40"
   >
     <div class="flex flex-col items-start justify-between md:flex-row">
       <UiLogo class="text-inherit" />

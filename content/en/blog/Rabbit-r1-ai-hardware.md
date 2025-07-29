@@ -18,7 +18,7 @@ Given everything these days is an application that can be downloaded from the ap
 ---
 source: https://assets.lotofcarrots.com/media/home/section/desktop/4.mp4
 credit: Rabbit
-thumbnail: https://assets.lotofcarrots.com/media/home/section/desktop/4.webp    
+thumbnail: https://assets.lotofcarrots.com/media/home/section/desktop/4.webp
 ---
 ::
 

@@ -31,14 +31,16 @@ const hasChildren = computed<boolean>(() => {
 })
 
 function setupIntersectionObserver() {
-  if (!isDesktop.value) return
+  if (!isDesktop.value)
+    return
 
   const sections = flattenLinks(props.links)
     .filter(link => link.id)
     .map(link => document.getElementById(link.id))
     .filter((el): el is HTMLElement => el !== null)
 
-  if (sections.length === 0) return
+  if (sections.length === 0)
+    return
 
   observer = new IntersectionObserver(
     (entries) => {
@@ -70,13 +72,14 @@ onMounted(() => {
 
 onUnmounted(() => {
   window.removeEventListener('resize', checkScreenWidth)
-  if (observer) observer.disconnect()
+  if (observer)
+    observer.disconnect()
 })
 </script>
 
 <template>
   <nav
-    class="m-4 rounded-md bg-neutral-100 p-4 md:(mx-auto max-w-xl) lg:(max-w-md) core-border dark:bg-neutral-900"
+    class="m-4 core-border rounded-md bg-neutral-100 p-4 md:(mx-auto max-w-xl) lg:(max-w-md) dark:bg-neutral-900"
     :aria-label="t('Blog.toc')"
     aria-labelledby="toc-heading"
     role="navigation"
@@ -90,7 +93,7 @@ onUnmounted(() => {
       <li
         v-for="link of flattenLinks(links)"
         :key="link.id"
-        class="w-fit rounded-md border border-transparent border-1 border-solid text-gray-800 transition-colors duration-200 dark:text-light-400"
+        class="w-fit border border-1 border-transparent rounded-md border-solid text-gray-800 transition-colors duration-200 dark:text-light-400"
         :class="{
           'list-disc hover:(underline underline-offset-3 underline-2)': !hasChildren && link.depth === 2,
           'ml-4 opacity-80 hover:(underline underline-offset-3 underline-2) p1': link.depth === 3,
@@ -100,7 +103,7 @@ onUnmounted(() => {
         role="listitem"
       >
         <NuxtLink
-          class="text-inherit no-underline dark:text-inherit w-fit"
+          class="w-fit text-inherit no-underline dark:text-inherit"
           :href="`#${link.id}`"
           :aria-current="activeSection === link.id ? 'true' : 'false'"
         >

@@ -14,7 +14,7 @@ alt: "ChatGPT视觉设计 Xanzhu"
 
 ChatGPT 解决了一个新问题，这就是它获得大量关注的原因。 正如我在上一篇文章中提到的，ChatGPT 等语言模型让我们得以一窥我们的未来。 自从发布那篇初始文章以来，一些事情发生了变化，从提供类似服务或简单地使用 ChatGPT 的 API 到模型本身更新到版本 4，提供更复杂的结果和功能。
 
-查看最新消息： :PageLink{title="OpenAI" url="https://openai.com/"} 
+查看最新消息： :PageLink{title="OpenAI" url="https://openai.com/"}
 
 亲自试用 ChatGPT： :PageLink{title="ChatGPT" url="https://chatgpt.com/"}
 
@@ -119,7 +119,7 @@ Copilot 将成为所有开发人员的有用工具，改进生产就绪代码的
 
 目前，在技术预览阶段，Copilot 可用于 Microsoft 生态系统：Visual Studio 和 Visual Studio Code，并计划随着扩展的开发扩展到其他集成开发环境或 IDE，如 Neovim、Jetbrains 等。
 
-了解有关 Copilot X 的更多信息： :PageLink{title="Github" url="https://github.blog/news-insights/product-news/github-copilot-x-the-ai-powered-developer-experience/"} 
+了解有关 Copilot X 的更多信息： :PageLink{title="Github" url="https://github.blog/news-insights/product-news/github-copilot-x-the-ai-powered-developer-experience/"}
 
 ### Summarizer
 

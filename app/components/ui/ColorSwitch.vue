@@ -14,11 +14,12 @@ function switchColor() {
   <button
     class="mr-0 inline-block w-8 flex cursor-pointer items-center justify-center border-none bg-transparent <sm:py1"
     :aria-label="colorMode.value === 'dark' ? $t('v2.colorSwitch.light') : $t('v2.colorSwitch.dark')"
-    @click="switchColor">
+    @click="switchColor"
+  >
     <ColorScheme>
       <Icon :name="colorIcon" class="h6 w6 text-black transition-all duration-500 dark:text-white" />
       <template #fallback>
-        <span class="h-6 w-6 inline-block" aria-hidden="true" />
+        <span class="inline-block h-6 w-6" aria-hidden="true" />
       </template>
     </ColorScheme>
   </button>

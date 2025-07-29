@@ -47,7 +47,7 @@ The main difference is just a personality factor. It feels like searching the we
 ---
 source: https://cdn.xanzhu.com/v1/next-gen-ai/bdialog.webp
 alt: Bing Chatbot Dialog preview
---- 
+---
 ::
 
 Bing provides the user with limited options and often cuts off the request. They've introduced a limit for responses before a new topic must be established, which blocks the existing conversation and encourages the user to select the broom button to sweep the chat away. This restriction is likely to prevent the model from going out of scope and ensures everyone can use it. Something interesting to consider is how history works with these models. At this stage, it isn't saved anywhere accessible and resets back to a default splash screen.
@@ -152,14 +152,14 @@ In addition to providing a specified section labelled Summarizer, Brave's AI mod
 source: https://cdn.xanzhu.com/v1/next-gen-ai/bdc.webp
 alt: Brave in-line summary visual
 credit: Brave
---- 
+---
 ::
 
 What makes this stand out from using Bing or Google is Brave's AI model is entirely run by Brave and does not rely on third parties for their Language Model Solutions such as ChatGPT. Developed in-house, their language model is trained on three different Large Language Models or LLMs following the same ethos across their software line-up of being independent and private. These Models are based on BART, DeBerta, and their own data from search results, all trained on completing different tasks such as Question Answering, Classification, and then Summarizing.
 
 Brave continues to challenge and innovate alternatives to the industry giants. Being relatively new, it's not perfect and will continue to adapt as AI develops and their search engine advances.
 
-Read more about :PageLink{title="Brave" url="https://brave.com/blog/ai-summarizer/"}'s new feature 
+Read more about :PageLink{title="Brave" url="https://brave.com/blog/ai-summarizer/"}'s new feature
 
 Try their search engine - It's private! :PageLink{title="Brave Search" url="https://search.brave.com"}
 

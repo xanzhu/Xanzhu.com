@@ -39,7 +39,6 @@ alt: Arc browser feature promo
 ---
 ::
 
-
 ### Developer mode
 
 If you're a developer and frequently use localhost:3000, Arc offers a handy and exceptional experience natively. It includes options such as opening developer tools, taking screenshots, and more. The browser is designed to streamline your development process, providing you with all the necessary tools and features to make your work more efficient and effective. Whether you're working on a local development environment or testing a live website, Arc is the perfect browser for developers who value speed, reliability, and an intuitive interface. With Arc, you'll be able to work more efficiently, saving you valuable time and effort.

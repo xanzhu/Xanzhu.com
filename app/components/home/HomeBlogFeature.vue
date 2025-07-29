@@ -66,7 +66,7 @@ const featureSetTwo = computed(() => features.value?.slice(3, 6) || [])
             >
               {{ feature.title }}
             </h3>
-            <p class="mt-2 text-inherit font-300 op70 group-hover:op-100 transition-opacity duration-300 ease-in-out">
+            <p class="mt-2 text-inherit font-300 op70 transition-opacity duration-300 ease-in-out group-hover:op-100">
               {{ feature.description }}
             </p>
           </NuxtLinkLocale>
@@ -112,7 +112,7 @@ const featureSetTwo = computed(() => features.value?.slice(3, 6) || [])
             >
               {{ feature.title }}
             </h3>
-            <p class="mt-2 text-inherit font-300 op70 group-hover:op-100 transition-opacity duration-300 ease-in-out">
+            <p class="mt-2 text-inherit font-300 op70 transition-opacity duration-300 ease-in-out group-hover:op-100">
               {{ feature.description }}
             </p>
           </NuxtLinkLocale>
