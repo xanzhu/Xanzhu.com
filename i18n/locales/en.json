@@ -225,7 +225,8 @@
       "label": "500 Internal Error"
     },
     "sr": {
-      "mainNav": "Main navigation"
+      "mainNav": "Main navigation",
+      "langSelect": "Language Selector"
     }
   }
 }

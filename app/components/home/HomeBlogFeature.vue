@@ -22,7 +22,7 @@ const featureSetTwo = computed(() => features.value?.slice(3, 6) || [])
 </script>
 
 <template>
-  <section class="mx-auto bg-light-3 py10 dark:bg-dark-900" aria-labelledby="latest-posts">
+  <section class="mx-auto bg-light4 py10 dark:bg-dark9" aria-labelledby="latest-posts">
     <div
       class="mx-auto mb5 max-w-lg flex flex-col items-center justify-between px6 md:mb0 md:max-w-5xl md:flex-row space-y-5 2xl:px45 xl:px25 md:space-y-0"
     >
@@ -35,7 +35,7 @@ const featureSetTwo = computed(() => features.value?.slice(3, 6) || [])
         </p>
       </div>
       <NuxtLinkLocale
-        class="self-start core-border rounded-md core-theme p4 text-inherit decoration-none transition duration-150 ease-linear hover:(bg-black text-white) dark:hover:(bg-white text-black)"
+        class="self-start core-border rounded-md core-theme p4 text-inherit decoration-none transition-transform duration-150 ease-linear hover:(bg-black text-white) dark:hover:(bg-white text-black)"
         to="/blog"
       >
         {{ $t('footer.blog') }}
@@ -48,7 +48,7 @@ const featureSetTwo = computed(() => features.value?.slice(3, 6) || [])
       <div class="contents children:(core-border rounded-lg)" role="feed" :aria-label="t('v2.home.featuredPosts')">
         <article
           v-for="feature in featureSetOne" :key="feature._path"
-          class="group core-theme transition duration-300 ease-linear hover:(scale-102 bg-white shadow-lg dark:bg-black)"
+          class="group core-theme transition transition-transform duration-300 ease-linear hover:(scale-102 bg-white shadow-lg dark:bg-black)"
         >
           <NuxtLinkLocale
             class="block h-full p-5 text-black no-underline dark:text-white" :to="feature._path"
@@ -66,7 +66,7 @@ const featureSetTwo = computed(() => features.value?.slice(3, 6) || [])
             >
               {{ feature.title }}
             </h3>
-            <p class="mt-2 text-inherit font-300 op70 group-hover:op-100">
+            <p class="mt-2 text-inherit font-300 op70 group-hover:op-100 transition-opacity duration-300 ease-in-out">
               {{ feature.description }}
             </p>
           </NuxtLinkLocale>
@@ -112,7 +112,7 @@ const featureSetTwo = computed(() => features.value?.slice(3, 6) || [])
             >
               {{ feature.title }}
             </h3>
-            <p class="mt-2 text-inherit font-300 op70 group-hover:op-100">
+            <p class="mt-2 text-inherit font-300 op70 group-hover:op-100 transition-opacity duration-300 ease-in-out">
               {{ feature.description }}
             </p>
           </NuxtLinkLocale>

@@ -21,7 +21,7 @@ definePageMeta({
     <section class="hidden lg:(mb24 inline-flex justify-center)">
       <LazyHomeBrandList />
     </section>
-    <LazyHomeBlogFeature class="mb32" />
+    <LazyHomeBlogFeature class="mb32 core-border rounded-md" />
     <section aria-labelledby="pages-card" class="mb32">
       <LazyHomePagesCard />
     </section>

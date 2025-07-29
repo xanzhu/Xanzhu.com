@@ -46,7 +46,7 @@ useLangMeta('Blog.meta', seoImage)
           />
           <div class="h-auto rounded-b-md text-black dark:text-white">
             <div
-              class="children:(inline-flex core-border rounded-md core-ui px4 py1.5 text-xs font-mono op80 dark:op100) space-x-2"
+              class="children:(inline-flex core-border rounded-md core-ui px4 py2 text-xs op80 dark:op100) space-x-2"
             >
               <Date v-if="article.date" :date="article.date" />
               <p v-if="article.tag">

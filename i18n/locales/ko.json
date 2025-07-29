@@ -225,7 +225,8 @@
       "label": "500 내부 서버 오류"
     },
     "sr": {
-      "mainNav": "메인 탐색"
+      "mainNav": "메인 탐색",
+      "langSelect": "언어 선택기"
     }
   }
 }

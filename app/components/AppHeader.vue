@@ -33,7 +33,7 @@ const availableLocales = computed(() => {
     <!-- Language Selector -->
     <div class="hidden md:(flex items-center space-x-2)" role="group">
       <UiColorSwitch />
-      <div class="md:(inline-flex gap1 core-border rounded-full core-ui p1)" role="navigation">
+      <div class="md:(inline-flex gap1 core-border rounded-full core-ui p1)" role="navigation" :aria-label="t('v2.sr.langSelect')">
         <NuxtLink
           v-for="locale in availableLocales" :key="locale.code"
           :aria-label="t('app.sr.lang_select') + locale.name" :to="switchLocalePath(locale.code)"
