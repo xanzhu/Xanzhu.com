@@ -40,7 +40,7 @@ onUnmounted(() => {
   >
     <div
       v-if="isVisible"
-      class="fixed bottom-6 right-6 z-30 flex flex-col gap-2"
+      class="fixed bottom-6 right-3 z-30 flex flex-col gap-2"
     >
       <button
         v-if="!isAtBottom"
