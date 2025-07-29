@@ -14,19 +14,6 @@
     "title": "Discover the Latest Insights",
     "toc": "Table of contents"
   },
-  "Error": {
-    "404": {
-      "code": "Code: 404",
-      "desc": "Sorry, the page you are looking for could not be found.",
-      "title": "Page Not Found"
-    },
-    "500": {
-      "code": "Code: 500",
-      "desc": "Sorry we messed up, please try again..",
-      "title": "Internal Error"
-    },
-    "return": "Return"
-  },
   "Home": {
     "Seo": {
       "description": "Stay safe online with Xanzhu. Get the latest tech trends, security tips, and privacy guides to navigate the digital world.",
@@ -145,8 +132,8 @@
       "anyrun": "Interactive malware analysis tool for analyzing and sharing results in real time.",
       "google": "Report suspicious websites to Google Safe Browsing for protection updates",
       "hybrid": "Free malware analysis platform for analyzing suspicious files and URLs",
-      "microsoft": "Microsoft’s platform for reporting phishing and malicious URLs",
-      "securityheaders": "Analyze a website’s HTTP security headers for vulnerabilities",
+      "microsoft": "Microsoft's platform for reporting phishing and malicious URLs",
+      "securityheaders": "Analyze a website's HTTP security headers for vulnerabilities",
       "shodan": "Search engine for discovering devices and systems exposed to the internet."
     },
     "reporting_tools": "Reporting Tools",
@@ -163,7 +150,7 @@
       "phishtank": "Community-powered database for identifying and reporting phishing websites",
       "sandboxie": "Tool for running applications in an isolated sandbox environment.",
       "snort": "Intrusion detection system for real-time traffic analysis and threat prevention.",
-      "urlvoid": "Tool to check a website’s reputation and detect malicious activities.",
+      "urlvoid": "Tool to check a website's reputation and detect malicious activities.",
       "virustotal": "Online scanner for analyzing files and URLs for malware and suspicious content.",
       "wireshark": "Network protocol analyzer for monitoring and troubleshooting network traffic."
     }
@@ -225,6 +212,17 @@
     "ui": {
       "scrollTop": "Back to Top",
       "scrollBottom": "Go to Bottom"
+    },
+    "error404": {
+      "h1": "Hmm... Where Did That Page Go?",
+      "p": "Sorry, the link's broken or the page moved somewhere else.",
+      "goBack": "Go back",
+      "label": "404 Page Not Found"
+    },
+    "error500": {
+      "p": "Something isn't working right now. Please try again soon.",
+      "h1": "Server's Taking a Coffee Break...",
+      "label": "500 Internal Error"
     }
   }
 }
