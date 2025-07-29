@@ -157,7 +157,7 @@ To learn more about NordPass and its features, you can visit the website at :Pag
 
 ### 1Password
 
-1Password offers a free trial for its :PageLink{title="Premium Plan" url="https://1password.com/sign-up/"}. This solution is well-designed and works on all your devices, including desktop and mobile. 1Password offers unlimited devices and features a unique feature called "Travel Mode", which can remove sensitive data from your device when traveling, ensuring that your passwords and accounts don't get compromised while on the go. It also allows for a one-click restore solution when returning.
+1Password offers a free trial for its :PageLink{title="Premium Plan" url="https://1password.com/pricing"}. This solution is well-designed and works on all your devices, including desktop and mobile. 1Password offers unlimited devices and features a unique feature called "Travel Mode", which can remove sensitive data from your device when traveling, ensuring that your passwords and accounts don't get compromised while on the go. It also allows for a one-click restore solution when returning.
 
 Some notable features of the baseline premium plan include:
 

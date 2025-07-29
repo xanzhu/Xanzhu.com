@@ -17,7 +17,7 @@ ChatGPT solves a new problem, which is why it's gaining a lot of traction. As I 
 
 Check out the latest from: :PageLink{title="OpenAI" url="https://openai.com/"}
 
-Try ChatGPT for yourself: :PageLink{title="ChatGPT" url="https://chat.openai.com/"}
+Try ChatGPT for yourself: :PageLink{title="ChatGPT" url="https://chatgpt.com/"}
 
 ### Microsoft
 
@@ -47,12 +47,12 @@ The main difference is just a personality factor. It feels like searching the we
 ---
 source: https://cdn.xanzhu.com/v1/next-gen-ai/bdialog.webp
 alt: Bing Chatbot Dialog preview
---- 
+---
 ::
 
 Bing provides the user with limited options and often cuts off the request. They've introduced a limit for responses before a new topic must be established, which blocks the existing conversation and encourages the user to select the broom button to sweep the chat away. This restriction is likely to prevent the model from going out of scope and ensures everyone can use it. Something interesting to consider is how history works with these models. At this stage, it isn't saved anywhere accessible and resets back to a default splash screen.
 
-Try Bing's ChatBot Feature for yourself (Requires Edge Browser): :PageLink{title="Bing" url="https://bing.com/"}
+Try Bing's ChatBot Feature for yourself (Requires Edge Browser): :PageLink{title="Bing" url="https://www.bing.com/"}
 
 ### Google
 
@@ -127,7 +127,7 @@ Copilot will be a helpful tool for all developers, improving workflows for produ
 
 Currently, in a technical preview stage, Copilot is available on the Microsoft ecosystem: Visual Studio, and Visual Studio Code, with plans to expand into other Integrated Development Environments or IDEs such as Neovim, Jetbrains and more as the extension is developed.
 
-Learn more about Copilot X: :PageLink{title="Github" url="https://github.blog/2023-03-22-github-copilot-x-the-ai-powered-developer-experience/"}
+Learn more about Copilot X: :PageLink{title="Github" url="https://github.blog/news-insights/product-news/github-copilot-x-the-ai-powered-developer-experience/"}
 
 ### Summarizer
 
@@ -152,14 +152,14 @@ In addition to providing a specified section labelled Summarizer, Brave's AI mod
 source: https://cdn.xanzhu.com/v1/next-gen-ai/bdc.webp
 alt: Brave in-line summary visual
 credit: Brave
---- 
+---
 ::
 
 What makes this stand out from using Bing or Google is Brave's AI model is entirely run by Brave and does not rely on third parties for their Language Model Solutions such as ChatGPT. Developed in-house, their language model is trained on three different Large Language Models or LLMs following the same ethos across their software line-up of being independent and private. These Models are based on BART, DeBerta, and their own data from search results, all trained on completing different tasks such as Question Answering, Classification, and then Summarizing.
 
 Brave continues to challenge and innovate alternatives to the industry giants. Being relatively new, it's not perfect and will continue to adapt as AI develops and their search engine advances.
 
-Read more about :PageLink{title="Brave" url="https://brave.com/ai-summarizer/"}'s new feature 
+Read more about :PageLink{title="Brave" url="https://brave.com/blog/ai-summarizer/"}'s new feature
 
 Try their search engine - It's private! :PageLink{title="Brave Search" url="https://search.brave.com"}
 

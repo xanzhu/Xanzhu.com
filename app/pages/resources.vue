@@ -64,7 +64,7 @@ const resources = ref<Resource[]>([
     links: [
       {
         name: 'VirusTotal',
-        url: 'https://www.virustotal.com/',
+        url: 'https://www.virustotal.com/gui/home/upload',
         description: t('resources.tools.virustotal'),
       },
       {

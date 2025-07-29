@@ -22,7 +22,7 @@ alt: Youtube Search Results
 
 Artificial Intelligence, or AI, is where our future is heading. Systems will be able to run 24/7, providing minimal downtime and reducing human error. Most AI solutions at present will aim to solve a specific task and improve efficiency. ChatGPT does this by providing you with information quickly without the need to search the web, with the added ability to converse with this AI back and forth to gain further understanding and clarity.
 
-:PageLink{title="ChatGPT" url="https://chat.openai.com/"} has been around since November 2022, developed by OpenAI, allowing for human-like interactions trained through data collected on the internet.
+:PageLink{title="ChatGPT" url="https://chatgpt.com/"} has been around since November 2022, developed by OpenAI, allowing for human-like interactions trained through data collected on the internet.
 
 ::media
 ---
@@ -37,7 +37,7 @@ Having the option to communicate ideas, questions, or thoughts with an AI is a s
 
 The capabilities of ChatGPT have been demonstrated by users getting answers to coding problems, solving complex theory tests, and even writing essays for students. This has been a common concern for universities and schools, leading to the technology being banned entirely instead of adapting the existing curriculum and using ChatGPT as a tool for learning and gaining understanding, similar to having a tutor with the ability to chat and answer questions.
 
-Microsoft invested heavily in OpenAI to make use of technology like ChatGPT, investing 10 billion. This investment allows them to integrate this technology directly into their search engine, :PageLink{title="Bing" url="https://bing.com/"} and other products.
+Microsoft invested heavily in OpenAI to make use of technology like ChatGPT, investing 10 billion. This investment allows them to integrate this technology directly into their search engine, :PageLink{title="Bing" url="https://www.bing.com/"} and other products.
 
 There is potential for a war in AI technologies as Google recently announced that they will be introducing their adaptation of ChatGPT, called Bard, which is currently being tested with a public release expected in the next few months.
 

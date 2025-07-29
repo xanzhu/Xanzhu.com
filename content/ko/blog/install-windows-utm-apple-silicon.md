@@ -13,7 +13,7 @@ Apple Silicon에서의 Windows 사용이 점점 더 대중화되고 있습니다
 
 :PageLink{title="이전 게시물" url="/blog/windows-on-apple-silicon"} 에서는 Windows 11 설정 과정을 다루었으며, 그 이후 몇 가지 변경 사항이 있었으므로 이 새로운 가이드는 2025년에 Apple Silicon에 Windows 11을 설치하는 것에 대한 최신 정보를 제공합니다!
 
-Apple Silicon에 Windows를 설치하는 다른 대안적인 솔루션으로는 유료 솔루션이며 더 나은 성능을 제공할 수 있지만 비용이 발생합니다. :PageLink{title="Parallels Desktop" url="https://www.parallels.com/products/desktop/"} 또는 :PageLink{title="VMware Fusion" url="https://www.vmware.com/products/fusion.html"}을 확인해 보세요.
+Apple Silicon에 Windows를 설치하는 다른 대안적인 솔루션으로는 유료 솔루션이며 더 나은 성능을 제공할 수 있지만 비용이 발생합니다. :PageLink{title="Parallels Desktop" url="https://www.parallels.com/products/desktop/"} 또는 :PageLink{title="VMware Fusion" url="https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion"}을 확인해 보세요.
 
 UTM은 macOS용 무료 오픈 소스 가상화 도구로서 사용하기 쉽고 사용자 정의를 통해 기본 성능을 제공하도록 설계되었습니다.
 

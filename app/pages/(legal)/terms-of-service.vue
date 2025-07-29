@@ -3,7 +3,7 @@ const { t } = useI18n({
   useScope: 'local',
 })
 
-const date = '27/01/2025'
+const date = '2025-01-27'
 
 const sections = [
   {

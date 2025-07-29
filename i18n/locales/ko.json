@@ -5,105 +5,33 @@
     "view": "최신 버전 보기"
   },
   "Blog": {
-    "Video": "비디오를 찾을 수 없습니다",
     "description": "개인 정보 보호, 보안 및 그 사이의 모든 것.",
     "meta": {
       "description": "Xanzhu 는 기술에 대한 기사를 제공합니다. 우리는 개인 정보 보호, 보안 등에 중점을 둡니다.",
       "title": "최신 보안 및 기술 뉴스 게시물: 보안 업데이트, 정보, 분석, 보고서 및 연구"
     },
-    "next": "다음 글",
-    "previous": "이전 글",
-    "read-time": "최소 읽기",
     "source": "원천",
     "title": "블로그에서 최신 통찰력과 관점을 발견하십시오.",
-    "toc": "목차",
-    "updated": "업데이트됨"
-  },
-  "Error": {
-    "404": {
-      "code": "규약: 404",
-      "desc": "찾고 계신 페이지를 찾을 수 없습니다. 다시 시도해 주시기 바랍니다.",
-      "title": "페이지를 찾을 수 없음"
-    },
-    "500": {
-      "code": "규약: 500",
-      "desc": "실수하여 죄송합니다. 다시 시도해 주시기 바랍니다.",
-      "title": "내부 오류"
-    },
-    "return": "돌아가기"
+    "toc": "목차"
   },
   "Home": {
     "Seo": {
       "description": "Xanzhu와 함께 온라인에서 안전하게 지내는 최신 기술 동향과 통찰력을 발견하십시오. 당사의 뉴스 및 가이드는 변화하는 환경을 탐색하는 데 도움이 됩니다.",
       "title": "뉴스, 기술 가이드, 개인 정보 보호 및 보안"
-    },
-    "a11y": {
-      "mouseicon": "아래로 스크롤"
-    },
-    "desc": "Xanzhu에서는 귀하가 안전하게 기술을 사용하고 온라인에서 귀하의 데이터를 보호할 수 있도록 도와드립니다. VPN, 비밀번호 관리자, 2단계 인증 등과 같은 주제에 대한 기사, 가이드 및 리뷰를 통해 알아보세요.",
-    "more": "더 많은 기사 살펴보기",
-    "release": "새로운 출시",
-    "subhead": "자신 있게 기술 탐색하기",
-    "tag": "미래를 선도하다",
-    "title": "개인 정보 보호, 보안 및 그 사이의 모든 것",
-    "weatherLoad": "로드 중"
+    }
   },
   "Links": {
     "analysis": "분석",
     "blog": "블로그",
-    "home": "홈페이지",
-    "privacy-policy": "개인 정보 보호 정책",
-    "resources": "자원",
-    "reviews": "리뷰"
+    "resources": "자원"
   },
   "PagesCard": {
     "analysis": "위협에 대한 보고 및 기록",
     "blog": "최신 뉴스, 기술 가이드",
-    "image": {
-      "building-1": "두 개의 청록색과 흰색 고층 빌딩",
-      "building-2": "낮에는 흰색 콘크리트 건물",
-      "building-3": "고층 빌딩"
-    },
     "resources": "보안 도구 및 링크"
   },
   "SocialsCard": {
     "h1": "소셜 팔로우"
-  },
-  "StatsCard": {
-    "breach": {
-      "1": "옵터스 - 980만",
-      "2": "마지막 패스 - 3천만",
-      "3": "트위터 - 2억 1,150만",
-      "4": "LATITUDE - 1,400만"
-    },
-    "breaches": {
-      "title": "최근 침해"
-    },
-    "check": "계정 확인하기",
-    "image": {
-      "badge": "보안 배지",
-      "pwn": "HaveIBeepwnd 로고"
-    },
-    "threats": {
-      "1": "피싱",
-      "2": "랜섬웨어",
-      "3": "사회 공학",
-      "4": "서비스 거부(DoS)",
-      "title": "상위 보안 위협"
-    },
-    "title": "2023년에 관찰된 일반적인 위협",
-    "warn": "이는 대략적인 추정치이며 정확한 값은 약간 다를 수 있습니다. 2023년에 수집된 연구를 통해 획득"
-  },
-  "a11y": {
-    "AnalysisPage": "분석 페이지 방문",
-    "BlogPage": "블로그 페이지 방문",
-    "Home": "홈페이지 방문",
-    "Menu": "메뉴",
-    "ResourcePage": "리소스 페이지 방문",
-    "cMenu": "메뉴 닫기",
-    "langSwitch": "언어 전환",
-    "logo": "Xanzhu 로고",
-    "oMenu": "메뉴 열기"
   },
   "analysis": {
     "graph": {
@@ -132,10 +60,18 @@
   },
   "app": {
     "sr": {
-      "lang": "언어 선택",
       "lang_select": "선택한 언어:",
       "menu": "메뉴 열기"
     }
+  },
+  "breadcrumbs": {
+    "about": "에 대한",
+    "analysis": "분석",
+    "blog": "블로그",
+    "home": "홈",
+    "privacy": "개인정보 처리방침",
+    "resources": "리소스",
+    "terms": "이용약관"
   },
   "email": {
     "share": "이 기사를 확인하세요"
@@ -143,7 +79,6 @@
   "footer": {
     "about": "소개",
     "blog": "블로그",
-    "brand": "브랜드",
     "community": "커뮤니티",
     "company": "회사 소개",
     "copyright": "© Xanzhu 2025. 모든 권리를 보유합니다.",
@@ -165,16 +100,10 @@
     "version": "버전"
   },
   "home": {
-    "hero": {
-      "cta": "여행을 시작하세요",
-      "heading": "최신 웹을 위한 개인 정보 보호 및 보안",
-      "subhead": "데이터 보호부터 디지털 세계 재정의에 이르기까지 기술을 발전시키는 트렌드, 도구 및 기술을 살펴보세요.",
-      "tagline": "코드와 혁신을 넘어서"
-    },
-    "latest": "최근 게시물",
     "features": {
       "description": "주요 기사를 탐색하고 새로운 콘텐츠를 소개하십시오."
-    }
+    },
+    "latest": "최근 게시물"
   },
   "pageCard": {
     "article": "보안 동향 및 모범 사례에 대한 최신 기사를 받아보세요.",
@@ -231,7 +160,10 @@
     "linkedin": "링크드인에서 공유하기",
     "reddit": "Reddit에서 공유",
     "title": "이 기사를 공유해보세요!",
-    "twitter": "이것을 트위터에 공유"
+    "twitter": "이것을 트위터에 공유",
+    "threads": "스레드에서 공유하십시오",
+    "facebook": "이것을 Facebook에서 공유하십시오",
+    "telegram": "Telegram에서 공유하십시오"
   },
   "threatCard": {
     "ariaLabel": "(새 탭에서 자세히 알아보세요)",
@@ -253,18 +185,48 @@
     "title": "ANZ 사이버 위협 2024"
   },
   "v2": {
-    "app": {
-      "sr": {
-        "colorSwitch": "컬러 스위처"
-      }
-    },
     "blog": {
-      "noPosts": "사용 가능한 게시물이 없습니다."
+      "noPosts": "사용 가능한 게시물이 없습니다.",
+      "lastUpdated": "마지막으로 업데이트되었습니다",
+      "videoIframe": "YouTube 비디오",
+      "readTime": "최소 읽기",
+      "prevPost": "이전 글",
+      "nextPost": "다음 글"
     },
-    "blog_iframe": "YouTube 비디오",
-    "blog_updated": "마지막으로 업데이트되었습니다",
+    "colorSwitch": {
+      "dark": "다크 모드로 전환하십시오",
+      "light": "라이트 모드로 전환하십시오"
+    },
     "home": {
-      "featuredPosts": "추천 블로그 게시물"
+      "featuredPosts": "추천 블로그 게시물",
+      "heroCta": "새로운 소식 확인하기",
+      "heroHeading": "현대 웹의 개인 정보 및 보안",
+      "heroSubhead": "개인 정보와 데이터를 보호하고, 기술을 모두에게 더 쉽게 접근 가능하게 하는 실용적인 가이드와 도구.",
+      "heroTagline": "개방적, 안전, 그리고 접근 가능"
+    },
+    "langSwitch": {
+      "current": "현재의",
+      "select": "언어를 선택하십시오",
+      "switch": "전환하십시오"
+    },
+    "ui": {
+      "scrollTop": "위로 돌아갑니다",
+      "scrollBottom": "바닥으로 이동하십시오"
+    },
+    "error404": {
+      "h1": "음... 페이지가 어디로 사라졌을까요?",
+      "p": "죄송합니다. 링크가 잘못되었거나 페이지가 다른 곳으로 옮겨진 것 같아요.",
+      "goBack": "뒤로 가기",
+      "label": "404 페이지를 찾을 수 없음"
+    },
+    "error500": {
+      "p": "현재 시스템에 문제가 발생했어요. 잠시 후 다시 시도해 주세요.",
+      "h1": "서버가 커피 브레이크 중인가 봐요...",
+      "label": "500 내부 서버 오류"
+    },
+    "sr": {
+      "mainNav": "메인 탐색",
+      "langSelect": "언어 선택기"
     }
   }
 }

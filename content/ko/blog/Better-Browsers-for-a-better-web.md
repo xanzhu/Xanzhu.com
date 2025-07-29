@@ -139,7 +139,7 @@ alt: 용감한 브라우저에서 Snowflake 구현
 
 :PageLink{title="The Tor Project" url="https://snowflake.torproject.org/"} 에서 Snowflake 프로토콜에 대해 자세히 알아볼 수 있습니다.
 
-Brave 브라우저에서 이를 구현하거나 활성화하려면 :PageLink{title="Brave 지원" url="https://support.brave.com/hc/en-us/articles/9059440641421-What-is-the-Snowflake-extension"}
+Brave 브라우저에서 이를 구현하거나 활성화하려면 :PageLink{title="Brave 지원" url="https://support.brave.app/hc/en-us/articles/9059440641421-What-is-the-Snowflake-extension"}
 
 ### 다른 특징들
 
@@ -191,7 +191,7 @@ alt: Firefox의 보안 기능 비교 차트
 ---
 ::
 
-Firefox는 안정성과 개인 정보 보호를 중시하는 사용자에게 탁월한 선택입니다. 비슷한 범위의 기능과 빠른 성능을 제공하는 Brave의 완벽한 대안입니다. :PageLink{title="Firefox.com" url="https://www.mozilla.org/en-US/firefox/new/"} 을 방문하여 브라우저를 다운로드하고 차이점을 직접 경험해 보십시오.
+Firefox는 안정성과 개인 정보 보호를 중시하는 사용자에게 탁월한 선택입니다. 비슷한 범위의 기능과 빠른 성능을 제공하는 Brave의 완벽한 대안입니다. :PageLink{title="Firefox.com" url="https://www.firefox.com/"} 을 방문하여 브라우저를 다운로드하고 차이점을 직접 경험해 보십시오.
 
 ## 기본값
 

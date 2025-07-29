@@ -15,7 +15,7 @@ const { t } = useI18n()
       <div
         class="mb-4 flex flex-col gap-1 text-sm text-neutral-600 tracking-wide font-mono uppercase sm:flex-row sm:items-center sm:gap-4 dark:text-neutral-300"
       >
-        <span class="w-fit rounded bg-neutral-100 px-2 py-0.5 dark:bg-neutral-900">
+        <span class="w-fit rounded bg-neutral-200 px4 py1 tracking-wide dark:bg-neutral-900">
           {{ post.tag }}
         </span>
 
@@ -47,7 +47,7 @@ const { t } = useI18n()
           class="flex items-center core-border rounded-md bg-white px-4 py-2 text-sm text-gray-7 space-x-2 dark:bg-dark-8 dark:text-gray-3"
         >
           <span class="h-3 w-3 rounded-full bg-brand-dark" />
-          <span>{{ t('v2.blog_updated') }}:</span>
+          <span>{{ t('v2.blog.lastUpdated') }}:</span>
           <Updated :date="post.updated" itemprop="dateModified" />
         </div>
       </div>

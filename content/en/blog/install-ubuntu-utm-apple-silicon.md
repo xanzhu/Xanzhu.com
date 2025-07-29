@@ -208,7 +208,7 @@ alt: Ubuntu desktop showing the welcome screen
 
 1. Select **Next** to continue.
 2. Set whether to share data to help improve Ubuntu, then select **Next**.
-3. Select **Finish** 
+3. Select **Finish**
 
 The virtual machine is now ready to use. The next step is improving the display scaling.
 

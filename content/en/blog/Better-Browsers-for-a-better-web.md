@@ -39,7 +39,6 @@ alt: Arc browser feature promo
 ---
 ::
 
-
 ### Developer mode
 
 If you're a developer and frequently use localhost:3000, Arc offers a handy and exceptional experience natively. It includes options such as opening developer tools, taking screenshots, and more. The browser is designed to streamline your development process, providing you with all the necessary tools and features to make your work more efficient and effective. Whether you're working on a local development environment or testing a live website, Arc is the perfect browser for developers who value speed, reliability, and an intuitive interface. With Arc, you'll be able to work more efficiently, saving you valuable time and effort.
@@ -139,7 +138,7 @@ alt: Implementation of Snowflake on brave browser
 ::
 
 You can learn more about the Snowflake protocol via :PageLink{title="The Tor Project" url="https://snowflake.torproject.org/"}
-For implementing or enabling this on Brave Browsers, see :PageLink{title="Brave Support" url="https://support.brave.com/hc/en-us/articles/9059440641421-What-is-the-Snowflake-extension"}
+For implementing or enabling this on Brave Browsers, see :PageLink{title="Brave Support" url="https://support.brave.app/hc/en-us/articles/9059440641421-What-is-the-Snowflake-extension"}
 
 ### Other features
 
@@ -191,7 +190,7 @@ alt: Comparison chart for security features on firefox
 ---
 ::
 
-Firefox is a great choice for users who value reliability and privacy. It's a perfect alternative to Brave, offering a similar range of features and fast performance. Visit :PageLink{title="Firefox.com" url="https://www.mozilla.org/en-US/firefox/new/"} to download the browser and experience the difference for yourself.
+Firefox is a great choice for users who value reliability and privacy. It's a perfect alternative to Brave, offering a similar range of features and fast performance. Visit :PageLink{title="Firefox.com" url="https://www.firefox.com/"} to download the browser and experience the difference for yourself.
 
 ## The defaults
 

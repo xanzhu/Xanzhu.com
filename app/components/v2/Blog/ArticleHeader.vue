@@ -1,9 +1,19 @@
+<script setup lang="ts">
+defineProps({
+  post: {
+    type: Object,
+    required: true,
+  },
+})
+</script>
+
 <template>
   <header>
     <div class="mx-auto max-w-5xl px-6 pb-12 lg:pb-20">
       <div
-        class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 text-sm text-neutral-600 dark:text-neutral-300 font-mono uppercase tracking-wide mb-4">
-        <span class="bg-neutral-100 dark:bg-neutral-900 px-2 py-0.5 rounded w-fit">
+        class="mb-4 flex flex-col gap-1 text-sm text-neutral-600 tracking-wide font-mono uppercase sm:flex-row sm:items-center sm:gap-4 dark:text-neutral-300"
+      >
+        <span class="w-fit rounded bg-neutral-100 px-2 py-0.5 dark:bg-neutral-900">
           {{ post.tag }}
         </span>
 
@@ -14,29 +24,22 @@
         </div>
       </div>
 
-      <h1 class="text-3xl md:text-5xl font-semibold text-neutral-900 dark:text-white leading-tight my2">
+      <h1 class="my2 text-3xl text-neutral-900 font-semibold leading-tight md:text-5xl dark:text-white">
         {{ post.title }}
       </h1>
 
-      <p class="mt-4 text-neutral-600 dark:text-neutral-400 max-w-2xl text-base md:text-lg">
+      <p class="mt-4 max-w-2xl text-base text-neutral-600 md:text-lg dark:text-neutral-400">
         {{ post.description }}
       </p>
 
       <div
-        class="mt-6 aspect-video bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 overflow-hidden rounded-md">
-        <NuxtImg height="400" width="700" loading="eager" v-if="post.img" :src="post.img" :alt="post.alt"
-          class="w-full h-full object-cover" />
+        class="mt-6 aspect-video overflow-hidden border border-neutral-200 rounded-md bg-neutral-100 dark:border-neutral-800 dark:bg-neutral-900"
+      >
+        <NuxtImg
+          v-if="post.img" height="400" width="700" loading="eager" :src="post.img" :alt="post.alt"
+          class="h-full w-full object-cover"
+        />
       </div>
     </div>
   </header>
 </template>
-<script setup lang="ts">
-const { t } = useI18n();
-
-defineProps({
-  post: {
-    type: Object,
-    required: true,
-  },
-});
-</script>

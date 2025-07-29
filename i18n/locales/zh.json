@@ -5,105 +5,33 @@
     "view": "查看最新版本"
   },
   "Blog": {
-    "Video": "找不到视频",
     "description": "新闻、指南和评论，涵盖技术、隐私与安全，帮助您在线保护数据。",
     "meta": {
       "description": "Xanzhu 提供有关技术、隐私与安全的有用文章、指南和技巧。",
       "title": "最新博客文章"
     },
-    "next": "下一篇",
-    "previous": "上一篇",
-    "read-time": "分钟阅读",
     "source": "来源",
     "title": "发现最新见解",
-    "toc": "目录",
-    "updated": "已更新"
-  },
-  "Error": {
-    "404": {
-      "code": "代码: 404",
-      "desc": "无法找到您要查找的页面。",
-      "title": "找不到网页"
-    },
-    "500": {
-      "code": "代码: 500",
-      "desc": "对不起，我们搞砸了，请重试。",
-      "title": "内部错误"
-    },
-    "return": "返回"
+    "toc": "目录"
   },
   "Home": {
     "Seo": {
       "description": "使用 Xanzhu 发现最新的技术趋势和见解，确保您的在线安全。我们的新闻和指南帮助您在不断变化的数字环境中游刃有余。",
       "title": "新闻、技术指南、隐私与安全"
-    },
-    "a11y": {
-      "mouseicon": "向下滚动"
-    },
-    "desc": "在 Xanzhu，我们帮助您安全地使用技术并保护您的在线数据。阅读我们有关 VPN、密码管理器、双因素身份验证等主题的文章、指南和评论。",
-    "more": "探索更多文章",
-    "release": "新版本",
-    "subhead": "自信驾驭数字世界",
-    "tag": "引领未来",
-    "title": "隐私、安全以及介于两者之间的一切",
-    "weatherLoad": "加载中"
+    }
   },
   "Links": {
     "analysis": "分析",
     "blog": "博客",
-    "home": "主页",
-    "privacy-policy": "隐私政策",
-    "resources": "资源",
-    "reviews": "评论"
+    "resources": "资源"
   },
   "PagesCard": {
     "analysis": "威胁报告与深度分析",
     "blog": "最新消息与技术指南",
-    "image": {
-      "building-1": "两座蓝绿色和白色的摩天大楼",
-      "building-2": "白天的白色混凝土建筑",
-      "building-3": "高层建筑"
-    },
     "resources": "安全工具与链接"
   },
   "SocialsCard": {
     "h1": "关注我们的社交媒体"
-  },
-  "StatsCard": {
-    "breach": {
-      "1": "OPTUS—980 万",
-      "2": "LastPass—3000 万",
-      "3": "Twitter—2.115 亿",
-      "4": "Latitude—1400 万"
-    },
-    "breaches": {
-      "title": "最近的网络攻击"
-    },
-    "check": "检查您的账户",
-    "image": {
-      "badge": "安全徽章",
-      "pwn": "HaveIBeenPwned 徽标"
-    },
-    "threats": {
-      "1": "网络钓鱼",
-      "2": "勒索软件",
-      "3": "社会工程学",
-      "4": "拒绝服务 (DoS)",
-      "title": "顶级安全威胁"
-    },
-    "title": "2023 年观察到的常见威胁",
-    "warn": "这些是粗略估计，确切值可能略有不同。数据来源于 2023 年收集的研究。"
-  },
-  "a11y": {
-    "AnalysisPage": "访问我们的分析页面",
-    "BlogPage": "访问博客页面",
-    "Home": "访问主页",
-    "Menu": "菜单",
-    "ResourcePage": "访问资源页面",
-    "cMenu": "关闭菜单",
-    "langSwitch": "切换语言",
-    "logo": "Xanzhu 标识",
-    "oMenu": "打开菜单"
   },
   "analysis": {
     "graph": {
@@ -132,10 +60,18 @@
   },
   "app": {
     "sr": {
-      "lang": "选择语言",
       "lang_select": "所选语言：",
       "menu": "打开菜单"
     }
+  },
+  "breadcrumbs": {
+    "about": "关于",
+    "analysis": "分析",
+    "blog": "博客",
+    "home": "首页",
+    "privacy": "隐私政策",
+    "resources": "资源",
+    "terms": "服务条款"
   },
   "email": {
     "share": "看看这篇文章"
@@ -143,7 +79,6 @@
   "footer": {
     "about": "关于",
     "blog": "博客",
-    "brand": "品牌",
     "community": "社区",
     "company": "公司",
     "copyright": "© Xanzhu 2025. 保留所有权利。",
@@ -165,16 +100,10 @@
     "version": "版本"
   },
   "home": {
-    "hero": {
-      "cta": "开始探索",
-      "heading": "现代网络的隐私与安全",
-      "subhead": "探索推动技术向前发展的趋势、工具和技术——从保护数据到重新定义数字世界。",
-      "tagline": "超越代码与创新"
-    },
-    "latest": "最新文章",
     "features": {
       "description": "探索我们的关键文章并提供新内容。"
-    }
+    },
+    "latest": "最新文章"
   },
   "pageCard": {
     "article": "随时了解我们有关安全趋势和最佳实践的最新文章",
@@ -231,7 +160,10 @@
     "linkedin": "在 LinkedIn 上分享",
     "reddit": "在 Reddit 上分享",
     "title": "分享这篇文章！",
-    "twitter": "在 Twitter 上分享"
+    "twitter": "在 Twitter 上分享",
+    "threads": "在线程上分享",
+    "facebook": "在Facebook上分享",
+    "telegram": "在电报上分享"
   },
   "threatCard": {
     "ariaLabel": "（在新标签中阅读更多内容）",
@@ -253,18 +185,48 @@
     "title": "2024 年 ANZ 网络威胁"
   },
   "v2": {
-    "app": {
-      "sr": {
-        "colorSwitch": "颜色切换器"
-      }
-    },
     "blog": {
-      "noPosts": "没有可用的帖子。"
+      "noPosts": "没有可用的帖子。",
+      "lastUpdated": "最后更新",
+      "videoIframe": "Youtube 视频",
+      "readTime": "分钟阅读",
+      "prevPost": "上一篇",
+      "nextPost": "下一篇"
     },
-    "blog_iframe": "Youtube 视频",
-    "blog_updated": "最后更新",
+    "colorSwitch": {
+      "dark": "切换到黑暗模式",
+      "light": "切换到光模式"
+    },
     "home": {
-      "featuredPosts": "精选博客文章"
+      "featuredPosts": "精选博客文章",
+      "heroCta": "查看最新动态",
+      "heroHeading": "现代网络的隐私和安全性",
+      "heroSubhead": "提供实用的指南和工具，助您保护个人隐私与数据安全，并让技术惠及所有人。",
+      "heroTagline": "开放、安全、普惠"
+    },
+    "langSwitch": {
+      "current": "当前的",
+      "select": "选择语言",
+      "switch": "切换到"
+    },
+    "ui": {
+      "scrollTop": "回到顶部",
+      "scrollBottom": "转到底部"
+    },
+    "error404": {
+      "h1": "嗯…这个页面去哪儿了？",
+      "p": "抱歉，链接可能已失效，或者页面已移到别处。",
+      "goBack": "返回",
+      "label": "404 页面未找到"
+    },
+    "error500": {
+      "p": "目前系统出了点问题。\n请稍后重试。",
+      "h1": "服务器正在小憩...",
+      "label": "500 内部服务器错误"
+    },
+    "sr": {
+      "mainNav": "主要导航",
+      "langSelect": "语言选择器"
     }
   }
 }
