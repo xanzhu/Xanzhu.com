@@ -105,6 +105,9 @@ export default defineNuxtConfig({
 
   image: {
     domains: ['cdn.xanzhu.com'],
+    cloudflare: {
+      baseURL: 'https://cdn.xanzhu.com',
+    },
   },
 
   content: {
@@ -119,6 +122,9 @@ export default defineNuxtConfig({
       i18n: {
         baseUrl: 'https://xanzhu.com',
       },
+      // ipx: {
+      //   domains: 'https://cdn.xanzhu.com',
+      // },
     },
   },
 

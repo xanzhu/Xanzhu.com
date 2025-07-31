@@ -12,7 +12,7 @@ const { t } = useI18n()
   <figure class="w-full flex flex-col">
     <div class="w-full overflow-hidden border border-neutral-200 rounded-lg dark:border-neutral-800">
       <NuxtImg
-        :src="source" :alt="alt" :title="alt" loading="lazy" decoding="async"
+        :src="source" :alt="alt" :title="alt" loading="lazy" decoding="async" provider="cloudflare"
         class="h-auto max-w-full w-full rounded-lg object-contain"
       />
     </div>
