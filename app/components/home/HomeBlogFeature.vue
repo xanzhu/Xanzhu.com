@@ -77,7 +77,7 @@ const featureSetTwo = computed(() => features.value?.slice(3, 6) || [])
         <NuxtImg
           src="https://cdn.xanzhu.com/v1/rabbit-r1/graphic.webp" alt="Rabbit R1 Animation Graphic" loading="lazy"
           format="webp" class="h-full w-full rounded-lg object-cover"
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 854px" width="854" height="532" provider="cloudflare"
+          width="854" height="532" provider="cloudflare"
         />
         <NuxtLink
           to="https://www.rabbit.tech"
