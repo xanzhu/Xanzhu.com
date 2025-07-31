@@ -105,9 +105,6 @@ export default defineNuxtConfig({
 
   image: {
     domains: ['cdn.xanzhu.com'],
-    cloudflare: {
-      baseURL: 'https://cdn.xanzhu.com',
-    },
   },
 
   content: {
