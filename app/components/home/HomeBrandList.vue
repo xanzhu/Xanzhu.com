@@ -53,6 +53,7 @@ function getSvgIconUrl(name) {
               class="h-auto max-h-16 max-w-[120px] brightness-0 invert-0 filter transition duration-300 ease-in-out group-hover:opacity-0 group-hover:opacity-75 dark:invert"
             />
           </div>
+          <span class="sr-only">{{ link.name }}</span>
         </NuxtLink>
       </li>
     </ul>
