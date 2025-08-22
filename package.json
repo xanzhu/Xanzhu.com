@@ -18,13 +18,13 @@
     "@nuxt/icon": "^2.0.0",
     "@nuxt/image": "^1.11.0",
     "@nuxtjs/color-mode": "^3.5.2",
-    "@nuxtjs/i18n": "10.0.5",
+    "@nuxtjs/i18n": "10.0.6",
     "@nuxtjs/sitemap": "^7.4.3",
     "chart.js": "^4.5.0",
     "nitro-cloudflare-dev": "^0.2.2",
     "nuxt": "^4.0.3",
-    "nuxt-security": "^2.3.0",
-    "vue": "^3.5.18",
+    "nuxt-security": "^2.4.0",
+    "vue": "^3.5.19",
     "vue-chartjs": "^5.3.2",
     "vue-router": "^4.5.1"
   },
@@ -32,7 +32,7 @@
     "@antfu/eslint-config": "^5.2.1",
     "@iconify-json/fluent": "^1.2.28",
     "@iconify-json/line-md": "^1.2.11",
-    "@nuxt/devtools": "^2.6.2",
+    "@nuxt/devtools": "^2.6.3",
     "@unocss/eslint-plugin": "^66.4.2",
     "@unocss/nuxt": "^66.4.2",
     "@unocss/preset-typography": "^66.4.2",
@@ -44,6 +44,6 @@
   },
   "resolutions": {
     "@nuxtjs/mdc": "^0.17.2",
-    "esbuild": "^0.25.8"
+    "esbuild": "^0.25.9"
   }
 }
