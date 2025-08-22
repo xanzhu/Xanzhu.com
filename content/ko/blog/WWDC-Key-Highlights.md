@@ -91,7 +91,7 @@ credit: Apple
 
 ### Macbook Air 15"
 
-상징적인 :PageLink{title="MacBook Air" url="https://www.apple.com/macbook-air-13-and-15-m2/"}가 이제 15" 버전으로 나옵니다. M2 사용 이 칩은 13인치 및 14인치 모델과 동일한 배터리 성능을 유지하면서 더 많은 화면을 추가하고 팬리스 디자인을 계속 사용합니다.
+상징적인 :PageLink{title="MacBook Air" url="https://www.apple.com/macbook-air/"}가 이제 15" 버전으로 나옵니다. M2 사용 이 칩은 13인치 및 14인치 모델과 동일한 배터리 성능을 유지하면서 더 많은 화면을 추가하고 팬리스 디자인을 계속 사용합니다.
 
 ::vid
 ---
@@ -322,7 +322,7 @@ credit: Apple
 
 각 운영 체제 간에 많은 기능이 공유됩니다. 특히 iPad의 경우 눈에 띄는 기능이 많지는 않지만 개선 사항이 좋습니다.
 
-:PageLink{title="지원되는 기기" url="https://www.apple.com/ipados/ipados-17-preview/"}:
+:PageLink{title="지원되는 기기" url="https://www.apple.com/os/ipados/"}:
 
 - iPad Pro 2세대 이상.
 - iPad Air 3세대 이상.
@@ -425,7 +425,7 @@ credit: Apple
 
 개인 음성은 언어 손실이 있는 사용자가 Facetime 및 통화에서 실시간 음성 통신을 허용하는 것처럼 들리는 음성을 만드는 데 도움이 됩니다. 의사 소통이 더 쉬워집니다.
 
-:PageLink{title="지원되는 장치" url="https://www.apple.com/macos/sonoma-preview/"}
+:PageLink{title="지원되는 장치" url="https://www.apple.com/os/macos/"}
 
 - 아이맥 2019 이상
 - 아이맥 프로 2017
@@ -484,7 +484,7 @@ credit: Apple
 
 밖에서 보내는 새로운 시간에 대해 위에서 언급했듯이 이 메트릭은 시력 건강 애플리케이션에 기록됩니다. 야외 활동과 태양 아래에서 시간을 보내는 것을 추적 및 홍보하여 조기 발병 근시 또는 근시를 예방합니다.
 
-:PageLink{title="지원되는 기기" url="https://www.apple.com/watchos/watchos-preview/"}
+:PageLink{title="지원되는 기기" url="https://www.apple.com/os/watchos/"}
 
 - 시리즈 4, 5, 6, 7, 8
 - SE, 울트라

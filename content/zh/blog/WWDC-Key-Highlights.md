@@ -92,7 +92,7 @@ credit: Apple
 
 ### MacBook Air 15"
 
-标志性的 :PageLink{title="MacBook Air" url="https://www.apple.com/macbook-air-13-and-15-m2/"} 现在推出 15" 版本。使用 M2 芯片这增加了更多的屏幕，同时保持与 13 和 14 英寸型号相同的电池性能。还继续使用无风扇设计
+标志性的 :PageLink{title="MacBook Air" url="https://www.apple.com/macbook-air/"} 现在推出 15" 版本。使用 M2 芯片这增加了更多的屏幕，同时保持与 13 和 14 英寸型号相同的电池性能。还继续使用无风扇设计
 
 ::vid
 ---
@@ -323,7 +323,7 @@ credit: Apple
 
 每个操作系统之间共享许多功能。 专门针对 iPad 的，没有很多值得注意的功能，但有很好的改进。
 
-:PageLink{title="支持的设备" url="https://www.apple.com/ipados/ipados-17-preview/"}:
+:PageLink{title="支持的设备" url="https://www.apple.com/os/ipados/"}:
 
 - iPad Pro 第二代及更新机型。
 - iPad Air 第三代及更新机型。
@@ -426,7 +426,7 @@ credit: Apple
 
 个人语音可帮助有语言障碍的用户创建听起来像他们的声音，从而允许在 Facetime 和通话中进行实时语音通信。 使沟通更容易。
 
-:PageLink{title="支持的设备" url="https://www.apple.com/macos/sonoma-preview/"}:
+:PageLink{title="支持的设备" url="https://www.apple.com/os/macos/"}:
 
 - iMac 2019 及更新机型
 - iMac 专业版 2017
@@ -485,7 +485,7 @@ credit: Apple
 
 正如上面提到的新的户外时间，该指标将记录在视力健康应用程序中。 通过跟踪和促进外出和在阳光下度过时间来预防早发性近视或近视。
 
-:PageLink{title="支持的设备" url="https://www.apple.com/watchos/watchos-preview/"}:
+:PageLink{title="支持的设备" url="https://www.apple.com/os/watchos/"}:
 
 - 系列 4、5、6、7、8
 - 东南，超
