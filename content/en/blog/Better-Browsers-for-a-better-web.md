@@ -25,7 +25,7 @@ alt: Arc browser logo
 ---
 ::
 
-The new contender on the market, built by :PageLink{title="The Browser Company" url="https://thebrowser.company/"}, is a well-established collective of alumni developers who have worked alongside some of the internet's most popular web services such as Google Chrome, Instagram, and more.
+The new contender on the market, built by :PageLink{title="The Browser Company" url="https://www.thebrowser.company/"}, is a well-established collective of alumni developers who have worked alongside some of the internet's most popular web services such as Google Chrome, Instagram, and more.
 
 The browser, called Arc, brings in a new experience with browsing that makes it fluid and interesting to use. This browser is currently in development and is invite-only. I was able to get in on this browser early on and have been impressed by its unique design and feel. It's a browser that will shift the way we view traditional ones.
 

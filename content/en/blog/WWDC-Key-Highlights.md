@@ -92,7 +92,7 @@ A brand new Operating system that will house all the new custom-designed applica
 
 ### MacBook Air 15"
 
-The iconic :PageLink{title="MacBook Air" url="https://www.apple.com/macbook-air-13-and-15-m2/"} now comes in a 15" version. Using the M2 chip this adds even more screen while keeping the same battery performance as the 13 and 14-inch models. Also continuing to use a fanless design
+The iconic :PageLink{title="MacBook Air" url="https://www.apple.com/macbook-air/"} now comes in a 15" version. Using the M2 chip this adds even more screen while keeping the same battery performance as the 13 and 14-inch models. Also continuing to use a fanless design
 
 ::vid
 ---
@@ -323,7 +323,7 @@ Minor improvements for moving and resizing windows for better layout options.
 
 A lot of features are shared between each of the operating systems. Specifically for the iPad not a lot of notable features but good improvements.
 
-:PageLink{title="Supported Devices" url="https://www.apple.com/ipados/ipados-17-preview/"}:
+:PageLink{title="Supported Devices" url="https://www.apple.com/os/ipados/"}:
 
 - iPad Pro 2nd Generation and later.
 - iPad Air 3rd Generation and later.
@@ -426,7 +426,7 @@ Increases security for the Mac helping to protect against cyber-attacks. This no
 
 Personal voice helps users with speech loss create a voice that sounds like them allowing for Live speech communication in Facetime and calls. Making it easier to communicate.
 
-:PageLink{title="Supported Devices" url="https://www.apple.com/macos/sonoma-preview/"}:
+:PageLink{title="Supported Devices" url="https://www.apple.com/os/macos/"}:
 
 - iMac 2019 and Later
 - iMac Pro 2017
@@ -485,7 +485,7 @@ Provides more metrics around the state of mind, correlating lifestyle factors wi
 
 As mentioned above with the new time spent outside, this metric will be recorded in the vision health application. Prevent early-onset myopia or near-sightedness by tracking and promoting getting outside and spending time in the sun.
 
-:PageLink{title="Supported Devices" url="https://www.apple.com/watchos/watchos-preview/"}:
+:PageLink{title="Supported Devices" url="https://www.apple.com/os/watchos/"}:
 
 - Series 4, 5, 6, 7, 8
 - SE, Ultra

@@ -19,7 +19,7 @@ useHead({
     v-if="breadcrumbs.length > 1" class="text-sm" aria-label="Breadcrumb" itemscope
     itemtype="https://schema.org/BreadcrumbList"
   >
-    <ol class="flex items-center md:p0">
+    <ol class="flex pl4 md:(flex-row items-center)">
       <li
         v-for="(item, index) in breadcrumbs" :key="item.path" class="flex items-center" itemprop="itemListElement"
         itemscope itemtype="https://schema.org/ListItem"
