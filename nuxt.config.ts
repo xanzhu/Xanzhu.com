@@ -22,7 +22,7 @@ export default defineNuxtConfig({
       meta: [
         { name: 'format-detection', content: 'telephone=no' },
         { name: 'color-scheme', content: 'dark light' },
-        { name: 'robots', content: 'index, follow' },
+        { name: 'robots', content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' },
         // Open Graph
         { property: 'og:site_name', content: 'Xanzhu' },
         { property: 'og:type', content: 'website' },
@@ -101,6 +101,11 @@ export default defineNuxtConfig({
 
   routeRules: {
     '/blog/**': { isr: true },
+    '/**': {
+      headers: {
+        'x-robots-tag': 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
+      },
+    },
   },
 
   image: {
@@ -114,7 +119,7 @@ export default defineNuxtConfig({
   // API
   runtimeConfig: {
     public: {
-      Version: '1.0.210',
+      Version: '1.0.212',
       WeatherAPI: process.env.WEATHER_API,
       i18n: {
         baseUrl: 'https://xanzhu.com',

@@ -24,7 +24,7 @@ alt: Arc 浏览器徽标
 ---
 ::
 
-市场上的新竞争者由 :PageLink{title="The Browser Company" url="https://thebrowser.company/"} 打造，是一个成熟的校友开发者集体，他们曾与一些 互联网最流行的网络服务，例如 Google Chrome、Instagram 等。 凭借在这一领域的深厚专业知识，The Browser Company 致力于通过重新激发浏览体验中的创造力和可访问性来改变普通浏览器的行为。
+市场上的新竞争者由 :PageLink{title="The Browser Company" url="https://www.thebrowser.company/"} 打造，是一个成熟的校友开发者集体，他们曾与一些 互联网最流行的网络服务，例如 Google Chrome、Instagram 等。 凭借在这一领域的深厚专业知识，The Browser Company 致力于通过重新激发浏览体验中的创造力和可访问性来改变普通浏览器的行为。
 
 这款名为 Arc 的浏览器带来了全新的浏览体验，使用起来流畅有趣。 该浏览器目前正在开发中，仅限受邀者使用。 我很早就开始使用这款浏览器，并对其独特的设计和感觉印象深刻。 这是一款将改变我们看待传统浏览器方式的浏览器。
 

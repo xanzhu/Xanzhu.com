@@ -144,7 +144,7 @@ It's worth noting that, when it comes to security and privacy, using a password 
 
 ### NordPass
 
-NordPass offers a very limited and basic :PageLink{title="Free Plan" url="https://nordpass.com/plans/"} that comes bundled with a 30-day free trial of the premium version. The main difference between the paid and free plans is that the free tier offers only the basics of a password manager, while the paid tiers offer additional features such as:
+NordPass offers a very limited and basic :PageLink{title="Free Plan" url="https://nordpass.com/"} that comes bundled with a 30-day free trial of the premium version. The main difference between the paid and free plans is that the free tier offers only the basics of a password manager, while the paid tiers offer additional features such as:
 
 - Sharing items with people you trust
 - Emergency vault access - the ability to assign an email or user to have access to your vault in case of being locked out
@@ -157,7 +157,7 @@ To learn more about NordPass and its features, you can visit the website at :Pag
 
 ### 1Password
 
-1Password offers a free trial for its :PageLink{title="Premium Plan" url="https://1password.com/pricing"}. This solution is well-designed and works on all your devices, including desktop and mobile. 1Password offers unlimited devices and features a unique feature called "Travel Mode", which can remove sensitive data from your device when traveling, ensuring that your passwords and accounts don't get compromised while on the go. It also allows for a one-click restore solution when returning.
+1Password offers a free trial for its :PageLink{title="Premium Plan" url="https://1password.com/"}. This solution is well-designed and works on all your devices, including desktop and mobile. 1Password offers unlimited devices and features a unique feature called "Travel Mode", which can remove sensitive data from your device when traveling, ensuring that your passwords and accounts don't get compromised while on the go. It also allows for a one-click restore solution when returning.
 
 Some notable features of the baseline premium plan include:
 

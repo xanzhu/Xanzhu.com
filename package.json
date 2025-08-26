@@ -1,6 +1,6 @@
 {
   "name": "xanzhu.com",
-  "version": "1.0.210",
+  "version": "1.0.212",
   "private": true,
   "license": "MIT",
   "scripts": {
@@ -15,35 +15,35 @@
   "dependencies": {
     "@nuxt/content": "2.13.4",
     "@nuxt/fonts": "^0.11.4",
-    "@nuxt/icon": "^1.15.0",
-    "@nuxt/image": "^1.10.0",
+    "@nuxt/icon": "^2.0.0",
+    "@nuxt/image": "^1.11.0",
     "@nuxtjs/color-mode": "^3.5.2",
-    "@nuxtjs/i18n": "10.0.3",
+    "@nuxtjs/i18n": "10.0.6",
     "@nuxtjs/sitemap": "^7.4.3",
     "chart.js": "^4.5.0",
     "nitro-cloudflare-dev": "^0.2.2",
-    "nuxt": "^4.0.2",
-    "nuxt-security": "^2.3.0",
-    "vue": "^3.5.18",
+    "nuxt": "^4.0.3",
+    "nuxt-security": "^2.4.0",
+    "vue": "^3.5.20",
     "vue-chartjs": "^5.3.2",
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^5.0.0",
-    "@iconify-json/fluent": "^1.2.28",
-    "@iconify-json/line-md": "^1.2.8",
-    "@nuxt/devtools": "^2.6.2",
-    "@unocss/eslint-plugin": "^66.3.3",
-    "@unocss/nuxt": "^66.3.3",
-    "@unocss/preset-typography": "^66.3.3",
-    "@unocss/preset-wind3": "^66.3.3",
-    "@unocss/transformer-directives": "^66.3.3",
-    "@unocss/transformer-variant-group": "^66.3.3",
-    "eslint": "^9.32.0",
+    "@antfu/eslint-config": "^5.2.1",
+    "@iconify-json/fluent": "^1.2.29",
+    "@iconify-json/line-md": "^1.2.11",
+    "@nuxt/devtools": "^2.6.3",
+    "@unocss/eslint-plugin": "^66.4.2",
+    "@unocss/nuxt": "^66.4.2",
+    "@unocss/preset-typography": "^66.4.2",
+    "@unocss/preset-wind3": "^66.4.2",
+    "@unocss/transformer-directives": "^66.4.2",
+    "@unocss/transformer-variant-group": "^66.4.2",
+    "eslint": "^9.34.0",
     "eslint-plugin-format": "^1.0.1"
   },
   "resolutions": {
     "@nuxtjs/mdc": "^0.17.2",
-    "esbuild": "^0.25.8"
+    "esbuild": "^0.25.9"
   }
 }
