@@ -123,6 +123,10 @@ export default defineConfig<Wind3Theme & TypographyTheme>({
           'font-family': '\'Geist Mono\', monospace',
         },
 
+        'figure': {
+          margin: '0',
+        },
+
         // Italics
         '.prose i': {
           'opacity': '0.9',
