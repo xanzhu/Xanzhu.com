@@ -3,3 +3,6 @@ compatibility_date = "2025-09-24"
 
 [assets]
 directory = ".output/public"
+
+[vars]
+NITRO_PRESET = "cloudflare_module"
