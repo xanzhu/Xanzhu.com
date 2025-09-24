@@ -119,7 +119,7 @@ export default defineNuxtConfig({
   // API
   runtimeConfig: {
     public: {
-      Version: '1.0.213',
+      Version: '1.0.400',
       WeatherAPI: process.env.WEATHER_API,
       i18n: {
         baseUrl: 'https://xanzhu.com',
@@ -222,5 +222,10 @@ export default defineNuxtConfig({
     prerender: {
       routes: ['/robots.txt', '/sitemap.xml'],
     },
+    preset: "cloudflare_module",
+    cloudflare: {
+      deployConfig: true,
+      nodeCompat: true
+    }
   },
 })
