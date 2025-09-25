@@ -222,7 +222,6 @@ export default defineNuxtConfig({
     prerender: {
       routes: ['/robots.txt', '/sitemap.xml'],
     },
-    // preset: "cloudflare_module",
     cloudflare: {
       deployConfig: true,
       nodeCompat: true
