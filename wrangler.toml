@@ -1,5 +1,5 @@
-name = "soft-sun-c3e2"
-compatibility_date = "2025-09-24"
+name = "core"
+compatibility_date = "2025-10-01"
 
 [assets]
 directory = ".output/public"
