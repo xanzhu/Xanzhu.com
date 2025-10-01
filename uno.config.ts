@@ -1,4 +1,6 @@
 // uno.config.ts
+import type { TypographyTheme } from '@unocss/preset-typography'
+import type { Theme as Wind3Theme } from '@unocss/preset-wind3'
 import {
   defineConfig,
   presetTypography,
@@ -7,91 +9,91 @@ import {
   transformerVariantGroup,
 } from 'unocss'
 
-export default defineConfig({
+export default defineConfig<Wind3Theme & TypographyTheme>({
   presets: [
-    presetWind3(),
+    presetWind3({
+      dark: 'class',
+    }),
     presetTypography({
       cssExtend: {
-        'h1': {
+        '.prose h1': {
           visibility: 'hidden',
         },
-        'h2': {
+        '.prose h2': {
           'font-size': '1.75rem',
           'line-height': '1.3',
           'font-weight': '600',
           'margin-top': '2rem',
           'margin-bottom': '1rem',
         },
-        'h3': {
+        '.prose h3': {
           'font-size': '1.5rem',
           'line-height': '1.4',
           'font-weight': '600',
           'margin-top': '1.75rem',
           'margin-bottom': '0.75rem',
         },
-        'h4': {
+        '.prose h4': {
           'font-size': '1.25rem',
           'line-height': '1.5',
           'font-weight': '500',
           'margin-top': '1.5rem',
           'margin-bottom': '0.5rem',
         },
-        'h5': {
+        '.prose h5': {
           'font-size': '1.125rem',
           'line-height': '1.5',
           'font-weight': '500',
         },
-        'h6': {
+        '.prose h6': {
           'font-size': '1rem',
           'line-height': '1.5',
           'font-weight': '500',
         },
-        'h2 > a, h3 > a, h4 > a, h5 > a, h6 > a': {
+        '.prose h2 > a, .prose h3 > a, .prose h4 > a, .prose h5 > a, .prose h6 > a': {
           'pointer-events': 'none',
           'text-decoration': 'none',
         },
 
         // Paragraphs
-        'p': {
+        '.prose p': {
           'font-size': '1rem',
           'line-height': '1.75',
           'margin-bottom': '1.25rem',
-          '--uno': 'dark:text-gray-200 text-gray-800',
         },
 
         // Lists
-        'ul': {
+        '.prose ul': {
           'list-style-type': 'disc',
           'margin-bottom': '1.25rem',
           'padding-left': '1.5rem',
         },
-        'ol': {
+        '.prose ol': {
           'list-style-type': 'decimal',
           'margin-bottom': '1.25rem',
           'padding-left': '1.5rem',
         },
-        'ol li::marker': {
+        '.prose ol li::marker': {
           'font-weight': 'bold',
         },
 
-        'li': {
+        '.prose li': {
           'margin-bottom': '0.5rem',
-          '--uno': 'dark:text-gray-200 text-gray-800',
         },
 
         // Code and Pre
-        'pre, code': {
+        '.prose pre, .prose code': {
           '--uno':
             'dark:(bg-dark-900 text-light-700) text-gray-800 core-border',
           'font-family': '\'Geist Mono\', monospace',
           'font-size': '0.875rem',
         },
-        'pre': {
+        '.prose pre': {
           'padding': '1rem',
           'margin-bottom': '1.5rem',
           'overflow-x': 'auto',
         },
-        'pre > code': {
+        '.prose pre > code': {
           border: 'none',
         },
         // Youtube iframe | <Vid>
@@ -112,7 +114,7 @@ export default defineConfig({
         },
 
         // Figure styling
-        'figure figcaption': {
+        '.prose figure figcaption': {
           'font-size': '0.75rem',
           'line-height': '1.5',
           'margin-top': '0.3rem',
@@ -121,14 +123,18 @@ export default defineConfig({
           'font-family': '\'Geist Mono\', monospace',
         },
 
+        'figure': {
+          margin: '0',
+        },
+
         // Italics
-        'i': {
+        '.prose i': {
           'opacity': '0.9',
           'font-weight': '400',
         },
 
         // Tables
-        'table': {
+        '.prose table': {
           'width': '100%',
           'border-collapse': 'collapse',
           'margin': '1.5rem 0',
@@ -136,18 +142,18 @@ export default defineConfig({
           '--uno': 'core-theme core-border min-w-5rem',
           'display': 'table',
         },
-        'th, td': {
+        '.prose th, .prose td': {
           'padding': '0.75rem',
           'text-align': 'left',
           'border': '1px solid',
           '--uno': 'dark:border-dark-700 border-gray-300',
         },
-        'th': {
+        '.prose th': {
           'background-color': '#f1f1f1',
           'font-weight': '600',
           '--uno': 'dark:bg-dark-800',
         },
-        'tr:nth-child(even)': {
+        '.prose tr:nth-child(even)': {
           'background-color': '#f9f9f9',
           '--uno': 'dark:bg-dark-900',
         },
