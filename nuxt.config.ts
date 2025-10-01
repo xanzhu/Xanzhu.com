@@ -119,7 +119,7 @@ export default defineNuxtConfig({
   // API
   runtimeConfig: {
     public: {
-      Version: '1.0.300',
+      Version: '1.0.401',
       WeatherAPI: process.env.WEATHER_API,
       i18n: {
         baseUrl: 'https://xanzhu.com',
@@ -206,7 +206,7 @@ export default defineNuxtConfig({
     sri: true,
   },
 
-  compatibilityDate: '2025-07-15',
+  compatibilityDate: '2025-10-01',
 
   // Testing features
   sourcemap: false,
@@ -216,11 +216,11 @@ export default defineNuxtConfig({
   },
 
   nitro: {
-    future: {
-      nativeSWR: true,
-    },
     prerender: {
-      routes: ['/robots.txt', '/sitemap.xml'],
+      crawlLinks: true,
+    },
+    cloudflare: {
+      deployConfig: true,
     },
   },
 })
