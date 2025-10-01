@@ -1,0 +1,8 @@
+name = "core"
+compatibility_date = "2025-10-01"
+
+[assets]
+directory = ".output/public"
+
+[vars]
+NITRO_PRESET = "cloudflare_module"
