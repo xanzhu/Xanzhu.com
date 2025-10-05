@@ -127,7 +127,7 @@ The performance will be relatively stable but needs adjusting to your system. Th
 
 ### Windows 11 ARM / X86
 
-Windows can be installed in several ways :PageLink{title="UTM" url="https://docs.getutm.app/guides/windows"} offers an in-depth guide on installing windows.
+Windows can be installed in several ways :PageLink{title="UTM" url="https://docs.getutm.app/guides/windows/"} offers an in-depth guide on installing windows.
 
 In this guide, we'll be using the Windows Insider Preview version. This requires an insider account.
 

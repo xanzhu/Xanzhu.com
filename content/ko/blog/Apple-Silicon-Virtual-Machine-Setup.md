@@ -116,7 +116,7 @@ UTM은 병렬과 동일한 작업을 수행하지만 사용자 정의를 처리�
 
 ### 윈도우 11 ARM / x86
 
-Windows는 다양한 방법으로 설치할 수 있습니다. :PageLink{title="UTM" url="https://docs.getutm.app/guides/windows"}에서 자세한 설치 가이드를 제공합니다. 창문.
+Windows는 다양한 방법으로 설치할 수 있습니다. :PageLink{title="UTM" url="https://docs.getutm.app/guides/windows/"}에서 자세한 설치 가이드를 제공합니다. 창문.
 
 이 가이드는 Windows Insider Preview 버전을 사용합니다. 이를 위해서는 내부자 계정이 필요합니다.
 
