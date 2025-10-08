@@ -262,7 +262,7 @@ export default defineNuxtConfig({
             d1_databases: [
               {
                 binding: 'DB',
-                database_name: process.env.DB_NAME,
+                database_name: 'xanzhu-core',
                 database_id: process.env.DB_ID,
               },
             ],

@@ -6,3 +6,7 @@ directory = ".output/public"
 
 [vars]
 NITRO_PRESET = "cloudflare_module"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "xanzhu-core"
