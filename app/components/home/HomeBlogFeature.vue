@@ -1,30 +1,26 @@
 <script setup lang="ts">
-const { locale, t } = useI18n()
+import type { Collections } from '@nuxt/content'
 
-const { data: features } = await useAsyncData(
-  `featuredArticles-${locale.value}`,
-  async () => {
-    const basePath = locale.value !== 'en' ? `/${locale.value}/blog` : '/blog'
-    const articles = await queryContent()
-      .where({ _path: { $regex: `^${basePath}` }, feature: true })
-      .sort({ date: -1 })
-      .only(['title', 'description', 'date', 'tag', '_path'])
-      .limit(5)
-      .find()
-    return articles || []
-  },
-  {
-    watch: [locale],
-  },
-)
+const { locale, t } = useI18n()
+const localePath = useLocalePath()
+
+const collection = computed(() => `blog_${locale.value}` as keyof Collections)
+
+const { data: features } = useAsyncData(`featuredArticles-${locale.value}`, () =>
+  queryCollection(collection.value)
+    .select('title', 'date', 'description', 'path', 'feature', 'tag')
+    .where('feature', '=', 1)
+    .limit(5)
+    .all())
+
 const featureSetOne = computed(() => features.value?.slice(0, 3) || [])
 const featureSetTwo = computed(() => features.value?.slice(3, 6) || [])
 </script>
 
 <template>
-  <section class="mx-auto bg-light4 py10 dark:bg-dark9" aria-labelledby="latest-posts">
+  <section class="mx-auto bg-light400 py10 dark:bg-dark900" aria-labelledby="latest-posts">
     <div
-      class="mx-auto mb5 max-w-lg flex flex-col items-center justify-between px6 md:mb0 md:max-w-5xl md:flex-row space-y-5 2xl:px45 xl:px25 md:space-y-0"
+      class="mx-auto mb5 max-w-lg flex flex-col items-center justify-between px6 md:mb0 md:max-w-5xl md:flex-row space-y-5 md:space-y-0"
     >
       <div class="flex flex-col self-start md:mb10 md:justify-center">
         <h2 id="latest-posts" class="m0 text-4xl font-bold tracking-wide md:text-5xl">
@@ -43,25 +39,26 @@ const featureSetTwo = computed(() => features.value?.slice(3, 6) || [])
     </div>
 
     <div
-      class="grid auto-rows-fr grid-cols-1 mx-auto max-w-lg justify-items-center gap-4 px6 pb10 lg:grid-cols-3 md:grid-cols-2 md:max-w-5xl 2xl:px45 xl:px25"
+      class="grid auto-rows-fr grid-cols-1 mx-auto max-w-lg justify-items-center gap-4 px6 lg:grid-cols-3 md:grid-cols-2 md:max-w-5xl"
     >
       <div class="contents children:(core-border rounded-lg)" role="feed" :aria-label="t('v2.home.featuredPosts')">
         <article
-          v-for="feature in featureSetOne" :key="feature._path"
+          v-for="feature in featureSetOne" :key="feature.path"
           class="group core-theme transition transition-transform duration-300 ease-linear hover:(scale-102 bg-white shadow-lg dark:bg-black)"
         >
           <NuxtLinkLocale
-            class="block h-full p-5 text-black no-underline dark:text-white" :to="feature._path"
-            :aria-labelledby="`post${feature._path?.replaceAll('/', '-')}`"
+            v-if="feature.path"
+            class="block h-full p-5 text-black no-underline dark:text-white" :to="localePath(feature.path)"
+            :aria-labelledby="`post${feature.path?.replaceAll('/', '-')}`"
           >
             <span
-              class="core-border rounded-md bg-light2 px4 py1 text-sm text-inherit op-90 dark:bg-dark8"
+              class="core-border rounded-md bg-light200 px4 py1 text-sm text-inherit op-90 dark:bg-dark800"
               role="doc-subtitle"
             >
               {{ feature.tag }}
             </span>
             <h3
-              :id="`post${feature._path?.replaceAll('/', '-')}`"
+              :id="`post${feature.path?.replaceAll('/', '-')}`"
               class="group-hover:text-primary mt-2 text-xl text-inherit font-semibold"
             >
               {{ feature.title }}
@@ -93,21 +90,21 @@ const featureSetTwo = computed(() => features.value?.slice(3, 6) || [])
         :aria-label="t('v2.home.featuredPosts')"
       >
         <article
-          v-for="feature in featureSetTwo" :key="feature._path"
+          v-for="feature in featureSetTwo" :key="feature.path"
           class="group core-theme transition duration-300 ease-linear hover:(scale-102 bg-white shadow-lg dark:bg-black)"
         >
           <NuxtLinkLocale
-            class="block h-full p-5 text-black no-underline dark:text-white" :to="feature._path"
-            :aria-labelledby="`post${feature._path?.replaceAll('/', '-')}`"
+            class="block h-full p-5 text-black no-underline dark:text-white" :to="localePath(feature.path)"
+            :aria-labelledby="`post${feature.path?.replaceAll('/', '-')}`"
           >
             <span
-              class="core-border rounded-md bg-light2 px4 py1 text-sm text-inherit op-90 dark:bg-dark8"
+              class="core-border rounded-md bg-light200 px4 py1 text-sm text-inherit op-90 dark:bg-dark800"
               role="doc-subtitle"
             >
               {{ feature.tag }}
             </span>
             <h3
-              :id="`post${feature._path?.replaceAll('/', '-')}`"
+              :id="`post${feature.path?.replaceAll('/', '-')}`"
               class="group-hover:text-primary mt-2 text-xl text-inherit font-semibold"
             >
               {{ feature.title }}

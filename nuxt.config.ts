@@ -85,11 +85,11 @@ export default defineNuxtConfig({
   site: {
     url: 'https://xanzhu.com',
     name: 'Xanzhu',
+    trailingSlash: false,
   },
 
   sitemap: {
     autoI18n: true,
-    strictNuxtContentPaths: true,
     autoLastmod: true,
     xslColumns: [
       { label: 'URL', width: '50%' },
@@ -100,7 +100,6 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    '/blog/**': { isr: true },
     '/**': {
       headers: {
         'x-robots-tag': 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
@@ -113,7 +112,7 @@ export default defineNuxtConfig({
   },
 
   content: {
-    defaultLocale: 'en',
+    experimental: { nativeSqlite: true },
   },
 
   // API
@@ -149,11 +148,10 @@ export default defineNuxtConfig({
           '\'strict-dynamic\'',
           '\'nonce-{{nonce}}\'',
           'https://*.xanzhu.com',
+          '\'wasm-unsafe-eval\'',
         ],
         'style-src': [
           '\'self\'',
-          // Allow devtools !
-          process.env.NODE_ENV === 'development' ? '\'unsafe-inline\'' : '\'nonce-{{nonce}}\'',
           'https://*.xanzhu.com',
         ],
         'base-uri': '\'none\'',
@@ -181,9 +179,6 @@ export default defineNuxtConfig({
           'https://*.xanzhu.com',
           'https://api.weatherapi.com',
           'https://api.iconify.design',
-          ...(process.env.NODE_ENV === 'development'
-            ? ['ws://localhost:4000']
-            : []),
         ],
         'frame-src': [
           '\'self\'',
@@ -196,10 +191,6 @@ export default defineNuxtConfig({
         includeSubdomains: true,
         preload: true,
       },
-      crossOriginEmbedderPolicy:
-        process.env.NODE_ENV === 'development'
-          ? 'unsafe-none'
-          : 'credentialless',
       crossOriginOpenerPolicy: 'same-origin',
       crossOriginResourcePolicy: 'same-origin',
     },
@@ -219,8 +210,65 @@ export default defineNuxtConfig({
     prerender: {
       crawlLinks: true,
     },
+  },
+
+  $development: {
+    site: {
+      url: 'http://localhost:4000',
+    },
+    sourcemap: true,
+    security: {
+      headers: {
+        contentSecurityPolicy: {
+          'connect-src': [
+            'ws://localhost:4000',
+          ],
+          'style-src': [
+            '\'unsafe-inline\'',
+          ],
+        },
+        crossOriginEmbedderPolicy: 'unsafe-none',
+      },
+    },
+    runtimeConfig: {
+      public: {
+        i18n: {
+          baseUrl: 'http://localhost:4000',
+        },
+      },
+    },
+  },
+
+  $production: {
+    security: {
+      headers: {
+        contentSecurityPolicy: {
+          'style-src': [
+            '\'nonce-{{nonce}}\'',
+          ],
+        },
+        crossOriginEmbedderPolicy: 'credentialless',
+      },
+    },
+  },
+
+  $env: {
     cloudflare: {
-      deployConfig: true,
+      nitro: {
+        preset: 'cloudflare_module',
+        cloudflare: {
+          deployConfig: true,
+          wrangler: {
+            d1_databases: [
+              {
+                binding: 'DB',
+                database_name: process.env.DB_NAME,
+                database_id: process.env.DB_ID,
+              },
+            ],
+          },
+        },
+      },
     },
   },
 })

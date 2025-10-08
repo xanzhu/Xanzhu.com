@@ -1,31 +1,32 @@
 <script setup lang="ts">
 defineProps<{
-  prev?: PrevNext
-  next?: PrevNext
+  surround: (SurroundItem | null)[]
 }>()
 
 const { t } = useI18n()
 
-export interface PrevNext {
-  title?: string
-  _path: string
-  img: string
-  alt: string
+interface SurroundItem {
+  path: string
+  title: string
+  img?: string
+  alt?: string
 }
 </script>
 
 <template>
   <div class="mt-10 flex flex-col items-center sm:flex-row sm:justify-evenly sm:gap-10">
-    <div v-if="prev" class="w-[250px]">
+    <div v-if="surround?.[0]" class="w-[250px]">
       <NuxtLink
-        :to="prev._path" :aria-label="t('v2.blog.prevPost')" rel="prev"
+        :to="surround[0].path" :aria-label="t('v2.blog.prevPost')" rel="prev"
         class="group relative flex flex-col no-underline transition-all duration-300"
       >
         <div class="relative overflow-hidden rounded-lg">
           <NuxtImg
-            :src="prev.img" height="150" width="250"
+            v-if="surround[0].img"
+            :src="surround[0].img" height="150" width="250"
             class="object-cover transition-transform duration-500 group-focus-within:scale-105 group-hover:scale-105"
-            :alt="prev.alt" loading="lazy" decoding="async"
+            :alt="surround[0].alt || surround[0].title"
+            loading="lazy" decoding="async"
           />
           <div class="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
           <div class="absolute inset-0 flex items-center justify-center">
@@ -47,20 +48,22 @@ export interface PrevNext {
         <h4
           class="line-clamp-2 mt-3 max-w-[250px] text-wrap text-base text-element-dark font-medium dark:text-element-light group-hover:(underline decoration-1 underline-offset-4)"
         >
-          {{ prev.title }}
+          {{ surround[0].title }}
         </h4>
       </NuxtLink>
     </div>
-    <div v-if="next" class="w-[250px]">
+    <div v-if="surround?.[1]" class="w-[250px]">
       <NuxtLink
-        :to="next._path" :aria-label="t('v2.blog.nextPost')" rel="next"
+        :to="surround[1].path" :aria-label="t('v2.blog.nextPost')" rel="next"
         class="group relative flex flex-col no-underline transition-all duration-300"
       >
         <div class="relative overflow-hidden rounded-lg">
           <NuxtImg
-            :src="next.img" height="150" width="250"
+            v-if="surround[1].img"
+            :src="surround[1].img" height="150" width="250"
             class="object-cover transition-transform duration-500 group-focus-within:scale-105 group-hover:scale-105"
-            :alt="next.alt" loading="lazy" decoding="async"
+            :alt="surround[1].alt || surround[1].title"
+            loading="lazy" decoding="async"
           />
           <div class="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
           <div class="absolute inset-0 flex items-center justify-center">
@@ -82,7 +85,7 @@ export interface PrevNext {
         <h4
           class="line-clamp-2 mt-3 max-w-[250px] text-wrap text-base text-element-dark font-medium dark:text-element-light group-hover:(underline decoration-1 underline-offset-4)"
         >
-          {{ next.title }}
+          {{ surround[1].title }}
         </h4>
       </NuxtLink>
     </div>
