@@ -25,11 +25,7 @@
     "blog": "Latest",
     "resources": "Resources"
   },
-  "PagesCard": {
-    "analysis": "Reports and write-ups on threats",
-    "blog": "Latest News, Guides on Technology",
-    "resources": "Security tools and links"
-  },
+  "PagesCard": {},
   "SocialsCard": {
     "h1": "Follow our Socials"
   },
@@ -211,7 +207,7 @@
     },
     "ui": {
       "scrollTop": "Back to Top",
-      "scrollBottom": "Go to Bottom"
+      "globalDate": "Current Date: "
     },
     "error404": {
       "h1": "Hmm... Where Did That Page Go?",

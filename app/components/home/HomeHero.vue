@@ -17,7 +17,7 @@
       <h1 id="hero" class="m0 mb10 max-w-[90%] max-w-4xl w-full text-5xl md:text-7xl">
         {{ $t('v2.home.heroHeading') }}
       </h1>
-      <p class="mx-auto max-w-[90%] max-w-lg w-full bg-white text-sm font-300 op70 dark:bg-element-dark md:text-lg">
+      <p class="mx-auto max-w-[90%] max-w-lg w-full bg-white text-sm text-neutral-600 dark:bg-element-dark md:text-lg dark:text-neutral-300">
         {{ $t('v2.home.heroSubhead') }}
       </p>
       <NuxtLinkLocale

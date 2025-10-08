@@ -200,7 +200,7 @@ Browsers pre-installed by your devices operating system.
 
 The default option for Windows is Microsoft Edge, which is their own take using the Chromium engine that works well with the Windows ecosystem and could be a good default option with a lot of built-in features that work natively with the operating system.
 
-While this won't be the best in terms of user experience, with the amount of pop-ups and context menus displayed when opening for the first time, it does the job and is relatively fast. This browser works on all platforms, but I wouldn't recommend it unless there's a specific tool or feature you need. Perhaps one good feature of this browser is the ability to access the old :PageLink{title="(now defunct) Internet Explorer" rel="noopener" url="https://www.bairesdev.com/blog/internet-explorer-history/"}
+While this won't be the best in terms of user experience, with the amount of pop-ups and context menus displayed when opening for the first time, it does the job and is relatively fast. This browser works on all platforms, but I wouldn't recommend it unless there's a specific tool or feature you need. Perhaps one good feature of this browser is the ability to access the old Internet Explorer
 
 Microsoft Edge is a solid browser that has been updated to the Chromium engine, which means it's compatible with most websites and has a fast performance. It also includes a range of features such as built-in ad-blocker, tracking prevention and password manager, which enhance privacy and security. Another feature that might be useful for some users is the ability to access old Internet Explorer sites.
 

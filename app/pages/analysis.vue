@@ -20,7 +20,7 @@ onMounted(() => {
       datasets: [{
         label: t('analysis.graph.label'),
         data: [20, 40, 60, 80, 100],
-        borderColor: '#3B82F6', // Blue color for the line
+        borderColor: '#3B82F6',
         backgroundColor: 'rgba(0, 0, 0, 0.1)',
         borderWidth: 3,
         pointBackgroundColor: '#3B82F6',

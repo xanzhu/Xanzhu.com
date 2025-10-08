@@ -13,9 +13,9 @@ const { t } = useI18n()
   <header>
     <div class="mx-auto max-w-5xl px-6 pb-5 md:px-0">
       <div
-        class="mb-4 flex flex-col gap-1 text-sm text-neutral-600 tracking-wide font-mono uppercase sm:flex-row sm:items-center sm:gap-4 dark:text-neutral-300"
+        class="mb-4 flex flex-col gap-1 text-sm text-neutral-600 tracking-wide uppercase sm:flex-row sm:items-center sm:gap-4 dark:text-neutral-300"
       >
-        <span class="w-fit rounded bg-neutral-200 px4 py1 tracking-wide dark:bg-neutral-900">
+        <span class="w-fit rounded bg-brand-light px6 py1 text-black text-white font-bold tracking-widest dark:(bg-brand-dark)">
           {{ post.tag }}
         </span>
 

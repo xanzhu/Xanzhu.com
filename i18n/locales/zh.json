@@ -25,11 +25,7 @@
     "blog": "博客",
     "resources": "资源"
   },
-  "PagesCard": {
-    "analysis": "威胁报告与深度分析",
-    "blog": "最新消息与技术指南",
-    "resources": "安全工具与链接"
-  },
+  "PagesCard": {},
   "SocialsCard": {
     "h1": "关注我们的社交媒体"
   },
@@ -211,7 +207,7 @@
     },
     "ui": {
       "scrollTop": "回到顶部",
-      "scrollBottom": "转到底部"
+      "globalDate": "当前日期："
     },
     "error404": {
       "h1": "嗯…这个页面去哪儿了？",

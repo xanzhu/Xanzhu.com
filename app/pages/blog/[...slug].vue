@@ -1,46 +1,34 @@
 <script setup lang="ts">
-import type { PrevNext } from '../../components/Blog/PrevNext.vue'
+import type { Collections } from '@nuxt/content'
+import { withoutTrailingSlash } from 'ufo'
 
 const route = useRoute()
 const { locale } = useI18n()
 const config = useRuntimeConfig()
 
-const slugParam = route.params.slug
-const articleSlug = Array.isArray(slugParam)
-  ? slugParam.join('/')
-  : slugParam || ''
-
-const blogPrefix = locale.value === 'en' ? '/blog' : `/${locale.value}/blog`
-const fullPath = `${blogPrefix}/${articleSlug}`.replace(/\/+$/, '')
-
-const { data: post } = await useAsyncData(
-  `blogPost-${locale.value}-${articleSlug}`,
-  async () => {
-    if (!articleSlug)
-      return null
-
-    const post = await queryContent()
-      .where({ _path: { $regex: `^${fullPath}$` } })
-      .only(['_path', 'title', 'body', 'toc', 'description', 'img', 'date', 'tag', 'alt', 'updated'])
-      .findOne()
-
-    return post
-  },
-  {
-    watch: [locale, () => route.params.slug],
-    default: () => null,
-  },
+const slug = computed(() => Array.isArray(route.params.slug)
+  ? route.params.slug as string[]
+  : [route.params.slug as string],
 )
 
-watch(
-  post,
-  (newPost) => {
-    if (!newPost && route.name?.toString().includes('blog-slug')) {
-      throw createError({ statusCode: 404, fatal: true })
-    }
-  },
-  { immediate: true },
+const collection = computed(() => `blog_${locale.value}` as keyof Collections)
+const path = computed(() =>
+  `/${locale.value === 'en' ? '' : `${locale.value}/`}blog/${slug.value.join('/')}`,
 )
+
+const { data: post } = await useAsyncData(path.value, async () =>
+  await queryCollection(collection.value).path(withoutTrailingSlash(route.path)).first())
+
+const { data: surround } = await useAsyncData(`surround-${locale.value}${path.value}`, async () =>
+  await queryCollectionItemSurroundings(collection.value, path.value, {
+    before: 1,
+    after: 1,
+    fields: ['title', 'path', 'date', 'img'],
+  })
+    .order('date', 'DESC'))
+
+if (!post.value)
+  throw createError({ statusCode: 404 })
 
 const seoTitle = computed(() => post.value?.title || 'Default Blog Title')
 const seoDesc = computed(() => post.value?.description || 'Explore our latest blog posts.')
@@ -62,37 +50,10 @@ useSeoMeta({
   ogImage: seoImage,
 })
 
-// Set current post for breadcrumbs
-const currentPost = useState<any>('currentPost', () => null)
-watch(post, (newPost) => {
-  currentPost.value = newPost
-}, { immediate: true })
-
-// --- Prev / Next
-const { data: prevNext } = await useAsyncData(
-  `prevNext-${locale.value}-${fullPath}`,
-  async () => {
-    if (!post.value?._path)
-      return null
-
-    const surroundPathPrefix = blogPrefix
-
-    return await queryContent()
-      .where({ _path: { $regex: `^${surroundPathPrefix}` } })
-      .sort({ date: -1 })
-      .only(['_path', 'title', 'img', 'alt'])
-      .findSurround(post.value._path, { before: 1, after: 1 })
-  },
-  {
-    watch: [locale, () => post.value?._path],
-    server: true,
-    default: () => null,
-  },
-)
-
-const [prevData, nextData] = prevNext.value || []
-const prev = prevData as PrevNext | undefined
-const next = nextData as PrevNext | undefined
+// BreadCrumbs
+if (post.value?.title) {
+  route.meta.title = post.value.title
+}
 </script>
 
 <template>
@@ -112,14 +73,14 @@ const next = nextData as PrevNext | undefined
       </div>
       <div class="mt10 flex flex-col items-center justify-center">
         <hr class="w-80% core-border rounded-md core-ui op40">
-        <div v-if="post._path && post.title">
-          <h4 class="mt5 text-center text-lg font-normal op90">
+        <div v-if="post.path && post.title">
+          <h4 class="mb4 mt5 text-center text-lg font-normal op90">
             {{ $t('share.title') }}
           </h4>
-          <LazyBlogSocialShare :post="{ _path: post._path, title: post.title }" />
+          <LazyBlogSocialShare :post="{ path: post.path, title: post.title }" />
         </div>
       </div>
-      <LazyBlogPrevNext :prev="prev" :next="next" />
+      <LazyBlogPrevNext v-if="surround" :surround="surround" />
     </article>
   </main>
 </template>

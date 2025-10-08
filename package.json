@@ -1,6 +1,6 @@
 {
   "name": "xanzhu.com",
-  "version": "1.0.401",
+  "version": "2.0.30",
   "private": true,
   "license": "MIT",
   "scripts": {
@@ -10,27 +10,28 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint",
-    "lint:fix": "eslint --fix"
+    "lint:fix": "eslint --fix",
+    "build:cf": "nuxt build --envName cloudflare"
   },
   "dependencies": {
-    "@nuxt/content": "2.13.4",
+    "@nuxt/content": "^3.7.1",
     "@nuxt/fonts": "^0.11.4",
     "@nuxt/icon": "^2.0.0",
     "@nuxt/image": "^1.11.0",
     "@nuxtjs/color-mode": "^3.5.2",
-    "@nuxtjs/i18n": "10.0.6",
+    "@nuxtjs/i18n": "10.1.0",
     "@nuxtjs/sitemap": "^7.4.7",
-    "chart.js": "^4.5.0",
-    "nitro-cloudflare-dev": "^0.2.2",
-    "nuxt": "^4.1.2",
+    "nuxt": "^4.1.3",
     "nuxt-security": "^2.4.0",
-    "vue": "^3.5.21",
+    "ufo": "^1.6.1",
+    "vue": "^3.5.22",
     "vue-chartjs": "^5.3.2",
-    "vue-router": "^4.5.1"
+    "vue-router": "^4.5.1",
+    "wrangler": "^4.42.1"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^5.4.1",
-    "@iconify-json/fluent": "^1.2.31",
+    "@iconify-json/fluent": "^1.2.32",
     "@iconify-json/line-md": "^1.2.11",
     "@nuxt/devtools": "^2.6.5",
     "@unocss/eslint-plugin": "^66.5.2",
@@ -39,12 +40,9 @@
     "@unocss/preset-wind3": "^66.5.2",
     "@unocss/transformer-directives": "^66.5.2",
     "@unocss/transformer-variant-group": "^66.5.2",
-    "eslint": "^9.36.0",
+    "chart.js": "^4.5.0",
+    "eslint": "^9.37.0",
     "eslint-plugin-format": "^1.0.2",
-    "wrangler": "^4.39.0"
-  },
-  "resolutions": {
-    "@nuxtjs/mdc": "^0.17.2",
-    "esbuild": "^0.25.9"
+    "nitro-cloudflare-dev": "^0.2.2"
   }
 }
