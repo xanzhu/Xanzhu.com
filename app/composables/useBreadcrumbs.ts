@@ -10,15 +10,20 @@ export function useBreadcrumbs() {
   const localePath = useLocalePath()
   const config = useRuntimeConfig()
 
-  // Move useState outside of computed
-  const currentPost = useState<any>('currentPost', () => null)
   const baseUrl = computed(() => config.public.i18n.baseUrl)
+
+  const staticPages: Record<string, string> = {
+    '/privacy-policy': 'breadcrumbs.privacy',
+    '/terms-of-service': 'breadcrumbs.terms',
+    '/analysis': 'breadcrumbs.analysis',
+    '/resources': 'breadcrumbs.resources',
+    '/about': 'breadcrumbs.about',
+  }
 
   const breadcrumbs = computed<BreadcrumbItem[]>(() => {
     const path = route.path
     const items: BreadcrumbItem[] = []
 
-    // Home breadcrumb
     items.push({
       name: t('breadcrumbs.home'),
       path: localePath('/'),
@@ -27,72 +32,42 @@ export function useBreadcrumbs() {
     // Blog breadcrumbs
     const blogPath = localePath('/blog')
 
-    if (path.includes('/blog')) {
+    if (path.startsWith(blogPath)) {
       items.push({
         name: t('breadcrumbs.blog'),
-        path: localePath('/blog'),
+        path: blogPath,
         current: path === blogPath,
       })
 
       // Individual blog post
-      if (!path.endsWith('/blog')) {
-        if (currentPost.value?.title) {
-          items.push({
-            name: currentPost.value.title,
-            path,
-            current: true,
-          })
-        }
+      if (path !== blogPath && route.meta?.title) {
+        items.push({
+          name: String(route.meta.title),
+          path,
+          current: true,
+        })
       }
     }
 
-    // Legal pages
-    else if (path === localePath('/privacy-policy')) {
-      items.push({
-        name: t('breadcrumbs.privacy'),
-        path,
-        current: true,
-      })
-    }
-    else if (path === localePath('/terms-of-service')) {
-      items.push({
-        name: t('breadcrumbs.terms'),
-        path,
-        current: true,
-      })
-    }
-
-    // Analysis page
-    else if (path === localePath('/analysis')) {
-      items.push({
-        name: t('breadcrumbs.analysis'),
-        path,
-        current: true,
-      })
-    }
-
-    // Resources page
-    else if (path === localePath('/resources')) {
-      items.push({
-        name: t('breadcrumbs.resources'),
-        path,
-        current: true,
-      })
-    }
-
-    // About page
-    else if (path === localePath('/about')) {
-      items.push({
-        name: t('breadcrumbs.about'),
-        path,
-        current: true,
-      })
+    // Static pages
+    else {
+      for (const [rawPath, translationKey] of Object.entries(staticPages)) {
+        const localizedPath = localePath(rawPath)
+        if (path === localizedPath) {
+          items.push({
+            name: t(translationKey),
+            path: localizedPath,
+            current: true,
+          })
+          break
+        }
+      }
     }
 
     return items
   })
 
-  // Generate JSON-LD structured data
+  // JSON-LD structured data
   const jsonLd = computed(() => {
     if (breadcrumbs.value.length <= 1)
       return null
@@ -104,7 +79,7 @@ export function useBreadcrumbs() {
         '@type': 'ListItem',
         'position': index + 1,
         'name': item.name,
-        'item': `${baseUrl.value || 'https://xanzhu.com'}${item.path}`,
+        'item': `${(baseUrl.value || 'https://xanzhu.com').replace(/\/$/, '')}${item.path}`,
       })),
     }
   })
