@@ -18,7 +18,7 @@ const hasSubInfo = computed(() => !!props.description || !!props.date)
           'sm:(flex-row items-center justify-between space-y-0)': hasSubInfo,
           'items-center': !hasSubInfo && !description && !date }"
       >
-        <div class="flex-col" flex :class="{ 'items-center': !hasSubInfo && !description && !date }">
+        <div class="flex flex-col" :class="{ 'items-center': !hasSubInfo && !description && !date }">
           <h1 class="m0 text-2xl font-semibold sm:text-3xl">
             <slot name="title">
               {{ title }}

@@ -1,21 +1,11 @@
 <script setup lang="ts">
-const { locale } = useI18n()
-const localePath = useLocalePath()
+import type { Collections } from '@nuxt/content'
 
-const blogPathPrefix = locale.value === 'en' ? '/blog' : `/${locale.value}/blog`
-const { data: posts } = await useAsyncData(
-  `blogArticles-${locale.value}`,
-  async () => {
-    return await queryContent()
-      .where({ _path: { $regex: `^${blogPathPrefix}` } })
-      .sort({ date: -1 })
-      .only(['title', 'description', 'img', 'date', 'tag', '_path', 'alt'])
-      .find()
-  },
-  {
-    watch: [locale],
-  },
-)
+const { locale } = useI18n()
+const collection = computed(() => `blog_${locale.value}` as keyof Collections)
+
+const { data: posts } = await useAsyncData(`blogArticles-${locale.value}`, async () =>
+  await queryCollection(collection.value).order('date', 'DESC').all())
 
 const seoImage = 'https://images.pexels.com/photos/27277185/pexels-photo-27277185.jpeg'
 useLangMeta('Blog.meta', seoImage)
@@ -35,16 +25,16 @@ useLangMeta('Blog.meta', seoImage)
       v-if="posts && posts.length"
       class="grid grid-cols-1 gap-5 rounded-sm p-4 lg:(grid-cols-3 gap-5) md:(grid-cols-2 gap-10) sm:(px-10 py-15)"
     >
-      <div v-for="article in posts" :key="article._path">
-        <NuxtLinkLocale v-if="article._path" class="group flex flex-col no-underline" :to="localePath(article._path)">
+      <div v-for="article in posts" :key="article.path">
+        <NuxtLinkLocale v-if="article.path" class="group flex flex-col no-underline" :to="article.path">
           <NuxtImg
             v-if="article.img" crossorigin="anonymous" :alt="article.alt" :title="article.alt" loading="lazy"
             height="369" width="577" object-fit="contain" format="webp"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 557px"
-            class="h-full w-full transform b-1 b-light-700 rounded-md b-solid dark:b-dark-700 md:(transition duration-400 ease-in-out group-hover:scale-102)"
+            class="h-full w-full transform core-border rounded-md md:(transition duration-400 ease-in-out group-hover:scale-102)"
             :src="article.img"
           />
-          <div class="h-auto rounded-b-md text-black dark:text-white">
+          <div class="h-auto rounded-b-md py2 text-black space-y-2 dark:text-white">
             <div
               class="children:(inline-flex core-border rounded-md core-ui px4 py2 text-xs op80 dark:op100) space-x-2"
             >
@@ -53,7 +43,7 @@ useLangMeta('Blog.meta', seoImage)
                 {{ article.tag }}
               </p>
             </div>
-            <h2 class="m0 text-xl font-semibold decoration-2 group-hover:(underline underline-offset-6)">
+            <h2 class="text-xl font-semibold decoration-2 group-hover:(underline underline-offset-6)">
               {{ article.title }}
             </h2>
             <p class="font-300 op70">
