@@ -50,7 +50,7 @@ function handleGoBack() {
 </script>
 
 <template>
-  <main class="m0 h-screen flex flex-col-reverse items-center justify-center bg-white p4 text-black font-sans lg:flex-row md:gap-16 dark:(bg-black text-white) sm:p0" :aria-label="errorLabel">
+  <main class="m0 h-screen flex flex-col-reverse items-center justify-center bg-white p4 text-black font-sans lg:flex-row md:gap-16 dark:(bg-black text-white)" :aria-label="errorLabel">
     <section class="max-w-lg">
       <h1 class="m0 text-4xl font-semibold tracking-wide sm:text-6xl">
         {{ errorTitle }}
