@@ -2,13 +2,12 @@
 import type { Collections } from '@nuxt/content'
 
 const { locale, t } = useI18n()
-const localePath = useLocalePath()
 
 const collection = computed(() => `blog_${locale.value}` as keyof Collections)
 
 const { data: features } = useAsyncData(`featuredArticles-${locale.value}`, () =>
   queryCollection(collection.value)
-    .select('title', 'date', 'description', 'path', 'feature', 'tag')
+    .select('title', 'date', 'description', 'tag', 'path')
     .where('feature', '=', 1)
     .limit(5)
     .all())
@@ -47,8 +46,7 @@ const featureSetTwo = computed(() => features.value?.slice(3, 6) || [])
           class="group core-theme transition transition-transform duration-300 ease-linear hover:(scale-102 bg-white shadow-lg dark:bg-black)"
         >
           <NuxtLinkLocale
-            v-if="feature.path"
-            class="block h-full p-5 text-black no-underline dark:text-white" :to="localePath(feature.path)"
+            class="block h-full p-5 text-black no-underline dark:text-white" :to="feature.path"
             :aria-labelledby="`post${feature.path?.replaceAll('/', '-')}`"
           >
             <span
@@ -94,7 +92,7 @@ const featureSetTwo = computed(() => features.value?.slice(3, 6) || [])
           class="group core-theme transition duration-300 ease-linear hover:(scale-102 bg-white shadow-lg dark:bg-black)"
         >
           <NuxtLinkLocale
-            class="block h-full p-5 text-black no-underline dark:text-white" :to="localePath(feature.path)"
+            class="block h-full p-5 text-black no-underline dark:text-white" :to="feature.path"
             :aria-labelledby="`post${feature.path?.replaceAll('/', '-')}`"
           >
             <span

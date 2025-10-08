@@ -1,6 +1,6 @@
 {
   "name": "xanzhu.com",
-  "version": "1.0.421",
+  "version": "2.0.0",
   "private": true,
   "license": "MIT",
   "scripts": {
@@ -42,7 +42,7 @@
     "eslint": "^9.37.0",
     "eslint-plugin-format": "^1.0.2",
     "nitro-cloudflare-dev": "^0.2.2",
-    "wrangler": "^4.42.0"
+    "wrangler": "^4.42.1"
   },
   "overrides": {
     "@nuxt/cli": "3.29.1"
