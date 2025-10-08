@@ -1,5 +1,3 @@
-import process from 'node:process'
-
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
@@ -90,7 +88,6 @@ export default defineNuxtConfig({
 
   sitemap: {
     autoI18n: true,
-    strictNuxtContentPaths: true,
     autoLastmod: true,
     xslColumns: [
       { label: 'URL', width: '50%' },
