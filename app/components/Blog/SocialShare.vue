@@ -1,6 +1,6 @@
 <script setup lang="ts">
 interface Post {
-  _path?: string
+  path?: string
   title: string
 }
 
@@ -12,7 +12,7 @@ const { t } = useI18n()
 const config = useRuntimeConfig()
 const baseUrl = computed(() => config.public.i18n.baseUrl)
 
-const encodedPath = computed(() => encodeURIComponent(props.post._path || ''))
+const encodedPath = computed(() => encodeURIComponent(props.post.path || ''))
 const encodedTitle = computed(() => encodeURIComponent(props.post.title))
 
 const socials = computed(() => [

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 const route = useRoute()
 
 const disablePath = computed(() => {
@@ -13,12 +13,9 @@ const disablePath = computed(() => {
     v-if="!disablePath"
     class="z-10 flex flex-col items-center justify-between bg-transparent py-4 text-sm text-inherit font-normal md:(flex-row px-9 py-2 space-y-0) sm:(flex-row px-6 py-2) space-y-2 2xl:px-43 xl:px-30"
   >
-    <!-- Breadcrumb -->
     <UiBreadcrumbs />
 
-    <!-- Weather: Disabled for now >_> -->
-    <!-- <UiWeather v-if="route.path === '/' || route.path === '/ko' || route.path === '/zh'" /> -->
-
+    <span class="sr-only">{{ t('v2.ui.globalDate') }}</span>
     <NuxtTime
       :key="locale"
       :datetime="new Date()"

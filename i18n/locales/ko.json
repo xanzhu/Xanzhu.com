@@ -25,11 +25,7 @@
     "blog": "블로그",
     "resources": "자원"
   },
-  "PagesCard": {
-    "analysis": "위협에 대한 보고 및 기록",
-    "blog": "최신 뉴스, 기술 가이드",
-    "resources": "보안 도구 및 링크"
-  },
+  "PagesCard": {},
   "SocialsCard": {
     "h1": "소셜 팔로우"
   },
@@ -211,7 +207,7 @@
     },
     "ui": {
       "scrollTop": "위로 돌아갑니다",
-      "scrollBottom": "바닥으로 이동하십시오"
+      "globalDate": "현재 날짜:"
     },
     "error404": {
       "h1": "음... 페이지가 어디로 사라졌을까요?",
