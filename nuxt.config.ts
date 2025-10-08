@@ -83,7 +83,7 @@ export default defineNuxtConfig({
   },
 
   site: {
-    url: 'https://xanzhu.com',
+    url: 'https://core.xanzhu.workers.dev',
     name: 'Xanzhu',
     trailingSlash: false,
   },
@@ -118,10 +118,10 @@ export default defineNuxtConfig({
   // API
   runtimeConfig: {
     public: {
-      Version: '1.0.421',
+      Version: 'ALPHA BUILD',
       WeatherAPI: process.env.WEATHER_API,
       i18n: {
-        baseUrl: 'https://xanzhu.com',
+        baseUrl: 'https://core.xanzhu.workers.dev',
       },
     },
   },

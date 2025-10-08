@@ -31,6 +31,7 @@ export function useBreadcrumbs() {
       path: localePath('/'),
     })
 
+    // Blog
     if (isBlog) {
       if (path === blogPath) {
         items.push({
@@ -54,6 +55,7 @@ export function useBreadcrumbs() {
       }
     }
 
+    // Individual Pages
     else {
       for (const [rawPath, translationKey] of Object.entries(staticPages)) {
         const localizedPath = localePath(rawPath)
@@ -71,7 +73,7 @@ export function useBreadcrumbs() {
     return items
   })
 
-  // 🧭 JSON-LD structured data
+  // JSON_LD
   const jsonLd = computed(() => {
     if (breadcrumbs.value.length <= 1)
       return null
