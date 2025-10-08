@@ -1,5 +1,3 @@
-import process from 'node:process'
-
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
@@ -119,7 +117,6 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       Version: '2.0.20',
-      WeatherAPI: process.env.WEATHER_API,
       i18n: {
         baseUrl: 'https://xanzhu.com',
       },
@@ -177,7 +174,6 @@ export default defineNuxtConfig({
         'connect-src': [
           '\'self\'',
           'https://*.xanzhu.com',
-          'https://api.weatherapi.com',
           'https://api.iconify.design',
         ],
         'frame-src': [
