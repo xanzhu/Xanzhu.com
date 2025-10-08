@@ -9,38 +9,36 @@ const props = withDefaults(defineProps<Props>(), {
 
 const isVisible = ref(false)
 
-let throttleTimer: number | null = null
-function throttledCheckScrollPosition() {
-  if (throttleTimer !== null)
-    return
-
-  throttleTimer = window.setTimeout(() => {
-    const scrollTop = window.scrollY || document.documentElement.scrollTop
-    isVisible.value = scrollTop > props.threshold
-    throttleTimer = null
-  }, 100)
-}
-
 function scrollToTop() {
   if (import.meta.client) {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 }
 
+let lastScrollTop = 0
+let ticking = false
+function onScroll() {
+  if (!ticking) {
+    window.requestAnimationFrame(() => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop
+      isVisible.value = scrollTop < lastScrollTop && scrollTop > props.threshold
+      lastScrollTop = scrollTop
+      ticking = false
+    })
+    ticking = true
+  }
+}
+
 onMounted(() => {
   if (import.meta.client) {
-    window.addEventListener('scroll', throttledCheckScrollPosition, { passive: true })
-    const scrollTop = window.scrollY || document.documentElement.scrollTop
-    isVisible.value = scrollTop > props.threshold
+    window.addEventListener('scroll', onScroll, { passive: true })
+    lastScrollTop = window.scrollY || document.documentElement.scrollTop
+    isVisible.value = false
   }
 })
-
 onUnmounted(() => {
   if (import.meta.client) {
-    window.removeEventListener('scroll', throttledCheckScrollPosition)
-    if (throttleTimer !== null) {
-      clearTimeout(throttleTimer)
-    }
+    window.removeEventListener('scroll', onScroll)
   }
 })
 </script>
@@ -56,7 +54,7 @@ onUnmounted(() => {
   >
     <button
       v-if="isVisible"
-      class="fixed bottom-6 right-3 z-30 h-10 w-10 flex cursor-pointer items-center justify-center core-border rounded-md core-ui shadow-lg transition-all duration-200 md:right-6 hover:core-theme focus:outline-none focus:ring-2 focus:ring-brand-dark focus:ring-opacity-50 dark:focus:ring-brand-light"
+      class="fixed bottom-6 right-3 z-30 h-10 w-10 flex cursor-pointer items-center justify-center core-border rounded-full core-ui shadow-lg transition-all duration-200 md:right-6 hover:core-theme focus:outline-none focus:ring-2 focus:ring-brand-dark focus:ring-opacity-50 dark:focus:ring-brand-light"
       :aria-label="$t('v2.ui.scrollTop')"
       @click="scrollToTop"
     >
