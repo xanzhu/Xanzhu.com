@@ -127,6 +127,10 @@ export default defineConfig<Wind3Theme & TypographyTheme>({
           margin: '0',
         },
 
+        '.prose img': {
+          margin: '0',
+        },
+
         // Italics
         '.prose i': {
           'opacity': '0.9',
@@ -173,8 +177,8 @@ export default defineConfig<Wind3Theme & TypographyTheme>({
       },
     },
     fontFamily: {
-      sans: 'Geist, system-ui, sans-serif',
-      mono: 'Geist Mono, monospace',
+      sans: 'Noto Sans CJK KR, system-ui, sans-serif',
+      mono: 'monospace',
     },
   },
   shortcuts: {

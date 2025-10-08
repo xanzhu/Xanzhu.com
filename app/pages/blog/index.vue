@@ -12,12 +12,12 @@ useLangMeta('Blog.meta', seoImage)
 </script>
 
 <template>
-  <main class="mx-auto text-black sm:mb-10 space-y-10 2xl:px35 lg:px25 md:px5 xl:px28 dark:text-white">
+  <main class="mx-auto text-black sm:mb-10 space-y-10 2xl:px35 xl:px28 dark:text-white">
     <div class="mx-4 mt-5 flex flex-col lg:mx-10 sm:(mx-10 mt-15) space-y-2">
       <h1 class="mb0 text-3xl font-semibold sm:text-5xl">
         {{ $t("Blog.title") }}
       </h1>
-      <p class="text-md break-words font-300 op70 sm:(w2/3 text-xl) dark:text-gray-300">
+      <p class="text-md break-words font-400 op70 sm:(w2/3 text-xl) dark:text-gray-300">
         {{ $t("Blog.description") }}
       </p>
     </div>
@@ -34,19 +34,19 @@ useLangMeta('Blog.meta', seoImage)
             class="h-full w-full transform core-border rounded-md md:(transition duration-400 ease-in-out group-hover:scale-102)"
             :src="article.img"
           />
-          <div class="h-auto rounded-b-md py2 text-black space-y-2 dark:text-white">
+          <div class="h-auto py2 text-black space-y-2 dark:text-white">
             <div
               class="children:(inline-flex core-border rounded-md core-ui px4 py2 text-xs op80 dark:op100) space-x-2"
             >
               <Date v-if="article.date" :date="article.date" />
-              <p v-if="article.tag">
+              <p v-if="article.tag" class="m0">
                 {{ article.tag }}
               </p>
             </div>
-            <h2 class="text-xl font-semibold decoration-2 group-hover:(underline underline-offset-6)">
+            <h2 class="m0 text-xl font-semibold decoration-2 group-hover:(underline underline-offset-6)">
               {{ article.title }}
             </h2>
-            <p class="font-300 op70">
+            <p class="text-neutral-600 op70 dark:text-neutral-300">
               {{ article.description }}
             </p>
           </div>

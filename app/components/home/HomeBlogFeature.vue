@@ -17,7 +17,7 @@ const featureSetTwo = computed(() => features.value?.slice(3, 6) || [])
 </script>
 
 <template>
-  <section class="mx-auto bg-light400 py10 dark:bg-dark900" aria-labelledby="latest-posts">
+  <section class="mx-4 bg-light400 py10 dark:bg-dark900" aria-labelledby="latest-posts">
     <div
       class="mx-auto mb5 max-w-lg flex flex-col items-center justify-between px6 md:mb0 md:max-w-5xl md:flex-row space-y-5 md:space-y-0"
     >
@@ -61,7 +61,7 @@ const featureSetTwo = computed(() => features.value?.slice(3, 6) || [])
             >
               {{ feature.title }}
             </h3>
-            <p class="mt-2 text-inherit font-300 op70 transition-opacity duration-300 ease-in-out group-hover:op-100">
+            <p class="mt-2 text-neutral-400 text-inherit font-400 op70 transition-opacity duration-300 ease-in-out dark:text-neutral-300 group-hover:op-100">
               {{ feature.description }}
             </p>
           </NuxtLinkLocale>
@@ -107,7 +107,7 @@ const featureSetTwo = computed(() => features.value?.slice(3, 6) || [])
             >
               {{ feature.title }}
             </h3>
-            <p class="mt-2 text-inherit font-300 op70 transition-opacity duration-300 ease-in-out group-hover:op-100">
+            <p class="mt-2 text-neutral-600 text-inherit font-400 op70 transition-opacity duration-300 ease-in-out dark:text-neutral-300 group-hover:op-100">
               {{ feature.description }}
             </p>
           </NuxtLinkLocale>

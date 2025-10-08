@@ -24,7 +24,7 @@ const hasSubInfo = computed(() => !!props.description || !!props.date)
               {{ title }}
             </slot>
           </h1>
-          <p v-if="description" class="m0 font-300 op80 dark:text-light-500">
+          <p v-if="description" class="m0 op80 dark:text-light-500">
             <slot name="description">
               {{ description }}
             </slot>
@@ -36,7 +36,7 @@ const hasSubInfo = computed(() => !!props.description || !!props.date)
               {{ datelabel }}
             </slot>
           </span>
-          <span v-if="formattedDate" class="font-300">
+          <span v-if="formattedDate" class="font-400">
             <slot name="date">
               <Date :date="formattedDate" />
             </slot>
@@ -45,7 +45,7 @@ const hasSubInfo = computed(() => !!props.description || !!props.date)
       </div>
 
       <div
-        class="text-md core-border rounded-lg from-light-100 to-neutral-200 bg-gradient-to-b p-6 font-300 shadow-sm sm:(mx-3 p-10) space-y-6 dark:from-dark-800 dark:to-dark-900"
+        class="text-md core-border rounded-lg from-light-100 to-neutral-200 bg-gradient-to-b p-6 font-400 shadow-sm sm:(mx-3 p-10) space-y-6 dark:from-dark-800 dark:to-dark-900"
       >
         <slot name="content" />
       </div>
