@@ -10,3 +10,4 @@ NITRO_PRESET = "cloudflare_module"
 [[d1_databases]]
 binding = "DB"
 database_name = "xanzhu-core"
+database_id = ""
