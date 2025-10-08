@@ -23,24 +23,29 @@ export function useBreadcrumbs() {
   const breadcrumbs = computed<BreadcrumbItem[]>(() => {
     const path = route.path
     const items: BreadcrumbItem[] = []
+    const blogPath = localePath('/blog')
+    const isBlog = path.startsWith(blogPath)
 
     items.push({
       name: t('breadcrumbs.home'),
       path: localePath('/'),
     })
 
-    // Blog breadcrumbs
-    const blogPath = localePath('/blog')
+    if (isBlog) {
+      if (path === blogPath) {
+        items.push({
+          name: t('breadcrumbs.blog'),
+          path: blogPath,
+          current: true,
+        })
+      }
 
-    if (path.startsWith(blogPath)) {
-      items.push({
-        name: t('breadcrumbs.blog'),
-        path: blogPath,
-        current: path === blogPath,
-      })
-
-      // Individual blog post
-      if (path !== blogPath && route.meta?.title) {
+      else if (route.meta?.title) {
+        items.length = 0
+        items.push({
+          name: t('breadcrumbs.blog'),
+          path: blogPath,
+        })
         items.push({
           name: String(route.meta.title),
           path,
@@ -49,7 +54,6 @@ export function useBreadcrumbs() {
       }
     }
 
-    // Static pages
     else {
       for (const [rawPath, translationKey] of Object.entries(staticPages)) {
         const localizedPath = localePath(rawPath)
@@ -67,7 +71,7 @@ export function useBreadcrumbs() {
     return items
   })
 
-  // JSON-LD structured data
+  // 🧭 JSON-LD structured data
   const jsonLd = computed(() => {
     if (breadcrumbs.value.length <= 1)
       return null
