@@ -84,8 +84,7 @@ export default defineConfig<Wind3Theme & TypographyTheme>({
         // Code and Pre
         '.prose pre, .prose code': {
           '--uno':
-            'dark:(bg-dark-900 text-light-700) text-gray-800 core-border',
-          'font-family': '\'Geist Mono\', monospace',
+            'core-theme core-border font-mono',
           'font-size': '0.875rem',
         },
         '.prose pre': {
@@ -96,6 +95,7 @@ export default defineConfig<Wind3Theme & TypographyTheme>({
         '.prose pre > code': {
           border: 'none',
         },
+
         // Youtube iframe | <Vid>
         '.ifr iframe': {
           'position': 'absolute',
@@ -119,8 +119,7 @@ export default defineConfig<Wind3Theme & TypographyTheme>({
           'line-height': '1.5',
           'margin-top': '0.3rem',
           'text-align': 'left',
-          '--uno': 'dark:text-light-900 text-gray-600',
-          'font-family': '\'Geist Mono\', monospace',
+          '--uno': 'dark:text-light-900 text-gray-600 font-mono',
         },
 
         'figure': {
@@ -150,7 +149,7 @@ export default defineConfig<Wind3Theme & TypographyTheme>({
           'padding': '0.75rem',
           'text-align': 'left',
           'border': '1px solid',
-          '--uno': 'dark:border-dark-700 border-gray-300',
+          '--uno': 'core-border core-theme',
         },
         '.prose th': {
           'background-color': '#f1f1f1',
@@ -159,7 +158,6 @@ export default defineConfig<Wind3Theme & TypographyTheme>({
         },
         '.prose tr:nth-child(even)': {
           'background-color': '#f9f9f9',
-          '--uno': 'dark:bg-dark-900',
         },
       },
     }),

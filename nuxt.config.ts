@@ -1,3 +1,5 @@
+import process from 'node:process'
+
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
@@ -116,7 +118,7 @@ export default defineNuxtConfig({
   // API
   runtimeConfig: {
     public: {
-      Version: '2.0.30',
+      Version: '2.0.31',
       i18n: {
         baseUrl: 'https://xanzhu.com',
       },
@@ -149,6 +151,7 @@ export default defineNuxtConfig({
         ],
         'style-src': [
           '\'self\'',
+          process.env.NODE_ENV === 'development' ? '\'unsafe-inline\'' : '\'nonce-{{nonce}}\'',
           'https://*.xanzhu.com',
         ],
         'base-uri': '\'none\'',
@@ -174,7 +177,11 @@ export default defineNuxtConfig({
         'connect-src': [
           '\'self\'',
           'https://*.xanzhu.com',
+          'https://api.weatherapi.com',
           'https://api.iconify.design',
+          ...(process.env.NODE_ENV === 'development'
+            ? ['ws://localhost:4000']
+            : []),
         ],
         'frame-src': [
           '\'self\'',
@@ -187,6 +194,10 @@ export default defineNuxtConfig({
         includeSubdomains: true,
         preload: true,
       },
+      crossOriginEmbedderPolicy:
+        process.env.NODE_ENV === 'development'
+          ? 'unsafe-none'
+          : 'credentialless',
       crossOriginOpenerPolicy: 'same-origin',
       crossOriginResourcePolicy: 'same-origin',
     },
@@ -195,7 +206,6 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2025-10-01',
 
-  // Testing features
   sourcemap: false,
 
   unocss: {
@@ -205,46 +215,6 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-    },
-  },
-
-  $development: {
-    site: {
-      url: 'http://localhost:4000',
-    },
-    sourcemap: true,
-    security: {
-      headers: {
-        contentSecurityPolicy: {
-          'connect-src': [
-            'ws://localhost:4000',
-          ],
-          'style-src': [
-            '\'unsafe-inline\'',
-          ],
-        },
-        crossOriginEmbedderPolicy: 'unsafe-none',
-      },
-    },
-    runtimeConfig: {
-      public: {
-        i18n: {
-          baseUrl: 'http://localhost:4000',
-        },
-      },
-    },
-  },
-
-  $production: {
-    security: {
-      headers: {
-        contentSecurityPolicy: {
-          'style-src': [
-            '\'nonce-{{nonce}}\'',
-          ],
-        },
-        crossOriginEmbedderPolicy: 'credentialless',
-      },
     },
   },
 
