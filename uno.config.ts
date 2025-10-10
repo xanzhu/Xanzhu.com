@@ -84,16 +84,19 @@ export default defineConfig<Wind3Theme & TypographyTheme>({
         // Code and Pre
         '.prose pre, .prose code': {
           '--uno':
-            'core-theme core-border font-mono',
+            'font-mono',
           'font-size': '0.875rem',
+          'background-color': '#f6f6f6ff',
         },
         '.prose pre': {
           'padding': '1rem',
           'margin-bottom': '1.5rem',
           'overflow-x': 'auto',
+          'border': '1px solid #c2c2c2ff',
         },
         '.prose pre > code': {
           border: 'none',
+          color: '#2a2a2aff',
         },
 
         // Youtube iframe | <Vid>
@@ -142,22 +145,45 @@ export default defineConfig<Wind3Theme & TypographyTheme>({
           'border-collapse': 'collapse',
           'margin': '1.5rem 0',
           'font-size': '0.875rem',
-          '--uno': 'core-theme core-border min-w-5rem',
+          '--uno': 'min-w-5rem',
           'display': 'table',
+          'text': '#000',
+          'background-color': '#ffff',
         },
         '.prose th, .prose td': {
           'padding': '0.75rem',
           'text-align': 'left',
-          'border': '1px solid',
-          '--uno': 'core-border core-theme',
+          'border': '1px solid #c2c2c2ff',
         },
         '.prose th': {
           'background-color': '#f1f1f1',
           'font-weight': '600',
-          '--uno': 'dark:bg-dark-800',
         },
         '.prose tr:nth-child(even)': {
           'background-color': '#f9f9f9',
+        },
+        // Dark Styling
+        '.dark tr:nth-child(even)': {
+          'background-color': '#000000ff',
+        },
+        '.dark th': {
+          'background-color': '#000000ff',
+        },
+        '.dark th, .dark td': {
+          border: '1px solid #262626ff',
+        },
+        '.dark table': {
+          'background-color': '#101010ff',
+        },
+        '.dark code, .dark pre': {
+          'background-color': '#0a0a0aff',
+        },
+        '.dark pre code': {
+          color: '#fff',
+        },
+
+        '.dark pre': {
+          border: '1px solid #262626ff',
         },
       },
     }),
