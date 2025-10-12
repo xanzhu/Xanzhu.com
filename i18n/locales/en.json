@@ -207,7 +207,8 @@
     },
     "ui": {
       "scrollTop": "Back to Top",
-      "globalDate": "Current Date: "
+      "globalDate": "Current Date: ",
+      "breadCrumbs": "Breadcrumbs"
     },
     "error404": {
       "h1": "Hmm... Where Did That Page Go?",

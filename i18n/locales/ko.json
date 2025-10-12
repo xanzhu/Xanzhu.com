@@ -207,7 +207,8 @@
     },
     "ui": {
       "scrollTop": "위로 돌아갑니다",
-      "globalDate": "현재 날짜:"
+      "globalDate": "현재 날짜:",
+      "breadCrumbs": "이동 경로"
     },
     "error404": {
       "h1": "음... 페이지가 어디로 사라졌을까요?",

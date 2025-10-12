@@ -46,7 +46,7 @@ useLangMeta('Blog.meta', seoImage)
             <h2 class="m0 text-xl font-semibold decoration-2 group-hover:(underline underline-offset-6)">
               {{ article.title }}
             </h2>
-            <p class="text-neutral-600 op70 dark:text-neutral-300">
+            <p class="text-neutral-600 dark:text-neutral-300">
               {{ article.description }}
             </p>
           </div>
