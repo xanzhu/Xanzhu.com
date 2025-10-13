@@ -101,7 +101,7 @@ alt: UTM application interface showing the main window with a plus icon to creat
 ---
 ::
 
-#### Virtualise or Emulate
+### Virtualise or Emulate
 
 UTM offers two modes:
 
@@ -121,7 +121,7 @@ Select **Virtualise** to leverage Apple Silicon's efficiency.
 
 Emulation is slower but supports older systems. Pre-built VMs are also available via the :PageLink{title="UTM Gallery" url="https://mac.getutm.app/gallery/"}.
 
-#### Operating System
+### Operating System
 
 ::media
 ---
@@ -140,7 +140,7 @@ alt: UTM configuration interface showing the ISO selection
 ---
 ::
 
-#### Hardware Settings
+### Hardware Settings
 
 Set RAM to half of your device's available memory (default: 4096 MB or 4 GB). Leave CPU cores at the default for automatic management. Click **Continue**.
 

@@ -1,6 +1,9 @@
 {
-  // https://nuxt.com/docs/guide/concepts/typescript
-  "files": [],
+  "compilerOptions": {
+    "types": [
+      "./worker-configuration.d.ts"
+    ]
+  },
   "references": [
     {
       "path": "./.nuxt/tsconfig.app.json"
@@ -14,10 +17,7 @@
     {
       "path": "./.nuxt/tsconfig.node.json"
     }
-],
-"compilerOptions": {
-    "types": [
-        "./worker-configuration.d.ts"
-    ]
-}
+  ],
+  // https://nuxt.com/docs/guide/concepts/typescript
+  "files": []
 }
