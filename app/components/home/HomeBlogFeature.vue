@@ -107,7 +107,7 @@ const featureSetTwo = computed(() => features.value?.slice(3, 6) || [])
             >
               {{ feature.title }}
             </h3>
-            <p class="mt-2 text-neutral-600 text-inherit font-400 transition-opacity duration-300 ease-in-out dark:text-neutral-300 group-hover:op-100">
+            <p class="mt-2 text-neutral-400 text-inherit font-400 op70 transition-opacity duration-300 ease-in-out dark:text-neutral-300 group-hover:op-100">
               {{ feature.description }}
             </p>
           </NuxtLinkLocale>

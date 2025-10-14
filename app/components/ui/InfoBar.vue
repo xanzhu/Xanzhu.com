@@ -9,22 +9,22 @@ const disablePath = computed(() => {
 </script>
 
 <template>
-  <div
+  <nav
     v-if="!disablePath"
+    :aria-label="t('v2.ui.breadCrumbs')"
     class="z-10 flex flex-col items-center justify-between bg-transparent py-4 text-sm text-inherit font-normal md:(flex-row px-9 py-2 space-y-0) sm:(flex-row px-6 py-2) space-y-2 2xl:px-43 xl:px-30"
   >
     <UiBreadcrumbs />
-
-    <span class="sr-only">{{ t('v2.ui.globalDate') }}</span>
     <NuxtTime
       :key="locale"
       :datetime="new Date()"
       :locale="locale"
+      :aria-label="t('v2.ui.globalDate')"
       weekday="long"
       month="long"
       day="numeric"
       year="numeric"
       class="m0 h5.5 flex opacity-100 transition-opacity duration-300 ease-in-out"
     />
-  </div>
+  </nav>
 </template>

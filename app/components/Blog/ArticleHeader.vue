@@ -15,7 +15,7 @@ const { t } = useI18n()
       <div
         class="mb-4 flex flex-col gap-1 text-sm text-neutral-600 tracking-wide uppercase sm:flex-row sm:items-center sm:gap-4 dark:text-neutral-300"
       >
-        <span class="w-fit rounded bg-brand-light px6 py1 text-black text-white font-bold tracking-widest dark:(bg-brand-dark)">
+        <span class="w-fit rounded bg-brand-light px6 py1 text-black text-white font-bold tracking-widest">
           {{ post.tag }}
         </span>
 

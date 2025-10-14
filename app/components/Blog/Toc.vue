@@ -85,7 +85,7 @@ onUnmounted(() => {
     role="navigation"
   >
     <header id="toc-heading" class="mb-2 pb-2">
-      <p class="m-0 text-center text-lg font-semibold tracking-wide">
+      <p id="toc-heading" class="m-0 text-center text-lg font-semibold tracking-wide">
         {{ t("Blog.toc") }}
       </p>
     </header>
