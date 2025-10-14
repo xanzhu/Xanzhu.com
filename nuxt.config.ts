@@ -118,7 +118,7 @@ export default defineNuxtConfig({
   // API
   runtimeConfig: {
     public: {
-      Version: '2.0.31',
+      Version: '2.0.42',
       i18n: {
         baseUrl: 'https://xanzhu.com',
       },

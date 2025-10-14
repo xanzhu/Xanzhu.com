@@ -67,7 +67,7 @@ if (post.value?.title) {
             class="mx-auto max-w-3xl px-4 leading-normal prose md:px-0 dark:prose-invert"
           />
         </div>
-        <aside v-if="post.toc" class="mt2">
+        <aside v-if="post.toc" class="mt2" aria-labelledby="toc-heading">
           <BlogToc :links="post.body?.toc?.links ?? []" class="lg:sticky lg:top-20" />
         </aside>
       </div>

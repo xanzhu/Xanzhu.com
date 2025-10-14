@@ -207,7 +207,8 @@
     },
     "ui": {
       "scrollTop": "回到顶部",
-      "globalDate": "当前日期："
+      "globalDate": "当前日期：",
+      "breadCrumbs": "面包屑"
     },
     "error404": {
       "h1": "嗯…这个页面去哪儿了？",
