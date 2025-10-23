@@ -9,6 +9,7 @@ const { data: features } = useAsyncData(`featuredArticles-${locale.value}`, () =
   queryCollection(collection.value)
     .select('title', 'date', 'description', 'tag', 'path')
     .where('feature', '=', 1)
+    .order('date', 'DESC')
     .limit(5)
     .all())
 
