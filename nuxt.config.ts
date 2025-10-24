@@ -85,7 +85,6 @@ export default defineNuxtConfig({
   site: {
     url: 'https://xanzhu.com',
     name: 'Xanzhu',
-    trailingSlash: false,
   },
 
   sitemap: {
