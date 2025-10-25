@@ -11,7 +11,7 @@
         class="mb2 flex items-center text-sm text-brand-light font-semibold uppercase space-x-2 dark:text-yellow-400"
         role="doc-subtitle"
       >
-        <Icon name="mdi:web" class="h6 w6 text-inherit" aria-hidden="true" />
+        <Icon name="lucide:earth" class="h6 w6 text-inherit" aria-hidden="true" />
         <span>{{ $t('v2.home.heroTagline') }}</span>
       </div>
       <h1 id="hero" class="m0 mb10 max-w-[90%] max-w-4xl w-full text-5xl md:text-7xl">

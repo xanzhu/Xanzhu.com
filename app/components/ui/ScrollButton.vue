@@ -58,7 +58,7 @@ onUnmounted(() => {
       :aria-label="$t('v2.ui.scrollTop')"
       @click="scrollToTop"
     >
-      <Icon name="mdi:chevron-up" class="h-5 w-5" />
+      <Icon name="lucide:chevron-up" class="h-5 w-5" />
     </button>
   </Transition>
 </template>

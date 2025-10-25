@@ -117,7 +117,7 @@ export default defineNuxtConfig({
   // API
   runtimeConfig: {
     public: {
-      Version: '2.0.51',
+      Version: '2.0.60',
       i18n: {
         baseUrl: 'https://xanzhu.com',
       },
@@ -127,7 +127,7 @@ export default defineNuxtConfig({
   // ICON
   icon: {
     provider: 'iconify',
-    mode: 'svg',
+    // mode: 'svg',
   },
 
   // SECURITY V1.7
