@@ -26,9 +26,11 @@ function flattenLinks(links: TocLink[]): TocLink[] {
   })
 }
 
-const hasChildren = computed<boolean>(() => {
-  return flattenLinks(props.links).some(link => link.depth === 3)
-})
+const flattenedLinks = computed(() => flattenLinks(props.links))
+
+const hasChildren = computed(() =>
+  flattenedLinks.value.some(link => link.depth === 3),
+)
 
 function setupIntersectionObserver() {
   if (!isDesktop.value)
@@ -52,7 +54,7 @@ function setupIntersectionObserver() {
     },
     {
       root: null,
-      rootMargin: '-100px 0px -50% 0px',
+      rootMargin: '-100px 0px -80% 0px',
       threshold: 0.03,
     },
   )
@@ -79,7 +81,7 @@ onUnmounted(() => {
 
 <template>
   <nav
-    class="m-4 core-border rounded-md bg-neutral-100 p-4 md:(mx-auto max-w-xl) lg:(max-w-md) dark:bg-neutral-900"
+    class="m-4 core-border rounded-sm p4 md:(mx-auto max-w-xl) lg:(max-w-md)"
     :aria-label="t('Blog.toc')"
     aria-labelledby="toc-heading"
     role="navigation"
@@ -89,21 +91,20 @@ onUnmounted(() => {
         {{ t("Blog.toc") }}
       </p>
     </header>
-    <ul class="flex flex-col gap-2 px-6 text-sm" role="list">
+    <ul class="flex flex-col gap-2 px-4 text-sm leading-tight" role="list">
       <li
         v-for="link of flattenLinks(links)"
         :key="link.id"
-        class="w-fit border border-1 border-transparent rounded-md border-solid text-gray-800 transition-colors duration-200 dark:text-light-400"
+        class="w-fit border border-transparent rounded-sm transition-all duration-300 dark:text-light-400 hover:(underline underline-1 underline-offset-3)"
         :class="{
-          'list-disc hover:(underline underline-offset-3 underline-2)': !hasChildren && link.depth === 2,
-          'ml-4 opacity-80 hover:(underline underline-offset-3 underline-2) p1': link.depth === 3,
-          'list-none -ml-4 mr-auto py-1 px-3 text-gray-600 dark:text-light-300': link.depth === 2 && hasChildren,
-          'bg-light7 dark:bg-dark9 !core-border': activeSection === link.id,
+          'list-disc': !hasChildren && link.depth === 2,
+          'ml-3 opacity-80': link.depth === 3,
+          'list-none -ml-4 py-0.5 px-2 text-gray-800 dark:text-light-300': link.depth === 2 && hasChildren,
+          'transform scale-105 origin-left transition-all p0.5 underline underline-offset-3 underline-1 font-bold': activeSection === link.id,
         }"
-        role="listitem"
       >
         <NuxtLink
-          class="w-fit text-inherit no-underline dark:text-inherit"
+          class="text-inherit no-underline"
           :href="`#${link.id}`"
           :aria-current="activeSection === link.id ? 'true' : 'false'"
         >
