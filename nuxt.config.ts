@@ -128,6 +128,9 @@ export default defineNuxtConfig({
   icon: {
     provider: 'iconify',
     mode: 'svg',
+    clientBundle: {
+      scan: true,
+    },
   },
 
   // SECURITY V1.7
