@@ -241,10 +241,10 @@ export default defineNuxtConfig({
   },
 
   // Experimental - TODO Testing
-  // experimental: {
-  //   extractAsyncDataHandlers: true,
+  experimental: {
+    extractAsyncDataHandlers: true,
   //   viteEnvironmentApi: true,
-  // },
+  },
 
   // future: {
   //   compatibilityVersion: 5,
