@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     'nuxt-security',
     '@nuxt/fonts',
     'nitro-cloudflare-dev',
+    '@nuxt/scripts',
   ],
 
   app: {
@@ -117,7 +118,7 @@ export default defineNuxtConfig({
   // API
   runtimeConfig: {
     public: {
-      Version: '2.0.61',
+      Version: '2.0.70',
       i18n: {
         baseUrl: 'https://xanzhu.com',
       },
@@ -163,6 +164,7 @@ export default defineNuxtConfig({
           'https://cdn.xanzhu.com',
           'https://assets.lotofcarrots.com/media/home/section/desktop/4.webp',
           'https://storage.googleapis.com/gweb-uniblog-publish-prod/',
+          'https://i.ytimg.com',
         ],
         'media-src': [
           'https://storage.googleapis.com/gweb-uniblog-publish-prod/',
@@ -189,6 +191,7 @@ export default defineNuxtConfig({
           '\'self\'',
           'https://www.youtube.com',
           'https://youtube.com',
+          'https://www.youtube-nocookie.com/',
         ],
       },
       strictTransportSecurity: {

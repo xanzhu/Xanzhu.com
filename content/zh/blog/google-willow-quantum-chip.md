@@ -30,7 +30,7 @@ Willow 取得的最重大突破是它能够减少错误。
 
 ::youtube
 ---
-src: https://www.youtube.com/embed/l_KrC1mzd0g?si=1QVYdmS9NURCuyO8
+video-id: l_KrC1mzd0g
 title: 谷歌量子计算机 Willow 介绍视频
 ---
 ::
