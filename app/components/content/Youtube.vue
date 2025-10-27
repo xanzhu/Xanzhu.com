@@ -26,6 +26,7 @@ const iframeTitle = computed(() =>
         ref="video"
         :video-id="props.videoId"
         :title="iframeTitle"
+        :player-options="{ host: 'https://www.youtube.com' }"
         class="rounded-md"
         @ready="isLoaded = true"
         @state-change="stateChange"
