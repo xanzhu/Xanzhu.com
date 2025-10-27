@@ -189,9 +189,10 @@ export default defineNuxtConfig({
         ],
         'frame-src': [
           '\'self\'',
+          'https://*.xanzhu.workers.dev',
           'https://www.youtube.com',
           'https://youtube.com',
-          'https://www.youtube-nocookie.com/',
+          'https://www.youtube-nocookie.com',
         ],
       },
       strictTransportSecurity: {
