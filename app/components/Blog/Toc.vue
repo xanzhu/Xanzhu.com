@@ -100,7 +100,7 @@ onUnmounted(() => {
           'list-disc': !hasChildren && link.depth === 2,
           'ml-3 opacity-80': link.depth === 3,
           'list-none -ml-4 py-0.5 px-2 text-gray-800 dark:text-light-300': link.depth === 2 && hasChildren,
-          'transform scale-105 origin-left transition-all p0.5 underline underline-offset-3 underline-1 font-bold': activeSection === link.id,
+          'transform p0.5 underline underline-offset-3 underline-1 font-600': activeSection === link.id,
         }"
       >
         <NuxtLink

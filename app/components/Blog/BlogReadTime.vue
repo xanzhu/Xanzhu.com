@@ -8,7 +8,7 @@ const { t } = useI18n()
 const wordsPerMinute = 230
 
 const contentString = JSON.stringify(props.content)
-  .replace(/[^a-z0-9\s]/gi, '')
+  .replace(/<[^>]+(>|$)/g, '')
   .replace(/\s+/g, ' ')
   .trim()
 
