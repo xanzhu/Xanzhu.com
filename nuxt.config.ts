@@ -105,13 +105,6 @@ export default defineNuxtConfig({
         'x-robots-tag': 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
       },
     },
-    '/blog/**': {
-      security: {
-        headers: {
-          crossOriginEmbedderPolicy: 'unsafe-none',
-        },
-      },
-    },
   },
 
   image: {
@@ -211,10 +204,7 @@ export default defineNuxtConfig({
         includeSubdomains: true,
         preload: true,
       },
-      crossOriginEmbedderPolicy:
-        process.env.NODE_ENV === 'development'
-          ? 'unsafe-none'
-          : 'credentialless',
+      crossOriginEmbedderPolicy: 'unsafe-none',
       crossOriginOpenerPolicy: 'same-origin',
       crossOriginResourcePolicy: 'same-origin',
     },
