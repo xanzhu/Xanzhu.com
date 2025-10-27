@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@nuxt/icon',
     '@nuxt/image',
-    // 'nuxt-security',
+    'nuxt-security',
     '@nuxt/fonts',
     'nitro-cloudflare-dev',
     '@nuxt/scripts',
@@ -135,80 +135,84 @@ export default defineNuxtConfig({
   },
 
   // SECURITY V1.7
-  // security: {
-  //   nonce: true,
-  //   ssg: {
-  //     meta: true,
-  //     hashScripts: true,
-  //     hashStyles: true,
-  //   },
-  //   headers: {
-  //     contentSecurityPolicy: {
-  //       'default-src': ['\'self\'', 'https://*.xanzhu.com'],
-  //       'script-src': [
-  //         '\'self\'',
-  //         '\'strict-dynamic\'',
-  //         '\'nonce-{{nonce}}\'',
-  //         'https://*.xanzhu.com',
-  //         '\'wasm-unsafe-eval\'',
-  //       ],
-  //       'style-src': [
-  //         '\'self\'',
-  //         process.env.NODE_ENV === 'development' ? '\'unsafe-inline\'' : '\'nonce-{{nonce}}\'',
-  //         'https://*.xanzhu.com',
-  //       ],
-  //       'base-uri': '\'none\'',
-  //       'img-src': [
-  //         '\'self\'',
-  //         'data:',
-  //         'https://cdn.xanzhu.com',
-  //         'https://assets.lotofcarrots.com/media/home/section/desktop/4.webp',
-  //         'https://storage.googleapis.com/gweb-uniblog-publish-prod/',
-  //         'https://i.ytimg.com',
-  //       ],
-  //       'media-src': [
-  //         'https://storage.googleapis.com/gweb-uniblog-publish-prod/',
-  //         'https://storage.quantum-engine.ai/Rabbits_Factory_4K_h264.mp4',
-  //         'https://assets.lotofcarrots.com/media/home/section/desktop/4.mp4',
-  //         'https://www.apple.com/105/media/us/macbook-air-13-and-15/2023/f52c7a72-dff4-4f3c-9511-bf08e46c6f5f/anim/design/hero/medium_2x.mp4',
-  //         'https://www.apple.com/105/media/us/macos/sonoma-preview/2023/e6d837c5-8a7e-49d8-b0bd-137b21320db3/anim/share-preview/large_2x.mp4',
-  //       ],
-  //       'font-src': ['\'self\''],
-  //       'object-src': ['\'none\''],
-  //       'script-src-attr': ['\'none\''],
-  //       'style-src-attr': ['\'unsafe-inline\''],
-  //       'form-action': ['\'self\''],
-  //       'connect-src': [
-  //         '\'self\'',
-  //         'https://*.xanzhu.com',
-  //         'https://api.weatherapi.com',
-  //         'https://api.iconify.design',
-  //         ...(process.env.NODE_ENV === 'development'
-  //           ? ['ws://localhost:4000']
-  //           : []),
-  //       ],
-  //       'frame-src': [
-  //         '\'self\'',
-  //         'https://*.xanzhu.workers.dev',
-  //         'https://www.youtube.com',
-  //         'https://youtube.com',
-  //         'https://www.youtube-nocookie.com',
-  //       ],
-  //     },
-  //     strictTransportSecurity: {
-  //       maxAge: 31536000,
-  //       includeSubdomains: true,
-  //       preload: true,
-  //     },
-  //     crossOriginEmbedderPolicy:
-  //       process.env.NODE_ENV === 'development'
-  //         ? 'unsafe-none'
-  //         : 'credentialless',
-  //     crossOriginOpenerPolicy: 'same-origin',
-  //     crossOriginResourcePolicy: 'same-origin',
-  //   },
-  //   sri: true,
-  // },
+  security: {
+    nonce: true,
+    ssg: {
+      meta: true,
+      hashScripts: true,
+      hashStyles: true,
+    },
+    headers: {
+      contentSecurityPolicy: {
+        'default-src': ['\'self\'', 'https://*.xanzhu.com'],
+        'script-src': [
+          '\'self\'',
+          '\'strict-dynamic\'',
+          '\'nonce-{{nonce}}\'',
+          'https://*.xanzhu.com',
+          'https://*.xanzhu.workers.dev',
+          'https://s.ytimg.com',
+          'https://www.youtube.com',
+          '\'wasm-unsafe-eval\'',
+        ],
+        'style-src': [
+          '\'self\'',
+          process.env.NODE_ENV === 'development' ? '\'unsafe-inline\'' : '\'nonce-{{nonce}}\'',
+          'https://*.xanzhu.com',
+        ],
+        'base-uri': '\'none\'',
+        'img-src': [
+          '\'self\'',
+          'data:',
+          'https://cdn.xanzhu.com',
+          'https://assets.lotofcarrots.com/media/home/section/desktop/4.webp',
+          'https://storage.googleapis.com/gweb-uniblog-publish-prod/',
+          'https://i.ytimg.com',
+        ],
+        'media-src': [
+          'https://storage.googleapis.com/gweb-uniblog-publish-prod/',
+          'https://storage.quantum-engine.ai/Rabbits_Factory_4K_h264.mp4',
+          'https://assets.lotofcarrots.com/media/home/section/desktop/4.mp4',
+          'https://www.apple.com/105/media/us/macbook-air-13-and-15/2023/f52c7a72-dff4-4f3c-9511-bf08e46c6f5f/anim/design/hero/medium_2x.mp4',
+          'https://www.apple.com/105/media/us/macos/sonoma-preview/2023/e6d837c5-8a7e-49d8-b0bd-137b21320db3/anim/share-preview/large_2x.mp4',
+        ],
+        'font-src': ['\'self\''],
+        'object-src': ['\'none\''],
+        'script-src-attr': ['\'none\''],
+        'style-src-attr': ['\'unsafe-inline\''],
+        'form-action': ['\'self\''],
+        'connect-src': [
+          '\'self\'',
+          'https://*.xanzhu.com',
+          'https://*.xanzhu.workers.dev',
+          'https://api.weatherapi.com',
+          'https://api.iconify.design',
+          ...(process.env.NODE_ENV === 'development'
+            ? ['ws://localhost:4000']
+            : []),
+        ],
+        'frame-src': [
+          '\'self\'',
+          'https://*.xanzhu.workers.dev',
+          'https://www.youtube.com',
+          'https://youtube.com',
+          'https://www.youtube-nocookie.com',
+        ],
+      },
+      strictTransportSecurity: {
+        maxAge: 31536000,
+        includeSubdomains: true,
+        preload: true,
+      },
+      crossOriginEmbedderPolicy:
+        process.env.NODE_ENV === 'development'
+          ? 'unsafe-none'
+          : 'credentialless',
+      crossOriginOpenerPolicy: 'same-origin',
+      crossOriginResourcePolicy: 'same-origin',
+    },
+    sri: true,
+  },
 
   compatibilityDate: '2025-10-01',
 
