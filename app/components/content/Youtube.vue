@@ -26,8 +26,6 @@ const iframeTitle = computed(() =>
         ref="video"
         :video-id="props.videoId"
         :title="iframeTitle"
-        :credentialless="true"
-        class="rounded-md"
         @ready="isLoaded = true"
         @state-change="stateChange"
       >

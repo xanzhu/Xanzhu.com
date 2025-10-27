@@ -105,6 +105,13 @@ export default defineNuxtConfig({
         'x-robots-tag': 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
       },
     },
+    '/blog/**': {
+      security: {
+        headers: {
+          crossOriginEmbedderPolicy: 'unsafe-none',
+        },
+      },
+    },
   },
 
   image: {
