@@ -66,7 +66,7 @@ function handleGoBack() {
 
         <div class="flex justify-between children:p-2">
           <button
-            class="border border-transparent rounded-md border-solid bg-transparent text-sm text-inherit underline underline-offset-3 hover:(core-border bg-white dark:bg-black) focus:outline-2 focus:outline-white focus:outline-offset-2 focus:outline"
+            class="border border-transparent rounded-md border-solid bg-transparent text-sm text-inherit underline underline-offset-4 hover:(core-border bg-white dark:bg-black) focus:outline-2 focus:outline-white focus:outline-offset-2 focus:outline"
             @click="handleGoBack"
           >
             {{ errorReturn }}

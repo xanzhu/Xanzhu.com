@@ -25,7 +25,7 @@ const { t } = useI18n()
         {{ post.description }}
       </p>
       <div
-        class="aspect-video overflow-hidden border border-neutral-200 bg-neutral-100 pt-2 dark:border-neutral-800 dark:bg-neutral-900"
+        class="aspect-video overflow-hidden pt-2"
       >
         <NuxtImg
           v-if="post.img" :src="post.img" :alt="post.alt" width="1200" height="675" loading="eager"

@@ -14,7 +14,7 @@ defineProps<{
       <li v-for="(item, index) in links" :key="index" class="mb-2" role="listitem">
         <NuxtLinkLocale
           v-if="item.href" :to="item.href"
-          class="text-dark-100 no-underline dark:text-light-900 hover:(underline underline-2 underline-dark-400 underline-offset-3 dark:underline-white)"
+          class="text-dark-100 no-underline dark:text-light-900 hover:(underline underline-1 underline-dark-400 underline-offset-4 dark:underline-white)"
         >
           {{ item.text }} <span v-if="item.external" class="text-xs" aria-hidden="true">↗</span>
         </NuxtLinkLocale>

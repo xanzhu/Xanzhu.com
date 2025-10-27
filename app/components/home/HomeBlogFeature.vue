@@ -31,7 +31,7 @@ const featureSetTwo = computed(() => features.value?.slice(3, 6) || [])
         </p>
       </div>
       <NuxtLinkLocale
-        class="self-start core-border rounded-md core-theme p4 text-inherit decoration-none transition-transform duration-150 ease-linear hover:(bg-black text-white) dark:hover:(bg-white text-black)"
+        class="self-start core-border rounded-md core-theme p4 text-inherit underline-none transition-transform duration-150 ease-linear hover:(bg-black text-white) dark:hover:(bg-white text-black)"
         to="/blog"
       >
         {{ t('footer.blog') }}
@@ -77,7 +77,7 @@ const featureSetTwo = computed(() => features.value?.slice(3, 6) || [])
         />
         <NuxtLink
           to="https://www.rabbit.tech"
-          class="absolute bottom-2 right-2 core-border rounded-md core-ui px3 py1 text-sm underline-none decoration-none hover:core-theme"
+          class="absolute bottom-2 right-2 core-border rounded-md core-ui px3 py1 text-sm underline-none hover:core-theme"
           external target="_blank"
         >
           Rabbit.tech
