@@ -24,17 +24,17 @@ const featureSetTwo = computed(() => features.value?.slice(3, 6) || [])
     >
       <div class="flex flex-col self-start md:mb10 md:justify-center">
         <h2 id="latest-posts" class="m0 text-4xl font-bold tracking-wide md:text-5xl">
-          {{ $t('home.latest') }}
+          {{ t('home.latest') }}
         </h2>
         <p class="m0 pt3 text-sm text-dark-400 dark:text-gray-200">
-          {{ $t('home.features.description') }}
+          {{ t('home.features.description') }}
         </p>
       </div>
       <NuxtLinkLocale
         class="self-start core-border rounded-md core-theme p4 text-inherit decoration-none transition-transform duration-150 ease-linear hover:(bg-black text-white) dark:hover:(bg-white text-black)"
         to="/blog"
       >
-        {{ $t('footer.blog') }}
+        {{ t('footer.blog') }}
       </NuxtLinkLocale>
     </div>
 

@@ -3,7 +3,7 @@ import type { Collections } from '@nuxt/content'
 import { withoutTrailingSlash } from 'ufo'
 
 const route = useRoute()
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 const config = useRuntimeConfig()
 
 const slug = computed(() => Array.isArray(route.params.slug)
@@ -75,7 +75,7 @@ if (post.value?.title) {
         <hr class="w-80% core-border rounded-md core-ui op40">
         <div v-if="post.path && post.title">
           <h4 class="mb4 mt5 text-center text-lg font-normal op90">
-            {{ $t('share.title') }}
+            {{ t('share.title') }}
           </h4>
           <LazyBlogSocialShare :post="{ path: post.path, title: post.title }" />
         </div>

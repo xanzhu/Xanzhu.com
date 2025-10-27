@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { Collections } from '@nuxt/content'
 
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 const collection = computed(() => `blog_${locale.value}` as keyof Collections)
 
 const { data: posts } = await useAsyncData(`blogArticles-${locale.value}`, async () =>
@@ -15,10 +15,10 @@ useLangMeta('Blog.meta', seoImage)
   <main class="mx-auto text-black sm:mb-10 space-y-10 2xl:px35 xl:px28 dark:text-white">
     <div class="mx-4 mt-5 flex flex-col lg:mx-10 sm:(mx-10 mt-15) space-y-2">
       <h1 class="mb0 text-3xl font-semibold sm:text-5xl">
-        {{ $t("Blog.title") }}
+        {{ t("Blog.title") }}
       </h1>
       <p class="text-md break-words font-400 op70 sm:(w2/3 text-xl) dark:text-gray-300">
-        {{ $t("Blog.description") }}
+        {{ t("Blog.description") }}
       </p>
     </div>
     <section
@@ -54,7 +54,7 @@ useLangMeta('Blog.meta', seoImage)
       </div>
     </section>
     <p v-else class="text-center op70">
-      {{ $t('v2.blog.noPosts') }}
+      {{ t('v2.blog.noPosts') }}
     </p>
   </main>
 </template>

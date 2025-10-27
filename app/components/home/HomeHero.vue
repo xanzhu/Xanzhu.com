@@ -1,3 +1,7 @@
+<script setup lang="ts">
+const { t } = useI18n()
+</script>
+
 <template>
   <header class="relative min-h-screen flex items-center justify-center bg-white dark:bg-black">
     <div class="hidden md:(absolute inset-0 z-0 flex items-center justify-center)" aria-hidden="true">
@@ -12,20 +16,20 @@
         role="doc-subtitle"
       >
         <Icon name="lucide:earth" class="h6 w6 text-inherit" aria-hidden="true" />
-        <span>{{ $t('v2.home.heroTagline') }}</span>
+        <span>{{ t('v2.home.heroTagline') }}</span>
       </div>
       <h1 id="hero" class="m0 mb10 max-w-[90%] max-w-4xl w-full text-5xl md:text-7xl">
-        {{ $t('v2.home.heroHeading') }}
+        {{ t('v2.home.heroHeading') }}
       </h1>
       <p class="mx-auto max-w-[90%] max-w-lg w-full bg-white text-sm text-neutral-600 dark:bg-element-dark md:text-lg dark:text-neutral-300">
-        {{ $t('v2.home.heroSubhead') }}
+        {{ t('v2.home.heroSubhead') }}
       </p>
       <NuxtLinkLocale
         class="mt5 flex items-center core-border border-brand-light rounded-full border-dashed core-theme px5 py1.5 text-center text-blue-6 no-underline transition duration-300 ease-in-out <sm:mr-auto hover:(scale-110 border-solid) space-x-1 dark:border-yellow-3 dark:text-yellow-4"
         to="/blog"
       >
         <span class="m0">
-          {{ $t('v2.home.heroCta') }}
+          {{ t('v2.home.heroCta') }}
         </span>
         <Icon name="lucide:arrow-up-right" class="h5 w5" aria-hidden="true" />
       </NuxtLinkLocale>

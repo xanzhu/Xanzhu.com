@@ -5,6 +5,8 @@ defineProps({
     required: true,
   },
 })
+
+const { t } = useI18n()
 </script>
 
 <template>
@@ -34,7 +36,7 @@ defineProps({
         <div
           class="flex items-center core-border rounded-md bg-white px-4 py-2 text-sm text-neutral-6 space-x-2 dark:bg-neutral-9 dark:text-neutral-1"
         >
-          <span>{{ $t('v2.blog.lastUpdated') }}:</span>
+          <span>{{ t('v2.blog.lastUpdated') }}:</span>
           <Updated :date="post.updated" itemprop="dateModified" />
         </div>
       </div>
