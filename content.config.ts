@@ -10,6 +10,7 @@ const commonContentSchema = z.object({
   tag: z.string().optional(),
   alt: z.string().optional(),
   toc: z.string().optional(),
+  updated: z.string().optional(),
 })
 
 export const collections = {

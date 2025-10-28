@@ -58,7 +58,7 @@ function handleGoBack() {
 
       <div class="mt5 max-w-md core-border rounded-lg core-ui p-3 text-neutral8 md:mt-15 dark:text-light2" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="mb-10 flex items-center core-border rounded-lg bg-white px-4 md:(mb-15 px5 space-x-8) space-x-4 dark:bg-black">
-          <Icon name="bx:bxs-error" class="hidden sm:(h7 w-auto flex text-inherit)" aria-hidden="true" />
+          <Icon name="lucide:triangle-alert" class="hidden sm:(h7 w-auto flex text-inherit)" aria-hidden="true" />
           <p>
             {{ errorMessage }}
           </p>
@@ -66,7 +66,7 @@ function handleGoBack() {
 
         <div class="flex justify-between children:p-2">
           <button
-            class="border border-transparent rounded-md border-solid bg-transparent text-sm text-inherit underline underline-offset-3 hover:(core-border bg-white dark:bg-black) focus:outline-2 focus:outline-white focus:outline-offset-2 focus:outline"
+            class="border border-transparent rounded-md border-solid bg-transparent text-sm text-inherit underline underline-offset-4 hover:(core-border bg-white dark:bg-black) focus:outline-2 focus:outline-white focus:outline-offset-2 focus:outline"
             @click="handleGoBack"
           >
             {{ errorReturn }}

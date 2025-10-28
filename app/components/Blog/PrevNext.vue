@@ -46,7 +46,7 @@ interface SurroundItem {
           </div>
         </div>
         <h4
-          class="line-clamp-2 mt-3 max-w-[250px] text-wrap text-base text-element-dark font-medium dark:text-element-light group-hover:(underline decoration-1 underline-offset-4)"
+          class="line-clamp-2 mt-3 max-w-[250px] text-wrap text-base text-element-dark font-medium dark:text-element-light group-hover:(underline underline-1 underline-offset-4)"
         >
           {{ surround[0].title }}
         </h4>
@@ -83,7 +83,7 @@ interface SurroundItem {
           </div>
         </div>
         <h4
-          class="line-clamp-2 mt-3 max-w-[250px] text-wrap text-base text-element-dark font-medium dark:text-element-light group-hover:(underline decoration-1 underline-offset-4)"
+          class="line-clamp-2 mt-3 max-w-[250px] text-wrap text-base text-element-dark font-medium dark:text-element-light group-hover:(underline underline-1 underline-offset-4)"
         >
           {{ surround[1].title }}
         </h4>

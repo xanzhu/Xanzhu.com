@@ -189,7 +189,7 @@ useLangMeta('resources.meta', seoImage)
     <div class="mx-auto max-w-4xl px-4 -mt-8">
       <div class="p-2">
         <div class="relative flex items-center text-inherit">
-          <Icon name="ri:search-line" class="absolute left-3 h-5 w-5 text-gray-3" aria-hidden="true" />
+          <Icon name="lucide:search" class="absolute left-3 h-5 w-5 text-gray-3" aria-hidden="true" />
           <input
             v-model="searchQuery" type="text" :placeholder="t('resources.search.placeholder')"
             :aria-label="t('resources.search.placeholder')" role="searchbox"

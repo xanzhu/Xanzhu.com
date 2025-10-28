@@ -48,7 +48,7 @@ R1 提到登录过程将由本机第三方登录系统处理，这意味着所�
 
 ::youtube
 ---
-src: https://www.youtube.com/embed/22wlLy7hKP4?si=a16Fb1UEFLTRE1Aq
+video-id: 22wlLy7hKP4
 title: Rabbit R1 发布视频
 ---
 ::

@@ -10,4 +10,4 @@ NITRO_PRESET = "cloudflare_module"
 
 [observability]
 enabled = true
-head_sampling_rate = 0.4
+head_sampling_rate = 1

@@ -28,7 +28,7 @@ useHead({
 
         <NuxtLinkLocale
           v-if="!item.current" :to="item.path"
-          class="py1 text-neutral-600 underline underline-offset-3 transition-colors dark:text-neutral-400 hover:(text-neutral-900) dark:hover:text-neutral-100"
+          class="text-neutral-600 underline underline-offset-3 transition-colors dark:text-neutral-400 hover:(text-neutral-900) dark:hover:text-neutral-100"
           itemprop="item"
         >
           <span itemprop="name">{{ item.name }}</span>

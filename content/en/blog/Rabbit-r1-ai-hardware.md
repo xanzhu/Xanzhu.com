@@ -48,7 +48,7 @@ Watch the keynote to learn more about the R1:
 
 ::youtube
 ---
-src: https://www.youtube.com/embed/22wlLy7hKP4?si=I6LdPG0Isj85f5mA
+video-id: 22wlLy7hKP4
 title: "Introducing r1"
 ---
 ::

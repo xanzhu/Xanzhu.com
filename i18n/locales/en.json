@@ -187,7 +187,8 @@
       "videoIframe": "Youtube Video",
       "readTime": "min read",
       "prevPost": "Previous",
-      "nextPost": "Next"
+      "nextPost": "Next",
+      "videoClick": "Click to play video"
     },
     "colorSwitch": {
       "dark": "Switch to dark mode",

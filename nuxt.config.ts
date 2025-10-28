@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     'nuxt-security',
     '@nuxt/fonts',
     'nitro-cloudflare-dev',
+    '@nuxt/scripts',
   ],
 
   app: {
@@ -85,7 +86,6 @@ export default defineNuxtConfig({
   site: {
     url: 'https://xanzhu.com',
     name: 'Xanzhu',
-    trailingSlash: false,
   },
 
   sitemap: {
@@ -118,7 +118,7 @@ export default defineNuxtConfig({
   // API
   runtimeConfig: {
     public: {
-      Version: '2.0.42',
+      Version: '2.0.70',
       i18n: {
         baseUrl: 'https://xanzhu.com',
       },
@@ -129,6 +129,9 @@ export default defineNuxtConfig({
   icon: {
     provider: 'iconify',
     mode: 'svg',
+    clientBundle: {
+      scan: true,
+    },
   },
 
   // SECURITY V1.7
@@ -147,6 +150,9 @@ export default defineNuxtConfig({
           '\'strict-dynamic\'',
           '\'nonce-{{nonce}}\'',
           'https://*.xanzhu.com',
+          'https://*.xanzhu.workers.dev',
+          'https://s.ytimg.com',
+          'https://www.youtube.com',
           '\'wasm-unsafe-eval\'',
         ],
         'style-src': [
@@ -161,6 +167,7 @@ export default defineNuxtConfig({
           'https://cdn.xanzhu.com',
           'https://assets.lotofcarrots.com/media/home/section/desktop/4.webp',
           'https://storage.googleapis.com/gweb-uniblog-publish-prod/',
+          'https://i.ytimg.com',
         ],
         'media-src': [
           'https://storage.googleapis.com/gweb-uniblog-publish-prod/',
@@ -177,6 +184,7 @@ export default defineNuxtConfig({
         'connect-src': [
           '\'self\'',
           'https://*.xanzhu.com',
+          'https://*.xanzhu.workers.dev',
           'https://api.weatherapi.com',
           'https://api.iconify.design',
           ...(process.env.NODE_ENV === 'development'
@@ -185,8 +193,10 @@ export default defineNuxtConfig({
         ],
         'frame-src': [
           '\'self\'',
+          'https://*.xanzhu.workers.dev',
           'https://www.youtube.com',
           'https://youtube.com',
+          'https://www.youtube-nocookie.com',
         ],
       },
       strictTransportSecurity: {
@@ -194,10 +204,7 @@ export default defineNuxtConfig({
         includeSubdomains: true,
         preload: true,
       },
-      crossOriginEmbedderPolicy:
-        process.env.NODE_ENV === 'development'
-          ? 'unsafe-none'
-          : 'credentialless',
+      crossOriginEmbedderPolicy: 'unsafe-none',
       crossOriginOpenerPolicy: 'same-origin',
       crossOriginResourcePolicy: 'same-origin',
     },
@@ -237,4 +244,14 @@ export default defineNuxtConfig({
       },
     },
   },
+
+  // Experimental - TODO Testing
+  experimental: {
+    extractAsyncDataHandlers: true,
+  //   viteEnvironmentApi: true,
+  },
+
+  // future: {
+  //   compatibilityVersion: 5,
+  // },
 })
