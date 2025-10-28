@@ -77,7 +77,7 @@ const featureSetTwo = computed(() => features.value?.slice(3, 6) || [])
         />
         <NuxtLink
           to="https://www.rabbit.tech"
-          class="absolute bottom-2 right-2 core-border rounded-md core-ui px3 py1 text-sm underline-none hover:core-theme"
+          class="absolute bottom-2 right-2 core-border rounded-md core-ui px3 py1 text-sm decoration-none hover:core-theme"
           external target="_blank"
         >
           Rabbit.tech

@@ -12,7 +12,7 @@ const { t } = useI18n()
 <template>
   <header>
     <div class="mx-auto max-w-5xl px-6 pb-5 space-y-2 md:px-0">
-      <span class="rounded-sm bg-black px4 py1 text-sm text-neutral-100 font-bold tracking-wide font-italic dark:(bg-white text-neutral-900)">{{ post.tag }}</span>
+      <span v-if="post.tag" class="rounded-sm bg-black px4 py1 text-sm text-neutral-100 font-bold tracking-wide italic dark:(bg-white text-neutral-900)">{{ post.tag }}</span>
       <h1 class="my-2 text-3xl text-neutral-900 font-semibold leading-tight md:text-5xl dark:text-white">
         {{ post.title }}
       </h1>

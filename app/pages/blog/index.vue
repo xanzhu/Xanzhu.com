@@ -5,7 +5,7 @@ const { locale, t } = useI18n()
 const collection = computed(() => `blog_${locale.value}` as keyof Collections)
 
 const { data: posts } = await useAsyncData(`blogArticles-${locale.value}`, async () =>
-  await queryCollection(collection.value).order('date', 'DESC').all())
+  await queryCollection(collection.value).select('title', 'date', 'img', 'description', 'path', 'tag', 'alt').order('date', 'DESC').all())
 
 const seoImage = 'https://images.pexels.com/photos/27277185/pexels-photo-27277185.jpeg'
 useLangMeta('Blog.meta', seoImage)
@@ -28,7 +28,7 @@ useLangMeta('Blog.meta', seoImage)
       <div v-for="article in posts" :key="article.path">
         <NuxtLinkLocale v-if="article.path" class="group flex flex-col no-underline" :to="article.path">
           <NuxtImg
-            v-if="article.img" crossorigin="anonymous" :alt="article.alt" :title="article.alt" loading="lazy"
+            v-if="article.img" crossorigin="anonymous" :alt="article.alt" :title="article.alt" loading="lazy" decoding="async"
             height="369" width="577" object-fit="contain" format="webp"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 557px"
             class="h-full w-full transform core-border rounded-md md:(transition duration-400 ease-in-out group-hover:scale-102)"
