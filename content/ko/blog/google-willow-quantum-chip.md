@@ -30,7 +30,7 @@ Willow는 벤치마크를 수행한 후 5분 이내에 표준 벤치마크 계�
 
 ::youtube
 ---
-src: https://www.youtube.com/embed/l_KrC1mzd0g?si=1QVYdmS9NURCuyO8
+video-id: l_KrC1mzd0g
 title: Google의 Willow 양자 컴퓨터 소개 영상
 ---
 ::

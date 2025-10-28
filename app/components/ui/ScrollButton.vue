@@ -29,6 +29,8 @@ function onScroll() {
   }
 }
 
+const { t } = useI18n()
+
 onMounted(() => {
   if (import.meta.client) {
     window.addEventListener('scroll', onScroll, { passive: true })
@@ -55,10 +57,10 @@ onUnmounted(() => {
     <button
       v-if="isVisible"
       class="fixed bottom-6 right-3 z-30 h-10 w-10 flex cursor-pointer items-center justify-center core-border rounded-full core-ui shadow-lg transition-all duration-200 md:right-6 hover:core-theme focus:outline-none focus:ring-2 focus:ring-brand-dark focus:ring-opacity-50 dark:focus:ring-brand-light"
-      :aria-label="$t('v2.ui.scrollTop')"
+      :aria-label="t('v2.ui.scrollTop')"
       @click="scrollToTop"
     >
-      <Icon name="mdi:chevron-up" class="h-5 w-5" />
+      <Icon name="lucide:chevron-up" class="h-5 w-5" />
     </button>
   </Transition>
 </template>

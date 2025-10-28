@@ -21,11 +21,11 @@ const availableLocales = computed(() => {
       <AppLogo class="h10 md:h12" />
     </NuxtLinkLocale>
     <!-- Navigation -->
-    <nav class="hidden md:(flex decoration-none space-x-10)" aria-label="t('v2.sr.mainNav')">
+    <nav class="hidden md:(flex underline-none space-x-10)" aria-label="t('v2.sr.mainNav')">
       <NuxtLinkLocale
         v-for="(link, index) in links"
-        :key="index" class="text-inherit underline-2 decoration-transparent underline-offset-6 transition duration-350 ease-out hover:(underline-black duration-150 ease-in) dark:hover:underline-white"
-        active-class="underline-2 underline-black dark:underline-white" :to="link.url"
+        :key="index" class="text-inherit underline-1 underline-transparent underline-offset-4 transition duration-350 ease-out hover:(underline-black duration-150 ease-in) dark:hover:underline-white"
+        active-class="underline-1 underline-black dark:underline-white" :to="link.url"
       >
         {{ t(link.name) }}
       </NuxtLinkLocale>

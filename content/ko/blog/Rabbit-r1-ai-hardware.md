@@ -36,7 +36,7 @@ R1에 대해 자세히 알아보려면 기조연설을 시청하세요.
 
 ::youtube
 ---
-src: https://www.youtube.com/embed/22wlLy7hKP4?si=a16Fb1UEFLTRE1Aq
+video-id: 22wlLy7hKP4
 title: Rabbit R1 공개 영상
 ---
 ::
