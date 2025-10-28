@@ -180,17 +180,19 @@
     "source": "공개 위반 알림 및 보안 보고서에서 가져온 데이터입니다. 숫자는 대략적으로 영향을 받은 사용자/기록을 나타냅니다.",
     "title": "ANZ 사이버 위협 2024"
   },
-  "analysis": {
-    "graph": {
-      "title": "AI 기반 사이버 위협 진행",
-      "xAxis": "위협 진화 단계",
-      "yAxis": "위협 정교성(%)",
-      "initialThreat": "초기 위협",
-      "aiIntegration": "AI 통합",
-      "targetedAttacks": "표적 공격",
-      "advancedPersistentThreat": "지능형 지속 위협",
-      "peakSophistication": "최고의 정교함",
-      "label": "사이버 위협의 정교함"
+  "v2": {
+    "blog": {
+      "noPosts": "사용 가능한 게시물이 없습니다.",
+      "lastUpdated": "마지막으로 업데이트되었습니다",
+      "videoIframe": "YouTube 비디오",
+      "readTime": "최소 읽기",
+      "prevPost": "이전 글",
+      "nextPost": "다음 글",
+      "videoClick": "동영상을 재생하려면 클릭하세요."
+    },
+    "colorSwitch": {
+      "dark": "다크 모드로 전환하십시오",
+      "light": "라이트 모드로 전환하십시오"
     },
     "home": {
       "featuredPosts": "추천 블로그 게시물",
