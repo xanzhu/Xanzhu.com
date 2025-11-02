@@ -225,6 +225,25 @@
     "sr": {
       "mainNav": "Main navigation",
       "langSelect": "Language Selector"
+    },
+    "resources": {
+      "lastReviewed": "Last Reviewed: ",
+      "category": {
+        "privacy": "Privacy",
+        "networkSec": "Network Security",
+        "malware": "Malware Analysis",
+        "phishing": "Phishing",
+        "back": "Back to Resources",
+        "phishingDesc": "Learn about phishing attacks and prevention",
+        "malwareDesc": "Malware detection and removal resources",
+        "networkSecDesc": "Network Security tools and practices",
+        "privacyDesc": "Privacy tools and guides"
+      },
+      "subHead": "Categories",
+      "skipToMain": "Skip to main content",
+      "pageLoaded": "Page Loaded",
+      "helpfulGuides": "Helpful Guides",
+      "currentPage": "Current Page"
     }
   }
 }

@@ -44,4 +44,34 @@ export const collections = {
       schema: commonContentSchema,
     }),
   ),
+  resources_en: defineCollection(
+    asSitemapCollection({
+      type: 'page',
+      source: {
+        include: 'en/resources/**/*.md',
+        prefix: '/resources',
+      },
+      schema: commonContentSchema,
+    }),
+  ),
+    resources_ko: defineCollection(
+    asSitemapCollection({
+      type: 'page',
+      source: {
+        include: 'ko/resources/**/*.md',
+        prefix: '/ko/resources',
+      },
+      schema: commonContentSchema,
+    }),
+  ),
+    resources_zh: defineCollection(
+    asSitemapCollection({
+      type: 'page',
+      source: {
+        include: 'zh/resources/**/*.md',
+        prefix: '/zh/resources',
+      },
+      schema: commonContentSchema,
+    }),
+  ),
 }

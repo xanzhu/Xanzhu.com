@@ -225,6 +225,25 @@
     "sr": {
       "mainNav": "메인 탐색",
       "langSelect": "언어 선택기"
+    },
+    "resources": {
+      "lastReviewed": "마지막 검토:",
+      "category": {
+        "privacy": "은둔",
+        "networkSec": "네트워크 보안",
+        "malware": "악성코드 분석",
+        "phishing": "피싱",
+        "back": "리소스로 돌아가기",
+        "phishingDesc": "피싱 공격 및 예방에 대해 알아보기",
+        "malwareDesc": "맬웨어 감지 및 제거 리소스",
+        "networkSecDesc": "네트워크 보안 도구 및 관행",
+        "privacyDesc": "개인정보 보호 도구 및 가이드"
+      },
+      "subHead": "카테고리",
+      "skipToMain": "주요 콘텐츠로 건너뛰기",
+      "pageLoaded": "페이지가 로드되었습니다.",
+      "helpfulGuides": "유용한 가이드",
+      "currentPage": "현재 페이지"
     }
   }
 }

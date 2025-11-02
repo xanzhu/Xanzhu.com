@@ -225,6 +225,25 @@
     "sr": {
       "mainNav": "主要导航",
       "langSelect": "语言选择器"
+    },
+    "resources": {
+      "lastReviewed": "最后评论：",
+      "category": {
+        "privacy": "隐私",
+        "networkSec": "网络安全",
+        "malware": "恶意软件分析",
+        "phishing": "网络钓鱼",
+        "back": "返回资源",
+        "phishingDesc": "了解网络钓鱼攻击和预防",
+        "malwareDesc": "恶意软件检测和删除资源",
+        "networkSecDesc": "网络安全工具和实践",
+        "privacyDesc": "隐私工具和指南"
+      },
+      "subHead": "类别",
+      "skipToMain": "跳至主要内容",
+      "pageLoaded": "页面已加载",
+      "helpfulGuides": "有用的指南",
+      "currentPage": "当前页面"
     }
   }
 }
