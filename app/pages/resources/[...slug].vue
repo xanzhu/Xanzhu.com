@@ -50,6 +50,25 @@ if (!folderIndex.value && !directPage.value) {
 const pageTitle = computed(() =>
   folderIndex.value?.title || directPage.value?.title || '',
 )
+
+// Breadcrumbs!
+watch(pageTitle, (newTitle) => {
+  if (newTitle) {
+    route.meta.title = newTitle
+  }
+}, { immediate: true })
+
+useHead({
+  title: () => pageTitle.value || t('breadcrumbs.resources'),
+  meta: [
+    {
+      name: 'description',
+      content: () => folderIndex.value?.description || directPage.value?.description || '',
+    },
+  ],
+})
+
+// TODO add in LangMeta
 </script>
 
 <template>
