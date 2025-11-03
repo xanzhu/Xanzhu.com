@@ -32,7 +32,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^6.2.0",
     "@iconify-json/line-md": "^1.2.11",
-    "@iconify-json/lucide": "^1.2.71",
+    "@iconify-json/lucide": "^1.2.72",
     "@nuxt/devtools": "^2.7.0",
     "@unocss/eslint-plugin": "^66.5.4",
     "@unocss/nuxt": "^66.5.4",
@@ -43,5 +43,8 @@
     "eslint": "^9.39.0",
     "eslint-plugin-format": "^1.0.2",
     "nitro-cloudflare-dev": "^0.2.2"
-  }
+  },
+  "trustedDependencies": [
+    "@parcel/watcher"
+  ]
 }
