@@ -89,7 +89,7 @@ const breaches: Breach[] = [
           >
             <NuxtLink
               :to="breach.reference"
-              class="relative grid grid-cols-[1fr,auto] items-start gap-2 underline-none" target="_blank"
+              class="relative grid grid-cols-[1fr,auto] items-start gap-2 no-underline" target="_blank"
               :aria-label="`${breach.name} - ${breach.subtext} ${t('threatCard.ariaLabel')}`"
             >
               <div class="min-w-0">

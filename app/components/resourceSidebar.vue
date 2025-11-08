@@ -76,7 +76,7 @@ const categoryLinks = computed(() =>
         <li v-for="category in categoryLinks" :key="category.name" class="mb-2">
           <NuxtLink
             :to="category.path"
-            class="flex items-center gap-2 rounded px-2 py-1.5 text-sm no-underline transition-colors focus:(bg-neutral-8 outline-2 outline-white outline-offset-2) hover:bg-neutral-8"
+            class="flex items-center gap-2 rounded px-2 py-1.5 text-sm no-underline transition-colors focus:(bg-neutral-8 outline-2 outline-white outline-offset-2) hover:(bg-neutral-8 text-white)"
             :class="category.isActive ? 'text-white bg-neutral-8' : 'text-neutral-3'"
             :aria-current="category.isActive ? 'page' : undefined"
             :aria-label="`${category.title}: ${category.description}`"

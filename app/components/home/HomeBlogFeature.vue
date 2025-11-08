@@ -31,7 +31,7 @@ const featureSetTwo = computed(() => features.value?.slice(3, 6) || [])
         </p>
       </div>
       <NuxtLinkLocale
-        class="self-start core-border rounded-md core-theme p4 text-inherit underline-none transition-transform duration-150 ease-linear hover:(bg-black text-white) dark:hover:(bg-white text-black)"
+        class="self-start core-border rounded-md core-theme p4 text-inherit no-underline transition-transform duration-150 ease-linear hover:(bg-black text-white) dark:hover:(bg-white text-black)"
         to="/blog"
       >
         {{ t('footer.blog') }}
