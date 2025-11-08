@@ -156,10 +156,10 @@
     "facebook": "Share this on Facebook",
     "linkedin": "Share this on LinkedIn",
     "reddit": "Share this on Reddit",
-    "telegram": "Share this on Telegram",
     "threads": "Share this on Threads",
     "title": "Share this article!",
-    "twitter": "Share this on Twitter"
+    "twitter": "Share this on Twitter",
+    "bluesky": "Share this on Bluesky"
   },
   "threatCard": {
     "ariaLabel": "(Read more in new tab)",
