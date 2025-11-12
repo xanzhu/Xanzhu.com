@@ -105,6 +105,10 @@ export default defineNuxtConfig({
         'x-robots-tag': 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
       },
     },
+    // Test ISR Caching of blog posts
+    '**/blog/**': {
+      isr: true,
+    },
   },
 
   image: {
