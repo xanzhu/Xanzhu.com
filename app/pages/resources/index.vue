@@ -21,7 +21,7 @@ useLangMeta('resources.meta', seoImage)
 
 <template>
   <div class="flex flex-col bg-white text-neutral-9 md:(flex-row gap-4 py4) 2xl:px35 xl:px28">
-    <ResourceSidebar />
+    <LazyResourcesSidebar />
 
     <main
       v-if="pageIndex"

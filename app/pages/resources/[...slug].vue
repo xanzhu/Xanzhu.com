@@ -73,7 +73,7 @@ useHead({
 
 <template>
   <div class="flex flex-col md:(flex-row gap-2 py4) 2xl:px35 xl:px28">
-    <ResourceSidebar />
+    <LazyResourcesSidebar />
     <main
       v-if="folderIndex"
       class="flex flex-1 flex-col core-border p5 text-neutral-9 dark:(border-neutral-9 bg-black text-white)"

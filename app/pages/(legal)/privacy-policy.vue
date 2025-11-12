@@ -20,13 +20,13 @@ useLangMeta('PP', seoImage, 'prefix', t)
 </script>
 
 <template>
-  <InternalPage :title="t('PP.title')" :description="t('PP.description')" :date="date" :datelabel="t('PP.date')">
+  <LayoutInternalPage :title="t('PP.title')" :description="t('PP.description')" :date="date" :datelabel="t('PP.date')">
     <template #content>
       <p v-for="(paragraph, index) in paragraphs" :key="index" class="leading-relaxed">
         {{ paragraph }}
       </p>
     </template>
-  </InternalPage>
+  </LayoutInternalPage>
 </template>
 
 <i18n lang="json">

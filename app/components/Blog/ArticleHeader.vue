@@ -17,9 +17,9 @@ const { t } = useI18n()
         {{ post.title }}
       </h1>
       <div class="flex items-center gap-2 text-sm text-neutral-600 font-medium dark:text-neutral-200">
-        <Date v-if="post.date" :date="post.date" itemprop="datePublished" />
+        <UiDate v-if="post.date" :date="post.date" itemprop="datePublished" />
         <span>•</span>
-        <BlogReadTime :content="post" />
+        <LazyBlogReadTime :content="post" />
       </div>
       <p class="max-w-2xl pt2 text-base text-neutral-600 md:text-lg dark:text-neutral-400">
         {{ post.description }}
@@ -37,7 +37,7 @@ const { t } = useI18n()
           class="flex items-center core-border rounded-md bg-white px-4 py-2 text-sm text-neutral-6 space-x-2 dark:bg-neutral-9 dark:text-neutral-1"
         >
           <span>{{ t('v2.blog.lastUpdated') }}:</span>
-          <Updated :date="post.updated" itemprop="dateModified" />
+          <LazyUiUpdated :date="post.updated" itemprop="dateModified" />
         </div>
       </div>
     </div>

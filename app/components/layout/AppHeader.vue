@@ -18,7 +18,7 @@ const availableLocales = computed(() => {
     class="mx-auto flex items-center justify-between b-1 border-b-dark-4/10 b-solid b-l-none b-r-none b-t-none bg-white p2 text-black dark:(b-b-dark-2/30 bg-black text-white) 2xl:px40 md:px-6 xl:px25"
   >
     <NuxtLinkLocale to="/" class="text-inherit">
-      <AppLogo class="h10 md:h12" />
+      <UiAppLogo class="h10 md:h12" />
     </NuxtLinkLocale>
     <!-- Navigation -->
     <nav class="hidden md:(flex underline-none space-x-10)" :aria-label="t('v2.sr.mainNav')">
@@ -46,6 +46,6 @@ const availableLocales = computed(() => {
       </div>
     </div>
     <!-- Mobile Menu -->
-    <MobileNav class="flex md:hidden" :links="links" />
+    <LayoutMobileNav class="flex md:hidden" :links="links" />
   </header>
 </template>

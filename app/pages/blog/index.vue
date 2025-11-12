@@ -38,7 +38,7 @@ useLangMeta('Blog.meta', seoImage)
             <div
               class="children:(inline-flex core-border rounded-md core-ui px4 py2 text-xs op80 dark:op100) space-x-2"
             >
-              <Date v-if="article.date" :date="article.date" />
+              <UiDate v-if="article.date" :date="article.date" />
               <p v-if="article.tag" class="m0">
                 {{ article.tag }}
               </p>

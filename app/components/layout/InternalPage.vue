@@ -38,7 +38,7 @@ const hasSubInfo = computed(() => !!props.description || !!props.date)
           </span>
           <span v-if="formattedDate" class="font-400">
             <slot name="date">
-              <Date :date="formattedDate" />
+              <LazyUiDate :date="formattedDate" />
             </slot>
           </span>
         </p>

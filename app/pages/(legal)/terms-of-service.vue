@@ -43,7 +43,7 @@ useLangMeta('terms', seoImage, 'prefix', t)
 </script>
 
 <template>
-  <InternalPage
+  <LayoutInternalPage
     :title="t('terms.title')" :description="t('terms.description')" :date="date"
     :datelabel="t('terms.date')"
   >
@@ -76,7 +76,7 @@ useLangMeta('terms', seoImage, 'prefix', t)
         </div>
       </div>
     </template>
-  </InternalPage>
+  </LayoutInternalPage>
 </template>
 
 <i18n lang="json">
