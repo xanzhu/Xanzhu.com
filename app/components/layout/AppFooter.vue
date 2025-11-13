@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import FooterItem from '../footer/FooterItem.vue'
-
 const { t } = useI18n()
 </script>
 
