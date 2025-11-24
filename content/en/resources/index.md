@@ -26,7 +26,6 @@ Free tools and platforms for analyzing suspicious files, detecting malware, and 
 - :PageLink{title="Hybrid Analysis" url="https://www.hybrid-analysis.com/"} Free malware analysis platform for analyzing suspicious files and URLs
 - :PageLink{title="Any.run" url="https://any.run/"} Interactive malware analysis tool for analyzing and sharing results in real time.
 
-
 ## Network Security
 Essential tools for monitoring network traffic, detecting vulnerabilities, and securing your connections.
 

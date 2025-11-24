@@ -54,7 +54,7 @@ export const collections = {
       schema: commonContentSchema,
     }),
   ),
-    resources_ko: defineCollection(
+  resources_ko: defineCollection(
     asSitemapCollection({
       type: 'page',
       source: {
@@ -64,7 +64,7 @@ export const collections = {
       schema: commonContentSchema,
     }),
   ),
-    resources_zh: defineCollection(
+  resources_zh: defineCollection(
     asSitemapCollection({
       type: 'page',
       source: {
