@@ -1,6 +1,6 @@
 <script setup>
-defineProps({
-  variant: {
+const props = defineProps({
+  type: {
     type: String,
     default: 'info',
     validator: value => ['info', 'warning', 'success', 'update'].includes(value),
@@ -29,15 +29,17 @@ const defaultIcons = {
 <template>
   <div
     class="flex items-center gap-3 b-1 rounded-lg b-solid p-4"
-    :class="variantStyles[variant]"
+    :class="variantStyles[props.type]"
   >
     <Icon
       class="mt-0.5 h-5 w-5 flex-shrink-0"
-      :name="icon || defaultIcons[variant]"
+      :name="props.icon || defaultIcons[props.type]"
     />
 
     <div class="flex-1 text-sm leading-relaxed">
-      <slot />
+      <div>
+        <slot />
+      </div>
     </div>
   </div>
 </template>
