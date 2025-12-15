@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxtjs/sitemap',
     '@nuxt/content',
+    '@nuxt/hints',
     '@unocss/nuxt',
     '@nuxtjs/color-mode',
     '@nuxt/icon',
@@ -121,7 +122,7 @@ export default defineNuxtConfig({
   // API
   runtimeConfig: {
     public: {
-      Version: '2.1.0',
+      Version: '2.1.5',
       i18n: {
         baseUrl: 'https://xanzhu.com',
       },

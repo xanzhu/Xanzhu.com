@@ -3,9 +3,11 @@ const { locale, t } = useI18n()
 const route = useRoute()
 
 const disablePath = computed(() => {
-  const paths = ['/', '/ko', '/zh']
-  return paths.includes(route.path)
+  const path = route.path.replace(/\/$/, '')
+  return ['', '/ko', '/zh'].includes(path)
 })
+
+const now = useState('now', () => new Date())
 </script>
 
 <template>
@@ -17,7 +19,7 @@ const disablePath = computed(() => {
     <UiBreadcrumbs />
     <NuxtTime
       :key="locale"
-      :datetime="new Date()"
+      :datetime="now"
       :locale="locale"
       :aria-label="t('v2.ui.globalDate')"
       weekday="long"
