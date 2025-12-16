@@ -11,15 +11,17 @@ const isLoaded = ref(false)
 const isPlaying = ref(false)
 const video = ref()
 
-function stateChange(event: any) {
-  isPlaying.value = event.data === 1
+interface YouTubeStateEvent {
+  data: number
 }
 
+function stateChange(event: YouTubeStateEvent) {
+  isPlaying.value = event.data === 1
+}
 const iframeTitle = computed(() =>
   props.title || t('v2.blog.videoIframe'),
 )
 
-// Cleanup on unmount to prevent memory leaks
 onBeforeUnmount(() => {
   if (video.value?.destroy) {
     video.value.destroy()
@@ -31,7 +33,6 @@ onBeforeUnmount(() => {
   <div class="relative aspect-video overflow-hidden rounded-md">
     <ScriptYouTubePlayer
       ref="video"
-      :key="videoId"
       :video-id="videoId"
       :title="iframeTitle"
       @ready="isLoaded = true"
@@ -39,7 +40,10 @@ onBeforeUnmount(() => {
     >
       <template #awaitingLoad>
         <div
+          v-if="!isLoaded"
           class="absolute inset-0 flex items-center justify-center bg-black/10"
+          role="button"
+          tabindex="0"
           :aria-label="t('v2.blog.videoClick')"
         >
           <svg
