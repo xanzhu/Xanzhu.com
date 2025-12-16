@@ -245,5 +245,8 @@
       "helpfulGuides": "有用的指南",
       "currentPage": "当前页面"
     }
+  },
+  "aria": {
+    "breadcrumb": "面包屑"
   }
 }

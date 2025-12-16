@@ -245,5 +245,8 @@
       "helpfulGuides": "Helpful Guides",
       "currentPage": "Current Page"
     }
+  },
+  "aria": {
+    "breadcrumb": "Breadcrumb"
   }
 }

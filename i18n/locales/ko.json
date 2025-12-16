@@ -245,5 +245,8 @@
       "helpfulGuides": "유용한 가이드",
       "currentPage": "현재 페이지"
     }
+  },
+  "aria": {
+    "breadcrumb": "탐색경로"
   }
 }

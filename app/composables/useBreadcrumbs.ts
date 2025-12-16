@@ -13,11 +13,10 @@ export function useBreadcrumbs() {
   const baseUrl = computed(() => config.public.i18n.baseUrl)
 
   const staticPages: Record<string, string> = {
-    '/privacy-policy': 'breadcrumbs.privacy',
-    '/terms-of-service': 'breadcrumbs.terms',
-    '/analysis': 'breadcrumbs.analysis',
-    '/resources': 'breadcrumbs.resources',
-    '/about': 'breadcrumbs.about',
+    'privacy-policy': 'breadcrumbs.privacy',
+    'terms-of-service': 'breadcrumbs.terms',
+    'analysis': 'breadcrumbs.analysis',
+    'about': 'breadcrumbs.about',
   }
 
   const resourceCategories: Record<string, string> = {
@@ -112,16 +111,15 @@ export function useBreadcrumbs() {
 
     // Individual Static Pages
     else {
-      for (const [rawPath, translationKey] of Object.entries(staticPages)) {
-        const localizedPath = localePath(rawPath)
-        if (path === localizedPath) {
-          items.push({
-            name: t(translationKey),
-            path: localizedPath,
-            current: true,
-          })
-          break
-        }
+      const rawName = route.name as string | undefined
+      const routeKey = rawName?.split('___')[0] // strip locale suffix
+
+      if (routeKey && staticPages[routeKey]) {
+        items.push({
+          name: t(staticPages[routeKey]),
+          path: route.path,
+          current: true,
+        })
       }
     }
 
