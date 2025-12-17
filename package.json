@@ -21,7 +21,7 @@
     "@nuxt/scripts": "0.13.1",
     "@nuxtjs/color-mode": "^4.0.0",
     "@nuxtjs/i18n": "^10.2.1",
-    "@nuxtjs/sitemap": "^7.4.9",
+    "@nuxtjs/sitemap": "^7.4.11",
     "@unhead/vue": "^2.0.19",
     "nuxt": "^4.2.2",
     "nuxt-security": "^2.5.0",
@@ -43,7 +43,7 @@
     "eslint": "^9.39.2",
     "eslint-plugin-format": "^1.1.0",
     "nitro-cloudflare-dev": "^0.2.2",
-    "wrangler": "^4.54.0"
+    "wrangler": "^4.55.0"
   },
   "trustedDependencies": [
     "@parcel/watcher"
