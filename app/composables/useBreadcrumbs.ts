@@ -55,7 +55,7 @@ export function useBreadcrumbs() {
       }
       else {
         // Blog article
-        items.splice(1)
+        items.splice(0)
         items.push({
           name: t('breadcrumbs.blog'),
           path: blogPath,
@@ -87,7 +87,7 @@ export function useBreadcrumbs() {
       }
       else if (resourceSegments.length === 1) {
         // Resources > Category
-        items.splice(1)
+        items.splice(0)
         items.push({
           name: resourcesTitle,
           path: resourcesPath,
