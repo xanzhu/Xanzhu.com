@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { breadcrumbs, jsonLd } = useBreadcrumbs()
+const { t } = useI18n()
 
 // Add JSON-LD to head
 useHead({
@@ -14,7 +15,7 @@ useHead({
   ),
 })
 
-const separator = computed(() => '>')
+const separator = '>'
 </script>
 
 <template>

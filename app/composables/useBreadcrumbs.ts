@@ -29,10 +29,14 @@ export function useBreadcrumbs() {
   const breadcrumbs = computed<BreadcrumbItem[]>(() => {
     const path = route.path
     const items: BreadcrumbItem[] = []
+
+    const segments = path.split('/').filter(Boolean)
+    const firstSegment = segments[0] || ''
+    const isBlog = firstSegment === 'blog'
+    const isResources = firstSegment === 'resources'
+
     const blogPath = localePath('/blog')
     const resourcesPath = localePath('/resources')
-    const isBlog = path.startsWith(blogPath)
-    const isResources = path.startsWith(resourcesPath)
 
     items.push({
       name: t('breadcrumbs.home'),
@@ -41,21 +45,25 @@ export function useBreadcrumbs() {
 
     // Blog
     if (isBlog) {
-      if (path === blogPath) {
+      if (segments.length === 1) {
+        // Blog index page
         items.push({
           name: t('breadcrumbs.blog'),
           path: blogPath,
           current: true,
         })
       }
-      else if (route.meta?.title) {
-        items.length = 0
+      else {
+        // Blog article
+        items.splice(1)
         items.push({
           name: t('breadcrumbs.blog'),
           path: blogPath,
         })
+
+        const articleTitle = route.meta?.title || segments.slice(1).join(' ')
         items.push({
-          name: String(route.meta.title),
+          name: String(articleTitle),
           path,
           current: true,
         })
@@ -64,45 +72,47 @@ export function useBreadcrumbs() {
 
     // Resources
     else if (isResources) {
-      const pathAfterResources = path.replace(resourcesPath, '').replace(/^\//, '')
-      const segments = pathAfterResources.split('/').filter(Boolean)
+      const resourceSegments = segments.slice(1)
+      const category = resourceSegments[0] || ''
+      const articleSegments = resourceSegments.slice(1)
+      const resourcesTitle = t('breadcrumbs.resources')
 
-      // Home > Resources
-      if (path === resourcesPath) {
+      if (resourceSegments.length === 0) {
+        // Resources index page
         items.push({
-          name: t('breadcrumbs.resources'),
+          name: resourcesTitle,
           path: resourcesPath,
           current: true,
         })
       }
-      // Resources > Category
-      else if (segments.length === 1) {
-        items.length = 0
+      else if (resourceSegments.length === 1) {
+        // Resources > Category
+        items.splice(1)
         items.push({
-          name: t('breadcrumbs.resources'),
+          name: resourcesTitle,
           path: resourcesPath,
         })
-
-        const category = segments[0]!
         items.push({
           name: t(resourceCategories[category] || category),
           path: `${resourcesPath}/${category}`,
           current: true,
         })
       }
-      // Category > Article
-      else if (segments.length >= 2 && route.meta?.title) {
-        items.length = 0
-        const category = segments[0]!
-        const categoryPath = `${resourcesPath}/${category}`
-
+      else if (resourceSegments.length >= 2) {
+        // Category > Article
+        items.splice(1)
+        items.push({
+          name: resourcesTitle,
+          path: resourcesPath,
+        })
         items.push({
           name: t(resourceCategories[category] || category),
-          path: categoryPath,
+          path: `${resourcesPath}/${category}`,
         })
 
+        const articleTitle = route.meta?.title || articleSegments.join(' ')
         items.push({
-          name: String(route.meta.title),
+          name: String(articleTitle),
           path,
           current: true,
         })
@@ -112,7 +122,7 @@ export function useBreadcrumbs() {
     // Individual Static Pages
     else {
       const rawName = route.name as string | undefined
-      const routeKey = rawName?.split('___')[0] // strip locale suffix
+      const routeKey = rawName?.split('___')[0]
 
       if (routeKey && staticPages[routeKey]) {
         items.push({
