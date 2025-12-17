@@ -66,7 +66,7 @@ const breaches: Breach[] = [
         <ul role="list" class="p0 space-y-3">
           <li
             v-for="threat in threats" :key="threat.id"
-            class="flex cursor-pointer items-center border-l-4 rounded bg-zinc-800 p-3 transition-all hover:bg-zinc-700"
+            class="flex cursor-pointer items-center border-l-4 rounded bg-zinc-800 p-3 transition-colors hover:bg-zinc-700"
           >
             <span class="px4 text-3xl text-white font-bold op70">{{ threat.id }}.</span>
             <p class="text-sm text-white font-medium sm:text-base">
@@ -85,7 +85,7 @@ const breaches: Breach[] = [
         <ul role="list" class="list-none p0 space-y-3">
           <li
             v-for="breach in breaches" :key="breach.id"
-            class="cursor-pointer border-l-4 rounded bg-yellow-4 p-3 transition-all hover:bg-yellow-5"
+            class="cursor-pointer border-l-4 rounded bg-yellow-4 p-3 transition-colors hover:bg-yellow-5"
           >
             <NuxtLink
               :to="breach.reference"

@@ -5,7 +5,7 @@ const { locale, t } = useI18n()
 
 const collection = computed(() => `blog_${locale.value}` as keyof Collections)
 
-const { data: features } = useAsyncData(`featuredArticles-${locale.value}`, () =>
+const { data: features } = await useAsyncData(`featuredArticles-${locale.value}`, () =>
   queryCollection(collection.value)
     .select('title', 'date', 'description', 'tag', 'path')
     .where('feature', '=', 1)
@@ -14,7 +14,9 @@ const { data: features } = useAsyncData(`featuredArticles-${locale.value}`, () =
     .all())
 
 const featureSetOne = computed(() => features.value?.slice(0, 3) || [])
-const featureSetTwo = computed(() => features.value?.slice(3, 6) || [])
+const featureSetTwo = computed(() => features.value?.slice(3, 5) || [])
+
+const featureImage = 'https://cdn.xanzhu.com/v1/rabbit-r1/graphic.webp'
 </script>
 
 <template>
@@ -41,7 +43,7 @@ const featureSetTwo = computed(() => features.value?.slice(3, 6) || [])
     <div
       class="grid auto-rows-fr grid-cols-1 mx-auto max-w-lg justify-items-center gap-4 px6 lg:grid-cols-3 md:grid-cols-2 md:max-w-5xl"
     >
-      <div class="contents children:(core-border rounded-lg)" role="feed" :aria-label="t('v2.home.featuredPosts')">
+      <div class="contents children:(core-border rounded-lg)">
         <article
           v-for="feature in featureSetOne" :key="feature.path"
           class="group core-theme transition transition-transform duration-300 ease-linear hover:(scale-102 bg-white shadow-lg dark:bg-black)"
@@ -71,7 +73,7 @@ const featureSetTwo = computed(() => features.value?.slice(3, 6) || [])
 
       <div class="relative hidden lg:(grid col-span-2 row-span-2)">
         <NuxtImg
-          src="https://cdn.xanzhu.com/v1/rabbit-r1/graphic.webp" alt="Rabbit R1 Animation Graphic" loading="lazy"
+          :src="featureImage" alt="Rabbit R1 Animation Graphic" loading="lazy"
           format="webp" class="h-full w-full rounded-lg object-cover"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 854px" width="854" height="532"
         />
@@ -85,8 +87,7 @@ const featureSetTwo = computed(() => features.value?.slice(3, 6) || [])
       </div>
 
       <div
-        class="contents children:(core-border rounded-lg)" role="feed"
-        :aria-label="t('v2.home.featuredPosts')"
+        class="contents children:(core-border rounded-lg)"
       >
         <article
           v-for="feature in featureSetTwo" :key="feature.path"

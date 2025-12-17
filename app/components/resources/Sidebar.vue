@@ -1,11 +1,13 @@
 <script setup lang="ts">
 const route = useRoute()
-const { locale, t } = useI18n()
+const { t } = useI18n()
 
-const basePath = computed(() => `/${locale.value === 'en' ? '' : `${locale.value}/`}resources`)
+const localePath = useLocalePath()
+
+const basePath = computed(() => localePath('/resources'))
 const isOnSubpage = computed(() => route.path !== basePath.value)
 
-const categories = [
+const categories = computed(() => [
   {
     name: 'phishing',
     title: t('v2.resources.category.phishing'),
@@ -30,15 +32,16 @@ const categories = [
     icon: 'ri:shield-line',
     description: t('v2.resources.category.privacyDesc'),
   },
-]
+])
 
-const categoryLinks = computed(() =>
-  categories.map(cat => ({
+const categoryLinks = computed(() => {
+  const base = basePath.value
+  return categories.value.map(cat => ({
     ...cat,
-    path: `${basePath.value}/${cat.name}`,
-    isActive: route.path.includes(`/${cat.name}`),
-  })),
-)
+    path: `${base}/${cat.name}`,
+    isActive: route.path.startsWith(`${base}/${cat.name}`),
+  }))
+})
 </script>
 
 <template>
@@ -79,7 +82,7 @@ const categoryLinks = computed(() =>
             class="flex items-center gap-2 rounded px-2 py-1.5 text-sm no-underline transition-colors focus:(bg-neutral-8 outline-2 outline-white outline-offset-2) hover:(bg-neutral-8 text-white)"
             :class="category.isActive ? 'text-white bg-neutral-8' : 'text-neutral-3'"
             :aria-current="category.isActive ? 'page' : undefined"
-            :aria-label="`${category.title}: ${category.description}`"
+            :aria-label="category.description ? `${category.title}. ${category.description}` : category.title"
           >
             <Icon
               :name="category.icon"
@@ -114,7 +117,8 @@ const categoryLinks = computed(() =>
   border-width: 0;
 }
 
-*:focus-visible {
+a:focus-visible,
+button:focus-visible {
   outline: 2px solid white;
   outline-offset: 2px;
 }

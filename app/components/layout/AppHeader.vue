@@ -5,11 +5,17 @@ const links = useNavLinks(
   { name: 'Links.resources', url: '/resources' },
 )
 
-const { locales, setLocale, t } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
+const { locale: activeLocale, locales, t } = useI18n()
 
-const availableLocales = computed(() => {
-  return locales.value.filter(i => i.code)
+const sortedLocales = computed(() => {
+  return [...locales.value].sort((a, b) => {
+    if (a.code === activeLocale.value)
+      return -1
+    if (b.code === activeLocale.value)
+      return 1
+    return 0
+  })
 })
 </script>
 
@@ -20,32 +26,42 @@ const availableLocales = computed(() => {
     <NuxtLinkLocale to="/" class="text-inherit">
       <UiAppLogo class="h10 md:h12" />
     </NuxtLinkLocale>
-    <!-- Navigation -->
+
     <nav class="hidden md:(flex underline-none space-x-10)" :aria-label="t('v2.sr.mainNav')">
       <NuxtLinkLocale
-        v-for="(link, index) in links"
-        :key="index" class="text-inherit underline-1 underline-transparent underline-offset-4 transition duration-350 ease-out hover:(underline-black duration-150 ease-in) dark:hover:underline-white"
-        active-class="underline-1 underline-black dark:underline-white" :to="link.url"
+        v-for="link in links"
+        :key="link.url"
+        class="text-inherit underline-1 underline-transparent underline-offset-4 transition-colors duration-350 ease-out hover:(underline-black duration-150 ease-in) dark:hover:underline-white"
+        active-class="underline-black dark:underline-white"
+        :to="link.url"
       >
         {{ t(link.name) }}
       </NuxtLinkLocale>
     </nav>
-    <!-- Language Selector -->
+
     <div class="hidden md:(flex items-center space-x-2)" role="group">
       <UiColorSwitch />
       <div class="md:(inline-flex gap1 core-border rounded-full core-ui p1)" role="navigation" :aria-label="t('v2.sr.langSelect')">
-        <NuxtLink
-          v-for="locale in availableLocales" :key="locale.code"
-          :aria-label="t('app.sr.lang_select') + locale.name" :to="switchLocalePath(locale.code)"
-          active-class="!dark:(bg-white text-black) text-white bg-black pointer-events-none order-first"
-          class="rounded-full px3 py1 text-center text-sm text-black font-medium decoration-none hover:bg-gray200 hover:core-ui dark:text-inherit dark:hover:bg-dark-600"
-          @click.prevent.capture="setLocale(locale.code)"
-        >
-          {{ locale.name }}
-        </NuxtLink>
+        <TransitionGroup name="list" tag="div" class="flex gap1">
+          <NuxtLink
+            v-for="locale in sortedLocales"
+            :key="locale.code"
+            :to="switchLocalePath(locale.code)"
+            :prefetch="false"
+            :aria-current="activeLocale.value === locale.code ? 'true' : undefined"
+            :class="[
+              activeLocale === locale.code
+                ? '!dark:(bg-white text-black) text-white bg-black pointer-events-none'
+                : 'text-black dark:text-inherit hover:bg-gray200 dark:hover:bg-dark-600',
+            ]"
+            class="rounded-full px3 py1 text-center text-sm font-medium decoration-none transition-colors duration-200"
+          >
+            {{ locale.name }}
+          </NuxtLink>
+        </TransitionGroup>
       </div>
     </div>
-    <!-- Mobile Menu -->
+
     <LayoutMobileNav class="flex md:hidden" :links="links" />
   </header>
 </template>

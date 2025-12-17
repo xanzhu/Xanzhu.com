@@ -18,7 +18,7 @@ interface SurroundItem {
     <div v-if="surround?.[0]" class="w-[250px]">
       <NuxtLink
         :to="surround[0].path" :aria-label="t('v2.blog.prevPost')" rel="prev"
-        class="group relative flex flex-col no-underline transition-all duration-300"
+        class="group relative flex flex-col no-underline transition-transform duration-300"
       >
         <div class="relative overflow-hidden rounded-lg">
           <NuxtImg
@@ -32,7 +32,7 @@ interface SurroundItem {
           <div class="absolute inset-0 flex items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-8 w-8 translate-x-4 transform text-white opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100"
+              class="h-8 w-8 translate-x-4 transform text-white opacity-0 transition-opacity duration-300 group-hover:translate-x-0 group-hover:opacity-100"
               viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round" aria-hidden="true"
             >
@@ -55,7 +55,7 @@ interface SurroundItem {
     <div v-if="surround?.[1]" class="w-[250px]">
       <NuxtLink
         :to="surround[1].path" :aria-label="t('v2.blog.nextPost')" rel="next"
-        class="group relative flex flex-col no-underline transition-all duration-300"
+        class="group relative flex flex-col no-underline transition-transform duration-300"
       >
         <div class="relative overflow-hidden rounded-lg">
           <NuxtImg
@@ -69,7 +69,7 @@ interface SurroundItem {
           <div class="absolute inset-0 flex items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-8 w-8 translate-x-4 transform text-white opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100"
+              class="h-8 w-8 translate-x-4 transform text-white opacity-0 transition-colors duration-300 group-hover:translate-x-0 group-hover:opacity-100"
               viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round" aria-hidden="true"
             >

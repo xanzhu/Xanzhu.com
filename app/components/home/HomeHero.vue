@@ -4,7 +4,11 @@ const { t } = useI18n()
 
 <template>
   <header class="relative min-h-screen flex items-center justify-center bg-white dark:bg-black">
-    <div class="hidden md:(absolute inset-0 z-0 flex items-center justify-center)" aria-hidden="true">
+    <div
+      class="hidden md:(absolute inset-0 z-0 flex items-center justify-center)"
+      aria-hidden="true"
+      role="presentation"
+    >
       <UiSvg load-s-v-g="beta02" class="h-80% w-full object-cover" />
     </div>
 
@@ -25,7 +29,7 @@ const { t } = useI18n()
         {{ t('v2.home.heroSubhead') }}
       </p>
       <NuxtLinkLocale
-        class="mt5 flex items-center core-border border-brand-light rounded-full border-dashed core-theme px5 py1.5 text-center text-blue-6 no-underline transition duration-300 ease-in-out <sm:mr-auto hover:(scale-110 border-solid) space-x-1 dark:border-yellow-3 dark:text-yellow-4"
+        class="mt5 flex items-center core-border border-brand-light rounded-full border-dashed core-theme px5 py1.5 text-center text-blue-6 no-underline transition-transform duration-300 ease-in-out <sm:mr-auto hover:(scale-110 border-solid) space-x-1 dark:border-yellow-3 dark:text-yellow-4"
         to="/blog"
       >
         <span class="m0">

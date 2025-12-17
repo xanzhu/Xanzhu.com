@@ -18,7 +18,7 @@ function switchColor() {
     @click="switchColor"
   >
     <ColorScheme>
-      <Icon :name="colorIcon" class="h6 w6 text-black transition-all duration-500 dark:text-white" />
+      <Icon :name="colorIcon" class="h6 w6 text-black transition-colors duration-500 dark:text-white" />
       <template #fallback>
         <span class="inline-block h6 w6" aria-hidden="true" />
       </template>
