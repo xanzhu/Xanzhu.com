@@ -159,7 +159,9 @@
     "threads": "Share this on Threads",
     "title": "Share this article!",
     "twitter": "Share this on Twitter",
-    "bluesky": "Share this on Bluesky"
+    "bluesky": "Share this on Bluesky",
+    "copy": "Copy Link",
+    "copied": "Copied"
   },
   "threatCard": {
     "ariaLabel": "(Read more in new tab)",

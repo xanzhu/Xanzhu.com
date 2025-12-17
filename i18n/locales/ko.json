@@ -159,7 +159,9 @@
     "twitter": "이것을 트위터에 공유",
     "threads": "스레드에서 공유하십시오",
     "facebook": "이것을 Facebook에서 공유하십시오",
-    "bluesky": "이것을 Bluesky에서 공유하세요"
+    "bluesky": "이것을 Bluesky에서 공유하세요",
+    "copied": "복사됨",
+    "copy": "링크 복사"
   },
   "threatCard": {
     "ariaLabel": "(새 탭에서 자세히 알아보세요)",

@@ -159,7 +159,9 @@
     "twitter": "在 Twitter 上分享",
     "threads": "在线程上分享",
     "facebook": "在Facebook上分享",
-    "bluesky": "在蓝天上分享这个"
+    "bluesky": "在蓝天上分享这个",
+    "copied": "已复制",
+    "copy": "复制链接"
   },
   "threatCard": {
     "ariaLabel": "（在新标签中阅读更多内容）",
