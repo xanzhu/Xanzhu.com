@@ -131,8 +131,8 @@ export default defineNuxtConfig({
 
   // ICON
   icon: {
-    provider: 'iconify',
-    mode: 'svg',
+    provider: 'server',
+    mode: 'css',
     clientBundle: {
       scan: true,
     },
