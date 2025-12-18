@@ -16,15 +16,20 @@ const path = computed(() =>
 
 const { data: post } = await useAsyncData(path.value, () => queryCollection(collection.value).path(path.value).first())
 
+if (!post.value)
+  throw createError({ statusCode: 404 })
+
+// Set route.meta AFTER await completes
+if (post.value.title) {
+  route.meta.title = post.value.title
+}
+
 const { data: surround } = await useAsyncData(`surround-${locale.value}${path.value}`, () => queryCollectionItemSurroundings(collection.value, path.value, {
   before: 1,
   after: 1,
   fields: ['title', 'path', 'date', 'img'],
 })
   .order('date', 'DESC'))
-
-if (!post.value)
-  throw createError({ statusCode: 404 })
 
 const seoTitle = computed(() => post.value?.title || 'Default Blog Title')
 const seoDesc = computed(() => post.value?.description || 'Explore our latest blog posts.')
@@ -47,11 +52,6 @@ useSeoMeta({
   articlePublishedTime: post.value?.date,
   articleModifiedTime: post.value?.updated,
 })
-
-// BreadCrumbs
-if (post.value?.title) {
-  route.meta.title = post.value.title
-}
 </script>
 
 <template>

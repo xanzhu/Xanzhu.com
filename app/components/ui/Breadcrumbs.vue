@@ -2,9 +2,8 @@
 const { breadcrumbs, jsonLd } = useBreadcrumbs()
 const { t } = useI18n()
 
-// Add JSON-LD to head
 useHead({
-  script: computed(() =>
+  script: () =>
     jsonLd.value
       ? [{
           key: 'breadcrumbs-jsonld',
@@ -12,15 +11,15 @@ useHead({
           innerHTML: JSON.stringify(jsonLd.value),
         }]
       : [],
-  ),
 })
 
 const separator = '>'
+const shouldDisplay = computed(() => breadcrumbs.value.length > 1)
 </script>
 
 <template>
   <nav
-    v-if="breadcrumbs.length > 1"
+    v-show="shouldDisplay"
     class="text-sm"
     :aria-label="t('aria.breadcrumb')"
   >

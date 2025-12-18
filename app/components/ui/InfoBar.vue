@@ -7,7 +7,11 @@ const disablePath = computed(() => {
   return ['', '/ko', '/zh'].includes(path)
 })
 
-const now = useState('now', () => new Date())
+const now = ref<Date | null>(null)
+
+onMounted(() => {
+  now.value = new Date()
+})
 </script>
 
 <template>
@@ -18,6 +22,7 @@ const now = useState('now', () => new Date())
   >
     <UiBreadcrumbs />
     <NuxtTime
+      v-if="now"
       :key="locale"
       :datetime="now"
       :locale="locale"

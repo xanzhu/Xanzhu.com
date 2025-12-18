@@ -52,8 +52,11 @@ export function useBreadcrumbs() {
       }
       else {
         items.push({ name: t('breadcrumbs.blog'), path: blogPath })
-        const articleTitle = route.meta?.title || segments.slice(1).join(' ').replace(/-/g, ' ')
-        items.push({ name: String(articleTitle), path: route.path, current: true })
+        items.push({
+          name: String(route.meta?.title || ''),
+          path: route.path,
+          current: true,
+        })
       }
     }
     // Resources Logic
@@ -76,8 +79,11 @@ export function useBreadcrumbs() {
           })
         }
         if (resourceSegments.length >= 2) {
-          const articleTitle = route.meta?.title || resourceSegments.slice(1).join(' ').replace(/-/g, ' ')
-          items.push({ name: String(articleTitle), path: route.path, current: true })
+          items.push({
+            name: String(route.meta?.title || ''),
+            path: route.path,
+            current: true,
+          })
         }
       }
     }
@@ -94,12 +100,12 @@ export function useBreadcrumbs() {
   })
 
   const breadcrumbs = computed(() => {
-    const list = [...fullBreadcrumbs.value]
-    // Clear Home
-    if (list.length >= 3) {
-      list.shift()
+    const items = [...fullBreadcrumbs.value]
+    if (items.length >= 3) {
+      items.shift()
     }
-    return list
+
+    return items
   })
 
   // JSON-LD
