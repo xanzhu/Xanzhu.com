@@ -132,7 +132,7 @@ export default defineNuxtConfig({
   // ICON
   icon: {
     provider: 'server',
-    mode: 'css',
+    mode: 'svg',
     clientBundle: {
       scan: true,
     },
