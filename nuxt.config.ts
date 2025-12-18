@@ -105,7 +105,6 @@ export default defineNuxtConfig({
         'x-robots-tag': 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
       },
     },
-    // Test ISR Caching of blog posts
     '**/blog/**': {
       isr: true,
     },
@@ -122,7 +121,7 @@ export default defineNuxtConfig({
   // API
   runtimeConfig: {
     public: {
-      Version: '2.2.0',
+      Version: '2.2.1',
       i18n: {
         baseUrl: 'https://xanzhu.com',
       },
@@ -221,6 +220,14 @@ export default defineNuxtConfig({
 
   unocss: {
     disableNuxtInlineStyle: false,
+    content: {
+      pipeline: {
+        include: [
+          /\.(vue|ts)($|\?)/,
+          'content/**/*.md',
+        ],
+      },
+    },
   },
 
   nitro: {
@@ -255,7 +262,7 @@ export default defineNuxtConfig({
   //   viteEnvironmentApi: true,
   },
 
-  // future: {
-  //   compatibilityVersion: 5,
-  // },
+  future: {
+    compatibilityVersion: 5,
+  },
 })
