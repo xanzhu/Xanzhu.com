@@ -190,7 +190,8 @@
       "readTime": "分钟阅读",
       "prevPost": "上一篇",
       "nextPost": "下一篇",
-      "videoClick": "点击播放视频"
+      "videoClick": "点击播放视频",
+      "articleUpdate": "文章更新"
     },
     "colorSwitch": {
       "dark": "切换到黑暗模式",

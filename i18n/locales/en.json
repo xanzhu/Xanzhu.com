@@ -190,7 +190,8 @@
       "readTime": "min read",
       "prevPost": "Previous",
       "nextPost": "Next",
-      "videoClick": "Click to play video"
+      "videoClick": "Click to play video",
+      "articleUpdate": "Article Updates"
     },
     "colorSwitch": {
       "dark": "Switch to dark mode",

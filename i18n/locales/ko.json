@@ -190,7 +190,8 @@
       "readTime": "최소 읽기",
       "prevPost": "이전 글",
       "nextPost": "다음 글",
-      "videoClick": "동영상을 재생하려면 클릭하세요."
+      "videoClick": "동영상을 재생하려면 클릭하세요.",
+      "articleUpdate": "기사 업데이트"
     },
     "colorSwitch": {
       "dark": "다크 모드로 전환하십시오",
