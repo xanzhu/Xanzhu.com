@@ -19,7 +19,6 @@ const { data: post } = await useAsyncData(path.value, () => queryCollection(coll
 if (!post.value)
   throw createError({ statusCode: 404 })
 
-// Set route.meta AFTER await completes
 if (post.value.title) {
   route.meta.title = post.value.title
 }
@@ -77,7 +76,7 @@ useSeoMeta({
         <hr class="w-80% core-border rounded-md core-ui op40">
         <div v-if="post.path && post.title">
           <h4 class="mb4 mt5 text-center text-lg font-normal op90">
-            {{ t('share.title') }}
+            {{ t('ui.sharing.title') }}
           </h4>
           <LazyBlogSocialShare :post="{ path: post.path, title: post.title }" />
         </div>

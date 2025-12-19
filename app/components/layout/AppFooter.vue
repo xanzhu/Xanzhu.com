@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 const { t } = useI18n()
+const config = useRuntimeConfig()
 </script>
 
 <template>
@@ -8,47 +9,48 @@ const { t } = useI18n()
   >
     <div class="flex flex-col items-start justify-between md:flex-row">
       <UiLogo class="text-inherit" />
-      <nav :aria-label="t('footer.sr.community')">
+      <nav>
         <FooterItem
-          :title="t('footer.community')" :links="[
-            { text: t('footer.github'), href: 'https://github.com/xanzhu', external: true },
-            { text: t('footer.twitter'), href: 'https://x.com/xanzhu1', external: true },
+          :title="t('footer.category.community')" :links="[
+            // TODO: Turn into icons
+            { text: t('footer.items.github'), href: 'https://github.com/xanzhu', external: true },
+            { text: t('footer.items.twitter'), href: 'https://x.com/xanzhu1', external: true },
           ]"
         />
       </nav>
-      <nav :aria-label="t('footer.sr.blog')">
+      <nav>
         <FooterItem
-          :title="t('footer.blog')" :links="[
-            { text: t('footer.latest'), href: '/blog' },
+          :title="t('footer.category.latest')" :links="[
+            { text: t('nav.blog'), href: '/blog' },
           ]"
         />
       </nav>
-      <nav :aria-label="t('footer.sr.resource')">
+      <nav>
         <FooterItem
-          :title="t('footer.resources')" :links="[
-            { text: t('footer.tools'), href: '/resources' },
+          :title="t('footer.category.resources')" :links="[
+            { text: t('footer.items.tools'), href: '/resources' },
           ]"
         />
       </nav>
-      <nav :aria-label="t('footer.sr.company')">
+      <nav>
         <FooterItem
-          :title="t('footer.company')" :links="[
-            { text: t('footer.about'), href: '/about' },
+          :title="t('footer.category.company')" :links="[
+            { text: t('nav.about'), href: '/about' },
           ]"
         />
       </nav>
-      <nav :aria-label="t('footer.sr.legal')">
+      <nav>
         <FooterItem
-          :title="t('footer.legal')" :links="[
-            { text: t('footer.privacy'), href: '/privacy-policy' },
-            { text: t('footer.terms'), href: '/terms-of-service' },
+          :title="t('footer.category.legal')" :links="[
+            { text: t('footer.items.privacy'), href: '/privacy-policy' },
+            { text: t('footer.items.terms'), href: '/terms-of-service' },
           ]"
         />
       </nav>
     </div>
     <div class="mt-6 flex flex-col items-center justify-between text-xs text-dark-200 md:flex-row dark:text-gray-300">
-      <p>{{ t('footer.copyright') }}</p>
-      <p>{{ t('footer.version') }}: {{ $config.public.Version }}</p>
+      <p>{{ t('footer.rights') }}</p>
+      <p>{{ t('footer.version') }}: {{ config.public.Version }}</p>
     </div>
   </footer>
 </template>

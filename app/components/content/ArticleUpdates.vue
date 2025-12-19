@@ -12,7 +12,7 @@ const { t } = useI18n()
       :id="id"
       class="m0 text-sm text-neutral-900 font-medium dark:text-neutral-100"
     >
-      {{ t('v2.blog.articleUpdate') }}
+      {{ t('blog.article.changelog') }}
     </h3>
 
     <ul class="p0 text-neutral-700 space-y-2 dark:text-neutral-300">

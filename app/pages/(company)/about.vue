@@ -37,7 +37,7 @@ useLangMeta('about.meta', seoImage, 'prefix', t)
                 "closing": "We are new and will likely make a few mistakes. But we're passionate about making the internet a safer place, and we hope you'll join us in developing the next standard of security practices and guidelines."
             },
             "meta": {
-                "description": "Xanzhu.com - Your cybersecurity hub. Protecting you online with valuable insights on security, privacy, and accessibility. Join us!",
+                "desc": "Xanzhu.com - Your cybersecurity hub. Protecting you online with valuable insights on security, privacy, and accessibility. Join us!",
                 "title": "About"
             }
         }
@@ -53,7 +53,7 @@ useLangMeta('about.meta', seoImage, 'prefix', t)
                 "closing": "저희는 이제 막 시작한 만큼 실수를 할 수도 있습니다. 하지만 인터넷을 더 안전한 공간으로 만들기 위해 열정을 가지고 있으며, 여러분도 다음 세대의 보안 기준과 지침을 함께 만들어 가주시길 바랍니다."
             },
             "meta": {
-                "description": "Xanzhu.com - 사이버 보안 허브. 보안, 프라이버시, 접근성에 대한 유용한 통찰로 온라인에서 여러분을 보호합니다. 함께하세요!",
+                "desc": "Xanzhu.com - 사이버 보안 허브. 보안, 프라이버시, 접근성에 대한 유용한 통찰로 온라인에서 여러분을 보호합니다. 함께하세요!",
                 "title": "소개"
             }
         }
@@ -69,7 +69,7 @@ useLangMeta('about.meta', seoImage, 'prefix', t)
                 "closing": "我们是一个新兴平台，可能还会犯错。但我们致力于让互联网变得更加安全，期待您的加入，共同推动新一代的安全实践与规范。"
             },
             "meta": {
-                "description": "Xanzhu.com - 您的网络安全中心。通过关于安全、隐私和可访问性的宝贵见解，守护您的网络安全。加入我们！",
+                "desc": "Xanzhu.com - 您的网络安全中心。通过关于安全、隐私和可访问性的宝贵见解，守护您的网络安全。加入我们！",
                 "title": "关于"
             }
         }

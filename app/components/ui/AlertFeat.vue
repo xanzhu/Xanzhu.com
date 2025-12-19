@@ -16,11 +16,11 @@ const localePath = useLocalePath()
     class="mx2 mb-5 max-w-md b-gray-300 rounded-md b-dashed p5 text-sm backdrop-blur-xl backdrop-filter dark:(b-dark-300 text-white)"
   >
     <h1 class="m-0 text-xl font-semibold">
-      {{ props.title ?? t('Alert.feature') }}
+      {{ props.title ?? t('alert.feature') }}
     </h1>
 
     <p class="font-normal">
-      {{ props.desc ?? t('Alert.maintenance') }}
+      {{ props.desc ?? t('alert.maintenance') }}
     </p>
 
     <NuxtLink
@@ -28,7 +28,7 @@ const localePath = useLocalePath()
       :to="localePath(props.link)"
       class="animate-bounce text-[#FF0] no-underline"
     >
-      {{ t('Alert.view') }}
+      {{ t('alert.view') }}
     </NuxtLink>
 
     <p v-if="props.date" class="mt-2 text-sm font-normal">

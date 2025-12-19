@@ -11,14 +11,13 @@ const localePath = useLocalePath()
 const errorData = computed(() => {
   const code = props.error?.statusCode
   const is404 = code === 404
-  const key = is404 ? 'error404' : 'error500'
+  const key = is404 ? '404' : '500'
   return {
     code,
     key,
-    title: t(`v2.${key}.h1`),
-    message: t(`v2.${key}.p`),
-    label: t(`v2.${key}.label`),
-    return: t(`v2.error404.goBack`),
+    title: t(`error.${key}.h1`),
+    message: t(`error.${key}.p`),
+    action: t(`error.${key}.goBack`),
   }
 })
 
@@ -42,13 +41,14 @@ function handleGoBack() {
 </script>
 
 <template>
-  <main class="m0 h-screen flex flex-col-reverse items-center justify-center bg-white p4 text-black font-sans lg:flex-row md:gap-16 dark:(bg-black text-white)" :aria-label="errorData.label">
+  <main class="m0 h-screen flex flex-col-reverse items-center justify-center bg-white p4 text-black font-sans lg:flex-row md:gap-16 dark:(bg-black text-white)">
     <section class="max-w-lg">
       <h1 class="m0 text-4xl font-semibold tracking-wide sm:text-6xl">
         {{ errorData.title }}
+        <span class="sr-only">({{ t('aria.error_code_prefix') }} {{ errorData.code }})</span>
       </h1>
 
-      <div class="mt5 max-w-md core-border rounded-lg core-ui p-3 text-neutral8 md:mt-15 dark:text-light2" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="mt5 max-w-md core-border rounded-lg core-ui p-3 text-neutral8 md:mt-15 dark:text-light2" role="alert" aria-atomic="true">
         <div class="mb-10 flex items-center core-border rounded-lg bg-white px-4 md:(mb-15 px5 space-x-8) space-x-4 dark:bg-black">
           <Icon name="lucide:triangle-alert" class="hidden sm:(h7 w-auto flex text-inherit)" aria-hidden="true" />
           <p>
@@ -61,7 +61,7 @@ function handleGoBack() {
             class="cursor-pointer border border-transparent rounded-md border-solid bg-transparent text-sm text-inherit underline underline-offset-4 hover:(core-border bg-white dark:bg-black) focus:outline-2 focus:outline-white focus:outline-offset-2 focus:outline"
             @click="handleGoBack"
           >
-            {{ errorData.return }}
+            {{ errorData.action }}
           </button>
           <span class="animate-pulse text-sm opacity-80" aria-hidden="true">
             {{ errorData.code }}

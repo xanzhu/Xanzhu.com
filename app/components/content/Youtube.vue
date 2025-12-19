@@ -19,7 +19,7 @@ function stateChange(event: YouTubeStateEvent) {
   isPlaying.value = event.data === 1
 }
 const iframeTitle = computed(() =>
-  props.title || t('v2.blog.videoIframe'),
+  props.title || t('blog.article.videoIframe'),
 )
 
 onBeforeUnmount(() => {
@@ -44,7 +44,7 @@ onBeforeUnmount(() => {
           class="absolute inset-0 flex items-center justify-center bg-black/10"
           role="button"
           tabindex="0"
-          :aria-label="t('v2.blog.videoClick')"
+          :aria-label="t('blog.article.videoClick')"
         >
           <svg
             class="h-12 w-17 transition-transform hover:scale-110"

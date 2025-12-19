@@ -11,17 +11,17 @@ const filteredPosts = computed(() =>
 )
 
 const seoImage = 'https://images.pexels.com/photos/27277185/pexels-photo-27277185.jpeg'
-useLangMeta('Blog.meta', seoImage)
+useLangMeta('seo.blog', seoImage)
 </script>
 
 <template>
   <main class="mx-auto text-black sm:mb-10 space-y-10 2xl:px35 xl:px28 dark:text-white">
     <div class="mx-4 mt-5 flex flex-col lg:mx-10 sm:(mx-10 mt-15) space-y-2">
       <h1 class="mb0 text-3xl font-semibold sm:text-5xl">
-        {{ t("Blog.title") }}
+        {{ t("blog.h1") }}
       </h1>
       <p class="text-md break-words font-400 op70 sm:(w2/3 text-xl) dark:text-gray-300">
-        {{ t("Blog.description") }}
+        {{ t("blog.desc") }}
       </p>
     </div>
     <section
@@ -57,7 +57,7 @@ useLangMeta('Blog.meta', seoImage)
       </article>
     </section>
     <p v-else class="text-center op70">
-      {{ t('v2.blog.noPosts') }}
+      {{ t('error.blog.notFound') }}
     </p>
   </main>
 </template>

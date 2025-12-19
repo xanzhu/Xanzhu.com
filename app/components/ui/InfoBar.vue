@@ -9,6 +9,17 @@ const disablePath = computed(() => {
 
 const now = ref<Date | null>(null)
 
+const accessibleDateLabel = computed(() => {
+  if (!now.value)
+    return ''
+
+  const formattedDate = new Intl.DateTimeFormat(locale.value, {
+    dateStyle: 'full',
+  }).format(now.value)
+
+  return t('ui.globalDate', { date: formattedDate })
+})
+
 onMounted(() => {
   now.value = new Date()
 })
@@ -17,7 +28,7 @@ onMounted(() => {
 <template>
   <nav
     v-if="!disablePath"
-    :aria-label="t('v2.ui.breadCrumbs')"
+    :aria-label="t('ui.breadCrumbs')"
     class="z-10 flex flex-col items-center justify-between bg-transparent py-4 text-sm text-inherit font-normal md:(flex-row px-9 py-2 space-y-0) sm:(flex-row px-6 py-2) space-y-2 2xl:px-43 xl:px-30"
   >
     <UiBreadcrumbs />
@@ -26,7 +37,7 @@ onMounted(() => {
       :key="locale"
       :datetime="now"
       :locale="locale"
-      :aria-label="t('v2.ui.globalDate')"
+      :aria-label="accessibleDateLabel"
       weekday="long"
       month="long"
       day="numeric"

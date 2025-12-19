@@ -8,7 +8,7 @@ export function useLangMeta(
   const t = localScope ?? globalT
 
   const seoTitle = computed(() => t(`${i18nKey}.title`))
-  const seoDesc = computed(() => t(`${i18nKey}.description`))
+  const seoDesc = computed(() => t(`${i18nKey}.desc`))
 
   const titleTemplate = format === 'prefix' ? 'Xanzhu - %s' : '%s - Xanzhu'
 

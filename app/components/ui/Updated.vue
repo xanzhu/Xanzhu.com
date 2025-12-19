@@ -2,8 +2,10 @@
 defineProps<{
   date: string
 }>()
+
+const { locale } = useI18n()
 </script>
 
 <template>
-  <NuxtTime :datetime="date" relative :locale="$i18n.locale" />
+  <NuxtTime :datetime="date" :locale="locale" />
 </template>

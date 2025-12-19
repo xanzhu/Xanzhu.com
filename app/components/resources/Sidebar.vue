@@ -10,27 +10,27 @@ const isOnSubpage = computed(() => route.path !== basePath.value)
 const categories = computed(() => [
   {
     name: 'phishing',
-    title: t('v2.resources.category.phishing'),
+    title: t('resources.category.phishing'),
     icon: 'ion:fish',
-    description: t('v2.resources.category.phishingDesc'),
+    description: t('resources.category.phishingDesc'),
   },
   {
     name: 'malware',
-    title: t('v2.resources.category.malware'),
+    title: t('resources.category.malware'),
     icon: 'ri:bug-line',
-    description: t('v2.resources.category.malwareDesc'),
+    description: t('resources.category.malwareDesc'),
   },
   {
     name: 'network-security',
-    title: t('v2.resources.category.networkSec'),
+    title: t('resources.category.networkSec'),
     icon: 'ri:global-line',
-    description: t('v2.resources.category.networkSecDesc'),
+    description: t('resources.category.networkSecDesc'),
   },
   {
     name: 'privacy',
-    title: t('v2.resources.category.privacy'),
+    title: t('resources.category.privacy'),
     icon: 'ri:shield-line',
-    description: t('v2.resources.category.privacyDesc'),
+    description: t('resources.category.privacyDesc'),
   },
 ])
 
@@ -61,14 +61,14 @@ const categoryLinks = computed(() => {
           class="h4 w4 transition-transform group-hover:-translate-x-1"
           aria-hidden="true"
         />
-        <span>{{ t('v2.resources.category.back') }}</span>
+        <span>{{ t('resources.category.back') }}</span>
       </NuxtLink>
 
       <h2
         id="categories-heading"
         class="m0 mb2 mt-10 text-sm text-neutral-4 font-semibold tracking-wide uppercase"
       >
-        {{ t('v2.resources.subHead') }}
+        {{ t('resources.subHead') }}
       </h2>
 
       <ul
@@ -95,7 +95,7 @@ const categoryLinks = computed(() => {
               v-if="category.isActive"
               class="sr-only"
             >
-              ({{ t('v2.resources.currentPage') }})
+              ({{ t('resources.currentPage') }})
             </span>
           </NuxtLink>
         </li>

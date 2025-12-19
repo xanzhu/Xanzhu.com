@@ -8,7 +8,7 @@ const { toggle, isActive } = useStateToggle()
 const isLangOpen = computed(() => isActive('language'))
 const isMenuOpen = computed(() => isActive('menu'))
 
-const { locales, t } = useI18n()
+const { locales, locale: currentLocale, t } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
 
 const availableLocales = computed(() => {
@@ -23,8 +23,7 @@ const availableLocales = computed(() => {
       class="cursor-pointer border border-1 border-transparent rounded-md bg-transparent px1.5 py0.5 pt1 text-black hover:(core-border core-ui) dark:text-white"
       :aria-expanded="isLangOpen ? 'true' : 'false'" aria-controls="language-options" @click="toggle('language')"
     >
-      <Icon name="fluent:local-language-16-filled" class="h6 w6" aria-hidden="true" />
-      <span class="sr-only">{{ t('v2.langSwitch.select') }}</span>
+      <Icon name="fluent:local-language-16-filled" class="h-6 w-6" />
     </button>
     <div
       v-show="isLangOpen" id="language-options"
@@ -36,7 +35,8 @@ const availableLocales = computed(() => {
         :to="switchLocalePath(locale.code)"
         class="h-5 b-1 b-transparent rounded-md b-solid p2 text-inherit no-underline hover:(core-border core-theme)"
         exact-active-class="dark:bg-black bg-white pointer-events-none order-first !core-border"
-        role="menuitem" :aria-current="locale.code === $i18n.locale ? 'true' : undefined" :aria-label="locale.code === $i18n.locale ? `${locale.name} ${t('v2.langSwitch.current')}` : `${t('v2.langSwitch.switch')} ${locale.name}`"
+        role="menuitem" :aria-current="locale.code === currentLocale ? 'true' : undefined"
+        :aria-label="locale.code === currentLocale ? `${locale.name} ${t('ui.lang.current')}` : `${t('ui.lang.switch')} ${locale.name}`"
         @click="toggle('language')"
       >
         {{ locale.name }}
@@ -47,7 +47,7 @@ const availableLocales = computed(() => {
       :aria-expanded="isMenuOpen ? 'true' : 'false'" aria-controls="menu-options" @click="toggle('menu')"
     >
       <Icon name="fluent:list-rtl-16-filled" class="h6 w6" aria-hidden="true" />
-      <span class="sr-only">{{ t('app.sr.menu') }}</span>
+      <span class="sr-only">{{ t('aria.open_menu') }}</span>
     </button>
     <nav
       v-show="isMenuOpen" id="menu-options"

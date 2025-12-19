@@ -15,13 +15,13 @@ const { t } = useI18n()
 const items = computed(() => [
   {
     data: props.surround?.[0],
-    label: t('v2.blog.prevPost'),
+    label: t('ui.pagination.prev'),
     rel: 'prev',
     isNext: false,
   },
   {
     data: props.surround?.[1],
-    label: t('v2.blog.nextPost'),
+    label: t('ui.pagination.next'),
     rel: 'next',
     isNext: true,
   },

@@ -59,7 +59,7 @@ watch(pageTitle, (newTitle) => {
 }, { immediate: true })
 
 useHead({
-  title: () => pageTitle.value || t('breadcrumbs.resources'),
+  title: () => pageTitle.value || t('nav.resources'),
   meta: [
     {
       name: 'description',
@@ -81,7 +81,7 @@ useHead({
       aria-labelledby="page-title"
     >
       <div class="sr-only" role="status" aria-live="polite" aria-atomic="true">
-        {{ t('v2.resources.pageLoaded') }}: {{ pageTitle }}
+        {{ t('resources.pageLoaded') }}: {{ pageTitle }}
       </div>
 
       <h1
@@ -107,7 +107,7 @@ useHead({
         class="mt-8"
       >
         <h2 id="guides-heading" class="mb-4 text-xl font-semibold">
-          {{ t('v2.resources.helpfulGuides') }}
+          {{ t('resources.helpfulGuides') }}
         </h2>
         <ul class="list-disc pl-6 space-y-2">
           <li v-for="post in children" :key="post.id">
@@ -131,7 +131,7 @@ useHead({
         aria-labelledby="page-title"
       >
         <div class="sr-only" role="status" aria-live="polite" aria-atomic="true">
-          {{ t('v2.resources.pageLoaded') }}: {{ pageTitle }}
+          {{ t('resources.pageLoaded') }}: {{ pageTitle }}
         </div>
 
         <ContentRenderer

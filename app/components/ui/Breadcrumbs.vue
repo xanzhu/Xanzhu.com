@@ -21,7 +21,7 @@ const shouldDisplay = computed(() => breadcrumbs.value.length > 1)
   <nav
     v-show="shouldDisplay"
     class="text-sm"
-    :aria-label="t('aria.breadcrumb')"
+    :aria-label="t('ui.breadCrumbs')"
   >
     <ol class="flex pl4 md:(flex-row items-center)">
       <li
