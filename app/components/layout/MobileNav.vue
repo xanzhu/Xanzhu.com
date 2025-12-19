@@ -90,7 +90,7 @@ function closeAll() {
           class="fixed left-4 right-4 top-18 z-50 max-h-[75vh] flex flex-col overflow-y-auto core-border rounded-xl core-ui p-3 shadow-2xl"
         >
           <div v-if="isLangOpen" key="lang-content" class="flex flex-col space-y-2">
-            <div class="px-3 py-2 text-[11px] font-bold tracking-widest uppercase opacity-60">
+            <div class="px-3 py-2 text-[12px] font-bold tracking-widest uppercase opacity-60">
               {{ t('ui.lang.select') }}
             </div>
             <NuxtLink
@@ -106,7 +106,7 @@ function closeAll() {
           </div>
 
           <nav v-else-if="isMenuOpen" key="menu-content" class="flex flex-col space-y-2">
-            <div class="px-3 py-2 text-[10px] font-bold tracking-widest uppercase opacity-60">
+            <div class="px-3 py-2 text-[12px] font-bold tracking-widest uppercase opacity-60">
               {{ t('ui.menu') }}
             </div>
             <NuxtLinkLocale
