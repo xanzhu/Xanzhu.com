@@ -117,7 +117,7 @@ useLangMeta('terms', seoImage, 'prefix', t)
       },
       "meta": {
         "title": "Terms of Service - Xanzhu",
-        "description": "Read the Terms of Service for Xanzhu. By using this blog, you agree to these terms."
+        "desc": "Read the Terms of Service for Xanzhu. By using this blog, you agree to these terms."
       }
     }
   },
@@ -157,7 +157,7 @@ useLangMeta('terms', seoImage, 'prefix', t)
       },
       "meta": {
         "title": "이용 약관 - Xanzhu",
-        "description": "Xanzhu의 이용 약관을 읽어보세요. 이 블로그를 사용함으로써 귀하는 이 약관에 동의하게 됩니다."
+        "desc": "Xanzhu의 이용 약관을 읽어보세요. 이 블로그를 사용함으로써 귀하는 이 약관에 동의하게 됩니다."
       }
     }
   },
@@ -197,7 +197,7 @@ useLangMeta('terms', seoImage, 'prefix', t)
       },
       "meta": {
         "title": "服务条款 - Xanzhu",
-        "description": "阅读 Xanzhu 的服务条款。使用本博客即表示您同意这些条款。"
+        "desc": "阅读 Xanzhu 的服务条款。使用本博客即表示您同意这些条款。"
       }
     }
   }

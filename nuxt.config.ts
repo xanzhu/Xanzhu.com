@@ -71,7 +71,7 @@ export default defineNuxtConfig({
         code: 'zh',
         language: 'zh',
         name: '中文',
-        files: ['ko/common.json', 'ko/app.json'],
+        files: ['zh/common.json', 'zh/app.json'],
       },
     ],
     detectBrowserLanguage: {
