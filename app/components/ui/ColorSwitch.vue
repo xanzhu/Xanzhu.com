@@ -13,7 +13,7 @@ function switchColor() {
 
 <template>
   <button
-    class="mr-0 inline-block w-8 flex cursor-pointer items-center justify-center border-none bg-transparent <sm:py1"
+    class="cursor-pointer b-1 b-transparent rounded-md b-solid bg-transparent px1.5 py0.5 pt1.5 transition-colors hover:(core-border core-ui)"
     :aria-label="colorMode.value === 'dark' ? t('ui.colorMode.light') : t('ui.colorMode.dark')"
     @click="switchColor"
   >
