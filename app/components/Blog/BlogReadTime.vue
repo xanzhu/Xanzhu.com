@@ -18,9 +18,10 @@ const readingTime = ref(Math.ceil(words / wordsPerMinute))
 
 <template>
   <div class="flex space-x-1">
-    <p class="m0">
-      {{ readingTime }}
-    </p>
-    <span>{{ t("v2.blog.readTime") }}</span>
+    <div class="flex items-center gap-1">
+      <p class="m0">
+        {{ t("ui.content.readTime", { count: readingTime }) }}
+      </p>
+    </div>
   </div>
 </template>

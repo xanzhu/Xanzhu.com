@@ -1,8 +1,8 @@
 <script setup>
 const links = useNavLinks(
-  { name: 'Links.blog', url: '/blog' },
-  { name: 'Links.analysis', url: '/analysis' },
-  { name: 'Links.resources', url: '/resources' },
+  { name: 'nav.blog', url: '/blog' },
+  { name: 'nav.analysis', url: '/analysis' },
+  { name: 'nav.resources', url: '/resources' },
 )
 
 const switchLocalePath = useSwitchLocalePath()
@@ -27,7 +27,7 @@ const sortedLocales = computed(() => {
       <UiAppLogo class="h10 md:h12" />
     </NuxtLinkLocale>
 
-    <nav class="hidden md:(flex underline-none space-x-10)" :aria-label="t('v2.sr.mainNav')">
+    <nav class="hidden md:(flex underline-none space-x-10)" :aria-label="t('aria.main_nav')">
       <NuxtLinkLocale
         v-for="link in links"
         :key="link.url"
@@ -41,7 +41,7 @@ const sortedLocales = computed(() => {
 
     <div class="hidden md:(flex items-center space-x-2)" role="group">
       <UiColorSwitch />
-      <div class="md:(inline-flex gap1 core-border rounded-full core-ui p1)" role="navigation" :aria-label="t('v2.sr.langSelect')">
+      <div class="md:(inline-flex gap1 core-border rounded-full core-ui p1)" role="navigation" :aria-label="t('aria.lang_selector')">
         <TransitionGroup name="list" tag="div" class="flex gap1">
           <NuxtLink
             v-for="locale in sortedLocales"

@@ -64,7 +64,7 @@ const socials = computed(() => [
   },
   {
     name: 'email',
-    url: `mailto:?subject=${encodedTitle.value}&body=${encodeURIComponent(t('email.share'))}: ${encodedUrl.value}`,
+    url: `mailto:?subject=${encodedTitle.value}&body=${encodeURIComponent(t('ui.sharing.email'))}: ${encodedUrl.value}`,
     icon: 'ri:mail-open-fill',
   },
 ])
@@ -74,7 +74,7 @@ const socials = computed(() => [
   <div
     class="mx-auto inline-flex items-center gap-1 core-border rounded-full core-theme px-3 py-1.5"
     role="group"
-    :aria-label="t('share.title')"
+    :aria-label="t('ui.sharing.title')"
   >
     <NuxtLink
       v-for="social in socials"
@@ -82,21 +82,21 @@ const socials = computed(() => [
       :to="social.url"
       target="_blank"
       rel="noopener noreferrer"
-      :title="t(`share.${social.name}`)"
+      :title="t(`ui.sharing.${social.name}`)"
       class="group p-1.5 text-black transition-all duration-200 dark:text-white hover:-translate-y-0.5"
     >
       <Icon
         :name="social.icon"
         class="h-5 w-5 opacity-80 transition-colors group-hover:text-brand-light group-hover:opacity-100 dark:group-hover:text-brand-dark"
       />
-      <span class="sr-only">{{ t(`share.${social.name}`) }}</span>
+      <span class="sr-only">{{ t(`ui.sharing.${social.name}`) }}</span>
     </NuxtLink>
 
     <div class="mx-1 h-4 w-px bg-gray-300 dark:bg-dark-400" aria-hidden="true" />
 
     <button
       type="button"
-      :title="t('share.copy')"
+      :title="t('ui.sharing.copy')"
       class="group cursor-pointer rounded-md border-none bg-transparent p-1.5 text-inherit transition-all duration-200 hover:-translate-y-0.5"
       @click="copyLink"
     >
@@ -105,7 +105,7 @@ const socials = computed(() => [
         class="h-5 w-5 transition-colors"
         :class="copied ? 'text-green-500' : 'opacity-80 group-hover:opacity-100 group-hover:text-brand-light dark:group-hover:text-brand-dark'"
       />
-      <span class="sr-only">{{ copied ? t('share.copied') : t('share.copy') }}</span>
+      <span class="sr-only">{{ copied ? t('ui.sharing.copied') : t('ui.sharing.copy') }}</span>
     </button>
   </div>
 </template>

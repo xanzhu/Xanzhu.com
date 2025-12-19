@@ -36,7 +36,7 @@ const { t } = useI18n()
         <div
           class="flex items-center core-border rounded-md bg-white px-4 py-2 text-sm text-neutral-6 space-x-2 dark:bg-neutral-9 dark:text-neutral-1"
         >
-          <span>{{ t('v2.blog.lastUpdated') }}:</span>
+          <span>{{ t('ui.content.lastUpdated') }}:</span>
           <LazyUiUpdated :date="post.updated" itemprop="dateModified" />
         </div>
       </div>

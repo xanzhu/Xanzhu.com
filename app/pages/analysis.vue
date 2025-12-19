@@ -1,6 +1,6 @@
 <script setup>
 const seoImage = 'https://images.pexels.com/photos/27141316/pexels-photo-27141316.jpeg'
-useLangMeta('analysis.meta', seoImage)
+useLangMeta('seo.analysis', seoImage)
 </script>
 
 <template>

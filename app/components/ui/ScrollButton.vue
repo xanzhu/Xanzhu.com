@@ -57,7 +57,7 @@ onUnmounted(() => {
     <button
       v-if="isVisible"
       class="fixed bottom-6 right-3 z-30 h-10 w-10 flex cursor-pointer items-center justify-center core-border rounded-full core-ui shadow-lg transition-transform duration-200 focus:invisible md:right-6 hover:core-theme focus:ring-2 focus:ring-brand-dark focus:ring-opacity-50 dark:focus:ring-brand-light"
-      :aria-label="t('v2.ui.scrollTop')"
+      :aria-label="t('ui.scrollTop')"
       @click="scrollToTop"
     >
       <Icon name="lucide:chevron-up" class="h-5 w-5" />

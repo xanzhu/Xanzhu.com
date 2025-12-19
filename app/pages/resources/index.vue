@@ -16,7 +16,7 @@ const pageIndex = computed(() => {
 })
 
 const seoImage = 'https://images.pexels.com/photos/27206011/pexels-photo-27206011.jpeg'
-useLangMeta('resources.meta', seoImage)
+useLangMeta('seo.resources', seoImage)
 </script>
 
 <template>
@@ -46,9 +46,9 @@ useLangMeta('resources.meta', seoImage)
         role="status"
         aria-live="polite"
       >
-        <span class="sr-only">{{ t('v2.resources.lastReviewed') }}:</span>
+        <span class="sr-only">{{ t('resources.lastReviewed') }}:</span>
         <time :datetime="pageIndex.date">
-          {{ t('v2.resources.lastReviewed') }} {{ pageIndex.date }}
+          {{ t('resources.lastReviewed') }} {{ pageIndex.date }}
         </time>
       </p>
 

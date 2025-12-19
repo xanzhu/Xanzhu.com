@@ -23,8 +23,7 @@ const availableLocales = computed(() => {
       class="cursor-pointer border border-1 border-transparent rounded-md bg-transparent px1.5 py0.5 pt1 text-black hover:(core-border core-ui) dark:text-white"
       :aria-expanded="isLangOpen ? 'true' : 'false'" aria-controls="language-options" @click="toggle('language')"
     >
-      <Icon name="fluent:local-language-16-filled" class="h6 w6" aria-hidden="true" />
-      <span class="sr-only">{{ t('v2.langSwitch.select') }}</span>
+      <Icon name="fluent:local-language-16-filled" class="h-6 w-6" />
     </button>
     <div
       v-show="isLangOpen" id="language-options"

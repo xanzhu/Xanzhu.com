@@ -59,19 +59,19 @@ export default defineNuxtConfig({
         code: 'en',
         language: 'en',
         name: 'English',
-        file: 'en.json',
+        files: ['en/common.json', 'en/app.json'],
       },
       {
         code: 'ko',
         language: 'ko',
         name: '한국어',
-        file: 'ko.json',
+        files: ['ko/common.json', 'ko/app.json'],
       },
       {
         code: 'zh',
         language: 'zh',
         name: '中文',
-        file: 'zh.json',
+        files: ['ko/common.json', 'ko/app.json'],
       },
     ],
     detectBrowserLanguage: {
@@ -121,7 +121,7 @@ export default defineNuxtConfig({
   // API
   runtimeConfig: {
     public: {
-      Version: '2.2.1',
+      Version: '2.2.15',
       i18n: {
         baseUrl: 'https://xanzhu.com',
       },

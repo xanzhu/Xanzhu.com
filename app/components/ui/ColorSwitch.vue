@@ -14,7 +14,7 @@ function switchColor() {
 <template>
   <button
     class="mr-0 inline-block w-8 flex cursor-pointer items-center justify-center border-none bg-transparent <sm:py1"
-    :aria-label="colorMode.value === 'dark' ? t('v2.colorSwitch.light') : t('v2.colorSwitch.dark')"
+    :aria-label="colorMode.value === 'dark' ? t('ui.colorMode.light') : t('ui.colorMode.dark')"
     @click="switchColor"
   >
     <ColorScheme>

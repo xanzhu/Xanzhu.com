@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const seoImage = 'https://images.pexels.com/photos/5708251/pexels-photo-5708251.jpeg'
-useLangMeta('Home.Seo', seoImage, 'prefix')
+useLangMeta('seo.home', seoImage, 'prefix')
 
 // URL Validation | Redirection for "/?<example>" (Temp Fix)
 definePageMeta({

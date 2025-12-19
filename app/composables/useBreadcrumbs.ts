@@ -13,17 +13,17 @@ export function useBreadcrumbs() {
   const baseUrl = computed(() => config.public.i18n.baseUrl)
 
   const staticPages: Record<string, string> = {
-    'privacy-policy': 'breadcrumbs.privacy',
-    'terms-of-service': 'breadcrumbs.terms',
-    'analysis': 'breadcrumbs.analysis',
-    'about': 'breadcrumbs.about',
+    'privacy-policy': 'nav.privacy',
+    'terms-of-service': 'nav.terms',
+    'analysis': 'nav.analysis',
+    'about': 'nav.about',
   }
 
   const resourceCategories: Record<string, string> = {
-    'phishing': 'v2.resources.category.phishing',
-    'malware': 'v2.resources.category.malware',
-    'network-security': 'v2.resources.category.networkSec',
-    'privacy': 'v2.resources.category.privacy',
+    'phishing': 'resources.category.phishing',
+    'malware': 'resources.category.malware',
+    'network-security': 'resources.category.networkSec',
+    'privacy': 'resources.category.privacy',
   }
 
   const fullBreadcrumbs = computed<BreadcrumbItem[]>(() => {
@@ -41,17 +41,17 @@ export function useBreadcrumbs() {
 
     // Default
     items.push({
-      name: t('breadcrumbs.home'),
+      name: t('nav.home'),
       path: localePath('/'),
     })
 
     // Blog Logic
     if (isBlog) {
       if (segments.length === 1) {
-        items.push({ name: t('breadcrumbs.blog'), path: blogPath, current: true })
+        items.push({ name: t('nav.blog'), path: blogPath, current: true })
       }
       else {
-        items.push({ name: t('breadcrumbs.blog'), path: blogPath })
+        items.push({ name: t('nav.blog'), path: blogPath })
         items.push({
           name: String(route.meta?.title || ''),
           path: route.path,
@@ -63,7 +63,7 @@ export function useBreadcrumbs() {
     else if (isResources) {
       const resourceSegments = segments.slice(1)
       const category = resourceSegments[0] || ''
-      const resourcesTitle = t('breadcrumbs.resources')
+      const resourcesTitle = t('nav.resources')
 
       if (resourceSegments.length === 0) {
         items.push({ name: resourcesTitle, path: resourcesPath, current: true })
