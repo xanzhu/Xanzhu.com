@@ -39,7 +39,7 @@ const sections = [
 
 // SEO Metadata
 const seoImage = 'https://images.pexels.com/photos/273209/pexels-photo-273209.jpeg'
-useLangMeta('terms', seoImage, 'prefix', t)
+useLangMeta('terms.meta', seoImage, 'prefix', t)
 </script>
 
 <template>
@@ -116,7 +116,7 @@ useLangMeta('terms', seoImage, 'prefix', t)
         "content": "If you have any questions about these Terms, please contact us at"
       },
       "meta": {
-        "title": "Terms of Service - Xanzhu",
+        "title": "Terms of Service",
         "desc": "Read the Terms of Service for Xanzhu. By using this blog, you agree to these terms."
       }
     }
@@ -156,7 +156,7 @@ useLangMeta('terms', seoImage, 'prefix', t)
         "content": "이 약관에 대해 궁금한 점이 있으면 다음 주소로 문의하십시오:"
       },
       "meta": {
-        "title": "이용 약관 - Xanzhu",
+        "title": "이용 약관",
         "desc": "Xanzhu의 이용 약관을 읽어보세요. 이 블로그를 사용함으로써 귀하는 이 약관에 동의하게 됩니다."
       }
     }
@@ -196,7 +196,7 @@ useLangMeta('terms', seoImage, 'prefix', t)
         "content": "如果您对这些条款有任何疑问，请联系我们："
       },
       "meta": {
-        "title": "服务条款 - Xanzhu",
+        "title": "服务条款",
         "desc": "阅读 Xanzhu 的服务条款。使用本博客即表示您同意这些条款。"
       }
     }
