@@ -23,10 +23,6 @@ const accessibleDateLabel = computed(() => {
 onMounted(() => {
   now.value = new Date()
 })
-
-onMounted(() => {
-  now.value = new Date()
-})
 </script>
 
 <template>
