@@ -1,11 +1,17 @@
 <script setup lang="ts">
 defineProps<{
-  date: string
+  date: string | Date | number
 }>()
+
+const { locale } = useI18n()
 </script>
 
 <template>
-  <NuxtTime :datetime="date" month="long" day="numeric" year="numeric" :locale="$i18n.locale">
-    {{ formatDate(date) }}
-  </NuxtTime>
+  <NuxtTime
+    :datetime="date"
+    :locale="locale"
+    month="long"
+    day="numeric"
+    year="numeric"
+  />
 </template>

@@ -3,25 +3,15 @@ const { locale, t } = useI18n()
 const route = useRoute()
 
 const disablePath = computed(() => {
-  const path = route.path.replace(/\/$/, '')
-  return ['', '/ko', '/zh'].includes(path)
+  const path = route.path.replace(/\/$/, '') || '/'
+  return path === '/' || path === `/${locale.value}`
 })
 
-const now = ref<Date | null>(null)
+const now = ref(new Date())
 
 const accessibleDateLabel = computed(() => {
-  if (!now.value)
-    return ''
-
-  const formattedDate = new Intl.DateTimeFormat(locale.value, {
-    dateStyle: 'full',
-  }).format(now.value)
-
-  return t('ui.globalDate', { date: formattedDate })
-})
-
-onMounted(() => {
-  now.value = new Date()
+  const formatter = new Intl.DateTimeFormat(locale.value, { dateStyle: 'full' })
+  return t('ui.globalDate', { date: formatter.format(now.value) })
 })
 </script>
 
@@ -32,8 +22,8 @@ onMounted(() => {
     class="z-10 flex flex-col items-center justify-between bg-transparent py-4 text-sm text-inherit font-normal md:(flex-row px-9 py-2 space-y-0) sm:(flex-row px-6 py-2) space-y-2 2xl:px-43 xl:px-30"
   >
     <UiBreadcrumbs />
+
     <NuxtTime
-      v-if="now"
       :key="locale"
       :datetime="now"
       :locale="locale"

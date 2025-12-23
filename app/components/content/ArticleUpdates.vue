@@ -5,7 +5,7 @@ const { t } = useI18n()
 
 <template>
   <aside
-    class="mt-6 border border-neutral-200 rounded-lg bg-neutral-50 p-4 text-sm dark:border-neutral-800 dark:bg-neutral-900"
+    class="mt-6 border border-neutral-200 rounded-lg bg-neutral-100 p-4 text-sm dark:border-neutral-800 dark:bg-neutral-900"
     :aria-labelledby="id"
   >
     <h3
