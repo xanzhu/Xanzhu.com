@@ -28,9 +28,9 @@
     "vue-router": "^4.6.4"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^6.7.1",
+    "@antfu/eslint-config": "^6.7.3",
     "@iconify-json/line-md": "^1.2.11",
-    "@iconify-json/lucide": "^1.2.81",
+    "@iconify-json/lucide": "^1.2.82",
     "@nuxt/devtools": "^3.1.1",
     "@nuxt/hints": "1.0.0-alpha.4",
     "@unocss/eslint-plugin": "^66.5.10",
