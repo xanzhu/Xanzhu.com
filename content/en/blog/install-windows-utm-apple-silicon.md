@@ -1,8 +1,8 @@
 ---
 title: "How to Install Windows 11 on Apple Silicon with UTM"
 description: "A complete, updated guide to running Windows 11 on M1–M5 Macs using UTM. Learn how to bypass Microsoft account requirements and fix common display issues."
-date: "2025-12-23"
-updated: "2025-12-23"
+date: "2025-12-24"
+updated: "2025-12-24"
 tag: "Guide"
 toc: true
 feature: true
@@ -15,7 +15,7 @@ Windows on Apple Silicon is becoming increasingly popular. In this guide, we'll 
 Our :PageLink{title="previous article" url="/blog/windows-on-apple-silicon"} covered the basics of setting up Windows on Apple Silicon.
 
 ::ArticleUpdates
-- **2025-12-23** - **Annual Re-release**: Complete technical audit performed. Verified and updated all steps for Windows 11 (24H2/25H2), UTM 4.7.5, and added the new local account bypass methods.
+- **2025-12-24** - **Annual Re-release**: Complete technical audit performed. Verified and updated all steps for Windows 11 (24H2/25H2), UTM 4.7.5, and added the new local account bypass methods.
 ::
 
 For alternative solutions for installing Windows on Apple Silicon, note that these are paid solutions and may offer better performance at a price. Check out :PageLink{title="Parallels Desktop" url="https://www.parallels.com/products/desktop/"} or :PageLink{title="VMware Fusion" url="https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion"}.
@@ -136,7 +136,7 @@ Emulation is slower but supports older systems. Pre-built VMs are also available
 
 ::media
 ---
-source: https://cdn.xanzhu.com/v1/m4-windows/utm-windows-os.webp
+source: https://cdn.xanzhu.com/2026/utm-windows/os-selection.webp
 alt: UTM Configuration OS selection between Windows, Linux and macOS
 ---
 ::
@@ -173,7 +173,7 @@ Next review the configuration summary, Enter a name for the virtual machine, and
 
 ::media
 ---
-source: https://cdn.xanzhu.com/v1/m4-windows/utm-windows-complete.webp
+source: https://cdn.xanzhu.com/2026/utm-windows/complete-setup.webp
 alt: Completed UTM configuration
 ---
 ::
@@ -278,12 +278,14 @@ Once restarted open up File Explorer and navigate back to the CD Drive and right
 
 ::media
 ---
-source: https://cdn.xanzhu.com/v1/m4-windows/windows-spiceguest-manual.webp
+source: https://cdn.xanzhu.com/2026/utm-windows/spice-drivers.webp
 alt: Showing Windows file explorer with the CD Rom open
 ---
 ::
 
-You can verify that Spice Guest Tools have been installed by visiting the Control Panel. Under **Uninstall a program**, Guest Tools will be listed as follows:
+You can verify that Spice Guest Tools have been installed by visiting the Control Panel.
+
+Under **Uninstall a program**, Guest Tools will be listed as follows:
 
 - UTM Guest Tools 0.1.271
 - Spice webdavd ARM64 2.5.0

@@ -1,8 +1,8 @@
 ---
 title: "如何使用 UTM 在 Apple Silicon 上安装 Windows 11"
 description: "使用 UTM 在 M1–M5 Mac 上运行 Windows 11 的完整更新指南。了解如何绕过 Microsoft 账户要求并修复常见显示问题。"
-date: "2025-12-23"
-updated: "2025-12-23"
+date: "2025-12-24"
+updated: "2025-12-24"
 tag: "指南"
 toc: true
 feature: true
@@ -15,7 +15,7 @@ alt: "在 Apple Silicon 上使用 UTM 运行 Windows 11"
 我们的 :PageLink{title="上一篇文章" url="/blog/windows-on-apple-silicon"} 介绍了在 Apple Silicon 上设置 Windows 的基础知识。
 
 ::ArticleUpdates
-- **2025-12-23** - **年度重新发布**：进行了完整的技术审核。验证并更新了 Windows 11（24H2/25H2）、UTM 4.7.5 的所有步骤，并添加了新的本地账户绕过方法。
+- **2025-12-24** - **年度重新发布**：进行了完整的技术审核。验证并更新了 Windows 11（24H2/25H2）、UTM 4.7.5 的所有步骤，并添加了新的本地账户绕过方法。
 ::
 
 对于在 Apple Silicon 上安装 Windows 的替代解决方案，请注意这些是付费解决方案，可能以更高的价格提供更好的性能。查看 :PageLink{title="Parallels Desktop" url="https://www.parallels.com/products/desktop/"} 或 :PageLink{title="VMware Fusion" url="https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion"}。
@@ -136,7 +136,7 @@ alt: UTM 配置模式在虚拟化和仿真之间选择
 
 ::media
 ---
-source: https://cdn.xanzhu.com/v1/m4-windows/utm-windows-os.webp
+source: https://cdn.xanzhu.com/2026/utm-windows/os-selection.webp
 alt: UTM 配置操作系统在 Windows、Linux 和 macOS 之间选择
 ---
 ::
@@ -173,7 +173,7 @@ alt: 显示 ISO 选择的 UTM 配置界面
 
 ::media
 ---
-source: https://cdn.xanzhu.com/v1/m4-windows/utm-windows-complete.webp
+source: https://cdn.xanzhu.com/2026/utm-windows/complete-setup.webp
 alt: 完成的 UTM 配置
 ---
 ::
@@ -278,7 +278,7 @@ alt: Spice Guest Tools 设置的默认窗口
 
 ::media
 ---
-source: https://cdn.xanzhu.com/v1/m4-windows/windows-spiceguest-manual.webp
+source: https://cdn.xanzhu.com/2026/utm-windows/spice-drivers.webp
 alt: 显示打开 CD Rom 的 Windows 文件资源管理器
 ---
 ::

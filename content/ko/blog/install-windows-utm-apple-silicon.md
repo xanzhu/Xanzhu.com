@@ -1,8 +1,8 @@
 ---
 title: "UTM으로 Apple Silicon에 Windows 11 설치하는 방법"
 description: "UTM을 사용하여 M1–M5 Mac에서 Windows 11을 실행하는 완전하고 업데이트된 가이드입니다. Microsoft 계정 요구 사항을 우회하고 일반적인 디스플레이 문제를 해결하는 방법을 알아보세요."
-date: "2025-12-23"
-updated: "2025-12-23"
+date: "2025-12-24"
+updated: "2025-12-24"
 tag: "가이드"
 toc: true
 feature: true
@@ -15,7 +15,7 @@ Apple Silicon에서 Windows를 실행하는 것이 점점 더 인기를 얻고 �
 이전 :PageLink{title="문서" url="/blog/windows-on-apple-silicon"}에서는 Apple Silicon에 Windows를 설정하는 기본 사항을 다뤘습니다.
 
 ::ArticleUpdates
-- **2025-12-23** - **연례 재출시**: 전체 기술 감사를 수행했습니다. Windows 11(24H2/25H2), UTM 4.7.5에 대한 모든 단계를 확인하고 업데이트했으며 새로운 로컬 계정 우회 방법을 추가했습니다.
+- **2025-12-24** - **연례 재출시**: 전체 기술 감사를 수행했습니다. Windows 11(24H2/25H2), UTM 4.7.5에 대한 모든 단계를 확인하고 업데이트했으며 새로운 로컬 계정 우회 방법을 추가했습니다.
 ::
 
 Apple Silicon에 Windows를 설치하는 대체 솔루션의 경우, 이러한 솔루션은 유료이며 비용 대비 더 나은 성능을 제공할 수 있습니다. :PageLink{title="Parallels Desktop" url="https://www.parallels.com/products/desktop/"} 또는 :PageLink{title="VMware Fusion" url="https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion"}을 확인하세요.
@@ -136,7 +136,7 @@ Apple Silicon의 효율성을 활용하려면 **Virtualise**를 선택하세요.
 
 ::media
 ---
-source: https://cdn.xanzhu.com/v1/m4-windows/utm-windows-os.webp
+source: https://cdn.xanzhu.com/2026/utm-windows/os-selection.webp
 alt: Windows, Linux 및 macOS 사이의 UTM 구성 OS 선택
 ---
 ::
@@ -173,7 +173,7 @@ alt: ISO 선택을 표시하는 UTM 구성 인터페이스
 
 ::media
 ---
-source: https://cdn.xanzhu.com/v1/m4-windows/utm-windows-complete.webp
+source: https://cdn.xanzhu.com/2026/utm-windows/complete-setup.webp
 alt: 완료된 UTM 구성
 ---
 ::
@@ -278,7 +278,7 @@ Spice Guest Tools 팝업 창이 표시되지 않으면 수동으로 실행할 �
 
 ::media
 ---
-source: https://cdn.xanzhu.com/v1/m4-windows/windows-spiceguest-manual.webp
+source: https://cdn.xanzhu.com/2026/utm-windows/spice-drivers.webp
 alt: CD Rom이 열린 Windows 파일 탐색기 표시
 ---
 ::
