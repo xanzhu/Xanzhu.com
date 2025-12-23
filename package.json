@@ -1,6 +1,6 @@
 {
   "name": "xanzhu.com",
-  "version": "2.2.15",
+  "version": "2.2.20",
   "private": true,
   "license": "MIT",
   "scripts": {
@@ -18,7 +18,7 @@
     "@nuxt/fonts": "^0.12.1",
     "@nuxt/icon": "^2.1.1",
     "@nuxt/image": "^2.0.0",
-    "@nuxt/scripts": "0.13.1",
+    "@nuxt/scripts": "0.13.2",
     "@nuxtjs/color-mode": "^4.0.0",
     "@nuxtjs/i18n": "^10.2.1",
     "@nuxtjs/sitemap": "^7.5.0",
