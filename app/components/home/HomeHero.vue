@@ -22,10 +22,10 @@ const { t } = useI18n()
         <Icon name="lucide:earth" class="h6 w6 text-inherit" aria-hidden="true" />
         <span>{{ t('home.hero.tagline') }}</span>
       </div>
-      <h1 id="hero" class="m0 mb10 max-w-[90%] max-w-4xl w-full text-5xl md:text-7xl">
+      <h1 id="hero" class="m0 max-w-4xl w-full text-5xl lg:text-8xl md:text-7xl">
         {{ t('home.hero.title') }}
       </h1>
-      <p class="mx-auto max-w-[90%] max-w-lg w-full bg-white text-sm text-neutral-600 dark:bg-element-dark md:text-lg dark:text-neutral-300">
+      <p class="mx-auto max-w-lg w-full bg-white text-sm text-neutral-600 dark:bg-element-dark md:text-lg dark:text-neutral-300">
         {{ t('home.hero.subHead') }}
       </p>
       <NuxtLinkLocale

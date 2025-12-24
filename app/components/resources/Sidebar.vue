@@ -11,25 +11,25 @@ const categories = computed(() => [
   {
     name: 'phishing',
     title: t('resources.category.phishing'),
-    icon: 'ion:fish',
+    icon: 'lucide:fish',
     description: t('resources.category.phishingDesc'),
   },
   {
     name: 'malware',
     title: t('resources.category.malware'),
-    icon: 'ri:bug-line',
+    icon: 'lucide:bug',
     description: t('resources.category.malwareDesc'),
   },
   {
     name: 'network-security',
     title: t('resources.category.networkSec'),
-    icon: 'ri:global-line',
+    icon: 'lucide:globe',
     description: t('resources.category.networkSecDesc'),
   },
   {
     name: 'privacy',
     title: t('resources.category.privacy'),
-    icon: 'ri:shield-line',
+    icon: 'lucide:shield',
     description: t('resources.category.privacyDesc'),
   },
 ])
