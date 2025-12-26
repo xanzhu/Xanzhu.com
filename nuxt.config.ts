@@ -1,7 +1,11 @@
 import process from 'node:process'
 
+const isDev = process.env.NODE_ENV === 'development'
+const siteUrl = 'https://xanzhu.com'
+const cdnUrl = 'https://cdn.xanzhu.com'
+
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  devtools: { enabled: isDev },
   modules: [
     '@nuxtjs/i18n',
     '@nuxtjs/sitemap',
@@ -28,7 +32,7 @@ export default defineNuxtConfig({
         // Open Graph
         { property: 'og:site_name', content: 'Xanzhu' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: 'https://xanzhu.com' },
+        { property: 'og:url', content: siteUrl },
         { property: 'og:logo', content: 'https://xanzhu.com/images/favicon/logo.png' },
         // Twitter
         { name: 'twitter:card', content: 'summary_large_image' },
@@ -39,7 +43,9 @@ export default defineNuxtConfig({
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico', sizes: '32x32' },
         { rel: 'icon', type: 'image/svg+xml', href: '/icon.svg', sizes: 'any' },
-        { rel: 'preconnect', href: 'https://cdn.xanzhu.com', crossorigin: 'anonymous' },
+        { rel: 'preconnect', href: cdnUrl, crossorigin: 'anonymous' },
+        // Fallback
+        { rel: 'dns-prefetch', href: cdnUrl },
       ],
     },
   },
@@ -97,6 +103,7 @@ export default defineNuxtConfig({
     ],
     xslTips: false,
     credits: false,
+    cacheMaxAgeSeconds: 3600,
   },
 
   routeRules: {
@@ -108,10 +115,20 @@ export default defineNuxtConfig({
     '**/blog/**': {
       isr: true,
     },
+    '/_nuxt/**': {
+      headers: {
+        'cache-control': 'public, max-age=31536000, immutable',
+      },
+    },
+    '/images/**': {
+      headers: {
+        'Cache-Control': 'public, max-age=86400, must-revalidate',
+      },
+    },
   },
 
   image: {
-    domains: ['cdn.xanzhu.com'],
+    domains: [cdnUrl],
   },
 
   content: {
@@ -121,9 +138,9 @@ export default defineNuxtConfig({
   // API
   runtimeConfig: {
     public: {
-      Version: '2.2.20',
+      version: '2.2.25',
       i18n: {
-        baseUrl: 'https://xanzhu.com',
+        baseUrl: siteUrl,
       },
     },
   },
@@ -134,6 +151,10 @@ export default defineNuxtConfig({
     mode: 'svg',
     clientBundle: {
       scan: true,
+      sizeLimitKb: 256,
+    },
+    serverBundle: {
+      collections: ['lucide', 'line-md'],
     },
   },
 
@@ -160,14 +181,14 @@ export default defineNuxtConfig({
         ],
         'style-src': [
           '\'self\'',
-          process.env.NODE_ENV === 'development' ? '\'unsafe-inline\'' : '\'nonce-{{nonce}}\'',
+          isDev ? '\'unsafe-inline\'' : '\'nonce-{{nonce}}\'',
           'https://*.xanzhu.com',
         ],
         'base-uri': '\'none\'',
         'img-src': [
           '\'self\'',
           'data:',
-          'https://cdn.xanzhu.com',
+          cdnUrl,
           'https://assets.lotofcarrots.com/media/home/section/desktop/4.webp',
           'https://storage.googleapis.com/gweb-uniblog-publish-prod/',
           'https://i.ytimg.com',
@@ -179,7 +200,7 @@ export default defineNuxtConfig({
           'https://www.apple.com/105/media/us/macbook-air-13-and-15/2023/f52c7a72-dff4-4f3c-9511-bf08e46c6f5f/anim/design/hero/medium_2x.mp4',
           'https://www.apple.com/105/media/us/macos/sonoma-preview/2023/e6d837c5-8a7e-49d8-b0bd-137b21320db3/anim/share-preview/large_2x.mp4',
         ],
-        'font-src': ['\'self\''],
+        'font-src': ['\'self\'', 'data:'],
         'object-src': ['\'none\''],
         'script-src-attr': ['\'none\''],
         'style-src-attr': ['\'unsafe-inline\''],
@@ -190,17 +211,17 @@ export default defineNuxtConfig({
           'https://*.xanzhu.workers.dev',
           'https://api.weatherapi.com',
           'https://api.iconify.design',
-          ...(process.env.NODE_ENV === 'development'
-            ? ['ws://localhost:4000']
+          ...(isDev
+            ? ['ws://localhost:4000', 'ws://localhost:24678']
             : []),
         ],
         'frame-src': [
           '\'self\'',
           'https://*.xanzhu.workers.dev',
           'https://www.youtube.com',
-          'https://youtube.com',
           'https://www.youtube-nocookie.com',
         ],
+        'upgrade-insecure-requests': !isDev,
       },
       strictTransportSecurity: {
         maxAge: 31536000,
@@ -216,16 +237,13 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2025-10-01',
 
-  sourcemap: false,
+  sourcemap: isDev,
 
   unocss: {
     disableNuxtInlineStyle: false,
     content: {
       pipeline: {
-        include: [
-          /\.(vue|ts)($|\?)/,
-          'content/**/*.md',
-        ],
+        include: [/\.(vue|ts|mdx?|html)($|\?)/],
       },
     },
   },
@@ -234,6 +252,8 @@ export default defineNuxtConfig({
     prerender: {
       crawlLinks: true,
     },
+    minify: true,
+    compressPublicAssets: true,
   },
 
   $env: {

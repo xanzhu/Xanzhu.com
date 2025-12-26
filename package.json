@@ -1,6 +1,6 @@
 {
   "name": "xanzhu.com",
-  "version": "2.2.21",
+  "version": "2.2.25",
   "private": true,
   "license": "MIT",
   "scripts": {
@@ -14,7 +14,7 @@
     "build:cf": "nuxt build --envName cloudflare"
   },
   "dependencies": {
-    "@nuxt/content": "^3.9.0",
+    "@nuxt/content": "^3.10.0",
     "@nuxt/fonts": "^0.12.1",
     "@nuxt/icon": "^2.1.1",
     "@nuxt/image": "^2.0.0",
@@ -32,13 +32,13 @@
     "@iconify-json/line-md": "^1.2.11",
     "@iconify-json/lucide": "^1.2.82",
     "@nuxt/devtools": "^3.1.1",
-    "@nuxt/hints": "1.0.0-alpha.4",
-    "@unocss/eslint-plugin": "^66.5.10",
-    "@unocss/nuxt": "^66.5.10",
-    "@unocss/preset-typography": "^66.5.10",
-    "@unocss/preset-wind3": "^66.5.10",
-    "@unocss/transformer-directives": "^66.5.10",
-    "@unocss/transformer-variant-group": "^66.5.10",
+    "@nuxt/hints": "1.0.0-alpha.5",
+    "@unocss/eslint-plugin": "^66.5.11",
+    "@unocss/nuxt": "^66.5.11",
+    "@unocss/preset-typography": "^66.5.11",
+    "@unocss/preset-wind3": "^66.5.11",
+    "@unocss/transformer-directives": "^66.5.11",
+    "@unocss/transformer-variant-group": "^66.5.11",
     "eslint": "^9.39.2",
     "eslint-plugin-format": "^1.1.0",
     "nitro-cloudflare-dev": "^0.2.2",
