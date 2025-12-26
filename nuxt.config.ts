@@ -276,10 +276,15 @@ export default defineNuxtConfig({
     },
   },
 
-  // Experimental - TODO Testing
+  // Experimental
   experimental: {
     extractAsyncDataHandlers: true,
-  //   viteEnvironmentApi: true,
+  },
+
+  vite: {
+    build: {
+      cssMinify: 'lightningcss',
+    },
   },
 
   future: {
