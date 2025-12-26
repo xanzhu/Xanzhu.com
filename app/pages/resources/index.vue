@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { Collections } from '@nuxt/content'
 
-const { locale, t } = useI18n()
+const { locale } = useI18n()
 
 const collection = computed(() => `resources_${locale.value}` as keyof Collections)
 
@@ -40,7 +40,7 @@ useLangMeta('seo.resources', seoImage)
         {{ pageIndex.description }}
       </p>
 
-      <p
+      <!-- <p
         v-if="pageIndex.date"
         class="mt-5 rounded-sm text-neutral-8"
         role="status"
@@ -50,7 +50,7 @@ useLangMeta('seo.resources', seoImage)
         <time :datetime="pageIndex.date">
           {{ t('resources.lastReviewed') }} {{ pageIndex.date }}
         </time>
-      </p>
+      </p> -->
 
       <ContentRenderer
         :value="pageIndex"

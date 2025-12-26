@@ -50,7 +50,7 @@ const config = useRuntimeConfig()
     </div>
     <div class="mt-6 flex flex-col items-center justify-between text-xs text-dark-200 md:flex-row dark:text-gray-300">
       <p>{{ t('footer.rights') }}</p>
-      <p>{{ t('footer.version') }}: {{ config.public.Version }}</p>
+      <p>{{ t('footer.version') }}: {{ config.public.version }}</p>
     </div>
   </footer>
 </template>
