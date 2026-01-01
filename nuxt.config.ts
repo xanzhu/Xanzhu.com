@@ -119,7 +119,7 @@ export default defineNuxtConfig({
     },
     '/_nuxt/**': {
       headers: {
-        'cache-control': 'public, max-age=31536000, immutable',
+        'Cache-Control': 'public, max-age=31536000, immutable',
       },
     },
     '/images/**': {

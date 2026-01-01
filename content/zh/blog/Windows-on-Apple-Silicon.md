@@ -23,7 +23,7 @@ alt: "2023 年 Macbook Pro 黑色版显示三种新芯片组的图标"
 下载次数：
 
 - :PageLink{title="UTM 网站" url="https://mac.getutm.app/"}
-- :PageLink{title="UTM Github" url="https://github.com/utmapp/UTM/releases"}
+- :PageLink{title="UTM GitHub" url="https://github.com/utmapp/UTM/releases"}
 - :PageLink{title="CrystalFetch" url="https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12"}
 
 先决条件：
@@ -34,7 +34,7 @@ alt: "2023 年 Macbook Pro 黑色版显示三种新芯片组的图标"
 
 ## 安装 UTM
 
-- 从 :PageLink{title="官方网站" url="https://mac.getutm.app/"} 下载 UTM 或从 :PageLink{title="Github" url="https://github.com/utmapp/UTM/releases"}
+- 从 :PageLink{title="官方网站" url="https://mac.getutm.app/"} 下载 UTM 或从 :PageLink{title="GitHub" url="https://github.com/utmapp/UTM/releases"}
 
 <i>注意：UTM 也可以在应用商店中使用，尽管这是提供更新的付费选项，但与上述两个选项一样，任何更新都需要手动下载。</i>
 

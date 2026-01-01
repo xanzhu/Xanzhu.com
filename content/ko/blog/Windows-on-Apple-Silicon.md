@@ -23,7 +23,7 @@ alt: "3가지 새로운 칩셋의 아이콘을 표시하는 2023년 Macbook Pro 
 다운로드:
 
 - :PageLink{title="UTM 웹사이트" url="https://mac.getutm.app/"}
-- :PageLink{title="UTM Github" url="https://github.com/utmapp/UTM/releases"}
+- :PageLink{title="UTM GitHub" url="https://github.com/utmapp/UTM/releases"}
 - :PageLink{title="CrystalFetch" url="https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12"}
 
 전제 조건:
@@ -34,7 +34,7 @@ alt: "3가지 새로운 칩셋의 아이콘을 표시하는 2023년 Macbook Pro 
 
 ## UTM 설치하기
 
-- :PageLink{title="공식 웹사이트" url="https://mac.getutm.app/"} 에서 UTM을 다운로드하거나 :PageLink{title="Github" url="https://github.com/utmapp/UTM/releases"}
+- :PageLink{title="공식 웹사이트" url="https://mac.getutm.app/"} 에서 UTM을 다운로드하거나 :PageLink{title="GitHub" url="https://github.com/utmapp/UTM/releases"}
 
 <i>참고: UTM은 앱 스토어에서도 사용할 수 있습니다. 단, UTM은 업데이트를 제공하는 유료 옵션이므로 위의 두 가지 옵션처럼 모든 업데이트를 수동으로 다운로드해야 합니다.</i>
 

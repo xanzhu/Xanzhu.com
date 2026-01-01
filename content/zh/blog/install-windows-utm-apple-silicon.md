@@ -31,7 +31,7 @@ UTM 是一款适用于 macOS 的免费开源虚拟化工具，设计简单易用
 
 ## UTM 下载
 
-从 :PageLink{title="UTM Github 发布页面" url="https://github.com/utmapp/UTM/releases"} 下载 UTM 版本 4.7.5。之前的 4.x.x 版本也应该可以使用。
+从 :PageLink{title="UTM GitHub 发布页面" url="https://github.com/utmapp/UTM/releases"} 下载 UTM 版本 4.7.5。之前的 4.x.x 版本也应该可以使用。
 
 可以通过 :PageLink{title="App Store 版本" url="https://apps.apple.com/us/app/utm-virtual-machines/id1538878817"} 获得 UTM 的自动更新，但这是付费选项。或者，使用 GitHub 版本并根据需要手动更新。
 
@@ -48,7 +48,7 @@ alt: 显示 CrystalFetch 应用程序的 Apple App Store
 
 从 :PageLink{title="App Store" url="https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12"} 下载 CrystalFetch 版本 2.2.0。此选项是免费的，并提供自动更新。
 
-或者，从 :PageLink{title="CrystalFetch Github 发布页面" url="https://github.com/TuringSoftware/CrystalFetch/releases"} 下载最新版本。这需要手动更新，但可能在正式发布之前提供更新的功能以及潜在的错误修复。
+或者，从 :PageLink{title="CrystalFetch GitHub 发布页面" url="https://github.com/TuringSoftware/CrystalFetch/releases"} 下载最新版本。这需要手动更新，但可能在正式发布之前提供更新的功能以及潜在的错误修复。
 
 将 CrystalFetch 拖到您的"应用程序"文件夹中，并验证它是否正常打开。
 
@@ -230,7 +230,7 @@ alt: 从 ISO 安装 Windows 设置
 3. 如果需要，添加第二个键盘；否则，按 **Skip** 继续。
 4. Windows 将检查更新并可能重新启动虚拟机。
 
-如果 Windows 要求互联网连接才能继续但找不到连接，请使用下面"问题"部分中提到的 Shift + F10 绕过方法，以继续进行有限的设置。
+如果 Windows 要求互联网连接才能继续但找不到连接，请使用下面"问题"部分中提到的 Shift + F10 绕过方法，以继续进行有限地设置。
 
 5. 输入名称，然后按 **Next**。
 6. 输入密码或将其留空，然后按 **Next**。
@@ -349,7 +349,8 @@ alt: 显示 Display output is not active 消息的窗口
 
 1. 按 **Shift + F10**（注意：您可能需要在 Mac 键盘上按住 Fn 键）
 2. 在命令提示符窗口中，输入以下内容并按 Enter：
-```
+
+```cmd
 OOBE\BYPASSNRO
 ```
 
@@ -362,7 +363,8 @@ OOBE\BYPASSNRO
 
 1. 按 **Shift + F10**（或 **Fn Shift + F10**）打开命令提示符
 2. 输入以下命令：
-```
+
+```cmd
 start ms-cxh:localonly
 ```
 

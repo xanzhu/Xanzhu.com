@@ -50,7 +50,7 @@ const sortedLocales = computed(() => {
             :prefetch="false"
             :aria-current="activeLocale.value === locale.code ? 'true' : undefined"
             :class="[
-              activeLocale === locale.code
+              activeLocale.value === locale.code
                 ? '!dark:(bg-white text-black) text-white bg-black pointer-events-none'
                 : 'text-black dark:text-inherit hover:bg-gray200 dark:hover:bg-dark-600',
             ]"

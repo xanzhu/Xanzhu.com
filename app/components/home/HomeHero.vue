@@ -7,7 +7,6 @@ const { t } = useI18n()
     <div
       class="hidden md:(absolute inset-0 z-0 flex items-center justify-center)"
       aria-hidden="true"
-      role="presentation"
     >
       <UiSvg load-s-v-g="beta02" class="h-80% w-full object-cover" />
     </div>

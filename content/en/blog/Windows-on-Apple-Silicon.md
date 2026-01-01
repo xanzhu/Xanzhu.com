@@ -23,7 +23,7 @@ This is an updated version from our :PageLink{title="previous article" url="/blo
 Downloads:
 
 - :PageLink{title="UTM Website" url="https://mac.getutm.app/"}
-- :PageLink{title="UTM Github" url="https://github.com/utmapp/UTM/releases"}
+- :PageLink{title="UTM GitHub" url="https://github.com/utmapp/UTM/releases"}
 - :PageLink{title="CrystalFetch" url="https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12"}
 
 Prerequisites:
@@ -34,7 +34,7 @@ Prerequisites:
 
 ## Installing UTM
 
-- Download UTM from their :PageLink{title="Offical website" url="https://mac.getutm.app/"} or the latest version from :PageLink{title="Github" url="https://github.com/utmapp/UTM/releases"}
+- Download UTM from their :PageLink{title="Offical website" url="https://mac.getutm.app/"} or the latest version from :PageLink{title="GitHub" url="https://github.com/utmapp/UTM/releases"}
 
 <i>Note: UTM is also available on the app store though this is paid option offering updates where as the above two options any updates need to be downloaded manually.</i>
 

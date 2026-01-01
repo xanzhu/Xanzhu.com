@@ -40,18 +40,6 @@ useLangMeta('seo.resources', seoImage)
         {{ pageIndex.description }}
       </p>
 
-      <!-- <p
-        v-if="pageIndex.date"
-        class="mt-5 rounded-sm text-neutral-8"
-        role="status"
-        aria-live="polite"
-      >
-        <span class="sr-only">{{ t('resources.lastReviewed') }}:</span>
-        <time :datetime="pageIndex.date">
-          {{ t('resources.lastReviewed') }} {{ pageIndex.date }}
-        </time>
-      </p> -->
-
       <ContentRenderer
         :value="pageIndex"
         class="max-w-none prose"

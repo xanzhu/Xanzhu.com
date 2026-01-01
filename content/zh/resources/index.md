@@ -1,7 +1,6 @@
 ---
 title: 安全工具包
 description: 一套全面的免费安全工具、教育资源和报告平台，旨在帮助您保护您的数字安全。
-date: 2024-11-05
 ---
 
 ## 网络钓鱼
@@ -18,7 +17,7 @@ date: 2024-11-05
 
 快速举报钓鱼网站链接
 
-- :PageLink{title="Google 安全浏览" url="https://getaegis.app/"} 向 Google 安全浏览举报可疑网站
+- :PageLink{title="Google 安全浏览" url="https://safebrowsing.google.com/safebrowsing/report-url"} 向 Google 安全浏览举报可疑网站
 
 - :PageLink{title="Microsoft 安全情报" url="https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest"} 微软用于举报钓鱼网站和恶意 URL 的平台
 

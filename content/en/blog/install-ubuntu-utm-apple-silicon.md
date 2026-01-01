@@ -28,7 +28,7 @@ Our :PageLink{title="previous article" url="/blog/apple-silicon-virtual-machine-
 
 ## UTM Download
 
-Download UTM version 4.6.5 from the :PageLink{title="UTM Github releases page" url="https://github.com/utmapp/UTM/releases"} Previous 4.x.x versions should also work.
+Download UTM version 4.6.5 from the :PageLink{title="UTM GitHub releases page" url="https://github.com/utmapp/UTM/releases"} Previous 4.x.x versions should also work.
 
 Automatic updates are available for UTM via the :PageLink{title="App Store Version" url="https://apps.apple.com/us/app/utm-virtual-machines/id1538878817"} though this version is paid.
 

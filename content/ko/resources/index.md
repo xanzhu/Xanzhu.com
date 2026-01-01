@@ -1,7 +1,6 @@
 ---
 title: 보안 툴킷
 description: 디지털 자산을 보호하는 데 도움이 되는 무료 보안 도구, 교육 자료 및 보고 플랫폼의 포괄적인 모음입니다.
-date: "2024-11-05"
 ---
 
 ## 피싱
@@ -13,7 +12,7 @@ date: "2024-11-05"
 - :PageLink{title="OpenPhish" url="https://openphish.com/"} 자동 피싱 탐지 및 인텔리전스 피드 서비스입니다.
 
 피싱 신고를 위한 빠른 링크
-- :PageLink{title="Google Safe Browsing" url="https://getaegis.app/"} 의심스러운 웹사이트를 Google Safe Browsing에 신고합니다.
+- :PageLink{title="Google Safe Browsing" url="https://safebrowsing.google.com/safebrowsing/report-url"} 의심스러운 웹사이트를 Google Safe Browsing에 신고합니다.
 - :PageLink{title="Microsoft Security Intelligence" url="https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest"} 피싱 및 악성 URL 신고를 위한 Microsoft 플랫폼입니다.
 
 ## 맬웨어 분석
