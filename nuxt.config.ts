@@ -140,7 +140,7 @@ export default defineNuxtConfig({
   // API
   runtimeConfig: {
     public: {
-      version: '2.2.29',
+      version: '2.2.30',
       i18n: {
         baseUrl: siteUrl,
       },
