@@ -1,6 +1,6 @@
 {
   "name": "xanzhu.com",
-  "version": "2.0.70",
+  "version": "2.2.29",
   "private": true,
   "license": "MIT",
   "scripts": {
@@ -14,34 +14,37 @@
     "build:cf": "nuxt build --envName cloudflare"
   },
   "dependencies": {
-    "@nuxt/content": "^3.7.1",
-    "@nuxt/fonts": "^0.11.4",
-    "@nuxt/icon": "^2.1.0",
-    "@nuxt/image": "^1.11.0",
-    "@nuxt/scripts": "0.13.0",
-    "@nuxtjs/color-mode": "^3.5.2",
-    "@nuxtjs/i18n": "^10.1.2",
-    "@nuxtjs/sitemap": "^7.4.7",
-    "@unhead/vue": "^2.0.3",
-    "nuxt": "^4.2.0",
-    "nuxt-security": "^2.4.0",
-    "vue": "^3.5.22",
-    "vue-router": "^4.6.3",
-    "wrangler": "^4.45.0"
+    "@nuxt/content": "^3.10.0",
+    "@nuxt/fonts": "^0.12.1",
+    "@nuxt/icon": "^2.1.1",
+    "@nuxt/image": "^2.0.0",
+    "@nuxt/scripts": "0.13.2",
+    "@nuxtjs/color-mode": "^4.0.0",
+    "@nuxtjs/i18n": "^10.2.1",
+    "@nuxtjs/sitemap": "^7.5.0",
+    "nuxt": "^4.2.2",
+    "nuxt-security": "^2.5.0",
+    "vue": "^3.5.26",
+    "vue-router": "^4.6.4"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^6.1.0",
-    "@iconify-json/line-md": "^1.2.11",
-    "@iconify-json/lucide": "^1.2.71",
-    "@nuxt/devtools": "^2.7.0",
-    "@unocss/eslint-plugin": "^66.5.4",
-    "@unocss/nuxt": "^66.5.4",
-    "@unocss/preset-typography": "^66.5.4",
-    "@unocss/preset-wind3": "^66.5.4",
-    "@unocss/transformer-directives": "^66.5.4",
-    "@unocss/transformer-variant-group": "^66.5.4",
-    "eslint": "^9.38.0",
-    "eslint-plugin-format": "^1.0.2",
-    "nitro-cloudflare-dev": "^0.2.2"
-  }
+    "@antfu/eslint-config": "^6.7.3",
+    "@iconify-json/line-md": "^1.2.12",
+    "@iconify-json/lucide": "^1.2.82",
+    "@nuxt/devtools": "^3.1.1",
+    "@nuxt/hints": "1.0.0-alpha.5",
+    "@unocss/eslint-plugin": "^66.5.12",
+    "@unocss/nuxt": "^66.5.12",
+    "@unocss/preset-typography": "^66.5.12",
+    "@unocss/preset-wind3": "^66.5.12",
+    "@unocss/transformer-directives": "^66.5.12",
+    "@unocss/transformer-variant-group": "^66.5.12",
+    "eslint": "^9.39.2",
+    "eslint-plugin-format": "^1.1.0",
+    "nitro-cloudflare-dev": "^0.2.2",
+    "wrangler": "^4.56.0"
+  },
+  "trustedDependencies": [
+    "@parcel/watcher"
+  ]
 }

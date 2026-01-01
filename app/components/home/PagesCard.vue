@@ -3,18 +3,18 @@ const { t } = useI18n()
 const pages = [
   {
     path: '/resources',
-    title: t('Links.resources'),
-    description: t('pageCard.tools'),
+    title: t('nav.resources'),
+    description: t('home.pages.tools'),
   },
   {
     path: '/blog',
-    title: t('Links.blog'),
-    description: t('pageCard.article'),
+    title: t('nav.blog'),
+    description: t('home.pages.article'),
   },
   {
     path: '/analysis',
-    title: t('Links.analysis'),
-    description: t('pageCard.caseStudy'),
+    title: t('nav.analysis'),
+    description: t('home.pages.caseStudy'),
   },
 ]
 </script>

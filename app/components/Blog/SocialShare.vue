@@ -10,60 +10,102 @@ const props = defineProps<{
 
 const { t } = useI18n()
 const config = useRuntimeConfig()
-const baseUrl = computed(() => config.public.i18n.baseUrl)
 
-const encodedPath = computed(() => encodeURIComponent(props.post.path || ''))
+const copied = ref(false)
+
+const fullUrl = computed(() => {
+  const base = (config.public.i18n.baseUrl || '').replace(/\/$/, '')
+  return `${base}${props.post.path || ''}`
+})
+
+// Simple Copy Link
+async function copyLink() {
+  try {
+    await navigator.clipboard.writeText(fullUrl.value)
+    copied.value = true
+    setTimeout(() => {
+      copied.value = false
+    }, 2000)
+  }
+  catch (err) {
+    console.error('Failed to copy: ', err)
+  }
+}
+
+// Pre-encode values
+const encodedUrl = computed(() => encodeURIComponent(fullUrl.value))
 const encodedTitle = computed(() => encodeURIComponent(props.post.title))
 
 const socials = computed(() => [
   {
-    url: `https://twitter.com/intent/tweet?url=${baseUrl.value}${encodedPath.value}&text=${encodedTitle.value}&via=Xanzhu1`,
-    icon: 'line-md:twitter-x',
-    aria: t('share.twitter'),
+    name: 'twitter',
+    url: `https://twitter.com/intent/tweet?url=${encodedUrl.value}&text=${encodedTitle.value}&via=Xanzhu1`,
+    icon: 'ri:twitter-x-line',
   },
   {
-    url: `https://www.facebook.com/sharer/sharer.php?u=${baseUrl.value}${encodedPath.value}`,
-    icon: 'line-md:facebook',
-    aria: t('share.facebook'),
+    name: 'bluesky',
+    url: `https://bsky.app/intent/compose?text=${encodedTitle.value}%20${encodedUrl.value}`,
+    icon: 'ri:bluesky-fill',
   },
   {
-    url: `https://threads.net/intent/post?text=${encodedTitle.value}%20${baseUrl.value}${encodedPath.value}`,
-    icon: 'line-md:instagram',
-    aria: t('share.threads'),
+    name: 'threads',
+    url: `https://threads.net/intent/post?text=${encodedTitle.value}%20${encodedUrl.value}`,
+    icon: 'ri:threads-line',
   },
   {
-    url: `https://t.me/share/url?url=${baseUrl.value}${encodedPath.value}&text=${encodedTitle.value}`,
-    icon: 'line-md:telegram',
-    aria: t('share.telegram'),
+    name: 'linkedin',
+    url: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl.value}`,
+    icon: 'ri:linkedin-fill',
   },
   {
-    url: `https://www.linkedin.com/shareArticle?url=${baseUrl.value}${encodedPath.value}&title=${encodedTitle.value}`,
-    icon: 'line-md:linkedin',
-    aria: t('share.linkedin'),
+    name: 'reddit',
+    url: `https://www.reddit.com/submit?url=${encodedUrl.value}&title=${encodedTitle.value}`,
+    icon: 'ri:reddit-fill',
   },
   {
-    url: `mailto:?subject=${encodedTitle.value}&body=${encodeURIComponent(`${t('email.share')}: ${props.post.title}`)}`,
-    icon: 'line-md:email',
-    aria: t('share.email'),
-  },
-  {
-    url: `https://www.reddit.com/submit?url=${baseUrl.value}${encodedPath.value}&title=${encodedTitle.value}`,
-    icon: 'line-md:reddit',
-    aria: t('share.reddit'),
+    name: 'email',
+    url: `mailto:?subject=${encodedTitle.value}&body=${encodeURIComponent(t('ui.sharing.email'))}: ${encodedUrl.value}`,
+    icon: 'ri:mail-open-fill',
   },
 ])
 </script>
 
 <template>
-  <div class="mx-auto inline-flex core-border rounded-full core-theme px3 pb1 pt2 space-x-2">
-    <div v-for="social in socials" :key="social.url" class="children:(text-black dark:text-white)">
-      <NuxtLink
-        :to="social.url" target="_blank" rel="noopener noreferrer"
-        class="p1 op90 hover:text-brand-light dark:hover:text-brand-dark"
-      >
-        <Icon :name="social.icon" class="h5 w5" />
-        <span class="sr-only">{{ social.aria }}</span>
-      </NuxtLink>
-    </div>
+  <div
+    class="mx-auto inline-flex items-center gap-1 core-border rounded-full core-theme px-3 py-1.5"
+    role="group"
+    :aria-label="t('ui.sharing.title')"
+  >
+    <NuxtLink
+      v-for="social in socials"
+      :key="social.name"
+      :to="social.url"
+      target="_blank"
+      rel="noopener noreferrer"
+      :title="t(`ui.sharing.${social.name}`)"
+      class="group p-1.5 text-black transition-all duration-200 dark:text-white hover:-translate-y-0.5"
+    >
+      <Icon
+        :name="social.icon"
+        class="h-5 w-5 opacity-80 transition-colors group-hover:text-brand-light group-hover:opacity-100 dark:group-hover:text-brand-dark"
+      />
+      <span class="sr-only">{{ t(`ui.sharing.${social.name}`) }}</span>
+    </NuxtLink>
+
+    <div class="mx-1 h-4 w-px bg-gray-300 dark:bg-dark-400" aria-hidden="true" />
+
+    <button
+      type="button"
+      :title="t('ui.sharing.copy')"
+      class="group cursor-pointer rounded-md border-none bg-transparent p-1.5 text-inherit transition-all duration-200 hover:-translate-y-0.5"
+      @click="copyLink"
+    >
+      <Icon
+        :name="copied ? 'ri:check-line' : 'ri:link'"
+        class="h-5 w-5 transition-colors"
+        :class="copied ? 'text-green-500' : 'opacity-80 group-hover:opacity-100 group-hover:text-brand-light dark:group-hover:text-brand-dark'"
+      />
+      <span class="sr-only">{{ copied ? t('ui.sharing.copied') : t('ui.sharing.copy') }}</span>
+    </button>
   </div>
 </template>

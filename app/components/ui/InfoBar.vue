@@ -3,23 +3,31 @@ const { locale, t } = useI18n()
 const route = useRoute()
 
 const disablePath = computed(() => {
-  const paths = ['/', '/ko', '/zh']
-  return paths.includes(route.path)
+  const path = route.path.replace(/\/$/, '') || '/'
+  return path === '/' || path === `/${locale.value}`
+})
+
+const now = ref(new Date())
+
+const accessibleDateLabel = computed(() => {
+  const formatter = new Intl.DateTimeFormat(locale.value, { dateStyle: 'full' })
+  return t('ui.globalDate', { date: formatter.format(now.value) })
 })
 </script>
 
 <template>
   <nav
     v-if="!disablePath"
-    :aria-label="t('v2.ui.breadCrumbs')"
+    :aria-label="t('ui.breadCrumbs')"
     class="z-10 flex flex-col items-center justify-between bg-transparent py-4 text-sm text-inherit font-normal md:(flex-row px-9 py-2 space-y-0) sm:(flex-row px-6 py-2) space-y-2 2xl:px-43 xl:px-30"
   >
     <UiBreadcrumbs />
+
     <NuxtTime
       :key="locale"
-      :datetime="new Date()"
+      :datetime="now"
       :locale="locale"
-      :aria-label="t('v2.ui.globalDate')"
+      :aria-label="accessibleDateLabel"
       weekday="long"
       month="long"
       day="numeric"

@@ -9,8 +9,8 @@ alt: "Apple Silicon Chipset M1"
 toc: true
 ---
 
-::alert
-Installation for Windows 11 has changed slightly check out the :PageLink{title="Updated Guide" url="/blog/install-windows-utm-apple-silicon"}
+::ArticleUpdates
+- **2026-01-01** – Installation for Windows 11 has changed see the [Updated guide](/blog/install-windows-utm-apple-silicon).
 ::
 
 If you're a developer or tech enthusiast, you may need to use multiple operating systems for projects or personal use.

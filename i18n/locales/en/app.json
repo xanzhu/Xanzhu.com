@@ -1,0 +1,90 @@
+{
+  "seo": {
+    "home": {
+      "title": "Privacy, Security & Tech Guides",
+      "desc": "Master your digital privacy. Expert security tips, tech trends, and actionable guides to help you navigate the modern web safely."
+    },
+    "blog": {
+      "title": "Tech & Security Insights: Latest Guides and News",
+      "desc": "Stay informed with Xanzhu's latest insights. Detailed guides and reviews on privacy, data protection, and modern security trends."
+    },
+    "resources": {
+      "title": "Security Toolkit: 2025 Essentials",
+      "desc": "Our curated list of essential security tools. From phishing protection to malware reporting, find the best services to protect your digital life."
+    },
+    "analysis": {
+      "title": "Cyber Analysis & Case Studies",
+      "desc": "Deep-dive cybersecurity analysis. Explore trending threats, expert insights, and real-world case studies in digital security."
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Privacy and Security for the Modern Web",
+      "subHead": "Expert guides and open-source tools designed to protect your privacy, secure your data, and make technology accessible for everyone.",
+      "tagline": "Open, Secure and Accessible",
+      "action": "See What's New"
+    },
+    "feature": {
+      "title": "Latest Insights",
+      "subHead": "A curated selection of our latest tech guides, privacy tips, and security insights.",
+      "action": "View All Posts"
+    },
+    "pages": {
+      "article": "Stay ahead of the curve with our latest insights on emerging security trends and digital best practices.",
+      "caseStudy": "Go behind the scenes with technical write-ups and deep-dives into real-world security incidents.",
+      "tools": "Explore our curated collection of free resources to audit, improve, and maintain your online safety."
+    },
+    "stats": {
+      "recent": {
+        "crowdStrike": "8.5M Systems Crashed",
+        "latitude": "14M Records",
+        "optus": "10M Customers Impacted",
+        "title": "Recent Attacks"
+      },
+      "regional": {
+        "dataBreach": "Data Breaches",
+        "phish": "Phishing Attacks",
+        "ransomware": "Ransomware and Cyber Extortion",
+        "supplyChain": "Supply Chain Vulnerabilities",
+        "takeOver": "Account Compromises",
+        "title": "Top Security Threats"
+      },
+      "source": "Data sourced from public breach notifications and security reports. Numbers represent approximate affected users/records.",
+      "title": "ANZ Cyber Threats 2024"
+    }
+  },
+  "blog": {
+    "h1": "Discover the Latest Insights",
+    "desc": "News, guides and reviews on technology, how to use it and how to ensure your data remains protected online",
+    "toc": "Table of Contents",
+    "article": {
+      "changelog": "Update History",
+      "videoIframe": "Youtube Video",
+      "videoClick": "Click to Play Video"
+    }
+  },
+  "resources": {
+    "lastReviewed": "Last Reviewed: ",
+    "category": {
+      "privacy": "Privacy",
+      "networkSec": "Network Security",
+      "malware": "Malware Analysis",
+      "phishing": "Phishing",
+      "back": "Back to Resources",
+      "phishingDesc": "Learn about phishing attacks and prevention strategies.",
+      "malwareDesc": "Discover malware detection and removal resources.",
+      "networkSecDesc": "Explore network security tools and best practices.",
+      "privacyDesc": "Access privacy tools and detailed guides."
+    },
+    "subHead": "Categories",
+    "skipToMain": "Skip to main content",
+    "pageLoaded": "Page Loaded",
+    "helpfulGuides": "Helpful Guides",
+    "currentPage": "Current Page"
+  },
+  "alert": {
+    "feature": "Feature Preview",
+    "maintenance": "This page is currently under construction and may look a little different when it's finished.",
+    "view": "View latest version"
+  }
+}

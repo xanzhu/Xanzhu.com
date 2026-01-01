@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "home": "Home",
+    "blog": "Blog",
+    "analysis": "Analysis",
+    "resources": "Resources",
+    "about": "About",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "footer": {
+    "rights": "© 2020-2026 Xanzhu. All rights reserved.",
+    "version": "Version",
+    "category": {
+      "community": "Community",
+      "latest": "Latest",
+      "resources": "Resources",
+      "legal": "Legal",
+      "company": "Company"
+    },
+    "items": {
+      "terms": "Terms",
+      "tools": "Tools",
+      "privacy": "Privacy",
+      "github": "Github",
+      "twitter": "Twitter/X"
+    }
+  },
+  "ui": {
+    "lang": {
+      "current": "Current",
+      "select": "Select Language",
+      "switch": "Switch to"
+    },
+    "colorMode": {
+      "dark": "Switch to dark mode",
+      "light": "Switch to light mode"
+    },
+    "scrollTop": "Back to Top",
+    "breadCrumbs": "Breadcrumb Navigation",
+    "pagination": {
+      "prev": "Previous",
+      "next": "Next"
+    },
+    "sharing": {
+      "copy": "Copy Link",
+      "copied": "Copied",
+      "title": "Share this article!",
+      "email": "Share this page via email",
+      "facebook": "Share this on Facebook",
+      "linkedin": "Share this on LinkedIn",
+      "reddit": "Share this on Reddit",
+      "threads": "Share this on Threads",
+      "twitter": "Share this on Twitter",
+      "bluesky": "Share this on Bluesky"
+    },
+    "content": {
+      "lastUpdated": "Last Updated",
+      "readTime": "{count} min read | {count} mins read",
+      "source": "Source"
+    },
+    "globalDate": "Current Date: {date}",
+    "menu": "Main Menu"
+  },
+  "error": {
+    "404": {
+      "h1": "Hmm... Where Did That Page Go?",
+      "p": "Sorry, the link's broken or the page moved somewhere else.",
+      "goBack": "Return Home"
+    },
+    "500": {
+      "h1": "The Server's Taking a Coffee Break...",
+      "p": "Something isn't working right now. Please try again soon.",
+      "goBack": "Try Again"
+    },
+    "blog": {
+      "notFound": "No posts available."
+    }
+  },
+  "aria": {
+    "error_code_prefix": "Error Code: ",
+    "lang_selector": "Language Selector",
+    "lang_selected": "Selected Language: ",
+    "main_nav": "Main Navigation",
+    "open_menu": "Open Menu",
+    "close_menu": "Close Menu",
+    "open_new_tab": "Opens in a new tab"
+  }
+}

@@ -13,14 +13,13 @@ const contentString = JSON.stringify(props.content)
   .trim()
 
 const words = contentString.split(' ').filter(Boolean).length
-const readingTime = ref(Math.ceil(words / wordsPerMinute))
+const readingTime = Math.ceil(words / wordsPerMinute)
 </script>
 
 <template>
-  <div class="flex space-x-1">
+  <div class="flex items-center gap-1">
     <p class="m0">
-      {{ readingTime }}
+      {{ t("ui.content.readTime", { count: readingTime }) }}
     </p>
-    <span>{{ t("v2.blog.readTime") }}</span>
   </div>
 </template>

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 defineProps({
-  source: { type: String },
+  source: { type: String, required: true },
   credit: { type: String },
   alt: { type: String },
 })
@@ -17,7 +17,7 @@ const { t } = useI18n()
       />
     </div>
     <figcaption v-if="credit" class="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
-      {{ `${t('Blog.source')}: ${credit}` }}
+      {{ `${t('ui.content.source')}: ${credit}` }}
     </figcaption>
   </figure>
 </template>

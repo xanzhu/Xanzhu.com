@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const seoImage = 'https://images.pexels.com/photos/5708251/pexels-photo-5708251.jpeg'
-useLangMeta('Home.Seo', seoImage, 'prefix')
+useLangMeta('seo.home', seoImage, 'prefix')
 
 // URL Validation | Redirection for "/?<example>" (Temp Fix)
 definePageMeta({
@@ -21,7 +21,7 @@ definePageMeta({
     <section class="hidden lg:(mb24 inline-flex justify-center)">
       <LazyHomeBrandList />
     </section>
-    <LazyHomeBlogFeature class="mb32 core-border rounded-md" />
+    <LazyHomeFeature class="mb32 core-border rounded-md" />
     <section aria-labelledby="pages-card" class="mb32">
       <LazyHomePagesCard />
     </section>

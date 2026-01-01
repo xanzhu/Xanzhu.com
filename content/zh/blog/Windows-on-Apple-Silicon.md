@@ -16,6 +16,10 @@ alt: "2023 年 Macbook Pro 黑色版显示三种新芯片组的图标"
 
 这是我们年初的 :PageLink{title="上一篇文章" url="/zh/blog/apple-silicon-virtual-machine-setup"} 的更新版本，其中我们介绍了使用 UTM 和 Parallels 安装 Windows。 从那时起，这个过程变得更加容易和可靠！
 
+::ArticleUpdates
+- **2026年1月1日** – Windows 11 的安装过程已更改。请参阅[更新后的指南](/zh/blog/install-windows-utm-apple-silicon)。
+::
+
 下载次数：
 
 - :PageLink{title="UTM 网站" url="https://mac.getutm.app/"}
