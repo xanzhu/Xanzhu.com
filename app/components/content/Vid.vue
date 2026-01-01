@@ -1,6 +1,6 @@
 <script setup lang="ts">
 defineProps({
-  source: { type: String },
+  source: { type: String, required: true },
   credit: { type: String },
   thumbnail: { type: String },
 })
