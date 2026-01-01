@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "home": "홈",
+    "blog": "블로그",
+    "analysis": "분석",
+    "resources": "리소스",
+    "about": "소개",
+    "privacy": "개인정보 처리방침",
+    "terms": "이용약관"
+  },
+  "footer": {
+    "rights": "© 2020-2026 Xanzhu. 모든 권리 보유.",
+    "version": "버전",
+    "category": {
+      "community": "커뮤니티",
+      "latest": "최신 소식",
+      "resources": "리소스",
+      "legal": "법적 고지",
+      "company": "회사"
+    },
+    "items": {
+      "terms": "약관",
+      "tools": "도구",
+      "privacy": "개인정보",
+      "github": "깃허브",
+      "twitter": "트위터/X"
+    }
+  },
+  "ui": {
+    "lang": {
+      "current": "현재 언어",
+      "select": "언어 선택",
+      "switch": "언어 변경:"
+    },
+    "colorMode": {
+      "dark": "다크 모드로 전환",
+      "light": "라이트 모드로 전환"
+    },
+    "scrollTop": "맨 위로 이동",
+    "breadCrumbs": "브레드크럼 네비게이션",
+    "pagination": {
+      "prev": "이전",
+      "next": "다음"
+    },
+    "sharing": {
+      "copy": "링크 복사",
+      "copied": "복사 완료",
+      "title": "이 기사를 공유하세요!",
+      "email": "이메일로 공유",
+      "facebook": "페이스북에 공유",
+      "linkedin": "링크드인에 공유",
+      "reddit": "레딧에 공유",
+      "threads": "스레드에 공유",
+      "twitter": "트위터에 공유",
+      "bluesky": "블루스카이에 공유"
+    },
+    "content": {
+      "lastUpdated": "최종 업데이트",
+      "readTime": "{count}분 읽기",
+      "source": "출처"
+    },
+    "globalDate": "현재 날짜: {date}",
+    "menu": "메인 메뉴"
+  },
+  "error": {
+    "404": {
+      "h1": "음... 이 페이지는 어디로 갔을까요?",
+      "p": "죄송합니다. 링크가 끊어졌거나 페이지가 이동되었습니다.",
+      "goBack": "홈으로 돌아가기"
+    },
+    "500": {
+      "h1": "서버가 잠시 쉬고 있습니다...",
+      "p": "현재 문제가 발생했습니다. 잠시 후 다시 시도해 주세요.",
+      "goBack": "다시 시도"
+    },
+    "blog": {
+      "notFound": "게시물이 없습니다."
+    }
+  },
+  "aria": {
+    "error_code_prefix": "에러 코드: ",
+    "lang_selector": "언어 선택기",
+    "lang_selected": "선택된 언어: ",
+    "main_nav": "주요 네비게이션",
+    "open_menu": "메뉴 열기",
+    "close_menu": "메뉴 닫기",
+    "open_new_tab": "새 탭에서 열기"
+  }
+}

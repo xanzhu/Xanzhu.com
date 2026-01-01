@@ -101,13 +101,13 @@ credit: Microsoft
 
 ### Copilot
 
-Github 现有 Copilot 软件的新增功能引入了一个更复杂的解决方案，它结合了一种新的语言模型，它将成为编码方面的真正合作伙伴。 作为微软生态系统的一部分，Copilot 将运行最新的 ChatGPT 版本 4 和 Github 自己的代码自动完成模型。
+GitHub 现有 Copilot 软件的新增功能引入了一个更复杂的解决方案，它结合了一种新的语言模型，它将成为编码方面的真正合作伙伴。 作为微软生态系统的一部分，Copilot 将运行最新的 ChatGPT 版本 4 和 GitHub 自己的代码自动完成模型。
 
 ::media
 ---
 source: https://cdn.xanzhu.com/v1/next-gen-ai/copilot.webp
-alt: Github Copilot X 宣传视频
-credit: Github
+alt: GitHub Copilot X 宣传视频
+credit: GitHub
 ---
 ::
 
@@ -119,7 +119,7 @@ Copilot 将成为所有开发人员的有用工具，改进生产就绪代码的
 
 目前，在技术预览阶段，Copilot 可用于 Microsoft 生态系统：Visual Studio 和 Visual Studio Code，并计划随着扩展的开发扩展到其他集成开发环境或 IDE，如 Neovim、Jetbrains 等。
 
-了解有关 Copilot X 的更多信息： :PageLink{title="Github" url="https://github.blog/news-insights/product-news/github-copilot-x-the-ai-powered-developer-experience/"}
+了解有关 Copilot X 的更多信息： :PageLink{title="GitHub" url="https://github.blog/news-insights/product-news/github-copilot-x-the-ai-powered-developer-experience/"}
 
 ### Summarizer
 

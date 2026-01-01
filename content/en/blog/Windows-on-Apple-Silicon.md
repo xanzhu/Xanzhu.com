@@ -16,10 +16,14 @@ To check your device is using the new chipset introduced in 2020, click on the A
 
 This is an updated version from our :PageLink{title="previous article" url="/blog/apple-silicon-virtual-machine-setup"} at the beginning of the year, where we covered the installation of Windows using UTM and Parallels. Since then, the process has become much easier and reliable!
 
+::ArticleUpdates
+- **2026-01-01** – Installation for Windows 11 has changed see the [Updated guide](/blog/install-windows-utm-apple-silicon).
+::
+
 Downloads:
 
 - :PageLink{title="UTM Website" url="https://mac.getutm.app/"}
-- :PageLink{title="UTM Github" url="https://github.com/utmapp/UTM/releases"}
+- :PageLink{title="UTM GitHub" url="https://github.com/utmapp/UTM/releases"}
 - :PageLink{title="CrystalFetch" url="https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12"}
 
 Prerequisites:
@@ -30,7 +34,7 @@ Prerequisites:
 
 ## Installing UTM
 
-- Download UTM from their :PageLink{title="Offical website" url="https://mac.getutm.app/"} or the latest version from :PageLink{title="Github" url="https://github.com/utmapp/UTM/releases"}
+- Download UTM from their :PageLink{title="Offical website" url="https://mac.getutm.app/"} or the latest version from :PageLink{title="GitHub" url="https://github.com/utmapp/UTM/releases"}
 
 <i>Note: UTM is also available on the app store though this is paid option offering updates where as the above two options any updates need to be downloaded manually.</i>
 

@@ -20,11 +20,11 @@ useSeoMeta({
       </template>
     </Head>
     <Body class="m0 core-theme font-sans">
-      <AppHeader class="sticky top-0 z-20" />
+      <LayoutAppHeader class="sticky top-0 z-50" />
       <UiInfoBar />
       <NuxtPage />
-      <LazyAppFooter />
-      <UiScrollButton />
+      <LazyLayoutAppFooter />
+      <LazyUiScrollButton />
     </Body>
   </Html>
 </template>

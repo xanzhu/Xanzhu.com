@@ -47,17 +47,17 @@ onUnmounted(() => {
 
 <template>
   <Transition
-    enter-active-class="transition-all duration-300 ease-out"
+    enter-active-class="transition-transform duration-300 ease-out"
     enter-from-class="opacity-0 translate-y-4"
     enter-to-class="opacity-100 translate-y-0"
-    leave-active-class="transition-all duration-200 ease-in"
+    leave-active-class="transition-transform duration-200 ease-in"
     leave-from-class="opacity-100 translate-y-0"
     leave-to-class="opacity-0 translate-y-4"
   >
     <button
       v-if="isVisible"
-      class="fixed bottom-6 right-3 z-30 h-10 w-10 flex cursor-pointer items-center justify-center core-border rounded-full core-ui shadow-lg transition-all duration-200 md:right-6 hover:core-theme focus:outline-none focus:ring-2 focus:ring-brand-dark focus:ring-opacity-50 dark:focus:ring-brand-light"
-      :aria-label="t('v2.ui.scrollTop')"
+      class="fixed bottom-6 right-3 z-30 h-10 w-10 flex cursor-pointer items-center justify-center core-border rounded-full core-ui shadow-lg transition-transform duration-200 md:right-6 hover:core-theme focus:outline-none focus:ring-2 focus:ring-brand-dark focus:ring-opacity-50 dark:focus:ring-brand-light"
+      :aria-label="t('ui.scrollTop')"
       @click="scrollToTop"
     >
       <Icon name="lucide:chevron-up" class="h-5 w-5" />

@@ -34,7 +34,7 @@ function getSvgIconUrl(name) {
     <ul class="flex flex-wrap list-none justify-center gap-12 px-8" role="list">
       <li v-for="link in urls" :key="link.name" role="listitem" class="flex">
         <NuxtLink
-          :href="link.url"
+          :to="link.url"
           target="_blank"
           rel="noopener"
           :aria-label="link.label"
@@ -50,7 +50,7 @@ function getSvgIconUrl(name) {
               width="128"
               height="40"
               loading="lazy"
-              class="h-auto max-h-16 max-w-[120px] brightness-0 invert-0 filter transition duration-300 ease-in-out group-hover:opacity-0 group-hover:opacity-75 dark:invert"
+              class="h-auto max-h-16 max-w-[120px] brightness-0 invert-0 filter transition-opacity duration-300 ease-in-out group-hover:opacity-75 dark:invert"
             />
           </div>
           <span class="sr-only">{{ link.name }}</span>

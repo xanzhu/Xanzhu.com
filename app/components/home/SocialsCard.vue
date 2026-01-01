@@ -8,7 +8,7 @@ const links = [
   {
     url: 'https://github.com/xanzhu',
     icon: 'line-md:github',
-    name: 'Github',
+    name: 'GitHub',
   },
   {
     url: 'https://twitter.com/xanzhu1',

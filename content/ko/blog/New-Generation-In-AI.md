@@ -101,13 +101,13 @@ AI로 생성된 콘텐츠가 합격점을 받는 것을 방지하기 위해 표�
 
 ### Copilot
 
-Github의 기존 Copilot 소프트웨어에 새로 추가된 기능은 코딩과 관련하여 진정한 파트너가 될 새로운 언어 모델을 통합하는 보다 복잡한 솔루션을 도입합니다. Microsoft 에코시스템의 일부인 Copilot은 코드 자동 완성에서 최신 ChatGPT 버전 4 및 Github 자체 모델을 실행할 것입니다.
+GitHub의 기존 Copilot 소프트웨어에 새로 추가된 기능은 코딩과 관련하여 진정한 파트너가 될 새로운 언어 모델을 통합하는 보다 복잡한 솔루션을 도입합니다. Microsoft 에코시스템의 일부인 Copilot은 코드 자동 완성에서 최신 ChatGPT 버전 4 및 GitHub 자체 모델을 실행할 것입니다.
 
 ::media
 ---
 source: https://cdn.xanzhu.com/v1/next-gen-ai/copilot.webp
-alt: Github Copilot X 프로모션 비주얼
-credit: Github
+alt: GitHub Copilot X 프로모션 비주얼
+credit: GitHub
 ---
 ::
 
@@ -119,7 +119,7 @@ Copilot은 모든 개발자에게 유용한 도구가 될 것이며, 프로덕�
 
 현재 기술 미리보기 단계에서 Copilot은 Visual Studio 및 Visual Studio Code와 같은 Microsoft 에코시스템에서 사용할 수 있으며 확장이 개발됨에 따라 Neovim, Jetbrains 등과 같은 다른 통합 개발 환경 또는 IDE로 확장할 계획입니다.
 
-Copilot X 자세히 알아보기: :PageLink{title="Github" url="https://github.blog/news-insights/product-news/github-copilot-x-the-ai-powered-developer-experience/"}
+Copilot X 자세히 알아보기: :PageLink{title="GitHub" url="https://github.blog/news-insights/product-news/github-copilot-x-the-ai-powered-developer-experience/"}
 
 ### Summarizer
 

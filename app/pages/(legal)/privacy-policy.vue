@@ -20,13 +20,13 @@ useLangMeta('PP', seoImage, 'prefix', t)
 </script>
 
 <template>
-  <InternalPage :title="t('PP.title')" :description="t('PP.description')" :date="date" :datelabel="t('PP.date')">
+  <LayoutInternalPage :title="t('PP.title')" :description="t('PP.desc')" :date="date" :datelabel="t('PP.date')">
     <template #content>
       <p v-for="(paragraph, index) in paragraphs" :key="index" class="leading-relaxed">
         {{ paragraph }}
       </p>
     </template>
-  </InternalPage>
+  </LayoutInternalPage>
 </template>
 
 <i18n lang="json">
@@ -34,7 +34,7 @@ useLangMeta('PP', seoImage, 'prefix', t)
   "en": {
     "PP": {
       "title": "Privacy Policy",
-      "description": "Read our privacy policy statement",
+      "desc": "Read our privacy policy statement",
       "date": "Last Updated",
       "section-one": "At Xanzhu, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website.",
       "section-two": "We collect information that your browser sends when you visit our site. This may include your IP address, browser type, device type, and pages visited. This data is used for analytics and to improve your experience.",
@@ -47,7 +47,7 @@ useLangMeta('PP', seoImage, 'prefix', t)
   "ko": {
     "PP": {
       "title": "개인정보 처리방침",
-      "description": "개인정보 처리방침을 확인하세요",
+      "desc": "개인정보 처리방침을 확인하세요",
       "date": "마지막 업데이트",
       "section-one": "Xanzhu는 귀하의 개인정보를 보호하기 위해 최선을 다하고 있습니다. 이 개인정보 처리방침은 당사 웹사이트 방문 시 정보를 어떻게 수집, 사용 및 보호하는지 설명합니다.",
       "section-two": "당사는 귀하가 웹사이트를 방문할 때 브라우저가 전송하는 정보를 수집합니다. 여기에는 IP 주소, 브라우저 유형, 기기 종류 및 방문한 페이지 등이 포함될 수 있으며, 분석 및 서비스 개선에 활용됩니다.",
@@ -60,7 +60,7 @@ useLangMeta('PP', seoImage, 'prefix', t)
   "zh": {
     "PP": {
       "title": "隐私政策",
-      "description": "查看我们的隐私政策声明",
+      "desc": "查看我们的隐私政策声明",
       "date": "最后更新",
       "section-one": "在 Xanzhu，我们致力于保护您的隐私。本隐私政策说明了您访问我们网站时，我们如何收集、使用并保护您的信息。",
       "section-two": "我们会收集您访问网站时浏览器发送的信息。这可能包括您的 IP 地址、浏览器类型、设备类型和访问的页面等。此数据用于分析并优化用户体验。",

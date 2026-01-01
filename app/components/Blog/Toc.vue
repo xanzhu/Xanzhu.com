@@ -82,13 +82,13 @@ onUnmounted(() => {
 <template>
   <nav
     class="m-4 core-border rounded-sm p4 md:(mx-auto max-w-xl) lg:(max-w-md)"
-    :aria-label="t('Blog.toc')"
+    :aria-label="t('blog.toc')"
     aria-labelledby="toc-heading"
     role="navigation"
   >
     <header id="toc-heading" class="mb-2 pb-2">
       <p id="toc-heading" class="m-0 text-center text-lg font-semibold tracking-wide">
-        {{ t("Blog.toc") }}
+        {{ t("blog.toc") }}
       </p>
     </header>
     <ul class="flex flex-col gap-2 px-4 text-sm leading-tight" role="list">

@@ -81,22 +81,33 @@ export default defineConfig<Wind3Theme & TypographyTheme>({
           'margin-bottom': '0.5rem',
         },
 
-        // Code and Pre
-        '.prose pre, .prose code': {
-          '--uno':
-            'font-mono',
+        // Inline Code
+        '.prose :not(pre) > code': {
+          '--uno': 'font-mono',
           'font-size': '0.875rem',
-          'background-color': '#f6f6f6ff',
+          'background-color': '#f1f5f9',
+          'padding': '0.2rem 0.4rem',
+          'border-radius': '6px',
+          'color': '#111827',
         },
+
+        // Code Block Container
         '.prose pre': {
-          'padding': '1rem',
+          '--uno': 'font-mono',
+          'padding': '1.25rem',
           'margin-bottom': '1.5rem',
           'overflow-x': 'auto',
-          'border': '1px solid #c2c2c2ff',
+          'background-color': '#f5f5f5',
+          'border-radius': '8px',
+          'line-height': '1.6',
         },
+
         '.prose pre > code': {
-          border: 'none',
-          color: '#2a2a2aff',
+          'font-size': '0.875rem',
+          'color': '#000000ff',
+          'background-color': 'transparent',
+          'border': 'none',
+          'padding': '0',
         },
 
         // Youtube iframe | <Vid>
@@ -125,7 +136,7 @@ export default defineConfig<Wind3Theme & TypographyTheme>({
           '--uno': 'dark:text-light-900 text-gray-600 font-mono',
         },
 
-        'figure': {
+        '.prose figure': {
           margin: '0',
         },
 
@@ -147,8 +158,7 @@ export default defineConfig<Wind3Theme & TypographyTheme>({
           'font-size': '0.875rem',
           '--uno': 'min-w-5rem',
           'display': 'table',
-          'text': '#000',
-          'background-color': '#ffff',
+          'color': '#000',
         },
         '.prose th, .prose td': {
           'padding': '0.75rem',
@@ -162,28 +172,33 @@ export default defineConfig<Wind3Theme & TypographyTheme>({
         '.prose tr:nth-child(even)': {
           'background-color': '#f9f9f9',
         },
-        // Dark Styling
-        '.dark tr:nth-child(even)': {
-          'background-color': '#000000ff',
-        },
-        '.dark th': {
-          'background-color': '#000000ff',
-        },
-        '.dark th, .dark td': {
-          border: '1px solid #262626ff',
-        },
-        '.dark table': {
-          'background-color': '#101010ff',
-        },
-        '.dark code, .dark pre': {
-          'background-color': '#0a0a0aff',
-        },
-        '.dark pre code': {
-          color: '#fff',
+        '.prose tr:nth-child(odd)': {
+          'background-color': '#fff',
         },
 
-        '.dark pre': {
+        // Dark Styling
+        '.dark .prose tr:nth-child(even)': {
+          'background-color': '#000000ff',
+        },
+        '.dark .prose tr:nth-child(odd)': {
+          'background-color': '#181818ff',
+        },
+        '.dark .prose th': {
+          'background-color': '#000000ff',
+        },
+        '.dark .prose th, .dark .prose td': {
           border: '1px solid #262626ff',
+        },
+        '.dark .prose table': {
+          'background-color': '#101010ff',
+          'color': '#fff',
+        },
+        '.dark .prose pre code': {
+          color: '#fff',
+        },
+        '.dark .prose pre': {
+          'border': 'none',
+          'background-color': '#171717',
         },
       },
     }),
@@ -202,12 +217,12 @@ export default defineConfig<Wind3Theme & TypographyTheme>({
     },
     fontFamily: {
       sans: 'Noto Sans CJK KR, system-ui, sans-serif',
-      mono: 'monospace',
+      mono: 'Google Sans Code, monospace',
     },
   },
   shortcuts: {
     'core-theme':
-      'bg-element-light dark:(bg-element-dark text-white) text-black',
+  'bg-element-light dark:(bg-element-dark text-white) text-black',
     'core-border': 'dark:b-dark4 b-gray-3 b-1 b-solid',
     'core-ui': 'dark:(bg-dark9 text-white) bg-gray-100 text-black',
   },

@@ -10,8 +10,8 @@ toc: true
 feature: true
 ---
 
-::alert
-Windows 11 的安装略有变化，请查看 :PageLink{title="更新指南" url="/zh/blog/install-windows-utm-apple-silicon"}
+::ArticleUpdates
+- **2026年1月1日** – Windows 11 的安装过程已更改。请参阅[更新后的指南](/zh/blog/install-windows-utm-apple-silicon)。
 ::
 
 如果您是一名开发人员或技术爱好者，您可能需要为项目或个人使用使用多个操作系统。 在本文中，我们将介绍使用 Parallels、付费虚拟化软件和名为 UTM 的免费开源解决方案设置流行操作系统（例如 Windows 和 Ubuntu）的过程。 无论您是初学者还是经验丰富的用户，本指南都将教您如何在 Apple Silicon Mac 上快速轻松地安装和设置每个环境。
@@ -78,7 +78,7 @@ alt: Parallels ubuntu 安装向导
 5. 登录后会要求重启虚拟机安装 “Parallels Tools”
 6. 虚拟机重启后，重新登录，开始配置新的 Ubuntu 虚拟机。
 
-It's always good practice to check for updates and ensure you're running the latest versions. This can help with performance and security issues.
+定期检查更新并确保运行最新版本始终是一个好习惯。这有助于解决性能和安全问题。
 
 ## 其他
 
@@ -141,7 +141,7 @@ alt: UTM 窗口的安装设置
 11. Summary 页面将显示所有已配置的设置，并允许您为虚拟机设置名称。
 12. 按播放键第一次运行虚拟机，加载需要一些时间。
 
-Now installing windows
+现在正在安装windows
 
 1. 选择您的语言
 2. 选择你的键盘
