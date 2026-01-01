@@ -10,14 +10,14 @@ img: "/images/blog/covers/utm-ubuntu-m4.webp"
 alt: "在 Apple Silicon 上通过 UTM 运行的 Ubuntu 25.04"
 ---
 
-::Alert{type="update" title="更新：Ubuntu 25.04 可用"}
-更新（2025年7月15日）：本指南已根据 Ubuntu 25.04 审核并更新。
-::
-
 Ubuntu 现已提供原生 ARM 桌面版本，非常适合 Apple Silicon（即苹果 M 系列芯片）用户探索 Linux、进行开发或高效虚拟化。
 在本指南中，我们将通过适用于 macOS 的免费开源虚拟化工具 UTM，详细介绍如何在虚拟机中安装 Ubuntu 25.04（Plucky Puffin）。
 
 我们的 :PageLink{title="上一篇文章" url="/blog/apple-silicon-virtual-machine-setup#ubuntu-2204-1"} 中介绍了如何为 Ubuntu Server 配置桌面环境。
+
+::ArticleUpdates
+- **2025年7月15日** - 本指南已根据 Ubuntu 25.04 审核并更新。
+::
 
 ## 系统需求
 

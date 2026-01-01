@@ -1,8 +1,8 @@
 ---
 title: "如何使用 UTM 在 Apple Silicon 上安装 Windows 11"
 description: "使用 UTM 在 M1–M5 Mac 上运行 Windows 11 的完整更新指南。了解如何绕过 Microsoft 账户要求并修复常见显示问题。"
-date: "2025-12-24"
-updated: "2025-12-24"
+date: "2026-01-01"
+updated: "2026-01-01"
 tag: "指南"
 toc: true
 feature: true
@@ -15,7 +15,7 @@ alt: "在 Apple Silicon 上使用 UTM 运行 Windows 11"
 我们的 :PageLink{title="上一篇文章" url="/blog/windows-on-apple-silicon"} 介绍了在 Apple Silicon 上设置 Windows 的基础知识。
 
 ::ArticleUpdates
-- **2025-12-24** - **年度重新发布**：进行了完整的技术审核。验证并更新了 Windows 11（24H2/25H2）、UTM 4.7.5 的所有步骤，并添加了新的本地账户绕过方法。
+- **2026年1月1日** - **年度重新发布**：进行了完整的技术审核。验证并更新了 Windows 11（24H2/25H2）、UTM 4.7.5 的所有步骤，并添加了新的本地账户绕过方法。
 ::
 
 对于在 Apple Silicon 上安装 Windows 的替代解决方案，请注意这些是付费解决方案，可能以更高的价格提供更好的性能。查看 :PageLink{title="Parallels Desktop" url="https://www.parallels.com/products/desktop/"} 或 :PageLink{title="VMware Fusion" url="https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion"}。

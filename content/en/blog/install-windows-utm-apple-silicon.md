@@ -1,8 +1,8 @@
 ---
 title: "How to Install Windows 11 on Apple Silicon with UTM"
 description: "A complete, updated guide to running Windows 11 on M1–M5 Macs using UTM. Learn how to bypass Microsoft account requirements and fix common display issues."
-date: "2025-12-24"
-updated: "2025-12-24"
+date: "2026-01-01"
+updated: "2026-01-01"
 tag: "Guide"
 toc: true
 feature: true
@@ -15,7 +15,7 @@ Windows on Apple Silicon is becoming increasingly popular. In this guide, we'll 
 Our :PageLink{title="previous article" url="/blog/windows-on-apple-silicon"} covered the basics of setting up Windows on Apple Silicon.
 
 ::ArticleUpdates
-- **2025-12-24** - **Annual Re-release**: Complete technical audit performed. Verified and updated all steps for Windows 11 (24H2/25H2), UTM 4.7.5, and added the new local account bypass methods.
+- **2026-01-01** - **Annual Re-release**: Complete technical audit performed. Verified and updated all steps for Windows 11 (24H2/25H2), UTM 4.7.5, and added the new local account bypass methods.
 ::
 
 For alternative solutions for installing Windows on Apple Silicon, note that these are paid solutions and may offer better performance at a price. Check out :PageLink{title="Parallels Desktop" url="https://www.parallels.com/products/desktop/"} or :PageLink{title="VMware Fusion" url="https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion"}.

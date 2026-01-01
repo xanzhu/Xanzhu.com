@@ -16,6 +16,10 @@ alt: "3가지 새로운 칩셋의 아이콘을 표시하는 2023년 Macbook Pro 
 
 이는 연초에 UTM 및 Parallels를 사용한 Windows 설치를 다룬 :PageLink{title="이전 기사" url="/ko/blog/apple-silicon-virtual-machine-setup"} 의 업데이트 버전입니다. 그 이후로 프로세스가 훨씬 더 쉽고 안정적이 되었습니다!
 
+::ArticleUpdates
+- **2026년 1월 1일** – Windows 11 설치 방법이 변경되었습니다. [업데이트된 가이드](/ko/blog/install-windows-utm-apple-silicon)를 참조하세요.
+::
+
 다운로드:
 
 - :PageLink{title="UTM 웹사이트" url="https://mac.getutm.app/"}

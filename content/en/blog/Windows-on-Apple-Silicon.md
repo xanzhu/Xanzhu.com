@@ -16,6 +16,10 @@ To check your device is using the new chipset introduced in 2020, click on the A
 
 This is an updated version from our :PageLink{title="previous article" url="/blog/apple-silicon-virtual-machine-setup"} at the beginning of the year, where we covered the installation of Windows using UTM and Parallels. Since then, the process has become much easier and reliable!
 
+::ArticleUpdates
+- **2026-01-01** – Installation for Windows 11 has changed see the [Updated guide](/blog/install-windows-utm-apple-silicon).
+::
+
 Downloads:
 
 - :PageLink{title="UTM Website" url="https://mac.getutm.app/"}

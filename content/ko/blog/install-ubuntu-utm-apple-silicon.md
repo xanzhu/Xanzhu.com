@@ -10,15 +10,15 @@ img: "/images/blog/covers/utm-ubuntu-m4.webp"
 alt: "UTM으로 Apple Silicon에서 Ubuntu 25.04 실행 중인 화면"
 ---
 
-::Alert{type="update" title="업데이트: Ubuntu 25.04 사용 가능"}
-업데이트 (2025년 7월 15일): 이 가이드는 Ubuntu 25.04에 맞춰 검토 및 업데이트되었습니다.
-::
-
 Ubuntu는 이제 ARM 기반의 네이티브 데스크탑 빌드를 제공합니다.
 Linux를 탐색하거나 개발 및 가상화를 효율적으로 활용하려는 Apple Silicon 사용자에게 적합합니다.
 이 가이드에서는 macOS를 위한 무료 오픈소스 가상화 도구인 UTM을 사용해 Ubuntu 25.04 (Plucky Puffin)를 가상 머신에 설치하는 방법을 단계별로 안내합니다.
 
 :PageLink{title="이전 가이드" url="/blog/apple-silicon-virtual-machine-setup#ubuntu-2204-1"} 에서는 Ubuntu Server와 데스크탑 환경 설치 방법을 소개했습니다.
+
+::ArticleUpdates
+- **2025년 7월 15일** - 이 가이드는 Ubuntu 25.04에 맞춰 검토 및 업데이트되었습니다.
+::
 
 ## 요구 사항
 

@@ -10,13 +10,13 @@ img: "/images/blog/covers/utm-ubuntu-m4.webp"
 alt: "Ubuntu 25.04 running on Apple Silicon with UTM"
 ---
 
-::Alert{type="update" title="Update: Ubuntu 25.04 Available"}
-Update (July 15, 2025): This guide has been reviewed and updated to Ubuntu 25.04
-::
-
 Ubuntu now offers a native ARM desktop build — perfect for Apple Silicon users looking to explore Linux, develop, or virtualise efficiently. In this guide, we'll walk through setting up Ubuntu 25.04 (Plucky Puffin) in a virtual machine using UTM, a free and open-source virtualization tool tailored for macOS.
 
 Our :PageLink{title="previous article" url="/blog/apple-silicon-virtual-machine-setup#ubuntu-2204-1"} detailed how to set up Ubuntu Server with a desktop environment.
+
+::ArticleUpdates
+- **2025-07-15** - This guide has been reviewed and updated to Ubuntu 25.04
+::
 
 ## Requirements
 
