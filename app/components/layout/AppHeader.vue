@@ -17,6 +17,13 @@ const sortedLocales = computed(() => {
     return 0
   })
 })
+
+function getLocaleClass(localeCode) {
+  if (activeLocale.value === localeCode) {
+    return 'bg-black text-white dark:bg-white dark:text-black pointer-events-none'
+  }
+  return 'text-black dark:text-white hover:bg-gray-200 dark:hover:bg-dark-600'
+}
 </script>
 
 <template>
@@ -32,7 +39,7 @@ const sortedLocales = computed(() => {
         v-for="link in links"
         :key="link.url"
         class="text-inherit underline-1 underline-transparent underline-offset-4 transition-colors duration-350 ease-out hover:(underline-black duration-150 ease-in) dark:hover:underline-white"
-        active-class="underline-black dark:underline-white"
+        active-class="!underline-black !dark:underline-white"
         :to="link.url"
       >
         {{ t(link.name) }}
@@ -49,11 +56,7 @@ const sortedLocales = computed(() => {
             :to="switchLocalePath(locale.code)"
             :prefetch="false"
             :aria-current="activeLocale.value === locale.code ? 'true' : undefined"
-            :class="[
-              activeLocale.value === locale.code
-                ? '!dark:(bg-white text-black) text-white bg-black pointer-events-none'
-                : 'text-black dark:text-inherit hover:bg-gray200 dark:hover:bg-dark-600',
-            ]"
+            :class="getLocaleClass(locale.code)"
             class="rounded-full px3 py1 text-center text-sm font-medium decoration-none transition-colors duration-200"
           >
             {{ locale.name }}
