@@ -109,13 +109,13 @@ Businesses will likely utilize this tool for a lot of mundane tasks such as show
 
 ### Copilot
 
-A new addition to Github's existing Copilot software introduces a more complex solution, incorporating a new language model that will be a true partner when it comes to coding. Being a part of the Microsoft ecosystem, Copilot will be running the latest ChatGPT version 4 and Github's own model in code auto-completion.
+A new addition to GitHub's existing Copilot software introduces a more complex solution, incorporating a new language model that will be a true partner when it comes to coding. Being a part of the Microsoft ecosystem, Copilot will be running the latest ChatGPT version 4 and GitHub's own model in code auto-completion.
 
 ::media
 ---
 source: https://cdn.xanzhu.com/v1/next-gen-ai/copilot.webp
-alt: Github Copilot X Promo visual
-credit: Github
+alt: GitHub Copilot X Promo visual
+credit: GitHub
 ---
 ::
 
@@ -127,7 +127,7 @@ Copilot will be a helpful tool for all developers, improving workflows for produ
 
 Currently, in a technical preview stage, Copilot is available on the Microsoft ecosystem: Visual Studio, and Visual Studio Code, with plans to expand into other Integrated Development Environments or IDEs such as Neovim, Jetbrains and more as the extension is developed.
 
-Learn more about Copilot X: :PageLink{title="Github" url="https://github.blog/news-insights/product-news/github-copilot-x-the-ai-powered-developer-experience/"}
+Learn more about Copilot X: :PageLink{title="GitHub" url="https://github.blog/news-insights/product-news/github-copilot-x-the-ai-powered-developer-experience/"}
 
 ### Summarizer
 

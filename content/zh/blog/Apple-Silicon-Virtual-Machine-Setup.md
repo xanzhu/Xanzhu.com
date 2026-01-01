@@ -78,7 +78,7 @@ alt: Parallels ubuntu 安装向导
 5. 登录后会要求重启虚拟机安装 “Parallels Tools”
 6. 虚拟机重启后，重新登录，开始配置新的 Ubuntu 虚拟机。
 
-It's always good practice to check for updates and ensure you're running the latest versions. This can help with performance and security issues.
+定期检查更新并确保运行最新版本始终是一个好习惯。这有助于解决性能和安全问题。
 
 ## 其他
 
@@ -141,7 +141,7 @@ alt: UTM 窗口的安装设置
 11. Summary 页面将显示所有已配置的设置，并允许您为虚拟机设置名称。
 12. 按播放键第一次运行虚拟机，加载需要一些时间。
 
-Now installing windows
+现在正在安装windows
 
 1. 选择您的语言
 2. 选择你的键盘

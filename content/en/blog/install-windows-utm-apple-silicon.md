@@ -31,7 +31,7 @@ UTM serves as a free, open-source virtualization tool for macOS, designed to be 
 
 ## UTM Download
 
-Download UTM version 4.7.5 from the :PageLink{title="UTM Github releases page" url="https://github.com/utmapp/UTM/releases"}. Previous 4.x.x versions should also work.
+Download UTM version 4.7.5 from the :PageLink{title="UTM GitHub releases page" url="https://github.com/utmapp/UTM/releases"}. Previous 4.x.x versions should also work.
 
 Automatic updates are available for UTM via the :PageLink{title="App Store Version" url="https://apps.apple.com/us/app/utm-virtual-machines/id1538878817"}, though this is a paid option. Alternatively, use the GitHub version and manually update as needed.
 
@@ -48,7 +48,7 @@ alt: Apple App Store showing CrystalFetch Application
 
 Download CrystalFetch version 2.2.0 from the :PageLink{title="App Store" url="https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12"}. This option is free and provides automatic updates.
 
-Alternatively, download the latest version from the :PageLink{title="CrystalFetch Github releases page" url="https://github.com/TuringSoftware/CrystalFetch/releases"}. This will require manual updates but may offer newer features before being officially released, as well as potential bug fixes.
+Alternatively, download the latest version from the :PageLink{title="CrystalFetch GitHub releases page" url="https://github.com/TuringSoftware/CrystalFetch/releases"}. This will require manual updates but may offer newer features before being officially released, as well as potential bug fixes.
 
 Drag CrystalFetch to your Applications folder and verify that it opens correctly.
 
@@ -352,7 +352,7 @@ During Windows setup it may ask you to connect to the internet to get the latest
 1. Press **Shift + F10** (Note: You may need to hold the Fn key on your Mac keyboard)
 2. In the command prompt window, type the following and press Enter:
 
-```
+```cmd
 OOBE\BYPASSNRO
 ```
 
@@ -366,7 +366,7 @@ Recent Windows builds (25H2 and newer) have made it harder to skip the Microsoft
 1. Press **Shift + F10** (or **Fn Shift + F10**) to open the Command Prompt
 2. Enter the following command:
 
-```
+```cmd
 start ms-cxh:localonly
 ```
 

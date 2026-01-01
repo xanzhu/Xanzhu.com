@@ -9,9 +9,7 @@ export function useLangMeta(
 
   const seoTitle = computed(() => t(`${i18nKey}.title`))
   const seoDesc = computed(() => t(`${i18nKey}.desc`))
-
   const titleTemplate = format === 'prefix' ? 'Xanzhu - %s' : '%s - Xanzhu'
-
   const formattedTitle = computed(() => titleTemplate.replace('%s', seoTitle.value))
 
   // Built-in SeoMeta Composable
@@ -24,7 +22,7 @@ export function useLangMeta(
     twitterTitle: formattedTitle,
     twitterImage: seoImage,
     ogImage: seoImage,
-    titleTemplate: formattedTitle,
+    titleTemplate,
     ogType: 'website',
   })
 }

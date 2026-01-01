@@ -9,7 +9,7 @@
     "terms": "服务条款"
   },
   "footer": {
-    "rights": "© 2020-2026 闲住。\n版权所有。",
+    "rights": "© 2020-2026 闲住。版权所有。",
     "version": "版本",
     "category": {
       "community": "社区",
@@ -22,7 +22,7 @@
       "terms": "条款",
       "tools": "工具",
       "privacy": "隐私",
-      "github": "Github",
+      "github": "GitHub",
       "twitter": "Twitter/X"
     }
   },

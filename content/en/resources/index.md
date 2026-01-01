@@ -1,7 +1,6 @@
 ---
 title: Security Tool Kit
 description: Comprehensive collection of free security tools, educational resources, and reporting platforms to help protect your digital presence.
-date: "2024-11-05"
 ---
 
 ## Phishing
@@ -13,7 +12,7 @@ Tools and resources to help identify, avoid, and report phishing attempts and su
 - :PageLink{title="OpenPhish" url="https://openphish.com/"} Automatic phishing detection and intelligence feed service.
 
 Quick links to report phishing
-- :PageLink{title="Google Safe Browsing" url="https://getaegis.app/"} Report suspicious websites to Google Safe Browsing
+- :PageLink{title="Google Safe Browsing" url="https://safebrowsing.google.com/safebrowsing/report-url"} Report suspicious websites to Google Safe Browsing
 - :PageLink{title="Microsoft Security Intelligence" url="https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest"} Microsoft's platform for reporting phishing and malicious URLs
 
 ## Malware Analysis

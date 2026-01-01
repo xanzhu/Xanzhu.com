@@ -31,7 +31,7 @@ useHead(() => ({
 const router = useRouter()
 
 function handleGoBack() {
-  if (window.history.length > 1) {
+  if (window.history.length > 1 && document.referrer) {
     router.back()
   }
   else {

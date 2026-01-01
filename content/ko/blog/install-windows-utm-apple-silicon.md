@@ -31,7 +31,7 @@ UTM은 macOS용 무료 오픈 소스 가상화 도구로, 사용하기 쉽고 �
 
 ## UTM 다운로드
 
-:PageLink{title="UTM Github 릴리스 페이지" url="https://github.com/utmapp/UTM/releases"}에서 UTM 버전 4.7.5를 다운로드하세요. 이전 4.x.x 버전도 작동합니다.
+:PageLink{title="UTM GitHub 릴리스 페이지" url="https://github.com/utmapp/UTM/releases"}에서 UTM 버전 4.7.5를 다운로드하세요. 이전 4.x.x 버전도 작동합니다.
 
 :PageLink{title="App Store 버전" url="https://apps.apple.com/us/app/utm-virtual-machines/id1538878817"}을 통해 UTM의 자동 업데이트를 사용할 수 있지만 이는 유료 옵션입니다. 또는 GitHub 버전을 사용하고 필요에 따라 수동으로 업데이트하세요.
 
@@ -48,7 +48,7 @@ alt: CrystalFetch 애플리케이션을 표시하는 Apple App Store
 
 :PageLink{title="App Store" url="https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12"}에서 CrystalFetch 버전 2.2.0을 다운로드하세요. 이 옵션은 무료이며 자동 업데이트를 제공합니다.
 
-또는 :PageLink{title="CrystalFetch Github 릴리스 페이지" url="https://github.com/TuringSoftware/CrystalFetch/releases"}에서 최신 버전을 다운로드하세요. 수동 업데이트가 필요하지만 공식 출시 전에 새로운 기능과 잠재적인 버그 수정을 제공할 수 있습니다.
+또는 :PageLink{title="CrystalFetch GitHub 릴리스 페이지" url="https://github.com/TuringSoftware/CrystalFetch/releases"}에서 최신 버전을 다운로드하세요. 수동 업데이트가 필요하지만 공식 출시 전에 새로운 기능과 잠재적인 버그 수정을 제공할 수 있습니다.
 
 CrystalFetch를 Applications 폴더로 드래그하고 올바르게 열리는지 확인하세요.
 
@@ -349,7 +349,8 @@ Windows 설정 중에 최신 업데이트를 받기 위해 인터넷에 연결�
 
 1. **Shift + F10**을 누르세요(참고: Mac 키보드에서 Fn 키를 누르고 있어야 할 수 있습니다).
 2. 명령 프롬프트 창에서 다음을 입력하고 Enter를 누르세요:
-```
+
+```cmd
 OOBE\BYPASSNRO
 ```
 
@@ -362,7 +363,8 @@ OOBE\BYPASSNRO
 
 1. **Shift + F10**(또는 **Fn Shift + F10**)을 눌러 명령 프롬프트를 여세요.
 2. 다음 명령을 입력하세요:
-```
+
+```cmd
 start ms-cxh:localonly
 ```
 

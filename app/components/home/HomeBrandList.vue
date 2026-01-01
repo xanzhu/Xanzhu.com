@@ -38,7 +38,7 @@ function getSvgIconUrl(name) {
           target="_blank"
           rel="noopener"
           :aria-label="link.label"
-          class="group inline-block rounded focus:invisible focus:ring-2 focus:ring-blue-500"
+          class="group inline-block rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
         >
           <div
             class="h-[40px] w-[128px] flex items-center justify-center p-4"
@@ -50,7 +50,7 @@ function getSvgIconUrl(name) {
               width="128"
               height="40"
               loading="lazy"
-              class="h-auto max-h-16 max-w-[120px] brightness-0 invert-0 filter transition transition-opacity duration-300 ease-in-out group-hover:opacity-0 group-hover:opacity-75 dark:invert"
+              class="h-auto max-h-16 max-w-[120px] brightness-0 invert-0 filter transition-opacity duration-300 ease-in-out group-hover:opacity-75 dark:invert"
             />
           </div>
           <span class="sr-only">{{ link.name }}</span>

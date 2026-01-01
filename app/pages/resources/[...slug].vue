@@ -67,8 +67,6 @@ useHead({
     },
   ],
 })
-
-// TODO add in LangMeta
 </script>
 
 <template>
