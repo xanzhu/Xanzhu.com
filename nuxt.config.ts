@@ -94,6 +94,7 @@ export default defineNuxtConfig({
     name: 'Xanzhu',
   },
 
+  // Sitemap
   sitemap: {
     autoI18n: true,
     autoLastmod: true,
@@ -104,6 +105,7 @@ export default defineNuxtConfig({
     xslTips: false,
     credits: false,
     cacheMaxAgeSeconds: 3600,
+    zeroRuntime: true,
   },
 
   routeRules: {
