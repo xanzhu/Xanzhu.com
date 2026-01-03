@@ -168,6 +168,15 @@ export default defineNuxtConfig({
       hashScripts: true,
       hashStyles: true,
     },
+    // 4/26 - Testing
+    corsHandler: {
+      origin: [
+        'https://xanzhu.com',
+        'https://cdn.xanzhu.com',
+      ],
+      methods: ['GET', 'POST'],
+      credentials: true,
+    },
     headers: {
       contentSecurityPolicy: {
         'default-src': ['\'self\'', 'https://*.xanzhu.com'],
