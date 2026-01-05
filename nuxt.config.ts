@@ -135,12 +135,16 @@ export default defineNuxtConfig({
 
   content: {
     experimental: { nativeSqlite: true },
+    database: {
+      type: 'd1',
+      bindingName: 'DB',
+    },
   },
 
   // API
   runtimeConfig: {
     public: {
-      version: '2.2.30',
+      version: '2.2.31',
       i18n: {
         baseUrl: siteUrl,
       },
@@ -257,6 +261,7 @@ export default defineNuxtConfig({
         include: [/\.(vue|ts|mdx?|html)($|\?)/],
       },
     },
+    blocklist: [/pascalCase/],
   },
 
   nitro: {
