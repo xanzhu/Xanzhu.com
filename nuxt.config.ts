@@ -113,6 +113,7 @@ export default defineNuxtConfig({
       headers: {
         'x-robots-tag': 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
       },
+      isr: 3600,
     },
     '**/blog/**': {
       isr: true,
@@ -253,6 +254,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
+      routes: ['/', '/ko', '/zh'],
     },
     minify: true,
     compressPublicAssets: true,
