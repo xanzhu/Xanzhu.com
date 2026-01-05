@@ -53,12 +53,12 @@ const breaches: Breach[] = [
       <h2 id="threat-card-title" class="mb-2 text-center text-xl text-black font-bold sm:mb-0 sm:text-left md:text-4xl sm:text-2xl">
         {{ t('home.stats.title') }}
       </h2>
-      <Icon name="lucide:shield" class="h-8 w-8 text-black sm:h-12 sm:w-12" aria-hidden="true" />
+      <Icon v-once name="lucide:shield" class="h-8 w-8 text-black sm:h-12 sm:w-12" aria-hidden="true" />
     </div>
     <div class="grid gap-3 md:grid-cols-2 sm:gap-4">
       <section aria-labelledby="regional-threats-title" class="rounded-lg bg-zinc-900 p-3 sm:p-4">
         <div class="mb-3 flex items-center sm:mb-4">
-          <Icon name="lucide:alert-triangle" class="mr-2 h-5 w-5 flex-shrink-0 text-4 text-yellow-4" />
+          <Icon v-once name="lucide:alert-triangle" class="mr-2 h-5 w-5 flex-shrink-0 text-4 text-yellow-4" />
           <p id="regional-threats-title" class="text-lg text-yellow-4 font-semibold sm:text-xl">
             {{ t('home.stats.regional.title') }}
           </p>
@@ -77,7 +77,7 @@ const breaches: Breach[] = [
       </section>
       <section aria-labelledby="recent-breaches-title" class="rounded-lg bg-zinc-900 p-3 sm:p-4">
         <div class="mb-3 flex items-center sm:mb-4">
-          <Icon name="lucide:lock" class="mr-2 h-5 w-5 flex-shrink-0 text-white" aria-hidden="true" />
+          <Icon v-once name="lucide:lock" class="mr-2 h-5 w-5 flex-shrink-0 text-white" aria-hidden="true" />
           <p id="recent-breaches-title" class="text-lg text-white font-semibold sm:text-xl">
             {{ t('home.stats.recent.title') }}
           </p>
@@ -103,7 +103,7 @@ const breaches: Breach[] = [
               <span class="mr-auto whitespace-nowrap rounded bg-black px-2 py-1 text-xs text-yellow-4 font-bold">
                 {{ breach.date }}
               </span>
-              <Icon name="lucide:external-link" class="absolute right-0 h5 w5 text-black" aria-hidden="true" />
+              <Icon v-once name="lucide:external-link" class="absolute right-0 h5 w5 text-black" aria-hidden="true" />
             </NuxtLink>
           </li>
         </ul>
