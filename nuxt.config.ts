@@ -296,7 +296,7 @@ export default defineNuxtConfig({
     },
   },
 
-  future: {
-    compatibilityVersion: 5,
-  },
+  // future: {
+  //   compatibilityVersion: 5,
+  // },
 })
