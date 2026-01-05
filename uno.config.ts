@@ -83,7 +83,7 @@ export default defineConfig<Wind3Theme & TypographyTheme>({
 
         // Inline Code
         '.prose :not(pre) > code': {
-          '--uno': 'font-mono',
+          'font-family': 'Google Sans Code, monospace',
           'font-size': '0.875rem',
           'background-color': '#f1f5f9',
           'padding': '0.2rem 0.4rem',
@@ -93,7 +93,7 @@ export default defineConfig<Wind3Theme & TypographyTheme>({
 
         // Code Block Container
         '.prose pre': {
-          '--uno': 'font-mono',
+          'font-family': 'Google Sans Code, monospace',
           'padding': '1.25rem',
           'margin-bottom': '1.5rem',
           'overflow-x': 'auto',
@@ -133,7 +133,12 @@ export default defineConfig<Wind3Theme & TypographyTheme>({
           'line-height': '1.5',
           'margin-top': '0.3rem',
           'text-align': 'left',
-          '--uno': 'dark:text-light-900 text-gray-600 font-mono',
+          'color': '#4b5563',
+          'font-family': 'Google Sans Code, monospace',
+        },
+
+        '.dark .prose figure figcaption': {
+          color: '#dde1e3',
         },
 
         '.prose figure': {
@@ -156,7 +161,7 @@ export default defineConfig<Wind3Theme & TypographyTheme>({
           'border-collapse': 'collapse',
           'margin': '1.5rem 0',
           'font-size': '0.875rem',
-          '--uno': 'min-w-5rem',
+          'min-width': '5rem',
           'display': 'table',
           'color': '#000',
         },
@@ -225,10 +230,5 @@ export default defineConfig<Wind3Theme & TypographyTheme>({
   'bg-element-light dark:(bg-element-dark text-white) text-black',
     'core-border': 'dark:b-dark4 b-gray-3 b-1 b-solid',
     'core-ui': 'dark:(bg-dark9 text-white) bg-gray-100 text-black',
-  },
-  content: {
-    pipeline: {
-      include: [/\.(vue|svelte|[jt]sx|md|html)($|\?)/],
-    },
   },
 })

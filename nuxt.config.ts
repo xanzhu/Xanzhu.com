@@ -118,6 +118,7 @@ export default defineNuxtConfig({
     '**/blog/**': {
       isr: true,
     },
+    '**/analysis': { prerender: true },
     '/_nuxt/**': {
       headers: {
         'Cache-Control': 'public, max-age=31536000, immutable',
@@ -136,6 +137,10 @@ export default defineNuxtConfig({
 
   content: {
     experimental: { nativeSqlite: true },
+    database: {
+      type: 'd1',
+      bindingName: 'DB',
+    },
   },
 
   // API
@@ -249,12 +254,12 @@ export default defineNuxtConfig({
         include: [/\.(vue|ts|mdx?|html)($|\?)/],
       },
     },
+    blocklist: [/pascalCase/],
   },
 
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ['/', '/ko', '/zh'],
     },
     minify: true,
     compressPublicAssets: true,
