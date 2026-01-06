@@ -1,27 +1,21 @@
 -----BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA256
+Hash: SHA512
 
 # Xanzhu Security Information
+# Updated: 2026-01-06
 
 Contact: mailto:security@xanzhu.com
-Encryption: https://xanzhu.com/.well-known/pgp_key.txt
+Encryption: https://xanzhu.com/.well-known/pgp_key.asc
+Key-Fingerprint: 0C1F 6958 A4C4 8116 501A  E42A A9E6 4F23 CCEB 75B2
 Preferred-Languages: en
 
-Expires: 2027-07-24T00:00:00Z
+Expires: 2027-01-06T00:00:00Z
 Canonical: https://xanzhu.com/.well-known/security.txt
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEyULIhsh6chEk1osB9T3jit7c40wFAmiBkggACgkQ9T3jit7c
-40z1Hw//fE38gd3qV5dgMh1d+Sco9rIpC1d2A1+Va47DsGYgSlmv5Yg/5Ep0rZrp
-GOPzd0Oe2HAt8NVJZA93vykGK9v2/n4Hkbt41oW9dIDe+2SiA6cQJbh8/Gnh/M7g
-Q6Ec9QWThBfdRJF24MHPFY+8WAHXyk3dvVPtIGR8zryWlXRHpki3R6zAJOwDE+h4
-dlEWaOasfNA+yfMpoYK8oWGSQ6r+SV2PiMIsqOlzz02TwNrrFNWaR5x7QrE/eegf
-EFA0MzuBNpEjL2HBUPACXkqwZIg/MrDvKdDix3j+0q/YbNIVllQ+y47oF7icneEY
-AEU7oO5+vmK+v2jz2LReUxcA74Yh0L7oLEH5Qb0+o4f4GY/QddwZt+NnWa6oLKCG
-njebmVKnkk4M+Q0J3GN4DeWDW7X0u6tEJwZs8Hq13CMPY6piVaBJnlHeX9ghJ7Ol
-duuIUjfuQzIL2u3XCPfOIUz9W5hrIQJKLWwgMUkiBGvJOIwiom9qq+28ZtKWqKCI
-FuG6yVuxT+Vp0fNXFCfz55Oq8J00db4Kj6aO+Nn8FYgOgJbyXbbb6M1Q1wDC62eM
-eUetx+qcvm8dCeTgeJB0WRT/i1RtNdeU6l591fS1LTfK0lCBJiQx+WHyCyF6Vju1
-OEwVUdR8LQVQmRQqxSTgIbOrl8rWjup3QOu9biOhgI7/ZwswnEw=
-=AgTb
+iJEEARYKADkWIQQMH2lYpMSBFlAa5Cqp5k8jzOt1sgUCaVy6LBsUgAAAAAAEAA5t
+YW51MiwyLjUrMS4xMSwyLDEACgkQqeZPI8zrdbJWGQD/ezAOleAildAzSGI1z0Kt
+iKZxfy8O6VNYZFGSDdSRt6IBAKwQpiPBy56QWzZwekw8hzXXtpBWg13f1Yox1/Bm
+npkK
+=X31S
 -----END PGP SIGNATURE-----
