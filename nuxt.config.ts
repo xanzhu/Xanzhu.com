@@ -1,11 +1,8 @@
-import process from 'node:process'
-
-const isDev = process.env.NODE_ENV === 'development'
 const siteUrl = 'https://xanzhu.com'
 const cdnUrl = 'https://cdn.xanzhu.com'
 
 export default defineNuxtConfig({
-  devtools: { enabled: isDev },
+  devtools: { enabled: import.meta.dev },
   modules: [
     '@nuxtjs/i18n',
     '@nuxtjs/sitemap',
@@ -146,7 +143,7 @@ export default defineNuxtConfig({
   // API
   runtimeConfig: {
     public: {
-      version: '2.2.29',
+      version: '2.2.36',
       i18n: {
         baseUrl: siteUrl,
       },
@@ -155,15 +152,13 @@ export default defineNuxtConfig({
 
   // ICON
   icon: {
-    provider: 'server',
+    provider: 'iconify',
     mode: 'svg',
     clientBundle: {
       scan: true,
       sizeLimitKb: 256,
     },
-    serverBundle: {
-      collections: ['lucide', 'line-md'],
-    },
+    serverBundle: 'remote',
   },
 
   // SECURITY V1.7
@@ -189,7 +184,7 @@ export default defineNuxtConfig({
         ],
         'style-src': [
           '\'self\'',
-          isDev ? '\'unsafe-inline\'' : '\'nonce-{{nonce}}\'',
+          import.meta.dev ? '\'unsafe-inline\'' : '\'nonce-{{nonce}}\'',
           'https://*.xanzhu.com',
         ],
         'base-uri': '\'none\'',
@@ -219,7 +214,7 @@ export default defineNuxtConfig({
           'https://*.xanzhu.workers.dev',
           'https://api.weatherapi.com',
           'https://api.iconify.design',
-          ...(isDev
+          ...(import.meta.dev
             ? ['ws://localhost:4000', 'ws://localhost:24678']
             : []),
         ],
@@ -229,7 +224,7 @@ export default defineNuxtConfig({
           'https://www.youtube.com',
           'https://www.youtube-nocookie.com',
         ],
-        'upgrade-insecure-requests': !isDev,
+        'upgrade-insecure-requests': !import.meta.dev,
       },
       strictTransportSecurity: {
         maxAge: 31536000,
@@ -245,7 +240,7 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2026-01-01',
 
-  sourcemap: isDev,
+  sourcemap: import.meta.dev,
 
   unocss: {
     disableNuxtInlineStyle: false,
@@ -296,7 +291,7 @@ export default defineNuxtConfig({
     },
   },
 
-  future: {
-    compatibilityVersion: 5,
-  },
+  // future: {
+  //   compatibilityVersion: 5,
+  // },
 })

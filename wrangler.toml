@@ -1,5 +1,6 @@
 name = "core"
 compatibility_date = "2026-01-01"
+compatibility_flags = ["nodejs_compat"]
 preview_urls = true
 
 [assets]
@@ -11,3 +12,8 @@ NITRO_PRESET = "cloudflare_module"
 [observability]
 enabled = true
 head_sampling_rate = 1
+
+[[d1_databases]]
+binding = "DB"
+database_name = "xanzhu-content"
+database_id = "20794211-4b47-4ee6-8333-f4bce4bf3963"
