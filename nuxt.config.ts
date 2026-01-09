@@ -43,6 +43,7 @@ export default defineNuxtConfig({
         { rel: 'preconnect', href: cdnUrl, crossorigin: 'anonymous' },
         // Fallback
         { rel: 'dns-prefetch', href: cdnUrl },
+        { rel: 'dns-prefetch', href: 'https://api.iconify.design' },
       ],
     },
   },
@@ -109,7 +110,9 @@ export default defineNuxtConfig({
     '/**': {
       headers: {
         'x-robots-tag': 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
+        'Cache-Control': 'public, max-age=3600, s-maxage=86400, stale-while-revalidate=86400',
       },
+      isr: 86400,
     },
     '**/blog/**': {
       isr: true,
@@ -121,7 +124,7 @@ export default defineNuxtConfig({
     },
     '/images/**': {
       headers: {
-        'Cache-Control': 'public, max-age=86400, must-revalidate',
+        'Cache-Control': 'public, max-age=2592000, immutable',
       },
     },
   },
