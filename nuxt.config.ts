@@ -44,10 +44,10 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico', sizes: '32x32' },
         { rel: 'icon', type: 'image/svg+xml', href: '/icon.svg', sizes: 'any' },
         { rel: 'preconnect', href: cdnUrl, crossorigin: 'anonymous' },
+        { rel: 'preconnect', href: 'https://api.iconify.design' },
         // Fallback
         { rel: 'dns-prefetch', href: cdnUrl },
         { rel: 'dns-prefetch', href: 'https://api.iconify.design' },
-        { rel: 'preconnect', href: 'https://api.iconify.design' },
       ],
     },
   },
@@ -148,7 +148,7 @@ export default defineNuxtConfig({
   // API
   runtimeConfig: {
     public: {
-      version: '2.2.50',
+      version: '2.2.51',
       i18n: {
         baseUrl: siteUrl,
       },
@@ -255,7 +255,7 @@ export default defineNuxtConfig({
     sri: true,
   },
 
-  compatibilityDate: '2026-01-01',
+  compatibilityDate: '2026-01-21',
 
   sourcemap: isDev,
 

@@ -60,7 +60,7 @@ onUnmounted(() => {
       :aria-label="t('ui.scrollTop')"
       @click="scrollToTop"
     >
-      <Icon v-once name="lucide:chevron-up" class="h-5 w-5" />
+      <Icon name="lucide:chevron-up" class="h-5 w-5" />
     </button>
   </Transition>
 </template>
