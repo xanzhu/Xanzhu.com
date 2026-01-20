@@ -1,8 +1,11 @@
+import process from 'node:process'
+
 const siteUrl = 'https://xanzhu.com'
 const cdnUrl = 'https://cdn.xanzhu.com'
+const isDev = process.env.NODE_ENV === 'development'
 
 export default defineNuxtConfig({
-  devtools: { enabled: import.meta.dev },
+  devtools: { enabled: isDev },
   modules: [
     '@nuxtjs/i18n',
     '@nuxtjs/sitemap',
@@ -44,6 +47,7 @@ export default defineNuxtConfig({
         // Fallback
         { rel: 'dns-prefetch', href: cdnUrl },
         { rel: 'dns-prefetch', href: 'https://api.iconify.design' },
+        { rel: 'preconnect', href: 'https://api.iconify.design' },
       ],
     },
   },
@@ -157,12 +161,12 @@ export default defineNuxtConfig({
     mode: 'svg',
     clientBundle: {
       scan: true,
-      sizeLimitKb: 256,
+      sizeLimitKb: 128,
     },
     serverBundle: 'remote',
   },
 
-  // SECURITY V1.7
+  // SECURITY V2.1
   security: {
     nonce: true,
     ssg: {
@@ -170,7 +174,7 @@ export default defineNuxtConfig({
       hashScripts: true,
       hashStyles: true,
     },
-    // 4/26 - Testing
+    // Experimental Cors restrictions: 04/01/26
     corsHandler: {
       origin: [
         'https://xanzhu.com',
@@ -194,7 +198,7 @@ export default defineNuxtConfig({
         ],
         'style-src': [
           '\'self\'',
-          import.meta.dev ? '\'unsafe-inline\'' : '\'nonce-{{nonce}}\'',
+          isDev ? '\'unsafe-inline\'' : '\'nonce-{{nonce}}\'',
           'https://*.xanzhu.com',
         ],
         'base-uri': '\'none\'',
@@ -202,16 +206,19 @@ export default defineNuxtConfig({
           '\'self\'',
           'data:',
           cdnUrl,
+          'https://*.xanzhu.com',
           'https://assets.lotofcarrots.com/media/home/section/desktop/4.webp',
           'https://storage.googleapis.com/gweb-uniblog-publish-prod/',
           'https://i.ytimg.com',
         ],
         'media-src': [
+          '\'self\'',
           'https://storage.googleapis.com/gweb-uniblog-publish-prod/',
-          'https://storage.quantum-engine.ai/Rabbits_Factory_4K_h264.mp4',
-          'https://assets.lotofcarrots.com/media/home/section/desktop/4.mp4',
-          'https://www.apple.com/105/media/us/macbook-air-13-and-15/2023/f52c7a72-dff4-4f3c-9511-bf08e46c6f5f/anim/design/hero/medium_2x.mp4',
-          'https://www.apple.com/105/media/us/macos/sonoma-preview/2023/e6d837c5-8a7e-49d8-b0bd-137b21320db3/anim/share-preview/large_2x.mp4',
+          'https://storage.quantum-engine.ai/',
+          'https://assets.lotofcarrots.com',
+          'https://www.apple.com',
+          'https://www.apple.com',
+          'https://*.xanzhu.com',
         ],
         'font-src': ['\'self\'', 'data:'],
         'object-src': ['\'none\''],
@@ -224,7 +231,7 @@ export default defineNuxtConfig({
           'https://*.xanzhu.workers.dev',
           'https://api.weatherapi.com',
           'https://api.iconify.design',
-          ...(import.meta.dev
+          ...(isDev
             ? ['ws://localhost:4000', 'ws://localhost:24678']
             : []),
         ],
@@ -234,7 +241,7 @@ export default defineNuxtConfig({
           'https://www.youtube.com',
           'https://www.youtube-nocookie.com',
         ],
-        'upgrade-insecure-requests': !import.meta.dev,
+        'upgrade-insecure-requests': !isDev,
       },
       strictTransportSecurity: {
         maxAge: 31536000,
@@ -250,7 +257,7 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2026-01-01',
 
-  sourcemap: import.meta.dev,
+  sourcemap: isDev,
 
   unocss: {
     disableNuxtInlineStyle: false,
@@ -266,8 +273,15 @@ export default defineNuxtConfig({
     prerender: {
       crawlLinks: true,
     },
-    minify: true,
+    minify: !isDev,
     compressPublicAssets: true,
+    storage: {
+    // Experimental: KV Cache 21/01/25
+      cache: {
+        driver: 'cloudflare-kv-binding',
+        binding: 'CACHE',
+      },
+    },
   },
 
   $env: {
@@ -290,7 +304,7 @@ export default defineNuxtConfig({
     },
   },
 
-  // Experimental
+  // Experimental Vue Features
   experimental: {
     extractAsyncDataHandlers: true,
   },
@@ -301,6 +315,7 @@ export default defineNuxtConfig({
     },
   },
 
+  // Disabled in production
   // future: {
   //   compatibilityVersion: 5,
   // },
