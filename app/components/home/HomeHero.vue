@@ -8,7 +8,7 @@ const { t } = useI18n()
       class="hidden md:(absolute inset-0 z-0 flex items-center justify-center)"
       aria-hidden="true"
     >
-      <UiSvg load-s-v-g="beta02" class="h-80% w-full object-cover" />
+      <UiSvg v-once load-s-v-g="beta02" class="h-80% w-full object-cover" />
     </div>
 
     <div
@@ -18,7 +18,7 @@ const { t } = useI18n()
         class="mb2 flex items-center text-sm text-brand-light font-semibold uppercase space-x-2 dark:text-yellow-400"
         role="doc-subtitle"
       >
-        <Icon name="lucide:earth" class="h6 w6 text-inherit" aria-hidden="true" />
+        <Icon v-once name="lucide:earth" class="h6 w6 text-inherit" aria-hidden="true" />
         <span>{{ t('home.hero.tagline') }}</span>
       </div>
       <h1 id="hero" class="m0 max-w-4xl w-full text-5xl md:text-7xl">
@@ -34,7 +34,7 @@ const { t } = useI18n()
         <span class="m0">
           {{ t('home.hero.action') }}
         </span>
-        <Icon name="lucide:arrow-up-right" class="h5 w5" aria-hidden="true" />
+        <Icon v-once name="lucide:arrow-up-right" class="h5 w5" aria-hidden="true" />
       </NuxtLinkLocale>
     </div>
   </header>

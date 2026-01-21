@@ -50,7 +50,7 @@ function closeAll() {
       :aria-label="t('ui.lang.select')"
       @click="toggle('language')"
     >
-      <Icon name="lucide:languages" class="h-6 w-6" />
+      <Icon v-once name="lucide:languages" class="h-6 w-6" />
     </button>
 
     <button

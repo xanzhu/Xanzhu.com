@@ -16,17 +16,21 @@ const isDesktop = ref(false)
 let observer: IntersectionObserver | null = null
 const activeSection = ref<string | null>(null)
 
-function flattenLinks(links: TocLink[]): TocLink[] {
-  return links.flatMap((link) => {
-    const _link = [link]
-    if (link.children) {
-      _link.push(...flattenLinks(link.children))
-    }
-    return _link
-  })
-}
+const flattenedLinks = computed(() => {
+  const result: TocLink[] = []
 
-const flattenedLinks = computed(() => flattenLinks(props.links))
+  function flatten(links: TocLink[]) {
+    for (const link of links) {
+      result.push(link)
+      if (link.children) {
+        flatten(link.children)
+      }
+    }
+  }
+
+  flatten(props.links)
+  return result
+})
 
 const hasChildren = computed(() =>
   flattenedLinks.value.some(link => link.depth === 3),
@@ -36,7 +40,7 @@ function setupIntersectionObserver() {
   if (!isDesktop.value)
     return
 
-  const sections = flattenLinks(props.links)
+  const sections = flattenedLinks.value
     .filter(link => link.id)
     .map(link => document.getElementById(link.id))
     .filter((el): el is HTMLElement => el !== null)
@@ -62,18 +66,37 @@ function setupIntersectionObserver() {
   sections.forEach(section => observer?.observe(section))
 }
 
+let resizeTimeout: ReturnType<typeof setTimeout> | null = null
+
 function checkScreenWidth() {
+  const wasDesktop = isDesktop.value
   isDesktop.value = window.innerWidth >= 768
+
+  if (!wasDesktop && isDesktop.value) {
+    setupIntersectionObserver()
+  }
+
+  else if (wasDesktop && !isDesktop.value && observer) {
+    observer.disconnect()
+    observer = null
+  }
+}
+
+function handleResize() {
+  if (resizeTimeout)
+    clearTimeout(resizeTimeout)
+  resizeTimeout = setTimeout(checkScreenWidth, 150)
 }
 
 onMounted(() => {
   checkScreenWidth()
-  window.addEventListener('resize', checkScreenWidth)
-  setupIntersectionObserver()
+  window.addEventListener('resize', handleResize)
 })
 
 onUnmounted(() => {
-  window.removeEventListener('resize', checkScreenWidth)
+  window.removeEventListener('resize', handleResize)
+  if (resizeTimeout)
+    clearTimeout(resizeTimeout)
   if (observer)
     observer.disconnect()
 })
@@ -87,13 +110,13 @@ onUnmounted(() => {
     role="navigation"
   >
     <header id="toc-heading" class="mb-2 pb-2">
-      <p id="toc-heading" class="m-0 text-center text-lg font-semibold tracking-wide">
+      <p class="m-0 text-center text-lg font-semibold tracking-wide">
         {{ t("blog.toc") }}
       </p>
     </header>
     <ul class="flex flex-col gap-2 px-4 text-sm leading-tight" role="list">
       <li
-        v-for="link of flattenLinks(links)"
+        v-for="link of flattenedLinks"
         :key="link.id"
         class="w-fit border border-transparent rounded-sm transition-all duration-300 dark:text-light-400 hover:(underline underline-1 underline-offset-3)"
         :class="{

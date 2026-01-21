@@ -35,6 +35,7 @@ const pages = [
               {{ page.title }}
             </h2>
             <Icon
+              v-once
               name="lucide:arrow-up-right"
               class="h6 w6 core-border rounded-full bg-light4 p-2 text-inherit transition-colors dark:bg-black group-hover:(bg-black text-white) dark:group-hover:(bg-white text-black)" aria-hidden="true"
             />

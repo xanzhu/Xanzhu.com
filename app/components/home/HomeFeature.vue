@@ -13,8 +13,17 @@ const { data: features } = await useAsyncData(`featuredArticles-${locale.value}`
     .limit(5)
     .all())
 
-const featureSetOne = computed(() => features.value?.slice(0, 3) || [])
-const featureSetTwo = computed(() => features.value?.slice(3, 5) || [])
+const featureSets = computed(() => {
+  const items = features.value || []
+  return {
+    setOne: items.slice(0, 3),
+    setTwo: items.slice(3, 5),
+    idsMap: new Map(items.map(item => [
+      item.path,
+      `post${item.path?.replaceAll('/', '-') || ''}`,
+    ])),
+  }
+})
 
 const featureImage = 'https://cdn.xanzhu.com/v1/rabbit-r1/graphic.webp'
 </script>
@@ -45,12 +54,13 @@ const featureImage = 'https://cdn.xanzhu.com/v1/rabbit-r1/graphic.webp'
     >
       <div class="contents children:(core-border rounded-lg)">
         <article
-          v-for="feature in featureSetOne" :key="feature.path"
+          v-for="feature in featureSets.setOne" :key="feature.path"
           class="group core-theme transition transition-transform duration-300 ease-linear hover:(scale-102 bg-white shadow-lg dark:bg-black)"
         >
           <NuxtLinkLocale
-            class="block h-full p-5 text-black no-underline dark:text-white" :to="feature.path"
-            :aria-labelledby="`post${feature.path?.replaceAll('/', '-')}`"
+            class="block h-full p-5 text-black no-underline dark:text-white"
+            :to="feature.path"
+            :aria-labelledby="featureSets.idsMap.get(feature.path)"
           >
             <span
               class="core-border rounded-md bg-light200 px4 py1 text-sm text-inherit op-90 dark:bg-dark800"
@@ -59,7 +69,7 @@ const featureImage = 'https://cdn.xanzhu.com/v1/rabbit-r1/graphic.webp'
               {{ feature.tag }}
             </span>
             <h3
-              :id="`post${feature.path?.replaceAll('/', '-')}`"
+              :id="featureSets.idsMap.get(feature.path)"
               class="group-hover:text-primary mt-2 text-xl text-inherit font-semibold"
             >
               {{ feature.title }}
@@ -73,29 +83,34 @@ const featureImage = 'https://cdn.xanzhu.com/v1/rabbit-r1/graphic.webp'
 
       <div class="relative hidden lg:(grid col-span-2 row-span-2)">
         <NuxtImg
-          :src="featureImage" alt="Rabbit R1 Animation Graphic" loading="lazy"
-          format="webp" class="h-full w-full rounded-lg object-cover"
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 854px" width="854" height="532"
+          :src="featureImage"
+          alt="Rabbit R1 Animation Graphic"
+          loading="lazy"
+          format="webp"
+          class="h-full w-full rounded-lg object-cover"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 854px"
+          width="854"
+          height="532"
         />
         <NuxtLink
           to="https://www.rabbit.tech"
           class="absolute bottom-2 right-2 core-border rounded-md core-ui px3 py1 text-sm decoration-none hover:core-theme"
-          external target="_blank"
+          external
+          target="_blank"
         >
           Rabbit.tech
         </NuxtLink>
       </div>
 
-      <div
-        class="contents children:(core-border rounded-lg)"
-      >
+      <div class="contents children:(core-border rounded-lg)">
         <article
-          v-for="feature in featureSetTwo" :key="feature.path"
+          v-for="feature in featureSets.setTwo" :key="feature.path"
           class="group core-theme transition duration-300 ease-linear hover:(scale-102 bg-white shadow-lg dark:bg-black)"
         >
           <NuxtLinkLocale
-            class="block h-full p-5 text-black no-underline dark:text-white" :to="feature.path"
-            :aria-labelledby="`post${feature.path?.replaceAll('/', '-')}`"
+            class="block h-full p-5 text-black no-underline dark:text-white"
+            :to="feature.path"
+            :aria-labelledby="featureSets.idsMap.get(feature.path)"
           >
             <span
               class="core-border rounded-md bg-light200 px4 py1 text-sm text-inherit op-90 dark:bg-dark800"
@@ -104,7 +119,7 @@ const featureImage = 'https://cdn.xanzhu.com/v1/rabbit-r1/graphic.webp'
               {{ feature.tag }}
             </span>
             <h3
-              :id="`post${feature.path?.replaceAll('/', '-')}`"
+              :id="featureSets.idsMap.get(feature.path)"
               class="group-hover:text-primary mt-2 text-xl text-inherit font-semibold"
             >
               {{ feature.title }}
