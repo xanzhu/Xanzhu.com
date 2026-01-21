@@ -14,7 +14,16 @@ const path = computed(() =>
   `/${locale.value === 'en' ? '' : `${locale.value}/`}blog/${slug.value.join('/')}`,
 )
 
-const { data: post } = await useAsyncData(path.value, () => queryCollection(collection.value).path(path.value).first())
+const [{ data: post }, { data: surround }] = await Promise.all([
+  useAsyncData(path.value, () =>
+    queryCollection(collection.value).path(path.value).first()),
+  useAsyncData(`surround-${locale.value}${path.value}`, () =>
+    queryCollectionItemSurroundings(collection.value, path.value, {
+      before: 1,
+      after: 1,
+      fields: ['title', 'path', 'date', 'img'],
+    }).order('date', 'DESC')),
+])
 
 if (!post.value)
   throw createError({ statusCode: 404 })
@@ -22,13 +31,6 @@ if (!post.value)
 if (post.value.title) {
   route.meta.title = post.value.title
 }
-
-const { data: surround } = await useAsyncData(`surround-${locale.value}${path.value}`, () => queryCollectionItemSurroundings(collection.value, path.value, {
-  before: 1,
-  after: 1,
-  fields: ['title', 'path', 'date', 'img'],
-})
-  .order('date', 'DESC'))
 
 const seoTitle = computed(() => post.value?.title || 'Default Blog Title')
 const seoDesc = computed(() => post.value?.description || 'Explore our latest blog posts.')
