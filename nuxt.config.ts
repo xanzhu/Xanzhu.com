@@ -255,7 +255,7 @@ export default defineNuxtConfig({
     sri: true,
   },
 
-  compatibilityDate: '2026-01-21',
+  compatibilityDate: '2026-01-20',
 
   sourcemap: isDev,
 
