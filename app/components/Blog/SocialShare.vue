@@ -36,38 +36,44 @@ async function copyLink() {
 const encodedUrl = computed(() => encodeURIComponent(fullUrl.value))
 const encodedTitle = computed(() => encodeURIComponent(props.post.title))
 
-const socials = computed(() => [
-  {
-    name: 'twitter',
-    url: `https://twitter.com/intent/tweet?url=${encodedUrl.value}&text=${encodedTitle.value}&via=Xanzhu1`,
-    icon: 'ri:twitter-x-line',
-  },
-  {
-    name: 'bluesky',
-    url: `https://bsky.app/intent/compose?text=${encodedTitle.value}%20${encodedUrl.value}`,
-    icon: 'ri:bluesky-fill',
-  },
-  {
-    name: 'threads',
-    url: `https://threads.net/intent/post?text=${encodedTitle.value}%20${encodedUrl.value}`,
-    icon: 'ri:threads-line',
-  },
-  {
-    name: 'linkedin',
-    url: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl.value}`,
-    icon: 'ri:linkedin-fill',
-  },
-  {
-    name: 'reddit',
-    url: `https://www.reddit.com/submit?url=${encodedUrl.value}&title=${encodedTitle.value}`,
-    icon: 'ri:reddit-fill',
-  },
-  {
-    name: 'email',
-    url: `mailto:?subject=${encodedTitle.value}&body=${encodeURIComponent(t('ui.sharing.email'))}: ${encodedUrl.value}`,
-    icon: 'ri:mail-open-fill',
-  },
-])
+const socials = computed(() => {
+  const url = encodedUrl.value
+  const title = encodedTitle.value
+  const emailBody = encodeURIComponent(t('ui.sharing.email'))
+
+  return [
+    {
+      name: 'twitter',
+      url: `https://twitter.com/intent/tweet?url=${url}&text=${title}&via=Xanzhu1`,
+      icon: 'ri:twitter-x-line',
+    },
+    {
+      name: 'bluesky',
+      url: `https://bsky.app/intent/compose?text=${title}%20${url}`,
+      icon: 'ri:bluesky-fill',
+    },
+    {
+      name: 'threads',
+      url: `https://threads.net/intent/post?text=${title}%20${url}`,
+      icon: 'ri:threads-line',
+    },
+    {
+      name: 'linkedin',
+      url: `https://www.linkedin.com/sharing/share-offsite/?url=${url}`,
+      icon: 'ri:linkedin-fill',
+    },
+    {
+      name: 'reddit',
+      url: `https://www.reddit.com/submit?url=${url}&title=${title}`,
+      icon: 'ri:reddit-fill',
+    },
+    {
+      name: 'email',
+      url: `mailto:?subject=${title}&body=${emailBody}: ${url}`,
+      icon: 'ri:mail-open-fill',
+    },
+  ]
+})
 </script>
 
 <template>
