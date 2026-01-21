@@ -131,6 +131,11 @@ export default defineNuxtConfig({
         'Cache-Control': 'public, max-age=2592000, immutable',
       },
     },
+    // Experimental: dedicated status response
+    '/health': {
+      security: { headers: false },
+      index: false,
+    },
   },
 
   image: {
