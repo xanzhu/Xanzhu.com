@@ -57,6 +57,7 @@ const categoryLinks = computed(() => {
         class="group flex items-center gap-2 text-neutral-3 no-underline transition-colors -mb-5 focus:(text-white outline-2 outline-white outline-offset-2) hover:text-white"
       >
         <Icon
+          v-once
           name="lucide:arrow-left"
           class="h4 w4 transition-transform group-hover:-translate-x-1"
           aria-hidden="true"

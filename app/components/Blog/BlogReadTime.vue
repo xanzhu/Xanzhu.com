@@ -1,19 +1,61 @@
 <script setup lang="ts">
 const props = defineProps<{
-  content: object
+  content: {
+    body?: {
+      type?: string
+      value?: any[]
+    }
+  }
 }>()
 
 const { t } = useI18n()
 
-const wordsPerMinute = 230
+const readingTime = computed(() => {
+  const wordsPerMinute = 238
 
-const contentString = JSON.stringify(props.content)
-  .replace(/<[^>]+(>|$)/g, '')
-  .replace(/\s+/g, ' ')
-  .trim()
+  function countWords(nodes: any): number {
+    if (!nodes)
+      return 0
 
-const words = contentString.split(' ').filter(Boolean).length
-const readingTime = Math.ceil(words / wordsPerMinute)
+    if (Array.isArray(nodes)) {
+      let count = 0
+      for (const node of nodes) {
+        count += countWords(node)
+      }
+      return count
+    }
+
+    if (typeof nodes === 'string') {
+      const text = nodes.trim()
+      return text ? (text.match(/\S+/g) || []).length : 0
+    }
+
+    if (typeof nodes === 'object') {
+      let count = 0
+
+      if (nodes.value && typeof nodes.value === 'string') {
+        const text = nodes.value.trim()
+        count += text ? (text.match(/\S+/g) || []).length : 0
+      }
+
+      for (const key in nodes) {
+        if (Array.isArray(nodes[key])) {
+          count += countWords(nodes[key])
+        }
+      }
+
+      return count
+    }
+
+    return 0
+  }
+
+  const totalWords = props.content.body?.value
+    ? countWords(props.content.body.value)
+    : 0
+
+  return Math.max(1, Math.ceil(totalWords / wordsPerMinute))
+})
 </script>
 
 <template>
