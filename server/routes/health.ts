@@ -1,5 +1,5 @@
 export default defineEventHandler(async (event) => {
-  setResponseHeader(event, 'Cache-Control', 'public, max-age=60')
+  setResponseHeader(event, 'Cache-Control', 'no-store')
 
   return 'OK'
 })
