@@ -153,7 +153,7 @@ export default defineNuxtConfig({
   // API
   runtimeConfig: {
     public: {
-      version: '2.2.51',
+      version: '2.3.1',
       i18n: {
         baseUrl: siteUrl,
       },
@@ -178,15 +178,6 @@ export default defineNuxtConfig({
       meta: true,
       hashScripts: true,
       hashStyles: true,
-    },
-    // Experimental Cors restrictions: 04/01/26
-    corsHandler: {
-      origin: [
-        'https://xanzhu.com',
-        'https://cdn.xanzhu.com',
-      ],
-      methods: ['GET', 'POST'],
-      credentials: true,
     },
     headers: {
       contentSecurityPolicy: {

@@ -91,7 +91,6 @@ function handleResize() {
 onMounted(() => {
   checkScreenWidth()
   window.addEventListener('resize', handleResize)
-  setupIntersectionObserver()
 })
 
 onUnmounted(() => {
