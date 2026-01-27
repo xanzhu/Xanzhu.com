@@ -67,10 +67,10 @@ useLangMeta('terms.meta', seoImage, 'prefix', t)
           <p v-if="section.content" class="text-dark-300 dark:text-gray-300">
             {{ section.content }}
             <NuxtLink
-              v-if="section.isContact" href="mailto:feedback@xanzhu.com"
+              v-if="section.isContact" href="mailto:support@xanzhu.com"
               class="text-black no-underline dark:text-white hover:underline"
             >
-              feedback@xanzhu.com
+              support@xanzhu.com
             </NuxtLink>
           </p>
         </div>
