@@ -1,9 +1,7 @@
 <script setup lang="ts">
 import type { NuxtError } from '#app'
 
-const props = defineProps({
-  error: Object as () => NuxtError,
-})
+const props = defineProps<{ error?: NuxtError }>()
 
 const { t } = useI18n()
 const localePath = useLocalePath()
@@ -31,7 +29,7 @@ useHead(() => ({
 const router = useRouter()
 
 function handleGoBack() {
-  if (window.history.length > 1 && document.referrer) {
+  if (window.history.length) {
     router.back()
   }
   else {
