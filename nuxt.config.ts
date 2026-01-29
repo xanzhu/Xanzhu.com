@@ -1,4 +1,5 @@
 import process from 'node:process'
+import pkg from './package.json'
 
 const siteUrl = 'https://xanzhu.com'
 const cdnUrl = 'https://cdn.xanzhu.com'
@@ -152,7 +153,7 @@ export default defineNuxtConfig({
   // API
   runtimeConfig: {
     public: {
-      version: '2.3.10',
+      version: pkg.version,
       i18n: {
         baseUrl: siteUrl,
       },
