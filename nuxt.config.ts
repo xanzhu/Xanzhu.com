@@ -39,7 +39,7 @@ export default defineNuxtConfig({
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:site', content: '@xanzhu1' },
         // Naver Verification
-        { name: 'naver-site-verification', content: '' },
+        { name: 'naver-site-verification', content: 'efe8928c52c47ffddfbd678ff1ac6fe5ca08b009' },
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico', sizes: '32x32' },
@@ -122,6 +122,7 @@ export default defineNuxtConfig({
     '**/blog/**': {
       isr: true,
     },
+    '**/analysis': { prerender: true },
     '/_nuxt/**': {
       headers: {
         'Cache-Control': 'public, max-age=31536000, immutable',
@@ -134,7 +135,6 @@ export default defineNuxtConfig({
     },
     '/health': {
       security: { headers: false },
-      index: false,
     },
   },
 
