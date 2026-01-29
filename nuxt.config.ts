@@ -1,4 +1,5 @@
 import process from 'node:process'
+import pkg from './package.json'
 
 const siteUrl = 'https://xanzhu.com'
 const cdnUrl = 'https://cdn.xanzhu.com'
@@ -132,10 +133,8 @@ export default defineNuxtConfig({
         'Cache-Control': 'public, max-age=2592000, immutable',
       },
     },
-    // Experimental: dedicated status response
     '/health': {
       security: { headers: false },
-      index: false,
     },
   },
 
@@ -154,7 +153,7 @@ export default defineNuxtConfig({
   // API
   runtimeConfig: {
     public: {
-      version: '2.2.51',
+      version: pkg.version,
       i18n: {
         baseUrl: siteUrl,
       },
@@ -273,7 +272,6 @@ export default defineNuxtConfig({
     minify: !isDev,
     compressPublicAssets: true,
     storage: {
-    // Experimental: KV Cache 21/01/25
       cache: {
         driver: 'cloudflare-kv-binding',
         binding: 'CACHE',
@@ -312,7 +310,7 @@ export default defineNuxtConfig({
     },
   },
 
-  // future: {
-  //   compatibilityVersion: 5,
-  // },
+  future: {
+    compatibilityVersion: 5,
+  },
 })

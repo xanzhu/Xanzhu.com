@@ -1,19 +1,17 @@
 <script setup lang="ts">
 import type { NuxtError } from '#app'
 
-const props = defineProps({
-  error: Object as () => NuxtError,
-})
+const props = defineProps<{ error?: NuxtError }>()
 
 const { t } = useI18n()
 const localePath = useLocalePath()
 
 const errorData = computed(() => {
-  const code = props.error?.statusCode
-  const is404 = code === 404
+  const status = props.error?.status
+  const is404 = status === 404
   const key = is404 ? '404' : '500'
   return {
-    code,
+    status,
     key,
     title: t(`error.${key}.h1`),
     message: t(`error.${key}.p`),
@@ -31,7 +29,7 @@ useHead(() => ({
 const router = useRouter()
 
 function handleGoBack() {
-  if (window.history.length > 1 && document.referrer) {
+  if (window.history.length) {
     router.back()
   }
   else {
@@ -45,7 +43,7 @@ function handleGoBack() {
     <section class="max-w-lg">
       <h1 class="m0 text-4xl font-semibold tracking-wide sm:text-6xl">
         {{ errorData.title }}
-        <span class="sr-only">({{ t('aria.error_code_prefix') }} {{ errorData.code }})</span>
+        <span class="sr-only">({{ t('aria.error_code_prefix') }} {{ errorData.status }})</span>
       </h1>
 
       <div class="mt5 max-w-md core-border rounded-lg core-ui p-3 text-neutral8 md:mt-15 dark:text-light2" role="alert" aria-atomic="true">
@@ -64,7 +62,7 @@ function handleGoBack() {
             {{ errorData.action }}
           </button>
           <span class="animate-pulse text-sm opacity-80" aria-hidden="true">
-            {{ errorData.code }}
+            {{ errorData.status }}
           </span>
         </div>
       </div>
@@ -72,7 +70,7 @@ function handleGoBack() {
 
     <aside class="max-w-lg w-full flex justify-center text-black dark:text-white" aria-hidden="true">
       <svg
-        v-if="errorData.code === 404"
+        v-if="errorData.status === 404"
         viewBox="0 0 356 356"
         fill="currentColor"
         xmlns="http://www.w3.org/2000/svg"
