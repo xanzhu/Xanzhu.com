@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: 
+Disallow: /health
 
 Sitemap: https://xanzhu.com/sitemap_index.xml

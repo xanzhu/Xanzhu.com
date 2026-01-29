@@ -29,7 +29,7 @@ useHead(() => ({
 const router = useRouter()
 
 function handleGoBack() {
-  if (window.history.length) {
+  if (window.history.length > 1) {
     router.back()
   }
   else {

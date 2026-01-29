@@ -10,7 +10,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <Html :lang="head.htmlAttrs.lang" :dir="head.htmlAttrs?.dir" class="scroll-pt-[73px] antialiased">
+  <Html :lang="head.htmlAttrs?.lang" :dir="head.htmlAttrs?.dir" class="scroll-pt-[73px] antialiased">
     <Head>
       <Link
         v-for="link in head.link"
@@ -23,6 +23,7 @@ useSeoMeta({
         v-for="meta in head.meta"
         :key="meta.id"
         :property="meta.property"
+        :name="meta.name"
         :content="meta.content"
       />
     </Head>
