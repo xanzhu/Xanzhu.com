@@ -5,9 +5,10 @@ const route = useRoute()
 const { locale, t } = useI18n()
 const config = useRuntimeConfig()
 
-const slug = computed(() =>
-  ([] as string[]).concat(route.params.slug || []),
-)
+const slug = computed(() => {
+  const slugArray = ([] as string[]).concat(route.params.slug || [])
+  return slugArray.filter(s => s !== '')
+})
 
 const collection = computed(() => `blog_${locale.value}` as keyof Collections)
 const path = computed(() =>
@@ -28,7 +29,7 @@ const [{ data: post }, { data: surround }] = await Promise.all([
 if (!post.value)
   throw createError({ statusCode: 404 })
 
-if (post.value.title) {
+if (post.value?.title) {
   route.meta.title = post.value.title
 }
 
@@ -50,8 +51,8 @@ useSeoMeta({
   twitterImage: seoImage,
   ogType: 'article',
   ogImage: seoImage,
-  articlePublishedTime: post.value?.date,
-  articleModifiedTime: post.value?.updated,
+  articlePublishedTime: computed(() => post.value?.date),
+  articleModifiedTime: computed(() => post.value?.updated),
 })
 </script>
 
