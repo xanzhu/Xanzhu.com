@@ -30,14 +30,16 @@ function getSvgIconUrl(name) {
 </script>
 
 <template>
-  <div class="hidden lg:(mt-20 h-[12vh] flex items-center justify-center)">
-    <ul class="flex flex-wrap list-none justify-center gap-12 px-8" role="list">
-      <li v-for="link in urls" :key="link.name" role="listitem" class="flex">
+  <section
+    class="hidden lg:(mb24 mt-20 h-[12vh] flex inline-flex items-center justify-center)"
+  >
+    <ul class="flex flex-wrap list-none justify-center gap-12 px-8">
+      <li v-for="link in urls" :key="link.name">
         <NuxtLink
           :to="link.url"
           target="_blank"
           rel="noopener"
-          :aria-label="link.label"
+          :aria-label="link.name"
           class="group inline-block rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
         >
           <div
@@ -57,5 +59,5 @@ function getSvgIconUrl(name) {
         </NuxtLink>
       </li>
     </ul>
-  </div>
+  </section>
 </template>
