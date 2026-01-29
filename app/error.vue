@@ -20,7 +20,7 @@ const errorData = computed(() => {
 })
 
 useHead(() => ({
-  title: errorData.value.title,
+  title: `${errorData.value.key} - ${errorData.value.title}`,
   meta: [
     { name: 'robots', content: 'noindex' },
   ],
@@ -39,16 +39,16 @@ function handleGoBack() {
 </script>
 
 <template>
-  <main class="m0 h-screen flex flex-col-reverse items-center justify-center bg-white p4 text-black font-sans lg:flex-row md:gap-16 dark:(bg-black text-white)">
+  <main class="m0 h-screen flex flex-col-reverse items-center justify-center bg-white p4 text-black font-sans lg:flex-row lg:flex-row dark:bg-black dark:text-white">
     <section class="max-w-lg">
-      <h1 class="m0 text-4xl font-semibold tracking-wide sm:text-6xl">
+      <h1 class="m0 text-4xl font-semibold tracking-wide <sm:text-center sm:text-6xl">
         {{ errorData.title }}
         <span class="sr-only">({{ t('aria.error_code_prefix') }} {{ errorData.status }})</span>
       </h1>
 
       <div class="mt5 max-w-md core-border rounded-lg core-ui p-3 text-neutral8 md:mt-15 dark:text-light2" role="alert" aria-atomic="true">
-        <div class="mb-10 flex items-center core-border rounded-lg bg-white px-4 md:(mb-15 px5 space-x-8) space-x-4 dark:bg-black">
-          <Icon v-once name="lucide:triangle-alert" class="hidden sm:(h7 w-auto flex text-inherit)" aria-hidden="true" />
+        <div class="mb-10 flex items-center core-border rounded-lg bg-white px-4 md:(mb-15 px5) space-x-4 dark:bg-black">
+          <Icon name="lucide:triangle-alert" class="hidden sm:(h10 w-auto flex text-inherit)" aria-hidden="true" />
           <p>
             {{ errorData.message }}
           </p>
@@ -62,7 +62,7 @@ function handleGoBack() {
             {{ errorData.action }}
           </button>
           <span class="animate-pulse text-sm opacity-80" aria-hidden="true">
-            {{ errorData.status }}
+            {{ errorData.key }}
           </span>
         </div>
       </div>

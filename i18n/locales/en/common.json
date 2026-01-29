@@ -64,14 +64,14 @@
   },
   "error": {
     "404": {
-      "h1": "Hmm... Where Did That Page Go?",
-      "p": "Sorry, the link's broken or the page moved somewhere else.",
+      "h1": "Page Not Found",
+      "p": "We can't seem to find the page you're looking for. It might have been moved or deleted.",
       "goBack": "Return Home"
     },
     "500": {
-      "h1": "The Server's Taking a Coffee Break...",
-      "p": "Something isn't working right now. Please try again soon.",
-      "goBack": "Try Again"
+      "h1": "Something Went Wrong",
+      "p": "Our servers are having a bit of trouble right now. Please refresh the page or try again in a few minutes.",
+      "goBack": "Refresh Page"
     },
     "blog": {
       "notFound": "No posts available."
