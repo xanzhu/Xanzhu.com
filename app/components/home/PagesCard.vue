@@ -20,7 +20,7 @@ const pages = [
 </script>
 
 <template>
-  <section aria-labelledby="pages-heading">
+  <section :aria-label="t('aria.explore_pages_home')">
     <div class="grid grid-cols-1 mx-auto justify-items-center gap-6 p-6 md:grid-cols-2 xl:grid-cols-3 xl:w-5xl">
       <NuxtLinkLocale
         v-for="page in pages"
@@ -33,9 +33,9 @@ const pages = [
         >
           <div class="relative h-full flex flex-col text-black dark:text-white">
             <div class="flex items-center justify-between">
-              <h2 id="pages-heading" class="text-4xl text-inherit font-semibold">
+              <h3 class="text-4xl text-inherit font-semibold">
                 {{ page.title }}
-              </h2>
+              </h3>
               <Icon
                 name="lucide:arrow-up-right"
                 class="h6 w6 core-border rounded-full bg-light4 p-2 text-inherit transition-colors dark:bg-black group-hover:(bg-black text-white) dark:group-hover:(bg-white text-black)"

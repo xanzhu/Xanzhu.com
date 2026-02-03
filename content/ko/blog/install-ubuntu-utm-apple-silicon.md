@@ -271,7 +271,7 @@ alt: 고해상도 배율을 위한 Ubuntu 디스플레이 설정
 
 또는 **터미널(Terminal)**을 열고 다음 명령어를 실행하세요:
 
-```
+```bash
 sudo apt update && sudo apt upgrade -y
 ```
 

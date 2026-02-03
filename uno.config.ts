@@ -155,6 +155,18 @@ export default defineConfig<Wind3Theme & TypographyTheme>({
           'font-weight': '400',
         },
 
+        // HR
+        '.prose hr': {
+          'border': '0',
+          'border-top': '1px solid #c2c2c2ff',
+          'margin': '2.5rem 0',
+          'opacity': '0.5',
+        },
+
+        '.dark .prose hr': {
+          'border-top': '1px solid #262626ff',
+        },
+
         // Tables
         '.prose table': {
           'width': '100%',

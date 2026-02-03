@@ -271,7 +271,7 @@ alt: 针对高分辨率缩放的 Ubuntu 显示设置
 
 或者打开 **终端 (Terminal)** 并运行：
 
-```
+```bash
 sudo apt update && sudo apt upgrade -y
 ```
 
