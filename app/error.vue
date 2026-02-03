@@ -41,7 +41,7 @@ function handleGoBack() {
 <template>
   <main class="m0 h-screen flex flex-col-reverse items-center justify-center bg-white p4 text-black font-sans lg:flex-row lg:flex-row dark:bg-black dark:text-white">
     <section class="max-w-lg">
-      <h1 class="m0 text-4xl font-semibold tracking-wide <sm:text-center sm:text-6xl">
+      <h1 class="m0 text-4xl font-semibold tracking-wide lt-sm:text-center sm:text-6xl">
         {{ errorData.title }}
         <span class="sr-only">({{ t('aria.error_code_prefix') }} {{ errorData.status }})</span>
       </h1>

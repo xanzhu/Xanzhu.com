@@ -270,7 +270,7 @@ The desktop should now look crisp and properly scaled.
 Finally, update Ubuntu's packages. Open the menu, select **Software Updater**, and install available updates to ensure optimal performance.
 
 Alternatively open the **Terminal** and run:
-```
+```bash
 sudo apt update && sudo apt upgrade -y
 ```
 
