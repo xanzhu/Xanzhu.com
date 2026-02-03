@@ -1,5 +1,5 @@
 name = "core"
-compatibility_date = "2026-01-20"
+compatibility_date = "2026-02-01"
 compatibility_flags = ["nodejs_compat"]
 preview_urls = true
 
@@ -12,7 +12,6 @@ NITRO_PRESET = "cloudflare_module"
 [[kv_namespaces]]
 binding = "CACHE"
 id = "7815380b9fc14457aaaf0c1578d57631" 
-preview_id = "a199f13ace5d42ba8fb6f67e719cbe2b"
 
 [observability]
 enabled = true
