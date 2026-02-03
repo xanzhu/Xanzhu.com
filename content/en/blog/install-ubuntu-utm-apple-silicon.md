@@ -1,51 +1,62 @@
 ---
-title: "Ubuntu 25.04 on Apple Silicon with UTM"
-description: "Learn how to set up Ubuntu 25.04 on Apple Silicon using UTM, a free and open-source virtualization tool."
-date: "2025-04-11"
-updated: "2025-07-15"
+title: "Ubuntu 25.10 on Apple Silicon with UTM"
+description: "Learn how to set up Ubuntu 25.10 on Apple Silicon using UTM, a free and open-source virtualization tool."
+date: "2026-02-03"
+updated: "2026-02-03"
 tag: "Guide"
 toc: true
 feature: true
 img: "/images/blog/covers/utm-ubuntu-m4.webp"
-alt: "Ubuntu 25.04 running on Apple Silicon with UTM"
+alt: "Ubuntu 25.10 running on Apple Silicon with UTM"
 ---
 
-Ubuntu now offers a native ARM desktop build — perfect for Apple Silicon users looking to explore Linux, develop, or virtualise efficiently. In this guide, we'll walk through setting up Ubuntu 25.04 (Plucky Puffin) in a virtual machine using UTM, a free and open-source virtualization tool tailored for macOS.
+Ubuntu now offers a native ARM desktop build — perfect for Apple Silicon users who want to explore Linux, develop, or virtualise efficiently. In this guide, we'll walk through setting up **Ubuntu 25.10 (Questing Quokka)** in a virtual machine using **UTM**, a free and open-source tool tailored for macOS.
 
 Our :PageLink{title="previous article" url="/blog/apple-silicon-virtual-machine-setup#ubuntu-2204-1"} detailed how to set up Ubuntu Server with a desktop environment.
 
 ::ArticleUpdates
-- **2025-07-15** - This guide has been reviewed and updated to Ubuntu 25.04
+- **2025-07-15** - Guide updated for Ubuntu 25.04.
+- **2026-02-03** - **Annual Re-release**: Verified and updated all steps for Ubuntu 25.10.
 ::
+
+---
 
 ## Requirements
 
-- UTM version 4.6.5
-- Minimum 30 GB free storage
-- Ubuntu 25.04 ISO (**ARM64**)
-- macOS 15
-- Apple Silicon device (M1-M4 series)
+* **UTM**: Version 4.7.5 or newer.
+* **Storage**: Minimum 30 GB free space.
+* **ISO**: Ubuntu 25.10 Desktop (**ARM64**).
+* **Hardware**: Apple Silicon (M1, M2, M3, M4, or M5).
 
 ## UTM Download
 
-Download UTM version 4.6.5 from the :PageLink{title="UTM GitHub releases page" url="https://github.com/utmapp/UTM/releases"} Previous 4.x.x versions should also work.
+Download **UTM version 4.7.5** from the :PageLink{title="UTM GitHub releases page" url="https://github.com/utmapp/UTM/releases"}
 
-Automatic updates are available for UTM via the :PageLink{title="App Store Version" url="https://apps.apple.com/us/app/utm-virtual-machines/id1538878817"} though this version is paid.
+The GitHub version is free to download. Alternatively, the :PageLink{title="Mac App Store" url="https://apps.apple.com/us/app/utm-virtual-machines/id1538878817"} version supports automatic updates and helps support the developers (paid).
 
-Drag UTM to your Applications folder and verify it opens correctly.
+Drag UTM to your **Applications** folder and launch it.
 
 ## Ubuntu ISO Download
 
-Next, download the Ubuntu 25.04 **ARM64** ISO, approximately 3.82 GB, from the :PageLink{title="Ubuntu website" url="https://cdimage.ubuntu.com/releases/25.04/release/"}.
+Download the **Ubuntu 25.10 ARM64 ISO** (approx. 4.98 GB) from the :PageLink{title="Ubuntu CD Image server" url="https://cdimage.ubuntu.com/releases/25.10/release/"}.
 
-This is Ubuntu's first ARM64 desktop build, with LTS variants planned for the future. As a pre-release version, some features may be experimental.
-Ubuntu 25.04 has a support lifespan of approximately 9 months. We'll keep updating this guide as Ubuntu releases new builds.
+::media
+---
+source: https://cdn.xanzhu.com/2026/utm-ubuntu/ubuntu-download.webp
+alt: Ubuntu website showcasing download options for arm
+---
+::
 
-With the ISO downloaded, open UTM to create the virtual machine.
+* **Ubuntu 25.10** is an interim release providing the latest kernels and driver updates needed for Apple Silicon.
+* **Ubuntu 26.04 (Resolute Raccoon)** will be the next LTS release, and is expected to include an official ARM desktop download for the first time. It’s scheduled for April 2026.
+
+This guide will continue to be updated as Ubuntu progresses into the LTS version. Some features or bugs may be solved in later versions we'll try our best to note down potential issues and workarounds.
+
+---
 
 ## UTM Configuration
 
-In UTM, click the **+** icon to start creating a new virtual machine.
+Open UTM and click the **+ (Plus)** icon to create a new virtual machine.
 
 ::media
 ---
@@ -58,20 +69,10 @@ alt: UTM application interface showing the main window with a plus icon to creat
 
 UTM offers two modes:
 
-- **Virtualise**
-- **Emulate**
-
 | Mode       | Pros                       | Cons                                 |
 | ---------- | -------------------------- | ------------------------------------ |
-| Virtualise | Faster, native ARM support | Can't run x86 or non ARM processors  |
+| Virtualise | Faster, native ARM support | Does not support x86 (Intel/AMD) architecture.  |
 | Emulate    | Supports non-ARM systems   | Slower, potential performance issues |
-
-::media
----
-source: https://cdn.xanzhu.com/v1/m3-ubuntu/utm-mode.webp
-alt: UTM Configuration Mode selection between Virtualise and Emulate
----
-::
 
 Select **Virtualise** to leverage Apple Silicon's efficiency.
 
@@ -79,85 +80,82 @@ Emulation is slower but supports older systems. Pre-built VMs are also available
 
 ### Operating System
 
+Choose **Linux**
+
+### Hardware Settings
+
+* **Memory**: Allocate at least **4096 MB (4 GB)**. If you have 16GB+ RAM on your Mac, 8GB (8192 MB) is recommended for a smoother experience.
+* **CPU**: Leave at default for automatic core management.
+
+Set RAM to half your device's available memory (default: 4096 MB or 4 GB). Leave CPU cores at the default for automatic management. Click **Continue**.
+
+#### QEMU vs Apple Virtualization
+
+By default, UTM uses **QEMU**, which is flexible and widely compatible.
+On macOS 15+, enabling **Apple Virtualization** can improve performance and responsiveness for ARM guests like Ubuntu. If you run into compatibility issues, you can always switch back to QEMU.
+
 ::media
 ---
-source: https://cdn.xanzhu.com/v1/m3-ubuntu/utm-os.webp
-alt: UTM Configuration OS selection between Linux and macOS
----
-::
-
-1. Choose **Linux**.
-2. Enable **Use Apple Virtualization** for native performance.
-
-::media
----
-source: https://cdn.xanzhu.com/v1/ubuntu-2504/utm-enable-apple-virt.webp
+source: https://cdn.xanzhu.com/2026/utm-ubuntu/utm-config-virt.webp
 alt: UTM Configuration for Apple Virtualization
 ---
 ::
 
-Apple Virtualization optimizes performance on macOS 15, though older macOS versions may work with reduced stability. Alternatively, uncheck **Use Apple Virtualization** to use QEMU for broader compatibility:
+* Check **Use Apple Virtualization** (optional, recommended on macOS 15+).
+* **Boot Image Type:**  Boot from ISO
+* Click **Browse**, select your downloaded Ubuntu ISO, and click **Continue**.
 
-::media
----
-source: https://cdn.xanzhu.com/v1/ubuntu-2504/utm-qemu.webp
-alt: UTM Configuration for QEMU
----
-::
+#### Storage
 
-Click **Browse**, select the Ubuntu ISO, and click **Continue**.
+The default **64 GB** is recommended. Ubuntu requires ~20 GB for the OS and basic apps; the rest is for your files.
 
-### Hardware Settings
+Adjust as needed and click **Continue**
 
-Set RAM to half your device's available memory (default: 4096 MB or 4 GB). Leave CPU cores at the default for automatic management. Click **Continue**.
-
-### Storage
-
-The default storage allocation is 64 GB, which is suitable for most users. Adjust later if needed, then click **Continue**.
-
-### Shared Directory
+#### Shared Directory
 
 Optionally, select a folder to share between your Mac and the VM by clicking **Browse**. Otherwise, click **Continue**.
 
 Review the configuration summary, name the VM, and click **Save**.
 
-Your new VM appears in UTM's sidebar. Click the play button to start it.
+---
+
+## Ubuntu Installation
+
+Click the **Play** button on your new VM to boot the installer.
 
 ::media
 ---
-source: https://cdn.xanzhu.com/v1/ubuntu-2504/utm-prerun.webp
+source: https://cdn.xanzhu.com/2026/utm-ubuntu/utm-default.webp
 alt: UTM Application completed Virtual Machine
 ---
 ::
 
-## Ubuntu Installation
+The Ubuntu setup begins automatically. Make sure you click inside the VM window so your keyboard input is captured.
 
-The Ubuntu setup begins automatically.
+**GRUB menu:** Use your arrow keys to select **Try or Install Ubuntu** and hit Enter.
 
 ::media
 ---
-source: https://cdn.xanzhu.com/v1/m3-ubuntu/utm-linux-install.webp
+source: https://cdn.xanzhu.com/2026/utm-ubuntu/utm-grub-boot.webp
 alt: Ubuntu Virtual Machine Installation selection
 ---
 ::
 
-In the GRUB menu, Select **Try or Install Ubuntu**.
-
-The installer will connect and download necessary files. Display scaling may vary slightly with Apple Virtualization.
+The installer may download additional components during setup. Display scaling may vary slightly with Apple Virtualization.
 
 You'll arrive at the Ubuntu welcome screen:
 
 ::media
 ---
-source: https://cdn.xanzhu.com/v1/ubuntu-2504/welcome.webp
+source: https://cdn.xanzhu.com/2026/utm-ubuntu/os-welcome-setup.webp
 alt: Ubuntu welcome screen after booting
 ---
 ::
 
 1. Choose your language and click **Next**.
-2. Accessibility options adjust as needed and click **Next**.
+2. Adjust accessibility options as needed and click **Next**.
 3. Select keyboard layout and click **Next**.
-4. Connect to the internet, ensuring **Use Wired Connection** is selected to share your Mac's Wi-Fi. Click **Next**.
+4. Connect to the internet, ensure **Use Wired Connection** is selected (UTM shares your Mac’s internet connection), then click **Next**.
 5. Choose **Install Ubuntu** and click **Next**.
 6. Select **Interactive installation** and click **Next**.
 7. Select **Default selection** for apps and click **Next**.
@@ -180,28 +178,40 @@ The installation will copy and configure files, which may take some time. When p
 
 ::media
 ---
-source: https://cdn.xanzhu.com/v1/ubuntu-2504/installer-restart.webp
+source: https://cdn.xanzhu.com/2026/utm-ubuntu/os-restart.webp
 alt: Ubuntu prompting user to restart
 ---
 ::
 
-- **Apple Virtualization**: The VM restarts automatically.
-- **QEMU**: Eject the ISO manually by clicking the disc icon, selecting the ISO, and choosing **Eject**. Press **Enter** to reboot.
+#### Eject the ISO file
+
+After reboot, Ubuntu may prompt you to remove the installation media. Eject the ISO in UTM, then press Enter to continue booting.
 
 ::media
 ---
 source: https://cdn.xanzhu.com/v1/m3-ubuntu/utm-qemu-eject.webp
-alt: Ubuntu prompting user to eject ISO to continue
+alt: Ubuntu showing how visual of ejecting ISO
 ---
 ::
 
-The VM now boots into Ubuntu. If using QEMU, a “Display output is not active” message may appear briefly. Wait 1-2 minutes for the desktop to load.
+* Go to the **CD/DVD icon** in the UTM toolbar
+* Hover over the second option and select **Eject**
+* Click back in the VM window and press **Enter**
+
+::media
+---
+source: https://cdn.xanzhu.com/2026/utm-ubuntu/os-eject-prompt.webp
+alt: Ubuntu prompting user to eject ISO and press enter
+---
+::
+
+“Display output is not active” message may appear briefly when using QEMU. Wait 30 seconds to 1 minute for the desktop to load.
 
 Once the desktop loads, you should see the following:
 
 ::media
 ---
-source: https://cdn.xanzhu.com/v1/ubuntu-2504/ubuntu-welcome.webp
+source: https://cdn.xanzhu.com/2026/utm-ubuntu/os-complete.webp
 alt: Ubuntu desktop showing the welcome screen
 ---
 ::
@@ -212,15 +222,13 @@ alt: Ubuntu desktop showing the welcome screen
 
 The virtual machine is now ready to use. The next step is improving the display scaling.
 
-## Additional Notes
+## Resolution
 
 To enhance usability, adjust the display settings for better resolution.
 
-### Resolution
-
 #### Apple Virtualization
 
-1. Stop the VM if running (right-click and select **Stop**).
+1.  **Shut down** the VM. If running (right-click and select **Stop**).
 2. Right-click the VM, select **Edit**, and go to **Display**.
 3. Enable **HiDPI (Retina)** and keep dynamic resolution enabled.
 
@@ -243,24 +251,37 @@ alt: UTM Configuration for QEMU display settings
 ---
 ::
 
-3. Boot the VM. The user interface may appear small.
-4. In Ubuntu, open **Settings**, select **Display**, and set **Scale** to 200% then select **Apply**.
+Boot the VM. The Ubuntu user interface may appear small.
+
+1.  In Ubuntu, go to **Settings**, select **Display**.
+2.  Set **Scale** to **200%** and click **Apply**.
 
 ::media
 ---
-source: https://cdn.xanzhu.com/v1/ubuntu-2504/scale200.webp
+source: https://cdn.xanzhu.com/2026/utm-ubuntu/os-setting-display.webp
 alt: Ubuntu display settings for high-resolution scaling
 ---
 ::
 
-The desktop now uses native macOS resolution for clarity.
+The desktop should now look crisp and properly scaled.
+
+#### Software Updates
 
 Finally, update Ubuntu's packages. Open the menu, select **Software Updater**, and install available updates to ensure optimal performance.
 
-<!-- Check for updates / fixes -->
-### Issues (QEMU)
+Alternatively open the **Terminal** and run:
+```
+sudo apt update && sudo apt upgrade -y
+```
 
-A “Display output is not active” message may appear during QEMU boot. Wait 1-2 minutes for the desktop to load. The :PageLink{title="Community discussion" url="https://github.com/utmapp/UTM/discussions/5555"} suggests workarounds that may resolve this for your setup.
+Doing this ensures you have the latest patches for the 25.10 release.
+
+## Issues
+
+#### "Display output is not active"
+This common QEMU bug happens during the initial boot phase. If the screen stays black for more than 2 minutes, try resizing the UTM window slightly; this often forces the graphics driver to "wake up."
+
+:PageLink{title="GitHub discussion" url="https://github.com/utmapp/UTM/discussions/5555"} suggests some ideas for workarounds.
 
 ::media
 ---
@@ -269,23 +290,8 @@ alt: UTM QEMU prompting user to wait for desktop to load known bug
 ---
 ::
 
-### Upgrading
+#### Conclusion
 
-Ubuntu 24.10 has reached end of life and is no longer supported.
-
-Ubuntu 25.04 is the latest ARM release of Ubuntu.
-This update is supported until January 2026.
-
-Read the :PageLink{title="Changelog" url="https://discourse.ubuntu.com/t/plucky-puffin-release-notes/48687"}
-
-#### Changes noticed from 24.10 - 25.04:
-- Added Accessibility and Encryption options during install
-- Maximum display scaling is now 200%.
-
-ARM desktop builds will continue on a 9-month release cycle until a new LTS is available
-
-### Conclusion
-
-That's it! You've now got Ubuntu 25.04 running natively on Apple Silicon with full GUI support. Whether you're testing code, learning Linux, or just exploring, this VM setup gives you flexibility with solid performance.
+That's it! You've now got Ubuntu 25.10 running natively on Apple Silicon. Whether you're testing code, learning Linux, or just exploring, this VM setup gives you flexibility with solid performance.
 
 If you found this guide helpful, consider checking out our other virtualization tips — or share this with a fellow Mac/Linux enthusiast!
