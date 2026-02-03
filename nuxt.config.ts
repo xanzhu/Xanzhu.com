@@ -109,6 +109,7 @@ export default defineNuxtConfig({
     credits: false,
     cacheMaxAgeSeconds: 3600,
     zeroRuntime: true,
+    discoverImages: true,
   },
 
   routeRules: {
