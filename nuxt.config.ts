@@ -109,6 +109,7 @@ export default defineNuxtConfig({
     credits: false,
     cacheMaxAgeSeconds: 3600,
     zeroRuntime: true,
+    discoverImages: true,
   },
 
   routeRules: {
@@ -122,7 +123,7 @@ export default defineNuxtConfig({
     '**/blog/**': {
       isr: true,
     },
-    '**/analysis': { prerender: true },
+    '**/analysis/**': { prerender: true },
     '/_nuxt/**': {
       headers: {
         'Cache-Control': 'public, max-age=31536000, immutable',
@@ -271,12 +272,6 @@ export default defineNuxtConfig({
     },
     minify: !isDev,
     compressPublicAssets: true,
-    storage: {
-      cache: {
-        driver: 'cloudflare-kv-binding',
-        binding: 'CACHE',
-      },
-    },
   },
 
   $env: {

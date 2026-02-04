@@ -13,6 +13,46 @@ const commonContentSchema = z.object({
   updated: z.string().optional(),
 })
 
+interface SitemapImage {
+  loc: string
+  title?: string
+}
+
+function createImageExtractor(name: string) {
+  return {
+    name,
+    onUrl: (url: any, entry: any) => {
+      const images: SitemapImage[] = []
+      if (entry.img) {
+        images.push({
+          loc: String(entry.img).startsWith('http')
+            ? String(entry.img)
+            : `https://xanzhu.com${entry.img}`,
+          title: String(entry.title || ''),
+        })
+      }
+
+      if (entry.body && typeof entry.body === 'object') {
+        const bodyString = JSON.stringify(entry.body)
+
+        const matches = bodyString.match(/https:\/\/cdn\.xanzhu\.com\/[^"'\s?]+(\.webp|\.jpg|\.png|\.jpeg)/g)
+
+        if (matches) {
+          matches.forEach((src) => {
+            const cleanSrc = src.replace(/\\/g, '')
+
+            if (!images.find(i => i.loc === cleanSrc)) {
+              images.push({ loc: cleanSrc })
+            }
+          })
+        }
+      }
+
+      url.images = images
+    },
+  }
+}
+
 const pageTypeConfig = { type: 'page' as const }
 
 export const collections = {
@@ -21,21 +61,21 @@ export const collections = {
       ...pageTypeConfig,
       source: { include: 'en/blog/**/*.md', prefix: '/blog' },
       schema: commonContentSchema,
-    }),
+    }, createImageExtractor('blog_en')),
   ),
   blog_ko: defineCollection(
     asSitemapCollection({
       ...pageTypeConfig,
       source: { include: 'ko/blog/**/*.md', prefix: '/ko/blog' },
       schema: commonContentSchema,
-    }),
+    }, createImageExtractor('blog_ko')),
   ),
   blog_zh: defineCollection(
     asSitemapCollection({
       ...pageTypeConfig,
       source: { include: 'zh/blog/**/*.md', prefix: '/zh/blog' },
       schema: commonContentSchema,
-    }),
+    }, createImageExtractor('blog_zh')),
   ),
   resources_en: defineCollection(
     asSitemapCollection({

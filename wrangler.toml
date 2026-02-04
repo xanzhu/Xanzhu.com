@@ -9,10 +9,6 @@ directory = ".output/public"
 [vars]
 NITRO_PRESET = "cloudflare_module"
 
-[[kv_namespaces]]
-binding = "CACHE"
-id = "7815380b9fc14457aaaf0c1578d57631" 
-
 [observability]
 enabled = true
 head_sampling_rate = 1
