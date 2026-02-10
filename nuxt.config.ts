@@ -271,7 +271,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ['/', '/blog', '/ko', '/zh', '/sitemap.xml'],
+      routes: ['/', '/blog', '/ko', '/zh'],
     },
     minify: !isDev,
     compressPublicAssets: true,
