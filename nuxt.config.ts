@@ -300,7 +300,7 @@ export default defineNuxtConfig({
   // Experimental Vue Features
   experimental: {
     extractAsyncDataHandlers: true,
-    payloadExtraction: true,
+    // payloadExtraction: true,
   },
 
   vite: {
