@@ -110,6 +110,9 @@ export default defineNuxtConfig({
     cacheMaxAgeSeconds: 3600,
     zeroRuntime: true,
     discoverImages: true,
+    exclude: [
+      '/health',
+    ],
   },
 
   routeRules: {
@@ -120,10 +123,6 @@ export default defineNuxtConfig({
       },
       isr: 86400,
     },
-    '**/blog/**': {
-      isr: true,
-    },
-    '**/analysis/**': { prerender: true },
     '/_nuxt/**': {
       headers: {
         'Cache-Control': 'public, max-age=31536000, immutable',
@@ -136,7 +135,9 @@ export default defineNuxtConfig({
     },
     '/health': {
       security: { headers: false },
+      prerender: false,
     },
+    '/**/blog/**': { isr: true },
   },
 
   image: {
@@ -297,6 +298,7 @@ export default defineNuxtConfig({
   // Experimental Vue Features
   experimental: {
     extractAsyncDataHandlers: true,
+    payloadExtraction: true,
   },
 
   vite: {

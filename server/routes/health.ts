@@ -1,5 +1,4 @@
-export default defineEventHandler(async (event) => {
+export default defineEventHandler((event) => {
   setResponseHeader(event, 'Cache-Control', 'no-store')
-
   return 'OK'
 })
