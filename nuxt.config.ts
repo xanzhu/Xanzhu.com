@@ -110,6 +110,9 @@ export default defineNuxtConfig({
     cacheMaxAgeSeconds: 3600,
     zeroRuntime: true,
     discoverImages: true,
+    exclude: [
+      '/health',
+    ],
   },
 
   routeRules: {
