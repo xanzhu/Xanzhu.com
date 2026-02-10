@@ -121,12 +121,8 @@ export default defineNuxtConfig({
         'x-robots-tag': 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
         'Cache-Control': 'public, max-age=3600, s-maxage=86400, stale-while-revalidate=86400',
       },
-      isr: 86400,
     },
-    '**/blog/**': {
-      isr: true,
-    },
-    '**/analysis/**': { prerender: true },
+    '/analysis/**': { prerender: true },
     '/_nuxt/**': {
       headers: {
         'Cache-Control': 'public, max-age=31536000, immutable',
@@ -139,7 +135,10 @@ export default defineNuxtConfig({
     },
     '/health': {
       security: { headers: false },
+      prerender: false,
     },
+    '/': { prerender: true },
+    '/**/blog/**': { prerender: true },
   },
 
   image: {
@@ -272,6 +271,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
+      routes: ['/', '/blog', '/ko', '/zh', '/sitemap.xml'],
     },
     minify: !isDev,
     compressPublicAssets: true,
@@ -300,6 +300,7 @@ export default defineNuxtConfig({
   // Experimental Vue Features
   experimental: {
     extractAsyncDataHandlers: true,
+    payloadExtraction: true,
   },
 
   vite: {
