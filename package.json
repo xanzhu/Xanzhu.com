@@ -25,7 +25,7 @@
     "nuxt": "^4.3.1",
     "nuxt-security": "^2.5.1",
     "vue": "^3.5.28",
-    "vue-router": "^5.0.2"
+    "vue-router": "^5.0.3"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^7.4.3",
@@ -37,11 +37,11 @@
     "@unocss/preset-wind3": "^66.6.0",
     "@unocss/transformer-directives": "^66.6.0",
     "@unocss/transformer-variant-group": "^66.6.0",
-    "eslint": "^10.0.0",
+    "eslint": "^10.0.1",
     "eslint-plugin-format": "^1.4.0",
     "lightningcss": "^1.31.1",
     "nitro-cloudflare-dev": "^0.2.2",
-    "wrangler": "^4.65.0"
+    "wrangler": "^4.67.0"
   },
   "trustedDependencies": [
     "@parcel/watcher"
