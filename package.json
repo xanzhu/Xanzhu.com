@@ -49,7 +49,6 @@
     "@parcel/watcher"
   ],
   "overrides": {
-    "typescript": "6.0.0-beta",
     "vite": "npm:rolldown-vite@latest",
     "vue": "3.6.0-beta.1"
   }
