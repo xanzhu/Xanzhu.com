@@ -47,9 +47,5 @@
   },
   "trustedDependencies": [
     "@parcel/watcher"
-  ],
-  "overrides": {
-    "vite": "npm:rolldown-vite@latest",
-    "vue": "3.6.0-beta.1"
-  }
+  ]
 }
