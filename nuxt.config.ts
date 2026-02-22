@@ -215,7 +215,6 @@ export default defineNuxtConfig({
           'https://storage.quantum-engine.ai/',
           'https://assets.lotofcarrots.com',
           'https://www.apple.com',
-          'https://www.apple.com',
           'https://*.xanzhu.com',
         ],
         'font-src': ['\'self\'', 'data:'],
@@ -281,15 +280,6 @@ export default defineNuxtConfig({
         preset: 'cloudflare_module',
         cloudflare: {
           deployConfig: true,
-          // wrangler: {
-          //   d1_databases: [
-          //     {
-          //       binding: 'DB',
-          //       database_name: 'xanzhu-fallback',
-          //       database_id: '278e9a4d-5d80-4339-94cb-f796a5b4b04f',
-          //     },
-          //   ],
-          // },
         },
       },
     },
