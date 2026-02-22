@@ -1,6 +1,6 @@
 name = "core"
 compatibility_date = "2026-02-01"
-compatibility_flags = ["nodejs_compat"]
+compatibility_flags = [ "nodejs_compat" ]
 preview_urls = true
 
 [assets]
@@ -14,6 +14,6 @@ enabled = true
 head_sampling_rate = 1
 
 [[d1_databases]]
-binding = "DB" 
+binding = "DB"
 database_name = "xanzhu-fallback"
 database_id = "278e9a4d-5d80-4339-94cb-f796a5b4b04f"
