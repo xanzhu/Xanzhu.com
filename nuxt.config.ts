@@ -285,8 +285,8 @@ export default defineNuxtConfig({
             d1_databases: [
               {
                 binding: 'DB',
-                database_name: 'xanzhu-content',
-                database_id: '20794211-4b47-4ee6-8333-f4bce4bf3963',
+                database_name: 'xanzhu-fallback',
+                database_id: '278e9a4d-5d80-4339-94cb-f796a5b4b04f',
               },
             ],
           },
