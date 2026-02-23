@@ -30,7 +30,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^7.4.3",
     "@nuxt/devtools": "^3.2.1",
-    "@nuxt/hints": "1.0.0-alpha.6",
+    "@nuxt/hints": "1.0.0-alpha.7",
     "@unocss/eslint-plugin": "^66.6.0",
     "@unocss/nuxt": "^66.6.0",
     "@unocss/preset-typography": "^66.6.0",
