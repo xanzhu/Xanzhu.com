@@ -93,7 +93,7 @@ const featureImage = 'https://cdn.xanzhu.com/v1/rabbit-r1/graphic.webp'
           height="532"
         />
         <NuxtLink
-          to="https://www.rabbit.tech"
+          to="https://www.rabbit.tech/rabbit-r1"
           class="absolute bottom-2 right-2 core-border rounded-md core-ui px3 py1 text-sm decoration-none hover:core-theme"
           external
           target="_blank"

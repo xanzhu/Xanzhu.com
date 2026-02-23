@@ -73,7 +73,7 @@ A good point of this is how context-aware the device could be. The demo mentione
 
 Rabbit is new, and we are interested in seeing what else they will do with Rabbit OS and R1. If they can continue to adhere to best practices in privacy and security, this could be a potential game-changer. Other notes on this device we don't yet know about are additional costs introduced with this, subscriptions, or extra fees to unlock certain features; time will tell.
 
-If you would like to learn more about :PageLink{title="Rabbit" url="https://www.rabbit.tech/"} as a company and what they do, check out their website and learn what else is on offer for the devices, including upcoming features and things they're working on, including features being introduced with their Large Action Model.
+If you would like to learn more about :PageLink{title="Rabbit" url="https://www.rabbit.tech/rabbit-r1"} as a company and what they do, check out their website and learn what else is on offer for the devices, including upcoming features and things they're working on, including features being introduced with their Large Action Model.
 
 ::media
 ---

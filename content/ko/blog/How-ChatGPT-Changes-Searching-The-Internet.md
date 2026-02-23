@@ -49,7 +49,7 @@ thumbnail: https://storage.googleapis.com/gweb-uniblog-publish-prod/images/feb_6
 ---
 ::
 
-Google의 AI 모델과의 차이점은 최근 ChatGPT의 대안인 Claude를 개발한 Anthropic이라는 스타트업에 투자한 만큼 안전에 중점을 두고 정확한 정보를 제공한다는 것입니다. 이 모델이 훈련될 데이터 및 리소스의 양을 고려할 때 이 기술의 느린 릴리스의 요인으로 윤리적 기준을 고려하는 것이 중요합니다. :PageLink{title="Google 블로그" url="https://blog.google/technology/ai/bard-google-ai-search-updates/"} 에서 자세한 정보 찾기
+Google의 AI 모델과의 차이점은 최근 ChatGPT의 대안인 Claude를 개발한 Anthropic이라는 스타트업에 투자한 만큼 안전에 중점을 두고 정확한 정보를 제공한다는 것입니다. 이 모델이 훈련될 데이터 및 리소스의 양을 고려할 때 이 기술의 느린 릴리스의 요인으로 윤리적 기준을 고려하는 것이 중요합니다. :PageLink{title="Google 블로그" url="https://blog.google/innovation-and-ai/technology/ai/bard-google-ai-search-updates/"} 에서 자세한 정보 찾기
 
 초기에 이 기술에 뛰어든 두 업계 거대 기업은 향후 소프트웨어 개발뿐만 아니라 서비스와 검색 방법 전반에 걸쳐 상당한 개선을 보게 될 것이라고 제안합니다.
 

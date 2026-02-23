@@ -32,7 +32,7 @@ Our :PageLink{title="previous article" url="/blog/apple-silicon-virtual-machine-
 
 Download **UTM version 4.7.5** from the :PageLink{title="UTM GitHub releases page" url="https://github.com/utmapp/UTM/releases"}
 
-The GitHub version is free to download. Alternatively, the :PageLink{title="Mac App Store" url="https://apps.apple.com/us/app/utm-virtual-machines/id1538878817"} version supports automatic updates and helps support the developers (paid).
+The GitHub version is free to download. Alternatively, the :PageLink{title="Mac App Store" url="https://apps.apple.com/us/app/utm-virtual-machines/id1538878817?mt=12"} version supports automatic updates and helps support the developers (paid).
 
 Drag UTM to your **Applications** folder and launch it.
 

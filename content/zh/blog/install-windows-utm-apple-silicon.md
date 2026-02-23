@@ -33,7 +33,7 @@ UTM 是一款适用于 macOS 的免费开源虚拟化工具，设计简单易用
 
 从 :PageLink{title="UTM GitHub 发布页面" url="https://github.com/utmapp/UTM/releases"} 下载 UTM 版本 4.7.5。之前的 4.x.x 版本也应该可以使用。
 
-可以通过 :PageLink{title="App Store 版本" url="https://apps.apple.com/us/app/utm-virtual-machines/id1538878817"} 获得 UTM 的自动更新，但这是付费选项。或者，使用 GitHub 版本并根据需要手动更新。
+可以通过 :PageLink{title="App Store 版本" url="https://apps.apple.com/us/app/utm-virtual-machines/id1538878817?mt=12"} 获得 UTM 的自动更新，但这是付费选项。或者，使用 GitHub 版本并根据需要手动更新。
 
 将 UTM 拖到您的"应用程序"文件夹中，并验证它是否正常打开。
 

@@ -32,7 +32,7 @@ Ubuntu 现在提供原生 ARM 桌面版本——非常适合想要探索 Linux�
 
 从 :PageLink{title="UTM GitHub 发布页面" url="https://github.com/utmapp/UTM/releases"} 下载 **UTM 版本 4.7.5**。
 
-GitHub 版本可免费下载。另外 :PageLink{title="Mac App Store" url="https://apps.apple.com/us/app/utm-virtual-machines/id1538878817"}  版本（付费）支持自动更新并可帮助支持开发者。
+GitHub 版本可免费下载。另外 :PageLink{title="Mac App Store" url="https://apps.apple.com/us/app/utm-virtual-machines/id1538878817?mt=12"}  版本（付费）支持自动更新并可帮助支持开发者。
 
 将 UTM 拖入你的 **应用程序 (Applications)** 文件夹并运行。
 

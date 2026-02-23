@@ -32,7 +32,7 @@ Ubuntu는 이제 네이티브 ARM 데스크톱 빌드를 제공합니다. 이는
 
 :PageLink{title="UTM GitHub 릴리스 페이지" url="https://github.com/utmapp/UTM/releases"}에서 **UTM 버전 4.7.5**를 다운로드하세요.
 
-GitHub 버전은 무료로 다운로드할 수 있습니다. 또는 자동 업데이트를 지원하고 개발자를 후원할 수 있는 :PageLink{title="Mac App Store" url="https://apps.apple.com/us/app/utm-virtual-machines/id1538878817"} 버전(유료)을 이용할 수도 있습니다.
+GitHub 버전은 무료로 다운로드할 수 있습니다. 또는 자동 업데이트를 지원하고 개발자를 후원할 수 있는 :PageLink{title="Mac App Store" url="https://apps.apple.com/us/app/utm-virtual-machines/id1538878817?mt=12"} 버전(유료)을 이용할 수도 있습니다.
 
 다운로드한 UTM을 **응용 프로그램(Applications)** 폴더로 드래그하여 실행하세요.
 

@@ -75,7 +75,7 @@ credit: Google
 ---
 ::
 
-:PageLink{title="Google" url="https://blog.google/technology/ai/ai-developers-google-cloud-workspace/"} 의 발표를 읽어보세요.
+:PageLink{title="Google" url="https://blog.google/innovation-and-ai/products/ai-developers-google-cloud-workspace/"} 의 발표를 읽어보세요.
 
 이 발표 이틀 후 Microsoft는 또한 Word, Excel 및 Outlook과 같은 365 라인업에 도입될 Copilot이라는 새로운 AI 기반 라인업을 출시하기 위해 노력하고 있다고 발표했습니다. 그들의 비전은 자신의 말의 힘을 사용하여 창의성 수준을 높이는 것입니다. Google의 Doc 접근 방식과 마찬가지로 Microsoft는 단순히 요청을 입력하고 마법이 일어나는 것을 지켜보는 유사한 개념을 따릅니다. 약간 다른 점은 Copilot이 파일을 기반으로 콘텐츠를 생성하는 기능도 추가한다는 것입니다.
 

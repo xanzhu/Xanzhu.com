@@ -33,7 +33,7 @@ UTM serves as a free, open-source virtualization tool for macOS, designed to be 
 
 Download UTM version 4.7.5 from the :PageLink{title="UTM GitHub releases page" url="https://github.com/utmapp/UTM/releases"}. Previous 4.x.x versions should also work.
 
-Automatic updates are available for UTM via the :PageLink{title="App Store Version" url="https://apps.apple.com/us/app/utm-virtual-machines/id1538878817"}, though this is a paid option. Alternatively, use the GitHub version and manually update as needed.
+Automatic updates are available for UTM via the :PageLink{title="App Store Version" url="https://apps.apple.com/us/app/utm-virtual-machines/id1538878817?mt=12"}, though this is a paid option. Alternatively, use the GitHub version and manually update as needed.
 
 Drag UTM to your Applications folder and verify that it opens correctly.
 

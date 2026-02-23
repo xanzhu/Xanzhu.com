@@ -49,7 +49,7 @@ thumbnail: https://storage.googleapis.com/gweb-uniblog-publish-prod/images/feb_6
 ---
 ::
 
-与谷歌 AI 模型的可能区别在于对安全和提供准确信息的关注，因为他们最近投资了一家名为 Anthropic 的初创公司，该公司开发了一种名为 Claude 的 ChatGPT 替代品。 考虑到该模型可能用于训练的数据量和资源量，将道德标准视为导致该技术缓慢发布的一个因素非常重要。 在 :PageLink{title="Google 的博客" url="https://blog.google/technology/ai/bard-google-ai-search-updates/"}上查找更多信息
+与谷歌 AI 模型的可能区别在于对安全和提供准确信息的关注，因为他们最近投资了一家名为 Anthropic 的初创公司，该公司开发了一种名为 Claude 的 ChatGPT 替代品。 考虑到该模型可能用于训练的数据量和资源量，将道德标准视为导致该技术缓慢发布的一个因素非常重要。 在 :PageLink{title="Google 的博客" url="https://blog.google/innovation-and-ai/technology/ai/bard-google-ai-search-updates/"}上查找更多信息
 
 两家早期采用这项技术的行业巨头表明，我们将看到他们的服务、我们的搜索方式以及未来的软件开发方面的重大改进。
 

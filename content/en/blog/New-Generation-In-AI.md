@@ -83,7 +83,7 @@ credit: Google
 ---
 ::
 
-Read the announcement from :PageLink{title="Google" url="https://blog.google/technology/ai/ai-developers-google-cloud-workspace/"}
+Read the announcement from :PageLink{title="Google" url="https://blog.google/innovation-and-ai/products/ai-developers-google-cloud-workspace/"}
 
 Two days after this announcement, Microsoft also announced that they're working on shipping a new AI-powered line-up called Copilot that will be introduced across the 365 line-ups, including some of the following: Word, Excel, and Outlook. Their vision is to boost the level of creativity using the power of your own words. Much like Google's Doc approach, Microsoft follows a similar concept of simply inputting your request and watching the magic happen. Something a bit different is Copilot also adds a feature to generate content based on files.
 

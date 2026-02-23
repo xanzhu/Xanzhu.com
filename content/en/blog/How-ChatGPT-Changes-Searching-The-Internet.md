@@ -49,7 +49,7 @@ thumbnail: https://storage.googleapis.com/gweb-uniblog-publish-prod/images/feb_6
 ---
 ::
 
-The possible difference with Google's AI model is the focus on safety and providing accurate information, as they recently invested in a startup called Anthropic that has developed an alternative to ChatGPT called Claude. Given the amount of data and resources this model will likely be trained on, it is important to consider ethical standards as a factor in the slow release of this technology. Find more information on :PageLink{title="Google's blog" url="https://blog.google/technology/ai/bard-google-ai-search-updates/"}
+The possible difference with Google's AI model is the focus on safety and providing accurate information, as they recently invested in a startup called Anthropic that has developed an alternative to ChatGPT called Claude. Given the amount of data and resources this model will likely be trained on, it is important to consider ethical standards as a factor in the slow release of this technology. Find more information on :PageLink{title="Google's blog" url="https://blog.google/innovation-and-ai/technology/ai/bard-google-ai-search-updates/"}
 
 Both industry giants jumping on this technology early suggests that we will see significant improvements across their services and how we search, as well as future software development.
 

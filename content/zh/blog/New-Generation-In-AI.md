@@ -75,7 +75,7 @@ credit: Google
 ---
 ::
 
-阅读来自 :PageLink{title="Google" url="https://blog.google/technology/ai/ai-developers-google-cloud-workspace/"} 的公告。
+阅读来自 :PageLink{title="Google" url="https://blog.google/innovation-and-ai/products/ai-developers-google-cloud-workspace/"} 的公告。
 
 宣布此消息两天后，微软还宣布他们正在努力推出一个名为 Copilot 的新 AI 驱动产品线，该产品线将在 365 产品线中引入，包括以下一些产品：Word、Excel 和 Outlook。 他们的愿景是利用您自己语言的力量来提高创造力水平。 与 Google 的 Doc 方法非常相似，Microsoft 遵循类似的概念，即简单地输入您的请求并观察魔术的发生。 有点不同的是，Copilot 还添加了一项功能，可以根据文件生成内容。
 
