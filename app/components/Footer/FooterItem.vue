@@ -3,11 +3,13 @@ defineProps<{
   title: string
   links: { text: string, href: string, external?: boolean }[]
 }>()
+
+const titleId = useId()
 </script>
 
 <template>
-  <div role="group" aria-labelledby="footer-item-title">
-    <h3 id="footer-item-title" class="text-md mb-4 font-bold">
+  <div role="group" :aria-labelledby="titleId">
+    <h3 :id="titleId" class="text-md mb-4 font-bold">
       {{ title }}
     </h3>
     <ul class="list-none p0 text-sm" role="list">

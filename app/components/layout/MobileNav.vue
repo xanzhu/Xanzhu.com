@@ -1,9 +1,7 @@
 <script setup lang="ts">
 import { useEventListener, useScrollLock } from '@vueuse/core'
 
-defineProps<{
-  links: NavLink[]
-}>()
+const { links } = defineProps<{ links: NavLink[] }>()
 
 const { toggle, isActive } = useStateToggle()
 
@@ -16,6 +14,8 @@ const isLocked = useScrollLock(typeof document !== 'undefined' ? document.body :
 watch(isAnyOpen, (val) => {
   isLocked.value = val
 })
+
+const panelId = useId()
 
 useEventListener('keydown', (e) => {
   if (e.key === 'Escape' && isAnyOpen.value)
@@ -46,7 +46,7 @@ function closeAll() {
       :class="isLangOpen ? '!core-border core-ui' : 'text-inherit'"
       aria-haspopup="true"
       :aria-expanded="isLangOpen"
-      aria-controls="mobile-nav-panel"
+      :aria-controls="panelId"
       :aria-label="t('ui.lang.select')"
       @click="toggle('language')"
     >
@@ -58,14 +58,14 @@ function closeAll() {
       :class="isMenuOpen ? '!core-border core-ui' : 'text-inherit'"
       aria-haspopup="true"
       :aria-expanded="isMenuOpen"
-      aria-controls="mobile-nav-panel"
+      :aria-controls="panelId"
       :aria-label="t('aria.open_menu')"
       @click="toggle('menu')"
     >
       <Icon :name="isMenuOpen ? 'lucide:x' : 'lucide:text-align-end'" class="h-6 w-6" />
     </button>
 
-    <Teleport to="body">
+    <Teleport defer to="body">
       <Transition
         enter-active-class="transition duration-300" enter-from-class="opacity-0" enter-to-class="opacity-100"
         leave-active-class="transition duration-200" leave-from-class="opacity-100" leave-to-class="opacity-0"
@@ -84,7 +84,7 @@ function closeAll() {
       >
         <div
           v-if="isAnyOpen"
-          id="mobile-nav-panel"
+          :id="panelId"
           role="dialog"
           aria-modal="true"
           class="fixed left-4 right-4 top-18 z-50 max-h-[75vh] flex flex-col overflow-y-auto core-border rounded-xl core-ui p-3 shadow-2xl"

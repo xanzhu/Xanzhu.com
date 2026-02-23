@@ -19,7 +19,7 @@ const shouldDisplay = computed(() => breadcrumbs.value.length > 1)
 
 <template>
   <nav
-    v-show="shouldDisplay"
+    v-if="shouldDisplay"
     class="text-sm"
     :aria-label="t('ui.breadCrumbs')"
   >

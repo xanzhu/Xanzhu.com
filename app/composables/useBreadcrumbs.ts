@@ -4,6 +4,20 @@ export interface BreadcrumbItem {
   current?: boolean
 }
 
+const staticPages: Record<string, string> = {
+  'privacy-policy': 'nav.privacy',
+  'terms-of-service': 'nav.terms',
+  'analysis': 'nav.analysis',
+  'about': 'nav.about',
+}
+
+const resourceCategories: Record<string, string> = {
+  'phishing': 'resources.category.phishing',
+  'malware': 'resources.category.malware',
+  'network-security': 'resources.category.networkSec',
+  'privacy': 'resources.category.privacy',
+}
+
 export function useBreadcrumbs() {
   const { t, locale } = useI18n()
   const route = useRoute()
@@ -11,20 +25,6 @@ export function useBreadcrumbs() {
   const config = useRuntimeConfig()
 
   const baseUrl = computed(() => config.public.i18n.baseUrl)
-
-  const staticPages: Record<string, string> = {
-    'privacy-policy': 'nav.privacy',
-    'terms-of-service': 'nav.terms',
-    'analysis': 'nav.analysis',
-    'about': 'nav.about',
-  }
-
-  const resourceCategories: Record<string, string> = {
-    'phishing': 'resources.category.phishing',
-    'malware': 'resources.category.malware',
-    'network-security': 'resources.category.networkSec',
-    'privacy': 'resources.category.privacy',
-  }
 
   const fullBreadcrumbs = computed<BreadcrumbItem[]>(() => {
     const items: BreadcrumbItem[] = []

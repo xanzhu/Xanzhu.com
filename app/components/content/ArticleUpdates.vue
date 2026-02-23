@@ -1,15 +1,15 @@
 <script setup lang="ts">
-const id = useId()
+const changeId = useId()
 const { t } = useI18n()
 </script>
 
 <template>
   <aside
     class="mt-6 border border-neutral-200 rounded-lg bg-neutral-100 p-4 text-sm dark:border-neutral-800 dark:bg-neutral-900"
-    :aria-labelledby="id"
+    :aria-labelledby="changeId"
   >
     <h3
-      :id="id"
+      :id="changeId"
       class="m0 text-sm text-neutral-900 font-medium dark:text-neutral-100"
     >
       {{ t('blog.article.changelog') }}

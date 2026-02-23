@@ -1,9 +1,17 @@
 <script setup>
+import { defineAsyncComponent, hydrateOnInteraction } from 'vue'
+
 const links = useNavLinks(
   { name: 'nav.blog', url: '/blog' },
   { name: 'nav.analysis', url: '/analysis' },
   { name: 'nav.resources', url: '/resources' },
 )
+
+// Experimental
+const LayoutMobileNav = defineAsyncComponent({
+  loader: () => import('./MobileNav.vue'),
+  hydrate: hydrateOnInteraction(['pointerenter', 'touchstart']),
+})
 
 const switchLocalePath = useSwitchLocalePath()
 const { locale: activeLocale, locales, t } = useI18n()

@@ -5,10 +5,9 @@ const route = useRoute()
 const { locale, t } = useI18n()
 const config = useRuntimeConfig()
 
-const slug = computed(() => {
-  const slugArray = ([] as string[]).concat(route.params.slug || [])
-  return slugArray.filter(s => s !== '')
-})
+const slug = computed(() =>
+  ([] as string[]).concat(route.params.slug || []).filter(Boolean),
+)
 
 const collection = computed(() => `blog_${locale.value}` as keyof Collections)
 const path = computed(() =>
