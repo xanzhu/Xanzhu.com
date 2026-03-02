@@ -5,14 +5,8 @@ const route = useRoute()
 const { locale, t } = useI18n()
 const config = useRuntimeConfig()
 
-const slug = computed(() =>
-  ([] as string[]).concat(route.params.slug || []).filter(Boolean),
-)
-
 const collection = computed(() => `blog_${locale.value}` as keyof Collections)
-const path = computed(() =>
-  `/${locale.value === 'en' ? '' : `${locale.value}/`}blog/${slug.value.join('/')}`,
-)
+const path = computed(() => route.path)
 
 const [{ data: post }, { data: surround }] = await Promise.all([
   useAsyncData(path.value, () =>
@@ -22,7 +16,9 @@ const [{ data: post }, { data: surround }] = await Promise.all([
       before: 1,
       after: 1,
       fields: ['title', 'path', 'date', 'img'],
-    }).order('date', 'DESC')),
+    }),
+    { default: () => [] }
+  ),
 ])
 
 if (!post.value)
@@ -83,7 +79,7 @@ useSeoMeta({
           <LazyBlogSocialShare :post="{ path: post.path, title: post.title }" />
         </div>
       </div>
-      <LazyBlogPrevNext v-if="surround" :surround="surround" />
+      <LazyBlogPrevNext :surround="surround" />
     </article>
   </main>
 </template>

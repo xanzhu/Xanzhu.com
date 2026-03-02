@@ -4,9 +4,14 @@ import type { Collections } from '@nuxt/content'
 const { locale, t } = useI18n()
 const collection = computed(() => `blog_${locale.value}` as keyof Collections)
 
-const { data: posts } = await useAsyncData(`blogArticles-${locale.value}`, () => queryCollection(collection.value).select('title', 'date', 'img', 'description', 'path', 'tag', 'alt').order('date', 'DESC').all())
-
-const filteredPosts = computed(() => posts.value ?? [])
+const { data: posts } = await useAsyncData(
+  `blogArticles-${locale.value}`, 
+  () => queryCollection(collection.value)
+    .select('title', 'date', 'img', 'description', 'path', 'tag', 'alt')
+    .order('date', 'DESC')
+    .all(),
+  { default: () => [] }
+)
 
 const seoImage = 'https://images.pexels.com/photos/27277185/pexels-photo-27277185.jpeg'
 useLangMeta('seo.blog', seoImage)
@@ -23,10 +28,10 @@ useLangMeta('seo.blog', seoImage)
       </p>
     </div>
     <section
-      v-if="filteredPosts.length"
+      v-if="posts.length"
       class="grid grid-cols-1 gap-5 rounded-sm p-4 lg:(grid-cols-3 gap-5) md:(grid-cols-2 gap-10) sm:(px-10 py-15)"
     >
-      <article v-for="(article, index) in filteredPosts" :key="article.path">
+      <article v-for="(article, index) in posts" :key="article.path">
         <NuxtLinkLocale class="group flex flex-col no-underline" :to="article.path">
           <NuxtImg
             v-if="article.img" crossorigin="anonymous" :alt="article.alt" :title="article.alt" :loading="index < 3 ? 'eager' : 'lazy'"
