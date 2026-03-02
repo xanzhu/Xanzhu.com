@@ -137,7 +137,7 @@ export default defineNuxtConfig({
       security: { headers: false },
       prerender: false,
     },
-    '/**/blog/**': { isr: true },
+    '/**/blog/**': { isr: 86400 },
   },
 
   image: {
