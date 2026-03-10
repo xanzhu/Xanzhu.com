@@ -18,6 +18,9 @@ interface SitemapImage {
   title?: string
 }
 
+const BODY_MATCH = /https:\/\/cdn\.xanzhu\.com\/[^"'\s?]+(\.webp|\.jpg|\.png|\.jpeg)/g
+const TRAILING_SLASH = /\\/g
+
 function createImageExtractor(name: string) {
   return {
     name,
@@ -35,13 +38,13 @@ function createImageExtractor(name: string) {
       if (entry.body && typeof entry.body === 'object') {
         const bodyString = JSON.stringify(entry.body)
 
-        const matches = bodyString.match(/https:\/\/cdn\.xanzhu\.com\/[^"'\s?]+(\.webp|\.jpg|\.png|\.jpeg)/g)
+        const matches = bodyString.match(BODY_MATCH)
 
         if (matches) {
           matches.forEach((src) => {
-            const cleanSrc = src.replace(/\\/g, '')
+            const cleanSrc = src.replace(TRAILING_SLASH, '')
 
-            if (!images.find(i => i.loc === cleanSrc)) {
+            if (!images.some(i => i.loc === cleanSrc)) {
               images.push({ loc: cleanSrc })
             }
           })

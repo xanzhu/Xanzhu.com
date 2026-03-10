@@ -1,20 +1,19 @@
 <script setup lang="ts">
-interface Post {
-  path?: string
-  title: string
-}
-
 const { post } = defineProps<{
-  post: Post
+  post: {
+    path?: string
+    title: string
+  }
 }>()
 
 const { t } = useI18n()
 const config = useRuntimeConfig()
-
 const copied = ref(false)
 
+const TRAILING_SLASH = /\/$/
+
 const fullUrl = computed(() => {
-  const base = (config.public.i18n.baseUrl || '').replace(/\/$/, '')
+  const base = (config.public.i18n.baseUrl || '').replace(TRAILING_SLASH, '')
   return `${base}${post.path || ''}`
 })
 

@@ -11,6 +11,7 @@ const { content = {} } = defineProps<{
 const { t } = useI18n()
 
 const WORDS_PER_MINUTE = 238
+const WORD_MATCH = /\S+/g
 
 function countWords(nodes: any): number {
   if (!nodes)
@@ -26,14 +27,14 @@ function countWords(nodes: any): number {
 
   if (typeof nodes === 'string') {
     const text = nodes.trim()
-    return text ? (text.match(/\S+/g) || []).length : 0
+    return text ? (text.match(WORD_MATCH) || []).length : 0
   }
 
   if (typeof nodes === 'object') {
     let count = 0
     if (nodes.value && typeof nodes.value === 'string') {
       const text = nodes.value.trim()
-      count += text ? (text.match(/\S+/g) || []).length : 0
+      count += text ? (text.match(WORD_MATCH) || []).length : 0
     }
     for (const key in nodes) {
       if (Array.isArray(nodes[key])) {

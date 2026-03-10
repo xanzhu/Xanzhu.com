@@ -2,8 +2,10 @@
 const { locale, t } = useI18n()
 const route = useRoute()
 
+const TRAILING_SLASH = /\/$/
+
 const disablePath = computed(() => {
-  const path = route.path.replace(/\/$/, '') || '/'
+  const path = route.path.replace(TRAILING_SLASH, '') || '/'
   return path === '/' || path === `/${locale.value}`
 })
 

@@ -18,6 +18,8 @@ const resourceCategories: Record<string, string> = {
   'privacy': 'resources.category.privacy',
 }
 
+const TRAILING_SLASH = /\/$/
+
 export function useBreadcrumbs() {
   const { t, locale } = useI18n()
   const route = useRoute()
@@ -120,7 +122,7 @@ export function useBreadcrumbs() {
         '@type': 'ListItem',
         'position': index + 1,
         'name': item.name,
-        'item': `${(baseUrl.value || 'https://xanzhu.com').replace(/\/$/, '')}${item.path}`,
+        'item': `${(baseUrl.value || 'https://xanzhu.com').replace(TRAILING_SLASH, '')}${item.path}`,
       })),
     }
   })
