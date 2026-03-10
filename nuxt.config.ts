@@ -288,7 +288,7 @@ export default defineNuxtConfig({
   // Experimental Vue Features
   experimental: {
     extractAsyncDataHandlers: true,
-    payloadExtraction: true,
+    payloadExtraction: false, // 10.3: Disabled - Increased CF Errors
   },
 
   vite: {
