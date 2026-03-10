@@ -17,7 +17,7 @@ const switchLocalePath = useSwitchLocalePath()
 const { locale: activeLocale, locales, t } = useI18n()
 
 const sortedLocales = computed(() => {
-  const sorted = [...locales.value].sort((a, b) => {
+  const sorted = locales.value.toSorted((a, b) => {
     if (a.code === activeLocale.value)
       return -1
     if (b.code === activeLocale.value)

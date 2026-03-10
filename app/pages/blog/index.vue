@@ -30,7 +30,7 @@ useLangMeta('seo.blog', seoImage)
       v-if="posts?.length"
       class="grid grid-cols-1 gap-5 rounded-sm p-4 lg:(grid-cols-3 gap-5) md:(grid-cols-2 gap-10) sm:(px-10 py-15)"
     >
-      <li v-for="(article, index) in posts" :key="article.path">
+      <li v-for="(article, index) in posts" :key="article.path" class="list-none">
         <article>
           <NuxtLinkLocale class="group flex flex-col no-underline" :to="article.path">
             <NuxtImg
