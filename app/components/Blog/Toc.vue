@@ -4,6 +4,7 @@ const { links } = defineProps<{
 }>()
 
 const { t } = useI18n()
+const tocHeadingId = useId()
 
 interface TocLink {
   id: string
@@ -107,7 +108,7 @@ onUnmounted(() => {
     class="m-4 core-border rounded-sm p4 md:(mx-auto max-w-xl) lg:(max-w-md)"
     aria-labelledby="toc-heading"
   >
-    <header id="toc-heading" class="mb-2 pb-2">
+    <header :id="tocHeadingId" class="mb-2 pb-2">
       <p class="m-0 text-center text-lg font-semibold tracking-wide">
         {{ t("blog.toc") }}
       </p>

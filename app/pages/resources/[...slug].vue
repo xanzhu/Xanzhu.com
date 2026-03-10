@@ -18,7 +18,7 @@ const basePath = computed(() => {
 })
 
 const { data: allContent } = await useAsyncData(`resources-${basePath.value}`, () =>
-  queryCollection(collection.value).all())
+  queryCollection(collection.value).all(), { dedupe: 'defer' })
 
 const folderIndex = computed(() =>
   allContent.value?.find(item => item.id === `${collection.value}/${basePath.value}/index.md`),

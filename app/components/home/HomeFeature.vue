@@ -12,7 +12,7 @@ const { data: features } = await useAsyncData(`featuredArticles-${locale.value}`
     .order('date', 'DESC')
     .limit(5)
     .all(), {
-  lazy: true,
+  dedupe: 'defer',
 })
 
 const featureSets = computed(() => ({

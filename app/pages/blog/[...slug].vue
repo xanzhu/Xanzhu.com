@@ -10,14 +10,14 @@ const currentPath = route.path
 
 const [{ data: post }, { data: surround }] = await Promise.all([
   useAsyncData(`post-${locale.value}-${currentPath}`, () =>
-    queryCollection(collectionName).path(currentPath).first() as Promise<Post>),
+    queryCollection(collectionName).path(currentPath).first() as Promise<Post>, { dedupe: 'defer' }),
 
   useAsyncData(`surround-${locale.value}-${currentPath}`, () =>
     queryCollectionItemSurroundings(collectionName, currentPath, {
       before: 1,
       after: 1,
       fields: ['title', 'path', 'date', 'img'],
-    })),
+    }), { dedupe: 'defer' }),
 ])
 
 if (!post.value && import.meta.server) {
@@ -63,7 +63,6 @@ useSeoMeta({
         <aside
           v-if="post.body?.toc?.links?.length"
           class="mt2"
-          aria-labelledby="toc-heading"
         >
           <BlogToc :links="post.body?.toc?.links ?? []" class="lg:sticky lg:top-20" />
         </aside>

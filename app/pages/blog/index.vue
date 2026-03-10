@@ -10,6 +10,7 @@ const { data: posts } = await useAsyncData(
     .select('title', 'date', 'img', 'description', 'path', 'tag', 'alt')
     .order('date', 'DESC')
     .all(),
+  { dedupe: 'defer' },
 )
 
 const seoImage = 'https://images.pexels.com/photos/27277185/pexels-photo-27277185.jpeg'
@@ -36,7 +37,7 @@ useLangMeta('seo.blog', seoImage)
             <NuxtImg
               v-if="article.img" crossorigin="anonymous" :alt="article.alt" :title="article.alt" :loading="index < 3 ? 'eager' : 'lazy'"
               :fetchpriority="index === 0 ? 'high' : 'auto'" decoding="async"
-              height="369" width="577" object-fit="cover" format="webp"
+              height="369" width="577" fit="cover" format="webp"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 557px"
               class="h-full w-full transform core-border rounded-md md:(transition duration-400 ease-in-out group-hover:scale-102)"
               :src="article.img"

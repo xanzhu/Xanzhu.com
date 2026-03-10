@@ -6,7 +6,7 @@ const { locale } = useI18n()
 const collection = computed(() => `resources_${locale.value}` as keyof Collections)
 
 const { data: allContent } = await useAsyncData(`resources-index-${locale.value}`, () =>
-  queryCollection(collection.value).all())
+  queryCollection(collection.value).all(), { dedupe: 'defer' })
 
 const pageIndex = computed(() => {
   return allContent.value?.find(item =>
