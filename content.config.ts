@@ -28,7 +28,7 @@ function createImageExtractor(name: string) {
       const images: SitemapImage[] = []
       if (entry.img) {
         images.push({
-          loc: String(entry.img).startsWith('http')
+          loc: String(entry.img).startsWith('https://')
             ? String(entry.img)
             : `https://xanzhu.com${entry.img}`,
           title: String(entry.title || ''),
@@ -57,48 +57,27 @@ function createImageExtractor(name: string) {
 }
 
 const pageTypeConfig = { type: 'page' as const }
+const locales = ['en', 'ko', 'zh'] as const
+const collections: Record<string, any> = {}
 
-export const collections = {
-  blog_en: defineCollection(
+for (const locale of locales) {
+  const prefix = locale === 'en' ? '' : `/${locale}`
+
+  collections[`blog_${locale}`] = defineCollection(
     asSitemapCollection({
       ...pageTypeConfig,
-      source: { include: 'en/blog/**/*.md', prefix: '/blog' },
+      source: { include: `${locale}/blog/**/*.md`, prefix: `${prefix}/blog` },
       schema: commonContentSchema,
-    }, createImageExtractor('blog_en')),
-  ),
-  blog_ko: defineCollection(
+    }, createImageExtractor(`blog_${locale}`)),
+  )
+
+  collections[`resources_${locale}`] = defineCollection(
     asSitemapCollection({
       ...pageTypeConfig,
-      source: { include: 'ko/blog/**/*.md', prefix: '/ko/blog' },
-      schema: commonContentSchema,
-    }, createImageExtractor('blog_ko')),
-  ),
-  blog_zh: defineCollection(
-    asSitemapCollection({
-      ...pageTypeConfig,
-      source: { include: 'zh/blog/**/*.md', prefix: '/zh/blog' },
-      schema: commonContentSchema,
-    }, createImageExtractor('blog_zh')),
-  ),
-  resources_en: defineCollection(
-    asSitemapCollection({
-      ...pageTypeConfig,
-      source: { include: 'en/resources/**/*.md', prefix: '/resources' },
+      source: { include: `${locale}/resources/**/*.md`, prefix: `${prefix}/resources` },
       schema: commonContentSchema,
     }),
-  ),
-  resources_ko: defineCollection(
-    asSitemapCollection({
-      ...pageTypeConfig,
-      source: { include: 'ko/resources/**/*.md', prefix: '/ko/resources' },
-      schema: commonContentSchema,
-    }),
-  ),
-  resources_zh: defineCollection(
-    asSitemapCollection({
-      ...pageTypeConfig,
-      source: { include: 'zh/resources/**/*.md', prefix: '/zh/resources' },
-      schema: commonContentSchema,
-    }),
-  ),
-} as const
+  )
+}
+
+export { collections }
