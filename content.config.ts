@@ -18,36 +18,42 @@ interface SitemapImage {
   title?: string
 }
 
-const BODY_MATCH = /https:\/\/cdn\.xanzhu\.com\/[^"'\s?]+(\.webp|\.jpg|\.png|\.jpeg)/g
-const TRAILING_SLASH = /\\/g
-
 function createImageExtractor(name: string) {
   return {
     name,
     onUrl: (url: any, entry: any) => {
       const images: SitemapImage[] = []
+
       if (entry.img) {
+        const imgLoc = String(entry.img)
         images.push({
-          loc: String(entry.img).startsWith('https://')
-            ? String(entry.img)
-            : `https://xanzhu.com${entry.img}`,
+          loc: imgLoc.startsWith('https://') ? imgLoc : `https://xanzhu.com${imgLoc}`,
           title: String(entry.title || ''),
         })
       }
 
       if (entry.body && typeof entry.body === 'object') {
         const bodyString = JSON.stringify(entry.body)
-        BODY_MATCH.lastIndex = 0
-        const matches = bodyString.match(BODY_MATCH)
+        const CDN_BASE = 'https://cdn.xanzhu.com/'
+        const EXTENSIONS = ['.webp', '.jpg', '.png', '.jpeg']
 
-        if (matches) {
-          matches.forEach((src) => {
-            const cleanSrc = src.replace(TRAILING_SLASH, '')
+        let searchStart = 0
+        while (true) {
+          const idx = bodyString.indexOf(CDN_BASE, searchStart)
+          if (idx === -1)
+            break
 
-            if (!images.some(i => i.loc === cleanSrc)) {
-              images.push({ loc: cleanSrc })
-            }
-          })
+          const end = bodyString.indexOf('"', idx)
+          if (end === -1)
+            break
+
+          const src = bodyString.slice(idx, end).split('\\').join('')
+
+          if (EXTENSIONS.some(ext => src.endsWith(ext)) && !images.some(i => i.loc === src)) {
+            images.push({ loc: src })
+          }
+
+          searchStart = end
         }
       }
 
