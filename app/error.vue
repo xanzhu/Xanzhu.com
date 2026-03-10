@@ -1,13 +1,17 @@
 <script setup lang="ts">
 import type { NuxtError } from '#app'
 
-const props = defineProps<{ error?: NuxtError }>()
+const { error } = defineProps<{
+  error?: NuxtError
+}>()
 
 const { t } = useI18n()
 const localePath = useLocalePath()
+const alertId = useId()
+const router = useRouter()
 
 const errorData = computed(() => {
-  const status = props.error?.status
+  const status = error?.status
   const is404 = status === 404
   const key = is404 ? '404' : '500'
   return {
@@ -19,14 +23,10 @@ const errorData = computed(() => {
   }
 })
 
-useHead(() => ({
-  title: `${errorData.value.key} - ${errorData.value.title}`,
-  meta: [
-    { name: 'robots', content: 'noindex' },
-  ],
-}))
-
-const router = useRouter()
+useHead({
+  title: computed(() => `${errorData.value.key} - ${errorData.value.title}`),
+  meta: [{ name: 'robots', content: 'noindex' }],
+})
 
 function handleGoBack() {
   if (window.history.length > 1) {
@@ -47,7 +47,7 @@ function handleGoBack() {
       </h1>
 
       <div class="mt5 max-w-md core-border rounded-lg core-ui p-3 text-neutral8 md:mt-15 dark:text-light2" role="alert" aria-atomic="true">
-        <div class="mb-10 flex items-center core-border rounded-lg bg-white px-4 md:(mb-15 px5) space-x-4 dark:bg-black">
+        <div :id="alertId" class="mb-10 flex items-center core-border rounded-lg bg-white px-4 md:(mb-15 px5) space-x-4 dark:bg-black">
           <Icon name="lucide:triangle-alert" class="hidden sm:(h10 w-auto flex text-inherit)" aria-hidden="true" />
           <p>
             {{ errorData.message }}

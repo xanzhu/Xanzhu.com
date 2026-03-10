@@ -4,7 +4,7 @@ interface Post {
   title: string
 }
 
-const props = defineProps<{
+const { post } = defineProps<{
   post: Post
 }>()
 
@@ -15,7 +15,7 @@ const copied = ref(false)
 
 const fullUrl = computed(() => {
   const base = (config.public.i18n.baseUrl || '').replace(/\/$/, '')
-  return `${base}${props.post.path || ''}`
+  return `${base}${post.path || ''}`
 })
 
 // Simple Copy Link
@@ -32,13 +32,9 @@ async function copyLink() {
   }
 }
 
-// Pre-encode values
-const encodedUrl = computed(() => encodeURIComponent(fullUrl.value))
-const encodedTitle = computed(() => encodeURIComponent(props.post.title))
-
 const socials = computed(() => {
-  const url = encodedUrl.value
-  const title = encodedTitle.value
+  const url = encodeURIComponent(fullUrl.value)
+  const title = encodeURIComponent(post.title)
   const emailBody = encodeURIComponent(t('ui.sharing.email'))
 
   return [

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const props = defineProps<{
+const { links } = defineProps<{
   links: TocLink[]
 }>()
 
@@ -28,7 +28,7 @@ const flattenedLinks = computed(() => {
     }
   }
 
-  flatten(props.links)
+  flatten(links)
   return result
 })
 

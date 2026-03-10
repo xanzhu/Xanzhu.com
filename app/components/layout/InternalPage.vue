@@ -1,12 +1,12 @@
 <script setup lang="ts">
-const props = defineProps<{
-  title: string
+const { title, description, date, datelabel } = defineProps<{
+  title?: string
   description?: string
   date?: string
   datelabel?: string
 }>()
 
-const hasSubInfo = computed(() => !!props.description || !!props.date)
+const hasSubInfo = computed(() => !!description || !!date)
 </script>
 
 <template>

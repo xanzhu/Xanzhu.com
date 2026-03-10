@@ -1,5 +1,5 @@
 <script setup lang="ts">
-defineProps<{
+const { date } = defineProps<{
   date: string | Date | number
 }>()
 

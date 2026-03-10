@@ -6,7 +6,7 @@ interface SurroundItem {
   alt?: string
 }
 
-const props = defineProps<{
+const { surround } = defineProps<{
   surround: (SurroundItem | null)[]
 }>()
 
@@ -14,13 +14,13 @@ const { t } = useI18n()
 
 const items = computed(() => [
   {
-    data: props.surround?.[0],
+    data: surround?.[0],
     label: t('ui.pagination.prev'),
     rel: 'prev',
     isNext: false,
   },
   {
-    data: props.surround?.[1],
+    data: surround?.[1],
     label: t('ui.pagination.next'),
     rel: 'next',
     isNext: true,

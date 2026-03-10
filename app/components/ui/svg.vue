@@ -1,10 +1,7 @@
 <script setup lang="ts">
-defineProps({
-  loadSVG: {
-    type: String,
-    required: true,
-  },
-})
+const { loadSVG } = defineProps<{
+  loadSVG: string
+}>()
 </script>
 
 <template>

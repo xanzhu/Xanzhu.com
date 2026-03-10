@@ -1,10 +1,8 @@
 <script setup lang="ts">
-interface Props {
+const { videoId, title } = defineProps<{
   videoId: string
   title?: string
-}
-
-const props = defineProps<Props>()
+}>()
 const { t } = useI18n()
 
 const isLoaded = ref(false)
@@ -19,7 +17,7 @@ function stateChange(event: YouTubeStateEvent) {
   isPlaying.value = event.data === 1
 }
 const iframeTitle = computed(() =>
-  props.title || t('blog.article.videoIframe'),
+  title || t('blog.article.videoIframe'),
 )
 
 onBeforeUnmount(() => {

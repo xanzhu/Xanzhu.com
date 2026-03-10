@@ -1,7 +1,11 @@
 <script setup lang="ts">
-defineProps<{
+const { title, links } = defineProps<{
   title: string
-  links: { text: string, href: string, external?: boolean }[]
+  links: {
+    text: string
+    href: string
+    external?: boolean
+  }[]
 }>()
 
 const titleId = useId()

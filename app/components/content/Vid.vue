@@ -1,9 +1,9 @@
 <script setup lang="ts">
-defineProps({
-  source: { type: String, required: true },
-  credit: { type: String },
-  thumbnail: { type: String },
-})
+const { source, credit, thumbnail } = defineProps<{
+  source: string
+  credit?: string
+  thumbnail?: string
+}>()
 
 const { t } = useI18n()
 </script>

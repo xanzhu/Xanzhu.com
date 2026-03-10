@@ -1,11 +1,7 @@
 <script setup lang="ts">
-interface Props {
+const { threshold = 600 } = defineProps<{
   threshold?: number
-}
-
-const props = withDefaults(defineProps<Props>(), {
-  threshold: 600,
-})
+}>()
 
 const isVisible = ref(false)
 
@@ -21,7 +17,7 @@ function onScroll() {
   if (!ticking) {
     window.requestAnimationFrame(() => {
       const scrollTop = window.scrollY || document.documentElement.scrollTop
-      isVisible.value = scrollTop < lastScrollTop && scrollTop > props.threshold
+      isVisible.value = scrollTop < lastScrollTop && scrollTop > threshold
       lastScrollTop = scrollTop
       ticking = false
     })
