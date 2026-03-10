@@ -1,53 +1,51 @@
 <script setup lang="ts">
 import type { Collections } from '@nuxt/content'
+import type { Post } from '~/types/post'
 
 const route = useRoute()
 const { locale, t } = useI18n()
 const config = useRuntimeConfig()
-
-const collection = computed(() => `blog_${locale.value}` as keyof Collections)
-const path = computed(() => route.path)
+const collectionName = `blog_${locale.value}` as keyof Collections
+const currentPath = route.path
 
 const [{ data: post }, { data: surround }] = await Promise.all([
-  useAsyncData(path.value, () =>
-    queryCollection(collection.value).path(path.value).first()),
-  useAsyncData(`surround-${locale.value}${path.value}`, () =>
-    queryCollectionItemSurroundings(collection.value, path.value, {
+  useAsyncData(`post-${locale.value}-${currentPath}`, () =>
+    queryCollection(collectionName).path(currentPath).first() as Promise<Post>),
+
+  useAsyncData(`surround-${locale.value}-${currentPath}`, () =>
+    queryCollectionItemSurroundings(collectionName, currentPath, {
       before: 1,
       after: 1,
       fields: ['title', 'path', 'date', 'img'],
-    }),
-    { default: () => [] }
-  ),
+    })),
 ])
 
-if (!post.value)
+if (!post.value && import.meta.server) {
   throw createError({ statusCode: 404 })
-
-if (post.value?.title) {
-  route.meta.title = post.value.title
 }
 
-const seoTitle = computed(() => post.value?.title || 'Default Blog Title')
-const seoDesc = computed(() => post.value?.description || 'Explore our latest blog posts.')
-const seoImage = computed(() => {
-  const img = post.value?.img
-  return img ? config.public.i18n.baseUrl + img : `${config.public.i18n.baseUrl}/guard.webp`
-})
+watch(
+  () => post.value?.title,
+  (title) => {
+    if (title)
+      route.meta.title = title
+  },
+  { immediate: true },
+)
+
 const titleSuffix = ' - Xanzhu'
+const baseUrl = config.public.i18n.baseUrl
 
 useSeoMeta({
-  title: seoTitle,
-  description: seoDesc,
-  ogTitle: computed(() => `${seoTitle.value}${titleSuffix}`),
-  ogDescription: seoDesc,
-  twitterTitle: computed(() => `${seoTitle.value}${titleSuffix}`),
-  twitterDescription: seoDesc,
-  twitterImage: seoImage,
+  title: () => post.value?.title,
+  description: () => post.value?.description,
+  ogTitle: () => `${post.value?.title}${titleSuffix}`,
+  ogDescription: () => post.value?.description,
   ogType: 'article',
-  ogImage: seoImage,
-  articlePublishedTime: computed(() => post.value?.date),
-  articleModifiedTime: computed(() => post.value?.updated),
+  ogImage: () => post.value?.img ? `${baseUrl}${post.value.img}` : `${baseUrl}/guard.webp`,
+  twitterCard: 'summary_large_image',
+  articlePublishedTime: () => post.value?.date,
+  articleModifiedTime: () => post.value?.updated,
 })
 </script>
 
@@ -79,7 +77,7 @@ useSeoMeta({
           <LazyBlogSocialShare :post="{ path: post.path, title: post.title }" />
         </div>
       </div>
-      <LazyBlogPrevNext :surround="surround" />
+      <LazyBlogPrevNext v-if="surround" :surround="surround" />
     </article>
   </main>
 </template>

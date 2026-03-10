@@ -3,10 +3,10 @@ import type { Collections } from '@nuxt/content'
 
 const { locale, t } = useI18n()
 
-const collection = computed(() => `blog_${locale.value}` as keyof Collections)
+const collectionName = `blog_${locale.value}` as keyof Collections
 
 const { data: features } = await useAsyncData(`featuredArticles-${locale.value}`, () =>
-  queryCollection(collection.value)
+  queryCollection(collectionName)
     .select('title', 'date', 'description', 'tag', 'path')
     .where('feature', '=', 1)
     .order('date', 'DESC')

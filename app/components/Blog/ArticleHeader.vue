@@ -1,10 +1,9 @@
 <script setup lang="ts">
-defineProps({
-  post: {
-    type: Object,
-    required: true,
-  },
-})
+import type { Post } from '~/types/post'
+
+const { post } = defineProps<{
+  post: Post
+}>()
 
 const { t } = useI18n()
 </script>

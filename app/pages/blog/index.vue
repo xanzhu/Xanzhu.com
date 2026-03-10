@@ -2,15 +2,14 @@
 import type { Collections } from '@nuxt/content'
 
 const { locale, t } = useI18n()
-const collection = computed(() => `blog_${locale.value}` as keyof Collections)
+const collectionName = `blog_${locale.value}` as keyof Collections
 
 const { data: posts } = await useAsyncData(
-  `blogArticles-${locale.value}`, 
-  () => queryCollection(collection.value)
+  `blogArticles-${locale.value}`,
+  () => queryCollection(collectionName)
     .select('title', 'date', 'img', 'description', 'path', 'tag', 'alt')
     .order('date', 'DESC')
     .all(),
-  { default: () => [] }
 )
 
 const seoImage = 'https://images.pexels.com/photos/27277185/pexels-photo-27277185.jpeg'
@@ -27,39 +26,41 @@ useLangMeta('seo.blog', seoImage)
         {{ t("blog.desc") }}
       </p>
     </div>
-    <section
-      v-if="posts.length"
+    <ul
+      v-if="posts?.length"
       class="grid grid-cols-1 gap-5 rounded-sm p-4 lg:(grid-cols-3 gap-5) md:(grid-cols-2 gap-10) sm:(px-10 py-15)"
     >
-      <article v-for="(article, index) in posts" :key="article.path">
-        <NuxtLinkLocale class="group flex flex-col no-underline" :to="article.path">
-          <NuxtImg
-            v-if="article.img" crossorigin="anonymous" :alt="article.alt" :title="article.alt" :loading="index < 3 ? 'eager' : 'lazy'"
-            :fetchpriority="index === 0 ? 'high' : 'auto'" decoding="async"
-            height="369" width="577" object-fit="cover" format="webp"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 557px"
-            class="h-full w-full transform core-border rounded-md md:(transition duration-400 ease-in-out group-hover:scale-102)"
-            :src="article.img"
-          />
-          <div class="h-auto py2 text-black space-y-2 dark:text-white">
-            <div
-              class="children:(inline-flex core-border rounded-md core-ui px4 py2 text-xs op80 dark:op100) space-x-2"
-            >
-              <UiDate v-if="article.date" :date="article.date" />
-              <p v-if="article.tag" class="m0">
-                {{ article.tag }}
+      <li v-for="(article, index) in posts" :key="article.path">
+        <article>
+          <NuxtLinkLocale class="group flex flex-col no-underline" :to="article.path">
+            <NuxtImg
+              v-if="article.img" crossorigin="anonymous" :alt="article.alt" :title="article.alt" :loading="index < 3 ? 'eager' : 'lazy'"
+              :fetchpriority="index === 0 ? 'high' : 'auto'" decoding="async"
+              height="369" width="577" object-fit="cover" format="webp"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 557px"
+              class="h-full w-full transform core-border rounded-md md:(transition duration-400 ease-in-out group-hover:scale-102)"
+              :src="article.img"
+            />
+            <div class="h-auto py2 text-black space-y-2 dark:text-white">
+              <div
+                class="children:(inline-flex core-border rounded-md core-ui px4 py2 text-xs op80 dark:op100) space-x-2"
+              >
+                <UiDate v-if="article.date" :date="article.date" />
+                <p v-if="article.tag" class="m0">
+                  {{ article.tag }}
+                </p>
+              </div>
+              <h2 class="m0 text-xl font-semibold underline-1 group-hover:(underline underline-offset-4)">
+                {{ article.title }}
+              </h2>
+              <p class="text-neutral-600 dark:text-neutral-300">
+                {{ article.description }}
               </p>
             </div>
-            <h2 class="m0 text-xl font-semibold underline-1 group-hover:(underline underline-offset-4)">
-              {{ article.title }}
-            </h2>
-            <p class="text-neutral-600 dark:text-neutral-300">
-              {{ article.description }}
-            </p>
-          </div>
-        </NuxtLinkLocale>
-      </article>
-    </section>
+          </NuxtLinkLocale>
+        </article>
+      </li>
+    </ul>
     <p v-else class="text-center op70">
       {{ t('error.blog.notFound') }}
     </p>
