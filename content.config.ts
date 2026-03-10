@@ -37,7 +37,7 @@ function createImageExtractor(name: string) {
 
       if (entry.body && typeof entry.body === 'object') {
         const bodyString = JSON.stringify(entry.body)
-
+        BODY_MATCH.lastIndex = 0
         const matches = bodyString.match(BODY_MATCH)
 
         if (matches) {
