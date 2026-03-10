@@ -11,12 +11,9 @@ const { data: features } = await useAsyncData(`featuredArticles-${locale.value}`
     .where('feature', '=', 1)
     .order('date', 'DESC')
     .limit(5)
-    .all(),
-  { 
-    default: () => [],
-    lazy: true 
-  }
-)
+    .all(), {
+  lazy: true,
+})
 
 const featureSets = computed(() => ({
   setOne: (features.value ?? []).slice(0, 3),
