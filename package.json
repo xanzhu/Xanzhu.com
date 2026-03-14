@@ -1,6 +1,6 @@
 {
   "name": "xanzhu.com",
-  "version": "2.5.7",
+  "version": "2.5.8",
   "private": true,
   "license": "MIT",
   "scripts": {
@@ -28,9 +28,9 @@
     "vue-router": "^5.0.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^7.7.0",
+    "@antfu/eslint-config": "^7.7.2",
     "@nuxt/devtools": "^3.2.3",
-    "@nuxt/hints": "1.0.0-alpha.10",
+    "@nuxt/hints": "^1.0.0",
     "@unocss/eslint-plugin": "^66.6.6",
     "@unocss/nuxt": "^66.6.6",
     "@unocss/preset-typography": "^66.6.6",
@@ -39,11 +39,11 @@
     "@unocss/transformer-variant-group": "^66.6.6",
     "eslint": "^10.0.3",
     "eslint-plugin-format": "^2.0.1",
-    "eslint-plugin-oxlint": "^1.51.0",
+    "eslint-plugin-oxlint": "^1.55.0",
     "lightningcss": "^1.32.0",
     "nitro-cloudflare-dev": "^0.2.2",
-    "oxlint": "^1.52.0",
-    "wrangler": "^4.71.0"
+    "oxlint": "^1.55.0",
+    "wrangler": "^4.73.0"
   },
   "trustedDependencies": [
     "@parcel/watcher"

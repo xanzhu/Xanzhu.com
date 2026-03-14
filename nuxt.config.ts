@@ -252,7 +252,7 @@ export default defineNuxtConfig({
     sri: true,
   },
 
-  compatibilityDate: '2026-02-01',
+  compatibilityDate: '2026-02-12',
 
   sourcemap: isDev,
 
@@ -294,6 +294,9 @@ export default defineNuxtConfig({
   vite: {
     build: {
       cssMinify: 'lightningcss',
+    },
+    optimizeDeps: {
+      include: ['@vue/devtools-core', '@vue/devtools-kit', '@vueuse/core'],
     },
   },
 
