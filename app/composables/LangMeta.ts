@@ -4,8 +4,7 @@ export function useLangMeta(
   format: 'prefix' | 'suffix' = 'suffix',
   localScope?: (key: string) => string,
 ) {
-  const { t: globalT } = useI18n()
-  const t = localScope ?? globalT
+  const t = localScope ?? useI18n().t
 
   const seoTitle = computed(() => t(`${i18nKey}.title`))
   const seoDesc = computed(() => t(`${i18nKey}.desc`))
