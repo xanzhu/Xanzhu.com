@@ -46,7 +46,7 @@ function handleGoBack() {
         <span class="sr-only">({{ t('aria.error_code_prefix') }} {{ errorData.status }})</span>
       </h1>
 
-      <div class="mt5 max-w-md core-border rounded-lg core-ui p-3 text-neutral8 md:mt-15 dark:text-light2" role="alert" aria-atomic="true">
+      <div class="mt5 max-w-md core-border rounded-lg core-ui p-3 text-neutral8 md:mt-15 dark:text-light2" role="alert" aria-atomic="true" :aria-describedby="alertId">
         <div :id="alertId" class="mb-10 flex items-center core-border rounded-lg bg-white px-4 md:(mb-15 px5) space-x-4 dark:bg-black">
           <Icon name="lucide:triangle-alert" class="hidden sm:(h10 w-auto flex text-inherit)" aria-hidden="true" />
           <p>
