@@ -252,7 +252,7 @@ export default defineNuxtConfig({
     sri: true,
   },
 
-  compatibilityDate: '2026-02-12',
+  compatibilityDate: '2026-03-15',
 
   sourcemap: isDev,
 
@@ -263,7 +263,6 @@ export default defineNuxtConfig({
         include: [/\.(vue|ts|mdx?|html)($|\?)/],
       },
     },
-    blocklist: [/pascalCase/],
   },
 
   nitro: {

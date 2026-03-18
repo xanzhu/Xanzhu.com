@@ -1,6 +1,6 @@
 {
   "name": "xanzhu.com",
-  "version": "2.5.8",
+  "version": "2.5.9",
   "private": true,
   "license": "MIT",
   "scripts": {
@@ -22,14 +22,14 @@
     "@nuxtjs/color-mode": "^4.0.0",
     "@nuxtjs/i18n": "^10.2.3",
     "@nuxtjs/sitemap": "^7.6.0",
-    "nuxt": "^4.3.1",
+    "nuxt": "4.3.1",
     "nuxt-security": "^2.5.1",
     "vue": "^3.5.30",
     "vue-router": "^5.0.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^7.7.2",
-    "@nuxt/devtools": "^3.2.3",
+    "@antfu/eslint-config": "^7.7.3",
+    "@nuxt/devtools": "^3.2.4",
     "@nuxt/hints": "^1.0.0",
     "@unocss/eslint-plugin": "^66.6.6",
     "@unocss/nuxt": "^66.6.6",
@@ -39,13 +39,16 @@
     "@unocss/transformer-variant-group": "^66.6.6",
     "eslint": "^10.0.3",
     "eslint-plugin-format": "^2.0.1",
-    "eslint-plugin-oxlint": "^1.55.0",
+    "eslint-plugin-oxlint": "^1.56.0",
     "lightningcss": "^1.32.0",
     "nitro-cloudflare-dev": "^0.2.2",
-    "oxlint": "^1.55.0",
-    "wrangler": "^4.73.0"
+    "oxlint": "^1.56.0",
+    "wrangler": "^4.75.0"
   },
   "trustedDependencies": [
-    "@parcel/watcher"
+    "@parcel/watcher",
+    "esbuild",
+    "sharp",
+    "workerd"
   ]
 }
