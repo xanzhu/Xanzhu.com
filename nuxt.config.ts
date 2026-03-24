@@ -120,8 +120,7 @@ export default defineNuxtConfig({
       headers: {
         'x-robots-tag': 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
         'Cache-Control': 'public, max-age=3600, s-maxage=86400, stale-while-revalidate=86400',
-      },
-      isr: 86400,
+      }
     },
     '/_nuxt/**': {
       headers: {
@@ -208,6 +207,8 @@ export default defineNuxtConfig({
           'https://assets.lotofcarrots.com/media/home/section/desktop/4.webp',
           'https://storage.googleapis.com/gweb-uniblog-publish-prod/',
           'https://i.ytimg.com',
+          'https://unocss.dev/',
+          'https://nuxt.com/'
         ],
         'media-src': [
           '\'self\'',
@@ -229,7 +230,7 @@ export default defineNuxtConfig({
           'https://api.weatherapi.com',
           'https://api.iconify.design',
           ...(isDev
-            ? ['ws://localhost:4000', 'ws://localhost:24678']
+            ? ['ws://localhost:*']
             : []),
         ],
         'frame-src': [
