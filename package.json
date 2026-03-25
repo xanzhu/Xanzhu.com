@@ -50,5 +50,14 @@
     "esbuild",
     "sharp",
     "workerd"
-  ]
+  ],
+  "overrides": {
+    "h3": ">=1.15.6",
+    "serialize-javascript": ">=7.0.3",
+    "simple-git": ">=3.32.3",
+    "minimatch": ">=5.1.8",
+    "flatted": ">=3.4.0",
+    "devalue": ">=5.6.4",
+    "unhead": ">=2.1.11"
+  }
 }
