@@ -1,51 +1,7 @@
 import { defineCollection, z } from '@nuxt/content'
-import { defineSitemapSchema } from '@nuxtjs/sitemap/content'
+import { asSitemapCollection } from '@nuxtjs/sitemap/content'
 
-interface SitemapImage {
-  loc: string
-  title?: string
-}
-
-const CDN_BASE = 'https://cdn.xanzhu.com/'
-const CDN_EXTENSIONS = ['.webp', '.jpg', '.png', '.jpeg']
-
-function extractImages(url: any, entry: any) {
-  const images: SitemapImage[] = []
-
-  if (entry.img) {
-    const imgLoc = String(entry.img)
-    images.push({
-      loc: imgLoc.startsWith('https://') ? imgLoc : `https://xanzhu.com${imgLoc}`,
-      title: String(entry.title || ''),
-    })
-  }
-
-  if (entry.body && typeof entry.body === 'object') {
-    const bodyString = JSON.stringify(entry.body)
-    let searchStart = 0
-
-    while (true) {
-      const idx = bodyString.indexOf(CDN_BASE, searchStart)
-      if (idx === -1) break
-
-      const end = bodyString.indexOf('"', idx)
-      if (end === -1) break
-
-      const src = bodyString.slice(idx, end).split('\\').join('')
-
-      if (CDN_EXTENSIONS.some(ext => src.endsWith(ext)) && !images.some(i => i.loc === src)) {
-        images.push({ loc: src })
-      }
-
-      searchStart = end
-    }
-  }
-
-  url.images = images
-  return url
-}
-
-const baseSchema = z.object({
+const commonContentSchema = z.object({
   title: z.string().min(1),
   description: z.string().min(1),
   date: z.string().min(1),
@@ -57,36 +13,76 @@ const baseSchema = z.object({
   updated: z.string().optional(),
 })
 
-const blogSchema = baseSchema.extend({
-  sitemap: defineSitemapSchema({ 
-    name: 'blog',
-    onUrl: extractImages 
-  }),
-})
+interface SitemapImage {
+  loc: string
+  title?: string
+}
 
-const resourceSchema = baseSchema.extend({
-  sitemap: defineSitemapSchema({
-    name: 'resources'
-  }),
-})
+function createImageExtractor(name: string) {
+  return {
+    name,
+    onUrl: (url: any, entry: any) => {
+      const CDN_BASE = 'https://cdn.xanzhu.com/'
+      const CDN_EXTENSIONS = ['.webp', '.jpg', '.png', '.jpeg']
+      const images: SitemapImage[] = []
+      const imageSet = new Set<string>()
 
+      if (entry.img) {
+        const imgLoc = String(entry.img)
+        const loc = imgLoc.startsWith('https://') ? imgLoc : `https://xanzhu.com${imgLoc}`
+        images.push({ loc, title: String(entry.title || '') })
+        imageSet.add(loc)
+      }
+
+      if (entry.body && typeof entry.body === 'object') {
+        const bodyString = JSON.stringify(entry.body)
+        let searchStart = 0
+
+        while (true) {
+          const idx = bodyString.indexOf(CDN_BASE, searchStart)
+          if (idx === -1) break
+
+          const end = bodyString.indexOf('"', idx)
+          if (end === -1) break
+
+          const src = bodyString.slice(idx, end).split('\\').join('')
+
+          if (CDN_EXTENSIONS.some(ext => src.endsWith(ext)) && !imageSet.has(src)) {
+            imageSet.add(src)
+            images.push({ loc: src })
+          }
+
+          searchStart = end
+        }
+      }
+
+      url.images = images
+    },
+  }
+}
+
+const pageTypeConfig = { type: 'page' as const }
 const locales = ['en', 'ko', 'zh'] as const
 const collections: Record<string, any> = {}
 
 for (const locale of locales) {
   const prefix = locale === 'en' ? '' : `/${locale}`
 
-  collections[`blog_${locale}`] = defineCollection({
-    type: 'page',
-    source: { include: `${locale}/blog/**/*.md`, prefix: `${prefix}/blog` },
-    schema: blogSchema,
-  })
+  collections[`blog_${locale}`] = defineCollection(
+    asSitemapCollection({
+      ...pageTypeConfig,
+      source: { include: `${locale}/blog/**/*.md`, prefix: `${prefix}/blog` },
+      schema: commonContentSchema,
+    }, createImageExtractor(`blog_${locale}`)),
+  )
 
-  collections[`resources_${locale}`] = defineCollection({
-    type: 'page',
-    source: { include: `${locale}/resources/**/*.md`, prefix: `${prefix}/resources` },
-    schema: resourceSchema,
-  })
+  collections[`resources_${locale}`] = defineCollection(
+    asSitemapCollection({
+      ...pageTypeConfig,
+      source: { include: `${locale}/resources/**/*.md`, prefix: `${prefix}/resources` },
+      schema: commonContentSchema,
+    }),
+  )
 }
 
 export { collections }
