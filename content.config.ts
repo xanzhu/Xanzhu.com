@@ -40,10 +40,12 @@ function createImageExtractor(name: string) {
 
         while (true) {
           const idx = bodyString.indexOf(CDN_BASE, searchStart)
-          if (idx === -1) break
+          if (idx === -1)
+            break
 
           const end = bodyString.indexOf('"', idx)
-          if (end === -1) break
+          if (end === -1)
+            break
 
           const src = bodyString.slice(idx, end).split('\\').join('')
 

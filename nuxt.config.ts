@@ -120,7 +120,7 @@ export default defineNuxtConfig({
       headers: {
         'x-robots-tag': 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
         'Cache-Control': 'public, max-age=3600, s-maxage=86400, stale-while-revalidate=86400',
-      }
+      },
     },
     '/_nuxt/**': {
       headers: {
@@ -137,6 +137,7 @@ export default defineNuxtConfig({
       prerender: false,
     },
     '/**/blog/**': { isr: 86400 },
+    // '/:locale/:slug/about': { cache: { swr: true, maxAge: 180, staleMaxAge: 28800 } },
   },
 
   image: {
@@ -208,7 +209,7 @@ export default defineNuxtConfig({
           'https://storage.googleapis.com/gweb-uniblog-publish-prod/',
           'https://i.ytimg.com',
           'https://unocss.dev/',
-          'https://nuxt.com/'
+          'https://nuxt.com/',
         ],
         'media-src': [
           '\'self\'',

@@ -24,26 +24,27 @@
     "@nuxtjs/sitemap": "^7.6.0",
     "nuxt": "4.3.1",
     "nuxt-security": "^2.5.1",
-    "vue": "^3.5.31",
+    "vue": "^3.5.32",
     "vue-router": "^5.0.4"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^7.7.3",
     "@nuxt/devtools": "^4.0.0-alpha.3",
-    "@nuxt/hints": "^1.0.2",
+    "@nuxt/hints": "^1.0.3",
     "@unocss/eslint-plugin": "^66.6.7",
     "@unocss/nuxt": "^66.6.7",
     "@unocss/preset-typography": "^66.6.7",
     "@unocss/preset-wind3": "^66.6.7",
     "@unocss/transformer-directives": "^66.6.7",
     "@unocss/transformer-variant-group": "^66.6.7",
-    "eslint": "^10.1.0",
+    "eslint": "^10.2.0",
     "eslint-plugin-format": "^2.0.1",
-    "eslint-plugin-oxlint": "^1.57.0",
+    "eslint-plugin-oxlint": "^1.58.0",
     "lightningcss": "^1.32.0",
     "nitro-cloudflare-dev": "^0.2.2",
-    "oxlint": "^1.57.0",
-    "wrangler": "^4.77.0"
+    "oxfmt": "^0.43.0",
+    "oxlint": "^1.58.0",
+    "wrangler": "^4.80.0"
   },
   "trustedDependencies": [
     "@parcel/watcher",
@@ -52,12 +53,12 @@
     "workerd"
   ],
   "overrides": {
+    "devalue": ">=5.6.4",
+    "flatted": ">=3.4.0",
     "h3": ">=1.15.6",
+    "minimatch": ">=5.1.8",
     "serialize-javascript": ">=7.0.3",
     "simple-git": ">=3.32.3",
-    "minimatch": ">=5.1.8",
-    "flatted": ">=3.4.0",
-    "devalue": ">=5.6.4",
     "unhead": ">=2.1.11"
   }
 }
