@@ -11,7 +11,6 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxtjs/sitemap',
     '@nuxt/content',
-    '@nuxt/hints',
     '@unocss/nuxt',
     '@nuxtjs/color-mode',
     '@nuxt/icon',
