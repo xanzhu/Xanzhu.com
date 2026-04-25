@@ -43,7 +43,7 @@ const children = computed(() => {
 })
 
 if (!folderIndex.value && !directPage.value) {
-  throw createError({ statusCode: 404 })
+  throw createError({ status: 404 })
 }
 
 // a11y: Testing focus features

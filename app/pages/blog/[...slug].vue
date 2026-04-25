@@ -20,8 +20,8 @@ const [{ data: post }, { data: surround }] = await Promise.all([
     }), { dedupe: 'defer' }),
 ])
 
-if (!post.value && import.meta.server) {
-  throw createError({ statusCode: 404 })
+if (!post.value) {
+  throw createError({ status: 404, fatal: true })
 }
 
 watch(
@@ -32,7 +32,6 @@ watch(
   },
   { immediate: true },
 )
-
 const titleSuffix = ' - Xanzhu'
 const baseUrl = config.public.i18n.baseUrl
 

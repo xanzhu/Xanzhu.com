@@ -102,12 +102,8 @@ export function useBreadcrumbs() {
   })
 
   const breadcrumbs = computed(() => {
-    const items = [...fullBreadcrumbs.value]
-    if (items.length >= 3) {
-      items.shift()
-    }
-
-    return items
+    const items = fullBreadcrumbs.value
+    return items.length >= 3 ? items.slice(1) : items
   })
 
   // JSON-LD
