@@ -22,6 +22,7 @@
     "@nuxtjs/color-mode": "^4.0.0",
     "@nuxtjs/i18n": "^10.3.0",
     "@nuxtjs/sitemap": "^7.6.0",
+    "@vueuse/core": "^14.2.1",
     "nuxt": "4.4.2",
     "nuxt-security": "^2.5.1",
     "vue": "^3.5.33",
@@ -30,7 +31,6 @@
   "devDependencies": {
     "@antfu/eslint-config": "^8.2.0",
     "@nuxt/devtools": "^4.0.0-alpha.4",
-    "@nuxt/hints": "^1.0.3",
     "@unocss/eslint-plugin": "^66.6.8",
     "@unocss/nuxt": "^66.6.8",
     "@unocss/preset-typography": "^66.6.8",
@@ -42,7 +42,6 @@
     "eslint-plugin-oxlint": "^1.61.0",
     "lightningcss": "^1.32.0",
     "nitro-cloudflare-dev": "^0.2.2",
-    "oxfmt": "^0.44.0",
     "oxlint": "^1.61.0",
     "wrangler": "^4.85.0"
   },

@@ -217,6 +217,10 @@ export default defineConfig<Wind3Theme & TypographyTheme>({
           'border': 'none',
           'background-color': '#171717',
         },
+        '.dark .prose :not(pre) > code': {
+          'background-color': '#1e1e1e',
+          'color': '#e5e7eb',
+        },
       },
     }),
   ],

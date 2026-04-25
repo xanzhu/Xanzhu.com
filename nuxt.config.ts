@@ -140,8 +140,9 @@ export default defineNuxtConfig({
       security: { headers: false },
       prerender: false,
     },
-    '/**/blog/**': { isr: 86400 },
-    // '/:locale/:slug/about': { cache: { swr: true, maxAge: 180, staleMaxAge: 28800 } },
+    '/blog/**': { isr: 86400 },
+    '/ko/blog/**': { isr: 86400 },
+    '/zh/blog/**': { isr: 86400 },
   },
 
   image: {
