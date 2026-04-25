@@ -1,5 +1,5 @@
 import { defineCollection, z } from '@nuxt/content'
-import { asSitemapCollection } from '@nuxtjs/sitemap/content'
+import { defineSitemapSchema } from '@nuxtjs/sitemap/content'
 
 const commonContentSchema = z.object({
   title: z.string().min(1),
@@ -19,7 +19,8 @@ interface SitemapImage {
 }
 
 function createImageExtractor(name: string) {
-  return {
+  return defineSitemapSchema({
+    z,
     name,
     onUrl: (url: any, entry: any) => {
       const CDN_BASE = 'https://cdn.xanzhu.com/'
@@ -59,8 +60,9 @@ function createImageExtractor(name: string) {
       }
 
       url.images = images
+      return url
     },
-  }
+  })
 }
 
 const pageTypeConfig = { type: 'page' as const }
@@ -70,21 +72,21 @@ const collections: Record<string, any> = {}
 for (const locale of locales) {
   const prefix = locale === 'en' ? '' : `/${locale}`
 
-  collections[`blog_${locale}`] = defineCollection(
-    asSitemapCollection({
-      ...pageTypeConfig,
-      source: { include: `${locale}/blog/**/*.md`, prefix: `${prefix}/blog` },
-      schema: commonContentSchema,
-    }, createImageExtractor(`blog_${locale}`)),
-  )
-
-  collections[`resources_${locale}`] = defineCollection(
-    asSitemapCollection({
-      ...pageTypeConfig,
-      source: { include: `${locale}/resources/**/*.md`, prefix: `${prefix}/resources` },
-      schema: commonContentSchema,
+  collections[`blog_${locale}`] = defineCollection({
+    ...pageTypeConfig,
+    source: { include: `${locale}/blog/**/*.md`, prefix: `${prefix}/blog` },
+    schema: commonContentSchema.extend({
+      sitemap: createImageExtractor(`blog_${locale}`),
     }),
-  )
+  })
+
+  collections[`resources_${locale}`] = defineCollection({
+    ...pageTypeConfig,
+    source: { include: `${locale}/resources/**/*.md`, prefix: `${prefix}/resources` },
+    schema: commonContentSchema.extend({
+      sitemap: defineSitemapSchema({ z }),
+    }),
+  })
 }
 
 export { collections }
