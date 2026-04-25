@@ -26,7 +26,7 @@ Ubuntu 现在提供原生 ARM 桌面版本！对于想要探索 Linux、进行�
 
 * **UTM**: 版本 4.7.5 或更高。
 * **存储空间**: 至少 30 GB 剩余空间。
-* **ISO**: Ubuntu 26.04 LTS 桌面版 (**ARM64**)。。
+* **ISO**: Ubuntu 26.04 LTS 桌面版 (**ARM64**)。
 * **硬件**: Apple Silicon (M1, M2, M3, M4 或 M5 系列芯片)。
 
 ## 下载 UTM
