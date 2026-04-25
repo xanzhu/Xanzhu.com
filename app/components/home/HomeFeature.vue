@@ -107,7 +107,7 @@ const featureImage = 'https://cdn.xanzhu.com/v1/rabbit-r1/graphic.webp'
           <NuxtLinkLocale
             class="block h-full p-5 text-black no-underline dark:text-white"
             :to="feature.path"
-            :aria-labelledby="`${headingId}-${feature.path}`"
+            :aria-labelledby="`${headingId}-${feature.path.replace(/\//g, '-')}`"
           >
             <span
               class="core-border rounded-md bg-light200 px4 py1 text-sm text-inherit op-90 dark:bg-dark800"
@@ -116,7 +116,7 @@ const featureImage = 'https://cdn.xanzhu.com/v1/rabbit-r1/graphic.webp'
               {{ feature.tag }}
             </span>
             <h3
-              :id="`${headingId}-${feature.path}`"
+              :id="`${headingId}-${feature.path.replace(/\//g, '-')}`"
               class="group-hover:text-primary mt-2 text-xl text-inherit font-semibold"
             >
               {{ feature.title }}

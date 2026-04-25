@@ -21,7 +21,7 @@
       },
       "devDependencies": {
         "@antfu/eslint-config": "^8.2.0",
-        "@nuxt/devtools": "^4.0.0-alpha.4",
+        "@nuxt/devtools": "~4.0.0-alpha.4",
         "@unocss/eslint-plugin": "^66.6.8",
         "@unocss/nuxt": "^66.6.8",
         "@unocss/preset-typography": "^66.6.8",
