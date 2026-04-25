@@ -154,6 +154,12 @@ export default defineNuxtConfig({
       type: 'd1',
       bindingName: 'DB',
     },
+    build: {
+      markdown: {
+        // Shiki
+        highlight: false,
+      },
+    },
   },
 
   // API
