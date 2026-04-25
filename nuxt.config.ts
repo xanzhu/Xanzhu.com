@@ -11,7 +11,6 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxtjs/sitemap',
     '@nuxt/content',
-    '@nuxt/hints',
     '@unocss/nuxt',
     '@nuxtjs/color-mode',
     '@nuxt/icon',
@@ -121,7 +120,10 @@ export default defineNuxtConfig({
         'x-robots-tag': 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
         'Cache-Control': 'public, max-age=3600, s-maxage=86400, stale-while-revalidate=86400',
       },
-      isr: 86400,
+    },
+    '/**/_payload.json': {
+      prerender: false,
+      ssr: false,
     },
     '/_nuxt/**': {
       headers: {
@@ -137,7 +139,9 @@ export default defineNuxtConfig({
       security: { headers: false },
       prerender: false,
     },
-    '/**/blog/**': { isr: 86400 },
+    '/blog/**': { isr: 86400 },
+    '/ko/blog/**': { isr: 86400 },
+    '/zh/blog/**': { isr: 86400 },
   },
 
   image: {
@@ -149,6 +153,12 @@ export default defineNuxtConfig({
     database: {
       type: 'd1',
       bindingName: 'DB',
+    },
+    build: {
+      markdown: {
+        // Shiki
+        highlight: false,
+      },
     },
   },
 
@@ -208,11 +218,13 @@ export default defineNuxtConfig({
           'https://assets.lotofcarrots.com/media/home/section/desktop/4.webp',
           'https://storage.googleapis.com/gweb-uniblog-publish-prod/',
           'https://i.ytimg.com',
+          'https://unocss.dev',
+          'https://nuxt.com',
         ],
         'media-src': [
           '\'self\'',
           'https://storage.googleapis.com/gweb-uniblog-publish-prod/',
-          'https://storage.quantum-engine.ai/',
+          'https://storage.quantum-engine.ai',
           'https://assets.lotofcarrots.com',
           'https://www.apple.com',
           'https://*.xanzhu.com',
@@ -229,7 +241,7 @@ export default defineNuxtConfig({
           'https://api.weatherapi.com',
           'https://api.iconify.design',
           ...(isDev
-            ? ['ws://localhost:4000', 'ws://localhost:24678']
+            ? ['ws://localhost:*']
             : []),
         ],
         'frame-src': [
@@ -252,7 +264,7 @@ export default defineNuxtConfig({
     sri: true,
   },
 
-  compatibilityDate: '2026-02-01',
+  compatibilityDate: '2026-04-23',
 
   sourcemap: isDev,
 
@@ -263,7 +275,6 @@ export default defineNuxtConfig({
         include: [/\.(vue|ts|mdx?|html)($|\?)/],
       },
     },
-    blocklist: [/pascalCase/],
   },
 
   nitro: {
@@ -288,12 +299,15 @@ export default defineNuxtConfig({
   // Experimental Vue Features
   experimental: {
     extractAsyncDataHandlers: true,
-    payloadExtraction: true,
+    payloadExtraction: 'client',
   },
 
   vite: {
     build: {
       cssMinify: 'lightningcss',
+    },
+    optimizeDeps: {
+      include: ['@vue/devtools-core', '@vue/devtools-kit', '@vueuse/core'],
     },
   },
 

@@ -106,7 +106,7 @@ onUnmounted(() => {
 <template>
   <nav
     class="m-4 core-border rounded-sm p4 md:(mx-auto max-w-xl) lg:(max-w-md)"
-    aria-labelledby="toc-heading"
+    :aria-labelledby="tocHeadingId"
   >
     <header :id="tocHeadingId" class="mb-2 pb-2">
       <p class="m-0 text-center text-lg font-semibold tracking-wide">

@@ -26,12 +26,12 @@ const featureImage = 'https://cdn.xanzhu.com/v1/rabbit-r1/graphic.webp'
 </script>
 
 <template>
-  <section class="mx-4 bg-light400 py10 dark:bg-dark900" aria-labelledby="latest-posts">
+  <section class="mx-4 bg-light400 py10 dark:bg-dark900" :aria-labelledby="headingId">
     <div
       class="mx-auto mb5 max-w-lg flex flex-col items-center justify-between px6 md:mb0 md:max-w-5xl md:flex-row space-y-5 md:space-y-0"
     >
       <div class="flex flex-col self-start md:mb10 md:justify-center">
-        <h2 id="latest-posts" class="m0 text-4xl font-bold tracking-wide md:text-5xl">
+        <h2 :id="headingId" class="m0 text-4xl font-bold tracking-wide md:text-5xl">
           {{ t('home.feature.title') }}
         </h2>
         <p class="m0 pt3 text-sm text-dark-400 dark:text-gray-200">
@@ -57,7 +57,7 @@ const featureImage = 'https://cdn.xanzhu.com/v1/rabbit-r1/graphic.webp'
           <NuxtLinkLocale
             class="block h-full p-5 text-black no-underline dark:text-white"
             :to="feature.path"
-            :aria-labelledby="`${headingId}-${feature.path}`"
+            :aria-labelledby="`${headingId}-${feature.path.replace(/\//g, '-')}`"
           >
             <span
               class="core-border rounded-md bg-light200 px4 py1 text-sm text-inherit op-90 dark:bg-dark800"
@@ -66,7 +66,7 @@ const featureImage = 'https://cdn.xanzhu.com/v1/rabbit-r1/graphic.webp'
               {{ feature.tag }}
             </span>
             <h3
-              :id="`${headingId}-${feature.path}`"
+              :id="`${headingId}-${feature.path.replace(/\//g, '-')}`"
               class="group-hover:text-primary mt-2 text-xl text-inherit font-semibold"
             >
               {{ feature.title }}
@@ -107,7 +107,7 @@ const featureImage = 'https://cdn.xanzhu.com/v1/rabbit-r1/graphic.webp'
           <NuxtLinkLocale
             class="block h-full p-5 text-black no-underline dark:text-white"
             :to="feature.path"
-            :aria-labelledby="`${headingId}-${feature.path}`"
+            :aria-labelledby="`${headingId}-${feature.path.replace(/\//g, '-')}`"
           >
             <span
               class="core-border rounded-md bg-light200 px4 py1 text-sm text-inherit op-90 dark:bg-dark800"
@@ -116,7 +116,7 @@ const featureImage = 'https://cdn.xanzhu.com/v1/rabbit-r1/graphic.webp'
               {{ feature.tag }}
             </span>
             <h3
-              :id="`${headingId}-${feature.path}`"
+              :id="`${headingId}-${feature.path.replace(/\//g, '-')}`"
               class="group-hover:text-primary mt-2 text-xl text-inherit font-semibold"
             >
               {{ feature.title }}

@@ -1,22 +1,23 @@
 ---
-title: "UTM을 사용하여 Apple Silicon에서 Ubuntu 25.10 설정하기"
-description: "무료 오픈 소스 가상화 도구인 UTM을 사용하여 Apple Silicon에 Ubuntu 25.10을 설치하는 방법을 알아보세요."
-date: "2026-02-03"
-updated: "2026-02-03"
+title: "UTM을 사용하여 Apple Silicon에서 Ubuntu 26.04 LTS 설정하기"
+description: "무료 오픈소스 가상화 도구인 UTM을 사용하여 Apple Silicon에 Ubuntu 26.04를 설치하는 방법을 알아보세요."
+date: "2026-04-25"
+updated: "2026-04-25"
 tag: "가이드"
 toc: true
 feature: true
 img: "/images/blog/covers/utm-ubuntu-m4.webp"
-alt: "UTM을 통해 Apple Silicon에서 실행 중인 Ubuntu 25.10"
+alt: "UTM이 탑재된 Apple Silicon에서 실행되는 Ubuntu 26.04 lts"
 ---
 
-Ubuntu는 이제 네이티브 ARM 데스크톱 빌드를 제공합니다. 이는 Linux를 탐색하거나 개발, 또는 효율적인 가상화를 원하는 Apple Silicon 사용자에게 완벽한 환경을 제공합니다. 이 가이드에서는 macOS에 최적화된 무료 오픈 소스 가상화 도구인 **UTM**을 사용하여 가상 머신에 **Ubuntu 25.10 (Questing Quokka)**을 설치하는 과정을 살펴보겠습니다.
+이제 Ubuntu에서 ARM 데스크톱 환경을 지원하는 빌드를 제공합니다! Linux를 탐색하거나, 개발하거나, 효율적으로 가상화하려는 Apple Silicon 사용자에게 적합합니다. 이 가이드에서는 macOS에 최적화된 무료 오픈 소스 도구인 **UTM**을 사용하여 가상 머신에 **Ubuntu 26.04 (Resolute Raccoon) LTS**를 설치하는 방법을 안내합니다.
 
 데스크톱 환경을 포함한 Ubuntu Server 설정 방법은 :PageLink{title="이전 아티클" url="/blog/apple-silicon-virtual-machine-setup#ubuntu-2204-1"}에서 자세히 확인할 수 있습니다.
 
 ::ArticleUpdates
-- **2025-07-15** - Ubuntu 25.04용 가이드 업데이트.
-- **2026-02-03** - **연간 재출시**: Ubuntu 25.10 설치를 위한 모든 단계 확인 및 업데이트 완료.
+- **2025년 7월 15일** - Ubuntu 25.04에 맞춰 가이드가 업데이트되었습니다.
+- **2026년 2월 3일** - **연례 재발행**: Ubuntu 25.10에 대한 모든 단계를 확인하고 업데이트했습니다.
+- **2026년 4월 25일** - 이제 Ubuntu 26.04 LTS를 지원합니다.
 ::
 
 ---
@@ -25,7 +26,7 @@ Ubuntu는 이제 네이티브 ARM 데스크톱 빌드를 제공합니다. 이는
 
 * **UTM**: 버전 4.7.5 이상.
 * **저장 공간**: 최소 30GB 이상의 여유 공간.
-* **ISO**: Ubuntu 25.10 Desktop (**ARM64**).
+* **ISO**: Ubuntu 26.04 Desktop (**ARM64**).
 * **하드웨어**: Apple Silicon (M1, M2, M3, M4 또는 M5).
 
 ## UTM 다운로드
@@ -38,19 +39,18 @@ GitHub 버전은 무료로 다운로드할 수 있습니다. 또는 자동 업�
 
 ## Ubuntu ISO 다운로드
 
-:PageLink{title="Ubuntu CD 이미지 서버" url="https://cdimage.ubuntu.com/releases/25.10/release/"}에서 **Ubuntu 25.10 ARM64 ISO**(약 4.98GB)를 다운로드하세요.
+다음 링크에서 **Ubuntu 26.04 LTS ARM64 ISO**(약 4.16GB)를 다운로드하세요: :PageLink{title="Ubuntu 웹사이트" url="https://ubuntu.com/download/desktop"}.
 
 ::media
 ---
-source: https://cdn.xanzhu.com/2026/utm-ubuntu/ubuntu-download.webp
+source: https://cdn.xanzhu.com/2026/utm-ubuntu/ubuntu-download-lts.webp
 alt: ARM용 다운로드 옵션을 보여주는 Ubuntu 웹사이트
 ---
 ::
 
-* **Ubuntu 25.10**은 Apple Silicon에 필요한 최신 커널 및 드라이버 업데이트를 제공하는 임시(Interim) 릴리스입니다.
-* **Ubuntu 26.04 (Resolute Raccoon)**는 차세대 LTS 릴리스로, 처음으로 공식 ARM 데스크톱 다운로드가 포함될 예정입니다. 2026년 4월 출시 예정입니다.
+* **Ubuntu 26.04 (Resolute Raccoon)**은 현재 장기 지원 서비스(LTS) 버전으로, 최초로 공식 ARM 데스크톱 다운로드를 제공합니다. 2026년 4월에 출시되었습니다.
 
-이 가이드는 Ubuntu가 LTS 버전으로 발전함에 따라 계속 업데이트될 예정입니다. 일부 기능이나 버그는 이후 버전에서 해결될 수 있으며, 잠재적인 문제와 해결 방법은 최대한 기록해 두겠습니다.
+이 가이드는 Ubuntu의 향후 버전 개발에 따라 계속 업데이트될 예정입니다. 일부 기능이나 버그는 향후 버전에서 해결될 수 있으며, 잠재적인 문제와 해결 방법을 최대한 기록해 두도록 하겠습니다.
 
 ---
 
@@ -178,7 +178,7 @@ alt: 샘플 값이 입력된 Ubuntu 계정 생성 화면
 
 ::media
 ---
-source: https://cdn.xanzhu.com/2026/utm-ubuntu/os-restart.webp
+source: https://cdn.xanzhu.com/2026/utm-ubuntu/os-restart-lts.webp
 alt: 재시작을 요청하는 Ubuntu 화면
 ---
 ::
@@ -211,7 +211,7 @@ QEMU 사용 시 "Display output is not active" 메시지가 잠시 나타날 수
 
 ::media
 ---
-source: https://cdn.xanzhu.com/2026/utm-ubuntu/os-complete.webp
+source: https://cdn.xanzhu.com/2026/utm-ubuntu/os-welcome-lts.webp
 alt: 환영 화면이 표시된 Ubuntu 데스크톱
 ---
 ::
@@ -275,7 +275,9 @@ alt: 고해상도 배율을 위한 Ubuntu 디스플레이 설정
 sudo apt update && sudo apt upgrade -y
 ```
 
-이를 통해 Ubuntu 25.10의 최신 패치를 모두 적용할 수 있습니다.
+이렇게 하면 26.04 릴리스에 대한 최신 패치를 확보할 수 있습니다.
+
+**26.04 LTS 관련 참고 사항**: 장기 지원(LTS) 버전은 안정성을 최우선으로 고려하지만, Apple Silicon 기반 운영체제는 지속적으로 발전하는 환경입니다. 초기 사용자께서는 처음 몇 주 동안 사소한 버그가 발생할 수 있음을 양해 부탁드립니다.
 
 ## 문제 해결
 
@@ -293,6 +295,6 @@ alt: 데스크톱 로드를 기다리라는 메시지가 포함된 UTM QEMU 버�
 
 #### 결론
 
-축하합니다! 이제 Apple Silicon에서 네이티브로 실행되는 Ubuntu 25.10을 사용할 수 있습니다. 코드 테스트, Linux 학습, 또는 단순한 탐색 등 어떤 용도든 이 VM 설정은 강력한 성능과 유연성을 제공할 것입니다.
+자, 이제 끝입니다! Apple Silicon에서 Ubuntu 26.04 LTS를 네이티브로 실행하는 데 성공했습니다. 코드 테스트, Linux 학습 또는 단순히 탐색 등 어떤 용도로든 이 가상 머신 설정은 뛰어난 성능과 유연성을 제공합니다.
 
-이 가이드가 도움이 되었다면 다른 가상화 팁도 확인해 보거나, 동료 Mac/Linux 사용자들에게 공유해 주세요!
+이 가이드가 도움이 되었다면 다른 가상화 팁도 확인해 보시거나, 다른 Mac/Linux 애호가와 공유해 보세요!

@@ -1,5 +1,5 @@
 import { defineCollection, z } from '@nuxt/content'
-import { asSitemapCollection } from '@nuxtjs/sitemap/content'
+import { defineSitemapSchema } from '@nuxtjs/sitemap/content'
 
 const commonContentSchema = z.object({
   title: z.string().min(1),
@@ -19,25 +19,26 @@ interface SitemapImage {
 }
 
 function createImageExtractor(name: string) {
-  return {
+  return defineSitemapSchema({
+    z,
     name,
     onUrl: (url: any, entry: any) => {
+      const CDN_BASE = 'https://cdn.xanzhu.com/'
+      const CDN_EXTENSIONS = ['.webp', '.jpg', '.png', '.jpeg']
       const images: SitemapImage[] = []
+      const imageSet = new Set<string>()
 
       if (entry.img) {
         const imgLoc = String(entry.img)
-        images.push({
-          loc: imgLoc.startsWith('https://') ? imgLoc : `https://xanzhu.com${imgLoc}`,
-          title: String(entry.title || ''),
-        })
+        const loc = imgLoc.startsWith('https://') ? imgLoc : `https://xanzhu.com${imgLoc}`
+        images.push({ loc, title: String(entry.title || '') })
+        imageSet.add(loc)
       }
 
       if (entry.body && typeof entry.body === 'object') {
         const bodyString = JSON.stringify(entry.body)
-        const CDN_BASE = 'https://cdn.xanzhu.com/'
-        const EXTENSIONS = ['.webp', '.jpg', '.png', '.jpeg']
-
         let searchStart = 0
+
         while (true) {
           const idx = bodyString.indexOf(CDN_BASE, searchStart)
           if (idx === -1)
@@ -49,7 +50,8 @@ function createImageExtractor(name: string) {
 
           const src = bodyString.slice(idx, end).split('\\').join('')
 
-          if (EXTENSIONS.some(ext => src.endsWith(ext)) && !images.some(i => i.loc === src)) {
+          if (CDN_EXTENSIONS.some(ext => src.endsWith(ext)) && !imageSet.has(src)) {
+            imageSet.add(src)
             images.push({ loc: src })
           }
 
@@ -58,8 +60,9 @@ function createImageExtractor(name: string) {
       }
 
       url.images = images
+      return url
     },
-  }
+  })
 }
 
 const pageTypeConfig = { type: 'page' as const }
@@ -69,21 +72,21 @@ const collections: Record<string, any> = {}
 for (const locale of locales) {
   const prefix = locale === 'en' ? '' : `/${locale}`
 
-  collections[`blog_${locale}`] = defineCollection(
-    asSitemapCollection({
-      ...pageTypeConfig,
-      source: { include: `${locale}/blog/**/*.md`, prefix: `${prefix}/blog` },
-      schema: commonContentSchema,
-    }, createImageExtractor(`blog_${locale}`)),
-  )
-
-  collections[`resources_${locale}`] = defineCollection(
-    asSitemapCollection({
-      ...pageTypeConfig,
-      source: { include: `${locale}/resources/**/*.md`, prefix: `${prefix}/resources` },
-      schema: commonContentSchema,
+  collections[`blog_${locale}`] = defineCollection({
+    ...pageTypeConfig,
+    source: { include: `${locale}/blog/**/*.md`, prefix: `${prefix}/blog` },
+    schema: commonContentSchema.extend({
+      sitemap: createImageExtractor(`blog_${locale}`),
     }),
-  )
+  })
+
+  collections[`resources_${locale}`] = defineCollection({
+    ...pageTypeConfig,
+    source: { include: `${locale}/resources/**/*.md`, prefix: `${prefix}/resources` },
+    schema: commonContentSchema.extend({
+      sitemap: defineSitemapSchema({ z }),
+    }),
+  })
 }
 
 export { collections }
