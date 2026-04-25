@@ -1,22 +1,23 @@
 ---
-title: "Ubuntu 25.10 on Apple Silicon with UTM"
-description: "Learn how to set up Ubuntu 25.10 on Apple Silicon using UTM, a free and open-source virtualization tool."
-date: "2026-02-03"
-updated: "2026-02-03"
+title: "Ubuntu 26.04 LTS on Apple Silicon with UTM"
+description: "Learn how to set up Ubuntu 26.04 on Apple Silicon using UTM, a free and open-source virtualization tool."
+date: "2026-04-25"
+updated: "2026-04-25"
 tag: "Guide"
 toc: true
 feature: true
 img: "/images/blog/covers/utm-ubuntu-m4.webp"
-alt: "Ubuntu 25.10 running on Apple Silicon with UTM"
+alt: "Ubuntu 26.04 lts running on Apple Silicon with UTM"
 ---
 
-Ubuntu now offers a native ARM desktop build — perfect for Apple Silicon users who want to explore Linux, develop, or virtualise efficiently. In this guide, we'll walk through setting up **Ubuntu 25.10 (Questing Quokka)** in a virtual machine using **UTM**, a free and open-source tool tailored for macOS.
+Ubuntu now offers a native ARM desktop build! Perfect for Apple Silicon users who want to explore Linux, develop, or virtualise efficiently. In this guide, we'll walk through setting up **Ubuntu 26.04 (Resolute Raccoon) LTS** in a virtual machine using **UTM**, a free and open-source tool tailored for macOS.
 
 Our :PageLink{title="previous article" url="/blog/apple-silicon-virtual-machine-setup#ubuntu-2204-1"} detailed how to set up Ubuntu Server with a desktop environment.
 
 ::ArticleUpdates
 - **2025-07-15** - Guide updated for Ubuntu 25.04.
 - **2026-02-03** - **Annual Re-release**: Verified and updated all steps for Ubuntu 25.10.
+- **2026-04-25** - Now supporting Ubuntu 26.04 LTS. 
 ::
 
 ---
@@ -25,7 +26,7 @@ Our :PageLink{title="previous article" url="/blog/apple-silicon-virtual-machine-
 
 * **UTM**: Version 4.7.5 or newer.
 * **Storage**: Minimum 30 GB free space.
-* **ISO**: Ubuntu 25.10 Desktop (**ARM64**).
+* **ISO**: Ubuntu 26.04 LTS Desktop (**ARM64**).
 * **Hardware**: Apple Silicon (M1, M2, M3, M4, or M5).
 
 ## UTM Download
@@ -38,19 +39,18 @@ Drag UTM to your **Applications** folder and launch it.
 
 ## Ubuntu ISO Download
 
-Download the **Ubuntu 25.10 ARM64 ISO** (approx. 4.98 GB) from the :PageLink{title="Ubuntu CD Image server" url="https://cdimage.ubuntu.com/releases/25.10/release/"}.
+Download the **Ubuntu 26.04 LTS ARM64 ISO** (approx. 4.16 GB) from the :PageLink{title="Ubuntu website" url="https://ubuntu.com/download/desktop"}.
 
 ::media
 ---
-source: https://cdn.xanzhu.com/2026/utm-ubuntu/ubuntu-download.webp
+source: https://cdn.xanzhu.com/2026/utm-ubuntu/ubuntu-download-lts.webp
 alt: Ubuntu website showcasing download options for arm
 ---
 ::
 
-* **Ubuntu 25.10** is an interim release providing the latest kernels and driver updates needed for Apple Silicon.
-* **Ubuntu 26.04 (Resolute Raccoon)** will be the next LTS release, and is expected to include an official ARM desktop download for the first time. It’s scheduled for April 2026.
+* **Ubuntu 26.04 (Resolute Raccoon)** is the current long term service release or LTS, an official ARM desktop download for the first time. Released April 2026.
 
-This guide will continue to be updated as Ubuntu progresses into the LTS version. Some features or bugs may be solved in later versions we'll try our best to note down potential issues and workarounds.
+This guide will continue to be updated as Ubuntu progresses future versions. Some features or bugs may be solved in later versions we'll try our best to note down potential issues and workarounds.
 
 ---
 
@@ -155,7 +155,7 @@ alt: Ubuntu welcome screen after booting
 1. Choose your language and click **Next**.
 2. Adjust accessibility options as needed and click **Next**.
 3. Select keyboard layout and click **Next**.
-4. Connect to the internet, ensure **Use Wired Connection** is selected (UTM shares your Mac’s internet connection), then click **Next**.
+4. Connect to the internet, ensure **Use Wired Connection** is selected (UTM shares your Mac's internet connection), then click **Next**.
 5. Choose **Install Ubuntu** and click **Next**.
 6. Select **Interactive installation** and click **Next**.
 7. Select **Default selection** for apps and click **Next**.
@@ -178,7 +178,7 @@ The installation will copy and configure files, which may take some time. When p
 
 ::media
 ---
-source: https://cdn.xanzhu.com/2026/utm-ubuntu/os-restart.webp
+source: https://cdn.xanzhu.com/2026/utm-ubuntu/os-restart-lts.webp
 alt: Ubuntu prompting user to restart
 ---
 ::
@@ -211,7 +211,7 @@ Once the desktop loads, you should see the following:
 
 ::media
 ---
-source: https://cdn.xanzhu.com/2026/utm-ubuntu/os-complete.webp
+source: https://cdn.xanzhu.com/2026/utm-ubuntu/os-welcome-lts.webp
 alt: Ubuntu desktop showing the welcome screen
 ---
 ::
@@ -274,7 +274,9 @@ Alternatively open the **Terminal** and run:
 sudo apt update && sudo apt upgrade -y
 ```
 
-Doing this ensures you have the latest patches for the 25.10 release.
+Doing this ensures you have the latest patches for the 26.04 release.
+
+**Note on 26.04 LTS**: While Long Term Support (LTS) versions prioritise stability, running on Apple Silicon is an evolving target. Early adopters should expect minor bugs in the first few weeks. 
 
 ## Issues
 
@@ -292,6 +294,6 @@ alt: UTM QEMU prompting user to wait for desktop to load known bug
 
 #### Conclusion
 
-That's it! You've now got Ubuntu 25.10 running natively on Apple Silicon. Whether you're testing code, learning Linux, or just exploring, this VM setup gives you flexibility with solid performance.
+That's it! You've now got Ubuntu 26.04 LTS running natively on Apple Silicon. Whether you're testing code, learning Linux, or just exploring, this VM setup gives you flexibility with solid performance.
 
 If you found this guide helpful, consider checking out our other virtualization tips — or share this with a fellow Mac/Linux enthusiast!

@@ -1,22 +1,23 @@
 ---
-title: "在 Apple Silicon 上通过 UTM 运行 Ubuntu 25.10"
-description: "了解如何使用免费开源的虚拟化工具 UTM 在 Apple Silicon 上设置 Ubuntu 25.10。"
-date: "2026-02-03"
-updated: "2026-02-03"
+title: "在 Apple Silicon 上运行 Ubuntu 26.04 LTS，通过 UTM 进行管理"
+description: "了解如何使用免费开源虚拟化工具 UTM 在 Apple Silicon 上设置 Ubuntu 26.04。"
+date: "2026-04-25"
+updated: "2026-04-25"
 tag: "指南"
 toc: true
 feature: true
 img: "/images/blog/covers/utm-ubuntu-m4.webp"
-alt: "在 Apple Silicon 上通过 UTM 运行的 Ubuntu 25.10"
+alt: "运行在 Apple Silicon 上的 Ubuntu 26.04 LTS，带有 UTM 功能"
 ---
 
-Ubuntu 现在提供原生 ARM 桌面版本——非常适合想要探索 Linux、进行开发或高效运行虚拟机的 Apple Silicon 用户。在本指南中，我们将带你使用 **UTM**（一款专为 macOS 打造的免费开源虚拟化工具）在虚拟机中设置 **Ubuntu 25.10 (Questing Quokka)**。
+Ubuntu 现在提供原生 ARM 桌面版本！对于想要探索 Linux、进行开发或高效虚拟化的 Apple Silicon 用户来说，这堪称完美之选。在本指南中，我们将逐步介绍如何使用专为 macOS 定制的免费开源工具 UTM 在虚拟机中安装 Ubuntu 26.04 (Resolute Raccoon) LTS。
 
 关于如何设置带有桌面环境的 Ubuntu Server，可以参考我们的 :PageLink{title="上一篇文章" url="/blog/apple-silicon-virtual-machine-setup#ubuntu-2204-1"}。
 
 ::ArticleUpdates
-- **2025-07-15** - 针对 Ubuntu 25.04 更新指南。
-- **2026-02-03** - **年度发布更新**：已验证并更新了 Ubuntu 25.10 的所有安装步骤。
+- **2025年7月15日** - 指南已更新，支持Ubuntu 25.04。
+- **2026年2月3日** - **年度更新**：已验证并更新所有步骤，支持Ubuntu 25.10。
+- **2026年4月25日** - 现已支持Ubuntu 26.04 LTS。
 ::
 
 ---
@@ -25,7 +26,7 @@ Ubuntu 现在提供原生 ARM 桌面版本——非常适合想要探索 Linux�
 
 * **UTM**: 版本 4.7.5 或更高。
 * **存储空间**: 至少 30 GB 剩余空间。
-* **ISO**: Ubuntu 25.10 Desktop (**ARM64**)。
+* **ISO**: Ubuntu 26.04 LTS 桌面版 (**ARM64**)。。
 * **硬件**: Apple Silicon (M1, M2, M3, M4 或 M5 系列芯片)。
 
 ## 下载 UTM
@@ -38,19 +39,18 @@ GitHub 版本可免费下载。另外 :PageLink{title="Mac App Store" url="https
 
 ## 下载 Ubuntu ISO
 
-从 :PageLink{title="Ubuntu CD 镜像服务器" url="https://cdimage.ubuntu.com/releases/25.10/release/"} 下载 **Ubuntu 25.10 ARM64 ISO**（约 4.98 GB）。
+从 :PageLink{title="Ubuntu website" url="https://ubuntu.com/download/desktop"} 下载 **Ubuntu 26.04 LTS ARM64 ISO**（约 4.16 GB）。
 
 ::media
 ---
-source: https://cdn.xanzhu.com/2026/utm-ubuntu/ubuntu-download.webp
+source: https://cdn.xanzhu.com/2026/utm-ubuntu/ubuntu-download-lts.webp
 alt: 展示 ARM 下载选项的 Ubuntu 官网
 ---
 ::
 
-* **Ubuntu 25.10** 是一个临时版本，提供了 Apple Silicon 所需的最新内核和驱动更新。
-* **Ubuntu 26.04 (Resolute Raccoon)** 将是下一个 LTS（长期支持）版本，预计将首次包含官方 ARM 桌面版下载。该版本计划于 2026 年 4 月发布。
+* **Ubuntu 26.04 (Resolute Raccoon)** 是当前的长期服务版本 (LTS)，也是首个官方 ARM 桌面版。发布日期为 2026 年 4 月。
 
-随着 Ubuntu 向 LTS 版本推进，本指南将持续更新。某些功能或错误可能会在后续版本中得到解决，我们会尽力记录潜在的问题和解决方案。
+本指南将随着 Ubuntu 后续版本的更新而持续更新。某些功能或错误可能会在后续版本中得到修复，我们将尽力记录潜在问题及其解决方法。
 
 ---
 
@@ -178,7 +178,7 @@ alt: 显示示例值的 Ubuntu 账户创建页面
 
 ::media
 ---
-source: https://cdn.xanzhu.com/2026/utm-ubuntu/os-restart.webp
+source: https://cdn.xanzhu.com/2026/utm-ubuntu/os-restart-lts.webp
 alt: Ubuntu 提示用户重启
 ---
 ::
@@ -211,7 +211,7 @@ alt: Ubuntu 提示用户弹出 ISO 并按回车
 
 ::media
 ---
-source: https://cdn.xanzhu.com/2026/utm-ubuntu/os-complete.webp
+source: https://cdn.xanzhu.com/2026/utm-ubuntu/os-welcome-lts.webp
 alt: 显示欢迎界面的 Ubuntu 桌面
 ---
 ::
@@ -275,7 +275,9 @@ alt: 针对高分辨率缩放的 Ubuntu 显示设置
 sudo apt update && sudo apt upgrade -y
 ```
 
-这样做可以确保你拥有 Ubuntu 25.10 版本的最新补丁。
+这样做可以确保您拥有 26.04 版本的最新补丁。
+
+**关于 26.04 LTS 的说明**：虽然长期支持 (LTS) 版本优先考虑稳定性，但基于 Apple Silicon 的运行是一个不断发展的目标。早期用户在最初几周内可能会遇到一些小问题。
 
 ## 常见问题
 
@@ -293,6 +295,6 @@ alt: UTM QEMU 提示用户等待桌面加载的已知 Bug
 
 #### 总结
 
-大功告成！你现在已经在 Apple Silicon 上原生运行 Ubuntu 25.10 了。无论你是测试代码、学习 Linux 还是纯粹探索，这个虚拟机设置都能为你提供灵活且强劲的性能。
+搞定！现在你已经在 Apple Silicon 上原生运行了 Ubuntu 26.04 LTS。无论你是测试代码、学习 Linux，还是只是探索一番，这套虚拟机配置都能为你提供灵活的操作方式和稳定的性能。
 
-如果你觉得本指南对你有帮助，欢迎查看我们的其他虚拟化技巧，或将其分享给同样使用 Mac/Linux 的小伙伴！
+如果你觉得本指南有用，不妨看看我们其他的虚拟化技巧——或者分享给其他 Mac/Linux 爱好者！
