@@ -19,12 +19,6 @@ function stateChange(event: YouTubeStateEvent) {
 const iframeTitle = computed(() =>
   title || t('blog.article.videoIframe'),
 )
-
-onBeforeUnmount(() => {
-  if (video.value?.destroy) {
-    video.value.destroy()
-  }
-})
 </script>
 
 <template>
