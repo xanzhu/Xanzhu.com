@@ -1,6 +1,6 @@
 {
   "name": "xanzhu.com",
-  "version": "2.6.1",
+  "version": "2.6.2",
   "private": true,
   "license": "MIT",
   "scripts": {
@@ -18,11 +18,11 @@
     "@nuxt/fonts": "^0.14.0",
     "@nuxt/icon": "^2.2.1",
     "@nuxt/image": "^2.0.0",
-    "@nuxt/scripts": "^1.0.4",
+    "@nuxt/scripts": "^1.0.6",
     "@nuxtjs/color-mode": "^4.0.0",
     "@nuxtjs/i18n": "^10.3.0",
-    "@nuxtjs/sitemap": "^8.0.14",
-    "@vueuse/core": "^14.2.1",
+    "@nuxtjs/sitemap": "^8.0.15",
+    "@vueuse/core": "^14.3.0",
     "nuxt": "^4.4.4",
     "nuxt-security": "^2.5.1",
     "vue": "^3.5.33",
@@ -37,13 +37,13 @@
     "@unocss/preset-wind3": "^66.6.8",
     "@unocss/transformer-directives": "^66.6.8",
     "@unocss/transformer-variant-group": "^66.6.8",
-    "eslint": "^10.2.1",
+    "eslint": "^10.3.0",
     "eslint-plugin-format": "^2.0.1",
     "eslint-plugin-oxlint": "^1.62.0",
     "lightningcss": "^1.32.0",
     "nitro-cloudflare-dev": "^0.2.2",
     "oxlint": "^1.62.0",
-    "wrangler": "^4.86.0"
+    "wrangler": "^4.87.0"
   },
   "trustedDependencies": [
     "@parcel/watcher",
