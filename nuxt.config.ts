@@ -294,13 +294,12 @@ export default defineNuxtConfig({
   // Experimental Vue Features
   experimental: {
     extractAsyncDataHandlers: true,
-    payloadExtraction: false,
+    payloadExtraction: 'client',
   },
 
   vite: {
     build: {
       cssMinify: 'lightningcss',
-      sourcemap: false,
     },
     optimizeDeps: {
       include: ['@vue/devtools-core', '@vue/devtools-kit', '@vueuse/core'],
