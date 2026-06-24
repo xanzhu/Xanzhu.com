@@ -115,6 +115,7 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
+    '/': { isr: 86400 },
     '/**': {
       headers: {
         'x-robots-tag': 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
@@ -142,6 +143,9 @@ export default defineNuxtConfig({
     '/blog/**': { isr: 86400 },
     '/ko/blog/**': { isr: 86400 },
     '/zh/blog/**': { isr: 86400 },
+    '/resources': { isr: 86400 },
+    '/ko/resources': { isr: 86400 },
+    '/zh/resources': { isr: 86400 },
   },
 
   image: {
