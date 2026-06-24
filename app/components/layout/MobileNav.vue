@@ -62,7 +62,7 @@ function closeAll() {
       :aria-label="t('aria.open_menu')"
       @click="toggle('menu')"
     >
-      <Icon :name="isMenuOpen ? 'lucide:x' : 'lucide:text-align-end'" class="h-6 w-6" />
+      <Icon :name="isMenuOpen ? 'lucide:x' : 'lucide:menu'" class="h-6 w-6" />
     </button>
 
     <Teleport defer to="body">

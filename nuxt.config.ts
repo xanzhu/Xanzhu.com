@@ -146,10 +146,6 @@ export default defineNuxtConfig({
     '/zh/resources': { isr: 86400 },
   },
 
-  image: {
-    domains: [cdnUrl],
-  },
-
   content: {
     experimental: { sqliteConnector: 'native' },
     database: {
@@ -238,6 +234,7 @@ export default defineNuxtConfig({
           '\'self\'',
           'https://*.xanzhu.com',
           'https://*.xanzhu.workers.dev',
+          'https://api.iconify.design',
           ...(isDev
             ? ['ws://localhost:*']
             : []),
@@ -297,12 +294,13 @@ export default defineNuxtConfig({
   // Experimental Vue Features
   experimental: {
     extractAsyncDataHandlers: true,
-    payloadExtraction: 'client',
+    payloadExtraction: false,
   },
 
   vite: {
     build: {
       cssMinify: 'lightningcss',
+      sourcemap: false,
     },
     optimizeDeps: {
       include: ['@vue/devtools-core', '@vue/devtools-kit', '@vueuse/core'],
