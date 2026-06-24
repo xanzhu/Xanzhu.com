@@ -30,6 +30,9 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^9.0.0",
+    "@iconify-json/line-md": "^1.2.16",
+    "@iconify-json/lucide": "^1.2.114",
+    "@iconify-json/ri": "^1.2.10",
     "@nuxt/devtools": "~4.0.0-alpha.7",
     "@unocss/eslint-plugin": "^66.7.2",
     "@unocss/nuxt": "^66.7.2",

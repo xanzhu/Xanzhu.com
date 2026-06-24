@@ -44,10 +44,8 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico', sizes: '32x32' },
         { rel: 'icon', type: 'image/svg+xml', href: '/icon.svg', sizes: 'any' },
         { rel: 'preconnect', href: cdnUrl, crossorigin: 'anonymous' },
-        { rel: 'preconnect', href: 'https://api.iconify.design' },
         // Fallback
         { rel: 'dns-prefetch', href: cdnUrl },
-        { rel: 'dns-prefetch', href: 'https://api.iconify.design' },
       ],
     },
   },
@@ -178,13 +176,11 @@ export default defineNuxtConfig({
 
   // ICON
   icon: {
-    provider: 'iconify',
     mode: 'svg',
-    clientBundle: {
-      scan: true,
-      sizeLimitKb: 128,
+    clientBundle: { scan: true, sizeLimitKb: 128 },
+    serverBundle: {
+      collections: ['lucide', 'line-md', 'ri'],
     },
-    serverBundle: 'remote',
   },
 
   // SECURITY V2.1
@@ -242,8 +238,6 @@ export default defineNuxtConfig({
           '\'self\'',
           'https://*.xanzhu.com',
           'https://*.xanzhu.workers.dev',
-          'https://api.weatherapi.com',
-          'https://api.iconify.design',
           ...(isDev
             ? ['ws://localhost:*']
             : []),
