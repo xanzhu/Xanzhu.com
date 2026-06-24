@@ -62,7 +62,7 @@ credit: Google
 
 소프트웨어의 정확도와 기능이 개선되어 앞으로 몇 달 동안 Google에 더 많은 변화와 개선이 있을 것으로 기대합니다. 그들의 언어 모델(LaMDA)이 Bard에서 사용하기 위해 테스트되고 완성되면 더 적은 제한이 적용되어 사용자가 Google의 방대한 데이터 아카이브에서 검색하고 결과를 얻을 수 있습니다. 당분간 이것은 느린 릴리스이며 Bard의 최종 제품이 아닐 것입니다.
 
-Bard에 대해 자세히 알아보고 대기자 명단에 등록하세요. :PageLink{title="Google" url="https://bard.google.com/"}
+Bard에 대해 자세히 알아보고 대기자 명단에 등록하세요. :PageLink{title="Google" url="https://gemini.google.com/app/"}
 
 ### 소프트웨어 적응
 

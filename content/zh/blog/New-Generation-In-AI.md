@@ -62,7 +62,7 @@ credit: Google
 
 预计未来几个月 Google 会发生更多变化和改进，从而提高其软件的准确性和功能。 一旦他们的语言模型 (LaMDA) 经过测试和完善以在 Bard 中使用，将应用更少的限制，从而允许用户在 Google 的海量数据存档中搜索并获得结果。 目前，这是一个缓慢的发布，不太可能成为 Bard 的最终产品。
 
-详细了解 Bard 并加入候补名单： :PageLink{title="Google" url="https://bard.google.com/"}
+详细了解 Bard 并加入候补名单： :PageLink{title="Google" url="https://gemini.google.com/app/"}
 
 ### 软件适配
 
