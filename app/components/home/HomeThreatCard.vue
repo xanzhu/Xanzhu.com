@@ -60,7 +60,7 @@ const breaches: Breach[] = [
       <div class="grid gap-3 md:grid-cols-2 sm:gap-4">
         <div class="rounded-lg bg-zinc-900 p-3 sm:p-4">
           <div class="mb-3 flex items-center sm:mb-4">
-            <Icon name="lucide:alert-triangle" class="mr-2 h-5 w-5 flex-shrink-0 text-4 text-yellow-4" aria-hidden="true" />
+            <Icon name="lucide:alert-triangle" class="mr-2 h-5 w-5 shrink-0 text-4 text-yellow-4" aria-hidden="true" />
             <h3 class="text-lg text-yellow-4 font-semibold sm:text-xl">
               {{ t('home.stats.regional.title') }}
             </h3>
@@ -80,7 +80,7 @@ const breaches: Breach[] = [
         </div>
         <div class="rounded-lg bg-zinc-900 p-3 sm:p-4">
           <div class="mb-3 flex items-center sm:mb-4">
-            <Icon name="lucide:lock" class="mr-2 h-5 w-5 flex-shrink-0 text-white" aria-hidden="true" />
+            <Icon name="lucide:lock" class="mr-2 h-5 w-5 shrink-0 text-white" aria-hidden="true" />
             <h3 class="text-lg text-white font-semibold sm:text-xl">
               {{ t('home.stats.recent.title') }}
             </h3>

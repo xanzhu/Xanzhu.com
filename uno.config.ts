@@ -1,19 +1,23 @@
 // uno.config.ts
 import type { TypographyTheme } from '@unocss/preset-typography'
-import type { Theme as Wind3Theme } from '@unocss/preset-wind3'
+import type { Theme as Wind4Theme } from '@unocss/preset-wind4'
 import {
   defineConfig,
   presetTypography,
-  presetWind3,
+  presetWind4,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
 
-export default defineConfig<Wind3Theme & TypographyTheme>({
+export default defineConfig<Wind4Theme & TypographyTheme>({
   presets: [
-    presetWind3({
+    presetWind4({
       dark: 'class',
+      preflights: {
+        reset: true,
+      },
     }),
+
     presetTypography({
       cssExtend: {
         '.prose h1': {
@@ -236,7 +240,7 @@ export default defineConfig<Wind3Theme & TypographyTheme>({
         light: '#fffffffa',
       },
     },
-    fontFamily: {
+    font: {
       sans: 'Noto Sans CJK KR, system-ui, sans-serif',
       mono: 'Google Sans Code, monospace',
     },
@@ -244,7 +248,7 @@ export default defineConfig<Wind3Theme & TypographyTheme>({
   shortcuts: {
     'core-theme':
   'bg-element-light dark:(bg-element-dark text-white) text-black',
-    'core-border': 'dark:b-dark4 b-gray-3 b-1 b-solid',
-    'core-ui': 'dark:(bg-dark9 text-white) bg-gray-100 text-black',
+    'core-border': 'dark:b-neutral-800 b-neutral-300 b-1 border border-solid',
+    'core-ui': 'dark:(bg-neutral-900 text-white) bg-neutral-100 text-black',
   },
 })

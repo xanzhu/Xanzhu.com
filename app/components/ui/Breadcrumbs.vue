@@ -13,7 +13,7 @@ useHead({
       : [],
 })
 
-const separator = '>'
+const separator = '/'
 const shouldDisplay = computed(() => breadcrumbs.value.length > 1)
 </script>
 
