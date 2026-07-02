@@ -144,6 +144,7 @@ export default defineNuxtConfig({
     '/resources': { isr: 86400 },
     '/ko/resources': { isr: 86400 },
     '/zh/resources': { isr: 86400 },
+    '/sitemap.xml': { redirect: { to: '/sitemap_index.xml', statusCode: 301 } },
   },
 
   content: {
