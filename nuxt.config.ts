@@ -189,6 +189,11 @@ export default defineNuxtConfig({
       hashScripts: true,
       hashStyles: true,
     },
+    corsHandler: {
+      origin: 'https://xanzhu.com',
+      methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
+      credentials: true,
+    },
     headers: {
       contentSecurityPolicy: {
         'default-src': ['\'self\'', 'https://*.xanzhu.com'],
@@ -253,6 +258,15 @@ export default defineNuxtConfig({
         maxAge: 31536000,
         includeSubdomains: true,
         preload: true,
+      },
+      permissionsPolicy: {
+        'camera': ['\'none\''],
+        'display-capture': ['\'none\''],
+        'fullscreen': ['\'none\''],
+        'geolocation': ['\'none\''],
+        'microphone': ['\'none\''],
+        'payment': ['\'none\''],
+        'publickey-credentials-get': ['\'none\''],
       },
       crossOriginEmbedderPolicy: 'unsafe-none',
       crossOriginOpenerPolicy: 'same-origin',
