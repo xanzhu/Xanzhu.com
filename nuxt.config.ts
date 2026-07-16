@@ -118,6 +118,8 @@ export default defineNuxtConfig({
       headers: {
         'x-robots-tag': 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
         'Cache-Control': 'public, max-age=3600, s-maxage=86400, stale-while-revalidate=86400',
+        'Access-Control-Allow-Origin': 'https://xanzhu.com',
+        'Access-Control-Allow-Credentials': 'false',
       },
     },
     '/**/_payload.json': {
@@ -189,11 +191,7 @@ export default defineNuxtConfig({
       hashScripts: true,
       hashStyles: true,
     },
-    corsHandler: {
-      origin: 'https://xanzhu.com',
-      methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
-      credentials: true,
-    },
+    corsHandler: false,
     headers: {
       contentSecurityPolicy: {
         'default-src': ['\'self\'', 'https://*.xanzhu.com'],
