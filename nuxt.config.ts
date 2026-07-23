@@ -118,8 +118,6 @@ export default defineNuxtConfig({
       headers: {
         'x-robots-tag': 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
         'Cache-Control': 'public, max-age=3600, s-maxage=86400, stale-while-revalidate=86400',
-        'Access-Control-Allow-Origin': 'https://xanzhu.com',
-        'Access-Control-Allow-Credentials': 'false',
       },
     },
     '/**/_payload.json': {
@@ -258,13 +256,13 @@ export default defineNuxtConfig({
         preload: true,
       },
       permissionsPolicy: {
-        'camera': ['\'none\''],
-        'display-capture': ['\'none\''],
-        'fullscreen': ['\'none\''],
-        'geolocation': ['\'none\''],
-        'microphone': ['\'none\''],
-        'payment': ['\'none\''],
-        'publickey-credentials-get': ['\'none\''],
+        'camera': [],
+        'display-capture': [],
+        'fullscreen': ['self'],
+        'geolocation': [],
+        'microphone': [],
+        'payment': [],
+        'publickey-credentials-get': [],
       },
       crossOriginEmbedderPolicy: 'unsafe-none',
       crossOriginOpenerPolicy: 'same-origin',
@@ -309,6 +307,8 @@ export default defineNuxtConfig({
   experimental: {
     extractAsyncDataHandlers: true,
     payloadExtraction: 'client',
+    // Testing - 23/07
+    ssrStreaming: true,
   },
 
   vite: {
