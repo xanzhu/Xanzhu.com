@@ -46,7 +46,7 @@
     "lightningcss": "^1.32.0",
     "nitro-cloudflare-dev": "^0.2.2",
     "oxlint": "^1.72.0",
-    "wrangler": "^4.107.0"
+    "wrangler": "^4.125.0"
   },
   "trustedDependencies": [
     "@parcel/watcher",
