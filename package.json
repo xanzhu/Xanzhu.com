@@ -11,7 +11,8 @@
     "postinstall": "nuxt prepare",
     "lint": "oxlint && eslint",
     "lint:fix": "oxlint --fix && eslint --fix",
-    "cf-typegen": "wrangler types"
+    "cf-typegen": "wrangler types",
+    "build:cf": "nuxt build"
   },
   "dependencies": {
     "@nuxt/content": "^3.15.0",
