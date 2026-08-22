@@ -60,7 +60,8 @@
     "article": {
       "changelog": "Update History",
       "videoIframe": "Youtube Video",
-      "videoClick": "Click to Play Video"
+      "videoClick": "Click to Play Video",
+      "videoError": "Video Failed to Load"
     }
   },
   "resources": {

@@ -60,7 +60,8 @@
     "article": {
       "changelog": "更新历史",
       "videoIframe": "Youtube 视频",
-      "videoClick": "点击播放视频"
+      "videoClick": "点击播放视频",
+      "videoError": "视频加载失败"
     }
   },
   "resources": {

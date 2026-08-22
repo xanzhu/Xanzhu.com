@@ -60,7 +60,8 @@
     "article": {
       "changelog": "업데이트 기록",
       "videoIframe": "유튜브 비디오",
-      "videoClick": "비디오 재생을 위해 클릭"
+      "videoClick": "비디오 재생을 위해 클릭",
+      "videoError": "비디오를 로드하지 못했습니다."
     }
   },
   "resources": {

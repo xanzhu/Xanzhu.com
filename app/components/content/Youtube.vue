@@ -7,7 +7,7 @@ const { t } = useI18n()
 
 const isLoaded = ref(false)
 const isPlaying = ref(false)
-const video = ref()
+const hasError = ref(false)
 
 interface YouTubeStateEvent {
   data: number
@@ -23,19 +23,21 @@ const iframeTitle = computed(() =>
 
 <template>
   <div class="relative aspect-video overflow-hidden rounded-md">
+    <div v-if="hasError" class="absolute inset-0 flex items-center justify-center bg-black/10 text-sm">
+      {{ t('blog.article.videoError') }}
+    </div>
     <ScriptYouTubePlayer
-      ref="video"
+      v-else
       :video-id="videoId"
       :title="iframeTitle"
       @ready="isLoaded = true"
       @state-change="stateChange"
+      @error="hasError = true"
     >
       <template #awaitingLoad>
-        <div
+        <button
           v-if="!isLoaded"
-          class="absolute inset-0 flex items-center justify-center bg-black/10"
-          role="button"
-          tabindex="0"
+          class="absolute inset-0 flex items-center justify-center border-none"
           :aria-label="t('blog.article.videoClick')"
         >
           <svg
@@ -49,7 +51,7 @@ const iframeTitle = computed(() =>
             />
             <path d="M 45,24 27,14 27,34" fill="#fff" />
           </svg>
-        </div>
+        </button>
       </template>
     </ScriptYouTubePlayer>
   </div>
