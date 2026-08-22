@@ -1,0 +1,28 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "core",
+  "compatibility_date": "2026-08-20",
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1,
+    "traces": { "enabled": true, "head_sampling_rate": 0.01 }
+  },
+  "main": "./.output/server/index.mjs",
+  "assets": {
+    "binding": "ASSETS",
+    "directory": "./.output/public/"
+  },
+  "cache": {
+    "enabled": true
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "xanzhu-fallback",
+      "database_id": "278e9a4d-5d80-4339-94cb-f796a5b4b04f"
+    }
+  ]
+}
