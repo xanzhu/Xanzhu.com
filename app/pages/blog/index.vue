@@ -1,8 +1,11 @@
 <script setup lang="ts">
 import type { Collections } from '@nuxt/content'
 
+const config = useRuntimeConfig()
 const { locale, t } = useI18n()
+const route = useRoute()
 const collectionName = `blog_${locale.value}` as keyof Collections
+const currentPath = route.path
 
 const { data: posts } = await useAsyncData(
   `blogArticles-${locale.value}`,
@@ -15,6 +18,28 @@ const { data: posts } = await useAsyncData(
 
 const seoImage = 'https://images.pexels.com/photos/27277185/pexels-photo-27277185.jpeg'
 useLangMeta('seo.blog', seoImage)
+
+const baseUrl = config.public.i18n.baseUrl
+
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: computed(() => JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Blog',
+        '@id': `${baseUrl}${currentPath}`,
+        'name': t('seo.blog.title'),
+        'url': `${baseUrl}${currentPath}`,
+        'description': t('seo.blog.desc'),
+        'inLanguage': locale.value,
+        'publisher': {
+          '@id': 'https://xanzhu.com/#organization',
+        },
+      })),
+    },
+  ],
+})
 </script>
 
 <template>
