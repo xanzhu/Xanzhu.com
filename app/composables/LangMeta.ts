@@ -20,6 +20,6 @@ export function useLangMeta(
     titleTemplate,
     ogType: 'website',
     ogImageWidth: 1200,
-    ogImageHeight: 600,
+    ogImageHeight: 630,
   })
 }
