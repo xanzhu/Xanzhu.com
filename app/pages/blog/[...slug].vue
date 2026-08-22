@@ -45,6 +45,8 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
   articlePublishedTime: () => post.value?.date,
   articleModifiedTime: () => post.value?.updated,
+  ogImageHeight: 600,
+  ogImageWidth: 1200,
 })
 </script>
 

@@ -44,8 +44,6 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico', sizes: '32x32' },
         { rel: 'icon', type: 'image/svg+xml', href: '/icon.svg', sizes: 'any' },
         { rel: 'preconnect', href: cdnUrl, crossorigin: 'anonymous' },
-        // Fallback
-        { rel: 'dns-prefetch', href: cdnUrl },
       ],
     },
   },
