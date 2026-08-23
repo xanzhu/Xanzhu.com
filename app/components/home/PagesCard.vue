@@ -21,28 +21,28 @@ const pages = [
 
 <template>
   <section :aria-label="t('aria.explore_pages_home')">
-    <div class="grid grid-cols-1 mx-auto justify-items-center gap-6 p-6 md:grid-cols-2 xl:grid-cols-3 xl:w-5xl">
+    <div class="mx-auto p-6 gap-6 grid grid-cols-1 justify-items-center md:grid-cols-2 xl:grid-cols-3 xl:w-5xl">
       <NuxtLinkLocale
         v-for="page in pages"
         :key="page.path"
         :to="page.path"
-        class="group relative block max-w-sm w-full rounded-md no-underline"
+        class="group rounded-md no-underline max-w-sm w-full block relative"
       >
         <article
-          class="relative h-[180px] overflow-hidden border core-border rounded-md bg-white p-6 transition-transform duration-300 group-hover:scale-[1.05] dark:bg-dark9 group-hover:shadow-lg"
+          class="p-6 border core-border rounded-md bg-white h-[180px] transition-transform duration-300 relative overflow-hidden dark:bg-dark-900 group-hover:shadow-lg group-hover:scale-[1.05]"
         >
-          <div class="relative h-full flex flex-col text-black dark:text-white">
+          <div class="text-black flex flex-col gap-4 h-full relative dark:text-white">
             <div class="flex items-center justify-between">
               <h3 class="text-4xl text-inherit font-semibold">
                 {{ page.title }}
               </h3>
               <Icon
                 name="lucide:arrow-up-right"
-                class="h6 w6 core-border rounded-full bg-light4 p-2 text-inherit transition-colors dark:bg-black group-hover:(bg-black text-white) dark:group-hover:(bg-white text-black)"
+                class="text-inherit p-2 core-border rounded-full bg-light-400 h8 w8 transition-colors group-hover:(text-white bg-black) dark:bg-black dark:group-hover:(text-black bg-white)"
                 aria-hidden="true"
               />
             </div>
-            <p class="flex-grow text-sm transition-opacity duration-300 dark:text-white group-hover:opacity-80">
+            <p class="text-sm grow transition-opacity duration-300 dark:text-white group-hover:opacity-80">
               {{ page.description }}
             </p>
           </div>

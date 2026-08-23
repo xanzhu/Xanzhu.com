@@ -26,20 +26,20 @@ const featureImage = 'https://cdn.xanzhu.com/v1/rabbit-r1/graphic.webp'
 </script>
 
 <template>
-  <section class="mx-4 bg-light400 py10 dark:bg-dark900" :aria-labelledby="headingId">
+  <section class="mx-4 py10 bg-light400 dark:bg-dark900" :aria-labelledby="headingId">
     <div
-      class="mx-auto mb5 max-w-lg flex flex-col items-center justify-between px6 md:mb0 md:max-w-5xl md:flex-row space-y-5 md:space-y-0"
+      class="mx-auto mb5 px6 flex flex-col max-w-lg items-center justify-between space-y-5 md:mb0 md:flex-row md:max-w-5xl md:space-y-0"
     >
       <div class="flex flex-col self-start md:mb10 md:justify-center">
-        <h2 :id="headingId" class="m0 text-4xl font-bold tracking-wide md:text-5xl">
+        <h2 :id="headingId" class="text-4xl tracking-wide font-bold m0 md:text-5xl">
           {{ t('home.feature.title') }}
         </h2>
-        <p class="m0 pt3 text-sm text-dark-400 dark:text-gray-200">
+        <p class="text-sm text-dark-400 m0 pt3 dark:text-gray-200">
           {{ t('home.feature.subHead') }}
         </p>
       </div>
       <NuxtLinkLocale
-        class="self-start core-border rounded-md core-theme p4 text-inherit no-underline transition-transform duration-150 ease-linear hover:(bg-black text-white) dark:hover:(bg-white text-black)"
+        class="core-theme text-inherit p4 core-border rounded-md no-underline transition-transform duration-150 ease-linear self-start hover:(text-white bg-black) dark:hover:(text-black bg-white)"
         to="/blog"
       >
         {{ t('home.feature.action') }}
@@ -47,51 +47,51 @@ const featureImage = 'https://cdn.xanzhu.com/v1/rabbit-r1/graphic.webp'
     </div>
 
     <div
-      class="grid auto-rows-fr grid-cols-1 mx-auto max-w-lg justify-items-center gap-4 px6 lg:grid-cols-3 md:grid-cols-2 md:max-w-5xl"
+      class="mx-auto px6 gap-4 grid auto-rows-fr grid-cols-1 max-w-lg justify-items-center lg:grid-cols-3 md:grid-cols-2 md:max-w-5xl"
     >
       <div class="contents children:(core-border rounded-lg)">
         <article
           v-for="feature in featureSets.setOne" :key="feature.path"
-          class="group core-theme transition transition-transform duration-300 ease-linear hover:(scale-102 bg-white shadow-lg dark:bg-black)"
+          class="group core-theme transition transition-transform duration-300 ease-linear hover:(bg-white shadow-lg scale-102 dark:bg-black)"
         >
           <NuxtLinkLocale
-            class="block h-full p-5 text-black no-underline dark:text-white"
+            class="text-black p-5 no-underline h-full block dark:text-white"
             :to="feature.path"
             :aria-labelledby="`${headingId}-${feature.path.replace(/\//g, '-')}`"
           >
             <span
-              class="core-border rounded-md bg-light200 px4 py1 text-sm text-inherit op-90 dark:bg-dark800"
+              class="text-sm text-inherit px4 py1 core-border rounded-md bg-light200 op-90 dark:bg-dark800"
               role="doc-subtitle"
             >
               {{ feature.tag }}
             </span>
             <h3
               :id="`${headingId}-${feature.path.replace(/\//g, '-')}`"
-              class="group-hover:text-primary mt-2 text-xl text-inherit font-semibold"
+              class="group-hover:text-primary text-xl text-inherit font-semibold mt-2"
             >
               {{ feature.title }}
             </h3>
-            <p class="mt-2 text-neutral-400 text-inherit font-400 op70 transition-opacity duration-300 ease-in-out dark:text-neutral-300 group-hover:op-100">
+            <p class="text-neutral-400 text-inherit font-400 mt-2 op70 transition-opacity duration-300 ease-in-out dark:text-neutral-300 group-hover:op-100">
               {{ feature.description }}
             </p>
           </NuxtLinkLocale>
         </article>
       </div>
 
-      <div class="relative hidden lg:(grid col-span-2 row-span-2)">
+      <div class="hidden relative lg:(grid col-span-2 row-span-2)">
         <NuxtImg
           :src="featureImage"
           alt="Rabbit R1 Animation Graphic"
           loading="lazy"
           format="webp"
-          class="h-full w-full rounded-lg object-cover"
+          class="rounded-lg h-full w-full object-cover"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 854px"
           width="854"
           height="532"
         />
         <NuxtLink
           to="https://www.rabbit.tech/rabbit-r1"
-          class="absolute bottom-2 right-2 core-border rounded-md core-ui px3 py1 text-sm decoration-none hover:core-theme"
+          class="text-sm core-ui px3 py1 core-border rounded-md decoration-none bottom-2 right-2 absolute hover:core-theme"
           external
           target="_blank"
         >
@@ -102,26 +102,26 @@ const featureImage = 'https://cdn.xanzhu.com/v1/rabbit-r1/graphic.webp'
       <div class="contents children:(core-border rounded-lg)">
         <article
           v-for="feature in featureSets.setTwo" :key="feature.path"
-          class="group core-theme transition duration-300 ease-linear hover:(scale-102 bg-white shadow-lg dark:bg-black)"
+          class="group core-theme transition duration-300 ease-linear hover:(bg-white shadow-lg scale-102 dark:bg-black)"
         >
           <NuxtLinkLocale
-            class="block h-full p-5 text-black no-underline dark:text-white"
+            class="text-black p-5 no-underline h-full block dark:text-white"
             :to="feature.path"
             :aria-labelledby="`${headingId}-${feature.path.replace(/\//g, '-')}`"
           >
             <span
-              class="core-border rounded-md bg-light200 px4 py1 text-sm text-inherit op-90 dark:bg-dark800"
+              class="text-sm text-inherit px4 py1 core-border rounded-md bg-light200 op-90 dark:bg-dark800"
               role="doc-subtitle"
             >
               {{ feature.tag }}
             </span>
             <h3
               :id="`${headingId}-${feature.path.replace(/\//g, '-')}`"
-              class="group-hover:text-primary mt-2 text-xl text-inherit font-semibold"
+              class="group-hover:text-primary text-xl text-inherit font-semibold mt-2"
             >
               {{ feature.title }}
             </h3>
-            <p class="mt-2 text-neutral-400 text-inherit font-400 op70 transition-opacity duration-300 ease-in-out dark:text-neutral-300 group-hover:op-100">
+            <p class="text-neutral-400 text-inherit font-400 mt-2 op70 transition-opacity duration-300 ease-in-out dark:text-neutral-300 group-hover:op-100">
               {{ feature.description }}
             </p>
           </NuxtLinkLocale>

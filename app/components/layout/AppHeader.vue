@@ -34,13 +34,13 @@ const sortedLocales = computed(() => {
 
 <template>
   <header
-    class="mx-auto flex items-center justify-between bg-white/70 p2 text-black backdrop-blur-lg dark:(bg-black/70 text-white) 2xl:px40 md:px-6 xl:px25"
+    class="text-black mx-auto p2 border-b-1 border-b-dark400/10 bg-white/70 flex items-center justify-between backdrop-blur-lg dark:(text-white border-b-dark-200/30 bg-black/70) 2xl:px40 md:px-6 xl:px25"
   >
     <NuxtLinkLocale to="/" class="text-inherit">
       <UiAppLogo v-once class="h10 md:h12" />
     </NuxtLinkLocale>
 
-    <nav class="hidden md:(flex underline-none space-x-10)" :aria-label="t('aria.main_nav')">
+    <nav class="md:underline-none hidden md:(flex space-x-10)" :aria-label="t('aria.main_nav')">
       <NuxtLinkLocale
         v-for="link in links"
         :key="link.url"
@@ -54,7 +54,7 @@ const sortedLocales = computed(() => {
 
     <div class="hidden md:(flex items-center space-x-2)" role="group">
       <UiColorSwitch />
-      <div class="md:(inline-flex gap1 core-border rounded-full core-ui p1)" role="navigation" :aria-label="t('aria.lang_selector')">
+      <div class="md:(core-ui p1 core-border rounded-full inline-flex gap1)" role="navigation" :aria-label="t('aria.lang_selector')">
         <NuxtLink
           v-for="locale in sortedLocales"
           :key="locale.code"
@@ -62,7 +62,7 @@ const sortedLocales = computed(() => {
           :prefetch="false"
           :aria-current="locale.isActive ? 'true' : undefined"
           :class="locale.classes"
-          class="rounded-full px3 py1 text-center text-sm font-medium decoration-none transition-colors duration-200"
+          class="text-sm font-medium px3 py1 text-center rounded-full decoration-none transition-colors duration-200"
         >
           {{ locale.name }}
         </NuxtLink>

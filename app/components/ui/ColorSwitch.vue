@@ -13,14 +13,14 @@ function switchColor() {
 
 <template>
   <button
-    class="cursor-pointer b-none bg-transparent px1.5 py0.5 pt1.5"
+    class="px1.5 py0.5 pt1.5 b-none bg-transparent cursor-pointer"
     :aria-label="colorMode.value === 'dark' ? t('ui.colorMode.light') : t('ui.colorMode.dark')"
     @click="switchColor"
   >
     <ColorScheme>
-      <Icon :name="colorIcon" class="h6 w6 text-black transition-colors duration-500 dark:text-white" />
+      <Icon :name="colorIcon" class="text-black h6 w6 transition-colors duration-500 dark:text-white" />
       <template #fallback>
-        <span class="inline-block h6 w6" aria-hidden="true" />
+        <span class="h6 w6 inline-block" aria-hidden="true" />
       </template>
     </ColorScheme>
   </button>

@@ -5,17 +5,17 @@ const { t } = useI18n()
 
 <template>
   <aside
-    class="mt-6 border border-neutral-200 rounded-lg bg-neutral-100 p-4 text-sm dark:border-neutral-800 dark:bg-neutral-900"
+    class="text-sm mt-6 p-4 border border-neutral-200 rounded-lg bg-neutral-100 dark:border-neutral-800 dark:bg-neutral-900"
     :aria-labelledby="changeId"
   >
     <h3
       :id="changeId"
-      class="m0 text-sm text-neutral-900 font-medium dark:text-neutral-100"
+      class="text-sm text-neutral-900 font-medium m0 dark:text-neutral-100"
     >
       {{ t('blog.article.changelog') }}
     </h3>
 
-    <ul class="p0 text-neutral-700 space-y-2 dark:text-neutral-300">
+    <ul class="text-neutral-700 p0 space-y-2 dark:text-neutral-300">
       <slot />
     </ul>
   </aside>

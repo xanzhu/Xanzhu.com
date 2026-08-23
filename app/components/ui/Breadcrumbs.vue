@@ -13,7 +13,7 @@ useHead({
       : [],
 })
 
-const separator = '>'
+const separator = '/'
 const shouldDisplay = computed(() => breadcrumbs.value.length > 1)
 </script>
 
@@ -23,7 +23,7 @@ const shouldDisplay = computed(() => breadcrumbs.value.length > 1)
     class="text-sm"
     :aria-label="t('ui.breadCrumbs')"
   >
-    <ol class="flex pl4 md:(flex-row items-center)">
+    <ol class="pl4 flex md:(flex-row items-center)">
       <li
         v-for="(item, index) in breadcrumbs"
         :key="item.path"
@@ -47,7 +47,7 @@ const shouldDisplay = computed(() => breadcrumbs.value.length > 1)
 
         <span
           v-if="index < breadcrumbs.length - 1"
-          class="mx-2 text-neutral-400"
+          class="text-neutral-400 mx-2"
           aria-hidden="true"
         >
           {{ separator }}

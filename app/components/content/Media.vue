@@ -9,14 +9,14 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <figure class="w-full flex flex-col">
-    <div class="w-full overflow-hidden border border-neutral-200 rounded-lg dark:border-neutral-800">
+  <figure class="flex flex-col w-full">
+    <div class="border border-neutral-200 rounded-lg w-full overflow-hidden dark:border-neutral-800">
       <NuxtImg
         :src="source" :alt="alt" :title="alt" loading="lazy" decoding="async"
-        class="h-auto max-w-full w-full rounded-lg object-contain"
+        class="rounded-lg h-auto max-w-full w-full object-contain"
       />
     </div>
-    <figcaption v-if="credit" class="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+    <figcaption v-if="credit" class="text-sm text-neutral-600 mt-2 dark:text-neutral-400">
       {{ `${t('ui.content.source')}: ${credit}` }}
     </figcaption>
   </figure>

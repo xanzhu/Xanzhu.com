@@ -5,10 +5,10 @@ const { loadSVG } = defineProps<{
 </script>
 
 <template>
-  <div class="h-full w-full flex items-center justify-center">
+  <div class="flex h-full w-full items-center justify-center">
     <svg
       v-if="loadSVG === 'beta02'"
-      class="absolute max-w-full overflow-hidden fill-transparent invert -top-45 dark:(invert-0)" width="1440"
+      class="max-w-full absolute overflow-hidden fill-transparent invert -top-45 dark:(invert-0)" width="1440"
       height="910" viewBox="0 0 1440 910" fill="none" xmlns="http://www.w3.org/2000/svg"
     >
       <g clip-path="url(#clip0_788_4279)">

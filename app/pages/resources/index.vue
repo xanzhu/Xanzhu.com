@@ -20,23 +20,23 @@ useLangMeta('seo.resources', seoImage)
 </script>
 
 <template>
-  <div class="flex flex-col bg-white text-neutral-9 md:(flex-row gap-4 py4) 2xl:px35 xl:px28">
+  <div class="text-neutral-9 bg-white flex flex-col 2xl:px35 md:(py4 flex-row gap-4) xl:px28">
     <LazyResourcesSidebar />
 
     <main
       v-if="pageIndex"
-      class="flex flex-1 flex-col b-1 b-neutral-3 b-solid p5 text-neutral-9"
+      class="text-neutral-900 p5 b-1 border-neutral-300 b-solid flex flex-1 flex-col dark:text-neutral-300"
       tabindex="-1"
       aria-labelledby="page-title"
     >
       <h1
         id="page-title"
-        class="m0 w-fit flex bg-black px4 py2 text-2xl text-white"
+        class="text-2xl text-white m0 px4 py2 bg-black flex w-fit"
       >
         {{ pageIndex.title }}
       </h1>
 
-      <p class="m0 w-fit b-1 b-neutral-3 b-solid bg-neutral-1 px4 py3 text-neutral-9">
+      <p class="text-neutral-900 m0 px4 py3 b-1 b-neutral-300 b-solid bg-neutral-100 w-fit">
         {{ pageIndex.description }}
       </p>
 

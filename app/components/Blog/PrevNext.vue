@@ -29,33 +29,33 @@ const items = computed(() => [
 </script>
 
 <template>
-  <div class="mt-10 flex flex-col items-center sm:flex-row sm:justify-evenly sm:gap-10">
+  <div class="mt-10 flex flex-col items-center sm:flex-row sm:gap-10 sm:justify-evenly">
     <template v-for="(nav, index) in items" :key="index">
       <div v-if="nav.data" class="w-[250px]">
         <NuxtLink
           :to="nav.data.path"
           :aria-label="nav.label"
           :rel="nav.rel"
-          class="group relative flex flex-col no-underline transition-transform duration-300"
+          class="group no-underline flex flex-col transition-transform duration-300 relative"
         >
-          <div class="relative h-[150px] w-[250px] overflow-hidden rounded-lg bg-gray-100 dark:bg-dark-800">
+          <div class="rounded-lg bg-gray-100 h-[150px] w-[250px] relative overflow-hidden dark:bg-dark-800">
             <NuxtImg
               v-if="nav.data.img"
               :src="nav.data.img"
               height="150"
               width="250"
-              class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              class="h-full w-full transition-transform duration-500 object-cover group-hover:scale-105"
               :alt="nav.data.alt || nav.data.title"
               loading="lazy"
               decoding="async"
             />
 
-            <div class="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+            <div class="bg-black/40 opacity-0 transition-opacity duration-300 inset-0 absolute group-hover:opacity-100" />
 
-            <div class="absolute inset-0 flex items-center justify-center">
+            <div class="flex items-center inset-0 justify-center absolute">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-8 w-8 text-white opacity-0 transition-all duration-300 group-hover:opacity-100"
+                class="text-white opacity-0 h-8 w-8 transition-all duration-300 group-hover:opacity-100"
                 :class="nav.isNext ? '-translate-x-4 group-hover:translate-x-0' : 'translate-x-4 group-hover:translate-x-0'"
                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
               >
@@ -64,7 +64,7 @@ const items = computed(() => [
             </div>
 
             <div
-              class="absolute bottom-0 left-0 right-0 translate-y-full from-black/70 to-transparent bg-gradient-to-t p-3 text-white transition-transform duration-300 group-hover:translate-y-0"
+              class="text-white p-3 translate-y-full transition-transform duration-300 bottom-0 left-0 right-0 absolute from-black/70 to-transparent bg-gradient-to-t group-hover:translate-y-0"
               :class="{ 'text-right': nav.isNext }"
             >
               <span class="text-sm font-medium opacity-90">{{ nav.label }}</span>
@@ -72,7 +72,7 @@ const items = computed(() => [
           </div>
 
           <h4
-            class="line-clamp-2 mt-3 max-w-[250px] text-base text-element-dark font-medium underline-offset-4 dark:text-element-light group-hover:underline"
+            class="text-base text-element-dark font-medium mt-3 underline-offset-4 max-w-[250px] line-clamp-2 dark:text-element-light group-hover:underline"
           >
             {{ nav.data.title }}
           </h4>

@@ -10,8 +10,8 @@ const hasSubInfo = computed(() => !!description || !!date)
 </script>
 
 <template>
-  <main class="min-h-screen flex flex-col items-center md:mt-20">
-    <div class="my-10 max-w-4xl min-h-screen sm:mx-auto space-y-10">
+  <main class="flex flex-col min-h-screen items-center md:mt-20">
+    <div class="my-10 max-w-4xl min-h-screen space-y-10 sm:mx-auto">
       <div
         class="mx-4 flex flex-col space-y-4"
         :class="hasSubInfo
@@ -22,7 +22,7 @@ const hasSubInfo = computed(() => !!description || !!date)
           class="flex flex-col"
           :class="!hasSubInfo ? 'items-center' : undefined"
         >
-          <h1 class="m0 text-2xl font-semibold sm:text-3xl">
+          <h1 class="text-2xl font-semibold m0 sm:text-3xl">
             <slot name="title">
               {{ title }}
             </slot>
@@ -34,7 +34,7 @@ const hasSubInfo = computed(() => !!description || !!date)
           </p>
         </div>
         <p v-if="date" class="m0 flex flex-col">
-          <span v-if="datelabel" class="self-end font-semibold">
+          <span v-if="datelabel" class="font-semibold self-end">
             <slot name="date-label">{{ datelabel }}</slot>
           </span>
           <span class="font-400">
@@ -46,7 +46,7 @@ const hasSubInfo = computed(() => !!description || !!date)
       </div>
 
       <section
-        class="text-md core-border rounded-lg p-6 font-400 shadow-sm sm:(mx-3 p-10) space-y-6 dark:from-dark-800 dark:to-dark-900"
+        class="text-md core-ui font-400 p-6 core-border rounded-lg shadow-xs space-y-6 sm:(mx-3 p-10) dark:from-dark-800 dark:to-dark-900"
       >
         <slot name="content" />
       </section>

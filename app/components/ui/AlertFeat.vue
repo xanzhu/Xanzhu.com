@@ -13,9 +13,9 @@ const localePath = useLocalePath()
 
 <template>
   <div
-    class="mx2 mb-5 max-w-md b-gray-300 rounded-md b-dashed p5 text-sm backdrop-blur-xl backdrop-filter dark:(b-dark-300 text-white)"
+    class="text-sm mx2 mb-5 p5 b-gray-300 rounded-md b-dashed max-w-md backdrop-blur-xl backdrop-filter dark:(text-white b-dark-300)"
   >
-    <h1 class="m-0 text-xl font-semibold">
+    <h1 class="text-xl font-semibold m-0">
       {{ title ?? t('alert.feature') }}
     </h1>
 
@@ -26,12 +26,12 @@ const localePath = useLocalePath()
     <NuxtLink
       v-if="access && link"
       :to="localePath(link)"
-      class="animate-bounce text-[#FF0] no-underline"
+      class="text-[#FF0] no-underline animate-bounce"
     >
       {{ t('alert.view') }}
     </NuxtLink>
 
-    <p v-if="date" class="mt-2 text-sm font-normal">
+    <p v-if="date" class="text-sm font-normal mt-2">
       Updated: {{ date }}
     </p>
   </div>

@@ -22,8 +22,8 @@ const iframeTitle = computed(() =>
 </script>
 
 <template>
-  <div class="relative aspect-video overflow-hidden rounded-md">
-    <div v-if="hasError" class="absolute inset-0 flex items-center justify-center bg-black/10 text-sm">
+  <div class="rounded-md aspect-video relative overflow-hidden">
+    <div v-if="hasError" class="text-sm bg-black/10 flex items-center inset-0 justify-center absolute">
       {{ t('blog.article.videoError') }}
     </div>
     <ScriptYouTubePlayer
@@ -37,7 +37,7 @@ const iframeTitle = computed(() =>
       <template #awaitingLoad>
         <button
           v-if="!isLoaded"
-          class="absolute inset-0 flex items-center justify-center border-none"
+          class="border-none flex items-center inset-0 justify-center absolute"
           :aria-label="t('blog.article.videoClick')"
         >
           <svg

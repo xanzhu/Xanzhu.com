@@ -4,7 +4,7 @@ useLangMeta('seo.analysis', seoImage)
 </script>
 
 <template>
-  <div class="min-h-screen flex items-center justify-center from-gray-50 to-gray-100 bg-gradient-to-b dark:from-gray-900 dark:to-gray-950">
+  <div class="flex min-h-screen items-center justify-center from-gray-50 to-gray-100 bg-gradient-to-b dark:from-dark-900 dark:to-dark-950">
     <UiAlertFeat />
   </div>
 </template>
