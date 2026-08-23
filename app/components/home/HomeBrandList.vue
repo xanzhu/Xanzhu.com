@@ -31,18 +31,18 @@ function getSvgIconUrl(name) {
 
 <template>
   <section
-    class="hidden lg:(mb24 mt-20 h-[12vh] flex inline-flex items-center justify-center)" :aria-label="t('aria.brand_home_rec')"
+    class="hidden lg:(mb24 mt-20 flex inline-flex h-[12vh] items-center justify-center)" :aria-label="t('aria.brand_home_rec')"
   >
-    <ul class="flex flex-wrap list-none justify-center gap-12 px-8">
+    <ul class="px-8 list-none flex flex-wrap gap-12 justify-center">
       <li v-for="link in urls" :key="link.name">
         <NuxtLink
           :to="link.url"
           target="_blank"
           rel="noopener"
-          class="group inline-block rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+          class="group rounded-sm inline-block focus:outline-hidden focus:ring-2 focus:ring-blue-500"
         >
           <div
-            class="h-[40px] w-[128px] flex items-center justify-center p-4"
+            class="p-4 flex h-[40px] w-[128px] items-center justify-center"
             style="aspect-ratio: 128 / 40"
           >
             <NuxtImg
@@ -51,7 +51,7 @@ function getSvgIconUrl(name) {
               width="128"
               height="40"
               loading="lazy"
-              class="h-auto max-h-16 max-w-[120px] brightness-0 invert-0 filter transition-opacity duration-300 ease-in-out group-hover:opacity-75 dark:invert"
+              class="h-auto max-h-16 max-w-[120px] transition-opacity duration-300 ease-in-out brightness-0 invert-0 filter group-hover:opacity-75 dark:invert"
             />
           </div>
           <span class="sr-only">{{ link.name }}</span>

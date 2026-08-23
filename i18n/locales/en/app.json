@@ -19,7 +19,7 @@
   },
   "home": {
     "hero": {
-      "title": "Privacy and Security for the Modern Web",
+      "title": "Privacy, Security and Everything in Between",
       "subHead": "Expert guides and open-source tools designed to protect your privacy, secure your data, and make technology accessible for everyone.",
       "tagline": "Open, Secure and Accessible",
       "action": "See What's New"
@@ -60,7 +60,8 @@
     "article": {
       "changelog": "Update History",
       "videoIframe": "Youtube Video",
-      "videoClick": "Click to Play Video"
+      "videoClick": "Click to Play Video",
+      "videoError": "Video Failed to Load"
     }
   },
   "resources": {

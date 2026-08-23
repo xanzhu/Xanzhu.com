@@ -39,36 +39,36 @@ function handleGoBack() {
 </script>
 
 <template>
-  <main class="m0 h-screen flex flex-col-reverse items-center justify-center bg-white p4 text-black font-sans lg:flex-row dark:bg-black dark:text-white">
+  <main class="text-black font-sans m0 p4 bg-white flex flex-col-reverse h-screen items-center justify-center dark:text-white dark:bg-black lg:flex-row">
     <section class="max-w-lg">
-      <h1 class="m0 text-4xl font-semibold tracking-wide lt-sm:text-center sm:text-6xl">
+      <h1 class="text-4xl tracking-wide font-semibold m0 sm:text-6xl lt-sm:text-center">
         {{ errorData.title }}
         <span class="sr-only">({{ t('aria.error_code_prefix') }} {{ errorData.status }})</span>
       </h1>
 
-      <div class="mt5 max-w-md core-border rounded-lg core-ui p-3 text-neutral8 md:mt-15 dark:text-light2" role="alert" aria-atomic="true" :aria-describedby="alertId">
-        <div :id="alertId" class="mb-10 flex items-center core-border rounded-lg bg-white px-4 md:(mb-15 px5) space-x-4 dark:bg-black">
-          <Icon name="lucide:triangle-alert" class="hidden sm:(h10 w-auto flex text-inherit)" aria-hidden="true" />
-          <p>
+      <div class="core-ui text-neutral-800 mt5 p-3 core-border rounded-lg max-w-md dark:text-light-200 md:mt-15" role="alert" aria-atomic="true" :aria-describedby="alertId">
+        <div :id="alertId" class="mb-10 px-4 core-border rounded-lg bg-white flex items-center space-x-4 md:(mb-15 px5) dark:bg-black">
+          <Icon name="lucide:triangle-alert" class="hidden sm:(text-inherit flex h10 w-auto)" aria-hidden="true" />
+          <p class="p1">
             {{ errorData.message }}
           </p>
         </div>
 
         <div class="flex justify-between children:p-2">
           <button
-            class="cursor-pointer border border-transparent rounded-md border-solid bg-transparent text-sm text-inherit underline underline-offset-4 hover:(core-border bg-white dark:bg-black) focus:outline-2 focus:outline-white focus:outline-offset-2 focus:outline"
+            class="text-sm text-inherit border border-transparent rounded-md border-solid bg-transparent underline underline-offset-4 cursor-pointer focus:outline-2 focus:outline-white focus:outline-offset-2 focus:outline hover:(core-border bg-white dark:bg-black)"
             @click="handleGoBack"
           >
             {{ errorData.action }}
           </button>
-          <span class="animate-pulse text-sm opacity-80" aria-hidden="true">
+          <span class="text-sm opacity-80 animate-pulse" aria-hidden="true">
             {{ errorData.key }}
           </span>
         </div>
       </div>
     </section>
 
-    <aside class="max-w-lg w-full flex justify-center text-black dark:text-white" aria-hidden="true">
+    <aside class="text-black flex max-w-lg w-full justify-center dark:text-white" aria-hidden="true">
       <svg
         v-if="errorData.status === 404"
         viewBox="0 0 356 356"

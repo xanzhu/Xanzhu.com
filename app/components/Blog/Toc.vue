@@ -105,19 +105,19 @@ onUnmounted(() => {
 
 <template>
   <nav
-    class="m-4 core-border rounded-sm p4 md:(mx-auto max-w-xl) lg:(max-w-md)"
+    class="m-4 p4 core-border rounded-xs md:(mx-auto max-w-xl) lg:(max-w-md)"
     :aria-labelledby="tocHeadingId"
   >
     <header :id="tocHeadingId" class="mb-2 pb-2">
-      <p class="m-0 text-center text-lg font-semibold tracking-wide">
+      <p class="text-lg tracking-wide font-semibold m-0 text-center">
         {{ t("blog.toc") }}
       </p>
     </header>
-    <ul class="flex flex-col gap-2 px-4 text-sm leading-tight" role="list">
+    <ul class="text-sm leading-tight px-4 flex flex-col gap-2" role="list">
       <li
         v-for="link of flattenedLinks"
         :key="link.id"
-        class="w-fit border border-transparent rounded-sm transition-all duration-300 dark:text-light-400 hover:(underline underline-1 underline-offset-3)"
+        class="border border-transparent rounded-xs w-fit transition-all duration-300 dark:text-light-400 hover:(underline underline-1 underline-offset-3)"
         :class="{
           'list-disc': !hasChildren && link.depth === 2,
           'ml-3 opacity-80': link.depth === 3,

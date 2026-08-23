@@ -24,10 +24,10 @@ const links = [
 </script>
 
 <template>
-  <div class="font-none flex flex-row items-center pt1 md:items-end md:space-x-6">
+  <div class="font-none pt1 flex flex-row items-center md:items-end md:space-x-6">
     <NuxtLink
       v-for="(link, index) in links" :key="index" :to="link.url" :aria-label="link.name" target="_blank"
-      class="pr4 text-white md:p2 dark:text-black hover:text-brand-dark"
+      class="text-white pr4 dark:text-black hover:text-brand-dark md:p2"
     >
       <Icon :name="link.icon" class="h5 w5" />
     </NuxtLink>

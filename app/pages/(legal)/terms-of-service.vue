@@ -53,13 +53,13 @@ useLangMeta('terms.meta', seoImage, 'prefix', t)
           {{ t('terms.introduction') }}
         </p>
         <div v-for="(section, index) in sections" :key="index" class="mb-8">
-          <h2 class="mb-4 mt-8 text-2xl text-dark-900 font-semibold dark:text-gray-100">
+          <h2 class="text-2xl text-dark-900 font-semibold mb-4 mt-8 dark:text-gray-100">
             {{ section.title }}
           </h2>
           <p v-if="section.intro" class="text-dark-300 dark:text-gray-300">
             {{ section.intro }}
           </p>
-          <ul v-if="section.list" class="list-disc pl-6 text-dark-300 dark:text-gray-300">
+          <ul v-if="section.list" class="text-dark-300 pl-6 list-disc dark:text-gray-300">
             <li v-for="(item, itemIndex) in section.list" :key="itemIndex">
               {{ item }}
             </li>

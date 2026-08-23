@@ -46,7 +46,7 @@ const categoryLinks = computed(() => {
 
 <template>
   <aside
-    class="w-auto flex flex-col bg-black p4 text-white font-mono md:(ml4 min-h-screen w-15rem p4)"
+    class="text-white font-mono p4 bg-black flex flex-col w-auto md:(ml4 p4 min-h-screen w-15rem)"
     role="complementary"
     aria-label="Resource categories navigation"
   >
@@ -54,7 +54,7 @@ const categoryLinks = computed(() => {
       <NuxtLink
         v-if="isOnSubpage"
         :to="basePath"
-        class="group flex items-center gap-2 text-neutral-3 no-underline transition-colors -mb-5 focus:(text-white outline-2 outline-white outline-offset-2) hover:text-white"
+        class="group text-neutral-3 no-underline flex gap-2 transition-colors items-center focus:(text-white outline-2 outline-white outline-offset-2) hover:text-white -mb-5"
       >
         <Icon
           v-once
@@ -67,27 +67,27 @@ const categoryLinks = computed(() => {
 
       <h2
         id="categories-heading"
-        class="m0 mb2 mt-10 text-sm text-neutral-4 font-semibold tracking-wide uppercase"
+        class="text-neutral-4 text-sm tracking-wide font-semibold m0 mb2 mt-10 uppercase"
       >
         {{ t('resources.subHead') }}
       </h2>
 
       <ul
-        class="m0 list-none p0"
+        class="m0 p0 list-none"
         role="list"
         aria-labelledby="categories-heading"
       >
         <li v-for="category in categoryLinks" :key="category.name" class="mb-2">
           <NuxtLink
             :to="category.path"
-            class="flex items-center gap-2 rounded px-2 py-1.5 text-sm no-underline transition-colors focus:(bg-neutral-8 outline-2 outline-white outline-offset-2) hover:(bg-neutral-8 text-white)"
+            class="focus:bg-neutral-8 hover:bg-neutral-8 text-sm px-2 py-1.5 rounded-sm no-underline flex gap-2 transition-colors items-center hover:(text-white) focus:(outline-2 outline-white outline-offset-2)"
             :class="category.isActive ? 'text-white bg-neutral-8' : 'text-neutral-3'"
             :aria-current="category.isActive ? 'page' : undefined"
             :aria-label="category.description ? `${category.title}. ${category.description}` : category.title"
           >
             <Icon
               :name="category.icon"
-              class="h4 w4 flex-shrink-0"
+              class="shrink-0 h4 w4"
               aria-hidden="true"
             />
             <span class="flex-1">{{ category.title }}</span>

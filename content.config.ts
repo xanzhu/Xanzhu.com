@@ -60,6 +60,15 @@ function createImageExtractor(name: string) {
       }
 
       url.images = images
+
+      const lastmodSource = entry.updated || entry.date
+      if (lastmodSource) {
+        const parsed = new Date(lastmodSource)
+        if (!Number.isNaN(parsed.getTime())) {
+          url.lastmod = parsed.toISOString()
+        }
+      }
+
       return url
     },
   })

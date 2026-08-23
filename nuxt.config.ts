@@ -44,8 +44,6 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico', sizes: '32x32' },
         { rel: 'icon', type: 'image/svg+xml', href: '/icon.svg', sizes: 'any' },
         { rel: 'preconnect', href: cdnUrl, crossorigin: 'anonymous' },
-        // Fallback
-        { rel: 'dns-prefetch', href: cdnUrl },
       ],
     },
   },
@@ -113,16 +111,14 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    '/': { isr: 86400 },
     '/**': {
       headers: {
         'x-robots-tag': 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
-        'Cache-Control': 'public, max-age=3600, s-maxage=86400, stale-while-revalidate=86400',
+        'Cache-Control': 'public, max-age=3600, stale-while-revalidate=86400',
       },
     },
     '/**/_payload.json': {
       prerender: false,
-      ssr: false,
     },
     '/_nuxt/**': {
       headers: {
@@ -131,19 +127,14 @@ export default defineNuxtConfig({
     },
     '/images/**': {
       headers: {
-        'Cache-Control': 'public, max-age=2592000, immutable',
+        'Cache-Control': 'public, max-age=2592000, stale-while-revalidate=86400, immutable',
       },
     },
     '/health': {
       security: { headers: false },
       prerender: false,
+      headers: { 'Cache-Control': 'no-store' },
     },
-    '/blog/**': { isr: 86400 },
-    '/ko/blog/**': { isr: 86400 },
-    '/zh/blog/**': { isr: 86400 },
-    '/resources': { isr: 86400 },
-    '/ko/resources': { isr: 86400 },
-    '/zh/resources': { isr: 86400 },
   },
 
   content: {
@@ -179,9 +170,10 @@ export default defineNuxtConfig({
     },
   },
 
-  // SECURITY V2.1
+  // SECURITY
   security: {
     nonce: true,
+    corsHandler: false,
     ssg: {
       meta: true,
       hashScripts: true,
@@ -252,6 +244,15 @@ export default defineNuxtConfig({
         includeSubdomains: true,
         preload: true,
       },
+      permissionsPolicy: {
+        'camera': [],
+        'display-capture': [],
+        'fullscreen': ['self'],
+        'geolocation': [],
+        'microphone': [],
+        'payment': [],
+        'publickey-credentials-get': [],
+      },
       crossOriginEmbedderPolicy: 'unsafe-none',
       crossOriginOpenerPolicy: 'same-origin',
       crossOriginResourcePolicy: 'same-origin',
@@ -259,9 +260,9 @@ export default defineNuxtConfig({
     sri: true,
   },
 
-  compatibilityDate: '2026-06-23',
+  compatibilityDate: '2026-08-20',
 
-  sourcemap: isDev,
+  // sourcemap: isDev,
 
   unocss: {
     disableNuxtInlineStyle: false,
@@ -276,18 +277,13 @@ export default defineNuxtConfig({
     prerender: {
       crawlLinks: true,
     },
+
     minify: !isDev,
     compressPublicAssets: true,
-  },
-
-  $env: {
+    preset: 'cloudflare_module',
     cloudflare: {
-      nitro: {
-        preset: 'cloudflare_module',
-        cloudflare: {
-          deployConfig: true,
-        },
-      },
+      deployConfig: true,
+      nodeCompat: true,
     },
   },
 
@@ -302,7 +298,11 @@ export default defineNuxtConfig({
       cssMinify: 'lightningcss',
     },
     optimizeDeps: {
-      include: ['@vue/devtools-core', '@vue/devtools-kit', '@vueuse/core'],
+      include: [
+        '@vue/devtools-core',
+        '@vue/devtools-kit',
+        '@vueuse/core',
+      ],
     },
   },
 

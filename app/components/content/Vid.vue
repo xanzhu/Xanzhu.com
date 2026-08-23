@@ -11,7 +11,7 @@ const { t } = useI18n()
 <template>
   <figure class="m-y-6">
     <video
-      class="block h-auto max-w-full w-full core-border rounded-md object-cover"
+      class="core-border rounded-md h-auto max-w-full w-full block object-cover"
       muted
       autoplay
       loop
@@ -23,7 +23,7 @@ const { t } = useI18n()
 
     <figcaption
       v-if="credit"
-      class="mt-1 text-left text-xs text-gray-600 leading-relaxed font-mono opacity-85 dark:text-light-900"
+      class="text-xs text-gray-600 leading-relaxed font-mono mt-1 text-left opacity-85 dark:text-light-900"
     >
       {{ t('ui.content.source') }}{{ `: ${credit}` }}
     </figcaption>

@@ -52,7 +52,7 @@ onUnmounted(() => {
   >
     <button
       v-if="isVisible"
-      class="fixed bottom-6 right-3 z-30 h-10 w-10 flex cursor-pointer items-center justify-center core-border rounded-full core-ui shadow-lg transition-transform duration-200 md:right-6 hover:core-theme focus:outline-none focus:ring-2 focus:ring-brand-dark focus:ring-opacity-50 dark:focus:ring-brand-light"
+      class="core-ui core-border rounded-full flex h-10 w-10 cursor-pointer shadow-lg transition-transform duration-200 items-center bottom-6 right-3 justify-center fixed z-30 hover:core-theme focus:outline-hidden focus:ring-2 focus:ring-brand-dark focus:ring-opacity-50 md:right-6 dark:focus:ring-brand-light"
       :aria-label="t('ui.scrollTop')"
       @click="scrollToTop"
     >

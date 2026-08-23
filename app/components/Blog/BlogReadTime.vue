@@ -53,7 +53,7 @@ const readingTime = computed(() => {
 </script>
 
 <template>
-  <div class="flex items-center gap-1">
+  <div class="flex gap-1 items-center">
     <p class="m0">
       {{ t("ui.content.readTime", { count: readingTime }) }}
     </p>

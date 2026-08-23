@@ -3,31 +3,31 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <section class="relative min-h-screen flex items-center justify-center bg-white dark:bg-black" aria-labelledby="hero">
+  <section class="bg-white flex min-h-screen items-center justify-center relative dark:bg-black" aria-labelledby="hero">
     <div
-      class="hidden md:(absolute inset-0 z-0 flex items-center justify-center)"
+      class="hidden md:(flex items-center inset-0 justify-center absolute z-0)"
       aria-hidden="true"
     >
       <UiSvg load-s-v-g="beta02" class="h-80% w-full object-cover" />
     </div>
 
     <div
-      class="relative z-10 mx-auto flex flex-col px5 py10 sm:items-center sm:text-center dark:backdrop-brightness-90"
+      class="mx-auto px5 py10 flex flex-col relative z-10 sm:text-center sm:items-center dark:backdrop-brightness-90"
     >
       <p
-        class="mb2 flex items-center text-sm text-brand-light font-semibold uppercase space-x-2 dark:text-yellow-400"
+        class="text-sm text-brand-light font-semibold mb2 flex uppercase items-center space-x-2 dark:text-yellow-400"
       >
-        <Icon name="lucide:earth" class="h6 w6 text-inherit" aria-hidden="true" />
+        <Icon name="lucide:earth" class="text-inherit h6 w6" aria-hidden="true" />
         <span>{{ t('home.hero.tagline') }}</span>
       </p>
-      <h1 id="hero" class="m0 max-w-4xl w-full text-5xl md:text-7xl">
+      <h1 id="hero" class="text-5xl font-500 m0 max-w-4xl w-full md:text-7xl">
         {{ t('home.hero.title') }}
       </h1>
-      <p class="mx-auto max-w-lg w-full bg-white text-sm text-neutral-600 dark:bg-element-dark md:text-lg dark:text-neutral-300">
+      <p class="text-sm text-neutral-600 mx-auto mt-6 bg-white max-w-lg w-full md:text-lg dark:text-neutral-300 dark:bg-element-dark">
         {{ t('home.hero.subHead') }}
       </p>
       <NuxtLinkLocale
-        class="mt5 flex items-center core-border border-brand-light rounded-full border-dashed core-theme px5 py1.5 text-center text-blue-6 no-underline transition-transform duration-300 ease-in-out lt-sm:mr-auto hover:(scale-110 border-solid) space-x-1 dark:border-yellow-3 dark:text-yellow-4"
+        class="core-theme text-blue-600 mt5 px5 py1.5 text-center core-border border-brand-light rounded-full border-dashed no-underline flex transition-transform duration-300 ease-in-out items-center space-x-1 dark:text-yellow-400 lt-sm:mr-auto dark:border-yellow-300 hover:(border-solid scale-110)"
         to="/blog"
       >
         <span class="m0">

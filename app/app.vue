@@ -7,6 +7,22 @@ const head = useLocaleHead({
 useSeoMeta({
   titleTemplate: '%s - Xanzhu',
 })
+
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: computed(() => JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        '@id': 'https://xanzhu.com/#organization',
+        'name': 'Xanzhu',
+        'url': 'https://xanzhu.com',
+        'logo': 'https://xanzhu.com/images/favicon/logo.png',
+      })),
+    },
+  ],
+})
 </script>
 
 <template>

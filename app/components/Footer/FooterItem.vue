@@ -13,10 +13,10 @@ const titleId = useId()
 
 <template>
   <div role="group" :aria-labelledby="titleId">
-    <h3 :id="titleId" class="text-md mb-4 font-bold">
+    <h3 :id="titleId" class="text-md font-bold mb-4">
       {{ title }}
     </h3>
-    <ul class="list-none p0 text-sm" role="list">
+    <ul class="text-sm p0 list-none" role="list">
       <li v-for="(item, index) in links" :key="index" class="mb-2" role="listitem">
         <NuxtLinkLocale
           v-if="item.href" :to="item.href"

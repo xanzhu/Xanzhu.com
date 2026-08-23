@@ -73,7 +73,7 @@ const socials = computed(() => {
 
 <template>
   <div
-    class="mx-auto inline-flex items-center gap-1 core-border rounded-full core-theme px-3 py-1.5"
+    class="core-theme mx-auto px-3 py-1.5 core-border rounded-full inline-flex gap-1 items-center"
     role="group"
     :aria-label="t('ui.sharing.title')"
   >
@@ -84,21 +84,21 @@ const socials = computed(() => {
       target="_blank"
       rel="noopener noreferrer"
       :title="t(`ui.sharing.${social.name}`)"
-      class="group p-1.5 text-black transition-all duration-200 dark:text-white hover:-translate-y-0.5"
+      class="group text-black p-1.5 transition-all duration-200 dark:text-white hover:-translate-y-0.5"
     >
       <Icon
         :name="social.icon"
-        class="h-5 w-5 opacity-80 transition-colors group-hover:text-brand-light group-hover:opacity-100 dark:group-hover:text-brand-dark"
+        class="opacity-80 h-5 w-5 transition-colors group-hover:text-brand-light group-hover:opacity-100 dark:group-hover:text-brand-dark"
       />
       <span class="sr-only">{{ t(`ui.sharing.${social.name}`) }}</span>
     </NuxtLink>
 
-    <div class="mx-1 h-4 w-px bg-gray-300 dark:bg-dark-400" aria-hidden="true" />
+    <div class="mx-1 bg-gray-300 h-4 w-px dark:bg-dark-400" aria-hidden="true" />
 
     <button
       type="button"
       :title="t('ui.sharing.copy')"
-      class="group cursor-pointer rounded-md border-none bg-transparent p-1.5 text-inherit transition-all duration-200 hover:-translate-y-0.5"
+      class="group text-inherit p-1.5 rounded-md border-none bg-transparent cursor-pointer transition-all duration-200 hover:-translate-y-0.5"
       @click="copyLink"
     >
       <Icon
