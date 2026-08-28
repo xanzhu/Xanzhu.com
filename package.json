@@ -15,7 +15,7 @@
     "build:cf": "nuxt build"
   },
   "dependencies": {
-    "@nuxt/content": "^3.15.2",
+    "@nuxt/content": "^3.16.0",
     "@nuxt/fonts": "^0.14.0",
     "@nuxt/icon": "^2.5.1",
     "@nuxt/image": "^2.1.0",
@@ -26,8 +26,8 @@
     "@vueuse/core": "^14.4.0",
     "nuxt": "^4.5.2",
     "nuxt-security": "^2.6.0",
-    "vue": "^3.5.41",
-    "vue-router": "^5.2.0"
+    "vue": "^3.5.42",
+    "vue-router": "^5.3.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^9.3.0",
@@ -47,7 +47,7 @@
     "lightningcss": "^1.33.0",
     "nitro-cloudflare-dev": "^0.2.2",
     "oxlint": "^1.80.0",
-    "wrangler": "^4.126.0"
+    "wrangler": "^4.127.1"
   },
   "trustedDependencies": [
     "@parcel/watcher",
