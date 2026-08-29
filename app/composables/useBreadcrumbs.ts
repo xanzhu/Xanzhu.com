@@ -26,6 +26,7 @@ export function useBreadcrumbs() {
   const localePath = useLocalePath()
   const config = useRuntimeConfig()
 
+  const dynamicTitle = useState<string>('breadcrumb-title', () => '')
   const baseUrl = computed(() => config.public.i18n.baseUrl)
 
   const fullBreadcrumbs = computed<BreadcrumbItem[]>(() => {
@@ -55,7 +56,7 @@ export function useBreadcrumbs() {
       else {
         items.push({ name: t('nav.blog'), path: blogPath })
         items.push({
-          name: String(route.meta?.title || ''),
+          name: dynamicTitle.value || String(route.meta?.title || ''),
           path: route.path,
           current: true,
         })
@@ -82,7 +83,7 @@ export function useBreadcrumbs() {
         }
         if (resourceSegments.length >= 2) {
           items.push({
-            name: String(route.meta?.title || ''),
+            name: dynamicTitle.value || String(route.meta?.title || ''),
             path: route.path,
             current: true,
           })

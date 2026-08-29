@@ -24,14 +24,8 @@ if (!post.value) {
   throw createError({ status: 404, fatal: true })
 }
 
-watch(
-  () => post.value?.title,
-  (title) => {
-    if (title)
-      route.meta.title = title
-  },
-  { immediate: true },
-)
+const breadcrumbTitle = useState<string>('breadcrumb-title')
+breadcrumbTitle.value = post.value.title
 const titleSuffix = ' - Xanzhu'
 const baseUrl = config.public.i18n.baseUrl
 
