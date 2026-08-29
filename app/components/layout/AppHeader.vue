@@ -44,8 +44,8 @@ const sortedLocales = computed(() => {
       <NuxtLinkLocale
         v-for="link in links"
         :key="link.url"
-        class="text-inherit underline-1 underline-transparent underline-offset-4 transition-colors duration-350 ease-out hover:(underline-black duration-150 ease-in) dark:hover:underline-white"
-        active-class="!underline-black !dark:underline-white"
+        class="text-inherit underline underline-1 underline-transparent underline-offset-4 transition-colors duration-350 ease-out hover:(underline underline-black duration-150 ease-in) dark:hover:underline-white"
+        active-class="underline-black dark:underline-white"
         :to="link.url"
       >
         {{ t(link.name) }}

@@ -61,7 +61,7 @@ const breaches: Breach[] = [
         <div class="p-3 rounded-lg bg-zinc-900 sm:p-4">
           <div class="mb-3 flex items-center sm:mb-4">
             <Icon name="lucide:alert-triangle" class="text-4 text-yellow-400 mr-2 shrink-0 h-5 w-5" aria-hidden="true" />
-            <h3 class="text-yellow-4 text-lg font-semibold sm:text-xl">
+            <h3 class="text-lg text-yellow-400 font-semibold sm:text-xl">
               {{ t('home.stats.regional.title') }}
             </h3>
           </div>
@@ -105,7 +105,7 @@ const breaches: Breach[] = [
                     {{ breach.subtext }}
                   </p>
                 </div>
-                <span class="text-yellow-4 text-xs font-bold mr-auto px-2 py-1 rounded-sm bg-black whitespace-nowrap">
+                <span class="text-xs text-yellow-400 font-bold mr-auto px-2 py-1 rounded-sm bg-black whitespace-nowrap">
                   {{ breach.date }}
                 </span>
                 <Icon name="lucide:external-link" class="text-black h5 w5 right-0 absolute" aria-hidden="true" />

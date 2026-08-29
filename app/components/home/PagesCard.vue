@@ -42,7 +42,7 @@ const pages = [
                 aria-hidden="true"
               />
             </div>
-            <p class="text-sm grow transition-opacity duration-300 dark:text-white group-hover:opacity-80">
+            <p class="text-sm text-gray-700 grow transition-opacity duration-300 dark:text-white group-hover:opacity-80">
               {{ page.description }}
             </p>
           </div>

@@ -71,7 +71,7 @@ const featureImage = 'https://cdn.xanzhu.com/v1/rabbit-r1/graphic.webp'
             >
               {{ feature.title }}
             </h3>
-            <p class="text-neutral-400 text-inherit font-400 mt-2 op70 transition-opacity duration-300 ease-in-out dark:text-neutral-300 group-hover:op-100">
+            <p class="text-neutral-700 text-inherit font-400 mt-2 op70 transition-opacity duration-300 ease-in-out dark:text-neutral-300 group-hover:op-100">
               {{ feature.description }}
             </p>
           </NuxtLinkLocale>
@@ -121,7 +121,7 @@ const featureImage = 'https://cdn.xanzhu.com/v1/rabbit-r1/graphic.webp'
             >
               {{ feature.title }}
             </h3>
-            <p class="text-neutral-400 text-inherit font-400 mt-2 op70 transition-opacity duration-300 ease-in-out dark:text-neutral-300 group-hover:op-100">
+            <p class="text-neutral-700 text-inherit font-400 mt-2 op70 transition-opacity duration-300 ease-in-out dark:text-neutral-300 group-hover:op-100">
               {{ feature.description }}
             </p>
           </NuxtLinkLocale>
