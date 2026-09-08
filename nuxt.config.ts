@@ -256,7 +256,6 @@ export default defineNuxtConfig({
       crossOriginEmbedderPolicy: 'unsafe-none',
       crossOriginOpenerPolicy: 'same-origin',
       crossOriginResourcePolicy: 'same-origin',
-      referrerPolicy: 'strict-origin-when-cross-origin',
       // Disabled deprecated options: 01/09
       xXSSProtection: false,
       xPermittedCrossDomainPolicies: false,
