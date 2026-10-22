@@ -23,7 +23,7 @@
     "@nuxtjs/color-mode": "^4.0.1",
     "@nuxtjs/i18n": "^10.6.0",
     "@nuxtjs/sitemap": "^8.5.0",
-    "@vueuse/core": "^14.4.0",
+    "@vueuse/core": "^15.0.0",
     "nuxt": "^4.5.2",
     "nuxt-security": "^2.6.0",
     "vue": "^3.5.42",
