@@ -34,7 +34,7 @@
     "@iconify-json/line-md": "^1.2.16",
     "@iconify-json/lucide": "^1.2.130",
     "@iconify-json/ri": "^1.2.10",
-    "@nuxt/devtools": "^3.4.2",
+    "@nuxt/devtools": "^4.0.0",
     "@unocss/eslint-plugin": "^66.10.0",
     "@unocss/nuxt": "^66.10.0",
     "@unocss/preset-typography": "^66.10.0",
