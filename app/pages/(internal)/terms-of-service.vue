@@ -1,56 +1,58 @@
 <script setup lang="ts">
 const { t } = useI18n({
-  useScope: 'local',
-})
+  useScope: "local",
+});
 
-const date = '2025-01-27'
+const date = "2025-01-27";
 
 const sections = [
   {
-    title: t('terms.intellectualProperty.title'),
-    content: t('terms.intellectualProperty.content'),
+    title: t("terms.intellectualProperty.title"),
+    content: t("terms.intellectualProperty.content"),
   },
   {
-    title: t('terms.userResponsibilities.title'),
-    intro: t('terms.userResponsibilities.intro'),
+    title: t("terms.userResponsibilities.title"),
+    intro: t("terms.userResponsibilities.intro"),
     list: [
-      t('terms.userResponsibilities.list.useLawfully'),
-      t('terms.userResponsibilities.list.noDisruption'),
+      t("terms.userResponsibilities.list.useLawfully"),
+      t("terms.userResponsibilities.list.noDisruption"),
     ],
   },
   {
-    title: t('terms.disclaimer.title'),
-    content: t('terms.disclaimer.content'),
+    title: t("terms.disclaimer.title"),
+    content: t("terms.disclaimer.content"),
   },
   {
-    title: t('terms.thirdPartyLinks.title'),
-    content: t('terms.thirdPartyLinks.content'),
+    title: t("terms.thirdPartyLinks.title"),
+    content: t("terms.thirdPartyLinks.content"),
   },
   {
-    title: t('terms.changesToTerms.title'),
-    content: t('terms.changesToTerms.content'),
+    title: t("terms.changesToTerms.title"),
+    content: t("terms.changesToTerms.content"),
   },
   {
-    title: t('terms.contactUs.title'),
-    content: t('terms.contactUs.content'),
+    title: t("terms.contactUs.title"),
+    content: t("terms.contactUs.content"),
     isContact: true,
   },
-]
+];
 
 // SEO Metadata
-const seoImage = 'https://images.pexels.com/photos/273209/pexels-photo-273209.jpeg'
-useLangMeta('terms.meta', seoImage, 'prefix', t)
+const seoImage = "https://images.pexels.com/photos/273209/pexels-photo-273209.jpeg";
+useLangMeta("terms.meta", seoImage, "prefix", t);
 </script>
 
 <template>
-  <LayoutInternalPage
-    :title="t('terms.title')" :description="t('terms.description')" :date="date"
+  <InternalPage
+    :title="t('terms.title')"
+    :description="t('terms.description')"
+    :date="date"
     :datelabel="t('terms.date')"
   >
     <template #content>
       <div>
         <p class="text-dark-300 dark:text-gray-300">
-          {{ t('terms.introduction') }}
+          {{ t("terms.introduction") }}
         </p>
         <div v-for="(section, index) in sections" :key="index" class="mb-8">
           <h2 class="text-2xl text-dark-900 font-semibold mb-4 mt-8 dark:text-gray-100">
@@ -67,7 +69,8 @@ useLangMeta('terms.meta', seoImage, 'prefix', t)
           <p v-if="section.content" class="text-dark-300 dark:text-gray-300">
             {{ section.content }}
             <NuxtLink
-              v-if="section.isContact" href="mailto:support@xanzhu.com"
+              v-if="section.isContact"
+              href="mailto:support@xanzhu.com"
               class="text-black no-underline dark:text-white hover:underline"
             >
               support@xanzhu.com
@@ -76,7 +79,7 @@ useLangMeta('terms.meta', seoImage, 'prefix', t)
         </div>
       </div>
     </template>
-  </LayoutInternalPage>
+  </InternalPage>
 </template>
 
 <i18n lang="json">

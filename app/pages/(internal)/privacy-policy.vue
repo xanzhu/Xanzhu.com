@@ -1,32 +1,37 @@
 <script setup lang="ts">
 const { t } = useI18n({
-  useScope: 'local',
-})
+  useScope: "local",
+});
 
-const date = '2025-01-27'
+const date = "2025-01-27";
 
 const paragraphs: { [key: number]: string } = {
-  1: t('PP.section-one'),
-  2: t('PP.section-two'),
-  3: t('PP.section-three'),
-  4: t('PP.section-four'),
-  5: t('PP.section-five'),
-  6: t('PP.section-six'),
-}
+  1: t("PP.section-one"),
+  2: t("PP.section-two"),
+  3: t("PP.section-three"),
+  4: t("PP.section-four"),
+  5: t("PP.section-five"),
+  6: t("PP.section-six"),
+};
 
 // SEO Metadata
-const seoImage = 'https://images.pexels.com/photos/27286458/pexels-photo-27286458.jpeg'
-useLangMeta('PP', seoImage, 'prefix', t)
+const seoImage = "https://images.pexels.com/photos/27286458/pexels-photo-27286458.jpeg";
+useLangMeta("PP", seoImage, "prefix", t);
 </script>
 
 <template>
-  <LayoutInternalPage :title="t('PP.title')" :description="t('PP.desc')" :date="date" :datelabel="t('PP.date')">
+  <InternalPage
+    :title="t('PP.title')"
+    :description="t('PP.desc')"
+    :date="date"
+    :datelabel="t('PP.date')"
+  >
     <template #content>
       <p v-for="(paragraph, index) in paragraphs" :key="index" class="leading-relaxed">
         {{ paragraph }}
       </p>
     </template>
-  </LayoutInternalPage>
+  </InternalPage>
 </template>
 
 <i18n lang="json">
