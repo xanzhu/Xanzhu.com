@@ -9,10 +9,9 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lint": "oxlint && eslint",
-    "lint:fix": "oxlint --fix && eslint --fix",
-    "cf-typegen": "wrangler types",
-    "build:cf": "nuxt build"
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check",
+    "cf-typegen": "wrangler types"
   },
   "dependencies": {
     "@nuxt/content": "^3.16.0",
@@ -30,22 +29,18 @@
     "vue-router": "^5.3.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^9.5.1",
     "@iconify-json/line-md": "^1.2.16",
     "@iconify-json/lucide": "^1.2.130",
     "@iconify-json/ri": "^1.2.10",
     "@nuxt/devtools": "^3.4.2",
-    "@unocss/eslint-plugin": "^66.10.0",
     "@unocss/nuxt": "^66.10.0",
     "@unocss/preset-typography": "^66.10.0",
     "@unocss/preset-wind4": "^66.10.0",
     "@unocss/transformer-directives": "^66.10.0",
     "@unocss/transformer-variant-group": "^66.10.0",
-    "eslint": "^10.10.0",
-    "eslint-plugin-format": "^2.0.1",
-    "eslint-plugin-oxlint": "^1.82.0",
     "lightningcss": "^1.33.0",
     "nitro-cloudflare-dev": "^0.2.2",
+    "oxfmt": "^0.75.0",
     "oxlint": "^1.82.0",
     "wrangler": "^4.129.1"
   },
