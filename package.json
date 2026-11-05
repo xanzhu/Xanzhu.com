@@ -12,7 +12,8 @@
     "postinstall": "nuxt prepare",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
-    "cf-typegen": "wrangler types"
+    "cf-typegen": "wrangler types",
+    "build:cf": "nuxt build"
   },
   "dependencies": {
     "@nuxt/content": "^3.16.2",
