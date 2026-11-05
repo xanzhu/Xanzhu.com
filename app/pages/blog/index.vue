@@ -1,45 +1,48 @@
 <script setup lang="ts">
-import type { Collections } from '@nuxt/content'
+import type { Collections } from "@nuxt/content";
 
-const config = useRuntimeConfig()
-const { locale, t } = useI18n()
-const route = useRoute()
-const collectionName = `blog_${locale.value}` as keyof Collections
-const currentPath = route.path
+const config = useRuntimeConfig();
+const { locale, t } = useI18n();
+const route = useRoute();
+const collectionName = `blog_${locale.value}` as keyof Collections;
+const currentPath = route.path;
 
 const { data: posts } = await useAsyncData(
   `blogArticles-${locale.value}`,
-  () => queryCollection(collectionName)
-    .select('title', 'date', 'img', 'description', 'path', 'tag', 'alt')
-    .order('date', 'DESC')
-    .all(),
-  { dedupe: 'defer' },
-)
+  () =>
+    queryCollection(collectionName)
+      .select("title", "date", "img", "description", "path", "tag", "alt")
+      .order("date", "DESC")
+      .all(),
+  { dedupe: "defer" },
+);
 
-const seoImage = 'https://images.pexels.com/photos/27277185/pexels-photo-27277185.jpeg'
-useLangMeta('seo.blog', seoImage)
+const seoImage = "https://images.pexels.com/photos/27277185/pexels-photo-27277185.jpeg";
+useLangMeta("seo.blog", seoImage);
 
-const baseUrl = config.public.i18n.baseUrl
+const baseUrl = config.public.i18n.baseUrl;
 
 useHead({
   script: [
     {
-      type: 'application/ld+json',
-      innerHTML: computed(() => JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'Blog',
-        '@id': `${baseUrl}${currentPath}`,
-        'name': t('seo.blog.title'),
-        'url': `${baseUrl}${currentPath}`,
-        'description': t('seo.blog.desc'),
-        'inLanguage': locale.value,
-        'publisher': {
-          '@id': 'https://xanzhu.com/#organization',
-        },
-      })),
+      type: "application/ld+json",
+      innerHTML: computed(() =>
+        JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Blog",
+          "@id": `${baseUrl}${currentPath}`,
+          name: t("seo.blog.title"),
+          url: `${baseUrl}${currentPath}`,
+          description: t("seo.blog.desc"),
+          inLanguage: locale.value,
+          publisher: {
+            "@id": "https://xanzhu.com/#organization",
+          },
+        }),
+      ),
     },
   ],
-})
+});
 </script>
 
 <template>
@@ -60,9 +63,17 @@ useHead({
         <article>
           <NuxtLinkLocale class="group no-underline flex flex-col" :to="article.path">
             <NuxtImg
-              v-if="article.img" crossorigin="anonymous" :alt="article.alt" :title="article.alt" :loading="index < 3 ? 'eager' : 'lazy'"
-              :fetchpriority="index === 0 ? 'high' : 'auto'" decoding="async"
-              height="369" width="577" fit="cover" format="webp"
+              v-if="article.img"
+              crossorigin="anonymous"
+              :alt="article.alt"
+              :title="article.alt"
+              :loading="index < 3 ? 'eager' : 'lazy'"
+              :fetchpriority="index === 0 ? 'high' : 'auto'"
+              decoding="async"
+              height="369"
+              width="577"
+              fit="cover"
+              format="webp"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 557px"
               class="core-border rounded-md h-full w-full transform md:(transition duration-400 ease-in-out group-hover:scale-102)"
               :src="article.img"
@@ -76,7 +87,9 @@ useHead({
                   {{ article.tag }}
                 </p>
               </div>
-              <h2 class="text-xl font-semibold m0 underline-1 group-hover:(underline underline-offset-4)">
+              <h2
+                class="text-xl font-semibold m0 underline-1 group-hover:(underline underline-offset-4)"
+              >
                 {{ article.title }}
               </h2>
               <p class="text-neutral-600 mt2 dark:text-neutral-300">
@@ -88,7 +101,7 @@ useHead({
       </li>
     </ul>
     <p v-else class="text-center op70">
-      {{ t('error.blog.notFound') }}
+      {{ t("error.blog.notFound") }}
     </p>
   </main>
 </template>

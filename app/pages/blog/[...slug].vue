@@ -1,77 +1,85 @@
 <script setup lang="ts">
-import type { Collections } from '@nuxt/content'
-import type { Post } from '~/types/post'
+import type { Collections } from "@nuxt/content";
+import type { Post } from "~/types/post";
 
-const route = useRoute()
-const { locale, t } = useI18n()
-const config = useRuntimeConfig()
-const collectionName = `blog_${locale.value}` as keyof Collections
-const currentPath = route.path
+const route = useRoute();
+const { locale, t } = useI18n();
+const config = useRuntimeConfig();
+const collectionName = `blog_${locale.value}` as keyof Collections;
+const currentPath = route.path;
 
 const [{ data: post }, { data: surround }] = await Promise.all([
-  useAsyncData(`post-${locale.value}-${currentPath}`, () =>
-    queryCollection(collectionName).path(currentPath).first() as Promise<Post>, { dedupe: 'defer' }),
+  useAsyncData(
+    `post-${locale.value}-${currentPath}`,
+    () => queryCollection(collectionName).path(currentPath).first() as Promise<Post>,
+    { dedupe: "defer" },
+  ),
 
-  useAsyncData(`surround-${locale.value}-${currentPath}`, () =>
-    queryCollectionItemSurroundings(collectionName, currentPath, {
-      before: 1,
-      after: 1,
-      fields: ['title', 'path', 'date', 'img'],
-    }), { dedupe: 'defer' }),
-])
+  useAsyncData(
+    `surround-${locale.value}-${currentPath}`,
+    () =>
+      queryCollectionItemSurroundings(collectionName, currentPath, {
+        before: 1,
+        after: 1,
+        fields: ["title", "path", "date", "img"],
+      }),
+    { dedupe: "defer" },
+  ),
+]);
 
 if (!post.value) {
-  throw createError({ status: 404, fatal: true })
+  throw createError({ status: 404, fatal: true });
 }
 
-const breadcrumbTitle = useState<string>('breadcrumb-title')
-breadcrumbTitle.value = post.value.title
-const titleSuffix = ' - Xanzhu'
-const baseUrl = config.public.i18n.baseUrl
+const breadcrumbTitle = useState<string>("breadcrumb-title");
+breadcrumbTitle.value = post.value.title;
+const titleSuffix = " - Xanzhu";
+const baseUrl = config.public.i18n.baseUrl;
 
 useSeoMeta({
   title: () => post.value?.title,
   description: () => post.value?.description,
   ogTitle: () => `${post.value?.title}${titleSuffix}`,
   ogDescription: () => post.value?.description,
-  ogType: 'article',
-  ogImage: () => post.value?.img ? `${baseUrl}${post.value.img}` : `${baseUrl}/guard.webp`,
-  twitterCard: 'summary_large_image',
+  ogType: "article",
+  ogImage: () => (post.value?.img ? `${baseUrl}${post.value.img}` : `${baseUrl}/guard.webp`),
   articlePublishedTime: () => post.value?.date,
   articleModifiedTime: () => post.value?.updated || post.value?.date,
   ogImageHeight: 630,
   ogImageWidth: 1200,
   ogImageAlt: () => post.value?.alt,
-})
+});
 
 useHead({
   script: [
     {
-      type: 'application/ld+json',
-      innerHTML: computed(() => JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'Article',
-        'headline': post.value?.title,
-        'description': post.value?.description,
-        'inLanguage': locale.value,
-        'image': {
-          '@type': 'ImageObject',
-          'url': post.value?.img ? `${baseUrl}${post.value.img}` : `${baseUrl}/guard.webp`,
-          'width': 1200,
-          'height': 630,
-        },
-        'datePublished': post.value?.date,
-        'dateModified': post.value?.updated || post.value?.date,
-        'mainEntityOfPage': {
-          '@type': 'WebPage',
-          '@id': `${baseUrl}${currentPath}`,
-        },
-        'publisher': { '@id': `${baseUrl}/#organization` },
-        'author': { '@id': `${baseUrl}/#organization` },
-      })),
+      type: "application/ld+json",
+      innerHTML: computed(() =>
+        JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: post.value?.title,
+          description: post.value?.description,
+          inLanguage: locale.value,
+          image: {
+            "@type": "ImageObject",
+            url: post.value?.img ? `${baseUrl}${post.value.img}` : `${baseUrl}/guard.webp`,
+            width: 1200,
+            height: 630,
+          },
+          datePublished: post.value?.date,
+          dateModified: post.value?.updated || post.value?.date,
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id": `${baseUrl}${currentPath}`,
+          },
+          publisher: { "@id": `${baseUrl}/#organization` },
+          author: { "@id": `${baseUrl}/#organization` },
+        }),
+      ),
     },
   ],
-})
+});
 </script>
 
 <template>
@@ -85,18 +93,15 @@ useHead({
             class="leading-normal mx-auto px-4 max-w-3xl prose md:px-0 dark:prose-invert"
           />
         </div>
-        <aside
-          v-if="post.body?.toc?.links?.length"
-          class="mt2"
-        >
+        <aside v-if="post.body?.toc?.links?.length" class="mt2">
           <BlogToc :links="post.body?.toc?.links ?? []" class="lg:top-20 lg:sticky" />
         </aside>
       </div>
       <div class="mt10 flex flex-col items-center justify-center">
-        <hr class="core-ui core-border rounded-md op40 w-80%">
+        <hr class="core-ui core-border rounded-md op40 w-80%" />
         <div v-if="post.path && post.title">
           <h4 class="text-lg font-normal mb4 mt5 text-center op90">
-            {{ t('ui.sharing.title') }}
+            {{ t("ui.sharing.title") }}
           </h4>
           <LazyBlogSocialShare :post="{ path: post.path, title: post.title }" />
         </div>
