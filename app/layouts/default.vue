@@ -41,6 +41,12 @@ useHead({
           name: "Xanzhu",
           url: "https://xanzhu.com",
           logo: "https://xanzhu.com/images/favicon/logo.png",
+          sameAs: [
+            "https://nz.linkedin.com/company/xanzhu",
+            "https://github.com/xanzhu",
+            "https://bsky.app/profile/xanzhu.com",
+            "https://x.com/Xanzhu1"
+          ],
         }),
       ),
     },
