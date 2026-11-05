@@ -1,9 +1,9 @@
 import process from "node:process";
-import pkg from "./package.json";
+import pkg from "./package.json" with { type: "json" };
 
+const isDev = process.env.NODE_ENV === "development";
 const siteUrl = "https://xanzhu.com";
 const cdnUrl = "https://cdn.xanzhu.com";
-const isDev = process.env.NODE_ENV === "development";
 
 export default defineNuxtConfig({
   devtools: { enabled: isDev },
@@ -17,10 +17,8 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "nuxt-security",
     "@nuxt/fonts",
-    "nitro-cloudflare-dev",
     "@nuxt/scripts",
   ],
-
   app: {
     head: {
       charset: "utf-8",
@@ -78,7 +76,7 @@ export default defineNuxtConfig({
   },
 
   site: {
-    url: "https://xanzhu.com",
+    url: siteUrl,
     name: "Xanzhu",
   },
 
@@ -117,7 +115,7 @@ export default defineNuxtConfig({
       },
     },
     "/health": {
-      // security: { headers: false },
+      security: { headers: false },
       prerender: false,
       headers: { "Cache-Control": "no-store" },
     },
@@ -246,18 +244,17 @@ export default defineNuxtConfig({
     sri: true,
   },
 
-  compatibilityDate: "2026-08-20",
+  compatibilityDate: "2026-11-04",
 
-  // sourcemap: isDev,
+  scripts: {
+    registry: {
+      youtubePlayer: {
+        trigger: "onNuxtReady",
+      },
+    },
+  },
 
-  // unocss: {
-  //   disableNuxtInlineStyle: false,
-  //   content: {
-  //     pipeline: {
-  //       include: [/\.(vue|ts|mdx?|html)($|\?)/],
-  //     },
-  //   },
-  // },
+  sourcemap: isDev,
 
   nitro: {
     prerender: {
@@ -266,11 +263,16 @@ export default defineNuxtConfig({
 
     minify: !isDev,
     compressPublicAssets: true,
-    preset: isDev ? "node" : "cloudflare_module",
+    preset: isDev ? "node" : "cloudflare_module", // Fix for Dev mode
     cloudflare: {
       deployConfig: true,
       nodeCompat: true,
     },
+  },
+
+  experimental: {
+    // Temp fix problems with modules not supporting Nuxt 4.6 imports syntax
+    nitroAutoImports: true,
   },
 
   // Experimental Vue Features
