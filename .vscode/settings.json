@@ -1,8 +1,10 @@
 {
-  "i18n-ally.localesPaths": ["i18n/locales"],
-  "i18n-ally.keystyle": "nested",
-  "i18n-ally.pathMatcher": "{locale}/{namespaces}.{ext}",
-  "i18n-ally.enabledParsers": ["json"],
+  // "i18n-ally.localesPaths": ["i18n/locales"],
+  // "i18n-ally.keystyle": "nested",
+  // "i18n-ally.pathMatcher": "{locale}/{namespaces}.{ext}",
+  // "i18n-ally.enabledParsers": ["json"],
+
+  "x18n.enabled": true,
 
   "editor.defaultFormatter": "oxc.oxc-vscode",
   "editor.formatOnSave": true,
