@@ -25,18 +25,22 @@ Microsoft released Bing search with ChatGPT. It's currently running version 4 an
 
 ::quote
 ---
+
 content: Technology is just a tool. In terms of getting the kids working together and motivating them, the teacher is the most important.
 author: Bill Gates
 ---
+
 ::
 
 Given that Bing's new chat feature is restrictive to the Edge browser, it ensures that there's enough of an advantage to compete with Google Chrome. The chat service offers three modes through a conversation selection method: Creative, Balanced, or Precise. Conversations are not saved and are restricted to a few responses before having to start over.
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/next-gen-ai/bing.webp
 alt: Bing's new Chatbot splash screen
 ---
+
 ::
 
 After the initial use, it's quite helpful at returning answers in both a relevant context and general knowledge. Being able to integrate with Bing search, it essentially scans websites and then gives a summary with options to clarify or learn more through the provided links. It does a mixture of searching through its knowledge and just searching the web.
@@ -45,9 +49,11 @@ The main difference is just a personality factor. It feels like searching the we
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/next-gen-ai/bdialog.webp
 alt: Bing Chatbot Dialog preview
 ---
+
 ::
 
 Bing provides the user with limited options and often cuts off the request. They've introduced a limit for responses before a new topic must be established, which blocks the existing conversation and encourages the user to select the broom button to sweep the chat away. This restriction is likely to prevent the model from going out of scope and ensures everyone can use it. Something interesting to consider is how history works with these models. At this stage, it isn't saved anywhere accessible and resets back to a default splash screen.
@@ -62,10 +68,12 @@ Currently available in the United States and the United Kingdom through early ac
 
 ::media
 ---
-source: https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/AI_features_feb6.gif
-alt: Bard GIF Prompt
+
+source: https://cdn.xanzhu.com/v1/next-gen-ai/bard-ai-google-1.webp
+alt: Bard Prompt
 credit: Google
 ---
+
 ::
 
 Expect more changes and improvements over the coming months for Google, improving accuracy and features in their software. Once their Language Model (LaMDA) is tested and perfected for use in Bard, fewer restrictions will be applied, allowing users to search and get results across Google's massive archive of data. For the time being, this is a slow release and will unlikely be the final product for Bard.
@@ -76,12 +84,13 @@ Learn more about Bard and join the waitlist: :PageLink{title="Google" url="https
 
 Both Google and Microsoft are beginning to ship software with their AI solutions to help speed up mundane tasks across their software line up. Google first announced that they're working on introducing Generative AI tools in their software, such as Docs, Gmail, and more. These new AI features will enhance the way we work, reducing the amount of time spent planning. The following example shows a Google Doc with a ChatGPT-like box asking the user to input the information they want, and it generates an entire document!
 
-::vid
+::media
 ---
-source: https://storage.googleapis.com/gweb-uniblog-publish-prod/original_videos/Docs_Web_030623_1.mp4
+
+source: https://cdn.xanzhu.com/v1/next-gen-ai/bard-ai-google-2.webp
+alt: Bard Prompt In Google Docs
 credit: Google
 ---
-::
 
 Read the announcement from :PageLink{title="Google" url="https://blog.google/innovation-and-ai/products/ai-developers-google-cloud-workspace/"}
 
@@ -89,10 +98,12 @@ Two days after this announcement, Microsoft also announced that they're working 
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/next-gen-ai/mfr.webp
 alt: Microsoft Generative AI visual
 credit: Microsoft
 ---
+
 ::
 
 Read the announcement from :PageLink{title="Microsoft" url="https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/"}
@@ -113,10 +124,12 @@ A new addition to GitHub's existing Copilot software introduces a more complex s
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/next-gen-ai/copilot.webp
 alt: GitHub Copilot X Promo visual
 credit: GitHub
 ---
+
 ::
 
 A new companion for coding, Copilot solves the problem of having to search Stack Overflow or other countless forums to solve a simple problem. Many designers and web developers search "How to center a Div." but directly within Visual Studio Code, Copilot will feature next to code, following suit like ChatGPT, being able to converse and read in code as it's being written.
@@ -137,10 +150,12 @@ A step in the right direction is maintaining attribution of information, where t
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/next-gen-ai/bse.webp
 alt: Brave Summarizer visual
 credit: Brave
 ---
+
 ::
 
 A lot of language models do not identify where information is sourced from, specifically speaking, ChatGPT displays information but doesn't source where it's from. Providing results without attribution, the level of bias can be set on what the language model has been trained on. It's critical to ensure Language Models are trained to respect sources and mitigate bias in results.
@@ -149,10 +164,12 @@ In addition to providing a specified section labelled Summarizer, Brave's AI mod
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/next-gen-ai/bdc.webp
 alt: Brave in-line summary visual
 credit: Brave
 ---
+
 ::
 
 What makes this stand out from using Bing or Google is Brave's AI model is entirely run by Brave and does not rely on third parties for their Language Model Solutions such as ChatGPT. Developed in-house, their language model is trained on three different Large Language Models or LLMs following the same ethos across their software line-up of being independent and private. These Models are based on BART, DeBerta, and their own data from search results, all trained on completing different tasks such as Question Answering, Classification, and then Summarizing.
@@ -171,10 +188,12 @@ Powered by OpenAI and a voice model from Sonantic used for the DJ's voice, train
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/next-gen-ai/spotify.webp
 alt: Spotify DJ Promo visual
 credit: Spotify
 ---
+
 ::
 
 Spotify's algorithm for personalizing and finding exactly the user's music taste has been incredible. It can match music exactly to you without any major language model. The problem with Spotify currently is giving the user an experience that isn't the same. A common problem is for playlists or song radios the content is repeated, often in the same order.

@@ -13,9 +13,11 @@ alt: "Bing、Google 和 OpenAI 的徽标"
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/future-search-engines/youtube.webp
 alt: Youtube 搜索结果
 ---
+
 ::
 
 ## 人工智能
@@ -26,9 +28,11 @@ alt: Youtube 搜索结果
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/future-search-engines/chatgpt.webp
 alt: ChatGPT
 ---
+
 ::
 
 可以选择与 AI 交流问题或想法是一种奇怪但通常很有帮助的体验。 根据其训练数据集（主要涵盖 2021 年之前的信息），人工智能通常是准确的。 然而，由于是研究预习，其答案仍然存在许多错误和局限性，例如拒绝回答特定问题或给出不准确的计算。
@@ -41,12 +45,14 @@ ChatGPT 的功能已通过用户获得编码问题的答案、解决复杂的理
 
 人工智能技术有可能爆发战争，因为谷歌最近宣布他们将推出他们对 ChatGPT 的改编，称为 Bard，目前正在进行测试，预计将在未来几个月内公开发布。
 
-::vid
+::media
 ---
-source: https://storage.googleapis.com/gweb-uniblog-publish-prod/original_videos/Super_G_BRD2023_blogEXP_v024a.mp4
+
+source: https://cdn.xanzhu.com/v1/future-search-engines/search-gpt-bard.webp
+alt: Bard
 credit: Google
-thumbnail: https://storage.googleapis.com/gweb-uniblog-publish-prod/images/feb_6_AI_hero.width-1000.format-webp.webp
 ---
+
 ::
 
 与谷歌 AI 模型的可能区别在于对安全和提供准确信息的关注，因为他们最近投资了一家名为 Anthropic 的初创公司，该公司开发了一种名为 Claude 的 ChatGPT 替代品。 考虑到该模型可能用于训练的数据量和资源量，将道德标准视为导致该技术缓慢发布的一个因素非常重要。 在 :PageLink{title="Google 的博客" url="https://blog.google/innovation-and-ai/technology/ai/bard-google-ai-search-updates/"}上查找更多信息

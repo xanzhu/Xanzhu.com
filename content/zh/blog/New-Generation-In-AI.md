@@ -26,9 +26,11 @@ Microsoft 发布了带有 ChatGPT 的 Bing 搜索。 它目前运行的是第 4 
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/next-gen-ai/bing.webp
 alt: Bing 的新聊天机器人启动画面
 ---
+
 ::
 
 初次使用后，它在返回相关上下文和常识方面的答案时非常有帮助。 能够与 Bing 搜索集成，它本质上是扫描网站，然后提供带有选项的摘要，以通过提供的链接澄清或了解更多信息。 它混合了搜索其知识和仅搜索网络的功能。
@@ -37,9 +39,11 @@ alt: Bing 的新聊天机器人启动画面
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/next-gen-ai/bdialog.webp
 alt: Bing 聊天机器人对话框预览
 ---
+
 ::
 
 Bing 为用户提供的选项有限，而且经常会中断请求。 他们在必须建立新主题之前引入了响应限制，这会阻止现有对话并鼓励用户选择扫帚按钮以清除聊天。 此限制可能会防止模型超出范围并确保每个人都可以使用它。 值得考虑的一件有趣的事情是历史如何与这些模型一起工作。 在此阶段，它不会保存在任何可访问的地方，并会重置为默认的启动画面。
@@ -54,10 +58,12 @@ Bing 为用户提供的选项有限，而且经常会中断请求。 他们在�
 
 ::media
 ---
-source: https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/AI_features_feb6.gif
-alt: 吟游诗人 GIF
+
+source: https://cdn.xanzhu.com/v1/next-gen-ai/bard-ai-google-1.webp
+alt: 吟游诗人
 credit: Google
 ---
+
 ::
 
 预计未来几个月 Google 会发生更多变化和改进，从而提高其软件的准确性和功能。 一旦他们的语言模型 (LaMDA) 经过测试和完善以在 Bard 中使用，将应用更少的限制，从而允许用户在 Google 的海量数据存档中搜索并获得结果。 目前，这是一个缓慢的发布，不太可能成为 Bard 的最终产品。
@@ -68,12 +74,13 @@ credit: Google
 
 谷歌和微软都开始将软件与他们的人工智能解决方案一起发布，以帮助加快他们软件系列中的日常任务。 谷歌首先宣布他们正在努力在他们的软件中引入生成式 AI 工具，例如 Docs、Gmail 等。 这些新的 AI 功能将改善我们的工作方式，减少计划所花费的时间。 下面的例子展示了一个谷歌文档，它有一个类似 ChatGPT 的框，要求用户输入他们想要的信息，它会生成一个完整的文档！
 
-::vid
+::media
 ---
-source: https://storage.googleapis.com/gweb-uniblog-publish-prod/original_videos/Docs_Web_030623_1.mp4
+
+source: https://cdn.xanzhu.com/v1/next-gen-ai/bard-ai-google-2.webp
+alt: 吟游诗人
 credit: Google
 ---
-::
 
 阅读来自 :PageLink{title="Google" url="https://blog.google/innovation-and-ai/products/ai-developers-google-cloud-workspace/"} 的公告。
 
@@ -81,10 +88,12 @@ credit: Google
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/next-gen-ai/mfr.webp
 alt: Microsoft 生成式 AI 视觉
 credit: Microsoft
 ---
+
 ::
 
 阅读来自 :PageLink{title="Microsoft" url="https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/"}
@@ -105,10 +114,12 @@ GitHub 现有 Copilot 软件的新增功能引入了一个更复杂的解决方�
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/next-gen-ai/copilot.webp
 alt: GitHub Copilot X 宣传视频
 credit: GitHub
 ---
+
 ::
 
 作为编码的新伴侣，Copilot 解决了必须搜索 Stack Overflow 或其他无数论坛才能解决简单问题的问题。 许多设计人员和 Web 开发人员搜索“如何使 Div 居中”。 但直接在 Visual Studio Code 中，Copilot 将在代码旁边提供功能，就像 ChatGPT 一样，能够在编写代码时进行交谈和阅读。
@@ -129,10 +140,12 @@ Copilot 将成为所有开发人员的有用工具，改进生产就绪代码的
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/next-gen-ai/bse.webp
 alt: Brave 摘要可视化
 credit: Brave
 ---
+
 ::
 
 很多语言模型都没有识别信息的来源，具体来说，ChatGPT 显示信息但不识别信息的来源。 提供没有归因的结果，可以根据语言模型的训练内容设置偏差级别。 确保语言模型经过培训以尊重来源并减轻结果偏差至关重要。
@@ -141,10 +154,12 @@ credit: Brave
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/next-gen-ai/bdc.webp
 alt: Brave 在线摘要视觉
 credit: Brave
 ---
+
 ::
 
 Brave 的 AI 模型完全由 Brave 运行，并且不依赖第三方的语言模型解决方案（例如 ChatGPT），这在使用 Bing 或 Google 时脱颖而出。 他们的语言模型是内部开发的，在三种不同的大型语言模型或 LLM 上进行了训练，在他们的软件系列中遵循相同的精神，即独立和私有。 这些模型基于 BART、DeBerta 和他们自己的搜索结果数据，所有这些模型都经过训练以完成不同的任务，例如问答、分类和总结。
@@ -163,10 +178,12 @@ Spotify 正在做一些有点不同的事情，根据用户的历史数据，根
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/next-gen-ai/spotify.webp
 alt: Spotify DJ 宣传视觉
 credit: Spotify
 ---
+
 ::
 
 Spotify 用于个性化和准确找到用户音乐品味的算法令人难以置信。 它可以为您准确匹配音乐，无需任何主要语言模型。 Spotify 目前的问题是给用户带来了不一样的体验。 一个常见的问题是播放列表或歌曲收音机的内容经常以相同的顺序重复。

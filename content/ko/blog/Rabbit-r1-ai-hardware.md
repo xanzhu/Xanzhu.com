@@ -14,7 +14,15 @@ Rabbit은 CES 2024에서 R1 장치를 출시했습니다. 작업을 수행하는
 
 요즘 모든 것이 앱 스토어에서 다운로드할 수 있는 애플리케이션이라는 점을 감안할 때 모바일 장치에 대한 의존도에서 벗어나 방해 요소를 제거하는 것이 다음 단계가 될 수 있습니다. R1은 동반자로 작동하고 간단한 작업을 수행하는 모든 단계를 탐색할 필요성을 줄이도록 설계되었습니다. Rabbit은 모든 일상적인 작업을 처리하고 사용자의 의견을 요청하는 효율적인 응답을 제공하도록 R1을 설계했습니다.
 
-<Vid source="https://assets.lotofcarrots.com/media/home/section/desktop/4.mp4" credit="Rabbit" thumbnail="https://assets.lotofcarrots.com/media/home/section/desktop/4.webp"></Vid>
+::media
+---
+
+source: https://cdn.xanzhu.com/v1/rabbit-r1/r1-device.webp
+alt: Rabbit
+credit: Rabbit
+---
+
+::
 
 Rabbit의 CEO인 Jesse Lyu는 Uber를 특정 위치로 예약하고 단일 단계로 필요한 모든 맞춤 설정을 제공하는 것부터 사용 중인 제품에 대한 매우 흥미로운 데모를 제공했습니다. 음성 안내가 나오고 장치의 대형 동작 모델을 사용하여 확인을 위한 최종 동작을 계산하고 제공할 수 있습니다.
 
@@ -22,7 +30,15 @@ Rabbit의 CEO인 Jesse Lyu는 Uber를 특정 위치로 예약하고 단일 단�
 
 휴대폰과 함께 사용할 수 있도록 설계된 R1은 전용 애플리케이션을 통해 앱과 연결되도록 설계되었습니다.
 
-<Vid source="https://storage.quantum-engine.ai/Rabbits_Factory_4K_h264.mp4" credit="Rabbit" thumbnail="https://assets.lotofcarrots.com/media/home/section/desktop/4.webp"></Vid>
+::media
+---
+
+source: https://cdn.xanzhu.com/v1/rabbit-r1/r1-design.webp
+credit: Rabbit
+alt: Rabbit
+---
+
+::
 
 모든 것을 연결하면 계정을 도용할 수 있는 단일 진입점이 있다는 잠재적인 위험이 있습니다. 보안은 일반적으로 AI의 큰 관심사입니다. 일반적인 질문은 정보가 어디로 이동하며 보안이 유지되는가입니다.
 
@@ -36,9 +52,11 @@ R1에 대해 자세히 알아보려면 기조연설을 시청하세요.
 
 ::youtube
 ---
+
 video-id: 22wlLy7hKP4
 title: Rabbit R1 공개 영상
 ---
+
 ::
 
 이것의 좋은 점은 장치가 얼마나 상황을 인식할 수 있는지입니다. 데모에서는 R1에 "내가 늦을 거라고 모두에게 전해 주세요."라는 메시지가 언급되었습니다. 여기서 "모든 사람"이라는 표현이 사용되는 경우는 장치가 해당 상황과 관련된 목록이나 그룹을 제공하지 않고 모든 사람이 누구인지 아는 상황입니다. 이것이 시간이 지남에 따라 어떻게 발전하는지 보는 것은 흥미로울 것입니다.
@@ -65,9 +83,11 @@ Rabbit은 새로운 것이며 우리는 그들이 Rabbit OS와 R1을 통해 또 
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/rabbit-r1/inline-1.webp
 alt: Rabbit의 R1 하드웨어 장치는 화면과 촉각 버튼이 있는 눈에 띄는 주황색 디자인입니다.
 ---
+
 ::
 
 이 장치는 선주문이 진행되는 동안 AI를 가지고 놀고 무료로 기능을 확인하는 데 관심이 있다면 확인해 보세요. :PageLink{title="ChatGPT" url="https://chatgpt.com/"}, :PageLink{title="Bard" url="https://gemini.google.com/app"}, 아니면 시도해 보세요 :PageLink{title="CoPilot" url="https://www.microsoft.com/en-us/windows/ai-features"} Windows에서.

@@ -14,12 +14,14 @@ The rise in Artificial Intelligence has seen a lot of improvements in providing 
 
 Given everything these days is an application that can be downloaded from the app store, navigating away from reliance on mobile devices could be the next move to eliminate distractions. The R1 was designed to work as a companion and reduce the need to navigate through all the steps of doing simple tasks. Rabbit designed R1 to handle all the mundane tasks and provide you with a streamlined response, asking for your input.
 
-::vid
+::media
 ---
-source: https://assets.lotofcarrots.com/media/home/section/desktop/4.mp4
+
+source: https://cdn.xanzhu.com/v1/rabbit-r1/r1-device.webp
+alt: Rabbit
 credit: Rabbit
-thumbnail: https://assets.lotofcarrots.com/media/home/section/desktop/4.webp
 ---
+
 ::
 
 Rabbit's CEO, Jesse Lyu, gave a very interesting demo of the product in usage, from being able to book an Uber to a specific location and provide any customizations needed in a single step. A voice prompt is made, and using the device's Large Action Model, it can compute and give a final action for confirmation.
@@ -28,12 +30,14 @@ The device itself has a very striking bold orange design on the hardware. The de
 
 Designed to be a companion to your phone, the R1 is designed to connect with apps via a dedicated application.
 
-::vid
+::media
 ---
-source: https://storage.quantum-engine.ai/Rabbits_Factory_4K_h264.mp4
+
+source: https://cdn.xanzhu.com/v1/rabbit-r1/r1-design.webp
 credit: Rabbit
-thumbnail: https://assets.lotofcarrots.com/media/home/section/desktop/4.webp
+alt: Rabbit
 ---
+
 ::
 
 A potential risk of having everything connected is that there is a single entry point for hijacking accounts. Security is a big concern for AI in general; the common questions are: where does the information go, and is it secured?
@@ -48,9 +52,11 @@ Watch the keynote to learn more about the R1:
 
 ::youtube
 ---
+
 video-id: 22wlLy7hKP4
 title: "Introducing r1"
 ---
+
 ::
 
 A good point of this is how context-aware the device could be. The demo mentioned a prompt to the R1 stating, "Tell everyone I'm going to be late." Where the usage of "everyone" comes into play here is in what context does the device know who everyone is without providing a list or a group of people relevant to the context. It will be interesting to see how this develops over time.
@@ -77,9 +83,11 @@ If you would like to learn more about :PageLink{title="Rabbit" url="https://www.
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/rabbit-r1/inline-1.webp
 alt: Rabbit R1 Hardware device a striking orange design with a screen and tactile buttons
 ---
+
 ::
 
 While this device is up for pre-order, if you are interested in playing around with AI and seeing the capabilities for free, check out :PageLink{title="ChatGPT" url="https://chatgpt.com/"}, :PageLink{title="Gemini" url="https://gemini.google.com/chat"}, or Try :PageLink{title="CoPilot" url="https://www.microsoft.com/en-us/windows/ai-features"} on Windows.

@@ -1,6 +1,6 @@
 ---
 title: "Willow：谷歌在量子计算领域的突破"
-desc: "探索 Google 的 Willow 量子芯片如何重塑计算极限、打破记录并推动科学发现。更多信息请访问 Xanzhu。"
+description: "探索 Google 的 Willow 量子芯片如何重塑计算极限、打破记录并推动科学发现。更多信息请访问 Xanzhu。"
 date: "2024-12-18"
 tag: "技术"
 img: "/images/blog/covers/willow-quantum-computing.webp"
@@ -30,9 +30,11 @@ Willow 取得的最重大突破是它能够减少错误。
 
 ::youtube
 ---
+
 video-id: l_KrC1mzd0g
 title: 谷歌量子计算机 Willow 介绍视频
 ---
+
 ::
 
 ### 量子纠错
@@ -51,10 +53,12 @@ Willow 的性能使用随机电路采样 (RCS) 基准进行测量，该基准被
 
 ::media
 ---
-source: https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_Fig1.width-1000.format-webp.webp
+
+source: https://cdn.xanzhu.com/v1/willow-google/willow-google-1.webp
 alt: 插图显示 Willow 的 RCS 性能可与最好的超级计算机媲美
 credit: Google
 ---
+
 ::
 
 Willow 在这项基准测试中的得分超过了目前所有运行的超级计算机的指标。
@@ -67,10 +71,12 @@ Willow 很可能为量子计算的未来发展铺平道路，特别是在使计�
 
 ::media
 ---
-source: https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_Fig4.width-1000.format-webp.webp
+
+source: https://cdn.xanzhu.com/v1/willow-google/willow-google-2.webp
 alt: Willow 里程碑成就的里程碑图，已完成里程碑 1 和 2，未来里程碑将达到 6
 credit: Google
 ---
+
 ::
 
 谷歌的量子计算路线图现已达到第二个里程碑，并随着研发的进展而不断推进。这项技术有望引领全球计算和处理能力的未来。
