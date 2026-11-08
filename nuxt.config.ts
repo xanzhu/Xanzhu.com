@@ -72,7 +72,9 @@ export default defineNuxtConfig({
       redirectOn: "root",
       cookieSecure: true,
     },
-    hmr: true,
+    experimental: {
+      compactRoutes: true,
+    },
   },
 
   site: {
@@ -199,7 +201,10 @@ export default defineNuxtConfig({
         ],
         "font-src": ["'self'", "data:"],
         "object-src": ["'none'"],
-        "script-src-attr": ["'none'"],
+        "script-src-attr": [
+          "'unsafe-hashes'",
+          "'sha256-bwK6T5wZVTANitXbrTsel7kl/PyCjCd/Dq5Qoz3imjM='", // Tied to nuxt/img onError
+        ],
         "style-src-attr": ["'unsafe-inline'"],
         "form-action": ["'self'"],
         "connect-src": [
@@ -245,11 +250,7 @@ export default defineNuxtConfig({
   compatibilityDate: "2026-11-04",
 
   scripts: {
-    registry: {
-      youtubePlayer: {
-        trigger: "onNuxtReady",
-      },
-    },
+    privacy: true,
   },
 
   sourcemap: isDev,
@@ -269,8 +270,8 @@ export default defineNuxtConfig({
   },
 
   experimental: {
-    // Temp fix problems with modules not supporting Nuxt 4.6 imports syntax
-    nitroAutoImports: true,
+    nitroAutoImports: true, // Temp fix problems with modules not supporting Nuxt 4.6 imports syntax
+    typedPages: false, // Temp disabled waiting for correct method w i18n
   },
 
   // Experimental Vue Features
