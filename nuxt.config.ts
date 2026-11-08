@@ -99,8 +99,6 @@ export default defineNuxtConfig({
   routeRules: {
     "/**": {
       headers: {
-        "x-robots-tag":
-          "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
         "Cache-Control": "public, max-age=3600, stale-while-revalidate=86400",
       },
     },
@@ -117,7 +115,7 @@ export default defineNuxtConfig({
     "/health": {
       security: { headers: false },
       prerender: false,
-      headers: { "Cache-Control": "no-store" },
+      headers: { "Cache-Control": "no-store", "x-robots-tag": "nofollow, noindex" },
     },
   },
 
