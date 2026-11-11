@@ -1,6 +1,6 @@
 {
   "name": "xanzhu.com",
-  "version": "2.3.4",
+  "version": "3.0.10",
   "private": true,
   "license": "MIT",
   "type": "module",
@@ -28,17 +28,17 @@
     "nuxt": "^4.6.4",
     "nuxt-security": "^2.7.0",
     "vue": "^3.5.45",
-    "vue-router": "^5.4.0"
+    "vue-router": "^5.5.0"
   },
   "devDependencies": {
     "@iconify-json/line-md": "^1.2.16",
-    "@iconify-json/lucide": "^1.2.151",
+    "@iconify-json/lucide": "^1.2.153",
     "@iconify-json/ri": "^1.2.10",
     "@unocss/nuxt": "^66.12.0",
     "@unocss/preset-wind4": "^66.12.0",
-    "@x18n/core": "^0.1.13",
+    "@x18n/core": "^0.1.14",
     "lightningcss": "^1.33.0",
-    "oxfmt": "^0.77.0",
-    "wrangler": "^4.158.0"
+    "oxfmt": "^0.78.0",
+    "wrangler": "^4.160.0"
   }
 }
