@@ -1,74 +1,74 @@
 <script setup lang="ts">
 const { post } = defineProps<{
   post: {
-    path?: string
-    title: string
-  }
-}>()
+    path?: string;
+    title: string;
+  };
+}>();
 
-const { t } = useI18n()
-const config = useRuntimeConfig()
-const copied = ref(false)
+const { t } = useI18n();
+const config = useRuntimeConfig();
+const copied = ref(false);
 
-const TRAILING_SLASH = /\/$/
+const TRAILING_SLASH = /\/$/;
 
 const fullUrl = computed(() => {
-  const base = (config.public.i18n.baseUrl || '').replace(TRAILING_SLASH, '')
-  return `${base}${post.path || ''}`
-})
+  const baseUrl = config.public.i18n.baseUrl;
+  const base = (typeof baseUrl === "string" ? baseUrl : "").replace(/\/+$/, "");
+  return `${base}${post.path || ""}`;
+});
 
 // Simple Copy Link
 async function copyLink() {
   try {
-    await navigator.clipboard.writeText(fullUrl.value)
-    copied.value = true
+    await navigator.clipboard.writeText(fullUrl.value);
+    copied.value = true;
     setTimeout(() => {
-      copied.value = false
-    }, 2000)
-  }
-  catch (err) {
-    console.error('Failed to copy: ', err)
+      copied.value = false;
+    }, 2000);
+  } catch (err) {
+    console.error("Failed to copy: ", err);
   }
 }
 
 const socials = computed(() => {
-  const url = encodeURIComponent(fullUrl.value)
-  const title = encodeURIComponent(post.title)
-  const emailBody = encodeURIComponent(t('ui.sharing.email'))
+  const url = encodeURIComponent(fullUrl.value);
+  const title = encodeURIComponent(post.title);
+  const emailBody = encodeURIComponent(t("ui.sharing.email"));
 
   return [
     {
-      name: 'twitter',
+      name: "twitter",
       url: `https://twitter.com/intent/tweet?url=${url}&text=${title}&via=Xanzhu1`,
-      icon: 'ri:twitter-x-line',
+      icon: "ri:twitter-x-line",
     },
     {
-      name: 'bluesky',
+      name: "bluesky",
       url: `https://bsky.app/intent/compose?text=${title}%20${url}`,
-      icon: 'ri:bluesky-fill',
+      icon: "ri:bluesky-fill",
     },
     {
-      name: 'threads',
+      name: "threads",
       url: `https://threads.net/intent/post?text=${title}%20${url}`,
-      icon: 'ri:threads-line',
+      icon: "ri:threads-line",
     },
     {
-      name: 'linkedin',
+      name: "linkedin",
       url: `https://www.linkedin.com/sharing/share-offsite/?url=${url}`,
-      icon: 'ri:linkedin-fill',
+      icon: "ri:linkedin-fill",
     },
     {
-      name: 'reddit',
+      name: "reddit",
       url: `https://www.reddit.com/submit?url=${url}&title=${title}`,
-      icon: 'ri:reddit-fill',
+      icon: "ri:reddit-fill",
     },
     {
-      name: 'email',
+      name: "email",
       url: `mailto:?subject=${title}&body=${emailBody}: ${url}`,
-      icon: 'ri:mail-open-fill',
+      icon: "ri:mail-open-fill",
     },
-  ]
-})
+  ];
+});
 </script>
 
 <template>
@@ -104,7 +104,11 @@ const socials = computed(() => {
       <Icon
         :name="copied ? 'ri:check-line' : 'ri:link'"
         class="h-5 w-5 transition-colors"
-        :class="copied ? 'text-green-500' : 'opacity-80 group-hover:opacity-100 group-hover:text-brand-light dark:group-hover:text-brand-dark'"
+        :class="
+          copied
+            ? 'text-green-500'
+            : 'opacity-80 group-hover:opacity-100 group-hover:text-brand-light dark:group-hover:text-brand-dark'
+        "
       />
       <span class="sr-only">{{ copied ? t('ui.sharing.copied') : t('ui.sharing.copy') }}</span>
     </button>
