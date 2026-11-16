@@ -38,7 +38,7 @@
     "@unocss/preset-wind4": "^66.13.0",
     "@x18n/core": "^0.1.14",
     "lightningcss": "^1.33.0",
-    "oxfmt": "^0.78.0",
+    "oxfmt": "^0.79.0",
     "unocss": "66.13.0",
     "wrangler": "^4.162.0"
   }
