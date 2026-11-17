@@ -1,6 +1,6 @@
 ---
 title: "Willow: Google's Breakthrough in Quantum Computing"
-desc: "Explore how Google's Willow quantum chip is reshaping the limits of computing, breaking records, and advancing scientific discovery. Find out more at Xanzhu."
+description: "Explore how Google's Willow quantum chip is reshaping the limits of computing, breaking records, and advancing scientific discovery. Find out more at Xanzhu."
 date: "2024-12-18"
 tag: "Technology"
 img: "/images/blog/covers/willow-quantum-computing.webp"
@@ -30,9 +30,11 @@ The development of this chip has been 10 years in the making. Google's Quantum A
 
 ::youtube
 ---
+
 video-id: l_KrC1mzd0g
 title: "Quantum's next leap: Ten septillion years beyond-classical"
 ---
+
 ::
 
 ### Quantum Error Correction
@@ -51,10 +53,12 @@ Willow's performance is measured using the Random Circuit Sampling (RCS) benchma
 
 ::media
 ---
-source: https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_Fig1.width-1000.format-webp.webp
-alt: An illustrated card reading  Willow's RCS performance is on par with the best supercomputers
+
+source: https://cdn.xanzhu.com/v1/willow-google/willow-google-1.webp
+alt: An illustrated card reading Willow's RCS performance is on par with the best supercomputers
 credit: Google
 ---
+
 ::
 
 Willow's score on this benchmark surpasses the metrics of all currently operational supercomputers.
@@ -67,10 +71,12 @@ To date, no quantum computer has outperformed a supercomputer in a relevant appl
 
 ::media
 ---
-source: https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_Fig4.width-1000.format-webp.webp
+
+source: https://cdn.xanzhu.com/v1/willow-google/willow-google-2.webp
 alt: A milestone graph of Willow's Milestone achievements, completing milestones 1 and 2 with future milestones up until 6
 credit: Google
 ---
+
 ::
 
 Google's quantum computing roadmap has now reached its second milestone and continues to advance as research and development progress. This technology is poised to lead the future of global computing and processing power.

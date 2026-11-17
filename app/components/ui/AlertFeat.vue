@@ -1,38 +1,25 @@
 <script setup lang="ts">
-const { link, desc, access, title, date } = defineProps<{
-  link?: string
-  desc?: string
-  access?: boolean
-  title?: string
-  date?: string
-}>()
+const { desc, title } = defineProps<{
+  desc?: string;
+  title?: string;
+}>();
 
-const { t } = useI18n()
-const localePath = useLocalePath()
+const { t } = useI18n();
 </script>
 
 <template>
   <div
-    class="text-sm mx2 mb-5 p5 b-gray-300 rounded-md b-dashed max-w-md backdrop-blur-xl backdrop-filter dark:(text-white b-dark-300)"
+    class="text-sm mx2 mb-5 p5 core-border bg-neutral-200 rounded-md b-dashed text-black dark:(text-white bg-neutral-900)"
   >
-    <h1 class="text-xl font-semibold m-0">
-      {{ title ?? t('alert.feature') }}
-    </h1>
+    <div class="flex items-center space-x-2">
+      <Icon name="lucide:triangle-alert" class="h5 w5" />
+      <h1 class="text-xl font-semibold m-0">
+        {{ title ?? t("app.alert.title") }}
+      </h1>
+    </div>
 
     <p class="font-normal">
-      {{ desc ?? t('alert.maintenance') }}
-    </p>
-
-    <NuxtLink
-      v-if="access && link"
-      :to="localePath(link)"
-      class="text-[#FF0] no-underline animate-bounce"
-    >
-      {{ t('alert.view') }}
-    </NuxtLink>
-
-    <p v-if="date" class="text-sm font-normal mt-2">
-      Updated: {{ date }}
+      {{ desc ?? t("app.alert.desc") }}
     </p>
   </div>
 </template>

@@ -1,25 +1,42 @@
 <script setup lang="ts">
-import type { Collections } from '@nuxt/content'
+import type { Collections } from "@nuxt/content";
+import AlertFeat from "~/components/ui/AlertFeat.vue";
 
-const { locale } = useI18n()
+const { locale, t } = useI18n();
 
-const collection = computed(() => `resources_${locale.value}` as keyof Collections)
+const collection = computed(() => `resources_${locale.value}` as keyof Collections);
 
-const { data: allContent } = await useAsyncData(`resources-index-${locale.value}`, () =>
-  queryCollection(collection.value).all(), { dedupe: 'defer' })
+const { data: allContent } = await useAsyncData(
+  `resources-index-${locale.value}`,
+  () => queryCollection(collection.value).all(),
+  { dedupe: "defer" },
+);
 
 const pageIndex = computed(() => {
-  return allContent.value?.find(item =>
-    item.id === `${collection.value}/resources/index.md`
-    || item.id === `${collection.value}/${locale.value}/resources/index.md`,
-  )
-})
+  return allContent.value?.find(
+    (item) =>
+      item.id === `${collection.value}/resources/index.md` ||
+      item.id === `${collection.value}/${locale.value}/resources/index.md`,
+  );
+});
 
-const seoImage = 'https://images.pexels.com/photos/27206011/pexels-photo-27206011.jpeg'
-useLangMeta('seo.resources', seoImage)
+const seoTitle = computed(() => t("app.seo.resourcesTitle"));
+const seoDesc = computed(() => t("app.seo.resourcesDesc"));
+
+useSeoMeta({
+  title: seoTitle,
+  description: seoDesc,
+  ogTitle: seoTitle,
+  ogDescription: seoDesc,
+  ogImage: "https://cdn.xanzhu.com/2026/defaults/xanzhu-default-page.webp",
+  ogType: "website",
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
+});
 </script>
 
 <template>
+  <AlertFeat />
   <div class="text-neutral-9 bg-white flex flex-col 2xl:px35 md:(py4 flex-row gap-4) xl:px28">
     <LazyResourcesSidebar />
 
@@ -29,22 +46,14 @@ useLangMeta('seo.resources', seoImage)
       tabindex="-1"
       aria-labelledby="page-title"
     >
-      <h1
-        id="page-title"
-        class="text-2xl text-white m0 px4 py2 bg-black flex w-fit"
-      >
+      <h1 id="page-title" class="text-2xl text-white m0 px4 py2 bg-black flex w-fit">
         {{ pageIndex.title }}
       </h1>
-
       <p class="text-neutral-900 m0 px4 py3 b-1 b-neutral-300 b-solid bg-neutral-100 w-fit">
         {{ pageIndex.description }}
       </p>
 
-      <ContentRenderer
-        :value="pageIndex"
-        class="max-w-none prose"
-        aria-label="Main content"
-      />
+      <ContentRenderer :value="pageIndex" class="max-w-none prose" aria-label="Main content" />
     </main>
   </div>
 </template>

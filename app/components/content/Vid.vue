@@ -1,11 +1,11 @@
 <script setup lang="ts">
 const { source, credit, thumbnail } = defineProps<{
-  source: string
-  credit?: string
-  thumbnail?: string
-}>()
+  source: string;
+  credit?: string;
+  thumbnail?: string;
+}>();
 
-const { t } = useI18n()
+const { t } = useI18n();
 </script>
 
 <template>
@@ -18,14 +18,14 @@ const { t } = useI18n()
       playsinline
       :poster="thumbnail"
     >
-      <source :src="source">
+      <source :src="source" />
     </video>
 
     <figcaption
       v-if="credit"
       class="text-xs text-gray-600 leading-relaxed font-mono mt-1 text-left opacity-85 dark:text-light-900"
     >
-      {{ t('ui.content.source') }}{{ `: ${credit}` }}
+      {{ t("common.article.source") }}{{ `: ${credit}` }}
     </figcaption>
   </figure>
 </template>

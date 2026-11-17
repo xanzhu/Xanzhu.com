@@ -1,6 +1,6 @@
 ---
 title: "Willow: 양자 컴퓨팅 분야에서 Google의 획기적인 발전"
-desc: "Google의 Willow 양자 칩이 컴퓨팅의 한계를 어떻게 재편하고, 기록을 깨고, 과학적 발견을 발전시키고 있는지 알아보세요. Xanzhu에서 자세히 알아보세요."
+description: "Google의 Willow 양자 칩이 컴퓨팅의 한계를 어떻게 재편하고, 기록을 깨고, 과학적 발견을 발전시키고 있는지 알아보세요. Xanzhu에서 자세히 알아보세요."
 date: "2024-12-18"
 tag: "기술"
 img: "/images/blog/covers/willow-quantum-computing.webp"
@@ -30,9 +30,11 @@ Willow는 벤치마크를 수행한 후 5분 이내에 표준 벤치마크 계�
 
 ::youtube
 ---
+
 video-id: l_KrC1mzd0g
 title: Google의 Willow 양자 컴퓨터 소개 영상
 ---
+
 ::
 
 ### 양자 오류 수정
@@ -51,10 +53,12 @@ Willow의 성능은 오늘날 양자 컴퓨터에 가장 어려운 지표로 간
 
 ::media
 ---
-source: https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_Fig1.width-1000.format-webp.webp
+
+source: https://cdn.xanzhu.com/v1/willow-google/willow-google-1.webp
 alt: 윌로우의 RCS 성능이 최고의 슈퍼컴퓨터와 동등하다는 것을 알려주는 그림 카드
 credit: Google
 ---
+
 ::
 
 이 벤치마크에서 Willow의 점수는 현재 운영 중인 모든 슈퍼컴퓨터의 지표를 능가합니다.
@@ -67,10 +71,12 @@ Willow는 양자 컴퓨팅의 미래 발전, 특히 계산을 실제 시나리�
 
 ::media
 ---
-source: https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_Fig4.width-1000.format-webp.webp
+
+source: https://cdn.xanzhu.com/v1/willow-google/willow-google-2.webp
 alt: 윌로우의 마일스톤 달성에 대한 마일스톤 그래프, 마일스톤 1 및 2 완료, 향후 마일스톤 6까지
 credit: Google
 ---
+
 ::
 
 구글의 양자 컴퓨팅 로드맵은 이제 두 번째 이정표에 도달했으며 연구 개발이 진행됨에 따라 계속 발전하고 있습니다. 이 기술은 글로벌 컴퓨팅 및 처리 능력의 미래를 이끌 준비가 되었습니다.

@@ -1,55 +1,65 @@
 <script setup lang="ts">
-import type { Collections } from '@nuxt/content'
+import type { Collections } from "@nuxt/content";
 
-const config = useRuntimeConfig()
-const { locale, t } = useI18n()
-const route = useRoute()
-const collectionName = `blog_${locale.value}` as keyof Collections
-const currentPath = route.path
+type BlogCollection = Extract<keyof Collections, `blog_${string}`>;
 
-const { data: posts } = await useAsyncData(
-  `blogArticles-${locale.value}`,
-  () => queryCollection(collectionName)
-    .select('title', 'date', 'img', 'description', 'path', 'tag', 'alt')
-    .order('date', 'DESC')
+const { locale, t } = useI18n();
+const { url: siteUrl } = useSiteConfig();
+
+const route = useRoute();
+const collectionName = `blog_${locale.value}` as BlogCollection;
+const currentPath = route.path;
+
+const { data: posts } = await useAsyncData(`blogArticles-${locale.value}`, () =>
+  queryCollection(collectionName)
+    .select("title", "date", "img", "description", "path", "tag", "alt")
+    .order("date", "DESC")
     .all(),
-  { dedupe: 'defer' },
-)
+);
 
-const seoImage = 'https://images.pexels.com/photos/27277185/pexels-photo-27277185.jpeg'
-useLangMeta('seo.blog', seoImage)
+const seoImage = "https://cdn.xanzhu.com/2026/defaults/xanzhu-default-page.webp";
+const seoTitle = computed(() => t("app.seo.blogTitle"));
+const seoDesc = computed(() => t("app.seo.blogDesc"));
 
-const baseUrl = config.public.i18n.baseUrl
+useSeoMeta({
+  title: seoTitle,
+  description: seoDesc,
+  ogTitle: seoTitle,
+  ogDescription: seoDesc,
+  ogImage: seoImage,
+  ogType: "website",
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
+});
 
-useHead({
-  script: [
-    {
-      type: 'application/ld+json',
-      innerHTML: computed(() => JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'Blog',
-        '@id': `${baseUrl}${currentPath}`,
-        'name': t('seo.blog.title'),
-        'url': `${baseUrl}${currentPath}`,
-        'description': t('seo.blog.desc'),
-        'inLanguage': locale.value,
-        'publisher': {
-          '@id': 'https://xanzhu.com/#organization',
-        },
-      })),
+const pageUrl = new URL(currentPath, siteUrl).href;
+
+const jsonLd = computed(() =>
+  JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "@id": pageUrl,
+    name: seoTitle.value,
+    url: pageUrl,
+    description: seoDesc.value,
+    inLanguage: locale.value,
+    publisher: {
+      "@id": `${siteUrl}/#organization`,
     },
-  ],
-})
+  }).replace(/</g, "\\u003c"),
+);
+
+useHead({ script: [{ type: "application/ld+json", innerHTML: jsonLd }] });
 </script>
 
 <template>
   <main class="text-black mx-auto space-y-10 dark:text-white sm:mb-10 2xl:px35 xl:px28">
     <div class="mx-4 mt-5 flex flex-col space-y-2 lg:mx-10 sm:(mx-10 mt-15)">
       <h1 class="text-3xl font-400 mb0 sm:text-5xl">
-        {{ t("blog.h1") }}
+        {{ t("app.blog.heading") }}
       </h1>
       <p class="text-md font-400 mt2 op70 break-words sm:(text-xl w2/3) dark:text-gray-300">
-        {{ t("blog.desc") }}
+        {{ t("app.blog.subHeading") }}
       </p>
     </div>
     <ul
@@ -60,9 +70,17 @@ useHead({
         <article>
           <NuxtLinkLocale class="group no-underline flex flex-col" :to="article.path">
             <NuxtImg
-              v-if="article.img" crossorigin="anonymous" :alt="article.alt" :title="article.alt" :loading="index < 3 ? 'eager' : 'lazy'"
-              :fetchpriority="index === 0 ? 'high' : 'auto'" decoding="async"
-              height="369" width="577" fit="cover" format="webp"
+              v-if="article.img"
+              crossorigin="anonymous"
+              :alt="article.alt"
+              :title="article.alt"
+              :loading="index < 3 ? 'eager' : 'lazy'"
+              :fetchpriority="index === 0 ? 'high' : 'auto'"
+              decoding="async"
+              height="369"
+              width="577"
+              fit="cover"
+              format="webp"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 557px"
               class="core-border rounded-md h-full w-full transform md:(transition duration-400 ease-in-out group-hover:scale-102)"
               :src="article.img"
@@ -76,7 +94,9 @@ useHead({
                   {{ article.tag }}
                 </p>
               </div>
-              <h2 class="text-xl font-semibold m0 underline-1 group-hover:(underline underline-offset-4)">
+              <h2
+                class="text-xl font-semibold m0 underline-1 group-hover:(underline underline-offset-4)"
+              >
                 {{ article.title }}
               </h2>
               <p class="text-neutral-600 mt2 dark:text-neutral-300">
@@ -88,7 +108,7 @@ useHead({
       </li>
     </ul>
     <p v-else class="text-center op70">
-      {{ t('error.blog.notFound') }}
+      {{ t("common.article.notFound") }}
     </p>
   </main>
 </template>

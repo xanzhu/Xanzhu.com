@@ -13,9 +13,11 @@ Searching the web has been as simple as typing in what you want and being given 
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/future-search-engines/youtube.webp
 alt: Youtube Search Results
 ---
+
 ::
 
 ## Artificial Intelligence
@@ -26,9 +28,11 @@ Artificial Intelligence, or AI, is where our future is heading. Systems will be 
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/future-search-engines/chatgpt.webp
 alt: ChatGPT
 ---
+
 ::
 
 Having the option to communicate ideas, questions, or thoughts with an AI is a strange but often helpful experience. Based on its training dataset, which mostly covers information until 2021, the AI is generally accurate. However, as it is a research preview, there are still many bugs and limitations to its answers, such as refusing to answer specific questions or giving inaccurate calculations.
@@ -41,12 +45,14 @@ Microsoft invested heavily in OpenAI to make use of technology like ChatGPT, inv
 
 There is potential for a war in AI technologies as Google recently announced that they will be introducing their adaptation of ChatGPT, called Bard, which is currently being tested with a public release expected in the next few months.
 
-::vid
+::media
 ---
-source: https://storage.googleapis.com/gweb-uniblog-publish-prod/original_videos/Super_G_BRD2023_blogEXP_v024a.mp4
+
+source: https://cdn.xanzhu.com/v1/future-search-engines/search-gpt-bard.webp
+alt: Bard
 credit: Google
-thumbnail: https://storage.googleapis.com/gweb-uniblog-publish-prod/images/feb_6_AI_hero.width-1000.format-webp.webp
 ---
+
 ::
 
 The possible difference with Google's AI model is the focus on safety and providing accurate information, as they recently invested in a startup called Anthropic that has developed an alternative to ChatGPT called Claude. Given the amount of data and resources this model will likely be trained on, it is important to consider ethical standards as a factor in the slow release of this technology. Find more information on :PageLink{title="Google's blog" url="https://blog.google/innovation-and-ai/technology/ai/bard-google-ai-search-updates/"}

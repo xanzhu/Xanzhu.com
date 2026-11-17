@@ -14,12 +14,14 @@ Rabbit 在 CES 2024 上发布了 R1 设备。该设备旨在消除执行任务�
 
 鉴于如今一切都是可以从应用程序商店下载的应用程序，摆脱对移动设备的依赖可能是消除干扰的下一步举措。 R1 旨在作为伴侣工作，减少完成简单任务的所有步骤的需要。 Rabbit 设计 R1 来处理所有平凡的任务，并为您提供简化的响应，询问您的意见。
 
-::vid
+::media
 ---
-source: https://assets.lotofcarrots.com/media/home/section/desktop/4.mp4
+
+source: https://cdn.xanzhu.com/v1/rabbit-r1/r1-device.webp
+alt: Rabbit
 credit: Rabbit
-thumbnail: https://assets.lotofcarrots.com/media/home/section/desktop/4.webp
 ---
+
 ::
 
 Rabbit 的首席执行官 Jesse Lyu 对该产品的使用情况进行了非常有趣的演示，从能够预订 Uber 到特定位置，到一步完成所需的任何定制。 发出语音提示，并使用设备的大型动作模型，它可以计算并给出最终动作以供确认。
@@ -28,12 +30,14 @@ Rabbit 的首席执行官 Jesse Lyu 对该产品的使用情况进行了非常�
 
 R1 旨在成为您手机的伴侣，旨在通过专用应用程序与应用程序连接。
 
-::vid
+::media
 ---
-source: https://storage.quantum-engine.ai/Rabbits_Factory_4K_h264.mp4
+
+source: https://cdn.xanzhu.com/v1/rabbit-r1/r1-design.webp
 credit: Rabbit
-thumbnail: https://assets.lotofcarrots.com/media/home/section/desktop/4.webp
+alt: Rabbit
 ---
+
 ::
 
 将一切连接起来的潜在风险是劫持帐户有一个入口点。 总体而言，安全性是人工智能的一大关注点。 常见的问题是：信息去了哪里？信息是否安全？
@@ -48,9 +52,11 @@ R1 提到登录过程将由本机第三方登录系统处理，这意味着所�
 
 ::youtube
 ---
+
 video-id: 22wlLy7hKP4
 title: Rabbit R1 发布视频
 ---
+
 ::
 
 这样做的一个好处是设备的上下文感知能力。 演示中提到了对 R1 的提示：“告诉大家我要迟到了。” 这里“每个人”的用法发挥作用的是设备在什么上下文中知道每个人是谁，而无需提供与上下文相关的列表或一组人。 随着时间的推移，看看这种情况如何发展将会很有趣。
@@ -77,9 +83,11 @@ Rabbit 是新产品，我们有兴趣看看他们还会用 Rabbit OS 和 R1 做�
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/rabbit-r1/inline-1.webp
 alt: Rabbit 的 R1 硬件设备采用醒目的橙色设计，配有屏幕和触觉按钮
 ---
+
 ::
 
 虽然该设备已接受预订，但如果您有兴趣尝试 AI 并免费了解其功能，请查看 :PageLink{title="ChatGPT" url="https://chatgpt.com/"}, :PageLink{title="Bard" url="https://gemini.google.com/app"}, or Try :PageLink{title="CoPilot" url="https://www.microsoft.com/en-us/windows/ai-features"} 在 Windows 上。

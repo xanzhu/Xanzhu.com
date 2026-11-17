@@ -1,5 +1,5 @@
-import { defineCollection, z } from '@nuxt/content'
-import { defineSitemapSchema } from '@nuxtjs/sitemap/content'
+import { defineCollection, z } from "@nuxt/content";
+import { defineSitemapSchema } from "@nuxtjs/sitemap/content";
 
 const commonContentSchema = z.object({
   title: z.string().min(1),
@@ -11,11 +11,11 @@ const commonContentSchema = z.object({
   alt: z.string().optional(),
   toc: z.string().optional(),
   updated: z.string().optional(),
-})
+});
 
 interface SitemapImage {
-  loc: string
-  title?: string
+  loc: string;
+  title?: string;
 }
 
 function createImageExtractor(name: string) {
@@ -23,63 +23,61 @@ function createImageExtractor(name: string) {
     z,
     name,
     onUrl: (url: any, entry: any) => {
-      const CDN_BASE = 'https://cdn.xanzhu.com/'
-      const CDN_EXTENSIONS = ['.webp', '.jpg', '.png', '.jpeg']
-      const images: SitemapImage[] = []
-      const imageSet = new Set<string>()
+      const CDN_BASE = "https://cdn.xanzhu.com/";
+      const CDN_EXTENSIONS = [".webp", ".jpg", ".png", ".jpeg"];
+      const images: SitemapImage[] = [];
+      const imageSet = new Set<string>();
 
       if (entry.img) {
-        const imgLoc = String(entry.img)
-        const loc = imgLoc.startsWith('https://') ? imgLoc : `https://xanzhu.com${imgLoc}`
-        images.push({ loc, title: String(entry.title || '') })
-        imageSet.add(loc)
+        const imgLoc = String(entry.img);
+        const loc = imgLoc.startsWith("https://") ? imgLoc : `https://xanzhu.com${imgLoc}`;
+        images.push({ loc, title: String(entry.title || "") });
+        imageSet.add(loc);
       }
 
-      if (entry.body && typeof entry.body === 'object') {
-        const bodyString = JSON.stringify(entry.body)
-        let searchStart = 0
+      if (entry.body && typeof entry.body === "object") {
+        const bodyString = JSON.stringify(entry.body);
+        let searchStart = 0;
 
         while (true) {
-          const idx = bodyString.indexOf(CDN_BASE, searchStart)
-          if (idx === -1)
-            break
+          const idx = bodyString.indexOf(CDN_BASE, searchStart);
+          if (idx === -1) break;
 
-          const end = bodyString.indexOf('"', idx)
-          if (end === -1)
-            break
+          const end = bodyString.indexOf('"', idx);
+          if (end === -1) break;
 
-          const src = bodyString.slice(idx, end).split('\\').join('')
+          const src = bodyString.slice(idx, end).split("\\").join("");
 
-          if (CDN_EXTENSIONS.some(ext => src.endsWith(ext)) && !imageSet.has(src)) {
-            imageSet.add(src)
-            images.push({ loc: src })
+          if (CDN_EXTENSIONS.some((ext) => src.endsWith(ext)) && !imageSet.has(src)) {
+            imageSet.add(src);
+            images.push({ loc: src });
           }
 
-          searchStart = end
+          searchStart = end;
         }
       }
 
-      url.images = images
+      url.images = images;
 
-      const lastmodSource = entry.updated || entry.date
+      const lastmodSource = entry.updated || entry.date;
       if (lastmodSource) {
-        const parsed = new Date(lastmodSource)
+        const parsed = new Date(lastmodSource);
         if (!Number.isNaN(parsed.getTime())) {
-          url.lastmod = parsed.toISOString()
+          url.lastmod = parsed.toISOString();
         }
       }
 
-      return url
+      return url;
     },
-  })
+  });
 }
 
-const pageTypeConfig = { type: 'page' as const }
-const locales = ['en', 'ko', 'zh'] as const
-const collections: Record<string, any> = {}
+const pageTypeConfig = { type: "page" as const };
+const locales = ["en", "ko", "zh"] as const;
+const collections: Record<string, any> = {};
 
 for (const locale of locales) {
-  const prefix = locale === 'en' ? '' : `/${locale}`
+  const prefix = locale === "en" ? "" : `/${locale}`;
 
   collections[`blog_${locale}`] = defineCollection({
     ...pageTypeConfig,
@@ -87,7 +85,7 @@ for (const locale of locales) {
     schema: commonContentSchema.extend({
       sitemap: createImageExtractor(`blog_${locale}`),
     }),
-  })
+  });
 
   collections[`resources_${locale}`] = defineCollection({
     ...pageTypeConfig,
@@ -95,7 +93,7 @@ for (const locale of locales) {
     schema: commonContentSchema.extend({
       sitemap: defineSitemapSchema({ z }),
     }),
-  })
+  });
 }
 
-export { collections }
+export { collections };

@@ -1,14 +1,20 @@
 <script setup lang="ts">
-const seoImage = 'https://images.pexels.com/photos/5708251/pexels-photo-5708251.jpeg'
-useLangMeta('seo.home', seoImage, 'prefix')
+const { t } = useI18n();
+const seoTitle = () => t("app.seo.homeTitle");
+const seoDesc = () => t("app.seo.homeDesc");
+
+useSeoMeta({
+  title: seoTitle,
+  description: seoDesc,
+  ogTitle: seoTitle,
+  ogDescription: seoDesc,
+  ogImage: "https://cdn.xanzhu.com/2026/defaults/xanzhu-default-page.webp",
+  ogType: "website",
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
+});
 </script>
 
 <template>
-  <main class="flex flex-col justify-center">
-    <HomeHero />
-    <LazyHomeBrandList />
-    <LazyHomeFeature class="mb20 core-border rounded-md" />
-    <LazyHomePagesCard class="mb20" />
-    <LazyHomeThreatCard class="mb20 px4" />
-  </main>
+  <HomeHero />
 </template>

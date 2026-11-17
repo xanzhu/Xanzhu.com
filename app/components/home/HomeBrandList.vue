@@ -1,38 +1,34 @@
 <script setup>
-const { locale, t } = useI18n()
+const { locale, t } = useI18n();
 
-const urls = [
+const urls = computed(() => [
   {
-    url: 'https://www.ncsc.govt.nz/',
-    name: 'NCSC',
+    url: "https://www.ncsc.govt.nz/",
+    name: "NCSC",
   },
   {
-    url: 'https://netsafe.org.nz/',
-    name: 'NetSafe',
+    url: "https://netsafe.org.nz/",
+    name: "NetSafe",
   },
   {
-    url: 'https://bitwarden.com/',
-    name: 'Bitwarden',
+    url: "https://bitwarden.com/",
+    name: "Bitwarden",
   },
   {
-    url: 'https://www.ownyouronline.govt.nz/',
-    name: 'OwnYourOnline',
+    url: "https://www.ownyouronline.govt.nz/",
+    name: "OwnYourOnline",
   },
   {
-    url: (locale.value === 'ko') ? 'https://www.samsung.com/sec/' : 'https://www.samsung.com/nz/',
-    name: 'Samsung',
+    url: locale.value === "ko" ? "https://www.samsung.com/sec/" : "https://www.samsung.com/nz/",
+    name: "Samsung",
   },
-]
+]);
 
-function getSvgIconUrl(name) {
-  return `/images/home/${name.toLowerCase()}.svg`
-}
+const getSvgIconUrl = (name) => `/images/home/${name.toLowerCase()}.svg`;
 </script>
 
 <template>
-  <section
-    class="hidden lg:(mb24 mt-20 flex inline-flex h-[12vh] items-center justify-center)" :aria-label="t('aria.brand_home_rec')"
-  >
+  <section class="hidden lg:(mb24 mt-20 flex inline-flex h-[12vh] items-center justify-center)">
     <ul class="px-8 list-none flex flex-wrap gap-12 justify-center">
       <li v-for="link in urls" :key="link.name">
         <NuxtLink
@@ -45,7 +41,7 @@ function getSvgIconUrl(name) {
             class="p-4 flex h-[40px] w-[128px] items-center justify-center"
             style="aspect-ratio: 128 / 40"
           >
-            <NuxtImg
+            <img
               :src="getSvgIconUrl(link.name)"
               :alt="`${link.name}`"
               width="128"
