@@ -195,6 +195,7 @@ export default defineNuxtConfig({
         "script-src-attr": [
           "'unsafe-hashes'",
           "'sha256-bwK6T5wZVTANitXbrTsel7kl/PyCjCd/Dq5Qoz3imjM='", // Tied to nuxt/img onError
+          "'sha256-mBvouFQXZ+YpxtV0t+4I0l1LKREvZlkEWrzJDXRRXXU='", // Tied to mousedown
         ],
         "style-src-attr": ["'unsafe-inline'"],
         "form-action": ["'self'"],
