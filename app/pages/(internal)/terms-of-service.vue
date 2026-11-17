@@ -1,11 +1,9 @@
 <script setup lang="ts">
-const { t } = useI18n({
-  useScope: "local",
-});
+const { t } = useI18n({ useScope: "local" });
 
 const date = "2025-01-27";
 
-const sections = [
+const sections = computed(() => [
   {
     title: t("terms.intellectualProperty.title"),
     content: t("terms.intellectualProperty.content"),
@@ -18,28 +16,23 @@ const sections = [
       t("terms.userResponsibilities.list.noDisruption"),
     ],
   },
-  {
-    title: t("terms.disclaimer.title"),
-    content: t("terms.disclaimer.content"),
-  },
-  {
-    title: t("terms.thirdPartyLinks.title"),
-    content: t("terms.thirdPartyLinks.content"),
-  },
-  {
-    title: t("terms.changesToTerms.title"),
-    content: t("terms.changesToTerms.content"),
-  },
-  {
-    title: t("terms.contactUs.title"),
-    content: t("terms.contactUs.content"),
-    isContact: true,
-  },
-];
+  { title: t("terms.disclaimer.title"), content: t("terms.disclaimer.content") },
+  { title: t("terms.thirdPartyLinks.title"), content: t("terms.thirdPartyLinks.content") },
+  { title: t("terms.changesToTerms.title"), content: t("terms.changesToTerms.content") },
+  { title: t("terms.contactUs.title"), content: t("terms.contactUs.content"), isContact: true },
+]);
 
-// SEO Metadata
-const seoImage = "https://images.pexels.com/photos/273209/pexels-photo-273209.jpeg";
-useLangMeta("terms.meta", seoImage, "prefix", t);
+const seoTitle = () => t("terms.meta.title");
+const seoDesc = () => t("terms.meta.desc");
+
+useSeoMeta({
+  title: seoTitle,
+  description: seoDesc,
+  ogTitle: seoTitle,
+  ogDescription: seoDesc,
+  ogImage: "https://cdn.xanzhu.com/2026/defaults/xanzhu-default-page.webp",
+  ogType: "website",
+});
 </script>
 
 <template>
@@ -47,37 +40,24 @@ useLangMeta("terms.meta", seoImage, "prefix", t);
     :title="t('terms.title')"
     :description="t('terms.description')"
     :date="date"
-    :datelabel="t('terms.date')"
+    :date-label="t('terms.date')"
   >
     <template #content>
-      <div>
-        <p class="text-dark-300 dark:text-gray-300">
-          {{ t("terms.introduction") }}
+      <p>{{ t("terms.introduction") }}</p>
+
+      <section v-for="section in sections" :key="section.title">
+        <h2 class="text-2xl font-semibold my4">{{ section.title }}</h2>
+        <p v-if="section.intro">{{ section.intro }}</p>
+        <ul v-if="section.list">
+          <li v-for="item in section.list" :key="item">{{ item }}</li>
+        </ul>
+        <p v-if="section.content">
+          {{ section.content }}
+          <NuxtLink v-if="section.isContact" to="mailto:support@xanzhu.com">
+            support@xanzhu.com
+          </NuxtLink>
         </p>
-        <div v-for="(section, index) in sections" :key="index" class="mb-8">
-          <h2 class="text-2xl text-dark-900 font-semibold mb-4 mt-8 dark:text-gray-100">
-            {{ section.title }}
-          </h2>
-          <p v-if="section.intro" class="text-dark-300 dark:text-gray-300">
-            {{ section.intro }}
-          </p>
-          <ul v-if="section.list" class="text-dark-300 pl-6 list-disc dark:text-gray-300">
-            <li v-for="(item, itemIndex) in section.list" :key="itemIndex">
-              {{ item }}
-            </li>
-          </ul>
-          <p v-if="section.content" class="text-dark-300 dark:text-gray-300">
-            {{ section.content }}
-            <NuxtLink
-              v-if="section.isContact"
-              href="mailto:support@xanzhu.com"
-              class="text-black no-underline dark:text-white hover:underline"
-            >
-              support@xanzhu.com
-            </NuxtLink>
-          </p>
-        </div>
-      </div>
+      </section>
     </template>
   </InternalPage>
 </template>

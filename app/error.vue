@@ -7,8 +7,6 @@ const { error } = defineProps<{
 
 const { t } = useI18n();
 const localePath = useLocalePath();
-const alertId = useId();
-const router = useRouter();
 
 const errorData = computed(() => {
   const status = error?.status;
@@ -17,9 +15,9 @@ const errorData = computed(() => {
   return {
     status,
     key,
-    title: t(`error.${key}.h1`),
-    message: t(`error.${key}.p`),
-    action: t(`error.${key}.goBack`),
+    title: t(`common.errors.${key}.heading`),
+    message: t(`common.errors.${key}.subHead`),
+    action: t(`common.errors.${key}.cta`),
   };
 });
 
@@ -27,34 +25,22 @@ useHead({
   title: () => `${errorData.value.key} - ${errorData.value.title}`,
   meta: [{ name: "robots", content: "noindex" }],
 });
-
-function handleGoBack() {
-  if (window.history.length > 1) {
-    router.back();
-  } else {
-    clearError({ redirect: localePath("index") });
-  }
-}
 </script>
 
 <template>
   <main
-    class="text-black font-sans m0 p4 bg-white flex flex-col-reverse h-screen items-center justify-center dark:text-white dark:bg-black lg:flex-row"
+    class="text-black font-sans m0 p4 bg-white flex flex-col-reverse min-h-dvh items-center justify-center dark:text-white dark:bg-black lg:flex-row"
   >
     <section class="max-w-lg">
       <h1 class="text-4xl tracking-wide font-semibold m0 sm:text-6xl lt-sm:text-center">
         {{ errorData.title }}
-        <span class="sr-only">({{ t("aria.error_code_prefix") }} {{ errorData.status }})</span>
+        <span class="sr-only">{{ errorData.status }}</span>
       </h1>
 
       <div
         class="core-ui text-neutral-800 mt5 p-3 core-border rounded-lg max-w-md dark:text-light-200 md:mt-15"
-        role="alert"
-        aria-atomic="true"
-        :aria-describedby="alertId"
       >
         <div
-          :id="alertId"
           class="mb-10 px-4 core-border rounded-lg bg-white flex items-center space-x-4 md:(mb-15 px5) dark:bg-black"
         >
           <Icon
@@ -68,13 +54,13 @@ function handleGoBack() {
         </div>
 
         <div class="flex justify-between children:p-2">
-          <button
-            class="text-sm text-inherit border border-transparent rounded-md border-solid bg-transparent underline underline-offset-4 cursor-pointer focus:outline-2 focus:outline-white focus:outline-offset-2 focus:outline hover:(core-border bg-white dark:bg-black)"
-            @click="handleGoBack"
+          <NuxtLink
+            :to="localePath('index')"
+            class="text-sm text-inherit border border-transparent rounded-md border-solid bg-transparent underline underline-offset-4 cursor-pointer hover:(core-border bg-white dark:bg-black) focus-visible:(outline outline-2 outline-offset-2 outline-black) dark:focus-visible:outline-white"
           >
             {{ errorData.action }}
-          </button>
-          <span class="text-sm opacity-80 animate-pulse" aria-hidden="true">
+          </NuxtLink>
+          <span class="text-sm opacity-80 motion-safe:animate-pulse" aria-hidden="true">
             {{ errorData.key }}
           </span>
         </div>
@@ -116,9 +102,3 @@ function handleGoBack() {
     </aside>
   </main>
 </template>
-
-<style>
-body {
-  margin: 0;
-}
-</style>

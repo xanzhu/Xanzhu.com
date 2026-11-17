@@ -1,20 +1,20 @@
 <script setup lang="ts">
-const { locale, t } = useI18n()
-const route = useRoute()
+const { locale } = useI18n();
+const route = useRoute();
 
-const TRAILING_SLASH = /\/$/
+const TRAILING_SLASH = /\/$/;
 
 const disablePath = computed(() => {
-  const path = route.path.replace(TRAILING_SLASH, '') || '/'
-  return path === '/' || path === `/${locale.value}`
-})
+  const path = route.path.replace(TRAILING_SLASH, "") || "/";
+  return path === "/" || path === `/${locale.value}`;
+});
 
-const now = ref(new Date())
+const now = ref(new Date());
 
 const accessibleDateLabel = computed(() => {
-  const formatter = new Intl.DateTimeFormat(locale.value, { dateStyle: 'full' })
-  return t('ui.globalDate', { date: formatter.format(now.value) })
-})
+  const formatter = new Intl.DateTimeFormat(locale.value, { dateStyle: "full" });
+  return { date: formatter.format(now.value) };
+});
 </script>
 
 <template>

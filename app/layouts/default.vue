@@ -45,7 +45,7 @@ useHead({
             "https://nz.linkedin.com/company/xanzhu",
             "https://github.com/xanzhu",
             "https://bsky.app/profile/xanzhu.com",
-            "https://x.com/Xanzhu1"
+            "https://x.com/Xanzhu1",
           ],
         }),
       ),
@@ -55,10 +55,10 @@ useHead({
 </script>
 
 <template>
-  <div>
+  <div class="flex flex-col min-h-svh">
     <AppHeader class="sticky top-0 z-50" />
     <InfoBar />
-    <main>
+    <main class="flex-1 flex flex-col">
       <slot />
     </main>
     <LazyAppFooter />

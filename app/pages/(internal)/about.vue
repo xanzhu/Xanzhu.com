@@ -1,24 +1,27 @@
 <script setup lang="ts">
-const { t } = useI18n({
-  useScope: "local",
-});
+const { t } = useI18n({ useScope: "local" });
 
-const paragraphs: { [key: number]: string } = {
-  1: t("about.paragraphs.introduction"),
-  2: t("about.paragraphs.mission"),
-  3: t("about.paragraphs.goal"),
-  4: t("about.paragraphs.importance"),
-  5: t("about.paragraphs.closing"),
-};
-const seoImage = "https://images.pexels.com/photos/27050060/pexels-photo-27050060.jpeg";
-useLangMeta("about.meta", seoImage, "prefix", t);
+const paragraphKeys = ["introduction", "mission", "goal", "importance", "closing"] as const;
+
+// SEO Metadata
+const seoTitle = () => t("about.meta.title");
+const seoDesc = () => t("about.meta.desc");
+
+useSeoMeta({
+  title: seoTitle,
+  description: seoDesc,
+  ogTitle: seoTitle,
+  ogDescription: seoDesc,
+  ogImage: "https://cdn.xanzhu.com/2026/defaults/xanzhu-default-page.webp",
+  ogType: "website",
+});
 </script>
 
 <template>
   <InternalPage :title="t('about.title')">
     <template #content>
-      <p v-for="(paragraph, index) in paragraphs" :key="index" class="leading-relaxed">
-        {{ paragraph }}
+      <p v-for="key in paragraphKeys" :key="key">
+        {{ t(`about.paragraphs.${key}`) }}
       </p>
     </template>
   </InternalPage>

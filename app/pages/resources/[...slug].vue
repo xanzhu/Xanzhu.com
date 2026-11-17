@@ -1,72 +1,76 @@
 <script setup lang="ts">
-import type { Collections } from '@nuxt/content'
+import type { Collections } from "@nuxt/content";
 
-const route = useRoute()
-const { locale, t } = useI18n()
+const route = useRoute();
+const { locale, t } = useI18n();
 
 const slug = computed(() => {
-  if (!route.params.slug)
-    return []
-  return Array.isArray(route.params.slug) ? route.params.slug : [route.params.slug]
-})
+  if (!route.params.slug) return [];
+  return Array.isArray(route.params.slug) ? route.params.slug : [route.params.slug];
+});
 
-const collection = computed(() => `resources_${locale.value}` as keyof Collections)
+const collection = computed(() => `resources_${locale.value}` as keyof Collections);
 
 const basePath = computed(() => {
-  const prefix = locale.value === 'en' ? '' : `${locale.value}/`
-  return `${prefix}resources/${slug.value.join('/')}`
-})
+  const prefix = locale.value === "en" ? "" : `${locale.value}/`;
+  return `${prefix}resources/${slug.value.join("/")}`;
+});
 
-const { data: allContent } = await useAsyncData(`resources-${basePath.value}`, () =>
-  queryCollection(collection.value).all(), { dedupe: 'defer' })
+const { data: allContent } = await useAsyncData(
+  `resources-${basePath.value}`,
+  () => queryCollection(collection.value).all(),
+  { dedupe: "defer" },
+);
 
 const folderIndex = computed(() =>
-  allContent.value?.find(item => item.id === `${collection.value}/${basePath.value}/index.md`),
-)
+  allContent.value?.find((item) => item.id === `${collection.value}/${basePath.value}/index.md`),
+);
 
 const directPage = computed(() =>
-  allContent.value?.find(item => item.id === `${collection.value}/${basePath.value}.md`),
-)
+  allContent.value?.find((item) => item.id === `${collection.value}/${basePath.value}.md`),
+);
 
 const children = computed(() => {
-  if (!allContent.value)
-    return []
+  if (!allContent.value) return [];
 
-  const searchPath = `${collection.value}/${basePath.value}/`
+  const searchPath = `${collection.value}/${basePath.value}/`;
   return allContent.value.filter((item) => {
-    if (!item.id.startsWith(searchPath) || item.id.endsWith('/index.md'))
-      return false
+    if (!item.id.startsWith(searchPath) || item.id.endsWith("/index.md")) return false;
 
-    const pathAfterBase = item.id.substring(searchPath.length)
-    return pathAfterBase && !pathAfterBase.includes('/')
-  })
-})
+    const pathAfterBase = item.id.substring(searchPath.length);
+    return pathAfterBase && !pathAfterBase.includes("/");
+  });
+});
 
 if (!folderIndex.value && !directPage.value) {
-  throw createError({ status: 404, fatal: true })
+  throw createError({ status: 404, fatal: true });
 }
 
 // a11y: Testing focus features
-const pageTitle = computed(() =>
-  folderIndex.value?.title || directPage.value?.title || '',
-)
+const pageTitle = computed(() => folderIndex.value?.title || directPage.value?.title || "");
 
 // Breadcrumbs!
-watch(pageTitle, (newTitle) => {
-  if (newTitle) {
-    route.meta.title = newTitle
-  }
-}, { immediate: true })
+watch(
+  pageTitle,
+  (newTitle) => {
+    if (newTitle) {
+      route.meta.title = newTitle;
+    }
+  },
+  { immediate: true },
+);
 
 useHead({
-  title: () => pageTitle.value || t('nav.resources'),
+  title: () => pageTitle.value || t("common.nav.resources"),
   meta: [
     {
-      name: 'description',
-      content: () => folderIndex.value?.description || directPage.value?.description || '',
+      name: "description",
+      content: () => folderIndex.value?.description || directPage.value?.description || "",
     },
   ],
-})
+});
+
+// TODO: Complete refactor
 </script>
 
 <template>
@@ -79,7 +83,7 @@ useHead({
       aria-labelledby="page-title"
     >
       <div class="sr-only" role="status" aria-live="polite" aria-atomic="true">
-        {{ t('resources.pageLoaded') }}: {{ pageTitle }}
+        {{ t("app.resources.pageLoaded") }}: {{ pageTitle }}
       </div>
 
       <h1
@@ -89,7 +93,9 @@ useHead({
         {{ folderIndex.title }}
       </h1>
 
-      <p class="bg-neutral-1 text-neutral-8 dark:bg-dark9 m0 px4 py3 core-border w-fit dark:(text-white)">
+      <p
+        class="bg-neutral-1 text-neutral-8 dark:bg-dark9 m0 px4 py3 core-border w-fit dark:(text-white)"
+      >
         {{ folderIndex.description }}
       </p>
 
@@ -99,13 +105,9 @@ useHead({
         aria-label="Main content"
       />
 
-      <nav
-        v-if="children.length > 0"
-        aria-labelledby="guides-heading"
-        class="mt-8"
-      >
+      <nav v-if="children.length > 0" aria-labelledby="guides-heading" class="mt-8">
         <h2 id="guides-heading" class="text-xl font-semibold mb-4">
-          {{ t('resources.helpfulGuides') }}
+          {{ t("app.resources.helpfulGuides") }}
         </h2>
         <ul class="pl-6 list-disc space-y-2">
           <li v-for="post in children" :key="post.id">
@@ -114,9 +116,7 @@ useHead({
               class="text-neutral-9 underline decoration-1 underline-offset-2 focus:(outline-2 outline-black outline-offset-2) hover:(decoration-2)"
             >
               {{ post.title }}
-              <span v-if="post.description" class="sr-only">
-                - {{ post.description }}
-              </span>
+              <span v-if="post.description" class="sr-only"> - {{ post.description }} </span>
             </NuxtLink>
           </li>
         </ul>
@@ -129,14 +129,10 @@ useHead({
         aria-labelledby="page-title"
       >
         <div class="sr-only" role="status" aria-live="polite" aria-atomic="true">
-          {{ t('resources.pageLoaded') }}: {{ pageTitle }}
+          {{ t("app.resources.pageLoaded") }}: {{ pageTitle }}
         </div>
 
-        <ContentRenderer
-          :value="directPage"
-          class="max-w-none prose"
-          aria-label="Main content"
-        />
+        <ContentRenderer :value="directPage" class="max-w-none prose" aria-label="Main content" />
       </main>
     </main>
   </div>

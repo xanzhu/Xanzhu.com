@@ -1,12 +1,20 @@
 <script setup lang="ts">
-defineProps<{
-  date: string | Date | number
-}>()
-
-const { locale } = useI18n()
+withDefaults(
+  defineProps<{
+    date: string | Date | number;
+    isUpdated?: boolean;
+  }>(),
+  {
+    isUpdated: false,
+  },
+);
+const { locale, t } = useI18n();
 </script>
 
 <template>
-  <NuxtTime :datetime="date" :locale="locale" month="long" day="numeric" year="numeric" />
+  <template v-if="isUpdated">
+    {{ t("common.article.updated") }}:
+    <NuxtTime :datetime="date" :locale="locale" month="long" day="numeric" year="numeric" />
+  </template>
+  <NuxtTime v-else :datetime="date" :locale="locale" month="long" day="numeric" year="numeric" />
 </template>
-

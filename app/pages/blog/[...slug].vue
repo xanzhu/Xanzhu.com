@@ -1,29 +1,26 @@
 <script setup lang="ts">
 import type { Collections } from "@nuxt/content";
-import type { Post } from "~/types/post";
+
+type BlogCollection = Extract<keyof Collections, `blog_${string}`>;
 
 const route = useRoute();
 const { locale, t } = useI18n();
-const config = useRuntimeConfig();
-const collectionName = `blog_${locale.value}` as keyof Collections;
+const { url: siteUrl } = useSiteConfig();
+
+const collectionName = `blog_${locale.value}` as BlogCollection;
 const currentPath = route.path;
 
 const [{ data: post }, { data: surround }] = await Promise.all([
   useAsyncData(
     `post-${locale.value}-${currentPath}`,
     () => queryCollection(collectionName).path(currentPath).first() as Promise<Post>,
-    { dedupe: "defer" },
   ),
-
-  useAsyncData(
-    `surround-${locale.value}-${currentPath}`,
-    () =>
-      queryCollectionItemSurroundings(collectionName, currentPath, {
-        before: 1,
-        after: 1,
-        fields: ["title", "path", "date", "img"],
-      }),
-    { dedupe: "defer" },
+  useAsyncData(`surround-${locale.value}-${currentPath}`, () =>
+    queryCollectionItemSurroundings(collectionName, currentPath, {
+      before: 1,
+      after: 1,
+      fields: ["title", "path", "date", "img"],
+    }),
   ),
 ]);
 
@@ -31,10 +28,12 @@ if (!post.value) {
   throw createError({ status: 404, fatal: true });
 }
 
-const breadcrumbTitle = useState<string>("breadcrumb-title");
-breadcrumbTitle.value = post.value.title;
+setBreadcrumbTitle(post.value.title);
+
 const titleSuffix = " - Xanzhu";
-const baseUrl = config.public.i18n.baseUrl;
+const absolute = (p?: string) => (p ? new URL(p, siteUrl).href : undefined);
+const image = computed(() => absolute(post.value?.img) ?? `${siteUrl}/guard.webp`);
+const modified = computed(() => post.value?.updated || post.value?.date);
 
 useSeoMeta({
   title: () => post.value?.title,
@@ -42,44 +41,31 @@ useSeoMeta({
   ogTitle: () => `${post.value?.title}${titleSuffix}`,
   ogDescription: () => post.value?.description,
   ogType: "article",
-  ogImage: () => (post.value?.img ? `${baseUrl}${post.value.img}` : `${baseUrl}/guard.webp`),
+  ogImage: image,
   articlePublishedTime: () => post.value?.date,
-  articleModifiedTime: () => post.value?.updated || post.value?.date,
+  articleModifiedTime: modified,
   ogImageHeight: 630,
   ogImageWidth: 1200,
   ogImageAlt: () => post.value?.alt,
 });
 
-useHead({
-  script: [
-    {
-      type: "application/ld+json",
-      innerHTML: computed(() =>
-        JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Article",
-          headline: post.value?.title,
-          description: post.value?.description,
-          inLanguage: locale.value,
-          image: {
-            "@type": "ImageObject",
-            url: post.value?.img ? `${baseUrl}${post.value.img}` : `${baseUrl}/guard.webp`,
-            width: 1200,
-            height: 630,
-          },
-          datePublished: post.value?.date,
-          dateModified: post.value?.updated || post.value?.date,
-          mainEntityOfPage: {
-            "@type": "WebPage",
-            "@id": `${baseUrl}${currentPath}`,
-          },
-          publisher: { "@id": `${baseUrl}/#organization` },
-          author: { "@id": `${baseUrl}/#organization` },
-        }),
-      ),
-    },
-  ],
-});
+const jsonLd = computed(() =>
+  JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.value?.title,
+    description: post.value?.description,
+    inLanguage: locale.value,
+    image: { "@type": "ImageObject", url: image.value, width: 1200, height: 630 },
+    datePublished: post.value?.date,
+    dateModified: modified.value,
+    mainEntityOfPage: { "@type": "WebPage", "@id": new URL(currentPath, siteUrl).href },
+    publisher: { "@id": `${siteUrl}/#organization` },
+    author: { "@id": `${siteUrl}/#organization` },
+  }).replace(/</g, "\\u003c"),
+);
+
+useHead({ script: [{ type: "application/ld+json", innerHTML: jsonLd }] });
 </script>
 
 <template>
@@ -101,12 +87,13 @@ useHead({
         <hr class="core-ui core-border rounded-md op40 w-80%" />
         <div v-if="post.path && post.title">
           <h4 class="text-lg font-normal mb4 mt5 text-center op90">
-            {{ t("ui.sharing.title") }}
+            {{ t("common.sharing.title") }}
           </h4>
           <LazyBlogSocialShare :post="{ path: post.path, title: post.title }" />
         </div>
       </div>
       <LazyBlogPrevNext v-if="surround" :surround="surround" />
+      <LazyBlogSummarise :post="{ path: post.path, title: post.title }" />
     </article>
   </main>
 </template>
