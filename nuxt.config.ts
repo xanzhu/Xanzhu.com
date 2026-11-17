@@ -51,19 +51,19 @@ export default defineNuxtConfig({
         code: "en",
         language: "en",
         name: "English",
-        files: ["en/common.json", "en/app.json"],
+        files: ["en.ts"],
       },
       {
         code: "ko",
         language: "ko",
         name: "한국어",
-        files: ["ko/common.json", "ko/app.json"],
+        files: ["ko.ts"],
       },
       {
         code: "zh",
         language: "zh",
         name: "中文",
-        files: ["zh/common.json", "zh/app.json"],
+        files: ["zh.ts"],
       },
     ],
     detectBrowserLanguage: {
