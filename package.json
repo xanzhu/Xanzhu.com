@@ -1,6 +1,6 @@
 {
   "name": "xanzhu.com",
-  "version": "3.0.12",
+  "version": "3.0.13",
   "private": true,
   "license": "MIT",
   "type": "module",
@@ -38,8 +38,8 @@
     "@unocss/preset-wind4": "^66.13.0",
     "@x18n/core": "^0.1.14",
     "lightningcss": "^1.33.0",
-    "oxfmt": "^0.78.0",
+    "oxfmt": "^0.79.0",
     "unocss": "66.13.0",
-    "wrangler": "^4.162.0"
+    "wrangler": "^4.163.0"
   }
 }
