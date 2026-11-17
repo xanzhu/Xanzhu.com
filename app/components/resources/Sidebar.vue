@@ -87,7 +87,7 @@ const categoryLinks = computed(() => {
             <span class="flex-1">{{ category.title }}</span>
 
             <span v-if="category.isActive" class="sr-only">
-              ({{ t("resources.currentPage") }})
+              ({{ t("app.resources.currentPage") }})
             </span>
           </NuxtLink>
         </li>

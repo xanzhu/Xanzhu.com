@@ -93,7 +93,6 @@ useHead({ script: [{ type: "application/ld+json", innerHTML: jsonLd }] });
         </div>
       </div>
       <LazyBlogPrevNext v-if="surround" :surround="surround" />
-      <LazyBlogSummarise :post="{ path: post.path, title: post.title }" />
     </article>
   </main>
 </template>

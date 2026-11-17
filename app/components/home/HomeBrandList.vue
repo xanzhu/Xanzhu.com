@@ -28,10 +28,7 @@ const getSvgIconUrl = (name) => `/images/home/${name.toLowerCase()}.svg`;
 </script>
 
 <template>
-  <section
-    class="hidden lg:(mb24 mt-20 flex inline-flex h-[12vh] items-center justify-center)"
-    :aria-label="t('aria.brand_home_rec')"
-  >
+  <section class="hidden lg:(mb24 mt-20 flex inline-flex h-[12vh] items-center justify-center)">
     <ul class="px-8 list-none flex flex-wrap gap-12 justify-center">
       <li v-for="link in urls" :key="link.name">
         <NuxtLink
