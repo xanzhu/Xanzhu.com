@@ -1,40 +1,87 @@
 <script setup lang="ts">
-const { t } = useI18n()
+import type { Collections } from "@nuxt/content";
+
+const { locale, t } = useI18n();
+
+const collectionName = `blog_${locale.value}` as keyof Collections;
+
+const { data: featured } = await useAsyncData(`featuredArticles-${locale.value}`, () =>
+  queryCollection(collectionName)
+    .select("title", "date", "description", "tag", "path")
+    .where("feature", "=", 1)
+    .order("date", "DESC")
+    .limit(3)
+    .all(),
+);
 </script>
 
 <template>
-  <section class="bg-white flex min-h-screen items-center justify-center relative dark:bg-black" aria-labelledby="hero">
-    <div
-      class="hidden md:(flex items-center inset-0 justify-center absolute z-0)"
-      aria-hidden="true"
-    >
-      <UiSvg load-s-v-g="beta02" class="h-80% w-full object-cover" />
+  <section
+    aria-labelledby="hero"
+    class="flex-1 w-full flex flex-col justify-center items-center space-y-10"
+  >
+    <!-- TODO? <div aria-hidden="true">
+      <UiSvg load-s-v-g="beta02" />
+    </div> -->
+    <div class="w-full max-w-4xl">
+      <h1
+        class="font-bold px4 text-balance text-[clamp(2rem,3vw,5rem)] font-stretch-[130%] uppercase"
+      >
+        {{ t("app.home.heroTitle") }}
+      </h1>
     </div>
 
-    <div
-      class="mx-auto px5 py10 flex flex-col relative z-10 sm:text-center sm:items-center dark:backdrop-brightness-90"
-    >
-      <p
-        class="text-sm text-brand-light font-semibold mb2 flex uppercase items-center space-x-2 dark:text-yellow-400"
-      >
-        <Icon name="lucide:earth" class="text-inherit h6 w6" aria-hidden="true" />
-        <span>{{ t('home.hero.tagline') }}</span>
-      </p>
-      <h1 id="hero" class="text-5xl font-500 m0 max-w-4xl w-full md:text-7xl">
-        {{ t('home.hero.title') }}
-      </h1>
-      <p class="text-sm text-neutral-600 mx-auto mt-6 bg-white max-w-lg w-full md:text-lg dark:text-neutral-300 dark:bg-element-dark">
-        {{ t('home.hero.subHead') }}
-      </p>
-      <NuxtLinkLocale
-        class="core-theme text-blue-600 mt5 px5 py1.5 text-center core-border border-brand-light rounded-full border-dashed no-underline flex transition-transform duration-300 ease-in-out items-center space-x-1 dark:text-yellow-400 lt-sm:mr-auto dark:border-yellow-300 hover:(border-solid scale-110)"
-        to="/blog"
-      >
-        <span class="m0">
-          {{ t('home.hero.action') }}
-        </span>
-        <Icon name="lucide:arrow-up-right" class="h5 w5" aria-hidden="true" />
-      </NuxtLinkLocale>
-    </div>
+    <section class="px-4 flex justify-center items-center w-full max-w-4xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 w-full">
+        <article
+          v-for="(article, index) in featured"
+          :key="article.path"
+          class="@container rounded-md core-border"
+          :class="
+            index === 0
+              ? 'col-span-1 md:col-span-2 bg-light-200 dark:(bg-neutral-950 text-white) md:min-h-44 m0'
+              : 'col-span-1 bg-neutral-900 text-white dark:(bg-light-300 text-black) md:min-h-36 lg:min-h-44'
+          "
+        >
+          <NuxtLinkLocale :to="article.path" class="p2 flex h-full flex-col group">
+            <div>
+              <span
+                v-if="article.tag"
+                class="inline-block text-xs @md:text-sm uppercase core-border core-theme font-semibold p1 rounded-sm"
+                :class="
+                  index === 0
+                    ? 'bg-black text-white dark:(bg-white text-black)'
+                    : 'bg-white text-black'
+                "
+                >{{ article.tag }}</span
+              >
+              <h3
+                class="font-bold text-2xl lg:text-3xl mt-2 line-clamp-3 group-hover:(underline-2 underline underline-offset-4)"
+              >
+                {{ article.title }}
+              </h3>
+              <p class="text-sm @md:text-base mt-2 op80">
+                {{ article.description }}
+              </p>
+            </div>
+            <UiDate
+              class="font-mono text-xs @md:text-sm mt-auto pt-4"
+              v-if="article.date"
+              :date="article.date"
+            />
+          </NuxtLinkLocale>
+        </article>
+
+        <NuxtLinkLocale
+          to="blog"
+          class="col-span-1 md:col-span-2 justify-between flex bg-green-500 p2 rounded-md items-center group hover:bg-green-600"
+        >
+          <span class="font-stretch-[130%] uppercase font-bold text-black text-lg @md:text-2xl">
+            {{ t("common.nav.blog") }}
+          </span>
+          <Icon name="lucide:arrow-right" class="shrink-0 h7 w7 text-black" aria-hidden="true" />
+        </NuxtLinkLocale>
+      </div>
+    </section>
   </section>
 </template>
