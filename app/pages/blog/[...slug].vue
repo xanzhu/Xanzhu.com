@@ -21,7 +21,7 @@ const [{ data: post }, { data: surround }] = await Promise.all([
       before: 1,
       after: 1,
       fields: ["title", "path", "date", "img"],
-    }),
+    }).order("date", "DESC"),
   ),
 ]);
 
