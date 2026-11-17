@@ -235,14 +235,14 @@ export default defineConfig<Wind4Theme>({
         light: "#0067d4",
       },
       element: {
-        dark: "#050505",
-        light: "#fffffffa",
+        dark: "#121212",
+        light: "#f5f5f5",
       },
     },
   },
   shortcuts: {
     "core-theme": "bg-element-light dark:(bg-element-dark text-white) text-black",
-    "core-border": "dark:b-dark-400 b-gray-300 b-1 b-solid",
+    "core-border": "dark:b-dark-400 b-gray-300 b-1 b-solid ",
     "core-ui": "dark:(bg-dark-900 text-white) bg-gray-100 text-black",
   },
 });
