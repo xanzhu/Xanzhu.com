@@ -19,10 +19,12 @@ The hardware released is usually Mac based with iPhone / iPad and Apple Watch be
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/VP.webp
 alt: VisionPro VR Headset
 credit: The Verge
 ---
+
 ::
 
 Apple's first attempt at a virtual reality headset. Offering a unique experience of mixing reality with virtuality. This headset offers some impressive software techniques and handles many features that most headsets haven't taken into consideration.
@@ -51,10 +53,12 @@ This feature alone is something that all VR headsets do not incorporate awarenes
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/human.webp
 alt: VisionPro Demo
 credit: Apple
 ---
+
 ::
 
 #### Charging / Cables
@@ -80,10 +84,12 @@ Extremely :PageLink{title="interesting concept" url="https://www.apple.com/apple
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/sensor.webp
 alt: VisionPro sensor
 credit: Apple
 ---
+
 ::
 
 #### VisionOS
@@ -96,9 +102,11 @@ The iconic :PageLink{title="MacBook Air" url="https://www.apple.com/macbook-air/
 
 ::vid
 ---
+
 source: https://www.apple.com/105/media/us/macbook-air-13-and-15/2023/f52c7a72-dff4-4f3c-9511-bf08e46c6f5f/anim/design/hero/medium_2x.mp4#t=4.033333
 credit: Apple
 ---
+
 ::
 
 ### Mac Studio
@@ -131,10 +139,12 @@ Insane :PageLink{title="performance improvements" url="https://www.apple.com/mac
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/macpro.webp
 alt: Mac Pro
 credit: Apple
 ---
+
 ::
 
 Supports:
@@ -171,10 +181,12 @@ This gives us consumers a glimpse into what the next iteration of software will 
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/ios17.webp
 alt: iOS 17 Preview
 credit: Apple
 ---
+
 ::
 
 #### Profiles Improved
@@ -195,10 +207,12 @@ Audio messages now have the option to display the live transcript without needin
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/transcribe.webp
 alt: iOS 17 Audio Transcription Feature
 credit: Apple
 ---
+
 ::
 
 #### FaceTime
@@ -225,10 +239,12 @@ New contact sharing feature, simply put phones near each other to share contact 
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/airdrop.webp
 alt: iOS 17 AirDrop Feature
 credit: Apple
 ---
+
 ::
 
 #### SharePlay Improvements
@@ -251,10 +267,12 @@ Take a picture of a food item for example and use the visual lookup feature to f
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/lookup.webp
 alt: iOS 17 Lookup Feature
 credit: Apple
 ---
+
 ::
 
 #### AirPlay
@@ -287,10 +305,12 @@ Improved electric vehicle routing, showing better options for charging stations 
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/ipados.webp
 alt: iPadOS 17 Preview
 credit: Apple
 ---
+
 ::
 
 #### Lock screen
@@ -307,10 +327,12 @@ An awesome feature allowing for notes to be annotated in real-time, meaning you 
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/pdf.webp
 alt: PDF Collaboration Preview
 credit: Apple
 ---
+
 ::
 
 #### Freeform
@@ -348,9 +370,11 @@ Massive design improvement, using an awesome background filter system which allo
 
 ::vid
 ---
+
 source: https://www.apple.com/105/media/us/macos/sonoma-preview/2023/e6d837c5-8a7e-49d8-b0bd-137b21320db3/anim/share-preview/large_2x.mp4
 credit: Apple
 ---
+
 ::
 
 Also, the opposite when projecting a screen, a small overlay appears in a movable bubble over the shared screen allowing for readability towards important details on the screen.
@@ -380,10 +404,12 @@ Stickers got an improvement now and can be applied directly to the message by a 
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/stickers.webp
 alt: macOS Message Stickers Feature
 credit: Apple
 ---
+
 ::
 
 #### PDFs and Notes
@@ -412,10 +438,12 @@ The feature introduces protection for sensitive videos and photos within the mes
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/comms.webp
 alt: Messages Communication Safety
 credit: Apple
 ---
+
 ::
 
 #### Lockdown mode
@@ -441,10 +469,12 @@ Complete redesign of system applications. Offering a more seem lined experience 
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/watchos.webp
 alt: watchOS 10 Preview
 credit: Apple
 ---
+
 ::
 
 #### Smart Stack
@@ -466,10 +496,12 @@ Ultra-edition is seeing improvements for hiking, allowing for automatic waypoint
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/hiking.webp
 alt: watchOS Hiking Feature
 credit: Apple
 ---
+
 ::
 
 #### Topographic maps

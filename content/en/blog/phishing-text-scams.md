@@ -36,9 +36,11 @@ Here is an example of a 2-Factor Authentication code you'd typically see:
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/text-scams/Uber.webp
 alt: Uber Authentication Code Example
 ---
+
 ::
 
 - This code is from 3362.
@@ -50,9 +52,11 @@ Here is an example of a text scam:
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/text-scams/EURO.webp
 alt: Phishing Text example international
 ---
+
 ::
 
 - The message comes from +61 (Australian-based).
@@ -64,9 +68,11 @@ Here's another example:
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/text-scams/NZD.webp
 alt: Phishing Text example local
 ---
+
 ::
 
 - This message comes from +64 (New Zealand-based).
@@ -79,9 +85,11 @@ A more recent example:
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/text-scams/nzta.webp
 alt: NZ Transport agency phishing example
 ---
+
 ::
 
 - Claims to be from NZ Transport Agency and is asking you to pay an outstanding fee.
@@ -97,9 +105,11 @@ Lets compare the links used:
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/text-scams/compare.svg
 alt: Comparing phishing link vs legitimate
 ---
+
 ::
 
 Offical government based links will always have the .govt.nz domain.

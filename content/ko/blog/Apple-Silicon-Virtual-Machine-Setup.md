@@ -10,7 +10,9 @@ toc: true
 ---
 
 ::ArticleUpdates
+
 - **2026년 1월 1일** – Windows 11 설치 방법이 변경되었습니다. [업데이트된 가이드](/ko/blog/install-windows-utm-apple-silicon)를 참조하세요.
+
 ::
 
 개발자 또는 기술 애호가인 경우 프로젝트 또는 개인 용도로 여러 운영 체제를 사용해야 할 수 있습니다. 이 게시물에서는 유료 가상화 소프트웨어인 Parallels와 UTM이라는 무료 오픈 소스 솔루션을 사용하여 Windows 및 Ubuntu와 같은 널리 사용되는 운영 체제의 설정 프로세스를 다룰 것입니다. 초보자이든 숙련된 사용자이든 이 가이드는 Apple Silicon Mac에서 각 환경을 빠르고 쉽게 설치하고 설정하는 방법을 알려줍니다.
@@ -25,10 +27,12 @@ toc: true
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m1-virtual-machine/Parallels.webp
 credit: Parallels / Xanzhu
 alt: Parallels 가상 머신 로고
 ---
+
 ::
 
 기본적으로 작동하며 기본적으로 모든 즐겨찾는 운영 체제를 클릭 한 번으로 설치하는 유료 가상화 소프트웨어입니다. 훌륭한 도구를 제공하고 전체 프로세스를 최대한 원활하게 만듭니다.
@@ -39,9 +43,11 @@ alt: Parallels 가상 머신 로고
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m1-virtual-machine/p-install.webp
 alt: Parallels 설치 마법사
 ---
+
 ::
 
 운영 체제를 설치하기 전에 최소 25~30GB의 여유 공간을 확보하는 것이 이상적입니다.
@@ -67,9 +73,11 @@ Ubuntu는 단순히 Ubuntu 아이콘을 클릭하고 설치를 선택하는 동�
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m1-virtual-machine/u-download.webp
 alt: Parallels 우분투 설정 마법사
 ---
+
 ::
 
 3. 다운로드 후 가상 머신이 자동으로 시작됩니다.
@@ -88,9 +96,11 @@ alt: Parallels 우분투 설정 마법사
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m1-virtual-machine/config.webp
 alt: Parallels 가상 머신 구성 패널
 ---
+
 ::
 
 3. 다른 가상 머신을 추가하려면 더하기 아이콘을 클릭하고 위에서 언급한 설치 프로세스를 진행합니다.
@@ -101,10 +111,12 @@ alt: Parallels 가상 머신 구성 패널
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m1-virtual-machine/UTM.webp
 credit: UTM / Xanzhu
 alt: UTM 설정 마법사
 ---
+
 ::
 
 UTM은 병렬과 동일한 작업을 수행하지만 사용자 정의를 처리하는 무료 도구입니다.
@@ -128,9 +140,11 @@ Windows는 다양한 방법으로 설치할 수 있습니다. :PageLink{title="U
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m1-virtual-machine/u-install.webp
 alt: UTM 창 설치 설정
 ---
+
 ::
 
 7. 계속을 누릅니다.
@@ -156,9 +170,11 @@ alt: UTM 창 설치 설정
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m1-virtual-machine/u-spice.webp
 alt: 파일 탐색기 창 11
 ---
+
 ::
 
 7. 재부팅을 선택하면 이제 Windows 11 가상 머신이 작동합니다.
@@ -199,9 +215,11 @@ alt: 파일 탐색기 창 11
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m1-virtual-machine/u-linux.webp
 alt: Linux 서버 설치 디스플레이
 ---
+
 ::
 
 26. 이 작업이 완료되면 DOWN_ARROW를 눌러 "Reboot now"가 강조 표시되도록 하고 ENTER를 누릅니다.

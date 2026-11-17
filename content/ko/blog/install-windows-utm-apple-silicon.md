@@ -15,7 +15,9 @@ Apple Silicon에서 Windows를 실행하는 것이 점점 더 인기를 얻고 �
 이전 :PageLink{title="문서" url="/blog/windows-on-apple-silicon"}에서는 Apple Silicon에 Windows를 설정하는 기본 사항을 다뤘습니다.
 
 ::ArticleUpdates
+
 - **2026년 1월 1일** - **연례 재출시**: 전체 기술 감사를 수행했습니다. Windows 11(24H2/25H2), UTM 4.7.5에 대한 모든 단계를 확인하고 업데이트했으며 새로운 로컬 계정 우회 방법을 추가했습니다.
+
 ::
 
 Apple Silicon에 Windows를 설치하는 대체 솔루션의 경우, 이러한 솔루션은 유료이며 비용 대비 더 나은 성능을 제공할 수 있습니다. :PageLink{title="Parallels Desktop" url="https://www.parallels.com/products/desktop/"} 또는 :PageLink{title="VMware Fusion" url="https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion"}을 확인하세요.
@@ -41,9 +43,11 @@ UTM을 Applications 폴더로 드래그하고 올바르게 열리는지 확인�
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m4-windows/windows-crystalfetch-appstore.webp
 alt: CrystalFetch 애플리케이션을 표시하는 Apple App Store
 ---
+
 ::
 
 :PageLink{title="App Store" url="https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12"}에서 CrystalFetch 버전 2.2.0을 다운로드하세요. 이 옵션은 무료이며 자동 업데이트를 제공합니다.
@@ -68,9 +72,11 @@ Windows 11 **ARM64** ISO를 다운로드하세요. Microsoft 웹사이트에서 
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m4-windows/windows-crystalfetch.webp
 alt: Windows 11용 CrystalFetch 애플리케이션 설정
 ---
+
 ::
 
 다운로드가 자동으로 시작됩니다. ISO는 약 5.27GB입니다. 완료 후 이 ISO 파일을 저장할 대상 폴더로 파일을 이동하라는 메시지가 표시됩니다. 기본 Downloads 폴더를 사용합니다. **Move**를 클릭하세요.
@@ -88,9 +94,11 @@ Microsoft 웹사이트에서 직접 다운로드하려면 :PageLink{title="Windo
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m4-windows/windows-iso-download.webp
 alt: Windows 11 ISO 다운로드 페이지
 ---
+
 ::
 
 ISO 다운로드가 시작됩니다. 약 5.47GB이며 Downloads 폴더에 저장됩니다.
@@ -107,25 +115,29 @@ UTM에서 **+** 아이콘을 클릭하여 새 가상 머신 생성을 시작하�
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m4-windows/windows-utm-app.webp
 alt: 새 가상 머신을 생성하는 플러스 아이콘이 있는 메인 창을 표시하는 UTM 애플리케이션 인터페이스
 ---
+
 ::
 
 ### 가상화 또는 에뮬레이션
 
 UTM은 두 가지 모드를 제공합니다:
 
-| 모드     | 장점                     | 단점                                  |
-| -------- | ------------------------ | ------------------------------------- |
-| 가상화   | 더 빠름, 네이티브 ARM 지원 | x86 (Intel/AMD) 아키텍처를 지원하지 않음 |
-| 에뮬레이션 | 비ARM 시스템 지원         | 느림, 잠재적인 성능 문제               |
+| 모드       | 장점                       | 단점                                     |
+| ---------- | -------------------------- | ---------------------------------------- |
+| 가상화     | 더 빠름, 네이티브 ARM 지원 | x86 (Intel/AMD) 아키텍처를 지원하지 않음 |
+| 에뮬레이션 | 비ARM 시스템 지원          | 느림, 잠재적인 성능 문제                 |
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m4-windows/utm-windows-mode.webp
 alt: 가상화와 에뮬레이션 사이의 UTM 구성 모드 선택
 ---
+
 ::
 
 Apple Silicon의 효율성을 활용하려면 **Virtualise**를 선택하세요.
@@ -136,9 +148,11 @@ Apple Silicon의 효율성을 활용하려면 **Virtualise**를 선택하세요.
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/2026/utm-windows/os-selection.webp
 alt: Windows, Linux 및 macOS 사이의 UTM 구성 OS 선택
 ---
+
 ::
 
 ### 하드웨어 설정
@@ -152,9 +166,11 @@ RAM을 장치의 사용 가능한 메모리의 절반으로 설정하세요(기�
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m4-windows/windows-utm-iso.webp
 alt: ISO 선택을 표시하는 UTM 구성 인터페이스
 ---
+
 ::
 
 "Install Drivers or SPICE guest tools"가 활성화되어 있는지 확인하세요. 이는 가상 머신과 네이티브 장치 간의 안정성을 보장하는 데 매우 중요합니다.
@@ -173,9 +189,11 @@ alt: ISO 선택을 표시하는 UTM 구성 인터페이스
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/2026/utm-windows/complete-setup.webp
 alt: 완료된 UTM 구성
 ---
+
 ::
 
 새 VM이 UTM 사이드바에 나타납니다. 재생 버튼을 클릭하여 가상 머신을 부팅하세요!
@@ -186,9 +204,11 @@ alt: 완료된 UTM 구성
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m4-windows/windows-cdboot.webp
 alt: ISO 파일로 부팅하기 위해 아무 키나 누르라는 UTM 설정
 ---
+
 ::
 
 1. 언어 설정을 선택하고 **Next**를 클릭하세요.
@@ -197,23 +217,27 @@ alt: ISO 파일로 부팅하기 위해 아무 키나 누르라는 UTM 설정
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m4-windows/windows-productkey.webp
 alt: 제품 키 선택을 표시하는 Windows 설정
 ---
+
 ::
 
 4. 설치할 Windows 버전(Pro, Home, Home Single Language)을 선택한 다음 **Next**를 클릭하세요.
 5. 라이선스 계약을 읽은 다음 **Accept**를 클릭하세요.
 6. Windows를 설치할 기본 위치를 선택하고 **Next**를 클릭하세요.
-(이 단계는 건너뛰고 설치로 바로 이동할 수 있습니다).
+   (이 단계는 건너뛰고 설치로 바로 이동할 수 있습니다).
 
 이제 Windows 설치가 시작됩니다. 시간이 좀 걸립니다.
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m4-windows/windows-iso-updates.webp
 alt: ISO에서 설치 중인 Windows 설정
 ---
+
 ::
 
 이 프로세스가 끝나면 가상 머신이 다시 시작됩니다. "Press Any Key or CD to enter startup"라는 동일한 프롬프트가 표시될 수 있습니다. 이는 ISO가 여전히 연결되어 있기 때문입니다. 정상적으로 부팅될 수도 있지만 이 ISO 파일을 제거하는 것이 중요합니다.
@@ -240,9 +264,11 @@ Windows에서 계속하려면 인터넷 연결을 요청하는데 연결을 찾�
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m4-windows/windows-setup-updates.webp
 alt: 업데이트가 다운로드되는 Windows 설정
 ---
+
 ::
 
 그런 다음 Windows 11로 부팅됩니다. 다음 단계는 Spice Guest Tools를 설치하는 것입니다.
@@ -254,9 +280,11 @@ alt: 업데이트가 다운로드되는 Windows 설정
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m4-windows/windows-spiceguest.webp
 alt: Spice Guest Tools 설정 기본 창
 ---
+
 ::
 
 1. **Next**를 선택하세요.
@@ -278,9 +306,11 @@ Spice Guest Tools 팝업 창이 표시되지 않으면 수동으로 실행할 �
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/2026/utm-windows/spice-drivers.webp
 alt: CD Rom이 열린 Windows 파일 탐색기 표시
 ---
+
 ::
 
 제어판을 방문하여 Spice Guest Tools가 설치되었는지 확인할 수 있습니다. **Uninstall a program**에서 Guest Tools가 다음과 같이 나열됩니다:
@@ -303,9 +333,11 @@ alt: CD Rom이 열린 Windows 파일 탐색기 표시
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m4-windows/utm-display-settings.webp
 alt: Retina Mode 활성화를 위한 UTM 디스플레이 설정
 ---
+
 ::
 
 이제 가상 머신이 Mac의 네이티브 해상도를 사용합니다.
@@ -332,9 +364,11 @@ alt: Retina Mode 활성화를 위한 UTM 디스플레이 설정
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m4-windows/utm-display-bug.webp
 alt: Display output is not active 메시지를 표시하는 창
 ---
+
 ::
 
 Spice Guest Tools를 설치하거나 가상 머신을 시작한 후 몇 초 동안 "Display output is not active" 메시지가 나타날 수 있습니다.
@@ -377,9 +411,11 @@ Windows 11 ARM(24H2 빌드 26100.4349), UTM 4.7.5, macOS 15.7.3에서 테스트�
 
 ::youtube
 ---
+
 video-id: TVJ3gGqkMak
 title: "Skip Microsoft Login: One Command to a Local Account"
 ---
+
 ::
 
 #### 결론

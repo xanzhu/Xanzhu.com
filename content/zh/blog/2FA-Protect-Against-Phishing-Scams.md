@@ -39,9 +39,11 @@ feature: true
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/2-factor-auth/aegis.webp
 alt: Aegis 身份验证器徽标
 ---
+
 ::
 
 Aegis 是一款免费的开源身份验证器应用程序，可通过 Google Play 商店和 F-Droid 在 Android 上使用。 与标准软件相比，它提供了更高的安全性，因为令牌不会在您打开应用程序时立即显示。
@@ -54,9 +56,11 @@ Aegis 是一款免费的开源身份验证器应用程序，可通过 Google Pla
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/2-factor-auth/2fas.webp
 alt: 2FAS 验证器徽标
 ---
+
 ::
 
 2FAS 是我个人最喜欢的，它在 Android 和 iOS 上提供无缝的双因素身份验证体验。 它还具有适用于 Brave、Firefox、Opera 等的浏览器扩展，允许在浏览器中快速访问 2FA 代码。
@@ -74,9 +78,11 @@ alt: 2FAS 验证器徽标
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/2-factor-auth/ravio.webp
 alt: Ravio 身份验证器徽标
 ---
+
 ::
 
 Raivo OTP 是一款轻量级、开源且免费使用的身份验证器应用程序，可在您的所有 Apple 设备之间同步。 它使用 Swift 5 构建，是 Apple 生态系统中的原生应用程序，可在移动设备和 MacOS 上运行。

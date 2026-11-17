@@ -16,9 +16,11 @@ Here is an example of what is being displayed to users. Opening up this in an in
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/youtube-phish/j2-1.webp
 alt: Youtube Home Page showing a sponsored video the phishing scam next to targeted video
 ---
+
 ::
 
 The perfect placement for a scam. Usually, this ad will appear next to random videos but today we got the ultimatum of the reality of advertising on YouTube. A phishing scam was promoted right next to the latest video from Mr Beast.
@@ -27,9 +29,11 @@ After the initial exposure to this ad upon clicking on this video we're given a 
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/youtube-phish/j2-3.webp
 alt: Youtube's Ad Reporting Dialog Box with information about advertiser and options to report or block
 ---
+
 ::
 
 In the comments, the pinned comment or liked comment will provide a link to a website designed to collect user information known as a phishing scam.
@@ -38,9 +42,11 @@ The website contains a simple call to action button "Claim this now" linking to 
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/youtube-phish/j2-5.webp
 alt: Preview of the domain used to phish users with a call to action enticing a click to claim rewards
 ---
+
 ::
 
 As the video is unlisted it appears out of public view unless the ad is being promoted. This way the video can be removed and re-uploaded consistently. The same applies to comments as well with existing websites being taken down a new website will be listed in the comments.
@@ -49,9 +55,11 @@ This has been happening for a very long time it follows the structure of the sam
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/youtube-phish/j2-2.webp
 alt: Youtube Comment section where the advertiser comments a link to a phishing website
 ---
+
 ::
 
 Reviewing the advertiser's ads through Google's Transparency service there are no ads found from the user. The YouTube channel that hosts the videos often gets taken down and replaced with a similar channel.
@@ -66,9 +74,11 @@ Writing this report we noticed another appearing. Showing how consistently this 
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/youtube-phish/j2-6.webp
 alt: Youtube Home Page showing another phishing scam promoted in the first position.
 ---
+
 ::
 
 Reporting this scam or similar follows a general process of:
@@ -92,9 +102,11 @@ Here is an example of what we usually see in the wild
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/youtube-phish/j2-4.webp
 alt: VirusTotal website Showing 12 Detections found from phishing url found on Youtube
 ---
+
 ::
 
 Reporting the domain the first thing to do is see the :PageLink{title="whois" url="https://whois.domaintools.com/"} of the domain this will tell us who the domain provider is, and then it can be reported directly to their abuse email address.

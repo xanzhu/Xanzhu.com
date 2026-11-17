@@ -17,7 +17,9 @@ alt: "2023 年 Macbook Pro 黑色版显示三种新芯片组的图标"
 这是我们年初的 :PageLink{title="上一篇文章" url="/zh/blog/apple-silicon-virtual-machine-setup"} 的更新版本，其中我们介绍了使用 UTM 和 Parallels 安装 Windows。 从那时起，这个过程变得更加容易和可靠！
 
 ::ArticleUpdates
+
 - **2026年1月1日** – Windows 11 的安装过程已更改。请参阅[更新后的指南](/zh/blog/install-windows-utm-apple-silicon)。
+
 ::
 
 下载次数：
@@ -42,9 +44,11 @@ alt: "2023 年 Macbook Pro 黑色版显示三种新芯片组的图标"
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-1.webp
 alt: UTM 应用程序打开屏幕
 ---
+
 ::
 
 ## CrystalFetch
@@ -59,9 +63,11 @@ alt: UTM 应用程序打开屏幕
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-2.webp
 alt: CrystalFetch 应用程序打开屏幕
 ---
+
 ::
 
 3.点击下载
@@ -83,9 +89,11 @@ alt: CrystalFetch 应用程序打开屏幕
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-3.webp
 alt: 虚拟机的 UTM 配置屏幕
 ---
+
 ::
 
 1. 选择该虚拟机要使用的 RAM 量。 4096 是默认值，等于 4GB。 您的系统使用的一半是理想的，但如果需要，可以稍后进行调整。 现在，将其保留为默认值。
@@ -100,9 +108,11 @@ alt: 虚拟机的 UTM 配置屏幕
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-4.webp
 alt: 显示 UTM 虚拟机
 ---
+
 ::
 
 ## 运行虚拟机
@@ -115,18 +125,22 @@ alt: 显示 UTM 虚拟机
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-5.webp
 alt: UTM 显示提示按任意键继续
 ---
+
 ::
 
 此步骤很重要，因为如果您按下按键的速度不够快，您将看到以下屏幕。
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-5b.webp
 alt: UTM 在启动过程中显示错误提示
 ---
+
 ::
 
 要解决此问题，请关闭虚拟机并再次运行它，或者选择重新启动虚拟机按钮（即三角形按钮）。
@@ -139,9 +153,11 @@ alt: UTM 在启动过程中显示错误提示
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-6.webp
 alt: Windows ISO 安装菜单
 ---
+
 ::
 
 1. 选择语言，然后按下一步。
@@ -160,9 +176,11 @@ Windows 安装程序现在将开始安装 Windows 所需的文件。 请注意�
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-7.webp
 alt: 关于从虚拟机中弹出当前 ISO 的 UTM 指南
 ---
+
 ::
 
 1. 单击光盘图标
@@ -180,9 +198,11 @@ alt: 关于从虚拟机中弹出当前 ISO 的 UTM 指南
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-8.webp
 alt: UTM Spice 访客工具安装程序屏幕
 ---
+
 ::
 
 如果虚拟机变得无响应，请关闭并重新启动虚拟机。

@@ -14,9 +14,7 @@ const localePath = useLocaleRoute();
         <span class="op70">v{{ config.public.version }}</span>
       </p>
 
-      <nav
-        class="flex flex-wrap justify-center gap-x-4 gap-y-1"
-      >
+      <nav class="flex flex-wrap justify-center gap-x-4 gap-y-1">
         <NuxtLink :to="localePath('/privacy-policy')">
           {{ t("common.nav.privacy") }}
         </NuxtLink>

@@ -1,6 +1,10 @@
 <template>
   <svg
-    width="163" height="22" fill="currentColor" viewBox="0 0 163 22" aria-labelledby="logo-xanzhu"
+    width="163"
+    height="22"
+    fill="currentColor"
+    viewBox="0 0 163 22"
+    aria-labelledby="logo-xanzhu"
     xmlns="http://www.w3.org/2000/svg"
   >
     <title id="logo-xanzhu">Xanzhu</title>

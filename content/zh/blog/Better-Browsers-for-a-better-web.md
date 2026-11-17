@@ -18,10 +18,12 @@ alt: "流行网络浏览器的图标"
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/better-browsers/arc.webp
 credit: The Browser Company / Xanzhu
 alt: Arc 浏览器徽标
 ---
+
 ::
 
 市场上的新竞争者由 :PageLink{title="The Browser Company" url="https://www.thebrowser.company/"} 打造，是一个成熟的校友开发者集体，他们曾与一些 互联网最流行的网络服务，例如 Google Chrome、Instagram 等。 凭借在这一领域的深厚专业知识，The Browser Company 致力于通过重新激发浏览体验中的创造力和可访问性来改变普通浏览器的行为。
@@ -32,10 +34,12 @@ Arc 是生活中需要多任务处理和创造力的学生和专业人士的完�
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/better-browsers/arc-features.webp
 credit: The Browser Company
 alt: Arc 浏览器功能推出
 ---
+
 ::
 
 ### 开发者模式
@@ -48,10 +52,12 @@ Arc 提供内置的画中画 (PiP) 模式，当切换离开正在播放媒体的
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/better-browsers/split-view.webp
 credit: Xanzhu
 alt: Arc Browser 拆分视图功能
 ---
+
 ::
 
 ### 空格
@@ -72,10 +78,12 @@ alt: Arc Browser 拆分视图功能
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/better-browsers/brave.webp
 credit: Brave / Xanzhu
 alt: Arc 浏览器徽标
 ---
+
 ::
 
 最终，Brave 是 Google Chrome 本身的挑战者，它使用 Chromium 建立在同一个生态系统中。 两种浏览器的主要区别在于 Brave 是隐私至上的。 虽然 Chrome 是一种广泛使用的浏览器，但它附带了许多工具和服务，可以跟踪您浏览体验的各个方面。 Brave 剥离并删除了许多这些核心跟踪功能，显着提高了安全性。
@@ -94,10 +102,12 @@ Brave 的广告拦截器非常擅长删除所有级别的广告，这包括从 G
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/better-browsers/brave-adblock.webp
 credit: Brave
 alt: Brave 的广告拦截器仪表板
 ---
+
 ::
 
 ### Web3 支持
@@ -121,19 +131,23 @@ Brave 不断致力于改进搜索引擎并添加新功能，例如语音搜索�
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/better-browsers/snowflake-tor.webp
 credit: Tor Project
 alt: Tor 的 Snowflake 协议图
 ---
+
 ::
 
 该浏览器还包括连接到 Tor 网络的选项，这对想要访问深层网络或 .onion 地址的用户很有用。 正在实施以帮助对抗审查制度的新功能是 Snowflake 协议，它允许用户创建一个节点供其他用户连接并充当中间人来浏览互联网上的限制
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/better-browsers/snowflake.webp
 alt: Snowflake 在 brave 浏览器上的实现
 ---
+
 ::
 
 您可以通过 :PageLink{title="The Tor Project" url="https://snowflake.torproject.org/"} 了解有关 Snowflake 协议的更多信息
@@ -149,10 +163,12 @@ Brave 浏览器的内置 VPN 功能在浏览网络时提供了额外的安全和
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/better-browsers/brave-compare.webp
 credit: Brave
 alt: Brave 的安全特性对比图
 ---
+
 ::
 
 访问 :PageLink{title="Brave.com" url="https://brave.com/"} 下载浏览器并亲自体验不同之处。 无论您是临时用户还是开发人员，Brave 都提供一系列功能来增强您的浏览体验。 使用 Brave，您将能够以更多隐私、安全和高效的方式浏览网络。
@@ -161,10 +177,12 @@ alt: Brave 的安全特性对比图
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/better-browsers/firefox.webp
 credit: Mozilla / Xanzhu
 alt: 火狐浏览器标志
 ---
+
 ::
 
 Firefox 是由 Mozilla 开发的一种快速且安全的浏览器。 它提供了一系列出色的工具和服务，在其自身层面上是独一无二的，在 Chromium 生态系统之外。 它完全在自己的浏览器生态系统上运行，该生态系统可在所有设备上原生运行。 虽然与其他浏览器相比，它可能没有那么多的功能，但在可靠性方面它让您高枕无忧。
@@ -183,10 +201,12 @@ Firefox 提供快速和安全的浏览体验，具有一系列增强隐私和性
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/better-browsers/firefox-compare.webp
 credit: Mozilla
 alt: Firefox 安全特性比较表
 ---
+
 ::
 
 Firefox 是重视可靠性和隐私的用户的绝佳选择。 它是 Brave 的完美替代品，提供相似的功能范围和快速的性能。 访问 :PageLink{title="Firefox.com" url="https://www.firefox.com/"} 下载浏览器并亲自体验不同之处。

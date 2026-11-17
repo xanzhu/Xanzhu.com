@@ -1,18 +1,18 @@
 // types/post.ts
 export interface Post {
-  title: string
-  tag: string
-  date: string
-  description: string
-  img: string
-  updated: string
-  alt: string
+  title: string;
+  tag: string;
+  date: string;
+  description: string;
+  img: string;
+  updated: string;
+  alt: string;
   body?: {
-    type?: string
-    value?: any[]
+    type?: string;
+    value?: any[];
     toc?: {
-      links?: any[]
-    }
-  }
-  path?: string
+      links?: any[];
+    };
+  };
+  path?: string;
 }

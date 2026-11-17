@@ -39,9 +39,11 @@ A good option would be to use an authenticator with the ability to backup codes 
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/2-factor-auth/aegis.webp
 alt: Aegis Authenticator Logo
 ---
+
 ::
 
 Aegis is a free and open-source authenticator app available on Android through the Google Play Store and F-Droid. It offers added security compared to standard software, as tokens are not displayed as soon as you open the app.
@@ -54,9 +56,11 @@ Learn more about Aegis by visiting :PageLink{title="getaegis.app" url="https://g
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/2-factor-auth/2fas.webp
 alt: 2FAS Authenticator Logo
 ---
+
 ::
 
 2FAS is my personal favorite, offering a seamless two-factor authentication experience on both Android and iOS. It also has a browser extension for Brave, Firefox, Opera, and more, allowing for quick access to 2FA codes in the browser.
@@ -75,9 +79,11 @@ Some notable features include:
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/2-factor-auth/ravio.webp
 alt: Ravio Authenticator Logo
 ---
+
 ::
 
 Raivo OTP is a lightweight, open-source, and free to use authenticator app that syncs across all your Apple devices. Built using Swift 5, it is a native app in the Apple ecosystem and works on both mobile devices and MacOS.

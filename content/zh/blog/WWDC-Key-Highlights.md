@@ -19,10 +19,12 @@ source: "Apple"
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/VP.webp
 alt: VisionPro VR 耳机
 credit: The Verge
 ---
+
 ::
 
 Apple 首次尝试虚拟现实耳机。 提供混合现实与虚拟的独特体验。 这款耳机提供了一些令人印象深刻的软件技术，并处理了大多数耳机没有考虑到的许多功能。
@@ -51,10 +53,12 @@ VisionPro 具有一个按钮，可以实时拍摄视频和照片。 然后可以
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/human.webp
 alt: VisionPro Demo
 credit: Apple
 ---
+
 ::
 
 #### 充电/数据线
@@ -80,10 +84,12 @@ credit: Apple
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/sensor.webp
 alt: VisionPro sensor
 credit: Apple
 ---
+
 ::
 
 #### 视觉操作系统
@@ -96,9 +102,11 @@ credit: Apple
 
 ::vid
 ---
+
 source: https://www.apple.com/105/media/us/macbook-air-13-and-15/2023/f52c7a72-dff4-4f3c-9511-bf08e46c6f5f/anim/design/hero/medium_2x.mp4#t=4.033333
 credit: Apple
 ---
+
 ::
 
 ### Mac Studio
@@ -131,10 +139,12 @@ credit: Apple
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/macpro.webp
 alt: Mac Pro
 credit: Apple
 ---
+
 ::
 
 支持：
@@ -171,10 +181,12 @@ Apple 向开发人员展示他们的软件以供测试，并在接下来的几�
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/ios17.webp
 alt: iOS 17 Preview
 credit: Apple
 ---
+
 ::
 
 #### 配置文件改进
@@ -195,10 +207,12 @@ credit: Apple
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/transcribe.webp
 alt: iOS 17 音频转录功能
 credit: Apple
 ---
+
 ::
 
 #### 视频通话
@@ -225,10 +239,12 @@ credit: Apple
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/airdrop.webp
 alt: iOS 17 AirDrop 功能
 credit: Apple
 ---
+
 ::
 
 #### SharePlay 改进
@@ -251,10 +267,12 @@ credit: Apple
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/lookup.webp
 alt: iOS 17 查找功能
 credit: Apple
 ---
+
 ::
 
 #### 隔空播放
@@ -287,10 +305,12 @@ credit: Apple
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/ipados.webp
 alt: iPadOS 17 Preview
 credit: Apple
 ---
+
 ::
 
 #### 锁屏
@@ -307,10 +327,12 @@ credit: Apple
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/pdf.webp
 alt: PDF 协作预览
 credit: Apple
 ---
+
 ::
 
 #### 自由形式
@@ -348,9 +370,11 @@ macOS 的下一个版本已命名为 Sonoma，也称为 macOS 14 版
 
 ::vid
 ---
+
 source: https://www.apple.com/105/media/us/macos/sonoma-preview/2023/e6d837c5-8a7e-49d8-b0bd-137b21320db3/anim/share-preview/large_2x.mp4
 credit: Apple
 ---
+
 ::
 
 此外，在投影屏幕时相反，共享屏幕上方的可移动气泡中会出现一个小覆盖层，允许对屏幕上的重要细节进行阅读。
@@ -380,10 +404,12 @@ Safari 现在有配置文件，允许为学校、工作或个人用途等进行�
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/stickers.webp
 alt: macOS 消息贴纸功能
 credit: Apple
 ---
+
 ::
 
 #### PDF 和注释
@@ -412,10 +438,12 @@ credit: Apple
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/comms.webp
 alt: 消息通信安全
 credit: Apple
 ---
+
 ::
 
 #### 锁定模式
@@ -441,10 +469,12 @@ credit: Apple
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/watchos.webp
 alt: watchOS 10 Preview
 credit: Apple
 ---
+
 ::
 
 #### 智能堆栈
@@ -466,10 +496,12 @@ Ultra 版正在改进远足功能，允许在上次建立连接时自动设置�
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/hiking.webp
 alt: watchOS 远足功能
 credit: Apple
 ---
+
 ::
 
 #### 地形图
