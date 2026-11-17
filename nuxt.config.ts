@@ -163,7 +163,7 @@ export default defineNuxtConfig({
     },
     headers: {
       contentSecurityPolicy: {
-        "default-src": ["'self'", "https://*.xanzhu.com"],
+        "default-src": ["'self'"],
         "script-src": [
           "'self'",
           "'strict-dynamic'",
@@ -185,20 +185,11 @@ export default defineNuxtConfig({
           "data:",
           cdnUrl,
           "https://*.xanzhu.com",
-          "https://assets.lotofcarrots.com/media/home/section/desktop/4.webp",
-          "https://storage.googleapis.com/gweb-uniblog-publish-prod/",
           "https://i.ytimg.com",
           "https://unocss.dev",
           "https://nuxt.com",
         ],
-        "media-src": [
-          "'self'",
-          "https://storage.googleapis.com/gweb-uniblog-publish-prod/",
-          "https://storage.quantum-engine.ai",
-          "https://assets.lotofcarrots.com",
-          "https://www.apple.com",
-          "https://*.xanzhu.com",
-        ],
+        "media-src": ["'self'", "https://*.xanzhu.com"],
         "font-src": ["'self'", "data:"],
         "object-src": ["'none'"],
         "script-src-attr": [
