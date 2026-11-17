@@ -1,47 +1,49 @@
 <script setup lang="ts">
 const { videoId, title } = defineProps<{
-  videoId: string
-  title?: string
-}>()
-const { t } = useI18n()
+  videoId: string;
+  title?: string;
+}>();
 
-const isLoaded = ref(false)
-const isPlaying = ref(false)
-const hasError = ref(false)
+const { t } = useI18n();
 
-interface YouTubeStateEvent {
-  data: number
+const isPlaying = ref(false);
+const hasError = ref(false);
+
+interface YoutubeStateEvent {
+  data: number;
 }
 
-function stateChange(event: YouTubeStateEvent) {
-  isPlaying.value = event.data === 1
+function stateChange(event: YoutubeStateEvent) {
+  isPlaying.value = event.data === 1;
 }
-const iframeTitle = computed(() =>
-  title || t('blog.article.videoIframe'),
-)
+
+const iframeTitle = computed(() => title || t("common.article.video"));
 </script>
 
 <template>
-  <div class="rounded-md aspect-video relative overflow-hidden">
-    <div v-if="hasError" class="text-sm bg-black/10 flex items-center inset-0 justify-center absolute">
-      {{ t('blog.article.videoError') }}
+  <div class="rounded-md aspect-video relative overflow-hidden bg-black/5 dark:bg-white/5">
+    <div
+      v-if="hasError"
+      role="alert"
+      class="text-sm bg-black/10 flex items-center inset-0 justify-center absolute z-10"
+    >
+      {{ t("common.article.noVideo") }}
     </div>
+
     <ScriptYouTubePlayer
       v-else
       :video-id="videoId"
       :title="iframeTitle"
-      @ready="isLoaded = true"
       @state-change="stateChange"
       @error="hasError = true"
     >
       <template #awaitingLoad>
         <button
-          v-if="!isLoaded"
-          class="border-none flex items-center inset-0 justify-center absolute"
-          :aria-label="t('blog.article.videoClick')"
+          class="border-none bg-transparent cursor-pointer flex items-center inset-0 justify-center absolute w-full h-full group focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-red-600 dark:focus-visible:ring-offset-black"
+          :aria-label="t('common.article.loadVideo')"
         >
           <svg
-            class="h-12 w-17 transition-transform hover:scale-110"
+            class="h-12 w-17 transition-transform group-hover:scale-110 drop-shadow-md"
             viewBox="0 0 68 48"
             aria-hidden="true"
           >

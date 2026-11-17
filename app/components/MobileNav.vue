@@ -1,39 +1,54 @@
 <script setup lang="ts">
-import { useEventListener, useScrollLock } from '@vueuse/core'
+import { useEventListener, useScrollLock } from "@vueuse/core";
 
-const { links } = defineProps<{ links: NavLink[] }>()
+const { links } = defineProps<{ links: NavLink[] }>();
 
-const { toggle, isActive } = useStateToggle()
+const { toggle, isActive } = useStateToggle();
 
-const isLangOpen = computed(() => isActive('language'))
-const isMenuOpen = computed(() => isActive('menu'))
-const isAnyOpen = computed(() => isLangOpen.value || isMenuOpen.value)
+const isLangOpen = computed(() => isActive("language"));
+const isMenuOpen = computed(() => isActive("menu"));
+const isAnyOpen = computed(() => isLangOpen.value || isMenuOpen.value);
 
-const isLocked = useScrollLock(typeof document !== 'undefined' ? document.body : null)
+const isLocked = useScrollLock(typeof document !== "undefined" ? document.body : null);
 
 watch(isAnyOpen, (val) => {
-  isLocked.value = val
-})
+  isLocked.value = val;
+});
 
-const panelId = useId()
+const panelId = useId();
+const labelId = useId();
+const panel = ref<HTMLElement>();
+const lastTrigger = ref<HTMLElement>();
 
-useEventListener('keydown', (e) => {
-  if (e.key === 'Escape' && isAnyOpen.value)
-    closeAll()
-})
+watch(isAnyOpen, async (open) => {
+  isLocked.value = open;
+  if (open) {
+    await nextTick();
+    panel.value?.focus();
+  } else {
+    lastTrigger.value?.focus();
+  }
+});
 
-const { locales, locale: currentLocale, t } = useI18n()
-const switchLocalePath = useSwitchLocalePath()
+useEventListener("keydown", (e) => {
+  if (e.key === "Escape" && isAnyOpen.value) closeAll();
+});
+
+const { locales, locale: currentLocale, t } = useI18n();
+const switchLocalePath = useSwitchLocalePath();
 
 const availableLocales = computed(() => {
-  return locales.value.filter(i => typeof i !== 'string' && i.code)
-})
+  return locales.value.filter((i) => typeof i !== "string" && i.code);
+});
+
+function onTrigger(name: "language" | "menu", e: Event) {
+  lastTrigger.value = e.currentTarget as HTMLElement;
+  toggle(name);
+}
 
 function closeAll() {
-  if (isLangOpen.value)
-    toggle('language')
-  if (isMenuOpen.value)
-    toggle('menu')
+  if (isLangOpen.value) toggle("language");
+  if (isMenuOpen.value) toggle("menu");
 }
 </script>
 
@@ -44,11 +59,11 @@ function closeAll() {
     <button
       class="p1 px1.5 pt1.5 b-1 b-transparent rounded-md b-solid bg-transparent cursor-pointer transition-colors hover:(core-ui core-border)"
       :class="isLangOpen ? '!core-border core-ui' : 'text-inherit'"
-      aria-haspopup="true"
+      aria-haspopup="dialog"
       :aria-expanded="isLangOpen"
-      :aria-controls="panelId"
-      :aria-label="t('ui.lang.select')"
-      @click="toggle('language')"
+      :aria-controls="isLangOpen ? panelId : undefined"
+      :aria-label="t('common.lang.select')"
+      @click="onTrigger('language', $event)"
     >
       <Icon v-once name="lucide:languages" class="h-6 w-6" />
     </button>
@@ -56,10 +71,10 @@ function closeAll() {
     <button
       class="px1.5 py1 pt1.5 b-1 b-transparent rounded-md b-solid bg-transparent cursor-pointer transition-colors hover:(core-ui core-border)"
       :class="isMenuOpen ? '!core-border core-ui' : 'text-inherit'"
-      aria-haspopup="true"
+      aria-haspopup="dialog"
       :aria-expanded="isMenuOpen"
-      :aria-controls="panelId"
-      :aria-label="t('aria.open_menu')"
+      :aria-controls="isMenuOpen ? panelId : undefined"
+      :aria-label="isMenuOpen ? t('common.menu.close') : t('common.menu.open')"
       @click="toggle('menu')"
     >
       <Icon :name="isMenuOpen ? 'lucide:x' : 'lucide:menu'" class="h-6 w-6" />
@@ -67,8 +82,12 @@ function closeAll() {
 
     <Teleport defer to="body">
       <Transition
-        enter-active-class="transition duration-300" enter-from-class="opacity-0" enter-to-class="opacity-100"
-        leave-active-class="transition duration-200" leave-from-class="opacity-100" leave-to-class="opacity-0"
+        enter-active-class="transition duration-300"
+        enter-from-class="opacity-0"
+        enter-to-class="opacity-100"
+        leave-active-class="transition duration-200"
+        leave-from-class="opacity-100"
+        leave-to-class="opacity-0"
       >
         <div v-if="isAnyOpen" class="inset-0 fixed z-40 backdrop-blur-sm" @click="closeAll" />
       </Transition>
@@ -87,17 +106,28 @@ function closeAll() {
           :id="panelId"
           role="dialog"
           aria-modal="true"
+          ref="panel"
+          tabindex="-1"
+          :aria-labelledby="labelId"
           class="core-ui p-3 core-border rounded-xl flex flex-col max-h-[75vh] shadow-2xl left-4 right-4 top-18 fixed z-50 overflow-y-auto"
         >
           <div v-if="isLangOpen" key="lang-content" class="flex flex-col space-y-2">
-            <div class="text-[12px] tracking-widest font-bold px-3 py-2 opacity-60 uppercase">
-              {{ t('ui.lang.select') }}
+            <div
+              :id="labelId"
+              class="text-[12px] tracking-widest font-bold px-3 py-2 opacity-60 uppercase"
+            >
+              {{ t("common.lang.select") }}
             </div>
             <NuxtLink
-              v-for="l in availableLocales" :key="l.code"
+              v-for="l in availableLocales"
+              :key="l.code"
               :to="switchLocalePath(l.code)"
               class="text-black p-3 b-transparent rounded-lg b-solid no-underline flex transition-all items-center justify-between dark:text-white hover:(bg-neutral-200 dark:hover:bg-white/5)"
-              :class="l.code === currentLocale ? 'bg-white dark:bg-black !core-border pointer-events-none' : 'text-inherit border border-1 border-transparent'"
+              :class="
+                l.code === currentLocale
+                  ? 'bg-white dark:bg-black !core-border pointer-events-none'
+                  : 'text-inherit border border-1 border-transparent'
+              "
               @click="closeAll"
             >
               <span class="text-md">{{ l.name }}</span>
@@ -105,12 +135,22 @@ function closeAll() {
             </NuxtLink>
           </div>
 
-          <nav v-else-if="isMenuOpen" key="menu-content" class="flex flex-col space-y-2">
-            <div class="text-[12px] tracking-widest font-bold px-3 py-2 opacity-60 uppercase">
-              {{ t('ui.menu') }}
+          <nav
+            v-else-if="isMenuOpen"
+            key="menu-content"
+            :aria-labelledby="labelId"
+            class="flex flex-col space-y-2"
+          >
+            <div
+              :id="labelId"
+              class="text-[12px] tracking-widest font-bold px-3 py-2 opacity-60 uppercase"
+            >
+              {{ t("common.menu.mobileMain") }}
             </div>
             <NuxtLinkLocale
-              v-for="(link, index) in links" :key="index" :to="link.url"
+              v-for="(link, index) in links"
+              :key="index"
+              :to="link.url"
               class="text-lg text-black font-semibold p-3 b-1 border-transparent rounded-lg b-solid no-underline transition-all dark:text-white hover:(bg-neutral-200 dark:hover:bg-white/5)"
               active-class="bg-white dark:bg-black !core-border pointer-events-none"
               @click="closeAll"

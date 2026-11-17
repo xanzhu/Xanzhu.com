@@ -1,47 +1,47 @@
 <script setup lang="ts">
-const route = useRoute()
-const { t } = useI18n()
+const route = useRoute();
+const { t } = useI18n();
 
-const localePath = useLocalePath()
+const localePath = useLocalePath();
 
-const basePath = computed(() => localePath('/resources'))
-const isOnSubpage = computed(() => route.path !== basePath.value)
+const basePath = computed(() => localePath("/resources"));
+const isOnSubpage = computed(() => route.path !== basePath.value);
 
 const categories = computed(() => [
   {
-    name: 'phishing',
-    title: t('resources.category.phishing'),
-    icon: 'lucide:fish',
-    description: t('resources.category.phishingDesc'),
+    name: "phishing",
+    title: t("app.resources.category.phishing"),
+    icon: "lucide:fish",
+    description: t("app.resources.category.phishingDesc"),
   },
   {
-    name: 'malware',
-    title: t('resources.category.malware'),
-    icon: 'lucide:bug',
-    description: t('resources.category.malwareDesc'),
+    name: "malware",
+    title: t("app.resources.category.malware"),
+    icon: "lucide:bug",
+    description: t("app.resources.category.malwareDesc"),
   },
   {
-    name: 'network-security',
-    title: t('resources.category.networkSec'),
-    icon: 'lucide:globe',
-    description: t('resources.category.networkSecDesc'),
+    name: "network-security",
+    title: t("app.resources.category.networkSec"),
+    icon: "lucide:globe",
+    description: t("app.resources.category.networkSecDesc"),
   },
   {
-    name: 'privacy',
-    title: t('resources.category.privacy'),
-    icon: 'lucide:shield',
-    description: t('resources.category.privacyDesc'),
+    name: "privacy",
+    title: t("app.resources.category.privacy"),
+    icon: "lucide:shield",
+    description: t("app.resources.category.privacyDesc"),
   },
-])
+]);
 
 const categoryLinks = computed(() => {
-  const base = basePath.value
-  return categories.value.map(cat => ({
+  const base = basePath.value;
+  return categories.value.map((cat) => ({
     ...cat,
     path: `${base}/${cat.name}`,
     isActive: route.path.startsWith(`${base}/${cat.name}`),
-  }))
-})
+  }));
+});
 </script>
 
 <template>
@@ -62,41 +62,32 @@ const categoryLinks = computed(() => {
           class="h4 w4 transition-transform group-hover:-translate-x-1"
           aria-hidden="true"
         />
-        <span>{{ t('resources.category.back') }}</span>
+        <span>{{ t("app.resources.category.back") }}</span>
       </NuxtLink>
 
       <h2
         id="categories-heading"
         class="text-neutral-4 text-sm tracking-wide font-semibold m0 mb2 mt-10 uppercase"
       >
-        {{ t('resources.subHead') }}
+        {{ t("app.resources.subHead") }}
       </h2>
 
-      <ul
-        class="m0 p0 list-none"
-        role="list"
-        aria-labelledby="categories-heading"
-      >
+      <ul class="m0 p0 list-none" role="list" aria-labelledby="categories-heading">
         <li v-for="category in categoryLinks" :key="category.name" class="mb-2">
           <NuxtLink
             :to="category.path"
             class="focus:bg-neutral-8 hover:bg-neutral-8 text-sm px-2 py-1.5 rounded-sm no-underline flex gap-2 transition-colors items-center hover:(text-white) focus:(outline-2 outline-white outline-offset-2)"
             :class="category.isActive ? 'text-white bg-neutral-8' : 'text-neutral-3'"
             :aria-current="category.isActive ? 'page' : undefined"
-            :aria-label="category.description ? `${category.title}. ${category.description}` : category.title"
+            :aria-label="
+              category.description ? `${category.title}. ${category.description}` : category.title
+            "
           >
-            <Icon
-              :name="category.icon"
-              class="shrink-0 h4 w4"
-              aria-hidden="true"
-            />
+            <Icon :name="category.icon" class="shrink-0 h4 w4" aria-hidden="true" />
             <span class="flex-1">{{ category.title }}</span>
 
-            <span
-              v-if="category.isActive"
-              class="sr-only"
-            >
-              ({{ t('resources.currentPage') }})
+            <span v-if="category.isActive" class="sr-only">
+              ({{ t("resources.currentPage") }})
             </span>
           </NuxtLink>
         </li>

@@ -1,34 +1,28 @@
 <script setup lang="ts">
-const { breadcrumbs, jsonLd } = useBreadcrumbs()
-const { t } = useI18n()
+const { breadcrumbs, jsonLd } = useBreadcrumbs();
+const { t } = useI18n();
 
 useHead({
   script: () =>
     jsonLd.value
-      ? [{
-          key: 'breadcrumbs-jsonld',
-          type: 'application/ld+json',
-          innerHTML: JSON.stringify(jsonLd.value),
-        }]
+      ? [
+          {
+            key: "breadcrumbs-jsonld",
+            type: "application/ld+json",
+            innerHTML: JSON.stringify(jsonLd.value).replace(/</g, "\\u003c"),
+          },
+        ]
       : [],
-})
+});
 
-const separator = '/'
-const shouldDisplay = computed(() => breadcrumbs.value.length > 1)
+const separator = "/";
+const shouldDisplay = computed(() => breadcrumbs.value.length > 1);
 </script>
 
 <template>
-  <nav
-    v-if="shouldDisplay"
-    class="text-sm"
-    :aria-label="t('ui.breadCrumbs')"
-  >
+  <nav v-if="shouldDisplay" class="text-sm" :aria-label="t('common.breadCrumbs')">
     <ol class="pl4 flex md:(flex-row items-center)">
-      <li
-        v-for="(item, index) in breadcrumbs"
-        :key="item.path"
-        class="flex items-center"
-      >
+      <li v-for="(item, index) in breadcrumbs" :key="item.path" class="flex items-center">
         <NuxtLinkLocale
           v-if="!item.current"
           :to="item.path"
@@ -37,11 +31,7 @@ const shouldDisplay = computed(() => breadcrumbs.value.length > 1)
           {{ item.name }}
         </NuxtLinkLocale>
 
-        <span
-          v-else
-          class="text-neutral-900 font-medium dark:text-neutral-100"
-          aria-current="page"
-        >
+        <span v-else class="text-neutral-900 font-medium dark:text-neutral-100" aria-current="page">
           {{ item.name }}
         </span>
 

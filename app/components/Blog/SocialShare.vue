@@ -34,7 +34,7 @@ async function copyLink() {
 const socials = computed(() => {
   const url = encodeURIComponent(fullUrl.value);
   const title = encodeURIComponent(post.title);
-  const emailBody = encodeURIComponent(t("ui.sharing.email"));
+  const emailBody = encodeURIComponent(t("common.sharing.email"));
 
   return [
     {
@@ -46,11 +46,6 @@ const socials = computed(() => {
       name: "bluesky",
       url: `https://bsky.app/intent/compose?text=${title}%20${url}`,
       icon: "ri:bluesky-fill",
-    },
-    {
-      name: "threads",
-      url: `https://threads.net/intent/post?text=${title}%20${url}`,
-      icon: "ri:threads-line",
     },
     {
       name: "linkedin",
@@ -75,7 +70,7 @@ const socials = computed(() => {
   <div
     class="core-theme mx-auto px-3 py-1.5 core-border rounded-full inline-flex gap-1 items-center"
     role="group"
-    :aria-label="t('ui.sharing.title')"
+    :aria-label="t('common.sharing.title')"
   >
     <NuxtLink
       v-for="social in socials"
@@ -83,21 +78,21 @@ const socials = computed(() => {
       :to="social.url"
       target="_blank"
       rel="noopener noreferrer"
-      :title="t(`ui.sharing.${social.name}`)"
+      :title="t(`common.sharing.${social.name}`)"
       class="group text-black p-1.5 transition-all duration-200 dark:text-white hover:-translate-y-0.5"
     >
       <Icon
         :name="social.icon"
-        class="opacity-80 h-5 w-5 transition-colors group-hover:text-brand-light group-hover:opacity-100 dark:group-hover:text-brand-dark"
+        class="opacity-80 h-5 w-5 transition-colors group-hover:text-green-500 group-hover:opacity-100 dark:group-hover:text-green-500"
       />
-      <span class="sr-only">{{ t(`ui.sharing.${social.name}`) }}</span>
+      <span class="sr-only">{{ t(`common.sharing.${social.name}`) }}</span>
     </NuxtLink>
 
     <div class="mx-1 bg-gray-300 h-4 w-px dark:bg-dark-400" aria-hidden="true" />
 
     <button
       type="button"
-      :title="t('ui.sharing.copy')"
+      :title="t('common.sharing.copy')"
       class="group text-inherit p-1.5 rounded-md border-none bg-transparent cursor-pointer transition-all duration-200 hover:-translate-y-0.5"
       @click="copyLink"
     >
@@ -107,10 +102,12 @@ const socials = computed(() => {
         :class="
           copied
             ? 'text-green-500'
-            : 'opacity-80 group-hover:opacity-100 group-hover:text-brand-light dark:group-hover:text-brand-dark'
+            : 'opacity-80 group-hover:opacity-100 group-hover:text-green-500 dark:group-hover:text-green-400'
         "
       />
-      <span class="sr-only">{{ copied ? t('ui.sharing.copied') : t('ui.sharing.copy') }}</span>
+      <span class="sr-only">{{
+        copied ? t("common.sharing.copied") : t("common.sharing.copy")
+      }}</span>
     </button>
   </div>
 </template>

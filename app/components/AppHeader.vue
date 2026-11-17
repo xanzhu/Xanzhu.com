@@ -1,46 +1,43 @@
 <script setup>
-import { defineAsyncComponent } from 'vue'
-
 const links = useNavLinks(
-  { name: 'nav.blog', url: '/blog' },
-  { name: 'nav.analysis', url: '/analysis' },
-  { name: 'nav.resources', url: '/resources' },
-)
+  { name: "common.nav.blog", url: "/blog" },
+  { name: "common.nav.advisory", url: "/advisory" },
+  { name: "common.nav.resources", url: "/resources" },
+);
 
 // Experimental
-const LayoutMobileNav = defineAsyncComponent(() => import('./MobileNav.vue'))
+const LayoutMobileNav = defineAsyncComponent(() => import("./MobileNav.vue"));
 
-const switchLocalePath = useSwitchLocalePath()
-const { locale: activeLocale, locales, t } = useI18n()
+const switchLocalePath = useSwitchLocalePath();
+const { locale: activeLocale, locales, t } = useI18n();
 
 const sortedLocales = computed(() => {
   const sorted = locales.value.toSorted((a, b) => {
-    if (a.code === activeLocale.value)
-      return -1
-    if (b.code === activeLocale.value)
-      return 1
-    return 0
-  })
+    if (a.code === activeLocale.value) return -1;
+    if (b.code === activeLocale.value) return 1;
+    return 0;
+  });
 
-  return sorted.map(locale => ({
+  return sorted.map((locale) => ({
     ...locale,
     isActive: locale.code === activeLocale.value,
-    classes: locale.code === activeLocale.value
-      ? 'bg-black text-white dark:bg-white dark:text-black pointer-events-none'
-      : 'text-black dark:text-white hover:bg-gray-200 dark:hover:bg-dark-600',
-  }))
-})
+    classes:
+      locale.code === activeLocale.value
+        ? "bg-black text-white dark:bg-white dark:text-black pointer-events-none"
+        : "text-black dark:text-white hover:bg-gray-200 dark:hover:bg-dark-600",
+  }));
+});
 </script>
 
 <template>
   <header
-    class="text-black mx-auto p2 border-b-1 border-b-dark400/10 bg-white/70 flex items-center justify-between backdrop-blur-lg dark:(text-white border-b-dark-200/30 bg-black/70) 2xl:px40 md:px-6 xl:px25"
+    class="text-black p2 border-b-1 border-b-dark400/10 bg-white/70 flex items-center justify-between backdrop-blur-lg dark:(text-white border-b-dark-200/30 bg-black/70) 2xl:px40 md:px-6 xl:px25"
   >
-    <NuxtLinkLocale to="/" class="text-inherit">
+    <NuxtLinkLocale to="/" class="text-inherit" :aria-label="t('common.nav.home')">
       <UiAppLogo v-once class="h10 md:h12" />
     </NuxtLinkLocale>
 
-    <nav class="md:underline-none hidden md:(flex space-x-10)" :aria-label="t('aria.main_nav')">
+    <nav class="md:underline-none hidden md:(flex space-x-10)" :aria-label="t('common.menu.main')">
       <NuxtLinkLocale
         v-for="link in links"
         :key="link.url"
@@ -54,19 +51,26 @@ const sortedLocales = computed(() => {
 
     <div class="hidden md:(flex items-center space-x-2)" role="group">
       <UiColorSwitch />
-      <div class="md:(core-ui p1 core-border rounded-full inline-flex gap1)" role="navigation" :aria-label="t('aria.lang_selector')">
+      <nav
+        class="md:(core-ui p1 core-border rounded-full inline-flex gap1)"
+        :aria-label="t('common.lang.select')"
+      >
         <NuxtLink
           v-for="locale in sortedLocales"
           :key="locale.code"
           :to="switchLocalePath(locale.code)"
           :prefetch="false"
           :aria-current="locale.isActive ? 'true' : undefined"
+          :hreflang="locale.language ?? locale.code"
+          :aria-label="
+            locale.isActive ? undefined : t('common.lang.switch', { locale: locale.name })
+          "
           :class="locale.classes"
           class="text-sm font-medium px3 py1 text-center rounded-full decoration-none transition-colors duration-200"
         >
           {{ locale.name }}
         </NuxtLink>
-      </div>
+      </nav>
     </div>
 
     <LayoutMobileNav class="flex md:hidden" :links="links" />

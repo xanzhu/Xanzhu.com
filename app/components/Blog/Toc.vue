@@ -1,108 +1,92 @@
 <script setup lang="ts">
-const { links } = defineProps<{
-  links: TocLink[]
-}>()
-
-const { t } = useI18n()
-const tocHeadingId = useId()
-
 interface TocLink {
-  id: string
-  text: string
-  depth: number
-  children?: TocLink[]
+  id: string;
+  text: string;
+  depth: number;
+  children?: TocLink[];
 }
 
-const isDesktop = ref(false)
-let observer: IntersectionObserver | null = null
-const activeSection = ref<string | null>(null)
+const props = defineProps<{
+  links: TocLink[];
+}>();
 
-const flattenedLinks = computed(() => {
-  const result: TocLink[] = []
+const { t } = useI18n();
+const tocHeadingId = useId();
 
-  function flatten(links: TocLink[]) {
-    for (const link of links) {
-      result.push(link)
-      if (link.children) {
-        flatten(link.children)
-      }
-    }
-  }
+const OBSERVER_MARGIN = "-100px 0px -80% 0px";
+const DESKTOP_QUERY = "(min-width: 768px)";
 
-  flatten(links)
-  return result
-})
+const activeSection = ref<string | null>(null);
 
-const hasChildren = computed(() =>
-  flattenedLinks.value.some(link => link.depth === 3),
-)
+function flatten(links: TocLink[]): TocLink[] {
+  return links.flatMap((link) => [link, ...flatten(link.children ?? [])]);
+}
 
-function setupIntersectionObserver() {
-  if (!isDesktop.value)
-    return
+const flattenedLinks = computed(() => flatten(props.links).filter((link) => link.id));
 
-  const sections = flattenedLinks.value
-    .filter(link => link.id)
-    .map(link => document.getElementById(link.id))
-    .filter((el): el is HTMLElement => el !== null)
+let observer: IntersectionObserver | null = null;
+const visibleIds = new Set<string>();
 
-  if (sections.length === 0)
-    return
+function stopObserving() {
+  observer?.disconnect();
+  observer = null;
+  visibleIds.clear();
+}
+
+function startObserving() {
+  stopObserving();
+
+  const headings = flattenedLinks.value
+    .map((link) => document.getElementById(link.id))
+    .filter((el): el is HTMLElement => el !== null);
+
+  if (headings.length === 0) return;
 
   observer = new IntersectionObserver(
     (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          activeSection.value = entry.target.id
-        }
-      })
-    },
-    {
-      root: null,
-      rootMargin: '-100px 0px -80% 0px',
-      threshold: 0.03,
-    },
-  )
+      for (const entry of entries) {
+        if (entry.isIntersecting) visibleIds.add(entry.target.id);
+        else visibleIds.delete(entry.target.id);
+      }
 
-  sections.forEach(section => observer?.observe(section))
+      // Topmost visible heading wins. If none are visible, keep the last one.
+      const current = flattenedLinks.value.find((link) => visibleIds.has(link.id));
+      if (current) activeSection.value = current.id;
+    },
+    { rootMargin: OBSERVER_MARGIN },
+  );
+
+  for (const heading of headings) observer.observe(heading);
 }
 
-let resizeTimeout: ReturnType<typeof setTimeout> | null = null
+let mediaQuery: MediaQueryList | null = null;
 
-function checkScreenWidth() {
-  const wasDesktop = isDesktop.value
-  isDesktop.value = window.innerWidth >= 768
-
-  if (!wasDesktop && isDesktop.value) {
-    setupIntersectionObserver()
-  }
-
-  else if (wasDesktop && !isDesktop.value && observer) {
-    observer.disconnect()
-    observer = null
-  }
+function syncToViewport() {
+  if (mediaQuery?.matches) startObserving();
+  else stopObserving();
 }
 
-function handleResize() {
-  if (resizeTimeout)
-    clearTimeout(resizeTimeout)
-  resizeTimeout = setTimeout(checkScreenWidth, 150)
+function setInitialFromHash() {
+  const id = decodeURIComponent(window.location.hash.slice(1));
+  if (id && flattenedLinks.value.some((link) => link.id === id)) {
+    activeSection.value = id;
+  }
 }
 
 onMounted(() => {
-  checkScreenWidth()
-  window.addEventListener('resize', handleResize)
-})
+  mediaQuery = window.matchMedia(DESKTOP_QUERY);
+  mediaQuery.addEventListener("change", syncToViewport);
+  setInitialFromHash();
+  syncToViewport();
+});
 
-onUnmounted(() => {
-  window.removeEventListener('resize', handleResize)
-  if (resizeTimeout)
-    clearTimeout(resizeTimeout)
-  if (observer)
-    observer.disconnect()
-})
+watch(flattenedLinks, syncToViewport, { flush: "post" });
+
+onBeforeUnmount(() => {
+  mediaQuery?.removeEventListener("change", syncToViewport);
+  stopObserving();
+});
 </script>
-
 <template>
   <nav
     class="m-4 p4 core-border rounded-xs md:(mx-auto max-w-xl) lg:(max-w-md)"
@@ -110,25 +94,20 @@ onUnmounted(() => {
   >
     <header :id="tocHeadingId" class="mb-2 pb-2">
       <p class="text-lg tracking-wide font-semibold m-0 text-center">
-        {{ t("blog.toc") }}
+        {{ t("common.article.toc") }}
       </p>
     </header>
-    <ul class="text-sm leading-tight px-4 flex flex-col gap-2" role="list">
-      <li
-        v-for="link of flattenedLinks"
-        :key="link.id"
-        class="border border-transparent rounded-xs w-fit transition-all duration-300 dark:text-light-400 hover:(underline underline-1 underline-offset-3)"
-        :class="{
-          'list-disc': !hasChildren && link.depth === 2,
-          'ml-3 opacity-80': link.depth === 3,
-          'list-none -ml-4 py-0.5 px-2 text-gray-800 dark:text-light-300': link.depth === 2 && hasChildren,
-          'transform p0.5 underline underline-offset-3 underline-1 font-semibold': activeSection === link.id,
-        }"
-      >
+    <ul class="text-sm leading-tight flex flex-col gap-1" role="list">
+      <li v-for="link of flattenedLinks" :key="link.id" :class="link.depth === 3 ? 'ml-4' : ''">
         <NuxtLink
-          class="text-inherit no-underline"
           :href="`#${link.id}`"
-          :aria-current="activeSection === link.id ? 'true' : 'false'"
+          :aria-current="activeSection === link.id ? 'location' : undefined"
+          class="block px-2 py-0.5 border-l-2 rounded-xs underline underline-1 underline-offset-3 transition-colors duration-200"
+          :class="
+            activeSection === link.id
+              ? 'border-current decoration-current text-black dark:text-white'
+              : 'border-transparent decoration-transparent text-gray-600 dark:text-light-400 hover:decoration-current'
+          "
         >
           {{ link.text }}
         </NuxtLink>
