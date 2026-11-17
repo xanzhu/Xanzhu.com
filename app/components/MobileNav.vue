@@ -75,7 +75,7 @@ function closeAll() {
       :aria-expanded="isMenuOpen"
       :aria-controls="isMenuOpen ? panelId : undefined"
       :aria-label="isMenuOpen ? t('common.menu.close') : t('common.menu.open')"
-      @click="toggle('menu')"
+      @click="onTrigger('menu', $event)"
     >
       <Icon :name="isMenuOpen ? 'lucide:x' : 'lucide:menu'" class="h-6 w-6" />
     </button>

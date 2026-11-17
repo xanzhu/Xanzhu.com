@@ -13,7 +13,7 @@ const now = ref(new Date());
 
 const accessibleDateLabel = computed(() => {
   const formatter = new Intl.DateTimeFormat(locale.value, { dateStyle: "full" });
-  return { date: formatter.format(now.value) };
+  return formatter.format(now.value);
 });
 </script>
 

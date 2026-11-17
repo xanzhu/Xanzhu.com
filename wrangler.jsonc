@@ -1,7 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "core",
-  "compatibility_date": "2026-11-04",
+  "compatibility_date": "2026-11-17",
   "observability": {
     "enabled": true,
     "head_sampling_rate": 1,

@@ -25,6 +25,7 @@ const { data: featured } = await useAsyncData(`featuredArticles-${locale.value}`
     </div> -->
     <div class="w-full max-w-4xl">
       <h1
+        id="hero"
         class="font-bold px4 text-balance text-[clamp(2rem,3vw,5rem)] font-stretch-[130%] uppercase"
       >
         {{ t("app.home.heroTitle") }}

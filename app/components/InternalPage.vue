@@ -1,9 +1,9 @@
 <script setup lang="ts">
-const { title, description, date, datelabel } = defineProps<{
+const { title, description, date, dateLabel } = defineProps<{
   title?: string;
   description?: string;
   date?: string;
-  datelabel?: string;
+  dateLabel?: string;
 }>();
 
 const slots = useSlots();
@@ -14,7 +14,7 @@ const hasSubInfo = computed(() => hasDate.value || hasDescription.value);
 </script>
 
 <template>
-  <main class="flex flex-col items-center md:mt-20">
+  <div class="flex flex-col items-center md:mt-20">
     <div class="my-10 max-w-4xl min-h-screen space-y-10 sm:mx-auto">
       <header
         class="mx-4 flex flex-col space-y-4"
@@ -34,9 +34,9 @@ const hasSubInfo = computed(() => hasDate.value || hasDescription.value);
             </slot>
           </p>
         </div>
-        <div v-if="datelabel" class="m0 flex flex-col">
-          <span v-if="datelabel" class="font-semibold self-end">
-            <slot name="dateLabel">{{ datelabel }}</slot>
+        <div v-if="dateLabel" class="m0 flex flex-col">
+          <span v-if="dateLabel" class="font-semibold self-end">
+            <slot name="dateLabel">{{ dateLabel }}</slot>
           </span>
           <span class="font-400">
             <slot name="date">
@@ -52,5 +52,5 @@ const hasSubInfo = computed(() => hasDate.value || hasDescription.value);
         <slot name="content" />
       </article>
     </div>
-  </main>
+  </div>
 </template>

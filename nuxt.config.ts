@@ -247,7 +247,7 @@ export default defineNuxtConfig({
     sri: true,
   },
 
-  compatibilityDate: "2026-11-04",
+  compatibilityDate: "2026-11-17",
 
   scripts: {
     privacy: true,

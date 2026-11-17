@@ -43,7 +43,7 @@ export default {
     toc: "Table of Contents",
     changelog: "Changelog",
     noVideo: "Unable to load video",
-    clickVideo: "Play video {video.url?}",
+    clickVideo: "Play video {video.url}",
     loadVideo: "Loading video player..",
     video: "Embedded video player",
   },

@@ -43,7 +43,7 @@ export default {
     toc: "目录",
     changelog: "更新日志",
     noVideo: "无法加载视频",
-    clickVideo: "播放视频 {video.url?}",
+    clickVideo: "播放视频 {video.url}",
     loadVideo: "正在加载视频播放器..",
     video: "嵌入式视频播放器",
   },

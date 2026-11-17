@@ -43,7 +43,7 @@ export default {
     toc: "목차",
     changelog: "변경 이력",
     noVideo: "동영상을 불러올 수 없습니다",
-    clickVideo: "동영상 재생 {video.url?}",
+    clickVideo: "동영상 재생 {video.url}",
     loadVideo: "동영상 플레이어를 불러오는 중..",
     video: "삽입된 동영상 플레이어",
   },

@@ -15,11 +15,20 @@ const errorData = computed(() => {
   return {
     status,
     key,
+    is404,
     title: t(`common.errors.${key}.heading`),
     message: t(`common.errors.${key}.subHead`),
     action: t(`common.errors.${key}.cta`),
   };
 });
+
+function handleAction() {
+  if (errorData.value.is404) {
+    navigateTo(localePath("index"));
+  } else {
+    window.location.reload();
+  }
+}
 
 useHead({
   title: () => `${errorData.value.key} - ${errorData.value.title}`,
@@ -54,12 +63,12 @@ useHead({
         </div>
 
         <div class="flex justify-between children:p-2">
-          <NuxtLink
-            :to="localePath('index')"
+          <button
+            @click="handleAction"
             class="text-sm text-inherit border border-transparent rounded-md border-solid bg-transparent underline underline-offset-4 cursor-pointer hover:(core-border bg-white dark:bg-black) focus-visible:(outline outline-2 outline-offset-2 outline-black) dark:focus-visible:outline-white"
           >
             {{ errorData.action }}
-          </NuxtLink>
+          </button>
           <span class="text-sm opacity-80 motion-safe:animate-pulse" aria-hidden="true">
             {{ errorData.key }}
           </span>

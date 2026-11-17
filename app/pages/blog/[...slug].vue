@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { Collections } from "@nuxt/content";
+import type { Post } from "~/types/post";
 
 type BlogCollection = Extract<keyof Collections, `blog_${string}`>;
 
@@ -32,7 +33,10 @@ setBreadcrumbTitle(post.value.title);
 
 const titleSuffix = " - Xanzhu";
 const absolute = (p?: string) => (p ? new URL(p, siteUrl).href : undefined);
-const image = computed(() => absolute(post.value?.img) ?? `${siteUrl}/guard.webp`);
+const image = computed(
+  () =>
+    absolute(post.value?.img) ?? "https://cdn.xanzhu.com/2026/defaults/xanzhu-default-page.webp",
+);
 const modified = computed(() => post.value?.updated || post.value?.date);
 
 useSeoMeta({
