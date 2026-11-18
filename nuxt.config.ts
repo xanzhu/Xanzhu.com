@@ -164,31 +164,15 @@ export default defineNuxtConfig({
     headers: {
       contentSecurityPolicy: {
         "default-src": ["'self'"],
-        "script-src": [
-          "'self'",
-          "'strict-dynamic'",
-          "'nonce-{{nonce}}'",
-          "https://*.xanzhu.com",
-          "https://*.xanzhu.workers.dev",
-          "https://s.ytimg.com",
-          "https://www.youtube.com",
-          "'wasm-unsafe-eval'",
-        ],
+        "script-src": ["'self'", "'strict-dynamic'", "'nonce-{{nonce}}'", "'wasm-unsafe-eval'"],
         "style-src": [
           "'self'",
           isDev ? "'unsafe-inline'" : "'nonce-{{nonce}}'",
           "https://*.xanzhu.com",
         ],
+        "frame-ancestors": ["'self'"],
         "base-uri": "'none'",
-        "img-src": [
-          "'self'",
-          "data:",
-          cdnUrl,
-          "https://*.xanzhu.com",
-          "https://i.ytimg.com",
-          "https://unocss.dev",
-          "https://nuxt.com",
-        ],
+        "img-src": ["'self'", "data:", cdnUrl, "https://cdn.xanzhu.com", "https://i.ytimg.com"],
         "media-src": ["'self'", "https://*.xanzhu.com"],
         "font-src": ["'self'", "data:"],
         "object-src": ["'none'"],
@@ -201,17 +185,11 @@ export default defineNuxtConfig({
         "form-action": ["'self'"],
         "connect-src": [
           "'self'",
-          "https://*.xanzhu.com",
-          "https://*.xanzhu.workers.dev",
+          "https://cdn.xanzhu.com",
           "https://api.iconify.design",
           ...(isDev ? ["ws://localhost:*"] : []),
         ],
-        "frame-src": [
-          "'self'",
-          "https://*.xanzhu.workers.dev",
-          "https://www.youtube.com",
-          "https://www.youtube-nocookie.com",
-        ],
+        "frame-src": ["'self'", "https://www.youtube-nocookie.com"],
         "upgrade-insecure-requests": !isDev,
       },
       strictTransportSecurity: {
@@ -222,7 +200,7 @@ export default defineNuxtConfig({
       permissionsPolicy: {
         camera: [],
         "display-capture": [],
-        fullscreen: ["self"],
+        fullscreen: ["self", "https://www.youtube-nocookie.com"],
         geolocation: [],
         microphone: [],
         payment: [],

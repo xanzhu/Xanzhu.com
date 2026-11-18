@@ -21,7 +21,7 @@ const localePath = useLocaleRoute();
         <NuxtLink :to="localePath('/terms-of-service')">
           {{ t("common.nav.terms") }}
         </NuxtLink>
-        <a href="/sitemap.xml">{{ t("common.nav.sitemap") }}</a>
+        <a href="/sitemap_index.xml">{{ t("common.nav.sitemap") }}</a>
       </nav>
     </div>
   </footer>
