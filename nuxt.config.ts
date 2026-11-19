@@ -155,7 +155,7 @@ export default defineNuxtConfig({
 
   // SECURITY
   security: {
-    nonce: true,
+    nonce: false,
     corsHandler: false,
     ssg: {
       meta: true,
@@ -165,16 +165,12 @@ export default defineNuxtConfig({
     headers: {
       contentSecurityPolicy: {
         "default-src": ["'self'"],
-        "script-src": ["'self'", "'strict-dynamic'", "'nonce-{{nonce}}'", "'wasm-unsafe-eval'"],
-        "style-src": [
-          "'self'",
-          isDev ? "'unsafe-inline'" : "'nonce-{{nonce}}'",
-          "https://*.xanzhu.com",
-        ],
+        "script-src": ["'self'", "'strict-dynamic'", "'wasm-unsafe-eval'"],
+        "style-src": ["'self'", isDev ? "'unsafe-inline'" : "", cdnUrl],
         "frame-ancestors": ["'self'"],
         "base-uri": "'none'",
-        "img-src": ["'self'", "data:", cdnUrl, "https://cdn.xanzhu.com", "https://i.ytimg.com"],
-        "media-src": ["'self'", "https://*.xanzhu.com", "https://www.apple.com"],
+        "img-src": ["'self'", "data:", cdnUrl, "https://i.ytimg.com"],
+        "media-src": ["'self'", cdnUrl, "https://www.apple.com"],
         "font-src": ["'self'", "data:"],
         "object-src": ["'none'"],
         "script-src-attr": [
@@ -186,7 +182,7 @@ export default defineNuxtConfig({
         "form-action": ["'self'"],
         "connect-src": [
           "'self'",
-          "https://cdn.xanzhu.com",
+          cdnUrl,
           "https://api.iconify.design",
           ...(isDev ? ["ws://localhost:*"] : []),
         ],
