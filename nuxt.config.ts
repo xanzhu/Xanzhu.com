@@ -102,18 +102,14 @@ export default defineNuxtConfig({
   routeRules: {
     "/**": {
       headers: {
-        "Cache-Control": "public, max-age=3600, stale-while-revalidate=86400",
+        "Cache-Control": "public, max-age=0, must-revalidate, s-maxage=604800",
       },
     },
     "/_nuxt/**": {
-      headers: {
-        "Cache-Control": "public, max-age=31536000, immutable",
-      },
+      headers: { "Cache-Control": "public, max-age=31536000, immutable" },
     },
     "/images/**": {
-      headers: {
-        "Cache-Control": "public, max-age=2592000, stale-while-revalidate=86400, immutable",
-      },
+      headers: { "Cache-Control": "public, max-age=2592000, stale-while-revalidate=86400" },
     },
     "/health": {
       security: { headers: false },
