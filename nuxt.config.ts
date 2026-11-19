@@ -151,7 +151,7 @@ export default defineNuxtConfig({
 
   // SECURITY
   security: {
-    nonce: false,
+    nonce: true,
     corsHandler: false,
     ssg: {
       meta: true,
@@ -161,8 +161,8 @@ export default defineNuxtConfig({
     headers: {
       contentSecurityPolicy: {
         "default-src": ["'self'"],
-        "script-src": ["'self'", "'strict-dynamic'", "'wasm-unsafe-eval'"],
-        "style-src": ["'self'", isDev ? "'unsafe-inline'" : "", cdnUrl],
+        "script-src": ["'self'", "'nonce-{{nonce}}'", "'strict-dynamic'", "'wasm-unsafe-eval'"],
+        "style-src": ["'self'", isDev ? "'unsafe-inline'" : "'nonce-{{nonce}}'", cdnUrl],
         "frame-ancestors": ["'self'"],
         "base-uri": "'none'",
         "img-src": ["'self'", "data:", cdnUrl, "https://i.ytimg.com"],
