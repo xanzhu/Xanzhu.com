@@ -31,6 +31,7 @@ export default {
     readTime: "Less than a min read | {count} min read | {count} mins read",
     source: "Source",
     author: "Author",
+    navigation: "Article navigation",
     prevPost: "Previous Article",
     nextPost: "Next Article",
     notFound: "Article not found",

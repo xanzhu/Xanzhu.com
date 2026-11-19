@@ -31,6 +31,7 @@ export default {
     readTime: "1분 미만 소요 | {count}분 소요 | {count}분 소요",
     source: "출처",
     author: "작성자",
+    navigation: "문서 탐색",
     prevPost: "이전 글",
     nextPost: "다음 글",
     notFound: "글을 찾을 수 없습니다",
