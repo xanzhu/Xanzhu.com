@@ -21,17 +21,21 @@ const shouldDisplay = computed(() => breadcrumbs.value.length > 1);
 
 <template>
   <nav v-if="shouldDisplay" class="text-sm" :aria-label="t('common.breadCrumbs')">
-    <ol class="pl4 flex md:(flex-row items-center)">
+    <ol class="flex flex-wrap items-center gap-y-1">
       <li v-for="(item, index) in breadcrumbs" :key="item.path" class="flex items-center">
         <NuxtLinkLocale
           v-if="!item.current"
           :to="item.path"
-          class="text-neutral-600 underline underline-offset-3 transition-colors dark:text-neutral-400 hover:(text-neutral-900) dark:hover:text-neutral-100"
+          class="py-1 rounded-sm text-neutral-600 underline underline-offset-3 transition-colors dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 focus-visible:(outline-2 outline-offset-2 outline-current)"
         >
           {{ item.name }}
         </NuxtLinkLocale>
 
-        <span v-else class="text-neutral-900 font-medium dark:text-neutral-100" aria-current="page">
+        <span
+          v-else
+          class="py-1 text-neutral-900 font-medium dark:text-neutral-100 break-words"
+          aria-current="page"
+        >
           {{ item.name }}
         </span>
 

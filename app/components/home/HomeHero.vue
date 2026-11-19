@@ -33,6 +33,7 @@ const { data: featured } = await useAsyncData(`featuredArticles-${locale.value}`
     </div>
 
     <section class="px-4 flex justify-center items-center w-full max-w-4xl">
+      <h2 class="sr-only">{{ t("app.home.featureTitle") }}</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-3 w-full">
         <article
           v-for="(article, index) in featured"
