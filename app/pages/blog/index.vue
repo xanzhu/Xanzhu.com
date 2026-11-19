@@ -71,10 +71,9 @@ useHead({ script: [{ type: "application/ld+json", innerHTML: jsonLd }] });
           <NuxtLinkLocale class="group no-underline flex flex-col" :to="article.path">
             <NuxtImg
               v-if="article.img"
-              crossorigin="anonymous"
               :alt="article.alt"
               :title="article.alt"
-              :loading="index < 3 ? 'eager' : 'lazy'"
+              :loading="index === 0 ? 'eager' : 'lazy'"
               :fetchpriority="index === 0 ? 'high' : 'auto'"
               decoding="async"
               height="369"
@@ -82,7 +81,7 @@ useHead({ script: [{ type: "application/ld+json", innerHTML: jsonLd }] });
               fit="cover"
               format="webp"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 557px"
-              class="core-border rounded-md h-full w-full transform md:(transition duration-400 ease-in-out group-hover:scale-102)"
+              class="core-border rounded-md aspect-[577/369] w-full object-cover transform md:(transition duration-400 ease-in-out group-hover:scale-102)"
               :src="article.img"
             />
             <div class="text-black py2 h-auto space-y-2 dark:text-white">
