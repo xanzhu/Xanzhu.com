@@ -27,9 +27,6 @@ useSeoMeta({
   ogTitle: seoTitle,
   ogDescription: seoDesc,
   ogImage: seoImage,
-  ogType: "website",
-  ogImageWidth: 1200,
-  ogImageHeight: 630,
 });
 
 const pageUrl = new URL(currentPath, siteUrl).href;

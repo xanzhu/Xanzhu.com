@@ -16,6 +16,8 @@ useSeoMeta({
   ogUrl: () => `${siteUrl}${route.path}`,
   ogImage: `${siteUrl}/images/favicon/logo.png`,
   ogType: "website",
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
 });
 
 useHead({

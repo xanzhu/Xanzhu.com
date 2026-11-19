@@ -48,8 +48,6 @@ useSeoMeta({
   ogImage: image,
   articlePublishedTime: () => post.value?.date,
   articleModifiedTime: modified,
-  ogImageHeight: 630,
-  ogImageWidth: 1200,
   ogImageAlt: () => post.value?.alt,
 });
 

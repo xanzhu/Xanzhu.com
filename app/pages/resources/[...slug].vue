@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { Collections } from "@nuxt/content";
+import AlertFeat from "~/components/ui/AlertFeat.vue";
 
 const route = useRoute();
 const { locale, t } = useI18n();
@@ -60,20 +61,17 @@ watch(
   { immediate: true },
 );
 
-useHead({
-  title: () => pageTitle.value || t("common.nav.resources"),
-  meta: [
-    {
-      name: "description",
-      content: () => folderIndex.value?.description || directPage.value?.description || "",
-    },
-  ],
+useSeoMeta({
+  title: () => folderIndex.value?.title,
+  description: () => folderIndex.value?.description,
+  ogTitle: () => folderIndex.value?.title,
+  ogDescription: () => folderIndex.value?.description,
+  ogImage: "https://cdn.xanzhu.com/2026/defaults/xanzhu-default-page.webp",
 });
-
-// TODO: Complete refactor
 </script>
 
 <template>
+  <AlertFeat />
   <div class="flex flex-col 2xl:px35 md:(py4 flex-row gap-2) xl:px28">
     <LazyResourcesSidebar />
     <div
