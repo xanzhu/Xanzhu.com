@@ -13,11 +13,6 @@ export default {
   },
   lang: {
     select: "언어 선택",
-    active: "현재 언어",
-    switch: "언어를 {locale}(으)로 전환",
-    en: "English",
-    ko: "한국어",
-    zh: "简体中文",
   },
   theme: {
     dark: "다크 모드",

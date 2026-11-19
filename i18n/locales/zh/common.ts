@@ -13,11 +13,6 @@ export default {
   },
   lang: {
     select: "选择语言",
-    active: "当前语言",
-    switch: "将语言切换为{locale}",
-    en: "English",
-    ko: "한국어",
-    zh: "简体中文",
   },
   theme: {
     dark: "深色模式",

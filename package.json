@@ -16,6 +16,7 @@
     "build:cf": "nuxt build"
   },
   "dependencies": {
+    "@nuxt/a11y": "1.0.0-alpha.1",
     "@nuxt/content": "^3.17.0",
     "@nuxt/fonts": "^1.2.0",
     "@nuxt/icon": "^2.6.3",

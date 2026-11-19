@@ -18,6 +18,7 @@ export default defineNuxtConfig({
     "nuxt-security",
     "@nuxt/fonts",
     "@nuxt/scripts",
+    "@nuxt/a11y",
   ],
   app: {
     head: {
@@ -49,20 +50,20 @@ export default defineNuxtConfig({
     locales: [
       {
         code: "en",
-        language: "en",
+        language: "en-NZ",
         name: "English",
         files: ["en.ts"],
       },
       {
         code: "ko",
-        language: "ko",
+        language: "ko-KR",
         name: "한국어",
         files: ["ko.ts"],
       },
       {
         code: "zh",
-        language: "zh",
-        name: "中文",
+        language: "zh-Hans",
+        name: "简体中文",
         files: ["zh.ts"],
       },
     ],
@@ -200,7 +201,7 @@ export default defineNuxtConfig({
       permissionsPolicy: {
         camera: [],
         "display-capture": [],
-        fullscreen: ["self", "https://www.youtube-nocookie.com"],
+        fullscreen: ["self"],
         geolocation: [],
         microphone: [],
         payment: [],
