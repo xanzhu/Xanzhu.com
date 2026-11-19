@@ -174,7 +174,7 @@ export default defineNuxtConfig({
         "frame-ancestors": ["'self'"],
         "base-uri": "'none'",
         "img-src": ["'self'", "data:", cdnUrl, "https://cdn.xanzhu.com", "https://i.ytimg.com"],
-        "media-src": ["'self'", "https://*.xanzhu.com"],
+        "media-src": ["'self'", "https://*.xanzhu.com", "https://www.apple.com"],
         "font-src": ["'self'", "data:"],
         "object-src": ["'none'"],
         "script-src-attr": [
