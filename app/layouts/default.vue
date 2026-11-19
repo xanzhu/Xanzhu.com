@@ -57,8 +57,8 @@ useHead({
 <template>
   <div class="flex flex-col min-h-svh">
     <AppHeader class="sticky top-0 z-50" />
-    <InfoBar />
     <main class="flex-1 flex flex-col">
+      <InfoBar />
       <slot />
     </main>
     <LazyAppFooter />

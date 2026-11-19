@@ -40,7 +40,7 @@ useSeoMeta({
   <div class="text-neutral-9 bg-white flex flex-col 2xl:px35 md:(py4 flex-row gap-4) xl:px28">
     <LazyResourcesSidebar />
 
-    <main
+    <div
       v-if="pageIndex"
       class="text-neutral-900 p5 b-1 border-neutral-300 b-solid flex flex-1 flex-col dark:text-neutral-300"
       tabindex="-1"
@@ -54,7 +54,7 @@ useSeoMeta({
       </p>
 
       <ContentRenderer :value="pageIndex" class="max-w-none prose" aria-label="Main content" />
-    </main>
+    </div>
   </div>
 </template>
 

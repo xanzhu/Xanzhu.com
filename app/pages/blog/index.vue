@@ -53,7 +53,7 @@ useHead({ script: [{ type: "application/ld+json", innerHTML: jsonLd }] });
 </script>
 
 <template>
-  <main class="text-black mx-auto space-y-10 dark:text-white sm:mb-10 2xl:px35 xl:px28">
+  <div class="text-black mx-auto space-y-10 dark:text-white sm:mb-10 2xl:px35 xl:px28">
     <div class="mx-4 mt-5 flex flex-col space-y-2 lg:mx-10 sm:(mx-10 mt-15)">
       <h1 class="text-3xl font-400 mb0 sm:text-5xl">
         {{ t("app.blog.heading") }}
@@ -109,5 +109,5 @@ useHead({ script: [{ type: "application/ld+json", innerHTML: jsonLd }] });
     <p v-else class="text-center op70">
       {{ t("common.article.notFound") }}
     </p>
-  </main>
+  </div>
 </template>

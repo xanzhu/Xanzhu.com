@@ -73,7 +73,7 @@ useHead({ script: [{ type: "application/ld+json", innerHTML: jsonLd }] });
 </script>
 
 <template>
-  <main v-if="post" class="mx-auto mt-5 md:(mb-0 px-6)">
+  <div v-if="post" class="mx-auto mt-5 md:(mb-0 px-6)">
     <article class="text-inherit pb-2 md:(mb-12) sm:rounded-xs">
       <BlogArticleHeader :post="post" />
       <div class="flex flex-col-reverse justify-center lg:(flex-row gap10)">
@@ -98,5 +98,5 @@ useHead({ script: [{ type: "application/ld+json", innerHTML: jsonLd }] });
       </div>
       <LazyBlogPrevNext v-if="surround" :surround="surround" />
     </article>
-  </main>
+  </div>
 </template>

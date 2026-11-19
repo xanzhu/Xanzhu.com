@@ -76,7 +76,7 @@ useHead({
 <template>
   <div class="flex flex-col 2xl:px35 md:(py4 flex-row gap-2) xl:px28">
     <LazyResourcesSidebar />
-    <main
+    <div
       v-if="folderIndex"
       class="text-neutral-9 dark:border-neutral-9 p5 core-border flex flex-1 flex-col dark:(text-white bg-black)"
       tabindex="-1"
@@ -134,7 +134,7 @@ useHead({
 
         <ContentRenderer :value="directPage" class="max-w-none prose" aria-label="Main content" />
       </main>
-    </main>
+    </div>
   </div>
 </template>
 
