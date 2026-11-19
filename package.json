@@ -1,6 +1,6 @@
 {
   "name": "xanzhu.com",
-  "version": "3.0.15",
+  "version": "3.0.16",
   "private": true,
   "license": "MIT",
   "type": "module",
@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@iconify-json/line-md": "^1.2.16",
-    "@iconify-json/lucide": "^1.2.156",
+    "@iconify-json/lucide": "^1.2.157",
     "@iconify-json/ri": "^1.2.10",
     "@unocss/nuxt": "^66.13.0",
     "@unocss/preset-wind4": "^66.13.0",
