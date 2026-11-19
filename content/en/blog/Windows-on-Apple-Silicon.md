@@ -17,7 +17,9 @@ To check your device is using the new chipset introduced in 2020, click on the A
 This is an updated version from our :PageLink{title="previous article" url="/blog/apple-silicon-virtual-machine-setup"} at the beginning of the year, where we covered the installation of Windows using UTM and Parallels. Since then, the process has become much easier and reliable!
 
 ::ArticleUpdates
+
 - **2026-01-01** – Installation for Windows 11 has changed see the [Updated guide](/blog/install-windows-utm-apple-silicon).
+
 ::
 
 Downloads:
@@ -42,9 +44,11 @@ The application will look like this when opened
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-1.webp
 alt: UTM Application Opening Screen
 ---
+
 ::
 
 ## CrystalFetch
@@ -58,9 +62,11 @@ Should look similar to this:
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-2.webp
 alt: CrystalFetch Application Opening Screen
 ---
+
 ::
 
 3. Click on download
@@ -82,9 +88,11 @@ Should look similar to this
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-3.webp
 alt: UTM Configuration Screen For Virtual Machine
 ---
+
 ::
 
 1. Select the amount of RAM to be used for this virtual machine. 4096 is the default, which is equal to 4GB. Half of what your system is using is ideal, but this can be adjusted later on if needed. For now, leave it as the default.
@@ -99,9 +107,11 @@ The virtual machine has now been created. You should see something similar to th
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-4.webp
 alt: Showing UTM Virtual Machines
 ---
+
 ::
 
 ## Running Virtual Machine
@@ -114,18 +124,22 @@ This will now boot up the virtual machine. During this process it will open up a
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-5.webp
 alt: UTM showing prompt to press any key to proceed
 ---
+
 ::
 
 This step is important as if you don't press a key fast enough you will get the following screen.
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-5b.webp
 alt: UTM showing error prompt during boot
 ---
+
 ::
 
 To solve this close the virtual machine and run it again or select the restart virtual machine button which is the triangle button.
@@ -138,9 +152,11 @@ After doing this we will get to this screen where we can now configure the insta
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-6.webp
 alt: Windows ISO installation menu
 ---
+
 ::
 
 1. Select the language and press Next.
@@ -159,9 +175,11 @@ After this has been completed, it will reboot a few times. Let it run without in
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-7.webp
 alt: UTM guide on ejecting current ISO from Virtual Machine
 ---
+
 ::
 
 1. Click on the disc Icon
@@ -179,9 +197,11 @@ By default, the installation menu will pop up. Click Next to install and wait. T
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-8.webp
 alt: UTM Spice Guest Tools Installer screen
 ---
+
 ::
 
 If the virtual machine becomes unresponsive close and reboot the virtual machine.

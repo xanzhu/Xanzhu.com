@@ -13,11 +13,6 @@ export default {
   },
   lang: {
     select: "选择语言",
-    active: "当前语言",
-    switch: "将语言切换为{locale}",
-    en: "English",
-    ko: "한국어",
-    zh: "简体中文",
   },
   theme: {
     dark: "深色模式",
@@ -36,6 +31,7 @@ export default {
     readTime: "阅读不到 1 分钟 | 阅读约 {count} 分钟 | 阅读约 {count} 分钟",
     source: "来源",
     author: "作者",
+    navigation: "文章导航",
     prevPost: "上一篇文章",
     nextPost: "下一篇文章",
     notFound: "未找到文章",

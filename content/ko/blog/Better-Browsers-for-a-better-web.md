@@ -19,10 +19,12 @@ feature: true
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/better-browsers/arc.webp
 credit: The Browser Company / Xanzhu
 alt: 아크 브라우저 로고
 ---
+
 ::
 
 :PageLink{title="The Browser Company" url="https://www.thebrowser.company/"} 가 구축한 시장의 새로운 경쟁자는 일부 개발자들과 함께 일해 온 동문 개발자들의 확고한 집합체입니다. 구글 크롬, 인스타그램 등과 같은 인터넷에서 가장 인기 있는 웹 서비스. 이 분야에 대한 강력한 전문 지식을 갖춘 The Browser Company는 브라우징 경험의 창의성과 접근성을 재점화하여 일반 브라우저의 동작을 변경하기 위해 노력하고 있습니다.
@@ -33,10 +35,12 @@ Arc는 삶에서 멀티태스킹과 창의성이 필요한 학생과 전문가�
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/better-browsers/arc-features.webp
 credit: The Browser Company
 alt: Arc 브라우저 기능 프로모션
 ---
+
 ::
 
 ### 개발자 모드
@@ -49,10 +53,12 @@ Arc는 미디어가 재생 중인 탭에서 전환할 때 자동으로 활성화
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/better-browsers/split-view.webp
 credit: Xanzhu
 alt: Arc 브라우저 분할 보기 기능
 ---
+
 ::
 
 ### Spaces
@@ -73,10 +79,12 @@ The Browser Company가 모든 브라우저의 판도를 어떻게 바꾸고 있�
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/better-browsers/brave.webp
 credit: Brave / Xanzhu
 alt: 아크 브라우저 로고
 ---
+
 ::
 
 궁극적으로 Brave는 Chromium을 사용하여 동일한 생태계에 구축된 Google Chrome 자체에 대한 도전자입니다. 두 브라우저의 주요 차이점은 Brave가 개인 정보를 최우선으로 한다는 것입니다. Chrome은 널리 사용되는 브라우저이지만 브라우징 경험의 모든 측면을 추적하는 많은 도구와 서비스가 함께 제공됩니다. Brave는 이러한 핵심 추적 기능을 제거하고 제거하여 보안을 크게 향상시킵니다.
@@ -95,10 +103,12 @@ Brave를 사용하면 개인 정보를 보호하면서 브라우징 경험을 �
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/better-browsers/brave-adblock.webp
 credit: Brave
 alt: 용감한 광고 차단기 패널
 ---
+
 ::
 
 ### 웹3 지원
@@ -122,19 +132,23 @@ Brave는 검색 엔진을 개선하고 음성 검색, Brave 브라우저와의 �
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/better-browsers/snowflake-tor.webp
 credit: Tor Project
 alt: Tor가 제공하는 Snowflake 프로토콜 다이어그램
 ---
+
 ::
 
 브라우저에는 Tor 네트워크에 연결하는 옵션도 포함되어 있어 딥 웹 또는 .onion 주소에 액세스하려는 사용자에게 유용합니다. 검열과 싸우기 위해 구현되는 새로운 기능은 사용자가 다른 사용자가 연결할 수 있는 노드를 생성하고 인터넷에 대한 제한을 탐색하기 위한 중개자 역할을 할 수 있는 Snowflake 프로토콜입니다.
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/better-browsers/snowflake.webp
 alt: 용감한 브라우저에서 Snowflake 구현
 ---
+
 ::
 
 :PageLink{title="The Tor Project" url="https://snowflake.torproject.org/"} 에서 Snowflake 프로토콜에 대해 자세히 알아볼 수 있습니다.
@@ -151,10 +165,12 @@ Brave 브라우저의 내장 VPN 기능은 웹을 검색할 때 추가 보안 �
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/better-browsers/brave-compare.webp
 credit: Brave
 alt: 보안 기능에 대한 Brave의 비교 차트
 ---
+
 ::
 
 :PageLink{title="Brave.com" url="https://brave.com/"} 을 방문하여 브라우저를 다운로드하고 차이점을 직접 경험해 보세요. 일반 사용자이든 개발자이든 Brave는 브라우징 경험을 향상시키는 다양한 기능을 제공합니다. Brave를 사용하면 더 많은 개인 정보 보호, 보안 및 효율성으로 웹을 탐색할 수 있습니다.
@@ -163,10 +179,12 @@ alt: 보안 기능에 대한 Brave의 비교 차트
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/better-browsers/firefox.webp
 credit: Mozilla / Xanzhu
 alt: 파이어폭스 브라우저 로고
 ---
+
 ::
 
 Firefox는 Mozilla에서 개발한 빠르고 안전한 브라우저입니다. Chromium 생태계 외부에 있는 자체 수준에서 고유한 다양한 훌륭한 도구와 서비스를 제공합니다. 모든 장치에서 기본적으로 작동하는 자체 브라우저 생태계에서 전적으로 실행됩니다. 다른 브라우저에 비해 기능이 많지는 않지만 안정성 면에서 안심할 수 있습니다.
@@ -185,10 +203,12 @@ Firefox는 개인 정보 보호 및 성능을 향상시키는 다양한 내장 �
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/better-browsers/firefox-compare.webp
 credit: Mozilla
 alt: Firefox의 보안 기능 비교 차트
 ---
+
 ::
 
 Firefox는 안정성과 개인 정보 보호를 중시하는 사용자에게 탁월한 선택입니다. 비슷한 범위의 기능과 빠른 성능을 제공하는 Brave의 완벽한 대안입니다. :PageLink{title="Firefox.com" url="https://www.firefox.com/"} 을 방문하여 브라우저를 다운로드하고 차이점을 직접 경험해 보십시오.

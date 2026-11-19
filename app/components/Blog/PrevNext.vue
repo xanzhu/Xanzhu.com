@@ -26,17 +26,22 @@ const items = computed(() => [
     isNext: true,
   },
 ]);
+
+const hasLinks = computed(() => items.value.some((i) => i.data));
 </script>
 
 <template>
-  <div class="mt-10 flex flex-col items-center sm:flex-row sm:gap-10 sm:justify-evenly">
-    <template v-for="(nav, index) in items" :key="index">
+  <nav
+    v-if="hasLinks"
+    :aria-label="t('common.article.navigation')"
+    class="mt-10 flex flex-col items-center sm:flex-row sm:gap-10 sm:justify-evenly"
+  >
+    <template v-for="nav in items" :key="nav.rel">
       <div v-if="nav.data" class="w-[250px]">
         <NuxtLink
           :to="nav.data.path"
-          :aria-label="nav.label"
           :rel="nav.rel"
-          class="group no-underline flex flex-col transition-transform duration-300 relative"
+          class="group no-underline flex flex-col relative rounded-lg focus-visible:(outline-2 outline-offset-4)"
         >
           <div
             class="rounded-lg bg-gray-100 h-[150px] w-[250px] relative overflow-hidden dark:bg-dark-800"
@@ -46,24 +51,23 @@ const items = computed(() => [
               :src="nav.data.img"
               height="150"
               width="250"
-              class="h-full w-full transition-transform duration-500 object-cover group-hover:scale-105"
-              :alt="nav.data.alt || nav.data.title"
+              class="h-full w-full transition-transform duration-500 object-cover group-hover:scale-105 motion-reduce:transition-none"
+              alt=""
               loading="lazy"
               decoding="async"
             />
-
             <div
-              class="bg-black/40 opacity-0 transition-opacity duration-300 inset-0 absolute group-hover:opacity-100"
+              class="bg-black/40 opacity-0 transition-opacity duration-300 inset-0 absolute group-hover:opacity-100 group-focus-visible:opacity-100"
             />
-
             <div class="flex items-center inset-0 justify-center absolute">
               <svg
+                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
-                class="text-white opacity-0 h-8 w-8 transition-all duration-300 group-hover:opacity-100"
+                class="text-white opacity-0 h-8 w-8 transition-all duration-300 group-hover:opacity-100 group-focus-visible:opacity-100 motion-reduce:transition-none"
                 :class="
                   nav.isNext
-                    ? '-translate-x-4 group-hover:translate-x-0'
-                    : 'translate-x-4 group-hover:translate-x-0'
+                    ? '-translate-x-4 group-hover:translate-x-0 group-focus-visible:translate-x-0'
+                    : 'translate-x-4 group-hover:translate-x-0 group-focus-visible:translate-x-0'
                 "
                 viewBox="0 0 24 24"
                 fill="none"
@@ -75,22 +79,20 @@ const items = computed(() => [
                 <path :d="nav.isNext ? 'M9 18l6-6-6-6' : 'M15 18l-6-6 6-6'" />
               </svg>
             </div>
-
             <div
-              class="text-white p-3 translate-y-full transition-transform duration-300 bottom-0 left-0 right-0 absolute from-black/70 to-transparent bg-gradient-to-t group-hover:translate-y-0"
+              class="text-white p-3 translate-y-full transition-transform duration-300 bottom-0 left-0 right-0 absolute from-black/70 to-transparent bg-gradient-to-t group-hover:translate-y-0 group-focus-visible:translate-y-0 motion-reduce:transition-none"
               :class="{ 'text-right': nav.isNext }"
             >
-              <span class="text-sm font-medium opacity-90">{{ nav.label }}</span>
+              <span class="text-sm font-medium">{{ nav.label }}</span>
             </div>
           </div>
-
-          <h4
-            class="text-base text-element-dark font-medium mt-3 underline-offset-4 max-w-[250px] line-clamp-2 dark:text-element-light group-hover:underline"
+          <span
+            class="text-base text-element-dark font-medium mt-3 underline-offset-4 max-w-[250px] line-clamp-2 dark:text-element-light group-hover:underline group-focus-visible:underline"
           >
             {{ nav.data.title }}
-          </h4>
+          </span>
         </NuxtLink>
       </div>
     </template>
-  </div>
+  </nav>
 </template>

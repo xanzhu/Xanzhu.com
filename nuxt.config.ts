@@ -18,6 +18,7 @@ export default defineNuxtConfig({
     "nuxt-security",
     "@nuxt/fonts",
     "@nuxt/scripts",
+    "@nuxt/a11y",
   ],
   app: {
     head: {
@@ -49,20 +50,20 @@ export default defineNuxtConfig({
     locales: [
       {
         code: "en",
-        language: "en",
+        language: "en-NZ",
         name: "English",
         files: ["en.ts"],
       },
       {
         code: "ko",
-        language: "ko",
+        language: "ko-KR",
         name: "한국어",
         files: ["ko.ts"],
       },
       {
         code: "zh",
-        language: "zh",
-        name: "中文",
+        language: "zh-Hans",
+        name: "简体中文",
         files: ["zh.ts"],
       },
     ],
@@ -163,63 +164,33 @@ export default defineNuxtConfig({
     },
     headers: {
       contentSecurityPolicy: {
-        "default-src": ["'self'", "https://*.xanzhu.com"],
-        "script-src": [
-          "'self'",
-          "'strict-dynamic'",
-          "'nonce-{{nonce}}'",
-          "https://*.xanzhu.com",
-          "https://*.xanzhu.workers.dev",
-          "https://s.ytimg.com",
-          "https://www.youtube.com",
-          "'wasm-unsafe-eval'",
-        ],
+        "default-src": ["'self'"],
+        "script-src": ["'self'", "'strict-dynamic'", "'nonce-{{nonce}}'", "'wasm-unsafe-eval'"],
         "style-src": [
           "'self'",
           isDev ? "'unsafe-inline'" : "'nonce-{{nonce}}'",
           "https://*.xanzhu.com",
         ],
+        "frame-ancestors": ["'self'"],
         "base-uri": "'none'",
-        "img-src": [
-          "'self'",
-          "data:",
-          cdnUrl,
-          "https://*.xanzhu.com",
-          "https://assets.lotofcarrots.com/media/home/section/desktop/4.webp",
-          "https://storage.googleapis.com/gweb-uniblog-publish-prod/",
-          "https://i.ytimg.com",
-          "https://unocss.dev",
-          "https://nuxt.com",
-        ],
-        "media-src": [
-          "'self'",
-          "https://storage.googleapis.com/gweb-uniblog-publish-prod/",
-          "https://storage.quantum-engine.ai",
-          "https://assets.lotofcarrots.com",
-          "https://www.apple.com",
-          "https://*.xanzhu.com",
-        ],
+        "img-src": ["'self'", "data:", cdnUrl, "https://cdn.xanzhu.com", "https://i.ytimg.com"],
+        "media-src": ["'self'", "https://*.xanzhu.com", "https://www.apple.com"],
         "font-src": ["'self'", "data:"],
         "object-src": ["'none'"],
         "script-src-attr": [
           "'unsafe-hashes'",
           "'sha256-bwK6T5wZVTANitXbrTsel7kl/PyCjCd/Dq5Qoz3imjM='", // Tied to nuxt/img onError
+          "'sha256-mBvouFQXZ+YpxtV0t+4I0l1LKREvZlkEWrzJDXRRXXU='", // Tied to mousedown
         ],
         "style-src-attr": ["'unsafe-inline'"],
         "form-action": ["'self'"],
         "connect-src": [
           "'self'",
-          "https://*.xanzhu.com",
-          "https://*.xanzhu.workers.dev",
+          "https://cdn.xanzhu.com",
           "https://api.iconify.design",
           ...(isDev ? ["ws://localhost:*"] : []),
         ],
-        "frame-src": [
-          "'self'",
-          "https://*.xanzhu.workers.dev",
-          "https://www.youtube.com",
-          "https://www.youtube-nocookie.com",
-        ],
+        "frame-src": ["'self'", "https://www.youtube-nocookie.com"],
         "upgrade-insecure-requests": !isDev,
       },
       strictTransportSecurity: {

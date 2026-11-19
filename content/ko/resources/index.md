@@ -4,6 +4,7 @@ description: 디지털 자산을 보호하는 데 도움이 되는 무료 보안
 ---
 
 ## 피싱
+
 피싱 시도 및 의심스러운 웹사이트를 식별, 방지 및 보고하는 데 도움이 되는 도구 및 리소스입니다.
 
 - :PageLink{title="PhishTank" url="https://www.phishtank.com/"} 피싱 웹사이트를 식별하고 보고하기 위한 커뮤니티 기반 데이터베이스
@@ -12,10 +13,12 @@ description: 디지털 자산을 보호하는 데 도움이 되는 무료 보안
 - :PageLink{title="OpenPhish" url="https://openphish.com/"} 자동 피싱 탐지 및 인텔리전스 피드 서비스입니다.
 
 피싱 신고를 위한 빠른 링크
+
 - :PageLink{title="Google Safe Browsing" url="https://safebrowsing.google.com/safebrowsing/report-url"} 의심스러운 웹사이트를 Google Safe Browsing에 신고합니다.
 - :PageLink{title="Microsoft Security Intelligence" url="https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest"} 피싱 및 악성 URL 신고를 위한 Microsoft 플랫폼입니다.
 
 ## 맬웨어 분석
+
 의심스러운 파일 분석, 맬웨어 탐지 및 시스템 보안 유지를 위한 무료 도구 및 플랫폼입니다.
 
 - :PageLink{title="VirusTotal" url="https://www.virustotal.com/gui/home/upload"} 파일 및 URL에서 맬웨어 및 의심스러운 콘텐츠를 분석하는 온라인 스캐너입니다.
@@ -26,6 +29,7 @@ description: 디지털 자산을 보호하는 데 도움이 되는 무료 보안
 - :PageLink{title="Any.run" url="https://any.run/"} 실시간으로 결과를 분석하고 공유하는 대화형 맬웨어 분석 도구
 
 ## 네트워크 보안
+
 네트워크 트래픽 모니터링, 취약점 탐지 및 연결 보안을 위한 필수 도구
 
 - :PageLink{title="Wireshark" url="https://www.wireshark.org/"} 네트워크 트래픽 모니터링 및 문제 해결을 위한 네트워크 프로토콜 분석기입니다.

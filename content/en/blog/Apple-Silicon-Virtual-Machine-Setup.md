@@ -10,7 +10,9 @@ toc: true
 ---
 
 ::ArticleUpdates
+
 - **2026-01-01** – Installation for Windows 11 has changed see the [Updated guide](/blog/install-windows-utm-apple-silicon).
+
 ::
 
 If you're a developer or tech enthusiast, you may need to use multiple operating systems for projects or personal use.
@@ -29,10 +31,12 @@ How do you know if your Mac is running on Apple Silicon?
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m1-virtual-machine/Parallels.webp
 credit: Parallels / Xanzhu
 alt: Parallels Virtual Machine Logo
 ---
+
 ::
 
 A paid virtualisation software that works natively and is essentially a one-click install of all your favourite Operating Systems.
@@ -45,9 +49,11 @@ It offers great tools and makes the whole process smooth as possible.
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m1-virtual-machine/p-install.webp
 alt: Parallels Installation Wizard
 ---
+
 ::
 
 Note it's ideal to have at least 25-30 GB of free space before installing any operating system.
@@ -77,9 +83,11 @@ Upon startup, you'll be asked to set a password and then Parallels tools will ne
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m1-virtual-machine/u-download.webp
 alt: Parallels ubuntu setup wizard
 ---
+
 ::
 
 3. After downloading the virtual machine will automatically start
@@ -98,9 +106,11 @@ How do you manage or configure your virtual machines?
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m1-virtual-machine/config.webp
 alt: Parallels Virtual Machine Configuration Panel
 ---
+
 ::
 
 3. To add another virtual machine press the plus icon and go through the installation process mentioned above
@@ -111,10 +121,12 @@ alt: Parallels Virtual Machine Configuration Panel
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m1-virtual-machine/UTM.webp
 credit: UTM / Xanzhu
 alt: UTM installation wizard
 ---
+
 ::
 
 UTM is a free tool that does the same thing as parallels but you're in charge of the customisations.
@@ -139,9 +151,11 @@ Alternatively, you can install the version listed here:
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m1-virtual-machine/u-install.webp
 alt: Installation Settings for UTM windows
 ---
+
 ::
 
 7. Press Continue
@@ -167,9 +181,11 @@ OOBE\BYPASSNRO
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m1-virtual-machine/u-spice.webp
 alt: File explorer windows 11
 ---
+
 ::
 
 7. Select Reboot and you now have a working Windows 11 virtual machine.
@@ -210,9 +226,11 @@ Installing Ubuntu can be a lengthy process in this guide we'll need to install t
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m1-virtual-machine/u-linux.webp
 alt: Linux server installing display
 ---
+
 ::
 
 26. Once this is completed press the DOWN_ARROW so "Reboot now" is highlighted and press ENTER

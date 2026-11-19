@@ -49,27 +49,24 @@ const sortedLocales = computed(() => {
       </NuxtLinkLocale>
     </nav>
 
-    <div class="hidden md:(flex items-center space-x-2)" role="group">
+    <div class="hidden md:(flex items-center space-x-2)">
       <UiColorSwitch />
-      <nav
-        class="md:(core-ui p1 core-border rounded-full inline-flex gap1)"
-        :aria-label="t('common.lang.select')"
-      >
-        <NuxtLink
-          v-for="locale in sortedLocales"
-          :key="locale.code"
-          :to="switchLocalePath(locale.code)"
-          :prefetch="false"
-          :aria-current="locale.isActive ? 'true' : undefined"
-          :hreflang="locale.language ?? locale.code"
-          :aria-label="
-            locale.isActive ? undefined : t('common.lang.switch', { locale: locale.name })
-          "
-          :class="locale.classes"
-          class="text-sm font-medium px3 py1 text-center rounded-full decoration-none transition-colors duration-200"
-        >
-          {{ locale.name }}
-        </NuxtLink>
+      <nav :aria-label="t('common.lang.select')">
+        <ul class="md:(core-ui p1 core-border rounded-full inline-flex gap1)">
+          <li v-for="locale in sortedLocales" :key="locale.code">
+            <NuxtLink
+              :to="switchLocalePath(locale.code)"
+              :prefetch="false"
+              :aria-current="locale.isActive ? 'page' : undefined"
+              :hreflang="locale.language ?? locale.code"
+              :lang="locale.language ?? locale.code"
+              :class="locale.classes"
+              class="block text-sm font-medium px3 py1 text-center rounded-full decoration-none transition-colors duration-200 motion-reduce:transition-none focus-visible:(outline-2 outline-offset-2)"
+            >
+              {{ locale.name }}
+            </NuxtLink>
+          </li>
+        </ul>
       </nav>
     </div>
 

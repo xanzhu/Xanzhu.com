@@ -15,7 +15,9 @@ Windows on Apple Silicon is becoming increasingly popular. In this guide, we'll 
 Our :PageLink{title="previous article" url="/blog/windows-on-apple-silicon"} covered the basics of setting up Windows on Apple Silicon.
 
 ::ArticleUpdates
+
 - **2026-01-01** - **Annual Re-release**: Complete technical audit performed. Verified and updated all steps for Windows 11 (24H2/25H2), UTM 4.7.5, and added the new local account bypass methods.
+
 ::
 
 For alternative solutions for installing Windows on Apple Silicon, note that these are paid solutions and may offer better performance at a price. Check out :PageLink{title="Parallels Desktop" url="https://www.parallels.com/products/desktop/"} or :PageLink{title="VMware Fusion" url="https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion"}.
@@ -41,9 +43,11 @@ Drag UTM to your Applications folder and verify that it opens correctly.
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m4-windows/windows-crystalfetch-appstore.webp
 alt: Apple App Store showing CrystalFetch Application
 ---
+
 ::
 
 Download CrystalFetch version 2.2.0 from the :PageLink{title="App Store" url="https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12"}. This option is free and provides automatic updates.
@@ -68,9 +72,11 @@ For this installation, we'll use CrystalFetch as it provides a simplistic way to
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m4-windows/windows-crystalfetch.webp
 alt: CrystalFetch application settings for Windows 11
 ---
+
 ::
 
 The download will begin automatically. The ISO is approximately 5.27GB. After completion, you'll be asked to move the file to a destination folder to store this ISO file. We'll use the default Downloads folder. Click **Move**.
@@ -88,9 +94,11 @@ To download directly from the Microsoft website, navigate to the :PageLink{title
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m4-windows/windows-iso-download.webp
 alt: Windows 11 ISO download page
 ---
+
 ::
 
 This will begin downloading the ISO. It's approximately 5.47GB and will be stored in the Downloads folder.
@@ -107,25 +115,29 @@ In UTM, click the **+** icon to start creating a new virtual machine.
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m4-windows/windows-utm-app.webp
 alt: UTM application interface showing the main window with a plus icon to create a new virtual machine
 ---
+
 ::
 
 ### Virtualise or Emulate
 
 UTM offers two modes:
 
-| Mode       | Pros                       | Cons                                 |
-| ---------- | -------------------------- | ------------------------------------ |
-| Virtualise | Faster, native ARM support | Does not support x86 (Intel/AMD) architecture.  |
-| Emulate    | Supports non-ARM systems   | Slower, potential performance issues |
+| Mode       | Pros                       | Cons                                           |
+| ---------- | -------------------------- | ---------------------------------------------- |
+| Virtualise | Faster, native ARM support | Does not support x86 (Intel/AMD) architecture. |
+| Emulate    | Supports non-ARM systems   | Slower, potential performance issues           |
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m4-windows/utm-windows-mode.webp
 alt: UTM Configuration Mode selection between Virtualise and Emulate
 ---
+
 ::
 
 Select **Virtualise** to leverage Apple Silicon's efficiency.
@@ -136,9 +148,11 @@ Emulation is slower but supports older systems. Pre-built VMs are also available
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/2026/utm-windows/os-selection.webp
 alt: UTM Configuration OS selection between Windows, Linux and macOS
 ---
+
 ::
 
 ### Hardware Settings
@@ -152,9 +166,11 @@ Next, we define the ISO file.
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m4-windows/windows-utm-iso.webp
 alt: UTM configuration interface showing the ISO selection
 ---
+
 ::
 
 Ensure "Install Drivers or SPICE guest tools" is enabled. This is very important to ensure stability between the virtual machine and your native device.
@@ -173,9 +189,11 @@ Next review the configuration summary, Enter a name for the virtual machine, and
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/2026/utm-windows/complete-setup.webp
 alt: Completed UTM configuration
 ---
+
 ::
 
 Your new VM appears in UTM's sidebar. Click the play button to boot the virtual machine!
@@ -186,9 +204,11 @@ Booting up the virtual machine, you'll be prompted to "Press Any Key to continue
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m4-windows/windows-cdboot.webp
 alt: UTM Setup press any key to boot into ISO file
 ---
+
 ::
 
 1. Select your Language Settings and click **Next**.
@@ -197,23 +217,27 @@ alt: UTM Setup press any key to boot into ISO file
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m4-windows/windows-productkey.webp
 alt: Windows setup showing selection of product key
 ---
+
 ::
 
 4. Select which version of Windows to install (Pro, Home, Home Single Language) then click **Next**.
 5. Read the license agreement, then click **Accept**.
 6. Select the default location to install Windows and click **Next**.
-(This might skip and go directly into installing).
+   (This might skip and go directly into installing).
 
 Windows will now begin installing. This will take some time.
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m4-windows/windows-iso-updates.webp
 alt: Windows setup installing from ISO
 ---
+
 ::
 
 After this process, the virtual machine will restart. Notice that you might get the same prompt to "Press Any Key or CD to enter startup." This is because the ISO is still attached. It may also just boot normally but it is important to remove this ISO file.
@@ -240,9 +264,11 @@ The reason you may get more updates than usual is that it automatically tries to
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m4-windows/windows-setup-updates.webp
 alt: Windows setup showing updates being downloaded
 ---
+
 ::
 
 After this, you will be booted into Windows 11. The next step is to install the Spice Guest Tools.
@@ -254,9 +280,11 @@ After the virtual machine, a window usually pops up asking to setup UTM Guest To
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m4-windows/windows-spiceguest.webp
 alt: Default window for Spice Guest Tools Setup
 ---
+
 ::
 
 1. Select **Next**.
@@ -278,9 +306,11 @@ Once restarted open up File Explorer and navigate back to the CD Drive and right
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/2026/utm-windows/spice-drivers.webp
 alt: Showing Windows file explorer with the CD Rom open
 ---
+
 ::
 
 You can verify that Spice Guest Tools have been installed by visiting the Control Panel.
@@ -305,9 +335,11 @@ Shut down the virtual machine. Select the power button in UTM or simply shut dow
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m4-windows/utm-display-settings.webp
 alt: UTM display settings for enabling Retina Mode
 ---
+
 ::
 
 The virtual machine will now use your Mac's native resolution.
@@ -334,9 +366,11 @@ Ensure that you eject the ISO file and the Spice Guest Tools CD from the virtual
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m4-windows/utm-display-bug.webp
 alt: Window showing the Display output is not active message
 ---
+
 ::
 
 A “Display output is not active” message may appear for a few seconds after installing Spice Guest Tools or Starting the virtual machine.
@@ -379,9 +413,11 @@ Tested with Windows 11 ARM (24H2 build 26100.4349), UTM 4.7.5, macOS 15.7.3
 
 ::youtube
 ---
+
 video-id: TVJ3gGqkMak
 title: "Skip Microsoft Login: One Command to a Local Account"
 ---
+
 ::
 
 #### Conclusion

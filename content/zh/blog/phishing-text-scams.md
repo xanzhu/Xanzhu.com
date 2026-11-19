@@ -36,9 +36,11 @@ source: "Lindsey LaMont, unsplash"
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/text-scams/Uber.webp
 alt: Uber身份验证代码示例
 ---
+
 ::
 
 - 这个代码来自 3362。
@@ -52,9 +54,11 @@ alt: Uber身份验证代码示例
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/text-scams/EURO.webp
 alt: 国际钓鱼短信示例
 ---
+
 ::
 
 - 这条消息来自+61（澳大利亚基地）。
@@ -67,9 +71,11 @@ alt: 国际钓鱼短信示例
 这里是另一个例子：
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/text-scams/NZD.webp
 alt: 本地钓鱼短信示例
 ---
+
 ::
 
 - 这条消息来自+64（基于新西兰）。
@@ -81,9 +87,11 @@ alt: 本地钓鱼短信示例
 一个更近期的例子：
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/text-scams/nzta.webp
 alt: 新西兰交通管理局钓鱼示例
 ---
+
 ::
 
 - 声称来自新西兰交通局（NZ Transport Agency）并要求您支付未付费用。
@@ -98,9 +106,11 @@ alt: 新西兰交通管理局钓鱼示例
 让我们比较所使用的链接：
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/text-scams/compare.svg
 alt: 比较钓鱼链接与合法链接
 ---
+
 ::
 
 官方政府基础链接将始终具有 .govt.nz 域名。

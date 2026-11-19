@@ -15,19 +15,21 @@ alt: "UTM이 탑재된 Apple Silicon에서 실행되는 Ubuntu 26.04 lts"
 데스크톱 환경을 포함한 Ubuntu Server 설정 방법은 :PageLink{title="이전 아티클" url="/blog/apple-silicon-virtual-machine-setup#ubuntu-2204-1"}에서 자세히 확인할 수 있습니다.
 
 ::ArticleUpdates
-- **2025년 7월 15일** - Ubuntu 25.04에 맞춰 가이드가 업데이트되었습니다.
-- **2026년 2월 3일** - **연례 재발행**: Ubuntu 25.10에 대한 모든 단계를 확인하고 업데이트했습니다.
+
 - **2026년 4월 25일** - 이제 Ubuntu 26.04 LTS를 지원합니다.
+- **2026년 2월 3일** - **연례 재발행**: Ubuntu 25.10에 대한 모든 단계를 확인하고 업데이트했습니다.
+- **2025년 7월 15일** - Ubuntu 25.04에 맞춰 가이드가 업데이트되었습니다.
+
 ::
 
 ---
 
 ## 요구 사항
 
-* **UTM**: 버전 4.7.5 이상.
-* **저장 공간**: 최소 30GB 이상의 여유 공간.
-* **ISO**: Ubuntu 26.04 Desktop (**ARM64**).
-* **하드웨어**: Apple Silicon (M1, M2, M3, M4 또는 M5).
+- **UTM**: 버전 4.7.5 이상.
+- **저장 공간**: 최소 30GB 이상의 여유 공간.
+- **ISO**: Ubuntu 26.04 Desktop (**ARM64**).
+- **하드웨어**: Apple Silicon (M1, M2, M3, M4 또는 M5).
 
 ## UTM 다운로드
 
@@ -43,12 +45,14 @@ GitHub 버전은 무료로 다운로드할 수 있습니다. 또는 자동 업�
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/2026/utm-ubuntu/ubuntu-download-lts.webp
 alt: ARM용 다운로드 옵션을 보여주는 Ubuntu 웹사이트
 ---
+
 ::
 
-* **Ubuntu 26.04 (Resolute Raccoon)**은 현재 장기 지원 서비스(LTS) 버전으로, 최초로 공식 ARM 데스크톱 다운로드를 제공합니다. 2026년 4월에 출시되었습니다.
+- **Ubuntu 26.04 (Resolute Raccoon)**은 현재 장기 지원 서비스(LTS) 버전으로, 최초로 공식 ARM 데스크톱 다운로드를 제공합니다. 2026년 4월에 출시되었습니다.
 
 이 가이드는 Ubuntu의 향후 버전 개발에 따라 계속 업데이트될 예정입니다. 일부 기능이나 버그는 향후 버전에서 해결될 수 있으며, 잠재적인 문제와 해결 방법을 최대한 기록해 두도록 하겠습니다.
 
@@ -60,19 +64,21 @@ UTM을 열고 **+ (플러스)** 아이콘을 클릭하여 새 가상 머신을 �
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m3-ubuntu/utm.webp
 alt: 새 가상 머신 생성을 위한 플러스 아이콘이 있는 UTM 인터페이스
 ---
+
 ::
 
 ### 가상화(Virtualise) 또는 에뮬레이션(Emulate)
 
 UTM은 두 가지 모드를 제공합니다:
 
-| 모드 | 장점 | 단점 |
-| ---------- | -------------------------- | ------------------------------------ |
-| 가상화(Virtualise) | 빠름, 네이티브 ARM 지원 | x86 (Intel/AMD) 아키텍처를 지원하지 않음. |
-| 에뮬레이션(Emulate) | 비 ARM 시스템 지원 가능 | 느림, 성능 저하 가능성 있음 |
+| 모드                | 장점                    | 단점                                      |
+| ------------------- | ----------------------- | ----------------------------------------- |
+| 가상화(Virtualise)  | 빠름, 네이티브 ARM 지원 | x86 (Intel/AMD) 아키텍처를 지원하지 않음. |
+| 에뮬레이션(Emulate) | 비 ARM 시스템 지원 가능 | 느림, 성능 저하 가능성 있음               |
 
 Apple Silicon의 효율성을 극대화하려면 **가상화(Virtualise)**를 선택하세요.
 
@@ -84,8 +90,8 @@ Apple Silicon의 효율성을 극대화하려면 **가상화(Virtualise)**를 �
 
 ### 하드웨어 설정
 
-* **메모리**: 최소 **4096MB (4GB)**를 할당하세요. Mac의 RAM이 16GB 이상이라면 더 부드러운 환경을 위해 **8GB (8192MB)**를 권장합니다.
-* **CPU**: 자동 코어 관리를 위해 기본값으로 둡니다.
+- **메모리**: 최소 **4096MB (4GB)**를 할당하세요. Mac의 RAM이 16GB 이상이라면 더 부드러운 환경을 위해 **8GB (8192MB)**를 권장합니다.
+- **CPU**: 자동 코어 관리를 위해 기본값으로 둡니다.
 
 메모리를 기기 가용 메모리의 절반으로 설정하세요(기본값: 4096MB 또는 4GB). CPU 코어는 기본값으로 두고 **Continue**를 클릭합니다.
 
@@ -96,14 +102,16 @@ macOS 15 이상에서는 **Apple Virtualization**을 활성화하면 Ubuntu와 �
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/2026/utm-ubuntu/utm-config-virt.webp
 alt: Apple Virtualization을 위한 UTM 구성
 ---
+
 ::
 
-* **Use Apple Virtualization** 체크 (선택 사항, macOS 15 이상 권장).
-* **Boot Image Type:** Boot from ISO 선택.
-* **Browse**를 클릭하여 다운로드한 Ubuntu ISO를 선택하고 **Continue**를 클릭합니다.
+- **Use Apple Virtualization** 체크 (선택 사항, macOS 15 이상 권장).
+- **Boot Image Type:** Boot from ISO 선택.
+- **Browse**를 클릭하여 다운로드한 Ubuntu ISO를 선택하고 **Continue**를 클릭합니다.
 
 #### 저장 공간 (Storage)
 
@@ -125,9 +133,11 @@ alt: Apple Virtualization을 위한 UTM 구성
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/2026/utm-ubuntu/utm-default.webp
 alt: 생성이 완료된 가상 머신이 표시된 UTM 앱
 ---
+
 ::
 
 Ubuntu 설정이 자동으로 시작됩니다. 키보드 입력이 캡처되도록 VM 창 내부를 클릭해야 합니다.
@@ -136,9 +146,11 @@ Ubuntu 설정이 자동으로 시작됩니다. 키보드 입력이 캡처되도�
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/2026/utm-ubuntu/utm-grub-boot.webp
 alt: Ubuntu 가상 머신 설치 선택 화면
 ---
+
 ::
 
 설치 과정 중 추가 구성 요소가 다운로드될 수 있습니다. Apple Virtualization 사용 시 디스플레이 배율이 약간 다를 수 있습니다.
@@ -147,9 +159,11 @@ Ubuntu 환영 화면이 나타납니다:
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/2026/utm-ubuntu/os-welcome-setup.webp
 alt: 부팅 후 나타나는 Ubuntu 환영 화면
 ---
+
 ::
 
 1. 언어를 선택하고 **Next**를 클릭합니다.
@@ -166,9 +180,11 @@ alt: 부팅 후 나타나는 Ubuntu 환영 화면
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m3-ubuntu/utm-ubuntu-account.webp
 alt: 샘플 값이 입력된 Ubuntu 계정 생성 화면
 ---
+
 ::
 
 12. 지도에서 시간대를 선택하고 **Next**를 클릭합니다.
@@ -178,9 +194,11 @@ alt: 샘플 값이 입력된 Ubuntu 계정 생성 화면
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/2026/utm-ubuntu/os-restart-lts.webp
 alt: 재시작을 요청하는 Ubuntu 화면
 ---
+
 ::
 
 #### ISO 파일 꺼내기(Eject)
@@ -189,20 +207,24 @@ alt: 재시작을 요청하는 Ubuntu 화면
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m3-ubuntu/utm-qemu-eject.webp
 alt: ISO를 꺼내는 방법을 보여주는 시각적 자료
 ---
+
 ::
 
-* UTM 툴바의 **CD/DVD 아이콘**을 클릭합니다.
-* 두 번째 옵션에 마우스를 올리고 **Eject**를 선택합니다.
-* 다시 VM 창을 클릭하고 **Enter**를 누릅니다.
+- UTM 툴바의 **CD/DVD 아이콘**을 클릭합니다.
+- 두 번째 옵션에 마우스를 올리고 **Eject**를 선택합니다.
+- 다시 VM 창을 클릭하고 **Enter**를 누릅니다.
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/2026/utm-ubuntu/os-eject-prompt.webp
 alt: ISO를 꺼내고 Enter를 누르라는 Ubuntu 메시지
 ---
+
 ::
 
 QEMU 사용 시 "Display output is not active" 메시지가 잠시 나타날 수 있습니다. 데스크톱이 로드될 때까지 30초에서 1분 정도 기다리세요.
@@ -211,9 +233,11 @@ QEMU 사용 시 "Display output is not active" 메시지가 잠시 나타날 수
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/2026/utm-ubuntu/os-welcome-lts.webp
 alt: 환영 화면이 표시된 Ubuntu 데스크톱
 ---
+
 ::
 
 1. **Next**를 선택하여 계속합니다.
@@ -234,9 +258,11 @@ alt: 환영 화면이 표시된 Ubuntu 데스크톱
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m3-ubuntu/utm-avirt-display.webp
 alt: Apple Virtualization 디스플레이 설정을 위한 UTM 구성
 ---
+
 ::
 
 #### QEMU 사용 시
@@ -246,9 +272,11 @@ alt: Apple Virtualization 디스플레이 설정을 위한 UTM 구성
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m3-ubuntu/utm-qemu-display-setting.webp
 alt: QEMU 디스플레이 설정을 위한 UTM 구성
 ---
+
 ::
 
 VM을 부팅합니다. Ubuntu 사용자 인터페이스가 너무 작게 보일 수 있습니다.
@@ -258,9 +286,11 @@ VM을 부팅합니다. Ubuntu 사용자 인터페이스가 너무 작게 보일 
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/2026/utm-ubuntu/os-setting-display.webp
 alt: 고해상도 배율을 위한 Ubuntu 디스플레이 설정
 ---
+
 ::
 
 이제 데스크톱이 선명하고 적절한 크기로 표시됩니다.
@@ -282,15 +312,18 @@ sudo apt update && sudo apt upgrade -y
 ## 문제 해결
 
 #### "Display output is not active"
+
 이는 초기 부팅 단계에서 발생하는 일반적인 QEMU 버그입니다. 화면이 2분 이상 검은색으로 유지되면 UTM 창의 크기를 살짝 조절해 보세요. 그러면 그래픽 드라이버가 다시 활성화되는 경우가 많습니다.
 
 추가적인 해결 방법은 :PageLink{title="GitHub 토론" url="https://github.com/utmapp/UTM/discussions/5555"}을 참고하세요.
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m3-ubuntu/utm-qemu-bug.webp
 alt: 데스크톱 로드를 기다리라는 메시지가 포함된 UTM QEMU 버그 안내
 ---
+
 ::
 
 #### 결론

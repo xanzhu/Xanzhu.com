@@ -27,9 +27,6 @@ useSeoMeta({
   ogTitle: seoTitle,
   ogDescription: seoDesc,
   ogImage: seoImage,
-  ogType: "website",
-  ogImageWidth: 1200,
-  ogImageHeight: 630,
 });
 
 const pageUrl = new URL(currentPath, siteUrl).href;
@@ -53,7 +50,7 @@ useHead({ script: [{ type: "application/ld+json", innerHTML: jsonLd }] });
 </script>
 
 <template>
-  <main class="text-black mx-auto space-y-10 dark:text-white sm:mb-10 2xl:px35 xl:px28">
+  <div class="text-black mx-auto space-y-10 dark:text-white sm:mb-10 2xl:px35 xl:px28">
     <div class="mx-4 mt-5 flex flex-col space-y-2 lg:mx-10 sm:(mx-10 mt-15)">
       <h1 class="text-3xl font-400 mb0 sm:text-5xl">
         {{ t("app.blog.heading") }}
@@ -71,10 +68,9 @@ useHead({ script: [{ type: "application/ld+json", innerHTML: jsonLd }] });
           <NuxtLinkLocale class="group no-underline flex flex-col" :to="article.path">
             <NuxtImg
               v-if="article.img"
-              crossorigin="anonymous"
               :alt="article.alt"
               :title="article.alt"
-              :loading="index < 3 ? 'eager' : 'lazy'"
+              :loading="index === 0 ? 'eager' : 'lazy'"
               :fetchpriority="index === 0 ? 'high' : 'auto'"
               decoding="async"
               height="369"
@@ -82,7 +78,7 @@ useHead({ script: [{ type: "application/ld+json", innerHTML: jsonLd }] });
               fit="cover"
               format="webp"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 557px"
-              class="core-border rounded-md h-full w-full transform md:(transition duration-400 ease-in-out group-hover:scale-102)"
+              class="core-border rounded-md aspect-[577/369] w-full object-cover transform md:(transition duration-400 ease-in-out group-hover:scale-102)"
               :src="article.img"
             />
             <div class="text-black py2 h-auto space-y-2 dark:text-white">
@@ -110,5 +106,5 @@ useHead({ script: [{ type: "application/ld+json", innerHTML: jsonLd }] });
     <p v-else class="text-center op70">
       {{ t("common.article.notFound") }}
     </p>
-  </main>
+  </div>
 </template>

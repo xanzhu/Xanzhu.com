@@ -14,16 +14,14 @@ const localePath = useLocaleRoute();
         <span class="op70">v{{ config.public.version }}</span>
       </p>
 
-      <nav
-        class="flex flex-wrap justify-center gap-x-4 gap-y-1"
-      >
+      <nav class="flex flex-wrap justify-center gap-x-4 gap-y-1">
         <NuxtLink :to="localePath('/privacy-policy')">
           {{ t("common.nav.privacy") }}
         </NuxtLink>
         <NuxtLink :to="localePath('/terms-of-service')">
           {{ t("common.nav.terms") }}
         </NuxtLink>
-        <a href="/sitemap.xml">{{ t("common.nav.sitemap") }}</a>
+        <a href="/sitemap_index.xml">{{ t("common.nav.sitemap") }}</a>
       </nav>
     </div>
   </footer>

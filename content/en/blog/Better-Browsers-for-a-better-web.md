@@ -19,10 +19,12 @@ It's worth noting that some of these browsers are specific to a particular envir
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/better-browsers/arc.webp
 credit: The Browser Company / Xanzhu
 alt: Arc browser logo
 ---
+
 ::
 
 The new contender on the market, built by :PageLink{title="The Browser Company" url="https://www.thebrowser.company/"}, is a well-established collective of alumni developers who have worked alongside some of the internet's most popular web services such as Google Chrome, Instagram, and more.
@@ -33,10 +35,12 @@ Arc is the perfect browser for students and professionals who need multitasking 
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/better-browsers/arc-features.webp
 credit: The Browser Company
 alt: Arc browser feature promo
 ---
+
 ::
 
 ### Developer mode
@@ -49,10 +53,12 @@ Arc offers a built-in Picture-in-Picture (PiP) mode that automatically enables w
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/better-browsers/split-view.webp
 credit: Xanzhu
 alt: Arc browser split-view feature
 ---
+
 ::
 
 ### Spaces
@@ -73,10 +79,12 @@ Learn more about how The Browser Company is changing the game for all browsers a
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/better-browsers/brave.webp
 credit: Brave / Xanzhu
 alt: Arc browser logo
 ---
+
 ::
 
 Ultimately, Brave is the challenger to Google Chrome itself, built in the same ecosystem using Chromium. The major difference between the two browsers is that Brave is privacy-first. While Chrome is a widely used browser, it comes with a lot of tools and services that track every aspect of your browsing experience. Brave strips down and removes many of these core tracking features, significantly improving security.
@@ -95,10 +103,12 @@ With Brave, you have more control over your browsing experience, while protectin
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/better-browsers/brave-adblock.webp
 credit: Brave
 alt: Brave's Adblocker panel
 ---
+
 ::
 
 ### Web3 Support
@@ -122,19 +132,23 @@ A promising alternative to traditional search engines, providing users with a mo
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/better-browsers/snowflake-tor.webp
 credit: Tor Project
 alt: Diagram on Snowflake protocol by Tor
 ---
+
 ::
 
 The browser also includes the option to connect to the Tor network, which is useful for users who want to access the deep web or .onion addresses. A newer feature being implemented to help combat censorship is the Snowflake protocol, which allows users to create a node for other users to connect to and act as a middleman for navigating restrictions on the internet
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/better-browsers/snowflake.webp
 alt: Implementation of Snowflake on brave browser
 ---
+
 ::
 
 You can learn more about the Snowflake protocol via :PageLink{title="The Tor Project" url="https://snowflake.torproject.org/"}
@@ -150,10 +164,12 @@ The browser's rewards program is a unique feature that allows users to earn BAT 
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/better-browsers/brave-compare.webp
 credit: Brave
 alt: Brave's Comparison chart for security features
 ---
+
 ::
 
 Visit :PageLink{title="Brave.com" url="https://brave.com/"} to download the browser and experience the difference for yourself.
@@ -162,10 +178,12 @@ Visit :PageLink{title="Brave.com" url="https://brave.com/"} to download the brow
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/better-browsers/firefox.webp
 credit: Mozilla / Xanzhu
 alt: Firefox browser logo
 ---
+
 ::
 
 Firefox is a fast and secure browser developed by Mozilla. It offers a range of great tools and services, unique on its own level, being outside of the Chromium ecosystem. It runs entirely on its own browser ecosystem, which works natively across all devices. While it may not have as many features compared to other browsers, it offers peace of mind when it comes to reliability.
@@ -184,10 +202,12 @@ Firefox offers a fast and secure browsing experience, with a range of built-in f
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/better-browsers/firefox-compare.webp
 credit: Mozilla
 alt: Comparison chart for security features on firefox
 ---
+
 ::
 
 Firefox is a great choice for users who value reliability and privacy. It's a perfect alternative to Brave, offering a similar range of features and fast performance. Visit :PageLink{title="Firefox.com" url="https://www.firefox.com/"} to download the browser and experience the difference for yourself.

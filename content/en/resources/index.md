@@ -4,6 +4,7 @@ description: Comprehensive collection of free security tools, educational resour
 ---
 
 ## Phishing
+
 Tools and resources to help identify, avoid, and report phishing attempts and suspicious websites.
 
 - :PageLink{title="PhishTank" url="https://www.phishtank.com/"} Community-powered database for identifying and reporting phishing websites
@@ -12,10 +13,12 @@ Tools and resources to help identify, avoid, and report phishing attempts and su
 - :PageLink{title="OpenPhish" url="https://openphish.com/"} Automatic phishing detection and intelligence feed service.
 
 Quick links to report phishing
+
 - :PageLink{title="Google Safe Browsing" url="https://safebrowsing.google.com/safebrowsing/report-url"} Report suspicious websites to Google Safe Browsing
 - :PageLink{title="Microsoft Security Intelligence" url="https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest"} Microsoft's platform for reporting phishing and malicious URLs
 
 ## Malware Analysis
+
 Free tools and platforms for analyzing suspicious files, detecting malware, and maintaining system security.
 
 - :PageLink{title="VirusTotal" url="https://www.virustotal.com/gui/home/upload"} Online scanner for analyzing files and URLs for malware and suspicious content.
@@ -26,6 +29,7 @@ Free tools and platforms for analyzing suspicious files, detecting malware, and 
 - :PageLink{title="Any.run" url="https://any.run/"} Interactive malware analysis tool for analyzing and sharing results in real time.
 
 ## Network Security
+
 Essential tools for monitoring network traffic, detecting vulnerabilities, and securing your connections.
 
 - :PageLink{title="Wireshark" url="https://www.wireshark.org/"} Network protocol analyzer for monitoring and troubleshooting network traffic.

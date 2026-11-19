@@ -34,9 +34,11 @@ source: "Lindsey LaMont, unsplash"
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/text-scams/Uber.webp
 alt: Uber 인증 코드 예시
 ---
+
 ::
 
 - 이 코드는 3362번에서 왔습니다.
@@ -50,9 +52,11 @@ alt: Uber 인증 코드 예시
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/text-scams/EURO.webp
 alt: 국제적인 스미싱 텍스트 예시
 ---
+
 ::
 
 - 메시지는 +61(호주 기반)에서 옵니다.
@@ -65,9 +69,11 @@ alt: 국제적인 스미싱 텍스트 예시
 여기 또 다른 예입니다:
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/text-scams/NZD.webp
 alt: 지역적인 스미싱 텍스트 예시
 ---
+
 ::
 
 - 이 메시지는 +64(뉴질랜드 기반)에서 옵니다.
@@ -79,9 +85,11 @@ alt: 지역적인 스미싱 텍스트 예시
 최근의 예:
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/text-scams/nzta.webp
 alt: NZ Transport Agency 스미싱 예시
 ---
+
 ::
 
 - NZ Transport Agency로부터 온 것으로 주장하며 미납 요금을 지불하라고 요청합니다.
@@ -96,9 +104,11 @@ alt: NZ Transport Agency 스미싱 예시
 링크를 비교해 봅시다:
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/text-scams/compare.svg
 alt: 스미싱 링크 대 비정상적인 링크 비교
 ---
+
 ::
 
 공식 정부 기반 링크는 항상 .govt.nz 도메인을 가지고 있습니다.

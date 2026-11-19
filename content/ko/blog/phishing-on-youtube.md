@@ -16,9 +16,11 @@ feature: true
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/youtube-phish/j2-1.webp
 alt: 타겟 비디오 옆에 피싱 사기 스폰서 비디오를 표시하는 YouTube 홈 페이지
 ---
+
 ::
 
 사기를 위한 완벽한 장소입니다. 일반적으로 이 광고는 임의의 동영상 옆에 표시되지만 오늘은 YouTube 광고의 현실에 대한 최후 통첩을 얻었습니다. Mr Beast의 최신 동영상 바로 옆에서 피싱 사기가 홍보되었습니다.
@@ -27,9 +29,11 @@ alt: 타겟 비디오 옆에 피싱 사기 스폰서 비디오를 표시하는 Y
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/youtube-phish/j2-3.webp
 alt: 광고주에 대한 정보와 신고 또는 차단 옵션이 포함된 YouTube의 광고 신고 대화 상자
 ---
+
 ::
 
 댓글의 고정 댓글이나 좋아요 댓글에는 피싱 사기라고 알려진 사용자 정보를 수집하도록 설계된 웹사이트에 대한 링크가 제공됩니다.
@@ -38,9 +42,11 @@ alt: 광고주에 대한 정보와 신고 또는 차단 옵션이 포함된 YouT
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/youtube-phish/j2-5.webp
 alt: 보상을 요구하는 클릭을 유도하는 클릭 유도 문구를 통해 사용자를 피싱하는 데 사용되는 도메인 미리보기
 ---
+
 ::
 
 동영상은 미등록이므로 광고가 홍보되지 않는 한 공개적으로 표시되지 않습니다. 이렇게 하면 동영상을 지속적으로 삭제하고 다시 업로드할 수 있습니다. 댓글에도 동일하게 적용되며 기존 웹사이트가 삭제되고 새 웹사이트가 댓글에 나열됩니다.
@@ -49,9 +55,11 @@ alt: 보상을 요구하는 클릭을 유도하는 클릭 유도 문구를 통�
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/youtube-phish/j2-2.webp
 alt: 광고주가 피싱 웹사이트 링크에 댓글을 다는 YouTube 댓글 섹션'
 ---
+
 ::
 
 Google의 투명성 서비스를 통해 광고주의 광고를 검토한 결과 사용자로부터 광고가 발견되지 않았습니다. 동영상을 호스팅하는 YouTube 채널은 종종 삭제되고 유사한 채널로 대체됩니다.
@@ -66,9 +74,11 @@ YouTube에서 외부 소스 링크를 클릭하면 YouTube 외부로 연결된�
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/youtube-phish/j2-6.webp
 alt: 첫 번째 위치에서 조장된 또 다른 피싱 사기를 보여주는 YouTube 홈 페이지.
 ---
+
 ::
 
 이러한 사기 또는 이와 유사한 사기를 신고하는 일반적인 절차는 다음과 같습니다.
@@ -92,9 +102,11 @@ Google과 같은 사이트에 신고하는 방식 :PageLink{Link title="안전�
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/youtube-phish/j2-4.webp
 alt: Youtube에서 발견된 피싱 URL에서 발견된 12개의 탐지를 표시하는 VirusTotal 웹사이트
 ---
+
 ::
 
 도메인을 보고할 때 가장 먼저 해야 할 일은 도메인의 :PageLink{title="whois" url="https://whois.domaintools.com/"}를 확인하는 것입니다. 이를 통해 도메인 공급자가 누구인지 알 수 있습니다. 그런 다음 학대 이메일 주소로 직접 신고할 수 있습니다.

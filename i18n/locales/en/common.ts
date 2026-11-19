@@ -13,11 +13,6 @@ export default {
   },
   lang: {
     select: "Select language",
-    active: "current language",
-    switch: "Switch language to {locale}",
-    en: "English",
-    ko: "한국어",
-    zh: "简体中文",
   },
   theme: {
     dark: "Dark Mode",
@@ -36,6 +31,7 @@ export default {
     readTime: "Less than a min read | {count} min read | {count} mins read",
     source: "Source",
     author: "Author",
+    navigation: "Article navigation",
     prevPost: "Previous Article",
     nextPost: "Next Article",
     notFound: "Article not found",

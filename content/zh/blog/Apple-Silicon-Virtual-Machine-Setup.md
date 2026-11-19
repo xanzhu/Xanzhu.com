@@ -11,7 +11,9 @@ feature: true
 ---
 
 ::ArticleUpdates
+
 - **2026年1月1日** – Windows 11 的安装过程已更改。请参阅[更新后的指南](/zh/blog/install-windows-utm-apple-silicon)。
+
 ::
 
 如果您是一名开发人员或技术爱好者，您可能需要为项目或个人使用使用多个操作系统。 在本文中，我们将介绍使用 Parallels、付费虚拟化软件和名为 UTM 的免费开源解决方案设置流行操作系统（例如 Windows 和 Ubuntu）的过程。 无论您是初学者还是经验丰富的用户，本指南都将教您如何在 Apple Silicon Mac 上快速轻松地安装和设置每个环境。
@@ -26,10 +28,12 @@ feature: true
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m1-virtual-machine/Parallels.webp
 credit: Parallels / Xanzhu
 alt: Parallels 虚拟机徽标
 ---
+
 ::
 
 本机运行的付费虚拟化软件，本质上是所有您喜欢的操作系统的一键式安装。 它提供了很好的工具，并使整个过程尽可能顺利。
@@ -40,9 +44,11 @@ alt: Parallels 虚拟机徽标
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m1-virtual-machine/p-install.webp
 alt: Parallels 安装向导
 ---
+
 ::
 
 请注意，在安装操作系统之前最好至少有 25-30 GB 的可用空间。
@@ -68,9 +74,11 @@ Ubuntu 遵循相同的过程，只需单击 Ubuntu 图标并选择安装，这�
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m1-virtual-machine/u-download.webp
 alt: Parallels ubuntu 安装向导
 ---
+
 ::
 
 3. 下载完成后，虚拟机会自动启动
@@ -91,9 +99,11 @@ alt: Parallels ubuntu 安装向导
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m1-virtual-machine/config.webp
 alt: Parallels 虚拟机配置面板
 ---
+
 ::
 
 3. 要添加另一个虚拟机，请按加号图标并完成上述安装过程
@@ -104,10 +114,12 @@ alt: Parallels 虚拟机配置面板
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m1-virtual-machine/UTM.webp
 credit: UTM / Xanzhu
 alt: UTM 安装向导
 ---
+
 ::
 
 UTM 是一款免费工具，其功能与平行线相同，但您需要负责定制。
@@ -129,9 +141,11 @@ Windows 可以通过多种不同的方式安装。
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m1-virtual-machine/u-install.webp
 alt: UTM 窗口的安装设置
 ---
+
 ::
 
 7. 按继续
@@ -157,9 +171,11 @@ alt: UTM 窗口的安装设置
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m1-virtual-machine/u-spice.webp
 alt: 文件资源管理器 Windows 11
 ---
+
 ::
 
 7. 选择重新启动，您现在拥有一个正常工作的 Windows 11 虚拟机。
@@ -200,9 +216,11 @@ alt: 文件资源管理器 Windows 11
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m1-virtual-machine/u-linux.webp
 alt: Linux服务器安装显示
 ---
+
 ::
 
 26. 完成后按向下箭头突出显示 Reboot Now 并按 ENTER

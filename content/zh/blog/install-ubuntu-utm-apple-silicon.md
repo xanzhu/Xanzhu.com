@@ -15,25 +15,27 @@ Ubuntu 现在提供原生 ARM 桌面版本！对于想要探索 Linux、进行�
 关于如何设置带有桌面环境的 Ubuntu Server，可以参考我们的 :PageLink{title="上一篇文章" url="/blog/apple-silicon-virtual-machine-setup#ubuntu-2204-1"}。
 
 ::ArticleUpdates
-- **2025年7月15日** - 指南已更新，支持Ubuntu 25.04。
-- **2026年2月3日** - **年度更新**：已验证并更新所有步骤，支持Ubuntu 25.10。
+
 - **2026年4月25日** - 现已支持Ubuntu 26.04 LTS。
+- **2026年2月3日** - **年度更新**：已验证并更新所有步骤，支持Ubuntu 25.10。
+- **2025年7月15日** - 指南已更新，支持Ubuntu 25.04。
+
 ::
 
 ---
 
 ## 系统要求
 
-* **UTM**: 版本 4.7.5 或更高。
-* **存储空间**: 至少 30 GB 剩余空间。
-* **ISO**: Ubuntu 26.04 LTS 桌面版 (**ARM64**)。
-* **硬件**: Apple Silicon (M1, M2, M3, M4 或 M5 系列芯片)。
+- **UTM**: 版本 4.7.5 或更高。
+- **存储空间**: 至少 30 GB 剩余空间。
+- **ISO**: Ubuntu 26.04 LTS 桌面版 (**ARM64**)。
+- **硬件**: Apple Silicon (M1, M2, M3, M4 或 M5 系列芯片)。
 
 ## 下载 UTM
 
 从 :PageLink{title="UTM GitHub 发布页面" url="https://github.com/utmapp/UTM/releases"} 下载 **UTM 版本 4.7.5**。
 
-GitHub 版本可免费下载。另外 :PageLink{title="Mac App Store" url="https://apps.apple.com/us/app/utm-virtual-machines/id1538878817?mt=12"}  版本（付费）支持自动更新并可帮助支持开发者。
+GitHub 版本可免费下载。另外 :PageLink{title="Mac App Store" url="https://apps.apple.com/us/app/utm-virtual-machines/id1538878817?mt=12"} 版本（付费）支持自动更新并可帮助支持开发者。
 
 将 UTM 拖入你的 **应用程序 (Applications)** 文件夹并运行。
 
@@ -43,12 +45,14 @@ GitHub 版本可免费下载。另外 :PageLink{title="Mac App Store" url="https
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/2026/utm-ubuntu/ubuntu-download-lts.webp
 alt: 展示 ARM 下载选项的 Ubuntu 官网
 ---
+
 ::
 
-* **Ubuntu 26.04 (Resolute Raccoon)** 是当前的长期服务版本 (LTS)，也是首个官方 ARM 桌面版。发布日期为 2026 年 4 月。
+- **Ubuntu 26.04 (Resolute Raccoon)** 是当前的长期服务版本 (LTS)，也是首个官方 ARM 桌面版。发布日期为 2026 年 4 月。
 
 本指南将随着 Ubuntu 后续版本的更新而持续更新。某些功能或错误可能会在后续版本中得到修复，我们将尽力记录潜在问题及其解决方法。
 
@@ -60,19 +64,21 @@ alt: 展示 ARM 下载选项的 Ubuntu 官网
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m3-ubuntu/utm.webp
 alt: UTM 应用程序界面，显示带有用于创建新虚拟机的加号图标的主窗口
 ---
+
 ::
 
 ### 虚拟化 (Virtualise) 或 模拟 (Emulate)
 
 UTM 提供两种模式：
 
-| 模式 | 优点 | 缺点 |
-| ---------- | -------------------------- | ------------------------------------ |
+| 模式                | 优点                   | 缺点                          |
+| ------------------- | ---------------------- | ----------------------------- |
 | 虚拟化 (Virtualise) | 速度更快，支持原生 ARM | 不支持 x86 (Intel/AMD) 架构。 |
-| 模拟 (Emulate) | 支持非 ARM 系统 | 速度较慢，可能存在性能问题 |
+| 模拟 (Emulate)      | 支持非 ARM 系统        | 速度较慢，可能存在性能问题    |
 
 选择 **虚拟化 (Virtualise)** 以充分发挥 Apple Silicon 的效率。
 
@@ -84,8 +90,8 @@ UTM 提供两种模式：
 
 ### 硬件设置
 
-* **内存**: 分配至少 **4096 MB (4 GB)**。如果你的 Mac 有 16GB+ 内存，建议分配 **8GB (8192 MB)** 以获得更流畅的体验。
-* **CPU**: 保持默认设置，由系统自动管理核心。
+- **内存**: 分配至少 **4096 MB (4 GB)**。如果你的 Mac 有 16GB+ 内存，建议分配 **8GB (8192 MB)** 以获得更流畅的体验。
+- **CPU**: 保持默认设置，由系统自动管理核心。
 
 将内存设置为设备可用内存的一半（默认：4096 MB 或 4 GB）。保持 CPU 核心为默认设置，然后点击 **Continue**。
 
@@ -96,14 +102,16 @@ UTM 提供两种模式：
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/2026/utm-ubuntu/utm-config-virt.webp
 alt: Apple Virtualization 的 UTM 配置
 ---
+
 ::
 
-* 勾选 **Use Apple Virtualization**（可选，建议 macOS 15+ 用户开启）。
-* **Boot Image Type:** 选择 Boot from ISO。
-* 点击 **Browse**，选择你下载的 Ubuntu ISO，然后点击 **Continue**。
+- 勾选 **Use Apple Virtualization**（可选，建议 macOS 15+ 用户开启）。
+- **Boot Image Type:** 选择 Boot from ISO。
+- 点击 **Browse**，选择你下载的 Ubuntu ISO，然后点击 **Continue**。
 
 #### 存储 (Storage)
 
@@ -125,9 +133,11 @@ alt: Apple Virtualization 的 UTM 配置
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/2026/utm-ubuntu/utm-default.webp
 alt: 已完成创建的 UTM 虚拟机
 ---
+
 ::
 
 Ubuntu 设置会自动启动。请确保点击进入虚拟机窗口，以便捕获键盘输入。
@@ -136,9 +146,11 @@ Ubuntu 设置会自动启动。请确保点击进入虚拟机窗口，以便捕�
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/2026/utm-ubuntu/utm-grub-boot.webp
 alt: Ubuntu 虚拟机安装选项选择
 ---
+
 ::
 
 安装程序可能会在设置期间下载额外组件。使用 Apple Virtualization 时，显示缩放比例可能会略有不同。
@@ -147,9 +159,11 @@ alt: Ubuntu 虚拟机安装选项选择
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/2026/utm-ubuntu/os-welcome-setup.webp
 alt: 启动后的 Ubuntu 欢迎界面
 ---
+
 ::
 
 1. 选择语言，点击 **Next**。
@@ -166,9 +180,11 @@ alt: 启动后的 Ubuntu 欢迎界面
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m3-ubuntu/utm-ubuntu-account.webp
 alt: 显示示例值的 Ubuntu 账户创建页面
 ---
+
 ::
 
 12. 在地图上选择时区，点击 **Next**。
@@ -178,9 +194,11 @@ alt: 显示示例值的 Ubuntu 账户创建页面
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/2026/utm-ubuntu/os-restart-lts.webp
 alt: Ubuntu 提示用户重启
 ---
+
 ::
 
 #### 弹出 ISO 镜像
@@ -189,20 +207,24 @@ alt: Ubuntu 提示用户重启
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m3-ubuntu/utm-qemu-eject.webp
 alt: 展示如何弹出 ISO 的视觉说明
 ---
+
 ::
 
-* 点击 UTM 工具栏中的 **CD/DVD 图标**。
-* 悬停在第二个选项上，选择 **Eject**（弹出）。
-* 点击回到虚拟机窗口并按 **回车 (Enter)**。
+- 点击 UTM 工具栏中的 **CD/DVD 图标**。
+- 悬停在第二个选项上，选择 **Eject**（弹出）。
+- 点击回到虚拟机窗口并按 **回车 (Enter)**。
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/2026/utm-ubuntu/os-eject-prompt.webp
 alt: Ubuntu 提示用户弹出 ISO 并按回车
 ---
+
 ::
 
 使用 QEMU 时，可能会短暂出现“Display output is not active”消息。请等待 30 秒到 1 分钟，让桌面加载。
@@ -211,9 +233,11 @@ alt: Ubuntu 提示用户弹出 ISO 并按回车
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/2026/utm-ubuntu/os-welcome-lts.webp
 alt: 显示欢迎界面的 Ubuntu 桌面
 ---
+
 ::
 
 1. 选择 **Next** 继续。
@@ -234,9 +258,11 @@ alt: 显示欢迎界面的 Ubuntu 桌面
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m3-ubuntu/utm-avirt-display.webp
 alt: Apple Virtualization 显示设置的 UTM 配置
 ---
+
 ::
 
 #### QEMU 用户
@@ -246,9 +272,11 @@ alt: Apple Virtualization 显示设置的 UTM 配置
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m3-ubuntu/utm-qemu-display-setting.webp
 alt: QEMU 显示设置的 UTM 配置
 ---
+
 ::
 
 启动虚拟机。Ubuntu 的用户界面可能看起来很小。
@@ -258,9 +286,11 @@ alt: QEMU 显示设置的 UTM 配置
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/2026/utm-ubuntu/os-setting-display.webp
 alt: 针对高分辨率缩放的 Ubuntu 显示设置
 ---
+
 ::
 
 现在桌面看起来应该清晰且比例正常。
@@ -282,15 +312,18 @@ sudo apt update && sudo apt upgrade -y
 ## 常见问题
 
 #### “Display output is not active”
+
 这是 QEMU 在初始启动阶段的一个常见 Bug。如果屏幕黑屏超过 2 分钟，尝试轻微调整 UTM 窗口的大小；这通常会强制图形驱动“唤醒”。
 
 :PageLink{title="GitHub 讨论" url="https://github.com/utmapp/UTM/discussions/5555"} 提供了针对此问题的一些解决方案。
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m3-ubuntu/utm-qemu-bug.webp
 alt: UTM QEMU 提示用户等待桌面加载的已知 Bug
 ---
+
 ::
 
 #### 总结

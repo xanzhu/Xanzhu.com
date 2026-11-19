@@ -19,10 +19,12 @@ source: Apple
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/VP.webp
 alt: VisionPro VR 헤드셋
 credit: The Verge
 ---
+
 ::
 
 가상 현실 헤드셋에 대한 Apple의 첫 번째 시도. 현실과 가상이 혼합된 독특한 경험을 제공합니다. 이 헤드셋은 몇 가지 인상적인 소프트웨어 기술을 제공하며 대부분의 헤드셋이 고려하지 않은 많은 기능을 처리합니다.
@@ -51,10 +53,12 @@ VisionPro에는 비디오와 사진을 실시간으로 찍을 수 있는 버튼�
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/human.webp
 alt: VisionPro 데모
 credit: Apple
 ---
+
 ::
 
 #### 충전/케이블
@@ -80,13 +84,16 @@ M2를 사용하는 듀얼 칩 성능 모델과 새로운 R1 칩을 사용하여 
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/sensor.webp
 alt: VisionPro 감지기
 credit: Apple
 ---
+
 ::
 
 #### 비전OS
+
 새로운 Vision Pro 가상 현실 헤드셋과 함께 작동할 모든 새로운 맞춤 설계 응용 프로그램을 수용할 완전히 새로운 운영 체제입니다. 개발자는 이러한 응용 프로그램을 개발하기 위한 특별한 플랫폼과 응용 프로그램을 갖게 됩니다.
 
 ### Macbook Air 15"
@@ -95,9 +102,11 @@ credit: Apple
 
 ::vid
 ---
+
 source: https://www.apple.com/105/media/us/macbook-air-13-and-15/2023/f52c7a72-dff4-4f3c-9511-bf08e46c6f5f/anim/design/hero/medium_2x.mp4#t=4.033333
 credit: Apple
 ---
+
 ::
 
 ### Mac Studio
@@ -130,10 +139,12 @@ credit: Apple
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/macpro.webp
 alt: Mac Pro
 credit: Apple
 ---
+
 ::
 
 지원:
@@ -170,10 +181,12 @@ Apple은 향후 몇 개월에 걸쳐 출시되는 공개 베타 테스트를 위
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/ios17.webp
 alt: iOS 17 시사
 credit: Apple
 ---
+
 ::
 
 #### 프로필 개선
@@ -194,10 +207,12 @@ credit: Apple
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/transcribe.webp
 alt: iOS 17 오디오 전사 기능
 credit: Apple
 ---
+
 ::
 
 #### 페이스타임
@@ -224,10 +239,12 @@ credit: Apple
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/airdrop.webp
 alt: iOS 17 AirDrop 특징
 credit: Apple
 ---
+
 ::
 
 #### SharePlay 개선
@@ -250,10 +267,12 @@ AirDrop을 사용하여 다른 사람과 직접 연결하는 더 나은 경험�
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/lookup.webp
 alt: iOS 17 조회 기능
 credit: Apple
 ---
+
 ::
 
 #### AirPlay
@@ -286,10 +305,12 @@ AirPod를 음소거 및 음소거 해제하려면 한 번 누르십시오.
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/ipados.webp
 alt: iPadOS 17 시사
 credit: Apple
 ---
+
 ::
 
 #### 잠금 화면
@@ -306,10 +327,12 @@ credit: Apple
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/pdf.webp
 alt: PDF 협업 미리보기
 credit: Apple
 ---
+
 ::
 
 #### 자유 형식
@@ -347,9 +370,11 @@ macOS의 다음 버전은 Sonoma로 명명되었으며 macOS 버전 14로도 알
 
 ::vid
 ---
+
 source: https://www.apple.com/105/media/us/macos/sonoma-preview/2023/e6d837c5-8a7e-49d8-b0bd-137b21320db3/anim/share-preview/large_2x.mp4
 credit: Apple
 ---
+
 ::
 
 또한 화면을 투사할 때 반대로 작은 오버레이가 공유 화면 위의 이동 가능한 거품에 나타나 화면의 중요한 세부 정보를 쉽게 읽을 수 있습니다.
@@ -379,10 +404,12 @@ Safari에는 이제 프로필이 있어 학교, 직장 또는 개인용과 같�
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/stickers.webp
 alt: macOS 메시지 스티커 기능
 credit: Apple
 ---
+
 ::
 
 #### PDF 및 메모
@@ -411,10 +438,12 @@ Mac에서 더 많은 게임을 지원하도록 개선되었습니다. 게임 모
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/comms.webp
 alt: 메시지 통신 안전
 credit: Apple
 ---
+
 ::
 
 #### 잠금 모드
@@ -440,10 +469,12 @@ credit: Apple
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/watchos.webp
 alt: watchOS 10 미리보기
 credit: Apple
 ---
+
 ::
 
 #### 스마트 스택
@@ -465,10 +496,12 @@ Ultra-edition은 하이킹을 개선하여 연결이 마지막으로 설정되�
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/wwdc-2023/hiking.webp
 alt: watchOS 하이킹 기능
 credit: Apple
 ---
+
 ::
 
 #### 지형도

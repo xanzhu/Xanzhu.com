@@ -17,7 +17,9 @@ alt: "3가지 새로운 칩셋의 아이콘을 표시하는 2023년 Macbook Pro 
 이는 연초에 UTM 및 Parallels를 사용한 Windows 설치를 다룬 :PageLink{title="이전 기사" url="/ko/blog/apple-silicon-virtual-machine-setup"} 의 업데이트 버전입니다. 그 이후로 프로세스가 훨씬 더 쉽고 안정적이 되었습니다!
 
 ::ArticleUpdates
+
 - **2026년 1월 1일** – Windows 11 설치 방법이 변경되었습니다. [업데이트된 가이드](/ko/blog/install-windows-utm-apple-silicon)를 참조하세요.
+
 ::
 
 다운로드:
@@ -42,9 +44,11 @@ alt: "3가지 새로운 칩셋의 아이콘을 표시하는 2023년 Macbook Pro 
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-1.webp
 alt: UTM 애플리케이션 오프닝 화면
 ---
+
 ::
 
 ## CrystalFetch
@@ -58,9 +62,11 @@ alt: UTM 애플리케이션 오프닝 화면
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-2.webp
 alt: CrystalFetch 애플리케이션 시작 화면
 ---
+
 ::
 
 3. 다운로드를 클릭하세요
@@ -82,9 +88,11 @@ ISO 파일을 다운로드해야 합니다. 파일 크기가 약 5GB이므로 �
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-3.webp
 alt: 가상 머신의 UTM 구성 화면
 ---
+
 ::
 
 1. 이 가상 머신에 사용할 RAM의 양을 선택합니다. 4096이 기본값이며 4GB와 같습니다. 시스템이 사용하는 것의 절반이 이상적이지만 필요한 경우 나중에 조정할 수 있습니다. 지금은 기본값으로 두세요.
@@ -99,9 +107,11 @@ alt: 가상 머신의 UTM 구성 화면
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-4.webp
 alt: UTM 가상 머신 표시
 ---
+
 ::
 
 ## 가상 머신 실행
@@ -114,18 +124,22 @@ alt: UTM 가상 머신 표시
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-5.webp
 alt: 계속 진행하려면 아무 키나 누르라는 메시지를 표시하는 UTM
 ---
+
 ::
 
 이 단계는 중요합니다. 키를 충분히 빨리 누르지 않으면 다음 화면이 표시되기 때문입니다.
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-5b.webp
 alt: 부팅 오류를 표시하는 UTM
 ---
+
 ::
 
 이 문제를 해결하려면 가상 머신을 닫았다가 다시 실행하거나 삼각형 버튼인 가상 머신 다시 시작 버튼을 선택하세요.
@@ -138,9 +152,11 @@ alt: 부팅 오류를 표시하는 UTM
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-6.webp
 alt: Windows ISO 설치 메뉴
 ---
+
 ::
 
 1. 언어를 선택하고 다음을 누르세요.
@@ -159,9 +175,11 @@ alt: Windows ISO 설치 메뉴
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-7.webp
 alt: 가상 머신에서 현재 ISO를 꺼내는 방법에 대한 UTM 가이드
 ---
+
 ::
 
 1. 디스크 아이콘을 클릭합니다
@@ -179,9 +197,11 @@ alt: 가상 머신에서 현재 ISO를 꺼내는 방법에 대한 UTM 가이드
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/m2-virtual-machine/wvm-8.webp
 alt: UTM Spice 게스트 도구 설치 프로그램 화면
 ---
+
 ::
 
 가상 머신이 응답하지 않으면 가상 머신을 닫고 재부팅하세요.

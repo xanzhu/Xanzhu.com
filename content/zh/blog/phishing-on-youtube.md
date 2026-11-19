@@ -16,9 +16,11 @@ feature: true
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/youtube-phish/j2-1.webp
 alt: YouTube 主页在目标视频旁边显示网络钓鱼诈骗的赞助视频
 ---
+
 ::
 
 诈骗的完美地点。 通常，此广告会出现在随机视频旁边，但今天我们收到了 YouTube 上广告现实的最后通牒。 网络钓鱼诈骗就在野兽先生的最新视频旁边宣传。
@@ -27,9 +29,11 @@ alt: YouTube 主页在目标视频旁边显示网络钓鱼诈骗的赞助视频
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/youtube-phish/j2-3.webp
 alt: YouTube 的广告报告对话框，其中包含有关广告商的信息以及报告或阻止的选项
 ---
+
 ::
 
 在评论中，固定评论或点赞评论将提供指向旨在收集用户信息（称为网络钓鱼诈骗）的网站的链接。
@@ -38,9 +42,11 @@ alt: YouTube 的广告报告对话框，其中包含有关广告商的信息以�
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/youtube-phish/j2-5.webp
 alt: 用于诱骗用户的域名预览，并通过号召性用语诱使用户点击索取奖励
 ---
+
 ::
 
 由于该视频未公开，因此除非正在宣传广告，否则它不会出现在公众视野中。 这样可以一致地删除并重新上传视频。 这同样适用于评论，现有网站被删除，新网站将在评论中列出。
@@ -49,9 +55,11 @@ alt: 用于诱骗用户的域名预览，并通过号召性用语诱使用户点
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/youtube-phish/j2-2.webp
 alt: YouTube 评论部分，广告商评论钓鱼网站的链接
 ---
+
 ::
 
 通过 Google 的透明度服务查看广告商的广告，没有发现来自用户的广告。 托管视频的 YouTube 频道经常被删除并被类似的频道取代。
@@ -66,9 +74,11 @@ alt: YouTube 评论部分，广告商评论钓鱼网站的链接
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/youtube-phish/j2-6.webp
 alt: YouTube 主页显示另一个在第一位置推广的网络钓鱼骗局。
 ---
+
 ::
 
 举报此骗局或类似骗局的一般流程如下：
@@ -92,9 +102,11 @@ alt: YouTube 主页显示另一个在第一位置推广的网络钓鱼骗局。
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/youtube-phish/j2-4.webp
 alt: VirusTotal 网站显示 12 个从 Youtube 上的网络钓鱼网址中发现的检测
 ---
+
 ::
 
 报告域名首先要做的是查看域名的 :PageLink{title="whois" url="https://whois.domaintools.com/"}，这将告诉我们域名提供商是谁， 然后可以直接向他们的滥用电子邮件地址报告。

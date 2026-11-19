@@ -18,7 +18,7 @@ const { data: featured } = await useAsyncData(`featuredArticles-${locale.value}`
 <template>
   <section
     aria-labelledby="hero"
-    class="flex-1 w-full flex flex-col justify-center items-center space-y-10"
+    class="flex-1 w-full flex flex-col justify-center items-center space-y-10 my-2"
   >
     <!-- TODO? <div aria-hidden="true">
       <UiSvg load-s-v-g="beta02" />
@@ -26,13 +26,14 @@ const { data: featured } = await useAsyncData(`featuredArticles-${locale.value}`
     <div class="w-full max-w-4xl">
       <h1
         id="hero"
-        class="font-bold px4 text-balance text-[clamp(2rem,3vw,5rem)] font-stretch-[130%] uppercase"
+        class="font-bold px4 text-balance text-[clamp(2rem,1rem+2vw,5rem)] font-stretch-[130%] uppercase"
       >
         {{ t("app.home.heroTitle") }}
       </h1>
     </div>
 
     <section class="px-4 flex justify-center items-center w-full max-w-4xl">
+      <h2 class="sr-only">{{ t("app.home.featureTitle") }}</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-3 w-full">
         <article
           v-for="(article, index) in featured"

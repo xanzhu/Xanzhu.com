@@ -39,9 +39,11 @@ feature: true
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/2-factor-auth/aegis.webp
 alt: Aegis Authenticator 로고
 ---
+
 ::
 
 Aegis는 Google Play 스토어 및 F-Droid를 통해 Android에서 사용할 수 있는 무료 오픈 소스 인증 앱입니다. 앱을 열자마자 토큰이 표시되지 않기 때문에 표준 소프트웨어에 비해 보안이 강화되었습니다.
@@ -54,9 +56,11 @@ Aegis는 Google Play 스토어 및 F-Droid를 통해 Android에서 사용할 수
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/2-factor-auth/2fas.webp
 alt: 2FAS 인증 로고
 ---
+
 ::
 
 2FAS는 제가 개인적으로 가장 좋아하는 것으로, Android와 iOS 모두에서 완벽한 2단계 인증 경험을 제공합니다. 또한 Brave, Firefox, Opera 등을 위한 브라우저 확장 기능이 있어 브라우저에서 2FA 코드에 빠르게 액세스할 수 있습니다.
@@ -75,9 +79,11 @@ alt: 2FAS 인증 로고
 
 ::media
 ---
+
 source: https://cdn.xanzhu.com/v1/2-factor-auth/ravio.webp
 alt: Ravio Authenticator 로고
 ---
+
 ::
 
 Raivo OTP는 경량의 오픈 소스이며 모든 Apple 장치에서 동기화되는 인증 앱을 무료로 사용할 수 있습니다. Swift 5를 사용하여 제작된 이 앱은 Apple 에코시스템의 기본 앱이며 모바일 장치와 MacOS 모두에서 작동합니다.

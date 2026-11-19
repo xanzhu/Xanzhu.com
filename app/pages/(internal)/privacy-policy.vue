@@ -16,7 +16,6 @@ useSeoMeta({
   ogTitle: seoTitle,
   ogDescription: seoDesc,
   ogImage: "https://cdn.xanzhu.com/2026/defaults/xanzhu-default-page.webp",
-  ogType: "website",
 });
 </script>
 
