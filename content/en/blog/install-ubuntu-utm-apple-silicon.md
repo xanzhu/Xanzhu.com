@@ -16,9 +16,9 @@ Our :PageLink{title="previous article" url="/blog/apple-silicon-virtual-machine-
 
 ::ArticleUpdates
 
-- **2025-07-15** - Guide updated for Ubuntu 25.04.
-- **2026-02-03** - **Annual Re-release**: Verified and updated all steps for Ubuntu 25.10.
 - **2026-04-25** - Now supporting Ubuntu 26.04 LTS.
+- **2026-02-03** - **Annual Re-release**: Verified and updated all steps for Ubuntu 25.10.
+- **2025-07-15** - Guide updated for Ubuntu 25.04.
 
 ::
 
